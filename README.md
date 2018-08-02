@@ -1,4 +1,4 @@
-`DriveItem-after.yaml` is our YAML proposals for resource type `DriveItem-before.yaml`.
+`DriveItem-docs-update.yaml` is our YAML proposals for resource type `DriveItem.yaml`.
 
 - Add `uid`, `name` and `YamlMime` to identify the template.
 - Add `source` for edit button.
