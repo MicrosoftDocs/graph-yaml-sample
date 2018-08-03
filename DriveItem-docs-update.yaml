@@ -1,7 +1,7 @@
 ### YamlMime:GraphResource
 uid: graph.driveitem
 name: DriveItem resource type
-source: https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/driveitem
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/driveitem.md
 summary: |
     The **driveItem** resource represents a file, folder, or other item stored in a drive.
     All file system objects in OneDrive and SharePoint are returned as **driveItem** resources.
@@ -20,7 +20,7 @@ summary: |
     
     Items with the **folder** facet act as containers of items and therefore have a `children` reference pointing to a collection of **driveItems** under the folder.
 JSON representation:
-  summary: |
+  intro: |
     Here is a JSON representation of a **driveItem** resource.
     The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits properties from that resource.
     
@@ -233,5 +233,5 @@ methods:
   - method: [Delete permission](../api/permission_delete.md) 
     path: `DELETE /drive/items/{item-id}/permissions/{perm-id}`
 remarks:
-  summary: |
+  intro: |
     In OneDrive for Business or SharePoint document libraries, the **cTag** property is not returned, if the **driveItem** has a [folder][] facet.
