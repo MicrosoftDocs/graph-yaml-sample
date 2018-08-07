@@ -1,0 +1,14 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/yammer_groups_activity_reports.md
+top:
+  heading: Yammer groups activity reports
+  intro: |
+    You can use the Yammer groups activity reports to gain insights into the activity of Yammer groups in your organization and see how many Yammer groups are being created and used.
+    
+  outro: |
+    ## Reports
+    |Function|Return Type|Description
+    | :--------------------------------------- -| :---------- -| :--------------------------------------- -|
+    |[Get group detail](../api/reportroot_getyammergroupsactivitydetail.md)|Stream|Get details about Yammer groups activity by group.
+    |[Get group counts](../api/reportroot_getyammergroupsactivitygroupcounts.md)|Stream|Get the total number of groups that existed and how many included group conversation activity.
+    |[Get activity counts](../api/reportroot_getyammergroupsactivitycounts.md)|Stream|Get the number of Yammer messages posted, read, and liked in groups.

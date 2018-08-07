@@ -1,0 +1,45 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_ioshomescreenfolder.md
+top:
+  heading: iosHomeScreenFolder resource type
+  intro: |
+    A folder containing pages of apps on the Home Screen
+    Inherits from [iosHomeScreenItem](../resources/intune_deviceconfig_ioshomescreenitem.md)
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.iosHomeScreenFolder",
+      "displayName": "String",
+      "pages": [
+        {
+          "@odata.type": "microsoft.graph.iosHomeScreenFolderPage",
+          "displayName": "String",
+          "apps": [
+            {
+              "@odata.type": "microsoft.graph.iosHomeScreenApp",
+              "displayName": "String",
+              "bundleID": "String"
+            }
+          ]
+        }
+      ]
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: displayName
+    type: String
+    description: Name of the app Inherited from iosHomeScreenItem
+  - name: pages
+    type: Collection(microsoft.graph.iosHomeScreenFolderPage)
+    description: Pages of Home Screen Layout Icons which must be Application Type. This collection can contain a maximum of 500 elements.
+relationships:
+  heading: Relationships
+  intro: |
+    None

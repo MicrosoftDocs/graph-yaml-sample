@@ -1,0 +1,31 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/chartaxistitleformat.md
+top:
+  heading: ChartAxisTitleFormat resource type
+  intro: |
+    Represents the chart axis title formatting.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "font": {"@odata.type": "microsoft.graph.workbookChartFont"}
+    }
+    ```
+    
+properties:
+  heading: Properties
+  intro: |
+    None
+relationships:
+  heading: Relationships
+  table:
+  - name: font
+    type: microsoft.graph.workbookChartFont
+    description: Represents the font attributes, such as font name, font size, color, etc. of chart axis title object. Read-only.
+methods:
+  heading: Methods
+  intro: |
+    None

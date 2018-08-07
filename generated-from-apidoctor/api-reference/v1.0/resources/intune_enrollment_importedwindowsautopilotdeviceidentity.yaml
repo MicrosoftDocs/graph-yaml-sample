@@ -1,0 +1,64 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_enrollment_importedwindowsautopilotdeviceidentity.md
+top:
+  heading: importedWindowsAutopilotDeviceIdentity resource type
+  intro: |
+    Imported windows autopilot devices.
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.importedWindowsAutopilotDeviceIdentity",
+      "id": "String (identifier)",
+      "orderIdentifier": "String",
+      "serialNumber": "String",
+      "productKey": "String",
+      "hardwareIdentifier": "binary",
+      "state": {
+        "@odata.type": "microsoft.graph.importedWindowsAutopilotDeviceIdentityState",
+        "deviceImportStatus": "String",
+        "deviceRegistrationId": "String",
+        "deviceErrorCode": 1024,
+        "deviceErrorName": "String"
+      }
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: id
+    type: String
+    description: The GUID for the object
+  - name: orderIdentifier
+    type: String
+    description: Order Id of the Windows autopilot device.
+  - name: serialNumber
+    type: String
+    description: Serial number of the Windows autopilot device.
+  - name: productKey
+    type: String
+    description: Product Key of the Windows autopilot device.
+  - name: hardwareIdentifier
+    type: Binary
+    description: Hardware Blob of the Windows autopilot device.
+  - name: state
+    type: microsoft.graph.importedWindowsAutopilotDeviceIdentityState
+    description: Current state of the imported device.
+relationships:
+  heading: Relationships
+  intro: |
+    None
+methods:
+  heading: Methods
+  intro: |
+    |Method|Return Type|Description
+    |:-|:-|:-|
+    |[List importedWindowsAutopilotDeviceIdentities](../api/intune_enrollment_importedwindowsautopilotdeviceidentity_list.md)|[importedWindowsAutopilotDeviceIdentity](../resources/intune_enrollment_importedwindowsautopilotdeviceidentity.md) collection|List properties and relationships of the [importedWindowsAutopilotDeviceIdentity](../resources/intune_enrollment_importedwindowsautopilotdeviceidentity.md) objects.
+    |[Get importedWindowsAutopilotDeviceIdentity](../api/intune_enrollment_importedwindowsautopilotdeviceidentity_get.md)|[importedWindowsAutopilotDeviceIdentity](../resources/intune_enrollment_importedwindowsautopilotdeviceidentity.md)|Read properties and relationships of the [importedWindowsAutopilotDeviceIdentity](../resources/intune_enrollment_importedwindowsautopilotdeviceidentity.md) object.
+    |[Create importedWindowsAutopilotDeviceIdentity](../api/intune_enrollment_importedwindowsautopilotdeviceidentity_create.md)|[importedWindowsAutopilotDeviceIdentity](../resources/intune_enrollment_importedwindowsautopilotdeviceidentity.md)|Create a new [importedWindowsAutopilotDeviceIdentity](../resources/intune_enrollment_importedwindowsautopilotdeviceidentity.md) object.
+    |[Delete importedWindowsAutopilotDeviceIdentity](../api/intune_enrollment_importedwindowsautopilotdeviceidentity_delete.md)|None|Deletes a [importedWindowsAutopilotDeviceIdentity](../resources/intune_enrollment_importedwindowsautopilotdeviceidentity.md).
+    |[Update importedWindowsAutopilotDeviceIdentity](../api/intune_enrollment_importedwindowsautopilotdeviceidentity_update.md)|[importedWindowsAutopilotDeviceIdentity](../resources/intune_enrollment_importedwindowsautopilotdeviceidentity.md)|Update the properties of a [importedWindowsAutopilotDeviceIdentity](../resources/intune_enrollment_importedwindowsautopilotdeviceidentity.md) object.

@@ -1,0 +1,62 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/intune_shared_deviceappmanagement_get.md
+top:
+  heading: Get deviceAppManagement
+  intro: |
+    Read properties and relationships of the [deviceAppManagement](../resources/intune_shared_deviceappmanagement.md) object.
+permissions:
+  heading: Prerequisites
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).  Note that the appropriate permission varies according to the workflow.
+httpRequest:
+  heading: HTTP Request
+  samplePaths: |
+    ```http
+    GET /deviceAppManagement
+    ```
+    
+queryParameters:
+  heading: Optional query parameters
+  intro: |
+    This method supports the [OData Query Parameters](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+httpHeaders:
+  heading: Request headers
+  table:
+  - name: Authorization
+    type: String
+    description: 
+  - name: Accept
+    type: String
+    description: 
+Request body:
+  heading: Request body
+  intro: |
+    Do not supply a request body for this method.
+Response:
+  heading: Response
+  intro: |
+    If successful, this method returns a `200 OK` response code and [deviceAppManagement](../resources/intune_shared_deviceappmanagement.md) object in the response body.
+examples:
+  - Example:
+      heading: Example
+      - request:
+          heading: Request
+          intro: |
+            Here is an example of the request.
+            GET https://graph.microsoft.com/v1.0/deviceAppManagement
+
+      - response:
+          heading: Response
+          intro: |
+            Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+            HTTP/1.1 200 OK
+            Content-Type: application/json
+            Content-Length: 133
+            
+            {
+              "value": {
+                "@odata.type": "#microsoft.graph.deviceAppManagement",
+                "id": "bbb801a3-01a3-bbb8-a301-b8bba301b8bb"
+              }
+            }
+

@@ -1,0 +1,39 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/verifieddomain.md
+top:
+  heading: verifiedDomain resource type
+  intro: |
+    Specifies a domain for a tenant. The **verifiedDomains** property of the [organization](organization.md) entity is a collection of **VerifiedDomain**.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource
+  resourceDefinition: |
+    ```json
+    {
+      "capabilities": "string",
+      "isDefault": true,
+      "isInitial": true,
+      "name": "string",
+      "type": "string"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: capabilities
+    type: String
+    description: For example, “Email”, “OfficeCommunicationsOnline”.
+  - name: isDefault
+    type: Boolean
+    description: true if this is the default domain associated with the tenant; otherwise, false.
+  - name: isInitial
+    type: Boolean
+    description: true if this is the initial domain associated with the tenant; otherwise, false
+  - name: name
+    type: String
+    description: The domain name; for example, “contoso.onmicrosoft.com”
+  - name: type
+    type: String
+    description: For example, “Managed”.

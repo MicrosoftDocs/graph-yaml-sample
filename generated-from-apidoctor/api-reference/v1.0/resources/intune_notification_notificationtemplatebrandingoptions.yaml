@@ -1,0 +1,21 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_notification_notificationtemplatebrandingoptions.md
+top:
+  heading: notificationTemplateBrandingOptions enum type
+  intro: |
+    Branding Options for the Message Template. Branding is defined in the Intune Admin Console.
+enum:
+  heading: notificationTemplateBrandingOptions flags
+  table:
+  - member: none
+    value: 0
+    description: No Branding.
+  - member: includeCompanyLogo
+    value: 1
+    description: Include Company Logo.
+  - member: includeCompanyName
+    value: 2
+    description: Include Company Name.
+  - member: includeContactInformation
+    value: 4
+    description: Include Contact Info.

@@ -1,0 +1,17 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_bitlockerencryptionmethod.md
+top:
+  heading: bitLockerEncryptionMethod enum type
+  intro: |
+    BitLockerEncryptionMethod types
+enum:
+  heading: Members
+  table:
+  - member: aesCbc128
+    description: AES-CBC 128-bit.
+  - member: aesCbc256
+    description: AES-CBC 256-bit.
+  - member: xtsAes128
+    description: XTS-AES 128-bit.
+  - member: xtsAes256
+    description: XTS-AES 256-bit.

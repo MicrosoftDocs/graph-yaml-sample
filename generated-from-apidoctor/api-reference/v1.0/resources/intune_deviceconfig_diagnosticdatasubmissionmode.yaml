@@ -1,0 +1,19 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_diagnosticdatasubmissionmode.md
+top:
+  heading: diagnosticDataSubmissionMode enum type
+  intro: |
+    Allow the device to send diagnostic and usage telemetry data, such as Watson.
+enum:
+  heading: Members
+  table:
+  - member: userDefined
+    description: Allow the user to set.
+  - member: none
+    description: No telemetry data is sent from OS components. Note: This value is only applicable to enterprise and server devices. Using this setting on other devices is equivalent to setting the value of 1.
+  - member: basic
+    description: Sends basic telemetry data.
+  - member: enhanced
+    description: Sends enhanced telemetry data including usage and insights data.
+  - member: full
+    description: Sends full telemetry data including diagnostic data, such as system state.

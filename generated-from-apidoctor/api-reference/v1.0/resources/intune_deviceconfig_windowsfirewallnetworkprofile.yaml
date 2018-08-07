@@ -1,0 +1,72 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_windowsfirewallnetworkprofile.md
+top:
+  heading: windowsFirewallNetworkProfile resource type
+  intro: |
+    Windows Firewall Profile Policies.
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.windowsFirewallNetworkProfile",
+      "firewallEnabled": "String",
+      "stealthModeBlocked": true,
+      "incomingTrafficBlocked": true,
+      "unicastResponsesToMulticastBroadcastsBlocked": true,
+      "inboundNotificationsBlocked": true,
+      "authorizedApplicationRulesFromGroupPolicyMerged": true,
+      "globalPortRulesFromGroupPolicyMerged": true,
+      "connectionSecurityRulesFromGroupPolicyMerged": true,
+      "outboundConnectionsBlocked": true,
+      "inboundConnectionsBlocked": true,
+      "securedPacketExemptionAllowed": true,
+      "policyRulesFromGroupPolicyMerged": true
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: firewallEnabled
+    type: microsoft.graph.stateManagementSetting
+    description: Turn on the firewall and advanced security enforcement. The possible values are: notConfigured, blocked, allowed.
+  - name: stealthModeBlocked
+    type: Boolean
+    description: Prevent the server from operating in stealth mode
+  - name: incomingTrafficBlocked
+    type: Boolean
+    description: Configures the firewall to block all incoming traffic regardless of other policy settings
+  - name: unicastResponsesToMulticastBroadcastsBlocked
+    type: Boolean
+    description: Configures the firewall to block unicast responses to multicast broadcast traffic
+  - name: inboundNotificationsBlocked
+    type: Boolean
+    description: Prevents the firewall from displaying notifications when an application is blocked from listening on a port
+  - name: authorizedApplicationRulesFromGroupPolicyMerged
+    type: Boolean
+    description: Configures the firewall to merge authorized application rules from group policy with those from local store instead of ignoring the local store rules
+  - name: globalPortRulesFromGroupPolicyMerged
+    type: Boolean
+    description: Configures the firewall to merge global port rules from group policy with those from local store instead of ignoring the local store rules
+  - name: connectionSecurityRulesFromGroupPolicyMerged
+    type: Boolean
+    description: Configures the firewall to merge connection security rules from group policy with those from local store instead of ignoring the local store rules
+  - name: outboundConnectionsBlocked
+    type: Boolean
+    description: Configures the firewall to block all outgoing connections by default
+  - name: inboundConnectionsBlocked
+    type: Boolean
+    description: Configures the firewall to block all incoming connections by default
+  - name: securedPacketExemptionAllowed
+    type: Boolean
+    description: Configures the firewall to allow the host computer to respond to unsolicited network traffic of that traffic is secured by IPSec even when stealthModeBlocked is set to true
+  - name: policyRulesFromGroupPolicyMerged
+    type: Boolean
+    description: Configures the firewall to merge Firewall Rule policies from group policy with those from local store instead of ignoring the local store rules
+relationships:
+  heading: Relationships
+  intro: |
+    None

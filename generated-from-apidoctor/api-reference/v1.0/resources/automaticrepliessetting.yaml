@@ -1,0 +1,45 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/automaticrepliessetting.md
+top:
+  heading: automaticRepliesSetting resource type
+  intro: |
+    Configuration settings to automatically notify the sender of an incoming email with a message from the 
+    signed-in user. For example, an automatic reply to notify that the signed-in user is unavailable to 
+    respond to emails. 
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "externalAudience": "String",
+      "externalReplyMessage": "string",
+      "internalReplyMessage": "string",
+      "scheduledEndDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
+      "scheduledStartDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
+      "status": "String"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: externalAudience
+    type: microsoft.graph.externalAudienceScope
+    description: The set of audience external to the signed-in user's organization who will receive the ExternalReplyMessage, if Status is AlwaysEnabled or Scheduled. The possible values are: none, contactsOnly, all.
+  - name: externalReplyMessage
+    type: String
+    description: The automatic reply to send to the specified external audience, if Status is AlwaysEnabled or Scheduled.
+  - name: internalReplyMessage
+    type: String
+    description: The automatic reply to send to the audience internal to the signed-in user's organization, if Status is AlwaysEnabled or Scheduled.
+  - name: scheduledEndDateTime
+    type: microsoft.graph.dateTimeTimeZone
+    description: The date and time that automatic replies are set to end, if Status is set to Scheduled.
+  - name: scheduledStartDateTime
+    type: microsoft.graph.dateTimeTimeZone
+    description: The date and time that automatic replies are set to begin, if Status is set to Scheduled.
+  - name: status
+    type: microsoft.graph.automaticRepliesStatus
+    description: Configurations status for automatic replies. The possible values are: disabled, alwaysEnabled, scheduled.

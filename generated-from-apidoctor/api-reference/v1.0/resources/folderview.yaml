@@ -1,0 +1,43 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/folderview.md
+top:
+  heading: FolderView resource type
+  intro: |
+    The **FolderView** resource provides or sets recommendations on the user-experience of a folder.
+    It is available from the [folder][folder-facet] property of [driveItem][item-resource] resources.
+resource:
+  heading: JSON representation
+  resourceDefinition: |
+    ```json
+    {
+      "sortBy": "default | name | type | size | takenOrCreatedDateTime | lastModifiedDateTime | sequence",
+      "sortOrder": "ascending | descending",
+      "viewType": "default | icons | details | thumbnails"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: sortBy
+    type: String
+    description: The method by which the folder should be sorted.
+  - name: sortOrder
+    type: String
+    description: If true, indicates that items should be sorted in descending order. Otherwise, items should be sorted ascending.
+  - name: viewType
+    type: String
+    description: The type of view that should be used to represent the folder.
+  outro: |
+    You can use the _sortBy_ property to control the sort order of the items in applications that respect the **viewType** facet.
+    ### sortBy options
+    The following values are defined for the **sortBy** property.
+    |Value|Description
+    | ------------------------ -| -
+    |`default`|The default sort order of the application.
+    |`name`|Items should be arranged by the **name** property of the items.
+    |`type`|Items should be arranged by the type of item.
+    |`size`|Items should be arranged by the **size** property of the items.
+    |`takenOrCreatedDateTime`|Items should be arranged by the **takenDateTime** property of the **photo** facet. If not available, the **createdDateTime** property should be used.
+    |`lastModifiedDateTime`|Items should be arranged by the **lastModifiedDateTime** property of the items.
+    |`sequence`|Items follow a custom sequence specified by the user.

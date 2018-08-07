@@ -1,0 +1,897 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_windows10generalconfiguration.md
+top:
+  heading: windows10GeneralConfiguration resource type
+  intro: |
+    This topic provides descriptions of the declared methods, properties and relationships exposed by the windows10GeneralConfiguration resource.
+    Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.windows10GeneralConfiguration",
+      "id": "String (identifier)",
+      "lastModifiedDateTime": "String (timestamp)",
+      "createdDateTime": "String (timestamp)",
+      "description": "String",
+      "displayName": "String",
+      "version": 1024,
+      "enterpriseCloudPrintDiscoveryEndPoint": "String",
+      "enterpriseCloudPrintOAuthAuthority": "String",
+      "enterpriseCloudPrintOAuthClientIdentifier": "String",
+      "enterpriseCloudPrintResourceIdentifier": "String",
+      "enterpriseCloudPrintDiscoveryMaxLimit": 1024,
+      "enterpriseCloudPrintMopriaDiscoveryResourceIdentifier": "String",
+      "searchBlockDiacritics": true,
+      "searchDisableAutoLanguageDetection": true,
+      "searchDisableIndexingEncryptedItems": true,
+      "searchEnableRemoteQueries": true,
+      "searchDisableIndexerBackoff": true,
+      "searchDisableIndexingRemovableDrive": true,
+      "searchEnableAutomaticIndexSizeManangement": true,
+      "diagnosticsDataSubmissionMode": "String",
+      "oneDriveDisableFileSync": true,
+      "smartScreenEnableAppInstallControl": true,
+      "personalizationDesktopImageUrl": "String",
+      "personalizationLockScreenImageUrl": "String",
+      "bluetoothAllowedServices": [
+        "String"
+      ],
+      "bluetoothBlockAdvertising": true,
+      "bluetoothBlockDiscoverableMode": true,
+      "bluetoothBlockPrePairing": true,
+      "edgeBlockAutofill": true,
+      "edgeBlocked": true,
+      "edgeCookiePolicy": "String",
+      "edgeBlockDeveloperTools": true,
+      "edgeBlockSendingDoNotTrackHeader": true,
+      "edgeBlockExtensions": true,
+      "edgeBlockInPrivateBrowsing": true,
+      "edgeBlockJavaScript": true,
+      "edgeBlockPasswordManager": true,
+      "edgeBlockAddressBarDropdown": true,
+      "edgeBlockCompatibilityList": true,
+      "edgeClearBrowsingDataOnExit": true,
+      "edgeAllowStartPagesModification": true,
+      "edgeDisableFirstRunPage": true,
+      "edgeBlockLiveTileDataCollection": true,
+      "edgeSyncFavoritesWithInternetExplorer": true,
+      "cellularBlockDataWhenRoaming": true,
+      "cellularBlockVpn": true,
+      "cellularBlockVpnWhenRoaming": true,
+      "defenderBlockEndUserAccess": true,
+      "defenderDaysBeforeDeletingQuarantinedMalware": 1024,
+      "defenderDetectedMalwareActions": {
+        "@odata.type": "microsoft.graph.defenderDetectedMalwareActions",
+        "lowSeverity": "String",
+        "moderateSeverity": "String",
+        "highSeverity": "String",
+        "severeSeverity": "String"
+      },
+      "defenderSystemScanSchedule": "String",
+      "defenderFilesAndFoldersToExclude": [
+        "String"
+      ],
+      "defenderFileExtensionsToExclude": [
+        "String"
+      ],
+      "defenderScanMaxCpu": 1024,
+      "defenderMonitorFileActivity": "String",
+      "defenderProcessesToExclude": [
+        "String"
+      ],
+      "defenderPromptForSampleSubmission": "String",
+      "defenderRequireBehaviorMonitoring": true,
+      "defenderRequireCloudProtection": true,
+      "defenderRequireNetworkInspectionSystem": true,
+      "defenderRequireRealTimeMonitoring": true,
+      "defenderScanArchiveFiles": true,
+      "defenderScanDownloads": true,
+      "defenderScanNetworkFiles": true,
+      "defenderScanIncomingMail": true,
+      "defenderScanMappedNetworkDrivesDuringFullScan": true,
+      "defenderScanRemovableDrivesDuringFullScan": true,
+      "defenderScanScriptsLoadedInInternetExplorer": true,
+      "defenderSignatureUpdateIntervalInHours": 1024,
+      "defenderScanType": "String",
+      "defenderScheduledScanTime": "String (time of day)",
+      "defenderScheduledQuickScanTime": "String (time of day)",
+      "defenderCloudBlockLevel": "String",
+      "lockScreenAllowTimeoutConfiguration": true,
+      "lockScreenBlockActionCenterNotifications": true,
+      "lockScreenBlockCortana": true,
+      "lockScreenBlockToastNotifications": true,
+      "lockScreenTimeoutInSeconds": 1024,
+      "passwordBlockSimple": true,
+      "passwordExpirationDays": 1024,
+      "passwordMinimumLength": 1024,
+      "passwordMinutesOfInactivityBeforeScreenTimeout": 1024,
+      "passwordMinimumCharacterSetCount": 1024,
+      "passwordPreviousPasswordBlockCount": 1024,
+      "passwordRequired": true,
+      "passwordRequireWhenResumeFromIdleState": true,
+      "passwordRequiredType": "String",
+      "passwordSignInFailureCountBeforeFactoryReset": 1024,
+      "privacyAdvertisingId": "String",
+      "privacyAutoAcceptPairingAndConsentPrompts": true,
+      "privacyBlockInputPersonalization": true,
+      "startBlockUnpinningAppsFromTaskbar": true,
+      "startMenuAppListVisibility": "String",
+      "startMenuHideChangeAccountSettings": true,
+      "startMenuHideFrequentlyUsedApps": true,
+      "startMenuHideHibernate": true,
+      "startMenuHideLock": true,
+      "startMenuHidePowerButton": true,
+      "startMenuHideRecentJumpLists": true,
+      "startMenuHideRecentlyAddedApps": true,
+      "startMenuHideRestartOptions": true,
+      "startMenuHideShutDown": true,
+      "startMenuHideSignOut": true,
+      "startMenuHideSleep": true,
+      "startMenuHideSwitchAccount": true,
+      "startMenuHideUserTile": true,
+      "startMenuLayoutEdgeAssetsXml": "binary",
+      "startMenuLayoutXml": "binary",
+      "startMenuMode": "String",
+      "startMenuPinnedFolderDocuments": "String",
+      "startMenuPinnedFolderDownloads": "String",
+      "startMenuPinnedFolderFileExplorer": "String",
+      "startMenuPinnedFolderHomeGroup": "String",
+      "startMenuPinnedFolderMusic": "String",
+      "startMenuPinnedFolderNetwork": "String",
+      "startMenuPinnedFolderPersonalFolder": "String",
+      "startMenuPinnedFolderPictures": "String",
+      "startMenuPinnedFolderSettings": "String",
+      "startMenuPinnedFolderVideos": "String",
+      "settingsBlockSettingsApp": true,
+      "settingsBlockSystemPage": true,
+      "settingsBlockDevicesPage": true,
+      "settingsBlockNetworkInternetPage": true,
+      "settingsBlockPersonalizationPage": true,
+      "settingsBlockAccountsPage": true,
+      "settingsBlockTimeLanguagePage": true,
+      "settingsBlockEaseOfAccessPage": true,
+      "settingsBlockPrivacyPage": true,
+      "settingsBlockUpdateSecurityPage": true,
+      "settingsBlockAppsPage": true,
+      "settingsBlockGamingPage": true,
+      "windowsSpotlightBlockConsumerSpecificFeatures": true,
+      "windowsSpotlightBlocked": true,
+      "windowsSpotlightBlockOnActionCenter": true,
+      "windowsSpotlightBlockTailoredExperiences": true,
+      "windowsSpotlightBlockThirdPartyNotifications": true,
+      "windowsSpotlightBlockWelcomeExperience": true,
+      "windowsSpotlightBlockWindowsTips": true,
+      "windowsSpotlightConfigureOnLockScreen": "String",
+      "networkProxyApplySettingsDeviceWide": true,
+      "networkProxyDisableAutoDetect": true,
+      "networkProxyAutomaticConfigurationUrl": "String",
+      "networkProxyServer": {
+        "@odata.type": "microsoft.graph.windows10NetworkProxyServer",
+        "address": "String",
+        "exceptions": [
+          "String"
+        ],
+        "useForLocalAddresses": true
+      },
+      "accountsBlockAddingNonMicrosoftAccountEmail": true,
+      "antiTheftModeBlocked": true,
+      "bluetoothBlocked": true,
+      "cameraBlocked": true,
+      "connectedDevicesServiceBlocked": true,
+      "certificatesBlockManualRootCertificateInstallation": true,
+      "copyPasteBlocked": true,
+      "cortanaBlocked": true,
+      "deviceManagementBlockFactoryResetOnMobile": true,
+      "deviceManagementBlockManualUnenroll": true,
+      "safeSearchFilter": "String",
+      "edgeBlockPopups": true,
+      "edgeBlockSearchSuggestions": true,
+      "edgeBlockSendingIntranetTrafficToInternetExplorer": true,
+      "edgeRequireSmartScreen": true,
+      "edgeEnterpriseModeSiteListLocation": "String",
+      "edgeFirstRunUrl": "String",
+      "edgeSearchEngine": {
+        "@odata.type": "microsoft.graph.edgeSearchEngineBase"
+      },
+      "edgeHomepageUrls": [
+        "String"
+      ],
+      "edgeBlockAccessToAboutFlags": true,
+      "smartScreenBlockPromptOverride": true,
+      "smartScreenBlockPromptOverrideForFiles": true,
+      "webRtcBlockLocalhostIpAddress": true,
+      "internetSharingBlocked": true,
+      "settingsBlockAddProvisioningPackage": true,
+      "settingsBlockRemoveProvisioningPackage": true,
+      "settingsBlockChangeSystemTime": true,
+      "settingsBlockEditDeviceName": true,
+      "settingsBlockChangeRegion": true,
+      "settingsBlockChangeLanguage": true,
+      "settingsBlockChangePowerSleep": true,
+      "locationServicesBlocked": true,
+      "microsoftAccountBlocked": true,
+      "microsoftAccountBlockSettingsSync": true,
+      "nfcBlocked": true,
+      "resetProtectionModeBlocked": true,
+      "screenCaptureBlocked": true,
+      "storageBlockRemovableStorage": true,
+      "storageRequireMobileDeviceEncryption": true,
+      "usbBlocked": true,
+      "voiceRecordingBlocked": true,
+      "wiFiBlockAutomaticConnectHotspots": true,
+      "wiFiBlocked": true,
+      "wiFiBlockManualConfiguration": true,
+      "wiFiScanInterval": 1024,
+      "wirelessDisplayBlockProjectionToThisDevice": true,
+      "wirelessDisplayBlockUserInputFromReceiver": true,
+      "wirelessDisplayRequirePinForPairing": true,
+      "windowsStoreBlocked": true,
+      "appsAllowTrustedAppsSideloading": "String",
+      "windowsStoreBlockAutoUpdate": true,
+      "developerUnlockSetting": "String",
+      "sharedUserAppDataAllowed": true,
+      "appsBlockWindowsStoreOriginatedApps": true,
+      "windowsStoreEnablePrivateStoreOnly": true,
+      "storageRestrictAppDataToSystemVolume": true,
+      "storageRestrictAppInstallToSystemVolume": true,
+      "gameDvrBlocked": true,
+      "experienceBlockDeviceDiscovery": true,
+      "experienceBlockErrorDialogWhenNoSIM": true,
+      "experienceBlockTaskSwitcher": true,
+      "logonBlockFastUserSwitching": true
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: id
+    type: String
+    description: Key of the entity. Inherited from deviceConfiguration
+  - name: lastModifiedDateTime
+    type: DateTimeOffset
+    description: DateTime the object was last modified. Inherited from deviceConfiguration
+  - name: createdDateTime
+    type: DateTimeOffset
+    description: DateTime the object was created. Inherited from deviceConfiguration
+  - name: description
+    type: String
+    description: Admin provided description of the Device Configuration. Inherited from deviceConfiguration
+  - name: displayName
+    type: String
+    description: Admin provided name of the device configuration. Inherited from deviceConfiguration
+  - name: version
+    type: Int32
+    description: Version of the device configuration. Inherited from deviceConfiguration
+  - name: enterpriseCloudPrintDiscoveryEndPoint
+    type: String
+    description: Endpoint for discovering cloud printers.
+  - name: enterpriseCloudPrintOAuthAuthority
+    type: String
+    description: Authentication endpoint for acquiring OAuth tokens.
+  - name: enterpriseCloudPrintOAuthClientIdentifier
+    type: String
+    description: GUID of a client application authorized to retrieve OAuth tokens from the OAuth Authority.
+  - name: enterpriseCloudPrintResourceIdentifier
+    type: String
+    description: OAuth resource URI for print service as configured in the Azure portal.
+  - name: enterpriseCloudPrintDiscoveryMaxLimit
+    type: Int32
+    description: Maximum number of printers that should be queried from a discovery endpoint. This is a mobile only setting. Valid values 1 to 65535
+  - name: enterpriseCloudPrintMopriaDiscoveryResourceIdentifier
+    type: String
+    description: OAuth resource URI for printer discovery service as configured in Azure portal.
+  - name: searchBlockDiacritics
+    type: Boolean
+    description: Specifies if search can use diacritics.
+  - name: searchDisableAutoLanguageDetection
+    type: Boolean
+    description: Specifies whether to use automatic language detection when indexing content and properties.
+  - name: searchDisableIndexingEncryptedItems
+    type: Boolean
+    description: Indicates whether or not to block indexing of WIP-protected items to prevent them from appearing in search results for Cortana or Explorer.
+  - name: searchEnableRemoteQueries
+    type: Boolean
+    description: Indicates whether or not to block remote queries of this computer’s index.
+  - name: searchDisableIndexerBackoff
+    type: Boolean
+    description: Indicates whether or not to disable the search indexer backoff feature.
+  - name: searchDisableIndexingRemovableDrive
+    type: Boolean
+    description: Indicates whether or not to allow users to add locations on removable drives to libraries and to be indexed.
+  - name: searchEnableAutomaticIndexSizeManangement
+    type: Boolean
+    description: Specifies minimum amount of hard drive space on the same drive as the index location before indexing stops.
+  - name: diagnosticsDataSubmissionMode
+    type: microsoft.graph.diagnosticDataSubmissionMode
+    description: Gets or sets a value allowing the device to send diagnostic and usage telemetry data, such as Watson. The possible values are: userDefined, none, basic, enhanced, full.
+  - name: oneDriveDisableFileSync
+    type: Boolean
+    description: Gets or sets a value allowing IT admins to prevent apps and features from working with files on OneDrive.
+  - name: smartScreenEnableAppInstallControl
+    type: Boolean
+    description: Allows IT Admins to control whether users are allowed to install apps from places other than the Store.
+  - name: personalizationDesktopImageUrl
+    type: String
+    description: A http or https Url to a jpg, jpeg or png image that needs to be downloaded and used as the Desktop Image or a file Url to a local image on the file system that needs to used as the Desktop Image.
+  - name: personalizationLockScreenImageUrl
+    type: String
+    description: A http or https Url to a jpg, jpeg or png image that neeeds to be downloaded and used as the Lock Screen Image or a file Url to a local image on the file system that needs to be used as the Lock Screen Image.
+  - name: bluetoothAllowedServices
+    type: Collection(String)
+    description: Specify a list of allowed Bluetooth services and profiles in hex formatted strings.
+  - name: bluetoothBlockAdvertising
+    type: Boolean
+    description: Whether or not to Block the user from using bluetooth advertising.
+  - name: bluetoothBlockDiscoverableMode
+    type: Boolean
+    description: Whether or not to Block the user from using bluetooth discoverable mode.
+  - name: bluetoothBlockPrePairing
+    type: Boolean
+    description: Whether or not to block specific bundled Bluetooth peripherals to automatically pair with the host device.
+  - name: edgeBlockAutofill
+    type: Boolean
+    description: Indicates whether or not to block auto fill.
+  - name: edgeBlocked
+    type: Boolean
+    description: Indicates whether or not to Block the user from using the Edge browser.
+  - name: edgeCookiePolicy
+    type: microsoft.graph.edgeCookiePolicy
+    description: Indicates which cookies to block in the Edge browser. The possible values are: userDefined, allow, blockThirdParty, blockAll.
+  - name: edgeBlockDeveloperTools
+    type: Boolean
+    description: Indicates whether or not to block developer tools in the Edge browser.
+  - name: edgeBlockSendingDoNotTrackHeader
+    type: Boolean
+    description: Indicates whether or not to Block the user from sending the do not track header.
+  - name: edgeBlockExtensions
+    type: Boolean
+    description: Indicates whether or not to block extensions in the Edge browser.
+  - name: edgeBlockInPrivateBrowsing
+    type: Boolean
+    description: Indicates whether or not to block InPrivate browsing on corporate networks, in the Edge browser.
+  - name: edgeBlockJavaScript
+    type: Boolean
+    description: Indicates whether or not to Block the user from using JavaScript.
+  - name: edgeBlockPasswordManager
+    type: Boolean
+    description: Indicates whether or not to Block password manager.
+  - name: edgeBlockAddressBarDropdown
+    type: Boolean
+    description: Block the address bar dropdown functionality in Microsoft Edge. Disable this settings to minimize network connections from Microsoft Edge to Microsoft services.
+  - name: edgeBlockCompatibilityList
+    type: Boolean
+    description: Block Microsoft compatibility list in Microsoft Edge. This list from Microsoft helps Edge properly display sites with known compatibility issues.
+  - name: edgeClearBrowsingDataOnExit
+    type: Boolean
+    description: Clear browsing data on exiting Microsoft Edge.
+  - name: edgeAllowStartPagesModification
+    type: Boolean
+    description: Allow users to change Start pages on Edge. Use the EdgeHomepageUrls to specify the Start pages that the user would see by default when they open Edge.
+  - name: edgeDisableFirstRunPage
+    type: Boolean
+    description: Block the Microsoft web page that opens on the first use of Microsoft Edge. This policy allows enterprises, like those enrolled in zero emissions configurations, to block this page.
+  - name: edgeBlockLiveTileDataCollection
+    type: Boolean
+    description: Block the collection of information by Microsoft for live tile creation when users pin a site to Start from Microsoft Edge.
+  - name: edgeSyncFavoritesWithInternetExplorer
+    type: Boolean
+    description: Enable favorites sync between Internet Explorer and Microsoft Edge. Additions, deletions, modifications and order changes to favorites are shared between browsers.
+  - name: cellularBlockDataWhenRoaming
+    type: Boolean
+    description: Whether or not to Block the user from using data over cellular while roaming.
+  - name: cellularBlockVpn
+    type: Boolean
+    description: Whether or not to Block the user from using VPN over cellular.
+  - name: cellularBlockVpnWhenRoaming
+    type: Boolean
+    description: Whether or not to Block the user from using VPN when roaming over cellular.
+  - name: defenderBlockEndUserAccess
+    type: Boolean
+    description: Whether or not to block end user access to Defender.
+  - name: defenderDaysBeforeDeletingQuarantinedMalware
+    type: Int32
+    description: Number of days before deleting quarantined malware. Valid values 0 to 90
+  - name: defenderDetectedMalwareActions
+    type: microsoft.graph.defenderDetectedMalwareActions
+    description: Gets or sets Defender’s actions to take on detected Malware per threat level.
+  - name: defenderSystemScanSchedule
+    type: microsoft.graph.weeklySchedule
+    description: Defender day of the week for the system scan. The possible values are: userDefined, everyday, sunday, monday, tuesday, wednesday, thursday, friday, saturday.
+  - name: defenderFilesAndFoldersToExclude
+    type: Collection(String)
+    description: Files and folder to exclude from scans and real time protection.
+  - name: defenderFileExtensionsToExclude
+    type: Collection(String)
+    description: File extensions to exclude from scans and real time protection.
+  - name: defenderScanMaxCpu
+    type: Int32
+    description: Max CPU usage percentage during scan. Valid values 0 to 100
+  - name: defenderMonitorFileActivity
+    type: microsoft.graph.defenderMonitorFileActivity
+    description: Value for monitoring file activity. The possible values are: userDefined, disable, monitorAllFiles, monitorIncomingFilesOnly, monitorOutgoingFilesOnly.
+  - name: defenderProcessesToExclude
+    type: Collection(String)
+    description: Processes to exclude from scans and real time protection.
+  - name: defenderPromptForSampleSubmission
+    type: microsoft.graph.defenderPromptForSampleSubmission
+    description: The configuration for how to prompt user for sample submission. The possible values are: userDefined, alwaysPrompt, promptBeforeSendingPersonalData, neverSendData, sendAllDataWithoutPrompting.
+  - name: defenderRequireBehaviorMonitoring
+    type: Boolean
+    description: Indicates whether or not to require behavior monitoring.
+  - name: defenderRequireCloudProtection
+    type: Boolean
+    description: Indicates whether or not to require cloud protection.
+  - name: defenderRequireNetworkInspectionSystem
+    type: Boolean
+    description: Indicates whether or not to require network inspection system.
+  - name: defenderRequireRealTimeMonitoring
+    type: Boolean
+    description: Indicates whether or not to require real time monitoring.
+  - name: defenderScanArchiveFiles
+    type: Boolean
+    description: Indicates whether or not to scan archive files.
+  - name: defenderScanDownloads
+    type: Boolean
+    description: Indicates whether or not to scan downloads.
+  - name: defenderScanNetworkFiles
+    type: Boolean
+    description: Indicates whether or not to scan files opened from a network folder.
+  - name: defenderScanIncomingMail
+    type: Boolean
+    description: Indicates whether or not to scan incoming mail messages.
+  - name: defenderScanMappedNetworkDrivesDuringFullScan
+    type: Boolean
+    description: Indicates whether or not to scan mapped network drives during full scan.
+  - name: defenderScanRemovableDrivesDuringFullScan
+    type: Boolean
+    description: Indicates whether or not to scan removable drives during full scan.
+  - name: defenderScanScriptsLoadedInInternetExplorer
+    type: Boolean
+    description: Indicates whether or not to scan scripts loaded in Internet Explorer browser.
+  - name: defenderSignatureUpdateIntervalInHours
+    type: Int32
+    description: The signature update interval in hours. Specify 0 not to check. Valid values 0 to 24
+  - name: defenderScanType
+    type: microsoft.graph.defenderScanType
+    description: The defender system scan type. The possible values are: userDefined, disabled, quick, full.
+  - name: defenderScheduledScanTime
+    type: TimeOfDay
+    description: The defender time for the system scan.
+  - name: defenderScheduledQuickScanTime
+    type: TimeOfDay
+    description: The time to perform a daily quick scan.
+  - name: defenderCloudBlockLevel
+    type: microsoft.graph.defenderCloudBlockLevelType
+    description: Specifies the level of cloud-delivered protection. The possible values are: notConfigured, high, highPlus, zeroTolerance.
+  - name: lockScreenAllowTimeoutConfiguration
+    type: Boolean
+    description: Specify whether to show a user-configurable setting to control the screen timeout while on the lock screen of Windows 10 Mobile devices. If this policy is set to Allow, the value set by lockScreenTimeoutInSeconds is ignored.
+  - name: lockScreenBlockActionCenterNotifications
+    type: Boolean
+    description: Indicates whether or not to block action center notifications over lock screen.
+  - name: lockScreenBlockCortana
+    type: Boolean
+    description: Indicates whether or not the user can interact with Cortana using speech while the system is locked.
+  - name: lockScreenBlockToastNotifications
+    type: Boolean
+    description: Indicates whether to allow toast notifications above the device lock screen.
+  - name: lockScreenTimeoutInSeconds
+    type: Int32
+    description: Set the duration (in seconds) from the screen locking to the screen turning off for Windows 10 Mobile devices. Supported values are 11-1800. Valid values 11 to 1800
+  - name: passwordBlockSimple
+    type: Boolean
+    description: Specify whether PINs or passwords such as "1111" or "1234" are allowed. For Windows 10 desktops, it also controls the use of picture passwords.
+  - name: passwordExpirationDays
+    type: Int32
+    description: The password expiration in days. Valid values 0 to 730
+  - name: passwordMinimumLength
+    type: Int32
+    description: The minimum password length. Valid values 4 to 16
+  - name: passwordMinutesOfInactivityBeforeScreenTimeout
+    type: Int32
+    description: The minutes of inactivity before the screen times out.
+  - name: passwordMinimumCharacterSetCount
+    type: Int32
+    description: The number of character sets required in the password.
+  - name: passwordPreviousPasswordBlockCount
+    type: Int32
+    description: The number of previous passwords to prevent reuse of. Valid values 0 to 50
+  - name: passwordRequired
+    type: Boolean
+    description: Indicates whether or not to require the user to have a password.
+  - name: passwordRequireWhenResumeFromIdleState
+    type: Boolean
+    description: Indicates whether or not to require a password upon resuming from an idle state.
+  - name: passwordRequiredType
+    type: microsoft.graph.requiredPasswordType
+    description: The required password type. The possible values are: deviceDefault, alphanumeric, numeric.
+  - name: passwordSignInFailureCountBeforeFactoryReset
+    type: Int32
+    description: The number of sign in failures before factory reset. Valid values 0 to 999
+  - name: privacyAdvertisingId
+    type: microsoft.graph.stateManagementSetting
+    description: Enables or disables the use of advertising ID. Added in Windows 10, version 1607. The possible values are: notConfigured, blocked, allowed.
+  - name: privacyAutoAcceptPairingAndConsentPrompts
+    type: Boolean
+    description: Indicates whether or not to allow the automatic acceptance of the pairing and privacy user consent dialog when launching apps.
+  - name: privacyBlockInputPersonalization
+    type: Boolean
+    description: Indicates whether or not to block the usage of cloud based speech services for Cortana, Dictation, or Store applications.
+  - name: startBlockUnpinningAppsFromTaskbar
+    type: Boolean
+    description: Indicates whether or not to block the user from unpinning apps from taskbar.
+  - name: startMenuAppListVisibility
+    type: microsoft.graph.windowsStartMenuAppListVisibilityType
+    description: Setting the value of this collapses the app list, removes the app list entirely, or disables the corresponding toggle in the Settings app. The possible values are: userDefined, collapse, remove, disableSettingsApp.
+  - name: startMenuHideChangeAccountSettings
+    type: Boolean
+    description: Enabling this policy hides the change account setting from appearing in the user tile in the start menu.
+  - name: startMenuHideFrequentlyUsedApps
+    type: Boolean
+    description: Enabling this policy hides the most used apps from appearing on the start menu and disables the corresponding toggle in the Settings app.
+  - name: startMenuHideHibernate
+    type: Boolean
+    description: Enabling this policy hides hibernate from appearing in the power button in the start menu.
+  - name: startMenuHideLock
+    type: Boolean
+    description: Enabling this policy hides lock from appearing in the user tile in the start menu.
+  - name: startMenuHidePowerButton
+    type: Boolean
+    description: Enabling this policy hides the power button from appearing in the start menu.
+  - name: startMenuHideRecentJumpLists
+    type: Boolean
+    description: Enabling this policy hides recent jump lists from appearing on the start menu/taskbar and disables the corresponding toggle in the Settings app.
+  - name: startMenuHideRecentlyAddedApps
+    type: Boolean
+    description: Enabling this policy hides recently added apps from appearing on the start menu and disables the corresponding toggle in the Settings app.
+  - name: startMenuHideRestartOptions
+    type: Boolean
+    description: Enabling this policy hides “Restart/Update and Restart” from appearing in the power button in the start menu.
+  - name: startMenuHideShutDown
+    type: Boolean
+    description: Enabling this policy hides shut down/update and shut down from appearing in the power button in the start menu.
+  - name: startMenuHideSignOut
+    type: Boolean
+    description: Enabling this policy hides sign out from appearing in the user tile in the start menu.
+  - name: startMenuHideSleep
+    type: Boolean
+    description: Enabling this policy hides sleep from appearing in the power button in the start menu.
+  - name: startMenuHideSwitchAccount
+    type: Boolean
+    description: Enabling this policy hides switch account from appearing in the user tile in the start menu.
+  - name: startMenuHideUserTile
+    type: Boolean
+    description: Enabling this policy hides the user tile from appearing in the start menu.
+  - name: startMenuLayoutEdgeAssetsXml
+    type: Binary
+    description: This policy setting allows you to import Edge assets to be used with startMenuLayoutXml policy. Start layout can contain secondary tile from Edge app which looks for Edge local asset file. Edge local asset would not exist and cause Edge secondary tile to appear empty in this case. This policy only gets applied when startMenuLayoutXml policy is modified. The value should be a UTF-8 Base64 encoded byte array.
+  - name: startMenuLayoutXml
+    type: Binary
+    description: Allows admins to override the default Start menu layout and prevents the user from changing it. The layout is modified by specifying an XML file based on a layout modification schema. XML needs to be in a UTF8 encoded byte array format.
+  - name: startMenuMode
+    type: microsoft.graph.windowsStartMenuModeType
+    description: Allows admins to decide how the Start menu is displayed. The possible values are: userDefined, fullScreen, nonFullScreen.
+  - name: startMenuPinnedFolderDocuments
+    type: microsoft.graph.visibilitySetting
+    description: Enforces the visibility (Show/Hide) of the Documents folder shortcut on the Start menu. The possible values are: notConfigured, hide, show.
+  - name: startMenuPinnedFolderDownloads
+    type: microsoft.graph.visibilitySetting
+    description: Enforces the visibility (Show/Hide) of the Downloads folder shortcut on the Start menu. The possible values are: notConfigured, hide, show.
+  - name: startMenuPinnedFolderFileExplorer
+    type: microsoft.graph.visibilitySetting
+    description: Enforces the visibility (Show/Hide) of the FileExplorer shortcut on the Start menu. The possible values are: notConfigured, hide, show.
+  - name: startMenuPinnedFolderHomeGroup
+    type: microsoft.graph.visibilitySetting
+    description: Enforces the visibility (Show/Hide) of the HomeGroup folder shortcut on the Start menu. The possible values are: notConfigured, hide, show.
+  - name: startMenuPinnedFolderMusic
+    type: microsoft.graph.visibilitySetting
+    description: Enforces the visibility (Show/Hide) of the Music folder shortcut on the Start menu. The possible values are: notConfigured, hide, show.
+  - name: startMenuPinnedFolderNetwork
+    type: microsoft.graph.visibilitySetting
+    description: Enforces the visibility (Show/Hide) of the Network folder shortcut on the Start menu. The possible values are: notConfigured, hide, show.
+  - name: startMenuPinnedFolderPersonalFolder
+    type: microsoft.graph.visibilitySetting
+    description: Enforces the visibility (Show/Hide) of the PersonalFolder shortcut on the Start menu. The possible values are: notConfigured, hide, show.
+  - name: startMenuPinnedFolderPictures
+    type: microsoft.graph.visibilitySetting
+    description: Enforces the visibility (Show/Hide) of the Pictures folder shortcut on the Start menu. The possible values are: notConfigured, hide, show.
+  - name: startMenuPinnedFolderSettings
+    type: microsoft.graph.visibilitySetting
+    description: Enforces the visibility (Show/Hide) of the Settings folder shortcut on the Start menu. The possible values are: notConfigured, hide, show.
+  - name: startMenuPinnedFolderVideos
+    type: microsoft.graph.visibilitySetting
+    description: Enforces the visibility (Show/Hide) of the Videos folder shortcut on the Start menu. The possible values are: notConfigured, hide, show.
+  - name: settingsBlockSettingsApp
+    type: Boolean
+    description: Indicates whether or not to block access to Settings app.
+  - name: settingsBlockSystemPage
+    type: Boolean
+    description: Indicates whether or not to block access to System in Settings app.
+  - name: settingsBlockDevicesPage
+    type: Boolean
+    description: Indicates whether or not to block access to Devices in Settings app.
+  - name: settingsBlockNetworkInternetPage
+    type: Boolean
+    description: Indicates whether or not to block access to Network & Internet in Settings app.
+  - name: settingsBlockPersonalizationPage
+    type: Boolean
+    description: Indicates whether or not to block access to Personalization in Settings app.
+  - name: settingsBlockAccountsPage
+    type: Boolean
+    description: Indicates whether or not to block access to Accounts in Settings app.
+  - name: settingsBlockTimeLanguagePage
+    type: Boolean
+    description: Indicates whether or not to block access to Time & Language in Settings app.
+  - name: settingsBlockEaseOfAccessPage
+    type: Boolean
+    description: Indicates whether or not to block access to Ease of Access in Settings app.
+  - name: settingsBlockPrivacyPage
+    type: Boolean
+    description: Indicates whether or not to block access to Privacy in Settings app.
+  - name: settingsBlockUpdateSecurityPage
+    type: Boolean
+    description: Indicates whether or not to block access to Update & Security in Settings app.
+  - name: settingsBlockAppsPage
+    type: Boolean
+    description: Indicates whether or not to block access to Apps in Settings app.
+  - name: settingsBlockGamingPage
+    type: Boolean
+    description: Indicates whether or not to block access to Gaming in Settings app.
+  - name: windowsSpotlightBlockConsumerSpecificFeatures
+    type: Boolean
+    description: Allows IT admins to block experiences that are typically for consumers only, such as Start suggestions, Membership notifications, Post-OOBE app install and redirect tiles.
+  - name: windowsSpotlightBlocked
+    type: Boolean
+    description: Allows IT admins to turn off all Windows Spotlight features
+  - name: windowsSpotlightBlockOnActionCenter
+    type: Boolean
+    description: Block suggestions from Microsoft that show after each OS clean install, upgrade or in an on-going basis to introduce users to what is new or changed
+  - name: windowsSpotlightBlockTailoredExperiences
+    type: Boolean
+    description: Block personalized content in Windows spotlight based on user’s device usage.
+  - name: windowsSpotlightBlockThirdPartyNotifications
+    type: Boolean
+    description: Block third party content delivered via Windows Spotlight
+  - name: windowsSpotlightBlockWelcomeExperience
+    type: Boolean
+    description: Block Windows Spotlight Windows welcome experience
+  - name: windowsSpotlightBlockWindowsTips
+    type: Boolean
+    description: Allows IT admins to turn off the popup of Windows Tips.
+  - name: windowsSpotlightConfigureOnLockScreen
+    type: microsoft.graph.windowsSpotlightEnablementSettings
+    description: Specifies the type of Spotlight. The possible values are: notConfigured, disabled, enabled.
+  - name: networkProxyApplySettingsDeviceWide
+    type: Boolean
+    description: If set, proxy settings will be applied to all processes and accounts in the device. Otherwise, it will be applied to the user account that’s enrolled into MDM.
+  - name: networkProxyDisableAutoDetect
+    type: Boolean
+    description: Disable automatic detection of settings. If enabled, the system will try to find the path to a proxy auto-config (PAC) script.
+  - name: networkProxyAutomaticConfigurationUrl
+    type: String
+    description: Address to the proxy auto-config (PAC) script you want to use.
+  - name: networkProxyServer
+    type: microsoft.graph.windows10NetworkProxyServer
+    description: Specifies manual proxy server settings.
+  - name: accountsBlockAddingNonMicrosoftAccountEmail
+    type: Boolean
+    description: Indicates whether or not to Block the user from adding email accounts to the device that are not associated with a Microsoft account.
+  - name: antiTheftModeBlocked
+    type: Boolean
+    description: Indicates whether or not to block the user from selecting an AntiTheft mode preference (Windows 10 Mobile only).
+  - name: bluetoothBlocked
+    type: Boolean
+    description: Whether or not to Block the user from using bluetooth.
+  - name: cameraBlocked
+    type: Boolean
+    description: Whether or not to Block the user from accessing the camera of the device.
+  - name: connectedDevicesServiceBlocked
+    type: Boolean
+    description: Whether or not to block Connected Devices Service which enables discovery and connection to other devices, remote messaging, remote app sessions and other cross-device experiences.
+  - name: certificatesBlockManualRootCertificateInstallation
+    type: Boolean
+    description: Whether or not to Block the user from doing manual root certificate installation.
+  - name: copyPasteBlocked
+    type: Boolean
+    description: Whether or not to Block the user from using copy paste.
+  - name: cortanaBlocked
+    type: Boolean
+    description: Whether or not to Block the user from using Cortana.
+  - name: deviceManagementBlockFactoryResetOnMobile
+    type: Boolean
+    description: Indicates whether or not to Block the user from resetting their phone.
+  - name: deviceManagementBlockManualUnenroll
+    type: Boolean
+    description: Indicates whether or not to Block the user from doing manual un-enrollment from device management.
+  - name: safeSearchFilter
+    type: microsoft.graph.safeSearchFilterType
+    description: Specifies what filter level of safe search is required. The possible values are: userDefined, strict, moderate.
+  - name: edgeBlockPopups
+    type: Boolean
+    description: Indicates whether or not to block popups.
+  - name: edgeBlockSearchSuggestions
+    type: Boolean
+    description: Indicates whether or not to Block the user from using the search suggestions in the address bar.
+  - name: edgeBlockSendingIntranetTrafficToInternetExplorer
+    type: Boolean
+    description: Indicates whether or not to Block the user from sending Intranet traffic to Internet Explorer from Edge.
+  - name: edgeRequireSmartScreen
+    type: Boolean
+    description: Indicates whether or not to Require the user to use the smart screen filter.
+  - name: edgeEnterpriseModeSiteListLocation
+    type: String
+    description: Indicates the enterprise mode site list location. Could be a local file, local network or http location.
+  - name: edgeFirstRunUrl
+    type: String
+    description: The first run URL for when Edge browser is opened for the first time.
+  - name: edgeSearchEngine
+    type: microsoft.graph.edgeSearchEngineBase
+    description: Allows IT admins to set a default search engine for MDM-Controlled devices. Users can override this and change their default search engine provided the AllowSearchEngineCustomization policy is not set.
+  - name: edgeHomepageUrls
+    type: Collection(String)
+    description: The list of URLs for homepages shodwn on MDM-enrolled devices on Edge browser.
+  - name: edgeBlockAccessToAboutFlags
+    type: Boolean
+    description: Indicates whether or not to prevent access to about flags on Edge browser.
+  - name: smartScreenBlockPromptOverride
+    type: Boolean
+    description: Indicates whether or not users can override SmartScreen Filter warnings about potentially malicious websites.
+  - name: smartScreenBlockPromptOverrideForFiles
+    type: Boolean
+    description: Indicates whether or not users can override the SmartScreen Filter warnings about downloading unverified files
+  - name: webRtcBlockLocalhostIpAddress
+    type: Boolean
+    description: Indicates whether or not user's localhost IP address is displayed while making phone calls using the WebRTC
+  - name: internetSharingBlocked
+    type: Boolean
+    description: Indicates whether or not to Block the user from using internet sharing.
+  - name: settingsBlockAddProvisioningPackage
+    type: Boolean
+    description: Indicates whether or not to block the user from installing provisioning packages.
+  - name: settingsBlockRemoveProvisioningPackage
+    type: Boolean
+    description: Indicates whether or not to block the runtime configuration agent from removing provisioning packages.
+  - name: settingsBlockChangeSystemTime
+    type: Boolean
+    description: Indicates whether or not to block the user from changing date and time settings.
+  - name: settingsBlockEditDeviceName
+    type: Boolean
+    description: Indicates whether or not to block the user from editing the device name.
+  - name: settingsBlockChangeRegion
+    type: Boolean
+    description: Indicates whether or not to block the user from changing the region settings.
+  - name: settingsBlockChangeLanguage
+    type: Boolean
+    description: Indicates whether or not to block the user from changing the language settings.
+  - name: settingsBlockChangePowerSleep
+    type: Boolean
+    description: Indicates whether or not to block the user from changing power and sleep settings.
+  - name: locationServicesBlocked
+    type: Boolean
+    description: Indicates whether or not to Block the user from location services.
+  - name: microsoftAccountBlocked
+    type: Boolean
+    description: Indicates whether or not to Block a Microsoft account.
+  - name: microsoftAccountBlockSettingsSync
+    type: Boolean
+    description: Indicates whether or not to Block Microsoft account settings sync.
+  - name: nfcBlocked
+    type: Boolean
+    description: Indicates whether or not to Block the user from using near field communication.
+  - name: resetProtectionModeBlocked
+    type: Boolean
+    description: Indicates whether or not to Block the user from reset protection mode.
+  - name: screenCaptureBlocked
+    type: Boolean
+    description: Indicates whether or not to Block the user from taking Screenshots.
+  - name: storageBlockRemovableStorage
+    type: Boolean
+    description: Indicates whether or not to Block the user from using removable storage.
+  - name: storageRequireMobileDeviceEncryption
+    type: Boolean
+    description: Indicating whether or not to require encryption on a mobile device.
+  - name: usbBlocked
+    type: Boolean
+    description: Indicates whether or not to Block the user from USB connection.
+  - name: voiceRecordingBlocked
+    type: Boolean
+    description: Indicates whether or not to Block the user from voice recording.
+  - name: wiFiBlockAutomaticConnectHotspots
+    type: Boolean
+    description: Indicating whether or not to block automatically connecting to Wi-Fi hotspots. Has no impact if Wi-Fi is blocked.
+  - name: wiFiBlocked
+    type: Boolean
+    description: Indicates whether or not to Block the user from using Wi-Fi.
+  - name: wiFiBlockManualConfiguration
+    type: Boolean
+    description: Indicates whether or not to Block the user from using Wi-Fi manual configuration.
+  - name: wiFiScanInterval
+    type: Int32
+    description: Specify how often devices scan for Wi-Fi networks. Supported values are 1-500, where 100 = default, and 500 = low frequency. Valid values 1 to 500
+  - name: wirelessDisplayBlockProjectionToThisDevice
+    type: Boolean
+    description: Indicates whether or not to allow other devices from discovering this PC for projection.
+  - name: wirelessDisplayBlockUserInputFromReceiver
+    type: Boolean
+    description: Indicates whether or not to allow user input from wireless display receiver.
+  - name: wirelessDisplayRequirePinForPairing
+    type: Boolean
+    description: Indicates whether or not to require a PIN for new devices to initiate pairing.
+  - name: windowsStoreBlocked
+    type: Boolean
+    description: Indicates whether or not to Block the user from using the Windows store.
+  - name: appsAllowTrustedAppsSideloading
+    type: microsoft.graph.stateManagementSetting
+    description: Indicates whether apps from AppX packages signed with a trusted certificate can be side loaded. The possible values are: notConfigured, blocked, allowed.
+  - name: windowsStoreBlockAutoUpdate
+    type: Boolean
+    description: Indicates whether or not to block automatic update of apps from Windows Store.
+  - name: developerUnlockSetting
+    type: microsoft.graph.stateManagementSetting
+    description: Indicates whether or not to allow developer unlock. The possible values are: notConfigured, blocked, allowed.
+  - name: sharedUserAppDataAllowed
+    type: Boolean
+    description: Indicates whether or not to block multiple users of the same app to share data.
+  - name: appsBlockWindowsStoreOriginatedApps
+    type: Boolean
+    description: Indicates whether or not to disable the launch of all apps from Windows Store that came pre-installed or were downloaded.
+  - name: windowsStoreEnablePrivateStoreOnly
+    type: Boolean
+    description: Indicates whether or not to enable Private Store Only.
+  - name: storageRestrictAppDataToSystemVolume
+    type: Boolean
+    description: Indicates whether application data is restricted to the system drive.
+  - name: storageRestrictAppInstallToSystemVolume
+    type: Boolean
+    description: Indicates whether the installation of applications is restricted to the system drive.
+  - name: gameDvrBlocked
+    type: Boolean
+    description: Indicates whether or not to block DVR and broadcasting.
+  - name: experienceBlockDeviceDiscovery
+    type: Boolean
+    description: Indicates whether or not to enable device discovery UX.
+  - name: experienceBlockErrorDialogWhenNoSIM
+    type: Boolean
+    description: Indicates whether or not to allow the error dialog from displaying if no SIM card is detected.
+  - name: experienceBlockTaskSwitcher
+    type: Boolean
+    description: Indicates whether or not to enable task switching on the device.
+  - name: logonBlockFastUserSwitching
+    type: Boolean
+    description: Disables the ability to quickly switch between users that are logged on simultaneously without logging off.
+relationships:
+  heading: Relationships
+  table:
+  - name: assignments
+    type: Collection(microsoft.graph.deviceConfigurationAssignment)
+    description: The list of assignments for the device configuration profile. Inherited from deviceConfiguration
+  - name: deviceStatuses
+    type: Collection(microsoft.graph.deviceConfigurationDeviceStatus)
+    description: Device configuration installation status by device. Inherited from deviceConfiguration
+  - name: userStatuses
+    type: Collection(microsoft.graph.deviceConfigurationUserStatus)
+    description: Device configuration installation status by user. Inherited from deviceConfiguration
+  - name: deviceStatusOverview
+    type: microsoft.graph.deviceConfigurationDeviceOverview
+    description: Device Configuration devices status overview Inherited from deviceConfiguration
+  - name: userStatusOverview
+    type: microsoft.graph.deviceConfigurationUserOverview
+    description: Device Configuration users status overview Inherited from deviceConfiguration
+  - name: deviceSettingStateSummaries
+    type: Collection(microsoft.graph.settingStateDeviceSummary)
+    description: Device Configuration Setting State Device Summary Inherited from deviceConfiguration
+methods:
+  heading: Methods
+  intro: |
+    |Method|Return Type|Description
+    |:-|:-|:-|
+    |[List windows10GeneralConfigurations](../api/intune_deviceconfig_windows10generalconfiguration_list.md)|[windows10GeneralConfiguration](../resources/intune_deviceconfig_windows10generalconfiguration.md) collection|List properties and relationships of the [windows10GeneralConfiguration](../resources/intune_deviceconfig_windows10generalconfiguration.md) objects.
+    |[Get windows10GeneralConfiguration](../api/intune_deviceconfig_windows10generalconfiguration_get.md)|[windows10GeneralConfiguration](../resources/intune_deviceconfig_windows10generalconfiguration.md)|Read properties and relationships of the [windows10GeneralConfiguration](../resources/intune_deviceconfig_windows10generalconfiguration.md) object.
+    |[Create windows10GeneralConfiguration](../api/intune_deviceconfig_windows10generalconfiguration_create.md)|[windows10GeneralConfiguration](../resources/intune_deviceconfig_windows10generalconfiguration.md)|Create a new [windows10GeneralConfiguration](../resources/intune_deviceconfig_windows10generalconfiguration.md) object.
+    |[Delete windows10GeneralConfiguration](../api/intune_deviceconfig_windows10generalconfiguration_delete.md)|None|Deletes a [windows10GeneralConfiguration](../resources/intune_deviceconfig_windows10generalconfiguration.md).
+    |[Update windows10GeneralConfiguration](../api/intune_deviceconfig_windows10generalconfiguration_update.md)|[windows10GeneralConfiguration](../resources/intune_deviceconfig_windows10generalconfiguration.md)|Update the properties of a [windows10GeneralConfiguration](../resources/intune_deviceconfig_windows10generalconfiguration.md) object.

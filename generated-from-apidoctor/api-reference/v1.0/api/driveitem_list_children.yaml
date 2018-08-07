@@ -1,0 +1,49 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/driveitem_list_children.md
+top:
+  heading: List children of a driveItem
+  intro: |
+    Return a collection of [DriveItems](../resources/driveitem.md) in the **children** relationship of a DriveItem.
+    DriveItems with a non-null **folder** or **package** facet can have one or more child DriveItems.
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+  table:
+  - type: Delegated (work or school account)
+    scopes: Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All
+  - type: Delegated (personal Microsoft account)
+    scopes: Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All
+  - type: Application
+    scopes: Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All
+httpRequest:
+  heading: HTTP request
+  samplePaths: |
+    ```http
+    GET /drives/{drive-id}/items/{item-id}/children
+    GET /groups/{group-id}/drive/items/{item-id}/children
+    GET /me/drive/items/{item-id}/children
+    GET /sites/{site-id}/drive/items/{item-id}/children
+    GET /users/{user-id}/drive/items/{item-id}/children
+    ```
+    
+queryParameters:
+  heading: Optional query parameters
+  intro: |
+    This method supports the `$expand`, `$select`, `$skipToken`, `$top` and `$orderby` [OData query parameters](../../../concepts/query_parameters.md) to customize the response.
+httpHeaders:
+  heading: Optional request headers
+  table:
+  - name: if-none-match
+    type: String
+    description: If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an HTTP 304 Not Modified response is returned.
+examples:
+  heading: Examples
+  outro: |
+    ### List children in the root of the current user's drive
+    To retrieve files in the root of the drive, use the `root` relationship on the drive, then access the children relationship.
+    
+    ```http
+    GET /me/drive/root/children
+    ```
+    

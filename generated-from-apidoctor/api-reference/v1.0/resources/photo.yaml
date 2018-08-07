@@ -1,0 +1,54 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/photo.md
+top:
+  heading: Photo resource type
+  intro: |
+    The **photo** resource provides photo and camera properties, for example, EXIF metadata, on a [driveItem](driveitem.md).
+resource:
+  heading: JSON representation
+  resourceDefinition: |
+    ```json
+    {
+      "cameraMake": "string",
+      "cameraModel": "string",
+      "exposureDenominator": 1000.0,
+      "exposureNumerator": 1.0,
+      "fNumber": 1.8,
+      "focalLength": 22.5,
+      "iso": 100,
+      "takenDateTime": "String (timestamp)"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: takenDateTime
+    type: DateTimeOffset
+    description: Represents the date and time the photo was taken. Read-only.
+  - name: cameraMake
+    type: String
+    description: Camera manufacturer. Read-only.
+  - name: cameraModel
+    type: String
+    description: Camera model. Read-only.
+  - name: fNumber
+    type: Double
+    description: The F-stop value from the camera. Read-only.
+  - name: exposureDenominator
+    type: Double
+    description: The denominator for the exposure time fraction from the camera. Read-only.
+  - name: exposureNumerator
+    type: Double
+    description: The numerator for the exposure time fraction from the camera. Read-only.
+  - name: focalLength
+    type: Double
+    description: The focal length from the camera. Read-only.
+  - name: iso
+    type: Int32
+    description: The ISO value from the camera. Read-only.
+remarks:
+  heading: Remarks
+  intro: |
+    OneDrive for Business and SharePoint only return the **takenDateTime** property.
+    For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).

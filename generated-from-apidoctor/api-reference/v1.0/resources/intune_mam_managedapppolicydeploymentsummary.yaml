@@ -1,0 +1,64 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_mam_managedapppolicydeploymentsummary.md
+top:
+  heading: managedAppPolicyDeploymentSummary resource type
+  intro: |
+    The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.managedAppPolicyDeploymentSummary",
+      "displayName": "String",
+      "configurationDeployedUserCount": 1024,
+      "lastRefreshTime": "String (timestamp)",
+      "configurationDeploymentSummaryPerApp": [
+        {
+          "@odata.type": "microsoft.graph.managedAppPolicyDeploymentSummaryPerApp",
+          "mobileAppIdentifier": {
+            "@odata.type": "microsoft.graph.androidMobileAppIdentifier",
+            "packageId": "String"
+          },
+          "configurationAppliedUserCount": 1024
+        }
+      ],
+      "id": "String (identifier)",
+      "version": "String"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: displayName
+    type: String
+    description: Not yet documented
+  - name: configurationDeployedUserCount
+    type: Int32
+    description: Not yet documented
+  - name: lastRefreshTime
+    type: DateTimeOffset
+    description: Not yet documented
+  - name: configurationDeploymentSummaryPerApp
+    type: Collection(microsoft.graph.managedAppPolicyDeploymentSummaryPerApp)
+    description: Not yet documented
+  - name: id
+    type: String
+    description: Key of the entity.
+  - name: version
+    type: String
+    description: Version of the entity.
+relationships:
+  heading: Relationships
+  intro: |
+    None
+methods:
+  heading: Methods
+  intro: |
+    |Method|Return Type|Description
+    |:-|:-|:-|
+    |[Get managedAppPolicyDeploymentSummary](../api/intune_mam_managedapppolicydeploymentsummary_get.md)|[managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md)|Read properties and relationships of the [managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md) object.
+    |[Update managedAppPolicyDeploymentSummary](../api/intune_mam_managedapppolicydeploymentsummary_update.md)|[managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md)|Update the properties of a [managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md) object.

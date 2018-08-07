@@ -1,0 +1,79 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/driveitem_update.md
+top:
+  heading: Update DriveItem properties
+  intro: |
+    Update the metadata for a [DriveItem](../resources/driveitem.md) by ID or path.
+    You can also use update to [move an item](driveitem_move.md) to another parent by updating the item's **parentReference** property.
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+  table:
+  - type: Delegated (work or school account)
+    scopes: Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All
+  - type: Delegated (personal Microsoft account)
+    scopes: Files.ReadWrite, Files.ReadWrite.All
+  - type: Application
+    scopes: Files.ReadWrite.All, Sites.ReadWrite.All
+httpRequest:
+  heading: HTTP request
+  samplePaths: |
+    ```http
+    PATCH /drives/{drive-id}/items/{item-id}
+    PATCH /groups/{group-id}/drive/items/{item-id}
+    PATCH /me/drive/items/{item-id}
+    PATCH /sites/{site-id}/drive/items/{item-id}
+    PATCH /users/{user-id}/drive/items/{item-id}
+    ```
+    
+httpHeaders:
+  heading: Optional request headers
+  table:
+  - name: if-match
+    type: String
+    description: If this request header is included and the eTag (or cTag) provided does not match the current eTag on the folder, a 412 Precondition Failed response is returned.
+Request body:
+  heading: Request body
+  intro: |
+    In the request body, supply the values for properties that should be updated.
+    Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.
+    For best performance your app should not include properties that haven't changed.
+Response:
+  heading: Response
+  intro: |
+    If successful, this method returns a `200 OK` response code and updated [DriveItem](../resources/driveitem.md) resource in the response body.
+examples:
+  - Example:
+      heading: Example
+      intro: |
+        This example renames the DriveItem resource to "new-file-name.docx".
+        
+        ```http
+        PATCH /me/drive/items/{item-id}
+        Content-type: application/json
+        
+        {
+          "name": "new-file-name.docx"
+        }
+        ```
+        
+      - response:
+          heading: Response
+          intro: |
+            If successful, this method returns an [driveItem][item-resource] resource in the response body.
+          exampleResponse: |
+            ```http
+            HTTP/1.1 200 OK
+            Content-type: application/json
+            
+            {
+              "id": "01NKDM7HMOJTVYMDOSXFDK2QJDXCDI3WUK",
+              "name": "new-file-name.docx",
+              "file": { }
+            }
+            ```
+            
+          outro: |
+            ## Error responses
+            See [Error Responses][error-response] for details about how errors are returned.

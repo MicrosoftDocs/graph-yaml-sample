@@ -1,0 +1,70 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_books_deviceinstallstate.md
+top:
+  heading: deviceInstallState resource type
+  intro: |
+    Contains properties for the installation state for a device.
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.deviceInstallState",
+      "id": "String (identifier)",
+      "deviceName": "String",
+      "deviceId": "String",
+      "lastSyncDateTime": "String (timestamp)",
+      "installState": "String",
+      "errorCode": "String",
+      "osVersion": "String",
+      "osDescription": "String",
+      "userName": "String"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: id
+    type: String
+    description: Key of the entity.
+  - name: deviceName
+    type: String
+    description: Device name.
+  - name: deviceId
+    type: String
+    description: Device Id.
+  - name: lastSyncDateTime
+    type: DateTimeOffset
+    description: Last sync date and time.
+  - name: installState
+    type: microsoft.graph.installState
+    description: The install state of the eBook. The possible values are: notApplicable, installed, failed, notInstalled, uninstallFailed, unknown.
+  - name: errorCode
+    type: String
+    description: The error code for install failures.
+  - name: osVersion
+    type: String
+    description: OS Version.
+  - name: osDescription
+    type: String
+    description: OS Description.
+  - name: userName
+    type: String
+    description: Device User Name.
+relationships:
+  heading: Relationships
+  intro: |
+    None
+methods:
+  heading: Methods
+  intro: |
+    |Method|Return Type|Description
+    |:-|:-|:-|
+    |[List deviceInstallStates](../api/intune_books_deviceinstallstate_list.md)|[deviceInstallState](../resources/intune_books_deviceinstallstate.md) collection|List properties and relationships of the [deviceInstallState](../resources/intune_books_deviceinstallstate.md) objects.
+    |[Get deviceInstallState](../api/intune_books_deviceinstallstate_get.md)|[deviceInstallState](../resources/intune_books_deviceinstallstate.md)|Read properties and relationships of the [deviceInstallState](../resources/intune_books_deviceinstallstate.md) object.
+    |[Create deviceInstallState](../api/intune_books_deviceinstallstate_create.md)|[deviceInstallState](../resources/intune_books_deviceinstallstate.md)|Create a new [deviceInstallState](../resources/intune_books_deviceinstallstate.md) object.
+    |[Delete deviceInstallState](../api/intune_books_deviceinstallstate_delete.md)|None|Deletes a [deviceInstallState](../resources/intune_books_deviceinstallstate.md).
+    |[Update deviceInstallState](../api/intune_books_deviceinstallstate_update.md)|[deviceInstallState](../resources/intune_books_deviceinstallstate.md)|Update the properties of a [deviceInstallState](../resources/intune_books_deviceinstallstate.md) object.

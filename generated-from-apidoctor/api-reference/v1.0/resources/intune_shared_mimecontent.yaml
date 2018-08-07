@@ -1,0 +1,32 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_shared_mimecontent.md
+top:
+  heading: mimeContent resource type
+  intro: |
+    Contains properties for a generic mime content.
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.mimeContent",
+      "type": "String",
+      "value": "binary"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: type
+    type: String
+    description: Indicates the content mime type.
+  - name: value
+    type: Binary
+    description: The byte array that contains the actual content.
+relationships:
+  heading: Relationships
+  intro: |
+    None

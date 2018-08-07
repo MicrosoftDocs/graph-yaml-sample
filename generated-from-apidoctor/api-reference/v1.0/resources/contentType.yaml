@@ -1,0 +1,70 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/contentType.md
+top:
+  heading: ContentType resource type
+  intro: |
+    The **contentType** resource represents a _content type_ in SharePoint.
+    Content types allow you to define a set of columns that must be present on every [**listItem**][listItem] in a [**list**][list].
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of a **contentType** resource.
+  resourceDefinition: |
+    ```json
+    {
+      "description": "string",
+      "group": "string",
+      "hidden": false,
+      "id": "string",
+      "inheritedFrom": { "@type": "microsoft.graph.itemReference" },
+      "name": "string",
+      "order": { "@type": "microsoft.graph.contentTypeOrder" },
+      "parentId": "string",
+      "readOnly": false,
+      "sealed": false,
+    
+      "columnLinks": [{ "@type": "microsoft.graph.columnLink" }]
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: description
+    type: String
+    description: The descriptive text for the item.
+  - name: group
+    type: String
+    description: The name of the group this content type belongs to. Helps organize related content types.
+  - name: hidden
+    type: Boolean
+    description: Indicates whether the content type is hidden in the list's 'New' menu.
+  - name: id
+    type: String
+    description: The unique identifier of the content type.
+  - name: inheritedFrom
+    type: microsoft.graph.itemReference
+    description: If this content type is inherited from another scope (like a site), provides a reference to the item where the content type is defined.
+  - name: name
+    type: String
+    description: The name of the content type.
+  - name: order
+    type: microsoft.graph.contentTypeOrder
+    description: Specifies the order in which the content type appears in the selection UI.
+  - name: parentId
+    type: String
+    description: The unique identifier of the content type.
+  - name: readOnly
+    type: Boolean
+    description: If true, the content type cannot be modified unless this value is first set to false.
+  - name: sealed
+    type: Boolean
+    description: If true, the content type cannot be modified by users or through push-down operations. Only site collection administrators can seal or unseal content types.
+relationships:
+  heading: Relationships
+  table:
+  - name: columnLinks
+    type: Collection(microsoft.graph.columnLink)
+    description: The collection of columns that are required by this content type
+  outro: |
+    See [Introduction to content types and content type publishing][contentTypeIntro] for more information.

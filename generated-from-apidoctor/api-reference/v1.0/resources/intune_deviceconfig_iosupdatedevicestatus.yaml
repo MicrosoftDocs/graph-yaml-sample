@@ -1,0 +1,82 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_iosupdatedevicestatus.md
+top:
+  heading: iosUpdateDeviceStatus resource type
+  intro: |
+    Not yet documented
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.iosUpdateDeviceStatus",
+      "id": "String (identifier)",
+      "installStatus": "String",
+      "osVersion": "String",
+      "deviceId": "String",
+      "userId": "String",
+      "deviceDisplayName": "String",
+      "userName": "String",
+      "deviceModel": "String",
+      "complianceGracePeriodExpirationDateTime": "String (timestamp)",
+      "status": "String",
+      "lastReportedDateTime": "String (timestamp)",
+      "userPrincipalName": "String"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: id
+    type: String
+    description: Key of the entity.
+  - name: installStatus
+    type: microsoft.graph.iosUpdatesInstallStatus
+    description: The installation status of the policy report. The possible values are: success, available, idle, unknown, downloading, downloadFailed, downloadRequiresComputer, downloadInsufficientSpace, downloadInsufficientPower, downloadInsufficientNetwork, installing, installInsufficientSpace, installInsufficientPower, installPhoneCallInProgress, installFailed, notSupportedOperation, sharedDeviceUserLoggedInError.
+  - name: osVersion
+    type: String
+    description: The device version that is being reported.
+  - name: deviceId
+    type: String
+    description: The device id that is being reported.
+  - name: userId
+    type: String
+    description: The User id that is being reported.
+  - name: deviceDisplayName
+    type: String
+    description: Device name of the DevicePolicyStatus.
+  - name: userName
+    type: String
+    description: The User Name that is being reported
+  - name: deviceModel
+    type: String
+    description: The device model that is being reported
+  - name: complianceGracePeriodExpirationDateTime
+    type: DateTimeOffset
+    description: The DateTime when device compliance grace period expires
+  - name: status
+    type: microsoft.graph.complianceStatus
+    description: Compliance status of the policy report. The possible values are: unknown, notApplicable, compliant, remediated, nonCompliant, error, conflict.
+  - name: lastReportedDateTime
+    type: DateTimeOffset
+    description: Last modified date time of the policy report.
+  - name: userPrincipalName
+    type: String
+    description: UserPrincipalName.
+relationships:
+  heading: Relationships
+  intro: |
+    None
+methods:
+  heading: Methods
+  intro: |
+    |Method|Return Type|Description
+    |:-|:-|:-|
+    |[List iosUpdateDeviceStatuses](../api/intune_deviceconfig_iosupdatedevicestatus_list.md)|[iosUpdateDeviceStatus](../resources/intune_deviceconfig_iosupdatedevicestatus.md) collection|List properties and relationships of the [iosUpdateDeviceStatus](../resources/intune_deviceconfig_iosupdatedevicestatus.md) objects.
+    |[Get iosUpdateDeviceStatus](../api/intune_deviceconfig_iosupdatedevicestatus_get.md)|[iosUpdateDeviceStatus](../resources/intune_deviceconfig_iosupdatedevicestatus.md)|Read properties and relationships of the [iosUpdateDeviceStatus](../resources/intune_deviceconfig_iosupdatedevicestatus.md) object.
+    |[Create iosUpdateDeviceStatus](../api/intune_deviceconfig_iosupdatedevicestatus_create.md)|[iosUpdateDeviceStatus](../resources/intune_deviceconfig_iosupdatedevicestatus.md)|Create a new [iosUpdateDeviceStatus](../resources/intune_deviceconfig_iosupdatedevicestatus.md) object.
+    |[Delete iosUpdateDeviceStatus](../api/intune_deviceconfig_iosupdatedevicestatus_delete.md)|None|Deletes a [iosUpdateDeviceStatus](../resources/intune_deviceconfig_iosupdatedevicestatus.md).
+    |[Update iosUpdateDeviceStatus](../api/intune_deviceconfig_iosupdatedevicestatus_update.md)|[iosUpdateDeviceStatus](../resources/intune_deviceconfig_iosupdatedevicestatus.md)|Update the properties of a [iosUpdateDeviceStatus](../resources/intune_deviceconfig_iosupdatedevicestatus.md) object.

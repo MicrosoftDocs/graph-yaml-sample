@@ -1,0 +1,87 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/permission.md
+top:
+  heading: Permission resource type
+  intro: |
+    The **Permission** resource provides information about a sharing permission granted for a [DriveItem](driveitem.md) resource.
+    Sharing permissions have a number of different forms.
+    The **Permission** resource represents these different forms through facets on the resource.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource
+  resourceDefinition: |
+    ```json
+    {
+      "id": "string (identifier)",
+      "grantedTo": {"@odata.type": "microsoft.graph.identitySet"},
+      "inheritedFrom": {"@odata.type": "microsoft.graph.itemReference"},
+      "invitation": {"@odata.type": "microsoft.graph.sharingInvitation"},
+      "link": {"@odata.type": "microsoft.graph.sharingLink"},
+      "roles": ["string"],
+      "shareId": "string"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: id
+    type: String
+    description: The unique identifier of the permission among all permissions on the item. Read-only.
+  - name: grantedTo
+    type: microsoft.graph.identitySet
+    description: For user type permissions, the details of the users & applications for this permission. Read-only.
+  - name: invitation
+    type: microsoft.graph.sharingInvitation
+    description: Details of any associated sharing invitation for this permission. Read-only.
+  - name: inheritedFrom
+    type: microsoft.graph.itemReference
+    description: Provides a reference to the ancestor of the current permission, if it is inherited from an ancestor. Read-only.
+  - name: link
+    type: microsoft.graph.sharingLink
+    description: Provides the link details of the current permission, if it is a link type permissions. Read-only.
+  - name: roles
+    type: Collection(String)
+    description: The type of permission, e.g. read. See below for the full list of roles. Read-only.
+  - name: shareId
+    type: String
+    description: A unique token that can be used to access this shared item via the **shares** API. Read-only.
+  outro: |
+    The permission resource uses _facets_ to provide information about the kind of permission represented by the resource.
+    Permissions with a [**link**][SharingLink] facet represent sharing links created on the item. 
+    Sharing links contain a unique token that provides access to the item for anyone with the link.
+    Permissions with an [**invitation**][SharingInvitation] facet represent permissions added by inviting specific users or groups to have access to the file.
+enum:
+  heading: Roles enumeration
+  table:
+  - member: 
+    description: 
+  - member: 
+    description: 
+  - member: 
+    description: 
+  - member: 
+    description: 
+  outro: |
+    ## Sharing links
+    The most common type of permissions are sharing links.
+    Sharing links provide a unique URL that includes both the resource being shared
+    and an authentication token that provides access to the resource. Users don't
+    need to sign-in to access the content shared with a sharing link. Users can
+    share a link that gives read-only access to the content or writable access to
+    the content.
+methods:
+  heading: Methods
+  intro: |
+    |Method|REST Path
+    |:-|:-
+    |[List permissions](../api/driveitem_list_permissions.md)|`GET /drive/items/{item-id}/permissions`
+    |[Get permission](../api/permission_get.md)|`GET /drive/items/{item-id}/permissions/{id}`
+    |[Add](../api/driveitem_invite.md)|`POST /drive/items/{item-id}/invite`
+    |[Update](../api/permission_update.md)|`PATCH /drive/items/{item-id}/permissions/{id}`
+    |[Delete](../api/permission_delete.md)|`DELETE /drive/items/{item-id}/permissions/{id}`
+remarks:
+  heading: Remarks
+  intro: |
+    OneDrive for Business and SharePoint document libraries do not return the **inheritedFrom** property.

@@ -1,0 +1,97 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_apps_mobileapp.md
+top:
+  heading: mobileApp resource type
+  intro: |
+    An abstract class containing the base properties for Intune mobile apps.
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.mobileApp",
+      "id": "String (identifier)",
+      "displayName": "String",
+      "description": "String",
+      "publisher": "String",
+      "largeIcon": {
+        "@odata.type": "microsoft.graph.mimeContent",
+        "type": "String",
+        "value": "binary"
+      },
+      "createdDateTime": "String (timestamp)",
+      "lastModifiedDateTime": "String (timestamp)",
+      "isFeatured": true,
+      "privacyInformationUrl": "String",
+      "informationUrl": "String",
+      "owner": "String",
+      "developer": "String",
+      "notes": "String",
+      "publishingState": "String"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: id
+    type: String
+    description: Key of the entity.
+  - name: displayName
+    type: String
+    description: The admin provided or imported title of the app.
+  - name: description
+    type: String
+    description: The description of the app.
+  - name: publisher
+    type: String
+    description: The publisher of the app.
+  - name: largeIcon
+    type: microsoft.graph.mimeContent
+    description: The large icon, to be displayed in the app details and used for upload of the icon.
+  - name: createdDateTime
+    type: DateTimeOffset
+    description: The date and time the app was created.
+  - name: lastModifiedDateTime
+    type: DateTimeOffset
+    description: The date and time the app was last modified.
+  - name: isFeatured
+    type: Boolean
+    description: The value indicating whether the app is marked as featured by the admin.
+  - name: privacyInformationUrl
+    type: String
+    description: The privacy statement Url.
+  - name: informationUrl
+    type: String
+    description: The more information Url.
+  - name: owner
+    type: String
+    description: The owner of the app.
+  - name: developer
+    type: String
+    description: The developer of the app.
+  - name: notes
+    type: String
+    description: Notes for the app.
+  - name: publishingState
+    type: microsoft.graph.mobileAppPublishingState
+    description: The publishing state for the app. The app cannot be assigned unless the app is published. The possible values are: notPublished, processing, published.
+relationships:
+  heading: Relationships
+  table:
+  - name: categories
+    type: Collection(microsoft.graph.mobileAppCategory)
+    description: The list of categories for this app.
+  - name: assignments
+    type: Collection(microsoft.graph.mobileAppAssignment)
+    description: The list of group assignments for this mobile app.
+methods:
+  heading: Methods
+  intro: |
+    |Method|Return Type|Description
+    |:-|:-|:-|
+    |[List mobileApps](../api/intune_apps_mobileapp_list.md)|[mobileApp](../resources/intune_apps_mobileapp.md) collection|List properties and relationships of the [mobileApp](../resources/intune_apps_mobileapp.md) objects.
+    |[Get mobileApp](../api/intune_apps_mobileapp_get.md)|[mobileApp](../resources/intune_apps_mobileapp.md)|Read properties and relationships of the [mobileApp](../resources/intune_apps_mobileapp.md) object.
+    |[assign action](../api/intune_apps_mobileapp_assign.md)|None|Not yet documented

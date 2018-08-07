@@ -1,0 +1,54 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/chartfont.md
+top:
+  heading: ChartFont resource type
+  intro: |
+    This object represents the font attributes (font name, font size, color, etc.) for a chart object.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "bold": true,
+      "color": "string",
+      "italic": true,
+      "name": "string",
+      "size": 1024,
+      "underline": "string"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: bold
+    type: Boolean
+    description: Represents the bold status of font.
+  - name: color
+    type: String
+    description: HTML color code representation of the text color. E.g. #FF0000 represents Red.
+  - name: italic
+    type: Boolean
+    description: Represents the italic status of the font.
+  - name: name
+    type: String
+    description: Font name (e.g. "Calibri")
+  - name: size
+    type: Double
+    description: Size of the font (e.g. 11)
+  - name: underline
+    type: String
+    description: Type of underline applied to the font. The possible values are: None, Single.
+relationships:
+  heading: Relationships
+  intro: |
+    None
+methods:
+  heading: Methods
+  intro: |
+    |Method|Return Type|Description
+    |:-|:-|:-|
+    |[Get ChartFont](../api/chartfont_get.md)|[WorkbookChartFont](chartfont.md)|Read properties and relationships of chartFont object.
+    |[Update](../api/chartfont_update.md)|[WorkbookChartFont](chartfont.md)|Update ChartFont object.

@@ -1,0 +1,84 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/table_list_columns.md
+top:
+  heading: List columns
+  intro: |
+    Retrieve a list of tablecolumn objects.
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+  table:
+  - type: Delegated (work or school account)
+    scopes: Files.ReadWrite
+  - type: Delegated (personal Microsoft account)
+    scopes: Not supported.
+  - type: Application
+    scopes: Not supported.
+httpRequest:
+  heading: HTTP request
+  samplePaths: |
+    ```http
+    GET /workbook/tables/{id|name}/columns
+    GET /workbook/worksheets/{id|name}/tables/{id|name}/columns
+    ```
+    
+queryParameters:
+  heading: Optional query parameters
+  intro: |
+    This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.  For reliable results, use the [$top](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#top) and [$skip](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#skip-parameter) query parameters to page through the results. This will help avoid performance problems related to large result sets.
+httpHeaders:
+  heading: Request headers
+  table:
+  - name: Authorization
+    type: 
+    description: Bearer {token}. Required.
+  - name: Workbook-Session-Id
+    type: 
+    description: Workbook session Id that determines if changes are persisted or not. Optional.
+Request body:
+  heading: Request body
+  intro: |
+    Do not supply a request body for this method.
+Response:
+  heading: Response
+  intro: |
+    If successful, this method returns a `200 OK` response code and collection of [WorkbookTableColumn](../resources/tablecolumn.md) objects in the response body.
+examples:
+  - Example:
+      heading: Example
+      - request:
+          heading: Request
+          intro: |
+            Here is an example of the request.
+          exampleRequest: |
+            ```http
+            GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/columns?$top=5&$skip=5
+            ```
+            
+      - response:
+          heading: Response
+          intro: |
+            Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+          exampleResponse: |
+            ```http
+            HTTP/1.1 200 OK
+            Content-type: application/json
+            Content-length: 126
+            
+            {
+              "value": [
+                {
+                  "id": 99,
+                  "name": "name-value",
+                  "index": 99,
+                  "values": "values-value"
+                }
+              ]
+            }
+            ```
+            
+          outro: |
+            Example: 
+            `https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/columns?$top=5`
+            `https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/columns?$top=5&$skip=5`

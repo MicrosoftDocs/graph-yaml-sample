@@ -1,0 +1,49 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_books_iosvppebookassignment.md
+top:
+  heading: iosVppEBookAssignment resource type
+  intro: |
+    Contains properties used to assign an iOS VPP EBook to a group.
+    Inherits from [managedEBookAssignment](../resources/intune_books_managedebookassignment.md)
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.iosVppEBookAssignment",
+      "id": "String (identifier)",
+      "target": {
+        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+      },
+      "installIntent": "String"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: id
+    type: String
+    description: Key of the entity. Inherited from managedEBookAssignment
+  - name: target
+    type: microsoft.graph.deviceAndAppManagementAssignmentTarget
+    description: The assignment target for eBook. Inherited from managedEBookAssignment
+  - name: installIntent
+    type: microsoft.graph.installIntent
+    description: The install intent for eBook. Inherited from managedEBookAssignment. The possible values are: available, required, uninstall, availableWithoutEnrollment.
+relationships:
+  heading: Relationships
+  intro: |
+    None
+methods:
+  heading: Methods
+  intro: |
+    |Method|Return Type|Description
+    |:-|:-|:-|
+    |[List iosVppEBookAssignments](../api/intune_books_iosvppebookassignment_list.md)|[iosVppEBookAssignment](../resources/intune_books_iosvppebookassignment.md) collection|List properties and relationships of the [iosVppEBookAssignment](../resources/intune_books_iosvppebookassignment.md) objects.
+    |[Get iosVppEBookAssignment](../api/intune_books_iosvppebookassignment_get.md)|[iosVppEBookAssignment](../resources/intune_books_iosvppebookassignment.md)|Read properties and relationships of the [iosVppEBookAssignment](../resources/intune_books_iosvppebookassignment.md) object.
+    |[Create iosVppEBookAssignment](../api/intune_books_iosvppebookassignment_create.md)|[iosVppEBookAssignment](../resources/intune_books_iosvppebookassignment.md)|Create a new [iosVppEBookAssignment](../resources/intune_books_iosvppebookassignment.md) object.
+    |[Delete iosVppEBookAssignment](../api/intune_books_iosvppebookassignment_delete.md)|None|Deletes a [iosVppEBookAssignment](../resources/intune_books_iosvppebookassignment.md).
+    |[Update iosVppEBookAssignment](../api/intune_books_iosvppebookassignment_update.md)|[iosVppEBookAssignment](../resources/intune_books_iosvppebookassignment.md)|Update the properties of a [iosVppEBookAssignment](../resources/intune_books_iosvppebookassignment.md) object.

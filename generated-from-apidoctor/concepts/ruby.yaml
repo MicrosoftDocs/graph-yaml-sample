@@ -1,0 +1,39 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/ruby.md
+top:
+  heading: Get started with Microsoft Graph in a Ruby on Rails app
+  intro: |
+    This article describes the tasks required to get an access token from the Azure AD v2.0 endpoint and call Microsoft Graph. It walks you through building the [Microsoft Graph Ruby on Rails Connect Sample](https://github.com/microsoftgraph/ruby-connect-rest-sample) and explains the main concepts that you implement to use the Microsoft Graph. The article also describes how to access Microsoft Graph by using direct REST calls.
+    To download a version of the Connect sample that uses the Azure AD endpoint, see [Microsoft Graph Ruby on Rails Connect Sample](https://github.com/microsoftgraph/ruby-connect-rest-sample/tree/last_v1_auth).
+    The following image shows the app you'll create. 
+    ![Microsoft Ruby on Rails Connect sample screenshot](./images/Microsoft-Graph-Ruby-Connect-UI.png)
+    **Don't feel like building an app?** Use the [Microsoft Graph quick start](https://graph.microsoft.io/en-us/getting-started) to get up and running fast, or download the [Ruby REST Connect sample](https://github.com/microsoftgraph/ruby-connect-rest-sample) that this article is based on.
+permissions:
+  heading: Prerequisites
+  intro: |
+    To get started, you'll need: 
+    
+    * Ruby 2.1 to run the sample on a development server.
+    * Rails framework (the sample has been tested on Rails 4.2).
+    * Bundler dependency manager.
+    * Rack web server interface for Ruby.
+    * A [Microsoft account](https://www.outlook.com/) or a [work or school account](https://docs.microsoft.com/en-us/office/developer-program/office-365-developer-program-faq#account-types)
+    * The Microsoft Graph Connect Starter Project for Ruby on Rails. Download the [Microsoft Graph Ruby on Rails Connect Sample](https://github.com/microsoftgraph/ruby-connect-rest-sample). The starter project is located in the _starter_ folder.
+    
+  outro: |
+    ## Register the application
+    Register an app on the Microsoft App Registration Portal. This generates the app ID and secret that you'll use to configure the app for authentication.
+    
+    1. Sign into the [Microsoft App Registration Portal](https://apps.dev.microsoft.com/) using either your personal or work or school account.
+    1. Choose **Add an app**.
+    1. Enter a name for the app, and choose **Create application**.
+    1. The registration page displays, listing the properties of your app.
+    1. Copy the application ID. This is the unique identifier for your app.
+    1. Under **Application Secrets**, choose **Generate New Password**. Copy the app secret from the **New password generated** dialog.
+    1. You'll use the application ID and app secret to configure the app.
+    1. Under **Platforms**, choose **Add platform** > **Web**.
+    1. Make sure the **Allow Implicit Flow** check box is selected, and enter *http://localhost:3000/auth/microsoft_v2_auth/callback* as the Redirect URI.
+    1. The Allow Implicit Flow option enables the OpenID Connect hybrid flow. During authentication, this enables the app to receive both sign-in info (the id_token) and artifacts (in this case, an authorization code) that the app uses to obtain an access token.
+    1. The redirect URI *http://localhost:3000/auth/microsoft_v2_auth/callback* is the value that the OmniAuth middleware is configured to use once it has processed the authentication request.
+    1. Choose **Save**.
+    

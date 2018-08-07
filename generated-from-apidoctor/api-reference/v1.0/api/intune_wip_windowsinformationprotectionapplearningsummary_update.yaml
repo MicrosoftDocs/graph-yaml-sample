@@ -1,0 +1,74 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/intune_wip_windowsinformationprotectionapplearningsummary_update.md
+top:
+  heading: Update windowsInformationProtectionAppLearningSummary
+  intro: |
+    Update the properties of a [windowsInformationProtectionAppLearningSummary](../resources/intune_wip_windowsinformationprotectionapplearningsummary.md) object.
+permissions:
+  heading: Prerequisites
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+httpRequest:
+  heading: HTTP Request
+  samplePaths: |
+    ```http
+    PATCH /deviceManagement/windowsInformationProtectionAppLearningSummaries/{windowsInformationProtectionAppLearningSummaryId}
+    ```
+    
+httpHeaders:
+  heading: Request headers
+  table:
+  - name: Authorization
+    type: String
+    description: 
+  - name: Accept
+    type: String
+    description: 
+Request body:
+  heading: Request body
+  intro: |
+    In the request body, supply a JSON representation for the [windowsInformationProtectionAppLearningSummary](../resources/intune_wip_windowsinformationprotectionapplearningsummary.md) object.
+    The following table shows the properties that are required when you create the [windowsInformationProtectionAppLearningSummary](../resources/intune_wip_windowsinformationprotectionapplearningsummary.md).
+    |Property|Type|Description
+    |:-|:-|:-|
+    |id|String|Unique Identifier for the WindowsInformationProtectionAppLearningSummary.
+    |applicationName|String|Application Name
+    |applicationType|[applicationType](../resources/intune_wip_applicationtype.md)|Application Type. The possible values are: `universal`, `desktop`.
+    |deviceCount|Int32|Device Count
+Response:
+  heading: Response
+  intro: |
+    If successful, this method returns a `200 OK` response code and an updated [windowsInformationProtectionAppLearningSummary](../resources/intune_wip_windowsinformationprotectionapplearningsummary.md) object in the response body.
+examples:
+  - Example:
+      heading: Example
+      - request:
+          heading: Request
+          intro: |
+            Here is an example of the request.
+            PATCH https://graph.microsoft.com/v1.0/deviceManagement/windowsInformationProtectionAppLearningSummaries/{windowsInformationProtectionAppLearningSummaryId}
+            Content-type: application/json
+            Content-length: 106
+            
+            {
+              "applicationName": "Application Name value",
+              "applicationType": "desktop",
+              "deviceCount": 11
+            }
+
+      - response:
+          heading: Response
+          intro: |
+            Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+            HTTP/1.1 200 OK
+            Content-Type: application/json
+            Content-Length: 240
+            
+            {
+              "@odata.type": "#microsoft.graph.windowsInformationProtectionAppLearningSummary",
+              "id": "063baf50-af50-063b-50af-3b0650af3b06",
+              "applicationName": "Application Name value",
+              "applicationType": "desktop",
+              "deviceCount": 11
+            }
+

@@ -1,0 +1,41 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_devices_devicemanagementexchangeaccessstatereason.md
+top:
+  heading: deviceManagementExchangeAccessStateReason enum type
+  intro: |
+    Device Exchange Access State Reason.
+enum:
+  heading: Members
+  table:
+  - member: none
+    description: No access state reason discovered from Exchange
+  - member: unknown
+    description: Unknown access state reason
+  - member: exchangeGlobalRule
+    description: Access state determined by Exchange Global rule
+  - member: exchangeIndividualRule
+    description: Access state determined by Exchange Individual rule
+  - member: exchangeDeviceRule
+    description: Access state determined by Exchange Device rule
+  - member: exchangeUpgrade
+    description: Access state due to Exchange upgrade
+  - member: exchangeMailboxPolicy
+    description: Access state determined by Exchange Mailbox Policy
+  - member: other
+    description: Access state determined by Exchange
+  - member: compliant
+    description: Access state granted by compliance challenge
+  - member: notCompliant
+    description: Access state revoked by compliance challenge
+  - member: notEnrolled
+    description: Access state revoked by management challenge
+  - member: unknownLocation
+    description: Access state due to unknown location
+  - member: mfaRequired
+    description: Access state due to MFA challenge
+  - member: azureADBlockDueToAccessPolicy
+    description: Access State revoked by AAD Access Policy
+  - member: compromisedPassword
+    description: Access State revoked by compromised password
+  - member: deviceNotKnownWithManagedApp
+    description: Access state revoked by managed application challenge

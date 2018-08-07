@@ -1,0 +1,48 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/sharinglink.md
+top:
+  heading: SharingLink resource type
+  intro: |
+    The **SharingLink** resource groups link-related data items into a single structure.
+    If a [**Permission**](permission.md) resource has a non-null **sharingLink** facet, the permission represents a sharing link (as opposed to permissions granted to a person or group).
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "application": { "@odata.type": "microsoft.graph.identity" },
+      "type": "view | edit | embed",
+      "scope": "anonymous | organization",
+      "webHtml": "string",
+      "webUrl": "url"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: application
+    type: microsoft.graph.identity
+    description: The app the link is associated with.
+  - name: type
+    type: String
+    description: The type of the link created.
+  - name: scope
+    type: String
+    description: The scope of the link represented by this permission. Value anonymous indicates the link is usable by anyone, organization indicates the link is only usable for users signed into the same tenant.
+  - name: webHtml
+    type: String
+    description: For embed links, this property contains the HTML code for an <iframe> element that will embed the item in a webpage.
+  - name: webUrl
+    type: String
+    description: A URL that opens the item in the browser on the OneDrive website.
+  outro: |
+    ## Type options
+    This table defines the possible values for the **type** property:
+    |Value|Role|Description
+    |:-|:-|:-
+    |`view`|`read`|A view-only sharing link, allowing read-only access.
+    |`edit`|`write`|An edit sharing link, allowing read-write access.
+    |`embed`|`read`|A view-only sharing link that can be used to embed content into a host webpage. Embed links are not available for OneDrive for Business or SharePoint.

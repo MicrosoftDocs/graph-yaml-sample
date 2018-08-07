@@ -1,0 +1,8 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/reportroot-concept-overview.md
+top:
+  heading: Microsoft Graph reports API overview
+  intro: |
+    Usage reports in the Microsoft 365 admin center enable admins to understand their company's usage across Office 365 services. You can use the reports API in Microsoft Graph to integrate with Office 365 usage reports.
+  outro: |
+    ## Why use the reports API?

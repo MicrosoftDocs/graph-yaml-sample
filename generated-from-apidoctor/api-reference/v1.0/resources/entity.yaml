@@ -1,0 +1,25 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/entity.md
+top:
+  heading: entity resource type
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource
+  resourceDefinition: |
+    ```json
+    {
+      "id": "string (identifier)"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: id
+    type: String
+    description: Read-only.
+relationships:
+  heading: Relationships
+  intro: |
+    None

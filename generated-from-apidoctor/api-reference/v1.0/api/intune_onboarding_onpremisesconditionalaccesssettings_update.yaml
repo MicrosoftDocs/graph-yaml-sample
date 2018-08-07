@@ -1,0 +1,85 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/intune_onboarding_onpremisesconditionalaccesssettings_update.md
+top:
+  heading: Update onPremisesConditionalAccessSettings
+  intro: |
+    Update the properties of a [onPremisesConditionalAccessSettings](../resources/intune_onboarding_onpremisesconditionalaccesssettings.md) object.
+permissions:
+  heading: Prerequisites
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+httpRequest:
+  heading: HTTP Request
+  samplePaths: |
+    ```http
+    PATCH /deviceManagement/conditionalAccessSettings
+    ```
+    
+httpHeaders:
+  heading: Request headers
+  table:
+  - name: Authorization
+    type: String
+    description: 
+  - name: Accept
+    type: String
+    description: 
+Request body:
+  heading: Request body
+  intro: |
+    In the request body, supply a JSON representation for the [onPremisesConditionalAccessSettings](../resources/intune_onboarding_onpremisesconditionalaccesssettings.md) object.
+    The following table shows the properties that are required when you create the [onPremisesConditionalAccessSettings](../resources/intune_onboarding_onpremisesconditionalaccesssettings.md).
+    |Property|Type|Description
+    |:-|:-|:-|
+    |id|String|Not yet documented
+    |enabled|Boolean|Indicates if on premises conditional access is enabled for this organization
+    |includedGroups|Guid collection|User groups that will be targeted by on premises conditional access. All users in these groups will be required to have mobile device managed and compliant for mail access.
+    |excludedGroups|Guid collection|User groups that will be exempt by on premises conditional access. All users in these groups will be exempt from the conditional access policy.
+    |overrideDefaultRule|Boolean|Override the default access rule when allowing a device to ensure access is granted.
+Response:
+  heading: Response
+  intro: |
+    If successful, this method returns a `200 OK` response code and an updated [onPremisesConditionalAccessSettings](../resources/intune_onboarding_onpremisesconditionalaccesssettings.md) object in the response body.
+examples:
+  - Example:
+      heading: Example
+      - request:
+          heading: Request
+          intro: |
+            Here is an example of the request.
+            PATCH https://graph.microsoft.com/v1.0/deviceManagement/conditionalAccessSettings
+            Content-type: application/json
+            Content-length: 195
+            
+            {
+              "enabled": true,
+              "includedGroups": [
+                "79199ed9-e50b-4257-8de4-70b9c8685061"
+              ],
+              "excludedGroups": [
+                "79199ed9-e50b-4257-8de4-70b9c8685061"
+              ],
+              "overrideDefaultRule": true
+            }
+
+      - response:
+          heading: Response
+          intro: |
+            Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+            HTTP/1.1 200 OK
+            Content-Type: application/json
+            Content-Length: 318
+            
+            {
+              "@odata.type": "#microsoft.graph.onPremisesConditionalAccessSettings",
+              "id": "a0efde21-de21-a0ef-21de-efa021deefa0",
+              "enabled": true,
+              "includedGroups": [
+                "79199ed9-e50b-4257-8de4-70b9c8685061"
+              ],
+              "excludedGroups": [
+                "79199ed9-e50b-4257-8de4-70b9c8685061"
+              ],
+              "overrideDefaultRule": true
+            }
+

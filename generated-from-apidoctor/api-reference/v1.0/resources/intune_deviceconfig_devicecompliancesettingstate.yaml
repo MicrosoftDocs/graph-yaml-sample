@@ -1,0 +1,82 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_devicecompliancesettingstate.md
+top:
+  heading: deviceComplianceSettingState resource type
+  intro: |
+    Device compliance setting State for a given device.
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.deviceComplianceSettingState",
+      "id": "String (identifier)",
+      "setting": "String",
+      "settingName": "String",
+      "deviceId": "String",
+      "deviceName": "String",
+      "userId": "String",
+      "userEmail": "String",
+      "userName": "String",
+      "userPrincipalName": "String",
+      "deviceModel": "String",
+      "state": "String",
+      "complianceGracePeriodExpirationDateTime": "String (timestamp)"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: id
+    type: String
+    description: Key of the entity
+  - name: setting
+    type: String
+    description: The setting class name and property name.
+  - name: settingName
+    type: String
+    description: The Setting Name that is being reported
+  - name: deviceId
+    type: String
+    description: The Device Id that is being reported
+  - name: deviceName
+    type: String
+    description: The Device Name that is being reported
+  - name: userId
+    type: String
+    description: The user Id that is being reported
+  - name: userEmail
+    type: String
+    description: The User email address that is being reported
+  - name: userName
+    type: String
+    description: The User Name that is being reported
+  - name: userPrincipalName
+    type: String
+    description: The User PrincipalName that is being reported
+  - name: deviceModel
+    type: String
+    description: The device model that is being reported
+  - name: state
+    type: microsoft.graph.complianceStatus
+    description: The compliance state of the setting. The possible values are: unknown, notApplicable, compliant, remediated, nonCompliant, error, conflict.
+  - name: complianceGracePeriodExpirationDateTime
+    type: DateTimeOffset
+    description: The DateTime when device compliance grace period expires
+relationships:
+  heading: Relationships
+  intro: |
+    None
+methods:
+  heading: Methods
+  intro: |
+    |Method|Return Type|Description
+    |:-|:-|:-|
+    |[List deviceComplianceSettingStates](../api/intune_deviceconfig_devicecompliancesettingstate_list.md)|[deviceComplianceSettingState](../resources/intune_deviceconfig_devicecompliancesettingstate.md) collection|List properties and relationships of the [deviceComplianceSettingState](../resources/intune_deviceconfig_devicecompliancesettingstate.md) objects.
+    |[Get deviceComplianceSettingState](../api/intune_deviceconfig_devicecompliancesettingstate_get.md)|[deviceComplianceSettingState](../resources/intune_deviceconfig_devicecompliancesettingstate.md)|Read properties and relationships of the [deviceComplianceSettingState](../resources/intune_deviceconfig_devicecompliancesettingstate.md) object.
+    |[Create deviceComplianceSettingState](../api/intune_deviceconfig_devicecompliancesettingstate_create.md)|[deviceComplianceSettingState](../resources/intune_deviceconfig_devicecompliancesettingstate.md)|Create a new [deviceComplianceSettingState](../resources/intune_deviceconfig_devicecompliancesettingstate.md) object.
+    |[Delete deviceComplianceSettingState](../api/intune_deviceconfig_devicecompliancesettingstate_delete.md)|None|Deletes a [deviceComplianceSettingState](../resources/intune_deviceconfig_devicecompliancesettingstate.md).
+    |[Update deviceComplianceSettingState](../api/intune_deviceconfig_devicecompliancesettingstate_update.md)|[deviceComplianceSettingState](../resources/intune_deviceconfig_devicecompliancesettingstate.md)|Update the properties of a [deviceComplianceSettingState](../resources/intune_deviceconfig_devicecompliancesettingstate.md) object.

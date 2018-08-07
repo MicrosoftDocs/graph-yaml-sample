@@ -1,0 +1,81 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/page.md
+top:
+  heading: page resource type
+  intro: |
+    A page in a OneNote notebook.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "content": "stream",
+      "contentUrl": "string",
+      "createdByAppId": "string",
+      "createdDateTime": "String (timestamp)",
+      "id": "string (identifier)",
+      "lastModifiedDateTime": "String (timestamp)",
+      "level": 1024,
+      "links": {"@odata.type": "microsoft.graph.pageLinks"},
+      "order": 1024,
+      "self": "string",
+      "title": "string"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: content
+    type: Stream
+    description: The page's HTML content.
+  - name: contentUrl
+    type: String
+    description: The URL for the page's HTML content.  Read-only.
+  - name: createdByAppId
+    type: String
+    description: The unique identifier of the application that created the page. Read-only.
+  - name: createdDateTime
+    type: DateTimeOffset
+    description: The date and time when the page was created. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Read-only.
+  - name: id
+    type: String
+    description: The unique identifier of the page.  Read-only.
+  - name: lastModifiedDateTime
+    type: DateTimeOffset
+    description: The date and time when the page was last modified. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Read-only.
+  - name: level
+    type: Int32
+    description: The indentation level of the page. Read-only.
+  - name: links
+    type: microsoft.graph.pageLinks
+    description: Links for opening the page. The oneNoteClientURL link opens the page in the OneNote native client if it 's installed. The oneNoteWebUrl link opens the page in OneNote Online. Read-only.
+  - name: order
+    type: Int32
+    description: The order of the page within its parent section. Read-only.
+  - name: self
+    type: String
+    description: The endpoint where you can get details about the page. Read-only.
+  - name: title
+    type: String
+    description: The title of the page.
+relationships:
+  heading: Relationships
+  table:
+  - name: parentNotebook
+    type: microsoft.graph.notebook
+    description: The notebook that contains the page.  Read-only.
+  - name: parentSection
+    type: microsoft.graph.onenoteSection
+    description: The section that contains the page. Read-only.
+methods:
+  heading: Methods
+  intro: |
+    |Method|Return Type|Description
+    |:-|:-|:-|
+    |[Get page](../api/page_get.md)|[Page](page.md)|Read the properties and relationships of the page.
+    |[Update page content](../api/page_update.md)|None|Update the HTML content of the page.
+    |[Delete page](../api/page_delete.md)|None|Delete the page.
+    |[copyToSection](../api/page_copytosection.md)|None|Copies the page to a specific section.

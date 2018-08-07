@@ -1,0 +1,45 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_devices_windowsdefenderscanactionresult.md
+top:
+  heading: windowsDefenderScanActionResult resource type
+  intro: |
+    Windows Defender last scan result
+    Inherits from [deviceActionResult](../resources/intune_devices_deviceactionresult.md)
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.windowsDefenderScanActionResult",
+      "actionName": "String",
+      "actionState": "String",
+      "startDateTime": "String (timestamp)",
+      "lastUpdatedDateTime": "String (timestamp)",
+      "scanType": "String"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: actionName
+    type: String
+    description: Action name Inherited from deviceActionResult
+  - name: actionState
+    type: microsoft.graph.actionState
+    description: State of the action Inherited from deviceActionResult. The possible values are: none, pending, canceled, active, done, failed, notSupported.
+  - name: startDateTime
+    type: DateTimeOffset
+    description: Time the action was initiated Inherited from deviceActionResult
+  - name: lastUpdatedDateTime
+    type: DateTimeOffset
+    description: Time the action state was last updated Inherited from deviceActionResult
+  - name: scanType
+    type: String
+    description: Scan type either full scan or quick scan
+relationships:
+  heading: Relationships
+  intro: |
+    None

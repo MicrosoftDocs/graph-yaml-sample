@@ -1,0 +1,76 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/intune_books_iosvppebookassignment_create.md
+top:
+  heading: Create iosVppEBookAssignment
+  intro: |
+    Create a new [iosVppEBookAssignment](../resources/intune_books_iosvppebookassignment.md) object.
+permissions:
+  heading: Prerequisites
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+httpRequest:
+  heading: HTTP Request
+  samplePaths: |
+    ```http
+    POST /deviceAppManagement/managedEBooks/{managedEBookId}/assignments
+    ```
+    
+httpHeaders:
+  heading: Request headers
+  table:
+  - name: Authorization
+    type: String
+    description: 
+  - name: Accept
+    type: String
+    description: 
+Request body:
+  heading: Request body
+  intro: |
+    In the request body, supply a JSON representation for the iosVppEBookAssignment object.
+    The following table shows the properties that are required when you create the iosVppEBookAssignment.
+    |Property|Type|Description
+    |:-|:-|:-|
+    |id|String|Key of the entity. Inherited from [managedEBookAssignment](../resources/intune_books_managedebookassignment.md)
+    |target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|The assignment target for eBook. Inherited from [managedEBookAssignment](../resources/intune_books_managedebookassignment.md)
+    |installIntent|[installIntent](../resources/intune_shared_installintent.md)|The install intent for eBook. Inherited from [managedEBookAssignment](../resources/intune_books_managedebookassignment.md). The possible values are: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.
+Response:
+  heading: Response
+  intro: |
+    If successful, this method returns a `201 Created` response code and a [iosVppEBookAssignment](../resources/intune_books_iosvppebookassignment.md) object in the response body.
+examples:
+  - Example:
+      heading: Example
+      - request:
+          heading: Request
+          intro: |
+            Here is an example of the request.
+            POST https://graph.microsoft.com/v1.0/deviceAppManagement/managedEBooks/{managedEBookId}/assignments
+            Content-type: application/json
+            Content-length: 193
+            
+            {
+              "@odata.type": "#microsoft.graph.iosVppEBookAssignment",
+              "target": {
+                "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+              },
+              "installIntent": "required"
+            }
+
+      - response:
+          heading: Response
+          intro: |
+            Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+            HTTP/1.1 201 Created
+            Content-Type: application/json
+            Content-Length: 242
+            
+            {
+              "@odata.type": "#microsoft.graph.iosVppEBookAssignment",
+              "id": "48f05789-5789-48f0-8957-f0488957f048",
+              "target": {
+                "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+              },
+              "installIntent": "required"
+            }
+

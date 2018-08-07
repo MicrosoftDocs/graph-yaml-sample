@@ -1,0 +1,51 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/plannerbucket.md
+top:
+  heading: plannerBucket resource type
+  intro: |
+    The **plannerBucket** resource represents a bucket (or "custom column") for tasks in a plan in Office 365. It is contained in a [plannerPlan](plannerPlan.md) and can have a collection of [plannerTasks](plannerTask.md).
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "id": "String (identifier)",
+      "name": "String",
+      "orderHint": "String",
+      "planId": "String"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: id
+    type: String
+    description: Read-only. ID of the bucket. It is 28 characters long and case-sensitive. Format validation is done on the service.
+  - name: name
+    type: String
+    description: Name of the bucket.
+  - name: orderHint
+    type: String
+    description: Hint used to order items of this type in a list view. The format is defined as outlined here.
+  - name: planId
+    type: String
+    description: Plan ID to which the bucket belongs.
+relationships:
+  heading: Relationships
+  table:
+  - name: tasks
+    type: Collection(microsoft.graph.plannerTask)
+    description: Read-only. Nullable. The collection of tasks in the bucket.
+methods:
+  heading: Methods
+  intro: |
+    |Method|Return Type|Description
+    |:-|:-|:-|
+    |[Get plannerBucket](../api/plannerbucket_get.md)|[plannerBucket](plannerbucket.md)|Read properties and relationships of **plannerBucket** object.
+    |[List plannerTasks](../api/plannerbucket_list_tasks.md)|[plannerTask](plannertask.md) collection|Get a **plannerTask** object collection.
+    |[Create](../api/planner_post_buckets.md)|[plannerBucket](plannerbucket.md)|Create a new **plannerBucket** object.
+    |[Update](../api/plannerbucket_update.md)|[plannerBucket](plannerbucket.md)|Update **plannerBucket** object.
+    |[Delete](../api/plannerbucket_delete.md)|None|Delete **plannerBucket** object.

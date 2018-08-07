@@ -1,0 +1,73 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_deviceconfiguration.md
+top:
+  heading: deviceConfiguration resource type
+  intro: |
+    Device Configuration.
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.deviceConfiguration",
+      "id": "String (identifier)",
+      "lastModifiedDateTime": "String (timestamp)",
+      "createdDateTime": "String (timestamp)",
+      "description": "String",
+      "displayName": "String",
+      "version": 1024
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: id
+    type: String
+    description: Key of the entity.
+  - name: lastModifiedDateTime
+    type: DateTimeOffset
+    description: DateTime the object was last modified.
+  - name: createdDateTime
+    type: DateTimeOffset
+    description: DateTime the object was created.
+  - name: description
+    type: String
+    description: Admin provided description of the Device Configuration.
+  - name: displayName
+    type: String
+    description: Admin provided name of the device configuration.
+  - name: version
+    type: Int32
+    description: Version of the device configuration.
+relationships:
+  heading: Relationships
+  table:
+  - name: assignments
+    type: Collection(microsoft.graph.deviceConfigurationAssignment)
+    description: The list of assignments for the device configuration profile.
+  - name: deviceStatuses
+    type: Collection(microsoft.graph.deviceConfigurationDeviceStatus)
+    description: Device configuration installation status by device.
+  - name: userStatuses
+    type: Collection(microsoft.graph.deviceConfigurationUserStatus)
+    description: Device configuration installation status by user.
+  - name: deviceStatusOverview
+    type: microsoft.graph.deviceConfigurationDeviceOverview
+    description: Device Configuration devices status overview
+  - name: userStatusOverview
+    type: microsoft.graph.deviceConfigurationUserOverview
+    description: Device Configuration users status overview
+  - name: deviceSettingStateSummaries
+    type: Collection(microsoft.graph.settingStateDeviceSummary)
+    description: Device Configuration Setting State Device Summary
+methods:
+  heading: Methods
+  intro: |
+    |Method|Return Type|Description
+    |:-|:-|:-|
+    |[List deviceConfigurations](../api/intune_deviceconfig_deviceconfiguration_list.md)|[deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) collection|List properties and relationships of the [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) objects.
+    |[Get deviceConfiguration](../api/intune_deviceconfig_deviceconfiguration_get.md)|[deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|Read properties and relationships of the [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) object.
+    |[assign action](../api/intune_deviceconfig_deviceconfiguration_assign.md)|[deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md) collection|Not yet documented

@@ -1,0 +1,97 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/device_post_devices.md
+top:
+  heading: Create device
+  intro: |
+    Create and register a new device in the organization.
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+  table:
+  - type: Delegated (work or school account)
+    scopes: Directory.AccessAsUser.All
+  - type: Delegated (personal Microsoft account)
+    scopes: Not supported.
+  - type: Application
+    scopes: Device.ReadWrite.All
+httpRequest:
+  heading: HTTP request
+  samplePaths: |
+    ```http
+    POST /devices
+    ```
+    
+httpHeaders:
+  heading: Request headers
+  table:
+  - name: Authorization
+    type: String
+    description: Bearer {token}. Required.
+  - name: Content-type
+    type: String
+    description: application/json
+Request body:
+  heading: Request body
+  intro: |
+    In the request body, supply a JSON representation of [device](../resources/device.md) object.
+Response:
+  heading: Response
+  intro: |
+    If successful, this method returns `201 Created` response code and [device](../resources/device.md) object in the response body.
+examples:
+  - Example:
+      heading: Example
+      - request:
+          heading: Request
+          intro: |
+            Here is an example of the request.
+          exampleRequest: |
+            ```http
+            POST https://graph.microsoft.com/v1.0/devices
+            Content-type: application/json
+            
+            {
+              "accountEnabled":false,
+              "alternativeSecurityIds":
+              [
+                {
+                  "type":2,
+                  "key":"base64Y3YxN2E1MWFlYw=="
+                }
+              ],
+              "deviceId":"4c299165-6e8f-4b45-a5ba-c5d250a707ff",
+              "displayName":"Test device",
+              "operatingSystem":"linux",
+              "operatingSystemVersion":"1"
+            }
+            ```
+            
+          outro: |
+            In the request body, supply a JSON representation of [device](../resources/device.md) object.
+      - response:
+          heading: Response
+          intro: |
+            Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+          exampleResponse: |
+            ```http
+            HTTP/1.1 201 Created
+            Content-type: application/json
+            
+            {
+              "accountEnabled":false,
+              "alternativeSecurityIds":
+              [
+                {
+                  "type":2,
+                  "key":"base64Y3YxN2E1MWFlYw=="
+                }
+              ],
+              "deviceId":"4c299165-6e8f-4b45-a5ba-c5d250a707ff",
+              "displayName":"Test device",
+              "id": "id-value",
+              "operatingSystem":"linux",
+              "operatingSystemVersion":"1"
+            }
+            ```
+            

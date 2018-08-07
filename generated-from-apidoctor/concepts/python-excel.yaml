@@ -1,0 +1,115 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/python-excel.md
+top:
+  heading: Use Microsoft Graph to access Excel in a Python app
+  intro: |
+    You can use the Microsoft Graph API to read and update workbooks stored in supported online storage platforms including, OneDrive and SharePoint. The `Workbook` (or Excel file) resource contains all the other Excel resources and your app can access them via simple navigations. 
+    You can access a set of Excel objects (such as Table, Range, or Chart) by using standard REST APIs to perform create, read, update, and delete (CRUD) operations on the workbook. For example, 
+    `https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/`  
+    returns a collection of worksheet objects that are part of the workbook.    
+    This walkthrough describes how to make requests to the Excel REST API from a Python web app. 
+permissions:
+  heading: Prerequisites
+  intro: |
+    * [Python 3.5.2](https://www.python.org/downloads/)
+    * [Flask-OAuthlib](https://github.com/lepture/flask-oauthlib)
+    * A [work or school account](https://msdn.microsoft.com/en-us/office/office365/howto/setup-development-environment#bk_Office365Account)<!-- This link target doesn't match the link title. Please verify that this is what you want to link to and update the text, or update the URL as appropriate. -->
+    
+  outro: |
+    ## Authorization and scopes
+    You can use the [Azure AD v2.0 endpoint](https://graph.microsoft.io/en-us/docs/concepts/converged_auth) to authenticate Excel REST API calls. All APIs require the `Authorization: Bearer {access-token}` HTTP header.   
+    One of the following [permission scopes](https://graph.microsoft.io/en-us/docs/concepts/permissions_reference) is required to use the Excel resource:
+    
+    * Files.Read 
+    * Files.ReadWrite
+    
+httpHeaders:
+  heading: Request headers
+  intro: |
+    With an access token, your app can make authenticated requests to the Microsoft Graph API. Your app must append the access token to the **Authorization** header of each request.
+    	# Set request headers.
+    	headers = { 
+    		'User-Agent' : 'python_tutorial/1.0',
+    		'Authorization' : 'Bearer {0}'.format(access_token),
+    	 	'Accept' : 'application/json',
+    	 	'Content-Type' : 'application/json'
+    	}
+
+    
+  outro: |
+    ### Getting an Excel Session
+Request:
+  heading: Request
+  intro: |
+    Pass a JSON object by setting the `persistChanges` value to `true` or `false`. When the value of `persistChanges` is set to `false`, a non-persistent session id is returned. This example uses the [Requests](http://docs.python-requests.org/en/latest/user/quickstart) HTTP library 
+     	# Replace the id with your Excel workbook's drive id
+    	url = 'https://graph.microsoft.com/v1.0/me/drive/items/01TBZDUE23F3CNYSIEGNBZV2LZGWHMC7TE/workbook/createSession'
+    	# Set request headers
+    	headers = { 
+    		'User-Agent' : 'python_tutorial/1.0',
+    		'Authorization' : 'Bearer {0}'.format(access_token),
+    		'Accept' : 'application/json',
+    		'Content-Type' : 'application/json'
+    	}
+    	# Specify type of session
+    	body = {
+    		'persistChanges': True
+    	}
+    	
+    	response = requests.post(url, headers = headers, json = body)
+
+Response:
+  heading: Response
+  intro: |
+    ```http
+    HTTP code: 201 Created
+    content-type: application/json;odata.metadata 
+    
+    {
+    	"@odata.context": "https://graph.microsoft.com/{version}/$metadata#microsoft.graph.sessionInfo",
+    	"id": "{session-id}",
+    	"persistChanges": true
+    }
+    ```
+    
+  outro: |
+    #### Usage
+    The session ID returned from the previous call is passed as a header on subsequent API requests in the
+    **Workbook-Session-Id** HTTP header. For instance, to list worksheets in that Excel workbook.
+    	# Replace the id with your Excel workbook's drive id
+    	url = 'https://graph.microsoft.com/v1.0/me/drive/items/01TBZDUE23F3CNYSIEGNBZV2LZGWHMC7TE/workbook/worksheets'
+    	# Set request headers - note the session header 
+    	headers = { 
+    		'User-Agent' : 'python_tutorial/1.0',
+    		'Authorization' : 'Bearer {0}'.format(access_token),
+    		'Accept' : 'application/json',
+    		'Workbook-Session-Id': 'cluster=PP1&session=12.a04039942e021.A272...'
+    	}
+    	
+    	response = requests.get(url, headers = headers)
+
+    
+    ```http
+    HTTP code: 200 OK
+    content-type: application/json;odata.metadata 
+    
+    {
+    	"@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('8473b867-3e4e-4e44-8d09-8c6da362080f')/drive/items('01TBZDUE23F3CNYSIEGNBZV2LZGWHMC7TE')/workbook/worksheets",
+    	"value": [
+    	{
+    		"@odata.id": "/users('8473b867-3e4e-4e44-8d09-8c6da362080f')/drive/items('01TBZDUE23F3CNYSIEGNBZV2LZGWHMC7TE')/workbook/worksheets(%27%7B00000000-0001-0000-0000-000000000000%7D%27)",
+    		"id": "{00000000-0001-0000-0000-000000000000}",
+    		"name": "Session 1",
+    		"position": 0,
+    		"visibility": "Visible"
+    	},
+    	{
+    		"@odata.id": "/users('8473b867-3e4e-4e44-8d09-8c6da362080f')/drive/items('01TBZDUE23F3CNYSIEGNBZV2LZGWHMC7TE')/workbook/worksheets(%27%7B00000000-0001-0000-0100-000000000000%7D%27)",
+    		"id": "{00000000-0001-0000-0100-000000000000}",
+    		"name": "Session 2",
+    		"position": 1,
+    		"visibility": "Visible"
+    	}]
+    }
+    ```
+    

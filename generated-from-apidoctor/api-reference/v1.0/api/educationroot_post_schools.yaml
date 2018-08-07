@@ -1,0 +1,120 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/educationroot_post_schools.md
+top:
+  heading: Create educationSchool
+  intro: |
+    Create a school.
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+  table:
+  - type: Delegated (work or school account)
+    scopes: Not supported.
+  - type: Delegated (personal Microsoft account)
+    scopes: Not supported.
+  - type: Application
+    scopes: EduRoster.ReadWrite.All
+httpRequest:
+  heading: HTTP request
+  samplePaths: |
+    ```http
+    POST /education/schools
+    ```
+    
+httpHeaders:
+  heading: Request headers
+  table:
+  - name: Authorization
+    type: String
+    description: 
+  - name: Content-Type
+    type: String
+    description: 
+Request body:
+  heading: Request body
+  intro: |
+    In the request body, supply a JSON representation of an [educationSchool](../resources/educationschool.md) object.
+Response:
+  heading: Response
+  intro: |
+    If successful, this method returns a `201 Created` response code and an [educationSchool](../resources/educationschool.md) object in the response body.
+examples:
+  - Example:
+      heading: Example
+      - request:
+          heading: Request
+          intro: |
+            The following is an example of the request.
+          exampleRequest: |
+            ```http
+            POST https://graph.microsoft.com/v1.0/education/schools
+            Content-type: application/json
+            Content-length: 292
+            
+            {
+              "displayName": "Fabrikam High School",
+              "description": "Magnate school for the arts. Los Angeles School District",
+              "status": "String",
+              "externalSource": "String",
+              "principalEmail": "AmyR@fabrikam.com",
+              "principalName": "Amy Roebuck",
+              "externalPrincipalId": "14007",
+              "highestGrade": "12",
+              "lowestGrade": "9",
+              "schoolNumber": "10002",
+              "address": {
+                "city": "Los Angeles",
+                "countryOrRegion": "United States",
+                "postalCode": "98055",
+                "state": "CA",
+                "street": "12345 Main St."
+              },
+              "externalId": "10002",
+              "fax": "+1 (253) 555-0101",
+              "phone": "+1 (253) 555-0102",
+            }
+            ```
+            
+      - response:
+          heading: Response
+          intro: |
+            The following is an example of the response. 
+            
+          exampleResponse: |
+            ```http
+            HTTP/1.1 201 Created
+            Content-type: application/json
+            Content-length: 292
+            
+            {
+              "id": "10002",
+              "displayName": "Fabrikam High School",
+              "description": "Magnate school for the arts. Los Angeles School District",
+              "status": "String",
+              "externalSource": "String",
+              "principalEmail": "AmyR@fabrikam.com",
+              "principalName": "Amy Roebuck",
+              "externalPrincipalId": "14007",
+              "highestGrade": "12",
+              "lowestGrade": "9",
+              "schoolNumber": "10002",
+              "address": {
+                "city": "Los Angeles",
+                "countryOrRegion": "United States",
+                "postalCode": "98055",
+                "state": "CA",
+                "street": "12345 Main St."
+              },
+              "createdBy": {
+                "user": {
+                  "displayName": "Susana Rocha",
+                  "id": "14012",
+                }
+              },
+              "externalId": "10002",
+              "fax": "+1 (253) 555-0101",
+              "phone": "+1 (253) 555-0102",
+            }
+            ```
+            

@@ -1,0 +1,17 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_mam_managedappdataencryptiontype.md
+top:
+  heading: managedAppDataEncryptionType enum type
+  intro: |
+    Represents the level to which app data is encrypted for managed apps
+enum:
+  heading: Members
+  table:
+  - member: useDeviceSettings
+    description: App data is encrypted based on the default settings on the device.
+  - member: afterDeviceRestart
+    description: App data is encrypted when the device is restarted.
+  - member: whenDeviceLockedExceptOpenFiles
+    description: App data associated with this policy is encrypted when the device is locked, except data in files that are open
+  - member: whenDeviceLocked
+    description: App data associated with this policy is encrypted when the device is locked

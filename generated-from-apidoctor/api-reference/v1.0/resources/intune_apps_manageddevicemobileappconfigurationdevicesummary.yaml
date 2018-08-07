@@ -1,0 +1,63 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_apps_manageddevicemobileappconfigurationdevicesummary.md
+top:
+  heading: managedDeviceMobileAppConfigurationDeviceSummary resource type
+  intro: |
+    Contains properties, inherited properties and actions for an MDM mobile app configuration device status summary.
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.managedDeviceMobileAppConfigurationDeviceSummary",
+      "id": "String (identifier)",
+      "pendingCount": 1024,
+      "notApplicableCount": 1024,
+      "successCount": 1024,
+      "errorCount": 1024,
+      "failedCount": 1024,
+      "lastUpdateDateTime": "String (timestamp)",
+      "configurationVersion": 1024
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: id
+    type: String
+    description: Key of the entity.
+  - name: pendingCount
+    type: Int32
+    description: Number of pending devices
+  - name: notApplicableCount
+    type: Int32
+    description: Number of not applicable devices
+  - name: successCount
+    type: Int32
+    description: Number of succeeded devices
+  - name: errorCount
+    type: Int32
+    description: Number of error devices
+  - name: failedCount
+    type: Int32
+    description: Number of failed devices
+  - name: lastUpdateDateTime
+    type: DateTimeOffset
+    description: Last update time
+  - name: configurationVersion
+    type: Int32
+    description: Version of the policy for that overview
+relationships:
+  heading: Relationships
+  intro: |
+    None
+methods:
+  heading: Methods
+  intro: |
+    |Method|Return Type|Description
+    |:-|:-|:-|
+    |[Get managedDeviceMobileAppConfigurationDeviceSummary](../api/intune_apps_manageddevicemobileappconfigurationdevicesummary_get.md)|[managedDeviceMobileAppConfigurationDeviceSummary](../resources/intune_apps_manageddevicemobileappconfigurationdevicesummary.md)|Read properties and relationships of the [managedDeviceMobileAppConfigurationDeviceSummary](../resources/intune_apps_manageddevicemobileappconfigurationdevicesummary.md) object.
+    |[Update managedDeviceMobileAppConfigurationDeviceSummary](../api/intune_apps_manageddevicemobileappconfigurationdevicesummary_update.md)|[managedDeviceMobileAppConfigurationDeviceSummary](../resources/intune_apps_manageddevicemobileappconfigurationdevicesummary.md)|Update the properties of a [managedDeviceMobileAppConfigurationDeviceSummary](../resources/intune_apps_manageddevicemobileappconfigurationdevicesummary.md) object.

@@ -1,0 +1,25 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_policyplatformtype.md
+top:
+  heading: policyPlatformType enum type
+  intro: |
+    Suppoorted platform types for policies.
+enum:
+  heading: Members
+  table:
+  - member: android
+    description: Android.
+  - member: iOS
+    description: iOS.
+  - member: macOS
+    description: MacOS.
+  - member: windowsPhone81
+    description: WindowsPhone 8.1.
+  - member: windows81AndLater
+    description: Windows 8.1 and later
+  - member: windows10AndLater
+    description: Windows 10 and later.
+  - member: androidWorkProfile
+    description: AndroidWorkProfile.
+  - member: all
+    description: All platforms.

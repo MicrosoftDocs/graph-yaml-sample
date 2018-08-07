@@ -1,0 +1,82 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/intune_shared_devicemanagement_get.md
+top:
+  heading: Get deviceManagement
+  intro: |
+    Read properties and relationships of the [deviceManagement](../resources/intune_shared_devicemanagement.md) object.
+permissions:
+  heading: Prerequisites
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+httpRequest:
+  heading: HTTP Request
+  samplePaths: |
+    ```http
+    GET /deviceManagement
+    ```
+    
+queryParameters:
+  heading: Optional query parameters
+  intro: |
+    This method supports the [OData Query Parameters](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+httpHeaders:
+  heading: Request headers
+  table:
+  - name: Authorization
+    type: String
+    description: 
+  - name: Accept
+    type: String
+    description: 
+Request body:
+  heading: Request body
+  intro: |
+    Do not supply a request body for this method.
+Response:
+  heading: Response
+  intro: |
+    If successful, this method returns a `200 OK` response code and [deviceManagement](../resources/intune_shared_devicemanagement.md) object in the response body.
+examples:
+  - Example:
+      heading: Example
+      - request:
+          heading: Request
+          intro: |
+            Here is an example of the request.
+            GET https://graph.microsoft.com/v1.0/deviceManagement
+
+      - response:
+          heading: Response
+          intro: |
+            Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+            HTTP/1.1 200 OK
+            Content-Type: application/json
+            Content-Length: 918
+            
+            {
+              "value": {
+                "@odata.type": "#microsoft.graph.deviceManagement",
+                "id": "0b283420-3420-0b28-2034-280b2034280b",
+                "subscriptionState": "active",
+                "subscriptions": "intune",
+                "adminConsent": {
+                  "@odata.type": "microsoft.graph.adminConsent",
+                  "shareAPNSData": "granted"
+                },
+                "deviceProtectionOverview": {
+                  "@odata.type": "microsoft.graph.deviceProtectionOverview",
+                  "totalReportedDeviceCount": 8,
+                  "inactiveThreatAgentDeviceCount": 14,
+                  "unknownStateThreatAgentDeviceCount": 2,
+                  "pendingSignatureUpdateDeviceCount": 1,
+                  "cleanDeviceCount": 0,
+                  "pendingFullScanDeviceCount": 10,
+                  "pendingRestartDeviceCount": 9,
+                  "pendingManualStepsDeviceCount": 13,
+                  "pendingOfflineScanDeviceCount": 13,
+                  "criticalFailuresDeviceCount": 11
+                },
+                "accountMoveCompletionDateTime": "2017-01-01T00:01:17.9006709-08:00"
+              }
+            }
+

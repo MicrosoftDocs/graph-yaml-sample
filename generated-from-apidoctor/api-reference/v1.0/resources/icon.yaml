@@ -1,0 +1,38 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/icon.md
+top:
+  heading: Icon resource type
+  intro: |
+    Represents a cell icon.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "index": 1024,
+      "set": "string"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: index
+    type: Int32
+    description: Represents the index of the icon in the given set.
+  - name: set
+    type: String
+    description: Represents the set that the icon is part of. The possible values are: Invalid, ThreeArrows, ThreeArrowsGray, ThreeFlags, ThreeTrafficLights1, ThreeTrafficLights2, ThreeSigns, ThreeSymbols, ThreeSymbols2, FourArrows, FourArrowsGray, FourRedToBlack, FourRating, FourTrafficLights, FiveArrows, FiveArrowsGray, FiveRating, FiveQuarters, ThreeStars, ThreeTriangles, FiveBoxes.
+relationships:
+  heading: Relationships
+  intro: |
+    None
+methods:
+  heading: Methods
+  intro: |
+    |Method|Return Type|Description
+    |:-|:-|:-|
+    |[Get Icon](../api/icon_get.md)|[Icon](icon.md)|Read properties and relationships of icon object.
+    |[Update](../api/icon_update.md)|[Icon](icon.md)|Update Icon object.

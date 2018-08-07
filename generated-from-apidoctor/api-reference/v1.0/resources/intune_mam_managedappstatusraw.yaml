@@ -1,0 +1,50 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_mam_managedappstatusraw.md
+top:
+  heading: managedAppStatusRaw resource type
+  intro: |
+    Represents an un-typed status report about organizations app protection and configuration.
+    Inherits from [managedAppStatus](../resources/intune_mam_managedappstatus.md)
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.managedAppStatusRaw",
+      "displayName": "String",
+      "id": "String (identifier)",
+      "version": "String",
+      "content": {
+        "@odata.type": "microsoft.graph.Json"
+      }
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: displayName
+    type: String
+    description: Friendly name of the status report. Inherited from managedAppStatus
+  - name: id
+    type: String
+    description: Key of the entity. Inherited from managedAppStatus
+  - name: version
+    type: String
+    description: Version of the entity. Inherited from managedAppStatus
+  - name: content
+    type: microsoft.graph.Json
+    description: Status report content.
+relationships:
+  heading: Relationships
+  intro: |
+    None
+methods:
+  heading: Methods
+  intro: |
+    |Method|Return Type|Description
+    |:-|:-|:-|
+    |[List managedAppStatusRaws](../api/intune_mam_managedappstatusraw_list.md)|[managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md) collection|List properties and relationships of the [managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md) objects.
+    |[Get managedAppStatusRaw](../api/intune_mam_managedappstatusraw_get.md)|[managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md)|Read properties and relationships of the [managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md) object.

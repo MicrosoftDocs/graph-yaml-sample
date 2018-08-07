@@ -1,0 +1,39 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/lookupcolumn.md
+top:
+  heading: LookupColumn resource type
+  intro: |
+    The **lookupColumn** on a [columnDefinition](columnDefinition.md) resource indicates that the column's values are looked up from another source in the site.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of a **lookupColumn** resource.
+  resourceDefinition: |
+    ```json
+    {
+      "allowMultipleValues": true,
+      "allowUnlimitedLength": false,
+      "columnName": "string",
+      "listId": "string",
+      "primaryLookupColumnId": "string"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: allowMultipleValues
+    type: Boolean
+    description: Indicates whether multiple values can be selected from the source.
+  - name: allowUnlimitedLength
+    type: Boolean
+    description: Indicates whether values in the column should be able to exceed the standard limit of 255 characters.
+  - name: columnName
+    type: String
+    description: The name of the lookup source column.
+  - name: listId
+    type: String
+    description: The unique identifier of the lookup source list.
+  - name: primaryLookupColumnId
+    type: String
+    description: If specified, this column is a secondary lookup, pulling an additional field from the list item looked up by the primary lookup. Use the list item looked up by the primary as the source for the column named here.

@@ -1,0 +1,63 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_deviceconfigurationdevicestatesummary.md
+top:
+  heading: deviceConfigurationDeviceStateSummary resource type
+  intro: |
+    Not yet documented
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.deviceConfigurationDeviceStateSummary",
+      "id": "String (identifier)",
+      "unknownDeviceCount": 1024,
+      "notApplicableDeviceCount": 1024,
+      "compliantDeviceCount": 1024,
+      "remediatedDeviceCount": 1024,
+      "nonCompliantDeviceCount": 1024,
+      "errorDeviceCount": 1024,
+      "conflictDeviceCount": 1024
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: id
+    type: String
+    description: Key of the entity.
+  - name: unknownDeviceCount
+    type: Int32
+    description: Number of unknown devices
+  - name: notApplicableDeviceCount
+    type: Int32
+    description: Number of not applicable devices
+  - name: compliantDeviceCount
+    type: Int32
+    description: Number of compliant devices
+  - name: remediatedDeviceCount
+    type: Int32
+    description: Number of remediated devices
+  - name: nonCompliantDeviceCount
+    type: Int32
+    description: Number of NonCompliant devices
+  - name: errorDeviceCount
+    type: Int32
+    description: Number of error devices
+  - name: conflictDeviceCount
+    type: Int32
+    description: Number of conflict devices
+relationships:
+  heading: Relationships
+  intro: |
+    None
+methods:
+  heading: Methods
+  intro: |
+    |Method|Return Type|Description
+    |:-|:-|:-|
+    |[Get deviceConfigurationDeviceStateSummary](../api/intune_deviceconfig_deviceconfigurationdevicestatesummary_get.md)|[deviceConfigurationDeviceStateSummary](../resources/intune_deviceconfig_deviceconfigurationdevicestatesummary.md)|Read properties and relationships of the [deviceConfigurationDeviceStateSummary](../resources/intune_deviceconfig_deviceconfigurationdevicestatesummary.md) object.
+    |[Update deviceConfigurationDeviceStateSummary](../api/intune_deviceconfig_deviceconfigurationdevicestatesummary_update.md)|[deviceConfigurationDeviceStateSummary](../resources/intune_deviceconfig_deviceconfigurationdevicestatesummary.md)|Update the properties of a [deviceConfigurationDeviceStateSummary](../resources/intune_deviceconfig_deviceconfigurationdevicestatesummary.md) object.

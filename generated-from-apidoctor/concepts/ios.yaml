@@ -1,0 +1,13 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/ios.md
+top:
+  heading: iOS samples for the Microsoft Graph API
+  intro: |
+    This article introduces two iOS samples that authenticate a user against Office 365 or Managed Service Accounts (MSA) such as consumer Outlook users. Both samples send an email through the Outlook service but one of the samples extends the feature by getting the user's profile photo and sending it in the body of the email
+  outro: |
+    ## iOS Objective-C Connect REST sample
+    This sample uses a standard iOS HTTPS library to make REST calls to the Microsoft Graph. It uses the [Microsoft Authentication Library (MSAL)](https://github.com/AzureAD/microsoft-authentication-library-for-objc/blob/dev/README.md) to authenticate a user. The MSAL library lets your app authenticate a user from Office 365 or from an MSA account. You won't be able to authenticate a user from an on-premise Azure Active Directory instance though.
+    You can send an email with this sample, but it does not retrieve the authenticated user's photo or embed it in the email.
+    
+    * [Get started with Microsoft Graph in an Objectve-C iOS App](ios_objectivec.md)
+    

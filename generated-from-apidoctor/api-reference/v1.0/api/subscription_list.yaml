@@ -1,0 +1,89 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/subscription_list.md
+top:
+  heading: List subscriptions
+  intro: |
+    Retrieve the properties and relationships of webhook subscriptions, based on the app ID, the user, and the user's role with a tenant.
+permissions:
+  heading: Permissions
+  intro: |
+    This API supports the following permission scopes; to learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+  table:
+  - type: Delegated (work or school account)
+    scopes: Role required to create subscription or Subscriptions.Read.All (see below).
+  - type: Delegated (personal Microsoft account)
+    scopes: Role required to create subscription or Subscriptions.Read.All (see below).
+  - type: Application
+    scopes: Role required to create subscription.
+  outro: |
+    Response results are based on the context of the calling app. The following is a summary of the common scenarios:
+    ### Basic scenarios
+    Most commonly, an application wants to retrieve subscriptions that it originally created for the currently signed-in user, or for all users in the directory (work/school accounts). These scenarios do not require any special permissions beyond the ones the app used originally to create its subscriptions.
+    |Context of the calling app|Response contains
+    |:-|:---------------- -|
+    |App is calling on behalf of the signed-in user (delegated permission). <br/>-and-<br/>App has the original permission required to [create the subscription](subscription_post_subscriptions.md).<br/><br/>Note: This applies to both personal Microsoft accounts and work/school accounts.|Subscriptions created by **this app** for the signed-in user only.
+    |App is calling on behalf of itself (application permission).<br/>-and-<br/>App has the original permission required to [create the subscription](subscription_post_subscriptions.md).<br/><br/>Note: This applies to work/school accounts only.|Subscriptions created by **this app** for itself or for any user in the directory.
+httpRequest:
+  heading: HTTP request
+  samplePaths: |
+    ```http
+    GET /subscriptions
+    ```
+    
+queryParameters:
+  heading: Optional query parameters
+  intro: |
+    This method does not support the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+httpHeaders:
+  heading: Request headers
+  table:
+  - name: Authorization
+    type: String
+    description: Bearer {token}. Required.
+Request body:
+  heading: Request body
+  intro: |
+    Do not supply a request body for this method.
+Response:
+  heading: Response
+  intro: |
+    If successful, this method returns a `200 OK` response code and a list of [subscription](../resources/subscription.md) objects in the response body.
+examples:
+  - Example:
+      heading: Example
+      - request:
+          heading: Request
+          exampleRequest: |
+            ```http
+            GET https://graph.microsoft.com/v1.0/subscriptions
+            ```
+            
+      - response:
+          heading: Response
+          intro: |
+            Here's an an example of the response.  Note that it may be truncated for brevity.  All supported properties appropriate for the request and the calling context will be returned from an actual call.
+          exampleResponse: |
+            ```http
+            HTTP/1.1 200 OK
+            Content-type: application/json
+            Content-length: 586
+            
+            {
+              "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#subscriptions",
+              "value": [
+                {
+                  "id": "0fc0d6db-0073-42e5-a186-853da75fb308",
+                  "resource": "Users",
+                  "applicationId": "24d3b144-21ae-4080-943f-7067b395b913",
+                  "changeType": "updated,deleted",
+                  "clientState": null,
+                  "notificationUrl": "https://webhookappexample.azurewebsites.net/api/notifications",
+                  "expirationDateTime": "2018-03-12T05:00:00Z",
+                  "creatorId": "8ee44408-0679-472c-bc2a-692812af3437"
+                }
+              ]
+            }
+            ```
+            
+          outro: |
+            When a request returns multiple pages of data, the response includes an `@odata.nextLink` property to help you manage the results.  To learn more, see [Paging Microsoft Graph data in your app](../../../concepts/paging.md).

@@ -1,0 +1,72 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/shareddriveitem.md
+top:
+  heading: SharedDriveItem resource type
+  intro: |
+    The **sharedDriveItem** resource is returned when using the [Shares](../api/shares_get.md) API to access a shared [driveItem](driveitem.md).
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the **sharedDriveItem** resource.
+    The **sharedDriveItem** resource is derived from [**baseItem**](baseitem.md) and inherits properties from that resource.
+  resourceDefinition: |
+    ```json
+    {
+      "id": "string",
+      "name": "string",
+      "owner": { "@odata.type": "microsoft.graph.identitySet" },
+    
+      "driveItem": { "@odata.type": "microsoft.graph.driveItem" },
+      "items": [ { "@odata.type": "microsoft.graph.driveItem" }],
+      "list": { "@odata.type": "microsoft.graph.list" },
+      "listItem": { "@odata.type": "microsoft.graph.listItem" },
+      "root": { "@odata.type": "microsoft.graph.driveItem" },
+      "site": { "@odata.type": "microsoft.graph.site" }
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: id
+    type: String
+    description: The unique identifier for the share being accessed.
+  - name: name
+    type: String
+    description: The display name of the shared item.
+  - name: owner
+    type: microsoft.graph.identitySet
+    description: Information about the owner of the shared item being referenced.
+relationships:
+  heading: Relationships
+  table:
+  - name: driveItem
+    type: microsoft.graph.driveItem
+    description: Used to access the underlying driveItem
+  - name: list
+    type: microsoft.graph.list
+    description: Used to access the underlying list
+  - name: listItem
+    type: microsoft.graph.listItem
+    description: Used to access the underlying listItem
+  - name: site
+    type: microsoft.graph.site
+    description: Used to access the underlying site
+  - name: items
+    type: Collection(microsoft.graph.driveItem)
+    description: All driveItems contained in the sharing root. This collection cannot be enumerated.
+  - name: root
+    type: microsoft.graph.driveItem
+    description: Used to access the underlying driveItem. Deprecated -- use driveItem instead.
+  outro: |
+    Alternatively, for **driveItems** shared from personal OneDrive accounts, the following relationships may also be used.
+methods:
+  heading: Methods
+  intro: |
+    |Method|REST Path
+    | :-------------------------------------- -| :----------------------- -|
+    |[Get shared item](../api/shares_get.md)|`GET /shares/{share-id}`
+remarks:
+  heading: Remarks
+  intro: |
+    For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).

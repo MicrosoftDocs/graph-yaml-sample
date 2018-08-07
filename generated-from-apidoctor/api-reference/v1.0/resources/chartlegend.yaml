@@ -1,0 +1,45 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/chartlegend.md
+top:
+  heading: ChartLegend resource type
+  intro: |
+    Represents the legend in a chart.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "overlay": true,
+      "position": "string",
+      "visible": true,
+      "format": {"@odata.type":"microsoft.graph.workbookChartLegendFormat"}
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: overlay
+    type: Boolean
+    description: Boolean value for whether the chart legend should overlap with the main body of the chart.
+  - name: position
+    type: String
+    description: Represents the position of the legend on the chart. The possible values are: Top, Bottom, Left, Right, Corner, Custom.
+  - name: visible
+    type: Boolean
+    description: A boolean value the represents the visibility of a ChartLegend object.
+relationships:
+  heading: Relationships
+  table:
+  - name: format
+    type: microsoft.graph.workbookChartLegendFormat
+    description: Represents the formatting of a chart legend, which includes fill and font formatting. Read-only.
+methods:
+  heading: Methods
+  intro: |
+    |Method|Return Type|Description
+    |:-|:-|:-|
+    |[Get ChartLegend](../api/chartlegend_get.md)|[WorkbookChartLegend](chartlegend.md)|Read properties and relationships of chartLegend object.
+    |[Update](../api/chartlegend_update.md)|[WorkbookChartLegend](chartlegend.md)|Update ChartLegend object.

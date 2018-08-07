@@ -1,0 +1,106 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/educationschool.md
+top:
+  heading: educationSchool resource type
+  intro: |
+    A resource representing a school and used to manage the classes, teachers, and students of the represented school.  
+resource:
+  heading: JSON representation
+  intro: |
+    The following is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "id": "String",
+      "displayName": "String",
+      "description": "String",
+      "status": "String",
+      "externalSource": "String",
+      "principalEmail": "String",
+      "principalName": "String",
+      "externalPrincipalId": "String",
+      "highestGrade": "String",
+      "lowestGrade": "String",
+      "schoolNumber": "String",
+      "address": {"@odata.type": "microsoft.graph.physicalAddress"},
+      "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
+      "externalId": "String",
+      "fax": "String",
+      "phone": "String",
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: id
+    type: String
+    description: GUID of this school.
+  - name: displayName
+    type: String
+    description: Display name of the school.
+  - name: description
+    type: String
+    description: Description of the school.
+  - name: status
+    type: String
+    description: Read-Only. The possible values are: inactive, active, expired, deleteable.
+  - name: externalSource
+    type: microsoft.graph.educationExternalSource
+    description: Read-Only.  The possible values are: sis, manual, unknownFutureValue.
+  - name: principalEmail
+    type: String
+    description: Email address of the principal.
+  - name: principalName
+    type: String
+    description: Name of the principal.
+  - name: externalPrincipalId
+    type: String
+    description: ID of principal in syncing system.
+  - name: highestGrade
+    type: String
+    description: Highest grade taught.
+  - name: lowestGrade
+    type: String
+    description: Lowest grade taught.
+  - name: schoolNumber
+    type: String
+    description: School Number.
+  - name: externalId
+    type: String
+    description: ID of school in syncing system.
+  - name: phone
+    type: String
+    description: Phone number of school.
+  - name: fax
+    type: String
+    description: Fax number of school.
+  - name: address
+    type: microsoft.graph.physicalAddress
+    description: Address of the school.
+  - name: createdBy
+    type: microsoft.graph.identitySet
+    description: Entity who created the school.
+relationships:
+  heading: Relationships
+  table:
+  - name: classes
+    type: Collection(microsoft.graph.educationClass)
+    description: Classes taught at the school. Nullable.
+  - name: users
+    type: Collection(microsoft.graph.educationUser)
+    description: Users in the school. Nullable.
+methods:
+  heading: Methods
+  intro: |
+    |Method|Return Type|Description
+    |:-|:-|:-|
+    |[Get](../api/educationschool_get.md)|[educationSchool](educationschool.md)|Read properties and relationships of an **educationSchool** object.
+    |[Add class](../api/educationschool_post_classes.md)|[educationClass](educationclass.md)|Add a new **educationClass** for the school by posting to the classes navigation property.
+    |[List classes](../api/educationschool_list_classes.md)|[educationClass](educationclass.md) collection|Get the **educationClass** object collection.
+    |[Remove class](../api/educationschool_delete_classes.md)|[educationClass](educationclass.md)|Remove an **educationClass** from the school through the classes navigation property.
+    |[Add user](../api/educationschool_post_users.md)|[educationUser](educationuser.md)|Add a new **educationUser** for the school by posting to the **users** navigation property.
+    |[List users](../api/educationschool_list_users.md)|[educationUser](educationuser.md) collection|Get the **educationUser** object collection.
+    |[Remove user](../api/educationschool_delete_users.md)|[educationUser](educationuser.md)|Remove an **educationUser** from the school through the **users** navigation property.
+    |[Update](../api/educationschool_update.md)|[educationSchool](educationschool.md)|Update an **educationSchool** object.
+    |[Delete](../api/educationschool_delete.md)|None|Delete an **educationSchool** object.

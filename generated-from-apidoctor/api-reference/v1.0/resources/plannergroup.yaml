@@ -1,0 +1,35 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/plannergroup.md
+top:
+  heading: plannerGroup resource type
+  intro: |
+    The **plannerGroup** resource provides access to Planner resources for a [group](group.md). It doesn't contain any usable properties.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "id": "String (identifier)"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: id
+    type: String
+    description: Read-only. Identifier of the plannerGroup
+relationships:
+  heading: Relationships
+  table:
+  - name: plans
+    type: Collection(microsoft.graph.plannerPlan)
+    description: Read-only. Nullable. Returns the plannerPlans owned by the group.
+methods:
+  heading: Methods
+  intro: |
+    |Method|Return Type|Description
+    |:-|:-|:-|
+    |[List plans](../api/plannergroup_list_plans.md)|[plannerPlan](plannerplan.md) collection|Get a **plannerPlan** object collection.

@@ -1,0 +1,39 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/mailboxsettings.md
+top:
+  heading: mailboxSettings resource type
+  intro: |
+    Settings for the primary mailbox of the signed-in user.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "archiveFolder": "string",
+      "automaticRepliesSetting": {"@odata.type": "microsoft.graph.automaticRepliesSetting"},
+      "language": {"@odata.type": "microsoft.graph.localeInfo"},
+      "timeZone": "string",
+      "workingHours": {"@odata.type": "microsoft.graph.workingHours"}
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: archiveFolder
+    type: String
+    description: Folder ID of an archive folder for the user.
+  - name: automaticRepliesSetting
+    type: microsoft.graph.automaticRepliesSetting
+    description: Configuration settings to automatically notify the sender of an incoming email with a message from the signed-in user.
+  - name: language
+    type: microsoft.graph.localeInfo
+    description: The locale information for the user, including the preferred language and country/region.
+  - name: timeZone
+    type: String
+    description: The default time zone for the user's mailbox.
+  - name: workingHours
+    type: microsoft.graph.workingHours
+    description: The days of the week and hours in a specific time zone that the user works.

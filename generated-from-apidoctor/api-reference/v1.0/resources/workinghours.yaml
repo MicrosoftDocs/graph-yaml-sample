@@ -1,0 +1,43 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/workinghours.md
+top:
+  heading: workingHours resource type
+  intro: |
+    Represents the days of the week and hours in a specific time zone that the user works.
+    Having access to a user's working hours is useful in scenarios that handle activity or resource planning. 
+    You can [get](../api/user_get_mailboxsettings.md#request-3) and [set](../api/user_update_mailboxsettings.md#request-2) the 
+    working hours of a user as part of the user's [mailbox settings](mailboxSettings.md). 
+    You can choose to set a time zone for your working hours differently from the time zone you have set on your Outlook client. 
+    This can be useful in cases like when you travel to a different time zone than you usually work in. You can set the Outlook client  
+    to the destination time zone so that Outlook time values are displayed in local time while you are there.
+    When other people request work meetings with you in your usual place of work, they can still respect your working hours in the 
+    appropriate time zone.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "daysOfWeek": ["string"],
+      "startTime": "TimeOfDay",
+      "endTime": "TimeOfDay",
+      "timeZone": {"@odata.type": "microsoft.graph.timeZoneBase"}
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: daysOfWeek
+    type: Collection(microsoft.graph.dayOfWeek)
+    description: The days of the week on which the user works.
+  - name: startTime
+    type: TimeOfDay
+    description: The time of the day that the user starts working.
+  - name: endTime
+    type: TimeOfDay
+    description: The time of the day that the user stops working.
+  - name: timeZone
+    type: microsoft.graph.timeZoneBase
+    description: The time zone to which the working hours apply.

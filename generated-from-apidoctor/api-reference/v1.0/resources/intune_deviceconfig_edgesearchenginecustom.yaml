@@ -1,0 +1,29 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_edgesearchenginecustom.md
+top:
+  heading: edgeSearchEngineCustom resource type
+  intro: |
+    Allows IT admins to set a custom default search engine for MDM-Controlled devices.
+    Inherits from [edgeSearchEngineBase](../resources/intune_deviceconfig_edgesearchenginebase.md)
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.edgeSearchEngineCustom",
+      "edgeSearchEngineOpenSearchXmlUrl": "String"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: edgeSearchEngineOpenSearchXmlUrl
+    type: String
+    description: Points to a https link containing the OpenSearch xml file that contains, at minimum, the short name and the URL to the search Engine.
+relationships:
+  heading: Relationships
+  intro: |
+    None

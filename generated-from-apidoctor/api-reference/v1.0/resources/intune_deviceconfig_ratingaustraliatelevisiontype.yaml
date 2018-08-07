@@ -1,0 +1,27 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_ratingaustraliatelevisiontype.md
+top:
+  heading: ratingAustraliaTelevisionType enum type
+  intro: |
+    TV content rating labels in Australia
+enum:
+  heading: Members
+  table:
+  - member: allAllowed
+    description: Default value, allow all TV shows content
+  - member: allBlocked
+    description: Do not allow any TV shows content
+  - member: preschoolers
+    description: The P classification is intended for preschoolers
+  - member: children
+    description: The C classification is intended for children under 14
+  - member: general
+    description: The G classification is suitable for all ages
+  - member: parentalGuidance
+    description: The PG classification is recommended for young viewers
+  - member: mature
+    description: The M classification is recommended for viewers over 15
+  - member: agesAbove15
+    description: The MA15+ classification is not suitable for viewers under 15
+  - member: agesAbove15AdultViolence
+    description: The AV15+ classification is not suitable for viewers under 15, adult violence-specific

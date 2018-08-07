@@ -1,0 +1,72 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/onenote_images_files.md
+top:
+  heading: Add images, videos, and files to OneNote pages
+  intro: |
+    **Applies to** Consumer notebooks on OneDrive | Enterprise notebooks on Office 365
+    You can use **img**, **object**, and **iframe** elements to add images, videos, and files to a OneNote page when you're [creating](onenote-create-page.md) or [updating](onenote_update_page.md) the page. 
+    
+    * Use **img** to render an image on the page.
+    * Use **iframe** to embed a video on the page.
+    * Use **object** to add a file attachment to the page.
+    
+    <a name="images"></a>
+  outro: |
+    ## Adding images
+    Images can be added by URL reference or by sending raw data. Microsoft Graph supports the following methods of adding images, logos, and photos to OneNote pages. 
+    [Add a public image from the web](#add-a-public-image-from-the-web)
+    Use `img` with `src="http://image-url"` and specify the URL of a publicly accessible image. Renders the image on the OneNote page.
+    [Add an image using binary data](#add-an-image-using-binary-data)
+    Use `img` with `src="name:image-block-name"` and send the image file in a data part of a multipart request. Renders the image on the OneNote page.
+    [Add a webpage snapshot](#add-a-webpage-snapshot)
+    Use `img` with `data-render-src="http://webpage-url"` and specify the URL of a webpage. Renders a snapshot of the whole webpage on the OneNote page.
+    [Add an image rendered from HTML](#add-an-image-rendered-from-html)
+    Use `img` with `data-render-src="name:html-block-name"` and send HTML in the data part of a multipart request. Renders the HTML as an image on the OneNote page.
+    [Add images of PDF file contents](#add-images-of-pdf-file-contents)
+    Use `<img data-render-src="name:part-name" />` and send the PDF file in the data part of a multipart request. Renders each PDF page as a separate image on the OneNote page.
+    [Add an image file as a file attachment](#add-an-image-file-as-an-attachment)
+    Use `object` with `data="name:file-block-name" data-attachment="file-name.file-ext" type="media-type"` and send an image file in the data part of a multipart request. Adds a file attachment to the OneNote page and displays a file icon.
+    
+permissions:
+  heading: Permissions
+  intro: |
+    To create or update OneNote pages, you'll need to request appropriate permissions. Choose the lowest level that your app needs to do its work.
+  outro: |
+    #### Permissions for POST pages
+    
+    * Notes.Create
+    * Notes.ReadWrite
+    * Notes.ReadWrite.All 
+    
+examples:
+  - Example:
+      heading: Example
+      intro: |
+        In the input HTML of your request, include `<iframe data-original-src="http://..." />` and specify the URL of the video for the **data-original-src** attribute.
+        Content-Type: multipart/form-data; boundary=MyAppPartBoundary
+        Authorization: Bearer {access-token}
+        
+        --MyAppPartBoundary
+        Content-Disposition: form-data; name="Presentation"
+        Content-Type: text/html
+        
+        <!DOCTYPE html>
+        <html>
+            <head>
+                <title>A page with an embedded video</title>
+            </head>
+            <body>
+                <iframe data-original-src="https://www.youtube.com/watch?v=3Ztr44aKmQ8" width="340" height="280"/>
+            </body>
+        </html>
+        
+        --MyAppPartBoundary--
+
+        <a name="adding-files"></a>
+      outro: |
+        ## Adding files
+        You can add file attachments to OneNote pages using an **object** element in the input HTML. If you're adding a PDF file, you can use an **img** element to render the PDF pages as images. 
+        [Add a file attachment](#add-a-file-attachment)
+        Use `<object .../>` and send the file in a data part of a multipart request. Adds a file attachment that displays a file icon on the OneNote page.
+        [Add images of PDF file contents](#add-images-of-pdf-file-contents)
+        Use `<img data-render-src="name:part-name" />` and send a PDF file in the data part of a multipart request. Renders each PDF page as a separate image on the OneNote page.

@@ -1,0 +1,11 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/planner-concept-overview.md
+top:
+  heading: Planner tasks and plans API overview
+  intro: |
+    Planner provides a simple and visual way for teams to organize their work. Customers can use Planner to create plans, organize and assign tasks, share progress, and collaborate on content.  Planner provides several interactive experiences including a task board, a charts page, and a schedule view, as well as integrations throughout Office 365.
+    **Office 365 Planner task board**
+    ![Screenshot of an Office 365 Planner task board](images/plannerboard.png "Image of Planner board")
+  outro: |
+    ## Why integrate with Planner tasks?
+    Planner provides task tracking capabilities for collaboration experiences in Office 365. If your scenarios require tracking tasks and organizing work for a team or group of end users, Planner is the right service for you. Planner integration can help you reach the millions of users collaborating on Office 365. 

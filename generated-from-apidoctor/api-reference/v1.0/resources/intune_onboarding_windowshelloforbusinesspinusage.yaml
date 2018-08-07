@@ -1,0 +1,15 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_onboarding_windowshelloforbusinesspinusage.md
+top:
+  heading: windowsHelloForBusinessPinUsage enum type
+  intro: |
+    Windows Hello for Business pin usage options
+enum:
+  heading: Members
+  table:
+  - member: allowed
+    description: Not yet documented
+  - member: required
+    description: Not yet documented
+  - member: disallowed
+    description: Not yet documented

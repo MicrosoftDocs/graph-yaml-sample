@@ -1,0 +1,27 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/contentTypeOrder.md
+top:
+  heading: ContentTypeOrder resource type
+  intro: |
+    The **contentTypeOrder** resource specifies in which order the Content Type will appear in the selection UI.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of a **contentTypeOrder** resource.
+  resourceDefinition: |
+    ```json
+    {
+      "default": true,
+      "position": 2
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: default
+    type: Boolean
+    description: Whether this is the default Content Type
+  - name: position
+    type: Int32
+    description: Specifies the position in which the Content Type appears in the selection UI.

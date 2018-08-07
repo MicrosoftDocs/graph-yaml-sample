@@ -1,0 +1,97 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_mam_managedappregistration.md
+top:
+  heading: managedAppRegistration resource type
+  intro: |
+    The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
+    The ManagedAppRegistration resource represents the details of an app, with management capability, used by a member of the organization.
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.managedAppRegistration",
+      "createdDateTime": "String (timestamp)",
+      "lastSyncDateTime": "String (timestamp)",
+      "applicationVersion": "String",
+      "managementSdkVersion": "String",
+      "platformVersion": "String",
+      "deviceType": "String",
+      "deviceTag": "String",
+      "deviceName": "String",
+      "flaggedReasons": [
+        "String"
+      ],
+      "userId": "String",
+      "appIdentifier": {
+        "@odata.type": "microsoft.graph.mobileAppIdentifier"
+      },
+      "id": "String (identifier)",
+      "version": "String"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: createdDateTime
+    type: DateTimeOffset
+    description: Date and time of creation
+  - name: lastSyncDateTime
+    type: DateTimeOffset
+    description: Date and time of last the app synced with management service.
+  - name: applicationVersion
+    type: String
+    description: App version
+  - name: managementSdkVersion
+    type: String
+    description: App management SDK version
+  - name: platformVersion
+    type: String
+    description: Operating System version
+  - name: deviceType
+    type: String
+    description: Host device type
+  - name: deviceTag
+    type: String
+    description: App management SDK generated tag, which helps relate apps hosted on the same device. Not guaranteed to relate apps in all conditions.
+  - name: deviceName
+    type: String
+    description: Host device name
+  - name: flaggedReasons
+    type: Collection(microsoft.graph.managedAppFlaggedReason)
+    description: Zero or more reasons an app registration is flagged. E.g. app running on rooted device
+  - name: userId
+    type: String
+    description: The user Id to who this app registration belongs.
+  - name: appIdentifier
+    type: microsoft.graph.mobileAppIdentifier
+    description: The app package Identifier
+  - name: id
+    type: String
+    description: Key of the entity.
+  - name: version
+    type: String
+    description: Version of the entity.
+relationships:
+  heading: Relationships
+  table:
+  - name: appliedPolicies
+    type: Collection(microsoft.graph.managedAppPolicy)
+    description: Zero or more policies already applied on the registered app when it last synchronized with managment service.
+  - name: intendedPolicies
+    type: Collection(microsoft.graph.managedAppPolicy)
+    description: Zero or more policies admin intended for the app as of now.
+  - name: operations
+    type: Collection(microsoft.graph.managedAppOperation)
+    description: Zero or more long running operations triggered on the app registration.
+methods:
+  heading: Methods
+  intro: |
+    |Method|Return Type|Description
+    |:-|:-|:-|
+    |[List managedAppRegistrations](../api/intune_mam_managedappregistration_list.md)|[managedAppRegistration](../resources/intune_mam_managedappregistration.md) collection|List properties and relationships of the [managedAppRegistration](../resources/intune_mam_managedappregistration.md) objects.
+    |[Get managedAppRegistration](../api/intune_mam_managedappregistration_get.md)|[managedAppRegistration](../resources/intune_mam_managedappregistration.md)|Read properties and relationships of the [managedAppRegistration](../resources/intune_mam_managedappregistration.md) object.
+    |[getUserIdsWithFlaggedAppRegistration function](../api/intune_mam_managedappregistration_getuseridswithflaggedappregistration.md)|String collection|Not yet documented

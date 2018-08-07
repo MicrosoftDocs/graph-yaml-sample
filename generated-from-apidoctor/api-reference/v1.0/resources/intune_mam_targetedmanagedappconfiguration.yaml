@@ -1,0 +1,87 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_mam_targetedmanagedappconfiguration.md
+top:
+  heading: targetedManagedAppConfiguration resource type
+  intro: |
+    Configuration used to deliver a set of custom settings as-is to all users in the targeted security group
+    Inherits from [managedAppConfiguration](../resources/intune_mam_managedappconfiguration.md)
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.targetedManagedAppConfiguration",
+      "displayName": "String",
+      "description": "String",
+      "createdDateTime": "String (timestamp)",
+      "lastModifiedDateTime": "String (timestamp)",
+      "id": "String (identifier)",
+      "version": "String",
+      "customSettings": [
+        {
+          "@odata.type": "microsoft.graph.keyValuePair",
+          "name": "String",
+          "value": "String"
+        }
+      ],
+      "deployedAppCount": 1024,
+      "isAssigned": true
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: displayName
+    type: String
+    description: Policy display name. Inherited from managedAppPolicy
+  - name: description
+    type: String
+    description: The policy's description. Inherited from managedAppPolicy
+  - name: createdDateTime
+    type: DateTimeOffset
+    description: The date and time the policy was created. Inherited from managedAppPolicy
+  - name: lastModifiedDateTime
+    type: DateTimeOffset
+    description: Last time the policy was modified. Inherited from managedAppPolicy
+  - name: id
+    type: String
+    description: Key of the entity. Inherited from managedAppPolicy
+  - name: version
+    type: String
+    description: Version of the entity. Inherited from managedAppPolicy
+  - name: customSettings
+    type: Collection(microsoft.graph.keyValuePair)
+    description: A set of string key and string value pairs to be sent to apps for users to whom the configuration is scoped, unalterned by this service Inherited from managedAppConfiguration
+  - name: deployedAppCount
+    type: Int32
+    description: Count of apps to which the current policy is deployed.
+  - name: isAssigned
+    type: Boolean
+    description: Indicates if the policy is deployed to any inclusion groups or not.
+relationships:
+  heading: Relationships
+  table:
+  - name: apps
+    type: Collection(microsoft.graph.managedMobileApp)
+    description: List of apps to which the policy is deployed.
+  - name: deploymentSummary
+    type: microsoft.graph.managedAppPolicyDeploymentSummary
+    description: Navigation property to deployment summary of the configuration.
+  - name: assignments
+    type: Collection(microsoft.graph.targetedManagedAppPolicyAssignment)
+    description: Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
+methods:
+  heading: Methods
+  intro: |
+    |Method|Return Type|Description
+    |:-|:-|:-|
+    |[List targetedManagedAppConfigurations](../api/intune_mam_targetedmanagedappconfiguration_list.md)|[targetedManagedAppConfiguration](../resources/intune_mam_targetedmanagedappconfiguration.md) collection|List properties and relationships of the [targetedManagedAppConfiguration](../resources/intune_mam_targetedmanagedappconfiguration.md) objects.
+    |[Get targetedManagedAppConfiguration](../api/intune_mam_targetedmanagedappconfiguration_get.md)|[targetedManagedAppConfiguration](../resources/intune_mam_targetedmanagedappconfiguration.md)|Read properties and relationships of the [targetedManagedAppConfiguration](../resources/intune_mam_targetedmanagedappconfiguration.md) object.
+    |[Create targetedManagedAppConfiguration](../api/intune_mam_targetedmanagedappconfiguration_create.md)|[targetedManagedAppConfiguration](../resources/intune_mam_targetedmanagedappconfiguration.md)|Create a new [targetedManagedAppConfiguration](../resources/intune_mam_targetedmanagedappconfiguration.md) object.
+    |[Delete targetedManagedAppConfiguration](../api/intune_mam_targetedmanagedappconfiguration_delete.md)|None|Deletes a [targetedManagedAppConfiguration](../resources/intune_mam_targetedmanagedappconfiguration.md).
+    |[Update targetedManagedAppConfiguration](../api/intune_mam_targetedmanagedappconfiguration_update.md)|[targetedManagedAppConfiguration](../resources/intune_mam_targetedmanagedappconfiguration.md)|Update the properties of a [targetedManagedAppConfiguration](../resources/intune_mam_targetedmanagedappconfiguration.md) object.
+    |[assign action](../api/intune_mam_targetedmanagedappconfiguration_assign.md)|None|Not yet documented
+    |[targetApps action](../api/intune_mam_targetedmanagedappconfiguration_targetapps.md)|None|Not yet documented

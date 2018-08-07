@@ -1,0 +1,32 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_mediacontentratingnewzealand.md
+top:
+  heading: mediaContentRatingNewZealand resource type
+  intro: |
+    Not yet documented
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.mediaContentRatingNewZealand",
+      "movieRating": "String",
+      "tvRating": "String"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: movieRating
+    type: microsoft.graph.ratingNewZealandMoviesType
+    description: Movies rating selected for New Zealand. The possible values are: allAllowed, allBlocked, general, parentalGuidance, mature, agesAbove13, agesAbove15, agesAbove16, agesAbove18, restricted, agesAbove16Restricted.
+  - name: tvRating
+    type: microsoft.graph.ratingNewZealandTelevisionType
+    description: TV rating selected for New Zealand. The possible values are: allAllowed, allBlocked, general, parentalGuidance, adults.
+relationships:
+  heading: Relationships
+  intro: |
+    None

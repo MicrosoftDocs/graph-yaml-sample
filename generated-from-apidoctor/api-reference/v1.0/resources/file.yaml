@@ -1,0 +1,33 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/file.md
+top:
+  heading: File resource type
+  intro: |
+    The **File** resource groups file-related data items into a single structure.
+    If a [**DriveItem**](driveitem.md) has a non-null **file** facet, the item represents an file.
+    In addition to other properties, files have a **content** relationship which contains the byte stream of the file.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "hashes": {"@odata.type": "microsoft.graph.hashes"},
+      "mimeType": "string"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: hashes
+    type: microsoft.graph.hashes
+    description: Hashes of the file's binary content, if available. Read-only.
+  - name: mimeType
+    type: String
+    description: The MIME type for the file. This is determined by logic on the server and might not be the value provided when the file was uploaded. Read-only.
+remarks:
+  heading: Remarks
+  intro: |
+    For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).

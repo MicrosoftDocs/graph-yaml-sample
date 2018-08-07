@@ -1,0 +1,84 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/group_update.md
+top:
+  heading: Update group
+  intro: |
+    Update the properties of a group object.
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+  table:
+  - type: Delegated (work or school account)
+    scopes: Group.ReadWrite.All
+  - type: Delegated (personal Microsoft account)
+    scopes: Not supported.
+  - type: Application
+    scopes: Group.ReadWrite.All
+httpRequest:
+  heading: HTTP request
+  samplePaths: |
+    ```http
+    PATCH /groups/{id}
+    ```
+    
+httpHeaders:
+  heading: Request headers
+  table:
+  - name: Authorization
+    type: String
+    description: Bearer {token}. Required.
+Request body:
+  heading: Request body
+  intro: |
+    In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
+    |Property|Type|Description
+    |:-|:-|:-|
+    |allowExternalSenders|Boolean|Default is **false**. Indicates if people external to the organization can send messages to the group.
+    |autoSubscribeNewMembers|Boolean|Default is **false**. Indicates if new members added to the group will be auto-subscribed to receive email notifications.
+    |description|String|An optional description for the group.
+    |displayName|String|The display name for the group. This property is required when a group is created and it cannot be cleared during updates. Supports $filter and $orderby.
+    |groupTypes|String collection|Specifies the type of group to create. Possible values are **Unified** to create an Office 365 group, or **DynamicMembership** for dynamic groups.  For all other group types, like security-enabled groups and email-enabled security groups, do not set this property.
+    |mailEnabled|Boolean|Specifies whether the group is mail-enabled. If the **securityEnabled** property is also **true**, the group is a mail-enabled security group; otherwise, the group is a Microsoft Exchange distribution group.
+    |mailNickname|String|The mail alias for the group. This property must be specified when a group is created. Supports $filter.
+    |securityEnabled|Boolean|Specifies whether the group is a security group. If the **mailEnabled** property is also true, the group is a mail-enabled security group; otherwise it is a security group. Must be **false** for Office 365 groups. Supports $filter..
+    |visibility|String|Specifies the visibility of an Office 365 group. The possible values are: **Private**, **Public**, or empty (which is interpreted as **Public**).
+    
+Response:
+  heading: Response
+  intro: |
+    If successful, this method returns a `204 No Content` response code.
+examples:
+  - Example:
+      heading: Example
+      - request:
+          heading: Request
+          intro: |
+            The following is an example of the request.
+          exampleRequest: |
+            ```http
+            PATCH https://graph.microsoft.com/v1.0/groups/{id}
+            Content-type: application/json
+            Content-length: 211
+            
+            {
+              "description": "description-value",
+              "displayName": "displayName-value",
+              "groupTypes": [
+                "groupTypes-value"
+              ],
+              "mail": "mail-value",
+              "mailEnabled": true,
+              "mailNickname": "mailNickname-value"
+            }
+            ```
+            
+      - response:
+          heading: Response
+          intro: |
+            The following is an example of the response.
+          exampleResponse: |
+            ```http
+            HTTP/1.1 204 No Content
+            ```
+            

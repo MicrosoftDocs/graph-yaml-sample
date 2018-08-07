@@ -1,0 +1,87 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/audio.md
+top:
+  heading: Audio facet
+  intro: |
+    The **Audio** resource groups audio-related properties on an item into a single structure.
+    If a [**DriveItem**](driveitem.md) has a non-null **audio** facet, the item represents an audio file.
+    The properties of the **Audio** resource are populated by extracting metadata from the file. 
+resource:
+  heading: JSON representation
+  resourceDefinition: |
+    ```json
+    {
+      "album": "string",
+      "albumArtist": "string",
+      "artist": "string",
+      "bitrate": 128,
+      "composers": "string",
+      "copyright": "string",
+      "disc": 0,
+      "discCount": 0,
+      "duration": 567,
+      "genre": "string",
+      "hasDrm": false,
+      "isVariableBitrate": false,
+      "title": "string",
+      "track": 1,
+      "trackCount": 16,
+      "year": 2014
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: album
+    type: String
+    description: The title of the album for this audio file.
+  - name: albumArtist
+    type: String
+    description: The artist named on the album for the audio file.
+  - name: artist
+    type: String
+    description: The performing artist for the audio file.
+  - name: bitrate
+    type: Int64
+    description: Bitrate expressed in kbps.
+  - name: composers
+    type: String
+    description: The name of the composer of the audio file.
+  - name: copyright
+    type: String
+    description: Copyright information for the audio file.
+  - name: disc
+    type: Int16
+    description: The number of the disc this audio file came from.
+  - name: discCount
+    type: Int16
+    description: The total number of discs in this album.
+  - name: duration
+    type: Int64
+    description: Duration of the audio file, expressed in milliseconds
+  - name: genre
+    type: String
+    description: The genre of this audio file.
+  - name: hasDrm
+    type: Boolean
+    description: Indicates if the file is protected with digital rights management.
+  - name: isVariableBitrate
+    type: Boolean
+    description: Indicates if the file is encoded with a variable bitrate.
+  - name: title
+    type: String
+    description: The title of the audio file.
+  - name: track
+    type: Int32
+    description: The number of the track on the original disc for this audio file.
+  - name: trackCount
+    type: Int32
+    description: The total number of tracks on the original disc for this audio file.
+  - name: year
+    type: Int32
+    description: The year the audio file was recorded.
+remarks:
+  heading: Remarks
+  intro: |
+    For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).

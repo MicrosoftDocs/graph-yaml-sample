@@ -1,0 +1,23 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/recipient.md
+top:
+  heading: recipient resource type
+  intro: |
+    Represents information about a user in the sending or receiving end of an event, message or group post. 
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource
+  resourceDefinition: |
+    ```json
+    {
+      "emailAddress": {"@odata.type": "microsoft.graph.emailAddress"}
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: emailAddress
+    type: microsoft.graph.emailAddress
+    description: The recipient's email address.

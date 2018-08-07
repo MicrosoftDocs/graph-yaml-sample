@@ -1,0 +1,12 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/cross-device-reference-overview.md
+top:
+  heading: Use the Microsoft Graph API to enable cross-device experiences
+  intro: |
+    {This is the v1.0 version. Content is similar to the existing project_rome_overview.md.}
+  outro: |
+    # Next steps
+    
+    * [Overview of enabling cross-device experience using activity feed API in Microsoft Graph](../../../concepts/activity-feed-concept-overview.md)
+    * [Use the activity feed API to resume a user's activity across devices](activity-feed-api-overview.md)
+    

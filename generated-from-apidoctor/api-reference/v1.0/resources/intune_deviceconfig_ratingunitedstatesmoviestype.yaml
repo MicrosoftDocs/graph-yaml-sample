@@ -1,0 +1,23 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_ratingunitedstatesmoviestype.md
+top:
+  heading: ratingUnitedStatesMoviesType enum type
+  intro: |
+    Movies rating labels in United States
+enum:
+  heading: Members
+  table:
+  - member: allAllowed
+    description: Default value, allow all movies content
+  - member: allBlocked
+    description: Do not allow any movies content
+  - member: general
+    description: G, all ages admitted
+  - member: parentalGuidance
+    description: PG, some material may not be suitable for children
+  - member: parentalGuidance13
+    description: PG13, some material may be inappropriate for children under 13
+  - member: restricted
+    description: R, viewers under 17 require accompanying parent or adult guardian
+  - member: adults
+    description: NC17, adults only

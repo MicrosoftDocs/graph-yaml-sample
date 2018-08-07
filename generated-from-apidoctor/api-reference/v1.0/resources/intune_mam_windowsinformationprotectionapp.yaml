@@ -1,0 +1,44 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_mam_windowsinformationprotectionapp.md
+top:
+  heading: windowsInformationProtectionApp resource type
+  intro: |
+    App for Windows information protection
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.windowsInformationProtectionApp",
+      "displayName": "String",
+      "description": "String",
+      "publisherName": "String",
+      "productName": "String",
+      "denied": true
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: displayName
+    type: String
+    description: App display name.
+  - name: description
+    type: String
+    description: The app's description.
+  - name: publisherName
+    type: String
+    description: The publisher name
+  - name: productName
+    type: String
+    description: The product name.
+  - name: denied
+    type: Boolean
+    description: If true, app is denied protection or exemption.
+relationships:
+  heading: Relationships
+  intro: |
+    None

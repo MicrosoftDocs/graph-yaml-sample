@@ -1,0 +1,64 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/intune_mam_managedappoperation_list.md
+top:
+  heading: List managedAppOperations
+  intro: |
+    List properties and relationships of the [managedAppOperation](../resources/intune_mam_managedappoperation.md) objects.
+permissions:
+  heading: Prerequisites
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+httpRequest:
+  heading: HTTP Request
+  samplePaths: |
+    ```http
+    GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/operations
+    ```
+    
+httpHeaders:
+  heading: Request headers
+  table:
+  - name: Authorization
+    type: String
+    description: 
+  - name: Accept
+    type: String
+    description: 
+Request body:
+  heading: Request body
+  intro: |
+    Do not supply a request body for this method.
+Response:
+  heading: Response
+  intro: |
+    If successful, this method returns a `200 OK` response code and a collection of [managedAppOperation](../resources/intune_mam_managedappoperation.md) objects in the response body.
+examples:
+  - Example:
+      heading: Example
+      - request:
+          heading: Request
+          intro: |
+            Here is an example of the request.
+            GET https://graph.microsoft.com/v1.0/deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/operations
+
+      - response:
+          heading: Response
+          intro: |
+            Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+            HTTP/1.1 200 OK
+            Content-Type: application/json
+            Content-Length: 329
+            
+            {
+              "value": [
+                {
+                  "@odata.type": "#microsoft.graph.managedAppOperation",
+                  "displayName": "Display Name value",
+                  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+                  "state": "State value",
+                  "id": "f2867b06-7b06-f286-067b-86f2067b86f2",
+                  "version": "Version value"
+                }
+              ]
+            }
+

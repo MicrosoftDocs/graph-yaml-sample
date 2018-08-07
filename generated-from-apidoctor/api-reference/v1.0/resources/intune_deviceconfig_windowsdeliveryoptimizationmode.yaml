@@ -1,0 +1,23 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_windowsdeliveryoptimizationmode.md
+top:
+  heading: windowsDeliveryOptimizationMode enum type
+  intro: |
+    Delivery optimization mode for peer distribution
+enum:
+  heading: Members
+  table:
+  - member: userDefined
+    description: Allow the user to set.
+  - member: httpOnly
+    description: HTTP only, no peering
+  - member: httpWithPeeringNat
+    description: OS default – Http blended with peering behind the same network address translator
+  - member: httpWithPeeringPrivateGroup
+    description: HTTP blended with peering across a private group
+  - member: httpWithInternetPeering
+    description: HTTP blended with Internet peering
+  - member: simpleDownload
+    description: Simple download mode with no peering
+  - member: bypassMode
+    description: Bypass mode. Do not use Delivery Optimization and use BITS instead

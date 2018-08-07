@@ -1,0 +1,56 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_shared_user.md
+top:
+  heading: user resource type
+  intro: |
+    Represents an Azure Active Directory user object.
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.user",
+      "id": "String (identifier)",
+      "deviceEnrollmentLimit": 5
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: id
+    type: String
+    description: Unique identifier of the user.
+  - name: deviceEnrollmentLimit
+    type: Int32
+    description: The limit on the maximum number of devices that the user is permitted to enroll. Allowed values are 5 or 1000.
+relationships:
+  heading: Relationships
+  table:
+  - name: managedDevices
+    type: Collection(microsoft.graph.managedDevice)
+    description: The managed devices associated with the user.
+  - name: managedAppRegistrations
+    type: Collection(microsoft.graph.managedAppRegistration)
+    description: Zero or more managed app registrations that belong to the user.
+  - name: deviceManagementTroubleshootingEvents
+    type: Collection(microsoft.graph.deviceManagementTroubleshootingEvent)
+    description: The list of troubleshooting events for this user.
+methods:
+  heading: Methods
+  intro: |
+    |Method|Return Type|Description
+    |:-|:-|:-|
+    |[List users](../api/intune_shared_user_list.md) objects.|&nbsp;|&nbsp;
+    |[Get user](../api/intune_shared_user_get.md) object.|&nbsp;|&nbsp;
+    |[Create user](../api/intune_shared_user_create.md) object.|&nbsp;|&nbsp;
+    |[Delete user](../api/intune_shared_user_delete.md).|&nbsp;|&nbsp;
+    |[Update user](../api/intune_shared_user_update.md) object.|&nbsp;|&nbsp;
+    |**Device management**|&nbsp;|&nbsp;
+    |[removeAllDevicesFromManagement action](../api/intune_shared_user_removealldevicesfrommanagement.md)|None|Retire all devices from management for this user
+    |**Mobile app management (MAM)**|&nbsp;|&nbsp;
+    |[getManagedAppDiagnosticStatuses function](../api/intune_shared_user_getmanagedappdiagnosticstatuses.md)|[managedAppDiagnosticStatus](../resources/intune_mam_managedappdiagnosticstatus.md) collection|Gets diagnostics validation status for a given user.
+    |[getManagedAppPolicies function](../api/intune_shared_user_getmanagedapppolicies.md)|[managedAppPolicy](../resources/intune_mam_managedapppolicy.md) collection|Gets app restrictions for a given user.
+    |[wipeManagedAppRegistrationsByDeviceTag action](../api/intune_shared_user_wipemanagedappregistrationsbydevicetag.md)|None|Issues a wipe operation on an app registration with specified device tag.

@@ -1,0 +1,95 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/post_get.md
+top:
+  heading: Get post
+  intro: |
+    Get the properties and relationships of a post in a specified thread. You can specify both the parent 
+    conversation and the thread, or, you can specify the thread without referencing the parent conversation.
+    Since the **post** resource supports [extensions](../../../concepts/extensibility_overview.md), you can also use the `GET` operation to get custom properties and extension data in a **post** instance.
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+  table:
+  - type: Delegated (work or school account)
+    scopes: Group.Read.All, Group.ReadWrite.All
+  - type: Delegated (personal Microsoft account)
+    scopes: Not supported.
+  - type: Application
+    scopes: Group.Read.All, Group.ReadWrite.All
+httpRequest:
+  heading: HTTP request
+  samplePaths: |
+    ```http
+    GET /groups/{id}/threads/{id}/posts/{id}
+    GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}
+    ```
+    
+queryParameters:
+  heading: Optional query parameters
+  intro: |
+    This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+httpHeaders:
+  heading: Request headers
+  table:
+  - name: Authorization
+    type: String
+    description: 
+Request body:
+  heading: Request body
+  intro: |
+    Do not supply a request body for this method.
+Response:
+  heading: Response
+  intro: |
+    If successful, this method returns a `200 OK` response code and [post](../resources/post.md) object in the response body.
+examples:
+  - Example:
+      heading: Example
+      - request:
+          heading: Request
+          intro: |
+            Here is an example of the request.
+          exampleRequest: |
+            ```http
+            GET https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}/posts/{id}
+            ```
+            
+      - response:
+          heading: Response
+          intro: |
+            Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+          exampleResponse: |
+            ```http
+            HTTP/1.1 200 OK
+            Content-type: application/json
+            Content-length: 414
+            
+            {
+              "body": {
+                "contentType": "",
+                "content": "content-value"
+              },
+              "receivedDateTime": "datetime-value",
+              "hasAttachments": true,
+              "from": {
+                "emailAddress": {
+                  "name": "name-value",
+                  "address": "address-value"
+                }
+              },
+              "sender": {
+                "emailAddress": {
+                  "name": "name-value",
+                  "address": "address-value"
+                }
+              }
+            }
+            ```
+            
+          outro: |
+            ## See also
+            
+            * [Add custom data to resources using extensions](../../../concepts/extensibility_overview.md)
+            * [Add custom data to users using open extensions (preview)](../../../concepts/extensibility_open_users.md)
+            

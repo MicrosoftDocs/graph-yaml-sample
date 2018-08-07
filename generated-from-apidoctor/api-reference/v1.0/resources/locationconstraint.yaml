@@ -1,0 +1,31 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/locationconstraint.md
+top:
+  heading: locationConstraint resource type
+  intro: |
+    The conditions stated by a client for the location of a meeting.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource
+  resourceDefinition: |
+    ```json
+    {
+      "isRequired": true,
+      "locations": [{"@odata.type": "microsoft.graph.locationConstraintItem"}],
+      "suggestLocation": true
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: isRequired
+    type: Boolean
+    description: The client requests the service to include in the response a meeting location for the meeting. If this is true and all the resources are busy, findMeetingTimes will not return any meeting time suggestions. If this is false and all the resources are busy, findMeetingTimes would still look for meeting times without locations.
+  - name: locations
+    type: Collection(microsoft.graph.locationConstraintItem)
+    description: Constraint information for one or more locations that the client requests for the meeting.
+  - name: suggestLocation
+    type: Boolean
+    description: The client requests the service to suggest one or more meeting locations.

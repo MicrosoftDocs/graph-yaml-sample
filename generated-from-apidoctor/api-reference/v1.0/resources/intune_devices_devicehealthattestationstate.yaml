@@ -1,0 +1,152 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_devices_devicehealthattestationstate.md
+top:
+  heading: deviceHealthAttestationState resource type
+  intro: |
+    Not yet documented
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.deviceHealthAttestationState",
+      "lastUpdateDateTime": "String",
+      "contentNamespaceUrl": "String",
+      "deviceHealthAttestationStatus": "String",
+      "contentVersion": "String",
+      "issuedDateTime": "String (timestamp)",
+      "attestationIdentityKey": "String",
+      "resetCount": 1024,
+      "restartCount": 1024,
+      "dataExcutionPolicy": "String",
+      "bitLockerStatus": "String",
+      "bootManagerVersion": "String",
+      "codeIntegrityCheckVersion": "String",
+      "secureBoot": "String",
+      "bootDebugging": "String",
+      "operatingSystemKernelDebugging": "String",
+      "codeIntegrity": "String",
+      "testSigning": "String",
+      "safeMode": "String",
+      "windowsPE": "String",
+      "earlyLaunchAntiMalwareDriverProtection": "String",
+      "virtualSecureMode": "String",
+      "pcrHashAlgorithm": "String",
+      "bootAppSecurityVersion": "String",
+      "bootManagerSecurityVersion": "String",
+      "tpmVersion": "String",
+      "pcr0": "String",
+      "secureBootConfigurationPolicyFingerPrint": "String",
+      "codeIntegrityPolicy": "String",
+      "bootRevisionListInfo": "String",
+      "operatingSystemRevListInfo": "String",
+      "healthStatusMismatchInfo": "String",
+      "healthAttestationSupportedStatus": "String"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: lastUpdateDateTime
+    type: String
+    description: The Timestamp of the last update.
+  - name: contentNamespaceUrl
+    type: String
+    description: The DHA report version. (Namespace version)
+  - name: deviceHealthAttestationStatus
+    type: String
+    description: The DHA report version. (Namespace version)
+  - name: contentVersion
+    type: String
+    description: The HealthAttestation state schema version
+  - name: issuedDateTime
+    type: DateTimeOffset
+    description: The DateTime when device was evaluated or issued to MDM
+  - name: attestationIdentityKey
+    type: String
+    description: TWhen an Attestation Identity Key (AIK) is present on a device, it indicates that the device has an endorsement key (EK) certificate.
+  - name: resetCount
+    type: Int64
+    description: The number of times a PC device has hibernated or resumed
+  - name: restartCount
+    type: Int64
+    description: The number of times a PC device has rebooted
+  - name: dataExcutionPolicy
+    type: String
+    description: DEP Policy defines a set of hardware and software technologies that perform additional checks on memory
+  - name: bitLockerStatus
+    type: String
+    description: On or Off of BitLocker Drive Encryption
+  - name: bootManagerVersion
+    type: String
+    description: The version of the Boot Manager
+  - name: codeIntegrityCheckVersion
+    type: String
+    description: The version of the Boot Manager
+  - name: secureBoot
+    type: String
+    description: When Secure Boot is enabled, the core components must have the correct cryptographic signatures
+  - name: bootDebugging
+    type: String
+    description: When bootDebugging is enabled, the device is used in development and testing
+  - name: operatingSystemKernelDebugging
+    type: String
+    description: When operatingSystemKernelDebugging is enabled, the device is used in development and testing
+  - name: codeIntegrity
+    type: String
+    description: When code integrity is enabled, code execution is restricted to integrity verified code
+  - name: testSigning
+    type: String
+    description: When test signing is allowed, the device does not enforce signature validation during boot
+  - name: safeMode
+    type: String
+    description: Safe mode is a troubleshooting option for Windows that starts your computer in a limited state
+  - name: windowsPE
+    type: String
+    description: Operating system running with limited services that is used to prepare a computer for Windows
+  - name: earlyLaunchAntiMalwareDriverProtection
+    type: String
+    description: ELAM provides protection for the computers in your network when they start up
+  - name: virtualSecureMode
+    type: String
+    description: VSM is a container that protects high value assets from a compromised kernel
+  - name: pcrHashAlgorithm
+    type: String
+    description: Informational attribute that identifies the HASH algorithm that was used by TPM
+  - name: bootAppSecurityVersion
+    type: String
+    description: The security version number of the Boot Application
+  - name: bootManagerSecurityVersion
+    type: String
+    description: The security version number of the Boot Application
+  - name: tpmVersion
+    type: String
+    description: The security version number of the Boot Application
+  - name: pcr0
+    type: String
+    description: The measurement that is captured in PCR[0]
+  - name: secureBootConfigurationPolicyFingerPrint
+    type: String
+    description: Fingerprint of the Custom Secure Boot Configuration Policy
+  - name: codeIntegrityPolicy
+    type: String
+    description: The Code Integrity policy that is controlling the security of the boot environment
+  - name: bootRevisionListInfo
+    type: String
+    description: The Boot Revision List that was loaded during initial boot on the attested device
+  - name: operatingSystemRevListInfo
+    type: String
+    description: The Operating System Revision List that was loaded during initial boot on the attested device
+  - name: healthStatusMismatchInfo
+    type: String
+    description: This attribute appears if DHA-Service detects an integrity issue
+  - name: healthAttestationSupportedStatus
+    type: String
+    description: This attribute indicates if DHA is supported for the device
+relationships:
+  heading: Relationships
+  intro: |
+    None

@@ -1,0 +1,63 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/worksheetprotectionoptions.md
+top:
+  heading: WorksheetProtectionOptions resource type
+  intro: |
+    Represents the options in sheet protection.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "allowAutoFilter": true,
+      "allowDeleteColumns": true,
+      "allowDeleteRows": true,
+      "allowFormatCells": true,
+      "allowFormatColumns": true,
+      "allowFormatRows": true,
+      "allowInsertColumns": true,
+      "allowInsertHyperlinks": true,
+      "allowInsertRows": true,
+      "allowPivotTables": true,
+      "allowSort": true
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: allowAutoFilter
+    type: Boolean
+    description: Represents the worksheet protection option of allowing using auto filter feature.
+  - name: allowDeleteColumns
+    type: Boolean
+    description: Represents the worksheet protection option of allowing deleting columns.
+  - name: allowDeleteRows
+    type: Boolean
+    description: Represents the worksheet protection option of allowing deleting rows.
+  - name: allowFormatCells
+    type: Boolean
+    description: Represents the worksheet protection option of allowing formatting cells.
+  - name: allowFormatColumns
+    type: Boolean
+    description: Represents the worksheet protection option of allowing formatting columns.
+  - name: allowFormatRows
+    type: Boolean
+    description: Represents the worksheet protection option of allowing formatting rows.
+  - name: allowInsertColumns
+    type: Boolean
+    description: Represents the worksheet protection option of allowing inserting columns.
+  - name: allowInsertHyperlinks
+    type: Boolean
+    description: Represents the worksheet protection option of allowing inserting hyperlinks.
+  - name: allowInsertRows
+    type: Boolean
+    description: Represents the worksheet protection option of allowing inserting rows.
+  - name: allowPivotTables
+    type: Boolean
+    description: Represents the worksheet protection option of allowing using pivot table feature.
+  - name: allowSort
+    type: Boolean
+    description: Represents the worksheet protection option of allowing using sort feature.

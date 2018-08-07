@@ -1,0 +1,19 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_applockerapplicationcontroltype.md
+top:
+  heading: appLockerApplicationControlType enum type
+  intro: |
+    Possible values of AppLocker Application Control Types
+enum:
+  heading: Members
+  table:
+  - member: notConfigured
+    description: Device default value, no Application Control type selected.
+  - member: enforceComponentsAndStoreApps
+    description: Enforce Windows component and store apps.
+  - member: auditComponentsAndStoreApps
+    description: Audit Windows component and store apps.
+  - member: enforceComponentsStoreAppsAndSmartlocker
+    description: Enforce Windows components, store apps and smart locker.
+  - member: auditComponentsStoreAppsAndSmartlocker
+    description: Audit Windows components, store apps and smart locker​.

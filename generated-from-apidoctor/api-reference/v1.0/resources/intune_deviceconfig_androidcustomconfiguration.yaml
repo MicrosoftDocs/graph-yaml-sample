@@ -1,0 +1,88 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_androidcustomconfiguration.md
+top:
+  heading: androidCustomConfiguration resource type
+  intro: |
+    This topic provides descriptions of the declared methods, properties and relationships exposed by the androidCustomConfiguration resource.
+    Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.androidCustomConfiguration",
+      "id": "String (identifier)",
+      "lastModifiedDateTime": "String (timestamp)",
+      "createdDateTime": "String (timestamp)",
+      "description": "String",
+      "displayName": "String",
+      "version": 1024,
+      "omaSettings": [
+        {
+          "@odata.type": "microsoft.graph.omaSetting",
+          "displayName": "String",
+          "description": "String",
+          "omaUri": "String",
+          "value": 1024
+        }
+      ]
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: id
+    type: String
+    description: Key of the entity. Inherited from deviceConfiguration
+  - name: lastModifiedDateTime
+    type: DateTimeOffset
+    description: DateTime the object was last modified. Inherited from deviceConfiguration
+  - name: createdDateTime
+    type: DateTimeOffset
+    description: DateTime the object was created. Inherited from deviceConfiguration
+  - name: description
+    type: String
+    description: Admin provided description of the Device Configuration. Inherited from deviceConfiguration
+  - name: displayName
+    type: String
+    description: Admin provided name of the device configuration. Inherited from deviceConfiguration
+  - name: version
+    type: Int32
+    description: Version of the device configuration. Inherited from deviceConfiguration
+  - name: omaSettings
+    type: Collection(microsoft.graph.omaSetting)
+    description: OMA settings. This collection can contain a maximum of 1000 elements.
+relationships:
+  heading: Relationships
+  table:
+  - name: assignments
+    type: Collection(microsoft.graph.deviceConfigurationAssignment)
+    description: The list of assignments for the device configuration profile. Inherited from deviceConfiguration
+  - name: deviceStatuses
+    type: Collection(microsoft.graph.deviceConfigurationDeviceStatus)
+    description: Device configuration installation status by device. Inherited from deviceConfiguration
+  - name: userStatuses
+    type: Collection(microsoft.graph.deviceConfigurationUserStatus)
+    description: Device configuration installation status by user. Inherited from deviceConfiguration
+  - name: deviceStatusOverview
+    type: microsoft.graph.deviceConfigurationDeviceOverview
+    description: Device Configuration devices status overview Inherited from deviceConfiguration
+  - name: userStatusOverview
+    type: microsoft.graph.deviceConfigurationUserOverview
+    description: Device Configuration users status overview Inherited from deviceConfiguration
+  - name: deviceSettingStateSummaries
+    type: Collection(microsoft.graph.settingStateDeviceSummary)
+    description: Device Configuration Setting State Device Summary Inherited from deviceConfiguration
+methods:
+  heading: Methods
+  intro: |
+    |Method|Return Type|Description
+    |:-|:-|:-|
+    |[List androidCustomConfigurations](../api/intune_deviceconfig_androidcustomconfiguration_list.md)|[androidCustomConfiguration](../resources/intune_deviceconfig_androidcustomconfiguration.md) collection|List properties and relationships of the [androidCustomConfiguration](../resources/intune_deviceconfig_androidcustomconfiguration.md) objects.
+    |[Get androidCustomConfiguration](../api/intune_deviceconfig_androidcustomconfiguration_get.md)|[androidCustomConfiguration](../resources/intune_deviceconfig_androidcustomconfiguration.md)|Read properties and relationships of the [androidCustomConfiguration](../resources/intune_deviceconfig_androidcustomconfiguration.md) object.
+    |[Create androidCustomConfiguration](../api/intune_deviceconfig_androidcustomconfiguration_create.md)|[androidCustomConfiguration](../resources/intune_deviceconfig_androidcustomconfiguration.md)|Create a new [androidCustomConfiguration](../resources/intune_deviceconfig_androidcustomconfiguration.md) object.
+    |[Delete androidCustomConfiguration](../api/intune_deviceconfig_androidcustomconfiguration_delete.md)|None|Deletes a [androidCustomConfiguration](../resources/intune_deviceconfig_androidcustomconfiguration.md).
+    |[Update androidCustomConfiguration](../api/intune_deviceconfig_androidcustomconfiguration_update.md)|[androidCustomConfiguration](../resources/intune_deviceconfig_androidcustomconfiguration.md)|Update the properties of a [androidCustomConfiguration](../resources/intune_deviceconfig_androidcustomconfiguration.md) object.

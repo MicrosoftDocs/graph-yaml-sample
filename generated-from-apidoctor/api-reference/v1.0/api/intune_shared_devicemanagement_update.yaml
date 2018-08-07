@@ -1,0 +1,112 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/intune_shared_devicemanagement_update.md
+top:
+  heading: Update deviceManagement
+  intro: |
+    Update the properties of a [deviceManagement](../resources/intune_shared_devicemanagement.md) object.
+permissions:
+  heading: Prerequisites
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+httpRequest:
+  heading: HTTP Request
+  samplePaths: |
+    ```http
+    PATCH /deviceManagement
+    ```
+    
+httpHeaders:
+  heading: Request headers
+  table:
+  - name: Authorization
+    type: String
+    description: 
+  - name: Accept
+    type: String
+    description: 
+Request body:
+  heading: Request body
+  intro: |
+    In the request body, supply a JSON representation for the [deviceManagement](../resources/intune_shared_devicemanagement.md) object.
+    The following table shows the properties that are required when you create the [deviceManagement](../resources/intune_shared_devicemanagement.md).
+    |Property|Type|Description
+    |:-|:-|:-|
+    |id|String|Unique Identifier for the device
+    |**Device configuration**|&nbsp;|&nbsp;
+    |settings|[deviceManagementSettings](../resources/intune_deviceconfig_devicemanagementsettings.md)|Account level settings.
+    |**Device management**|&nbsp;|&nbsp;
+    |subscriptionState|[deviceManagementSubscriptionState](../resources/intune_devices_devicemanagementsubscriptionstate.md)|Tenant mobile device management subscription state. The possible values are: `pending`, `active`, `warning`, `disabled`, `deleted`, `blocked`, `lockedOut`.
+    |**On-boarding**|&nbsp;|&nbsp;
+    |intuneBrand|[intuneBrand](../resources/intune_onboarding_intunebrand.md)|intuneBrand contains data which is used in customizing the appearance of the Company Portal applications as well as the end user web portal.
+    Request body property support varies according to workflow.
+Response:
+  heading: Response
+  intro: |
+    If successful, this method returns a `200 OK` response code and an updated [deviceManagement](../resources/intune_shared_devicemanagement.md) object in the response body.
+examples:
+  - Example:
+      heading: Example
+      - request:
+          heading: Request
+          intro: |
+            Here is an example of the request.
+            PATCH https://graph.microsoft.com/beta/deviceManagement
+            Content-type: application/json
+            Content-length: 751
+            
+            {
+              "subscriptionState": "active",
+              "subscriptions": "intune",
+              "adminConsent": {
+                "@odata.type": "microsoft.graph.adminConsent",
+                "shareAPNSData": "granted"
+              },
+              "deviceProtectionOverview": {
+                "@odata.type": "microsoft.graph.deviceProtectionOverview",
+                "totalReportedDeviceCount": 8,
+                "inactiveThreatAgentDeviceCount": 14,
+                "unknownStateThreatAgentDeviceCount": 2,
+                "pendingSignatureUpdateDeviceCount": 1,
+                "cleanDeviceCount": 0,
+                "pendingFullScanDeviceCount": 10,
+                "pendingRestartDeviceCount": 9,
+                "pendingManualStepsDeviceCount": 13,
+                "pendingOfflineScanDeviceCount": 13,
+                "criticalFailuresDeviceCount": 11
+              },
+              "accountMoveCompletionDateTime": "2017-01-01T00:01:17.9006709-08:00"
+            }
+
+      - response:
+          heading: Response
+          intro: |
+            Here is an example of the response. Note: The response object shown here may be truncated for brevity. Returned properties vary according to workflow and context.
+            HTTP/1.1 200 OK
+            Content-Type: application/json
+            Content-Length: 855
+            
+            {
+              "@odata.type": "#microsoft.graph.deviceManagement",
+              "id": "0b283420-3420-0b28-2034-280b2034280b",
+              "subscriptionState": "active",
+              "subscriptions": "intune",
+              "adminConsent": {
+                "@odata.type": "microsoft.graph.adminConsent",
+                "shareAPNSData": "granted"
+              },
+              "deviceProtectionOverview": {
+                "@odata.type": "microsoft.graph.deviceProtectionOverview",
+                "totalReportedDeviceCount": 8,
+                "inactiveThreatAgentDeviceCount": 14,
+                "unknownStateThreatAgentDeviceCount": 2,
+                "pendingSignatureUpdateDeviceCount": 1,
+                "cleanDeviceCount": 0,
+                "pendingFullScanDeviceCount": 10,
+                "pendingRestartDeviceCount": 9,
+                "pendingManualStepsDeviceCount": 13,
+                "pendingOfflineScanDeviceCount": 13,
+                "criticalFailuresDeviceCount": 11
+              },
+              "accountMoveCompletionDateTime": "2017-01-01T00:01:17.9006709-08:00"
+            }
+

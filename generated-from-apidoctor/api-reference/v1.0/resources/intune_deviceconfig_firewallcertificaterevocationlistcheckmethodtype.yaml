@@ -1,0 +1,17 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_firewallcertificaterevocationlistcheckmethodtype.md
+top:
+  heading: firewallCertificateRevocationListCheckMethodType enum type
+  intro: |
+    Possible values for firewallCertificateRevocationListCheckMethod
+enum:
+  heading: Members
+  table:
+  - member: deviceDefault
+    description: No value configured by Intune, do not override the user-configured device default value
+  - member: none
+    description: Do not check certificate revocation list
+  - member: attempt
+    description: Attempt CRL check and allow a certificate only if the certificate is confirmed by the check
+  - member: require
+    description: Require a successful CRL check before allowing a certificate

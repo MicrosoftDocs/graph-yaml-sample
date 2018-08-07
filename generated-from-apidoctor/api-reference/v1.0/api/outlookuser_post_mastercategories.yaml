@@ -1,0 +1,78 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/outlookuser_post_mastercategories.md
+top:
+  heading: Create Outlook category
+  intro: |
+    Create an [outlookCategory](../resources/outlookCategory.md) object in the user's master list of categories.
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+  table:
+  - type: Delegated (work or school account)
+    scopes: MailboxSettings.ReadWrite
+  - type: Delegated (personal Microsoft account)
+    scopes: MailboxSettings.ReadWrite
+  - type: Application
+    scopes: MailboxSettings.ReadWrite
+httpRequest:
+  heading: HTTP request
+  samplePaths: |
+    ```http
+    POST /me/outlook/masterCategories
+    POST /users/{id|userPrincipalName}/outlook/masterCategories
+    ```
+    
+httpHeaders:
+  heading: Request headers
+  table:
+  - name: Authorization
+    type: 
+    description: Bearer {token}. Required.
+Request body:
+  heading: Request body
+  intro: |
+    In the request body, supply a JSON representation of [outlookCategory](../resources/outlookCategory.md) object.
+Response:
+  heading: Response
+  intro: |
+    If successful, this method returns `201 Created` response code and [outlookCategory](../resources/outlookCategory.md) object in the response body.
+examples:
+  - Example:
+      heading: Example
+      - request:
+          heading: Request
+          intro: |
+            Here is an example of the request.
+          exampleRequest: |
+            ```http
+            POST https://graph.microsoft.com/v1.0/me/outlook/masterCategories
+            Content-type: application/json
+            Content-Length: 70
+            
+            {
+                  "displayName":"Project expenses",
+                  "color":"preset9"
+            }
+            ```
+            
+          outro: |
+            In the request body, supply a JSON representation of [outlookCategory](../resources/outlookCategory.md) object.
+      - response:
+          heading: Response
+          intro: |
+            Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+          exampleResponse: |
+            ```http
+            HTTP/1.1 201 Created
+            Content-type: application/json
+            Content-length: 250
+            
+            {
+              "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('8ae6f565-0d7f-4ead-853e-7db94c912a1f')/outlook/masterCategories/$entity",
+              "id":"bac262b7-485d-4739-b436-e31467d64fac",
+              "displayName":"Project expenses",
+              "color":"preset9"
+            }
+            ```
+            

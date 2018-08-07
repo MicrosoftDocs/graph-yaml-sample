@@ -1,0 +1,63 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/tablesort_clear.md
+top:
+  heading: TableSort: clear
+  intro: |
+    Clears the sorting that is currently on the table. While this doesn't modify the table's ordering, it clears the state of the header buttons.
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+  table:
+  - type: Delegated (work or school account)
+    scopes: Files.ReadWrite
+  - type: Delegated (personal Microsoft account)
+    scopes: Not supported.
+  - type: Application
+    scopes: Not supported.
+httpRequest:
+  heading: HTTP request
+  samplePaths: |
+    ```http
+    POST /workbook/tables/{id|name}/sort/clear
+    POST /workbook/worksheets/{id|name}/tables/{id|name}/sort/clear
+    ```
+    
+httpHeaders:
+  heading: Request headers
+  table:
+  - name: Authorization
+    type: 
+    description: Bearer {token}. Required.
+  - name: Workbook-Session-Id
+    type: 
+    description: Workbook session Id that determines if changes are persisted or not. Optional.
+Request body:
+  heading: Request body
+Response:
+  heading: Response
+  intro: |
+    If successful, this method returns `200 OK` response code. It does not return anything in the response body.
+examples:
+  - Example:
+      heading: Example
+      intro: |
+        Here is an example of how to call this API.
+      - request:
+          heading: Request
+          intro: |
+            Here is an example of the request.
+          exampleRequest: |
+            ```http
+            POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/sort/clear
+            ```
+            
+      - response:
+          heading: Response
+          intro: |
+            Here is an example of the response. 
+          exampleResponse: |
+            ```http
+            HTTP/1.1 200 OK
+            ```
+            

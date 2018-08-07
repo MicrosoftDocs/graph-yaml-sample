@@ -1,0 +1,115 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/user_post_events.md
+top:
+  heading: Create Event
+  intro: |
+    Create an [event](../resources/event.md) in the user's default calendar or specified calendar.
+    You can specify the time zone for each of the start and end times of the event as part of these values, as the 
+    **start** and **end** properties are of [dateTimeTimeZone](../resources/datetimetimezone.md) type. 
+    When an event is sent, the server sends invitations to all the attendees.
+    **Setting the location in an event**
+    An Exchange administrator can set up a mailbox and an email address for a resource such as a meeting room, or equipment 
+    like a projector. Users can then invite the resource as an attendee to a meeting. On behalf of the resource, the server accepts or rejects 
+    the meeting request based on the free/busy schedule of the resource. 
+    If the server accepts a meeting for the resource, it creates an event for the meeting in the resource's calendar. If the meeting is rescheduled, 
+    the server automatically updates the event in the resource's calendar.
+    Another advantage of setting up a mailbox for a resource is to control scheduling of the resource, for example, only executives
+    or their delegates can book a private meeting room.
+    If you're organizing an event that involves a meeting location:
+    
+    1. Set the **location** property of the **event** accordingly. 
+    1. Set the optional **locationEmailAddress** property if the meeting location has an email address.
+    
+    Additionally, if the meeting location has been set up as a resource, or if the event involves some equipment that has been set up as a resource:
+    
+    1. Invite the resource as an [attendee](../resources/attendee.md).
+    1. Set the attendee **type** property as `resource`.
+    1. Set the attendee **emailAddress** as the resource email address.
+    
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+  table:
+  - type: Delegated (work or school account)
+    scopes: Calendars.ReadWrite
+  - type: Delegated (personal Microsoft account)
+    scopes: Calendars.ReadWrite
+  - type: Application
+    scopes: Calendars.ReadWrite
+httpRequest:
+  heading: HTTP request
+  samplePaths: |
+    ```http
+    POST /me/events
+    POST /users/{id | userPrincipalName}/events
+    
+    POST /me/calendar/events
+    POST /users/{id | userPrincipalName}/calendar/events
+    
+    POST /me/calendars/{id}/events
+    POST /users/{id | userPrincipalName}/calendars/{id}/events
+    ```
+    
+httpHeaders:
+  heading: Request headers
+  table:
+  - name: Authorization
+    type: String
+    description: 
+  - name: Content-Type
+    type: String
+    description: 
+Request body:
+  heading: Request body
+  intro: |
+    In the request body, supply a JSON representation of [event](../resources/event.md) object.
+    Since the **event** resource supports [extensions](../../../concepts/extensibility_overview.md), you can use the `POST` operation and add custom properties with your own data to the event while creating it.
+Response:
+  heading: Response
+  intro: |
+    If successful, this method returns `201 Created` response code and [event](../resources/event.md) object in the response body.
+examples:
+  - Example:
+      heading: Example
+      outro: |
+        ##### Request 1
+        Here is an example of the request. It uses the `Prefer: outlook.timezone` request header to specify the time zone for the **start** and **end** 
+        times in the response.
+        
+        ```http
+        POST https://graph.microsoft.com/v1.0/me/events
+        Prefer: outlook.timezone="Pacific Standard Time"
+        Content-type: application/json
+        Content-length: 600
+        
+        {
+          "subject": "Let's go for lunch",
+          "body": {
+            "contentType": "HTML",
+            "content": "Does late morning work for you?"
+          },
+          "start": {
+              "dateTime": "2017-04-15T12:00:00",
+              "timeZone": "Pacific Standard Time"
+          },
+          "end": {
+              "dateTime": "2017-04-15T14:00:00",
+              "timeZone": "Pacific Standard Time"
+          },
+          "location":{
+              "displayName":"Harry's Bar"
+          },
+          "attendees": [
+            {
+              "emailAddress": {
+                "address":"samanthab@contoso.onmicrosoft.com",
+                "name": "Samantha Booth"
+              },
+              "type": "required"
+            }
+          ]
+        }
+        ```
+        
+        In the request body, supply a JSON representation of [event](../resources/event.md) object.

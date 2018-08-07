@@ -1,0 +1,33 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/angular.md
+top:
+  heading: Get started with Microsoft Graph in an AngularJS app
+  intro: |
+    This article describes the tasks required to get an access token from the Azure AD v2.0 endpoint and call Microsoft Graph. It walks you through building the [Microsoft Connect Sample for AngularJS](https://github.com/microsoftgraph/angular-connect-rest-sample) and explains the main concepts that you implement to use Microsoft Graph. The article also describes how to access Microsoft Graph by using either the [Microsoft Graph JavaScript SDK](https://github.com/microsoftgraph/msgraph-sdk-javascript) or raw REST calls.
+    The following image shows the app you'll create. 
+    ![The web app after login showing the "Send mail" button](./images/angular-connect-sample.png)
+    **Don't feel like building an app?** Use the [Microsoft Graph quick start](https://graph.microsoft.io/en-us/getting-started) to get up and running fast.
+    To download a version of the Connect sample that uses the Azure AD endpoint, see [Microsoft Graph Connect Sample for AngularJS](https://github.com/microsoftgraph/angular-connect-rest-sample/releases/tag/last_v1_auth).
+permissions:
+  heading: Prerequisites
+  intro: |
+    To get started, you'll need: 
+    
+    * A [Microsoft account](https://www.outlook.com/) or a [work or school account](https://docs.microsoft.com/en-us/office/developer-program/office-365-developer-program-faq#account-types)
+    * [Node.js with npm](https://nodejs.org/en/download/)
+    * [Bower](https://bower.io)
+    * The [Microsoft Connect Sample for AngularJS](https://github.com/microsoftgraph/angular-connect-sample). You'll use the **starter-project** folder in the sample files for this walkthrough.
+    
+  outro: |
+    ## Register the application
+    Register an app on the Microsoft App Registration Portal. This generates the app ID and password that you'll use to configure the app in Visual Studio.
+    
+    1. Sign into the [Microsoft App Registration Portal](https://apps.dev.microsoft.com/) using either your personal or work or school account.
+    1. Choose **Add an app**.
+    1. Enter a name for the app, and choose **Create application**. 
+    1. The registration page displays, listing the properties of your app.
+    1. Copy the application ID. This is the unique identifier for your app that you'll use to configure the app.
+    1. Under **Platforms**, choose **Add Platform** > **Web**.
+    1. Make sure the **Allow Implicit Flow** check box is selected, and enter *http://localhost:8080* as the Redirect URI. 
+    1. Choose **Save**.
+    

@@ -1,0 +1,13 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_mam_managedapppincharacterset.md
+top:
+  heading: managedAppPinCharacterSet enum type
+  intro: |
+    Character set which is to be used for a user's app PIN
+enum:
+  heading: Members
+  table:
+  - member: numeric
+    description: Numeric characters
+  - member: alphanumericAndSymbol
+    description: Alphanumeric and symbolic characters

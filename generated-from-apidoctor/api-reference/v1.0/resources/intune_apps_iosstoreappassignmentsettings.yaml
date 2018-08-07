@@ -1,0 +1,29 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_apps_iosstoreappassignmentsettings.md
+top:
+  heading: iosStoreAppAssignmentSettings resource type
+  intro: |
+    Contains properties used to assign an iOS Store mobile app to a group.
+    Inherits from [mobileAppAssignmentSettings](../resources/intune_apps_mobileappassignmentsettings.md)
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.iosStoreAppAssignmentSettings",
+      "vpnConfigurationId": "String"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: vpnConfigurationId
+    type: String
+    description: The VPN Configuration Id to apply for this app.
+relationships:
+  heading: Relationships
+  intro: |
+    None

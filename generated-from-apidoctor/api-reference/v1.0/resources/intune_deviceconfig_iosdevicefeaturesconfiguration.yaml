@@ -1,0 +1,151 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_iosdevicefeaturesconfiguration.md
+top:
+  heading: iosDeviceFeaturesConfiguration resource type
+  intro: |
+    iOS Device Features Configuration Profile.
+    Inherits from [appleDeviceFeaturesConfigurationBase](../resources/intune_deviceconfig_appledevicefeaturesconfigurationbase.md)
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.iosDeviceFeaturesConfiguration",
+      "id": "String (identifier)",
+      "lastModifiedDateTime": "String (timestamp)",
+      "createdDateTime": "String (timestamp)",
+      "description": "String",
+      "displayName": "String",
+      "version": 1024,
+      "assetTagTemplate": "String",
+      "lockScreenFootnote": "String",
+      "homeScreenDockIcons": [
+        {
+          "@odata.type": "microsoft.graph.iosHomeScreenItem",
+          "displayName": "String",
+          "pages": [
+            {
+              "@odata.type": "microsoft.graph.iosHomeScreenFolderPage",
+              "displayName": "String",
+              "apps": [
+                {
+                  "@odata.type": "microsoft.graph.iosHomeScreenApp",
+                  "displayName": "String",
+                  "bundleID": "String"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "homeScreenPages": [
+        {
+          "@odata.type": "microsoft.graph.iosHomeScreenPage",
+          "displayName": "String",
+          "icons": [
+            {
+              "@odata.type": "microsoft.graph.iosHomeScreenFolder",
+              "displayName": "String",
+              "pages": [
+                {
+                  "@odata.type": "microsoft.graph.iosHomeScreenFolderPage",
+                  "displayName": "String",
+                  "apps": [
+                    {
+                      "@odata.type": "microsoft.graph.iosHomeScreenApp",
+                      "displayName": "String",
+                      "bundleID": "String"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "notificationSettings": [
+        {
+          "@odata.type": "microsoft.graph.iosNotificationSettings",
+          "bundleID": "String",
+          "appName": "String",
+          "publisher": "String",
+          "enabled": true,
+          "showInNotificationCenter": true,
+          "showOnLockScreen": true,
+          "alertType": "String",
+          "badgesEnabled": true,
+          "soundsEnabled": true
+        }
+      ]
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: id
+    type: String
+    description: Key of the entity. Inherited from deviceConfiguration
+  - name: lastModifiedDateTime
+    type: DateTimeOffset
+    description: DateTime the object was last modified. Inherited from deviceConfiguration
+  - name: createdDateTime
+    type: DateTimeOffset
+    description: DateTime the object was created. Inherited from deviceConfiguration
+  - name: description
+    type: String
+    description: Admin provided description of the Device Configuration. Inherited from deviceConfiguration
+  - name: displayName
+    type: String
+    description: Admin provided name of the device configuration. Inherited from deviceConfiguration
+  - name: version
+    type: Int32
+    description: Version of the device configuration. Inherited from deviceConfiguration
+  - name: assetTagTemplate
+    type: String
+    description: Asset tag information for the device, displayed on the login window and lock screen.
+  - name: lockScreenFootnote
+    type: String
+    description: A footnote displayed on the login window and lock screen. Available in iOS 9.3.1 and later.
+  - name: homeScreenDockIcons
+    type: Collection(microsoft.graph.iosHomeScreenItem)
+    description: A list of app and folders to appear on the Home Screen Dock. This collection can contain a maximum of 500 elements.
+  - name: homeScreenPages
+    type: Collection(microsoft.graph.iosHomeScreenPage)
+    description: A list of pages on the Home Screen. This collection can contain a maximum of 500 elements.
+  - name: notificationSettings
+    type: Collection(microsoft.graph.iosNotificationSettings)
+    description: Notification settings for each bundle id. Applicable to devices in supervised mode only (iOS 9.3 and later). This collection can contain a maximum of 500 elements.
+relationships:
+  heading: Relationships
+  table:
+  - name: assignments
+    type: Collection(microsoft.graph.deviceConfigurationAssignment)
+    description: The list of assignments for the device configuration profile. Inherited from deviceConfiguration
+  - name: deviceStatuses
+    type: Collection(microsoft.graph.deviceConfigurationDeviceStatus)
+    description: Device configuration installation status by device. Inherited from deviceConfiguration
+  - name: userStatuses
+    type: Collection(microsoft.graph.deviceConfigurationUserStatus)
+    description: Device configuration installation status by user. Inherited from deviceConfiguration
+  - name: deviceStatusOverview
+    type: microsoft.graph.deviceConfigurationDeviceOverview
+    description: Device Configuration devices status overview Inherited from deviceConfiguration
+  - name: userStatusOverview
+    type: microsoft.graph.deviceConfigurationUserOverview
+    description: Device Configuration users status overview Inherited from deviceConfiguration
+  - name: deviceSettingStateSummaries
+    type: Collection(microsoft.graph.settingStateDeviceSummary)
+    description: Device Configuration Setting State Device Summary Inherited from deviceConfiguration
+methods:
+  heading: Methods
+  intro: |
+    |Method|Return Type|Description
+    |:-|:-|:-|
+    |[List iosDeviceFeaturesConfigurations](../api/intune_deviceconfig_iosdevicefeaturesconfiguration_list.md)|[iosDeviceFeaturesConfiguration](../resources/intune_deviceconfig_iosdevicefeaturesconfiguration.md) collection|List properties and relationships of the [iosDeviceFeaturesConfiguration](../resources/intune_deviceconfig_iosdevicefeaturesconfiguration.md) objects.
+    |[Get iosDeviceFeaturesConfiguration](../api/intune_deviceconfig_iosdevicefeaturesconfiguration_get.md)|[iosDeviceFeaturesConfiguration](../resources/intune_deviceconfig_iosdevicefeaturesconfiguration.md)|Read properties and relationships of the [iosDeviceFeaturesConfiguration](../resources/intune_deviceconfig_iosdevicefeaturesconfiguration.md) object.
+    |[Create iosDeviceFeaturesConfiguration](../api/intune_deviceconfig_iosdevicefeaturesconfiguration_create.md)|[iosDeviceFeaturesConfiguration](../resources/intune_deviceconfig_iosdevicefeaturesconfiguration.md)|Create a new [iosDeviceFeaturesConfiguration](../resources/intune_deviceconfig_iosdevicefeaturesconfiguration.md) object.
+    |[Delete iosDeviceFeaturesConfiguration](../api/intune_deviceconfig_iosdevicefeaturesconfiguration_delete.md)|None|Deletes a [iosDeviceFeaturesConfiguration](../resources/intune_deviceconfig_iosdevicefeaturesconfiguration.md).
+    |[Update iosDeviceFeaturesConfiguration](../api/intune_deviceconfig_iosdevicefeaturesconfiguration_update.md)|[iosDeviceFeaturesConfiguration](../resources/intune_deviceconfig_iosdevicefeaturesconfiguration.md)|Update the properties of a [iosDeviceFeaturesConfiguration](../resources/intune_deviceconfig_iosdevicefeaturesconfiguration.md) object.

@@ -1,0 +1,63 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_onboarding_deviceenrollmentconfiguration.md
+top:
+  heading: deviceEnrollmentConfiguration resource type
+  intro: |
+    Not yet documented
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.deviceEnrollmentConfiguration",
+      "id": "String (identifier)",
+      "displayName": "String",
+      "description": "String",
+      "priority": 1024,
+      "createdDateTime": "String (timestamp)",
+      "lastModifiedDateTime": "String (timestamp)",
+      "version": 1024
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: id
+    type: String
+    description: Not yet documented
+  - name: displayName
+    type: String
+    description: Not yet documented
+  - name: description
+    type: String
+    description: Not yet documented
+  - name: priority
+    type: Int32
+    description: Not yet documented
+  - name: createdDateTime
+    type: DateTimeOffset
+    description: Not yet documented
+  - name: lastModifiedDateTime
+    type: DateTimeOffset
+    description: Not yet documented
+  - name: version
+    type: Int32
+    description: Not yet documented
+relationships:
+  heading: Relationships
+  table:
+  - name: assignments
+    type: Collection(microsoft.graph.enrollmentConfigurationAssignment)
+    description: The list of group assignments for the device configuration profile.
+methods:
+  heading: Methods
+  intro: |
+    |Method|Return Type|Description
+    |:-|:-|:-|
+    |[List deviceEnrollmentConfigurations](../api/intune_onboarding_deviceenrollmentconfiguration_list.md)|[deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md) collection|List properties and relationships of the [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md) objects.
+    |[Get deviceEnrollmentConfiguration](../api/intune_onboarding_deviceenrollmentconfiguration_get.md)|[deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|Read properties and relationships of the [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md) object.
+    |[setPriority action](../api/intune_onboarding_deviceenrollmentconfiguration_setpriority.md)|None|Not yet documented
+    |[assign action](../api/intune_onboarding_deviceenrollmentconfiguration_assign.md)|None|Not yet documented

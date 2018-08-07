@@ -1,0 +1,27 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/educationteacher.md
+top:
+  heading: educationTeacher resource type
+  intro: |
+    Additional information added to an [educationUser](educationuser.md) that is present when the primaryRole of a user is `teacher`.
+resource:
+  heading: JSON representation
+  intro: |
+    The following is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "externalId": "String",
+      "teacherNumber": "String"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: externalId
+    type: String
+    description: ID of the teacher in the source system.
+  - name: teacherNumber
+    type: String
+    description: Teacher number.

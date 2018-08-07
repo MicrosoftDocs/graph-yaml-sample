@@ -1,0 +1,132 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_windowsupdateforbusinessconfiguration.md
+top:
+  heading: windowsUpdateForBusinessConfiguration resource type
+  intro: |
+    Windows Update for business configuration.
+    Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.windowsUpdateForBusinessConfiguration",
+      "id": "String (identifier)",
+      "lastModifiedDateTime": "String (timestamp)",
+      "createdDateTime": "String (timestamp)",
+      "description": "String",
+      "displayName": "String",
+      "version": 1024,
+      "deliveryOptimizationMode": "String",
+      "prereleaseFeatures": "String",
+      "automaticUpdateMode": "String",
+      "microsoftUpdateServiceAllowed": true,
+      "driversExcluded": true,
+      "installationSchedule": {
+        "@odata.type": "microsoft.graph.windowsUpdateInstallScheduleType",
+        "scheduledInstallDay": "String",
+        "scheduledInstallTime": "String (time of day)"
+      },
+      "qualityUpdatesDeferralPeriodInDays": 1024,
+      "featureUpdatesDeferralPeriodInDays": 1024,
+      "qualityUpdatesPaused": true,
+      "featureUpdatesPaused": true,
+      "qualityUpdatesPauseExpiryDateTime": "String (timestamp)",
+      "featureUpdatesPauseExpiryDateTime": "String (timestamp)",
+      "businessReadyUpdatesOnly": "String"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: id
+    type: String
+    description: Key of the entity. Inherited from deviceConfiguration
+  - name: lastModifiedDateTime
+    type: DateTimeOffset
+    description: DateTime the object was last modified. Inherited from deviceConfiguration
+  - name: createdDateTime
+    type: DateTimeOffset
+    description: DateTime the object was created. Inherited from deviceConfiguration
+  - name: description
+    type: String
+    description: Admin provided description of the Device Configuration. Inherited from deviceConfiguration
+  - name: displayName
+    type: String
+    description: Admin provided name of the device configuration. Inherited from deviceConfiguration
+  - name: version
+    type: Int32
+    description: Version of the device configuration. Inherited from deviceConfiguration
+  - name: deliveryOptimizationMode
+    type: microsoft.graph.windowsDeliveryOptimizationMode
+    description: Delivery Optimization Mode. The possible values are: userDefined, httpOnly, httpWithPeeringNat, httpWithPeeringPrivateGroup, httpWithInternetPeering, simpleDownload, bypassMode.
+  - name: prereleaseFeatures
+    type: microsoft.graph.prereleaseFeatures
+    description: The pre-release features. The possible values are: userDefined, settingsOnly, settingsAndExperimentations, notAllowed.
+  - name: automaticUpdateMode
+    type: microsoft.graph.automaticUpdateMode
+    description: Automatic update mode. The possible values are: userDefined, notifyDownload, autoInstallAtMaintenanceTime, autoInstallAndRebootAtMaintenanceTime, autoInstallAndRebootAtScheduledTime, autoInstallAndRebootWithoutEndUserControl.
+  - name: microsoftUpdateServiceAllowed
+    type: Boolean
+    description: Allow Microsoft Update Service
+  - name: driversExcluded
+    type: Boolean
+    description: Exclude Windows update Drivers
+  - name: installationSchedule
+    type: microsoft.graph.windowsUpdateInstallScheduleType
+    description: Installation schedule
+  - name: qualityUpdatesDeferralPeriodInDays
+    type: Int32
+    description: Defer Quality Updates by these many days
+  - name: featureUpdatesDeferralPeriodInDays
+    type: Int32
+    description: Defer Feature Updates by these many days
+  - name: qualityUpdatesPaused
+    type: Boolean
+    description: Pause Quality Updates
+  - name: featureUpdatesPaused
+    type: Boolean
+    description: Pause Feature Updates
+  - name: qualityUpdatesPauseExpiryDateTime
+    type: DateTimeOffset
+    description: Quality Updates Pause Expiry datetime
+  - name: featureUpdatesPauseExpiryDateTime
+    type: DateTimeOffset
+    description: Feature Updates Pause Expiry datetime
+  - name: businessReadyUpdatesOnly
+    type: microsoft.graph.windowsUpdateType
+    description: Determines which branch devices will receive their updates from. The possible values are: userDefined, all, businessReadyOnly, windowsInsiderBuildFast, windowsInsiderBuildSlow, windowsInsiderBuildRelease.
+relationships:
+  heading: Relationships
+  table:
+  - name: assignments
+    type: Collection(microsoft.graph.deviceConfigurationAssignment)
+    description: The list of assignments for the device configuration profile. Inherited from deviceConfiguration
+  - name: deviceStatuses
+    type: Collection(microsoft.graph.deviceConfigurationDeviceStatus)
+    description: Device configuration installation status by device. Inherited from deviceConfiguration
+  - name: userStatuses
+    type: Collection(microsoft.graph.deviceConfigurationUserStatus)
+    description: Device configuration installation status by user. Inherited from deviceConfiguration
+  - name: deviceStatusOverview
+    type: microsoft.graph.deviceConfigurationDeviceOverview
+    description: Device Configuration devices status overview Inherited from deviceConfiguration
+  - name: userStatusOverview
+    type: microsoft.graph.deviceConfigurationUserOverview
+    description: Device Configuration users status overview Inherited from deviceConfiguration
+  - name: deviceSettingStateSummaries
+    type: Collection(microsoft.graph.settingStateDeviceSummary)
+    description: Device Configuration Setting State Device Summary Inherited from deviceConfiguration
+methods:
+  heading: Methods
+  intro: |
+    |Method|Return Type|Description
+    |:-|:-|:-|
+    |[List windowsUpdateForBusinessConfigurations](../api/intune_deviceconfig_windowsupdateforbusinessconfiguration_list.md)|[windowsUpdateForBusinessConfiguration](../resources/intune_deviceconfig_windowsupdateforbusinessconfiguration.md) collection|List properties and relationships of the [windowsUpdateForBusinessConfiguration](../resources/intune_deviceconfig_windowsupdateforbusinessconfiguration.md) objects.
+    |[Get windowsUpdateForBusinessConfiguration](../api/intune_deviceconfig_windowsupdateforbusinessconfiguration_get.md)|[windowsUpdateForBusinessConfiguration](../resources/intune_deviceconfig_windowsupdateforbusinessconfiguration.md)|Read properties and relationships of the [windowsUpdateForBusinessConfiguration](../resources/intune_deviceconfig_windowsupdateforbusinessconfiguration.md) object.
+    |[Create windowsUpdateForBusinessConfiguration](../api/intune_deviceconfig_windowsupdateforbusinessconfiguration_create.md)|[windowsUpdateForBusinessConfiguration](../resources/intune_deviceconfig_windowsupdateforbusinessconfiguration.md)|Create a new [windowsUpdateForBusinessConfiguration](../resources/intune_deviceconfig_windowsupdateforbusinessconfiguration.md) object.
+    |[Delete windowsUpdateForBusinessConfiguration](../api/intune_deviceconfig_windowsupdateforbusinessconfiguration_delete.md)|None|Deletes a [windowsUpdateForBusinessConfiguration](../resources/intune_deviceconfig_windowsupdateforbusinessconfiguration.md).
+    |[Update windowsUpdateForBusinessConfiguration](../api/intune_deviceconfig_windowsupdateforbusinessconfiguration_update.md)|[windowsUpdateForBusinessConfiguration](../resources/intune_deviceconfig_windowsupdateforbusinessconfiguration.md)|Update the properties of a [windowsUpdateForBusinessConfiguration](../resources/intune_deviceconfig_windowsupdateforbusinessconfiguration.md) object.

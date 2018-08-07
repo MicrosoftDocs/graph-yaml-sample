@@ -1,0 +1,677 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_iosgeneraldeviceconfiguration.md
+top:
+  heading: iosGeneralDeviceConfiguration resource type
+  intro: |
+    This topic provides descriptions of the declared methods, properties and relationships exposed by the iosGeneralDeviceConfiguration resource.
+    Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
+      "id": "String (identifier)",
+      "lastModifiedDateTime": "String (timestamp)",
+      "createdDateTime": "String (timestamp)",
+      "description": "String",
+      "displayName": "String",
+      "version": 1024,
+      "accountBlockModification": true,
+      "activationLockAllowWhenSupervised": true,
+      "airDropBlocked": true,
+      "airDropForceUnmanagedDropTarget": true,
+      "airPlayForcePairingPasswordForOutgoingRequests": true,
+      "appleWatchBlockPairing": true,
+      "appleWatchForceWristDetection": true,
+      "appleNewsBlocked": true,
+      "appsSingleAppModeList": [
+        {
+          "@odata.type": "microsoft.graph.appListItem",
+          "name": "String",
+          "publisher": "String",
+          "appStoreUrl": "String",
+          "appId": "String"
+        }
+      ],
+      "appsVisibilityList": [
+        {
+          "@odata.type": "microsoft.graph.appListItem",
+          "name": "String",
+          "publisher": "String",
+          "appStoreUrl": "String",
+          "appId": "String"
+        }
+      ],
+      "appsVisibilityListType": "String",
+      "appStoreBlockAutomaticDownloads": true,
+      "appStoreBlocked": true,
+      "appStoreBlockInAppPurchases": true,
+      "appStoreBlockUIAppInstallation": true,
+      "appStoreRequirePassword": true,
+      "bluetoothBlockModification": true,
+      "cameraBlocked": true,
+      "cellularBlockDataRoaming": true,
+      "cellularBlockGlobalBackgroundFetchWhileRoaming": true,
+      "cellularBlockPerAppDataModification": true,
+      "cellularBlockPersonalHotspot": true,
+      "cellularBlockVoiceRoaming": true,
+      "certificatesBlockUntrustedTlsCertificates": true,
+      "classroomAppBlockRemoteScreenObservation": true,
+      "classroomAppForceUnpromptedScreenObservation": true,
+      "compliantAppsList": [
+        {
+          "@odata.type": "microsoft.graph.appListItem",
+          "name": "String",
+          "publisher": "String",
+          "appStoreUrl": "String",
+          "appId": "String"
+        }
+      ],
+      "compliantAppListType": "String",
+      "configurationProfileBlockChanges": true,
+      "definitionLookupBlocked": true,
+      "deviceBlockEnableRestrictions": true,
+      "deviceBlockEraseContentAndSettings": true,
+      "deviceBlockNameModification": true,
+      "diagnosticDataBlockSubmission": true,
+      "diagnosticDataBlockSubmissionModification": true,
+      "documentsBlockManagedDocumentsInUnmanagedApps": true,
+      "documentsBlockUnmanagedDocumentsInManagedApps": true,
+      "emailInDomainSuffixes": [
+        "String"
+      ],
+      "enterpriseAppBlockTrust": true,
+      "enterpriseAppBlockTrustModification": true,
+      "faceTimeBlocked": true,
+      "findMyFriendsBlocked": true,
+      "gamingBlockGameCenterFriends": true,
+      "gamingBlockMultiplayer": true,
+      "gameCenterBlocked": true,
+      "hostPairingBlocked": true,
+      "iBooksStoreBlocked": true,
+      "iBooksStoreBlockErotica": true,
+      "iCloudBlockActivityContinuation": true,
+      "iCloudBlockBackup": true,
+      "iCloudBlockDocumentSync": true,
+      "iCloudBlockManagedAppsSync": true,
+      "iCloudBlockPhotoLibrary": true,
+      "iCloudBlockPhotoStreamSync": true,
+      "iCloudBlockSharedPhotoStream": true,
+      "iCloudRequireEncryptedBackup": true,
+      "iTunesBlockExplicitContent": true,
+      "iTunesBlockMusicService": true,
+      "iTunesBlockRadio": true,
+      "keyboardBlockAutoCorrect": true,
+      "keyboardBlockDictation": true,
+      "keyboardBlockPredictive": true,
+      "keyboardBlockShortcuts": true,
+      "keyboardBlockSpellCheck": true,
+      "kioskModeAllowAssistiveSpeak": true,
+      "kioskModeAllowAssistiveTouchSettings": true,
+      "kioskModeAllowAutoLock": true,
+      "kioskModeAllowColorInversionSettings": true,
+      "kioskModeAllowRingerSwitch": true,
+      "kioskModeAllowScreenRotation": true,
+      "kioskModeAllowSleepButton": true,
+      "kioskModeAllowTouchscreen": true,
+      "kioskModeAllowVoiceOverSettings": true,
+      "kioskModeAllowVolumeButtons": true,
+      "kioskModeAllowZoomSettings": true,
+      "kioskModeAppStoreUrl": "String",
+      "kioskModeRequireAssistiveTouch": true,
+      "kioskModeRequireColorInversion": true,
+      "kioskModeRequireMonoAudio": true,
+      "kioskModeRequireVoiceOver": true,
+      "kioskModeRequireZoom": true,
+      "kioskModeManagedAppId": "String",
+      "lockScreenBlockControlCenter": true,
+      "lockScreenBlockNotificationView": true,
+      "lockScreenBlockPassbook": true,
+      "lockScreenBlockTodayView": true,
+      "mediaContentRatingAustralia": {
+        "@odata.type": "microsoft.graph.mediaContentRatingAustralia",
+        "movieRating": "String",
+        "tvRating": "String"
+      },
+      "mediaContentRatingCanada": {
+        "@odata.type": "microsoft.graph.mediaContentRatingCanada",
+        "movieRating": "String",
+        "tvRating": "String"
+      },
+      "mediaContentRatingFrance": {
+        "@odata.type": "microsoft.graph.mediaContentRatingFrance",
+        "movieRating": "String",
+        "tvRating": "String"
+      },
+      "mediaContentRatingGermany": {
+        "@odata.type": "microsoft.graph.mediaContentRatingGermany",
+        "movieRating": "String",
+        "tvRating": "String"
+      },
+      "mediaContentRatingIreland": {
+        "@odata.type": "microsoft.graph.mediaContentRatingIreland",
+        "movieRating": "String",
+        "tvRating": "String"
+      },
+      "mediaContentRatingJapan": {
+        "@odata.type": "microsoft.graph.mediaContentRatingJapan",
+        "movieRating": "String",
+        "tvRating": "String"
+      },
+      "mediaContentRatingNewZealand": {
+        "@odata.type": "microsoft.graph.mediaContentRatingNewZealand",
+        "movieRating": "String",
+        "tvRating": "String"
+      },
+      "mediaContentRatingUnitedKingdom": {
+        "@odata.type": "microsoft.graph.mediaContentRatingUnitedKingdom",
+        "movieRating": "String",
+        "tvRating": "String"
+      },
+      "mediaContentRatingUnitedStates": {
+        "@odata.type": "microsoft.graph.mediaContentRatingUnitedStates",
+        "movieRating": "String",
+        "tvRating": "String"
+      },
+      "networkUsageRules": [
+        {
+          "@odata.type": "microsoft.graph.iosNetworkUsageRule",
+          "managedApps": [
+            {
+              "@odata.type": "microsoft.graph.appListItem",
+              "name": "String",
+              "publisher": "String",
+              "appStoreUrl": "String",
+              "appId": "String"
+            }
+          ],
+          "cellularDataBlockWhenRoaming": true,
+          "cellularDataBlocked": true
+        }
+      ],
+      "mediaContentRatingApps": "String",
+      "messagesBlocked": true,
+      "notificationsBlockSettingsModification": true,
+      "passcodeBlockFingerprintUnlock": true,
+      "passcodeBlockFingerprintModification": true,
+      "passcodeBlockModification": true,
+      "passcodeBlockSimple": true,
+      "passcodeExpirationDays": 1024,
+      "passcodeMinimumLength": 1024,
+      "passcodeMinutesOfInactivityBeforeLock": 1024,
+      "passcodeMinutesOfInactivityBeforeScreenTimeout": 1024,
+      "passcodeMinimumCharacterSetCount": 1024,
+      "passcodePreviousPasscodeBlockCount": 1024,
+      "passcodeSignInFailureCountBeforeWipe": 1024,
+      "passcodeRequiredType": "String",
+      "passcodeRequired": true,
+      "podcastsBlocked": true,
+      "safariBlockAutofill": true,
+      "safariBlockJavaScript": true,
+      "safariBlockPopups": true,
+      "safariBlocked": true,
+      "safariCookieSettings": "String",
+      "safariManagedDomains": [
+        "String"
+      ],
+      "safariPasswordAutoFillDomains": [
+        "String"
+      ],
+      "safariRequireFraudWarning": true,
+      "screenCaptureBlocked": true,
+      "siriBlocked": true,
+      "siriBlockedWhenLocked": true,
+      "siriBlockUserGeneratedContent": true,
+      "siriRequireProfanityFilter": true,
+      "spotlightBlockInternetResults": true,
+      "voiceDialingBlocked": true,
+      "wallpaperBlockModification": true,
+      "wiFiConnectOnlyToConfiguredNetworks": true
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: id
+    type: String
+    description: Key of the entity. Inherited from deviceConfiguration
+  - name: lastModifiedDateTime
+    type: DateTimeOffset
+    description: DateTime the object was last modified. Inherited from deviceConfiguration
+  - name: createdDateTime
+    type: DateTimeOffset
+    description: DateTime the object was created. Inherited from deviceConfiguration
+  - name: description
+    type: String
+    description: Admin provided description of the Device Configuration. Inherited from deviceConfiguration
+  - name: displayName
+    type: String
+    description: Admin provided name of the device configuration. Inherited from deviceConfiguration
+  - name: version
+    type: Int32
+    description: Version of the device configuration. Inherited from deviceConfiguration
+  - name: accountBlockModification
+    type: Boolean
+    description: Indicates whether or not to allow account modification when the device is in supervised mode.
+  - name: activationLockAllowWhenSupervised
+    type: Boolean
+    description: Indicates whether or not to allow activation lock when the device is in the supervised mode.
+  - name: airDropBlocked
+    type: Boolean
+    description: Indicates whether or not to allow AirDrop when the device is in supervised mode.
+  - name: airDropForceUnmanagedDropTarget
+    type: Boolean
+    description: Indicates whether or not to cause AirDrop to be considered an unmanaged drop target (iOS 9.0 and later).
+  - name: airPlayForcePairingPasswordForOutgoingRequests
+    type: Boolean
+    description: Indicates whether or not to enforce all devices receiving AirPlay requests from this device to use a pairing password.
+  - name: appleWatchBlockPairing
+    type: Boolean
+    description: Indicates whether or not to allow Apple Watch pairing when the device is in supervised mode (iOS 9.0 and later).
+  - name: appleWatchForceWristDetection
+    type: Boolean
+    description: Indicates whether or not to force a paired Apple Watch to use Wrist Detection (iOS 8.2 and later).
+  - name: appleNewsBlocked
+    type: Boolean
+    description: Indicates whether or not to block the user from using News when the device is in supervised mode (iOS 9.0 and later).
+  - name: appsSingleAppModeList
+    type: Collection(microsoft.graph.appListItem)
+    description: Gets or sets the list of iOS apps allowed to autonomously enter Single App Mode. Supervised only. iOS 7.0 and later. This collection can contain a maximum of 500 elements.
+  - name: appsVisibilityList
+    type: Collection(microsoft.graph.appListItem)
+    description: List of apps in the visibility list (either visible/launchable apps list or hidden/unlaunchable apps list, controlled by AppsVisibilityListType) (iOS 9.3 and later). This collection can contain a maximum of 10000 elements.
+  - name: appsVisibilityListType
+    type: microsoft.graph.appListType
+    description: Type of list that is in the AppsVisibilityList. The possible values are: none, appsInListCompliant, appsNotInListCompliant.
+  - name: appStoreBlockAutomaticDownloads
+    type: Boolean
+    description: Indicates whether or not to block the automatic downloading of apps purchased on other devices when the device is in supervised mode (iOS 9.0 and later).
+  - name: appStoreBlocked
+    type: Boolean
+    description: Indicates whether or not to block the user from using the App Store.
+  - name: appStoreBlockInAppPurchases
+    type: Boolean
+    description: Indicates whether or not to block the user from making in app purchases.
+  - name: appStoreBlockUIAppInstallation
+    type: Boolean
+    description: Indicates whether or not to block the App Store app, not restricting installation through Host apps. Applies to supervised mode only (iOS 9.0 and later).
+  - name: appStoreRequirePassword
+    type: Boolean
+    description: Indicates whether or not to require a password when using the app store.
+  - name: bluetoothBlockModification
+    type: Boolean
+    description: Indicates whether or not to allow modification of Bluetooth settings when the device is in supervised mode (iOS 10.0 and later).
+  - name: cameraBlocked
+    type: Boolean
+    description: Indicates whether or not to block the user from accessing the camera of the device.
+  - name: cellularBlockDataRoaming
+    type: Boolean
+    description: Indicates whether or not to block data roaming.
+  - name: cellularBlockGlobalBackgroundFetchWhileRoaming
+    type: Boolean
+    description: Indicates whether or not to block global background fetch while roaming.
+  - name: cellularBlockPerAppDataModification
+    type: Boolean
+    description: Indicates whether or not to allow changes to cellular app data usage settings when the device is in supervised mode.
+  - name: cellularBlockPersonalHotspot
+    type: Boolean
+    description: Indicates whether or not to block Personal Hotspot.
+  - name: cellularBlockVoiceRoaming
+    type: Boolean
+    description: Indicates whether or not to block voice roaming.
+  - name: certificatesBlockUntrustedTlsCertificates
+    type: Boolean
+    description: Indicates whether or not to block untrusted TLS certificates.
+  - name: classroomAppBlockRemoteScreenObservation
+    type: Boolean
+    description: Indicates whether or not to allow remote screen observation by Classroom app when the device is in supervised mode (iOS 9.3 and later).
+  - name: classroomAppForceUnpromptedScreenObservation
+    type: Boolean
+    description: Indicates whether or not to automatically give permission to the teacher of a managed course on the Classroom app to view a student's screen without prompting when the device is in supervised mode.
+  - name: compliantAppsList
+    type: Collection(microsoft.graph.appListItem)
+    description: List of apps in the compliance (either allow list or block list, controlled by CompliantAppListType). This collection can contain a maximum of 10000 elements.
+  - name: compliantAppListType
+    type: microsoft.graph.appListType
+    description: List that is in the AppComplianceList. The possible values are: none, appsInListCompliant, appsNotInListCompliant.
+  - name: configurationProfileBlockChanges
+    type: Boolean
+    description: Indicates whether or not to block the user from installing configuration profiles and certificates interactively when the device is in supervised mode.
+  - name: definitionLookupBlocked
+    type: Boolean
+    description: Indicates whether or not to block definition lookup when the device is in supervised mode (iOS 8.1.3 and later ).
+  - name: deviceBlockEnableRestrictions
+    type: Boolean
+    description: Indicates whether or not to allow the user to enables restrictions in the device settings when the device is in supervised mode.
+  - name: deviceBlockEraseContentAndSettings
+    type: Boolean
+    description: Indicates whether or not to allow the use of the 'Erase all content and settings' option on the device when the device is in supervised mode.
+  - name: deviceBlockNameModification
+    type: Boolean
+    description: Indicates whether or not to allow device name modification when the device is in supervised mode (iOS 9.0 and later).
+  - name: diagnosticDataBlockSubmission
+    type: Boolean
+    description: Indicates whether or not to block diagnostic data submission.
+  - name: diagnosticDataBlockSubmissionModification
+    type: Boolean
+    description: Indicates whether or not to allow diagnostics submission settings modification when the device is in supervised mode (iOS 9.3.2 and later).
+  - name: documentsBlockManagedDocumentsInUnmanagedApps
+    type: Boolean
+    description: Indicates whether or not to block the user from viewing managed documents in unmanaged apps.
+  - name: documentsBlockUnmanagedDocumentsInManagedApps
+    type: Boolean
+    description: Indicates whether or not to block the user from viewing unmanaged documents in managed apps.
+  - name: emailInDomainSuffixes
+    type: Collection(String)
+    description: An email address lacking a suffix that matches any of these strings will be considered out-of-domain.
+  - name: enterpriseAppBlockTrust
+    type: Boolean
+    description: Indicates whether or not to block the user from trusting an enterprise app.
+  - name: enterpriseAppBlockTrustModification
+    type: Boolean
+    description: Indicates whether or not to block the user from modifying the enterprise app trust settings.
+  - name: faceTimeBlocked
+    type: Boolean
+    description: Indicates whether or not to block the user from using FaceTime.
+  - name: findMyFriendsBlocked
+    type: Boolean
+    description: Indicates whether or not to block Find My Friends when the device is in supervised mode.
+  - name: gamingBlockGameCenterFriends
+    type: Boolean
+    description: Indicates whether or not to block the user from having friends in Game Center.
+  - name: gamingBlockMultiplayer
+    type: Boolean
+    description: Indicates whether or not to block the user from using multiplayer gaming.
+  - name: gameCenterBlocked
+    type: Boolean
+    description: Indicates whether or not to block the user from using Game Center when the device is in supervised mode.
+  - name: hostPairingBlocked
+    type: Boolean
+    description: indicates whether or not to allow host pairing to control the devices an iOS device can pair with when the iOS device is in supervised mode.
+  - name: iBooksStoreBlocked
+    type: Boolean
+    description: Indicates whether or not to block the user from using the iBooks Store when the device is in supervised mode.
+  - name: iBooksStoreBlockErotica
+    type: Boolean
+    description: Indicates whether or not to block the user from downloading media from the iBookstore that has been tagged as erotica.
+  - name: iCloudBlockActivityContinuation
+    type: Boolean
+    description: Indicates whether or not to block  the the user from continuing work they started on iOS device to another iOS or macOS device.
+  - name: iCloudBlockBackup
+    type: Boolean
+    description: Indicates whether or not to block iCloud backup.
+  - name: iCloudBlockDocumentSync
+    type: Boolean
+    description: Indicates whether or not to block iCloud document sync.
+  - name: iCloudBlockManagedAppsSync
+    type: Boolean
+    description: Indicates whether or not to block Managed Apps Cloud Sync.
+  - name: iCloudBlockPhotoLibrary
+    type: Boolean
+    description: Indicates whether or not to block iCloud Photo Library.
+  - name: iCloudBlockPhotoStreamSync
+    type: Boolean
+    description: Indicates whether or not to block iCloud Photo Stream Sync.
+  - name: iCloudBlockSharedPhotoStream
+    type: Boolean
+    description: Indicates whether or not to block Shared Photo Stream.
+  - name: iCloudRequireEncryptedBackup
+    type: Boolean
+    description: Indicates whether or not to require backups to iCloud be encrypted.
+  - name: iTunesBlockExplicitContent
+    type: Boolean
+    description: Indicates whether or not to block the user from accessing explicit content in iTunes and the App Store.
+  - name: iTunesBlockMusicService
+    type: Boolean
+    description: Indicates whether or not to block Music service and revert Music app to classic mode when the device is in supervised mode (iOS 9.3 and later and macOS 10.12 and later).
+  - name: iTunesBlockRadio
+    type: Boolean
+    description: Indicates whether or not to block the user from using iTunes Radio when the device is in supervised mode (iOS 9.3 and later).
+  - name: keyboardBlockAutoCorrect
+    type: Boolean
+    description: Indicates whether or not to block keyboard auto-correction when the device is in supervised mode (iOS 8.1.3 and later).
+  - name: keyboardBlockDictation
+    type: Boolean
+    description: Indicates whether or not to block the user from using dictation input when the device is in supervised mode.
+  - name: keyboardBlockPredictive
+    type: Boolean
+    description: Indicates whether or not to block predictive keyboards when device is in supervised mode (iOS 8.1.3 and later).
+  - name: keyboardBlockShortcuts
+    type: Boolean
+    description: Indicates whether or not to block keyboard shortcuts when the device is in supervised mode (iOS 9.0 and later).
+  - name: keyboardBlockSpellCheck
+    type: Boolean
+    description: Indicates whether or not to block keyboard spell-checking when the device is in supervised mode (iOS 8.1.3 and later).
+  - name: kioskModeAllowAssistiveSpeak
+    type: Boolean
+    description: Indicates whether or not to allow assistive speak while in kiosk mode.
+  - name: kioskModeAllowAssistiveTouchSettings
+    type: Boolean
+    description: Indicates whether or not to allow access to the Assistive Touch Settings while in kiosk mode.
+  - name: kioskModeAllowAutoLock
+    type: Boolean
+    description: Indicates whether or not to allow device auto lock while in kiosk mode.
+  - name: kioskModeAllowColorInversionSettings
+    type: Boolean
+    description: Indicates whether or not to allow access to the Color Inversion Settings while in kiosk mode.
+  - name: kioskModeAllowRingerSwitch
+    type: Boolean
+    description: Indicates whether or not to allow use of the ringer switch while in kiosk mode.
+  - name: kioskModeAllowScreenRotation
+    type: Boolean
+    description: Indicates whether or not to allow screen rotation while in kiosk mode.
+  - name: kioskModeAllowSleepButton
+    type: Boolean
+    description: Indicates whether or not to allow use of the sleep button while in kiosk mode.
+  - name: kioskModeAllowTouchscreen
+    type: Boolean
+    description: Indicates whether or not to allow use of the touchscreen while in kiosk mode.
+  - name: kioskModeAllowVoiceOverSettings
+    type: Boolean
+    description: Indicates whether or not to allow access to the voice over settings while in kiosk mode.
+  - name: kioskModeAllowVolumeButtons
+    type: Boolean
+    description: Indicates whether or not to allow use of the volume buttons while in kiosk mode.
+  - name: kioskModeAllowZoomSettings
+    type: Boolean
+    description: Indicates whether or not to allow access to the zoom settings while in kiosk mode.
+  - name: kioskModeAppStoreUrl
+    type: String
+    description: URL in the app store to the app to use for kiosk mode. Use if KioskModeManagedAppId is not known.
+  - name: kioskModeRequireAssistiveTouch
+    type: Boolean
+    description: Indicates whether or not to require assistive touch while in kiosk mode.
+  - name: kioskModeRequireColorInversion
+    type: Boolean
+    description: Indicates whether or not to require color inversion while in kiosk mode.
+  - name: kioskModeRequireMonoAudio
+    type: Boolean
+    description: Indicates whether or not to require mono audio while in kiosk mode.
+  - name: kioskModeRequireVoiceOver
+    type: Boolean
+    description: Indicates whether or not to require voice over while in kiosk mode.
+  - name: kioskModeRequireZoom
+    type: Boolean
+    description: Indicates whether or not to require zoom while in kiosk mode.
+  - name: kioskModeManagedAppId
+    type: String
+    description: Managed app id of the app to use for kiosk mode. If KioskModeManagedAppId is specified then KioskModeAppStoreUrl will be ignored.
+  - name: lockScreenBlockControlCenter
+    type: Boolean
+    description: Indicates whether or not to block the user from using control center on the lock screen.
+  - name: lockScreenBlockNotificationView
+    type: Boolean
+    description: Indicates whether or not to block the user from using the notification view on the lock screen.
+  - name: lockScreenBlockPassbook
+    type: Boolean
+    description: Indicates whether or not to block the user from using passbook when the device is locked.
+  - name: lockScreenBlockTodayView
+    type: Boolean
+    description: Indicates whether or not to block the user from using the Today View on the lock screen.
+  - name: mediaContentRatingAustralia
+    type: microsoft.graph.mediaContentRatingAustralia
+    description: Media content rating settings for Australia
+  - name: mediaContentRatingCanada
+    type: microsoft.graph.mediaContentRatingCanada
+    description: Media content rating settings for Canada
+  - name: mediaContentRatingFrance
+    type: microsoft.graph.mediaContentRatingFrance
+    description: Media content rating settings for France
+  - name: mediaContentRatingGermany
+    type: microsoft.graph.mediaContentRatingGermany
+    description: Media content rating settings for Germany
+  - name: mediaContentRatingIreland
+    type: microsoft.graph.mediaContentRatingIreland
+    description: Media content rating settings for Ireland
+  - name: mediaContentRatingJapan
+    type: microsoft.graph.mediaContentRatingJapan
+    description: Media content rating settings for Japan
+  - name: mediaContentRatingNewZealand
+    type: microsoft.graph.mediaContentRatingNewZealand
+    description: Media content rating settings for New Zealand
+  - name: mediaContentRatingUnitedKingdom
+    type: microsoft.graph.mediaContentRatingUnitedKingdom
+    description: Media content rating settings for United Kingdom
+  - name: mediaContentRatingUnitedStates
+    type: microsoft.graph.mediaContentRatingUnitedStates
+    description: Media content rating settings for United States
+  - name: networkUsageRules
+    type: Collection(microsoft.graph.iosNetworkUsageRule)
+    description: List of managed apps and the network rules that applies to them. This collection can contain a maximum of 1000 elements.
+  - name: mediaContentRatingApps
+    type: microsoft.graph.ratingAppsType
+    description: Media content rating settings for Apps. The possible values are: allAllowed, allBlocked, agesAbove4, agesAbove9, agesAbove12, agesAbove17.
+  - name: messagesBlocked
+    type: Boolean
+    description: Indicates whether or not to block the user from using the Messages app on the supervised device.
+  - name: notificationsBlockSettingsModification
+    type: Boolean
+    description: Indicates whether or not to allow notifications settings modification (iOS 9.3 and later).
+  - name: passcodeBlockFingerprintUnlock
+    type: Boolean
+    description: Indicates whether or not to block fingerprint unlock.
+  - name: passcodeBlockFingerprintModification
+    type: Boolean
+    description: Block modification of registered Touch ID fingerprints when in supervised mode.
+  - name: passcodeBlockModification
+    type: Boolean
+    description: Indicates whether or not to allow passcode modification on the supervised device (iOS 9.0 and later).
+  - name: passcodeBlockSimple
+    type: Boolean
+    description: Indicates whether or not to block simple passcodes.
+  - name: passcodeExpirationDays
+    type: Int32
+    description: Number of days before the passcode expires. Valid values 1 to 65535
+  - name: passcodeMinimumLength
+    type: Int32
+    description: Minimum length of passcode. Valid values 4 to 14
+  - name: passcodeMinutesOfInactivityBeforeLock
+    type: Int32
+    description: Minutes of inactivity before a passcode is required.
+  - name: passcodeMinutesOfInactivityBeforeScreenTimeout
+    type: Int32
+    description: Minutes of inactivity before the screen times out.
+  - name: passcodeMinimumCharacterSetCount
+    type: Int32
+    description: Number of character sets a passcode must contain. Valid values 0 to 4
+  - name: passcodePreviousPasscodeBlockCount
+    type: Int32
+    description: Number of previous passcodes to block. Valid values 1 to 24
+  - name: passcodeSignInFailureCountBeforeWipe
+    type: Int32
+    description: Number of sign in failures allowed before wiping the device. Valid values 4 to 11
+  - name: passcodeRequiredType
+    type: microsoft.graph.requiredPasswordType
+    description: Type of passcode that is required. The possible values are: deviceDefault, alphanumeric, numeric.
+  - name: passcodeRequired
+    type: Boolean
+    description: Indicates whether or not to require a passcode.
+  - name: podcastsBlocked
+    type: Boolean
+    description: Indicates whether or not to block the user from using podcasts on the supervised device (iOS 8.0 and later).
+  - name: safariBlockAutofill
+    type: Boolean
+    description: Indicates whether or not to block the user from using Auto fill in Safari.
+  - name: safariBlockJavaScript
+    type: Boolean
+    description: Indicates whether or not to block JavaScript in Safari.
+  - name: safariBlockPopups
+    type: Boolean
+    description: Indicates whether or not to block popups in Safari.
+  - name: safariBlocked
+    type: Boolean
+    description: Indicates whether or not to block the user from using Safari.
+  - name: safariCookieSettings
+    type: microsoft.graph.webBrowserCookieSettings
+    description: Cookie settings for Safari. The possible values are: browserDefault, blockAlways, allowCurrentWebSite, allowFromWebsitesVisited, allowAlways.
+  - name: safariManagedDomains
+    type: Collection(String)
+    description: URLs matching the patterns listed here will be considered managed.
+  - name: safariPasswordAutoFillDomains
+    type: Collection(String)
+    description: Users can save passwords in Safari only from URLs matching the patterns listed here. Applies to devices in supervised mode (iOS 9.3 and later).
+  - name: safariRequireFraudWarning
+    type: Boolean
+    description: Indicates whether or not to require fraud warning in Safari.
+  - name: screenCaptureBlocked
+    type: Boolean
+    description: Indicates whether or not to block the user from taking Screenshots.
+  - name: siriBlocked
+    type: Boolean
+    description: Indicates whether or not to block the user from using Siri.
+  - name: siriBlockedWhenLocked
+    type: Boolean
+    description: Indicates whether or not to block the user from using Siri when locked.
+  - name: siriBlockUserGeneratedContent
+    type: Boolean
+    description: Indicates whether or not to block Siri from querying user-generated content when used on a supervised device.
+  - name: siriRequireProfanityFilter
+    type: Boolean
+    description: Indicates whether or not to prevent Siri from dictating, or speaking profane language on supervised device.
+  - name: spotlightBlockInternetResults
+    type: Boolean
+    description: Indicates whether or not to block Spotlight search from returning internet results on supervised device.
+  - name: voiceDialingBlocked
+    type: Boolean
+    description: Indicates whether or not to block voice dialing.
+  - name: wallpaperBlockModification
+    type: Boolean
+    description: Indicates whether or not to allow wallpaper modification on supervised device (iOS 9.0 and later) .
+  - name: wiFiConnectOnlyToConfiguredNetworks
+    type: Boolean
+    description: Indicates whether or not to force the device to use only Wi-Fi networks from configuration profiles when the device is in supervised mode.
+relationships:
+  heading: Relationships
+  table:
+  - name: assignments
+    type: Collection(microsoft.graph.deviceConfigurationAssignment)
+    description: The list of assignments for the device configuration profile. Inherited from deviceConfiguration
+  - name: deviceStatuses
+    type: Collection(microsoft.graph.deviceConfigurationDeviceStatus)
+    description: Device configuration installation status by device. Inherited from deviceConfiguration
+  - name: userStatuses
+    type: Collection(microsoft.graph.deviceConfigurationUserStatus)
+    description: Device configuration installation status by user. Inherited from deviceConfiguration
+  - name: deviceStatusOverview
+    type: microsoft.graph.deviceConfigurationDeviceOverview
+    description: Device Configuration devices status overview Inherited from deviceConfiguration
+  - name: userStatusOverview
+    type: microsoft.graph.deviceConfigurationUserOverview
+    description: Device Configuration users status overview Inherited from deviceConfiguration
+  - name: deviceSettingStateSummaries
+    type: Collection(microsoft.graph.settingStateDeviceSummary)
+    description: Device Configuration Setting State Device Summary Inherited from deviceConfiguration
+methods:
+  heading: Methods
+  intro: |
+    |Method|Return Type|Description
+    |:-|:-|:-|
+    |[List iosGeneralDeviceConfigurations](../api/intune_deviceconfig_iosgeneraldeviceconfiguration_list.md)|[iosGeneralDeviceConfiguration](../resources/intune_deviceconfig_iosgeneraldeviceconfiguration.md) collection|List properties and relationships of the [iosGeneralDeviceConfiguration](../resources/intune_deviceconfig_iosgeneraldeviceconfiguration.md) objects.
+    |[Get iosGeneralDeviceConfiguration](../api/intune_deviceconfig_iosgeneraldeviceconfiguration_get.md)|[iosGeneralDeviceConfiguration](../resources/intune_deviceconfig_iosgeneraldeviceconfiguration.md)|Read properties and relationships of the [iosGeneralDeviceConfiguration](../resources/intune_deviceconfig_iosgeneraldeviceconfiguration.md) object.
+    |[Create iosGeneralDeviceConfiguration](../api/intune_deviceconfig_iosgeneraldeviceconfiguration_create.md)|[iosGeneralDeviceConfiguration](../resources/intune_deviceconfig_iosgeneraldeviceconfiguration.md)|Create a new [iosGeneralDeviceConfiguration](../resources/intune_deviceconfig_iosgeneraldeviceconfiguration.md) object.
+    |[Delete iosGeneralDeviceConfiguration](../api/intune_deviceconfig_iosgeneraldeviceconfiguration_delete.md)|None|Deletes a [iosGeneralDeviceConfiguration](../resources/intune_deviceconfig_iosgeneraldeviceconfiguration.md).
+    |[Update iosGeneralDeviceConfiguration](../api/intune_deviceconfig_iosgeneraldeviceconfiguration_update.md)|[iosGeneralDeviceConfiguration](../resources/intune_deviceconfig_iosgeneraldeviceconfiguration.md)|Update the properties of a [iosGeneralDeviceConfiguration](../resources/intune_deviceconfig_iosgeneraldeviceconfiguration.md) object.

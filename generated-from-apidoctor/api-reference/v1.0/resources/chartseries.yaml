@@ -1,0 +1,43 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/chartseries.md
+top:
+  heading: ChartSeries resource type
+  intro: |
+    Represents a series in a chart.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "name": "string"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: name
+    type: String
+    description: Represents the name of a series in a chart.
+relationships:
+  heading: Relationships
+  table:
+  - name: format
+    type: microsoft.graph.workbookChartSeriesFormat
+    description: Represents the formatting of a chart series, which includes fill and line formatting. Read-only.
+  - name: points
+    type: Collection(microsoft.graph.workbookChartPoint)
+    description: Represents a collection of all points in the series. Read-only.
+methods:
+  heading: Methods
+  intro: |
+    |Method|Return Type|Description
+    |:-|:-|:-|
+    |[Get ChartSeries](../api/chartseries_get.md)|[WorkbookChartSeries](chartseries.md)|Read properties and relationships of chartSeries object.
+    |[Create ChartPoints](../api/chartseries_post_points.md)|[ChartPoints](chartpoint.md)|Create a new ChartPoints by posting to the points collection.
+    |[List points](../api/chartseries_list_points.md)|[ChartPoints](chartpoint.md) collection|Get a ChartPoints object collection.
+    |[Update](../api/chartseries_update.md)|[WorkbookChartSeries](chartseries.md)|Update ChartSeries object.
+    |[List](../api/chartseries_list.md)|[WorkbookChartSeries](chartseries.md) collection|Get chartSeries object collection.
+    |[ItemAt](../api/chartseriescollection_itemat.md)|[WorkbookChartSeries](chartseries.md)|Retrieves a series based on its position in the collection

@@ -1,0 +1,66 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_mam_managedappconfiguration.md
+top:
+  heading: managedAppConfiguration resource type
+  intro: |
+    Configuration used to deliver a set of custom settings as-is to apps for users to whom the configuration is scoped
+    Inherits from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.managedAppConfiguration",
+      "displayName": "String",
+      "description": "String",
+      "createdDateTime": "String (timestamp)",
+      "lastModifiedDateTime": "String (timestamp)",
+      "id": "String (identifier)",
+      "version": "String",
+      "customSettings": [
+        {
+          "@odata.type": "microsoft.graph.keyValuePair",
+          "name": "String",
+          "value": "String"
+        }
+      ]
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: displayName
+    type: String
+    description: Policy display name. Inherited from managedAppPolicy
+  - name: description
+    type: String
+    description: The policy's description. Inherited from managedAppPolicy
+  - name: createdDateTime
+    type: DateTimeOffset
+    description: The date and time the policy was created. Inherited from managedAppPolicy
+  - name: lastModifiedDateTime
+    type: DateTimeOffset
+    description: Last time the policy was modified. Inherited from managedAppPolicy
+  - name: id
+    type: String
+    description: Key of the entity. Inherited from managedAppPolicy
+  - name: version
+    type: String
+    description: Version of the entity. Inherited from managedAppPolicy
+  - name: customSettings
+    type: Collection(microsoft.graph.keyValuePair)
+    description: A set of string key and string value pairs to be sent to apps for users to whom the configuration is scoped, unalterned by this service
+relationships:
+  heading: Relationships
+  intro: |
+    None
+methods:
+  heading: Methods
+  intro: |
+    |Method|Return Type|Description
+    |:-|:-|:-|
+    |[List managedAppConfigurations](../api/intune_mam_managedappconfiguration_list.md)|[managedAppConfiguration](../resources/intune_mam_managedappconfiguration.md) collection|List properties and relationships of the [managedAppConfiguration](../resources/intune_mam_managedappconfiguration.md) objects.
+    |[Get managedAppConfiguration](../api/intune_mam_managedappconfiguration_get.md)|[managedAppConfiguration](../resources/intune_mam_managedappconfiguration.md)|Read properties and relationships of the [managedAppConfiguration](../resources/intune_mam_managedappconfiguration.md) object.

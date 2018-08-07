@@ -1,0 +1,95 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_softwareupdatestatussummary.md
+top:
+  heading: softwareUpdateStatusSummary resource type
+  intro: |
+    Not yet documented
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.softwareUpdateStatusSummary",
+      "id": "String (identifier)",
+      "displayName": "String",
+      "compliantDeviceCount": 1024,
+      "nonCompliantDeviceCount": 1024,
+      "remediatedDeviceCount": 1024,
+      "errorDeviceCount": 1024,
+      "unknownDeviceCount": 1024,
+      "conflictDeviceCount": 1024,
+      "notApplicableDeviceCount": 1024,
+      "compliantUserCount": 1024,
+      "nonCompliantUserCount": 1024,
+      "remediatedUserCount": 1024,
+      "errorUserCount": 1024,
+      "unknownUserCount": 1024,
+      "conflictUserCount": 1024,
+      "notApplicableUserCount": 1024
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: id
+    type: String
+    description: Key of the entity.
+  - name: displayName
+    type: String
+    description: The name of the policy.
+  - name: compliantDeviceCount
+    type: Int32
+    description: Number of compliant devices.
+  - name: nonCompliantDeviceCount
+    type: Int32
+    description: Number of non compliant devices.
+  - name: remediatedDeviceCount
+    type: Int32
+    description: Number of remediated devices.
+  - name: errorDeviceCount
+    type: Int32
+    description: Number of devices had error.
+  - name: unknownDeviceCount
+    type: Int32
+    description: Number of unknown devices.
+  - name: conflictDeviceCount
+    type: Int32
+    description: Number of conflict devices.
+  - name: notApplicableDeviceCount
+    type: Int32
+    description: Number of not applicable devices.
+  - name: compliantUserCount
+    type: Int32
+    description: Number of compliant users.
+  - name: nonCompliantUserCount
+    type: Int32
+    description: Number of non compliant users.
+  - name: remediatedUserCount
+    type: Int32
+    description: Number of remediated users.
+  - name: errorUserCount
+    type: Int32
+    description: Number of users had error.
+  - name: unknownUserCount
+    type: Int32
+    description: Number of unknown users.
+  - name: conflictUserCount
+    type: Int32
+    description: Number of conflict users.
+  - name: notApplicableUserCount
+    type: Int32
+    description: Number of not applicable users.
+relationships:
+  heading: Relationships
+  intro: |
+    None
+methods:
+  heading: Methods
+  intro: |
+    |Method|Return Type|Description
+    |:-|:-|:-|
+    |[Get softwareUpdateStatusSummary](../api/intune_deviceconfig_softwareupdatestatussummary_get.md)|[softwareUpdateStatusSummary](../resources/intune_deviceconfig_softwareupdatestatussummary.md)|Read properties and relationships of the [softwareUpdateStatusSummary](../resources/intune_deviceconfig_softwareupdatestatussummary.md) object.
+    |[Update softwareUpdateStatusSummary](../api/intune_deviceconfig_softwareupdatestatussummary_update.md)|[softwareUpdateStatusSummary](../resources/intune_deviceconfig_softwareupdatestatussummary.md)|Update the properties of a [softwareUpdateStatusSummary](../resources/intune_deviceconfig_softwareupdatestatussummary.md) object.

@@ -1,0 +1,34 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_mam_managedapppolicydeploymentsummaryperapp.md
+top:
+  heading: managedAppPolicyDeploymentSummaryPerApp resource type
+  intro: |
+    Represents policy deployment summary per app.
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.managedAppPolicyDeploymentSummaryPerApp",
+      "mobileAppIdentifier": {
+        "@odata.type": "microsoft.graph.mobileAppIdentifier"
+      },
+      "configurationAppliedUserCount": 1024
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: mobileAppIdentifier
+    type: microsoft.graph.mobileAppIdentifier
+    description: Deployment of an app.
+  - name: configurationAppliedUserCount
+    type: Int32
+    description: Number of users the policy is applied.
+relationships:
+  heading: Relationships
+  intro: |
+    None

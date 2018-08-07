@@ -1,0 +1,50 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/listitemversion.md
+top:
+  heading: ListItemVersion resource type
+  intro: |
+    The **listItemVersion** resource represents a previous version of a [ListItem](listitem.md) resource.
+  outro: |
+    ## Tasks on ListItemVersion resources
+    The following tasks are available for listItemVersion resources.
+    |Common task|HTTP method
+    | :--------------------------------- -| :-------------------------- -|
+    |[List versions][version-list]|`GET /sites/{site-id}/items/{item-id}/versions`
+    |[Get version][version-get]|`GET /sites/{site-id}/items/{item-id}/versions/{version-id}`
+    |[Restore version][version-restore]|`POST /sites/{site-id}/items/{item-id}/versions/{version-id}/restore`
+resource:
+  heading: JSON representation
+  resourceDefinition: |
+    ```json
+    {
+      "fields": { "@odata.type": "microsoft.graph.fieldValueSet" },
+      "id": "string",
+      "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
+      "lastModifiedDateTime": "2016-01-01T15:20:01.125Z",
+      "published": { "@odata.type": "microsoft.graph.publicationFacet" }
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: id
+    type: String
+    description: The ID of the version. Read-only.
+  - name: lastModifiedBy
+    type: microsoft.graph.identitySet
+    description: Identity of the user which last modified the version. Read-only.
+  - name: lastModifiedDateTime
+    type: DateTimeOffset
+    description: Date and time the version was last modified. Read-only.
+  - name: published
+    type: microsoft.graph.publicationFacet
+    description: Indicates the publication status of this particular version. Read-only.
+relationships:
+  heading: Relationships
+  intro: |
+    The following table defines the relationships that the **driveItemVersion** resource has to other resources.
+  table:
+  - name: fields
+    type: microsoft.graph.fieldValueSet
+    description: A collection of the fields and values for this version of the list item.

@@ -1,0 +1,61 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/onenoteoperation.md
+top:
+  heading: onenoteOperation resource type
+  intro: |
+    The status of certain long-running OneNote operations.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "createdDateTime": "String (timestamp)",
+      "error": {"@odata.type": "microsoft.graph.onenoteOperationError"},
+      "id": "string (identifier)",
+      "lastActionDateTime": "String (timestamp)",
+      "resourceId": "string",
+      "resourceLocation": "string",
+      "status": "string",
+      "percentComplete": "string"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: createdDateTime
+    type: DateTimeOffset
+    description: The start time of the operation.
+  - name: error
+    type: microsoft.graph.onenoteOperationError
+    description: The error returned by the operation.
+  - name: id
+    type: String
+    description: The operation id. Read-only.
+  - name: lastActionDateTime
+    type: DateTimeOffset
+    description: The time of the last action of the operation.
+  - name: resourceId
+    type: String
+    description: The resource id.
+  - name: resourceLocation
+    type: String
+    description: The resource URI for the object. For example, the resource URI for a copied page or section.
+  - name: status
+    type: String
+    description: The current status of the operation: notstarted, running, completed, failed
+  - name: percentComplete
+    type: String
+    description: The operation percent complete if the operation is still in running status
+relationships:
+  heading: Relationships
+  intro: |
+    None
+methods:
+  heading: Methods
+  intro: |
+    |Method|Return Type|Description
+    |:-|:-|:-|
+    |[Get operation](../api/onenoteoperation_get.md)|[onenoteOperation](onenoteoperation.md)|Get the status of the operation.

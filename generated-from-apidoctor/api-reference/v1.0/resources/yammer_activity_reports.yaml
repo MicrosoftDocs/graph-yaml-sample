@@ -1,0 +1,14 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/yammer_activity_reports.md
+top:
+  heading: Yammer activity reports
+  intro: |
+    You can use the Yammer activity reports to understand the level of your organization's engagement with Yammer by seeing how much activity is generated across the organization and the number of unique users who post, like, and read messages on Yammer.
+    
+  outro: |
+    ## Reports
+    |Function|Return Type|Description
+    | :--------------------------------------- -| :---------- -| :--------------------------------------- -|
+    |[Get user detail](../api/reportroot_getyammeractivityuserdetail.md)|Stream|Get details about Yammer activity by user.
+    |[Get activity counts](../api/reportroot_getyammeractivitycounts.md)|Stream|Get the trends on the amount of Yammer activity in your organization by how many messages were posted, read, and liked.
+    |[Get user counts](../api/reportroot_getyammeractivityusercounts.md)|Stream|Get the trends on the number of unique users who posted, read, and liked  Yammer messages.

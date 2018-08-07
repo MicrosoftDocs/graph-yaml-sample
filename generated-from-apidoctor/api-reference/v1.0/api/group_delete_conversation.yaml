@@ -1,0 +1,60 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/group_delete_conversation.md
+top:
+  heading: Delete conversation
+  intro: |
+    Delete a [conversation](../resources/conversation.md) object.
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+  table:
+  - type: Delegated (work or school account)
+    scopes: Group.ReadWrite.All
+  - type: Delegated (personal Microsoft account)
+    scopes: Not supported.
+  - type: Application
+    scopes: Not supported.
+httpRequest:
+  heading: HTTP request
+  samplePaths: |
+    ```http
+    DELETE /groups/{id}/conversations/{id}
+    ```
+    
+httpHeaders:
+  heading: Request headers
+  table:
+  - name: Authorization
+    type: String
+    description: Bearer {token}. Required.
+Request body:
+  heading: Request body
+  intro: |
+    Do not supply a request body for this method.
+Response:
+  heading: Response
+  intro: |
+    If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+examples:
+  - Example:
+      heading: Example
+      - request:
+          heading: Request
+          intro: |
+            The following is an example of the request.
+          exampleRequest: |
+            ```http
+            DELETE https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315/conversations/AAQkAGI5MWY5ZmUyLTJiNzYtNDE0ZC04OWEwLWM3M2FjYmM3NzNlZgAQABuXO3guDWBMpyKF7LsVwfU=
+            ```
+            
+      - response:
+          heading: Response
+          intro: |
+            The following is an example of the response. 
+            
+          exampleResponse: |
+            ```http
+            HTTP/1.1 204 No Content
+            ```
+            

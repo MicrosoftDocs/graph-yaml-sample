@@ -1,0 +1,52 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_apps_fileencryptioninfo.md
+top:
+  heading: fileEncryptionInfo resource type
+  intro: |
+    Contains properties for file encryption information for the content version of a line of business app.
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.fileEncryptionInfo",
+      "encryptionKey": "binary",
+      "initializationVector": "binary",
+      "mac": "binary",
+      "macKey": "binary",
+      "profileIdentifier": "String",
+      "fileDigest": "binary",
+      "fileDigestAlgorithm": "String"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: encryptionKey
+    type: Binary
+    description: The key used to encrypt the file content.
+  - name: initializationVector
+    type: Binary
+    description: The initialization vector used for the encryption algorithm.
+  - name: mac
+    type: Binary
+    description: The hash of the encrypted file content + IV (content hash).
+  - name: macKey
+    type: Binary
+    description: The key used to get mac.
+  - name: profileIdentifier
+    type: String
+    description: The the profile identifier.
+  - name: fileDigest
+    type: Binary
+    description: The file digest prior to encryption.
+  - name: fileDigestAlgorithm
+    type: String
+    description: The file digest algorithm.
+relationships:
+  heading: Relationships
+  intro: |
+    None

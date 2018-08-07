@@ -1,0 +1,31 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/choicecolumn.md
+top:
+  heading: ChoiceColumn resource type
+  intro: |
+    The **choiceColumn** on a [columnDefinition](columnDefinition.md) resource indicates that the column's values can be selected from a list of choices.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of a **choiceColumn** resource.
+  resourceDefinition: |
+    ```json
+    {
+      "allowTextEntry": true,
+      "choices": ["red", "blue", "green"],
+      "displayAs": "checkBoxes | dropDownMenu | radioButtons"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: allowTextEntry
+    type: Boolean
+    description: If true, allows custom values that aren't in the configured choices.
+  - name: choices
+    type: Collection(String)
+    description: The list of values available for this column.
+  - name: displayAs
+    type: String
+    description: How the choices are to be presented in the UX. Must be one of checkBoxes, dropDownMenu, or radioButtons

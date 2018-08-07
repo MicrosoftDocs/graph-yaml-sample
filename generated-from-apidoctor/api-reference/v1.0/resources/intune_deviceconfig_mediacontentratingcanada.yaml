@@ -1,0 +1,32 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_mediacontentratingcanada.md
+top:
+  heading: mediaContentRatingCanada resource type
+  intro: |
+    Not yet documented
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.mediaContentRatingCanada",
+      "movieRating": "String",
+      "tvRating": "String"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: movieRating
+    type: microsoft.graph.ratingCanadaMoviesType
+    description: Movies rating selected for Canada. The possible values are: allAllowed, allBlocked, general, parentalGuidance, agesAbove14, agesAbove18, restricted.
+  - name: tvRating
+    type: microsoft.graph.ratingCanadaTelevisionType
+    description: TV rating selected for Canada. The possible values are: allAllowed, allBlocked, children, childrenAbove8, general, parentalGuidance, agesAbove14, agesAbove18.
+relationships:
+  heading: Relationships
+  intro: |
+    None

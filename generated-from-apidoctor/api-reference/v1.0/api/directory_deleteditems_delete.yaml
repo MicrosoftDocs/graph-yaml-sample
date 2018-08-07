@@ -1,0 +1,61 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/directory_deleteditems_delete.md
+top:
+  heading: Permanently delete item
+  intro: |
+    Permanently deletes an item from [deleted items](../resources/directory.md).
+    Currently, deleted items functionality is only supported for the [group](../resources/group.md) and [user](../resources/user.md) resources. You can permanently delete an item from deleted items. But, once an item is permanently deleted, it **cannot** be restored.
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+  outro: |
+    ### For users:
+    |Permission type|Permissions (from least to most privileged)
+    |:-|:-|
+    |Delegated (work or school account)|User.ReadWrite.All, Directory.AccessAsUser.All
+    |Delegated (personal Microsoft account)|Not supported.
+    |Application|User.ReadWrite.All
+httpRequest:
+  heading: HTTP request
+  samplePaths: |
+    ```http
+    DELETE /directory/deletedItems/{id}
+    ```
+    
+httpHeaders:
+  heading: Request headers
+  table:
+  - name: Authorization
+    type: 
+    description: Bearer code Required
+  - name: Accept
+    type: 
+    description: application/json
+Request body:
+  heading: Request body
+  intro: |
+    Do not supply a request body for this method.
+Response:
+  heading: Response
+  intro: |
+    If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+examples:
+  - Example:
+      heading: Example
+      - request:
+          heading: Request
+          exampleRequest: |
+            ```http
+            DELETE https://graph.microsoft.com/v1.0/directory/deletedItems/{object-id}
+            ```
+            
+      - response:
+          heading: Response
+          intro: |
+            Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+          exampleResponse: |
+            ```http
+            HTTP/1.1 204 No Content
+            ```
+            

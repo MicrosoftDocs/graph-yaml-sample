@@ -1,0 +1,32 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/php.md
+top:
+  heading: Get started with Microsoft Graph in a PHP app
+  intro: |
+    This article describes the tasks required to get an access token from the Azure AD v2.0 endpoint and call  Microsoft Graph. It walks you through building the [Connect Sample for PHP (REST)](https://github.com/microsoftgraph/php-connect-rest-sample) and explains the main concepts that you implement to use Microsoft Graph. The article also describes how to access Microsoft Graph by using REST calls.
+    To use Microsoft Graph in your PHP app, you need to show the Microsoft sign in page to your users. The following screenshot shows a sign in page for Microsoft accounts.
+    ![Sign in page for Microsoft accounts](images/MicrosoftSignIn.png)
+    **Don't feel like building an app?** Get up and running fast by downloading the [Connect Sample for PHP (REST)](https://github.com/microsoftgraph/php-connect-rest-sample) that this article is based on. Or try out the [Connect Sample for PHP (SDK)](https://github.com/microsoftgraph/php-connect-sample) version that uses the [Microsoft Graph Library for PHP](https://github.com/microsoftgraph/msgraph-sdk-php).
+permissions:
+  heading: Prerequisites
+  intro: |
+    To get started, you'll need: 
+    
+    * A [Microsoft account](https://www.outlook.com/) or a [work or school account](https://docs.microsoft.com/en-us/office/developer-program/office-365-developer-program-faq#account-types)
+    * PHP version 5.5.9 or greater
+    * [Composer](https://getcomposer.org/)
+    
+  outro: |
+    ## Register the application
+    Register an app on the Microsoft App Registration Portal. This generates the app ID and password that you'll use to configure the app.
+    
+    1. Sign into the [Microsoft App Registration Portal](https://apps.dev.microsoft.com/) using either your personal or work or school account.
+    1. Choose **Add an app**.
+    1. Enter a name for the app, and choose **Create application**. 
+    1. The registration page displays, listing the properties of your app.
+    1. Choose **Generate New Password**.
+    1. Copy the application ID and password.
+    1. Choose **Add Platform** and **Web**.
+    1. In the **Redirect URI** field, type `http://localhost:8000/oauth`.
+    1. Choose **Save**.
+    

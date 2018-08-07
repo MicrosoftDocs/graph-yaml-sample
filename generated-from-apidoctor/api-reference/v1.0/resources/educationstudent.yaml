@@ -1,0 +1,43 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/educationstudent.md
+top:
+  heading: educationStudent resource type
+  intro: |
+    Additional information added to an [educationUser](educationuser.md) that is present when the primaryRole of a user is `student`.
+resource:
+  heading: JSON representation
+  intro: |
+    The following is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "birthDate": "String (timestamp)",
+      "externalId": "String",
+      "gender": "educationGender",
+      "grade": "String",
+      "graduationYear": "String",
+      "studentNumber": "String"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: birthDate
+    type: Date
+    description: Birth date of the student.
+  - name: externalId
+    type: String
+    description: ID of the student in the source system.
+  - name: gender
+    type: microsoft.graph.educationGender
+    description: The possible values are: female, male, other, unknownFutureValue.
+  - name: grade
+    type: String
+    description: Current grade level of the student.
+  - name: graduationYear
+    type: String
+    description: Year the student is graduating from the school.
+  - name: studentNumber
+    type: String
+    description: Student Number.

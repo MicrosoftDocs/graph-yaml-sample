@@ -1,0 +1,12 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/onenote_input_output_html.md
+top:
+  heading: Input and output HTML in OneNote pages
+  intro: |
+    The HTML that defines the page content and structure when you [create](onenote-create-page.md) or [update](onenote_update_page.md) a OneNote page is called *input HTML*. 
+    The HTML that's returned when you [get page content](onenote-get-content.md) is called *output HTML*. Output HTML won't be the same as input HTML.
+    The OneNote APIs in Microsoft Graph preserve the semantic content and basic structure of the input HTML, but convert it to a set of [supported HTML elements and CSS properties](onenote-create-page.md#supported-html-and-css-for-onenote-pages). The APIs also add custom attributes that support OneNote features.
+    This article describes the principal elements and attributes of input and output HTML. It can be helpful to understand input HTML when you're creating or updating page content, and output HTML when you're parsing returned page content. 
+  outro: |
+    ## body element
+    The HTML content in the page body represents the page content and structure, including image and file resources. The **body** element can contain the following attributes in the input and output HTML.

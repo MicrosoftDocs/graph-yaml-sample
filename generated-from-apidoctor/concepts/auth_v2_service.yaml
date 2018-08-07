@@ -1,0 +1,58 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/auth_v2_service.md
+top:
+  heading: Get access without a user
+  intro: |
+    Some apps call Microsoft Graph with their own identity and not on behalf of a user. In many cases, these are background services or daemons that run on a server without the presence of a signed-in user. An example of such an app might be an email archival service that wakes up and runs overnight. In some cases, apps that have a signed-in user present may also need to call Microsoft Graph under their own identity. For example, an app may need to use functionality that requires more elevated privileges in an organization than those carried by the signed-in user.  
+    Apps that call Microsoft Graph with their own identity use the OAuth 2.0 client credentials grant flow to get access tokens from Azure AD. In this topic, we will walk through the basic steps to configure a service and use the OAuth client credentials grant flow to get an access token. 
+  outro: |
+    ## Authentication and authorization steps
+    The basic steps required to configure a service and get a token from the Azure AD v2.0 endpoint that your service can use to call Microsoft Graph under its own identity are:
+    
+    1. Register your app.
+    1. Configure permissions for Microsoft Graph on your app.
+    1. Get administrator consent.
+    1. Get an access token.
+    1. Use the access token to call Microsoft Graph.
+    
+Request:
+  heading: Request
+  intro: |
+    // Line breaks are for legibility only.
+    
+    GET https://login.microsoftonline.com/{tenant}/adminconsent
+    ?client_id=6731de76-14a6-49ae-97bc-6eba6914391e
+    &state=12345
+    &redirect_uri=http://localhost/myapp/permissions
+
+    |Parameter|Condition|Description
+    |:-|:-|:-
+    |tenant|Required|The directory tenant that you want to request permission from. This can be in GUID or friendly name format. If you don't know which tenant the user belongs to and you want to let them sign in with any tenant, use `common`.
+    |client_id|Required|The Application ID that the [Application Registration Portal](https://apps.dev.microsoft.com/) assigned to your app.
+    |redirect_uri|Required|The redirect URI where you want the response to be sent for your app to handle. It must exactly match one of the redirect URIs that you registered in the portal, except that it must be URL encoded, and it can have additional path segments.
+    |state|Recommended|A value that is included in the request that also is returned in the token response. It can be a string of any content that you want. The state is used to encode information about the user's state in the app before the authentication request occurred, such as the page or view they were on.
+  outro: |
+    ### Administrator consent experience
+    With requests to the `/adminconsent` endpoint, Azure AD enforces that only a tenant administrator can sign in to complete the request. The administrator will be asked to approve all the application permissions that you have requested for your app in the app registration portal. 
+    The following is an example of the consent dialog that Azure AD presents to the administrator:
+    ![Administrator consent dialog.](./images/admin-consent.png)
+Response:
+  heading: Response
+  intro: |
+    If the administrator approves the permissions for your application, the successful response looks like this:
+    // Line breaks are for legibility only.
+    
+    GET http://localhost/myapp/permissions
+    ?tenant=a8990e1f-ff32-408a-9f8e-78d3b9139b95&state=state=12345
+    &admin_consent=True
+
+    |Parameter|Description
+    |:-|:-
+    |tenant|The directory tenant that granted your application the permissions that it requested, in GUID format.
+    |state|A value that is included in the request that also is returned in the token response. It can be a string of any content that you want. The state is used to encode information about the user's state in the app before the authentication request occurred, such as the page or view they were on.
+    |admin_consent|Set to **true**.
+    
+  outro: |
+    ## 4. Get an access token
+    In the OAuth 2.0 client credentials grant flow, you use the Application ID and Application Secret values that you saved when you registered your app to request an access token directly from the Azure AD v2.0 `/token` endpoint.
+    You specify the pre-configured permissions by passing `https://graph.microsoft.com/.default` as the value for the `scope` parameter in the token request. See the `scope` parameter description in the token request below for details.

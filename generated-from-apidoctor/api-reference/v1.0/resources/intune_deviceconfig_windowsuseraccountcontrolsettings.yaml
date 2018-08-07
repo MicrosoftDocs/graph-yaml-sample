@@ -1,0 +1,19 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_windowsuseraccountcontrolsettings.md
+top:
+  heading: windowsUserAccountControlSettings enum type
+  intro: |
+    Possible values for Windows user account control settings.
+enum:
+  heading: Members
+  table:
+  - member: userDefined
+    description: User Defined, default value, no intent.
+  - member: alwaysNotify
+    description: Always notify.
+  - member: notifyOnAppChanges
+    description: Notify on app changes.
+  - member: notifyOnAppChangesWithoutDimming
+    description: Notify on app changes without dimming desktop.
+  - member: neverNotify
+    description: Never notify.

@@ -1,0 +1,65 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/video.md
+top:
+  heading: Video resource type
+  intro: |
+    The **Video** resource groups video-related data items into a single structure.
+    If a [**DriveItem**](driveitem.md) has a non-null **video** facet, the item represents a video file.
+    The properties of the **Video** resource are populated by extracting metadata from the file.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource
+  resourceDefinition: |
+    ```json
+    {
+      "audioBitsPerSample": 16,
+      "audioChannels": 1,
+      "audioFormat": "AAC",
+      "audioSamplesPerSecond": 44100,
+      "bitrate": 39101896,
+      "duration": 8053,
+      "fourCC": "H264",
+      "frameRate": 239.877,
+      "height": 1280,
+      "width": 720
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: audioBitsPerSample
+    type: Int32
+    description: Number of audio bits per sample.
+  - name: audioChannels
+    type: Int32
+    description: Number of audio channels.
+  - name: audioFormat
+    type: String
+    description: Name of the audio format (AAC, MP3, etc.).
+  - name: audioSamplesPerSecond
+    type: Int32
+    description: Number of audio samples per second.
+  - name: bitrate
+    type: Int32
+    description: Bit rate of the video in bits per second.
+  - name: duration
+    type: Int64
+    description: Duration of the file in milliseconds.
+  - name: fourCC
+    type: String
+    description: "Four character code" name of the video format.
+  - name: frameRate
+    type: Double
+    description: Frame rate of the video.
+  - name: height
+    type: Int32
+    description: Height of the video, in pixels.
+  - name: width
+    type: Int32
+    description: Width of the video, in pixels.
+remarks:
+  heading: Remarks
+  intro: |
+    For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).

@@ -1,0 +1,62 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/conversation.md
+top:
+  heading: conversation resource type
+  intro: |
+    A conversation is a collection of [threads](conversationthread.md), and a thread contains posts to that thread. All threads and posts in a conversation share the same subject.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource
+  resourceDefinition: |
+    ```json
+    {
+      "hasAttachments": true,
+      "id": "string (identifier)",
+      "lastDeliveredDateTime": "String (timestamp)",
+      "preview": "string",
+      "topic": "string",
+      "uniqueSenders": ["string"],
+    
+      "threads": [{"@odata.type": "microsoft.graph.conversationThread"}]
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: hasAttachments
+    type: Boolean
+    description: Indicates whether any of the posts within this Conversation has at least one attachment.
+  - name: id
+    type: String
+    description: The conversations's unique identifier. Read-only.
+  - name: lastDeliveredDateTime
+    type: DateTimeOffset
+    description: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
+  - name: preview
+    type: String
+    description: A short summary from the body of the latest post in this converstaion.
+  - name: topic
+    type: String
+    description: The topic of the conversation. This property can be set when the conversation is created, but it cannot be updated.
+  - name: uniqueSenders
+    type: Collection(String)
+    description: All the users that sent a message to this Conversation.
+relationships:
+  heading: Relationships
+  table:
+  - name: threads
+    type: Collection(microsoft.graph.conversationThread)
+    description: A collection of all the conversation threads in the conversation. A navigation property. Read-only. Nullable.
+methods:
+  heading: Methods
+  intro: |
+    |Method|Return Type|Description
+    |:-|:-|:-|
+    |[List conversations](../api/group_list_conversations.md)|[conversation](conversation.md) collection|Get the list of conversations in this group.
+    |[Create](../api/group_post_conversations.md)|[conversation](conversation.md)|Create a new conversation by including a thread and a post.
+    |[Get conversation](../api/conversation_get.md)|[conversation](conversation.md)|Read properties and relationships of conversation object.
+    |[Delete](../api/conversation_delete.md)|None|Delete conversation object.
+    |[List conversation threads](../api/conversation_list_threads.md)|[conversationThread](conversationthread.md) collection|Get all the threads in a group conversation.
+    |[Create conversation thread](../api/conversation_post_threads.md)|[conversationThread](conversationthread.md) collection|Create a thread in the specified conversation.

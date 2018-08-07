@@ -1,0 +1,78 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/intune_mam_managedmobileapp_update.md
+top:
+  heading: Update managedMobileApp
+  intro: |
+    Update the properties of a [managedMobileApp](../resources/intune_mam_managedmobileapp.md) object.
+permissions:
+  heading: Prerequisites
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+httpRequest:
+  heading: HTTP Request
+  samplePaths: |
+    ```http
+    PATCH /deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/apps/{managedMobileAppId}
+    PATCH /deviceAppManagement/androidManagedAppProtections/{androidManagedAppProtectionId}/apps/{managedMobileAppId}
+    PATCH /deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtectionId}/apps/{managedMobileAppId}
+    PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppConfigurationId}/apps/{managedMobileAppId}
+    ```
+    
+httpHeaders:
+  heading: Request headers
+  table:
+  - name: Authorization
+    type: String
+    description: 
+  - name: Accept
+    type: String
+    description: 
+Request body:
+  heading: Request body
+  intro: |
+    In the request body, supply a JSON representation for the [managedMobileApp](../resources/intune_mam_managedmobileapp.md) object.
+    The following table shows the properties that are required when you create the [managedMobileApp](../resources/intune_mam_managedmobileapp.md).
+    |Property|Type|Description
+    |:-|:-|:-|
+    |mobileAppIdentifier|[mobileAppIdentifier](../resources/intune_mam_mobileappidentifier.md)|The identifier for an app with it's operating system type.
+    |id|String|Key of the entity.
+    |version|String|Version of the entity.
+Response:
+  heading: Response
+  intro: |
+    If successful, this method returns a `200 OK` response code and an updated [managedMobileApp](../resources/intune_mam_managedmobileapp.md) object in the response body.
+examples:
+  - Example:
+      heading: Example
+      - request:
+          heading: Request
+          intro: |
+            Here is an example of the request.
+            PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/apps/{managedMobileAppId}
+            Content-type: application/json
+            Content-length: 126
+            
+            {
+              "mobileAppIdentifier": {
+                "@odata.type": "microsoft.graph.mobileAppIdentifier"
+              },
+              "version": "Version value"
+            }
+
+      - response:
+          heading: Response
+          intro: |
+            Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+            HTTP/1.1 200 OK
+            Content-Type: application/json
+            Content-Length: 230
+            
+            {
+              "@odata.type": "#microsoft.graph.managedMobileApp",
+              "mobileAppIdentifier": {
+                "@odata.type": "microsoft.graph.mobileAppIdentifier"
+              },
+              "id": "0a129715-9715-0a12-1597-120a1597120a",
+              "version": "Version value"
+            }
+

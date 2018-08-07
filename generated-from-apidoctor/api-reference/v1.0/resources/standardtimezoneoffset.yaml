@@ -1,0 +1,48 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/standardtimezoneoffset.md
+top:
+  heading: standardTimeZoneOffset resource type
+  intro: |
+    Specifies when a time zone switches from daylight saving time to standard time.
+    For example, if a time zone is specified with the following properties:
+    
+    * **dayOccurrence** is 3
+    * **dayOfWeek** is "Sunday"
+    * **month** is 10
+    * **time** is 02:00:00
+    _ **year** is 0
+    That means the transition from daylight saving time to standard occurs at 2 AM on the third Sunday of October, every year.
+    
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "dayOccurrence": "Int32",
+      "dayOfWeek": "string",
+      "month": "Int32",
+      "time": "TimeOfDay",
+      "year": "Int32"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: dayOccurrence
+    type: Int32
+    description: Represents the nth occurrence of the day of week that the transition from daylight saving time to standard time occurs.
+  - name: dayOfWeek
+    type: microsoft.graph.dayOfWeek
+    description: Represents the day of the week when the transition from daylight saving time to standard time.
+  - name: month
+    type: Int32
+    description: Represents the month of the year when the transition from daylight saving time to standard time occurs.
+  - name: time
+    type: TimeOfDay
+    description: Represents the time of day when the transition from daylight saving time to standard time occurs.
+  - name: year
+    type: Int32
+    description: Represents how frequently in terms of years the change from daylight saving time to standard time occurs. For example, a value of 0 means every year.

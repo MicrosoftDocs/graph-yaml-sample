@@ -1,0 +1,163 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_androidcompliancepolicy.md
+top:
+  heading: androidCompliancePolicy resource type
+  intro: |
+    This class contains compliance settings for Android.
+    Inherits from [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.androidCompliancePolicy",
+      "id": "String (identifier)",
+      "createdDateTime": "String (timestamp)",
+      "description": "String",
+      "lastModifiedDateTime": "String (timestamp)",
+      "displayName": "String",
+      "version": 1024,
+      "passwordRequired": true,
+      "passwordMinimumLength": 1024,
+      "passwordRequiredType": "String",
+      "passwordMinutesOfInactivityBeforeLock": 1024,
+      "passwordExpirationDays": 1024,
+      "passwordPreviousPasswordBlockCount": 1024,
+      "securityPreventInstallAppsFromUnknownSources": true,
+      "securityDisableUsbDebugging": true,
+      "securityRequireVerifyApps": true,
+      "deviceThreatProtectionEnabled": true,
+      "deviceThreatProtectionRequiredSecurityLevel": "String",
+      "securityBlockJailbrokenDevices": true,
+      "osMinimumVersion": "String",
+      "osMaximumVersion": "String",
+      "minAndroidSecurityPatchLevel": "String",
+      "storageRequireEncryption": true,
+      "securityRequireSafetyNetAttestationBasicIntegrity": true,
+      "securityRequireSafetyNetAttestationCertifiedDevice": true,
+      "securityRequireGooglePlayServices": true,
+      "securityRequireUpToDateSecurityProviders": true,
+      "securityRequireCompanyPortalAppIntegrity": true
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: id
+    type: String
+    description: Key of the entity. Inherited from deviceCompliancePolicy
+  - name: createdDateTime
+    type: DateTimeOffset
+    description: DateTime the object was created. Inherited from deviceCompliancePolicy
+  - name: description
+    type: String
+    description: Admin provided description of the Device Configuration. Inherited from deviceCompliancePolicy
+  - name: lastModifiedDateTime
+    type: DateTimeOffset
+    description: DateTime the object was last modified. Inherited from deviceCompliancePolicy
+  - name: displayName
+    type: String
+    description: Admin provided name of the device configuration. Inherited from deviceCompliancePolicy
+  - name: version
+    type: Int32
+    description: Version of the device configuration. Inherited from deviceCompliancePolicy
+  - name: passwordRequired
+    type: Boolean
+    description: Require a password to unlock device.
+  - name: passwordMinimumLength
+    type: Int32
+    description: Minimum password length. Valid values 4 to 16
+  - name: passwordRequiredType
+    type: microsoft.graph.androidRequiredPasswordType
+    description: Type of characters in password. The possible values are: deviceDefault, alphabetic, alphanumeric, alphanumericWithSymbols, lowSecurityBiometric, numeric, numericComplex, any.
+  - name: passwordMinutesOfInactivityBeforeLock
+    type: Int32
+    description: Minutes of inactivity before a password is required.
+  - name: passwordExpirationDays
+    type: Int32
+    description: Number of days before the password expires. Valid values 1 to 65535
+  - name: passwordPreviousPasswordBlockCount
+    type: Int32
+    description: Number of previous passwords to block.
+  - name: securityPreventInstallAppsFromUnknownSources
+    type: Boolean
+    description: Require that devices disallow installation of apps from unknown sources.
+  - name: securityDisableUsbDebugging
+    type: Boolean
+    description: Disable USB debugging on Android devices.
+  - name: securityRequireVerifyApps
+    type: Boolean
+    description: Require the Android Verify apps feature is turned on.
+  - name: deviceThreatProtectionEnabled
+    type: Boolean
+    description: Require that devices have enabled device threat protection.
+  - name: deviceThreatProtectionRequiredSecurityLevel
+    type: microsoft.graph.deviceThreatProtectionLevel
+    description: Require Mobile Threat Protection minimum risk level to report noncompliance. The possible values are: unavailable, secured, low, medium, high, notSet.
+  - name: securityBlockJailbrokenDevices
+    type: Boolean
+    description: Devices must not be jailbroken or rooted.
+  - name: osMinimumVersion
+    type: String
+    description: Minimum Android version.
+  - name: osMaximumVersion
+    type: String
+    description: Maximum Android version.
+  - name: minAndroidSecurityPatchLevel
+    type: String
+    description: Minimum Android security patch level.
+  - name: storageRequireEncryption
+    type: Boolean
+    description: Require encryption on Android devices.
+  - name: securityRequireSafetyNetAttestationBasicIntegrity
+    type: Boolean
+    description: Require the device to pass the SafetyNet basic integrity check.
+  - name: securityRequireSafetyNetAttestationCertifiedDevice
+    type: Boolean
+    description: Require the device to pass the SafetyNet certified device check.
+  - name: securityRequireGooglePlayServices
+    type: Boolean
+    description: Require Google Play Services to be installed and enabled on the device.
+  - name: securityRequireUpToDateSecurityProviders
+    type: Boolean
+    description: Require the device to have up to date security providers. The device will require Google Play Services to be enabled and up to date.
+  - name: securityRequireCompanyPortalAppIntegrity
+    type: Boolean
+    description: Require the device to pass the Company Portal client app runtime integrity check.
+relationships:
+  heading: Relationships
+  table:
+  - name: scheduledActionsForRule
+    type: Collection(microsoft.graph.deviceComplianceScheduledActionForRule)
+    description: The list of scheduled action for this rule Inherited from deviceCompliancePolicy
+  - name: deviceStatuses
+    type: Collection(microsoft.graph.deviceComplianceDeviceStatus)
+    description: List of DeviceComplianceDeviceStatus. Inherited from deviceCompliancePolicy
+  - name: userStatuses
+    type: Collection(microsoft.graph.deviceComplianceUserStatus)
+    description: List of DeviceComplianceUserStatus. Inherited from deviceCompliancePolicy
+  - name: deviceStatusOverview
+    type: microsoft.graph.deviceComplianceDeviceOverview
+    description: Device compliance devices status overview Inherited from deviceCompliancePolicy
+  - name: userStatusOverview
+    type: microsoft.graph.deviceComplianceUserOverview
+    description: Device compliance users status overview Inherited from deviceCompliancePolicy
+  - name: deviceSettingStateSummaries
+    type: Collection(microsoft.graph.settingStateDeviceSummary)
+    description: Compliance Setting State Device Summary Inherited from deviceCompliancePolicy
+  - name: assignments
+    type: Collection(microsoft.graph.deviceCompliancePolicyAssignment)
+    description: The collection of assignments for this compliance policy. Inherited from deviceCompliancePolicy
+methods:
+  heading: Methods
+  intro: |
+    |Method|Return Type|Description
+    |:-|:-|:-|
+    |[List androidCompliancePolicies](../api/intune_deviceconfig_androidcompliancepolicy_list.md)|[androidCompliancePolicy](../resources/intune_deviceconfig_androidcompliancepolicy.md) collection|List properties and relationships of the [androidCompliancePolicy](../resources/intune_deviceconfig_androidcompliancepolicy.md) objects.
+    |[Get androidCompliancePolicy](../api/intune_deviceconfig_androidcompliancepolicy_get.md)|[androidCompliancePolicy](../resources/intune_deviceconfig_androidcompliancepolicy.md)|Read properties and relationships of the [androidCompliancePolicy](../resources/intune_deviceconfig_androidcompliancepolicy.md) object.
+    |[Create androidCompliancePolicy](../api/intune_deviceconfig_androidcompliancepolicy_create.md)|[androidCompliancePolicy](../resources/intune_deviceconfig_androidcompliancepolicy.md)|Create a new [androidCompliancePolicy](../resources/intune_deviceconfig_androidcompliancepolicy.md) object.
+    |[Delete androidCompliancePolicy](../api/intune_deviceconfig_androidcompliancepolicy_delete.md)|None|Deletes a [androidCompliancePolicy](../resources/intune_deviceconfig_androidcompliancepolicy.md).
+    |[Update androidCompliancePolicy](../api/intune_deviceconfig_androidcompliancepolicy_update.md)|[androidCompliancePolicy](../resources/intune_deviceconfig_androidcompliancepolicy.md)|Update the properties of a [androidCompliancePolicy](../resources/intune_deviceconfig_androidcompliancepolicy.md) object.

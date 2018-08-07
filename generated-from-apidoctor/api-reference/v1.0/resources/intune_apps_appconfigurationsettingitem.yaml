@@ -1,0 +1,36 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_apps_appconfigurationsettingitem.md
+top:
+  heading: appConfigurationSettingItem resource type
+  intro: |
+    Contains properties for App configuration setting item.
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.appConfigurationSettingItem",
+      "appConfigKey": "String",
+      "appConfigKeyType": "String",
+      "appConfigKeyValue": "String"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: appConfigKey
+    type: String
+    description: app configuration key.
+  - name: appConfigKeyType
+    type: microsoft.graph.mdmAppConfigKeyType
+    description: app configuration key type. The possible values are: stringType, integerType, realType, booleanType, tokenType.
+  - name: appConfigKeyValue
+    type: String
+    description: app configuration key value.
+relationships:
+  heading: Relationships
+  intro: |
+    None

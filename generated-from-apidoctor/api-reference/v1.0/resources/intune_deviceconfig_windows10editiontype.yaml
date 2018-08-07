@@ -1,0 +1,33 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_windows10editiontype.md
+top:
+  heading: windows10EditionType enum type
+  intro: |
+    Windows 10 Edition type.
+enum:
+  heading: Members
+  table:
+  - member: windows10Enterprise
+    description: Windows 10 Enterprise
+  - member: windows10EnterpriseN
+    description: Windows 10 EnterpriseN
+  - member: windows10Education
+    description: Windows 10 Education
+  - member: windows10EducationN
+    description: Windows 10 EducationN
+  - member: windows10MobileEnterprise
+    description: Windows 10 Mobile Enterprise
+  - member: windows10HolographicEnterprise
+    description: Windows 10 Holographic Enterprise
+  - member: windows10Professional
+    description: Windows 10 Professional
+  - member: windows10ProfessionalN
+    description: Windows 10 ProfessionalN
+  - member: windows10ProfessionalEducation
+    description: Windows 10 Professional Education
+  - member: windows10ProfessionalEducationN
+    description: Windows 10 Professional EducationN
+  - member: windows10ProfessionalWorkstation
+    description: Windows 10 Professional for Workstations
+  - member: windows10ProfessionalWorkstationN
+    description: Windows 10 Professional for Workstations N

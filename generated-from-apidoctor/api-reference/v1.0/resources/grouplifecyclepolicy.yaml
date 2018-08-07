@@ -1,0 +1,50 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/grouplifecyclepolicy.md
+top:
+  heading: groupLifecyclePolicy resource type
+  intro: |
+    Represents a a lifecycle policy for an Office 365 group. A group lifecycle policy allows administrators to set an expiration period for groups. For example, after 180 days, a group expires. When a group reaches its expiration, owners of the group are required to renew their group within a time interval defined by the administrator. Once renewed, the group expiration is extended by the number of days defined in the policy. For example, the group's new expiration is 180 days after renewal. If the group is not renewed, it expires and is deleted. The group can be restored within a period of 30 days from deletion.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "alternateNotificationEmails": "String",
+      "groupLifetimeInDays": 180,
+      "id": "Guid (identifier)",
+      "managedGroupTypes": "String"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: alternateNotificationEmails
+    type: String
+    description: List of email address to send notifications for groups without owners. Multiple email address can be defined by separating email address with a semicolon.
+  - name: groupLifetimeInDays
+    type: Int32
+    description: Number of days before a group expires and needs to be renewed. Once renewed, the group expiration is extended by the number of days defined.
+  - name: id
+    type: Guid
+    description: A unique identifier for a policy. Read-only.
+  - name: managedGroupTypes
+    type: String
+    description: The group type for which the expiration policy applies. Possible values are All, Selected or None.
+relationships:
+  heading: Relationships
+  intro: |
+    None.
+methods:
+  heading: Methods
+  intro: |
+    |Method|Return Type|Description
+    |:-|:-|:-|
+    |[Get groupLifecyclePolicy](../api/grouplifecyclepolicy_get.md)|[groupLifecyclePolicy](grouplifecyclepolicy.md)|Read properties and relationships of a groupLifecyclePolicy object.
+    |[List groupLifecyclePolicies](../api/grouplifecyclepolicy_list.md)|[groupLifecyclePolicy](grouplifecyclepolicy.md) collection|List all the groupLifecyclePolicies.
+    |[Update groupLifecyclePolicy](../api/grouplifecyclepolicy_update.md)|[groupLifecyclePolicy](grouplifecyclepolicy.md)|Update a groupLifecyclePolicy object.
+    |[Delete groupLifecyclePolicy](../api/grouplifecyclepolicy_delete.md)|None|Delete a groupLifecyclePolicy object.
+    |[Add a group to a groupLifecyclePolicy](../api/grouplifecyclepolicy_addgroup.md)|None|Add a group to a lifecycle policy
+    |[Remove a group from a groupLifecyclePolicy](../api/grouplifecyclepolicy_removegroup.md)|None|Remove a group to a lifecycle policy.

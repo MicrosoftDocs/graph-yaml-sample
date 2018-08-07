@@ -1,0 +1,152 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_apps_windowsuniversalappx.md
+top:
+  heading: windowsUniversalAppX resource type
+  intro: |
+    Contains properties and inherited properties for Windows Universal AppX Line Of Business apps.
+    Inherits from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.windowsUniversalAppX",
+      "id": "String (identifier)",
+      "displayName": "String",
+      "description": "String",
+      "publisher": "String",
+      "largeIcon": {
+        "@odata.type": "microsoft.graph.mimeContent",
+        "type": "String",
+        "value": "binary"
+      },
+      "createdDateTime": "String (timestamp)",
+      "lastModifiedDateTime": "String (timestamp)",
+      "isFeatured": true,
+      "privacyInformationUrl": "String",
+      "informationUrl": "String",
+      "owner": "String",
+      "developer": "String",
+      "notes": "String",
+      "publishingState": "String",
+      "committedContentVersion": "String",
+      "fileName": "String",
+      "size": 1024,
+      "applicableArchitectures": "String",
+      "applicableDeviceTypes": "String",
+      "identityName": "String",
+      "identityPublisherHash": "String",
+      "identityResourceIdentifier": "String",
+      "isBundle": true,
+      "minimumSupportedOperatingSystem": {
+        "@odata.type": "microsoft.graph.windowsMinimumOperatingSystem",
+        "v8_0": true,
+        "v8_1": true,
+        "v10_0": true
+      },
+      "identityVersion": "String"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: id
+    type: String
+    description: Key of the entity. Inherited from mobileApp
+  - name: displayName
+    type: String
+    description: The admin provided or imported title of the app. Inherited from mobileApp
+  - name: description
+    type: String
+    description: The description of the app. Inherited from mobileApp
+  - name: publisher
+    type: String
+    description: The publisher of the app. Inherited from mobileApp
+  - name: largeIcon
+    type: microsoft.graph.mimeContent
+    description: The large icon, to be displayed in the app details and used for upload of the icon. Inherited from mobileApp
+  - name: createdDateTime
+    type: DateTimeOffset
+    description: The date and time the app was created. Inherited from mobileApp
+  - name: lastModifiedDateTime
+    type: DateTimeOffset
+    description: The date and time the app was last modified. Inherited from mobileApp
+  - name: isFeatured
+    type: Boolean
+    description: The value indicating whether the app is marked as featured by the admin. Inherited from mobileApp
+  - name: privacyInformationUrl
+    type: String
+    description: The privacy statement Url. Inherited from mobileApp
+  - name: informationUrl
+    type: String
+    description: The more information Url. Inherited from mobileApp
+  - name: owner
+    type: String
+    description: The owner of the app. Inherited from mobileApp
+  - name: developer
+    type: String
+    description: The developer of the app. Inherited from mobileApp
+  - name: notes
+    type: String
+    description: Notes for the app. Inherited from mobileApp
+  - name: publishingState
+    type: microsoft.graph.mobileAppPublishingState
+    description: The publishing state for the app. The app cannot be assigned unless the app is published. Inherited from mobileApp. The possible values are: notPublished, processing, published.
+  - name: committedContentVersion
+    type: String
+    description: The internal committed content version. Inherited from mobileLobApp
+  - name: fileName
+    type: String
+    description: The name of the main Lob application file. Inherited from mobileLobApp
+  - name: size
+    type: Int64
+    description: The total size, including all uploaded files. Inherited from mobileLobApp
+  - name: applicableArchitectures
+    type: microsoft.graph.windowsArchitecture
+    description: The Windows architecture(s) for which this app can run on. The possible values are: none, x86, x64, arm, neutral.
+  - name: applicableDeviceTypes
+    type: microsoft.graph.windowsDeviceType
+    description: The Windows device type(s) for which this app can run on. The possible values are: none, desktop, mobile, holographic, team.
+  - name: identityName
+    type: String
+    description: The Identity Name.
+  - name: identityPublisherHash
+    type: String
+    description: The Identity Publisher Hash.
+  - name: identityResourceIdentifier
+    type: String
+    description: The Identity Resource Identifier.
+  - name: isBundle
+    type: Boolean
+    description: Whether or not the app is a bundle.
+  - name: minimumSupportedOperatingSystem
+    type: microsoft.graph.windowsMinimumOperatingSystem
+    description: The value for the minimum applicable operating system.
+  - name: identityVersion
+    type: String
+    description: The identity version.
+relationships:
+  heading: Relationships
+  table:
+  - name: categories
+    type: Collection(microsoft.graph.mobileAppCategory)
+    description: The list of categories for this app. Inherited from mobileApp
+  - name: assignments
+    type: Collection(microsoft.graph.mobileAppAssignment)
+    description: The list of group assignments for this mobile app. Inherited from mobileApp
+  - name: contentVersions
+    type: Collection(microsoft.graph.mobileAppContent)
+    description: The list of content versions for this app. Inherited from mobileLobApp
+methods:
+  heading: Methods
+  intro: |
+    |Method|Return Type|Description
+    |:-|:-|:-|
+    |[List windowsUniversalAppXs](../api/intune_apps_windowsuniversalappx_list.md)|[windowsUniversalAppX](../resources/intune_apps_windowsuniversalappx.md) collection|List properties and relationships of the [windowsUniversalAppX](../resources/intune_apps_windowsuniversalappx.md) objects.
+    |[Get windowsUniversalAppX](../api/intune_apps_windowsuniversalappx_get.md)|[windowsUniversalAppX](../resources/intune_apps_windowsuniversalappx.md)|Read properties and relationships of the [windowsUniversalAppX](../resources/intune_apps_windowsuniversalappx.md) object.
+    |[Create windowsUniversalAppX](../api/intune_apps_windowsuniversalappx_create.md)|[windowsUniversalAppX](../resources/intune_apps_windowsuniversalappx.md)|Create a new [windowsUniversalAppX](../resources/intune_apps_windowsuniversalappx.md) object.
+    |[Delete windowsUniversalAppX](../api/intune_apps_windowsuniversalappx_delete.md)|None|Deletes a [windowsUniversalAppX](../resources/intune_apps_windowsuniversalappx.md).
+    |[Update windowsUniversalAppX](../api/intune_apps_windowsuniversalappx_update.md)|[windowsUniversalAppX](../resources/intune_apps_windowsuniversalappx.md)|Update the properties of a [windowsUniversalAppX](../resources/intune_apps_windowsuniversalappx.md) object.

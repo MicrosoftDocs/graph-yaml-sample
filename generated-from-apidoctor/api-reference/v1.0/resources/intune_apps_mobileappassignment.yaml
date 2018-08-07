@@ -1,0 +1,54 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_apps_mobileappassignment.md
+top:
+  heading: mobileAppAssignment resource type
+  intro: |
+    A class containing the properties used for Group Assignment of a Mobile App.
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.mobileAppAssignment",
+      "id": "String (identifier)",
+      "intent": "String",
+      "target": {
+        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+      },
+      "settings": {
+        "@odata.type": "microsoft.graph.mobileAppAssignmentSettings"
+      }
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: id
+    type: String
+    description: Key of the entity.
+  - name: intent
+    type: microsoft.graph.installIntent
+    description: The install intent defined by the admin. The possible values are: available, required, uninstall, availableWithoutEnrollment.
+  - name: target
+    type: microsoft.graph.deviceAndAppManagementAssignmentTarget
+    description: The target group assignment defined by the admin.
+  - name: settings
+    type: microsoft.graph.mobileAppAssignmentSettings
+    description: The settings for target assignment defined by the admin.
+relationships:
+  heading: Relationships
+  intro: |
+    None
+methods:
+  heading: Methods
+  intro: |
+    |Method|Return Type|Description
+    |:-|:-|:-|
+    |[List mobileAppAssignments](../api/intune_apps_mobileappassignment_list.md)|[mobileAppAssignment](../resources/intune_apps_mobileappassignment.md) collection|List properties and relationships of the [mobileAppAssignment](../resources/intune_apps_mobileappassignment.md) objects.
+    |[Get mobileAppAssignment](../api/intune_apps_mobileappassignment_get.md)|[mobileAppAssignment](../resources/intune_apps_mobileappassignment.md)|Read properties and relationships of the [mobileAppAssignment](../resources/intune_apps_mobileappassignment.md) object.
+    |[Create mobileAppAssignment](../api/intune_apps_mobileappassignment_create.md)|[mobileAppAssignment](../resources/intune_apps_mobileappassignment.md)|Create a new [mobileAppAssignment](../resources/intune_apps_mobileappassignment.md) object.
+    |[Delete mobileAppAssignment](../api/intune_apps_mobileappassignment_delete.md)|None|Deletes a [mobileAppAssignment](../resources/intune_apps_mobileappassignment.md).
+    |[Update mobileAppAssignment](../api/intune_apps_mobileappassignment_update.md)|[mobileAppAssignment](../resources/intune_apps_mobileappassignment.md)|Update the properties of a [mobileAppAssignment](../resources/intune_apps_mobileappassignment.md) object.

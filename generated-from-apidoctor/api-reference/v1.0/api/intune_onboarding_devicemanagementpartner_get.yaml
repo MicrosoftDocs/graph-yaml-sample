@@ -1,0 +1,70 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/intune_onboarding_devicemanagementpartner_get.md
+top:
+  heading: Get deviceManagementPartner
+  intro: |
+    Read properties and relationships of the [deviceManagementPartner](../resources/intune_onboarding_devicemanagementpartner.md) object.
+permissions:
+  heading: Prerequisites
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+httpRequest:
+  heading: HTTP Request
+  samplePaths: |
+    ```http
+    GET /deviceManagement/deviceManagementPartners/{deviceManagementPartnerId}
+    ```
+    
+queryParameters:
+  heading: Optional query parameters
+  intro: |
+    This method supports the [OData Query Parameters](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+httpHeaders:
+  heading: Request headers
+  table:
+  - name: Authorization
+    type: String
+    description: 
+  - name: Accept
+    type: String
+    description: 
+Request body:
+  heading: Request body
+  intro: |
+    Do not supply a request body for this method.
+Response:
+  heading: Response
+  intro: |
+    If successful, this method returns a `200 OK` response code and [deviceManagementPartner](../resources/intune_onboarding_devicemanagementpartner.md) object in the response body.
+examples:
+  - Example:
+      heading: Example
+      - request:
+          heading: Request
+          intro: |
+            Here is an example of the request.
+            GET https://graph.microsoft.com/v1.0/deviceManagement/deviceManagementPartners/{deviceManagementPartnerId}
+
+      - response:
+          heading: Response
+          intro: |
+            Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+            HTTP/1.1 200 OK
+            Content-Type: application/json
+            Content-Length: 590
+            
+            {
+              "value": {
+                "@odata.type": "#microsoft.graph.deviceManagementPartner",
+                "id": "d21e377a-377a-d21e-7a37-1ed27a371ed2",
+                "lastHeartbeatDateTime": "2016-12-31T23:59:37.9174975-08:00",
+                "partnerState": "unavailable",
+                "partnerAppType": "singleTenantApp",
+                "singleTenantAppId": "Single Tenant App Id value",
+                "displayName": "Display Name value",
+                "isConfigured": true,
+                "whenPartnerDevicesWillBeRemovedDateTime": "2016-12-31T23:56:38.2655023-08:00",
+                "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "2016-12-31T23:58:42.2131231-08:00"
+              }
+            }
+

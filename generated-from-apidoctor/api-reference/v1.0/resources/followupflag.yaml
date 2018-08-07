@@ -1,0 +1,35 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/followupflag.md
+top:
+  heading: followupFlag resource type
+  intro: |
+    Allows setting a flag for the user to follow up on an item later. Supported items include [message](message.md) and [contact](contact.md).
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource
+  resourceDefinition: |
+    ```json
+    {
+      "completedDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
+      "dueDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
+      "flagStatus": "String",
+      "startDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"}
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: completedDateTime
+    type: microsoft.graph.dateTimeTimeZone
+    description: The date and time that the follow-up was finished.
+  - name: dueDateTime
+    type: microsoft.graph.dateTimeTimeZone
+    description: The date and time that the follow-up is to be finished.
+  - name: flagStatus
+    type: microsoft.graph.followupFlagStatus
+    description: The status for follow-up for an item. Possible values are notFlagged, complete, and flagged.
+  - name: startDateTime
+    type: microsoft.graph.dateTimeTimeZone
+    description: The date and time that the follow-up is to begin.

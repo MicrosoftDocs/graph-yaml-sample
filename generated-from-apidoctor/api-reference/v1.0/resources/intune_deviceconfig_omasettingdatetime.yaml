@@ -1,0 +1,41 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_omasettingdatetime.md
+top:
+  heading: omaSettingDateTime resource type
+  intro: |
+    OMA Settings DateTime definition.
+    Inherits from [omaSetting](../resources/intune_deviceconfig_omasetting.md)
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.omaSettingDateTime",
+      "displayName": "String",
+      "description": "String",
+      "omaUri": "String",
+      "value": "String (timestamp)"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: displayName
+    type: String
+    description: Display Name. Inherited from omaSetting
+  - name: description
+    type: String
+    description: Description. Inherited from omaSetting
+  - name: omaUri
+    type: String
+    description: OMA. Inherited from omaSetting
+  - name: value
+    type: DateTimeOffset
+    description: Value.
+relationships:
+  heading: Relationships
+  intro: |
+    None

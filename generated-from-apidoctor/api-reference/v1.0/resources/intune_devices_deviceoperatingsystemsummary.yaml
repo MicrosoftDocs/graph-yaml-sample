@@ -1,0 +1,48 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_devices_deviceoperatingsystemsummary.md
+top:
+  heading: deviceOperatingSystemSummary resource type
+  intro: |
+    Device operating system summary.
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.deviceOperatingSystemSummary",
+      "androidCount": 1024,
+      "iosCount": 1024,
+      "macOSCount": 1024,
+      "windowsMobileCount": 1024,
+      "windowsCount": 1024,
+      "unknownCount": 1024
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: androidCount
+    type: Int32
+    description: Number of android device count.
+  - name: iosCount
+    type: Int32
+    description: Number of iOS device count.
+  - name: macOSCount
+    type: Int32
+    description: Number of Mac OS X device count.
+  - name: windowsMobileCount
+    type: Int32
+    description: Number of Windows mobile device count.
+  - name: windowsCount
+    type: Int32
+    description: Number of Windows device count.
+  - name: unknownCount
+    type: Int32
+    description: Number of unknown device count.
+relationships:
+  heading: Relationships
+  intro: |
+    None

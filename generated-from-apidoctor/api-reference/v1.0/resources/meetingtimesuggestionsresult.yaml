@@ -1,0 +1,35 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/meetingtimesuggestionsresult.md
+top:
+  heading: meetingTimeSuggestionsResult resource type
+  intro: |
+    A collection of meeting suggestions if there is any, or the reason if there isn't.
+    The following are the possible reasons that [findMeetingTimes](../api/user_findmeetingtimes.md) does not return any meeting suggestions.
+    |**emptySuggestionsReason value**|**Reasons**
+    |:-|:-|
+    |attendeesUnavailable|All of the attendees' availability is known, but not enough attendees are available to reach the [meeting confidence](../api/user_findmeetingtimes.md#the-confidence-of-a-meeting-suggestion) threshold, which is 50% by default, for any time period.
+    |attendeesUnavailableOrUnknown|Some or all of the attendees have unknown availability, causing the meeting confidence to fall below the set threshold, which is 50% by default. Attendee availability can become unknown if the attendee is outside of the organization, or there is an error obtaining free/busy information.
+    |locationsUnavailable|The **isRequired** property of the [locationConstraint](locationconstraint.md) parameter is specified as mandatory, and yet there are no locations available at the calculated time slots.
+    |organizerUnavailable|The **isOrganizerOptional** parameter is false and yet the organizer is not available during the requested time window.
+    |unknown|The reason for not returning any meeting suggestions is not known.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource
+  resourceDefinition: |
+    ```json
+    {
+      "emptySuggestionsReason": "String",
+      "meetingTimeSuggestions": [{"@odata.type": "microsoft.graph.meetingTimeSuggestion"}]
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: emptySuggestionsReason
+    type: String
+    description: A reason for not returning any meeting suggestions. The possible values are: attendeesUnavailable, attendeesUnavailableOrUnknown, locationsUnavailable, organizerUnavailable, or unknown. This property is an empty string if the meetingTimeSuggestions property does include any meeting suggestions.
+  - name: meetingTimeSuggestions
+    type: Collection(microsoft.graph.meetingTimeSuggestion)
+    description: An array of meeting suggestions.

@@ -1,0 +1,102 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/worksheet_usedrange.md
+top:
+  heading: Worksheet: UsedRange
+  intro: |
+    The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them. If the worksheet is blank, this function will return the top left cell.
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+  table:
+  - type: Delegated (work or school account)
+    scopes: Files.ReadWrite
+  - type: Delegated (personal Microsoft account)
+    scopes: Not supported.
+  - type: Application
+    scopes: Not supported.
+httpRequest:
+  heading: HTTP request
+  samplePaths: |
+    ```http
+    GET /workbook/worksheets/{id|name}/usedRange
+    ```
+    
+parameters:
+  heading: Parameters
+  intro: |
+    In the request URL you may provide optional parameters.
+  table:
+  - name: valuesOnly
+    type: Boolean
+    description: Optional. Considers only cells with values as used cells (ignores formatting).
+httpHeaders:
+  heading: Request headers
+  table:
+  - name: Authorization
+    type: 
+    description: Bearer {token}. Required.
+  - name: Workbook-Session-Id
+    type: 
+    description: Workbook session Id that determines if changes are persisted or not. Optional.
+Response:
+  heading: Response
+  intro: |
+    If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.
+examples:
+  - Example:
+      heading: Example
+      intro: |
+        Here is an example that shows how to call this API.
+      - request:
+          heading: Request
+          intro: |
+            Here is an example of the request.
+          exampleRequest: |
+            ```http
+            GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/usedRange
+            ```
+            
+      - response:
+          heading: Response
+          intro: |
+            Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+          exampleResponse: |
+            ```http
+            HTTP/1.1 200 OK
+            Content-type: application/json
+            Content-length: 169
+            
+            {
+              "address": "address-value",
+              "addressLocal": "addressLocal-value"
+            }
+            ```
+            
+          outro: |
+            Alternatively, this function can be called with the optional `valuesOnly` parameter.
+  - Request:
+      heading: Request
+      intro: |
+        Here is an example of the request.
+        
+        ```http
+        GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/usedRange(valuesOnly=true)
+        ```
+        
+      - response:
+          heading: Response
+          intro: |
+            Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+          exampleResponse: |
+            ```http
+            HTTP/1.1 200 OK
+            Content-type: application/json
+            Content-length: 169
+            
+            {
+              "address": "address-value",
+              "addressLocal": "addressLocal-value"
+            }
+            ```
+            

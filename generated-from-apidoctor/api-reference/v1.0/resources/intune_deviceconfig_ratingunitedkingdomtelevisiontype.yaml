@@ -1,0 +1,15 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_ratingunitedkingdomtelevisiontype.md
+top:
+  heading: ratingUnitedKingdomTelevisionType enum type
+  intro: |
+    TV content rating labels in United Kingdom
+enum:
+  heading: Members
+  table:
+  - member: allAllowed
+    description: Default value, allow all TV shows content
+  - member: allBlocked
+    description: Do not allow any TV shows content
+  - member: caution
+    description: Allowing TV contents with a warning message

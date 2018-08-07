@@ -1,0 +1,23 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/filtercriteria.md
+top:
+  heading: FilterCriteria resource type
+  intro: |
+    Represents the filtering criteria applied to a column.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "color": "string",
+      "criterion1": "string",
+      "criterion2": "string",
+      "dynamicCriteria": "string",
+      "filterOn": "string",
+      "icon": {"@odata.type": "microsoft.graph.workbookIcon"},
+      "values": {"@odata.type": "microsoft.graph.Json"}
+    }
+    ```
+    

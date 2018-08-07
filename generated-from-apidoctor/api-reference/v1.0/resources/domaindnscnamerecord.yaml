@@ -1,0 +1,55 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/domaindnscnamerecord.md
+top:
+  heading: domainDnsCnameRecord resource type
+  intro: |
+    Represents a CNAME record added to the DNS zone file of a particular domain in the tenant. Inherited from [DomainDnsRecord](domaindnsrecord.md) entity.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "canonicalName": "String",
+      "id": "String (identifier)",
+      "isOptional": true,
+      "label": "String",
+      "recordType": "String",
+      "supportedService": "String",
+      "ttl": 1024
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: canonicalName
+    type: String
+    description: The canonical name of the CNAME record. Used to configure the CNAME record at the DNS host.
+  - name: id
+    type: String
+    description: Unique identifier assigned to this entity. Not nullable, Read-only
+  - name: isOptional
+    type: Boolean
+    description: If false, the CNAME record must be configured by the customer at the DNS host for Microsoft Online Services to operate correctly with the domain. Not nullable
+  - name: label
+    type: String
+    description: Value used when configuring the alias/host/name of the CNAME record at the DNS host.
+  - name: recordType
+    type: String
+    description: Type of DNS record. The value is always CName. Key
+  - name: supportedService
+    type: String
+    description: Microsoft Online Service or feature that has a dependency on this CNAME record.Can be one of the following values: null, Email, Sharepoint, EmailInternalRelayOnly, OfficeCommunicationsOnline, SharePointDefaultDomain, FullRedelegation, SharePointPublic, OrgIdAuthentication, Yammer, Intune
+  - name: ttl
+    type: Int32
+    description: Value to use when configuring the time-to-live (ttl) property of the CNAME record at the DNS host. Not nullable
+relationships:
+  heading: Relationships
+  intro: |
+    None
+methods:
+  heading: Methods
+  intro: |
+    Direct queries to this resource are not supported. Please see the [domain](domain.md) topic for information on how to query for domain service records.

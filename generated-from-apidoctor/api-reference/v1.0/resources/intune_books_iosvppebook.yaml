@@ -1,0 +1,124 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_books_iosvppebook.md
+top:
+  heading: iosVppEBook resource type
+  intro: |
+    A class containing the properties for iOS Vpp eBook.
+    Inherits from [managedEBook](../resources/intune_books_managedebook.md)
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.iosVppEBook",
+      "id": "String (identifier)",
+      "displayName": "String",
+      "description": "String",
+      "publisher": "String",
+      "publishedDateTime": "String (timestamp)",
+      "largeCover": {
+        "@odata.type": "microsoft.graph.mimeContent",
+        "type": "String",
+        "value": "binary"
+      },
+      "createdDateTime": "String (timestamp)",
+      "lastModifiedDateTime": "String (timestamp)",
+      "informationUrl": "String",
+      "privacyInformationUrl": "String",
+      "vppTokenId": "79199ed9-e50b-4257-8de4-70b9c8685061",
+      "appleId": "String",
+      "vppOrganizationName": "String",
+      "genres": [
+        "String"
+      ],
+      "language": "String",
+      "seller": "String",
+      "totalLicenseCount": 1024,
+      "usedLicenseCount": 1024
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: id
+    type: String
+    description: Key of the entity. Inherited from managedEBook
+  - name: displayName
+    type: String
+    description: Name of the eBook. Inherited from managedEBook
+  - name: description
+    type: String
+    description: Description. Inherited from managedEBook
+  - name: publisher
+    type: String
+    description: Publisher. Inherited from managedEBook
+  - name: publishedDateTime
+    type: DateTimeOffset
+    description: The date and time when the eBook was published. Inherited from managedEBook
+  - name: largeCover
+    type: microsoft.graph.mimeContent
+    description: Book cover. Inherited from managedEBook
+  - name: createdDateTime
+    type: DateTimeOffset
+    description: The date and time when the eBook file was created. Inherited from managedEBook
+  - name: lastModifiedDateTime
+    type: DateTimeOffset
+    description: The date and time when the eBook was last modified. Inherited from managedEBook
+  - name: informationUrl
+    type: String
+    description: The more information Url. Inherited from managedEBook
+  - name: privacyInformationUrl
+    type: String
+    description: The privacy statement Url. Inherited from managedEBook
+  - name: vppTokenId
+    type: Guid
+    description: The Vpp token ID.
+  - name: appleId
+    type: String
+    description: The Apple ID associated with Vpp token.
+  - name: vppOrganizationName
+    type: String
+    description: The Vpp token's organization name.
+  - name: genres
+    type: Collection(String)
+    description: Genres.
+  - name: language
+    type: String
+    description: Language.
+  - name: seller
+    type: String
+    description: Seller.
+  - name: totalLicenseCount
+    type: Int32
+    description: Total license count.
+  - name: usedLicenseCount
+    type: Int32
+    description: Used license count.
+relationships:
+  heading: Relationships
+  table:
+  - name: assignments
+    type: Collection(microsoft.graph.managedEBookAssignment)
+    description: The list of assignments for this eBook. Inherited from managedEBook
+  - name: installSummary
+    type: microsoft.graph.eBookInstallSummary
+    description: Mobile App Install Summary. Inherited from managedEBook
+  - name: deviceStates
+    type: Collection(microsoft.graph.deviceInstallState)
+    description: The list of installation states for this eBook. Inherited from managedEBook
+  - name: userStateSummary
+    type: Collection(microsoft.graph.userInstallStateSummary)
+    description: The list of installation states for this eBook. Inherited from managedEBook
+methods:
+  heading: Methods
+  intro: |
+    |Method|Return Type|Description
+    |:-|:-|:-|
+    |[List iosVppEBooks](../api/intune_books_iosvppebook_list.md)|[iosVppEBook](../resources/intune_books_iosvppebook.md) collection|List properties and relationships of the [iosVppEBook](../resources/intune_books_iosvppebook.md) objects.
+    |[Get iosVppEBook](../api/intune_books_iosvppebook_get.md)|[iosVppEBook](../resources/intune_books_iosvppebook.md)|Read properties and relationships of the [iosVppEBook](../resources/intune_books_iosvppebook.md) object.
+    |[Create iosVppEBook](../api/intune_books_iosvppebook_create.md)|[iosVppEBook](../resources/intune_books_iosvppebook.md)|Create a new [iosVppEBook](../resources/intune_books_iosvppebook.md) object.
+    |[Delete iosVppEBook](../api/intune_books_iosvppebook_delete.md)|None|Deletes a [iosVppEBook](../resources/intune_books_iosvppebook.md).
+    |[Update iosVppEBook](../api/intune_books_iosvppebook_update.md)|[iosVppEBook](../resources/intune_books_iosvppebook.md)|Update the properties of a [iosVppEBook](../resources/intune_books_iosvppebook.md) object.

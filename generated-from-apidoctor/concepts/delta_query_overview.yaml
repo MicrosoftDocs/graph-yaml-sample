@@ -1,0 +1,51 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/delta_query_overview.md
+top:
+  heading: Use delta query to track changes in Microsoft Graph data
+  intro: |
+    Delta query enables applications to discover newly created, updated, or deleted entities without performing a full read of the target resource with every request. Microsoft Graph applications can use delta query to efficiently synchronize changes with a local data store.
+  outro: |
+    ## Use delta query to track changes in a resource collection
+    The typical call pattern is as follows:
+    
+    1. The application begins by calling a GET request with the delta function on the desired resource.
+    1. Microsoft Graph sends a response containing the requested resource and a [state token](#state-tokens).
+    1. a.  If a `nextLink` URL is returned, there may be additional pages of data to be retrieved in the session. The application continues making requests using the `nextLink` URL to retrieve all pages of data until a `deltaLink` URL is returned in the response.
+    1. b.  If a `deltaLink` URL is returned, there is no more data about the existing state of the resource to be returned. For future requests, the application uses the `deltaLink` URL to learn about changes to the resource.
+    1. When the application needs to learn about changes to the resource, it makes a new request using the `deltaLink` URL received in step 2. This request *may* be made immediately after completing step 2 or when the application checks for changes.
+    1. Microsoft Graph returns a response describing changes to the resource since the previous request, and either a `nextLink` URL or a `deltaLink` URL.
+    
+permissions:
+  heading: Prerequisites
+  intro: |
+    The same [permissions](./permissions_reference.md) that are required to read a specific resource are also required to perform delta query on that resource.
+  outro: |
+    ## Delta query request examples
+    
+    * [Get incremental changes to events in a calendar view](../concepts/delta_query_events.md)
+    * [Get incremental changes to messages in a folder](./delta_query_messages.md)
+    * [Get incremental changes to groups](./delta_query_groups.md)
+    * [Get incremental changes to users](./delta_query_users.md)
+    
+queryParameters:
+  heading: Optional query parameters
+  intro: |
+    If a client uses a query parameter, it must be specified in the initial request. Microsoft Graph automatically encodes the specified parameter into the `nextLink` or `deltaLink` provided in the response. The calling application only needs to specify their desired query parameters once upfront. Microsoft Graph adds the specified parameters automatically for all subsequent requests.
+    For users and groups, there are restrictions on using some query parameters:
+    
+    * If a `$select` query parameter is used, the parameter indicates that the client prefers to only track changes on the properties or relationships specified in the `$select` statement. If a change occurs to a property that is not selected, the resource for which that property changed does not appear in the delta response after a subsequent request.
+    * `$expand` is only suported for the `manager` and `members` navigational property for users and groups respectively.
+    
+    For users and groups APIs, scoping filters allow you to track changes to one or more specific users or groups by objectId. For example, the following request: https://graph.microsoft.com/beta/groups/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ae5f' or id eq '004d6a07-fe70-4b92-add5-e6e37b8acd8e' returns changes for the groups matching the ids specified in the query filter.
+  outro: |
+    ## Resource representation in the delta query response
+    
+    * Newly created instances of a supported resource are represented in the delta query response using their standard representation.
+    * Updated instances are represented by their **id** with *at least* the properties that have been updated, but additional properties may be included.
+    * Relationships on users and groups are represented as annotations on the standard resource representation. These annotations use the format `propertyName@delta`. The annotations are included in the response of the initial delta query request.
+    
+    Removed instances are represented by their **id** and an `@removed` object. The `@removed` object may include additional information about why the instance was removed. For example,  "@removed": {"reason": “changed”}.
+    Possible @removed reasons can be *changed* or *deleted*.
+    - *Changed* indicates the item was deleted and can be restored from [deletedItems](../api-reference/beta/resources/directory.md).
+    - *Deleted* indicates the item is deleted and cannot be restored.
+    The `@removed` object can be returned in the initial delta query response and in tracked (deltaLink) responses. Clients using delta query requests should be designed to handle these objects in the responses.

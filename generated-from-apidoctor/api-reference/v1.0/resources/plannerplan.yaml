@@ -1,0 +1,60 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/plannerplan.md
+top:
+  heading: plannerPlan resource type
+  intro: |
+    The **plannerPlan** resource represents a plan in Office 365. A plan can be owned by a [group](group.md) and contains a collection of [plannerTasks](plannerTask.md). It can also have a collection of [plannerBuckets](plannerBucket.md). Each plan object has a [details](plannerPlanDetails.md) object that can contain more information about the plan. For more information about the relationships between groups, plans, and tasks, see [Planner](planner_overview.md).
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
+      "createdDateTime": "String (timestamp)",
+      "id": "String (identifier)",
+      "owner": "String",
+      "title": "String"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: createdDateTime
+    type: DateTimeOffset
+    description: Read-only. Date and time at which the plan is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
+  - name: id
+    type: String
+    description: Read-only. ID of the plan. It is 28 characters long and case-sensitive. Format validation is done on the service.
+  - name: owner
+    type: String
+    description: ID of the Group that owns the plan. A valid group must exist before this field can be set. Once set, this can only be updated by the owner.
+  - name: title
+    type: String
+    description: Required. Title of the plan.
+  - name: createdBy
+    type: microsoft.graph.identitySet
+    description: Read-only. The user who created the plan.
+relationships:
+  heading: Relationships
+  table:
+  - name: buckets
+    type: Collection(microsoft.graph.plannerBucket)
+    description: Read-only. Nullable. Collection of buckets in the plan.
+  - name: details
+    type: microsoft.graph.plannerPlanDetails
+    description: Read-only. Nullable. Additional details about the plan.
+  - name: tasks
+    type: Collection(microsoft.graph.plannerTask)
+    description: Read-only. Nullable. Collection of tasks in the plan.
+methods:
+  heading: Methods
+  intro: |
+    |Method|Return Type|Description
+    |:-|:-|:-|
+    |[Get plannerPlan](../api/plannerplan_get.md)|[plannerPlan](plannerplan.md)|Read properties and relationships of **plannerPlan** object.
+    |[List buckets](../api/plannerplan_list_buckets.md)|[plannerBucket](plannerbucket.md) collection|Get a **plannerBucket** object collection.
+    |[List tasks](../api/plannerplan_list_tasks.md)|[plannerTask](plannertask.md) collection|Get a **plannerTask** object collection.
+    |[Update](../api/plannerplan_update.md)|[plannerPlan](plannerplan.md)|Update **plannerPlan** object.

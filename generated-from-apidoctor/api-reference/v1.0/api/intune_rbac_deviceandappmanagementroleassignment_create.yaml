@@ -1,0 +1,86 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/intune_rbac_deviceandappmanagementroleassignment_create.md
+top:
+  heading: Create deviceAndAppManagementRoleAssignment
+  intro: |
+    Create a new [deviceAndAppManagementRoleAssignment](../resources/intune_rbac_deviceandappmanagementroleassignment.md) object.
+permissions:
+  heading: Prerequisites
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+httpRequest:
+  heading: HTTP Request
+  samplePaths: |
+    ```http
+    POST /deviceManagement/roleAssignments
+    ```
+    
+httpHeaders:
+  heading: Request headers
+  table:
+  - name: Authorization
+    type: String
+    description: 
+  - name: Accept
+    type: String
+    description: 
+Request body:
+  heading: Request body
+  intro: |
+    In the request body, supply a JSON representation for the deviceAndAppManagementRoleAssignment object.
+    The following table shows the properties that are required when you create the deviceAndAppManagementRoleAssignment.
+    |Property|Type|Description
+    |:-|:-|:-|
+    |id|String|Key of the entity. This is read-only and automatically generated. Inherited from [roleAssignment](../resources/intune_rbac_roleassignment.md)
+    |displayName|String|The display or friendly name of the role Assignment. Inherited from [roleAssignment](../resources/intune_rbac_roleassignment.md)
+    |description|String|Description of the Role Assignment. Inherited from [roleAssignment](../resources/intune_rbac_roleassignment.md)
+    |resourceScopes|String collection|List of ids of role scope member security groups.  These are IDs from Azure Active Directory. Inherited from [roleAssignment](../resources/intune_rbac_roleassignment.md)
+    |members|String collection|The list of ids of role member security groups. These are IDs from Azure Active Directory.
+Response:
+  heading: Response
+  intro: |
+    If successful, this method returns a `201 Created` response code and a [deviceAndAppManagementRoleAssignment](../resources/intune_rbac_deviceandappmanagementroleassignment.md) object in the response body.
+examples:
+  - Example:
+      heading: Example
+      - request:
+          heading: Request
+          intro: |
+            Here is an example of the request.
+            POST https://graph.microsoft.com/v1.0/deviceManagement/roleAssignments
+            Content-type: application/json
+            Content-length: 258
+            
+            {
+              "@odata.type": "#microsoft.graph.deviceAndAppManagementRoleAssignment",
+              "displayName": "Display Name value",
+              "description": "Description value",
+              "resourceScopes": [
+                "Resource Scopes value"
+              ],
+              "members": [
+                "Members value"
+              ]
+            }
+
+      - response:
+          heading: Response
+          intro: |
+            Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+            HTTP/1.1 201 Created
+            Content-Type: application/json
+            Content-Length: 307
+            
+            {
+              "@odata.type": "#microsoft.graph.deviceAndAppManagementRoleAssignment",
+              "id": "a12e8ebb-8ebb-a12e-bb8e-2ea1bb8e2ea1",
+              "displayName": "Display Name value",
+              "description": "Description value",
+              "resourceScopes": [
+                "Resource Scopes value"
+              ],
+              "members": [
+                "Members value"
+              ]
+            }
+

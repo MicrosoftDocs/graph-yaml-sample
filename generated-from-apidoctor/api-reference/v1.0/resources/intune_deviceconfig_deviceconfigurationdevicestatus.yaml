@@ -1,0 +1,66 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_deviceconfigurationdevicestatus.md
+top:
+  heading: deviceConfigurationDeviceStatus resource type
+  intro: |
+    Not yet documented
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.deviceConfigurationDeviceStatus",
+      "id": "String (identifier)",
+      "deviceDisplayName": "String",
+      "userName": "String",
+      "deviceModel": "String",
+      "complianceGracePeriodExpirationDateTime": "String (timestamp)",
+      "status": "String",
+      "lastReportedDateTime": "String (timestamp)",
+      "userPrincipalName": "String"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: id
+    type: String
+    description: Key of the entity.
+  - name: deviceDisplayName
+    type: String
+    description: Device name of the DevicePolicyStatus.
+  - name: userName
+    type: String
+    description: The User Name that is being reported
+  - name: deviceModel
+    type: String
+    description: The device model that is being reported
+  - name: complianceGracePeriodExpirationDateTime
+    type: DateTimeOffset
+    description: The DateTime when device compliance grace period expires
+  - name: status
+    type: microsoft.graph.complianceStatus
+    description: Compliance status of the policy report. The possible values are: unknown, notApplicable, compliant, remediated, nonCompliant, error, conflict.
+  - name: lastReportedDateTime
+    type: DateTimeOffset
+    description: Last modified date time of the policy report.
+  - name: userPrincipalName
+    type: String
+    description: UserPrincipalName.
+relationships:
+  heading: Relationships
+  intro: |
+    None
+methods:
+  heading: Methods
+  intro: |
+    |Method|Return Type|Description
+    |:-|:-|:-|
+    |[List deviceConfigurationDeviceStatuses](../api/intune_deviceconfig_deviceconfigurationdevicestatus_list.md)|[deviceConfigurationDeviceStatus](../resources/intune_deviceconfig_deviceconfigurationdevicestatus.md) collection|List properties and relationships of the [deviceConfigurationDeviceStatus](../resources/intune_deviceconfig_deviceconfigurationdevicestatus.md) objects.
+    |[Get deviceConfigurationDeviceStatus](../api/intune_deviceconfig_deviceconfigurationdevicestatus_get.md)|[deviceConfigurationDeviceStatus](../resources/intune_deviceconfig_deviceconfigurationdevicestatus.md)|Read properties and relationships of the [deviceConfigurationDeviceStatus](../resources/intune_deviceconfig_deviceconfigurationdevicestatus.md) object.
+    |[Create deviceConfigurationDeviceStatus](../api/intune_deviceconfig_deviceconfigurationdevicestatus_create.md)|[deviceConfigurationDeviceStatus](../resources/intune_deviceconfig_deviceconfigurationdevicestatus.md)|Create a new [deviceConfigurationDeviceStatus](../resources/intune_deviceconfig_deviceconfigurationdevicestatus.md) object.
+    |[Delete deviceConfigurationDeviceStatus](../api/intune_deviceconfig_deviceconfigurationdevicestatus_delete.md)|None|Deletes a [deviceConfigurationDeviceStatus](../resources/intune_deviceconfig_deviceconfigurationdevicestatus.md).
+    |[Update deviceConfigurationDeviceStatus](../api/intune_deviceconfig_deviceconfigurationdevicestatus_update.md)|[deviceConfigurationDeviceStatus](../resources/intune_deviceconfig_deviceconfigurationdevicestatus.md)|Update the properties of a [deviceConfigurationDeviceStatus](../resources/intune_deviceconfig_deviceconfigurationdevicestatus.md) object.

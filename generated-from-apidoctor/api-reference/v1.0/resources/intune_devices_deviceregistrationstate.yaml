@@ -1,0 +1,25 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_devices_deviceregistrationstate.md
+top:
+  heading: deviceRegistrationState enum type
+  intro: |
+    Device registration status.
+enum:
+  heading: Members
+  table:
+  - member: notRegistered
+    description: The device is not registered.
+  - member: registered
+    description: The device is registered.
+  - member: revoked
+    description: The device has been blocked, wiped or retired.
+  - member: keyConflict
+    description: The device has a key conflict.
+  - member: approvalPending
+    description: The device is pending approval.
+  - member: certificateReset
+    description: The device certificate has been reset.
+  - member: notRegisteredPendingEnrollment
+    description: The device is not registered and pending enrollment.
+  - member: unknown
+    description: The device registration status is unknown.

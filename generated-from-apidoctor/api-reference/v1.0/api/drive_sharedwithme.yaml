@@ -1,0 +1,79 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/drive_sharedwithme.md
+top:
+  heading: List items shared with the signed-in user
+  intro: |
+    Retrieve a collection of [DriveItem](../resources/driveitem.md) resources that have been shared with the owner of the [Drive](../resources/drive.md).
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+  table:
+  - type: Delegated (work or school account)
+    scopes: Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All
+  - type: Delegated (personal Microsoft account)
+    scopes: Files.Read.All, Files.ReadWrite.All
+  - type: Application
+    scopes: Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All
+  outro: |
+    **Note:** while the /sharedWithMe request will succeed with Files.Read or Files.ReadWrite permissions, some properties may be missing.
+    Additionally, without one of the  **All** permissions, shared items returned from this API will not be accessible.
+httpRequest:
+  heading: HTTP request
+  samplePaths: |
+    ```http
+    GET /me/drive/sharedWithMe
+    ```
+    
+Response:
+  heading: Response
+  intro: |
+    This returns a collection of [DriveItem](../resources/driveitem.md) resources which contain the DriveItem resources shared with the owner of the drive.
+    In this example, since the drive is the user's default drive, this returns items shared with the signed in user.
+    
+    ```http
+    HTTP/1.1 200 OK
+    Content-Type: application/json
+    
+    {
+      "value": [
+        {
+          "id": "1312abc",
+          "remoteItem": {
+            "id": "1991210caf!192",
+            "name": "March Proposal.docx",
+            "file": { },
+            "size": 19121,
+            "parentReference": {
+              "driveId": "1991210caf",
+              "id": "1991210caf!104"
+            }
+          }
+        },
+        {
+          "id": "1312def",
+          "remoteItem": {
+            "id": "1991210caf!1991",
+            "name": "Team Roster.xlsx",
+            "file": { },
+            "size": 37619,
+            "parentReference": {
+              "driveId": "1991210caf",
+              "id": "1991210caf!104"
+            }
+          }
+        }
+      ]
+    }
+    ```
+    
+remarks:
+  heading: Remarks
+  intro: |
+    DriveItems returned from the **sharedWithMe** action will always include the [**remoteItem**](../resources/remoteitem.md) facet which indicates they are items from a different drive.
+    To access the shared DriveItem resource, you will need to make a request using the information provided in **remoteItem** in the following format:
+    
+    ```http
+    GET /drives/{remoteItem-driveId}/items/{remoteItem-id}
+    ```
+    

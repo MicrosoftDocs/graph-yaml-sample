@@ -1,0 +1,94 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/notebook_getrecentnotebooks.md
+top:
+  heading: notebook: getRecentNotebooks
+  intro: |
+    Get a list of [recentNotebook](../resources/recentnotebook.md) instances that have been accessed by the signed-in user.
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+  table:
+  - type: Delegated (work or school account)
+    scopes: Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All,
+  - type: Delegated (personal Microsoft account)
+    scopes: Notes.Create, Notes.Read, Notes.ReadWrite
+  - type: Application
+    scopes: Notes.Read.All, Notes.ReadWrite.All
+httpRequest:
+  heading: HTTP request
+  samplePaths: |
+    ```http
+    GET /me/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks=includePersonalNotebooks-value)
+    GET /users/{id | userPrincipalName}/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks=includePersonalNotebooks-value)
+    ```
+    
+  outro: |
+    The `<id | userPrincipalName>` for the user must match the user encoded in the authorization token used to make the request.
+httpHeaders:
+  heading: Request headers
+  table:
+  - name: Authorization
+    type: 
+    description: Bearer {code}
+  outro: |
+    ## Request parameters
+    In the request URL, provide following query parameters with values.
+    |Parameter|Type|Description
+    |:-|:-|:-|
+    |includePersonalNotebooks|Boolean|Include notebooks owned by the user. Set to `true` to include notebooks owned by the user; otherwise, set to `false`. If you don't include the `includePersonalNotebooks` parameter, your request will return a `400` error response.
+Request body:
+  heading: Request body
+  intro: |
+    Do not supply a request body for this method.
+Response:
+  heading: Response
+  intro: |
+    A successful response returns a `200 OK` that contains a JSON collection of **recentNotebooks**.
+examples:
+  - Example:
+      heading: Example
+      intro: |
+        The following example shows how to call this API.
+      - request:
+          heading: Request
+          intro: |
+            The following example shows the request.
+          exampleRequest: |
+            ```http
+            GET https://graph.microsoft.com/v1.0/me/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks=true)
+            ```
+            
+      - response:
+          heading: Response
+          intro: |
+            The following example shows the response.
+          exampleResponse: |
+            ```http
+            HTTP/1.1 200 OK
+            Content-type: application/json
+            Content-Length: 1110
+            
+            {
+              "value":[
+                {
+                  "displayName":"Personal Notebook","lastAccessedTime":"timestamp","links":{
+                    "oneNoteClientUrl":{
+                      "href":"onenote:href-value"
+                    },"oneNoteWebUrl":{
+                      "href":"href-value"
+                    }
+                  },"sourceService":"OneDrive"
+                },{
+                  "displayName":"Team Shared Notebook","lastAccessedTime":"timestamp","links":{
+                    "oneNoteClientUrl":{
+                      "href":"onenote:href-value"
+                    },"oneNoteWebUrl":{
+                      "href":"href-value"
+                    }
+                  },"sourceService":"OneDriveForBusiness"
+                }
+              ]
+            }
+            ```
+            

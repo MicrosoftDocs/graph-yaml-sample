@@ -1,0 +1,27 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/notebooklinks.md
+top:
+  heading: notebookLinks resource type
+  intro: |
+    Links for opening a OneNote notebook.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "oneNoteClientUrl": {"@odata.type": "microsoft.graph.externalLink"},
+      "oneNoteWebUrl": {"@odata.type": "microsoft.graph.externalLink"}
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: oneNoteClientUrl
+    type: microsoft.graph.externalLink
+    description: Opens the notebook in the OneNote native client if it's installed.
+  - name: oneNoteWebUrl
+    type: microsoft.graph.externalLink
+    description: Opens the notebook in OneNote Online.

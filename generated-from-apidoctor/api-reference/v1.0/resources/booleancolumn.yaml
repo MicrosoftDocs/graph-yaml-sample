@@ -1,0 +1,20 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/booleancolumn.md
+top:
+  heading: BooleanColumn resource type
+  intro: |
+    The **booleanColumn** on a [columnDefinition](columnDefinition.md) resource indicates that the column holds a boolean value.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of a **booleanColumn** resource.
+  resourceDefinition: |
+    ```json
+    {
+    }
+    ```
+    
+properties:
+  heading: Properties
+  intro: |
+    The **booleanColumn** resource contains no properties.

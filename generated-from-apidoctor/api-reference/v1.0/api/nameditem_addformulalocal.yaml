@@ -1,0 +1,92 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/nameditem_addformulalocal.md
+top:
+  heading: Add Named Item FormulaLocal
+  intro: |
+    Adds a new name to the collection of the given scope using the user's locale for the formula.
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+  table:
+  - type: Delegated (work or school account)
+    scopes: Files.ReadWrite, Sites.Read.All
+  - type: Delegated (personal Microsoft account)
+    scopes: Not supported.
+  - type: Application
+    scopes: Sites.Read.All
+httpRequest:
+  heading: HTTP request
+  samplePaths: |
+    ```http
+    POST /workbook/names/add
+    POST /workbook/worksheets({id|name})/names/add
+    ```
+    
+httpHeaders:
+  heading: Request headers
+  table:
+  - name: Authorization
+    type: 
+    description: Bearer {token}. Required.
+  - name: Workbook-Session-Id
+    type: 
+    description: Workbook session Id that determines if changes are persisted or not. Optional.
+Request body:
+  heading: Request body
+  intro: |
+    In the request body, provide a JSON object with the following parameters.
+    |Parameter|Type|Description
+    |:-|:-|:-|
+    |name|string|The name of the named item.
+    |formula|string|The formula or the range that the name will refer to.
+    |comment|string|The comment associated with the named item
+Response:
+  heading: Response
+  intro: |
+    If successful, this method returns `200 OK` response code and [WorkbookNamedItem](../resources/NamedItem.md) object in the response body.
+examples:
+  - Example:
+      heading: Example
+      intro: |
+        Here is an example of how to call this API.
+      - request:
+          heading: Request
+          intro: |
+            Here is an example of the request.
+          exampleRequest: |
+            ```http
+            POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/addFormulaLocal
+            Content-type: application/json
+            Content-length: 54
+            
+            {
+              "name": "test7",
+              "formula": "=SUM(Sheet2!$A$1+Sheet2!$A$2)",
+              "comment": "Comment for the named item"
+            }
+            ```
+            
+      - response:
+          heading: Response
+          intro: |
+            Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+          exampleResponse: |
+            ```http
+            HTTP/1.1 200 OK
+            Content-type: application/json
+            Content-length: 109
+            
+            {
+                "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#workbookNamedItem",
+                "@odata.type": "#microsoft.graph.workbookNamedItem",
+                "@odata.id": "/users('ca41eb6e-5828-486b-ab52-c3bd1f7a4047')/drive/root/workbook/names(%27test7%27)",
+                "comment": "Comment for the named item",
+                "name": "test7",
+                "scope": "Workbook",
+                "type": "String",
+                "value": "0",
+                "visible": true
+            }
+            ```
+            

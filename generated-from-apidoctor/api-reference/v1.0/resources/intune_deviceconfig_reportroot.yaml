@@ -1,0 +1,46 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_reportroot.md
+top:
+  heading: reportRoot resource type
+  intro: |
+    The resource that represents an instance of History Reports.
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+    }
+    ```
+    
+relationships:
+  heading: Relationships
+  intro: |
+    None
+examples:
+  - Example:
+      heading: Example
+      intro: |
+        ```http
+        GET https://graph.microsoft.com/v1.0/reports
+        ```
+        
+        
+        ```json
+        HTTP/1.1 200 OK
+        Content-Type: application/json
+        
+        {
+        }
+        ```
+        
+methods:
+  heading: Methods
+  intro: |
+    |Method|Return Type|Description
+    |:-|:-|:-|
+    |[Get reportRoot](../api/intune_deviceconfig_reportroot_get.md)|[reportRoot](../resources/intune_deviceconfig_reportroot.md)|Read properties and relationships of the [reportRoot](../resources/intune_deviceconfig_reportroot.md) object.
+    |[Update reportRoot](../api/intune_deviceconfig_reportroot_update.md)|[reportRoot](../resources/intune_deviceconfig_reportroot.md)|Update the properties of a [reportRoot](../resources/intune_deviceconfig_reportroot.md) object.
+    |[deviceConfigurationUserActivity function](../api/intune_deviceconfig_reportroot_deviceconfigurationuseractivity.md)|[report](../resources/intune_deviceconfig_report.md)|Metadata for the device configuration user activity report
+    |[deviceConfigurationDeviceActivity function](../api/intune_deviceconfig_reportroot_deviceconfigurationdeviceactivity.md)|[report](../resources/intune_deviceconfig_report.md)|Metadata for the device configuration device activity report

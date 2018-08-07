@@ -1,0 +1,91 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/message_move.md
+top:
+  heading: message: move
+  intro: |
+    Move a message to a folder. This creates a new copy of the message in the destination folder and removes the original message.
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+  table:
+  - type: Delegated (work or school account)
+    scopes: Mail.ReadWrite
+  - type: Delegated (personal Microsoft account)
+    scopes: Mail.ReadWrite
+  - type: Application
+    scopes: Mail.ReadWrite
+httpRequest:
+  heading: HTTP request
+  samplePaths: |
+    ```http
+    POST /me/messages/{id}/move
+    POST /users/{id | userPrincipalName}/messages/{id}/move
+    POST /me/mailFolders/{id}/messages/{id}/move
+    POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/move
+    ```
+    
+httpHeaders:
+  heading: Request headers
+  table:
+  - name: Authorization
+    type: String
+    description: 
+  - name: Content-Type
+    type: String
+    description: 
+Request body:
+  heading: Request body
+  intro: |
+    In the request body, provide a JSON object with the following parameters.
+    |Parameter|Type|Description
+    |:-|:-|:-|
+    |destinationId|String|The destination folder ID, or a well-known folder name. For a list of supported well-known folder names, see [mailFolder resource type](../resources/mailfolder.md).
+Response:
+  heading: Response
+  intro: |
+    If successful, this method returns `201 Created` response code and a [message](../resources/message.md) resource in the response body.
+examples:
+  - Example:
+      heading: Example
+      intro: |
+        Here is an example of how to call this API.
+      - request:
+          heading: Request
+          intro: |
+            Here is an example of the request.
+          exampleRequest: |
+            ```http
+            POST https://graph.microsoft.com/v1.0/me/messages/{id}/move
+            Content-type: application/json
+            Content-length: 44
+            
+            {
+              "destinationId": "destinationId-value"
+            }
+            ```
+            
+      - response:
+          heading: Response
+          intro: |
+            Here is an example of the response.
+            
+          exampleResponse: |
+            ```http
+            HTTP/1.1 200 OK
+            Content-type: application/json
+            Content-length: 248
+            
+            {
+              "receivedDateTime": "datetime-value",
+              "sentDateTime": "datetime-value",
+              "hasAttachments": true,
+              "subject": "subject-value",
+              "body": {
+                "contentType": "",
+                "content": "content-value"
+              },
+              "bodyPreview": "bodyPreview-value"
+            }
+            ```
+            

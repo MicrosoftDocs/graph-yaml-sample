@@ -1,0 +1,40 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_enrollment_importedwindowsautopilotdeviceidentitystate.md
+top:
+  heading: importedWindowsAutopilotDeviceIdentityState resource type
+  intro: |
+    Not yet documented
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.importedWindowsAutopilotDeviceIdentityState",
+      "deviceImportStatus": "String",
+      "deviceRegistrationId": "String",
+      "deviceErrorCode": 1024,
+      "deviceErrorName": "String"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: deviceImportStatus
+    type: microsoft.graph.importedWindowsAutopilotDeviceIdentityImportStatus
+    description: Device status reported by Device Directory Service(DDS). The possible values are: unknown, pending, partial, complete, error.
+  - name: deviceRegistrationId
+    type: String
+    description: Device Registration ID for successfully added device reported by Device Directory Service(DDS).
+  - name: deviceErrorCode
+    type: Int32
+    description: Device error code reported by Device Directory Service(DDS).
+  - name: deviceErrorName
+    type: String
+    description: Device error name reported by Device Directory Service(DDS).
+relationships:
+  heading: Relationships
+  intro: |
+    None

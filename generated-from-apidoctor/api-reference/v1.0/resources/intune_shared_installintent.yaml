@@ -1,0 +1,17 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_shared_installintent.md
+top:
+  heading: installIntent enum type
+  intro: |
+    Possible values for the install intent chosen by the admin.
+enum:
+  heading: Members
+  table:
+  - member: available
+    description: Available install intent.
+  - member: required
+    description: Required install intent.
+  - member: uninstall
+    description: Uninstall install intent.
+  - member: availableWithoutEnrollment
+    description: Available without enrollment install intent.

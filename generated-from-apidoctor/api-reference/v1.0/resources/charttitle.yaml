@@ -1,0 +1,44 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/charttitle.md
+top:
+  heading: ChartTitle resource type
+  intro: |
+    Represents a chart title object of a chart.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "overlay": true,
+      "text": "string",
+      "visible": true
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: overlay
+    type: Boolean
+    description: Boolean value representing if the chart title will overlay the chart or not.
+  - name: text
+    type: String
+    description: Represents the title text of a chart.
+  - name: visible
+    type: Boolean
+    description: A boolean value the represents the visibility of a chart title object.
+relationships:
+  heading: Relationships
+  table:
+  - name: format
+    type: microsoft.graph.workbookChartTitleFormat
+    description: Represents the formatting of a chart title, which includes fill and font formatting. Read-only.
+methods:
+  heading: Methods
+  intro: |
+    |Method|Return Type|Description
+    |:-|:-|:-|
+    |[Get ChartTitle](../api/charttitle_get.md)|[WorkbookChartTitle](charttitle.md)|Read properties and relationships of chartTitle object.
+    |[Update](../api/charttitle_update.md)|[WorkbookChartTitle](charttitle.md)|Update ChartTitle object.

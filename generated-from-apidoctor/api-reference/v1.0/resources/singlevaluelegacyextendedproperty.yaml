@@ -1,0 +1,40 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/singlevaluelegacyextendedproperty.md
+top:
+  heading: singleValueLegacyExtendedProperty resource type
+  intro: |
+    An extended property that contains a single value. 
+    See [Extended properties overview](../resources/extended-properties-overview.md) for more information about when to use 
+    open extensions or extended properties, and how to specify extended properties. 
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "id": "string (identifier)",
+      "value": "string"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: id
+    type: String
+    description: The property ID used to identify the property. Read-only.
+  - name: value
+    type: String
+    description: A property value.
+relationships:
+  heading: Relationships
+  intro: |
+    None
+methods:
+  heading: Methods
+  intro: |
+    |Method|Return Type|Description
+    |:-|:-|:-|
+    |[Post](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md)|A supported resource instance: [message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md), [calendar](../resources/calendar.md), [contact](../resources/contact.md), or [contactFolder](../resources/contactfolder.md), but not group [post](../resources/post.md).|Create a **singleValueLegacyExtendedProperty** in a new or existing instance of a supported resource.
+    |[Get](../api/singlevaluelegacyextendedproperty_get.md)|One or a collection of supported resource instance ([message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md), [calendar](../resources/calendar.md), [contact](../resources/contact.md), [contactFolder](../resources/contactfolder.md), or group [post](../resources/post.md)), or one such instance expanded with a [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) object.|Get a resource instance with an extended property using `$expand` or `$filter`.

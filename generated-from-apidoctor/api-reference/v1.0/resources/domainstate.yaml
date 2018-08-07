@@ -1,0 +1,31 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/domainstate.md
+top:
+  heading: domainState resource type
+  intro: |
+    Represents the status of asynchronous operations scheduled on a domain.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "lastActionDateTime": "String (timestamp)",
+      "operation": "String",
+      "status": "String"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: lastActionDateTime
+    type: DateTimeOffset
+    description: Timestamp for when the last activity occurred. The value is updated when an operation is scheduled, the asynchronous task starts, and when the operation completes.
+  - name: operation
+    type: String
+    description: Type of asynchronous operation. The values can be ForceDelete or Verification
+  - name: status
+    type: String
+    description: Current status of the operation.  Scheduled - Operation has been scheduled but has not started.  InProgress - Task has started and is in progress.  Failed - Operation has failed.

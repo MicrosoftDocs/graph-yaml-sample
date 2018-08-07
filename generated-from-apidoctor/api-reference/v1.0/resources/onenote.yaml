@@ -1,0 +1,66 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/onenote.md
+top:
+  heading: onenote resource type
+  intro: |
+    The entry point for OneNote resources.
+    All calls to the OneNote service through the Microsoft Graph API use this service root URL:
+    https://graph.microsoft.com/{version}/{location}/onenote/ 
+
+    The location can be user notebooks on Office 365 or consumer OneDrive, group notebooks or SharePoint site-hosted team notebooks on Office 365. 
+    **User notebooks** To access personal notebooks on consumer OneDrive or OneDrive for Business, use one of the following URLs:
+    https://graph.microsoft.com/{version}/me/onenote/{notebooks | sections | sectionGroups | pages} 
+    https://graph.microsoft.com/{version}/users/{userPrincipalName}/onenote/{notebooks | sections | sectionGroups | pages} 
+    https://graph.microsoft.com/{version}/users/{id}/onenote/{notebooks | sections | sectionGroups | pages} 
+
+    **Group notebooks** To access notebooks that are owned by a group, use the following service root URL:
+    https://graph.microsoft.com/{version}/groups/{id}/onenote/{notebooks | sections | sectionGroups | pages} 
+
+    **SharePoint site notebooks** To access notebooks that are owned by a SharePoint team site, use the following service root URL:
+    https://graph.microsoft.com/{version}/sites/{id}/onenote/{notebooks | sections | sectionGroups | pages} 
+
+  outro: |
+    ## Authorization
+    For information about the permissions required to work with OneNote APIs, see [Notes permissions](../../../concepts/permissions_reference.md#notes-permissions).
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+    }
+    ```
+    
+relationships:
+  heading: Relationships
+  table:
+  - name: notebooks
+    type: Collection(microsoft.graph.notebook)
+    description: The collection of OneNote notebooks that are owned by the user or group. Read-only. Nullable.
+  - name: operations
+    type: Collection(microsoft.graph.onenoteOperation)
+    description: The status of OneNote operations. Getting an operations collection is not supported, but you can get the status of long-running operations if the Operation-Location header is returned in the response. Read-only. Nullable.
+  - name: pages
+    type: Collection(microsoft.graph.onenotePage)
+    description: The pages in all OneNote notebooks that are owned by the user or group.  Read-only. Nullable.
+  - name: resources
+    type: Collection(microsoft.graph.onenoteResource)
+    description: The image and other file resources in OneNote pages. Getting a resources collection is not supported, but you can get the binary content of a specific resource. Read-only. Nullable.
+  - name: sectionGroups
+    type: Collection(microsoft.graph.sectionGroup)
+    description: The section groups in all OneNote notebooks that are owned by the user or group.  Read-only. Nullable.
+  - name: sections
+    type: Collection(microsoft.graph.onenoteSection)
+    description: The sections in all OneNote notebooks that are owned by the user or group.  Read-only. Nullable.
+methods:
+  heading: Methods
+  intro: |
+    |Method|Return Type|Description
+    |:-|:-|:-|
+    |[Create notebook](../api/onenote_post_notebooks.md)|[Notebook](notebook.md)|Create a notebook by posting to the notebooks collection.
+    |[List notebooks](../api/onenote_list_notebooks.md)|[Notebook](notebook.md) collection|Get a collection of notebooks.
+    |[Create page](../api/onenote_post_pages.md)|[Page](page.md)|Create a page by posting to the pages collection.
+    |[List pages](../api/onenote_list_pages.md)|[Page](page.md) collection|Get a collection of pages.
+    |[List section groups](../api/onenote_list_sectiongroups.md)|[SectionGroup](sectiongroup.md) collection|Get a collection of section groups.
+    |[List sections](../api/onenote_list_sections.md)|[OnenoteSection](section.md) collection|Get a collection of sections.

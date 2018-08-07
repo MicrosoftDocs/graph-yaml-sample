@@ -1,0 +1,80 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/sectiongroup.md
+top:
+  heading: sectionGroup resource type
+  intro: |
+    A section group in a OneNote notebook. Section groups can contain sections and section groups.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
+      "createdDateTime": "String (timestamp)",
+      "id": "string (identifier)",
+      "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
+      "lastModifiedDateTime": "String (timestamp)",
+      "displayName": "string",
+      "sectionGroupsUrl": "string",
+      "sectionsUrl": "string",
+      "self": "string"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: createdBy
+    type: microsoft.graph.identitySet
+    description: Identity of the user, device, and application which created the item. Read-only.
+  - name: createdDateTime
+    type: DateTimeOffset
+    description: The date and time when the section group was created. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Read-only.
+  - name: id
+    type: String
+    description: The unique identifier of the section group. Read-only.
+  - name: lastModifiedBy
+    type: microsoft.graph.identitySet
+    description: Identity of the user, device, and application which created the item. Read-only.
+  - name: lastModifiedDateTime
+    type: DateTimeOffset
+    description: The date and time when the section group was last modified. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Read-only.
+  - name: displayName
+    type: String
+    description: The name of the section group.
+  - name: sectionGroupsUrl
+    type: String
+    description: The URL for the sectionGroups navigation property, which returns all the section groups in the section group. Read-only.
+  - name: sectionsUrl
+    type: String
+    description: The URL for the sections navigation property, which returns all the sections in the section group. Read-only.
+  - name: self
+    type: String
+    description: The endpoint where you can get details about the section group. Read-only.
+relationships:
+  heading: Relationships
+  table:
+  - name: parentNotebook
+    type: microsoft.graph.notebook
+    description: The notebook that contains the section group. Read-only.
+  - name: parentSectionGroup
+    type: microsoft.graph.sectionGroup
+    description: The section group that contains the section group. Read-only.
+  - name: sectionGroups
+    type: Collection(microsoft.graph.sectionGroup)
+    description: The section groups in the section. Read-only. Nullable.
+  - name: sections
+    type: Collection(microsoft.graph.onenoteSection)
+    description: The sections in the section group. Read-only. Nullable.
+methods:
+  heading: Methods
+  intro: |
+    |Method|Return Type|Description
+    |:-|:-|:-|
+    |[Get section group](../api/sectiongroup_get.md)|[SectionGroup](sectiongroup.md)|Read the properties and relationships of the section group.
+    |[Create section group](../api/sectiongroup_post_sectiongroups.md)|[SectionGroup](sectiongroup.md)|Create a section group by posting to the sectionGroups collection in the specified section group.
+    |[List section groups](../api/sectiongroup_list_sectiongroups.md)|[SectionGroup](sectiongroup.md) collection|Get collection of section groups in the specified section group.
+    |[Create section](../api/sectiongroup_post_sections.md)|[OnenoteSection](section.md)|Create a section by posting to the sections collection in the specified section group.
+    |[List sections](../api/sectiongroup_list_sections.md)|[OnenoteSection](section.md) collection|Get a collection of sections in the specified section group.

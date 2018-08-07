@@ -1,0 +1,87 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_books_managedebook.md
+top:
+  heading: managedEBook resource type
+  intro: |
+    An abstract class containing the base properties for Managed eBook.
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.managedEBook",
+      "id": "String (identifier)",
+      "displayName": "String",
+      "description": "String",
+      "publisher": "String",
+      "publishedDateTime": "String (timestamp)",
+      "largeCover": {
+        "@odata.type": "microsoft.graph.mimeContent",
+        "type": "String",
+        "value": "binary"
+      },
+      "createdDateTime": "String (timestamp)",
+      "lastModifiedDateTime": "String (timestamp)",
+      "informationUrl": "String",
+      "privacyInformationUrl": "String"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: id
+    type: String
+    description: Key of the entity.
+  - name: displayName
+    type: String
+    description: Name of the eBook.
+  - name: description
+    type: String
+    description: Description.
+  - name: publisher
+    type: String
+    description: Publisher.
+  - name: publishedDateTime
+    type: DateTimeOffset
+    description: The date and time when the eBook was published.
+  - name: largeCover
+    type: microsoft.graph.mimeContent
+    description: Book cover.
+  - name: createdDateTime
+    type: DateTimeOffset
+    description: The date and time when the eBook file was created.
+  - name: lastModifiedDateTime
+    type: DateTimeOffset
+    description: The date and time when the eBook was last modified.
+  - name: informationUrl
+    type: String
+    description: The more information Url.
+  - name: privacyInformationUrl
+    type: String
+    description: The privacy statement Url.
+relationships:
+  heading: Relationships
+  table:
+  - name: assignments
+    type: Collection(microsoft.graph.managedEBookAssignment)
+    description: The list of assignments for this eBook.
+  - name: installSummary
+    type: microsoft.graph.eBookInstallSummary
+    description: Mobile App Install Summary.
+  - name: deviceStates
+    type: Collection(microsoft.graph.deviceInstallState)
+    description: The list of installation states for this eBook.
+  - name: userStateSummary
+    type: Collection(microsoft.graph.userInstallStateSummary)
+    description: The list of installation states for this eBook.
+methods:
+  heading: Methods
+  intro: |
+    |Method|Return Type|Description
+    |:-|:-|:-|
+    |[List managedEBooks](../api/intune_books_managedebook_list.md)|[managedEBook](../resources/intune_books_managedebook.md) collection|List properties and relationships of the [managedEBook](../resources/intune_books_managedebook.md) objects.
+    |[Get managedEBook](../api/intune_books_managedebook_get.md)|[managedEBook](../resources/intune_books_managedebook.md)|Read properties and relationships of the [managedEBook](../resources/intune_books_managedebook.md) object.
+    |[assign action](../api/intune_books_managedebook_assign.md)|None|Not yet documented

@@ -1,0 +1,32 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_apps_vpplicensingtype.md
+top:
+  heading: vppLicensingType resource type
+  intro: |
+    Contains properties for iOS Volume-Purchased Program (Vpp) Licensing Type.
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.vppLicensingType",
+      "supportsUserLicensing": true,
+      "supportsDeviceLicensing": true
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: supportsUserLicensing
+    type: Boolean
+    description: Whether the program supports the user licensing type.
+  - name: supportsDeviceLicensing
+    type: Boolean
+    description: Whether the program supports the device licensing type.
+relationships:
+  heading: Relationships
+  intro: |
+    None

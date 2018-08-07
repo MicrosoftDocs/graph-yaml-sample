@@ -1,0 +1,36 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/uploadsession.md
+top:
+  heading: UploadSession resource
+  intro: |
+    The **UploadSession** resource provides information about how to upload large files to OneDrive, OneDrive for Business, or SharePoint document libraries.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource
+  resourceDefinition: |
+    ```json
+    {
+      "uploadUrl": "https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF866337",
+      "expirationDateTime": "2015-01-29T09:21:55.523Z",
+      "nextExpectedRanges": ["0-"]
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: expirationDateTime
+    type: DateTimeOffset
+    description: The date and time in UTC that the upload session will expire. The complete file must be uploaded before this expiration time is reached.
+  - name: nextExpectedRanges
+    type: Collection(String)
+    description: A collection of byte ranges that the server is missing for the file. These ranges are zero indexed and of the format "start-end" (e.g. "0-26" to indicate the first 27 bytes of the file).
+  - name: uploadUrl
+    type: String
+    description: The URL endpoint that accepts PUT requests for byte ranges of the file.
+  outro: |
+    ## See also
+    
+    * [Upload large files with an upload session](../api/driveitem_createuploadsession.md)
+    

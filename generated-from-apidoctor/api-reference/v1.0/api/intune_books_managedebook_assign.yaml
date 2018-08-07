@@ -1,0 +1,69 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/intune_books_managedebook_assign.md
+top:
+  heading: assign action
+  intro: |
+    Not yet documented
+permissions:
+  heading: Prerequisites
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+httpRequest:
+  heading: HTTP Request
+  samplePaths: |
+    ```http
+    POST /deviceAppManagement/managedEBooks/{managedEBookId}/assign
+    ```
+    
+httpHeaders:
+  heading: Request headers
+  table:
+  - name: Authorization
+    type: String
+    description: 
+  - name: Accept
+    type: String
+    description: 
+Request body:
+  heading: Request body
+  intro: |
+    In the request body, supply JSON representation of the parameters.
+    The following table shows the parameters that can be used with this action.
+    |Property|Type|Description
+    |:-|:-|:-|
+    |managedEBookAssignments|[managedEBookAssignment](../resources/intune_books_managedebookassignment.md) collection|Not yet documented
+Response:
+  heading: Response
+  intro: |
+    If successful, this action returns a `204 No Content` response code.
+examples:
+  - Example:
+      heading: Example
+      - request:
+          heading: Request
+          intro: |
+            Here is an example of the request.
+            POST https://graph.microsoft.com/v1.0/deviceAppManagement/managedEBooks/{managedEBookId}/assign
+            
+            Content-type: application/json
+            Content-length: 318
+            
+            {
+              "managedEBookAssignments": [
+                {
+                  "@odata.type": "#microsoft.graph.managedEBookAssignment",
+                  "id": "ae8b0d27-0d27-ae8b-270d-8bae270d8bae",
+                  "target": {
+                    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+                  },
+                  "installIntent": "required"
+                }
+              ]
+            }
+
+      - response:
+          heading: Response
+          intro: |
+            Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+            HTTP/1.1 204 No Content
+

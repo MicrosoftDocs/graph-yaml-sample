@@ -1,0 +1,95 @@
+### YamlMime:GraphOperation
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/onenote_list_sectiongroups.md
+top:
+  heading: List sectionGroups
+  intro: |
+    Retrieve a list of [sectionGroup](../resources/sectiongroup.md) objects.
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+  table:
+  - type: Delegated (work or school account)
+    scopes: Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All
+  - type: Delegated (personal Microsoft account)
+    scopes: Notes.Create, Notes.Read, Notes.ReadWrite
+  - type: Application
+    scopes: Notes.Read.All, Notes.ReadWrite.All
+httpRequest:
+  heading: HTTP request
+  samplePaths: |
+    ```http
+    GET /me/onenote/sectionGroups
+    GET /users/{id | userPrincipalName}/onenote/sectionGroups
+    GET /groups/{id}/onenote/sectionGroups
+    GET /sites/{id}/onenote/sectionGroups
+    ```
+    
+queryParameters:
+  heading: Optional query parameters
+  intro: |
+    This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+    The default sort order is `name asc`.
+    The default query expands `parentNotebook` and selects its `id`, `displayName`, and `self` properties. Valid `expand` values for section groups are `sections`, `sectionGroups`, `parentNotebook`, and `parentSectionGroup`.
+httpHeaders:
+  heading: Request headers
+  table:
+  - name: Authorization
+    type: String
+    description: Bearer {token}. Required.
+  - name: Accept
+    type: String
+    description: application/json
+Request body:
+  heading: Request body
+  intro: |
+    Do not supply a request body for this method.
+Response:
+  heading: Response
+  intro: |
+    If successful, this method returns a `200 OK` response code and collection of [sectionGroup](../resources/sectiongroup.md) objects in the response body.
+examples:
+  - Example:
+      heading: Example
+      - request:
+          heading: Request
+          intro: |
+            Here is an example of the request.
+          exampleRequest: |
+            ```http
+            GET https://graph.microsoft.com/v1.0/me/onenote/sectionGroups
+            ```
+            
+      - response:
+          heading: Response
+          intro: |
+            Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.
+          exampleResponse: |
+            ```http
+            HTTP/1.1 200 OK
+            Content-type: application/json
+            Content-length: 378
+            
+            {
+              "value": [
+                {
+                  "sectionsUrl": "sectionsUrl-value",
+                  "sectionGroupsUrl": "sectionGroupsUrl-value",
+                  "displayName": "name-value",      
+                  "createdBy": {
+                    "user": {
+                      "id": "id-value",
+                      "displayName": "displayName-value"
+                    }
+                  },
+                  "lastModifiedBy": {
+                    "user": {
+                      "id": "id-value",
+                      "displayName": "displayName-value"
+                    }
+                  }
+                }
+              ]
+            }
+            ```
+            

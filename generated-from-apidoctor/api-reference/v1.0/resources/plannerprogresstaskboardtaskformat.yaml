@@ -1,0 +1,38 @@
+### YamlMime:GraphResource
+source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/plannerprogresstaskboardtaskformat.md
+top:
+  heading: plannerProgressTaskBoardTaskFormat resource type
+  intro: |
+    The **plannerProgressTaskBoardTaskFormat** resource represents the information used to render a task correctly in the Progress view of the Task Board (a view organized by the state of the PercentComplete field on the task object, with columns for Not Started, In Progress and Complete). Each [task](plannertask.md) will have one **plannerProgressTaskBoardTaskFormat** object associated with it.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  resourceDefinition: |
+    ```json
+    {
+      "id": "String (identifier)",
+      "orderHint": "String"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  table:
+  - name: id
+    type: String
+    description: Read-only. ID of the resource. It is 28 characters long and case-sensitive. Format validation is done on the service.
+  - name: orderHint
+    type: String
+    description: Hint value used to order the task on the Progress view of the Task Board. The format is defined as outlined here.
+relationships:
+  heading: Relationships
+  intro: |
+    None
+methods:
+  heading: Methods
+  intro: |
+    |Method|Return Type|Description
+    |:-|:-|:-|
+    |[Get plannerProgressTaskBoardTaskFormat](../api/plannerprogresstaskboardtaskformat_get.md)|[plannerProgressTaskBoardTaskFormat](plannerprogresstaskboardtaskformat.md)|Read properties and relationships of **plannerProgressTaskBoardTaskFormat** object.
+    |[Update](../api/plannerprogresstaskboardtaskformat_update.md)|[plannerProgressTaskBoardTaskFormat](plannerprogresstaskboardtaskformat.md)|Update **plannerProgressTaskBoardTaskFormat** object.
