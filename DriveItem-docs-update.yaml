@@ -6,24 +6,24 @@ summary: |
     The **driveItem** resource represents a file, folder, or other item stored in a drive.
     All file system objects in OneDrive and SharePoint are returned as **driveItem** resources.
     There are two primary ways of addressing a **driveItem** resource:
-    
+
     * By the **driveItem** unique identifier using `drive/items/{item-id}`
     * By file system path using `/drive/root:/path/to/file`
-    
+
     **DriveItem** resources have facets modeled as properties that provide data about the driveItem's identities and capabilities.
     For example:
-    
+
     * Folders have a [**folder facet**][folder]
     * Files have a [**file facet**][file].
     * Images have an [**image facet**][image] in addition to their file facet.
     * Images taken with a camera (photos) have a [**photo facet**][photo] that identifies the item as a photo and provides the properties of when the photo was taken and with what device.
-    
+
     Items with the **folder** facet act as containers of items and therefore have a `children` reference pointing to a collection of **driveItems** under the folder.
 JSON representation:
   intro: |
     Here is a JSON representation of a **driveItem** resource.
     The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits properties from that resource.
-    
+
     ```json
     {
       "audio": { "@odata.type": "microsoft.graph.audio" },
@@ -48,7 +48,7 @@ JSON representation:
       "specialFolder": { "@odata.type": "microsoft.graph.specialFolder" },
       "video": { "@odata.type": "microsoft.graph.video" },
       "webDavUrl": "string",
-    
+
       /* relationships */
       "children": [{ "@odata.type": "microsoft.graph.driveItem" }],
       "createdByUser": { "@odata.type": "microsoft.graph.user" },
@@ -56,7 +56,7 @@ JSON representation:
       "permissions": [ {"@odata.type": "microsoft.graph.permission"} ],
       "thumbnails": [ {"@odata.type": "microsoft.graph.thumbnailSet"}],
       "versions": [ {"@odata.type": "microsoft.graph.driveItemVersion"}],
-    
+
       /* inherited from baseItem */
       "id": "string (identifier)",
       "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
@@ -67,7 +67,7 @@ JSON representation:
       "name": "string",
       "parentReference": {"@odata.type": "microsoft.graph.itemReference"},
       "webUrl": "string",
-    
+
       /* instance annotations */
       "@microsoft.graph.conflictBehavior": "string",
       "@microsoft.graph.downloadUrl": "url",
@@ -196,42 +196,42 @@ relationships:
     description: For files that are Excel spreadsheets, accesses the workbook API to work with the spreadsheet's contents. Nullable.
 methods:
   table:
-  - method: [Get item](../api/driveitem_get.md)
-    path: `GET /drive/items/{item-id}`
-  - method: [List children](../api/driveitem_list_children.md) 
-    path: `GET /drive/items/{item-id}/children`
-  - method: [List versions](../api/driveitem_list_versions.md)
-    path: `GET /drive/items/{item-id}/versions`
-  - method: [Create item](../api/driveitem_post_children.md) 
-    path: `POST /drive/items/{item-id}/children`
-  - method: [Update item](../api/driveitem_update.md)
-    path: `PATCH /drive/items/{item-id}`
-  - method: [Upload content](../api/driveitem_put_content.md) 
-    path: `PUT /drive/items/{item-id}/content`
-  - method: [Download content](../api/driveitem_get_content.md)
-    path: `GET /drive/items/{item-id}/content`
-  - method: [Download specific file format][download-format]
-    path: `GET /drive/items/{item-id}/content?format={format}`
-  - method: [Delete item](../api/driveitem_delete.md) 
-    path: `DELETE /drive/items/{item-id}`
-  - method: [Move item](../api/driveitem_move.md)
-    path: `PATCH /drive/items/{item-id}`
-  - method: [Copy item](../api/driveitem_copy.md) 
-    path: `POST /drive/items/{item-id}/copy`
-  - method: [Search items](../api/driveitem_search.md)
-    path: `GET /drive/items/{item-id}/search(q='text')`
-  - method: [List changes in a drive](../api/driveitem_delta.md)
-    path: `GET /drive/root/delta`
-  - method: [List thumbnails](../api/driveitem_list_thumbnails.md)
-    path: `GET /drive/items/{item-id}/thumbnails`
-  - method: [Create sharing link](../api/driveitem_createlink.md)
-    path: `POST /drive/items/{item-id}/createLink`
-  - method: [Add permissions](../api/driveitem_invite.md)  
-    path: `POST /drive/items/{item-id}/invite`
-  - method: [List permissions](../api/driveitem_list_permissions.md)
-    path: `GET /drive/items/{item-id}/permissions`
-  - method: [Delete permission](../api/permission_delete.md) 
-    path: `DELETE /drive/items/{item-id}/permissions/{perm-id}`
+  - method: "[Get item](../api/driveitem_get.md)"
+    path: "`GET /drive/items/{item-id}`"
+  - method: "[List children](../api/driveitem_list_children.md)"
+    path: "`GET /drive/items/{item-id}/children`"
+  - method: "[List versions](../api/driveitem_list_versions.md)"
+    path: "`GET /drive/items/{item-id}/versions`"
+  - method: "[Create item](../api/driveitem_post_children.md)"
+    path: "`POST /drive/items/{item-id}/children`"
+  - method: "[Update item](../api/driveitem_update.md)"
+    path: "`PATCH /drive/items/{item-id}`"
+  - method: "[Upload content](../api/driveitem_put_content.md)"
+    path: "`PUT /drive/items/{item-id}/content`"
+  - method: "[Download content](../api/driveitem_get_content.md)"
+    path: "`GET /drive/items/{item-id}/content`"
+  - method: "[Download specific file format][download-format]"
+    path: "`GET /drive/items/{item-id}/content?format={format}`"
+  - method: "[Delete item](../api/driveitem_delete.md)"
+    path: "`DELETE /drive/items/{item-id}`"
+  - method: "[Move item](../api/driveitem_move.md)"
+    path: "`PATCH /drive/items/{item-id}`"
+  - method: "[Copy item](../api/driveitem_copy.md)"
+    path: "`POST /drive/items/{item-id}/copy`"
+  - method: "[Search items](../api/driveitem_search.md)"
+    path: "`GET /drive/items/{item-id}/search(q='text')`"
+  - method: "[List changes in a drive](../api/driveitem_delta.md)"
+    path: "`GET /drive/root/delta`"
+  - method: "[List thumbnails](../api/driveitem_list_thumbnails.md)"
+    path: "`GET /drive/items/{item-id}/thumbnails`"
+  - method: "[Create sharing link](../api/driveitem_createlink.md)"
+    path: "`POST /drive/items/{item-id}/createLink`"
+  - method: "[Add permissions](../api/driveitem_invite.md)"
+    path: "`POST /drive/items/{item-id}/invite`"
+  - method: "[List permissions](../api/driveitem_list_permissions.md)"
+    path: "`GET /drive/items/{item-id}/permissions`"
+  - method: "[Delete permission](../api/permission_delete.md)"
+    path: "`DELETE /drive/items/{item-id}/permissions/{perm-id}`"
 remarks:
   intro: |
     In OneDrive for Business or SharePoint document libraries, the **cTag** property is not returned, if the **driveItem** has a [folder][] facet.
