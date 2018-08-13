@@ -28,7 +28,7 @@
         {
             "path_to_root": "_themes",
             "url": "https://github.com/killa1218/templates.docs.msft",
-            "branch": "graph",
+            "branch": "master",
             "branch_mapping": {}
         }
     ],
