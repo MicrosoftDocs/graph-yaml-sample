@@ -27,8 +27,8 @@
     "dependent_repositories": [
         {
             "path_to_root": "_themes",
-            "url": "https://github.com/killa1218/templates.docs.msft",
-            "branch": "master",
+            "url": "https://github.com/Microsoft/templates.docs.msft",
+            "branch": "graph-happy-path-demo",
             "branch_mapping": {}
         }
     ],
