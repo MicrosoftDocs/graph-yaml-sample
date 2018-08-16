@@ -1,0 +1,61 @@
+### YamlMime:GraphResource
+source_url: URL of current doc page.
+top: summary
+  heading:
+  intro:
+  outro:
+metadata: Metadata
+  heading:
+  intro:
+  outro:
+  title:
+  author:
+  ms.author:
+  ms.date:
+methods:
+  heading:
+  intro:
+  outro:
+properties:
+  heading:
+  intro:
+  outro:
+  table:
+  - name: type
+    type: Int32
+    description: For internal use only
+enum:
+  heading:
+  intro:
+  outro:
+  table:
+  - member: type
+    description: For internal use only
+relationships:
+  heading:
+  intro:
+  outro:
+  table:
+  - name: type
+    type: Int32
+    description: For internal use only
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource
+  outro:
+  resourceDefinition: |
+    ```json
+    {
+      "assignedDateTime": "String (timestamp)",
+      "capabilityStatus": "string",
+      "service": "string",
+      "servicePlanId": "guid"
+    }
+    ```
+remarks:
+  heading: Remarks
+  intro: |
+    In OneDrive for Business, this resource is returned on items that are expected to be images based on file extension.
+    For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
+  outro:
