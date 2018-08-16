@@ -1,0 +1,84 @@
+### YamlMime:GraphOperation
+metadata:
+  content_git_url:
+  author:
+  ms.author:
+  ms.date:
+uid:                        # Should be used for x-reference
+name:                       # Title of this page.
+summary:                    # Content bolck under title.
+  intro:                    # Actual content of summary.
+  outro:                    # In case there are some undefined blocks following summary, they are put here
+permissions:                # Permissions should be a content with a description and a table.
+  intro:                    # Description.
+  list:                     # Detailed permission information shown as a table.
+  - resource:
+    permission:
+  outro:                    # The same as `outro` of `summary`.
+httpRequest:                # HTTP request
+  intro:                    # Introduction, might be empty.
+  samples:
+  - description:
+    sampleCode: |
+      ``` http
+      GET /me/events/{id}/attachments/{id}
+      GET /users/{id | userPrincipalName}/events/{id}/attachments/{id}
+
+      GET /me/calendar/{id}/events/{id}/attachments/{id}
+      GET /users/{id | userPrincipalName}/calendar/events/{id}/attachments/{id}
+      ```
+  outro:
+parameters:                 # Parameters
+  intro:
+  list:
+  - prameter:
+    type:
+    description:
+  outro:
+queryParameters:            # Query parameters
+  intro:
+  list:
+  - name:
+    value:
+    description:
+    isOptional:             # Boolean value
+  outro:
+requestHeaders:             # Request headers
+  intro:
+  list:
+  - name:
+    value:
+    description:
+    isOptional:             # Boolean value
+  outro:
+requestBody:                # Request body
+  intro:
+  list:
+  - property:
+    type:
+    description:
+  outro:
+response:                   # Response
+  intro:
+  outro:
+examples:                   # Example. Array because multiple example bolcks will be given
+- title:                    # What this example is about
+  intro:                    # Introduction of this example
+  items:                    # Array because more than one pair of request/response will be given.
+  - request:
+      intro:
+      sampleCode: |         # Code for request example
+        ```http
+        DELETE https://graph.microsoft.com/v1.0/me/calendar
+        ```
+      outro:
+    response:
+      intro:
+      sampleCode: |         # Code for response example
+        ```http
+        HTTP/1.1 204 No Content
+        ```
+      outro:
+  outro:
+
+# TBD with partner: only support simple table. Our proposal is do not use categries.
