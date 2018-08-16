@@ -1,0 +1,18 @@
+### YamlMime:GraphEnum
+metadata:
+  content_git_url:
+  author:
+  ms.author:
+  ms.date:
+uid:                # Needed for x-ref
+name:               # Title of this page.
+summary:            # Content bolck under title, may contain table.
+  intro:
+  outro:            # In case there are some undefined blocks following summary, they are put here
+members:            # Members
+  intro:
+  list:
+  - member:
+    value:
+    description:
+  outro:

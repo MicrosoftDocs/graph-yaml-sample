@@ -1,0 +1,52 @@
+### YamlMime:GraphResource
+metadata:
+  content_git_url:
+  author:
+  ms.author:
+  ms.date:
+uid:                # Needed for x-ref
+name:               # Title of this page.
+summary:            # Content bolck under title, may contain table.
+  intro:
+  outro:            # In case there are some undefined blocks following summary, they are put here
+methods:            # Methods
+  intro:
+  list:
+  - method:
+    type:
+    description:
+  outro:
+properties:         # Properties
+  intro:
+  list:
+  - property:
+    type:
+    description:
+  outro:
+relationships:      # Relationships
+  intro:
+  list:
+  - relationship:
+    type:
+    description:
+  outro:
+resource:           # JSON Representation
+  intro:
+  sampleCode: |
+    ```json
+    {
+      "assignedDateTime": "String (timestamp)",
+      "capabilityStatus": "string",
+      "service": "string",
+      "servicePlanId": "guid"
+    }
+    ```
+  outro:
+remarks:            # Remarks
+  intro:
+  outro:
+seeAlso:            # See Also
+  items:
+  - text:
+    href:
+  outro:
