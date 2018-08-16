@@ -4,7 +4,7 @@
       {
         "files": [
           "**/*.md",
-          "**/*.yml",
+          "design/samples/*.yml",
           "DriveItem-docs-update.yaml"
         ],
         "exclude": [
