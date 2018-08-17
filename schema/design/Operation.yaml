@@ -60,6 +60,8 @@ requestBody:                # Request body
   outro:
 response:                   # Response
   intro:
+  responseCode:             # Few cases but I think should be supported on our side.
+  responseBody:             # Few cases but I think should be supported on our side.
   outro:
 examples:                   # Example. Array because multiple example bolcks will be given
 - title:                    # What this example is about
