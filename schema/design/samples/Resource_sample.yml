@@ -14,43 +14,42 @@ summary:
     - Outlook doesn't support reminders for group events. You can [snooze](../api/event_snoozereminder.md) or [dismiss](../api/event_dismissreminder.md) a [reminder](reminder.md) for user calendars only.
 methods:
   list:
-  - method: [List calendars](../api/user_list_calendars.md)
-    type: [calendar](calendar.md) collection
+  - method: "[List calendars](../api/user_list_calendars.md)"
+    type: "[calendar](calendar.md) collection"
     description: Get all the user's calendars, or the calendars in the default or other specific calendar group.
-  - method: [Create calendar](../api/user_post_calendars.md)
-    type: [calendar](calendar.md)
+  - method: "[Create calendar](../api/user_post_calendars.md)"
+    type: "[calendar](calendar.md)"
     description: Create a new calendar in the default calendar group or specified calendar group for a user.
-  - method: [Get calendar](../api/calendar_get.md)
-    type: [calendar](calendar.md)
+  - method: "[Get calendar](../api/calendar_get.md)"
+    type: "[calendar](calendar.md)"
     description: Get the properties and relationships of a **calendar** object. The calendar can be one for a user, or the default calendar of an Office 365 group.
-  - method: [Update](../api/calendar_update.md)
-    type: [calendar](calendar.md)
-    description:Update the properties of a **calendar** object. The calendar can be one for a user, or the default calendar of an Office 365 group.
-  - method: [Delete](../api/calendar_delete.md)
+  - method: "[Update](../api/calendar_update.md)"
+    type: "[calendar](calendar.md)"
+    description: Update the properties of a **calendar** object. The calendar can be one for a user, or the default calendar of an Office 365 group.
+  - method: "[Delete](../api/calendar_delete.md)"
     type: None
     description: Delete calendar object.
-  - method: [List calendarView](../api/calendar_list_calendarview.md)
-    type: [event](event.md) collection
+  - method: "[List calendarView](../api/calendar_list_calendarview.md)"
+    type: "[event](event.md) collection"
     description: Get the occurrences, exceptions, and single instances of events in a calendar view defined by a time range, from the user's primary calendar `(../me/calendarview)` or from a specified calendar.
-  - method: [List events](../api/calendar_list_events.md)
-    type: [event](event.md) collection
+  - method: "[List events](../api/calendar_list_events.md)"
+    type: "[event](event.md) collection"
     description: Retrieve a list of events in a calendar.  The list contains single instance meetings and series masters.
-  - method: [Create Event](../api/calendar_post_events.md)
-    type: [event](event.md)
+  - method: "[Create Event](../api/calendar_post_events.md)"
+    type: "[event](event.md)"
     description: Create a new Event in the default or specified calendar.
-  - method: [Create single-value extended property](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md)
-    type: [calendar](calendar.md)
+  - method: "[Create single-value extended property](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md)"
+    type: "[calendar](calendar.md)"
     description: Create one or more single-value extended properties in a new or existing calendar.
-  - method: [Get calendar with single-value extended property](../api/singlevaluelegacyextendedproperty_get.md)
-    type: [calendar](calendar.md)
+  - method: "[Get calendar with single-value extended property](../api/singlevaluelegacyextendedproperty_get.md)"
+    type: "[calendar](calendar.md)"
     description: Get calendars that contain a single-value extended property by using `$expand` or `$filter`.
-  - method: [Create multi-value extended property](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md)
-    type: [calendar](calendar.md)
+  - method: "[Create multi-value extended property](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md)"
+    type: "[calendar](calendar.md)"
     description: Create one or more multi-value extended properties in a new or existing calendar.
-  - method: [Get calendar with multi-value extended property](../api/multivaluelegacyextendedproperty_get.md)
-    type: [calendar](calendar.md)
+  - method: "[Get calendar with multi-value extended property](../api/multivaluelegacyextendedproperty_get.md)"
+    type: "[calendar](calendar.md)"
     description: Get a calendar that contains a multi-value extended property by using `$expand`.
-  outro:
 properties:
   list:
   - property: canEdit
@@ -67,7 +66,7 @@ properties:
     description: Identifies the version of the calendar object. Every time the calendar is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
   - property: color
     type: String
-    description: Specifies the color theme to distinguish the calendar from other calendars in a UI. The property values are: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1
+    description: "Specifies the color theme to distinguish the calendar from other calendars in a UI. The property values are: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1"
   - property: id
     type: String
     description: The group's unique identifier. Read-only.
@@ -75,22 +74,21 @@ properties:
     type: String
     description: The calendar name.
   - property: owner
-    type: [emailAddress](emailaddress.md)
-    description:  If set, this represents the user who created or added the calendar. For a calendar that the user created or added, the **owner** property is set to the user. For a calendar shared with the user, the **owner** property is set to the person who shared that calendar with the user.
-  outro:
+    type: "[emailAddress](emailaddress.md)"
+    description: If set, this represents the user who created or added the calendar. For a calendar that the user created or added, the **owner** property is set to the user. For a calendar shared with the user, the **owner** property is set to the person who shared that calendar with the user.
 relationships:
   list:
   - relationship: calendarView
-    type: [Event](event.md) collection
+    type: "[Event](event.md) collection"
     description: The calendar view for the calendar. Navigation property. Read-only.
   - relationship: events
-    type: [Event](event.md) collection
+    type: "[Event](event.md) collection"
     description: The events in the calendar. Navigation property. Read-only.
   - relationship: multiValueExtendedProperties
-    type: [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection
+    type: "[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection"
     description: The collection of multi-value extended properties defined for the calendar. Read-only. Nullable.
   - relationship: singleValueExtendedProperties
-    type: [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection
+    type: "[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection"
     description: The collection of single-value extended properties defined for the calendar. Read-only. Nullable.
 resource:
   intro: Here is a JSON representation of the resource

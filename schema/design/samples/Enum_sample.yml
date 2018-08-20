@@ -9,20 +9,19 @@ summary:
 
     Possible values for monitoring file activity.
 members:
-  intro:
   list:
-  - mamber: userDefined
+  - member: userDefined
     value: 0
     description: User Defined, default value, no intent.
-  - mamber: disable
+  - member: disable
     value: 1
     description: Disable monitoring file activity.
-  - mamber: monitorAllFiles
+  - member: monitorAllFiles
     value: 2
     description: Monitor all files.
-  - mamber: monitorIncomingFilesOnly
+  - member: monitorIncomingFilesOnly
     value: 3
     description:  Monitor incoming files only.
-  - mamber: monitorOutgoingFilesOnly
+  - member: monitorOutgoingFilesOnly
     value: 4
     description: Monitor outgoing files only.
