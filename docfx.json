@@ -5,7 +5,8 @@
         "files": [
           "**/*.md",
           "**/Operation_sample.yml",
-          "DriveItem-docs-update.yaml"
+          "**/Resource_sample.yml",
+          "**/Enum_sample.yml"
         ],
         "exclude": [
           "**/obj/**",
