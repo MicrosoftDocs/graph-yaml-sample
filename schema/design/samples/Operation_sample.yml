@@ -22,7 +22,7 @@ permissions:
 httpRequest:
   samples:
   - sampleCode: |
-      ```http
+      ``` http
       PATCH /drives/{drive-id}/items/{item-id}
       PATCH /groups/{group-id}/drive/items/{item-id}
       PATCH /me/drive/items/{item-id}
@@ -32,7 +32,7 @@ httpRequest:
 # parameters:
 #   intro:
 #   list:
-#   - prameter:
+#   - parameter:
 #     type:
 #     description:
 #   outro:
@@ -45,7 +45,6 @@ httpRequest:
 #     isOptional:
 #   outro:
 requestHeaders:
-  intro:
   list:
   - name: if-match
     value: String
@@ -60,9 +59,7 @@ requestBody:
 response:
   intro: If successful, this method returns a `200 OK` response code and updated [DriveItem](../resources/driveitem.md) resource in the response body.
 examples:
-- title:
-  intro:
-  items:
+- items:
   - request:
       intro: This example renames the DriveItem resource to "new-file-name.docx".
       sampleCode: |
