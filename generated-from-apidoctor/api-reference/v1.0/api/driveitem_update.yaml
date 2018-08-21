@@ -42,7 +42,7 @@ requestBody:
     Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.
     For best performance your app should not include properties that haven't changed.
 response:
-  intro: If successful, this method returns a `200 OK` response code and updated [DriveItem](../resources/driveitem.md) resource in the response body.
+  responseCode: If successful, this method returns a `200 OK` response code and updated [DriveItem](../resources/driveitem.md) resource in the response body.
 examples:
 - items:
   - request:
