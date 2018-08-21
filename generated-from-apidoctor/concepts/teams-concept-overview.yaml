@@ -1,9 +1,0 @@
-### YamlMime:GraphOperation
-source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/teams-concept-overview.md
-top:
-  heading: Microsoft Teams teamwork API overview
-  intro: |
-    Microsoft Teams is the ultimate hub for teamwork and intelligent communications. Built on the strength and scale of Office 365 with over 120 million users, Microsoft Teams delivers chat-based collaboration, meetings, calling, and enterprise voice features.
-  outro: |
-    ## Why integrate with Microsoft Teams?
-    Integrating with Microsoft Teams makes it easy for you to build your own services and apps, reaching millions of enterprise users and helping people get work done together. You can use Microsoft Graph to create and manage teams, channels, messages, and more.

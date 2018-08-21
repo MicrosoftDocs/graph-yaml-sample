@@ -1,8 +1,0 @@
-### YamlMime:GraphOperation
-source_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/known_issues.md
-top:
-  heading: Known issues with Microsoft Graph
-  intro: |
-    This article describes known issues with Microsoft Graph. For information about the latest updates, see the [Microsoft Graph changelog](changelog.md).
-  outro: |
-    ## Users
