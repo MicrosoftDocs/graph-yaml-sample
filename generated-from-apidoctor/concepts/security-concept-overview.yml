@@ -3,7 +3,7 @@ uid: graph.security-concept-overview
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/security-concept-overview.md
 summary:
-  heading: Overview of security in Microsoft Graph (preview)
+  heading: "Overview of security in Microsoft Graph (preview)"
   intro: |
     You can use Microsoft Graph to connect with Intelligent Security Graph to take advantage of Microsoft and security partner resources, and build better threat response solutions. Microsoft Graph also provides access to user and account risks detected by the Identity Protection service in Azure Active Directory (Azure AD), enabling you to integrate account risk data into your security applications.
   outro: |

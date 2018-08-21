@@ -3,25 +3,25 @@ uid: graph.intune_deviceconfig_ratingirelandmoviestype
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_ratingirelandmoviestype.md
 summary:
-  heading: ratingIrelandMoviesType enum type
+  heading: "ratingIrelandMoviesType enum type"
   intro: |
     Movies rating labels in Ireland
 enum:
-  heading: Members
+  heading: "Members"
   table:
-  - member: allAllowed
-    description: Default value, allow all movies content
-  - member: allBlocked
-    description: Do not allow any movies content
-  - member: general
-    description: Suitable for children of school going age
-  - member: parentalGuidance
-    description: The PG classification advises parental guidance
-  - member: agesAbove12
-    description: The 12A classification is suitable for viewers of 12 or older
-  - member: agesAbove15
-    description: The 15A classification is suitable for viewers of 15 or older
-  - member: agesAbove16
-    description: The 16 classification is suitable for viewers of 16 or older
-  - member: adults
-    description: The 18 classification, suitable only for adults
+  - member: "allAllowed"
+    description: "Default value, allow all movies content"
+  - member: "allBlocked"
+    description: "Do not allow any movies content"
+  - member: "general"
+    description: "Suitable for children of school going age"
+  - member: "parentalGuidance"
+    description: "The PG classification advises parental guidance"
+  - member: "agesAbove12"
+    description: "The 12A classification is suitable for viewers of 12 or older"
+  - member: "agesAbove15"
+    description: "The 15A classification is suitable for viewers of 15 or older"
+  - member: "agesAbove16"
+    description: "The 16 classification is suitable for viewers of 16 or older"
+  - member: "adults"
+    description: "The 18 classification, suitable only for adults"

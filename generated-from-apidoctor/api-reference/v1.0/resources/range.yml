@@ -3,89 +3,89 @@ uid: graph.range
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.range
 summary:
-  heading: Range resource type
+  heading: "Range resource type"
   intro: |
     Range represents a set of one or more contiguous cells such as a cell, a row, a column, block of cells, etc.
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [Get Range](xref:graph.range_get)
-    type: [Range](xref:graph.range)
-    description: Read properties and relationships of range object.
-  - method: [Update](xref:graph.range_update)
-    type: [Range](xref:graph.range)
-    description: Update Range object.
-  - method: [Boundingrect](xref:graph.range_boundingrect)
-    type: [Range](xref:graph.range)
-    description: Gets the smallest range object that encompasses the given ranges. For example, the GetBoundingRect of "B2:C5" and "D10:E15" is "B2:E16".
-  - method: [Cell](xref:graph.range_cell)
-    type: [Range](xref:graph.range)
-    description: Gets the range object containing the single cell based on row and column numbers. The cell can be outside the bounds of its parent range, so long as it's stays within the worksheet grid. The returned cell is located relative to the top left cell of the range.
-  - method: [Column](xref:graph.range_column)
-    type: [Range](xref:graph.range)
-    description: Gets a column contained in the range.
-  - method: [Columnsafter](xref:graph.workbookrange_columnsafter)
-    type: [workbookRangeView](xref:graph.workbookrangeview)
-    description: Gets a certain number of columns to the right of the given range.
-  - method: [Columnsbefore](xref:graph.workbookrange_columnsbefore)
-    type: [workbookRangeView](xref:graph.workbookrangeview)
-    description: Gets a certain number of columns to the left of the given range.
-  - method: [Entirecolumn](xref:graph.range_entirecolumn)
-    type: [Range](xref:graph.range)
-    description: Gets an object that represents the entire column of the range.
-  - method: [Entirerow](xref:graph.range_entirerow)
-    type: [Range](xref:graph.range)
-    description: Gets an object that represents the entire row of the range.
-  - method: [Intersection](xref:graph.range_intersection)
-    type: [Range](xref:graph.range)
-    description: Gets the range object that represents the rectangular intersection of the given ranges.
-  - method: [Lastcell](xref:graph.range_lastcell)
-    type: [Range](xref:graph.range)
-    description: Gets the last cell within the range. For example, the last cell of "B2:D5" is "D5".
-  - method: [Lastcolumn](xref:graph.range_lastcolumn)
-    type: [Range](xref:graph.range)
-    description: Gets the last column within the range. For example, the last column of "B2:D5" is "D2:D5".
-  - method: [Lastrow](xref:graph.range_lastrow)
-    type: [Range](xref:graph.range)
-    description: Gets the last row within the range. For example, the last row of "B2:D5" is "B5:D5".
-  - method: [Offsetrange](xref:graph.range_offsetrange)
-    type: [Range](xref:graph.range)
-    description: Gets an object which represents a range that's offset from the specified range. The dimension of the returned range will match this range. If the resulting range is forced outside the bounds of the worksheet grid, an exception will be thrown.
-  - method: [Row](xref:graph.range_row)
-    type: [Range](xref:graph.range)
-    description: Gets a row contained in the range.
-  - method: [Rowsabove](xref:graph.workbookrange_rowsabove)
-    type: [workbookRangeView](xref:graph.workbookrangeview)
-    description: Gets a certain number of rows above a given range.
-  - method: [Rowsbelow](xref:graph.workbookrange_rowsbelow)
-    type: [workbookRangeView](xref:graph.workbookrangeview)
-    description: Gets a certain number of rows below a given range.
-  - method: [Usedrange](xref:graph.range_usedrange)
-    type: [Range](xref:graph.range)
-    description: Returns the used range of the given range object.
-  - method: [Clear](xref:graph.range_clear)
-    type: None
-    description: Clear range values, format, fill, border, etc.
-  - method: [Delete](xref:graph.range_delete)
-    type: None
-    description: Deletes the cells associated with the range.
-  - method: [Insert](xref:graph.range_insert)
-    type: [Range](xref:graph.range)
-    description: Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make space. Returns a new Range object at the now blank space.
-  - method: [Merge](xref:graph.range_merge)
-    type: None
-    description: Merge the range cells into one region in the worksheet.
-  - method: [Resizedrange](xref:graph.workbookrange_resizedrange)
-    type: [workbookRangeView](xref:graph.workbookrangeview)
-    description: Gets a range object similar to the current range object, but with its bottom-right corner expanded (or contracted) by some number of rows and columns.
-  - method: [Unmerge](xref:graph.range_unmerge)
-    type: None
-    description: Unmerge the range cells into separate cells.
-  - method: [Visibleview](xref:graph.workbookrange_visibleview)
-    type: [workbookRangeView](xref:graph.workbookrangeview)
-    description: Get the range visible from a filtered range.
+  - method: "[Get Range](xref:graph.range_get)"
+    type: "[Range](xref:graph.range)"
+    description: "Read properties and relationships of range object."
+  - method: "[Update](xref:graph.range_update)"
+    type: "[Range](xref:graph.range)"
+    description: "Update Range object."
+  - method: "[Boundingrect](xref:graph.range_boundingrect)"
+    type: "[Range](xref:graph.range)"
+    description: "Gets the smallest range object that encompasses the given ranges. For example, the GetBoundingRect of "B2:C5" and "D10:E15" is "B2:E16"."
+  - method: "[Cell](xref:graph.range_cell)"
+    type: "[Range](xref:graph.range)"
+    description: "Gets the range object containing the single cell based on row and column numbers. The cell can be outside the bounds of its parent range, so long as it's stays within the worksheet grid. The returned cell is located relative to the top left cell of the range."
+  - method: "[Column](xref:graph.range_column)"
+    type: "[Range](xref:graph.range)"
+    description: "Gets a column contained in the range."
+  - method: "[Columnsafter](xref:graph.workbookrange_columnsafter)"
+    type: "[workbookRangeView](xref:graph.workbookrangeview)"
+    description: "Gets a certain number of columns to the right of the given range."
+  - method: "[Columnsbefore](xref:graph.workbookrange_columnsbefore)"
+    type: "[workbookRangeView](xref:graph.workbookrangeview)"
+    description: "Gets a certain number of columns to the left of the given range."
+  - method: "[Entirecolumn](xref:graph.range_entirecolumn)"
+    type: "[Range](xref:graph.range)"
+    description: "Gets an object that represents the entire column of the range."
+  - method: "[Entirerow](xref:graph.range_entirerow)"
+    type: "[Range](xref:graph.range)"
+    description: "Gets an object that represents the entire row of the range."
+  - method: "[Intersection](xref:graph.range_intersection)"
+    type: "[Range](xref:graph.range)"
+    description: "Gets the range object that represents the rectangular intersection of the given ranges."
+  - method: "[Lastcell](xref:graph.range_lastcell)"
+    type: "[Range](xref:graph.range)"
+    description: "Gets the last cell within the range. For example, the last cell of "B2:D5" is "D5"."
+  - method: "[Lastcolumn](xref:graph.range_lastcolumn)"
+    type: "[Range](xref:graph.range)"
+    description: "Gets the last column within the range. For example, the last column of "B2:D5" is "D2:D5"."
+  - method: "[Lastrow](xref:graph.range_lastrow)"
+    type: "[Range](xref:graph.range)"
+    description: "Gets the last row within the range. For example, the last row of "B2:D5" is "B5:D5"."
+  - method: "[Offsetrange](xref:graph.range_offsetrange)"
+    type: "[Range](xref:graph.range)"
+    description: "Gets an object which represents a range that's offset from the specified range. The dimension of the returned range will match this range. If the resulting range is forced outside the bounds of the worksheet grid, an exception will be thrown."
+  - method: "[Row](xref:graph.range_row)"
+    type: "[Range](xref:graph.range)"
+    description: "Gets a row contained in the range."
+  - method: "[Rowsabove](xref:graph.workbookrange_rowsabove)"
+    type: "[workbookRangeView](xref:graph.workbookrangeview)"
+    description: "Gets a certain number of rows above a given range."
+  - method: "[Rowsbelow](xref:graph.workbookrange_rowsbelow)"
+    type: "[workbookRangeView](xref:graph.workbookrangeview)"
+    description: "Gets a certain number of rows below a given range."
+  - method: "[Usedrange](xref:graph.range_usedrange)"
+    type: "[Range](xref:graph.range)"
+    description: "Returns the used range of the given range object."
+  - method: "[Clear](xref:graph.range_clear)"
+    type: "None"
+    description: "Clear range values, format, fill, border, etc."
+  - method: "[Delete](xref:graph.range_delete)"
+    type: "None"
+    description: "Deletes the cells associated with the range."
+  - method: "[Insert](xref:graph.range_insert)"
+    type: "[Range](xref:graph.range)"
+    description: "Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make space. Returns a new Range object at the now blank space."
+  - method: "[Merge](xref:graph.range_merge)"
+    type: "None"
+    description: "Merge the range cells into one region in the worksheet."
+  - method: "[Resizedrange](xref:graph.workbookrange_resizedrange)"
+    type: "[workbookRangeView](xref:graph.workbookrangeview)"
+    description: "Gets a range object similar to the current range object, but with its bottom-right corner expanded (or contracted) by some number of rows and columns."
+  - method: "[Unmerge](xref:graph.range_unmerge)"
+    type: "None"
+    description: "Unmerge the range cells into separate cells."
+  - method: "[Visibleview](xref:graph.workbookrange_visibleview)"
+    type: "[workbookRangeView](xref:graph.workbookrangeview)"
+    description: "Get the range visible from a filtered range."
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -112,68 +112,68 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: address
-    type: String
-    description: Represents the range reference in A1-style. Address value will contain the Sheet reference (e.g. Sheet1!A1:B4). Read-only.
-  - property: addressLocal
-    type: String
-    description: Represents range reference for the specified range in the language of the user. Read-only.
-  - property: cellCount
-    type: Int32
-    description: Number of cells in the range. Read-only.
-  - property: columnCount
-    type: Int32
-    description: Represents the total number of columns in the range. Read-only.
-  - property: columnHidden
-    type: Boolean
-    description: Represents if all columns of the current range are hidden.
-  - property: columnIndex
-    type: Int32
-    description: Represents the column number of the first cell in the range. Zero-indexed. Read-only.
-  - property: formulas
-    type: microsoft.graph.Json
-    description: Represents the formula in A1-style notation.
-  - property: formulasLocal
-    type: microsoft.graph.Json
-    description: Represents the formula in A1-style notation, in the user's language and number-formatting locale.  For example, the English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German.
-  - property: formulasR1C1
-    type: microsoft.graph.Json
-    description: Represents the formula in R1C1-style notation.
-  - property: hidden
-    type: Boolean
-    description: Represents if all cells of the current range are hidden. Read-only.
-  - property: numberFormat
-    type: microsoft.graph.Json
-    description: Represents Excel's number format code for the given cell.
-  - property: rowCount
-    type: Int32
-    description: Returns the total number of rows in the range. Read-only.
-  - property: rowHidden
-    type: Boolean
-    description: Represents if all rows of the current range are hidden.
-  - property: rowIndex
-    type: Int32
-    description: Returns the row number of the first cell in the range. Zero-indexed. Read-only.
-  - property: text
-    type: microsoft.graph.Json
-    description: Text values of the specified range. The Text value will not depend on the cell width. The # sign substitution that happens in Excel UI will not affect the text value returned by the API. Read-only.
-  - property: valueTypes
-    type: microsoft.graph.Json
-    description: Represents the type of data of each cell. The possible values are: Unknown, Empty, String, Integer, Double, Boolean, Error. Read-only.
-  - property: values
-    type: microsoft.graph.Json
-    description: Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cell that contain an error will return the error string.
+  - property: "address"
+    type: "String"
+    description: "Represents the range reference in A1-style. Address value will contain the Sheet reference (e.g. Sheet1!A1:B4). Read-only."
+  - property: "addressLocal"
+    type: "String"
+    description: "Represents range reference for the specified range in the language of the user. Read-only."
+  - property: "cellCount"
+    type: "Int32"
+    description: "Number of cells in the range. Read-only."
+  - property: "columnCount"
+    type: "Int32"
+    description: "Represents the total number of columns in the range. Read-only."
+  - property: "columnHidden"
+    type: "Boolean"
+    description: "Represents if all columns of the current range are hidden."
+  - property: "columnIndex"
+    type: "Int32"
+    description: "Represents the column number of the first cell in the range. Zero-indexed. Read-only."
+  - property: "formulas"
+    type: "microsoft.graph.Json"
+    description: "Represents the formula in A1-style notation."
+  - property: "formulasLocal"
+    type: "microsoft.graph.Json"
+    description: "Represents the formula in A1-style notation, in the user's language and number-formatting locale.  For example, the English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German."
+  - property: "formulasR1C1"
+    type: "microsoft.graph.Json"
+    description: "Represents the formula in R1C1-style notation."
+  - property: "hidden"
+    type: "Boolean"
+    description: "Represents if all cells of the current range are hidden. Read-only."
+  - property: "numberFormat"
+    type: "microsoft.graph.Json"
+    description: "Represents Excel's number format code for the given cell."
+  - property: "rowCount"
+    type: "Int32"
+    description: "Returns the total number of rows in the range. Read-only."
+  - property: "rowHidden"
+    type: "Boolean"
+    description: "Represents if all rows of the current range are hidden."
+  - property: "rowIndex"
+    type: "Int32"
+    description: "Returns the row number of the first cell in the range. Zero-indexed. Read-only."
+  - property: "text"
+    type: "microsoft.graph.Json"
+    description: "Text values of the specified range. The Text value will not depend on the cell width. The # sign substitution that happens in Excel UI will not affect the text value returned by the API. Read-only."
+  - property: "valueTypes"
+    type: "microsoft.graph.Json"
+    description: "Represents the type of data of each cell. The possible values are: Unknown, Empty, String, Integer, Double, Boolean, Error. Read-only."
+  - property: "values"
+    type: "microsoft.graph.Json"
+    description: "Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cell that contain an error will return the error string."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   list:
-  - relationship: format
-    type: microsoft.graph.workbookRangeFormat
-    description: Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties. Read-only.
-  - relationship: sort
-    type: microsoft.graph.workbookRangeSort
-    description: The worksheet containing the current range. Read-only.
-  - relationship: worksheet
-    type: microsoft.graph.workbookWorksheet
-    description: The worksheet containing the current range. Read-only.
+  - relationship: "format"
+    type: "microsoft.graph.workbookRangeFormat"
+    description: "Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties. Read-only."
+  - relationship: "sort"
+    type: "microsoft.graph.workbookRangeSort"
+    description: "The worksheet containing the current range. Read-only."
+  - relationship: "worksheet"
+    type: "microsoft.graph.workbookWorksheet"
+    description: "The worksheet containing the current range. Read-only."

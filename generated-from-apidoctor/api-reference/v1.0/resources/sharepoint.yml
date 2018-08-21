@@ -3,7 +3,7 @@ uid: graph.sharepoint
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/sharepoint.md
 summary:
-  heading: Working with SharePoint sites in Microsoft Graph
+  heading: "Working with SharePoint sites in Microsoft Graph"
   intro: |
     The SharePoint API in Microsoft Graph supports the following core scenarios:
     

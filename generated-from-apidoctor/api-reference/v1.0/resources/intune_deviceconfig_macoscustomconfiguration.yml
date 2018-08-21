@@ -3,30 +3,30 @@ uid: graph.intune_deviceconfig_macoscustomconfiguration
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_macoscustomconfiguration.md
 summary:
-  heading: macOSCustomConfiguration resource type
+  heading: "macOSCustomConfiguration resource type"
   intro: |
     This topic provides descriptions of the declared methods, properties and relationships exposed by the macOSCustomConfiguration resource.
     Inherits from [deviceConfiguration](xref:graph.intune_deviceconfig_deviceconfiguration)
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [List macOSCustomConfigurations](xref:graph.intune_deviceconfig_macoscustomconfiguration_list)
-    type: [macOSCustomConfiguration](xref:graph.intune_deviceconfig_macoscustomconfiguration) collection
-    description: List properties and relationships of the macOSCustomConfiguration objects.
-  - method: [Get macOSCustomConfiguration](xref:graph.intune_deviceconfig_macoscustomconfiguration_get)
-    type: [macOSCustomConfiguration](xref:graph.intune_deviceconfig_macoscustomconfiguration)
-    description: Read properties and relationships of the macOSCustomConfiguration object.
-  - method: [Create macOSCustomConfiguration](xref:graph.intune_deviceconfig_macoscustomconfiguration_create)
-    type: [macOSCustomConfiguration](xref:graph.intune_deviceconfig_macoscustomconfiguration)
-    description: Create a new macOSCustomConfiguration object.
-  - method: [Delete macOSCustomConfiguration](xref:graph.intune_deviceconfig_macoscustomconfiguration_delete)
-    type: None
-    description: Deletes a macOSCustomConfiguration.
-  - method: [Update macOSCustomConfiguration](xref:graph.intune_deviceconfig_macoscustomconfiguration_update)
-    type: [macOSCustomConfiguration](xref:graph.intune_deviceconfig_macoscustomconfiguration)
-    description: Update the properties of a macOSCustomConfiguration object.
+  - method: "[List macOSCustomConfigurations](xref:graph.intune_deviceconfig_macoscustomconfiguration_list)"
+    type: "[macOSCustomConfiguration](xref:graph.intune_deviceconfig_macoscustomconfiguration) collection"
+    description: "List properties and relationships of the macOSCustomConfiguration objects."
+  - method: "[Get macOSCustomConfiguration](xref:graph.intune_deviceconfig_macoscustomconfiguration_get)"
+    type: "[macOSCustomConfiguration](xref:graph.intune_deviceconfig_macoscustomconfiguration)"
+    description: "Read properties and relationships of the macOSCustomConfiguration object."
+  - method: "[Create macOSCustomConfiguration](xref:graph.intune_deviceconfig_macoscustomconfiguration_create)"
+    type: "[macOSCustomConfiguration](xref:graph.intune_deviceconfig_macoscustomconfiguration)"
+    description: "Create a new macOSCustomConfiguration object."
+  - method: "[Delete macOSCustomConfiguration](xref:graph.intune_deviceconfig_macoscustomconfiguration_delete)"
+    type: "None"
+    description: "Deletes a macOSCustomConfiguration."
+  - method: "[Update macOSCustomConfiguration](xref:graph.intune_deviceconfig_macoscustomconfiguration_update)"
+    type: "[macOSCustomConfiguration](xref:graph.intune_deviceconfig_macoscustomconfiguration)"
+    description: "Update the properties of a macOSCustomConfiguration object."
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -46,53 +46,53 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: id
-    type: String
-    description: Key of the entity. Inherited from deviceConfiguration
-  - property: lastModifiedDateTime
-    type: DateTimeOffset
-    description: DateTime the object was last modified. Inherited from deviceConfiguration
-  - property: createdDateTime
-    type: DateTimeOffset
-    description: DateTime the object was created. Inherited from deviceConfiguration
-  - property: description
-    type: String
-    description: Admin provided description of the Device Configuration. Inherited from deviceConfiguration
-  - property: displayName
-    type: String
-    description: Admin provided name of the device configuration. Inherited from deviceConfiguration
-  - property: version
-    type: Int32
-    description: Version of the device configuration. Inherited from deviceConfiguration
-  - property: payloadName
-    type: String
-    description: Name that is displayed to the user.
-  - property: payloadFileName
-    type: String
-    description: Payload file name (.mobileconfig
-  - property: payload
-    type: Binary
-    description: Payload. (UTF8 encoded byte array)
+  - property: "id"
+    type: "String"
+    description: "Key of the entity. Inherited from deviceConfiguration"
+  - property: "lastModifiedDateTime"
+    type: "DateTimeOffset"
+    description: "DateTime the object was last modified. Inherited from deviceConfiguration"
+  - property: "createdDateTime"
+    type: "DateTimeOffset"
+    description: "DateTime the object was created. Inherited from deviceConfiguration"
+  - property: "description"
+    type: "String"
+    description: "Admin provided description of the Device Configuration. Inherited from deviceConfiguration"
+  - property: "displayName"
+    type: "String"
+    description: "Admin provided name of the device configuration. Inherited from deviceConfiguration"
+  - property: "version"
+    type: "Int32"
+    description: "Version of the device configuration. Inherited from deviceConfiguration"
+  - property: "payloadName"
+    type: "String"
+    description: "Name that is displayed to the user."
+  - property: "payloadFileName"
+    type: "String"
+    description: "Payload file name (.mobileconfig"
+  - property: "payload"
+    type: "Binary"
+    description: "Payload. (UTF8 encoded byte array)"
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   list:
-  - relationship: assignments
-    type: Collection(microsoft.graph.deviceConfigurationAssignment)
-    description: The list of assignments for the device configuration profile. Inherited from deviceConfiguration
-  - relationship: deviceStatuses
-    type: Collection(microsoft.graph.deviceConfigurationDeviceStatus)
-    description: Device configuration installation status by device. Inherited from deviceConfiguration
-  - relationship: userStatuses
-    type: Collection(microsoft.graph.deviceConfigurationUserStatus)
-    description: Device configuration installation status by user. Inherited from deviceConfiguration
-  - relationship: deviceStatusOverview
-    type: microsoft.graph.deviceConfigurationDeviceOverview
-    description: Device Configuration devices status overview Inherited from deviceConfiguration
-  - relationship: userStatusOverview
-    type: microsoft.graph.deviceConfigurationUserOverview
-    description: Device Configuration users status overview Inherited from deviceConfiguration
-  - relationship: deviceSettingStateSummaries
-    type: Collection(microsoft.graph.settingStateDeviceSummary)
-    description: Device Configuration Setting State Device Summary Inherited from deviceConfiguration
+  - relationship: "assignments"
+    type: "Collection(microsoft.graph.deviceConfigurationAssignment)"
+    description: "The list of assignments for the device configuration profile. Inherited from deviceConfiguration"
+  - relationship: "deviceStatuses"
+    type: "Collection(microsoft.graph.deviceConfigurationDeviceStatus)"
+    description: "Device configuration installation status by device. Inherited from deviceConfiguration"
+  - relationship: "userStatuses"
+    type: "Collection(microsoft.graph.deviceConfigurationUserStatus)"
+    description: "Device configuration installation status by user. Inherited from deviceConfiguration"
+  - relationship: "deviceStatusOverview"
+    type: "microsoft.graph.deviceConfigurationDeviceOverview"
+    description: "Device Configuration devices status overview Inherited from deviceConfiguration"
+  - relationship: "userStatusOverview"
+    type: "microsoft.graph.deviceConfigurationUserOverview"
+    description: "Device Configuration users status overview Inherited from deviceConfiguration"
+  - relationship: "deviceSettingStateSummaries"
+    type: "Collection(microsoft.graph.settingStateDeviceSummary)"
+    description: "Device Configuration Setting State Device Summary Inherited from deviceConfiguration"

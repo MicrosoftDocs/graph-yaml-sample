@@ -6,7 +6,7 @@ metadata:
   ms.date: 09/10/2017
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/long_running_actions_overview.md
 summary:
-  heading: Working with long running actions (beta)
+  heading: "Working with long running actions (beta)"
   intro: |
     Some API responses require indeterminate time to complete.
     Instead of waiting until the action is complete before returning a response, Microsoft Graph may use a long running actions pattern.
@@ -47,6 +47,6 @@ summary:
     In many cases this may be the end of the request, since the copy action will complete without the app doing any additional work.
     However, if your app needs to show the status of the copy action or ensure that it completes without error, it can do so using the monitor URL.
 permissions:
-  heading: Prerequisites
+  heading: "Prerequisites"
   intro: |
     The same [permissions](xref:graph.permissions_reference) that are required to perform a long running action are also required to query the status of a long running action.

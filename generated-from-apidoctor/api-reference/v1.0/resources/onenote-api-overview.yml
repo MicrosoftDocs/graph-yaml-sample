@@ -3,7 +3,7 @@ uid: graph.onenote-api-overview
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/onenote-api-overview.md
 summary:
-  heading: Use the OneNote REST API
+  heading: "Use the OneNote REST API"
   intro: |
     Microsoft Graph lets your app get authorized access to a user's OneNote notebooks, sections, and pages in a personal or organization account. With the [appropriate delegated or application permissions](../../../concepts/permissions_reference.md#notes-permissions), your app can access the OneNote data of the signed-in user or any user in a tenant.
   outro: |

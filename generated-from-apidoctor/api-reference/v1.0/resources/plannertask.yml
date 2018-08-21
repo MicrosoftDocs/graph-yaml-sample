@@ -3,23 +3,23 @@ uid: graph.plannertask
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.plannertask
 summary:
-  heading: plannerTask resource type
+  heading: "plannerTask resource type"
   intro: |
     The **plannerTask** resource represents a Planner task in Office 365. A Planner task is contained in a [plan](xref:graph.plannerplan) and can be assigned to a [bucket](xref:graph.plannerbucket) in a plan. Each task object has a [details](xref:graph.plannertaskdetails) object which can contain more information about the task. See [overview](xref:graph.planner_overview) for more information regarding relationships between group, plan and task.
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [Get plannerTask](xref:graph.plannertask_get)
-    type: [plannerTask](xref:graph.plannertask)
-    description: Read properties and relationships of plannerTask object.
-  - method: [Update](xref:graph.plannertask_update)
-    type: [plannerTask](xref:graph.plannertask)
-    description: Update plannerTask object.
-  - method: [Delete](xref:graph.plannertask_delete)
-    type: None
-    description: Delete plannerTask object.
+  - method: "[Get plannerTask](xref:graph.plannertask_get)"
+    type: "[plannerTask](xref:graph.plannertask)"
+    description: "Read properties and relationships of plannerTask object."
+  - method: "[Update](xref:graph.plannertask_update)"
+    type: "[plannerTask](xref:graph.plannertask)"
+    description: "Update plannerTask object."
+  - method: "[Delete](xref:graph.plannertask_delete)"
+    type: "None"
+    description: "Delete plannerTask object."
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -50,83 +50,83 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: activeChecklistItemCount
-    type: Int32
-    description: Number of checklist items with value set to 'false', representing incomplete items.
-  - property: appliedCategories
-    type: microsoft.graph.plannerAppliedCategories
-    description: The categories to which the task has been applied. See applied Categories for possible values.
-  - property: assigneePriority
-    type: String
-    description: Hint used to order items of this type in a list view. The format is defined as outlined here.
-  - property: assignments
-    type: microsoft.graph.plannerAssignments
-    description: The set of assignees the task is assigned to.
-  - property: bucketId
-    type: String
-    description: Bucket ID to which the task belongs. The bucket needs to be in the plan that the task is in. It is 28 characters long and case-sensitive. Format validation is done on the service.
-  - property: checklistItemCount
-    type: Int32
-    description: Number of checklist items that are present on the task.
-  - property: completedBy
-    type: microsoft.graph.identitySet
-    description: Identity of the user that completed the task.
-  - property: completedDateTime
-    type: DateTimeOffset
-    description: Read-only. Date and time at which the 'percentComplete' of the task is set to '100'. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
-  - property: conversationThreadId
-    type: String
-    description: Thread ID of the conversation on the task. This is the ID of the conversation thread object created in the group.
-  - property: createdBy
-    type: microsoft.graph.identitySet
-    description: Identity of the user that created the task.
-  - property: createdDateTime
-    type: DateTimeOffset
-    description: Read-only. Date and time at which the task is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
-  - property: dueDateTime
-    type: DateTimeOffset
-    description: Date and time at which the task is due. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
-  - property: hasDescription
-    type: Boolean
-    description: Read-only. Value is true if the details object of the task has a non-empty description and false otherwise.
-  - property: id
-    type: String
-    description: Read-only. ID of the task. It is 28 characters long and case-sensitive. Format validation is done on the service.
-  - property: orderHint
-    type: String
-    description: Hint used to order items of this type in a list view. The format is defined as outlined here.
-  - property: percentComplete
-    type: Int32
-    description: Percentage of task completion. When set to 100, the task is considered completed.
-  - property: planId
-    type: String
-    description: Plan ID to which the task belongs.
-  - property: previewType
-    type: microsoft.graph.plannerPreviewType
-    description: This sets the type of preview that shows up on the task. The possible values are: automatic, noPreview, checklist, description, reference.
-  - property: referenceCount
-    type: Int32
-    description: Number of external references that exist on the task.
-  - property: startDateTime
-    type: DateTimeOffset
-    description: Date and time at which the task starts. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
-  - property: title
-    type: String
-    description: Title of the task.
+  - property: "activeChecklistItemCount"
+    type: "Int32"
+    description: "Number of checklist items with value set to 'false', representing incomplete items."
+  - property: "appliedCategories"
+    type: "microsoft.graph.plannerAppliedCategories"
+    description: "The categories to which the task has been applied. See applied Categories for possible values."
+  - property: "assigneePriority"
+    type: "String"
+    description: "Hint used to order items of this type in a list view. The format is defined as outlined here."
+  - property: "assignments"
+    type: "microsoft.graph.plannerAssignments"
+    description: "The set of assignees the task is assigned to."
+  - property: "bucketId"
+    type: "String"
+    description: "Bucket ID to which the task belongs. The bucket needs to be in the plan that the task is in. It is 28 characters long and case-sensitive. Format validation is done on the service."
+  - property: "checklistItemCount"
+    type: "Int32"
+    description: "Number of checklist items that are present on the task."
+  - property: "completedBy"
+    type: "microsoft.graph.identitySet"
+    description: "Identity of the user that completed the task."
+  - property: "completedDateTime"
+    type: "DateTimeOffset"
+    description: "Read-only. Date and time at which the 'percentComplete' of the task is set to '100'. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'"
+  - property: "conversationThreadId"
+    type: "String"
+    description: "Thread ID of the conversation on the task. This is the ID of the conversation thread object created in the group."
+  - property: "createdBy"
+    type: "microsoft.graph.identitySet"
+    description: "Identity of the user that created the task."
+  - property: "createdDateTime"
+    type: "DateTimeOffset"
+    description: "Read-only. Date and time at which the task is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'"
+  - property: "dueDateTime"
+    type: "DateTimeOffset"
+    description: "Date and time at which the task is due. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'"
+  - property: "hasDescription"
+    type: "Boolean"
+    description: "Read-only. Value is true if the details object of the task has a non-empty description and false otherwise."
+  - property: "id"
+    type: "String"
+    description: "Read-only. ID of the task. It is 28 characters long and case-sensitive. Format validation is done on the service."
+  - property: "orderHint"
+    type: "String"
+    description: "Hint used to order items of this type in a list view. The format is defined as outlined here."
+  - property: "percentComplete"
+    type: "Int32"
+    description: "Percentage of task completion. When set to 100, the task is considered completed."
+  - property: "planId"
+    type: "String"
+    description: "Plan ID to which the task belongs."
+  - property: "previewType"
+    type: "microsoft.graph.plannerPreviewType"
+    description: "This sets the type of preview that shows up on the task. The possible values are: automatic, noPreview, checklist, description, reference."
+  - property: "referenceCount"
+    type: "Int32"
+    description: "Number of external references that exist on the task."
+  - property: "startDateTime"
+    type: "DateTimeOffset"
+    description: "Date and time at which the task starts. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'"
+  - property: "title"
+    type: "String"
+    description: "Title of the task."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   list:
-  - relationship: assignedToTaskBoardFormat
-    type: microsoft.graph.plannerAssignedToTaskBoardTaskFormat
-    description: Read-only. Nullable. Used to render the task correctly in the task board view when grouped by assignedTo.
-  - relationship: bucketTaskBoardFormat
-    type: microsoft.graph.plannerBucketTaskBoardTaskFormat
-    description: Read-only. Nullable. Used to render the task correctly in the task board view when grouped by bucket.
-  - relationship: details
-    type: microsoft.graph.plannerTaskDetails
-    description: Read-only. Nullable. Additional details about the task.
-  - relationship: progressTaskBoardFormat
-    type: microsoft.graph.plannerProgressTaskBoardTaskFormat
-    description: Read-only. Nullable. Used to render the task correctly in the task board view when grouped by progress.
+  - relationship: "assignedToTaskBoardFormat"
+    type: "microsoft.graph.plannerAssignedToTaskBoardTaskFormat"
+    description: "Read-only. Nullable. Used to render the task correctly in the task board view when grouped by assignedTo."
+  - relationship: "bucketTaskBoardFormat"
+    type: "microsoft.graph.plannerBucketTaskBoardTaskFormat"
+    description: "Read-only. Nullable. Used to render the task correctly in the task board view when grouped by bucket."
+  - relationship: "details"
+    type: "microsoft.graph.plannerTaskDetails"
+    description: "Read-only. Nullable. Additional details about the task."
+  - relationship: "progressTaskBoardFormat"
+    type: "microsoft.graph.plannerProgressTaskBoardTaskFormat"
+    description: "Read-only. Nullable. Used to render the task correctly in the task board view when grouped by progress."

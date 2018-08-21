@@ -3,15 +3,15 @@ uid: graph.chartlegendformat
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/chartlegendformat.md
 summary:
-  heading: ChartLegendFormat resource type
+  heading: "ChartLegendFormat resource type"
   intro: |
     Encapsulates the format properties of a chart legend.
 methods:
-  heading: Methods
+  heading: "Methods"
   intro: |
     None
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -23,15 +23,15 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   intro: |
     None
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   list:
-  - relationship: fill
-    type: microsoft.graph.workbookChartFill
-    description: Represents the fill format of an object, which includes background formating information. Read-only.
-  - relationship: font
-    type: microsoft.graph.workbookChartFont
-    description: Represents the font attributes such as font name, font size, color, etc. of a chart legend. Read-only.
+  - relationship: "fill"
+    type: "microsoft.graph.workbookChartFill"
+    description: "Represents the fill format of an object, which includes background formating information. Read-only."
+  - relationship: "font"
+    type: "microsoft.graph.workbookChartFont"
+    description: "Represents the font attributes such as font name, font size, color, etc. of a chart legend. Read-only."

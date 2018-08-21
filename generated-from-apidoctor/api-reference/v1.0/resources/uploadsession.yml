@@ -7,11 +7,11 @@ metadata:
   ms.date: 09/10/2017
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/uploadsession.md
 summary:
-  heading: UploadSession resource
+  heading: "UploadSession resource"
   intro: |
     The **UploadSession** resource provides information about how to upload large files to OneDrive, OneDrive for Business, or SharePoint document libraries.
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource
   sampleCode: |
@@ -24,17 +24,17 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: expirationDateTime
-    type: DateTimeOffset
-    description: The date and time in UTC that the upload session will expire. The complete file must be uploaded before this expiration time is reached.
-  - property: nextExpectedRanges
-    type: Collection(String)
-    description: A collection of byte ranges that the server is missing for the file. These ranges are zero indexed and of the format "start-end" (e.g. "0-26" to indicate the first 27 bytes of the file).
-  - property: uploadUrl
-    type: String
-    description: The URL endpoint that accepts PUT requests for byte ranges of the file.
+  - property: "expirationDateTime"
+    type: "DateTimeOffset"
+    description: "The date and time in UTC that the upload session will expire. The complete file must be uploaded before this expiration time is reached."
+  - property: "nextExpectedRanges"
+    type: "Collection(String)"
+    description: "A collection of byte ranges that the server is missing for the file. These ranges are zero indexed and of the format "start-end" (e.g. "0-26" to indicate the first 27 bytes of the file)."
+  - property: "uploadUrl"
+    type: "String"
+    description: "The URL endpoint that accepts PUT requests for byte ranges of the file."
   outro: |
     ## See also
     

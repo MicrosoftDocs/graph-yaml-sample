@@ -3,23 +3,23 @@ uid: graph.intune_mam_managedapppolicy
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_mam_managedapppolicy.md
 summary:
-  heading: managedAppPolicy resource type
+  heading: "managedAppPolicy resource type"
   intro: |
     The ManagedAppPolicy resource represents a base type for platform specific policies.
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [List managedAppPolicies](xref:graph.intune_mam_managedapppolicy_list)
-    type: [managedAppPolicy](xref:graph.intune_mam_managedapppolicy) collection
-    description: List properties and relationships of the managedAppPolicy objects.
-  - method: [Get managedAppPolicy](xref:graph.intune_mam_managedapppolicy_get)
-    type: [managedAppPolicy](xref:graph.intune_mam_managedapppolicy)
-    description: Read properties and relationships of the managedAppPolicy object.
-  - method: [targetApps action](xref:graph.intune_mam_managedapppolicy_targetapps)
-    type: None
-    description: Not yet documented
+  - method: "[List managedAppPolicies](xref:graph.intune_mam_managedapppolicy_list)"
+    type: "[managedAppPolicy](xref:graph.intune_mam_managedapppolicy) collection"
+    description: "List properties and relationships of the managedAppPolicy objects."
+  - method: "[Get managedAppPolicy](xref:graph.intune_mam_managedapppolicy_get)"
+    type: "[managedAppPolicy](xref:graph.intune_mam_managedapppolicy)"
+    description: "Read properties and relationships of the managedAppPolicy object."
+  - method: "[targetApps action](xref:graph.intune_mam_managedapppolicy_targetapps)"
+    type: "None"
+    description: "Not yet documented"
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -36,27 +36,27 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: displayName
-    type: String
-    description: Policy display name.
-  - property: description
-    type: String
-    description: The policy's description.
-  - property: createdDateTime
-    type: DateTimeOffset
-    description: The date and time the policy was created.
-  - property: lastModifiedDateTime
-    type: DateTimeOffset
-    description: Last time the policy was modified.
-  - property: id
-    type: String
-    description: Key of the entity.
-  - property: version
-    type: String
-    description: Version of the entity.
+  - property: "displayName"
+    type: "String"
+    description: "Policy display name."
+  - property: "description"
+    type: "String"
+    description: "The policy's description."
+  - property: "createdDateTime"
+    type: "DateTimeOffset"
+    description: "The date and time the policy was created."
+  - property: "lastModifiedDateTime"
+    type: "DateTimeOffset"
+    description: "Last time the policy was modified."
+  - property: "id"
+    type: "String"
+    description: "Key of the entity."
+  - property: "version"
+    type: "String"
+    description: "Version of the entity."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

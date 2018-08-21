@@ -3,11 +3,11 @@ uid: graph.phone
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/phone.md
 summary:
-  heading: phone resource type
+  heading: "phone resource type"
   intro: |
     Represents a phone number.
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -19,11 +19,11 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: number
-    type: String
-    description: The phone number.
-  - property: type
-    type: microsoft.graph.phoneType
-    description: The type of phone number. The possible values are: home, business, mobile, other, assistant, homeFax, businessFax, otherFax, pager, radio.
+  - property: "number"
+    type: "String"
+    description: "The phone number."
+  - property: "type"
+    type: "microsoft.graph.phoneType"
+    description: "The type of phone number. The possible values are: home, business, mobile, other, assistant, homeFax, businessFax, otherFax, pager, radio."

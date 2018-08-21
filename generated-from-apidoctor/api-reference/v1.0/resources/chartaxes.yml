@@ -3,15 +3,15 @@ uid: graph.chartaxes
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/chartaxes.md
 summary:
-  heading: ChartAxes resource type
+  heading: "ChartAxes resource type"
   intro: |
     Represents the chart axes.
 methods:
-  heading: Methods
+  heading: "Methods"
   intro: |
     None
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -24,18 +24,18 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   intro: |
     None
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   list:
-  - relationship: categoryAxis
-    type: microsoft.graph.workbookChartAxis
-    description: Represents the category axis in a chart. Read-only.
-  - relationship: seriesAxis
-    type: microsoft.graph.workbookChartAxis
-    description: Represents the series axis of a 3-dimensional chart. Read-only.
-  - relationship: valueAxis
-    type: microsoft.graph.workbookChartAxis
-    description: Represents the value axis in an axis. Read-only.
+  - relationship: "categoryAxis"
+    type: "microsoft.graph.workbookChartAxis"
+    description: "Represents the category axis in a chart. Read-only."
+  - relationship: "seriesAxis"
+    type: "microsoft.graph.workbookChartAxis"
+    description: "Represents the series axis of a 3-dimensional chart. Read-only."
+  - relationship: "valueAxis"
+    type: "microsoft.graph.workbookChartAxis"
+    description: "Represents the value axis in an axis. Read-only."

@@ -3,14 +3,14 @@ uid: graph.projectrome_visualinfo
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/projectrome_visualinfo.md
 summary:
-  heading: visualInfo resource type
+  heading: "visualInfo resource type"
   intro: |
     A complex type for representing the **visualElements** property in the [activity](xref:graph.projectrome_activity) object.
     Each user activity will be shown in Timeline as an Adaptive Card. App developers are encouraged to provide a custom Card which captures the essence of the activity which took place in your app. This is possible by providing a custom JSON card in the content property.
     In addition to visual metadata with an Adaptive Card, app can specify content metadata – data that be used to build inferences on the user’s activity in order to offer new activities for future re-engagement. This is possible by using the activity's contentInfo property to provide a JSON object which leverages schema.org properties to describe the content.
     If a custom card is not provided, a simple card will be generated using displayText and description properties. Custom cards are recommended to showcase the best content from within your app.
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     The following is a JSON representation of the resource.
   sampleCode: |
@@ -33,20 +33,20 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: displayText
-    type: String
-    description: Required. Short text description of the user's unique activity (for example, document name in cases where an activity refers to document creation)
-  - property: description
-    type: String
-    description: Optional. Longer text description of the user's unique activity (example: document name, first sentence, and/or metadata)
-  - property: backgroundColor
-    type: String
-    description: Optional. Background color used to render the activity in the UI - brand color for the application source of the activity. Must be a valid hex color
-  - property: content
-    type: String
-    description: Optional. Custom piece of data - JSON object used to provide custom content to render the activity in the Windows Shell UI
-  - property: attribution
-    type: microsoft.graph.imageInfo
-    description: Optional. JSON object used to represent an icon which represents the application used to generate the activity
+  - property: "displayText"
+    type: "String"
+    description: "Required. Short text description of the user's unique activity (for example, document name in cases where an activity refers to document creation)"
+  - property: "description"
+    type: "String"
+    description: "Optional. Longer text description of the user's unique activity (example: document name, first sentence, and/or metadata)"
+  - property: "backgroundColor"
+    type: "String"
+    description: "Optional. Background color used to render the activity in the UI - brand color for the application source of the activity. Must be a valid hex color"
+  - property: "content"
+    type: "String"
+    description: "Optional. Custom piece of data - JSON object used to provide custom content to render the activity in the Windows Shell UI"
+  - property: "attribution"
+    type: "microsoft.graph.imageInfo"
+    description: "Optional. JSON object used to represent an icon which represents the application used to generate the activity"

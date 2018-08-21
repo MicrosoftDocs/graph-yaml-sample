@@ -3,7 +3,7 @@ uid: graph.office_365_groups_activity_reports
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/office_365_groups_activity_reports.md
 summary:
-  heading: Office 365 Groups activity reports
+  heading: "Office 365 Groups activity reports"
   intro: |
     You can use the Groups activity reports to gain insights into the activity of Office 365 Groups in your organization and see how many Office 365 Groups are being created and used.
     

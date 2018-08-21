@@ -3,7 +3,7 @@ uid: graph.meetingtimesuggestionsresult
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/meetingtimesuggestionsresult.md
 summary:
-  heading: meetingTimeSuggestionsResult resource type
+  heading: "meetingTimeSuggestionsResult resource type"
   intro: |
     A collection of meeting suggestions if there is any, or the reason if there isn't.
     The following are the possible reasons that [findMeetingTimes](xref:graph.user_findmeetingtimes) does not return any meeting suggestions.
@@ -15,7 +15,7 @@ summary:
     |organizerUnavailable|The **isOrganizerOptional** parameter is false and yet the organizer is not available during the requested time window.
     |unknown|The reason for not returning any meeting suggestions is not known.
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource
   sampleCode: |
@@ -27,11 +27,11 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: emptySuggestionsReason
-    type: String
-    description: A reason for not returning any meeting suggestions. The possible values are: attendeesUnavailable, attendeesUnavailableOrUnknown, locationsUnavailable, organizerUnavailable, or unknown. This property is an empty string if the meetingTimeSuggestions property does include any meeting suggestions.
-  - property: meetingTimeSuggestions
-    type: Collection(microsoft.graph.meetingTimeSuggestion)
-    description: An array of meeting suggestions.
+  - property: "emptySuggestionsReason"
+    type: "String"
+    description: "A reason for not returning any meeting suggestions. The possible values are: attendeesUnavailable, attendeesUnavailableOrUnknown, locationsUnavailable, organizerUnavailable, or unknown. This property is an empty string if the meetingTimeSuggestions property does include any meeting suggestions."
+  - property: "meetingTimeSuggestions"
+    type: "Collection(microsoft.graph.meetingTimeSuggestion)"
+    description: "An array of meeting suggestions."

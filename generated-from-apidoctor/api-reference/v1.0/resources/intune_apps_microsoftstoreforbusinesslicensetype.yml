@@ -3,13 +3,13 @@ uid: graph.intune_apps_microsoftstoreforbusinesslicensetype
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_apps_microsoftstoreforbusinesslicensetype.md
 summary:
-  heading: microsoftStoreForBusinessLicenseType enum type
+  heading: "microsoftStoreForBusinessLicenseType enum type"
   intro: |
     Not yet documented
 enum:
-  heading: Members
+  heading: "Members"
   table:
-  - member: offline
-    description: Not yet documented
-  - member: online
-    description: Not yet documented
+  - member: "offline"
+    description: "Not yet documented"
+  - member: "online"
+    description: "Not yet documented"

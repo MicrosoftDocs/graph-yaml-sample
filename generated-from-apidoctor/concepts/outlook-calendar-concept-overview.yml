@@ -3,7 +3,7 @@ uid: graph.outlook-calendar-concept-overview
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/outlook-calendar-concept-overview.md
 summary:
-  heading: Outlook calendar API overview
+  heading: "Outlook calendar API overview"
   intro: |
     Outlook calendar is part of the Outlook messaging hub in Office 365 that also lets you manage emails and contacts, find information about users in an organization, 
     initiate online conversations, share files, and collaborate in groups.

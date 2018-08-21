@@ -3,30 +3,30 @@ uid: graph.groupsetting
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.groupsetting
 summary:
-  heading: groupSetting resource type
+  heading: "groupSetting resource type"
   intro: |
     Group settings control behaviors such as blocked word lists for group display names or whether guest users are allowed to be group owners.
     Group settings can be created based on the available [groupSettingTemplates](xref:graph.groupSettingTemplate), and changed from their preset defaults. These settings govern group behaviors at a tenant-wide level or to a specific group. When the same setting is defined at both the tenant-wide and to a specific group, the group-level setting overrides the tenant-wide setting.  For example, the tenant-wide setting may allow guests to be invited by existing members of groups, but an individual group setting can override and not allow guests to be invited by members of the group. Group settings only govern Office 365 groups behavior.
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [Create setting](xref:graph.groupsetting_post_groupsettings)
-    type: [groupSetting](xref:graph.groupsetting)
-    description: Create a setting object based on a groupSettingTemplate. The POST request must provide settingValues for all the settings defined in the template.
-  - method: [Get setting](xref:graph.groupsetting_get)
-    type: [groupSetting](xref:graph.groupsetting)
-    description: Read properties of a specific setting object.
-  - method: [List settings](xref:graph.groupsetting_list)
-    type: [groupSetting](xref:graph.groupsetting) collection
-    description: List properties of all setting objects.
-  - method: [Update setting](xref:graph.groupsetting_update)
-    type: [groupSetting](xref:graph.groupsetting)
-    description: Update groupsetting object.
-  - method: [Delete setting](xref:graph.groupsetting_delete)
-    type: None
-    description: Delete a setting object.
+  - method: "[Create setting](xref:graph.groupsetting_post_groupsettings)"
+    type: "[groupSetting](xref:graph.groupsetting)"
+    description: "Create a setting object based on a groupSettingTemplate. The POST request must provide settingValues for all the settings defined in the template."
+  - method: "[Get setting](xref:graph.groupsetting_get)"
+    type: "[groupSetting](xref:graph.groupsetting)"
+    description: "Read properties of a specific setting object."
+  - method: "[List settings](xref:graph.groupsetting_list)"
+    type: "[groupSetting](xref:graph.groupsetting) collection"
+    description: "List properties of all setting objects."
+  - method: "[Update setting](xref:graph.groupsetting_update)"
+    type: "[groupSetting](xref:graph.groupsetting)"
+    description: "Update groupsetting object."
+  - method: "[Delete setting](xref:graph.groupsetting_delete)"
+    type: "None"
+    description: "Delete a setting object."
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -40,21 +40,21 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: displayName
-    type: String
-    description: Display name of this group of settings, which comes from the associated template.
-  - property: id
-    type: String
-    description: Unique identifier for these settings. Read-only.
-  - property: templateId
-    type: String
-    description: Unique identifier for the template used to create this group of settings. Read-only.
-  - property: values
-    type: Collection(microsoft.graph.settingValue)
-    description: Collection of name value pairs. Must contain and set all the settings defined in the template.
+  - property: "displayName"
+    type: "String"
+    description: "Display name of this group of settings, which comes from the associated template."
+  - property: "id"
+    type: "String"
+    description: "Unique identifier for these settings. Read-only."
+  - property: "templateId"
+    type: "String"
+    description: "Unique identifier for the template used to create this group of settings. Read-only."
+  - property: "values"
+    type: "Collection(microsoft.graph.settingValue)"
+    description: "Collection of name value pairs. Must contain and set all the settings defined in the template."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None.

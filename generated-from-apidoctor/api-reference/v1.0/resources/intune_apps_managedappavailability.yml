@@ -3,13 +3,13 @@ uid: graph.intune_apps_managedappavailability
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_apps_managedappavailability.md
 summary:
-  heading: managedAppAvailability enum type
+  heading: "managedAppAvailability enum type"
   intro: |
     A managed (MAM) application's availability.
 enum:
-  heading: Members
+  heading: "Members"
   table:
-  - member: global
-    description: A globally available app to all tenants.
-  - member: lineOfBusiness
-    description: A line of business apps private to an organization.
+  - member: "global"
+    description: "A globally available app to all tenants."
+  - member: "lineOfBusiness"
+    description: "A line of business apps private to an organization."

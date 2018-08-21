@@ -3,30 +3,30 @@ uid: graph.intune_deviceconfig_macoscompliancepolicy
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_macoscompliancepolicy.md
 summary:
-  heading: macOSCompliancePolicy resource type
+  heading: "macOSCompliancePolicy resource type"
   intro: |
     This class contains compliance settings for Mac OS.
     Inherits from [deviceCompliancePolicy](xref:graph.intune_deviceconfig_devicecompliancepolicy)
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [List macOSCompliancePolicies](xref:graph.intune_deviceconfig_macoscompliancepolicy_list)
-    type: [macOSCompliancePolicy](xref:graph.intune_deviceconfig_macoscompliancepolicy) collection
-    description: List properties and relationships of the macOSCompliancePolicy objects.
-  - method: [Get macOSCompliancePolicy](xref:graph.intune_deviceconfig_macoscompliancepolicy_get)
-    type: [macOSCompliancePolicy](xref:graph.intune_deviceconfig_macoscompliancepolicy)
-    description: Read properties and relationships of the macOSCompliancePolicy object.
-  - method: [Create macOSCompliancePolicy](xref:graph.intune_deviceconfig_macoscompliancepolicy_create)
-    type: [macOSCompliancePolicy](xref:graph.intune_deviceconfig_macoscompliancepolicy)
-    description: Create a new macOSCompliancePolicy object.
-  - method: [Delete macOSCompliancePolicy](xref:graph.intune_deviceconfig_macoscompliancepolicy_delete)
-    type: None
-    description: Deletes a macOSCompliancePolicy.
-  - method: [Update macOSCompliancePolicy](xref:graph.intune_deviceconfig_macoscompliancepolicy_update)
-    type: [macOSCompliancePolicy](xref:graph.intune_deviceconfig_macoscompliancepolicy)
-    description: Update the properties of a macOSCompliancePolicy object.
+  - method: "[List macOSCompliancePolicies](xref:graph.intune_deviceconfig_macoscompliancepolicy_list)"
+    type: "[macOSCompliancePolicy](xref:graph.intune_deviceconfig_macoscompliancepolicy) collection"
+    description: "List properties and relationships of the macOSCompliancePolicy objects."
+  - method: "[Get macOSCompliancePolicy](xref:graph.intune_deviceconfig_macoscompliancepolicy_get)"
+    type: "[macOSCompliancePolicy](xref:graph.intune_deviceconfig_macoscompliancepolicy)"
+    description: "Read properties and relationships of the macOSCompliancePolicy object."
+  - method: "[Create macOSCompliancePolicy](xref:graph.intune_deviceconfig_macoscompliancepolicy_create)"
+    type: "[macOSCompliancePolicy](xref:graph.intune_deviceconfig_macoscompliancepolicy)"
+    description: "Create a new macOSCompliancePolicy object."
+  - method: "[Delete macOSCompliancePolicy](xref:graph.intune_deviceconfig_macoscompliancepolicy_delete)"
+    type: "None"
+    description: "Deletes a macOSCompliancePolicy."
+  - method: "[Update macOSCompliancePolicy](xref:graph.intune_deviceconfig_macoscompliancepolicy_update)"
+    type: "[macOSCompliancePolicy](xref:graph.intune_deviceconfig_macoscompliancepolicy)"
+    description: "Update the properties of a macOSCompliancePolicy object."
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -60,98 +60,98 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: id
-    type: String
-    description: Key of the entity. Inherited from deviceCompliancePolicy
-  - property: createdDateTime
-    type: DateTimeOffset
-    description: DateTime the object was created. Inherited from deviceCompliancePolicy
-  - property: description
-    type: String
-    description: Admin provided description of the Device Configuration. Inherited from deviceCompliancePolicy
-  - property: lastModifiedDateTime
-    type: DateTimeOffset
-    description: DateTime the object was last modified. Inherited from deviceCompliancePolicy
-  - property: displayName
-    type: String
-    description: Admin provided name of the device configuration. Inherited from deviceCompliancePolicy
-  - property: version
-    type: Int32
-    description: Version of the device configuration. Inherited from deviceCompliancePolicy
-  - property: passwordRequired
-    type: Boolean
-    description: Whether or not to require a password.
-  - property: passwordBlockSimple
-    type: Boolean
-    description: Indicates whether or not to block simple passwords.
-  - property: passwordExpirationDays
-    type: Int32
-    description: Number of days before the password expires. Valid values 1 to 65535
-  - property: passwordMinimumLength
-    type: Int32
-    description: Minimum length of password. Valid values 4 to 14
-  - property: passwordMinutesOfInactivityBeforeLock
-    type: Int32
-    description: Minutes of inactivity before a password is required.
-  - property: passwordPreviousPasswordBlockCount
-    type: Int32
-    description: Number of previous passwords to block. Valid values 1 to 24
-  - property: passwordMinimumCharacterSetCount
-    type: Int32
-    description: The number of character sets required in the password.
-  - property: passwordRequiredType
-    type: microsoft.graph.requiredPasswordType
-    description: The required password type. The possible values are: deviceDefault, alphanumeric, numeric.
-  - property: osMinimumVersion
-    type: String
-    description: Minimum IOS version.
-  - property: osMaximumVersion
-    type: String
-    description: Maximum IOS version.
-  - property: systemIntegrityProtectionEnabled
-    type: Boolean
-    description: Require that devices have enabled system integrity protection.
-  - property: deviceThreatProtectionEnabled
-    type: Boolean
-    description: Require that devices have enabled device threat protection .
-  - property: deviceThreatProtectionRequiredSecurityLevel
-    type: microsoft.graph.deviceThreatProtectionLevel
-    description: Require Mobile Threat Protection minimum risk level to report noncompliance. The possible values are: unavailable, secured, low, medium, high, notSet.
-  - property: storageRequireEncryption
-    type: Boolean
-    description: Require encryption on Mac OS devices.
-  - property: firewallEnabled
-    type: Boolean
-    description: Whether the firewall should be enabled or not.
-  - property: firewallBlockAllIncoming
-    type: Boolean
-    description: Corresponds to the “Block all incoming connections” option.
-  - property: firewallEnableStealthMode
-    type: Boolean
-    description: Corresponds to “Enable stealth mode.”
+  - property: "id"
+    type: "String"
+    description: "Key of the entity. Inherited from deviceCompliancePolicy"
+  - property: "createdDateTime"
+    type: "DateTimeOffset"
+    description: "DateTime the object was created. Inherited from deviceCompliancePolicy"
+  - property: "description"
+    type: "String"
+    description: "Admin provided description of the Device Configuration. Inherited from deviceCompliancePolicy"
+  - property: "lastModifiedDateTime"
+    type: "DateTimeOffset"
+    description: "DateTime the object was last modified. Inherited from deviceCompliancePolicy"
+  - property: "displayName"
+    type: "String"
+    description: "Admin provided name of the device configuration. Inherited from deviceCompliancePolicy"
+  - property: "version"
+    type: "Int32"
+    description: "Version of the device configuration. Inherited from deviceCompliancePolicy"
+  - property: "passwordRequired"
+    type: "Boolean"
+    description: "Whether or not to require a password."
+  - property: "passwordBlockSimple"
+    type: "Boolean"
+    description: "Indicates whether or not to block simple passwords."
+  - property: "passwordExpirationDays"
+    type: "Int32"
+    description: "Number of days before the password expires. Valid values 1 to 65535"
+  - property: "passwordMinimumLength"
+    type: "Int32"
+    description: "Minimum length of password. Valid values 4 to 14"
+  - property: "passwordMinutesOfInactivityBeforeLock"
+    type: "Int32"
+    description: "Minutes of inactivity before a password is required."
+  - property: "passwordPreviousPasswordBlockCount"
+    type: "Int32"
+    description: "Number of previous passwords to block. Valid values 1 to 24"
+  - property: "passwordMinimumCharacterSetCount"
+    type: "Int32"
+    description: "The number of character sets required in the password."
+  - property: "passwordRequiredType"
+    type: "microsoft.graph.requiredPasswordType"
+    description: "The required password type. The possible values are: deviceDefault, alphanumeric, numeric."
+  - property: "osMinimumVersion"
+    type: "String"
+    description: "Minimum IOS version."
+  - property: "osMaximumVersion"
+    type: "String"
+    description: "Maximum IOS version."
+  - property: "systemIntegrityProtectionEnabled"
+    type: "Boolean"
+    description: "Require that devices have enabled system integrity protection."
+  - property: "deviceThreatProtectionEnabled"
+    type: "Boolean"
+    description: "Require that devices have enabled device threat protection ."
+  - property: "deviceThreatProtectionRequiredSecurityLevel"
+    type: "microsoft.graph.deviceThreatProtectionLevel"
+    description: "Require Mobile Threat Protection minimum risk level to report noncompliance. The possible values are: unavailable, secured, low, medium, high, notSet."
+  - property: "storageRequireEncryption"
+    type: "Boolean"
+    description: "Require encryption on Mac OS devices."
+  - property: "firewallEnabled"
+    type: "Boolean"
+    description: "Whether the firewall should be enabled or not."
+  - property: "firewallBlockAllIncoming"
+    type: "Boolean"
+    description: "Corresponds to the “Block all incoming connections” option."
+  - property: "firewallEnableStealthMode"
+    type: "Boolean"
+    description: "Corresponds to “Enable stealth mode.”"
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   list:
-  - relationship: scheduledActionsForRule
-    type: Collection(microsoft.graph.deviceComplianceScheduledActionForRule)
-    description: The list of scheduled action for this rule Inherited from deviceCompliancePolicy
-  - relationship: deviceStatuses
-    type: Collection(microsoft.graph.deviceComplianceDeviceStatus)
-    description: List of DeviceComplianceDeviceStatus. Inherited from deviceCompliancePolicy
-  - relationship: userStatuses
-    type: Collection(microsoft.graph.deviceComplianceUserStatus)
-    description: List of DeviceComplianceUserStatus. Inherited from deviceCompliancePolicy
-  - relationship: deviceStatusOverview
-    type: microsoft.graph.deviceComplianceDeviceOverview
-    description: Device compliance devices status overview Inherited from deviceCompliancePolicy
-  - relationship: userStatusOverview
-    type: microsoft.graph.deviceComplianceUserOverview
-    description: Device compliance users status overview Inherited from deviceCompliancePolicy
-  - relationship: deviceSettingStateSummaries
-    type: Collection(microsoft.graph.settingStateDeviceSummary)
-    description: Compliance Setting State Device Summary Inherited from deviceCompliancePolicy
-  - relationship: assignments
-    type: Collection(microsoft.graph.deviceCompliancePolicyAssignment)
-    description: The collection of assignments for this compliance policy. Inherited from deviceCompliancePolicy
+  - relationship: "scheduledActionsForRule"
+    type: "Collection(microsoft.graph.deviceComplianceScheduledActionForRule)"
+    description: "The list of scheduled action for this rule Inherited from deviceCompliancePolicy"
+  - relationship: "deviceStatuses"
+    type: "Collection(microsoft.graph.deviceComplianceDeviceStatus)"
+    description: "List of DeviceComplianceDeviceStatus. Inherited from deviceCompliancePolicy"
+  - relationship: "userStatuses"
+    type: "Collection(microsoft.graph.deviceComplianceUserStatus)"
+    description: "List of DeviceComplianceUserStatus. Inherited from deviceCompliancePolicy"
+  - relationship: "deviceStatusOverview"
+    type: "microsoft.graph.deviceComplianceDeviceOverview"
+    description: "Device compliance devices status overview Inherited from deviceCompliancePolicy"
+  - relationship: "userStatusOverview"
+    type: "microsoft.graph.deviceComplianceUserOverview"
+    description: "Device compliance users status overview Inherited from deviceCompliancePolicy"
+  - relationship: "deviceSettingStateSummaries"
+    type: "Collection(microsoft.graph.settingStateDeviceSummary)"
+    description: "Compliance Setting State Device Summary Inherited from deviceCompliancePolicy"
+  - relationship: "assignments"
+    type: "Collection(microsoft.graph.deviceCompliancePolicyAssignment)"
+    description: "The collection of assignments for this compliance policy. Inherited from deviceCompliancePolicy"

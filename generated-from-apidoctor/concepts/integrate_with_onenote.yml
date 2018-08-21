@@ -3,7 +3,7 @@ uid: graph.integrate_with_onenote
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/integrate_with_onenote.md
 summary:
-  heading: OneNote API overview
+  heading: "OneNote API overview"
   intro: |
     OneNote is a digital notebook that lets customers track ideas and notes for home, school, or work, by typing, sketching, or voice, on the web, phone, tablet, or desktop. They can freely organize notes, switch devices and pick up where they left off, and collaborate on notes with others in real time.
     ![A OneNote notebook with its sections and pages](images/onenote-page.png)

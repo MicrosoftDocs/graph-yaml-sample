@@ -3,29 +3,29 @@ uid: graph.intune_shared_devicecategory
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_shared_devicecategory.md
 summary:
-  heading: deviceCategory resource type
+  heading: "deviceCategory resource type"
   intro: |
     Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [List deviceCategories](xref:graph.intune_shared_devicecategory_list) collection
-    type: List properties and relationships of the [deviceCategory](xref:graph.intune_shared_devicecategory) objects.
-    description: 
-  - method: [Get deviceCategory](xref:graph.intune_shared_devicecategory_get)
-    type: Read properties and relationships of the [deviceCategory](xref:graph.intune_shared_devicecategory) object.
-    description: 
-  - method: [Create deviceCategory](xref:graph.intune_shared_devicecategory_create)
-    type: Create a new [deviceCategory](xref:graph.intune_shared_devicecategory) object.
-    description: 
-  - method: [Delete deviceCategory](xref:graph.intune_shared_devicecategory_delete).
-    type: &nbsp;
-    description: 
-  - method: [Update deviceCategory](xref:graph.intune_shared_devicecategory_update)
-    type: Update the properties of a [deviceCategory](xref:graph.intune_shared_devicecategory) object.
-    description: 
+  - method: "[List deviceCategories](xref:graph.intune_shared_devicecategory_list) collection"
+    type: "List properties and relationships of the [deviceCategory](xref:graph.intune_shared_devicecategory) objects."
+    description: ""
+  - method: "[Get deviceCategory](xref:graph.intune_shared_devicecategory_get)"
+    type: "Read properties and relationships of the [deviceCategory](xref:graph.intune_shared_devicecategory) object."
+    description: ""
+  - method: "[Create deviceCategory](xref:graph.intune_shared_devicecategory_create)"
+    type: "Create a new [deviceCategory](xref:graph.intune_shared_devicecategory) object."
+    description: ""
+  - method: "[Delete deviceCategory](xref:graph.intune_shared_devicecategory_delete)."
+    type: "&nbsp;"
+    description: ""
+  - method: "[Update deviceCategory](xref:graph.intune_shared_devicecategory_update)"
+    type: "Update the properties of a [deviceCategory](xref:graph.intune_shared_devicecategory) object."
+    description: ""
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -39,18 +39,18 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: id
-    type: String
-    description: Unique identifier for the device category. Read-only.
-  - property: displayName
-    type: String
-    description: Display name for the device category.
-  - property: description
-    type: String
-    description: Optional description for the device category.
+  - property: "id"
+    type: "String"
+    description: "Unique identifier for the device category. Read-only."
+  - property: "displayName"
+    type: "String"
+    description: "Display name for the device category."
+  - property: "description"
+    type: "String"
+    description: "Optional description for the device category."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

@@ -3,7 +3,7 @@ uid: graph.location
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/location.md
 summary:
-  heading: Location resource type
+  heading: "Location resource type"
   intro: |
     Represents location information of an [event](xref:graph.event).
     There are multiple ways to create events in a calendar, for example, through an app using the 
@@ -17,7 +17,7 @@ summary:
     |[create event](xref:graph.user_post_events) REST API|**locationType**|`default`
     |User interface in Outlook|**locationType**|One of the following: <ul><li>`default` for a location entered as plain text.</li><li>`conferenceRoom` for a room provided by the Outlook rooms list.</li><li>Or, any of this list - `homeAddress`, `businessAddress`,`geoCoordinates`, `streetAddress`, `hotel`, `restaurant`, `localBusiness`, `postalAddress` - for a location from Bing Autosuggest or Bing local search.</li></ul>
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   sampleCode: |
     ```json
     {
@@ -33,29 +33,29 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: address
-    type: microsoft.graph.physicalAddress
-    description: The street address of the location.
-  - property: coordinates
-    type: microsoft.graph.outlookGeoCoordinates
-    description: The geographic coordinates and elevation of the location.
-  - property: displayName
-    type: String
-    description: The name associated with the location.
-  - property: locationEmailAddress
-    type: String
-    description: Optional email address of the location.
-  - property: locationUri
-    type: String
-    description: Optional URI representing the location.
-  - property: locationType
-    type: microsoft.graph.locationType
-    description: The type of location. The possible values are: default, conferenceRoom, homeAddress, businessAddress,geoCoordinates, streetAddress, hotel, restaurant, localBusiness, postalAddress. Read-only.
-  - property: uniqueId
-    type: String
-    description: For internal use only.
-  - property: uniqueIdType
-    type: microsoft.graph.locationUniqueIdType
-    description: For internal use only.
+  - property: "address"
+    type: "microsoft.graph.physicalAddress"
+    description: "The street address of the location."
+  - property: "coordinates"
+    type: "microsoft.graph.outlookGeoCoordinates"
+    description: "The geographic coordinates and elevation of the location."
+  - property: "displayName"
+    type: "String"
+    description: "The name associated with the location."
+  - property: "locationEmailAddress"
+    type: "String"
+    description: "Optional email address of the location."
+  - property: "locationUri"
+    type: "String"
+    description: "Optional URI representing the location."
+  - property: "locationType"
+    type: "microsoft.graph.locationType"
+    description: "The type of location. The possible values are: default, conferenceRoom, homeAddress, businessAddress,geoCoordinates, streetAddress, hotel, restaurant, localBusiness, postalAddress. Read-only."
+  - property: "uniqueId"
+    type: "String"
+    description: "For internal use only."
+  - property: "uniqueIdType"
+    type: "microsoft.graph.locationUniqueIdType"
+    description: "For internal use only."

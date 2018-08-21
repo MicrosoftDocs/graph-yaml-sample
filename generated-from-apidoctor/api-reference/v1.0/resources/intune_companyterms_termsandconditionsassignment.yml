@@ -3,29 +3,29 @@ uid: graph.intune_companyterms_termsandconditionsassignment
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_companyterms_termsandconditionsassignment.md
 summary:
-  heading: termsAndConditionsAssignment resource type
+  heading: "termsAndConditionsAssignment resource type"
   intro: |
     A termsAndConditionsAssignment entity represents the assignment of a given Terms and Conditions (T&C) policy to a given group. Users in the group will be required to accept the terms in order to have devices enrolled into Intune.
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [List termsAndConditionsAssignments](xref:graph.intune_companyterms_termsandconditionsassignment_list)
-    type: [termsAndConditionsAssignment](xref:graph.intune_companyterms_termsandconditionsassignment) collection
-    description: List properties and relationships of the termsAndConditionsAssignment objects.
-  - method: [Get termsAndConditionsAssignment](xref:graph.intune_companyterms_termsandconditionsassignment_get)
-    type: [termsAndConditionsAssignment](xref:graph.intune_companyterms_termsandconditionsassignment)
-    description: Read properties and relationships of the termsAndConditionsAssignment object.
-  - method: [Create termsAndConditionsAssignment](xref:graph.intune_companyterms_termsandconditionsassignment_create)
-    type: [termsAndConditionsAssignment](xref:graph.intune_companyterms_termsandconditionsassignment)
-    description: Create a new termsAndConditionsAssignment object.
-  - method: [Delete termsAndConditionsAssignment](xref:graph.intune_companyterms_termsandconditionsassignment_delete)
-    type: None
-    description: Deletes a termsAndConditionsAssignment.
-  - method: [Update termsAndConditionsAssignment](xref:graph.intune_companyterms_termsandconditionsassignment_update)
-    type: [termsAndConditionsAssignment](xref:graph.intune_companyterms_termsandconditionsassignment)
-    description: Update the properties of a termsAndConditionsAssignment object.
+  - method: "[List termsAndConditionsAssignments](xref:graph.intune_companyterms_termsandconditionsassignment_list)"
+    type: "[termsAndConditionsAssignment](xref:graph.intune_companyterms_termsandconditionsassignment) collection"
+    description: "List properties and relationships of the termsAndConditionsAssignment objects."
+  - method: "[Get termsAndConditionsAssignment](xref:graph.intune_companyterms_termsandconditionsassignment_get)"
+    type: "[termsAndConditionsAssignment](xref:graph.intune_companyterms_termsandconditionsassignment)"
+    description: "Read properties and relationships of the termsAndConditionsAssignment object."
+  - method: "[Create termsAndConditionsAssignment](xref:graph.intune_companyterms_termsandconditionsassignment_create)"
+    type: "[termsAndConditionsAssignment](xref:graph.intune_companyterms_termsandconditionsassignment)"
+    description: "Create a new termsAndConditionsAssignment object."
+  - method: "[Delete termsAndConditionsAssignment](xref:graph.intune_companyterms_termsandconditionsassignment_delete)"
+    type: "None"
+    description: "Deletes a termsAndConditionsAssignment."
+  - method: "[Update termsAndConditionsAssignment](xref:graph.intune_companyterms_termsandconditionsassignment_update)"
+    type: "[termsAndConditionsAssignment](xref:graph.intune_companyterms_termsandconditionsassignment)"
+    description: "Update the properties of a termsAndConditionsAssignment object."
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -40,15 +40,15 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: id
-    type: String
-    description: Unique identifier of the entity.
-  - property: target
-    type: microsoft.graph.deviceAndAppManagementAssignmentTarget
-    description: Assignment target that the T&C policy is assigned to.
+  - property: "id"
+    type: "String"
+    description: "Unique identifier of the entity."
+  - property: "target"
+    type: "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    description: "Assignment target that the T&C policy is assigned to."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

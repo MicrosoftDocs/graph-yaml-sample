@@ -7,7 +7,7 @@ metadata:
   ms.date: 09/10/2017
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/driveitem_list_thumbnails.md
 summary:
-  heading: List thumbnails for a DriveItem
+  heading: "List thumbnails for a DriveItem"
   intro: |
     Retrieve a collection of [ThumbnailSet](xref:graph.thumbnailset) resources for a [DriveItem](xref:graph.driveitem) resource.
     A DriveItem can be represented by zero or more [ThumbnailSet](xref:graph.thumbnailset) resources.
@@ -25,18 +25,18 @@ summary:
     * Determine if a custom uploaded thumbnail exists
     
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
   list:
-  - resource: Delegated (work or school account)
-    permission: Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All
-  - resource: Delegated (personal Microsoft account)
-    permission: Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All
-  - resource: Application
-    permission: Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All
+  - resource: "Delegated (work or school account)"
+    permission: "Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All"
+  - resource: "Delegated (personal Microsoft account)"
+    permission: "Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All"
+  - resource: "Application"
+    permission: "Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All"
 httpRequest:
-  heading: HTTP request
+  heading: "HTTP request"
   sampleCode: |
     ```http
     GET /drives/{drive-id}/items/{item-id}/thumbnails
@@ -47,21 +47,21 @@ httpRequest:
     ```
     
 queryParameters:
-  heading: Optional query parameters
+  heading: "Optional query parameters"
   intro: |
     This method supports the `$select` [OData puery parameter](xref:graph.query_parameters) to customize the response.
 parameters:
-  heading: Path parameters
+  heading: "Path parameters"
   list:
-  - name: item-id
-    value: String
-    description: The unique identifier for the item referenced.
-  - name: thumb-id
-    value: Int64
-    description: The index of the thumbnail, usually 0-4. If there is a custom thumbnail, its index is 0.
-  - name: size
-    value: String
-    description: The size of the thumbnail requested. This can be one of the standard sizes listed below or a custom size.
+  - name: "item-id"
+    value: "String"
+    description: "The unique identifier for the item referenced."
+  - name: "thumb-id"
+    value: "Int64"
+    description: "The index of the thumbnail, usually 0-4. If there is a custom thumbnail, its index is 0."
+  - name: "size"
+    value: "String"
+    description: "The size of the thumbnail requested. This can be one of the standard sizes listed below or a custom size."
   outro: |
     ```http
     HTTP/1.1 200 OK
@@ -82,13 +82,13 @@ parameters:
     ```
     
 response:
-  heading: Response
+  heading: "Response"
   intro: |
     If successful, this method returns a `200 OK` response code and collection of [ThumbnailSet](xref:graph.thumbnailset) objects in the response body.
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         intro: |
           Here is an example of the request which retrieves available thumbnails for an item in the current user's OneDrive.
           This returns an array of available **thumbnailSets** for the item. 
@@ -96,14 +96,14 @@ examples:
           **Note:** You can use the _select_ query string parameter to control which thumbnail sizes are returned in the **ThumbnailSet**.
           For example, `/thumbnails?select=medium` retrieves only the medium sized thumbnails.
         request:
-            heading: request
+            heading: "request"
             sampleCode: |
               ```http
               GET /me/drive/items/{item-id}/thumbnails
               ```
               
         response:
-            heading: Response
+            heading: "Response"
             sampleCode: |
               ```http
               HTTP/1.1 200 OK
@@ -130,7 +130,7 @@ examples:
               ```
               
     - Examples of custom identifiers:
-        heading: Examples of custom identifiers
+        heading: "Examples of custom identifiers"
         intro: |
           |Thumbnail identifier|Resolution|Aspect ratio|Description
           |:-|:-|:-|:-|
@@ -139,7 +139,7 @@ examples:
           **Note:** The thumbnail returned may not exactly match the pixel dimensions that was requested, but will match the aspect ratio.
           In some cases, a larger thumbnail may be returned than was requested, if the thumbnail already exists and can easily be scaled to match the requested resolution.
 remarks:
-  heading: Remarks
+  heading: "Remarks"
   intro: |
     **Note** In OneDrive for Business and SharePoint:
     Using these calls to expand the thumbnails collection will not work:

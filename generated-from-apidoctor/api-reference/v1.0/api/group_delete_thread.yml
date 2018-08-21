@@ -3,47 +3,47 @@ uid: graph.group_delete_thread
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/group_delete_thread.md
 summary:
-  heading: Delete conversation thread
+  heading: "Delete conversation thread"
   intro: |
     Delete a [thread](xref:graph.conversationthread) object.
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
   list:
-  - resource: Delegated (work or school account)
-    permission: Group.ReadWrite.All
-  - resource: Delegated (personal Microsoft account)
-    permission: Not supported.
-  - resource: Application
-    permission: Not supported.
+  - resource: "Delegated (work or school account)"
+    permission: "Group.ReadWrite.All"
+  - resource: "Delegated (personal Microsoft account)"
+    permission: "Not supported."
+  - resource: "Application"
+    permission: "Not supported."
 httpRequest:
-  heading: HTTP request
+  heading: "HTTP request"
   sampleCode: |
     ```http
     DELETE /groups/{id}/threads/{id}
     ```
     
 requestHeaders:
-  heading: Request headers
+  heading: "Request headers"
   list:
-  - name: Authorization
-    value: String
-    description: Bearer {token}. Required.
+  - name: "Authorization"
+    value: "String"
+    description: "Bearer {token}. Required."
 requestBody:
-  heading: Request body
+  heading: "Request body"
   intro: |
     Do not supply a request body for this method.
 response:
-  heading: Response
+  heading: "Response"
   intro: |
     If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         request:
-            heading: Request
+            heading: "Request"
             intro: |
               The following is an example of the request.
             sampleCode: |
@@ -52,7 +52,7 @@ examples:
               ```
               
         response:
-            heading: Response
+            heading: "Response"
             intro: |
               The following is an example of the response. 
               

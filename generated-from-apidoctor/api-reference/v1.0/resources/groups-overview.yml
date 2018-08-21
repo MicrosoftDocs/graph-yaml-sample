@@ -3,7 +3,7 @@ uid: graph.groups-overview
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/groups-overview.md
 summary:
-  heading: Working with groups in Microsoft Graph
+  heading: "Working with groups in Microsoft Graph"
   intro: |
     Groups are collections of [users](xref:graph.user) and other principals who share access to resources in Microsoft services or in your app. Microsoft Graph provides APIs that you can use to create and manage different types of groups and group functionality according to your scenario. All group-related operations in Microsoft Graph require administrator consent.
     

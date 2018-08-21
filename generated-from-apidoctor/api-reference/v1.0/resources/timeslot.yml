@@ -3,11 +3,11 @@ uid: graph.timeslot
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/timeslot.md
 summary:
-  heading: timeSlot resource type
+  heading: "timeSlot resource type"
   intro: |
     A time period.
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource
   sampleCode: |
@@ -19,11 +19,11 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: end
-    type: microsoft.graph.dateTimeTimeZone
-    description: The time a period begins.
-  - property: start
-    type: microsoft.graph.dateTimeTimeZone
-    description: The time the period ends.
+  - property: "end"
+    type: "microsoft.graph.dateTimeTimeZone"
+    description: "The time a period begins."
+  - property: "start"
+    type: "microsoft.graph.dateTimeTimeZone"
+    description: "The time the period ends."

@@ -3,30 +3,30 @@ uid: graph.intune_deviceconfig_windowsphone81customconfiguration
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_windowsphone81customconfiguration.md
 summary:
-  heading: windowsPhone81CustomConfiguration resource type
+  heading: "windowsPhone81CustomConfiguration resource type"
   intro: |
     This topic provides descriptions of the declared methods, properties and relationships exposed by the windowsPhone81CustomConfiguration resource.
     Inherits from [deviceConfiguration](xref:graph.intune_deviceconfig_deviceconfiguration)
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [List windowsPhone81CustomConfigurations](xref:graph.intune_deviceconfig_windowsphone81customconfiguration_list)
-    type: [windowsPhone81CustomConfiguration](xref:graph.intune_deviceconfig_windowsphone81customconfiguration) collection
-    description: List properties and relationships of the windowsPhone81CustomConfiguration objects.
-  - method: [Get windowsPhone81CustomConfiguration](xref:graph.intune_deviceconfig_windowsphone81customconfiguration_get)
-    type: [windowsPhone81CustomConfiguration](xref:graph.intune_deviceconfig_windowsphone81customconfiguration)
-    description: Read properties and relationships of the windowsPhone81CustomConfiguration object.
-  - method: [Create windowsPhone81CustomConfiguration](xref:graph.intune_deviceconfig_windowsphone81customconfiguration_create)
-    type: [windowsPhone81CustomConfiguration](xref:graph.intune_deviceconfig_windowsphone81customconfiguration)
-    description: Create a new windowsPhone81CustomConfiguration object.
-  - method: [Delete windowsPhone81CustomConfiguration](xref:graph.intune_deviceconfig_windowsphone81customconfiguration_delete)
-    type: None
-    description: Deletes a windowsPhone81CustomConfiguration.
-  - method: [Update windowsPhone81CustomConfiguration](xref:graph.intune_deviceconfig_windowsphone81customconfiguration_update)
-    type: [windowsPhone81CustomConfiguration](xref:graph.intune_deviceconfig_windowsphone81customconfiguration)
-    description: Update the properties of a windowsPhone81CustomConfiguration object.
+  - method: "[List windowsPhone81CustomConfigurations](xref:graph.intune_deviceconfig_windowsphone81customconfiguration_list)"
+    type: "[windowsPhone81CustomConfiguration](xref:graph.intune_deviceconfig_windowsphone81customconfiguration) collection"
+    description: "List properties and relationships of the windowsPhone81CustomConfiguration objects."
+  - method: "[Get windowsPhone81CustomConfiguration](xref:graph.intune_deviceconfig_windowsphone81customconfiguration_get)"
+    type: "[windowsPhone81CustomConfiguration](xref:graph.intune_deviceconfig_windowsphone81customconfiguration)"
+    description: "Read properties and relationships of the windowsPhone81CustomConfiguration object."
+  - method: "[Create windowsPhone81CustomConfiguration](xref:graph.intune_deviceconfig_windowsphone81customconfiguration_create)"
+    type: "[windowsPhone81CustomConfiguration](xref:graph.intune_deviceconfig_windowsphone81customconfiguration)"
+    description: "Create a new windowsPhone81CustomConfiguration object."
+  - method: "[Delete windowsPhone81CustomConfiguration](xref:graph.intune_deviceconfig_windowsphone81customconfiguration_delete)"
+    type: "None"
+    description: "Deletes a windowsPhone81CustomConfiguration."
+  - method: "[Update windowsPhone81CustomConfiguration](xref:graph.intune_deviceconfig_windowsphone81customconfiguration_update)"
+    type: "[windowsPhone81CustomConfiguration](xref:graph.intune_deviceconfig_windowsphone81customconfiguration)"
+    description: "Update the properties of a windowsPhone81CustomConfiguration object."
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -52,47 +52,47 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: id
-    type: String
-    description: Key of the entity. Inherited from deviceConfiguration
-  - property: lastModifiedDateTime
-    type: DateTimeOffset
-    description: DateTime the object was last modified. Inherited from deviceConfiguration
-  - property: createdDateTime
-    type: DateTimeOffset
-    description: DateTime the object was created. Inherited from deviceConfiguration
-  - property: description
-    type: String
-    description: Admin provided description of the Device Configuration. Inherited from deviceConfiguration
-  - property: displayName
-    type: String
-    description: Admin provided name of the device configuration. Inherited from deviceConfiguration
-  - property: version
-    type: Int32
-    description: Version of the device configuration. Inherited from deviceConfiguration
-  - property: omaSettings
-    type: Collection(microsoft.graph.omaSetting)
-    description: OMA settings. This collection can contain a maximum of 1000 elements.
+  - property: "id"
+    type: "String"
+    description: "Key of the entity. Inherited from deviceConfiguration"
+  - property: "lastModifiedDateTime"
+    type: "DateTimeOffset"
+    description: "DateTime the object was last modified. Inherited from deviceConfiguration"
+  - property: "createdDateTime"
+    type: "DateTimeOffset"
+    description: "DateTime the object was created. Inherited from deviceConfiguration"
+  - property: "description"
+    type: "String"
+    description: "Admin provided description of the Device Configuration. Inherited from deviceConfiguration"
+  - property: "displayName"
+    type: "String"
+    description: "Admin provided name of the device configuration. Inherited from deviceConfiguration"
+  - property: "version"
+    type: "Int32"
+    description: "Version of the device configuration. Inherited from deviceConfiguration"
+  - property: "omaSettings"
+    type: "Collection(microsoft.graph.omaSetting)"
+    description: "OMA settings. This collection can contain a maximum of 1000 elements."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   list:
-  - relationship: assignments
-    type: Collection(microsoft.graph.deviceConfigurationAssignment)
-    description: The list of assignments for the device configuration profile. Inherited from deviceConfiguration
-  - relationship: deviceStatuses
-    type: Collection(microsoft.graph.deviceConfigurationDeviceStatus)
-    description: Device configuration installation status by device. Inherited from deviceConfiguration
-  - relationship: userStatuses
-    type: Collection(microsoft.graph.deviceConfigurationUserStatus)
-    description: Device configuration installation status by user. Inherited from deviceConfiguration
-  - relationship: deviceStatusOverview
-    type: microsoft.graph.deviceConfigurationDeviceOverview
-    description: Device Configuration devices status overview Inherited from deviceConfiguration
-  - relationship: userStatusOverview
-    type: microsoft.graph.deviceConfigurationUserOverview
-    description: Device Configuration users status overview Inherited from deviceConfiguration
-  - relationship: deviceSettingStateSummaries
-    type: Collection(microsoft.graph.settingStateDeviceSummary)
-    description: Device Configuration Setting State Device Summary Inherited from deviceConfiguration
+  - relationship: "assignments"
+    type: "Collection(microsoft.graph.deviceConfigurationAssignment)"
+    description: "The list of assignments for the device configuration profile. Inherited from deviceConfiguration"
+  - relationship: "deviceStatuses"
+    type: "Collection(microsoft.graph.deviceConfigurationDeviceStatus)"
+    description: "Device configuration installation status by device. Inherited from deviceConfiguration"
+  - relationship: "userStatuses"
+    type: "Collection(microsoft.graph.deviceConfigurationUserStatus)"
+    description: "Device configuration installation status by user. Inherited from deviceConfiguration"
+  - relationship: "deviceStatusOverview"
+    type: "microsoft.graph.deviceConfigurationDeviceOverview"
+    description: "Device Configuration devices status overview Inherited from deviceConfiguration"
+  - relationship: "userStatusOverview"
+    type: "microsoft.graph.deviceConfigurationUserOverview"
+    description: "Device Configuration users status overview Inherited from deviceConfiguration"
+  - relationship: "deviceSettingStateSummaries"
+    type: "Collection(microsoft.graph.settingStateDeviceSummary)"
+    description: "Device Configuration Setting State Device Summary Inherited from deviceConfiguration"

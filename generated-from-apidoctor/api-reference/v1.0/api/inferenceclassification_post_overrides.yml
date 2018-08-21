@@ -3,7 +3,7 @@ uid: graph.inferenceclassification_post_overrides
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/inferenceclassification_post_overrides.md
 summary:
-  heading: Create inferenceClassificationOverride
+  heading: "Create inferenceClassificationOverride"
   intro: |
     Create an override for a sender identified by an SMTP address. Future messages from that SMTP address will be consistently classified 
     as specified in the override.
@@ -14,18 +14,18 @@ summary:
     * The POST operation supports creating only one override at a time.
     
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
   list:
-  - resource: Delegated (work or school account)
-    permission: Mail.ReadWrite
-  - resource: Delegated (personal Microsoft account)
-    permission: Mail.ReadWrite
-  - resource: Application
-    permission: Mail.ReadWrite
+  - resource: "Delegated (work or school account)"
+    permission: "Mail.ReadWrite"
+  - resource: "Delegated (personal Microsoft account)"
+    permission: "Mail.ReadWrite"
+  - resource: "Application"
+    permission: "Mail.ReadWrite"
 httpRequest:
-  heading: HTTP request
+  heading: "HTTP request"
   sampleCode: |
     ```http
     POST /me/inferenceClassification/overrides
@@ -33,28 +33,28 @@ httpRequest:
     ```
     
 requestHeaders:
-  heading: Request headers
+  heading: "Request headers"
   list:
-  - name: Authorization
-    value: String
-    description: Bearer {token}. Required.
-  - name: Content-Type
-    value: String
-    description: Nature of the data in the body of an entity. Required.
+  - name: "Authorization"
+    value: "String"
+    description: "Bearer {token}. Required."
+  - name: "Content-Type"
+    value: "String"
+    description: "Nature of the data in the body of an entity. Required."
 requestBody:
-  heading: Request body
+  heading: "Request body"
   intro: |
     In the request body, supply a JSON representation of [inferenceClassificationOverride](xref:graph.inferenceclassificationoverride) object.
 response:
-  heading: Response
+  heading: "Response"
   intro: |
     If successful, this method returns `201 Created` response code and an [inferenceClassificationOverride](xref:graph.inferenceclassificationoverride) object in the response body.
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         request:
-            heading: Request
+            heading: "Request"
             intro: |
               Here is an example of the request.
             sampleCode: |
@@ -72,7 +72,7 @@ examples:
               ```
               
         response:
-            heading: Response
+            heading: "Response"
             intro: |
               Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
             sampleCode: |

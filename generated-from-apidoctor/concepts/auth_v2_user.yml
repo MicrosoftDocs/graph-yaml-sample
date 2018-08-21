@@ -3,7 +3,7 @@ uid: graph.auth_v2_user
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/auth_v2_user.md
 summary:
-  heading: Get access on behalf of a user
+  heading: "Get access on behalf of a user"
   intro: |
     To use Microsoft Graph to read and write resources on behalf of a user, your app must get an access token from Azure AD and attach the token to requests that it sends to Microsoft Graph. The exact authentication flow that you will use to get access tokens will depend on the kind of app you are developing and whether you want to use OpenID Connect to sign the user in to your app. One common flow used by native and mobile apps and also by some Web apps is the OAuth 2.0 authorization code grant flow. In this topic, we will walk through an example using this flow. 
   outro: |
@@ -17,7 +17,7 @@ summary:
     1. Use a refresh token to get a new access token.
     
 requestBody:
-  heading: Request
+  heading: "Request"
   intro: |
     // Line breaks for legibility only
     
@@ -41,7 +41,7 @@ requestBody:
     |redirect_uri|required|The same redirect_uri value that was used to acquire the authorization_code.
     |client_secret|required for web apps|The application secret that you created in the app registration portal for your app.  It should not be used in a native app, because client_secrets cannot be reliably stored on devices.  It is required for web apps and web APIs, which have the ability to store the client_secret securely on the server side.
 response:
-  heading: Response
+  heading: "Response"
   intro: |
     A successful token response will look similar to the following.
     {

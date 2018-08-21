@@ -3,11 +3,11 @@ uid: graph.intune_apps_iosminimumoperatingsystem
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_apps_iosminimumoperatingsystem.md
 summary:
-  heading: iosMinimumOperatingSystem resource type
+  heading: "iosMinimumOperatingSystem resource type"
   intro: |
     Contains properties of the minimum operating system required for an iOS mobile app.
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -22,21 +22,21 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: v8_0
-    type: Boolean
-    description: Version 8.0 or later.
-  - property: v9_0
-    type: Boolean
-    description: Version 9.0 or later.
-  - property: v10_0
-    type: Boolean
-    description: Version 10.0 or later.
-  - property: v11_0
-    type: Boolean
-    description: Version 11.0 or later.
+  - property: "v8_0"
+    type: "Boolean"
+    description: "Version 8.0 or later."
+  - property: "v9_0"
+    type: "Boolean"
+    description: "Version 9.0 or later."
+  - property: "v10_0"
+    type: "Boolean"
+    description: "Version 10.0 or later."
+  - property: "v11_0"
+    type: "Boolean"
+    description: "Version 11.0 or later."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

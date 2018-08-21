@@ -3,7 +3,7 @@ uid: graph.onedrive-concept-overview
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/onedrive-concept-overview.md
 summary:
-  heading: OneDrive file storage API overview
+  heading: "OneDrive file storage API overview"
   intro: |
     OneDrive is the files hub in Office 365.
     People work with files in a variety of contexts, like Microsoft Teams, groups, SharePoint, and more.

@@ -3,7 +3,7 @@ uid: graph.outlook-create-send-messages
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/outlook-create-send-messages.md
 summary:
-  heading: Create and send Outlook messages
+  heading: "Create and send Outlook messages"
   intro: |
     Emails are represented by the [message](xref:graph.message) resource in Microsoft Graph.
     By default, messages are identified by a unique entry ID in the **id** property. A store provider assigns a message an entry ID when the message is initially

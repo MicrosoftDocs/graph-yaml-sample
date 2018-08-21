@@ -7,13 +7,13 @@ metadata:
   ms.date: 09/10/2017
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/shared.md
 summary:
-  heading: Shared resource type
+  heading: "Shared resource type"
   intro: |
     The **Shared** resource indicates a DriveItem has been shared with others.
     The resource includes information about how the item is shared.
     If a [**Driveitem**](xref:graph.driveitem) has a non-null **shared** facet, the item has been shared.
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   sampleCode: |
     ```json
     {
@@ -25,20 +25,20 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: owner
-    type: microsoft.graph.identitySet
-    description: The identity of the owner of the shared item. Read-only.
-  - property: scope
-    type: String
-    description: Indicates the scope of how the item is shared: anonymous, organization, or users. Read-only.
-  - property: sharedBy
-    type: microsoft.graph.identitySet
-    description: The identity of the user who shared the item. Read-only.
-  - property: sharedDateTime
-    type: DateTimeOffset
-    description: The UTC date and time when the item was shared. Read-only.
+  - property: "owner"
+    type: "microsoft.graph.identitySet"
+    description: "The identity of the owner of the shared item. Read-only."
+  - property: "scope"
+    type: "String"
+    description: "Indicates the scope of how the item is shared: anonymous, organization, or users. Read-only."
+  - property: "sharedBy"
+    type: "microsoft.graph.identitySet"
+    description: "The identity of the user who shared the item. Read-only."
+  - property: "sharedDateTime"
+    type: "DateTimeOffset"
+    description: "The UTC date and time when the item was shared. Read-only."
   outro: |
     ## Scope options
     |Value|Description
@@ -47,6 +47,6 @@ properties:
     |`organization`|The item is shared by using a link that works for anyone in the owner's organization.
     |`users`|The item is shared with specific users only.
 remarks:
-  heading: Remarks
+  heading: "Remarks"
   intro: |
     For more information about the facets on a **driveItem**, see [**driveItem**](xref:graph.driveitem).

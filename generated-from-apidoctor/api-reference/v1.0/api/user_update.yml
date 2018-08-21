@@ -3,40 +3,40 @@ uid: graph.user_update
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/user_update.md
 summary:
-  heading: Update user
+  heading: "Update user"
   intro: |
     Update the properties of a user object.
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
   list:
-  - resource: Delegated (work or school account)
-    permission: User.ReadWrite, User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All
-  - resource: Delegated (personal Microsoft account)
-    permission: User.ReadWrite
-  - resource: Application
-    permission: User.ReadWrite.All, Directory.ReadWrite.All
+  - resource: "Delegated (work or school account)"
+    permission: "User.ReadWrite, User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All"
+  - resource: "Delegated (personal Microsoft account)"
+    permission: "User.ReadWrite"
+  - resource: "Application"
+    permission: "User.ReadWrite.All, Directory.ReadWrite.All"
   outro: |
     When updating the passwordProfile property, the following permission is required: Directory.AccessAsUser.All.
 httpRequest:
-  heading: HTTP request
+  heading: "HTTP request"
   sampleCode: |
     ```http
     PATCH /users/{id | userPrincipalName}
     ```
     
 requestHeaders:
-  heading: Request headers
+  heading: "Request headers"
   list:
-  - name: Authorization
-    value: String
-    description: 
-  - name: Content-Type
-    value: String
-    description: 
+  - name: "Authorization"
+    value: "String"
+    description: ""
+  - name: "Content-Type"
+    value: "String"
+    description: ""
 requestBody:
-  heading: Request body
+  heading: "Request body"
   intro: |
     In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
     |Property|Type|Description
@@ -73,15 +73,15 @@ requestBody:
     |userPrincipalName|String|The user principal name (UPN) of the user. The UPN is an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant’s collection of verified domains. This property is required when a user is created. The verified domains for the tenant can be accessed from the **verifiedDomains** property of [organization](xref:graph.organization). Supports $filter and $orderby.
     |userType|String|A string value that can be used to classify user types in your directory, such as “Member” and “Guest”. Supports $filter.
 response:
-  heading: Response
+  heading: "Response"
   intro: |
     If successful, this method returns a `204 No Content` response code.
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         request:
-            heading: Request
+            heading: "Request"
             intro: |
               Here is an example of the request.
             sampleCode: |
@@ -100,7 +100,7 @@ examples:
               ```
               
         response:
-            heading: Response
+            heading: "Response"
             intro: |
               Here is an example of the response.
             sampleCode: |

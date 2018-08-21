@@ -3,7 +3,7 @@ uid: graph.onenote-abs-pos
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/onenote-abs-pos.md
 summary:
-  heading: Create absolute positioned elements in OneNote pages
+  heading: "Create absolute positioned elements in OneNote pages"
   intro: |
     The body of a OneNote page can contain multiple direct `div`, `img`, and `object` child elements that can be positioned independently on the page.
     <a name="attributes"></a>
@@ -20,7 +20,7 @@ summary:
     * Absolute positioned elements cannot be nested or contain positioned elements. The API ignores any position settings specified on nested elements inside an absolute positioned div, renders the nested content inside the absolute positioned parent div, and returns a warning in the **api.diagnostics** property in the response.
     
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     To create or update OneNote pages, you'll need to request appropriate permissions. Choose the lowest level of permissions that your app needs to do its work.
   outro: |
@@ -33,7 +33,7 @@ permissions:
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         intro: |
           The following example contains a direct `p` child, an absolute positioned div, and a non-absolute positioned div.
         outro: |
@@ -50,7 +50,7 @@ examples:
 
           The API renders the non-absolute positioned div in the default div. Note that the nested `<div>` tags are discarded because they do not define any semantic information (such as `data-id`).
     - Example:
-        heading: Example
+        heading: "Example"
         intro: |
           The following example creates a page that contains one absolute positioned div and one absolute positioned image.
         outro: |

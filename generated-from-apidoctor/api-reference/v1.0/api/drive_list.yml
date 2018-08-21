@@ -7,25 +7,25 @@ metadata:
   ms.date: 09/10/2017
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/drive_list.md
 summary:
-  heading: List available drives
+  heading: "List available drives"
   intro: |
     Retrieve the list of [Drive](xref:graph.drive) resources available for a target User, Group, or [Site](xref:graph.site).
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
   list:
-  - resource: Delegated (work or school account)
-    permission: Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All
-  - resource: Delegated (personal Microsoft account)
-    permission: Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All
-  - resource: Application
-    permission: Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All
+  - resource: "Delegated (work or school account)"
+    permission: "Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All"
+  - resource: "Delegated (personal Microsoft account)"
+    permission: "Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All"
+  - resource: "Application"
+    permission: "Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All"
   outro: |
     ## List a group's drives
     To list the document libraries for a group, your app requests the **drives** relationship on the Group.
 httpRequest:
-  heading: HTTP request
+  heading: "HTTP request"
   sampleCode: |
     ```http
     GET /groups/{groupId}/drives
@@ -40,11 +40,11 @@ httpRequest:
     ```
     
 queryParameters:
-  heading: Optional query parameters
+  heading: "Optional query parameters"
   intro: |
     This method supports the `$expand`, `$select`, `$skipToken`, `$top`, and `$orderby` [OData query parameters](xref:graph.query_parameters) to customize the response.
 response:
-  heading: Response
+  heading: "Response"
   intro: |
     If successful, this method returns a `200 OK` response code and collection of [Drive](xref:graph.drive) objects in the response body.
     
@@ -147,7 +147,7 @@ response:
     ```
     
   request:
-      heading: request
+      heading: "request"
       sampleCode: |
         ```http
         HTTP/1.1 200 OK
@@ -182,7 +182,7 @@ response:
         ```
         
 remarks:
-  heading: Remarks
+  heading: "Remarks"
   intro: |
     Most users will only have a single Drive resource.
     Groups and Sites may have multiple Drive resources available.

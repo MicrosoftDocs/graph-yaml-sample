@@ -3,32 +3,32 @@ uid: graph.directoryrole
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.directoryrole
 summary:
-  heading: directoryRole resource type
+  heading: "directoryRole resource type"
   intro: |
     Represents an Azure AD directory role. Azure AD directory roles are also known as *administrator roles*. For more information about directory (administrator) roles, see [Assigning administrator roles in Azure AD](http://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/). With the Microsoft Graph, you can assign users to directory roles to grant them the permissions of the target role. To read a directory role or update its members, it must first be activated in the tenant. Only the Company Administrators directory role is activated by default. To activate other available directory roles you send a POST request with the ID of the [directoryRoleTemplate](xref:graph.directoryroletemplate) on which the directory role is based. Inherits from [directoryObject](xref:graph.directoryobject).
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [Get directoryRole](xref:graph.directoryrole_get)
-    type: [directoryRole](xref:graph.directoryrole)
-    description: Read properties and relationships of directoryRole object.
-  - method: [List directoryRoles](xref:graph.directoryrole_list)
-    type: [directoryRole](xref:graph.directoryrole) collection
-    description: List the directory roles that are activated in the tenant.
-  - method: [Add member](xref:graph.directoryrole_post_members)
-    type: [directoryObject](xref:graph.directoryobject)
-    description: Add a user to the directory role by posting to the members navigation property.
-  - method: [List members](xref:graph.directoryrole_list_members)
-    type: [directoryObject](xref:graph.directoryobject) collection
-    description: Get the users that are members of the directory role from the members navigation property.
-  - method: [Remove a member](xref:graph.directoryrole_delete_member)
-    type: [directoryObject](xref:graph.directoryobject)
-    description: Remove a user from the directory role.
-  - method: [Activate directoryRole](xref:graph.directoryrole_post_directoryroles)
-    type: [directoryRole](xref:graph.directoryrole)
-    description: Activate a directory role.
+  - method: "[Get directoryRole](xref:graph.directoryrole_get)"
+    type: "[directoryRole](xref:graph.directoryrole)"
+    description: "Read properties and relationships of directoryRole object."
+  - method: "[List directoryRoles](xref:graph.directoryrole_list)"
+    type: "[directoryRole](xref:graph.directoryrole) collection"
+    description: "List the directory roles that are activated in the tenant."
+  - method: "[Add member](xref:graph.directoryrole_post_members)"
+    type: "[directoryObject](xref:graph.directoryobject)"
+    description: "Add a user to the directory role by posting to the members navigation property."
+  - method: "[List members](xref:graph.directoryrole_list_members)"
+    type: "[directoryObject](xref:graph.directoryobject) collection"
+    description: "Get the users that are members of the directory role from the members navigation property."
+  - method: "[Remove a member](xref:graph.directoryrole_delete_member)"
+    type: "[directoryObject](xref:graph.directoryobject)"
+    description: "Remove a user from the directory role."
+  - method: "[Activate directoryRole](xref:graph.directoryrole_post_directoryroles)"
+    type: "[directoryRole](xref:graph.directoryrole)"
+    description: "Activate a directory role."
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource
   sampleCode: |
@@ -42,23 +42,23 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: description
-    type: String
-    description: The description for the directory role. Read-only.
-  - property: displayName
-    type: String
-    description: The display name for the directory role. Read-only.
-  - property: id
-    type: String
-    description: The unique identifier for the directory role. Inherited from directoryObject. Key, Not nullable, Read-only.
-  - property: roleTemplateId
-    type: String
-    description: The id of the directoryRoleTemplate that this role is based on. The property must be specified when activating a directory role in a tenant with a POST operation. After the directory role has been activated, the property is read only.
+  - property: "description"
+    type: "String"
+    description: "The description for the directory role. Read-only."
+  - property: "displayName"
+    type: "String"
+    description: "The display name for the directory role. Read-only."
+  - property: "id"
+    type: "String"
+    description: "The unique identifier for the directory role. Inherited from directoryObject. Key, Not nullable, Read-only."
+  - property: "roleTemplateId"
+    type: "String"
+    description: "The id of the directoryRoleTemplate that this role is based on. The property must be specified when activating a directory role in a tenant with a POST operation. After the directory role has been activated, the property is read only."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   list:
-  - relationship: members
-    type: Collection(microsoft.graph.directoryObject)
-    description: Users that are members of this directory role. HTTP Methods: GET, POST, DELETE. Read-only. Nullable.
+  - relationship: "members"
+    type: "Collection(microsoft.graph.directoryObject)"
+    description: "Users that are members of this directory role. HTTP Methods: GET, POST, DELETE. Read-only. Nullable."

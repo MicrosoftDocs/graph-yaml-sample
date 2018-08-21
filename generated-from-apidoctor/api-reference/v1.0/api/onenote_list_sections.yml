@@ -3,22 +3,22 @@ uid: graph.onenote_list_sections
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/onenote_list_sections.md
 summary:
-  heading: List sections
+  heading: "List sections"
   intro: |
     Retrieve a list of [onenoteSection](xref:graph.section) objects.
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
   list:
-  - resource: Delegated (work or school account)
-    permission: Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All
-  - resource: Delegated (personal Microsoft account)
-    permission: Notes.Create, Notes.Read, Notes.ReadWrite
-  - resource: Application
-    permission: Notes.Read.All, Notes.ReadWrite.All
+  - resource: "Delegated (work or school account)"
+    permission: "Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All"
+  - resource: "Delegated (personal Microsoft account)"
+    permission: "Notes.Create, Notes.Read, Notes.ReadWrite"
+  - resource: "Application"
+    permission: "Notes.Read.All, Notes.ReadWrite.All"
 httpRequest:
-  heading: HTTP request
+  heading: "HTTP request"
   sampleCode: |
     ```http
     GET /me/onenote/sections
@@ -28,34 +28,34 @@ httpRequest:
     ```
     
 queryParameters:
-  heading: Optional query parameters
+  heading: "Optional query parameters"
   intro: |
     This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
     The default sort order is `name asc`.
     The default query expands `parentNotebook` and selects its `id`, `displayName`, and `self` properties. Valid `expand` values for sections are `parentNotebook` and `parentSectionGroup`.
 requestHeaders:
-  heading: Request headers
+  heading: "Request headers"
   list:
-  - name: Authorization
-    value: String
-    description: Bearer {token}. Required.
-  - name: Accept
-    value: String
-    description: application/json
+  - name: "Authorization"
+    value: "String"
+    description: "Bearer {token}. Required."
+  - name: "Accept"
+    value: "String"
+    description: "application/json"
 requestBody:
-  heading: Request body
+  heading: "Request body"
   intro: |
     Do not supply a request body for this method.
 response:
-  heading: Response
+  heading: "Response"
   intro: |
     If successful, this method returns a `200 OK` response code and collection of [onenoteSection](xref:graph.section) objects in the response body.
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         request:
-            heading: Request
+            heading: "Request"
             intro: |
               Here is an example of the request.
             sampleCode: |
@@ -64,7 +64,7 @@ examples:
               ```
               
         response:
-            heading: Response
+            heading: "Response"
             intro: |
               Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.
             sampleCode: |

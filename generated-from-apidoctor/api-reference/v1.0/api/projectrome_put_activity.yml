@@ -3,47 +3,47 @@ uid: graph.projectrome_put_activity
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/projectrome_put_activity.md
 summary:
-  heading: Create or replace an activity
+  heading: "Create or replace an activity"
   intro: |
     Create a new or replace an existing user activity for your app. If you'd like to create a user activity and its related **historyItems** in one request, you can use [deep insert](projectrome_put_activity.md#example-2---deep-insert).
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
   list:
-  - resource: Delegated (work or school account)
-    permission: UserActivity.ReadWrite.CreatedByApp
-  - resource: Delegated (personal Microsoft account)
-    permission: UserActivity.ReadWrite.CreatedByApp
-  - resource: Application
-    permission: Not supported.
+  - resource: "Delegated (work or school account)"
+    permission: "UserActivity.ReadWrite.CreatedByApp"
+  - resource: "Delegated (personal Microsoft account)"
+    permission: "UserActivity.ReadWrite.CreatedByApp"
+  - resource: "Application"
+    permission: "Not supported."
 httpRequest:
-  heading: HTTP request
+  heading: "HTTP request"
   sampleCode: |
     ```http
     PUT /me/activities/{appActivityId}
     ```
     
 requestHeaders:
-  heading: Request headers
+  heading: "Request headers"
   list:
-  - name: Authorization
-    value: String
-    description: Bearer {token}. Required.
+  - name: "Authorization"
+    value: "String"
+    description: "Bearer {token}. Required."
 requestBody:
-  heading: Request body
+  heading: "Request body"
   intro: |
     In the request body, supply a JSON representation of an [activity](xref:graph.projectrome_activity) object.
 response:
-  heading: Response
+  heading: "Response"
   intro: |
     If successful, this method returns the `201 Created` response code if the activity was created or `200 OK` if the activity was replaced.
 examples:
   - items:
     - Example 1:
-        heading: Example 1
+        heading: "Example 1"
         request:
-            heading: Request
+            heading: "Request"
             intro: |
               The following is an example of the request.
             sampleCode: |
@@ -89,7 +89,7 @@ examples:
               ```
               
         response:
-            heading: Response
+            heading: "Response"
             intro: |
               The following is an example of the response.
             sampleCode: |
@@ -141,9 +141,9 @@ examples:
               ```
               
     - Example 2 - Deep insert:
-        heading: Example 2 - Deep insert
+        heading: "Example 2 - Deep insert"
         request:
-            heading: Request
+            heading: "Request"
             intro: |
               The following is an example of the request.
             sampleCode: |
@@ -196,7 +196,7 @@ examples:
               ```
               
         response:
-            heading: Response
+            heading: "Response"
             intro: |
               The following is an example of the response.
             sampleCode: |

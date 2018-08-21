@@ -3,38 +3,38 @@ uid: graph.educationclass_update
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/educationclass_update.md
 summary:
-  heading: Update educationclass properties
+  heading: "Update educationclass properties"
   intro: |
     Update the properties of a class.
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
   list:
-  - resource: Delegated (work or school account)
-    permission: Not supported.
-  - resource: Delegated (personal Microsoft account)
-    permission: Not supported.
-  - resource: Application
-    permission: EduRoster.ReadWrite.All
+  - resource: "Delegated (work or school account)"
+    permission: "Not supported."
+  - resource: "Delegated (personal Microsoft account)"
+    permission: "Not supported."
+  - resource: "Application"
+    permission: "EduRoster.ReadWrite.All"
 httpRequest:
-  heading: HTTP request
+  heading: "HTTP request"
   sampleCode: |
     ```http
     PATCH /education/classes/{id}
     ```
     
 requestHeaders:
-  heading: Request headers
+  heading: "Request headers"
   list:
-  - name: Authorization
-    value: String
-    description: 
-  - name: Content-Type
-    value: String
-    description: 
+  - name: "Authorization"
+    value: "String"
+    description: ""
+  - name: "Content-Type"
+    value: "String"
+    description: ""
 requestBody:
-  heading: Request body
+  heading: "Request body"
   intro: |
     In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
     |Property|Type|Description
@@ -47,15 +47,15 @@ requestBody:
     |externalName|String|Name of the class in the syncing system.|
     |externalSource|string| How this class was created. The possible values are: `sis`, `manual`, `enum_sentinel`.|
 response:
-  heading: Response
+  heading: "Response"
   intro: |
     If successful, this method returns a `200 OK` response code and an updated [educationClass](xref:graph.educationclass) object in the response body.
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         request:
-            heading: Request
+            heading: "Request"
             intro: |
               The following is an example of the request.
             sampleCode: |
@@ -71,7 +71,7 @@ examples:
               ```
               
         response:
-            heading: Response
+            heading: "Response"
             intro: |
               The following is an example of the response. 
               

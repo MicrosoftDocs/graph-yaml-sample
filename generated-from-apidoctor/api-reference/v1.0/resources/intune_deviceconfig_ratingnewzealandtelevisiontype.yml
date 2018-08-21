@@ -3,19 +3,19 @@ uid: graph.intune_deviceconfig_ratingnewzealandtelevisiontype
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_ratingnewzealandtelevisiontype.md
 summary:
-  heading: ratingNewZealandTelevisionType enum type
+  heading: "ratingNewZealandTelevisionType enum type"
   intro: |
     TV content rating labels in New Zealand
 enum:
-  heading: Members
+  heading: "Members"
   table:
-  - member: allAllowed
-    description: Default value, allow all TV shows content
-  - member: allBlocked
-    description: Do not allow any TV shows content
-  - member: general
-    description: The G classification excludes materials likely to harm children under 14
-  - member: parentalGuidance
-    description: The PGR classification encourages parents and guardians to supervise younger viewers
-  - member: adults
-    description: The AO classification is not suitable for children
+  - member: "allAllowed"
+    description: "Default value, allow all TV shows content"
+  - member: "allBlocked"
+    description: "Do not allow any TV shows content"
+  - member: "general"
+    description: "The G classification excludes materials likely to harm children under 14"
+  - member: "parentalGuidance"
+    description: "The PGR classification encourages parents and guardians to supervise younger viewers"
+  - member: "adults"
+    description: "The AO classification is not suitable for children"

@@ -7,11 +7,11 @@ metadata:
   ms.date: 09/11/2017
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/datetimecolumn.md
 summary:
-  heading: DateTimeColumn resource type
+  heading: "DateTimeColumn resource type"
   intro: |
     The **dateTimeColumn** on a [columnDefinition](xref:graph.columnDefinition) resource indicates that the column's values are dates or times.
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of a **dateTimeColumn** resource.
   sampleCode: |
@@ -23,14 +23,14 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: displayAs
-    type: String
-    description: How the value should be presented in the UX. Must be one of default, friendly, or standard. See below for more details. If unspecified, treated as default.
-  - property: format
-    type: String
-    description: Indicates whether the value should be presented as a date only or a date and time. Must be one of dateOnly or dateTime
+  - property: "displayAs"
+    type: "String"
+    description: "How the value should be presented in the UX. Must be one of default, friendly, or standard. See below for more details. If unspecified, treated as default."
+  - property: "format"
+    type: "String"
+    description: "Indicates whether the value should be presented as a date only or a date and time. Must be one of dateOnly or dateTime"
   outro: |
     ## DisplayAs options
     |Value|Description

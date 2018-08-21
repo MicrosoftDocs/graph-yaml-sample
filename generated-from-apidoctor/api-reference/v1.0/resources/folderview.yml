@@ -7,12 +7,12 @@ metadata:
   ms.date: 09/10/2017
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/folderview.md
 summary:
-  heading: FolderView resource type
+  heading: "FolderView resource type"
   intro: |
     The **FolderView** resource provides or sets recommendations on the user-experience of a folder.
     It is available from the [folder][folder-facet] property of [driveItem][item-resource] resources.
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   sampleCode: |
     ```json
     {
@@ -23,17 +23,17 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: sortBy
-    type: String
-    description: The method by which the folder should be sorted.
-  - property: sortOrder
-    type: String
-    description: If true, indicates that items should be sorted in descending order. Otherwise, items should be sorted ascending.
-  - property: viewType
-    type: String
-    description: The type of view that should be used to represent the folder.
+  - property: "sortBy"
+    type: "String"
+    description: "The method by which the folder should be sorted."
+  - property: "sortOrder"
+    type: "String"
+    description: "If true, indicates that items should be sorted in descending order. Otherwise, items should be sorted ascending."
+  - property: "viewType"
+    type: "String"
+    description: "The type of view that should be used to represent the folder."
   outro: |
     You can use the _sortBy_ property to control the sort order of the items in applications that respect the **viewType** facet.
     ### sortBy options

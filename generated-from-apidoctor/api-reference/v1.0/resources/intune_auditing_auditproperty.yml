@@ -3,11 +3,11 @@ uid: graph.intune_auditing_auditproperty
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_auditing_auditproperty.md
 summary:
-  heading: auditProperty resource type
+  heading: "auditProperty resource type"
   intro: |
     A class containing the properties for Audit Property.
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -21,18 +21,18 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: displayName
-    type: String
-    description: Display name.
-  - property: oldValue
-    type: String
-    description: Old value.
-  - property: newValue
-    type: String
-    description: New value.
+  - property: "displayName"
+    type: "String"
+    description: "Display name."
+  - property: "oldValue"
+    type: "String"
+    description: "Old value."
+  - property: "newValue"
+    type: "String"
+    description: "New value."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

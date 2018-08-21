@@ -3,25 +3,25 @@ uid: graph.intune_deviceconfig_ratingunitedstatestelevisiontype
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_ratingunitedstatestelevisiontype.md
 summary:
-  heading: ratingUnitedStatesTelevisionType enum type
+  heading: "ratingUnitedStatesTelevisionType enum type"
   intro: |
     TV content rating labels in United States
 enum:
-  heading: Members
+  heading: "Members"
   table:
-  - member: allAllowed
-    description: Default value, allow all TV shows content
-  - member: allBlocked
-    description: Do not allow any TV shows content
-  - member: childrenAll
-    description: TV-Y, all children
-  - member: childrenAbove7
-    description: TV-Y7, children age 7 and above
-  - member: general
-    description: TV-G, suitable for all ages
-  - member: parentalGuidance
-    description: TV-PG, parental guidance
-  - member: childrenAbove14
-    description: TV-14, children age 14 and above
-  - member: adults
-    description: TV-MA, adults only
+  - member: "allAllowed"
+    description: "Default value, allow all TV shows content"
+  - member: "allBlocked"
+    description: "Do not allow any TV shows content"
+  - member: "childrenAll"
+    description: "TV-Y, all children"
+  - member: "childrenAbove7"
+    description: "TV-Y7, children age 7 and above"
+  - member: "general"
+    description: "TV-G, suitable for all ages"
+  - member: "parentalGuidance"
+    description: "TV-PG, parental guidance"
+  - member: "childrenAbove14"
+    description: "TV-14, children age 14 and above"
+  - member: "adults"
+    description: "TV-MA, adults only"

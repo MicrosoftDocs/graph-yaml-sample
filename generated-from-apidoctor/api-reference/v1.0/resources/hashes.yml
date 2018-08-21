@@ -6,12 +6,12 @@ metadata:
   ms.date: 09/10/2017
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/hashes.md
 summary:
-  heading: Hashes resource type
+  heading: "Hashes resource type"
   intro: |
     The **Hashes** resource groups available hashes into a single structure for an item.
     **Note:** Not all services provide a value for all hash properties listed.
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -24,22 +24,22 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: sha1Hash
-    type: String
-    description: SHA1 hash for the contents of the file (if available). Read-only.
-  - property: crc32Hash
-    type: String
-    description: The CRC32 value of the file in little endian (if available). Read-only.
-  - property: quickXorHash
-    type: String
-    description: A proprietary hash of the file that can be used to determine if the contents of the file have changed (if available). Read-only.
+  - property: "sha1Hash"
+    type: "String"
+    description: "SHA1 hash for the contents of the file (if available). Read-only."
+  - property: "crc32Hash"
+    type: "String"
+    description: "The CRC32 value of the file in little endian (if available). Read-only."
+  - property: "quickXorHash"
+    type: "String"
+    description: "A proprietary hash of the file that can be used to determine if the contents of the file have changed (if available). Read-only."
   outro: |
     **Note:** In some cases hash values may not be available. 
     If this is the case, the hash values on an item will be updated after the item is downloaded.
 remarks:
-  heading: Remarks
+  heading: "Remarks"
   intro: |
     In OneDrive for Business and SharePoint Server 2016, **sha1Hash** and **crc32Hash** are not available.
     In OneDrive Personal, **quickXorHash** is not available.

@@ -3,23 +3,23 @@ uid: graph.chartlineformat
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.chartlineformat
 summary:
-  heading: ChartLineFormat resource type
+  heading: "ChartLineFormat resource type"
   intro: |
     Enapsulates the formatting options for line elements.
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [Get ChartLineFormat](xref:graph.chartlineformat_get)
-    type: [WorkbookChartLineFormat](xref:graph.chartlineformat)
-    description: Read properties and relationships of chartLineFormat object.
-  - method: [Update](xref:graph.chartlineformat_update)
-    type: [WorkbookChartLineFormat](xref:graph.chartlineformat)
-    description: Update ChartLineFormat object.
-  - method: [Clear](xref:graph.chartlineformat_clear)
-    type: None
-    description: Clear the line format of a chart element.
+  - method: "[Get ChartLineFormat](xref:graph.chartlineformat_get)"
+    type: "[WorkbookChartLineFormat](xref:graph.chartlineformat)"
+    description: "Read properties and relationships of chartLineFormat object."
+  - method: "[Update](xref:graph.chartlineformat_update)"
+    type: "[WorkbookChartLineFormat](xref:graph.chartlineformat)"
+    description: "Update ChartLineFormat object."
+  - method: "[Clear](xref:graph.chartlineformat_clear)"
+    type: "None"
+    description: "Clear the line format of a chart element."
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -30,12 +30,12 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: color
-    type: String
-    description: HTML color code representing the color of lines in the chart.
+  - property: "color"
+    type: "String"
+    description: "HTML color code representing the color of lines in the chart."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

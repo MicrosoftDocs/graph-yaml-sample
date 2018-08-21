@@ -3,52 +3,52 @@ uid: graph.group_list_rejectedsenders
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/group_list_rejectedsenders.md
 summary:
-  heading: List rejectedSenders
+  heading: "List rejectedSenders"
   intro: |
     Get a list of users or groups that are in the rejectedSenders list for this group. 
     Users in the rejected senders list cannot post to conversations of the group (identified in the GET request URL). Make sure you do not specify the same user or group in the rejected senders and accepted senders lists, otherwise you will get an error.
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
   list:
-  - resource: Delegated (work or school account)
-    permission: Group.Read.All, Group.ReadWrite.All
-  - resource: Delegated (personal Microsoft account)
-    permission: Not supported.
-  - resource: Application
-    permission: Not supported.
+  - resource: "Delegated (work or school account)"
+    permission: "Group.Read.All, Group.ReadWrite.All"
+  - resource: "Delegated (personal Microsoft account)"
+    permission: "Not supported."
+  - resource: "Application"
+    permission: "Not supported."
 httpRequest:
-  heading: HTTP request
+  heading: "HTTP request"
   sampleCode: |
     ```http
     GET /groups/{id}/rejectedSenders
     ```
     
 queryParameters:
-  heading: Optional query parameters
+  heading: "Optional query parameters"
   intro: |
     This method supports the [OData Query Parameters](xref:graph.query_parameters) to help customize the response.
 requestHeaders:
-  heading: Request headers
+  heading: "Request headers"
   list:
-  - name: Authorization
-    value: String
-    description: 
+  - name: "Authorization"
+    value: "String"
+    description: ""
 requestBody:
-  heading: Request body
+  heading: "Request body"
   intro: |
     Do not supply a request body for this method.
 response:
-  heading: Response
+  heading: "Response"
   intro: |
     If successful, this method returns a `200 OK` response code and collection of [directoryObject](xref:graph.directoryobject) objects in the response body.
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         request:
-            heading: Request
+            heading: "Request"
             intro: |
               The following is an example of the request.
             sampleCode: |
@@ -57,7 +57,7 @@ examples:
               ```
               
         response:
-            heading: Response
+            heading: "Response"
             intro: |
               The following is an example of the response.
               

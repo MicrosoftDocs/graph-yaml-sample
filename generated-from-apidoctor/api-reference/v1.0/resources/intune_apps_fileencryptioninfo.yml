@@ -3,11 +3,11 @@ uid: graph.intune_apps_fileencryptioninfo
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_apps_fileencryptioninfo.md
 summary:
-  heading: fileEncryptionInfo resource type
+  heading: "fileEncryptionInfo resource type"
   intro: |
     Contains properties for file encryption information for the content version of a line of business app.
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -25,30 +25,30 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: encryptionKey
-    type: Binary
-    description: The key used to encrypt the file content.
-  - property: initializationVector
-    type: Binary
-    description: The initialization vector used for the encryption algorithm.
-  - property: mac
-    type: Binary
-    description: The hash of the encrypted file content + IV (content hash).
-  - property: macKey
-    type: Binary
-    description: The key used to get mac.
-  - property: profileIdentifier
-    type: String
-    description: The the profile identifier.
-  - property: fileDigest
-    type: Binary
-    description: The file digest prior to encryption.
-  - property: fileDigestAlgorithm
-    type: String
-    description: The file digest algorithm.
+  - property: "encryptionKey"
+    type: "Binary"
+    description: "The key used to encrypt the file content."
+  - property: "initializationVector"
+    type: "Binary"
+    description: "The initialization vector used for the encryption algorithm."
+  - property: "mac"
+    type: "Binary"
+    description: "The hash of the encrypted file content + IV (content hash)."
+  - property: "macKey"
+    type: "Binary"
+    description: "The key used to get mac."
+  - property: "profileIdentifier"
+    type: "String"
+    description: "The the profile identifier."
+  - property: "fileDigest"
+    type: "Binary"
+    description: "The file digest prior to encryption."
+  - property: "fileDigestAlgorithm"
+    type: "String"
+    description: "The file digest algorithm."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

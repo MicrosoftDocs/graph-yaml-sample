@@ -3,29 +3,29 @@ uid: graph.intune_deviceconfig_iosupdatedevicestatus
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_iosupdatedevicestatus.md
 summary:
-  heading: iosUpdateDeviceStatus resource type
+  heading: "iosUpdateDeviceStatus resource type"
   intro: |
     Not yet documented
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [List iosUpdateDeviceStatuses](xref:graph.intune_deviceconfig_iosupdatedevicestatus_list)
-    type: [iosUpdateDeviceStatus](xref:graph.intune_deviceconfig_iosupdatedevicestatus) collection
-    description: List properties and relationships of the iosUpdateDeviceStatus objects.
-  - method: [Get iosUpdateDeviceStatus](xref:graph.intune_deviceconfig_iosupdatedevicestatus_get)
-    type: [iosUpdateDeviceStatus](xref:graph.intune_deviceconfig_iosupdatedevicestatus)
-    description: Read properties and relationships of the iosUpdateDeviceStatus object.
-  - method: [Create iosUpdateDeviceStatus](xref:graph.intune_deviceconfig_iosupdatedevicestatus_create)
-    type: [iosUpdateDeviceStatus](xref:graph.intune_deviceconfig_iosupdatedevicestatus)
-    description: Create a new iosUpdateDeviceStatus object.
-  - method: [Delete iosUpdateDeviceStatus](xref:graph.intune_deviceconfig_iosupdatedevicestatus_delete)
-    type: None
-    description: Deletes a iosUpdateDeviceStatus.
-  - method: [Update iosUpdateDeviceStatus](xref:graph.intune_deviceconfig_iosupdatedevicestatus_update)
-    type: [iosUpdateDeviceStatus](xref:graph.intune_deviceconfig_iosupdatedevicestatus)
-    description: Update the properties of a iosUpdateDeviceStatus object.
+  - method: "[List iosUpdateDeviceStatuses](xref:graph.intune_deviceconfig_iosupdatedevicestatus_list)"
+    type: "[iosUpdateDeviceStatus](xref:graph.intune_deviceconfig_iosupdatedevicestatus) collection"
+    description: "List properties and relationships of the iosUpdateDeviceStatus objects."
+  - method: "[Get iosUpdateDeviceStatus](xref:graph.intune_deviceconfig_iosupdatedevicestatus_get)"
+    type: "[iosUpdateDeviceStatus](xref:graph.intune_deviceconfig_iosupdatedevicestatus)"
+    description: "Read properties and relationships of the iosUpdateDeviceStatus object."
+  - method: "[Create iosUpdateDeviceStatus](xref:graph.intune_deviceconfig_iosupdatedevicestatus_create)"
+    type: "[iosUpdateDeviceStatus](xref:graph.intune_deviceconfig_iosupdatedevicestatus)"
+    description: "Create a new iosUpdateDeviceStatus object."
+  - method: "[Delete iosUpdateDeviceStatus](xref:graph.intune_deviceconfig_iosupdatedevicestatus_delete)"
+    type: "None"
+    description: "Deletes a iosUpdateDeviceStatus."
+  - method: "[Update iosUpdateDeviceStatus](xref:graph.intune_deviceconfig_iosupdatedevicestatus_update)"
+    type: "[iosUpdateDeviceStatus](xref:graph.intune_deviceconfig_iosupdatedevicestatus)"
+    description: "Update the properties of a iosUpdateDeviceStatus object."
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -48,45 +48,45 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: id
-    type: String
-    description: Key of the entity.
-  - property: installStatus
-    type: microsoft.graph.iosUpdatesInstallStatus
-    description: The installation status of the policy report. The possible values are: success, available, idle, unknown, downloading, downloadFailed, downloadRequiresComputer, downloadInsufficientSpace, downloadInsufficientPower, downloadInsufficientNetwork, installing, installInsufficientSpace, installInsufficientPower, installPhoneCallInProgress, installFailed, notSupportedOperation, sharedDeviceUserLoggedInError.
-  - property: osVersion
-    type: String
-    description: The device version that is being reported.
-  - property: deviceId
-    type: String
-    description: The device id that is being reported.
-  - property: userId
-    type: String
-    description: The User id that is being reported.
-  - property: deviceDisplayName
-    type: String
-    description: Device name of the DevicePolicyStatus.
-  - property: userName
-    type: String
-    description: The User Name that is being reported
-  - property: deviceModel
-    type: String
-    description: The device model that is being reported
-  - property: complianceGracePeriodExpirationDateTime
-    type: DateTimeOffset
-    description: The DateTime when device compliance grace period expires
-  - property: status
-    type: microsoft.graph.complianceStatus
-    description: Compliance status of the policy report. The possible values are: unknown, notApplicable, compliant, remediated, nonCompliant, error, conflict.
-  - property: lastReportedDateTime
-    type: DateTimeOffset
-    description: Last modified date time of the policy report.
-  - property: userPrincipalName
-    type: String
-    description: UserPrincipalName.
+  - property: "id"
+    type: "String"
+    description: "Key of the entity."
+  - property: "installStatus"
+    type: "microsoft.graph.iosUpdatesInstallStatus"
+    description: "The installation status of the policy report. The possible values are: success, available, idle, unknown, downloading, downloadFailed, downloadRequiresComputer, downloadInsufficientSpace, downloadInsufficientPower, downloadInsufficientNetwork, installing, installInsufficientSpace, installInsufficientPower, installPhoneCallInProgress, installFailed, notSupportedOperation, sharedDeviceUserLoggedInError."
+  - property: "osVersion"
+    type: "String"
+    description: "The device version that is being reported."
+  - property: "deviceId"
+    type: "String"
+    description: "The device id that is being reported."
+  - property: "userId"
+    type: "String"
+    description: "The User id that is being reported."
+  - property: "deviceDisplayName"
+    type: "String"
+    description: "Device name of the DevicePolicyStatus."
+  - property: "userName"
+    type: "String"
+    description: "The User Name that is being reported"
+  - property: "deviceModel"
+    type: "String"
+    description: "The device model that is being reported"
+  - property: "complianceGracePeriodExpirationDateTime"
+    type: "DateTimeOffset"
+    description: "The DateTime when device compliance grace period expires"
+  - property: "status"
+    type: "microsoft.graph.complianceStatus"
+    description: "Compliance status of the policy report. The possible values are: unknown, notApplicable, compliant, remediated, nonCompliant, error, conflict."
+  - property: "lastReportedDateTime"
+    type: "DateTimeOffset"
+    description: "Last modified date time of the policy report."
+  - property: "userPrincipalName"
+    type: "String"
+    description: "UserPrincipalName."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

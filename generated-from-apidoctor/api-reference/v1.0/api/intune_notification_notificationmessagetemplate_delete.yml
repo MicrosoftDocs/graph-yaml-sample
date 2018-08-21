@@ -3,49 +3,49 @@ uid: graph.intune_notification_notificationmessagetemplate_delete
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/intune_notification_notificationmessagetemplate_delete.md
 summary:
-  heading: Delete notificationMessageTemplate
+  heading: "Delete notificationMessageTemplate"
   intro: |
     Deletes a [notificationMessageTemplate](xref:graph.intune_notification_notificationmessagetemplate).
 permissions:
-  heading: Prerequisites
+  heading: "Prerequisites"
   intro: |
     One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
 httpRequest:
-  heading: HTTP Request
+  heading: "HTTP Request"
   sampleCode: |
     ```http
     DELETE /deviceManagement/notificationMessageTemplates/{notificationMessageTemplateId}
     ```
     
 requestHeaders:
-  heading: Request headers
+  heading: "Request headers"
   list:
-  - name: Authorization
-    value: String
-    description: 
-  - name: Accept
-    value: String
-    description: 
+  - name: "Authorization"
+    value: "String"
+    description: ""
+  - name: "Accept"
+    value: "String"
+    description: ""
 requestBody:
-  heading: Request body
+  heading: "Request body"
   intro: |
     Do not supply a request body for this method.
 response:
-  heading: Response
+  heading: "Response"
   intro: |
     If successful, this method returns a `204 No Content` response code.
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         request:
-            heading: Request
+            heading: "Request"
             intro: |
               Here is an example of the request.
               DELETE https://graph.microsoft.com/v1.0/deviceManagement/notificationMessageTemplates/{notificationMessageTemplateId}
 
         response:
-            heading: Response
+            heading: "Response"
             intro: |
               Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
               HTTP/1.1 204 No Content

@@ -7,7 +7,7 @@ metadata:
   ms.date: 09/10/2017
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/driveitem_list_permissions.md
 summary:
-  heading: List sharing permissions on a DriveItem
+  heading: "List sharing permissions on a DriveItem"
   intro: |
     List the effective sharing permissions of on a [DriveItem](xref:graph.driveitem).
   outro: |
@@ -19,18 +19,18 @@ summary:
     * Sharing permission properties that contain secrets (e.g. `shareId` and `webUrl`) are only returned for callers that are able to create the sharing permission.
     
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
   list:
-  - resource: Delegated (work or school account)
-    permission: Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All
-  - resource: Delegated (personal Microsoft account)
-    permission: Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All
-  - resource: Application
-    permission: Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All
+  - resource: "Delegated (work or school account)"
+    permission: "Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All"
+  - resource: "Delegated (personal Microsoft account)"
+    permission: "Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All"
+  - resource: "Application"
+    permission: "Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All"
 httpRequest:
-  heading: HTTP request
+  heading: "HTTP request"
   sampleCode: |
     ```http
     GET /drives/{drive-id}/items/{item-id}/permissions
@@ -42,17 +42,17 @@ httpRequest:
     ```
     
 queryParameters:
-  heading: Optional query parameters
+  heading: "Optional query parameters"
   intro: |
     This method supports the `$select` [OData Query Parameters](xref:graph.query_parameters) to customize the response.
 requestHeaders:
-  heading: Optional request headers
+  heading: "Optional request headers"
   list:
-  - name: if-none-match
-    value: String
-    description: If this request header is included and the etag provided matches the current etag on the item, an HTTP 304 Not Modified response is returned.
+  - name: "if-none-match"
+    value: "String"
+    description: "If this request header is included and the etag provided matches the current etag on the item, an HTTP 304 Not Modified response is returned."
 response:
-  heading: Response
+  heading: "Response"
   intro: |
     If successful, this method returns a `200 OK` response code and collection of [Permission](xref:graph.permission) resources in the response body.
     Effective sharing permissions of a DriveItem can come from two sources:
@@ -66,18 +66,18 @@ response:
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         intro: |
           This example retrieves the collection of permissions on an item in the signed in user's drive.
         request:
-            heading: request
+            heading: "request"
             sampleCode: |
               ```http
               GET /me/drive/items/{item-id}/permissions
               ```
               
         response:
-            heading: Response
+            heading: "Response"
             intro: |
               This example response includes three permissions, the first is a sharing link with edit permissions, the second is an explicit permission for a user named John, which was inherited from a parent folder, and the third is a read-write sharing link created by an application.
             sampleCode: |
@@ -126,7 +126,7 @@ examples:
               ```
               
 remarks:
-  heading: Remarks
+  heading: "Remarks"
   intro: |
     The **permissions** relationship of DriveItem cannot be expanded as part of a call to [get DriveItem](xref:graph.driveitem_get) or a collection of DriveItems.
     You must access the permissions property directly.

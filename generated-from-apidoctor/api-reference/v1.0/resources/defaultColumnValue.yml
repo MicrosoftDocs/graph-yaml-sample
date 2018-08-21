@@ -7,12 +7,12 @@ metadata:
   ms.date: 09/12/2017
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/defaultColumnValue.md
 summary:
-  heading: DefaultColumnValue resource type
+  heading: "DefaultColumnValue resource type"
   intro: |
     The **defaultColumnValue** on a [columnDefinition](xref:graph.columnDefinition) resource specifies the default value for this column.
     The default value can either be specified directly or as a formula.
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of a **defaultColumnValue** resource.
   sampleCode: |
@@ -24,14 +24,14 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: formula
-    type: String
-    description: The formula used to compute the default value for this column.
-  - property: value
-    type: String
-    description: The direct value to use as the default value for this column.
+  - property: "formula"
+    type: "String"
+    description: "The formula used to compute the default value for this column."
+  - property: "value"
+    type: "String"
+    description: "The direct value to use as the default value for this column."
   outro: |
     Only one of **formula** or **value** may be specified at a time.
     SharePoint formulas use a syntax similar to Excel formulas.

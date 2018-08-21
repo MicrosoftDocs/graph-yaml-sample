@@ -3,7 +3,7 @@ uid: graph.user_getmembergroups
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/user_getmembergroups.md
 summary:
-  heading: user: getMemberGroups
+  heading: "user: getMemberGroups"
   intro: |
     Return all the groups that the user is a member of. The check is transitive, unlike reading the
     [memberOf](xref:graph.user_list_memberof) navigation property, which returns only the groups that the user is a direct member of.
@@ -11,51 +11,51 @@ summary:
     request can return is 2046. Note that Office 365 Groups cannot contain groups. So membership in an Office 365 Group is
     always direct.
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
   list:
-  - resource: Delegated (work or school account)
-    permission: ~~User.Read and Group.Read.All~~, ~~User.ReadBasic.All and Group.Read.All~~, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All
-  - resource: Delegated (personal Microsoft account)
-    permission: Not supported.
-  - resource: Application
-    permission: Group.Read.All, Directory.Read.All, Directory.ReadWrite.All
+  - resource: "Delegated (work or school account)"
+    permission: "~~User.Read and Group.Read.All~~, ~~User.ReadBasic.All and Group.Read.All~~, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All"
+  - resource: "Delegated (personal Microsoft account)"
+    permission: "Not supported."
+  - resource: "Application"
+    permission: "Group.Read.All, Directory.Read.All, Directory.ReadWrite.All"
 httpRequest:
-  heading: HTTP request
+  heading: "HTTP request"
   sampleCode: |
     ```http
     POST /users/{id | userPrincipalName}/getMemberGroups
     ```
     
 requestHeaders:
-  heading: Request headers
+  heading: "Request headers"
   list:
-  - name: Authorization
-    value: String
-    description: 
-  - name: Content-Type
-    value: String
-    description: 
+  - name: "Authorization"
+    value: "String"
+    description: ""
+  - name: "Content-Type"
+    value: "String"
+    description: ""
 requestBody:
-  heading: Request body
+  heading: "Request body"
   intro: |
     In the request body, provide a JSON object with the following parameters.
     |Parameter|Type|Description
     | :------------------ -| :------ -| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -|
     |securityEnabledOnly|Boolean|**true** to specify that only security groups that the user is a member of should be returned; **false** to specify that all groups that the user is a member of should be returned. Note: Setting this parameter to **true** is only supported when calling this method on a user.
 response:
-  heading: Response
+  heading: "Response"
   intro: |
     If successful, this method returns `200 OK` response code and String collection in the response body that contains the IDs of the groups that the user is a member of.
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         intro: |
           Here is an example of how to call this API.
         request:
-            heading: Request
+            heading: "Request"
             intro: |
               Here is an example of the request.
             sampleCode: |
@@ -70,7 +70,7 @@ examples:
               ```
               
         response:
-            heading: Response
+            heading: "Response"
             intro: |
               Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
             sampleCode: |

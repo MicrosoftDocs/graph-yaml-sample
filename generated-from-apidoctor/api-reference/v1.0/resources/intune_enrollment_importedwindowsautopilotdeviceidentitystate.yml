@@ -3,11 +3,11 @@ uid: graph.intune_enrollment_importedwindowsautopilotdeviceidentitystate
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_enrollment_importedwindowsautopilotdeviceidentitystate.md
 summary:
-  heading: importedWindowsAutopilotDeviceIdentityState resource type
+  heading: "importedWindowsAutopilotDeviceIdentityState resource type"
   intro: |
     Not yet documented
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -22,21 +22,21 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: deviceImportStatus
-    type: microsoft.graph.importedWindowsAutopilotDeviceIdentityImportStatus
-    description: Device status reported by Device Directory Service(DDS). The possible values are: unknown, pending, partial, complete, error.
-  - property: deviceRegistrationId
-    type: String
-    description: Device Registration ID for successfully added device reported by Device Directory Service(DDS).
-  - property: deviceErrorCode
-    type: Int32
-    description: Device error code reported by Device Directory Service(DDS).
-  - property: deviceErrorName
-    type: String
-    description: Device error name reported by Device Directory Service(DDS).
+  - property: "deviceImportStatus"
+    type: "microsoft.graph.importedWindowsAutopilotDeviceIdentityImportStatus"
+    description: "Device status reported by Device Directory Service(DDS). The possible values are: unknown, pending, partial, complete, error."
+  - property: "deviceRegistrationId"
+    type: "String"
+    description: "Device Registration ID for successfully added device reported by Device Directory Service(DDS)."
+  - property: "deviceErrorCode"
+    type: "Int32"
+    description: "Device error code reported by Device Directory Service(DDS)."
+  - property: "deviceErrorName"
+    type: "String"
+    description: "Device error name reported by Device Directory Service(DDS)."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

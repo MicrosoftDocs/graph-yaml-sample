@@ -3,11 +3,11 @@ uid: graph.educationstudent
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/educationstudent.md
 summary:
-  heading: educationStudent resource type
+  heading: "educationStudent resource type"
   intro: |
     Additional information added to an [educationUser](xref:graph.educationuser) that is present when the primaryRole of a user is `student`.
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     The following is a JSON representation of the resource.
   sampleCode: |
@@ -23,23 +23,23 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: birthDate
-    type: Date
-    description: Birth date of the student.
-  - property: externalId
-    type: String
-    description: ID of the student in the source system.
-  - property: gender
-    type: microsoft.graph.educationGender
-    description: The possible values are: female, male, other, unknownFutureValue.
-  - property: grade
-    type: String
-    description: Current grade level of the student.
-  - property: graduationYear
-    type: String
-    description: Year the student is graduating from the school.
-  - property: studentNumber
-    type: String
-    description: Student Number.
+  - property: "birthDate"
+    type: "Date"
+    description: "Birth date of the student."
+  - property: "externalId"
+    type: "String"
+    description: "ID of the student in the source system."
+  - property: "gender"
+    type: "microsoft.graph.educationGender"
+    description: "The possible values are: female, male, other, unknownFutureValue."
+  - property: "grade"
+    type: "String"
+    description: "Current grade level of the student."
+  - property: "graduationYear"
+    type: "String"
+    description: "Year the student is graduating from the school."
+  - property: "studentNumber"
+    type: "String"
+    description: "Student Number."

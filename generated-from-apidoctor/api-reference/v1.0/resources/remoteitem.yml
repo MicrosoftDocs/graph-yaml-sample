@@ -7,14 +7,14 @@ metadata:
   ms.date: 09/10/2017
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/remoteitem.md
 summary:
-  heading: RemoteItem resource type
+  heading: "RemoteItem resource type"
   intro: |
     The **remoteItem** resource indicates that a [**driveItem**](xref:graph.driveitem) references an item that exists in another drive.
     This resource provides the unique IDs of the source drive and target item.
     [**DriveItems**](xref:graph.driveitem) with a non-null **remoteItem** facet are resources that are shared, added to the user's OneDrive, or on items returned from hetrogenous collections of items (like search results).
     **Note:** Unlike with folders in the same drive, a **driveItem** moved into a remote item may have its `id` value changed.
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   sampleCode: |
     ```json
     {
@@ -39,60 +39,60 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: createdBy
-    type: microsoft.graph.identitySet
-    description: Identity of the user, device, and application which created the item. Read-only.
-  - property: createdDateTime
-    type: DateTimeOffset
-    description: Date and time of item creation. Read-only.
-  - property: file
-    type: microsoft.graph.file
-    description: Indicates that the remote item is a file. Read-only.
-  - property: fileSystemInfo
-    type: microsoft.graph.fileSystemInfo
-    description: Information about the remote item from the local file system. Read-only.
-  - property: folder
-    type: microsoft.graph.folder
-    description: Indicates that the remote item is a folder. Read-only.
-  - property: id
-    type: String
-    description: Unique identifier for the remote item in its drive. Read-only.
-  - property: lastModifiedBy
-    type: microsoft.graph.identitySet
-    description: Identity of the user, device, and application which last modified the item. Read-only.
-  - property: lastModifiedDateTime
-    type: DateTimeOffset
-    description: Date and time the item was last modified. Read-only.
-  - property: name
-    type: String
-    description: Optional. Filename of the remote item. Read-only.
-  - property: package
-    type: microsoft.graph.package
-    description: If present, indicates that this item is a package instead of a folder or file. Packages are treated like files in some contexts and folders in others. Read-only.
-  - property: parentReference
-    type: microsoft.graph.itemReference
-    description: Properties of the parent of the remote item. Read-only.
-  - property: shared
-    type: microsoft.graph.shared
-    description: Indicates that the item has been shared with others and provides information about the shared state of the item. Read-only.
-  - property: sharepointIds
-    type: microsoft.graph.sharepointIds
-    description: Provides interop between items in OneDrive for Business and SharePoint with the full set of item identifiers. Read-only.
-  - property: size
-    type: Int64
-    description: Size of the remote item. Read-only.
-  - property: specialFolder
-    type: microsoft.graph.specialFolder
-    description: If the current item is also available as a special folder, this facet is returned. Read-only.
-  - property: webDavUrl
-    type: String
-    description: DAV compatible URL for the item.
-  - property: webUrl
-    type: String
-    description: URL that displays the resource in the browser. Read-only.
+  - property: "createdBy"
+    type: "microsoft.graph.identitySet"
+    description: "Identity of the user, device, and application which created the item. Read-only."
+  - property: "createdDateTime"
+    type: "DateTimeOffset"
+    description: "Date and time of item creation. Read-only."
+  - property: "file"
+    type: "microsoft.graph.file"
+    description: "Indicates that the remote item is a file. Read-only."
+  - property: "fileSystemInfo"
+    type: "microsoft.graph.fileSystemInfo"
+    description: "Information about the remote item from the local file system. Read-only."
+  - property: "folder"
+    type: "microsoft.graph.folder"
+    description: "Indicates that the remote item is a folder. Read-only."
+  - property: "id"
+    type: "String"
+    description: "Unique identifier for the remote item in its drive. Read-only."
+  - property: "lastModifiedBy"
+    type: "microsoft.graph.identitySet"
+    description: "Identity of the user, device, and application which last modified the item. Read-only."
+  - property: "lastModifiedDateTime"
+    type: "DateTimeOffset"
+    description: "Date and time the item was last modified. Read-only."
+  - property: "name"
+    type: "String"
+    description: "Optional. Filename of the remote item. Read-only."
+  - property: "package"
+    type: "microsoft.graph.package"
+    description: "If present, indicates that this item is a package instead of a folder or file. Packages are treated like files in some contexts and folders in others. Read-only."
+  - property: "parentReference"
+    type: "microsoft.graph.itemReference"
+    description: "Properties of the parent of the remote item. Read-only."
+  - property: "shared"
+    type: "microsoft.graph.shared"
+    description: "Indicates that the item has been shared with others and provides information about the shared state of the item. Read-only."
+  - property: "sharepointIds"
+    type: "microsoft.graph.sharepointIds"
+    description: "Provides interop between items in OneDrive for Business and SharePoint with the full set of item identifiers. Read-only."
+  - property: "size"
+    type: "Int64"
+    description: "Size of the remote item. Read-only."
+  - property: "specialFolder"
+    type: "microsoft.graph.specialFolder"
+    description: "If the current item is also available as a special folder, this facet is returned. Read-only."
+  - property: "webDavUrl"
+    type: "String"
+    description: "DAV compatible URL for the item."
+  - property: "webUrl"
+    type: "String"
+    description: "URL that displays the resource in the browser. Read-only."
 remarks:
-  heading: Remarks
+  heading: "Remarks"
   intro: |
     For more information about the facets on a **driveItem**, see [driveItem](xref:graph.driveitem).

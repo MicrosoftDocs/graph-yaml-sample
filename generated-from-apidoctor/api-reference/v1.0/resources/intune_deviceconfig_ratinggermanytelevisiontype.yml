@@ -3,23 +3,23 @@ uid: graph.intune_deviceconfig_ratinggermanytelevisiontype
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_ratinggermanytelevisiontype.md
 summary:
-  heading: ratingGermanyTelevisionType enum type
+  heading: "ratingGermanyTelevisionType enum type"
   intro: |
     TV content rating labels in Germany
 enum:
-  heading: Members
+  heading: "Members"
   table:
-  - member: allAllowed
-    description: Default value, allow all TV shows content
-  - member: allBlocked
-    description: Do not allow any TV shows content
-  - member: general
-    description: Ab 0 Jahren, no age restrictions
-  - member: agesAbove6
-    description: Ab 6 Jahren, ages 6 and older
-  - member: agesAbove12
-    description: Ab 12 Jahren, ages 12 and older
-  - member: agesAbove16
-    description: Ab 16 Jahren, ages 16 and older
-  - member: adults
-    description: Ab 18 Jahren, adults only
+  - member: "allAllowed"
+    description: "Default value, allow all TV shows content"
+  - member: "allBlocked"
+    description: "Do not allow any TV shows content"
+  - member: "general"
+    description: "Ab 0 Jahren, no age restrictions"
+  - member: "agesAbove6"
+    description: "Ab 6 Jahren, ages 6 and older"
+  - member: "agesAbove12"
+    description: "Ab 12 Jahren, ages 12 and older"
+  - member: "agesAbove16"
+    description: "Ab 16 Jahren, ages 16 and older"
+  - member: "adults"
+    description: "Ab 18 Jahren, adults only"

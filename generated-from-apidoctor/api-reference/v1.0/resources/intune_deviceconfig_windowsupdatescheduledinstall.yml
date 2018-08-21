@@ -3,12 +3,12 @@ uid: graph.intune_deviceconfig_windowsupdatescheduledinstall
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_windowsupdatescheduledinstall.md
 summary:
-  heading: windowsUpdateScheduledInstall resource type
+  heading: "windowsUpdateScheduledInstall resource type"
   intro: |
     Not yet documented
     Inherits from [windowsUpdateInstallScheduleType](xref:graph.intune_deviceconfig_windowsupdateinstallscheduletype)
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -21,15 +21,15 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: scheduledInstallDay
-    type: microsoft.graph.weeklySchedule
-    description: Scheduled Install Day in week. The possible values are: userDefined, everyday, sunday, monday, tuesday, wednesday, thursday, friday, saturday.
-  - property: scheduledInstallTime
-    type: TimeOfDay
-    description: Scheduled Install Time during day
+  - property: "scheduledInstallDay"
+    type: "microsoft.graph.weeklySchedule"
+    description: "Scheduled Install Day in week. The possible values are: userDefined, everyday, sunday, monday, tuesday, wednesday, thursday, friday, saturday."
+  - property: "scheduledInstallTime"
+    type: "TimeOfDay"
+    description: "Scheduled Install Time during day"
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

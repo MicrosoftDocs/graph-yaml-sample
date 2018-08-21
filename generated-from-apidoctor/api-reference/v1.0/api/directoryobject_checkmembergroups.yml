@@ -3,23 +3,23 @@ uid: graph.directoryobject_checkmembergroups
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/directoryobject_checkmembergroups.md
 summary:
-  heading: Check member groups
+  heading: "Check member groups"
   intro: |
     Check for membership in a specified list of groups, and returns from that list those groups
     of which the specified user, group, or directory object is a member. This function is transitive.
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
   list:
-  - resource: Delegated (work or school account)
-    permission: User.Read.All and Group.Read.All, Directory.Read.All
-  - resource: Delegated (personal Microsoft account)
-    permission: Not supported.
-  - resource: Application
-    permission: User.Read.All and Group.Read.All, Directory.Read.All
+  - resource: "Delegated (work or school account)"
+    permission: "User.Read.All and Group.Read.All, Directory.Read.All"
+  - resource: "Delegated (personal Microsoft account)"
+    permission: "Not supported."
+  - resource: "Application"
+    permission: "User.Read.All and Group.Read.All, Directory.Read.All"
 httpRequest:
-  heading: HTTP request
+  heading: "HTTP request"
   sampleCode: |
     ```http
     POST /me/checkMemberGroups
@@ -29,31 +29,31 @@ httpRequest:
     ```
     
 requestHeaders:
-  heading: Request headers
+  heading: "Request headers"
   list:
-  - name: Authorization
-    value: String
-    description: Bearer {token}. Required.
-  - name: Content-Type
-    value: String
-    description: application/json
+  - name: "Authorization"
+    value: "String"
+    description: "Bearer {token}. Required."
+  - name: "Content-Type"
+    value: "String"
+    description: "application/json"
 requestBody:
-  heading: Request body
+  heading: "Request body"
   intro: |
     In the request body, provide a JSON object with the following parameters.
     |Parameter|Type|Description
     |:-|:-|:-|
     |groupIds|String collection|A collection that contains the object IDs of the groups in which to check membership. Up to 20 groups may be specified.
 response:
-  heading: Response
+  heading: "Response"
   intro: |
     If successful, this method returns `200 OK` response code and String collection object in the response body.
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         request:
-            heading: Request
+            heading: "Request"
             sampleCode: |
               ```http
               POST https://graph.microsoft.com/v1.0/directoryObjects/{id}/checkMemberGroups
@@ -68,7 +68,7 @@ examples:
               ```
               
         response:
-            heading: Response
+            heading: "Response"
             intro: |
               Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
             sampleCode: |

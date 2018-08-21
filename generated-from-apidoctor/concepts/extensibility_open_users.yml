@@ -3,7 +3,7 @@ uid: graph.extensibility_open_users
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/extensibility_open_users.md
 summary:
-  heading: Add custom data to users using open extensions
+  heading: "Add custom data to users using open extensions"
   intro: |
     We're going to walk you through an example to demonstrate how to use *open extensions*. 
     Imagine you're building an application that is available on lots of different client platforms, such as desktop and mobile.  You want to let users 
@@ -21,7 +21,7 @@ summary:
     The user signs in to the app and configures the look and feel of the app.  These app settings should roam so that the user gets the same experience on 
     whatever device they sign in to the app from.  Here we'll see how to add the roaming profile information to a user resource.
 requestBody:
-  heading: Request
+  heading: "Request"
   intro: |
     POST https://graph.microsoft.com/v1.0/me/extensions
     Content-type: application/json
@@ -34,7 +34,7 @@ requestBody:
     }
 
 response:
-  heading: Response
+  heading: "Response"
   intro: |
     HTTP/1.1 201 Created
     Content-Type: application/json

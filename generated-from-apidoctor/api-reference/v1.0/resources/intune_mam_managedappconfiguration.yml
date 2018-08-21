@@ -3,21 +3,21 @@ uid: graph.intune_mam_managedappconfiguration
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_mam_managedappconfiguration.md
 summary:
-  heading: managedAppConfiguration resource type
+  heading: "managedAppConfiguration resource type"
   intro: |
     Configuration used to deliver a set of custom settings as-is to apps for users to whom the configuration is scoped
     Inherits from [managedAppPolicy](xref:graph.intune_mam_managedapppolicy)
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [List managedAppConfigurations](xref:graph.intune_mam_managedappconfiguration_list)
-    type: [managedAppConfiguration](xref:graph.intune_mam_managedappconfiguration) collection
-    description: List properties and relationships of the managedAppConfiguration objects.
-  - method: [Get managedAppConfiguration](xref:graph.intune_mam_managedappconfiguration_get)
-    type: [managedAppConfiguration](xref:graph.intune_mam_managedappconfiguration)
-    description: Read properties and relationships of the managedAppConfiguration object.
+  - method: "[List managedAppConfigurations](xref:graph.intune_mam_managedappconfiguration_list)"
+    type: "[managedAppConfiguration](xref:graph.intune_mam_managedappconfiguration) collection"
+    description: "List properties and relationships of the managedAppConfiguration objects."
+  - method: "[Get managedAppConfiguration](xref:graph.intune_mam_managedappconfiguration_get)"
+    type: "[managedAppConfiguration](xref:graph.intune_mam_managedappconfiguration)"
+    description: "Read properties and relationships of the managedAppConfiguration object."
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -41,30 +41,30 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: displayName
-    type: String
-    description: Policy display name. Inherited from managedAppPolicy
-  - property: description
-    type: String
-    description: The policy's description. Inherited from managedAppPolicy
-  - property: createdDateTime
-    type: DateTimeOffset
-    description: The date and time the policy was created. Inherited from managedAppPolicy
-  - property: lastModifiedDateTime
-    type: DateTimeOffset
-    description: Last time the policy was modified. Inherited from managedAppPolicy
-  - property: id
-    type: String
-    description: Key of the entity. Inherited from managedAppPolicy
-  - property: version
-    type: String
-    description: Version of the entity. Inherited from managedAppPolicy
-  - property: customSettings
-    type: Collection(microsoft.graph.keyValuePair)
-    description: A set of string key and string value pairs to be sent to apps for users to whom the configuration is scoped, unalterned by this service
+  - property: "displayName"
+    type: "String"
+    description: "Policy display name. Inherited from managedAppPolicy"
+  - property: "description"
+    type: "String"
+    description: "The policy's description. Inherited from managedAppPolicy"
+  - property: "createdDateTime"
+    type: "DateTimeOffset"
+    description: "The date and time the policy was created. Inherited from managedAppPolicy"
+  - property: "lastModifiedDateTime"
+    type: "DateTimeOffset"
+    description: "Last time the policy was modified. Inherited from managedAppPolicy"
+  - property: "id"
+    type: "String"
+    description: "Key of the entity. Inherited from managedAppPolicy"
+  - property: "version"
+    type: "String"
+    description: "Version of the entity. Inherited from managedAppPolicy"
+  - property: "customSettings"
+    type: "Collection(microsoft.graph.keyValuePair)"
+    description: "A set of string key and string value pairs to be sent to apps for users to whom the configuration is scoped, unalterned by this service"
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

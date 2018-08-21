@@ -3,20 +3,20 @@ uid: graph.chartaxis
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.chartaxis
 summary:
-  heading: ChartAxis resource type
+  heading: "ChartAxis resource type"
   intro: |
     Represents a single axis in a chart.
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [Get ChartAxis](xref:graph.chartaxis_get)
-    type: [WorkbookChartAxis](xref:graph.chartaxis)
-    description: Read properties and relationships of chartAxis object.
-  - method: [Update](xref:graph.chartaxis_update)
-    type: [WorkbookChartAxis](xref:graph.chartaxis)
-    description: Update ChartAxis object.
+  - method: "[Get ChartAxis](xref:graph.chartaxis_get)"
+    type: "[WorkbookChartAxis](xref:graph.chartaxis)"
+    description: "Read properties and relationships of chartAxis object."
+  - method: "[Update](xref:graph.chartaxis_update)"
+    type: "[WorkbookChartAxis](xref:graph.chartaxis)"
+    description: "Update ChartAxis object."
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -35,35 +35,35 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: id
-    type: String
-    description: Unique identifier. Read-only.
-  - property: majorUnit
-    type: microsoft.graph.Json
-    description: Represents the interval between two major tick marks. Can be set to a numeric value or an empty string.  The returned value is always a number.
-  - property: maximum
-    type: microsoft.graph.Json
-    description: Represents the maximum value on the value axis.  Can be set to a numeric value or an empty string (for automatic axis values).  The returned value is always a number.
-  - property: minimum
-    type: microsoft.graph.Json
-    description: Represents the minimum value on the value axis. Can be set to a numeric value or an empty string (for automatic axis values).  The returned value is always a number.
-  - property: minorUnit
-    type: microsoft.graph.Json
-    description: Represents the interval between two minor tick marks. "Can be set to a numeric value or an empty string (for automatic axis values). The returned value is always a number.
+  - property: "id"
+    type: "String"
+    description: "Unique identifier. Read-only."
+  - property: "majorUnit"
+    type: "microsoft.graph.Json"
+    description: "Represents the interval between two major tick marks. Can be set to a numeric value or an empty string.  The returned value is always a number."
+  - property: "maximum"
+    type: "microsoft.graph.Json"
+    description: "Represents the maximum value on the value axis.  Can be set to a numeric value or an empty string (for automatic axis values).  The returned value is always a number."
+  - property: "minimum"
+    type: "microsoft.graph.Json"
+    description: "Represents the minimum value on the value axis. Can be set to a numeric value or an empty string (for automatic axis values).  The returned value is always a number."
+  - property: "minorUnit"
+    type: "microsoft.graph.Json"
+    description: "Represents the interval between two minor tick marks. "Can be set to a numeric value or an empty string (for automatic axis values). The returned value is always a number."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   list:
-  - relationship: format
-    type: microsoft.graph.workbookChartAxisFormat
-    description: Represents the formatting of a chart object, which includes line and font formatting. Read-only.
-  - relationship: majorGridlines
-    type: microsoft.graph.workbookChartGridlines
-    description: Returns a gridlines object that represents the major gridlines for the specified axis. Read-only.
-  - relationship: minorGridlines
-    type: microsoft.graph.workbookChartGridlines
-    description: Returns a Gridlines object that represents the minor gridlines for the specified axis. Read-only.
-  - relationship: title
-    type: microsoft.graph.workbookChartAxisTitle
-    description: Represents the axis title. Read-only.
+  - relationship: "format"
+    type: "microsoft.graph.workbookChartAxisFormat"
+    description: "Represents the formatting of a chart object, which includes line and font formatting. Read-only."
+  - relationship: "majorGridlines"
+    type: "microsoft.graph.workbookChartGridlines"
+    description: "Returns a gridlines object that represents the major gridlines for the specified axis. Read-only."
+  - relationship: "minorGridlines"
+    type: "microsoft.graph.workbookChartGridlines"
+    description: "Returns a Gridlines object that represents the minor gridlines for the specified axis. Read-only."
+  - relationship: "title"
+    type: "microsoft.graph.workbookChartAxisTitle"
+    description: "Represents the axis title. Read-only."

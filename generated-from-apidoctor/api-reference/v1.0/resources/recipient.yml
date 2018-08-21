@@ -3,11 +3,11 @@ uid: graph.recipient
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/recipient.md
 summary:
-  heading: recipient resource type
+  heading: "recipient resource type"
   intro: |
     Represents information about a user in the sending or receiving end of an event, message or group post. 
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource
   sampleCode: |
@@ -18,8 +18,8 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: emailAddress
-    type: microsoft.graph.emailAddress
-    description: The recipient's email address.
+  - property: "emailAddress"
+    type: "microsoft.graph.emailAddress"
+    description: "The recipient's email address."

@@ -3,7 +3,7 @@ uid: graph.onenote_images_files
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/onenote_images_files.md
 summary:
-  heading: Add images, videos, and files to OneNote pages
+  heading: "Add images, videos, and files to OneNote pages"
   intro: |
     **Applies to** Consumer notebooks on OneDrive | Enterprise notebooks on Office 365
     You can use **img**, **object**, and **iframe** elements to add images, videos, and files to a OneNote page when you're [creating](xref:graph.onenote-create-page) or [updating](xref:graph.onenote_update_page) the page. 
@@ -30,7 +30,7 @@ summary:
     Use `object` with `data="name:file-block-name" data-attachment="file-name.file-ext" type="media-type"` and send an image file in the data part of a multipart request. Adds a file attachment to the OneNote page and displays a file icon.
     
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     To create or update OneNote pages, you'll need to request appropriate permissions. Choose the lowest level that your app needs to do its work.
   outro: |
@@ -43,7 +43,7 @@ permissions:
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         intro: |
           In the input HTML of your request, include `<iframe data-original-src="http://..." />` and specify the URL of the video for the **data-original-src** attribute.
           Content-Type: multipart/form-data; boundary=MyAppPartBoundary

@@ -3,11 +3,11 @@ uid: graph.baseItemVersion
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/baseItemVersion.md
 summary:
-  heading: BaseItemVersion resource type
+  heading: "BaseItemVersion resource type"
   intro: |
     The **baseItemVersion** resource represents a previous version of an item or entity.
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   sampleCode: |
     ```json
     {
@@ -19,17 +19,17 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: id
-    type: String
-    description: The ID of the version. Read-only.
-  - property: lastModifiedBy
-    type: microsoft.graph.identitySet
-    description: Identity of the user which last modified the version. Read-only.
-  - property: lastModifiedDateTime
-    type: DateTimeOffset
-    description: Date and time the version was last modified. Read-only.
-  - property: publication
-    type: microsoft.graph.publicationFacet
-    description: Indicates the publication status of this particular version. Read-only.
+  - property: "id"
+    type: "String"
+    description: "The ID of the version. Read-only."
+  - property: "lastModifiedBy"
+    type: "microsoft.graph.identitySet"
+    description: "Identity of the user which last modified the version. Read-only."
+  - property: "lastModifiedDateTime"
+    type: "DateTimeOffset"
+    description: "Date and time the version was last modified. Read-only."
+  - property: "publication"
+    type: "microsoft.graph.publicationFacet"
+    description: "Indicates the publication status of this particular version. Read-only."

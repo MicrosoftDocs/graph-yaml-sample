@@ -3,22 +3,22 @@ uid: graph.message_update
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/message_update.md
 summary:
-  heading: Update message
+  heading: "Update message"
   intro: |
     Update the properties of message object.
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
   list:
-  - resource: Delegated (work or school account)
-    permission: Mail.ReadWrite
-  - resource: Delegated (personal Microsoft account)
-    permission: Mail.ReadWrite
-  - resource: Application
-    permission: Mail.ReadWrite
+  - resource: "Delegated (work or school account)"
+    permission: "Mail.ReadWrite"
+  - resource: "Delegated (personal Microsoft account)"
+    permission: "Mail.ReadWrite"
+  - resource: "Application"
+    permission: "Mail.ReadWrite"
 httpRequest:
-  heading: HTTP request
+  heading: "HTTP request"
   sampleCode: |
     ```http
     PATCH /me/messages/{id}
@@ -28,16 +28,16 @@ httpRequest:
     ```
     
 requestHeaders:
-  heading: Request headers
+  heading: "Request headers"
   list:
-  - name: Authorization
-    value: String
-    description: Bearer {token}. Required.
-  - name: Content-Type
-    value: String
-    description: Nature of the data in the body of an entity. Required.
+  - name: "Authorization"
+    value: "String"
+    description: "Bearer {token}. Required."
+  - name: "Content-Type"
+    value: "String"
+    description: "Nature of the data in the body of an entity. Required."
 requestBody:
-  heading: Request body
+  heading: "Request body"
   intro: |
     In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed. Writable/Updatable properties are
     |Property|Type|Description
@@ -60,15 +60,15 @@ requestBody:
     Since the **message** resource supports [extensions](xref:graph.extensibility_overview), you can use the `PATCH` operation to 
     add, update, or delete your own app-specific data in custom properties of an extension in an existing **message** instance.
 response:
-  heading: Response
+  heading: "Response"
   intro: |
     If successful, this method returns a `200 OK` response code and updated [message](xref:graph.message) object in the response body.
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         request:
-            heading: Request
+            heading: "Request"
             intro: |
               Here is an example of the request.
             sampleCode: |
@@ -88,7 +88,7 @@ examples:
               ```
               
         response:
-            heading: Response
+            heading: "Response"
             intro: |
               Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
             sampleCode: |

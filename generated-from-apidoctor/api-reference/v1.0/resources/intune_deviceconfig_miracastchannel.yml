@@ -3,51 +3,51 @@ uid: graph.intune_deviceconfig_miracastchannel
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_miracastchannel.md
 summary:
-  heading: miracastChannel enum type
+  heading: "miracastChannel enum type"
   intro: |
     Possible values for Miracast channel.
 enum:
-  heading: Members
+  heading: "Members"
   table:
-  - member: userDefined
-    description: User Defined, default value, no intent.
-  - member: one
-    description: One.
-  - member: two
-    description: Two.
-  - member: three
-    description: Three.
-  - member: four
-    description: Four.
-  - member: five
-    description: Five.
-  - member: six
-    description: Six.
-  - member: seven
-    description: Seven.
-  - member: eight
-    description: Eight.
-  - member: nine
-    description: Nine.
-  - member: ten
-    description: Ten.
-  - member: eleven
-    description: Eleven.
-  - member: thirtySix
-    description: Thirty-Six.
-  - member: forty
-    description: Forty.
-  - member: fortyFour
-    description: Forty-Four.
-  - member: fortyEight
-    description: Forty-Eight.
-  - member: oneHundredFortyNine
-    description: OneHundredForty-Nine.
-  - member: oneHundredFiftyThree
-    description: OneHundredFifty-Three.
-  - member: oneHundredFiftySeven
-    description: OneHundredFifty-Seven.
-  - member: oneHundredSixtyOne
-    description: OneHundredSixty-One.
-  - member: oneHundredSixtyFive
-    description: OneHundredSixty-Five.
+  - member: "userDefined"
+    description: "User Defined, default value, no intent."
+  - member: "one"
+    description: "One."
+  - member: "two"
+    description: "Two."
+  - member: "three"
+    description: "Three."
+  - member: "four"
+    description: "Four."
+  - member: "five"
+    description: "Five."
+  - member: "six"
+    description: "Six."
+  - member: "seven"
+    description: "Seven."
+  - member: "eight"
+    description: "Eight."
+  - member: "nine"
+    description: "Nine."
+  - member: "ten"
+    description: "Ten."
+  - member: "eleven"
+    description: "Eleven."
+  - member: "thirtySix"
+    description: "Thirty-Six."
+  - member: "forty"
+    description: "Forty."
+  - member: "fortyFour"
+    description: "Forty-Four."
+  - member: "fortyEight"
+    description: "Forty-Eight."
+  - member: "oneHundredFortyNine"
+    description: "OneHundredForty-Nine."
+  - member: "oneHundredFiftyThree"
+    description: "OneHundredFifty-Three."
+  - member: "oneHundredFiftySeven"
+    description: "OneHundredFifty-Seven."
+  - member: "oneHundredSixtyOne"
+    description: "OneHundredSixty-One."
+  - member: "oneHundredSixtyFive"
+    description: "OneHundredSixty-Five."

@@ -7,7 +7,7 @@ metadata:
   ms.date: 09/10/2017
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/specialfolder.md
 summary:
-  heading: SpecialFolder resource type
+  heading: "SpecialFolder resource type"
   intro: |
     The **SpecialFolder** resource groups special folder-related data items into a single structure.
     If a **DriveItem** has a non-null **specialFolder** facet, the item represents a special (named) folder.
@@ -18,7 +18,7 @@ summary:
     If a user deletes one, it is recreated when written to again.
     **Note:** If your app has only requested **Files.Read** scope and requests a special folder that doesn't exist, the response will be a `403 Forbidden` error.
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   sampleCode: |
     ```json
     {
@@ -27,11 +27,11 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: name
-    type: String
-    description: The unique identifier for this item in the /drive/special collection
+  - property: "name"
+    type: "String"
+    description: "The unique identifier for this item in the /drive/special collection"
   outro: |
     ## Special folders
     Here are the special folders available in OneDrive Personal and OneDrive for Business.
@@ -43,6 +43,6 @@ properties:
     |Music|`music`|The Music folder. Not available in OneDrive for Business.
     |Photos|`photos`|The Photos folder.
 remarks:
-  heading: Remarks
+  heading: "Remarks"
   intro: |
     For more information about the facets on a DriveItem, see [DriveItem](xref:graph.driveitem).

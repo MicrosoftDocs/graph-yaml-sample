@@ -7,23 +7,23 @@ metadata:
   ms.date: 09/10/2017
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/driveitem_search.md
 summary:
-  heading: Search for a DriveItems within a drive
+  heading: "Search for a DriveItems within a drive"
   intro: |
     Search the hierarchy of items for items matching a query.
     You can search within a folder hierarchy, a whole drive, or files shared with the current user.
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
   list:
-  - resource: Delegated (work or school account)
-    permission: Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All
-  - resource: Delegated (personal Microsoft account)
-    permission: Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All
-  - resource: Application
-    permission: Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All
+  - resource: "Delegated (work or school account)"
+    permission: "Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All"
+  - resource: "Delegated (personal Microsoft account)"
+    permission: "Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All"
+  - resource: "Application"
+    permission: "Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All"
 httpRequest:
-  heading: HTTP request
+  heading: "HTTP request"
   sampleCode: |
     ```http
     GET /drives/{drive-id}/root/search(q='{search-text}')
@@ -34,21 +34,21 @@ httpRequest:
     ```
     
 queryParameters:
-  heading: Optional query parameters
+  heading: "Optional query parameters"
   intro: |
     This method supports the `$expand`, `$select`, `$skipToken`, `$top`, and `$orderby` [OData query parameters](xref:graph.query_parameters) to customize the response.
 parameters:
-  heading: Function parameters
+  heading: "Function parameters"
   list:
-  - name: q
-    value: String
-    description: The query text used to search for items. Values may be matched across several fields including filename, metadata, and file content.
+  - name: "q"
+    value: "String"
+    description: "The query text used to search for items. Values may be matched across several fields including filename, metadata, and file content."
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         request:
-            heading: Request
+            heading: "Request"
             intro: |
               Here is an example of the request searching the current user's OneDrive
             sampleCode: |
@@ -57,7 +57,7 @@ examples:
               ```
               
         response:
-            heading: Response
+            heading: "Response"
             intro: |
               This method returns an object containing an collection of [DriveItems](xref:graph.driveitem) that match the search criteria.
               If no items were found, an empty collection is returned.
@@ -92,16 +92,16 @@ examples:
               In addition to searching for items within a drive, your app can search more broadly to include items shared with the current user.
               To broaden the search scope, use the **search** method on the [Drive](xref:graph.drive) resource.
     - Example:
-        heading: Example
+        heading: "Example"
         request:
-            heading: request
+            heading: "request"
             sampleCode: |
               ```http
               GET /me/drive/search(q='{search-query}')
               ```
               
         response:
-            heading: Response
+            heading: "Response"
             intro: |
               Responses when searching from the **drive** resource may include items outside of the drive (items shared with the current user).
               These items will include the [**remoteItem**](xref:graph.remoteitem) facet to indicate they are stored outside of the target drive. 

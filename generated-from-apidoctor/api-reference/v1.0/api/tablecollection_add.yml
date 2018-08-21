@@ -3,25 +3,25 @@ uid: graph.tablecollection_add
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/tablecollection_add.md
 summary:
-  heading: TableCollection: add
+  heading: "TableCollection: add"
   intro: |
     Create a new table. The range source address determines the worksheet under which the table will be added. If the table cannot be added (e.g., because the address is invalid, or the table would overlap with another table), an error will be thrown.
   outro: |
     ## Error Handling
     This request might occasionally receive a 504 HTTP error. The appropriate response to this error is to repeat the request.
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
   list:
-  - resource: Delegated (work or school account)
-    permission: Files.ReadWrite
-  - resource: Delegated (personal Microsoft account)
-    permission: Not supported.
-  - resource: Application
-    permission: Not supported.
+  - resource: "Delegated (work or school account)"
+    permission: "Files.ReadWrite"
+  - resource: "Delegated (personal Microsoft account)"
+    permission: "Not supported."
+  - resource: "Application"
+    permission: "Not supported."
 httpRequest:
-  heading: HTTP request
+  heading: "HTTP request"
   sampleCode: |
     ```http
     POST /workbook/tables/add
@@ -29,16 +29,16 @@ httpRequest:
     ```
     
 requestHeaders:
-  heading: Request headers
+  heading: "Request headers"
   list:
-  - name: Authorization
-    value: 
-    description: Bearer {token}. Required.
-  - name: Workbook-Session-Id
-    value: 
-    description: Workbook session Id that determines if changes are persisted or not. Optional.
+  - name: "Authorization"
+    value: ""
+    description: "Bearer {token}. Required."
+  - name: "Workbook-Session-Id"
+    value: ""
+    description: "Workbook session Id that determines if changes are persisted or not. Optional."
 requestBody:
-  heading: Request body
+  heading: "Request body"
   intro: |
     In the request body, provide a JSON object with the following parameters.
     |Parameter|Type|Description
@@ -46,17 +46,17 @@ requestBody:
     |address|string|Address or name of the range object representing the data source. If the address does not contain a sheet name, the currently-active sheet is used.
     |hasHeaders|boolean|Boolean value that indicates whether the data being imported has column labels. If the source does not contain headers (i.e,. when this property set to false), Excel will automatically generate header shifting the data down by one row.
 response:
-  heading: Response
+  heading: "Response"
   intro: |
     If successful, this method returns `200 OK` response code and [WorkbookTable](xref:graph.table) object in the response body.
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         intro: |
           Here is an example of how to call this API.
         request:
-            heading: Request
+            heading: "Request"
             intro: |
               Here is an example of the request.
             sampleCode: |
@@ -72,7 +72,7 @@ examples:
               ```
               
         response:
-            heading: Response
+            heading: "Response"
             intro: |
               Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
             sampleCode: |

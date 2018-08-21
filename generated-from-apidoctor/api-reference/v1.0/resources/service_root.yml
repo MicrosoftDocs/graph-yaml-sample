@@ -3,46 +3,46 @@ uid: graph.service_root
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/service_root.md
 summary:
-  heading: Service root
+  heading: "Service root"
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [Create device](xref:graph.device_post_devices)
-    type: [device](xref:graph.device)
-    description: Create a new device by posting to the devices collection.
-  - method: [List device](xref:graph.device_list)
-    type: [device](xref:graph.device) collection
-    description: Get device object collection.
-  - method: [Activate directoryRole](xref:graph.directoryrole_post_directoryroles)
-    type: [directoryRole](xref:graph.directoryrole)
-    description: Activate a directory role.
-  - method: [List directoryRole](xref:graph.directoryrole_list)
-    type: [directoryRole](xref:graph.directoryrole) collection
-    description: Get directoryRole object collection.
-  - method: [List directoryRoleTemplate](xref:graph.directoryroletemplate_list)
-    type: [directoryRoleTemplate](xref:graph.directoryroletemplate) collection
-    description: Get directoryRoleTemplate object collection.
-  - method: [List drive](xref:graph.drive_list)
-    type: [drive](xref:graph.drive) collection
-    description: Get drive object collection.
-  - method: [Get drive](xref:graph.drive_get)
-    type: [drive](xref:graph.drive)
-    description: Get drive object properties.
-  - method: [Create group](xref:graph.group_post_groups)
-    type: [group](xref:graph.group)
-    description: Create a new group by posting to the groups collection.
-  - method: [List group](xref:graph.group_list)
-    type: [group](xref:graph.group) collection
-    description: Get group object collection.
-  - method: [List organization](xref:graph.organization_get)
-    type: [organization](xref:graph.organization) collection
-    description: Get organization object collection.
-  - method: [List subscribedSku](xref:graph.subscribedsku_list)
-    type: [subscribedSku](xref:graph.subscribedsku) collection
-    description: Get subscribedSku object collection.
-  - method: [Create user](xref:graph.user_post_users)
-    type: [user](xref:graph.user)
-    description: Create a new user by posting to the users collection.
-  - method: [List user](xref:graph.user_list)
-    type: [user](xref:graph.user) collection
-    description: Get user object collection.
+  - method: "[Create device](xref:graph.device_post_devices)"
+    type: "[device](xref:graph.device)"
+    description: "Create a new device by posting to the devices collection."
+  - method: "[List device](xref:graph.device_list)"
+    type: "[device](xref:graph.device) collection"
+    description: "Get device object collection."
+  - method: "[Activate directoryRole](xref:graph.directoryrole_post_directoryroles)"
+    type: "[directoryRole](xref:graph.directoryrole)"
+    description: "Activate a directory role."
+  - method: "[List directoryRole](xref:graph.directoryrole_list)"
+    type: "[directoryRole](xref:graph.directoryrole) collection"
+    description: "Get directoryRole object collection."
+  - method: "[List directoryRoleTemplate](xref:graph.directoryroletemplate_list)"
+    type: "[directoryRoleTemplate](xref:graph.directoryroletemplate) collection"
+    description: "Get directoryRoleTemplate object collection."
+  - method: "[List drive](xref:graph.drive_list)"
+    type: "[drive](xref:graph.drive) collection"
+    description: "Get drive object collection."
+  - method: "[Get drive](xref:graph.drive_get)"
+    type: "[drive](xref:graph.drive)"
+    description: "Get drive object properties."
+  - method: "[Create group](xref:graph.group_post_groups)"
+    type: "[group](xref:graph.group)"
+    description: "Create a new group by posting to the groups collection."
+  - method: "[List group](xref:graph.group_list)"
+    type: "[group](xref:graph.group) collection"
+    description: "Get group object collection."
+  - method: "[List organization](xref:graph.organization_get)"
+    type: "[organization](xref:graph.organization) collection"
+    description: "Get organization object collection."
+  - method: "[List subscribedSku](xref:graph.subscribedsku_list)"
+    type: "[subscribedSku](xref:graph.subscribedsku) collection"
+    description: "Get subscribedSku object collection."
+  - method: "[Create user](xref:graph.user_post_users)"
+    type: "[user](xref:graph.user)"
+    description: "Create a new user by posting to the users collection."
+  - method: "[List user](xref:graph.user_list)"
+    type: "[user](xref:graph.user) collection"
+    description: "Get user object collection."

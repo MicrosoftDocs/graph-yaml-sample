@@ -3,48 +3,48 @@ uid: graph.educationclass_delete_members
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/educationclass_delete_members.md
 summary:
-  heading: Remove a student
+  heading: "Remove a student"
   intro: |
     Removes an [educationUser](xref:graph.educationuser) from an [educationClass](xref:graph.educationclass)
     
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
   list:
-  - resource: Delegated (work or school account)
-    permission: Not supported.
-  - resource: Delegated (personal Microsoft account)
-    permission: Not supported.
-  - resource: Application
-    permission: EduRoster.ReadWrite.All
+  - resource: "Delegated (work or school account)"
+    permission: "Not supported."
+  - resource: "Delegated (personal Microsoft account)"
+    permission: "Not supported."
+  - resource: "Application"
+    permission: "EduRoster.ReadWrite.All"
 httpRequest:
-  heading: HTTP request
+  heading: "HTTP request"
   sampleCode: |
     ```http
     DELETE /education/classes/{id}/members/{userId}/$ref
     ```
     
 requestHeaders:
-  heading: Request headers
+  heading: "Request headers"
   list:
-  - name: Authorization
-    value: String
-    description: 
+  - name: "Authorization"
+    value: "String"
+    description: ""
 requestBody:
-  heading: Request body
+  heading: "Request body"
   intro: |
     Do not supply a request body for this method.
 response:
-  heading: Response
+  heading: "Response"
   intro: |
     If successful, this method returns a `204 No Content` response code and an empty response body.
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         request:
-            heading: Request
+            heading: "Request"
             intro: |
               The following is an example of the request.
             sampleCode: |
@@ -53,7 +53,7 @@ examples:
               ```
               
         response:
-            heading: Response
+            heading: "Response"
             intro: |
               The following is an example of the response. 
             sampleCode: |

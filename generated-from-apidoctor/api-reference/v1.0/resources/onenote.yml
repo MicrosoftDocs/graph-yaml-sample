@@ -3,7 +3,7 @@ uid: graph.onenote
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/onenote.md
 summary:
-  heading: onenote resource type
+  heading: "onenote resource type"
   intro: |
     The entry point for OneNote resources.
     All calls to the OneNote service through the Microsoft Graph API use this service root URL:
@@ -25,28 +25,28 @@ summary:
     ## Authorization
     For information about the permissions required to work with OneNote APIs, see [Notes permissions](../../../concepts/permissions_reference.md#notes-permissions).
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [Create notebook](xref:graph.onenote_post_notebooks)
-    type: [Notebook](xref:graph.notebook)
-    description: Create a notebook by posting to the notebooks collection.
-  - method: [List notebooks](xref:graph.onenote_list_notebooks)
-    type: [Notebook](xref:graph.notebook) collection
-    description: Get a collection of notebooks.
-  - method: [Create page](xref:graph.onenote_post_pages)
-    type: [Page](xref:graph.page)
-    description: Create a page by posting to the pages collection.
-  - method: [List pages](xref:graph.onenote_list_pages)
-    type: [Page](xref:graph.page) collection
-    description: Get a collection of pages.
-  - method: [List section groups](xref:graph.onenote_list_sectiongroups)
-    type: [SectionGroup](xref:graph.sectiongroup) collection
-    description: Get a collection of section groups.
-  - method: [List sections](xref:graph.onenote_list_sections)
-    type: [OnenoteSection](xref:graph.section) collection
-    description: Get a collection of sections.
+  - method: "[Create notebook](xref:graph.onenote_post_notebooks)"
+    type: "[Notebook](xref:graph.notebook)"
+    description: "Create a notebook by posting to the notebooks collection."
+  - method: "[List notebooks](xref:graph.onenote_list_notebooks)"
+    type: "[Notebook](xref:graph.notebook) collection"
+    description: "Get a collection of notebooks."
+  - method: "[Create page](xref:graph.onenote_post_pages)"
+    type: "[Page](xref:graph.page)"
+    description: "Create a page by posting to the pages collection."
+  - method: "[List pages](xref:graph.onenote_list_pages)"
+    type: "[Page](xref:graph.page) collection"
+    description: "Get a collection of pages."
+  - method: "[List section groups](xref:graph.onenote_list_sectiongroups)"
+    type: "[SectionGroup](xref:graph.sectiongroup) collection"
+    description: "Get a collection of section groups."
+  - method: "[List sections](xref:graph.onenote_list_sections)"
+    type: "[OnenoteSection](xref:graph.section) collection"
+    description: "Get a collection of sections."
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -56,23 +56,23 @@ resource:
     ```
     
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   list:
-  - relationship: notebooks
-    type: Collection(microsoft.graph.notebook)
-    description: The collection of OneNote notebooks that are owned by the user or group. Read-only. Nullable.
-  - relationship: operations
-    type: Collection(microsoft.graph.onenoteOperation)
-    description: The status of OneNote operations. Getting an operations collection is not supported, but you can get the status of long-running operations if the Operation-Location header is returned in the response. Read-only. Nullable.
-  - relationship: pages
-    type: Collection(microsoft.graph.onenotePage)
-    description: The pages in all OneNote notebooks that are owned by the user or group.  Read-only. Nullable.
-  - relationship: resources
-    type: Collection(microsoft.graph.onenoteResource)
-    description: The image and other file resources in OneNote pages. Getting a resources collection is not supported, but you can get the binary content of a specific resource. Read-only. Nullable.
-  - relationship: sectionGroups
-    type: Collection(microsoft.graph.sectionGroup)
-    description: The section groups in all OneNote notebooks that are owned by the user or group.  Read-only. Nullable.
-  - relationship: sections
-    type: Collection(microsoft.graph.onenoteSection)
-    description: The sections in all OneNote notebooks that are owned by the user or group.  Read-only. Nullable.
+  - relationship: "notebooks"
+    type: "Collection(microsoft.graph.notebook)"
+    description: "The collection of OneNote notebooks that are owned by the user or group. Read-only. Nullable."
+  - relationship: "operations"
+    type: "Collection(microsoft.graph.onenoteOperation)"
+    description: "The status of OneNote operations. Getting an operations collection is not supported, but you can get the status of long-running operations if the Operation-Location header is returned in the response. Read-only. Nullable."
+  - relationship: "pages"
+    type: "Collection(microsoft.graph.onenotePage)"
+    description: "The pages in all OneNote notebooks that are owned by the user or group.  Read-only. Nullable."
+  - relationship: "resources"
+    type: "Collection(microsoft.graph.onenoteResource)"
+    description: "The image and other file resources in OneNote pages. Getting a resources collection is not supported, but you can get the binary content of a specific resource. Read-only. Nullable."
+  - relationship: "sectionGroups"
+    type: "Collection(microsoft.graph.sectionGroup)"
+    description: "The section groups in all OneNote notebooks that are owned by the user or group.  Read-only. Nullable."
+  - relationship: "sections"
+    type: "Collection(microsoft.graph.onenoteSection)"
+    description: "The sections in all OneNote notebooks that are owned by the user or group.  Read-only. Nullable."

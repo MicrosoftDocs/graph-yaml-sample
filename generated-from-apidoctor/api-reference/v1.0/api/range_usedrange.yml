@@ -3,22 +3,22 @@ uid: graph.range_usedrange
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/range_usedrange.md
 summary:
-  heading: Range: UsedRange
+  heading: "Range: UsedRange"
   intro: |
     Returns the used range of the given range object.
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
   list:
-  - resource: Delegated (work or school account)
-    permission: Files.ReadWrite
-  - resource: Delegated (personal Microsoft account)
-    permission: Not supported.
-  - resource: Application
-    permission: Not supported.
+  - resource: "Delegated (work or school account)"
+    permission: "Files.ReadWrite"
+  - resource: "Delegated (personal Microsoft account)"
+    permission: "Not supported."
+  - resource: "Application"
+    permission: "Not supported."
 httpRequest:
-  heading: HTTP request
+  heading: "HTTP request"
   sampleCode: |
     ```http
     GET /workbook/names/{name}/range/usedRange
@@ -27,32 +27,32 @@ httpRequest:
     ```
     
 parameters:
-  heading: Path parameters
+  heading: "Path parameters"
   list:
-  - name: valuesOnly
-    value: Boolean
-    description: Optional. Considers only cells with values as used cells.
+  - name: "valuesOnly"
+    value: "Boolean"
+    description: "Optional. Considers only cells with values as used cells."
 requestHeaders:
-  heading: Request headers
+  heading: "Request headers"
   list:
-  - name: Authorization
-    value: 
-    description: Bearer {token}. Required.
-  - name: Workbook-Session-Id
-    value: 
-    description: Workbook session Id that determines if changes are persisted or not. Optional.
+  - name: "Authorization"
+    value: ""
+    description: "Bearer {token}. Required."
+  - name: "Workbook-Session-Id"
+    value: ""
+    description: "Workbook session Id that determines if changes are persisted or not. Optional."
 response:
-  heading: Response
+  heading: "Response"
   intro: |
     If successful, this method returns `200 OK` response code and [Range](xref:graph.range) object in the response body.
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         intro: |
           Here is an example of how to call this API.
         request:
-            heading: Request
+            heading: "Request"
             intro: |
               Here is an example of the request.
             sampleCode: |
@@ -61,7 +61,7 @@ examples:
               ```
               
         response:
-            heading: Response
+            heading: "Response"
             intro: |
               Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
             sampleCode: |
@@ -83,18 +83,18 @@ examples:
             outro: |
               Here is an example specifying the optional `valuesOnly` parameter.
     - Request:
-        heading: Request
+        heading: "Request"
         intro: |
           Here is an example of the request.
         request:
-            heading: request
+            heading: "request"
             sampleCode: |
               ```http
               GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/usedRange(valuesOnly=true)
               ```
               
         response:
-            heading: Response
+            heading: "Response"
             sampleCode: |
               ```http
               HTTP/1.1 200 OK

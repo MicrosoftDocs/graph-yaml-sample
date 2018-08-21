@@ -3,15 +3,15 @@ uid: graph.chartgridlinesformat
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/chartgridlinesformat.md
 summary:
-  heading: ChartGridlinesFormat resource type
+  heading: "ChartGridlinesFormat resource type"
   intro: |
     Encapsulates the format properties for chart gridlines.
 methods:
-  heading: Methods
+  heading: "Methods"
   intro: |
     None
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -22,12 +22,12 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   intro: |
     None
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   list:
-  - relationship: line
-    type: microsoft.graph.workbookChartLineFormat
-    description: Represents chart line formatting. Read-only.
+  - relationship: "line"
+    type: "microsoft.graph.workbookChartLineFormat"
+    description: "Represents chart line formatting. Read-only."

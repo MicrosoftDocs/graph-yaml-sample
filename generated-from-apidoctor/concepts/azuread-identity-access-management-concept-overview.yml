@@ -3,7 +3,7 @@ uid: graph.azuread-identity-access-management-concept-overview
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/azuread-identity-access-management-concept-overview.md
 summary:
-  heading: Azure AD identity and access management API overview
+  heading: "Azure AD identity and access management API overview"
   intro: |
     Azure Active Directory (Azure AD) helps centralize identity and access management (IAM) to enable secure and productive access between apps, devices, services, and infrastructure. Organizations can use Azure AD to manage identities and control access in on-premises, hybrid, and cloud environments.  
     You can use the Azure AD REST APIs in Microsoft Graph to create unique workflows between Azure AD [resources](xref:graph.azure_ad_overview) and third-party services.

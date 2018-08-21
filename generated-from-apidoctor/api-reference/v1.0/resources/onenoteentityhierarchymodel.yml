@@ -3,11 +3,11 @@ uid: graph.onenoteentityhierarchymodel
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/onenoteentityhierarchymodel.md
 summary:
-  heading: onenoteEntityHierarchyModel resource
+  heading: "onenoteEntityHierarchyModel resource"
   intro: |
     This is a base type for OneNote entities.
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -21,17 +21,17 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: displayName
-    type: String
-    description: The name of the notebook.
-  - property: createdBy
-    type: microsoft.graph.identitySet
-    description: Identity of the user, device, and application which created the item. Read-only.
-  - property: lastModifiedBy
-    type: microsoft.graph.identitySet
-    description: Identity of the user, device, and application which created the item. Read-only.
-  - property: lastModifiedDateTime
-    type: DateTimeOffset
-    description: The date and time when the notebook was last modified. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Read-only.
+  - property: "displayName"
+    type: "String"
+    description: "The name of the notebook."
+  - property: "createdBy"
+    type: "microsoft.graph.identitySet"
+    description: "Identity of the user, device, and application which created the item. Read-only."
+  - property: "lastModifiedBy"
+    type: "microsoft.graph.identitySet"
+    description: "Identity of the user, device, and application which created the item. Read-only."
+  - property: "lastModifiedDateTime"
+    type: "DateTimeOffset"
+    description: "The date and time when the notebook was last modified. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Read-only."

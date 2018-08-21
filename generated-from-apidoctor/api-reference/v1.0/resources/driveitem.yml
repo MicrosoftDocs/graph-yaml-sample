@@ -7,7 +7,7 @@ metadata:
   ms.date: 09/10/2017
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/driveitem.md
 summary:
-  heading: DriveItem resource type
+  heading: "DriveItem resource type"
   intro: |
     The **driveItem** resource represents a file, folder, or other item stored in a drive.
     All file system objects in OneDrive and SharePoint are returned as **driveItem** resources.
@@ -26,64 +26,64 @@ summary:
     
     Items with the **folder** facet act as containers of items and therefore have a `children` reference pointing to a collection of **driveItems** under the folder.
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [Get item](xref:graph.driveitem_get)
-    type: 
-    description: 
-  - method: [List children](xref:graph.driveitem_list_children)
-    type: 
-    description: 
-  - method: [List versions](xref:graph.driveitem_list_versions)
-    type: 
-    description: 
-  - method: [Create item](xref:graph.driveitem_post_children)
-    type: 
-    description: 
-  - method: [Update item](xref:graph.driveitem_update)
-    type: 
-    description: 
-  - method: [Upload content](xref:graph.driveitem_put_content)
-    type: 
-    description: 
-  - method: [Download content](xref:graph.driveitem_get_content)
-    type: 
-    description: 
-  - method: [Download specific file format][download-format]
-    type: 
-    description: 
-  - method: [Delete item](xref:graph.driveitem_delete)
-    type: 
-    description: 
-  - method: [Move item](xref:graph.driveitem_move)
-    type: 
-    description: 
-  - method: [Copy item](xref:graph.driveitem_copy)
-    type: 
-    description: 
-  - method: [Search items](xref:graph.driveitem_search)
-    type: 
-    description: 
-  - method: [List changes in a drive](xref:graph.driveitem_delta)
-    type: 
-    description: 
-  - method: [List thumbnails](xref:graph.driveitem_list_thumbnails)
-    type: 
-    description: 
-  - method: [Create sharing link](xref:graph.driveitem_createlink)
-    type: 
-    description: 
-  - method: [Add permissions](xref:graph.driveitem_invite)
-    type: 
-    description: 
-  - method: [List permissions](xref:graph.driveitem_list_permissions)
-    type: 
-    description: 
-  - method: [Delete permission](xref:graph.permission_delete)
-    type: 
-    description: 
+  - method: "[Get item](xref:graph.driveitem_get)"
+    type: ""
+    description: ""
+  - method: "[List children](xref:graph.driveitem_list_children)"
+    type: ""
+    description: ""
+  - method: "[List versions](xref:graph.driveitem_list_versions)"
+    type: ""
+    description: ""
+  - method: "[Create item](xref:graph.driveitem_post_children)"
+    type: ""
+    description: ""
+  - method: "[Update item](xref:graph.driveitem_update)"
+    type: ""
+    description: ""
+  - method: "[Upload content](xref:graph.driveitem_put_content)"
+    type: ""
+    description: ""
+  - method: "[Download content](xref:graph.driveitem_get_content)"
+    type: ""
+    description: ""
+  - method: "[Download specific file format][download-format]"
+    type: ""
+    description: ""
+  - method: "[Delete item](xref:graph.driveitem_delete)"
+    type: ""
+    description: ""
+  - method: "[Move item](xref:graph.driveitem_move)"
+    type: ""
+    description: ""
+  - method: "[Copy item](xref:graph.driveitem_copy)"
+    type: ""
+    description: ""
+  - method: "[Search items](xref:graph.driveitem_search)"
+    type: ""
+    description: ""
+  - method: "[List changes in a drive](xref:graph.driveitem_delta)"
+    type: ""
+    description: ""
+  - method: "[List thumbnails](xref:graph.driveitem_list_thumbnails)"
+    type: ""
+    description: ""
+  - method: "[Create sharing link](xref:graph.driveitem_createlink)"
+    type: ""
+    description: ""
+  - method: "[Add permissions](xref:graph.driveitem_invite)"
+    type: ""
+    description: ""
+  - method: "[List permissions](xref:graph.driveitem_list_permissions)"
+    type: ""
+    description: ""
+  - method: "[Delete permission](xref:graph.permission_delete)"
+    type: ""
+    description: ""
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of a **driveItem** resource.
     The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits properties from that resource.
@@ -140,132 +140,132 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: audio
-    type: microsoft.graph.audio
-    description: Audio metadata, if the item is an audio file. Read-only.
-  - property: content
-    type: Stream
-    description: The content stream, if the item represents a file.
-  - property: createdBy
-    type: microsoft.graph.identitySet
-    description: Identity of the user, device, and application which created the item. Read-only.
-  - property: createdDateTime
-    type: DateTimeOffset
-    description: Date and time of item creation. Read-only.
-  - property: cTag
-    type: String
-    description: An eTag for the content of the item. This eTag is not changed if only the metadata is changed. Note This property is not returned if the item is a folder. Read-only.
-  - property: deleted
-    type: microsoft.graph.deleted
-    description: Information about the deleted state of the item. Read-only.
-  - property: description
-    type: String
-    description: Provides a user-visible description of the item. Read-write. Only on OneDrive Personal
-  - property: eTag
-    type: String
-    description: eTag for the entire item (metadata + content). Read-only.
-  - property: file
-    type: microsoft.graph.file
-    description: File metadata, if the item is a file. Read-only.
-  - property: fileSystemInfo
-    type: microsoft.graph.fileSystemInfo
-    description: File system information on client. Read-write.
-  - property: folder
-    type: microsoft.graph.folder
-    description: Folder metadata, if the item is a folder. Read-only.
-  - property: id
-    type: String
-    description: The unique identifier of the item within the Drive. Read-only.
-  - property: image
-    type: microsoft.graph.image
-    description: Image metadata, if the item is an image. Read-only.
-  - property: lastModifiedBy
-    type: microsoft.graph.identitySet
-    description: Identity of the user, device, and application which last modified the item. Read-only.
-  - property: lastModifiedDateTime
-    type: DateTimeOffset
-    description: Date and time the item was last modified. Read-only.
-  - property: location
-    type: microsoft.graph.geoCoordinates
-    description: Location metadata, if the item has location data. Read-only.
-  - property: name
-    type: String
-    description: The name of the item (filename and extension). Read-write.
-  - property: package
-    type: microsoft.graph.package
-    description: If present, indicates that this item is a package instead of a folder or file. Packages are treated like files in some contexts and folders in others. Read-only.
-  - property: parentReference
-    type: microsoft.graph.itemReference
-    description: Parent information, if the item has a parent. Read-write.
-  - property: photo
-    type: microsoft.graph.photo
-    description: Photo metadata, if the item is a photo. Read-only.
-  - property: publication
-    type: microsoft.graph.publicationFacet
-    description: Provides information about the published or checked-out state of an item, in locations that support such actions. This property is not returned by default. Read-only.
-  - property: remoteItem
-    type: microsoft.graph.remoteItem
-    description: Remote item data, if the item is shared from a drive other than the one being accessed. Read-only.
-  - property: root
-    type: microsoft.graph.root
-    description: If this property is non-null, it indicates that the driveItem is the top-most driveItem in the drive.
-  - property: searchResult
-    type: microsoft.graph.searchResult
-    description: Search metadata, if the item is from a search result. Read-only.
-  - property: shared
-    type: microsoft.graph.shared
-    description: Indicates that the item has been shared with others and provides information about the shared state of the item. Read-only.
-  - property: sharepointIds
-    type: microsoft.graph.sharepointIds
-    description: Returns identifiers useful for SharePoint REST compatibility. Read-only.
-  - property: size
-    type: Int64
-    description: Size of the item in bytes. Read-only.
-  - property: specialFolder
-    type: microsoft.graph.specialFolder
-    description: If the current item is also available as a special folder, this facet is returned. Read-only.
-  - property: video
-    type: microsoft.graph.video
-    description: Video metadata, if the item is a video. Read-only.
-  - property: webDavUrl
-    type: String
-    description: WebDAV compatible URL for the item.
-  - property: webUrl
-    type: String
-    description: URL that displays the resource in the browser. Read-only.
+  - property: "audio"
+    type: "microsoft.graph.audio"
+    description: "Audio metadata, if the item is an audio file. Read-only."
+  - property: "content"
+    type: "Stream"
+    description: "The content stream, if the item represents a file."
+  - property: "createdBy"
+    type: "microsoft.graph.identitySet"
+    description: "Identity of the user, device, and application which created the item. Read-only."
+  - property: "createdDateTime"
+    type: "DateTimeOffset"
+    description: "Date and time of item creation. Read-only."
+  - property: "cTag"
+    type: "String"
+    description: "An eTag for the content of the item. This eTag is not changed if only the metadata is changed. Note This property is not returned if the item is a folder. Read-only."
+  - property: "deleted"
+    type: "microsoft.graph.deleted"
+    description: "Information about the deleted state of the item. Read-only."
+  - property: "description"
+    type: "String"
+    description: "Provides a user-visible description of the item. Read-write. Only on OneDrive Personal"
+  - property: "eTag"
+    type: "String"
+    description: "eTag for the entire item (metadata + content). Read-only."
+  - property: "file"
+    type: "microsoft.graph.file"
+    description: "File metadata, if the item is a file. Read-only."
+  - property: "fileSystemInfo"
+    type: "microsoft.graph.fileSystemInfo"
+    description: "File system information on client. Read-write."
+  - property: "folder"
+    type: "microsoft.graph.folder"
+    description: "Folder metadata, if the item is a folder. Read-only."
+  - property: "id"
+    type: "String"
+    description: "The unique identifier of the item within the Drive. Read-only."
+  - property: "image"
+    type: "microsoft.graph.image"
+    description: "Image metadata, if the item is an image. Read-only."
+  - property: "lastModifiedBy"
+    type: "microsoft.graph.identitySet"
+    description: "Identity of the user, device, and application which last modified the item. Read-only."
+  - property: "lastModifiedDateTime"
+    type: "DateTimeOffset"
+    description: "Date and time the item was last modified. Read-only."
+  - property: "location"
+    type: "microsoft.graph.geoCoordinates"
+    description: "Location metadata, if the item has location data. Read-only."
+  - property: "name"
+    type: "String"
+    description: "The name of the item (filename and extension). Read-write."
+  - property: "package"
+    type: "microsoft.graph.package"
+    description: "If present, indicates that this item is a package instead of a folder or file. Packages are treated like files in some contexts and folders in others. Read-only."
+  - property: "parentReference"
+    type: "microsoft.graph.itemReference"
+    description: "Parent information, if the item has a parent. Read-write."
+  - property: "photo"
+    type: "microsoft.graph.photo"
+    description: "Photo metadata, if the item is a photo. Read-only."
+  - property: "publication"
+    type: "microsoft.graph.publicationFacet"
+    description: "Provides information about the published or checked-out state of an item, in locations that support such actions. This property is not returned by default. Read-only."
+  - property: "remoteItem"
+    type: "microsoft.graph.remoteItem"
+    description: "Remote item data, if the item is shared from a drive other than the one being accessed. Read-only."
+  - property: "root"
+    type: "microsoft.graph.root"
+    description: "If this property is non-null, it indicates that the driveItem is the top-most driveItem in the drive."
+  - property: "searchResult"
+    type: "microsoft.graph.searchResult"
+    description: "Search metadata, if the item is from a search result. Read-only."
+  - property: "shared"
+    type: "microsoft.graph.shared"
+    description: "Indicates that the item has been shared with others and provides information about the shared state of the item. Read-only."
+  - property: "sharepointIds"
+    type: "microsoft.graph.sharepointIds"
+    description: "Returns identifiers useful for SharePoint REST compatibility. Read-only."
+  - property: "size"
+    type: "Int64"
+    description: "Size of the item in bytes. Read-only."
+  - property: "specialFolder"
+    type: "microsoft.graph.specialFolder"
+    description: "If the current item is also available as a special folder, this facet is returned. Read-only."
+  - property: "video"
+    type: "microsoft.graph.video"
+    description: "Video metadata, if the item is a video. Read-only."
+  - property: "webDavUrl"
+    type: "String"
+    description: "WebDAV compatible URL for the item."
+  - property: "webUrl"
+    type: "String"
+    description: "URL that displays the resource in the browser. Read-only."
   outro: |
     **Note:** The eTag and cTag properties work differently on containers (folders).
     The cTag value is modified when content or metadata of any descendant of the folder is changed.
     The eTag value is only modified when the folder's properties are changed, except for properties that are derived from descendants (like **childCount** or **lastModifiedDateTime**).
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   list:
-  - relationship: children
-    type: Collection(microsoft.graph.driveItem)
-    description: Collection containing Item objects for the immediate children of Item. Only items representing folders have children. Read-only. Nullable.
-  - relationship: createdByUser
-    type: microsoft.graph.user
-    description: Identity of the user who created the item. Read-only.
-  - relationship: lastModifiedByUser
-    type: microsoft.graph.user
-    description: Identity of the user who last modified the item. Read-only.
-  - relationship: listItem
-    type: microsoft.graph.listItem
-    description: For drives in SharePoint, the associated document library list item. Read-only. Nullable.
-  - relationship: permissions
-    type: Collection(microsoft.graph.permission)
-    description: The set of permissions for the item. Read-only. Nullable.
-  - relationship: thumbnails
-    type: Collection(microsoft.graph.thumbnailSet)
-    description: Collection containing [ThumbnailSet][] objects associated with the item. For more info, see [getting thumbnails][]. Read-only. Nullable.
-  - relationship: versions
-    type: Collection(microsoft.graph.driveItemVersion)
-    description: The list of previous versions of the item. For more info, see [getting previous versions][]. Read-only. Nullable.
-  - relationship: workbook
-    type: microsoft.graph.workbook
-    description: For files that are Excel spreadsheets, accesses the workbook API to work with the spreadsheet's contents. Nullable.
+  - relationship: "children"
+    type: "Collection(microsoft.graph.driveItem)"
+    description: "Collection containing Item objects for the immediate children of Item. Only items representing folders have children. Read-only. Nullable."
+  - relationship: "createdByUser"
+    type: "microsoft.graph.user"
+    description: "Identity of the user who created the item. Read-only."
+  - relationship: "lastModifiedByUser"
+    type: "microsoft.graph.user"
+    description: "Identity of the user who last modified the item. Read-only."
+  - relationship: "listItem"
+    type: "microsoft.graph.listItem"
+    description: "For drives in SharePoint, the associated document library list item. Read-only. Nullable."
+  - relationship: "permissions"
+    type: "Collection(microsoft.graph.permission)"
+    description: "The set of permissions for the item. Read-only. Nullable."
+  - relationship: "thumbnails"
+    type: "Collection(microsoft.graph.thumbnailSet)"
+    description: "Collection containing [ThumbnailSet][] objects associated with the item. For more info, see [getting thumbnails][]. Read-only. Nullable."
+  - relationship: "versions"
+    type: "Collection(microsoft.graph.driveItemVersion)"
+    description: "The list of previous versions of the item. For more info, see [getting previous versions][]. Read-only. Nullable."
+  - relationship: "workbook"
+    type: "microsoft.graph.workbook"
+    description: "For files that are Excel spreadsheets, accesses the workbook API to work with the spreadsheet's contents. Nullable."
   outro: |
     ## Instance Attributes
     Instance attributes are properties with special behaviors.
@@ -278,6 +278,6 @@ relationships:
     **Note:** The @microsoft.graph.downloadUrl value is a short-lived URL and can't be cached.
     The URL will only be available for a short period of time (1 hour) before it is invalidated.
 remarks:
-  heading: Remarks
+  heading: "Remarks"
   intro: |
     In OneDrive for Business or SharePoint document libraries, the **cTag** property is not returned, if the **driveItem** has a [folder][] facet.

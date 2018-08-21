@@ -3,22 +3,22 @@ uid: graph.notebook_getrecentnotebooks
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/notebook_getrecentnotebooks.md
 summary:
-  heading: notebook: getRecentNotebooks
+  heading: "notebook: getRecentNotebooks"
   intro: |
     Get a list of [recentNotebook](xref:graph.recentnotebook) instances that have been accessed by the signed-in user.
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
   list:
-  - resource: Delegated (work or school account)
-    permission: Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All,
-  - resource: Delegated (personal Microsoft account)
-    permission: Notes.Create, Notes.Read, Notes.ReadWrite
-  - resource: Application
-    permission: Notes.Read.All, Notes.ReadWrite.All
+  - resource: "Delegated (work or school account)"
+    permission: "Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All,"
+  - resource: "Delegated (personal Microsoft account)"
+    permission: "Notes.Create, Notes.Read, Notes.ReadWrite"
+  - resource: "Application"
+    permission: "Notes.Read.All, Notes.ReadWrite.All"
 httpRequest:
-  heading: HTTP request
+  heading: "HTTP request"
   sampleCode: |
     ```http
     GET /me/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks=includePersonalNotebooks-value)
@@ -28,11 +28,11 @@ httpRequest:
   outro: |
     The `<id | userPrincipalName>` for the user must match the user encoded in the authorization token used to make the request.
 requestHeaders:
-  heading: Request headers
+  heading: "Request headers"
   list:
-  - name: Authorization
-    value: 
-    description: Bearer {code}
+  - name: "Authorization"
+    value: ""
+    description: "Bearer {code}"
   outro: |
     ## Request parameters
     In the request URL, provide following query parameters with values.
@@ -40,21 +40,21 @@ requestHeaders:
     |:-|:-|:-|
     |includePersonalNotebooks|Boolean|Include notebooks owned by the user. Set to `true` to include notebooks owned by the user; otherwise, set to `false`. If you don't include the `includePersonalNotebooks` parameter, your request will return a `400` error response.
 requestBody:
-  heading: Request body
+  heading: "Request body"
   intro: |
     Do not supply a request body for this method.
 response:
-  heading: Response
+  heading: "Response"
   intro: |
     A successful response returns a `200 OK` that contains a JSON collection of **recentNotebooks**.
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         intro: |
           The following example shows how to call this API.
         request:
-            heading: Request
+            heading: "Request"
             intro: |
               The following example shows the request.
             sampleCode: |
@@ -63,7 +63,7 @@ examples:
               ```
               
         response:
-            heading: Response
+            heading: "Response"
             intro: |
               The following example shows the response.
             sampleCode: |

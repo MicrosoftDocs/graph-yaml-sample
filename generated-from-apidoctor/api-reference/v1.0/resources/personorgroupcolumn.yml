@@ -7,11 +7,11 @@ metadata:
   ms.date: 09/11/2017
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/personorgroupcolumn.md
 summary:
-  heading: PersonOrGroupColumn resource type
+  heading: "PersonOrGroupColumn resource type"
   intro: |
     The **personOrGroupColumn** on a [columnDefinition](xref:graph.columnDefinition) resource indicates that the column's values represent a person or group chosen from the directory.
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of a **personOrGroupColumn** resource.
   sampleCode: |
@@ -24,17 +24,17 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: allowMultipleSelection
-    type: Boolean
-    description: Indicates whether multiple values can be selected from the source.
-  - property: displayAs
-    type: String
-    description: How to display the information about the person or group chosen. See below.
-  - property: chooseFromType
-    type: String
-    description: Whether to allow selection of people only, or people and groups. Must be one of peopleAndGroups or peopleOnly.
+  - property: "allowMultipleSelection"
+    type: "Boolean"
+    description: "Indicates whether multiple values can be selected from the source."
+  - property: "displayAs"
+    type: "String"
+    description: "How to display the information about the person or group chosen. See below."
+  - property: "chooseFromType"
+    type: "String"
+    description: "Whether to allow selection of people only, or people and groups. Must be one of peopleAndGroups or peopleOnly."
   outro: |
     ## DisplayAs options
     |DisplayAs value|Description

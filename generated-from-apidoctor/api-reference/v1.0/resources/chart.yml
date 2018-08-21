@@ -3,47 +3,47 @@ uid: graph.chart
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.chart
 summary:
-  heading: Chart resource type
+  heading: "Chart resource type"
   intro: |
     Represents a chart object in a workbook.
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [Get Chart](xref:graph.chart_get)
-    type: [WorkbookChart](xref:graph.chart)
-    description: Read properties and relationships of chart object.
-  - method: [Create ChartSeries](xref:graph.chart_post_series)
-    type: [WorkbookChartSeries](xref:graph.chartseries)
-    description: Create a new ChartSeries by posting to the series collection.
-  - method: [List series](xref:graph.chart_list_series)
-    type: [WorkbookChartSeries](xref:graph.chartseries) collection
-    description: Get a ChartSeries object collection.
-  - method: [Update](xref:graph.chart_update)
-    type: [WorkbookChart](xref:graph.chart)
-    description: Update Chart object.
-  - method: [Image](xref:graph.chart_image)
-    type: Image base64 encoded string
-    description: Renders the chart as a base64-encoded image by scaling the chart to fit the specified dimensions.
-  - method: [Delete](xref:graph.chart_delete)
-    type: None
-    description: Deletes the chart object.
-  - method: [Setdata](xref:graph.chart_setdata)
-    type: None
-    description: Resets the source data for the chart.
-  - method: [Setposition](xref:graph.chart_setposition)
-    type: None
-    description: Positions the chart relative to cells on the worksheet.
-  - method: [List](xref:graph.chart_list)
-    type: [WorkbookChart](xref:graph.chart) collection
-    description: Get chart object collection.
-  - method: [Itemat](xref:graph.chartcollection_itemat)
-    type: [WorkbookChart](xref:graph.chart)
-    description: Gets a chart based on its position in the collection.
-  - method: [Add](xref:graph.chartcollection_add)
-    type: [WorkbookChart](xref:graph.chart)
-    description: Creates a new chart.
+  - method: "[Get Chart](xref:graph.chart_get)"
+    type: "[WorkbookChart](xref:graph.chart)"
+    description: "Read properties and relationships of chart object."
+  - method: "[Create ChartSeries](xref:graph.chart_post_series)"
+    type: "[WorkbookChartSeries](xref:graph.chartseries)"
+    description: "Create a new ChartSeries by posting to the series collection."
+  - method: "[List series](xref:graph.chart_list_series)"
+    type: "[WorkbookChartSeries](xref:graph.chartseries) collection"
+    description: "Get a ChartSeries object collection."
+  - method: "[Update](xref:graph.chart_update)"
+    type: "[WorkbookChart](xref:graph.chart)"
+    description: "Update Chart object."
+  - method: "[Image](xref:graph.chart_image)"
+    type: "Image base64 encoded string"
+    description: "Renders the chart as a base64-encoded image by scaling the chart to fit the specified dimensions."
+  - method: "[Delete](xref:graph.chart_delete)"
+    type: "None"
+    description: "Deletes the chart object."
+  - method: "[Setdata](xref:graph.chart_setdata)"
+    type: "None"
+    description: "Resets the source data for the chart."
+  - method: "[Setposition](xref:graph.chart_setposition)"
+    type: "None"
+    description: "Positions the chart relative to cells on the worksheet."
+  - method: "[List](xref:graph.chart_list)"
+    type: "[WorkbookChart](xref:graph.chart) collection"
+    description: "Get chart object collection."
+  - method: "[Itemat](xref:graph.chartcollection_itemat)"
+    type: "[WorkbookChart](xref:graph.chart)"
+    description: "Gets a chart based on its position in the collection."
+  - method: "[Add](xref:graph.chartcollection_add)"
+    type: "[WorkbookChart](xref:graph.chart)"
+    description: "Creates a new chart."
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -59,47 +59,47 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: height
-    type: Double
-    description: Represents the height, in points, of the chart object.
-  - property: id
-    type: String
-    description: Gets a chart based on its position in the collection. Read-only.
-  - property: left
-    type: Double
-    description: The distance, in points, from the left side of the chart to the worksheet origin.
-  - property: name
-    type: String
-    description: Represents the name of a chart object.
-  - property: top
-    type: Double
-    description: Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).
-  - property: width
-    type: Double
-    description: Represents the width, in points, of the chart object.
+  - property: "height"
+    type: "Double"
+    description: "Represents the height, in points, of the chart object."
+  - property: "id"
+    type: "String"
+    description: "Gets a chart based on its position in the collection. Read-only."
+  - property: "left"
+    type: "Double"
+    description: "The distance, in points, from the left side of the chart to the worksheet origin."
+  - property: "name"
+    type: "String"
+    description: "Represents the name of a chart object."
+  - property: "top"
+    type: "Double"
+    description: "Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart)."
+  - property: "width"
+    type: "Double"
+    description: "Represents the width, in points, of the chart object."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   list:
-  - relationship: axes
-    type: microsoft.graph.workbookChartAxes
-    description: Represents chart axes. Read-only.
-  - relationship: dataLabels
-    type: microsoft.graph.workbookChartDataLabels
-    description: Represents the datalabels on the chart. Read-only.
-  - relationship: format
-    type: microsoft.graph.workbookChartAreaFormat
-    description: Encapsulates the format properties for the chart area. Read-only.
-  - relationship: legend
-    type: microsoft.graph.workbookChartLegend
-    description: Represents the legend for the chart. Read-only.
-  - relationship: series
-    type: Collection(microsoft.graph.workbookChartSeries)
-    description: Represents either a single series or collection of series in the chart. Read-only.
-  - relationship: title
-    type: microsoft.graph.workbookChartTitle
-    description: Represents the title of the specified chart, including the text, visibility, position and formating of the title. Read-only.
-  - relationship: worksheet
-    type: microsoft.graph.workbookWorksheet
-    description: The worksheet containing the current chart. Read-only.
+  - relationship: "axes"
+    type: "microsoft.graph.workbookChartAxes"
+    description: "Represents chart axes. Read-only."
+  - relationship: "dataLabels"
+    type: "microsoft.graph.workbookChartDataLabels"
+    description: "Represents the datalabels on the chart. Read-only."
+  - relationship: "format"
+    type: "microsoft.graph.workbookChartAreaFormat"
+    description: "Encapsulates the format properties for the chart area. Read-only."
+  - relationship: "legend"
+    type: "microsoft.graph.workbookChartLegend"
+    description: "Represents the legend for the chart. Read-only."
+  - relationship: "series"
+    type: "Collection(microsoft.graph.workbookChartSeries)"
+    description: "Represents either a single series or collection of series in the chart. Read-only."
+  - relationship: "title"
+    type: "microsoft.graph.workbookChartTitle"
+    description: "Represents the title of the specified chart, including the text, visibility, position and formating of the title. Read-only."
+  - relationship: "worksheet"
+    type: "microsoft.graph.workbookWorksheet"
+    description: "The worksheet containing the current chart. Read-only."

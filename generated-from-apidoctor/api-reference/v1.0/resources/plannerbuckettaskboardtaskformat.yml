@@ -3,20 +3,20 @@ uid: graph.plannerbuckettaskboardtaskformat
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.plannerbuckettaskboardtaskformat
 summary:
-  heading: plannerBucketTaskBoardTaskFormat resource type
+  heading: "plannerBucketTaskBoardTaskFormat resource type"
   intro: |
     The **plannerBucketTaskBoardTaskFormat** resource represents the information used to render a task correctly in the Buckets view of the Task Board (a view organized by tasks within the buckets they are assigned to). Each [task](xref:graph.plannertask) will have one **plannerBucketTaskBoardTaskFormat** object associated with it.
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [Get plannerBucketTaskBoardTaskFormat](xref:graph.plannerbuckettaskboardtaskformat_get)
-    type: [plannerBucketTaskBoardTaskFormat](xref:graph.plannerbuckettaskboardtaskformat)
-    description: Read properties and relationships of plannerBucketTaskBoardTaskFormat object.
-  - method: [Update](xref:graph.plannerbuckettaskboardtaskformat_update)
-    type: [plannerBucketTaskBoardTaskFormat](xref:graph.plannerbuckettaskboardtaskformat)
-    description: Update plannerBucketTaskBoardTaskFormat object.
+  - method: "[Get plannerBucketTaskBoardTaskFormat](xref:graph.plannerbuckettaskboardtaskformat_get)"
+    type: "[plannerBucketTaskBoardTaskFormat](xref:graph.plannerbuckettaskboardtaskformat)"
+    description: "Read properties and relationships of plannerBucketTaskBoardTaskFormat object."
+  - method: "[Update](xref:graph.plannerbuckettaskboardtaskformat_update)"
+    type: "[plannerBucketTaskBoardTaskFormat](xref:graph.plannerbuckettaskboardtaskformat)"
+    description: "Update plannerBucketTaskBoardTaskFormat object."
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -28,15 +28,15 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: id
-    type: String
-    description: Read-only. ID of the resource. It is 28 characters long and case-sensitive. Format validation is done on the service.
-  - property: orderHint
-    type: String
-    description: Hint used to order tasks in the Bucket view of the Task Board. The format is defined as outlined here.
+  - property: "id"
+    type: "String"
+    description: "Read-only. ID of the resource. It is 28 characters long and case-sensitive. Format validation is done on the service."
+  - property: "orderHint"
+    type: "String"
+    description: "Hint used to order tasks in the Bucket view of the Task Board. The format is defined as outlined here."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

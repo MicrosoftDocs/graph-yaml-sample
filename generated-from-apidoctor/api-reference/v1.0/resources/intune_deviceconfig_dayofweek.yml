@@ -3,23 +3,23 @@ uid: graph.intune_deviceconfig_dayofweek
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_dayofweek.md
 summary:
-  heading: dayOfWeek enum type
+  heading: "dayOfWeek enum type"
   intro: |
     Possible values for a weekday
 enum:
-  heading: Members
+  heading: "Members"
   table:
-  - member: sunday
-    description: Sunday.
-  - member: monday
-    description: Monday.
-  - member: tuesday
-    description: Tuesday.
-  - member: wednesday
-    description: Wednesday.
-  - member: thursday
-    description: Thursday.
-  - member: friday
-    description: Friday.
-  - member: saturday
-    description: Saturday.
+  - member: "sunday"
+    description: "Sunday."
+  - member: "monday"
+    description: "Monday."
+  - member: "tuesday"
+    description: "Tuesday."
+  - member: "wednesday"
+    description: "Wednesday."
+  - member: "thursday"
+    description: "Thursday."
+  - member: "friday"
+    description: "Friday."
+  - member: "saturday"
+    description: "Saturday."

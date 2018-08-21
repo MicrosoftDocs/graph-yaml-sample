@@ -3,32 +3,32 @@ uid: graph.intune_onboarding_devicemanagementexchangeconnector
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_onboarding_devicemanagementexchangeconnector.md
 summary:
-  heading: deviceManagementExchangeConnector resource type
+  heading: "deviceManagementExchangeConnector resource type"
   intro: |
     Entity which represents a connection to an Exchange environment.
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [List deviceManagementExchangeConnectors](xref:graph.intune_onboarding_devicemanagementexchangeconnector_list)
-    type: [deviceManagementExchangeConnector](xref:graph.intune_onboarding_devicemanagementexchangeconnector) collection
-    description: List properties and relationships of the deviceManagementExchangeConnector objects.
-  - method: [Get deviceManagementExchangeConnector](xref:graph.intune_onboarding_devicemanagementexchangeconnector_get)
-    type: [deviceManagementExchangeConnector](xref:graph.intune_onboarding_devicemanagementexchangeconnector)
-    description: Read properties and relationships of the deviceManagementExchangeConnector object.
-  - method: [Create deviceManagementExchangeConnector](xref:graph.intune_onboarding_devicemanagementexchangeconnector_create)
-    type: [deviceManagementExchangeConnector](xref:graph.intune_onboarding_devicemanagementexchangeconnector)
-    description: Create a new deviceManagementExchangeConnector object.
-  - method: [Delete deviceManagementExchangeConnector](xref:graph.intune_onboarding_devicemanagementexchangeconnector_delete)
-    type: None
-    description: Deletes a deviceManagementExchangeConnector.
-  - method: [Update deviceManagementExchangeConnector](xref:graph.intune_onboarding_devicemanagementexchangeconnector_update)
-    type: [deviceManagementExchangeConnector](xref:graph.intune_onboarding_devicemanagementexchangeconnector)
-    description: Update the properties of a deviceManagementExchangeConnector object.
-  - method: [sync action](xref:graph.intune_onboarding_devicemanagementexchangeconnector_sync)
-    type: None
-    description: Not yet documented
+  - method: "[List deviceManagementExchangeConnectors](xref:graph.intune_onboarding_devicemanagementexchangeconnector_list)"
+    type: "[deviceManagementExchangeConnector](xref:graph.intune_onboarding_devicemanagementexchangeconnector) collection"
+    description: "List properties and relationships of the deviceManagementExchangeConnector objects."
+  - method: "[Get deviceManagementExchangeConnector](xref:graph.intune_onboarding_devicemanagementexchangeconnector_get)"
+    type: "[deviceManagementExchangeConnector](xref:graph.intune_onboarding_devicemanagementexchangeconnector)"
+    description: "Read properties and relationships of the deviceManagementExchangeConnector object."
+  - method: "[Create deviceManagementExchangeConnector](xref:graph.intune_onboarding_devicemanagementexchangeconnector_create)"
+    type: "[deviceManagementExchangeConnector](xref:graph.intune_onboarding_devicemanagementexchangeconnector)"
+    description: "Create a new deviceManagementExchangeConnector object."
+  - method: "[Delete deviceManagementExchangeConnector](xref:graph.intune_onboarding_devicemanagementexchangeconnector_delete)"
+    type: "None"
+    description: "Deletes a deviceManagementExchangeConnector."
+  - method: "[Update deviceManagementExchangeConnector](xref:graph.intune_onboarding_devicemanagementexchangeconnector_update)"
+    type: "[deviceManagementExchangeConnector](xref:graph.intune_onboarding_devicemanagementexchangeconnector)"
+    description: "Update the properties of a deviceManagementExchangeConnector object."
+  - method: "[sync action](xref:graph.intune_onboarding_devicemanagementexchangeconnector_sync)"
+    type: "None"
+    description: "Not yet documented"
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -49,39 +49,39 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: id
-    type: String
-    description: Not yet documented
-  - property: lastSyncDateTime
-    type: DateTimeOffset
-    description: Last sync time for the Exchange Connector
-  - property: status
-    type: microsoft.graph.deviceManagementExchangeConnectorStatus
-    description: Exchange Connector Status. The possible values are: none, connectionPending, connected, disconnected.
-  - property: primarySmtpAddress
-    type: String
-    description: Email address used to configure the Service To Service Exchange Connector.
-  - property: serverName
-    type: String
-    description: The name of the Exchange server.
-  - property: connectorServerName
-    type: String
-    description: The name of the server hosting the Exchange Connector.
-  - property: exchangeConnectorType
-    type: microsoft.graph.deviceManagementExchangeConnectorType
-    description: The type of Exchange Connector Configured. The possible values are: onPremises, hosted, serviceToService, dedicated.
-  - property: version
-    type: String
-    description: The version of the ExchangeConnectorAgent
-  - property: exchangeAlias
-    type: String
-    description: An alias assigned to the Exchange server
-  - property: exchangeOrganization
-    type: String
-    description: Exchange Organization to the Exchange server
+  - property: "id"
+    type: "String"
+    description: "Not yet documented"
+  - property: "lastSyncDateTime"
+    type: "DateTimeOffset"
+    description: "Last sync time for the Exchange Connector"
+  - property: "status"
+    type: "microsoft.graph.deviceManagementExchangeConnectorStatus"
+    description: "Exchange Connector Status. The possible values are: none, connectionPending, connected, disconnected."
+  - property: "primarySmtpAddress"
+    type: "String"
+    description: "Email address used to configure the Service To Service Exchange Connector."
+  - property: "serverName"
+    type: "String"
+    description: "The name of the Exchange server."
+  - property: "connectorServerName"
+    type: "String"
+    description: "The name of the server hosting the Exchange Connector."
+  - property: "exchangeConnectorType"
+    type: "microsoft.graph.deviceManagementExchangeConnectorType"
+    description: "The type of Exchange Connector Configured. The possible values are: onPremises, hosted, serviceToService, dedicated."
+  - property: "version"
+    type: "String"
+    description: "The version of the ExchangeConnectorAgent"
+  - property: "exchangeAlias"
+    type: "String"
+    description: "An alias assigned to the Exchange server"
+  - property: "exchangeOrganization"
+    type: "String"
+    description: "Exchange Organization to the Exchange server"
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

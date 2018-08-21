@@ -3,26 +3,26 @@ uid: graph.page
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.page
 summary:
-  heading: page resource type
+  heading: "page resource type"
   intro: |
     A page in a OneNote notebook.
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [Get page](xref:graph.page_get)
-    type: [Page](xref:graph.page)
-    description: Read the properties and relationships of the page.
-  - method: [Update page content](xref:graph.page_update)
-    type: None
-    description: Update the HTML content of the page.
-  - method: [Delete page](xref:graph.page_delete)
-    type: None
-    description: Delete the page.
-  - method: [copyToSection](xref:graph.page_copytosection)
-    type: None
-    description: Copies the page to a specific section.
+  - method: "[Get page](xref:graph.page_get)"
+    type: "[Page](xref:graph.page)"
+    description: "Read the properties and relationships of the page."
+  - method: "[Update page content](xref:graph.page_update)"
+    type: "None"
+    description: "Update the HTML content of the page."
+  - method: "[Delete page](xref:graph.page_delete)"
+    type: "None"
+    description: "Delete the page."
+  - method: "[copyToSection](xref:graph.page_copytosection)"
+    type: "None"
+    description: "Copies the page to a specific section."
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -43,47 +43,47 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: content
-    type: Stream
-    description: The page's HTML content.
-  - property: contentUrl
-    type: String
-    description: The URL for the page's HTML content.  Read-only.
-  - property: createdByAppId
-    type: String
-    description: The unique identifier of the application that created the page. Read-only.
-  - property: createdDateTime
-    type: DateTimeOffset
-    description: The date and time when the page was created. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Read-only.
-  - property: id
-    type: String
-    description: The unique identifier of the page.  Read-only.
-  - property: lastModifiedDateTime
-    type: DateTimeOffset
-    description: The date and time when the page was last modified. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Read-only.
-  - property: level
-    type: Int32
-    description: The indentation level of the page. Read-only.
-  - property: links
-    type: microsoft.graph.pageLinks
-    description: Links for opening the page. The oneNoteClientURL link opens the page in the OneNote native client if it 's installed. The oneNoteWebUrl link opens the page in OneNote Online. Read-only.
-  - property: order
-    type: Int32
-    description: The order of the page within its parent section. Read-only.
-  - property: self
-    type: String
-    description: The endpoint where you can get details about the page. Read-only.
-  - property: title
-    type: String
-    description: The title of the page.
+  - property: "content"
+    type: "Stream"
+    description: "The page's HTML content."
+  - property: "contentUrl"
+    type: "String"
+    description: "The URL for the page's HTML content.  Read-only."
+  - property: "createdByAppId"
+    type: "String"
+    description: "The unique identifier of the application that created the page. Read-only."
+  - property: "createdDateTime"
+    type: "DateTimeOffset"
+    description: "The date and time when the page was created. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Read-only."
+  - property: "id"
+    type: "String"
+    description: "The unique identifier of the page.  Read-only."
+  - property: "lastModifiedDateTime"
+    type: "DateTimeOffset"
+    description: "The date and time when the page was last modified. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Read-only."
+  - property: "level"
+    type: "Int32"
+    description: "The indentation level of the page. Read-only."
+  - property: "links"
+    type: "microsoft.graph.pageLinks"
+    description: "Links for opening the page. The oneNoteClientURL link opens the page in the OneNote native client if it 's installed. The oneNoteWebUrl link opens the page in OneNote Online. Read-only."
+  - property: "order"
+    type: "Int32"
+    description: "The order of the page within its parent section. Read-only."
+  - property: "self"
+    type: "String"
+    description: "The endpoint where you can get details about the page. Read-only."
+  - property: "title"
+    type: "String"
+    description: "The title of the page."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   list:
-  - relationship: parentNotebook
-    type: microsoft.graph.notebook
-    description: The notebook that contains the page.  Read-only.
-  - relationship: parentSection
-    type: microsoft.graph.onenoteSection
-    description: The section that contains the page. Read-only.
+  - relationship: "parentNotebook"
+    type: "microsoft.graph.notebook"
+    description: "The notebook that contains the page.  Read-only."
+  - relationship: "parentSection"
+    type: "microsoft.graph.onenoteSection"
+    description: "The section that contains the page. Read-only."

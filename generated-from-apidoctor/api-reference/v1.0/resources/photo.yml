@@ -7,11 +7,11 @@ metadata:
   ms.date: 09/10/2017
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/photo.md
 summary:
-  heading: Photo resource type
+  heading: "Photo resource type"
   intro: |
     The **photo** resource provides photo and camera properties, for example, EXIF metadata, on a [driveItem](xref:graph.driveitem).
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   sampleCode: |
     ```json
     {
@@ -27,34 +27,34 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: takenDateTime
-    type: DateTimeOffset
-    description: Represents the date and time the photo was taken. Read-only.
-  - property: cameraMake
-    type: String
-    description: Camera manufacturer. Read-only.
-  - property: cameraModel
-    type: String
-    description: Camera model. Read-only.
-  - property: fNumber
-    type: Double
-    description: The F-stop value from the camera. Read-only.
-  - property: exposureDenominator
-    type: Double
-    description: The denominator for the exposure time fraction from the camera. Read-only.
-  - property: exposureNumerator
-    type: Double
-    description: The numerator for the exposure time fraction from the camera. Read-only.
-  - property: focalLength
-    type: Double
-    description: The focal length from the camera. Read-only.
-  - property: iso
-    type: Int32
-    description: The ISO value from the camera. Read-only.
+  - property: "takenDateTime"
+    type: "DateTimeOffset"
+    description: "Represents the date and time the photo was taken. Read-only."
+  - property: "cameraMake"
+    type: "String"
+    description: "Camera manufacturer. Read-only."
+  - property: "cameraModel"
+    type: "String"
+    description: "Camera model. Read-only."
+  - property: "fNumber"
+    type: "Double"
+    description: "The F-stop value from the camera. Read-only."
+  - property: "exposureDenominator"
+    type: "Double"
+    description: "The denominator for the exposure time fraction from the camera. Read-only."
+  - property: "exposureNumerator"
+    type: "Double"
+    description: "The numerator for the exposure time fraction from the camera. Read-only."
+  - property: "focalLength"
+    type: "Double"
+    description: "The focal length from the camera. Read-only."
+  - property: "iso"
+    type: "Int32"
+    description: "The ISO value from the camera. Read-only."
 remarks:
-  heading: Remarks
+  heading: "Remarks"
   intro: |
     OneDrive for Business and SharePoint only return the **takenDateTime** property.
     For more information about the facets on a DriveItem, see [DriveItem](xref:graph.driveitem).

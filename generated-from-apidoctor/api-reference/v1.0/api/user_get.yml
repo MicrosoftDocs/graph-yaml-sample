@@ -3,23 +3,23 @@ uid: graph.user_get
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/user_get.md
 summary:
-  heading: Get a user
+  heading: "Get a user"
   intro: |
     Retrieve the properties and relationships of user object.
     
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
   list:
-  - resource: Delegated (work or school account)
-    permission: User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All
-  - resource: Delegated (personal Microsoft account)
-    permission: User.Read, User.ReadWrite
-  - resource: Application
-    permission: User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All
+  - resource: "Delegated (work or school account)"
+    permission: "User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All"
+  - resource: "Delegated (personal Microsoft account)"
+    permission: "User.Read, User.ReadWrite"
+  - resource: "Application"
+    permission: "User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All"
 httpRequest:
-  heading: HTTP request
+  heading: "HTTP request"
   intro: |
     For a specific user:
   sampleCode: |
@@ -35,33 +35,33 @@ httpRequest:
     ```
     
 queryParameters:
-  heading: Optional query parameters
+  heading: "Optional query parameters"
   intro: |
     This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
     By default, only a limited set of properties are returned ( _businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_ ). 
     To return an alternative property set, you must specify the desired set of [user](xref:graph.user) properties using the OData `$select` query parameter. For example, to return _displayName_, _givenName_, and _postalCode_, you would use the add the following to your query `$select=displayName,givenName,postalCode`
 requestHeaders:
-  heading: Request headers
+  heading: "Request headers"
   list:
-  - name: Authorization
-    value: String
-    description: 
-  - name: Content-Type
-    value: String
-    description: 
+  - name: "Authorization"
+    value: "String"
+    description: ""
+  - name: "Content-Type"
+    value: "String"
+    description: ""
 requestBody:
-  heading: Request body
+  heading: "Request body"
   intro: |
     Do not supply a request body for this method.
 response:
-  heading: Response
+  heading: "Response"
   intro: |
     If successful, this method returns a `200 OK` response code and [user](xref:graph.user) object in the response body.
 examples:
-  heading: Examples
+  heading: "Examples"
   - items:
     - Example 1: Standard users request:
-        heading: Example 1: Standard users request
+        heading: "Example 1: Standard users request"
         intro: |
           By default, only a limited set of properties are returned ( _businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_ ). This example illustrates the default request and response. 
           
@@ -70,7 +70,7 @@ examples:
           ```
           
         response:
-            heading: Response
+            heading: "Response"
             sampleCode: |
               ```http
               HTTP/1.1 200 OK
@@ -95,18 +95,18 @@ examples:
               ```
               
     - Example 2: Signed-in user request:
-        heading: Example 2: Signed-in user request
+        heading: "Example 2: Signed-in user request"
         intro: |
           You can get the user information for the signed-in user by replacing `/users/{id | userPrincipalName}` with `/me`.
         request:
-            heading: Request
+            heading: "Request"
             sampleCode: |
               ```http
               GET https://graph.microsoft.com/v1.0/me
               ```
               
         response:
-            heading: Response
+            heading: "Response"
             sampleCode: |
               ```http
               HTTP/1.1 200 OK
@@ -131,18 +131,18 @@ examples:
               ```
               
     - Example 3: Users request using $select:
-        heading: Example 3: Users request using $select
+        heading: "Example 3: Users request using $select"
         intro: |
           If you need a different property set, you can use the OData `$select` query parameter. For example, to return _displayName_, _givenName_, and _postalCode_, you would use the add the following to your query `$select=displayName,givenName,postalCode`
         request:
-            heading: Request
+            heading: "Request"
             sampleCode: |
               ```http
               GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}?$select=displayName,givenName,postalCode
               ```
               
         response:
-            heading: Response
+            heading: "Response"
             sampleCode: |
               ```http
               HTTP/1.1 200 OK

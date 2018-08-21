@@ -3,7 +3,7 @@ uid: graph.user_get_mailboxsettings
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/user_get_mailboxsettings.md
 summary:
-  heading: Get user mailbox settings
+  heading: "Get user mailbox settings"
   intro: |
     Get the user's [mailboxSettings](xref:graph.mailboxsettings). This includes settings for automatic replies (notify people automatically upon 
     receipt of their email), locale (language and country/region), and time zone, and working hours.
@@ -11,18 +11,18 @@ summary:
     Time zone is one of the preferred settings a user can set up for the user's mailbox. Valid time zone formats include the Windows time zone format and [Internet Assigned Numbers Authority (IANA) time zone](http://www.iana.org/time-zones) (also known as Olson time zone) format. The Windows format is the default. 
     When you get a user's preferred time zone, the time zone is returned in the format that it was set up. If you want that time zone to be in a specific format (Windows or IANA), you can first [update the preferred time zone in that format as a mailbox setting](xref:graph.user_update_mailboxsettings). Subsequently you will be able to get the time zone in that format. Alternatively, you can manage the format conversion separately in your app.
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
   list:
-  - resource: Delegated (work or school account)
-    permission: MailboxSettings.Read, MailboxSettings.ReadWrite
-  - resource: Delegated (personal Microsoft account)
-    permission: MailboxSettings.Read, MailboxSettings.ReadWrite
-  - resource: Application
-    permission: MailboxSettings.Read, MailboxSettings.ReadWrite
+  - resource: "Delegated (work or school account)"
+    permission: "MailboxSettings.Read, MailboxSettings.ReadWrite"
+  - resource: "Delegated (personal Microsoft account)"
+    permission: "MailboxSettings.Read, MailboxSettings.ReadWrite"
+  - resource: "Application"
+    permission: "MailboxSettings.Read, MailboxSettings.ReadWrite"
 httpRequest:
-  heading: HTTP request
+  heading: "HTTP request"
   intro: |
     To get all mailbox settings for a user:
   sampleCode: |
@@ -49,21 +49,21 @@ httpRequest:
     ```
     
 queryParameters:
-  heading: Optional query parameters
+  heading: "Optional query parameters"
   intro: |
     This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
 requestHeaders:
-  heading: Request headers
+  heading: "Request headers"
   list:
-  - name: Authorization
-    value: String
-    description: Bearer {token}. Required.
+  - name: "Authorization"
+    value: "String"
+    description: "Bearer {token}. Required."
 requestBody:
-  heading: Request body
+  heading: "Request body"
   intro: |
     Do not supply a request body for this method.
 response:
-  heading: Response
+  heading: "Response"
   intro: |
     If successful, this method returns a `200 OK` response code and one of the following requested objects in the response body:
     
@@ -76,7 +76,7 @@ response:
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         outro: |
           ##### Request 1
           The first example gets all the mailbox settings of the signed-in user's mailbox, which include settings for time zone, automatic replies, 

@@ -3,7 +3,7 @@ uid: graph.user_list_messages
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/user_list_messages.md
 summary:
-  heading: List messages
+  heading: "List messages"
   intro: |
     Get the messages in the signed-in user's mailbox (including the Deleted Items and Clutter folders).
     Currently, this operation returns message bodies in only HTML format.
@@ -36,18 +36,18 @@ summary:
     
     This capability is not available in other operations for contacts, events, messages, and their folders.
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
   list:
-  - resource: Delegated (work or school account)
-    permission: Mail.Read, Mail.ReadWrite
-  - resource: Delegated (personal Microsoft account)
-    permission: Mail.Read, Mail.ReadWrite
-  - resource: Application
-    permission: Mail.Read, Mail.ReadWrite
+  - resource: "Delegated (work or school account)"
+    permission: "Mail.Read, Mail.ReadWrite"
+  - resource: "Delegated (personal Microsoft account)"
+    permission: "Mail.Read, Mail.ReadWrite"
+  - resource: "Application"
+    permission: "Mail.Read, Mail.ReadWrite"
 httpRequest:
-  heading: HTTP request
+  heading: "HTTP request"
   intro: |
     To get all the messages in a user's mailbox:
   sampleCode: |
@@ -65,33 +65,33 @@ httpRequest:
     ```
     
 queryParameters:
-  heading: Optional query parameters
+  heading: "Optional query parameters"
   intro: |
     This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
 requestHeaders:
-  heading: Request headers
+  heading: "Request headers"
   list:
-  - name: Authorization
-    value: String
-    description: Bearer {token}. Required.
-  - name: Prefer: outlook.body-content-type
-    value: String
-    description: The format of the body and uniqueBody properties to be returned in. Values can be "text" or "html". If the header is not specified, the body and uniqueBody properties are returned in HTML format. Optional.
+  - name: "Authorization"
+    value: "String"
+    description: "Bearer {token}. Required."
+  - name: "Prefer: outlook.body-content-type"
+    value: "String"
+    description: "The format of the body and uniqueBody properties to be returned in. Values can be "text" or "html". If the header is not specified, the body and uniqueBody properties are returned in HTML format. Optional."
 requestBody:
-  heading: Request body
+  heading: "Request body"
   intro: |
     Do not supply a request body for this method.
 response:
-  heading: Response
+  heading: "Response"
   intro: |
     If successful, this method returns a `200 OK` response code and collection of [Message](xref:graph.message) objects in the response body.
     The default page size for this request is 10 messages.
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         request:
-            heading: Request
+            heading: "Request"
             intro: |
               Here is an example of the request.
             sampleCode: |
@@ -100,7 +100,7 @@ examples:
               ```
               
         response:
-            heading: Response
+            heading: "Response"
             intro: |
               Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
             sampleCode: |

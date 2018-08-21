@@ -3,26 +3,26 @@ uid: graph.intune_onboarding_organization
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_onboarding_organization.md
 summary:
-  heading: organization resource type
+  heading: "organization resource type"
   intro: |
     The organization resource represents an instance of global settings and resources which operate and are provisioned at the tenant-level.
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [List organizations](xref:graph.intune_onboarding_organization_list)
-    type: [organization](xref:graph.intune_onboarding_organization) collection
-    description: List properties and relationships of the organization objects.
-  - method: [Get organization](xref:graph.intune_onboarding_organization_get)
-    type: [organization](xref:graph.intune_onboarding_organization)
-    description: Read properties and relationships of the organization object.
-  - method: [Update organization](xref:graph.intune_onboarding_organization_update)
-    type: [organization](xref:graph.intune_onboarding_organization)
-    description: Update the properties of a organization object.
-  - method: [setMobileDeviceManagementAuthority action](xref:graph.intune_onboarding_organization_setmobiledevicemanagementauthority)
-    type: Int32
-    description: Set mobile device management authority
+  - method: "[List organizations](xref:graph.intune_onboarding_organization_list)"
+    type: "[organization](xref:graph.intune_onboarding_organization) collection"
+    description: "List properties and relationships of the organization objects."
+  - method: "[Get organization](xref:graph.intune_onboarding_organization_get)"
+    type: "[organization](xref:graph.intune_onboarding_organization)"
+    description: "Read properties and relationships of the organization object."
+  - method: "[Update organization](xref:graph.intune_onboarding_organization_update)"
+    type: "[organization](xref:graph.intune_onboarding_organization)"
+    description: "Update the properties of a organization object."
+  - method: "[setMobileDeviceManagementAuthority action](xref:graph.intune_onboarding_organization_setmobiledevicemanagementauthority)"
+    type: "Int32"
+    description: "Set mobile device management authority"
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -35,15 +35,15 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: id
-    type: String
-    description: The GUID for the object.
-  - property: mobileDeviceManagementAuthority
-    type: microsoft.graph.mdmAuthority
-    description: Mobile device management authority. The possible values are: unknown, intune, sccm, office365.
+  - property: "id"
+    type: "String"
+    description: "The GUID for the object."
+  - property: "mobileDeviceManagementAuthority"
+    type: "microsoft.graph.mdmAuthority"
+    description: "Mobile device management authority. The possible values are: unknown, intune, sccm, office365."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

@@ -3,7 +3,7 @@ uid: graph.attachment
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.attachment
 summary:
-  heading: attachment resource type
+  heading: "attachment resource type"
   intro: |
     You can add related content to an [event](xref:graph.event),
     [message](xref:graph.message), or [post](xref:graph.post) in the form of an attachment.
@@ -14,37 +14,37 @@ summary:
     * A link to a file ([referenceAttachment](xref:graph.referenceAttachment) resource)
     
 methods:
-  heading: Methods
+  heading: "Methods"
   intro: |
     The following methods apply to any of the derived types of attachments (**fileAttachment**,
     **itemAttachment**, or **referenceAttachment**).
   list:
-  - method: [Get attachment](xref:graph.attachment_get)
-    type: [attachment](xref:graph.attachment)
-    description: Read the properties and relationships of an attachment, attached to an event, message, or post.
-  - method: [Add attachment to an event](xref:graph.event_post_attachments)
-    type: [attachment](xref:graph.attachment)
-    description: Add a file, item, or link attachment to an event.
-  - method: [Add attachment to a message](xref:graph.message_post_attachments)
-    type: [attachment](xref:graph.attachment)
-    description: Add a file, item, or link attachment to a message.
-  - method: [Add attachment to a post](xref:graph.post_post_attachments)
-    type: [attachment](xref:graph.attachment)
-    description: Add a file, item, or link attachment to a post.
-  - method: [List attachments of an event](xref:graph.event_list_attachments)
-    type: [attachment](xref:graph.attachment) collection
-    description: Get a list of attachments for an event.
-  - method: [List attachments of a message](xref:graph.message_list_attachments)
-    type: [attachment](xref:graph.attachment) collection
-    description: Get a list of attachments for a message.
-  - method: [List attachments of a post](xref:graph.post_list_attachments)
-    type: [attachment](xref:graph.attachment) collection
-    description: Get a list of attachments for a post.
-  - method: [Delete](xref:graph.attachment_delete)
-    type: None
-    description: Delete an attachment on an event, message, or post.
+  - method: "[Get attachment](xref:graph.attachment_get)"
+    type: "[attachment](xref:graph.attachment)"
+    description: "Read the properties and relationships of an attachment, attached to an event, message, or post."
+  - method: "[Add attachment to an event](xref:graph.event_post_attachments)"
+    type: "[attachment](xref:graph.attachment)"
+    description: "Add a file, item, or link attachment to an event."
+  - method: "[Add attachment to a message](xref:graph.message_post_attachments)"
+    type: "[attachment](xref:graph.attachment)"
+    description: "Add a file, item, or link attachment to a message."
+  - method: "[Add attachment to a post](xref:graph.post_post_attachments)"
+    type: "[attachment](xref:graph.attachment)"
+    description: "Add a file, item, or link attachment to a post."
+  - method: "[List attachments of an event](xref:graph.event_list_attachments)"
+    type: "[attachment](xref:graph.attachment) collection"
+    description: "Get a list of attachments for an event."
+  - method: "[List attachments of a message](xref:graph.message_list_attachments)"
+    type: "[attachment](xref:graph.attachment) collection"
+    description: "Get a list of attachments for a message."
+  - method: "[List attachments of a post](xref:graph.post_list_attachments)"
+    type: "[attachment](xref:graph.attachment) collection"
+    description: "Get a list of attachments for a post."
+  - method: "[Delete](xref:graph.attachment_delete)"
+    type: "None"
+    description: "Delete an attachment on an event, message, or post."
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource
   sampleCode: |
@@ -60,30 +60,30 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   intro: |
     The following are the base properties of any attachment resource. Refer to the specific type of attachment ([fileAttachment](xref:graph.fileattachment),
     [itemAttachment](xref:graph.itemattachment), or [referenceAttachment](xref:graph.referenceAttachment)) for additional properties.
   list:
-  - property: contentType
-    type: String
-    description: The MIME type.
-  - property: id
-    type: String
-    description: Read-only.
-  - property: isInline
-    type: Boolean
-    description: true if the attachment is an inline attachment; otherwise, false.
-  - property: lastModifiedDateTime
-    type: DateTimeOffset
-    description: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
-  - property: name
-    type: String
-    description: The attachment's file name.
-  - property: size
-    type: Int32
-    description: The length of the attachment in bytes.
+  - property: "contentType"
+    type: "String"
+    description: "The MIME type."
+  - property: "id"
+    type: "String"
+    description: "Read-only."
+  - property: "isInline"
+    type: "Boolean"
+    description: "true if the attachment is an inline attachment; otherwise, false."
+  - property: "lastModifiedDateTime"
+    type: "DateTimeOffset"
+    description: "The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'"
+  - property: "name"
+    type: "String"
+    description: "The attachment's file name."
+  - property: "size"
+    type: "Int32"
+    description: "The length of the attachment in bytes."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

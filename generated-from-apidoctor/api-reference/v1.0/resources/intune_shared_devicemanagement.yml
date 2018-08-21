@@ -3,7 +3,7 @@ uid: graph.intune_shared_devicemanagement
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_shared_devicemanagement.md
 summary:
-  heading: deviceManagement resource type
+  heading: "deviceManagement resource type"
   intro: |
     The deviceManagement resource represents a container whose contents vary according to workflow, including:
     
@@ -23,28 +23,28 @@ summary:
     * Windows Information Protection summaries
     
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [Get deviceManagement](xref:graph.intune_shared_devicemanagement_get)
-    type: [deviceManagement](xref:graph.intune_shared_devicemanagement)
-    description: Read properties and relationships of the deviceManagement object.
-  - method: [Update deviceManagement](xref:graph.intune_shared_devicemanagement_update)
-    type: [deviceManagement](xref:graph.intune_shared_devicemanagement)
-    description: Update the properties of a deviceManagement object.
-  - method: **On-boarding**
-    type: &nbsp;
-    description: 
-  - method: [verifyWindowsEnrollmentAutoDiscovery function](xref:graph.intune_shared_devicemanagement_verifywindowsenrollmentautodiscovery)
-    type: Boolean
-    description: Not yet documented
-  - method: **RBAC**
-    type: &nbsp;
-    description: 
-  - method: [getEffectivePermissions function](xref:graph.intune_shared_devicemanagement_geteffectivepermissions)
-    type: [rolePermission](xref:graph.intune_rbac_rolepermission) collection or string collection
-    description: Retrieves the effective permissions of the currently authenticated user
+  - method: "[Get deviceManagement](xref:graph.intune_shared_devicemanagement_get)"
+    type: "[deviceManagement](xref:graph.intune_shared_devicemanagement)"
+    description: "Read properties and relationships of the deviceManagement object."
+  - method: "[Update deviceManagement](xref:graph.intune_shared_devicemanagement_update)"
+    type: "[deviceManagement](xref:graph.intune_shared_devicemanagement)"
+    description: "Update the properties of a deviceManagement object."
+  - method: "**On-boarding**"
+    type: "&nbsp;"
+    description: ""
+  - method: "[verifyWindowsEnrollmentAutoDiscovery function](xref:graph.intune_shared_devicemanagement_verifywindowsenrollmentautodiscovery)"
+    type: "Boolean"
+    description: "Not yet documented"
+  - method: "**RBAC**"
+    type: "&nbsp;"
+    description: ""
+  - method: "[getEffectivePermissions function](xref:graph.intune_shared_devicemanagement_geteffectivepermissions)"
+    type: "[rolePermission](xref:graph.intune_rbac_rolepermission) collection or string collection"
+    description: "Retrieves the effective permissions of the currently authenticated user"
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -59,107 +59,107 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: id
-    type: String
-    description: Unique Identifier for the device
-  - property: settings
-    type: microsoft.graph.deviceManagementSettings
-    description: Account level settings.
-  - property: subscriptionState
-    type: String
-    description: Tenant mobile device management subscription state. The possible values are: pending, active, warning, disabled, deleted, blocked, lockedOut.
-  - property: intuneBrand
-    type: microsoft.graph.intuneBrand
-    description: intuneBrand contains data which is used in customizing the appearance of the Company Portal applications as well as the end user web portal.
+  - property: "id"
+    type: "String"
+    description: "Unique Identifier for the device"
+  - property: "settings"
+    type: "microsoft.graph.deviceManagementSettings"
+    description: "Account level settings."
+  - property: "subscriptionState"
+    type: "String"
+    description: "Tenant mobile device management subscription state. The possible values are: pending, active, warning, disabled, deleted, blocked, lockedOut."
+  - property: "intuneBrand"
+    type: "microsoft.graph.intuneBrand"
+    description: "intuneBrand contains data which is used in customizing the appearance of the Company Portal applications as well as the end user web portal."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   list:
-  - relationship: auditEvents
-    type: Collection(microsoft.graph.auditEvent)
-    description: The Audit Events
-  - relationship: termsAndConditions
-    type: Collection(microsoft.graph.termsAndConditions)
-    description: The terms and conditions associated with device management of the company.
-  - relationship: deviceCompliancePolicies
-    type: Collection(microsoft.graph.deviceCompliancePolicy)
-    description: The device compliance policies.
-  - relationship: deviceCompliancePolicyDeviceStateSummary
-    type: microsoft.graph.deviceCompliancePolicyDeviceStateSummary
-    description: The device compliance state summary for this account.
-  - relationship: deviceCompliancePolicySettingStateSummaries
-    type: Collection(microsoft.graph.deviceCompliancePolicySettingStateSummary)
-    description: The summary states of compliance policy settings for this account.
-  - relationship: deviceConfigurationDeviceStateSummaries
-    type: microsoft.graph.deviceConfigurationDeviceStateSummary
-    description: The device configuration device state summary for this account.
-  - relationship: deviceConfigurations
-    type: Collection(microsoft.graph.deviceConfiguration)
-    description: The device configurations.
-  - relationship: iosUpdateStatuses
-    type: Collection(microsoft.graph.iosUpdateDeviceStatus)
-    description: The IOS software update installation statuses for this account.
-  - relationship: softwareUpdateStatusSummary
-    type: microsoft.graph.softwareUpdateStatusSummary
-    description: The software update status summary.
-  - relationship: applePushNotificationCertificate
-    type: microsoft.graph.applePushNotificationCertificate
-    description: Apple push notification certificate.
-  - relationship: detectedApps
-    type: Collection(microsoft.graph.detectedApp)
-    description: The list of detected apps associated with a device.
-  - relationship: managedDeviceOverview
-    type: microsoft.graph.managedDeviceOverview
-    description: Device overview
-  - relationship: managedDevices
-    type: Collection(microsoft.graph.managedDevice)
-    description: The list of managed devices.
-  - relationship: importedWindowsAutopilotDeviceIdentities
-    type: Collection(microsoft.graph.importedWindowsAutopilotDeviceIdentity)
-    description: Collection of imported Windows autopilot devices.
-  - relationship: notificationMessageTemplates
-    type: Collection(microsoft.graph.notificationMessageTemplate)
-    description: The Notification Message Templates.
-  - relationship: conditionalAccessSettings
-    type: microsoft.graph.onPremisesConditionalAccessSettings
-    description: The Exchange on premises conditional access settings. On premises conditional access will require devices to be both enrolled and compliant for mail access
-  - relationship: deviceCategories
-    type: Collection(microsoft.graph.deviceCategory)
-    description: The list of device categories with the tenant.
-  - relationship: deviceEnrollmentConfigurations
-    type: Collection(microsoft.graph.deviceEnrollmentConfiguration)
-    description: The list of device enrollment configurations
-  - relationship: deviceManagementPartners
-    type: Collection(microsoft.graph.deviceManagementPartner)
-    description: The list of Device Management Partners configured by the tenant.
-  - relationship: exchangeConnectors
-    type: Collection(microsoft.graph.deviceManagementExchangeConnector)
-    description: The list of Exchange Connectors configured by the tenant.
-  - relationship: mobileThreatDefenseConnectors
-    type: Collection(microsoft.graph.mobileThreatDefenseConnector)
-    description: The list of Mobile threat Defense connectors configured by the tenant.
-  - relationship: resourceOperations
-    type: Collection(microsoft.graph.resourceOperation)
-    description: The Resource Operations.
-  - relationship: roleAssignments
-    type: Collection(microsoft.graph.deviceAndAppManagementRoleAssignment)
-    description: The Role Assignments.
-  - relationship: roleDefinitions
-    type: Collection(microsoft.graph.roleDefinition)
-    description: The Role Definitions.
-  - relationship: remoteAssistancePartners
-    type: Collection(microsoft.graph.remoteAssistancePartner)
-    description: The remote assist partners.
-  - relationship: telecomExpenseManagementPartners
-    type: Collection(microsoft.graph.telecomExpenseManagementPartner)
-    description: The telecom expense management partners.
-  - relationship: troubleshootingEvents
-    type: Collection(microsoft.graph.deviceManagementTroubleshootingEvent)
-    description: The list of troubleshooting events for the tenant.
-  - relationship: windowsInformationProtectionAppLearningSummaries
-    type: Collection(microsoft.graph.windowsInformationProtectionAppLearningSummary)
-    description: The windows information protection app learning summaries.
-  - relationship: windowsInformationProtectionNetworkLearningSummaries
-    type: Collection(microsoft.graph.windowsInformationProtectionNetworkLearningSummary)
-    description: The windows information protection network learning summaries.
+  - relationship: "auditEvents"
+    type: "Collection(microsoft.graph.auditEvent)"
+    description: "The Audit Events"
+  - relationship: "termsAndConditions"
+    type: "Collection(microsoft.graph.termsAndConditions)"
+    description: "The terms and conditions associated with device management of the company."
+  - relationship: "deviceCompliancePolicies"
+    type: "Collection(microsoft.graph.deviceCompliancePolicy)"
+    description: "The device compliance policies."
+  - relationship: "deviceCompliancePolicyDeviceStateSummary"
+    type: "microsoft.graph.deviceCompliancePolicyDeviceStateSummary"
+    description: "The device compliance state summary for this account."
+  - relationship: "deviceCompliancePolicySettingStateSummaries"
+    type: "Collection(microsoft.graph.deviceCompliancePolicySettingStateSummary)"
+    description: "The summary states of compliance policy settings for this account."
+  - relationship: "deviceConfigurationDeviceStateSummaries"
+    type: "microsoft.graph.deviceConfigurationDeviceStateSummary"
+    description: "The device configuration device state summary for this account."
+  - relationship: "deviceConfigurations"
+    type: "Collection(microsoft.graph.deviceConfiguration)"
+    description: "The device configurations."
+  - relationship: "iosUpdateStatuses"
+    type: "Collection(microsoft.graph.iosUpdateDeviceStatus)"
+    description: "The IOS software update installation statuses for this account."
+  - relationship: "softwareUpdateStatusSummary"
+    type: "microsoft.graph.softwareUpdateStatusSummary"
+    description: "The software update status summary."
+  - relationship: "applePushNotificationCertificate"
+    type: "microsoft.graph.applePushNotificationCertificate"
+    description: "Apple push notification certificate."
+  - relationship: "detectedApps"
+    type: "Collection(microsoft.graph.detectedApp)"
+    description: "The list of detected apps associated with a device."
+  - relationship: "managedDeviceOverview"
+    type: "microsoft.graph.managedDeviceOverview"
+    description: "Device overview"
+  - relationship: "managedDevices"
+    type: "Collection(microsoft.graph.managedDevice)"
+    description: "The list of managed devices."
+  - relationship: "importedWindowsAutopilotDeviceIdentities"
+    type: "Collection(microsoft.graph.importedWindowsAutopilotDeviceIdentity)"
+    description: "Collection of imported Windows autopilot devices."
+  - relationship: "notificationMessageTemplates"
+    type: "Collection(microsoft.graph.notificationMessageTemplate)"
+    description: "The Notification Message Templates."
+  - relationship: "conditionalAccessSettings"
+    type: "microsoft.graph.onPremisesConditionalAccessSettings"
+    description: "The Exchange on premises conditional access settings. On premises conditional access will require devices to be both enrolled and compliant for mail access"
+  - relationship: "deviceCategories"
+    type: "Collection(microsoft.graph.deviceCategory)"
+    description: "The list of device categories with the tenant."
+  - relationship: "deviceEnrollmentConfigurations"
+    type: "Collection(microsoft.graph.deviceEnrollmentConfiguration)"
+    description: "The list of device enrollment configurations"
+  - relationship: "deviceManagementPartners"
+    type: "Collection(microsoft.graph.deviceManagementPartner)"
+    description: "The list of Device Management Partners configured by the tenant."
+  - relationship: "exchangeConnectors"
+    type: "Collection(microsoft.graph.deviceManagementExchangeConnector)"
+    description: "The list of Exchange Connectors configured by the tenant."
+  - relationship: "mobileThreatDefenseConnectors"
+    type: "Collection(microsoft.graph.mobileThreatDefenseConnector)"
+    description: "The list of Mobile threat Defense connectors configured by the tenant."
+  - relationship: "resourceOperations"
+    type: "Collection(microsoft.graph.resourceOperation)"
+    description: "The Resource Operations."
+  - relationship: "roleAssignments"
+    type: "Collection(microsoft.graph.deviceAndAppManagementRoleAssignment)"
+    description: "The Role Assignments."
+  - relationship: "roleDefinitions"
+    type: "Collection(microsoft.graph.roleDefinition)"
+    description: "The Role Definitions."
+  - relationship: "remoteAssistancePartners"
+    type: "Collection(microsoft.graph.remoteAssistancePartner)"
+    description: "The remote assist partners."
+  - relationship: "telecomExpenseManagementPartners"
+    type: "Collection(microsoft.graph.telecomExpenseManagementPartner)"
+    description: "The telecom expense management partners."
+  - relationship: "troubleshootingEvents"
+    type: "Collection(microsoft.graph.deviceManagementTroubleshootingEvent)"
+    description: "The list of troubleshooting events for the tenant."
+  - relationship: "windowsInformationProtectionAppLearningSummaries"
+    type: "Collection(microsoft.graph.windowsInformationProtectionAppLearningSummary)"
+    description: "The windows information protection app learning summaries."
+  - relationship: "windowsInformationProtectionNetworkLearningSummaries"
+    type: "Collection(microsoft.graph.windowsInformationProtectionNetworkLearningSummary)"
+    description: "The windows information protection network learning summaries."

@@ -3,11 +3,11 @@ uid: graph.assignedplan
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/assignedplan.md
 summary:
-  heading: assignedPlan resource type
+  heading: "assignedPlan resource type"
   intro: |
     The **assignedPlans** property of both the [user](xref:graph.user) entity and the [organization](xref:graph.organization) entity is a collection of **assignedPlan**.
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource
   sampleCode: |
@@ -21,17 +21,17 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: assignedDateTime
-    type: DateTimeOffset
-    description: The date and time at which the plan was assigned; for example: 2013-01-02T19:32:30Z. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
-  - property: capabilityStatus
-    type: String
-    description: For example, “Enabled”.
-  - property: service
-    type: String
-    description: The name of the service; for example, “Exchange”.
-  - property: servicePlanId
-    type: Guid
-    description: A GUID that identifies the service plan.
+  - property: "assignedDateTime"
+    type: "DateTimeOffset"
+    description: "The date and time at which the plan was assigned; for example: 2013-01-02T19:32:30Z. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'"
+  - property: "capabilityStatus"
+    type: "String"
+    description: "For example, “Enabled”."
+  - property: "service"
+    type: "String"
+    description: "The name of the service; for example, “Exchange”."
+  - property: "servicePlanId"
+    type: "Guid"
+    description: "A GUID that identifies the service plan."

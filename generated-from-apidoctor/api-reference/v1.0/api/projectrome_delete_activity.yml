@@ -3,47 +3,47 @@ uid: graph.projectrome_delete_activity
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/projectrome_delete_activity.md
 summary:
-  heading: Delete an activity
+  heading: "Delete an activity"
   intro: |
     Delete an existing user activity for your app.
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
   list:
-  - resource: Delegated (work or school account)
-    permission: UserActivity.ReadWrite.CreatedByApp
-  - resource: Delegated (personal Microsoft account)
-    permission: UserActivity.ReadWrite.CreatedByApp
-  - resource: Application
-    permission: Not supported.
+  - resource: "Delegated (work or school account)"
+    permission: "UserActivity.ReadWrite.CreatedByApp"
+  - resource: "Delegated (personal Microsoft account)"
+    permission: "UserActivity.ReadWrite.CreatedByApp"
+  - resource: "Application"
+    permission: "Not supported."
 httpRequest:
-  heading: HTTP request
+  heading: "HTTP request"
   sampleCode: |
     ```http
     DELETE /me/activities/{id}
     ```
     
 requestHeaders:
-  heading: Request headers
+  heading: "Request headers"
   list:
-  - name: Authorization
-    value: String
-    description: Bearer {token}. Required.
+  - name: "Authorization"
+    value: "String"
+    description: "Bearer {token}. Required."
 requestBody:
-  heading: Request body
+  heading: "Request body"
   intro: |
     No request body.
 response:
-  heading: Response
+  heading: "Response"
   intro: |
     If successful, this method returns the `204 No Content` response code if the activity was deleted.
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         request:
-            heading: Request
+            heading: "Request"
             intro: |
               Here is an example of the request.
             sampleCode: |
@@ -52,7 +52,7 @@ examples:
               ```
               
         response:
-            heading: Response
+            heading: "Response"
             intro: |
               Here is an example of the response.
             sampleCode: |

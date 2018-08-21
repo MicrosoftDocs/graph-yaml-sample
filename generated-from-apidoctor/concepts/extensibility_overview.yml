@@ -3,7 +3,7 @@ uid: graph.extensibility_overview
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/extensibility_overview.md
 summary:
-  heading: Add custom data to resources using extensions
+  heading: "Add custom data to resources using extensions"
   intro: |
     Microsoft Graph provides a single API endpoint that gives you access to rich people-centric data and insights through a number of resources such as [user](xref:graph.user) and [message](xref:graph.message). You can also extend Microsoft Graph with your own application data. You can add custom properties to Microsoft Graph resources without requiring an external data store.
     For example, you might decide to keep your app lightweight and store app-specific user profile data in Microsoft Graph by extending the **user** resource. Alternatively, you might want to retain your app’s existing user profile store, and simply add an app-specific store identifier to the **user** resource.
@@ -30,7 +30,7 @@ summary:
     |[User](xref:graph.user)|GA|GA
     You can use extensions on all these resources when signed in with a work or school account. In addition, you can use extensions on the **event**, **post**, **group**, **message**, **contact**, and **user** resources when signed in with a personal account.
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     The same [permissions](xref:graph.permissions_reference) that are required to read from or write to a specific resource are also required to read from or write to any extensions data on that resource. For example, for an app to be able to update the signed-in user's profile with custom app data, the app must have been granted the *User.ReadWrite.All* permission.
     Additionally, to create and manage schema extension definitions, an application must be granted the *Directory.AccessAsUser.All* permission.

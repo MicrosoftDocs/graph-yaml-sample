@@ -3,30 +3,30 @@ uid: graph.intune_onboarding_deviceenrollmentlimitconfiguration
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_onboarding_deviceenrollmentlimitconfiguration.md
 summary:
-  heading: deviceEnrollmentLimitConfiguration resource type
+  heading: "deviceEnrollmentLimitConfiguration resource type"
   intro: |
     Not yet documented
     Inherits from [deviceEnrollmentConfiguration](xref:graph.intune_onboarding_deviceenrollmentconfiguration)
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [List deviceEnrollmentLimitConfigurations](xref:graph.intune_onboarding_deviceenrollmentlimitconfiguration_list)
-    type: [deviceEnrollmentLimitConfiguration](xref:graph.intune_onboarding_deviceenrollmentlimitconfiguration) collection
-    description: List properties and relationships of the deviceEnrollmentLimitConfiguration objects.
-  - method: [Get deviceEnrollmentLimitConfiguration](xref:graph.intune_onboarding_deviceenrollmentlimitconfiguration_get)
-    type: [deviceEnrollmentLimitConfiguration](xref:graph.intune_onboarding_deviceenrollmentlimitconfiguration)
-    description: Read properties and relationships of the deviceEnrollmentLimitConfiguration object.
-  - method: [Create deviceEnrollmentLimitConfiguration](xref:graph.intune_onboarding_deviceenrollmentlimitconfiguration_create)
-    type: [deviceEnrollmentLimitConfiguration](xref:graph.intune_onboarding_deviceenrollmentlimitconfiguration)
-    description: Create a new deviceEnrollmentLimitConfiguration object.
-  - method: [Delete deviceEnrollmentLimitConfiguration](xref:graph.intune_onboarding_deviceenrollmentlimitconfiguration_delete)
-    type: None
-    description: Deletes a deviceEnrollmentLimitConfiguration.
-  - method: [Update deviceEnrollmentLimitConfiguration](xref:graph.intune_onboarding_deviceenrollmentlimitconfiguration_update)
-    type: [deviceEnrollmentLimitConfiguration](xref:graph.intune_onboarding_deviceenrollmentlimitconfiguration)
-    description: Update the properties of a deviceEnrollmentLimitConfiguration object.
+  - method: "[List deviceEnrollmentLimitConfigurations](xref:graph.intune_onboarding_deviceenrollmentlimitconfiguration_list)"
+    type: "[deviceEnrollmentLimitConfiguration](xref:graph.intune_onboarding_deviceenrollmentlimitconfiguration) collection"
+    description: "List properties and relationships of the deviceEnrollmentLimitConfiguration objects."
+  - method: "[Get deviceEnrollmentLimitConfiguration](xref:graph.intune_onboarding_deviceenrollmentlimitconfiguration_get)"
+    type: "[deviceEnrollmentLimitConfiguration](xref:graph.intune_onboarding_deviceenrollmentlimitconfiguration)"
+    description: "Read properties and relationships of the deviceEnrollmentLimitConfiguration object."
+  - method: "[Create deviceEnrollmentLimitConfiguration](xref:graph.intune_onboarding_deviceenrollmentlimitconfiguration_create)"
+    type: "[deviceEnrollmentLimitConfiguration](xref:graph.intune_onboarding_deviceenrollmentlimitconfiguration)"
+    description: "Create a new deviceEnrollmentLimitConfiguration object."
+  - method: "[Delete deviceEnrollmentLimitConfiguration](xref:graph.intune_onboarding_deviceenrollmentlimitconfiguration_delete)"
+    type: "None"
+    description: "Deletes a deviceEnrollmentLimitConfiguration."
+  - method: "[Update deviceEnrollmentLimitConfiguration](xref:graph.intune_onboarding_deviceenrollmentlimitconfiguration_update)"
+    type: "[deviceEnrollmentLimitConfiguration](xref:graph.intune_onboarding_deviceenrollmentlimitconfiguration)"
+    description: "Update the properties of a deviceEnrollmentLimitConfiguration object."
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -45,35 +45,35 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: id
-    type: String
-    description: Not yet documented Inherited from deviceEnrollmentConfiguration
-  - property: displayName
-    type: String
-    description: Not yet documented Inherited from deviceEnrollmentConfiguration
-  - property: description
-    type: String
-    description: Not yet documented Inherited from deviceEnrollmentConfiguration
-  - property: priority
-    type: Int32
-    description: Not yet documented Inherited from deviceEnrollmentConfiguration
-  - property: createdDateTime
-    type: DateTimeOffset
-    description: Not yet documented Inherited from deviceEnrollmentConfiguration
-  - property: lastModifiedDateTime
-    type: DateTimeOffset
-    description: Not yet documented Inherited from deviceEnrollmentConfiguration
-  - property: version
-    type: Int32
-    description: Not yet documented Inherited from deviceEnrollmentConfiguration
-  - property: limit
-    type: Int32
-    description: Not yet documented
+  - property: "id"
+    type: "String"
+    description: "Not yet documented Inherited from deviceEnrollmentConfiguration"
+  - property: "displayName"
+    type: "String"
+    description: "Not yet documented Inherited from deviceEnrollmentConfiguration"
+  - property: "description"
+    type: "String"
+    description: "Not yet documented Inherited from deviceEnrollmentConfiguration"
+  - property: "priority"
+    type: "Int32"
+    description: "Not yet documented Inherited from deviceEnrollmentConfiguration"
+  - property: "createdDateTime"
+    type: "DateTimeOffset"
+    description: "Not yet documented Inherited from deviceEnrollmentConfiguration"
+  - property: "lastModifiedDateTime"
+    type: "DateTimeOffset"
+    description: "Not yet documented Inherited from deviceEnrollmentConfiguration"
+  - property: "version"
+    type: "Int32"
+    description: "Not yet documented Inherited from deviceEnrollmentConfiguration"
+  - property: "limit"
+    type: "Int32"
+    description: "Not yet documented"
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   list:
-  - relationship: assignments
-    type: Collection(microsoft.graph.enrollmentConfigurationAssignment)
-    description: The list of group assignments for the device configuration profile. Inherited from deviceEnrollmentConfiguration
+  - relationship: "assignments"
+    type: "Collection(microsoft.graph.enrollmentConfigurationAssignment)"
+    description: "The list of group assignments for the device configuration profile. Inherited from deviceEnrollmentConfiguration"

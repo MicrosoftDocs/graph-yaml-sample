@@ -3,30 +3,30 @@ uid: graph.intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguratio
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration.md
 summary:
-  heading: deviceEnrollmentWindowsHelloForBusinessConfiguration resource type
+  heading: "deviceEnrollmentWindowsHelloForBusinessConfiguration resource type"
   intro: |
     Not yet documented
     Inherits from [deviceEnrollmentConfiguration](xref:graph.intune_onboarding_deviceenrollmentconfiguration)
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [List deviceEnrollmentWindowsHelloForBusinessConfigurations](xref:graph.intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration_list)
-    type: [deviceEnrollmentWindowsHelloForBusinessConfiguration](xref:graph.intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration) collection
-    description: List properties and relationships of the deviceEnrollmentWindowsHelloForBusinessConfiguration objects.
-  - method: [Get deviceEnrollmentWindowsHelloForBusinessConfiguration](xref:graph.intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration_get)
-    type: [deviceEnrollmentWindowsHelloForBusinessConfiguration](xref:graph.intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration)
-    description: Read properties and relationships of the deviceEnrollmentWindowsHelloForBusinessConfiguration object.
-  - method: [Create deviceEnrollmentWindowsHelloForBusinessConfiguration](xref:graph.intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration_create)
-    type: [deviceEnrollmentWindowsHelloForBusinessConfiguration](xref:graph.intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration)
-    description: Create a new deviceEnrollmentWindowsHelloForBusinessConfiguration object.
-  - method: [Delete deviceEnrollmentWindowsHelloForBusinessConfiguration](xref:graph.intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration_delete)
-    type: None
-    description: Deletes a deviceEnrollmentWindowsHelloForBusinessConfiguration.
-  - method: [Update deviceEnrollmentWindowsHelloForBusinessConfiguration](xref:graph.intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration_update)
-    type: [deviceEnrollmentWindowsHelloForBusinessConfiguration](xref:graph.intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration)
-    description: Update the properties of a deviceEnrollmentWindowsHelloForBusinessConfiguration object.
+  - method: "[List deviceEnrollmentWindowsHelloForBusinessConfigurations](xref:graph.intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration_list)"
+    type: "[deviceEnrollmentWindowsHelloForBusinessConfiguration](xref:graph.intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration) collection"
+    description: "List properties and relationships of the deviceEnrollmentWindowsHelloForBusinessConfiguration objects."
+  - method: "[Get deviceEnrollmentWindowsHelloForBusinessConfiguration](xref:graph.intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration_get)"
+    type: "[deviceEnrollmentWindowsHelloForBusinessConfiguration](xref:graph.intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration)"
+    description: "Read properties and relationships of the deviceEnrollmentWindowsHelloForBusinessConfiguration object."
+  - method: "[Create deviceEnrollmentWindowsHelloForBusinessConfiguration](xref:graph.intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration_create)"
+    type: "[deviceEnrollmentWindowsHelloForBusinessConfiguration](xref:graph.intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration)"
+    description: "Create a new deviceEnrollmentWindowsHelloForBusinessConfiguration object."
+  - method: "[Delete deviceEnrollmentWindowsHelloForBusinessConfiguration](xref:graph.intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration_delete)"
+    type: "None"
+    description: "Deletes a deviceEnrollmentWindowsHelloForBusinessConfiguration."
+  - method: "[Update deviceEnrollmentWindowsHelloForBusinessConfiguration](xref:graph.intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration_update)"
+    type: "[deviceEnrollmentWindowsHelloForBusinessConfiguration](xref:graph.intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration)"
+    description: "Update the properties of a deviceEnrollmentWindowsHelloForBusinessConfiguration object."
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -56,68 +56,68 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: id
-    type: String
-    description: Not yet documented Inherited from deviceEnrollmentConfiguration
-  - property: displayName
-    type: String
-    description: Not yet documented Inherited from deviceEnrollmentConfiguration
-  - property: description
-    type: String
-    description: Not yet documented Inherited from deviceEnrollmentConfiguration
-  - property: priority
-    type: Int32
-    description: Not yet documented Inherited from deviceEnrollmentConfiguration
-  - property: createdDateTime
-    type: DateTimeOffset
-    description: Not yet documented Inherited from deviceEnrollmentConfiguration
-  - property: lastModifiedDateTime
-    type: DateTimeOffset
-    description: Not yet documented Inherited from deviceEnrollmentConfiguration
-  - property: version
-    type: Int32
-    description: Not yet documented Inherited from deviceEnrollmentConfiguration
-  - property: pinMinimumLength
-    type: Int32
-    description: Not yet documented
-  - property: pinMaximumLength
-    type: Int32
-    description: Not yet documented
-  - property: pinUppercaseCharactersUsage
-    type: microsoft.graph.windowsHelloForBusinessPinUsage
-    description: Not yet documented. The possible values are: allowed, required, disallowed.
-  - property: pinLowercaseCharactersUsage
-    type: microsoft.graph.windowsHelloForBusinessPinUsage
-    description: Not yet documented. The possible values are: allowed, required, disallowed.
-  - property: pinSpecialCharactersUsage
-    type: microsoft.graph.windowsHelloForBusinessPinUsage
-    description: Not yet documented. The possible values are: allowed, required, disallowed.
-  - property: state
-    type: microsoft.graph.enablement
-    description: Not yet documented. The possible values are: notConfigured, enabled, disabled.
-  - property: securityDeviceRequired
-    type: Boolean
-    description: Not yet documented
-  - property: unlockWithBiometricsEnabled
-    type: Boolean
-    description: Not yet documented
-  - property: remotePassportEnabled
-    type: Boolean
-    description: Not yet documented
-  - property: pinPreviousBlockCount
-    type: Int32
-    description: Not yet documented
-  - property: pinExpirationInDays
-    type: Int32
-    description: Not yet documented
-  - property: enhancedBiometricsState
-    type: microsoft.graph.enablement
-    description: Not yet documented. The possible values are: notConfigured, enabled, disabled.
+  - property: "id"
+    type: "String"
+    description: "Not yet documented Inherited from deviceEnrollmentConfiguration"
+  - property: "displayName"
+    type: "String"
+    description: "Not yet documented Inherited from deviceEnrollmentConfiguration"
+  - property: "description"
+    type: "String"
+    description: "Not yet documented Inherited from deviceEnrollmentConfiguration"
+  - property: "priority"
+    type: "Int32"
+    description: "Not yet documented Inherited from deviceEnrollmentConfiguration"
+  - property: "createdDateTime"
+    type: "DateTimeOffset"
+    description: "Not yet documented Inherited from deviceEnrollmentConfiguration"
+  - property: "lastModifiedDateTime"
+    type: "DateTimeOffset"
+    description: "Not yet documented Inherited from deviceEnrollmentConfiguration"
+  - property: "version"
+    type: "Int32"
+    description: "Not yet documented Inherited from deviceEnrollmentConfiguration"
+  - property: "pinMinimumLength"
+    type: "Int32"
+    description: "Not yet documented"
+  - property: "pinMaximumLength"
+    type: "Int32"
+    description: "Not yet documented"
+  - property: "pinUppercaseCharactersUsage"
+    type: "microsoft.graph.windowsHelloForBusinessPinUsage"
+    description: "Not yet documented. The possible values are: allowed, required, disallowed."
+  - property: "pinLowercaseCharactersUsage"
+    type: "microsoft.graph.windowsHelloForBusinessPinUsage"
+    description: "Not yet documented. The possible values are: allowed, required, disallowed."
+  - property: "pinSpecialCharactersUsage"
+    type: "microsoft.graph.windowsHelloForBusinessPinUsage"
+    description: "Not yet documented. The possible values are: allowed, required, disallowed."
+  - property: "state"
+    type: "microsoft.graph.enablement"
+    description: "Not yet documented. The possible values are: notConfigured, enabled, disabled."
+  - property: "securityDeviceRequired"
+    type: "Boolean"
+    description: "Not yet documented"
+  - property: "unlockWithBiometricsEnabled"
+    type: "Boolean"
+    description: "Not yet documented"
+  - property: "remotePassportEnabled"
+    type: "Boolean"
+    description: "Not yet documented"
+  - property: "pinPreviousBlockCount"
+    type: "Int32"
+    description: "Not yet documented"
+  - property: "pinExpirationInDays"
+    type: "Int32"
+    description: "Not yet documented"
+  - property: "enhancedBiometricsState"
+    type: "microsoft.graph.enablement"
+    description: "Not yet documented. The possible values are: notConfigured, enabled, disabled."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   list:
-  - relationship: assignments
-    type: Collection(microsoft.graph.enrollmentConfigurationAssignment)
-    description: The list of group assignments for the device configuration profile. Inherited from deviceEnrollmentConfiguration
+  - relationship: "assignments"
+    type: "Collection(microsoft.graph.enrollmentConfigurationAssignment)"
+    description: "The list of group assignments for the device configuration profile. Inherited from deviceEnrollmentConfiguration"

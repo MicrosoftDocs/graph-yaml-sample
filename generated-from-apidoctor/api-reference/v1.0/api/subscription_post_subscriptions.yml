@@ -3,53 +3,53 @@ uid: graph.subscription_post_subscriptions
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/subscription_post_subscriptions.md
 summary:
-  heading: Create subscription
+  heading: "Create subscription"
   intro: |
     Subscribes a listener application to receive notifications when data on the Microsoft Graph changes.
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     Creating a subscription requires read scope to the resource. For example, to get notifications messages, your app needs the `Mail.Read` permission. The following table lists the suggested permission needed for each resource. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
   list:
-  - resource: 
-    permission: 
-  - resource: 
-    permission: 
-  - resource: 
-    permission: 
-  - resource: 
-    permission: 
-  - resource: 
-    permission: 
-  - resource: 
-    permission: 
-  - resource: 
-    permission: 
-  - resource: 
-    permission: 
+  - resource: ""
+    permission: ""
+  - resource: ""
+    permission: ""
+  - resource: ""
+    permission: ""
+  - resource: ""
+    permission: ""
+  - resource: ""
+    permission: ""
+  - resource: ""
+    permission: ""
+  - resource: ""
+    permission: ""
+  - resource: ""
+    permission: ""
 httpRequest:
-  heading: HTTP request
+  heading: "HTTP request"
   sampleCode: |
     ```http
     POST /subscriptions
     ```
     
 requestHeaders:
-  heading: Request headers
+  heading: "Request headers"
   list:
-  - name: Authorization
-    value: String
-    description: Bearer {token}. Required.
+  - name: "Authorization"
+    value: "String"
+    description: "Bearer {token}. Required."
 response:
-  heading: Response
+  heading: "Response"
   intro: |
     If successful, this method returns `201 Created` response code and a [subscription](xref:graph.subscription) object in the response body.
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         request:
-            heading: Request
+            heading: "Request"
             intro: |
               Here is an example of the request to send a notification when the user receives a new mail.
             sampleCode: |
@@ -81,11 +81,11 @@ examples:
               |Conversations|groups('*{id}*')/conversations
               |Drives|me/drive/root
     - Response:
-        heading: Response
+        heading: "Response"
         intro: |
           Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
         request:
-            heading: request
+            heading: "request"
             sampleCode: |
               ```http
               HTTP/1.1 201 Created

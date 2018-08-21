@@ -3,23 +3,23 @@ uid: graph.workbook
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/workbook.md
 summary:
-  heading: Workbook resource type
+  heading: "Workbook resource type"
   intro: |
     Workbook is the top level object which contains related workbook objects such as worksheets, tables, ranges, etc.
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [Create Session](xref:graph.workbook_createsession)
-    type: [workbookSessionInfo](xref:graph.workbooksessioninfo)
-    description: Create a workbook session to start a persistent or non-persistent session.
-  - method: [Close Session](xref:graph.workbook_closesession)
-    type: None
-    description: Close an existing session.
-  - method: [Refresh Session](xref:graph.workbook_refreshsession)
-    type: None
-    description: Refresh an existing session.
+  - method: "[Create Session](xref:graph.workbook_createsession)"
+    type: "[workbookSessionInfo](xref:graph.workbooksessioninfo)"
+    description: "Create a workbook session to start a persistent or non-persistent session."
+  - method: "[Close Session](xref:graph.workbook_closesession)"
+    type: "None"
+    description: "Close an existing session."
+  - method: "[Refresh Session](xref:graph.workbook_refreshsession)"
+    type: "None"
+    description: "Refresh an existing session."
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource
   sampleCode: |
@@ -32,21 +32,21 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   intro: |
     None
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   list:
-  - relationship: names
-    type: Collection(microsoft.graph.workbookNamedItem)
-    description: Represents a collection of workbook scoped named items (named ranges and constants). Read-only.
-  - relationship: tables
-    type: Collection(microsoft.graph.workbookTable)
-    description: Represents a collection of tables associated with the workbook. Read-only.
-  - relationship: worksheets
-    type: Collection(microsoft.graph.workbookWorksheet)
-    description: Represents a collection of worksheets associated with the workbook. Read-only.
+  - relationship: "names"
+    type: "Collection(microsoft.graph.workbookNamedItem)"
+    description: "Represents a collection of workbook scoped named items (named ranges and constants). Read-only."
+  - relationship: "tables"
+    type: "Collection(microsoft.graph.workbookTable)"
+    description: "Represents a collection of tables associated with the workbook. Read-only."
+  - relationship: "worksheets"
+    type: "Collection(microsoft.graph.workbookWorksheet)"
+    description: "Represents a collection of worksheets associated with the workbook. Read-only."
   outro: |
     ## Functions
     [Excel functions](#functions): Invoke a workbook function using the syntax `POST /workbook/functions/{function-name}` and providing the function argument(s) in the body using a JSON object. The function's resulting `value` and any `error` strings are returned in the function result object. The `error` value of `null` indicates successful execution of the function. 

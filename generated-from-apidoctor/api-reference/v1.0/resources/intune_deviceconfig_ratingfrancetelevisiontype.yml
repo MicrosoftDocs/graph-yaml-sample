@@ -3,21 +3,21 @@ uid: graph.intune_deviceconfig_ratingfrancetelevisiontype
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_ratingfrancetelevisiontype.md
 summary:
-  heading: ratingFranceTelevisionType enum type
+  heading: "ratingFranceTelevisionType enum type"
   intro: |
     TV content rating labels in France
 enum:
-  heading: Members
+  heading: "Members"
   table:
-  - member: allAllowed
-    description: Default value, allow all TV shows content
-  - member: allBlocked
-    description: Do not allow any TV shows content
-  - member: agesAbove10
-    description: The -10 classification is not recommended for children under 10
-  - member: agesAbove12
-    description: The -12 classification is not recommended for children under 12
-  - member: agesAbove16
-    description: The -16 classification is not recommended for children under 16
-  - member: agesAbove18
-    description: The -18 classification is not recommended for persons under 18
+  - member: "allAllowed"
+    description: "Default value, allow all TV shows content"
+  - member: "allBlocked"
+    description: "Do not allow any TV shows content"
+  - member: "agesAbove10"
+    description: "The -10 classification is not recommended for children under 10"
+  - member: "agesAbove12"
+    description: "The -12 classification is not recommended for children under 12"
+  - member: "agesAbove16"
+    description: "The -16 classification is not recommended for children under 16"
+  - member: "agesAbove18"
+    description: "The -18 classification is not recommended for persons under 18"

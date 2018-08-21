@@ -3,20 +3,20 @@ uid: graph.intune_deviceconfig_devicecompliancepolicydevicestatesummary
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_devicecompliancepolicydevicestatesummary.md
 summary:
-  heading: deviceCompliancePolicyDeviceStateSummary resource type
+  heading: "deviceCompliancePolicyDeviceStateSummary resource type"
   intro: |
     Not yet documented
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [Get deviceCompliancePolicyDeviceStateSummary](xref:graph.intune_deviceconfig_devicecompliancepolicydevicestatesummary_get)
-    type: [deviceCompliancePolicyDeviceStateSummary](xref:graph.intune_deviceconfig_devicecompliancepolicydevicestatesummary)
-    description: Read properties and relationships of the deviceCompliancePolicyDeviceStateSummary object.
-  - method: [Update deviceCompliancePolicyDeviceStateSummary](xref:graph.intune_deviceconfig_devicecompliancepolicydevicestatesummary_update)
-    type: [deviceCompliancePolicyDeviceStateSummary](xref:graph.intune_deviceconfig_devicecompliancepolicydevicestatesummary)
-    description: Update the properties of a deviceCompliancePolicyDeviceStateSummary object.
+  - method: "[Get deviceCompliancePolicyDeviceStateSummary](xref:graph.intune_deviceconfig_devicecompliancepolicydevicestatesummary_get)"
+    type: "[deviceCompliancePolicyDeviceStateSummary](xref:graph.intune_deviceconfig_devicecompliancepolicydevicestatesummary)"
+    description: "Read properties and relationships of the deviceCompliancePolicyDeviceStateSummary object."
+  - method: "[Update deviceCompliancePolicyDeviceStateSummary](xref:graph.intune_deviceconfig_devicecompliancepolicydevicestatesummary_update)"
+    type: "[deviceCompliancePolicyDeviceStateSummary](xref:graph.intune_deviceconfig_devicecompliancepolicydevicestatesummary)"
+    description: "Update the properties of a deviceCompliancePolicyDeviceStateSummary object."
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -37,39 +37,39 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: inGracePeriodCount
-    type: Int32
-    description: Number of devices that are in grace period
-  - property: configManagerCount
-    type: Int32
-    description: Number of devices that have compliance managed by System Center Configuration Manager
-  - property: id
-    type: String
-    description: Key of the entity.
-  - property: unknownDeviceCount
-    type: Int32
-    description: Number of unknown devices
-  - property: notApplicableDeviceCount
-    type: Int32
-    description: Number of not applicable devices
-  - property: compliantDeviceCount
-    type: Int32
-    description: Number of compliant devices
-  - property: remediatedDeviceCount
-    type: Int32
-    description: Number of remediated devices
-  - property: nonCompliantDeviceCount
-    type: Int32
-    description: Number of NonCompliant devices
-  - property: errorDeviceCount
-    type: Int32
-    description: Number of error devices
-  - property: conflictDeviceCount
-    type: Int32
-    description: Number of conflict devices
+  - property: "inGracePeriodCount"
+    type: "Int32"
+    description: "Number of devices that are in grace period"
+  - property: "configManagerCount"
+    type: "Int32"
+    description: "Number of devices that have compliance managed by System Center Configuration Manager"
+  - property: "id"
+    type: "String"
+    description: "Key of the entity."
+  - property: "unknownDeviceCount"
+    type: "Int32"
+    description: "Number of unknown devices"
+  - property: "notApplicableDeviceCount"
+    type: "Int32"
+    description: "Number of not applicable devices"
+  - property: "compliantDeviceCount"
+    type: "Int32"
+    description: "Number of compliant devices"
+  - property: "remediatedDeviceCount"
+    type: "Int32"
+    description: "Number of remediated devices"
+  - property: "nonCompliantDeviceCount"
+    type: "Int32"
+    description: "Number of NonCompliant devices"
+  - property: "errorDeviceCount"
+    type: "Int32"
+    description: "Number of error devices"
+  - property: "conflictDeviceCount"
+    type: "Int32"
+    description: "Number of conflict devices"
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

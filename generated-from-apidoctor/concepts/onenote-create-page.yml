@@ -3,7 +3,7 @@ uid: graph.onenote-create-page
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/onenote-create-page.md
 summary:
-  heading: Create OneNote pages
+  heading: "Create OneNote pages"
   intro: |
     **Applies to**: Consumer notebooks on OneDrive | Enterprise notebooks on Office 365
     To create a OneNote page, you send a POST request to a *pages* endpoint. For example:
@@ -34,7 +34,7 @@ summary:
     Learn more about the [service root URL](../api-reference/v1.0/resources/onenote-api-overview.md#root-url).
     <a name="post-pages-section-name"></a>
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     To create OneNote pages, you'll need to request appropriate permissions. Choose the lowest level of permissions that your app needs to do its work.
     Choose from:
@@ -60,7 +60,7 @@ permissions:
 examples:
   - items:
     - Example request:
-        heading: Example request
+        heading: "Example request"
         intro: |
           This example multipart request creates a page that contains images and an embedded file. The required **Presentation** part contains the input HTML that defines the page. The **imageBlock1** part contains the binary image data, and **fileBlock1** contains the binary file data. Data parts can also contain HTML, in which case Microsoft Graph [renders the HTML as an image](xref:graph.onenote_images_files#add-an-image-using-binary-data) on the OneNote page. 
           POST https://graph.microsoft.com/v1.0/me/onenote/pages

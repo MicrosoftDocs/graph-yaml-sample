@@ -3,11 +3,11 @@ uid: graph.intune_mam_managedapppolicydeploymentsummaryperapp
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_mam_managedapppolicydeploymentsummaryperapp.md
 summary:
-  heading: managedAppPolicyDeploymentSummaryPerApp resource type
+  heading: "managedAppPolicyDeploymentSummaryPerApp resource type"
   intro: |
     Represents policy deployment summary per app.
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -22,15 +22,15 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: mobileAppIdentifier
-    type: microsoft.graph.mobileAppIdentifier
-    description: Deployment of an app.
-  - property: configurationAppliedUserCount
-    type: Int32
-    description: Number of users the policy is applied.
+  - property: "mobileAppIdentifier"
+    type: "microsoft.graph.mobileAppIdentifier"
+    description: "Deployment of an app."
+  - property: "configurationAppliedUserCount"
+    type: "Int32"
+    description: "Number of users the policy is applied."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

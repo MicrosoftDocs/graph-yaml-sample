@@ -3,15 +3,15 @@ uid: graph.intune_onboarding_devicemanagementpartnerapptype
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_onboarding_devicemanagementpartnerapptype.md
 summary:
-  heading: deviceManagementPartnerAppType enum type
+  heading: "deviceManagementPartnerAppType enum type"
   intro: |
     Partner App Type.
 enum:
-  heading: Members
+  heading: "Members"
   table:
-  - member: unknown
-    description: Partner App type is unknown.
-  - member: singleTenantApp
-    description: Partner App is Single tenant in AAD.
-  - member: multiTenantApp
-    description: Partner App is Multi tenant in AAD.
+  - member: "unknown"
+    description: "Partner App type is unknown."
+  - member: "singleTenantApp"
+    description: "Partner App is Single tenant in AAD."
+  - member: "multiTenantApp"
+    description: "Partner App is Multi tenant in AAD."

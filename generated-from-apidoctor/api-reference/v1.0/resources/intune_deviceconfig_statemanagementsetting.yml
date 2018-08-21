@@ -3,15 +3,15 @@ uid: graph.intune_deviceconfig_statemanagementsetting
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_statemanagementsetting.md
 summary:
-  heading: stateManagementSetting enum type
+  heading: "stateManagementSetting enum type"
   intro: |
     State Management Setting.
 enum:
-  heading: Members
+  heading: "Members"
   table:
-  - member: notConfigured
-    description: Not configured.
-  - member: blocked
-    description: Blocked.
-  - member: allowed
-    description: Allowed.
+  - member: "notConfigured"
+    description: "Not configured."
+  - member: "blocked"
+    description: "Blocked."
+  - member: "allowed"
+    description: "Allowed."

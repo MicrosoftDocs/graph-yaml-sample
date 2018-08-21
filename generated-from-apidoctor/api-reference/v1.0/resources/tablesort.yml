@@ -3,26 +3,26 @@ uid: graph.tablesort
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.tablesort
 summary:
-  heading: TableSort resource type
+  heading: "TableSort resource type"
   intro: |
     Manages sorting operations on Table objects.
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [Get TableSort](xref:graph.tablesort_get)
-    type: [WorkbookTableSort](xref:graph.tablesort)
-    description: Read properties and relationships of tableSort object.
-  - method: [Apply](xref:graph.tablesort_apply)
-    type: None
-    description: Perform a sort operation.
-  - method: [Clear](xref:graph.tablesort_clear)
-    type: None
-    description: Clears the sorting that is currently on the table. While this doesn't modify the table's ordering, it clears the state of the header buttons.
-  - method: [Reapply](xref:graph.tablesort_reapply)
-    type: None
-    description: Reapplies the current sorting parameters to the table.
+  - method: "[Get TableSort](xref:graph.tablesort_get)"
+    type: "[WorkbookTableSort](xref:graph.tablesort)"
+    description: "Read properties and relationships of tableSort object."
+  - method: "[Apply](xref:graph.tablesort_apply)"
+    type: "None"
+    description: "Perform a sort operation."
+  - method: "[Clear](xref:graph.tablesort_clear)"
+    type: "None"
+    description: "Clears the sorting that is currently on the table. While this doesn't modify the table's ordering, it clears the state of the header buttons."
+  - method: "[Reapply](xref:graph.tablesort_reapply)"
+    type: "None"
+    description: "Reapplies the current sorting parameters to the table."
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -35,14 +35,14 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: fields
-    type: Collection(microsoft.graph.workbookSortField)
-    description: Represents the current conditions used to last sort the table. Read-only.
-  - property: matchCase
-    type: Boolean
-    description: Represents whether the casing impacted the last sort of the table. Read-only.
-  - property: method
-    type: String
-    description: Represents Chinese character ordering method last used to sort the table. The possible values are: PinYin, StrokeCount. Read-only.
+  - property: "fields"
+    type: "Collection(microsoft.graph.workbookSortField)"
+    description: "Represents the current conditions used to last sort the table. Read-only."
+  - property: "matchCase"
+    type: "Boolean"
+    description: "Represents whether the casing impacted the last sort of the table. Read-only."
+  - property: "method"
+    type: "String"
+    description: "Represents Chinese character ordering method last used to sort the table. The possible values are: PinYin, StrokeCount. Read-only."

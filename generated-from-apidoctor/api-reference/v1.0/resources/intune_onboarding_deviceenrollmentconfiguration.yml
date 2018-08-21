@@ -3,26 +3,26 @@ uid: graph.intune_onboarding_deviceenrollmentconfiguration
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_onboarding_deviceenrollmentconfiguration.md
 summary:
-  heading: deviceEnrollmentConfiguration resource type
+  heading: "deviceEnrollmentConfiguration resource type"
   intro: |
     Not yet documented
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [List deviceEnrollmentConfigurations](xref:graph.intune_onboarding_deviceenrollmentconfiguration_list)
-    type: [deviceEnrollmentConfiguration](xref:graph.intune_onboarding_deviceenrollmentconfiguration) collection
-    description: List properties and relationships of the deviceEnrollmentConfiguration objects.
-  - method: [Get deviceEnrollmentConfiguration](xref:graph.intune_onboarding_deviceenrollmentconfiguration_get)
-    type: [deviceEnrollmentConfiguration](xref:graph.intune_onboarding_deviceenrollmentconfiguration)
-    description: Read properties and relationships of the deviceEnrollmentConfiguration object.
-  - method: [setPriority action](xref:graph.intune_onboarding_deviceenrollmentconfiguration_setpriority)
-    type: None
-    description: Not yet documented
-  - method: [assign action](xref:graph.intune_onboarding_deviceenrollmentconfiguration_assign)
-    type: None
-    description: Not yet documented
+  - method: "[List deviceEnrollmentConfigurations](xref:graph.intune_onboarding_deviceenrollmentconfiguration_list)"
+    type: "[deviceEnrollmentConfiguration](xref:graph.intune_onboarding_deviceenrollmentconfiguration) collection"
+    description: "List properties and relationships of the deviceEnrollmentConfiguration objects."
+  - method: "[Get deviceEnrollmentConfiguration](xref:graph.intune_onboarding_deviceenrollmentconfiguration_get)"
+    type: "[deviceEnrollmentConfiguration](xref:graph.intune_onboarding_deviceenrollmentconfiguration)"
+    description: "Read properties and relationships of the deviceEnrollmentConfiguration object."
+  - method: "[setPriority action](xref:graph.intune_onboarding_deviceenrollmentconfiguration_setpriority)"
+    type: "None"
+    description: "Not yet documented"
+  - method: "[assign action](xref:graph.intune_onboarding_deviceenrollmentconfiguration_assign)"
+    type: "None"
+    description: "Not yet documented"
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -40,32 +40,32 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: id
-    type: String
-    description: Not yet documented
-  - property: displayName
-    type: String
-    description: Not yet documented
-  - property: description
-    type: String
-    description: Not yet documented
-  - property: priority
-    type: Int32
-    description: Not yet documented
-  - property: createdDateTime
-    type: DateTimeOffset
-    description: Not yet documented
-  - property: lastModifiedDateTime
-    type: DateTimeOffset
-    description: Not yet documented
-  - property: version
-    type: Int32
-    description: Not yet documented
+  - property: "id"
+    type: "String"
+    description: "Not yet documented"
+  - property: "displayName"
+    type: "String"
+    description: "Not yet documented"
+  - property: "description"
+    type: "String"
+    description: "Not yet documented"
+  - property: "priority"
+    type: "Int32"
+    description: "Not yet documented"
+  - property: "createdDateTime"
+    type: "DateTimeOffset"
+    description: "Not yet documented"
+  - property: "lastModifiedDateTime"
+    type: "DateTimeOffset"
+    description: "Not yet documented"
+  - property: "version"
+    type: "Int32"
+    description: "Not yet documented"
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   list:
-  - relationship: assignments
-    type: Collection(microsoft.graph.enrollmentConfigurationAssignment)
-    description: The list of group assignments for the device configuration profile.
+  - relationship: "assignments"
+    type: "Collection(microsoft.graph.enrollmentConfigurationAssignment)"
+    description: "The list of group assignments for the device configuration profile."

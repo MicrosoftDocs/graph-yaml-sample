@@ -3,34 +3,34 @@ uid: graph.outlookuser
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/outlookuser.md
 summary:
-  heading: outlookUser resource type
+  heading: "outlookUser resource type"
   intro: |
     Represents the Outlook services available to a user.
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [Create category](xref:graph.outlookuser_post_mastercategories)
-    type: [outlookCategory](xref:graph.outlookcategory)
-    description: Create an outlookCategory object in the user's master list of categories.
-  - method: [List categories](xref:graph.outlookuser_list_mastercategories)
-    type: [outlookCategory](xref:graph.outlookcategory) collection
-    description: Get all the categories that have been defined for the user.
-  - method: [supportedLanguages](xref:graph.outlookuser_supportedlanguages)
-    type: [localeInfo](xref:graph.localeinfo) collection
-    description: Get the list of locales and languages that is supported for the user, as configured on the user's mailbox server.
-  - method: [supportedTimeZones](xref:graph.outlookuser_supportedtimezones)
-    type: [timeZoneInformation](xref:graph.timezoneinformation) collection
-    description: Get the list of time zones that is supported for the user, as configured on the user's mailbox server.
+  - method: "[Create category](xref:graph.outlookuser_post_mastercategories)"
+    type: "[outlookCategory](xref:graph.outlookcategory)"
+    description: "Create an outlookCategory object in the user's master list of categories."
+  - method: "[List categories](xref:graph.outlookuser_list_mastercategories)"
+    type: "[outlookCategory](xref:graph.outlookcategory) collection"
+    description: "Get all the categories that have been defined for the user."
+  - method: "[supportedLanguages](xref:graph.outlookuser_supportedlanguages)"
+    type: "[localeInfo](xref:graph.localeinfo) collection"
+    description: "Get the list of locales and languages that is supported for the user, as configured on the user's mailbox server."
+  - method: "[supportedTimeZones](xref:graph.outlookuser_supportedtimezones)"
+    type: "[timeZoneInformation](xref:graph.timezoneinformation) collection"
+    description: "Get the list of time zones that is supported for the user, as configured on the user's mailbox server."
 properties:
-  heading: Properties
+  heading: "Properties"
   intro: |
     None
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   list:
-  - relationship: masterCategories
-    type: Collection(microsoft.graph.outlookCategory)
-    description: A list of categories defined for the user.
+  - relationship: "masterCategories"
+    type: "Collection(microsoft.graph.outlookCategory)"
+    description: "A list of categories defined for the user."
   outro: |
     ```json
     {

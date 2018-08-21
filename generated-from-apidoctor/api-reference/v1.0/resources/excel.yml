@@ -3,7 +3,7 @@ uid: graph.excel
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/excel.md
 summary:
-  heading: Working with Excel in Microsoft Graph
+  heading: "Working with Excel in Microsoft Graph"
   intro: |
     You can use Microsoft Graph to allow web and mobile applications to read and modify Excel workbooks stored in OneDrive for Business, SharePoint site or Group drive. The `Workbook` (or Excel file) resource contains all the other Excel resources through relationships. You can access a workbook through the [Drive API](xref:graph.drive) by identifying the location of the file in the URL. For example:
     `https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/`  
@@ -22,7 +22,7 @@ summary:
     * Files.ReadWrite (for read and write actions)
     
 requestBody:
-  heading: Request
+  heading: "Request"
   intro: |
     Pass a JSON object by setting the `persistchanges` value to `true` or `false`. 
     
@@ -36,7 +36,7 @@ requestBody:
     
     When the value of `persistChanges` is set to `false`, a non-persistent session id is returned.  
 response:
-  heading: Response
+  heading: "Response"
   intro: |
     ```http
     HTTP code: 201 Created
@@ -62,7 +62,7 @@ response:
     
     
 examples:
-  heading: Examples
+  heading: "Examples"
   intro: |
     The following request updates the selected range with the text of "Sample text". Note that Range has 200 cells, whereas the provided input only has 1 cell value.
     

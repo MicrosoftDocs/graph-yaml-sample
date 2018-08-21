@@ -3,13 +3,13 @@ uid: graph.intune_deviceconfig_editionupgradelicensetype
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_editionupgradelicensetype.md
 summary:
-  heading: editionUpgradeLicenseType enum type
+  heading: "editionUpgradeLicenseType enum type"
   intro: |
     Edition Upgrade License type
 enum:
-  heading: Members
+  heading: "Members"
   table:
-  - member: productKey
-    description: Product Key Type
-  - member: licenseFile
-    description: License File Type
+  - member: "productKey"
+    description: "Product Key Type"
+  - member: "licenseFile"
+    description: "License File Type"

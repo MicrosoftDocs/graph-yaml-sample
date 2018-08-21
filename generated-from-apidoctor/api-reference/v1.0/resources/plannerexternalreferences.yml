@@ -3,11 +3,11 @@ uid: graph.plannerexternalreferences
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/plannerexternalreferences.md
 summary:
-  heading: plannerExternalReferences resource type
+  heading: "plannerExternalReferences resource type"
   intro: |
     The **plannerExternalReferences** resource represents the collection of references on a task. This is an Open Type. It is part of the [task details](xref:graph.plannertaskdetails) object. The value in the property-value pair is the [externalReference](xref:graph.plannerexternalreference) object.
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource
   sampleCode: |
@@ -44,6 +44,6 @@ resource:
     
 
 properties:
-  heading: Properties
+  heading: "Properties"
   intro: |
     Properties of an Open Type can be defined by the client. In this case, the client must provide **valid URLs** based on the **HTTP/HTTPS** protocols as properties and their values must be the [externalReference](xref:graph.plannerexternalreference) objects. Based on OData, property names in Open Types cannot contain the following characters: `.`, `:`, `%`  so they need to be encoded. Example is shown below. To remove a reference, set the value of the property to `null`.

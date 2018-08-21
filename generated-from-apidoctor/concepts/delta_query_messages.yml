@@ -3,7 +3,7 @@ uid: graph.delta_query_messages
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/delta_query_messages.md
 summary:
-  heading: Get incremental changes to messages in a folder
+  heading: "Get incremental changes to messages in a folder"
   intro: |
     Delta query lets you query for additions, deletions, or updates to messages in a folder, by way of a series of
     [delta](xref:graph.message_delta) function calls. Delta data enables you to maintain
@@ -36,7 +36,7 @@ summary:
 examples:
   - items:
     - Example to synchronize messages in a folder:
-        heading: Example to synchronize messages in a folder
+        heading: "Example to synchronize messages in a folder"
         intro: |
           The following example shows 2 rounds of synchronization of a specific folder which initially contains 5 messages.
           The first round involves a series of 3 requests to synchronize all 5 messages in the folder:

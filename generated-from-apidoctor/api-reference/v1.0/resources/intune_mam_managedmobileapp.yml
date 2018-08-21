@@ -3,29 +3,29 @@ uid: graph.intune_mam_managedmobileapp
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_mam_managedmobileapp.md
 summary:
-  heading: managedMobileApp resource type
+  heading: "managedMobileApp resource type"
   intro: |
     The identifier for the deployment an app.
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [List managedMobileApps](xref:graph.intune_mam_managedmobileapp_list)
-    type: [managedMobileApp](xref:graph.intune_mam_managedmobileapp) collection
-    description: List properties and relationships of the managedMobileApp objects.
-  - method: [Get managedMobileApp](xref:graph.intune_mam_managedmobileapp_get)
-    type: [managedMobileApp](xref:graph.intune_mam_managedmobileapp)
-    description: Read properties and relationships of the managedMobileApp object.
-  - method: [Create managedMobileApp](xref:graph.intune_mam_managedmobileapp_create)
-    type: [managedMobileApp](xref:graph.intune_mam_managedmobileapp)
-    description: Create a new managedMobileApp object.
-  - method: [Delete managedMobileApp](xref:graph.intune_mam_managedmobileapp_delete)
-    type: None
-    description: Deletes a managedMobileApp.
-  - method: [Update managedMobileApp](xref:graph.intune_mam_managedmobileapp_update)
-    type: [managedMobileApp](xref:graph.intune_mam_managedmobileapp)
-    description: Update the properties of a managedMobileApp object.
+  - method: "[List managedMobileApps](xref:graph.intune_mam_managedmobileapp_list)"
+    type: "[managedMobileApp](xref:graph.intune_mam_managedmobileapp) collection"
+    description: "List properties and relationships of the managedMobileApp objects."
+  - method: "[Get managedMobileApp](xref:graph.intune_mam_managedmobileapp_get)"
+    type: "[managedMobileApp](xref:graph.intune_mam_managedmobileapp)"
+    description: "Read properties and relationships of the managedMobileApp object."
+  - method: "[Create managedMobileApp](xref:graph.intune_mam_managedmobileapp_create)"
+    type: "[managedMobileApp](xref:graph.intune_mam_managedmobileapp)"
+    description: "Create a new managedMobileApp object."
+  - method: "[Delete managedMobileApp](xref:graph.intune_mam_managedmobileapp_delete)"
+    type: "None"
+    description: "Deletes a managedMobileApp."
+  - method: "[Update managedMobileApp](xref:graph.intune_mam_managedmobileapp_update)"
+    type: "[managedMobileApp](xref:graph.intune_mam_managedmobileapp)"
+    description: "Update the properties of a managedMobileApp object."
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -41,18 +41,18 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: mobileAppIdentifier
-    type: microsoft.graph.mobileAppIdentifier
-    description: The identifier for an app with it's operating system type.
-  - property: id
-    type: String
-    description: Key of the entity.
-  - property: version
-    type: String
-    description: Version of the entity.
+  - property: "mobileAppIdentifier"
+    type: "microsoft.graph.mobileAppIdentifier"
+    description: "The identifier for an app with it's operating system type."
+  - property: "id"
+    type: "String"
+    description: "Key of the entity."
+  - property: "version"
+    type: "String"
+    description: "Version of the entity."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

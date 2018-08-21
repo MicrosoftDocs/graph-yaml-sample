@@ -7,23 +7,23 @@ metadata:
   ms.date: 09/10/2017
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/driveitem_delete.md
 summary:
-  heading: Delete a DriveItem
+  heading: "Delete a DriveItem"
   intro: |
     Delete a [DriveItem](xref:graph.driveitem) by using its ID or path.
     Note that deleting items using this method will move the items to the recycle bin instead of permanently deleting the item.
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
   list:
-  - resource: Delegated (work or school account)
-    permission: Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All
-  - resource: Delegated (personal Microsoft account)
-    permission: Files.ReadWrite, Files.ReadWrite.All
-  - resource: Application
-    permission: Files.ReadWrite.All, Sites.ReadWrite.All
+  - resource: "Delegated (work or school account)"
+    permission: "Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All"
+  - resource: "Delegated (personal Microsoft account)"
+    permission: "Files.ReadWrite, Files.ReadWrite.All"
+  - resource: "Application"
+    permission: "Files.ReadWrite.All, Sites.ReadWrite.All"
 httpRequest:
-  heading: HTTP request
+  heading: "HTTP request"
   sampleCode: |
     ```http
     DELETE /drives/{drive-id}/items/{item-id}
@@ -34,26 +34,26 @@ httpRequest:
     ```
     
 requestHeaders:
-  heading: Optional request headers
+  heading: "Optional request headers"
   list:
-  - name: if-match
-    value: String
-    description: If this request header is included and the eTag (or cTag) provided does not match the current tag on the item, a 412 Precondition Failed response is returned and the item will not be deleted.
+  - name: "if-match"
+    value: "String"
+    description: "If this request header is included and the eTag (or cTag) provided does not match the current tag on the item, a 412 Precondition Failed response is returned and the item will not be deleted."
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         intro: |
           Here is an example of how to call this API.
         request:
-            heading: request
+            heading: "request"
             sampleCode: |
               ```http
               DELETE /me/drive/items/{item-id}
               ```
               
         response:
-            heading: Response
+            heading: "Response"
             intro: |
               If successful, this call returns a `204 No Content` response to indicate that resource was deleted and there was nothing to return.
             sampleCode: |

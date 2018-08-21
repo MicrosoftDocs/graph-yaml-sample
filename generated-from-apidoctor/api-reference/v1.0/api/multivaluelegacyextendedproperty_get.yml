@@ -3,7 +3,7 @@ uid: graph.multivaluelegacyextendedproperty_get
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/multivaluelegacyextendedproperty_get.md
 summary:
-  heading: Get multiValueLegacyExtendedProperty
+  heading: "Get multiValueLegacyExtendedProperty"
   intro: |
     Get a resource instance that contains a multi-value extended property by using `$expand`.
     Using the query parameter `$expand` allows you to get the specified instance expanded with the indicated extended 
@@ -27,7 +27,7 @@ summary:
     See [Extended properties overview](xref:graph.extended-properties-overview) for more information about when to use 
     open extensions or extended properties, and how to specify extended properties.
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     One of the following permissions is required to call this API, depending on the resource you're
     getting. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
@@ -38,7 +38,7 @@ permissions:
     * Group.Read.All 
     
 httpRequest:
-  heading: HTTP request
+  heading: "HTTP request"
   intro: |
     Get a resource instance expanded with the extended property which matches a filter on the 
     **id** property. Make sure you apply 
@@ -103,23 +103,23 @@ httpRequest:
     ```
     
 parameters:
-  heading: Parameters
+  heading: "Parameters"
   list:
-  - name: id_value
-    value: String
-    description: The ID of the extended property to match. It must follow one of the supported formats. See Outlook extended properties overview for more information. Required.
+  - name: "id_value"
+    value: "String"
+    description: "The ID of the extended property to match. It must follow one of the supported formats. See Outlook extended properties overview for more information. Required."
 requestHeaders:
-  heading: Request headers
+  heading: "Request headers"
   list:
-  - name: Authorization
-    value: 
-    description: Bearer {token}. Required.
+  - name: "Authorization"
+    value: ""
+    description: "Bearer {token}. Required."
 requestBody:
-  heading: Request body
+  heading: "Request body"
   intro: |
     Do not supply a request body for this method.
 response:
-  heading: Response
+  heading: "Response"
   intro: |
     If successful, this method returns a `200 OK` response code. 
     The response body includes an object representing the requested resource instance, expanded with the matching 
@@ -127,9 +127,9 @@ response:
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         request:
-            heading: Request
+            heading: "Request"
             intro: |
               This example gets and expands the specified event by including a multi-value extended property. The filter returns the 
               extended property that has its **id** matching the string `StringArray {66f5a359-4659-4830-9070-00050ec6ac6e} Name Recreation`
@@ -140,7 +140,7 @@ examples:
               ```
               
         response:
-            heading: Response
+            heading: "Response"
             intro: |
               The response body includes all the properties of the specified event and extended property returned from the filter.
               Note: The **event** object shown here is truncated for brevity. All of the properties will be returned from an actual call.

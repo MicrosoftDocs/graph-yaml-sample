@@ -3,29 +3,29 @@ uid: graph.intune_rbac_roleassignment
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_rbac_roleassignment.md
 summary:
-  heading: roleAssignment resource type
+  heading: "roleAssignment resource type"
   intro: |
     The Role Assignment resource. Role assignments tie together a role definition with members and scopes. There can be one or more role assignments per role. This applies to custom and built-in roles.
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [List roleAssignments](xref:graph.intune_rbac_roleassignment_list)
-    type: [roleAssignment](xref:graph.intune_rbac_roleassignment) collection
-    description: List properties and relationships of the roleAssignment objects.
-  - method: [Get roleAssignment](xref:graph.intune_rbac_roleassignment_get)
-    type: [roleAssignment](xref:graph.intune_rbac_roleassignment)
-    description: Read properties and relationships of the roleAssignment object.
-  - method: [Create roleAssignment](xref:graph.intune_rbac_roleassignment_create)
-    type: [roleAssignment](xref:graph.intune_rbac_roleassignment)
-    description: Create a new roleAssignment object.
-  - method: [Delete roleAssignment](xref:graph.intune_rbac_roleassignment_delete)
-    type: None
-    description: Deletes a roleAssignment.
-  - method: [Update roleAssignment](xref:graph.intune_rbac_roleassignment_update)
-    type: [roleAssignment](xref:graph.intune_rbac_roleassignment)
-    description: Update the properties of a roleAssignment object.
+  - method: "[List roleAssignments](xref:graph.intune_rbac_roleassignment_list)"
+    type: "[roleAssignment](xref:graph.intune_rbac_roleassignment) collection"
+    description: "List properties and relationships of the roleAssignment objects."
+  - method: "[Get roleAssignment](xref:graph.intune_rbac_roleassignment_get)"
+    type: "[roleAssignment](xref:graph.intune_rbac_roleassignment)"
+    description: "Read properties and relationships of the roleAssignment object."
+  - method: "[Create roleAssignment](xref:graph.intune_rbac_roleassignment_create)"
+    type: "[roleAssignment](xref:graph.intune_rbac_roleassignment)"
+    description: "Create a new roleAssignment object."
+  - method: "[Delete roleAssignment](xref:graph.intune_rbac_roleassignment_delete)"
+    type: "None"
+    description: "Deletes a roleAssignment."
+  - method: "[Update roleAssignment](xref:graph.intune_rbac_roleassignment_update)"
+    type: "[roleAssignment](xref:graph.intune_rbac_roleassignment)"
+    description: "Update the properties of a roleAssignment object."
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -42,23 +42,23 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: id
-    type: String
-    description: Key of the entity. This is read-only and automatically generated.
-  - property: displayName
-    type: String
-    description: The display or friendly name of the role Assignment.
-  - property: description
-    type: String
-    description: Description of the Role Assignment.
-  - property: resourceScopes
-    type: Collection(String)
-    description: List of ids of role scope member security groups.  These are IDs from Azure Active Directory.
+  - property: "id"
+    type: "String"
+    description: "Key of the entity. This is read-only and automatically generated."
+  - property: "displayName"
+    type: "String"
+    description: "The display or friendly name of the role Assignment."
+  - property: "description"
+    type: "String"
+    description: "Description of the Role Assignment."
+  - property: "resourceScopes"
+    type: "Collection(String)"
+    description: "List of ids of role scope member security groups.  These are IDs from Azure Active Directory."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   list:
-  - relationship: roleDefinition
-    type: microsoft.graph.roleDefinition
-    description: Role definition this assignment is part of.
+  - relationship: "roleDefinition"
+    type: "microsoft.graph.roleDefinition"
+    description: "Role definition this assignment is part of."

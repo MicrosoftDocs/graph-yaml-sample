@@ -3,11 +3,11 @@ uid: graph.externallink
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/externallink.md
 summary:
-  heading: externalLink resource type
+  heading: "externalLink resource type"
   intro: |
     A url that opens a OneNote page or notebook.
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource
   sampleCode: |
@@ -18,8 +18,8 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: href
-    type: String
-    description: The url of the link.
+  - property: "href"
+    type: "String"
+    description: "The url of the link."

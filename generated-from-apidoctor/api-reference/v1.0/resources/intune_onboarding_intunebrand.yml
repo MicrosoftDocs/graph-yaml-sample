@@ -3,11 +3,11 @@ uid: graph.intune_onboarding_intunebrand
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_onboarding_intunebrand.md
 summary:
-  heading: intuneBrand resource type
+  heading: "intuneBrand resource type"
   intro: |
     intuneBrand contains data which is used in customizing the appearance of the Company Portal applications as well as the end user web portal.
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -45,51 +45,51 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: displayName
-    type: String
-    description: Company/organization name that is displayed to end users.
-  - property: contactITName
-    type: String
-    description: Name of the person/organization responsible for IT support.
-  - property: contactITPhoneNumber
-    type: String
-    description: Phone number of the person/organization responsible for IT support.
-  - property: contactITEmailAddress
-    type: String
-    description: Email address of the person/organization responsible for IT support.
-  - property: contactITNotes
-    type: String
-    description: Text comments regarding the person/organization responsible for IT support.
-  - property: privacyUrl
-    type: String
-    description: URL to the company/organization’s privacy policy.
-  - property: onlineSupportSiteUrl
-    type: String
-    description: URL to the company/organization’s IT helpdesk site.
-  - property: onlineSupportSiteName
-    type: String
-    description: Display name of the company/organization’s IT helpdesk site.
-  - property: themeColor
-    type: microsoft.graph.rgbColor
-    description: Primary theme color used in the Company Portal applications and web portal.
-  - property: showLogo
-    type: Boolean
-    description: Boolean that represents whether the administrator-supplied logo images are shown or not shown.
-  - property: lightBackgroundLogo
-    type: microsoft.graph.mimeContent
-    description: Logo image displayed in Company Portal apps which have a light background behind the logo.
-  - property: darkBackgroundLogo
-    type: microsoft.graph.mimeContent
-    description: Logo image displayed in Company Portal apps which have a dark background behind the logo.
-  - property: showNameNextToLogo
-    type: Boolean
-    description: Boolean that represents whether the administrator-supplied display name will be shown next to the logo image.
-  - property: showDisplayNameNextToLogo
-    type: Boolean
-    description: Boolean that represents whether the administrator-supplied display name will be shown next to the logo image.
+  - property: "displayName"
+    type: "String"
+    description: "Company/organization name that is displayed to end users."
+  - property: "contactITName"
+    type: "String"
+    description: "Name of the person/organization responsible for IT support."
+  - property: "contactITPhoneNumber"
+    type: "String"
+    description: "Phone number of the person/organization responsible for IT support."
+  - property: "contactITEmailAddress"
+    type: "String"
+    description: "Email address of the person/organization responsible for IT support."
+  - property: "contactITNotes"
+    type: "String"
+    description: "Text comments regarding the person/organization responsible for IT support."
+  - property: "privacyUrl"
+    type: "String"
+    description: "URL to the company/organization’s privacy policy."
+  - property: "onlineSupportSiteUrl"
+    type: "String"
+    description: "URL to the company/organization’s IT helpdesk site."
+  - property: "onlineSupportSiteName"
+    type: "String"
+    description: "Display name of the company/organization’s IT helpdesk site."
+  - property: "themeColor"
+    type: "microsoft.graph.rgbColor"
+    description: "Primary theme color used in the Company Portal applications and web portal."
+  - property: "showLogo"
+    type: "Boolean"
+    description: "Boolean that represents whether the administrator-supplied logo images are shown or not shown."
+  - property: "lightBackgroundLogo"
+    type: "microsoft.graph.mimeContent"
+    description: "Logo image displayed in Company Portal apps which have a light background behind the logo."
+  - property: "darkBackgroundLogo"
+    type: "microsoft.graph.mimeContent"
+    description: "Logo image displayed in Company Portal apps which have a dark background behind the logo."
+  - property: "showNameNextToLogo"
+    type: "Boolean"
+    description: "Boolean that represents whether the administrator-supplied display name will be shown next to the logo image."
+  - property: "showDisplayNameNextToLogo"
+    type: "Boolean"
+    description: "Boolean that represents whether the administrator-supplied display name will be shown next to the logo image."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

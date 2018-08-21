@@ -3,11 +3,11 @@ uid: graph.plannerassignment
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/plannerassignment.md
 summary:
-  heading: plannerAssignment resource type
+  heading: "plannerAssignment resource type"
   intro: |
     The **plannerAssignment** resource represents the assignment of a task to a user. This type is used in the open type [plannerAssignments](xref:graph.plannerassignments).
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -20,14 +20,14 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: assignedBy
-    type: microsoft.graph.identitySet
-    description: The identity of the user that performed the assignment of the task, i.e. the assignor.
-  - property: assignedDateTime
-    type: DateTimeOffset
-    description: The time at which the task was assigned. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
-  - property: orderHint
-    type: String
-    description: Hint used to order assignees in a task. The format is defined as outlined here.
+  - property: "assignedBy"
+    type: "microsoft.graph.identitySet"
+    description: "The identity of the user that performed the assignment of the task, i.e. the assignor."
+  - property: "assignedDateTime"
+    type: "DateTimeOffset"
+    description: "The time at which the task was assigned. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'"
+  - property: "orderHint"
+    type: "String"
+    description: "Hint used to order assignees in a task. The format is defined as outlined here."

@@ -7,7 +7,7 @@ metadata:
   ms.date: 09/10/2017
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/driveitem_createuploadsession.md
 summary:
-  heading: Upload large files with an upload session
+  heading: "Upload large files with an upload session"
   intro: |
     Create an upload session to allow your app to upload files up to the maximum file size.
     An upload session allows your app to upload ranges of the file in sequential API requests, which allows the transfer to be resumed if a connection is dropped while the upload is in progress.
@@ -17,23 +17,23 @@ summary:
     1. [Upload bytes to the upload session](#upload-bytes-to-the-upload-session)
     
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
   list:
-  - resource: Delegated (work or school account)
-    permission: Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All
-  - resource: Delegated (personal Microsoft account)
-    permission: Files.ReadWrite, Files.ReadWrite.All
-  - resource: Application
-    permission: Sites.ReadWrite.All
+  - resource: "Delegated (work or school account)"
+    permission: "Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All"
+  - resource: "Delegated (personal Microsoft account)"
+    permission: "Files.ReadWrite, Files.ReadWrite.All"
+  - resource: "Application"
+    permission: "Sites.ReadWrite.All"
   outro: |
     ## Create an upload session
     To begin a large file upload, your app must first request a new upload session.
     This creates a temporary storage location where the bytes of the file will be saved until the complete file is uploaded.
     Once the last byte of the file has been uploaded the upload session is completed and the final file is shown in the destination folder.
 httpRequest:
-  heading: HTTP request
+  heading: "HTTP request"
   sampleCode: |
     ```http
     POST /drives/{driveId}/items/{itemId}/createUploadSession
@@ -44,23 +44,23 @@ httpRequest:
     ```
     
 requestHeaders:
-  heading: Optional request headers
+  heading: "Optional request headers"
   list:
-  - name: if-match
-    value: String
-    description: If this request header is included and the eTag (or cTag) provided does not match the current etag on the item, a 412 Precondition Failed error response is returned.
+  - name: "if-match"
+    value: "String"
+    description: "If this request header is included and the eTag (or cTag) provided does not match the current etag on the item, a 412 Precondition Failed error response is returned."
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: description
-    type: String
-    description: Provides a user-visible description of the item. Read-write. Only on OneDrive Personal
-  - property: fileSystemInfo
-    type: microsoft.graph.fileSystemInfo
-    description: File system information on client. Read-write.
-  - property: name
-    type: String
-    description: The name of the item (filename and extension). Read-write.
+  - property: "description"
+    type: "String"
+    description: "Provides a user-visible description of the item. Read-write. Only on OneDrive Personal"
+  - property: "fileSystemInfo"
+    type: "microsoft.graph.fileSystemInfo"
+    description: "File system information on client. Read-write."
+  - property: "name"
+    type: "String"
+    description: "The name of the item (filename and extension). Read-write."
   outro: |
     The response to this request will provide the details of the newly created [uploadSession](xref:graph.uploadsession), which includes the URL used for uploading the parts of the file. 
     
@@ -78,7 +78,7 @@ properties:
     ```
     
 requestBody:
-  heading: Request body
+  heading: "Request body"
   intro: |
     No request body is required.
     However, you can specify an `item` property in the request body, providing additional data about the file being uploaded.
@@ -103,12 +103,12 @@ requestBody:
     ```
     
 response:
-  heading: Response
+  heading: "Response"
   intro: |
     The response to this request, if successful, will provide the details for where the remainder of the requests should be sent as an [UploadSession](xref:graph.uploadSession) resource.
     This resource provides details about where the byte range of the file should be uploaded and when the upload session expires.
   request:
-      heading: request
+      heading: "request"
       sampleCode: |
         ```http
         HTTP/1.1 200 OK
@@ -131,7 +131,7 @@ response:
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         intro: |
           In this example, the app is uploading the first 26 bytes of a 128 byte file.
           
@@ -142,7 +142,7 @@ examples:
           **Important:** Your app must ensure the total file size specified in the **Content-Range** header is the same for all requests.
           If a byte range declares a different file size, the request will fail.
         request:
-            heading: request
+            heading: "request"
             sampleCode: |
               ```http
               PUT https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF866337
@@ -153,7 +153,7 @@ examples:
               ```
               
         response:
-            heading: Response
+            heading: "Response"
             intro: |
               When the request is complete, the server will respond with `202 Accepted` if there are more byte ranges that need to be uploaded.
             sampleCode: |
@@ -189,7 +189,7 @@ examples:
               ```
               
     - Example:
-        heading: Example
+        heading: "Example"
         intro: |
           Query the status of the upload by sending a GET request to the `uploadUrl`.
           The server will respond with a list of missing byte ranges that need to be uploaded and the expiration time for the upload session.
@@ -205,7 +205,7 @@ examples:
           ```
           
         request:
-            heading: request
+            heading: "request"
             sampleCode: |
               ```
               GET https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF86633784148bb98a1zjcUhf7b0mpUadahs
@@ -215,7 +215,7 @@ examples:
           ### Upload remaining data
           Now that your app knows where to start the upload from, resume the upload by following the steps in [upload bytes to the upload session](#upload-bytes-to-the-upload-session).
 remarks:
-  heading: Remarks
+  heading: "Remarks"
   intro: |
     * The `nextExpectedRanges` property won't always list all of the missing ranges.
     * On successful fragment writes, it will return the next range to start from (eg. "523-").

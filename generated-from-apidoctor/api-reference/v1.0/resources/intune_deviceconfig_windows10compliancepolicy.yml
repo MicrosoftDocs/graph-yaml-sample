@@ -3,30 +3,30 @@ uid: graph.intune_deviceconfig_windows10compliancepolicy
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_windows10compliancepolicy.md
 summary:
-  heading: windows10CompliancePolicy resource type
+  heading: "windows10CompliancePolicy resource type"
   intro: |
     This class contains compliance settings for Windows 10.
     Inherits from [deviceCompliancePolicy](xref:graph.intune_deviceconfig_devicecompliancepolicy)
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [List windows10CompliancePolicies](xref:graph.intune_deviceconfig_windows10compliancepolicy_list)
-    type: [windows10CompliancePolicy](xref:graph.intune_deviceconfig_windows10compliancepolicy) collection
-    description: List properties and relationships of the windows10CompliancePolicy objects.
-  - method: [Get windows10CompliancePolicy](xref:graph.intune_deviceconfig_windows10compliancepolicy_get)
-    type: [windows10CompliancePolicy](xref:graph.intune_deviceconfig_windows10compliancepolicy)
-    description: Read properties and relationships of the windows10CompliancePolicy object.
-  - method: [Create windows10CompliancePolicy](xref:graph.intune_deviceconfig_windows10compliancepolicy_create)
-    type: [windows10CompliancePolicy](xref:graph.intune_deviceconfig_windows10compliancepolicy)
-    description: Create a new windows10CompliancePolicy object.
-  - method: [Delete windows10CompliancePolicy](xref:graph.intune_deviceconfig_windows10compliancepolicy_delete)
-    type: None
-    description: Deletes a windows10CompliancePolicy.
-  - method: [Update windows10CompliancePolicy](xref:graph.intune_deviceconfig_windows10compliancepolicy_update)
-    type: [windows10CompliancePolicy](xref:graph.intune_deviceconfig_windows10compliancepolicy)
-    description: Update the properties of a windows10CompliancePolicy object.
+  - method: "[List windows10CompliancePolicies](xref:graph.intune_deviceconfig_windows10compliancepolicy_list)"
+    type: "[windows10CompliancePolicy](xref:graph.intune_deviceconfig_windows10compliancepolicy) collection"
+    description: "List properties and relationships of the windows10CompliancePolicy objects."
+  - method: "[Get windows10CompliancePolicy](xref:graph.intune_deviceconfig_windows10compliancepolicy_get)"
+    type: "[windows10CompliancePolicy](xref:graph.intune_deviceconfig_windows10compliancepolicy)"
+    description: "Read properties and relationships of the windows10CompliancePolicy object."
+  - method: "[Create windows10CompliancePolicy](xref:graph.intune_deviceconfig_windows10compliancepolicy_create)"
+    type: "[windows10CompliancePolicy](xref:graph.intune_deviceconfig_windows10compliancepolicy)"
+    description: "Create a new windows10CompliancePolicy object."
+  - method: "[Delete windows10CompliancePolicy](xref:graph.intune_deviceconfig_windows10compliancepolicy_delete)"
+    type: "None"
+    description: "Deletes a windows10CompliancePolicy."
+  - method: "[Update windows10CompliancePolicy](xref:graph.intune_deviceconfig_windows10compliancepolicy_update)"
+    type: "[windows10CompliancePolicy](xref:graph.intune_deviceconfig_windows10compliancepolicy)"
+    description: "Update the properties of a windows10CompliancePolicy object."
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -62,104 +62,104 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: id
-    type: String
-    description: Key of the entity. Inherited from deviceCompliancePolicy
-  - property: createdDateTime
-    type: DateTimeOffset
-    description: DateTime the object was created. Inherited from deviceCompliancePolicy
-  - property: description
-    type: String
-    description: Admin provided description of the Device Configuration. Inherited from deviceCompliancePolicy
-  - property: lastModifiedDateTime
-    type: DateTimeOffset
-    description: DateTime the object was last modified. Inherited from deviceCompliancePolicy
-  - property: displayName
-    type: String
-    description: Admin provided name of the device configuration. Inherited from deviceCompliancePolicy
-  - property: version
-    type: Int32
-    description: Version of the device configuration. Inherited from deviceCompliancePolicy
-  - property: passwordRequired
-    type: Boolean
-    description: Require a password to unlock Windows device.
-  - property: passwordBlockSimple
-    type: Boolean
-    description: Indicates whether or not to block simple password.
-  - property: passwordRequiredToUnlockFromIdle
-    type: Boolean
-    description: Require a password to unlock an idle device.
-  - property: passwordMinutesOfInactivityBeforeLock
-    type: Int32
-    description: Minutes of inactivity before a password is required.
-  - property: passwordExpirationDays
-    type: Int32
-    description: The password expiration in days.
-  - property: passwordMinimumLength
-    type: Int32
-    description: The minimum password length.
-  - property: passwordMinimumCharacterSetCount
-    type: Int32
-    description: The number of character sets required in the password.
-  - property: passwordRequiredType
-    type: microsoft.graph.requiredPasswordType
-    description: The required password type. The possible values are: deviceDefault, alphanumeric, numeric.
-  - property: passwordPreviousPasswordBlockCount
-    type: Int32
-    description: The number of previous passwords to prevent re-use of.
-  - property: requireHealthyDeviceReport
-    type: Boolean
-    description: Require devices to be reported as healthy by Windows Device Health Attestation.
-  - property: osMinimumVersion
-    type: String
-    description: Minimum Windows 10 version.
-  - property: osMaximumVersion
-    type: String
-    description: Maximum Windows 10 version.
-  - property: mobileOsMinimumVersion
-    type: String
-    description: Minimum Windows Phone version.
-  - property: mobileOsMaximumVersion
-    type: String
-    description: Maximum Windows Phone version.
-  - property: earlyLaunchAntiMalwareDriverEnabled
-    type: Boolean
-    description: Require devices to be reported as healthy by Windows Device Health Attestation - early launch antimalware driver is enabled.
-  - property: bitLockerEnabled
-    type: Boolean
-    description: Require devices to be reported healthy by Windows Device Health Attestation - bit locker is enabled
-  - property: secureBootEnabled
-    type: Boolean
-    description: Require devices to be reported as healthy by Windows Device Health Attestation - secure boot is enabled.
-  - property: codeIntegrityEnabled
-    type: Boolean
-    description: Require devices to be reported as healthy by Windows Device Health Attestation.
-  - property: storageRequireEncryption
-    type: Boolean
-    description: Require encryption on windows devices.
+  - property: "id"
+    type: "String"
+    description: "Key of the entity. Inherited from deviceCompliancePolicy"
+  - property: "createdDateTime"
+    type: "DateTimeOffset"
+    description: "DateTime the object was created. Inherited from deviceCompliancePolicy"
+  - property: "description"
+    type: "String"
+    description: "Admin provided description of the Device Configuration. Inherited from deviceCompliancePolicy"
+  - property: "lastModifiedDateTime"
+    type: "DateTimeOffset"
+    description: "DateTime the object was last modified. Inherited from deviceCompliancePolicy"
+  - property: "displayName"
+    type: "String"
+    description: "Admin provided name of the device configuration. Inherited from deviceCompliancePolicy"
+  - property: "version"
+    type: "Int32"
+    description: "Version of the device configuration. Inherited from deviceCompliancePolicy"
+  - property: "passwordRequired"
+    type: "Boolean"
+    description: "Require a password to unlock Windows device."
+  - property: "passwordBlockSimple"
+    type: "Boolean"
+    description: "Indicates whether or not to block simple password."
+  - property: "passwordRequiredToUnlockFromIdle"
+    type: "Boolean"
+    description: "Require a password to unlock an idle device."
+  - property: "passwordMinutesOfInactivityBeforeLock"
+    type: "Int32"
+    description: "Minutes of inactivity before a password is required."
+  - property: "passwordExpirationDays"
+    type: "Int32"
+    description: "The password expiration in days."
+  - property: "passwordMinimumLength"
+    type: "Int32"
+    description: "The minimum password length."
+  - property: "passwordMinimumCharacterSetCount"
+    type: "Int32"
+    description: "The number of character sets required in the password."
+  - property: "passwordRequiredType"
+    type: "microsoft.graph.requiredPasswordType"
+    description: "The required password type. The possible values are: deviceDefault, alphanumeric, numeric."
+  - property: "passwordPreviousPasswordBlockCount"
+    type: "Int32"
+    description: "The number of previous passwords to prevent re-use of."
+  - property: "requireHealthyDeviceReport"
+    type: "Boolean"
+    description: "Require devices to be reported as healthy by Windows Device Health Attestation."
+  - property: "osMinimumVersion"
+    type: "String"
+    description: "Minimum Windows 10 version."
+  - property: "osMaximumVersion"
+    type: "String"
+    description: "Maximum Windows 10 version."
+  - property: "mobileOsMinimumVersion"
+    type: "String"
+    description: "Minimum Windows Phone version."
+  - property: "mobileOsMaximumVersion"
+    type: "String"
+    description: "Maximum Windows Phone version."
+  - property: "earlyLaunchAntiMalwareDriverEnabled"
+    type: "Boolean"
+    description: "Require devices to be reported as healthy by Windows Device Health Attestation - early launch antimalware driver is enabled."
+  - property: "bitLockerEnabled"
+    type: "Boolean"
+    description: "Require devices to be reported healthy by Windows Device Health Attestation - bit locker is enabled"
+  - property: "secureBootEnabled"
+    type: "Boolean"
+    description: "Require devices to be reported as healthy by Windows Device Health Attestation - secure boot is enabled."
+  - property: "codeIntegrityEnabled"
+    type: "Boolean"
+    description: "Require devices to be reported as healthy by Windows Device Health Attestation."
+  - property: "storageRequireEncryption"
+    type: "Boolean"
+    description: "Require encryption on windows devices."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   list:
-  - relationship: scheduledActionsForRule
-    type: Collection(microsoft.graph.deviceComplianceScheduledActionForRule)
-    description: The list of scheduled action for this rule Inherited from deviceCompliancePolicy
-  - relationship: deviceStatuses
-    type: Collection(microsoft.graph.deviceComplianceDeviceStatus)
-    description: List of DeviceComplianceDeviceStatus. Inherited from deviceCompliancePolicy
-  - relationship: userStatuses
-    type: Collection(microsoft.graph.deviceComplianceUserStatus)
-    description: List of DeviceComplianceUserStatus. Inherited from deviceCompliancePolicy
-  - relationship: deviceStatusOverview
-    type: microsoft.graph.deviceComplianceDeviceOverview
-    description: Device compliance devices status overview Inherited from deviceCompliancePolicy
-  - relationship: userStatusOverview
-    type: microsoft.graph.deviceComplianceUserOverview
-    description: Device compliance users status overview Inherited from deviceCompliancePolicy
-  - relationship: deviceSettingStateSummaries
-    type: Collection(microsoft.graph.settingStateDeviceSummary)
-    description: Compliance Setting State Device Summary Inherited from deviceCompliancePolicy
-  - relationship: assignments
-    type: Collection(microsoft.graph.deviceCompliancePolicyAssignment)
-    description: The collection of assignments for this compliance policy. Inherited from deviceCompliancePolicy
+  - relationship: "scheduledActionsForRule"
+    type: "Collection(microsoft.graph.deviceComplianceScheduledActionForRule)"
+    description: "The list of scheduled action for this rule Inherited from deviceCompliancePolicy"
+  - relationship: "deviceStatuses"
+    type: "Collection(microsoft.graph.deviceComplianceDeviceStatus)"
+    description: "List of DeviceComplianceDeviceStatus. Inherited from deviceCompliancePolicy"
+  - relationship: "userStatuses"
+    type: "Collection(microsoft.graph.deviceComplianceUserStatus)"
+    description: "List of DeviceComplianceUserStatus. Inherited from deviceCompliancePolicy"
+  - relationship: "deviceStatusOverview"
+    type: "microsoft.graph.deviceComplianceDeviceOverview"
+    description: "Device compliance devices status overview Inherited from deviceCompliancePolicy"
+  - relationship: "userStatusOverview"
+    type: "microsoft.graph.deviceComplianceUserOverview"
+    description: "Device compliance users status overview Inherited from deviceCompliancePolicy"
+  - relationship: "deviceSettingStateSummaries"
+    type: "Collection(microsoft.graph.settingStateDeviceSummary)"
+    description: "Compliance Setting State Device Summary Inherited from deviceCompliancePolicy"
+  - relationship: "assignments"
+    type: "Collection(microsoft.graph.deviceCompliancePolicyAssignment)"
+    description: "The collection of assignments for this compliance policy. Inherited from deviceCompliancePolicy"

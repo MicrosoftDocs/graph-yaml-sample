@@ -3,7 +3,7 @@ uid: graph.sharepoint_site_usage_reports
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/sharepoint_site_usage_reports.md
 summary:
-  heading: SharePoint site usage reports
+  heading: "SharePoint site usage reports"
   intro: |
     You can use the SharePoint site usage reports to gain a high level view of the value you are getting from SharePoint in terms of the total number of files that users store in SharePoint sites, how many files are actively being used, and the storage consumed across all these sites. Then, you can drill into these reports to understand the trends and per site level details for all sites.
     

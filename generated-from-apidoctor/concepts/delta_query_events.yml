@@ -3,7 +3,7 @@ uid: graph.delta_query_events
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/delta_query_events.md
 summary:
-  heading: Get incremental changes to events in a calendar view
+  heading: "Get incremental changes to events in a calendar view"
   intro: |
     A calendar view is a collection of events in a date/time range from the default calendar (../me/calendarview) 
     or some other calendar of the user's. By using delta query, you can get 
@@ -45,7 +45,7 @@ summary:
 examples:
   - items:
     - Example to synchronize events in a calendar view:
-        heading: Example to synchronize events in a calendar view
+        heading: "Example to synchronize events in a calendar view"
         intro: |
           The following example shows a series of 3 requests to synchronize the user's default calendar in a specific time range. 
           There are 5 events in that calendar view.

@@ -3,20 +3,20 @@ uid: graph.chartdatalabels
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.chartdatalabels
 summary:
-  heading: ChartDataLabels resource type
+  heading: "ChartDataLabels resource type"
   intro: |
     Represents a collection of all the data labels on a chart point.
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [Get ChartDataLabels](xref:graph.chartdatalabels_get)
-    type: [WorkbookChartDataLabels](xref:graph.chartdatalabels)
-    description: Read properties and relationships of chartDataLabels object.
-  - method: [Update](xref:graph.chartdatalabels_update)
-    type: [WorkbookChartDataLabels](xref:graph.chartdatalabels)
-    description: Update ChartDataLabels object.
+  - method: "[Get ChartDataLabels](xref:graph.chartdatalabels_get)"
+    type: "[WorkbookChartDataLabels](xref:graph.chartdatalabels)"
+    description: "Read properties and relationships of chartDataLabels object."
+  - method: "[Update](xref:graph.chartdatalabels_update)"
+    type: "[WorkbookChartDataLabels](xref:graph.chartdatalabels)"
+    description: "Update ChartDataLabels object."
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -34,35 +34,35 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: position
-    type: String
-    description: DataLabelPosition value that represents the position of the data label. The possible values are: None, Center, InsideEnd, InsideBase, OutsideEnd, Left, Right, Top, Bottom, BestFit, Callout.
-  - property: separator
-    type: String
-    description: String representing the separator used for the data labels on a chart.
-  - property: showBubbleSize
-    type: Boolean
-    description: Boolean value representing if the data label bubble size is visible or not.
-  - property: showCategoryName
-    type: Boolean
-    description: Boolean value representing if the data label category name is visible or not.
-  - property: showLegendKey
-    type: Boolean
-    description: Boolean value representing if the data label legend key is visible or not.
-  - property: showPercentage
-    type: Boolean
-    description: Boolean value representing if the data label percentage is visible or not.
-  - property: showSeriesName
-    type: Boolean
-    description: Boolean value representing if the data label series name is visible or not.
-  - property: showValue
-    type: Boolean
-    description: Boolean value representing if the data label value is visible or not.
+  - property: "position"
+    type: "String"
+    description: "DataLabelPosition value that represents the position of the data label. The possible values are: None, Center, InsideEnd, InsideBase, OutsideEnd, Left, Right, Top, Bottom, BestFit, Callout."
+  - property: "separator"
+    type: "String"
+    description: "String representing the separator used for the data labels on a chart."
+  - property: "showBubbleSize"
+    type: "Boolean"
+    description: "Boolean value representing if the data label bubble size is visible or not."
+  - property: "showCategoryName"
+    type: "Boolean"
+    description: "Boolean value representing if the data label category name is visible or not."
+  - property: "showLegendKey"
+    type: "Boolean"
+    description: "Boolean value representing if the data label legend key is visible or not."
+  - property: "showPercentage"
+    type: "Boolean"
+    description: "Boolean value representing if the data label percentage is visible or not."
+  - property: "showSeriesName"
+    type: "Boolean"
+    description: "Boolean value representing if the data label series name is visible or not."
+  - property: "showValue"
+    type: "Boolean"
+    description: "Boolean value representing if the data label value is visible or not."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   list:
-  - relationship: format
-    type: microsoft.graph.workbookChartDataLabelFormat
-    description: Represents the format of chart data labels, which includes fill and font formatting. Read-only.
+  - relationship: "format"
+    type: "microsoft.graph.workbookChartDataLabelFormat"
+    description: "Represents the format of chart data labels, which includes fill and font formatting. Read-only."

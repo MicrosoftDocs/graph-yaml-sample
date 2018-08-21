@@ -3,20 +3,20 @@ uid: graph.intune_deviceconfig_deviceconfigurationdeviceoverview
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md
 summary:
-  heading: deviceConfigurationDeviceOverview resource type
+  heading: "deviceConfigurationDeviceOverview resource type"
   intro: |
     Not yet documented
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [Get deviceConfigurationDeviceOverview](xref:graph.intune_deviceconfig_deviceconfigurationdeviceoverview_get)
-    type: [deviceConfigurationDeviceOverview](xref:graph.intune_deviceconfig_deviceconfigurationdeviceoverview)
-    description: Read properties and relationships of the deviceConfigurationDeviceOverview object.
-  - method: [Update deviceConfigurationDeviceOverview](xref:graph.intune_deviceconfig_deviceconfigurationdeviceoverview_update)
-    type: [deviceConfigurationDeviceOverview](xref:graph.intune_deviceconfig_deviceconfigurationdeviceoverview)
-    description: Update the properties of a deviceConfigurationDeviceOverview object.
+  - method: "[Get deviceConfigurationDeviceOverview](xref:graph.intune_deviceconfig_deviceconfigurationdeviceoverview_get)"
+    type: "[deviceConfigurationDeviceOverview](xref:graph.intune_deviceconfig_deviceconfigurationdeviceoverview)"
+    description: "Read properties and relationships of the deviceConfigurationDeviceOverview object."
+  - method: "[Update deviceConfigurationDeviceOverview](xref:graph.intune_deviceconfig_deviceconfigurationdeviceoverview_update)"
+    type: "[deviceConfigurationDeviceOverview](xref:graph.intune_deviceconfig_deviceconfigurationdeviceoverview)"
+    description: "Update the properties of a deviceConfigurationDeviceOverview object."
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -35,33 +35,33 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: id
-    type: String
-    description: Key of the entity.
-  - property: pendingCount
-    type: Int32
-    description: Number of pending devices
-  - property: notApplicableCount
-    type: Int32
-    description: Number of not applicable devices
-  - property: successCount
-    type: Int32
-    description: Number of succeeded devices
-  - property: errorCount
-    type: Int32
-    description: Number of error devices
-  - property: failedCount
-    type: Int32
-    description: Number of failed devices
-  - property: lastUpdateDateTime
-    type: DateTimeOffset
-    description: Last update time
-  - property: configurationVersion
-    type: Int32
-    description: Version of the policy for that overview
+  - property: "id"
+    type: "String"
+    description: "Key of the entity."
+  - property: "pendingCount"
+    type: "Int32"
+    description: "Number of pending devices"
+  - property: "notApplicableCount"
+    type: "Int32"
+    description: "Number of not applicable devices"
+  - property: "successCount"
+    type: "Int32"
+    description: "Number of succeeded devices"
+  - property: "errorCount"
+    type: "Int32"
+    description: "Number of error devices"
+  - property: "failedCount"
+    type: "Int32"
+    description: "Number of failed devices"
+  - property: "lastUpdateDateTime"
+    type: "DateTimeOffset"
+    description: "Last update time"
+  - property: "configurationVersion"
+    type: "Int32"
+    description: "Version of the policy for that overview"
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

@@ -3,7 +3,7 @@ uid: graph.listitemversion
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/listitemversion.md
 summary:
-  heading: ListItemVersion resource type
+  heading: "ListItemVersion resource type"
   intro: |
     The **listItemVersion** resource represents a previous version of a [ListItem](xref:graph.listitem) resource.
   outro: |
@@ -15,7 +15,7 @@ summary:
     |[Get version][version-get]|`GET /sites/{site-id}/items/{item-id}/versions/{version-id}`
     |[Restore version][version-restore]|`POST /sites/{site-id}/items/{item-id}/versions/{version-id}/restore`
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   sampleCode: |
     ```json
     {
@@ -28,25 +28,25 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: id
-    type: String
-    description: The ID of the version. Read-only.
-  - property: lastModifiedBy
-    type: microsoft.graph.identitySet
-    description: Identity of the user which last modified the version. Read-only.
-  - property: lastModifiedDateTime
-    type: DateTimeOffset
-    description: Date and time the version was last modified. Read-only.
-  - property: published
-    type: microsoft.graph.publicationFacet
-    description: Indicates the publication status of this particular version. Read-only.
+  - property: "id"
+    type: "String"
+    description: "The ID of the version. Read-only."
+  - property: "lastModifiedBy"
+    type: "microsoft.graph.identitySet"
+    description: "Identity of the user which last modified the version. Read-only."
+  - property: "lastModifiedDateTime"
+    type: "DateTimeOffset"
+    description: "Date and time the version was last modified. Read-only."
+  - property: "published"
+    type: "microsoft.graph.publicationFacet"
+    description: "Indicates the publication status of this particular version. Read-only."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     The following table defines the relationships that the **driveItemVersion** resource has to other resources.
   list:
-  - relationship: fields
-    type: microsoft.graph.fieldValueSet
-    description: A collection of the fields and values for this version of the list item.
+  - relationship: "fields"
+    type: "microsoft.graph.fieldValueSet"
+    description: "A collection of the fields and values for this version of the list item."

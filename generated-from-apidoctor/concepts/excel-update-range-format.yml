@@ -3,17 +3,17 @@ uid: graph.excel-update-range-format
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/excel-update-range-format.md
 summary:
-  heading: Update a range format in Excel with Microsoft Graph
+  heading: "Update a range format in Excel with Microsoft Graph"
   intro: |
     The following examples demonstrate how to update properties of the [RangeFormat](xref:graph.rangeformat), [RangeFill](xref:graph.rangefill), and [RangeFont](xref:graph.rangefont) properties of a specified range.
     The result of this set of requests is a table with three cells formatted like the top three cells in the image below.
     ![Excel chart table with three cells whose format, fill, and font properties have been updated.](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/ExcelRangeFormatting.png)
 requestBody:
-  heading: Request
+  heading: "Request"
   intro: |
     This request updates the vertical alignment, row height, and column height of the first cell.
   request:
-      heading: request
+      heading: "request"
       sampleCode: |
         ```http
         PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$A$1')/format
@@ -28,7 +28,7 @@ requestBody:
         ```
         
 response:
-  heading: Response
+  heading: "Response"
   intro: |
     Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
     This request updates the font style, size, and color of the first cell.
@@ -244,7 +244,7 @@ response:
     ```
     
   request:
-      heading: request
+      heading: "request"
       sampleCode: |
         ```http
         HTTP/1.1 200 OK

@@ -3,29 +3,29 @@ uid: graph.intune_deviceconfig_devicecompliancesettingstate
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_devicecompliancesettingstate.md
 summary:
-  heading: deviceComplianceSettingState resource type
+  heading: "deviceComplianceSettingState resource type"
   intro: |
     Device compliance setting State for a given device.
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [List deviceComplianceSettingStates](xref:graph.intune_deviceconfig_devicecompliancesettingstate_list)
-    type: [deviceComplianceSettingState](xref:graph.intune_deviceconfig_devicecompliancesettingstate) collection
-    description: List properties and relationships of the deviceComplianceSettingState objects.
-  - method: [Get deviceComplianceSettingState](xref:graph.intune_deviceconfig_devicecompliancesettingstate_get)
-    type: [deviceComplianceSettingState](xref:graph.intune_deviceconfig_devicecompliancesettingstate)
-    description: Read properties and relationships of the deviceComplianceSettingState object.
-  - method: [Create deviceComplianceSettingState](xref:graph.intune_deviceconfig_devicecompliancesettingstate_create)
-    type: [deviceComplianceSettingState](xref:graph.intune_deviceconfig_devicecompliancesettingstate)
-    description: Create a new deviceComplianceSettingState object.
-  - method: [Delete deviceComplianceSettingState](xref:graph.intune_deviceconfig_devicecompliancesettingstate_delete)
-    type: None
-    description: Deletes a deviceComplianceSettingState.
-  - method: [Update deviceComplianceSettingState](xref:graph.intune_deviceconfig_devicecompliancesettingstate_update)
-    type: [deviceComplianceSettingState](xref:graph.intune_deviceconfig_devicecompliancesettingstate)
-    description: Update the properties of a deviceComplianceSettingState object.
+  - method: "[List deviceComplianceSettingStates](xref:graph.intune_deviceconfig_devicecompliancesettingstate_list)"
+    type: "[deviceComplianceSettingState](xref:graph.intune_deviceconfig_devicecompliancesettingstate) collection"
+    description: "List properties and relationships of the deviceComplianceSettingState objects."
+  - method: "[Get deviceComplianceSettingState](xref:graph.intune_deviceconfig_devicecompliancesettingstate_get)"
+    type: "[deviceComplianceSettingState](xref:graph.intune_deviceconfig_devicecompliancesettingstate)"
+    description: "Read properties and relationships of the deviceComplianceSettingState object."
+  - method: "[Create deviceComplianceSettingState](xref:graph.intune_deviceconfig_devicecompliancesettingstate_create)"
+    type: "[deviceComplianceSettingState](xref:graph.intune_deviceconfig_devicecompliancesettingstate)"
+    description: "Create a new deviceComplianceSettingState object."
+  - method: "[Delete deviceComplianceSettingState](xref:graph.intune_deviceconfig_devicecompliancesettingstate_delete)"
+    type: "None"
+    description: "Deletes a deviceComplianceSettingState."
+  - method: "[Update deviceComplianceSettingState](xref:graph.intune_deviceconfig_devicecompliancesettingstate_update)"
+    type: "[deviceComplianceSettingState](xref:graph.intune_deviceconfig_devicecompliancesettingstate)"
+    description: "Update the properties of a deviceComplianceSettingState object."
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -48,45 +48,45 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: id
-    type: String
-    description: Key of the entity
-  - property: setting
-    type: String
-    description: The setting class name and property name.
-  - property: settingName
-    type: String
-    description: The Setting Name that is being reported
-  - property: deviceId
-    type: String
-    description: The Device Id that is being reported
-  - property: deviceName
-    type: String
-    description: The Device Name that is being reported
-  - property: userId
-    type: String
-    description: The user Id that is being reported
-  - property: userEmail
-    type: String
-    description: The User email address that is being reported
-  - property: userName
-    type: String
-    description: The User Name that is being reported
-  - property: userPrincipalName
-    type: String
-    description: The User PrincipalName that is being reported
-  - property: deviceModel
-    type: String
-    description: The device model that is being reported
-  - property: state
-    type: microsoft.graph.complianceStatus
-    description: The compliance state of the setting. The possible values are: unknown, notApplicable, compliant, remediated, nonCompliant, error, conflict.
-  - property: complianceGracePeriodExpirationDateTime
-    type: DateTimeOffset
-    description: The DateTime when device compliance grace period expires
+  - property: "id"
+    type: "String"
+    description: "Key of the entity"
+  - property: "setting"
+    type: "String"
+    description: "The setting class name and property name."
+  - property: "settingName"
+    type: "String"
+    description: "The Setting Name that is being reported"
+  - property: "deviceId"
+    type: "String"
+    description: "The Device Id that is being reported"
+  - property: "deviceName"
+    type: "String"
+    description: "The Device Name that is being reported"
+  - property: "userId"
+    type: "String"
+    description: "The user Id that is being reported"
+  - property: "userEmail"
+    type: "String"
+    description: "The User email address that is being reported"
+  - property: "userName"
+    type: "String"
+    description: "The User Name that is being reported"
+  - property: "userPrincipalName"
+    type: "String"
+    description: "The User PrincipalName that is being reported"
+  - property: "deviceModel"
+    type: "String"
+    description: "The device model that is being reported"
+  - property: "state"
+    type: "microsoft.graph.complianceStatus"
+    description: "The compliance state of the setting. The possible values are: unknown, notApplicable, compliant, remediated, nonCompliant, error, conflict."
+  - property: "complianceGracePeriodExpirationDateTime"
+    type: "DateTimeOffset"
+    description: "The DateTime when device compliance grace period expires"
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

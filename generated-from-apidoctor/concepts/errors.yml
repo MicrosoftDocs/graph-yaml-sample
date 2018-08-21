@@ -3,7 +3,7 @@ uid: graph.errors
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/errors.md
 summary:
-  heading: Microsoft Graph error responses and resource types
+  heading: "Microsoft Graph error responses and resource types"
   intro: |
     Errors in Microsoft Graph are returned using standard HTTP status codes, as well as a JSON error
     response object.
@@ -50,7 +50,7 @@ summary:
     ```
     
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     The error resource is composed of these resources:
   sampleCode: |

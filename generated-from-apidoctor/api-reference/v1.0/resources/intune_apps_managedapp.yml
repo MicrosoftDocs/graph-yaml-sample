@@ -3,21 +3,21 @@ uid: graph.intune_apps_managedapp
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_apps_managedapp.md
 summary:
-  heading: managedApp resource type
+  heading: "managedApp resource type"
   intro: |
     Abstract class that contains properties and inherited properties for apps that you can manage with an Intune app protection policy.
     Inherits from [mobileApp](xref:graph.intune_apps_mobileapp)
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [List managedApps](xref:graph.intune_apps_managedapp_list)
-    type: [managedApp](xref:graph.intune_apps_managedapp) collection
-    description: List properties and relationships of the managedApp objects.
-  - method: [Get managedApp](xref:graph.intune_apps_managedapp_get)
-    type: [managedApp](xref:graph.intune_apps_managedapp)
-    description: Read properties and relationships of the managedApp object.
+  - method: "[List managedApps](xref:graph.intune_apps_managedapp_list)"
+    type: "[managedApp](xref:graph.intune_apps_managedapp) collection"
+    description: "List properties and relationships of the managedApp objects."
+  - method: "[Get managedApp](xref:graph.intune_apps_managedapp_get)"
+    type: "[managedApp](xref:graph.intune_apps_managedapp)"
+    description: "Read properties and relationships of the managedApp object."
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -48,62 +48,62 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: id
-    type: String
-    description: Key of the entity. Inherited from mobileApp
-  - property: displayName
-    type: String
-    description: The admin provided or imported title of the app. Inherited from mobileApp
-  - property: description
-    type: String
-    description: The description of the app. Inherited from mobileApp
-  - property: publisher
-    type: String
-    description: The publisher of the app. Inherited from mobileApp
-  - property: largeIcon
-    type: microsoft.graph.mimeContent
-    description: The large icon, to be displayed in the app details and used for upload of the icon. Inherited from mobileApp
-  - property: createdDateTime
-    type: DateTimeOffset
-    description: The date and time the app was created. Inherited from mobileApp
-  - property: lastModifiedDateTime
-    type: DateTimeOffset
-    description: The date and time the app was last modified. Inherited from mobileApp
-  - property: isFeatured
-    type: Boolean
-    description: The value indicating whether the app is marked as featured by the admin. Inherited from mobileApp
-  - property: privacyInformationUrl
-    type: String
-    description: The privacy statement Url. Inherited from mobileApp
-  - property: informationUrl
-    type: String
-    description: The more information Url. Inherited from mobileApp
-  - property: owner
-    type: String
-    description: The owner of the app. Inherited from mobileApp
-  - property: developer
-    type: String
-    description: The developer of the app. Inherited from mobileApp
-  - property: notes
-    type: String
-    description: Notes for the app. Inherited from mobileApp
-  - property: publishingState
-    type: microsoft.graph.mobileAppPublishingState
-    description: The publishing state for the app. The app cannot be assigned unless the app is published. Inherited from mobileApp. The possible values are: notPublished, processing, published.
-  - property: appAvailability
-    type: microsoft.graph.managedAppAvailability
-    description: The Application's availability. The possible values are: global, lineOfBusiness.
-  - property: version
-    type: String
-    description: The Application's version.
+  - property: "id"
+    type: "String"
+    description: "Key of the entity. Inherited from mobileApp"
+  - property: "displayName"
+    type: "String"
+    description: "The admin provided or imported title of the app. Inherited from mobileApp"
+  - property: "description"
+    type: "String"
+    description: "The description of the app. Inherited from mobileApp"
+  - property: "publisher"
+    type: "String"
+    description: "The publisher of the app. Inherited from mobileApp"
+  - property: "largeIcon"
+    type: "microsoft.graph.mimeContent"
+    description: "The large icon, to be displayed in the app details and used for upload of the icon. Inherited from mobileApp"
+  - property: "createdDateTime"
+    type: "DateTimeOffset"
+    description: "The date and time the app was created. Inherited from mobileApp"
+  - property: "lastModifiedDateTime"
+    type: "DateTimeOffset"
+    description: "The date and time the app was last modified. Inherited from mobileApp"
+  - property: "isFeatured"
+    type: "Boolean"
+    description: "The value indicating whether the app is marked as featured by the admin. Inherited from mobileApp"
+  - property: "privacyInformationUrl"
+    type: "String"
+    description: "The privacy statement Url. Inherited from mobileApp"
+  - property: "informationUrl"
+    type: "String"
+    description: "The more information Url. Inherited from mobileApp"
+  - property: "owner"
+    type: "String"
+    description: "The owner of the app. Inherited from mobileApp"
+  - property: "developer"
+    type: "String"
+    description: "The developer of the app. Inherited from mobileApp"
+  - property: "notes"
+    type: "String"
+    description: "Notes for the app. Inherited from mobileApp"
+  - property: "publishingState"
+    type: "microsoft.graph.mobileAppPublishingState"
+    description: "The publishing state for the app. The app cannot be assigned unless the app is published. Inherited from mobileApp. The possible values are: notPublished, processing, published."
+  - property: "appAvailability"
+    type: "microsoft.graph.managedAppAvailability"
+    description: "The Application's availability. The possible values are: global, lineOfBusiness."
+  - property: "version"
+    type: "String"
+    description: "The Application's version."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   list:
-  - relationship: categories
-    type: Collection(microsoft.graph.mobileAppCategory)
-    description: The list of categories for this app. Inherited from mobileApp
-  - relationship: assignments
-    type: Collection(microsoft.graph.mobileAppAssignment)
-    description: The list of group assignments for this mobile app. Inherited from mobileApp
+  - relationship: "categories"
+    type: "Collection(microsoft.graph.mobileAppCategory)"
+    description: "The list of categories for this app. Inherited from mobileApp"
+  - relationship: "assignments"
+    type: "Collection(microsoft.graph.mobileAppAssignment)"
+    description: "The list of group assignments for this mobile app. Inherited from mobileApp"

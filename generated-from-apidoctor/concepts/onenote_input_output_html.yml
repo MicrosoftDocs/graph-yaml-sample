@@ -3,7 +3,7 @@ uid: graph.onenote_input_output_html
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/onenote_input_output_html.md
 summary:
-  heading: Input and output HTML in OneNote pages
+  heading: "Input and output HTML in OneNote pages"
   intro: |
     The HTML that defines the page content and structure when you [create](xref:graph.onenote-create-page) or [update](xref:graph.onenote_update_page) a OneNote page is called *input HTML*. 
     The HTML that's returned when you [get page content](xref:graph.onenote-get-content) is called *output HTML*. Output HTML won't be the same as input HTML.

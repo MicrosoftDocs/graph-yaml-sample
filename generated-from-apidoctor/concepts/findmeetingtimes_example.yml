@@ -3,7 +3,7 @@ uid: graph.findmeetingtimes_example
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/findmeetingtimes_example.md
 summary:
-  heading: Find possible meeting times on the Outlook calendar
+  heading: "Find possible meeting times on the Outlook calendar"
   intro: |
     In a workplace or school, looking for a common time and place to meet often incurs overhead. Microsoft Graph applications can use 
     [findMeetingTimes](xref:graph.user_findmeetingtimes) to identify any possible meeting times that satisfy time, location, and other constraints.   
@@ -24,7 +24,7 @@ summary:
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         intro: |
           The following example shows how to use **findMeetingTimes** to return possible times for 2 users to meet for a couple of hours, taking into 
           account the users' free/busy and work schedules, and the attendee being away for part of the time. Because there are only 2 users for this meeting, suggestions 

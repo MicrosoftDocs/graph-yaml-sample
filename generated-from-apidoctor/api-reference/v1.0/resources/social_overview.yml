@@ -3,7 +3,7 @@ uid: graph.social_overview
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/social_overview.md
 summary:
-  heading: People overview
+  heading: "People overview"
   intro: |
     Microsoft Graph provides access to useful people data.
     You can use the [person](xref:graph.person) resource and the People API to aggregate information

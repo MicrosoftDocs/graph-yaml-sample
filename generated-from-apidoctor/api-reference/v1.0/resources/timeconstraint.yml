@@ -3,11 +3,11 @@ uid: graph.timeconstraint
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/timeconstraint.md
 summary:
-  heading: timeConstraint resource type
+  heading: "timeConstraint resource type"
   intro: |
     Restricts meeting time suggestions to certain hours and days of the week according to the specified nature of activity and open time slots.
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource
   sampleCode: |
@@ -19,11 +19,11 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: activityDomain
-    type: microsoft.graph.activityDomain
-    description: The nature of the activity, optional. The possible values are: work, personal, unrestricted, or unknown.
-  - property: timeslots
-    type: Collection(microsoft.graph.timeSlot)
-    description: An array of time periods.
+  - property: "activityDomain"
+    type: "microsoft.graph.activityDomain"
+    description: "The nature of the activity, optional. The possible values are: work, personal, unrestricted, or unknown."
+  - property: "timeslots"
+    type: "Collection(microsoft.graph.timeSlot)"
+    description: "An array of time periods."

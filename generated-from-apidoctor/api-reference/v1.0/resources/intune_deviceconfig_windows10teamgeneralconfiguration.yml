@@ -3,30 +3,30 @@ uid: graph.intune_deviceconfig_windows10teamgeneralconfiguration
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_windows10teamgeneralconfiguration.md
 summary:
-  heading: windows10TeamGeneralConfiguration resource type
+  heading: "windows10TeamGeneralConfiguration resource type"
   intro: |
     This topic provides descriptions of the declared methods, properties and relationships exposed by the windows10TeamGeneralConfiguration resource.
     Inherits from [deviceConfiguration](xref:graph.intune_deviceconfig_deviceconfiguration)
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [List windows10TeamGeneralConfigurations](xref:graph.intune_deviceconfig_windows10teamgeneralconfiguration_list)
-    type: [windows10TeamGeneralConfiguration](xref:graph.intune_deviceconfig_windows10teamgeneralconfiguration) collection
-    description: List properties and relationships of the windows10TeamGeneralConfiguration objects.
-  - method: [Get windows10TeamGeneralConfiguration](xref:graph.intune_deviceconfig_windows10teamgeneralconfiguration_get)
-    type: [windows10TeamGeneralConfiguration](xref:graph.intune_deviceconfig_windows10teamgeneralconfiguration)
-    description: Read properties and relationships of the windows10TeamGeneralConfiguration object.
-  - method: [Create windows10TeamGeneralConfiguration](xref:graph.intune_deviceconfig_windows10teamgeneralconfiguration_create)
-    type: [windows10TeamGeneralConfiguration](xref:graph.intune_deviceconfig_windows10teamgeneralconfiguration)
-    description: Create a new windows10TeamGeneralConfiguration object.
-  - method: [Delete windows10TeamGeneralConfiguration](xref:graph.intune_deviceconfig_windows10teamgeneralconfiguration_delete)
-    type: None
-    description: Deletes a windows10TeamGeneralConfiguration.
-  - method: [Update windows10TeamGeneralConfiguration](xref:graph.intune_deviceconfig_windows10teamgeneralconfiguration_update)
-    type: [windows10TeamGeneralConfiguration](xref:graph.intune_deviceconfig_windows10teamgeneralconfiguration)
-    description: Update the properties of a windows10TeamGeneralConfiguration object.
+  - method: "[List windows10TeamGeneralConfigurations](xref:graph.intune_deviceconfig_windows10teamgeneralconfiguration_list)"
+    type: "[windows10TeamGeneralConfiguration](xref:graph.intune_deviceconfig_windows10teamgeneralconfiguration) collection"
+    description: "List properties and relationships of the windows10TeamGeneralConfiguration objects."
+  - method: "[Get windows10TeamGeneralConfiguration](xref:graph.intune_deviceconfig_windows10teamgeneralconfiguration_get)"
+    type: "[windows10TeamGeneralConfiguration](xref:graph.intune_deviceconfig_windows10teamgeneralconfiguration)"
+    description: "Read properties and relationships of the windows10TeamGeneralConfiguration object."
+  - method: "[Create windows10TeamGeneralConfiguration](xref:graph.intune_deviceconfig_windows10teamgeneralconfiguration_create)"
+    type: "[windows10TeamGeneralConfiguration](xref:graph.intune_deviceconfig_windows10teamgeneralconfiguration)"
+    description: "Create a new windows10TeamGeneralConfiguration object."
+  - method: "[Delete windows10TeamGeneralConfiguration](xref:graph.intune_deviceconfig_windows10teamgeneralconfiguration_delete)"
+    type: "None"
+    description: "Deletes a windows10TeamGeneralConfiguration."
+  - method: "[Update windows10TeamGeneralConfiguration](xref:graph.intune_deviceconfig_windows10teamgeneralconfiguration_update)"
+    type: "[windows10TeamGeneralConfiguration](xref:graph.intune_deviceconfig_windows10teamgeneralconfiguration)"
+    description: "Update the properties of a windows10TeamGeneralConfiguration object."
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -63,104 +63,104 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: id
-    type: String
-    description: Key of the entity. Inherited from deviceConfiguration
-  - property: lastModifiedDateTime
-    type: DateTimeOffset
-    description: DateTime the object was last modified. Inherited from deviceConfiguration
-  - property: createdDateTime
-    type: DateTimeOffset
-    description: DateTime the object was created. Inherited from deviceConfiguration
-  - property: description
-    type: String
-    description: Admin provided description of the Device Configuration. Inherited from deviceConfiguration
-  - property: displayName
-    type: String
-    description: Admin provided name of the device configuration. Inherited from deviceConfiguration
-  - property: version
-    type: Int32
-    description: Version of the device configuration. Inherited from deviceConfiguration
-  - property: azureOperationalInsightsBlockTelemetry
-    type: Boolean
-    description: Indicates whether or not to Block Azure Operational Insights.
-  - property: azureOperationalInsightsWorkspaceId
-    type: String
-    description: The Azure Operational Insights workspace id.
-  - property: azureOperationalInsightsWorkspaceKey
-    type: String
-    description: The Azure Operational Insights Workspace key.
-  - property: connectAppBlockAutoLaunch
-    type: Boolean
-    description: Specifies whether to automatically launch the Connect app whenever a projection is initiated.
-  - property: maintenanceWindowBlocked
-    type: Boolean
-    description: Indicates whether or not to Block setting a maintenance window for device updates.
-  - property: maintenanceWindowDurationInHours
-    type: Int32
-    description: Maintenance window duration for device updates. Valid values 0 to 5
-  - property: maintenanceWindowStartTime
-    type: TimeOfDay
-    description: Maintenance window start time for device updates.
-  - property: miracastChannel
-    type: microsoft.graph.miracastChannel
-    description: The channel. The possible values are: userDefined, one, two, three, four, five, six, seven, eight, nine, ten, eleven, thirtySix, forty, fortyFour, fortyEight, oneHundredFortyNine, oneHundredFiftyThree, oneHundredFiftySeven, oneHundredSixtyOne, oneHundredSixtyFive.
-  - property: miracastBlocked
-    type: Boolean
-    description: Indicates whether or not to Block wireless projection.
-  - property: miracastRequirePin
-    type: Boolean
-    description: Indicates whether or not to require a pin for wireless projection.
-  - property: settingsBlockMyMeetingsAndFiles
-    type: Boolean
-    description: Specifies whether to disable the "My meetings and files" feature in the Start menu, which shows the signed-in user's meetings and files from Office 365.
-  - property: settingsBlockSessionResume
-    type: Boolean
-    description: Specifies whether to allow the ability to resume a session when the session times out.
-  - property: settingsBlockSigninSuggestions
-    type: Boolean
-    description: Specifies whether to disable auto-populating of the sign-in dialog with invitees from scheduled meetings.
-  - property: settingsDefaultVolume
-    type: Int32
-    description: Specifies the default volume value for a new session. Permitted values are 0-100. The default is 45. Valid values 0 to 100
-  - property: settingsScreenTimeoutInMinutes
-    type: Int32
-    description: Specifies the number of minutes until the Hub screen turns off.
-  - property: settingsSessionTimeoutInMinutes
-    type: Int32
-    description: Specifies the number of minutes until the session times out.
-  - property: settingsSleepTimeoutInMinutes
-    type: Int32
-    description: Specifies the number of minutes until the Hub enters sleep mode.
-  - property: welcomeScreenBlockAutomaticWakeUp
-    type: Boolean
-    description: Indicates whether or not to Block the welcome screen from waking up automatically when someone enters the room.
-  - property: welcomeScreenBackgroundImageUrl
-    type: String
-    description: The welcome screen background image URL. The URL must use the HTTPS protocol and return a PNG image.
-  - property: welcomeScreenMeetingInformation
-    type: microsoft.graph.welcomeScreenMeetingInformation
-    description: The welcome screen meeting information shown. The possible values are: userDefined, showOrganizerAndTimeOnly, showOrganizerAndTimeAndSubject.
+  - property: "id"
+    type: "String"
+    description: "Key of the entity. Inherited from deviceConfiguration"
+  - property: "lastModifiedDateTime"
+    type: "DateTimeOffset"
+    description: "DateTime the object was last modified. Inherited from deviceConfiguration"
+  - property: "createdDateTime"
+    type: "DateTimeOffset"
+    description: "DateTime the object was created. Inherited from deviceConfiguration"
+  - property: "description"
+    type: "String"
+    description: "Admin provided description of the Device Configuration. Inherited from deviceConfiguration"
+  - property: "displayName"
+    type: "String"
+    description: "Admin provided name of the device configuration. Inherited from deviceConfiguration"
+  - property: "version"
+    type: "Int32"
+    description: "Version of the device configuration. Inherited from deviceConfiguration"
+  - property: "azureOperationalInsightsBlockTelemetry"
+    type: "Boolean"
+    description: "Indicates whether or not to Block Azure Operational Insights."
+  - property: "azureOperationalInsightsWorkspaceId"
+    type: "String"
+    description: "The Azure Operational Insights workspace id."
+  - property: "azureOperationalInsightsWorkspaceKey"
+    type: "String"
+    description: "The Azure Operational Insights Workspace key."
+  - property: "connectAppBlockAutoLaunch"
+    type: "Boolean"
+    description: "Specifies whether to automatically launch the Connect app whenever a projection is initiated."
+  - property: "maintenanceWindowBlocked"
+    type: "Boolean"
+    description: "Indicates whether or not to Block setting a maintenance window for device updates."
+  - property: "maintenanceWindowDurationInHours"
+    type: "Int32"
+    description: "Maintenance window duration for device updates. Valid values 0 to 5"
+  - property: "maintenanceWindowStartTime"
+    type: "TimeOfDay"
+    description: "Maintenance window start time for device updates."
+  - property: "miracastChannel"
+    type: "microsoft.graph.miracastChannel"
+    description: "The channel. The possible values are: userDefined, one, two, three, four, five, six, seven, eight, nine, ten, eleven, thirtySix, forty, fortyFour, fortyEight, oneHundredFortyNine, oneHundredFiftyThree, oneHundredFiftySeven, oneHundredSixtyOne, oneHundredSixtyFive."
+  - property: "miracastBlocked"
+    type: "Boolean"
+    description: "Indicates whether or not to Block wireless projection."
+  - property: "miracastRequirePin"
+    type: "Boolean"
+    description: "Indicates whether or not to require a pin for wireless projection."
+  - property: "settingsBlockMyMeetingsAndFiles"
+    type: "Boolean"
+    description: "Specifies whether to disable the "My meetings and files" feature in the Start menu, which shows the signed-in user's meetings and files from Office 365."
+  - property: "settingsBlockSessionResume"
+    type: "Boolean"
+    description: "Specifies whether to allow the ability to resume a session when the session times out."
+  - property: "settingsBlockSigninSuggestions"
+    type: "Boolean"
+    description: "Specifies whether to disable auto-populating of the sign-in dialog with invitees from scheduled meetings."
+  - property: "settingsDefaultVolume"
+    type: "Int32"
+    description: "Specifies the default volume value for a new session. Permitted values are 0-100. The default is 45. Valid values 0 to 100"
+  - property: "settingsScreenTimeoutInMinutes"
+    type: "Int32"
+    description: "Specifies the number of minutes until the Hub screen turns off."
+  - property: "settingsSessionTimeoutInMinutes"
+    type: "Int32"
+    description: "Specifies the number of minutes until the session times out."
+  - property: "settingsSleepTimeoutInMinutes"
+    type: "Int32"
+    description: "Specifies the number of minutes until the Hub enters sleep mode."
+  - property: "welcomeScreenBlockAutomaticWakeUp"
+    type: "Boolean"
+    description: "Indicates whether or not to Block the welcome screen from waking up automatically when someone enters the room."
+  - property: "welcomeScreenBackgroundImageUrl"
+    type: "String"
+    description: "The welcome screen background image URL. The URL must use the HTTPS protocol and return a PNG image."
+  - property: "welcomeScreenMeetingInformation"
+    type: "microsoft.graph.welcomeScreenMeetingInformation"
+    description: "The welcome screen meeting information shown. The possible values are: userDefined, showOrganizerAndTimeOnly, showOrganizerAndTimeAndSubject."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   list:
-  - relationship: assignments
-    type: Collection(microsoft.graph.deviceConfigurationAssignment)
-    description: The list of assignments for the device configuration profile. Inherited from deviceConfiguration
-  - relationship: deviceStatuses
-    type: Collection(microsoft.graph.deviceConfigurationDeviceStatus)
-    description: Device configuration installation status by device. Inherited from deviceConfiguration
-  - relationship: userStatuses
-    type: Collection(microsoft.graph.deviceConfigurationUserStatus)
-    description: Device configuration installation status by user. Inherited from deviceConfiguration
-  - relationship: deviceStatusOverview
-    type: microsoft.graph.deviceConfigurationDeviceOverview
-    description: Device Configuration devices status overview Inherited from deviceConfiguration
-  - relationship: userStatusOverview
-    type: microsoft.graph.deviceConfigurationUserOverview
-    description: Device Configuration users status overview Inherited from deviceConfiguration
-  - relationship: deviceSettingStateSummaries
-    type: Collection(microsoft.graph.settingStateDeviceSummary)
-    description: Device Configuration Setting State Device Summary Inherited from deviceConfiguration
+  - relationship: "assignments"
+    type: "Collection(microsoft.graph.deviceConfigurationAssignment)"
+    description: "The list of assignments for the device configuration profile. Inherited from deviceConfiguration"
+  - relationship: "deviceStatuses"
+    type: "Collection(microsoft.graph.deviceConfigurationDeviceStatus)"
+    description: "Device configuration installation status by device. Inherited from deviceConfiguration"
+  - relationship: "userStatuses"
+    type: "Collection(microsoft.graph.deviceConfigurationUserStatus)"
+    description: "Device configuration installation status by user. Inherited from deviceConfiguration"
+  - relationship: "deviceStatusOverview"
+    type: "microsoft.graph.deviceConfigurationDeviceOverview"
+    description: "Device Configuration devices status overview Inherited from deviceConfiguration"
+  - relationship: "userStatusOverview"
+    type: "microsoft.graph.deviceConfigurationUserOverview"
+    description: "Device Configuration users status overview Inherited from deviceConfiguration"
+  - relationship: "deviceSettingStateSummaries"
+    type: "Collection(microsoft.graph.settingStateDeviceSummary)"
+    description: "Device Configuration Setting State Device Summary Inherited from deviceConfiguration"

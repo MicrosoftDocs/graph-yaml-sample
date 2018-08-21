@@ -3,7 +3,7 @@ uid: graph.singlevaluelegacyextendedproperty_get
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/singlevaluelegacyextendedproperty_get.md
 summary:
-  heading: Get singleValueLegacyExtendedProperty
+  heading: "Get singleValueLegacyExtendedProperty"
   intro: |
     You can get a single resource instance expanded with a specific extended property, or a collection of resource instances
     that include extended properties matching a filter.
@@ -33,7 +33,7 @@ summary:
     See [Extended properties overview](xref:graph.extended-properties-overview) for more information about when to use 
     open extensions or extended properties, and how to specify extended properties.
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     One of the following permissions is required to call this API, depending on the resource you're
     getting. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
@@ -44,7 +44,7 @@ permissions:
     * Group.Read.All 
     
 httpRequest:
-  heading: HTTP request
+  heading: "HTTP request"
   outro: |
     #### GET a resource instance expanded with an extended property that matches a filter
     Get a resource instance expanded with the extended property which matches a filter on the 
@@ -109,26 +109,26 @@ httpRequest:
     ```
     
 parameters:
-  heading: Parameters
+  heading: "Parameters"
   list:
-  - name: id_value
-    value: String
-    description: The ID of the extended property to match. It must follow one of the supported formats. See Outlook extended properties overview for more information. Required.
-  - name: property_value
-    value: String
-    description: The value of the extended property to match. Required where listed in the HTTP request section above. If {property_value} is not a string, make sure you explicitly cast ep/value to the appropriate Edm data type when comparing it with {property_value}. See request 4 below for examples.
+  - name: "id_value"
+    value: "String"
+    description: "The ID of the extended property to match. It must follow one of the supported formats. See Outlook extended properties overview for more information. Required."
+  - name: "property_value"
+    value: "String"
+    description: "The value of the extended property to match. Required where listed in the HTTP request section above. If {property_value} is not a string, make sure you explicitly cast ep/value to the appropriate Edm data type when comparing it with {property_value}. See request 4 below for examples."
 requestHeaders:
-  heading: Request headers
+  heading: "Request headers"
   list:
-  - name: Authorization
-    value: 
-    description: Bearer {token}. Required.
+  - name: "Authorization"
+    value: ""
+    description: "Bearer {token}. Required."
 requestBody:
-  heading: Request body
+  heading: "Request body"
   intro: |
     Do not supply a request body for this method.
 response:
-  heading: Response
+  heading: "Response"
   intro: |
     If successful, this method returns a `200 OK` response code.
   outro: |
@@ -137,7 +137,7 @@ response:
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         outro: |
           #### Request 1
           The first example gets and expands the specified message by including a single-value extended property. The filter returns the 

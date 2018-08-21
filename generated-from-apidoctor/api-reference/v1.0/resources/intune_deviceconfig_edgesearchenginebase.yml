@@ -3,11 +3,11 @@ uid: graph.intune_deviceconfig_edgesearchenginebase
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_edgesearchenginebase.md
 summary:
-  heading: edgeSearchEngineBase resource type
+  heading: "edgeSearchEngineBase resource type"
   intro: |
     Allows IT admins to set a default search engine for MDM-Controlled devices. Users can override this and change their default search engine provided the AllowSearchEngineCustomization policy is not set.
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -18,8 +18,8 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

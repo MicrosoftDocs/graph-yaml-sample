@@ -3,7 +3,7 @@ uid: graph.aspnetmvc
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/aspnetmvc.md
 summary:
-  heading: Get started with Microsoft Graph in an ASP.NET 4.6 MVC app
+  heading: "Get started with Microsoft Graph in an ASP.NET 4.6 MVC app"
   intro: |
     This article describes the tasks required to get an access token from the Azure AD v2.0 endpoint and call Microsoft Graph. It walks you through building the [Microsoft Graph Connect Sample for ASP.NET 4.6](https://github.com/microsoftgraph/aspnet-connect-sample) and explains the main concepts that you implement to use Microsoft Graph.
     The following image shows the app you'll create. 
@@ -11,7 +11,7 @@ summary:
     The [Azure AD v2.0 endpoint](https://azure.microsoft.com/en-us/documentation/articles/active-directory-appmodel-v2-overview) lets users sign in with a Microsoft account (MSA) or a work or school account. The app uses the [ASP.Net OpenID Connect OWIN middleware](https://www.nuget.org/packages/Microsoft.Owin.Security.OpenIdConnect/) and the [Microsoft Authentication Library (MSAL) for .NET](https://www.nuget.org/packages/Microsoft.Identity.Client) for sign in and token management.
     **Don't feel like building an app?** Use the [Microsoft Graph quick start](https://developer.microsoft.com/en-us/graph/quick-start) to get up and running fast. Also note that we have a [REST version of this sample](https://github.com/microsoftgraph/aspnet-connect-rest-sample).
 permissions:
-  heading: Prerequisites
+  heading: "Prerequisites"
   intro: |
     To get started, you'll need: 
     

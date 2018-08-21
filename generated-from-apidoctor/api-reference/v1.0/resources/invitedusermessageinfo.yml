@@ -3,11 +3,11 @@ uid: graph.invitedusermessageinfo
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/invitedusermessageinfo.md
 summary:
-  heading: Configuring the invitation message
+  heading: "Configuring the invitation message"
   intro: |
     The invitedUserMessageInfo object allows you to configure the [invitation](xref:graph.invitation) message.
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource
   sampleCode: |
@@ -20,14 +20,14 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: ccRecipients
-    type: Collection(microsoft.graph.recipient)
-    description: Additional recipients the invitation message should be sent to. Currently only 1 additional recipient is supported.
-  - property: customizedMessageBody
-    type: String
-    description: Customized message body you want to send if you don't want the default message.
-  - property: messageLanguage
-    type: String
-    description: The language you want to send the default message in. If the customizedMessageBody is specified, this property is ignored, and the message is sent using the customizedMessageBody. The language format should be in ISO 639. The default is en-US.
+  - property: "ccRecipients"
+    type: "Collection(microsoft.graph.recipient)"
+    description: "Additional recipients the invitation message should be sent to. Currently only 1 additional recipient is supported."
+  - property: "customizedMessageBody"
+    type: "String"
+    description: "Customized message body you want to send if you don't want the default message."
+  - property: "messageLanguage"
+    type: "String"
+    description: "The language you want to send the default message in. If the customizedMessageBody is specified, this property is ignored, and the message is sent using the customizedMessageBody. The language format should be in ISO 639. The default is en-US."

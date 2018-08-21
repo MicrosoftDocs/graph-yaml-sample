@@ -3,11 +3,11 @@ uid: graph.physicaladdress
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/physicaladdress.md
 summary:
-  heading: physicalAddress resource type
+  heading: "physicalAddress resource type"
   intro: |
     Represents the street address of a resource such as a contact or event.
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource
   sampleCode: |
@@ -22,20 +22,20 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: city
-    type: String
-    description: The city.
-  - property: countryOrRegion
-    type: String
-    description: The country or region. It's a free-format string value, for example, "United States".
-  - property: postalCode
-    type: String
-    description: The postal code.
-  - property: state
-    type: String
-    description: The state.
-  - property: street
-    type: String
-    description: The street.
+  - property: "city"
+    type: "String"
+    description: "The city."
+  - property: "countryOrRegion"
+    type: "String"
+    description: "The country or region. It's a free-format string value, for example, "United States"."
+  - property: "postalCode"
+    type: "String"
+    description: "The postal code."
+  - property: "state"
+    type: "String"
+    description: "The state."
+  - property: "street"
+    type: "String"
+    description: "The street."

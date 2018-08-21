@@ -3,7 +3,7 @@ uid: graph.resource
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/resource.md
 summary:
-  heading: OneNoteResource resource type
+  heading: "OneNoteResource resource type"
   intro: |
     An image or other file resource on a OneNote page. 
     You can get the binary data of a resource, but getting a JSON representation of a resource object or a resource collection is not supported.
@@ -35,21 +35,21 @@ summary:
         type="media-type" ... />
 
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [Get resource binary data](xref:graph.resource_get)
-    type: Stream
-    description: Retrieve the binary data of a file or image resource.
+  - method: "[Get resource binary data](xref:graph.resource_get)"
+    type: "Stream"
+    description: "Retrieve the binary data of a file or image resource."
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: content
-    type: Stream
-    description: The content stream
-  - property: contentUrl
-    type: String
-    description: The URL for downloading the content
+  - property: "content"
+    type: "Stream"
+    description: "The content stream"
+  - property: "contentUrl"
+    type: "String"
+    description: "The URL for downloading the content"
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None.

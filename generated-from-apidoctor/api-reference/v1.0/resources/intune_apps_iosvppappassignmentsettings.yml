@@ -3,12 +3,12 @@ uid: graph.intune_apps_iosvppappassignmentsettings
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_apps_iosvppappassignmentsettings.md
 summary:
-  heading: iosVppAppAssignmentSettings resource type
+  heading: "iosVppAppAssignmentSettings resource type"
   intro: |
     Contains properties used to assign an iOS VPP mobile app to a group.
     Inherits from [mobileAppAssignmentSettings](xref:graph.intune_apps_mobileappassignmentsettings)
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -21,15 +21,15 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: useDeviceLicensing
-    type: Boolean
-    description: Whether or not to use device licensing.
-  - property: vpnConfigurationId
-    type: String
-    description: The VPN Configuration Id to apply for this app.
+  - property: "useDeviceLicensing"
+    type: "Boolean"
+    description: "Whether or not to use device licensing."
+  - property: "vpnConfigurationId"
+    type: "String"
+    description: "The VPN Configuration Id to apply for this app."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

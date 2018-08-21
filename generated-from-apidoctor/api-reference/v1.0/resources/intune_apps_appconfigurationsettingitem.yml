@@ -3,11 +3,11 @@ uid: graph.intune_apps_appconfigurationsettingitem
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_apps_appconfigurationsettingitem.md
 summary:
-  heading: appConfigurationSettingItem resource type
+  heading: "appConfigurationSettingItem resource type"
   intro: |
     Contains properties for App configuration setting item.
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -21,18 +21,18 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: appConfigKey
-    type: String
-    description: app configuration key.
-  - property: appConfigKeyType
-    type: microsoft.graph.mdmAppConfigKeyType
-    description: app configuration key type. The possible values are: stringType, integerType, realType, booleanType, tokenType.
-  - property: appConfigKeyValue
-    type: String
-    description: app configuration key value.
+  - property: "appConfigKey"
+    type: "String"
+    description: "app configuration key."
+  - property: "appConfigKeyType"
+    type: "microsoft.graph.mdmAppConfigKeyType"
+    description: "app configuration key type. The possible values are: stringType, integerType, realType, booleanType, tokenType."
+  - property: "appConfigKeyValue"
+    type: "String"
+    description: "app configuration key value."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

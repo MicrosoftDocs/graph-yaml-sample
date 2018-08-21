@@ -3,57 +3,57 @@ uid: graph.workbookrange_resizedrange
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/workbookrange_resizedrange.md
 summary:
-  heading: workbookRange: resizedRange
+  heading: "workbookRange: resizedRange"
   intro: |
     Gets a range object similar to the current range object, but with its bottom-right corner expanded (or contracted) by some number of rows and columns.
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
   list:
-  - resource: Delegated (work or school account)
-    permission: Files.ReadWrite
-  - resource: Delegated (personal Microsoft account)
-    permission: Not supported.
-  - resource: Application
-    permission: Not supported.
+  - resource: "Delegated (work or school account)"
+    permission: "Files.ReadWrite"
+  - resource: "Delegated (personal Microsoft account)"
+    permission: "Not supported."
+  - resource: "Application"
+    permission: "Not supported."
 httpRequest:
-  heading: HTTP request
+  heading: "HTTP request"
   sampleCode: |
     ```http
     POST /me/drive/root/workbook/worksheets/{id}/range/resizedRange(deltaRows={n}, deltaColumns={n})
     ```
     
 parameters:
-  heading: Parameters
+  heading: "Parameters"
   list:
-  - name: deltaRows
-    value: Int32
-    description: The number of rows by which to expand the bottom-right corner, relative to the current range. Use a positive number to expand the range, or a negative number to decrease it
-  - name: deltaColumns
-    value: Int32
-    description: The number of columns by which to expand the bottom-right corner, relative to the current range. Use a positive number to expand the range, or a negative number to decrease it.
+  - name: "deltaRows"
+    value: "Int32"
+    description: "The number of rows by which to expand the bottom-right corner, relative to the current range. Use a positive number to expand the range, or a negative number to decrease it"
+  - name: "deltaColumns"
+    value: "Int32"
+    description: "The number of columns by which to expand the bottom-right corner, relative to the current range. Use a positive number to expand the range, or a negative number to decrease it."
 requestHeaders:
-  heading: Request headers
+  heading: "Request headers"
   list:
-  - name: Authorization
-    value: 
-    description: Bearer {token}. Required.
-  - name: Workbook-Session-Id
-    value: 
-    description: Workbook session Id that determines if changes are persisted or not. Optional.
+  - name: "Authorization"
+    value: ""
+    description: "Bearer {token}. Required."
+  - name: "Workbook-Session-Id"
+    value: ""
+    description: "Workbook session Id that determines if changes are persisted or not. Optional."
 response:
-  heading: Response
+  heading: "Response"
   intro: |
     If successful, this method returns `200 OK` response code and [workbookRange](xref:graph.range) object in the response body.
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         intro: |
           Here is an example of how to call this API.
         request:
-            heading: Request
+            heading: "Request"
             intro: |
               Here is an example of the request.
             sampleCode: |
@@ -62,7 +62,7 @@ examples:
               ```
               
         response:
-            heading: Response
+            heading: "Response"
             intro: |
               Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
             sampleCode: |

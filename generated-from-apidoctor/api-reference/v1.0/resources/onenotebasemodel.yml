@@ -3,11 +3,11 @@ uid: graph.onenotebasemodel
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/onenotebasemodel.md
 summary:
-  heading: onenoteEntityBaseModel resource
+  heading: "onenoteEntityBaseModel resource"
   intro: |
     This is the base type for OneNote entities.
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -18,8 +18,8 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: self
-    type: String
-    description: The endpoint where you can get details about the page. Read-only.
+  - property: "self"
+    type: "String"
+    description: "The endpoint where you can get details about the page. Read-only."

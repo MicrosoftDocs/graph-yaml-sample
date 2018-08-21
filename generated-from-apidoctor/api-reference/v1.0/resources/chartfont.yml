@@ -3,20 +3,20 @@ uid: graph.chartfont
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.chartfont
 summary:
-  heading: ChartFont resource type
+  heading: "ChartFont resource type"
   intro: |
     This object represents the font attributes (font name, font size, color, etc.) for a chart object.
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [Get ChartFont](xref:graph.chartfont_get)
-    type: [WorkbookChartFont](xref:graph.chartfont)
-    description: Read properties and relationships of chartFont object.
-  - method: [Update](xref:graph.chartfont_update)
-    type: [WorkbookChartFont](xref:graph.chartfont)
-    description: Update ChartFont object.
+  - method: "[Get ChartFont](xref:graph.chartfont_get)"
+    type: "[WorkbookChartFont](xref:graph.chartfont)"
+    description: "Read properties and relationships of chartFont object."
+  - method: "[Update](xref:graph.chartfont_update)"
+    type: "[WorkbookChartFont](xref:graph.chartfont)"
+    description: "Update ChartFont object."
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -32,27 +32,27 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: bold
-    type: Boolean
-    description: Represents the bold status of font.
-  - property: color
-    type: String
-    description: HTML color code representation of the text color. E.g. #FF0000 represents Red.
-  - property: italic
-    type: Boolean
-    description: Represents the italic status of the font.
-  - property: name
-    type: String
-    description: Font name (e.g. "Calibri")
-  - property: size
-    type: Double
-    description: Size of the font (e.g. 11)
-  - property: underline
-    type: String
-    description: Type of underline applied to the font. The possible values are: None, Single.
+  - property: "bold"
+    type: "Boolean"
+    description: "Represents the bold status of font."
+  - property: "color"
+    type: "String"
+    description: "HTML color code representation of the text color. E.g. #FF0000 represents Red."
+  - property: "italic"
+    type: "Boolean"
+    description: "Represents the italic status of the font."
+  - property: "name"
+    type: "String"
+    description: "Font name (e.g. "Calibri")"
+  - property: "size"
+    type: "Double"
+    description: "Size of the font (e.g. 11)"
+  - property: "underline"
+    type: "String"
+    description: "Type of underline applied to the font. The possible values are: None, Single."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

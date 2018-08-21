@@ -3,15 +3,15 @@ uid: graph.chartdatalabelformat
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/chartdatalabelformat.md
 summary:
-  heading: ChartDataLabelFormat resource type
+  heading: "ChartDataLabelFormat resource type"
   intro: |
     Encapsulates the format properties for the chart data labels.
 methods:
-  heading: Methods
+  heading: "Methods"
   intro: |
     None
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -23,15 +23,15 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   intro: |
     None
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   list:
-  - relationship: fill
-    type: microsoft.graph.workbookChartFill
-    description: Represents the fill format of the current chart data label. Read-only.
-  - relationship: font
-    type: microsoft.graph.workbookChartFont
-    description: Represents the font attributes (font name, font size, color, etc.) for a chart data label. Read-only.
+  - relationship: "fill"
+    type: "microsoft.graph.workbookChartFill"
+    description: "Represents the fill format of the current chart data label. Read-only."
+  - relationship: "font"
+    type: "microsoft.graph.workbookChartFont"
+    description: "Represents the font attributes (font name, font size, color, etc.) for a chart data label. Read-only."

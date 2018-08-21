@@ -3,9 +3,9 @@ uid: graph.entity
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/entity.md
 summary:
-  heading: entity resource type
+  heading: "entity resource type"
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource
   sampleCode: |
@@ -16,12 +16,12 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: id
-    type: String
-    description: Read-only.
+  - property: "id"
+    type: "String"
+    description: "Read-only."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

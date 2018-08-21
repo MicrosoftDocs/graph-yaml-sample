@@ -3,7 +3,7 @@ uid: graph.extensibility_schema_groups
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/extensibility_schema_groups.md
 summary:
-  heading: Add custom data to groups using schema extensions
+  heading: "Add custom data to groups using schema extensions"
   intro: |
     We're going to walk you through an example to demonstrate how to use *schema extensions*. 
     Imagine you're a developer in a Learning Management Software company called “Graph Learn” that builds training courses and materials for businesses.  Office 365 groups, with their rich collaborative experiences, 
@@ -25,12 +25,12 @@ summary:
     Notice that the extension returned in the response has **Available** as the **status** value, which indicates that any app which has permission to the resources in the **targetTypes** property can use and update the extension
     with additive changes. In general, this operation returns any schema extensions that satisfy the specified filter regardless of **status**, so do check the extension status before using it.
 requestBody:
-  heading: Request
+  heading: "Request"
   intro: |
     GET https://graph.microsoft.com/v1.0/schemaExtensions?$filter=id eq 'graphlearn_test'
 
 response:
-  heading: Response
+  heading: "Response"
   intro: |
     HTTP/1.1 200 OK
     Content-Type: application/json

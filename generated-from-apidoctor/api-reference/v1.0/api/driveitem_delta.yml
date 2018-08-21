@@ -7,7 +7,7 @@ metadata:
   ms.date: 09/10/2017
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/driveitem_delta.md
 summary:
-  heading: Track changes for a Drive
+  heading: "Track changes for a Drive"
   intro: |
     This method allows your app to track changes to a drive and its children over time.
     Your app begins by calling `delta` without any parameters. 
@@ -19,18 +19,18 @@ summary:
     Items with this property set should be removed from your local state. 
     **Note:** you should only delete a folder locally if it is empty after syncing all the changes.
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
   list:
-  - resource: Delegated (work or school account)
-    permission: Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All
-  - resource: Delegated (personal Microsoft account)
-    permission: Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All
-  - resource: Application
-    permission: Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All
+  - resource: "Delegated (work or school account)"
+    permission: "Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All"
+  - resource: "Delegated (personal Microsoft account)"
+    permission: "Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All"
+  - resource: "Application"
+    permission: "Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All"
 httpRequest:
-  heading: HTTP request
+  heading: "HTTP request"
   sampleCode: |
     ```http
     GET /drives/{drive-id}/root/delta
@@ -41,17 +41,17 @@ httpRequest:
     ```
     
 queryParameters:
-  heading: Optional query parameters
+  heading: "Optional query parameters"
   intro: |
     This method supports the `$select`, `$expand`, and `$top` [OData query parameters](xref:graph.query_parameters) to customize the response.
 parameters:
-  heading: Parameters
+  heading: "Parameters"
   list:
-  - name: token
-    value: String
-    description: Optional. If unspecified, enumerates the hierarchy's current state. If latest, returns empty response with latest delta token. If a previous delta token, returns new state since that token.
+  - name: "token"
+    value: "String"
+    description: "Optional. If unspecified, enumerates the hierarchy's current state. If latest, returns empty response with latest delta token. If a previous delta token, returns new state since that token."
 response:
-  heading: Response
+  heading: "Response"
   intro: |
     If successful, this method returns a `200 OK` response code and a collection of [DriveItem](xref:graph.driveitem) resources in the response body.
     In addition to the collection of DriveItems, the response will also include one of the following properties:
@@ -62,11 +62,11 @@ response:
 examples:
   - items:
     - Example (Initial Request):
-        heading: Example (Initial Request)
+        heading: "Example (Initial Request)"
         intro: |
           Here is an example of how to call this API to establish your local state.
         request:
-            heading: Request
+            heading: "Request"
             intro: |
               Here is an example of the initial request.
             sampleCode: |
@@ -75,7 +75,7 @@ examples:
               ```
               
         response:
-            heading: Response
+            heading: "Response"
             intro: |
               Here is an example of the response.
             sampleCode: |
@@ -109,11 +109,11 @@ examples:
               This response includes the first page of changes, and the **@odata.nextLink** property indicates that there are more items available in the current set of items.
               Your app should continue to request the URL value of **@odata.nextLink** until all pages of items have been retrieved.
     - Example (Last page in a set):
-        heading: Example (Last page in a set)
+        heading: "Example (Last page in a set)"
         intro: |
           Here is an example of how to call this API to update your local state.
         request:
-            heading: Request
+            heading: "Request"
             intro: |
               Here is an example request after the initial request.
             sampleCode: |
@@ -122,7 +122,7 @@ examples:
               ```
               
         response:
-            heading: Response
+            heading: "Response"
             intro: |
               Here is an example of the response.
             sampleCode: |
@@ -166,7 +166,7 @@ examples:
               Other approaches, such as paging through the `children` collection of a folder, are not guaranteed to return every single item if any writes take place during the enumeration. 
               Using `delta` is the only way to guarantee that you've read all of the data you need to.**
 remarks:
-  heading: Remarks
+  heading: "Remarks"
   intro: |
     * The delta feed shows the latest state for each item, not each change. If an item were renamed twice, it would only show up once, with its latest name.
     * The same item may appear more than once in a delta feed, for various reasons. You should use the last occurrence you see.

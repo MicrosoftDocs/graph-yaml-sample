@@ -3,11 +3,11 @@ uid: graph.intune_deviceconfig_deviceconfigurationsettingstate
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_deviceconfigurationsettingstate.md
 summary:
-  heading: deviceConfigurationSettingState resource type
+  heading: "deviceConfigurationSettingState resource type"
   intro: |
     Device Configuration Setting State for a given device.
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -36,45 +36,45 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: setting
-    type: String
-    description: The setting that is being reported
-  - property: settingName
-    type: String
-    description: Localized/user friendly setting name that is being reported
-  - property: instanceDisplayName
-    type: String
-    description: Name of setting instance that is being reported.
-  - property: state
-    type: microsoft.graph.complianceStatus
-    description: The compliance state of the setting. The possible values are: unknown, notApplicable, compliant, remediated, nonCompliant, error, conflict.
-  - property: errorCode
-    type: Int64
-    description: Error code for the setting
-  - property: errorDescription
-    type: String
-    description: Error description
-  - property: userId
-    type: String
-    description: UserId
-  - property: userName
-    type: String
-    description: UserName
-  - property: userEmail
-    type: String
-    description: UserEmail
-  - property: userPrincipalName
-    type: String
-    description: UserPrincipalName.
-  - property: sources
-    type: Collection(microsoft.graph.settingSource)
-    description: Contributing policies
-  - property: currentValue
-    type: String
-    description: Current value of setting on device
+  - property: "setting"
+    type: "String"
+    description: "The setting that is being reported"
+  - property: "settingName"
+    type: "String"
+    description: "Localized/user friendly setting name that is being reported"
+  - property: "instanceDisplayName"
+    type: "String"
+    description: "Name of setting instance that is being reported."
+  - property: "state"
+    type: "microsoft.graph.complianceStatus"
+    description: "The compliance state of the setting. The possible values are: unknown, notApplicable, compliant, remediated, nonCompliant, error, conflict."
+  - property: "errorCode"
+    type: "Int64"
+    description: "Error code for the setting"
+  - property: "errorDescription"
+    type: "String"
+    description: "Error description"
+  - property: "userId"
+    type: "String"
+    description: "UserId"
+  - property: "userName"
+    type: "String"
+    description: "UserName"
+  - property: "userEmail"
+    type: "String"
+    description: "UserEmail"
+  - property: "userPrincipalName"
+    type: "String"
+    description: "UserPrincipalName."
+  - property: "sources"
+    type: "Collection(microsoft.graph.settingSource)"
+    description: "Contributing policies"
+  - property: "currentValue"
+    type: "String"
+    description: "Current value of setting on device"
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

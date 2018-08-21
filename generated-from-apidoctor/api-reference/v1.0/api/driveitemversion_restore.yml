@@ -3,22 +3,22 @@ uid: graph.driveitemversion_restore
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/driveitemversion_restore.md
 summary:
-  heading: Restore a previous version of a DriveItem
+  heading: "Restore a previous version of a DriveItem"
   intro: |
     Restore a previous version of a DriveItem to be the current version. This will create a new version with the contents of the previous version, but preserves all existing versions of the file.
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
   list:
-  - resource: Delegated (work or school account)
-    permission: Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All
-  - resource: Delegated (personal Microsoft account)
-    permission: Files.ReadWrite, Files.ReadWrite.All
-  - resource: Application
-    permission: Files.ReadWrite.All, Sites.ReadWrite.All
+  - resource: "Delegated (work or school account)"
+    permission: "Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All"
+  - resource: "Delegated (personal Microsoft account)"
+    permission: "Files.ReadWrite, Files.ReadWrite.All"
+  - resource: "Application"
+    permission: "Files.ReadWrite.All, Sites.ReadWrite.All"
 httpRequest:
-  heading: HTTP request
+  heading: "HTTP request"
   sampleCode: |
     ```http
     POST /drives/{driveId}/items/{itemId}/versions/{version-id}/restoreVersion
@@ -29,24 +29,24 @@ httpRequest:
     ```
     
 requestBody:
-  heading: Request body
+  heading: "Request body"
   intro: |
     No request body is required.
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         intro: |
           This example restores a version of a file identified by `{item-id}` and `{version-id}`.
         request:
-            heading: request
+            heading: "request"
             sampleCode: |
               ```http
               POST /drives/{drive-id}/items/{item-id}/versions/{version-id}/restoreVersion
               ```
               
         response:
-            heading: Response
+            heading: "Response"
             intro: |
               If successful, the API call returns a `204 No Content`.
             sampleCode: |

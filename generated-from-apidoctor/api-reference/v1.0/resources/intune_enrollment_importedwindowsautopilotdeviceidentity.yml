@@ -3,29 +3,29 @@ uid: graph.intune_enrollment_importedwindowsautopilotdeviceidentity
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_enrollment_importedwindowsautopilotdeviceidentity.md
 summary:
-  heading: importedWindowsAutopilotDeviceIdentity resource type
+  heading: "importedWindowsAutopilotDeviceIdentity resource type"
   intro: |
     Imported windows autopilot devices.
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [List importedWindowsAutopilotDeviceIdentities](xref:graph.intune_enrollment_importedwindowsautopilotdeviceidentity_list)
-    type: [importedWindowsAutopilotDeviceIdentity](xref:graph.intune_enrollment_importedwindowsautopilotdeviceidentity) collection
-    description: List properties and relationships of the importedWindowsAutopilotDeviceIdentity objects.
-  - method: [Get importedWindowsAutopilotDeviceIdentity](xref:graph.intune_enrollment_importedwindowsautopilotdeviceidentity_get)
-    type: [importedWindowsAutopilotDeviceIdentity](xref:graph.intune_enrollment_importedwindowsautopilotdeviceidentity)
-    description: Read properties and relationships of the importedWindowsAutopilotDeviceIdentity object.
-  - method: [Create importedWindowsAutopilotDeviceIdentity](xref:graph.intune_enrollment_importedwindowsautopilotdeviceidentity_create)
-    type: [importedWindowsAutopilotDeviceIdentity](xref:graph.intune_enrollment_importedwindowsautopilotdeviceidentity)
-    description: Create a new importedWindowsAutopilotDeviceIdentity object.
-  - method: [Delete importedWindowsAutopilotDeviceIdentity](xref:graph.intune_enrollment_importedwindowsautopilotdeviceidentity_delete)
-    type: None
-    description: Deletes a importedWindowsAutopilotDeviceIdentity.
-  - method: [Update importedWindowsAutopilotDeviceIdentity](xref:graph.intune_enrollment_importedwindowsautopilotdeviceidentity_update)
-    type: [importedWindowsAutopilotDeviceIdentity](xref:graph.intune_enrollment_importedwindowsautopilotdeviceidentity)
-    description: Update the properties of a importedWindowsAutopilotDeviceIdentity object.
+  - method: "[List importedWindowsAutopilotDeviceIdentities](xref:graph.intune_enrollment_importedwindowsautopilotdeviceidentity_list)"
+    type: "[importedWindowsAutopilotDeviceIdentity](xref:graph.intune_enrollment_importedwindowsautopilotdeviceidentity) collection"
+    description: "List properties and relationships of the importedWindowsAutopilotDeviceIdentity objects."
+  - method: "[Get importedWindowsAutopilotDeviceIdentity](xref:graph.intune_enrollment_importedwindowsautopilotdeviceidentity_get)"
+    type: "[importedWindowsAutopilotDeviceIdentity](xref:graph.intune_enrollment_importedwindowsautopilotdeviceidentity)"
+    description: "Read properties and relationships of the importedWindowsAutopilotDeviceIdentity object."
+  - method: "[Create importedWindowsAutopilotDeviceIdentity](xref:graph.intune_enrollment_importedwindowsautopilotdeviceidentity_create)"
+    type: "[importedWindowsAutopilotDeviceIdentity](xref:graph.intune_enrollment_importedwindowsautopilotdeviceidentity)"
+    description: "Create a new importedWindowsAutopilotDeviceIdentity object."
+  - method: "[Delete importedWindowsAutopilotDeviceIdentity](xref:graph.intune_enrollment_importedwindowsautopilotdeviceidentity_delete)"
+    type: "None"
+    description: "Deletes a importedWindowsAutopilotDeviceIdentity."
+  - method: "[Update importedWindowsAutopilotDeviceIdentity](xref:graph.intune_enrollment_importedwindowsautopilotdeviceidentity_update)"
+    type: "[importedWindowsAutopilotDeviceIdentity](xref:graph.intune_enrollment_importedwindowsautopilotdeviceidentity)"
+    description: "Update the properties of a importedWindowsAutopilotDeviceIdentity object."
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -48,27 +48,27 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: id
-    type: String
-    description: The GUID for the object
-  - property: orderIdentifier
-    type: String
-    description: Order Id of the Windows autopilot device.
-  - property: serialNumber
-    type: String
-    description: Serial number of the Windows autopilot device.
-  - property: productKey
-    type: String
-    description: Product Key of the Windows autopilot device.
-  - property: hardwareIdentifier
-    type: Binary
-    description: Hardware Blob of the Windows autopilot device.
-  - property: state
-    type: microsoft.graph.importedWindowsAutopilotDeviceIdentityState
-    description: Current state of the imported device.
+  - property: "id"
+    type: "String"
+    description: "The GUID for the object"
+  - property: "orderIdentifier"
+    type: "String"
+    description: "Order Id of the Windows autopilot device."
+  - property: "serialNumber"
+    type: "String"
+    description: "Serial number of the Windows autopilot device."
+  - property: "productKey"
+    type: "String"
+    description: "Product Key of the Windows autopilot device."
+  - property: "hardwareIdentifier"
+    type: "Binary"
+    description: "Hardware Blob of the Windows autopilot device."
+  - property: "state"
+    type: "microsoft.graph.importedWindowsAutopilotDeviceIdentityState"
+    description: "Current state of the imported device."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

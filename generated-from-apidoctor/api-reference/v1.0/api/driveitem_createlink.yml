@@ -7,25 +7,25 @@ metadata:
   ms.date: 09/10/2017
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/driveitem_createlink.md
 summary:
-  heading: Create a sharing link for a DriveItem
+  heading: "Create a sharing link for a DriveItem"
   intro: |
     You can use **createLink** action to share a [DriveItem](xref:graph.driveitem) via a sharing link.
     The **createLink** action will create a new sharing link if the specified link type doesn't already exist for the calling application.
     If a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
     DriveItem resources inherit sharing permissions from their ancestors.
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
   list:
-  - resource: Delegated (work or school account)
-    permission: Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All
-  - resource: Delegated (personal Microsoft account)
-    permission: Files.ReadWrite, Files.ReadWrite.All
-  - resource: Application
-    permission: Files.ReadWrite.All, Sites.ReadWrite.All
+  - resource: "Delegated (work or school account)"
+    permission: "Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All"
+  - resource: "Delegated (personal Microsoft account)"
+    permission: "Files.ReadWrite, Files.ReadWrite.All"
+  - resource: "Application"
+    permission: "Files.ReadWrite.All, Sites.ReadWrite.All"
 httpRequest:
-  heading: HTTP request
+  heading: "HTTP request"
   sampleCode: |
     ```http
     POST /drives/{driveId}/items/{itemId}/createLink
@@ -36,7 +36,7 @@ httpRequest:
     ```
     
 requestBody:
-  heading: Request body
+  heading: "Request body"
   intro: |
     The body of the request defines properties of the sharing link your application is requesting.
     The request should be a JSON object with the following properties.
@@ -53,19 +53,19 @@ requestBody:
     |`edit`|Creates a read-write link to the DriveItem.
     |`embed`|Creates an embeddable link to the DriveItem. This option is only available for files in OneDrive personal.
 response:
-  heading: Response
+  heading: "Response"
   intro: |
     If successful, this method returns a single [Permission](xref:graph.permission) resource in the response body that represents the requested sharing permissions.
     The response will be `201 Created` if a new sharing link is created for the item or `200 OK` if an existing link is returned.
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         intro: |
           The following example requests a sharing link to be created for the DriveItem specified by {itemId} in the user's OneDrive.
           The sharing link is configured to be read-only and usable by anyone with the link.
         request:
-            heading: Request
+            heading: "Request"
             sampleCode: |
               ```http
               POST /me/drive/items/{item-id}/createLink
@@ -78,7 +78,7 @@ examples:
               ```
               
         response:
-            heading: Response
+            heading: "Response"
             sampleCode: |
               ```http
               HTTP/1.1 201 Created
@@ -105,7 +105,7 @@ examples:
               These are similar to anonymous links, except they only work for members of the owning organization.
               To create a company sharable link, use the **scope** parameter with a value of `organization`.
 remarks:
-  heading: Remarks
+  heading: "Remarks"
   intro: |
     * Links created using this action do not expire unless a default expiration policy is enforced for the organization.
     * Links are visible in the sharing permissions for the item and can be removed by an owner of the item.

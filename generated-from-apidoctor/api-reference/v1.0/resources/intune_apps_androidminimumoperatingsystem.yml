@@ -3,11 +3,11 @@ uid: graph.intune_apps_androidminimumoperatingsystem
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_apps_androidminimumoperatingsystem.md
 summary:
-  heading: androidMinimumOperatingSystem resource type
+  heading: "androidMinimumOperatingSystem resource type"
   intro: |
     Contains properties for the minimum operating system required for an Android mobile app.
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -26,33 +26,33 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: v4_0
-    type: Boolean
-    description: Version 4.0 or later.
-  - property: v4_0_3
-    type: Boolean
-    description: Version 4.0.3 or later.
-  - property: v4_1
-    type: Boolean
-    description: Version 4.1 or later.
-  - property: v4_2
-    type: Boolean
-    description: Version 4.2 or later.
-  - property: v4_3
-    type: Boolean
-    description: Version 4.3 or later.
-  - property: v4_4
-    type: Boolean
-    description: Version 4.4 or later.
-  - property: v5_0
-    type: Boolean
-    description: Version 5.0 or later.
-  - property: v5_1
-    type: Boolean
-    description: Version 5.1 or later.
+  - property: "v4_0"
+    type: "Boolean"
+    description: "Version 4.0 or later."
+  - property: "v4_0_3"
+    type: "Boolean"
+    description: "Version 4.0.3 or later."
+  - property: "v4_1"
+    type: "Boolean"
+    description: "Version 4.1 or later."
+  - property: "v4_2"
+    type: "Boolean"
+    description: "Version 4.2 or later."
+  - property: "v4_3"
+    type: "Boolean"
+    description: "Version 4.3 or later."
+  - property: "v4_4"
+    type: "Boolean"
+    description: "Version 4.4 or later."
+  - property: "v5_0"
+    type: "Boolean"
+    description: "Version 5.0 or later."
+  - property: "v5_1"
+    type: "Boolean"
+    description: "Version 5.1 or later."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

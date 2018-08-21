@@ -3,24 +3,24 @@ uid: graph.intune_apps_windowsdevicetype
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_apps_windowsdevicetype.md
 summary:
-  heading: windowsDeviceType enum type
+  heading: "windowsDeviceType enum type"
   intro: |
     Contains properties for Windows device type.
 enum:
-  heading: windowsDeviceType flags
+  heading: "windowsDeviceType flags"
   table:
-  - member: none
-    value: 0
-    description: No flags set.
-  - member: desktop
-    value: 1
-    description: Whether or not the Desktop Windows device type is supported.
-  - member: mobile
-    value: 2
-    description: Whether or not the Mobile Windows device type is supported.
-  - member: holographic
-    value: 4
-    description: Whether or not the Holographic Windows device type is supported.
-  - member: team
-    value: 8
-    description: Whether or not the Team Windows device type is supported.
+  - member: "none"
+    value: "0"
+    description: "No flags set."
+  - member: "desktop"
+    value: "1"
+    description: "Whether or not the Desktop Windows device type is supported."
+  - member: "mobile"
+    value: "2"
+    description: "Whether or not the Mobile Windows device type is supported."
+  - member: "holographic"
+    value: "4"
+    description: "Whether or not the Holographic Windows device type is supported."
+  - member: "team"
+    value: "8"
+    description: "Whether or not the Team Windows device type is supported."

@@ -3,47 +3,47 @@ uid: graph.intune_shared_user
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_shared_user.md
 summary:
-  heading: user resource type
+  heading: "user resource type"
   intro: |
     Represents an Azure Active Directory user object.
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [List users](xref:graph.intune_shared_user_list) objects.
-    type: &nbsp;
-    description: 
-  - method: [Get user](xref:graph.intune_shared_user_get) object.
-    type: &nbsp;
-    description: 
-  - method: [Create user](xref:graph.intune_shared_user_create) object.
-    type: &nbsp;
-    description: 
-  - method: [Delete user](xref:graph.intune_shared_user_delete).
-    type: &nbsp;
-    description: 
-  - method: [Update user](xref:graph.intune_shared_user_update) object.
-    type: &nbsp;
-    description: 
-  - method: **Device management**
-    type: &nbsp;
-    description: 
-  - method: [removeAllDevicesFromManagement action](xref:graph.intune_shared_user_removealldevicesfrommanagement)
-    type: None
-    description: Retire all devices from management for this user
-  - method: **Mobile app management (MAM)**
-    type: &nbsp;
-    description: 
-  - method: [getManagedAppDiagnosticStatuses function](xref:graph.intune_shared_user_getmanagedappdiagnosticstatuses)
-    type: [managedAppDiagnosticStatus](xref:graph.intune_mam_managedappdiagnosticstatus) collection
-    description: Gets diagnostics validation status for a given user.
-  - method: [getManagedAppPolicies function](xref:graph.intune_shared_user_getmanagedapppolicies)
-    type: [managedAppPolicy](xref:graph.intune_mam_managedapppolicy) collection
-    description: Gets app restrictions for a given user.
-  - method: [wipeManagedAppRegistrationsByDeviceTag action](xref:graph.intune_shared_user_wipemanagedappregistrationsbydevicetag)
-    type: None
-    description: Issues a wipe operation on an app registration with specified device tag.
+  - method: "[List users](xref:graph.intune_shared_user_list) objects."
+    type: "&nbsp;"
+    description: ""
+  - method: "[Get user](xref:graph.intune_shared_user_get) object."
+    type: "&nbsp;"
+    description: ""
+  - method: "[Create user](xref:graph.intune_shared_user_create) object."
+    type: "&nbsp;"
+    description: ""
+  - method: "[Delete user](xref:graph.intune_shared_user_delete)."
+    type: "&nbsp;"
+    description: ""
+  - method: "[Update user](xref:graph.intune_shared_user_update) object."
+    type: "&nbsp;"
+    description: ""
+  - method: "**Device management**"
+    type: "&nbsp;"
+    description: ""
+  - method: "[removeAllDevicesFromManagement action](xref:graph.intune_shared_user_removealldevicesfrommanagement)"
+    type: "None"
+    description: "Retire all devices from management for this user"
+  - method: "**Mobile app management (MAM)**"
+    type: "&nbsp;"
+    description: ""
+  - method: "[getManagedAppDiagnosticStatuses function](xref:graph.intune_shared_user_getmanagedappdiagnosticstatuses)"
+    type: "[managedAppDiagnosticStatus](xref:graph.intune_mam_managedappdiagnosticstatus) collection"
+    description: "Gets diagnostics validation status for a given user."
+  - method: "[getManagedAppPolicies function](xref:graph.intune_shared_user_getmanagedapppolicies)"
+    type: "[managedAppPolicy](xref:graph.intune_mam_managedapppolicy) collection"
+    description: "Gets app restrictions for a given user."
+  - method: "[wipeManagedAppRegistrationsByDeviceTag action](xref:graph.intune_shared_user_wipemanagedappregistrationsbydevicetag)"
+    type: "None"
+    description: "Issues a wipe operation on an app registration with specified device tag."
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -56,23 +56,23 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: id
-    type: String
-    description: Unique identifier of the user.
-  - property: deviceEnrollmentLimit
-    type: Int32
-    description: The limit on the maximum number of devices that the user is permitted to enroll. Allowed values are 5 or 1000.
+  - property: "id"
+    type: "String"
+    description: "Unique identifier of the user."
+  - property: "deviceEnrollmentLimit"
+    type: "Int32"
+    description: "The limit on the maximum number of devices that the user is permitted to enroll. Allowed values are 5 or 1000."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   list:
-  - relationship: managedDevices
-    type: Collection(microsoft.graph.managedDevice)
-    description: The managed devices associated with the user.
-  - relationship: managedAppRegistrations
-    type: Collection(microsoft.graph.managedAppRegistration)
-    description: Zero or more managed app registrations that belong to the user.
-  - relationship: deviceManagementTroubleshootingEvents
-    type: Collection(microsoft.graph.deviceManagementTroubleshootingEvent)
-    description: The list of troubleshooting events for this user.
+  - relationship: "managedDevices"
+    type: "Collection(microsoft.graph.managedDevice)"
+    description: "The managed devices associated with the user."
+  - relationship: "managedAppRegistrations"
+    type: "Collection(microsoft.graph.managedAppRegistration)"
+    description: "Zero or more managed app registrations that belong to the user."
+  - relationship: "deviceManagementTroubleshootingEvents"
+    type: "Collection(microsoft.graph.deviceManagementTroubleshootingEvent)"
+    description: "The list of troubleshooting events for this user."

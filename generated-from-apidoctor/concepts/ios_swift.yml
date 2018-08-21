@@ -3,7 +3,7 @@ uid: graph.ios_swift
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/ios_swift.md
 summary:
-  heading: Get started with Microsoft Graph in a Swift iOS App
+  heading: "Get started with Microsoft Graph in a Swift iOS App"
   intro: |
     This article describes the tasks required to get an access token from the [Azure AD v2.0 endpoint](https://developer.microsoft.com/en-us/graph/docs/concepts/converged_auth) and call Microsoft Graph. It walks you through the code inside the [Office 365 Connect Sample for iOS (REST)](https://github.com/microsoftgraph/ios-swift-connect-rest-sample) to explain the main concepts that you implement in an app that uses Microsoft Graph. It describes how to access Microsoft Graph by using REST operations in an asynchronous **Promise chain** pattern.  Promises in the sample are implemented by using the [mxcl/PromiseKit 4.5.2](xref:graph.README) CocoaPod. 
     The sample was created using **XCode 9.2** and **Swift 3.2**.
@@ -16,7 +16,7 @@ summary:
     The workflow authenticates and authorizes the sample to access  Microsoft Graph resources, signs in with your work or personal account, and finally sends a mail to a recipient.
     **Don't feel like building an app?** Use the [Microsoft Graph quick start](https://developer.microsoft.com/en-us/graph/quick-start) to get up and running fast.
 permissions:
-  heading: Prerequisites
+  heading: "Prerequisites"
   intro: |
     To get started, you'll need: 
     

@@ -3,7 +3,7 @@ uid: graph.yammer_activity_reports
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/yammer_activity_reports.md
 summary:
-  heading: Yammer activity reports
+  heading: "Yammer activity reports"
   intro: |
     You can use the Yammer activity reports to understand the level of your organization's engagement with Yammer by seeing how much activity is generated across the organization and the number of unique users who post, like, and read messages on Yammer.
     

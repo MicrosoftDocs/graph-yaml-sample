@@ -3,7 +3,7 @@ uid: graph.mail_api_overview
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/mail_api_overview.md
 summary:
-  heading: Use the Outlook mail REST API
+  heading: "Use the Outlook mail REST API"
   intro: |
     Microsoft Graph lets your app get authorized access to a user's Outlook mail data in a personal or organization account.
     With the [appropriate delegated or application permissions](xref:graph.permissions_reference), your app can access the mail data of

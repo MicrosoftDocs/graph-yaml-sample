@@ -3,7 +3,7 @@ uid: graph.onenote-note-tags
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/onenote-note-tags.md
 summary:
-  heading: Use note tags in OneNote pages
+  heading: "Use note tags in OneNote pages"
   intro: |
     **Applies to** Consumer notebooks on OneDrive | Enterprise notebooks on Office 365
     Use the `data-tag` attribute to add and update check boxes, stars, and other built-in note tags on a OneNote page, as shown in the following image.
@@ -24,7 +24,7 @@ summary:
     |status|The status of check box note tags. This is used only to set check boxes as completed.|
     <a name="note-tags"></a>
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     To create or update OneNote pages, you'll need to request appropriate permissions. Choose the lowest level of permissions that your app needs to do its work.
   outro: |
@@ -35,7 +35,7 @@ permissions:
     * Notes.ReadWrite.All  
     
 examples:
-  heading: Examples
+  heading: "Examples"
   intro: |
     Here's a simple to-do list with the first item completed.
     <p data-tag="to-do:completed" data-id="prep">Till garden bed</p> 

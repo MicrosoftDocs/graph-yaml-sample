@@ -3,7 +3,7 @@ uid: graph.onedrive_activity_reports
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/onedrive_activity_reports.md
 summary:
-  heading: OneDrive activity reports
+  heading: "OneDrive activity reports"
   intro: |
     Use the OneDrive activity reports to get the activity of every user licensed to use OneDrive by looking at their interaction with files on OneDrive. These reports can help you to understand the level of collaboration going on by showing the number of files shared.
     

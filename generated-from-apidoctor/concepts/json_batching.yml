@@ -3,7 +3,7 @@ uid: graph.json_batching
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/json_batching.md
 summary:
-  heading: Combine multiple requests in one HTTP call using JSON batching
+  heading: "Combine multiple requests in one HTTP call using JSON batching"
   intro: |
     JSON batching allows you to optimize your application by combining multiple requests into a single JSON object. For example, a client might want to compose a view of unrelated data such as:
     

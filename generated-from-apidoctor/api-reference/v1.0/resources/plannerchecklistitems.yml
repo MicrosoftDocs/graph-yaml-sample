@@ -3,11 +3,11 @@ uid: graph.plannerchecklistitems
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/plannerchecklistitems.md
 summary:
-  heading: plannerChecklistItems resource type
+  heading: "plannerChecklistItems resource type"
   intro: |
     The **plannerChecklistItemCollection** resource represents the collection of checklist items on a task. It is an Open Type. It is part of the [task details](xref:graph.plannertaskdetails) object. The value in the property-value pair is the [checklistItem](xref:graph.plannerchecklistitem) object.
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource
   sampleCode: |
@@ -57,6 +57,6 @@ resource:
     
 
 properties:
-  heading: Properties
+  heading: "Properties"
   intro: |
     Properties of an Open Type can be defined by the client. In this case, the client should provide **GUIDs** as properties and their values must be [checklistItem](xref:graph.plannerchecklistitem) objects. Example is shown below. To remove an item in the checklist, set the value of the property to `null`.

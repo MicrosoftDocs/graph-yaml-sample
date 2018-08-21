@@ -3,7 +3,7 @@ uid: graph.security-authorization
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/security-authorization.md
 summary:
-  heading: Authorization and the security API in Microsoft Graph
+  heading: "Authorization and the security API in Microsoft Graph"
   intro: |
     Security data accessible via the security API in Microsoft Graph is sensitive and is protected by both permissions and Azure Active Directory (Azure AD) roles.
     The security API supports two types of authorization:

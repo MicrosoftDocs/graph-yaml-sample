@@ -7,11 +7,11 @@ metadata:
   ms.date: 09/10/2017
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/sharinginvitation.md
 summary:
-  heading: SharingInvitation resource type
+  heading: "SharingInvitation resource type"
   intro: |
     The **SharingInvitation** resource groups invitation-related data items into a single structure.
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -24,18 +24,18 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: email
-    type: String
-    description: The email address provided for the recipient of the sharing invitation. Read-only.
-  - property: invitedBy
-    type: microsoft.graph.identitySet
-    description: Provides information about who sent the invitation that created this permission, if that information is available. Read-only.
-  - property: signInRequired
-    type: Boolean
-    description: If true the recipient of the invitation needs to sign in in order to access the shared item. Read-only.
+  - property: "email"
+    type: "String"
+    description: "The email address provided for the recipient of the sharing invitation. Read-only."
+  - property: "invitedBy"
+    type: "microsoft.graph.identitySet"
+    description: "Provides information about who sent the invitation that created this permission, if that information is available. Read-only."
+  - property: "signInRequired"
+    type: "Boolean"
+    description: "If true the recipient of the invitation needs to sign in in order to access the shared item. Read-only."
 remarks:
-  heading: Remarks
+  heading: "Remarks"
   intro: |
     For more information about the facets on a DriveItem, see [DriveItem](xref:graph.driveitem).

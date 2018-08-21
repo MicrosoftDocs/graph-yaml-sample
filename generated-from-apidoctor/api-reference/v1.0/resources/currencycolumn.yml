@@ -7,11 +7,11 @@ metadata:
   ms.date: 09/11/2017
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/currencycolumn.md
 summary:
-  heading: CurrencyColumn resource type
+  heading: "CurrencyColumn resource type"
   intro: |
     The **currencyColumn** on a [columnDefinition](xref:graph.columnDefinition) resource indicates that the column's values represent currency.
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of a **currencyColumn** resource.
   sampleCode: |
@@ -22,8 +22,8 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: locale
-    type: String
-    description: Specifies the locale from which to infer the currency symbol.
+  - property: "locale"
+    type: "String"
+    description: "Specifies the locale from which to infer the currency symbol."

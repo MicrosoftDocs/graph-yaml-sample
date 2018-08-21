@@ -3,7 +3,7 @@ uid: graph.uwp
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/uwp.md
 summary:
-  heading: Get started with Microsoft Graph in a universal Windows 10 app
+  heading: "Get started with Microsoft Graph in a universal Windows 10 app"
   intro: |
     This article describes the tasks required to get an access token from the [Azure AD v2.0 endpoint](https://developer.microsoft.com/en-us/graph/docs/concepts/converged_auth) and call Microsoft Graph. It walks you through the code inside the [Microsoft Graph Connect Sample for UWP (Library)](https://github.com/microsoftgraph/uwp-csharp-connect-sample) samples to explain the main concepts that you have to implement in an app that uses Microsoft Graph.
     **Don't feel like building an app?** Use the [Microsoft Graph quick start](https://developer.microsoft.com/graph/quick-start) to get up and running fast, or download the [Microsoft Graph Connect Sample for UWP (Library)](https://github.com/microsoftgraph/uwp-csharp-connect-sample) that this article is based on. Also note that we have a [REST version of this sample](https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample).
@@ -16,7 +16,7 @@ summary:
     ![Screen showing the connected user's email address and the send mail button enabled](images/SignedIn.png)
     All of the sample's UI strings are stored in the Resources.resw file inside the Assets folder.
 permissions:
-  heading: Prerequisites
+  heading: "Prerequisites"
   intro: |
     To get started, you'll need: 
     

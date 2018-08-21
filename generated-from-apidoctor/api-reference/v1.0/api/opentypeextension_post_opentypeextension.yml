@@ -3,27 +3,27 @@ uid: graph.opentypeextension_post_opentypeextension
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/opentypeextension_post_opentypeextension.md
 summary:
-  heading: Create open extension
+  heading: "Create open extension"
   intro: |
     Create an open extension ([openTypeExtension](xref:graph.openTypeExtension) object) and add custom properties in a new or existing instance of a resource.
     
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     One of the following permissions is required to call this API, depending on the resource you're creating the extension in. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
   list:
-  - resource: 
-    permission: 
-  - resource: 
-    permission: 
-  - resource: 
-    permission: 
-  - resource: 
-    permission: 
-  - resource: 
-    permission: 
+  - resource: ""
+    permission: ""
+  - resource: ""
+    permission: ""
+  - resource: ""
+    permission: ""
+  - resource: ""
+    permission: ""
+  - resource: ""
+    permission: ""
 httpRequest:
-  heading: HTTP request
+  heading: "HTTP request"
   outro: |
     ### Create an extension in a new resource instance
     Use the same REST request that you use to create the instance.
@@ -39,22 +39,22 @@ httpRequest:
     
     See the [Request body](#request-body) section about including the properties of the new resource instance _and the extension_ in the request body.
 parameters:
-  heading: Path parameters
+  heading: "Path parameters"
   list:
-  - name: id
-    value: String
-    description: A unique identifier for an object in the corresponding collection. Required.
+  - name: "id"
+    value: "String"
+    description: "A unique identifier for an object in the corresponding collection. Required."
 requestHeaders:
-  heading: Request headers
+  heading: "Request headers"
   list:
-  - name: Authorization
-    value: String
-    description: 
-  - name: Content-Type
-    value: String
-    description: 
+  - name: "Authorization"
+    value: "String"
+    description: ""
+  - name: "Content-Type"
+    value: "String"
+    description: ""
 requestBody:
-  heading: Request body
+  heading: "Request body"
   intro: |
     Provide a JSON body of an [openTypeExtension](xref:graph.openTypeExtension), with the following required
     name-value pairs, and any additional custom data. The data in the JSON payload can be primitive types, or arrays of
@@ -66,7 +66,7 @@ requestBody:
     When creating an extension in a _new_ resource instance, in addition to the
     new **openTypeExtension** object, provide a JSON representation of the relevant properties to create such a resource instance.
 response:
-  heading: Response
+  heading: "Response"
   outro: |
     ### Response code
     Depending on the operation, the response code can be `201 Created` or `202 Accepted`.
@@ -80,7 +80,7 @@ response:
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         outro: |
           ### Request 1
           The first example creates a message and an extension in the same call. The request body includes the following:

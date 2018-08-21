@@ -3,19 +3,19 @@ uid: graph.intune_deviceconfig_webbrowsercookiesettings
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_webbrowsercookiesettings.md
 summary:
-  heading: webBrowserCookieSettings enum type
+  heading: "webBrowserCookieSettings enum type"
   intro: |
     Web Browser Cookie Settings.
 enum:
-  heading: Members
+  heading: "Members"
   table:
-  - member: browserDefault
-    description: Browser default value, no intent.
-  - member: blockAlways
-    description: Always block cookies.
-  - member: allowCurrentWebSite
-    description: Allow cookies from current Web site.
-  - member: allowFromWebsitesVisited
-    description: Allow Cookies from websites visited.
-  - member: allowAlways
-    description: Always allow cookies.
+  - member: "browserDefault"
+    description: "Browser default value, no intent."
+  - member: "blockAlways"
+    description: "Always block cookies."
+  - member: "allowCurrentWebSite"
+    description: "Allow cookies from current Web site."
+  - member: "allowFromWebsitesVisited"
+    description: "Allow Cookies from websites visited."
+  - member: "allowAlways"
+    description: "Always allow cookies."

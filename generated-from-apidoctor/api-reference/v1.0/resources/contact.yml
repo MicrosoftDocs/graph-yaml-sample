@@ -3,7 +3,7 @@ uid: graph.contact
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.contact
 summary:
-  heading: contact resource type
+  heading: "contact resource type"
   intro: |
     A contact is an item in Outlook where you can organize and save information about the people and organizations you communicate with. Contacts are contained in contact folders.
     This resource supports:
@@ -13,55 +13,55 @@ summary:
     by providing a [delta](xref:graph.contact_delta) function.
     
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [Get contact](xref:graph.contact_get)
-    type: [contact](xref:graph.contact)
-    description: Read properties and relationships of contact object.
-  - method: [Create](xref:graph.user_post_contacts)
-    type: [contact](xref:graph.contact)
-    description: Add a contact to the root Contacts folder or to the contacts endpoint of another contact folder.
-  - method: [Update](xref:graph.contact_update)
-    type: [contact](xref:graph.contact)
-    description: Update contact object.
-  - method: [Delete](xref:graph.contact_delete)
-    type: None
-    description: Delete contact object.
-  - method: [delta](xref:graph.contact_delta)
-    type: [contact](xref:graph.contact) collection
-    description: Get a set of contacts that have been added, deleted, or updated in a specified folder.
-  - method: **Open extensions**
-    type: 
-    description: 
-  - method: [Create open extension](xref:graph.opentypeextension_post_opentypeextension)
-    type: [openTypeExtension](xref:graph.opentypeextension)
-    description: Create an open extension and add custom properties in a new or existing instance of a resource.
-  - method: [Get open extension](xref:graph.opentypeextension_get)
-    type: [openTypeExtension](xref:graph.opentypeextension) collection
-    description: Get an open extension object or objects identified by name or fully qualified name.
-  - method: **Schema extensions**
-    type: 
-    description: 
-  - method: [Add schema extension values](xref:graph.extensibility_schema_groups)
-    type: 
-    description: Create a schema extension definition and then use it to add custom typed data to a resource.
-  - method: **Extended properties**
-    type: 
-    description: 
-  - method: [Create single-value extended property](xref:graph.singlevaluelegacyextendedproperty_post_singlevalueextendedproperties)
-    type: [contact](xref:graph.contact)
-    description: Create one or more single-value extended properties in a new or existing contact.
-  - method: [Get contact with single-value extended property](xref:graph.singlevaluelegacyextendedproperty_get)
-    type: [contact](xref:graph.contact)
-    description: Get contacts that contain a single-value extended property by using $expand or $filter.
-  - method: [Create multi-value extended property](xref:graph.multivaluelegacyextendedproperty_post_multivalueextendedproperties)
-    type: [contact](xref:graph.contact)
-    description: Create one or more multi-value extended properties in a new or existing contact.
-  - method: [Get contact with multi-value extended property](xref:graph.multivaluelegacyextendedproperty_get)
-    type: [contact](xref:graph.contact)
-    description: Get a contact that contains a multi-value extended property by using $expand.
+  - method: "[Get contact](xref:graph.contact_get)"
+    type: "[contact](xref:graph.contact)"
+    description: "Read properties and relationships of contact object."
+  - method: "[Create](xref:graph.user_post_contacts)"
+    type: "[contact](xref:graph.contact)"
+    description: "Add a contact to the root Contacts folder or to the contacts endpoint of another contact folder."
+  - method: "[Update](xref:graph.contact_update)"
+    type: "[contact](xref:graph.contact)"
+    description: "Update contact object."
+  - method: "[Delete](xref:graph.contact_delete)"
+    type: "None"
+    description: "Delete contact object."
+  - method: "[delta](xref:graph.contact_delta)"
+    type: "[contact](xref:graph.contact) collection"
+    description: "Get a set of contacts that have been added, deleted, or updated in a specified folder."
+  - method: "**Open extensions**"
+    type: ""
+    description: ""
+  - method: "[Create open extension](xref:graph.opentypeextension_post_opentypeextension)"
+    type: "[openTypeExtension](xref:graph.opentypeextension)"
+    description: "Create an open extension and add custom properties in a new or existing instance of a resource."
+  - method: "[Get open extension](xref:graph.opentypeextension_get)"
+    type: "[openTypeExtension](xref:graph.opentypeextension) collection"
+    description: "Get an open extension object or objects identified by name or fully qualified name."
+  - method: "**Schema extensions**"
+    type: ""
+    description: ""
+  - method: "[Add schema extension values](xref:graph.extensibility_schema_groups)"
+    type: ""
+    description: "Create a schema extension definition and then use it to add custom typed data to a resource."
+  - method: "**Extended properties**"
+    type: ""
+    description: ""
+  - method: "[Create single-value extended property](xref:graph.singlevaluelegacyextendedproperty_post_singlevalueextendedproperties)"
+    type: "[contact](xref:graph.contact)"
+    description: "Create one or more single-value extended properties in a new or existing contact."
+  - method: "[Get contact with single-value extended property](xref:graph.singlevaluelegacyextendedproperty_get)"
+    type: "[contact](xref:graph.contact)"
+    description: "Get contacts that contain a single-value extended property by using $expand or $filter."
+  - method: "[Create multi-value extended property](xref:graph.multivaluelegacyextendedproperty_post_multivalueextendedproperties)"
+    type: "[contact](xref:graph.contact)"
+    description: "Create one or more multi-value extended properties in a new or existing contact."
+  - method: "[Get contact with multi-value extended property](xref:graph.multivaluelegacyextendedproperty_get)"
+    type: "[contact](xref:graph.contact)"
+    description: "Get a contact that contains a multi-value extended property by using $expand."
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource
   sampleCode: |
@@ -121,137 +121,137 @@ resource:
     * [Add custom data to groups using schema extensions](xref:graph.extensibility_schema_groups)
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: assistantName
-    type: String
-    description: The name of the contact's assistant.
-  - property: birthday
-    type: DateTimeOffset
-    description: The contact's birthday. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
-  - property: businessAddress
-    type: microsoft.graph.physicalAddress
-    description: The contact's business address.
-  - property: businessHomePage
-    type: String
-    description: The business home page of the contact.
-  - property: businessPhones
-    type: Collection(String)
-    description: The contact's business phone numbers.
-  - property: categories
-    type: Collection(String)
-    description: The categories associated with the contact.
-  - property: changeKey
-    type: String
-    description: Identifies the version of the contact. Every time the contact is changed, ChangeKey changes as well. This allows Exchange to apply changes to the correct version of the object.
-  - property: children
-    type: Collection(String)
-    description: The names of the contact's children.
-  - property: companyName
-    type: String
-    description: The name of the contact's company.
-  - property: createdDateTime
-    type: DateTimeOffset
-    description: The time the contact was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
-  - property: department
-    type: String
-    description: The contact's department.
-  - property: displayName
-    type: String
-    description: The contact's display name.
-  - property: emailAddresses
-    type: Collection(microsoft.graph.emailAddress)
-    description: The contact's email addresses.
-  - property: flag
-    type: microsoft.graph.followupFlag
-    description: The flag value that indicates the status, start date, due date, or completion date for the message.
-  - property: fileAs
-    type: String
-    description: The name the contact is filed under.
-  - property: generation
-    type: String
-    description: The contact's generation.
-  - property: givenName
-    type: String
-    description: The contact's given name.
-  - property: homeAddress
-    type: microsoft.graph.physicalAddress
-    description: The contact's home address.
-  - property: homePhones
-    type: Collection(String)
-    description: The contact's home phone numbers.
-  - property: id
-    type: String
-    description: The contact's unique identifier. Read-only.
-  - property: imAddresses
-    type: Collection(String)
-    description: The contact's instant messaging (IM) addresses.
-  - property: initials
-    type: String
-    description: The contact's initials.
-  - property: jobTitle
-    type: String
-    description: The contact’s job title.
-  - property: lastModifiedDateTime
-    type: DateTimeOffset
-    description: The time the contact was modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
-  - property: manager
-    type: String
-    description: The name of the contact's manager.
-  - property: middleName
-    type: String
-    description: The contact's middle name.
-  - property: mobilePhone
-    type: String
-    description: The contact's mobile phone number.
-  - property: nickName
-    type: String
-    description: The contact's nickname.
-  - property: officeLocation
-    type: String
-    description: The location of the contact's office.
-  - property: otherAddress
-    type: microsoft.graph.physicalAddress
-    description: Other addresses for the contact.
-  - property: parentFolderId
-    type: String
-    description: The ID of the contact's parent folder.
-  - property: personalNotes
-    type: String
-    description: The user's notes about the contact.
-  - property: profession
-    type: String
-    description: The contact's profession.
-  - property: spouseName
-    type: String
-    description: The name of the contact's spouse/partner.
-  - property: surname
-    type: String
-    description: The contact's surname.
-  - property: title
-    type: String
-    description: The contact's title.
-  - property: yomiCompanyName
-    type: String
-    description: The phonetic Japanese company name of the contact.
-  - property: yomiGivenName
-    type: String
-    description: The phonetic Japanese given name (first name) of the contact.
-  - property: yomiSurname
-    type: String
-    description: The phonetic Japanese surname (last name)  of the contact.
+  - property: "assistantName"
+    type: "String"
+    description: "The name of the contact's assistant."
+  - property: "birthday"
+    type: "DateTimeOffset"
+    description: "The contact's birthday. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'"
+  - property: "businessAddress"
+    type: "microsoft.graph.physicalAddress"
+    description: "The contact's business address."
+  - property: "businessHomePage"
+    type: "String"
+    description: "The business home page of the contact."
+  - property: "businessPhones"
+    type: "Collection(String)"
+    description: "The contact's business phone numbers."
+  - property: "categories"
+    type: "Collection(String)"
+    description: "The categories associated with the contact."
+  - property: "changeKey"
+    type: "String"
+    description: "Identifies the version of the contact. Every time the contact is changed, ChangeKey changes as well. This allows Exchange to apply changes to the correct version of the object."
+  - property: "children"
+    type: "Collection(String)"
+    description: "The names of the contact's children."
+  - property: "companyName"
+    type: "String"
+    description: "The name of the contact's company."
+  - property: "createdDateTime"
+    type: "DateTimeOffset"
+    description: "The time the contact was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'"
+  - property: "department"
+    type: "String"
+    description: "The contact's department."
+  - property: "displayName"
+    type: "String"
+    description: "The contact's display name."
+  - property: "emailAddresses"
+    type: "Collection(microsoft.graph.emailAddress)"
+    description: "The contact's email addresses."
+  - property: "flag"
+    type: "microsoft.graph.followupFlag"
+    description: "The flag value that indicates the status, start date, due date, or completion date for the message."
+  - property: "fileAs"
+    type: "String"
+    description: "The name the contact is filed under."
+  - property: "generation"
+    type: "String"
+    description: "The contact's generation."
+  - property: "givenName"
+    type: "String"
+    description: "The contact's given name."
+  - property: "homeAddress"
+    type: "microsoft.graph.physicalAddress"
+    description: "The contact's home address."
+  - property: "homePhones"
+    type: "Collection(String)"
+    description: "The contact's home phone numbers."
+  - property: "id"
+    type: "String"
+    description: "The contact's unique identifier. Read-only."
+  - property: "imAddresses"
+    type: "Collection(String)"
+    description: "The contact's instant messaging (IM) addresses."
+  - property: "initials"
+    type: "String"
+    description: "The contact's initials."
+  - property: "jobTitle"
+    type: "String"
+    description: "The contact’s job title."
+  - property: "lastModifiedDateTime"
+    type: "DateTimeOffset"
+    description: "The time the contact was modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'"
+  - property: "manager"
+    type: "String"
+    description: "The name of the contact's manager."
+  - property: "middleName"
+    type: "String"
+    description: "The contact's middle name."
+  - property: "mobilePhone"
+    type: "String"
+    description: "The contact's mobile phone number."
+  - property: "nickName"
+    type: "String"
+    description: "The contact's nickname."
+  - property: "officeLocation"
+    type: "String"
+    description: "The location of the contact's office."
+  - property: "otherAddress"
+    type: "microsoft.graph.physicalAddress"
+    description: "Other addresses for the contact."
+  - property: "parentFolderId"
+    type: "String"
+    description: "The ID of the contact's parent folder."
+  - property: "personalNotes"
+    type: "String"
+    description: "The user's notes about the contact."
+  - property: "profession"
+    type: "String"
+    description: "The contact's profession."
+  - property: "spouseName"
+    type: "String"
+    description: "The name of the contact's spouse/partner."
+  - property: "surname"
+    type: "String"
+    description: "The contact's surname."
+  - property: "title"
+    type: "String"
+    description: "The contact's title."
+  - property: "yomiCompanyName"
+    type: "String"
+    description: "The phonetic Japanese company name of the contact."
+  - property: "yomiGivenName"
+    type: "String"
+    description: "The phonetic Japanese given name (first name) of the contact."
+  - property: "yomiSurname"
+    type: "String"
+    description: "The phonetic Japanese surname (last name)  of the contact."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   list:
-  - relationship: extensions
-    type: Collection(microsoft.graph.extension)
-    description: The collection of open extensions defined for the contact. Read-only. Nullable.
-  - relationship: multiValueExtendedProperties
-    type: Collection(microsoft.graph.multiValueLegacyExtendedProperty)
-    description: The collection of multi-value extended properties defined for the contact. Read-only. Nullable.
-  - relationship: photo
-    type: microsoft.graph.profilePhoto
-    description: Optional contact picture. You can get or set a photo for a contact.
-  - relationship: singleValueExtendedProperties
-    type: Collection(microsoft.graph.singleValueLegacyExtendedProperty)
-    description: The collection of single-value extended properties defined for the contact. Read-only. Nullable.
+  - relationship: "extensions"
+    type: "Collection(microsoft.graph.extension)"
+    description: "The collection of open extensions defined for the contact. Read-only. Nullable."
+  - relationship: "multiValueExtendedProperties"
+    type: "Collection(microsoft.graph.multiValueLegacyExtendedProperty)"
+    description: "The collection of multi-value extended properties defined for the contact. Read-only. Nullable."
+  - relationship: "photo"
+    type: "microsoft.graph.profilePhoto"
+    description: "Optional contact picture. You can get or set a photo for a contact."
+  - relationship: "singleValueExtendedProperties"
+    type: "Collection(microsoft.graph.singleValueLegacyExtendedProperty)"
+    description: "The collection of single-value extended properties defined for the contact. Read-only. Nullable."

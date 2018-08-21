@@ -3,11 +3,11 @@ uid: graph.sizerange
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/sizerange.md
 summary:
-  heading: sizeRange resource type
+  heading: "sizeRange resource type"
   intro: |
     Specifies the maximum and minimum sizes (in kilobytes) that an incoming message must have in order for a condition or exception to apply.
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -19,11 +19,11 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: maximumSize
-    type: Int32
-    description: The maximum size (in kilobytes) that an incoming message must have in order for a condition or exception to apply.
-  - property: minimumSize
-    type: Int32
-    description: The minimum size (in kilobytes) that an incoming message must have in order for a condition or exception to apply.
+  - property: "maximumSize"
+    type: "Int32"
+    description: "The maximum size (in kilobytes) that an incoming message must have in order for a condition or exception to apply."
+  - property: "minimumSize"
+    type: "Int32"
+    description: "The minimum size (in kilobytes) that an incoming message must have in order for a condition or exception to apply."

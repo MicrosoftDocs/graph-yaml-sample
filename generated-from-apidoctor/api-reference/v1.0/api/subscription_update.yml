@@ -3,54 +3,54 @@ uid: graph.subscription_update
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/subscription_update.md
 summary:
-  heading: Update subscription
+  heading: "Update subscription"
   intro: |
     Renew a subscription by extending its expiry time.
     Subscriptions expire after a length of time that varies by resource type. In order to avoid missing notifications, an app should renew its subscriptions well in advance of their expiry date. See [subscription](xref:graph.subscription) for maximum length of a subscription for each resource type.
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     The following table lists the suggested permission needed for each resource. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
   list:
-  - resource: 
-    permission: 
-  - resource: 
-    permission: 
-  - resource: 
-    permission: 
-  - resource: 
-    permission: 
-  - resource: 
-    permission: 
-  - resource: 
-    permission: 
-  - resource: 
-    permission: 
-  - resource: 
-    permission: 
+  - resource: ""
+    permission: ""
+  - resource: ""
+    permission: ""
+  - resource: ""
+    permission: ""
+  - resource: ""
+    permission: ""
+  - resource: ""
+    permission: ""
+  - resource: ""
+    permission: ""
+  - resource: ""
+    permission: ""
+  - resource: ""
+    permission: ""
 httpRequest:
-  heading: HTTP request
+  heading: "HTTP request"
   sampleCode: |
     ```http
     PATCH /subscriptions/{id}
     ```
     
 requestHeaders:
-  heading: Request headers
+  heading: "Request headers"
   list:
-  - name: Authorization
-    value: String
-    description: Bearer {token}. Required.
+  - name: "Authorization"
+    value: "String"
+    description: "Bearer {token}. Required."
 response:
-  heading: Response
+  heading: "Response"
   intro: |
     If successful, this method returns a `200 OK` response code and [subscription](xref:graph.subscription) object in the response body.
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         request:
-            heading: Request
+            heading: "Request"
             intro: |
               Here is an example of the request.
             sampleCode: |
@@ -64,7 +64,7 @@ examples:
               ```
               
         response:
-            heading: Response
+            heading: "Response"
             intro: |
               Here is an example of the response.
             sampleCode: |

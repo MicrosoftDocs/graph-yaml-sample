@@ -3,22 +3,22 @@ uid: graph.calendar_delete
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/calendar_delete.md
 summary:
-  heading: Delete calendar
+  heading: "Delete calendar"
   intro: |
     Delete a calendar other than the default calendar.
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
   list:
-  - resource: Delegated (work or school account)
-    permission: Calendars.ReadWrite
-  - resource: Delegated (personal Microsoft account)
-    permission: Calendars.ReadWrite
-  - resource: Application
-    permission: Calendars.ReadWrite
+  - resource: "Delegated (work or school account)"
+    permission: "Calendars.ReadWrite"
+  - resource: "Delegated (personal Microsoft account)"
+    permission: "Calendars.ReadWrite"
+  - resource: "Application"
+    permission: "Calendars.ReadWrite"
 httpRequest:
-  heading: HTTP request
+  heading: "HTTP request"
   intro: |
     A user's [calendar](xref:graph.calendar) other than the default calendar in the default [calendarGroup](xref:graph.calendargroup).
     DELETE /me/calendars/{id}
@@ -32,25 +32,25 @@ httpRequest:
     DELETE /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 
 requestHeaders:
-  heading: Request headers
+  heading: "Request headers"
   list:
-  - name: Authorization
-    value: String
-    description: Bearer {token}. Required.
+  - name: "Authorization"
+    value: "String"
+    description: "Bearer {token}. Required."
 requestBody:
-  heading: Request body
+  heading: "Request body"
   intro: |
     Do not supply a request body for this method.
 response:
-  heading: Response
+  heading: "Response"
   intro: |
     If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         request:
-            heading: Request
+            heading: "Request"
             intro: |
               Here is an example of the request.
             sampleCode: |
@@ -59,7 +59,7 @@ examples:
               ```
               
         response:
-            heading: Response
+            heading: "Response"
             intro: |
               Here is an example of the response. 
             sampleCode: |

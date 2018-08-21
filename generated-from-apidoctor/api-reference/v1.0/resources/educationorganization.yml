@@ -3,11 +3,11 @@ uid: graph.educationorganization
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/educationorganization.md
 summary:
-  heading: educationOrganization resource type
+  heading: "educationOrganization resource type"
   intro: |
     Abstract entity used to model the commonality between different organization types within the education sector.
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     The following is a JSON representation of the resource.
   sampleCode: |
@@ -20,18 +20,18 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: description
-    type: String
-    description: Organization description.
-  - property: displayName
-    type: String
-    description: Organization display name.
-  - property: externalSource
-    type: microsoft.graph.educationExternalSource
-    description: Source where this organization was created from. The possible values are: sis, manual, unknownFutureValue.
+  - property: "description"
+    type: "String"
+    description: "Organization description."
+  - property: "displayName"
+    type: "String"
+    description: "Organization display name."
+  - property: "externalSource"
+    type: "microsoft.graph.educationExternalSource"
+    description: "Source where this organization was created from. The possible values are: sis, manual, unknownFutureValue."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None.

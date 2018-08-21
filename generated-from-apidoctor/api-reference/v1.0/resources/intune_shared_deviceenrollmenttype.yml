@@ -3,29 +3,29 @@ uid: graph.intune_shared_deviceenrollmenttype
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_shared_deviceenrollmenttype.md
 summary:
-  heading: deviceEnrollmentType enum type
+  heading: "deviceEnrollmentType enum type"
   intro: |
     Possible ways of adding a mobile device to management.
 enum:
-  heading: Members
+  heading: "Members"
   table:
-  - member: unknown
-    description: Default value, enrollment type was not collected.
-  - member: userEnrollment
-    description: User driven enrollment through BYOD channel.
-  - member: deviceEnrollmentManager
-    description: User enrollment with a device enrollment manager account.
-  - member: appleBulkWithUser
-    description: Apple bulk enrollment with user challenge. (DEP, Apple Configurator)
-  - member: appleBulkWithoutUser
-    description: Apple bulk enrollment without user challenge. (DEP, Apple Configurator, Mobile Config)
-  - member: windowsAzureADJoin
-    description: Windows 10 Azure AD Join.
-  - member: windowsBulkUserless
-    description: Windows 10 Bulk enrollment through ICD with certificate.
-  - member: windowsAutoEnrollment
-    description: Windows 10 automatic enrollment. (Add work account)
-  - member: windowsBulkAzureDomainJoin
-    description: Windows 10 bulk Azure AD Join.
-  - member: windowsCoManagement
-    description: Windows 10 Co-Management triggered by AutoPilot or Group Policy.
+  - member: "unknown"
+    description: "Default value, enrollment type was not collected."
+  - member: "userEnrollment"
+    description: "User driven enrollment through BYOD channel."
+  - member: "deviceEnrollmentManager"
+    description: "User enrollment with a device enrollment manager account."
+  - member: "appleBulkWithUser"
+    description: "Apple bulk enrollment with user challenge. (DEP, Apple Configurator)"
+  - member: "appleBulkWithoutUser"
+    description: "Apple bulk enrollment without user challenge. (DEP, Apple Configurator, Mobile Config)"
+  - member: "windowsAzureADJoin"
+    description: "Windows 10 Azure AD Join."
+  - member: "windowsBulkUserless"
+    description: "Windows 10 Bulk enrollment through ICD with certificate."
+  - member: "windowsAutoEnrollment"
+    description: "Windows 10 automatic enrollment. (Add work account)"
+  - member: "windowsBulkAzureDomainJoin"
+    description: "Windows 10 bulk Azure AD Join."
+  - member: "windowsCoManagement"
+    description: "Windows 10 Co-Management triggered by AutoPilot or Group Policy."

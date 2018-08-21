@@ -3,30 +3,30 @@ uid: graph.directory
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/directory.md
 summary:
-  heading: directory resource type (deleted items)
+  heading: "directory resource type (deleted items)"
   intro: |
     Represents a deleted item in the directory. When an item is deleted, it is added to the deleted items "container". Deleted items will remain available to restore for up to 30 days. After 30 days, the items are permanently deleted.
     Currently, deleted items functionality is only supported for Office 365 [groups](xref:graph.group) and [users](xref:graph.users).
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [Get deleted item](xref:graph.directory_deleteditems_get)
-    type: [directoryObject](xref:graph.directoryobject)
-    description: Gets the properties of a deleted item.
-  - method: [Restore deleted item](xref:graph.directory_deleteditems_restore)
-    type: [directoryObject](xref:graph.directoryobject)
-    description: Restores a recently deleted item.
-  - method: [List deleted items](xref:graph.directory_deleteditems_list)
-    type: [directoryObject](xref:graph.directoryobject) collection
-    description: Gets a list of recently deleted items.
-  - method: [Permanently delete an item](xref:graph.directory_deleteditems_delete)
-    type: None
-    description: Permanently deletes an item.
-  - method: [List deleted items owned by a user](xref:graph.directory_deleteditems_user_owned)
-    type: [directoryObject](xref:graph.directoryobject) collection
-    description: Lists directory items owned by a user.
+  - method: "[Get deleted item](xref:graph.directory_deleteditems_get)"
+    type: "[directoryObject](xref:graph.directoryobject)"
+    description: "Gets the properties of a deleted item."
+  - method: "[Restore deleted item](xref:graph.directory_deleteditems_restore)"
+    type: "[directoryObject](xref:graph.directoryobject)"
+    description: "Restores a recently deleted item."
+  - method: "[List deleted items](xref:graph.directory_deleteditems_list)"
+    type: "[directoryObject](xref:graph.directoryobject) collection"
+    description: "Gets a list of recently deleted items."
+  - method: "[Permanently delete an item](xref:graph.directory_deleteditems_delete)"
+    type: "None"
+    description: "Permanently deletes an item."
+  - method: "[List deleted items owned by a user](xref:graph.directory_deleteditems_user_owned)"
+    type: "[directoryObject](xref:graph.directoryobject) collection"
+    description: "Lists directory items owned by a user."
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -36,15 +36,15 @@ resource:
     ```
     
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   list:
-  - relationship: deletedItems
-    type: Collection(microsoft.graph.directoryObject)
-    description: Recently deleted items. Read-only. Nullable.
+  - relationship: "deletedItems"
+    type: "Collection(microsoft.graph.directoryObject)"
+    description: "Recently deleted items. Read-only. Nullable."
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         intro: |
           ```json
           HTTP/1.1 200 OK
@@ -55,7 +55,7 @@ examples:
           ```
           
         request:
-            heading: request
+            heading: "request"
             sampleCode: |
               ```http
               GET https://graph.microsoft.com/v1.0/directory

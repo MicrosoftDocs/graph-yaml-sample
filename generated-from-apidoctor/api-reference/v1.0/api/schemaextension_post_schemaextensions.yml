@@ -3,7 +3,7 @@ uid: graph.schemaextension_post_schemaextensions
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/schemaextension_post_schemaextensions.md
 summary:
-  heading: Create schemaExtension
+  heading: "Create schemaExtension"
   intro: |
     Create a new [schemaExtension](xref:graph.schemaextension) definition to extend a [supporting resource type](xref:graph.extensibility_overview#supported-resources).
     Schema extensions let you add strongly-typed custom data to a resource. The app that creates a schema extension is the owner app. Depending on the 
@@ -12,34 +12,34 @@ summary:
     use the schema extension definition to [create a new group with training course data](xref:graph.extensibility_schema_groups#3-create-a-new-group-with-extended-data), and 
     [add training course data to an existing group](xref:graph.extensibility_schema_groups#4-add-update-or-remove-custom-data-in-an-existing-group).
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
   list:
-  - resource: Delegated (work or school account)
-    permission: Directory.AccessAsUser.All
-  - resource: Delegated (personal Microsoft account)
-    permission: Not supported.
-  - resource: Application
-    permission: Not supported.
+  - resource: "Delegated (work or school account)"
+    permission: "Directory.AccessAsUser.All"
+  - resource: "Delegated (personal Microsoft account)"
+    permission: "Not supported."
+  - resource: "Application"
+    permission: "Not supported."
 httpRequest:
-  heading: HTTP request
+  heading: "HTTP request"
   sampleCode: |
     ```http
     POST /schemaExtensions
     ```
     
 requestHeaders:
-  heading: Request headers
+  heading: "Request headers"
   list:
-  - name: Authorization
-    value: 
-    description: Bearer {token}. Required.
-  - name: Content-Type
-    value: 
-    description: application/json
+  - name: "Authorization"
+    value: ""
+    description: "Bearer {token}. Required."
+  - name: "Content-Type"
+    value: ""
+    description: "application/json"
 requestBody:
-  heading: Request body
+  heading: "Request body"
   intro: |
     In the request body, supply a JSON representation of [schemaExtension](xref:graph.schemaextension) object.
     The following table shows the properties that are required when you create a schema extension.
@@ -51,13 +51,13 @@ requestBody:
     |properties|[extensionSchemaProperty](xref:graph.extensionschemaproperty) collection|The collection of property names and types that make up the schema extension definition.
     |targetTypes|String collection|Set of Microsoft Graph resource types (that support schema extensions) that this schema extension definition can be applied to.
 response:
-  heading: Response
+  heading: "Response"
   intro: |
     If successful, this method returns `201 Created` response code and [schemaExtension](xref:graph.schemaextension) object in the response body.
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         outro: |
           ##### Request 1
           The first example shows using a verified domain name, `graphlearn`, and a schema name, `courses`, to form a unique string for the **id** property of the 

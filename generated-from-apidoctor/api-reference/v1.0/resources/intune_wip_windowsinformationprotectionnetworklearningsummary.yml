@@ -3,29 +3,29 @@ uid: graph.intune_wip_windowsinformationprotectionnetworklearningsummary
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_wip_windowsinformationprotectionnetworklearningsummary.md
 summary:
-  heading: windowsInformationProtectionNetworkLearningSummary resource type
+  heading: "windowsInformationProtectionNetworkLearningSummary resource type"
   intro: |
     Windows Information Protection Network learning Summary entity.
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [List windowsInformationProtectionNetworkLearningSummaries](xref:graph.intune_wip_windowsinformationprotectionnetworklearningsummary_list)
-    type: [windowsInformationProtectionNetworkLearningSummary](xref:graph.intune_wip_windowsinformationprotectionnetworklearningsummary) collection
-    description: List properties and relationships of the windowsInformationProtectionNetworkLearningSummary objects.
-  - method: [Get windowsInformationProtectionNetworkLearningSummary](xref:graph.intune_wip_windowsinformationprotectionnetworklearningsummary_get)
-    type: [windowsInformationProtectionNetworkLearningSummary](xref:graph.intune_wip_windowsinformationprotectionnetworklearningsummary)
-    description: Read properties and relationships of the windowsInformationProtectionNetworkLearningSummary object.
-  - method: [Create windowsInformationProtectionNetworkLearningSummary](xref:graph.intune_wip_windowsinformationprotectionnetworklearningsummary_create)
-    type: [windowsInformationProtectionNetworkLearningSummary](xref:graph.intune_wip_windowsinformationprotectionnetworklearningsummary)
-    description: Create a new windowsInformationProtectionNetworkLearningSummary object.
-  - method: [Delete windowsInformationProtectionNetworkLearningSummary](xref:graph.intune_wip_windowsinformationprotectionnetworklearningsummary_delete)
-    type: None
-    description: Deletes a windowsInformationProtectionNetworkLearningSummary.
-  - method: [Update windowsInformationProtectionNetworkLearningSummary](xref:graph.intune_wip_windowsinformationprotectionnetworklearningsummary_update)
-    type: [windowsInformationProtectionNetworkLearningSummary](xref:graph.intune_wip_windowsinformationprotectionnetworklearningsummary)
-    description: Update the properties of a windowsInformationProtectionNetworkLearningSummary object.
+  - method: "[List windowsInformationProtectionNetworkLearningSummaries](xref:graph.intune_wip_windowsinformationprotectionnetworklearningsummary_list)"
+    type: "[windowsInformationProtectionNetworkLearningSummary](xref:graph.intune_wip_windowsinformationprotectionnetworklearningsummary) collection"
+    description: "List properties and relationships of the windowsInformationProtectionNetworkLearningSummary objects."
+  - method: "[Get windowsInformationProtectionNetworkLearningSummary](xref:graph.intune_wip_windowsinformationprotectionnetworklearningsummary_get)"
+    type: "[windowsInformationProtectionNetworkLearningSummary](xref:graph.intune_wip_windowsinformationprotectionnetworklearningsummary)"
+    description: "Read properties and relationships of the windowsInformationProtectionNetworkLearningSummary object."
+  - method: "[Create windowsInformationProtectionNetworkLearningSummary](xref:graph.intune_wip_windowsinformationprotectionnetworklearningsummary_create)"
+    type: "[windowsInformationProtectionNetworkLearningSummary](xref:graph.intune_wip_windowsinformationprotectionnetworklearningsummary)"
+    description: "Create a new windowsInformationProtectionNetworkLearningSummary object."
+  - method: "[Delete windowsInformationProtectionNetworkLearningSummary](xref:graph.intune_wip_windowsinformationprotectionnetworklearningsummary_delete)"
+    type: "None"
+    description: "Deletes a windowsInformationProtectionNetworkLearningSummary."
+  - method: "[Update windowsInformationProtectionNetworkLearningSummary](xref:graph.intune_wip_windowsinformationprotectionnetworklearningsummary_update)"
+    type: "[windowsInformationProtectionNetworkLearningSummary](xref:graph.intune_wip_windowsinformationprotectionnetworklearningsummary)"
+    description: "Update the properties of a windowsInformationProtectionNetworkLearningSummary object."
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -39,18 +39,18 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: id
-    type: String
-    description: Unique Identifier for the WindowsInformationProtectionNetworkLearningSummary.
-  - property: url
-    type: String
-    description: Website url
-  - property: deviceCount
-    type: Int32
-    description: Device Count
+  - property: "id"
+    type: "String"
+    description: "Unique Identifier for the WindowsInformationProtectionNetworkLearningSummary."
+  - property: "url"
+    type: "String"
+    description: "Website url"
+  - property: "deviceCount"
+    type: "Int32"
+    description: "Device Count"
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

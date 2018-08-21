@@ -3,12 +3,12 @@ uid: graph.intune_deviceconfig_omasettingstringxml
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_omasettingstringxml.md
 summary:
-  heading: omaSettingStringXml resource type
+  heading: "omaSettingStringXml resource type"
   intro: |
     OMA Settings StringXML definition.
     Inherits from [omaSetting](xref:graph.intune_deviceconfig_omasetting)
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -24,24 +24,24 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: displayName
-    type: String
-    description: Display Name. Inherited from omaSetting
-  - property: description
-    type: String
-    description: Description. Inherited from omaSetting
-  - property: omaUri
-    type: String
-    description: OMA. Inherited from omaSetting
-  - property: fileName
-    type: String
-    description: File name associated with the Value property (.xml).
-  - property: value
-    type: Binary
-    description: Value. (UTF8 encoded byte array)
+  - property: "displayName"
+    type: "String"
+    description: "Display Name. Inherited from omaSetting"
+  - property: "description"
+    type: "String"
+    description: "Description. Inherited from omaSetting"
+  - property: "omaUri"
+    type: "String"
+    description: "OMA. Inherited from omaSetting"
+  - property: "fileName"
+    type: "String"
+    description: "File name associated with the Value property (.xml)."
+  - property: "value"
+    type: "Binary"
+    description: "Value. (UTF8 encoded byte array)"
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

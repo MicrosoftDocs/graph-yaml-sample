@@ -3,7 +3,7 @@ uid: graph.device-relay-concept-overview
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/device-relay-concept-overview.md
 summary:
-  heading: Device relay API in Microsoft Graph (preview)
+  heading: "Device relay API in Microsoft Graph (preview)"
   intro: |
     Today, people interact with multiple devices on a daily basis. Users often start productivity tasks and entertainment activities on one device and continue them on another. To meet your customers' needs, your apps need to seamlessly span devices and platforms. 
     You can use the device relay APIs to deliver seamless experiences to your users. You can make it possible for them to actively transfer an experience from one device to another or enhance it by using multiple devices at once. This is done via in-app actions (a button or selection in your app) that call the device relay API to discover users' devices, and enable them to launch and message your app on those other devices.

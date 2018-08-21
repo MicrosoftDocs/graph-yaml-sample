@@ -3,7 +3,7 @@ uid: graph.manage_focused_inbox
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/manage_focused_inbox.md
 summary:
-  heading: Manage Focused Inbox
+  heading: "Manage Focused Inbox"
   intro: |
     Focused Inbox allows you to view important messages in the `Focused` tab of the Inbox, and the rest of the Inbox messages in the `Other` tab. The classification system 
     initially organizes Inbox messages in a default way. You can correct and train the system over time through the user interface or programmatically. The more you use it, 

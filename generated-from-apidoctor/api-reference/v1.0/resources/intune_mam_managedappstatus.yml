@@ -3,20 +3,20 @@ uid: graph.intune_mam_managedappstatus
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_mam_managedappstatus.md
 summary:
-  heading: managedAppStatus resource type
+  heading: "managedAppStatus resource type"
   intro: |
     Represents app protection and configuration status for the organization.
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [List managedAppStatuses](xref:graph.intune_mam_managedappstatus_list)
-    type: [managedAppStatus](xref:graph.intune_mam_managedappstatus) collection
-    description: List properties and relationships of the managedAppStatus objects.
-  - method: [Get managedAppStatus](xref:graph.intune_mam_managedappstatus_get)
-    type: [managedAppStatus](xref:graph.intune_mam_managedappstatus)
-    description: Read properties and relationships of the managedAppStatus object.
+  - method: "[List managedAppStatuses](xref:graph.intune_mam_managedappstatus_list)"
+    type: "[managedAppStatus](xref:graph.intune_mam_managedappstatus) collection"
+    description: "List properties and relationships of the managedAppStatus objects."
+  - method: "[Get managedAppStatus](xref:graph.intune_mam_managedappstatus_get)"
+    type: "[managedAppStatus](xref:graph.intune_mam_managedappstatus)"
+    description: "Read properties and relationships of the managedAppStatus object."
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -30,18 +30,18 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: displayName
-    type: String
-    description: Friendly name of the status report.
-  - property: id
-    type: String
-    description: Key of the entity.
-  - property: version
-    type: String
-    description: Version of the entity.
+  - property: "displayName"
+    type: "String"
+    description: "Friendly name of the status report."
+  - property: "id"
+    type: "String"
+    description: "Key of the entity."
+  - property: "version"
+    type: "String"
+    description: "Version of the entity."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

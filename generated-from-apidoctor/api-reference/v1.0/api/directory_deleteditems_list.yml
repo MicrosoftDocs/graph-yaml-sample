@@ -3,12 +3,12 @@ uid: graph.directory_deleteditems_list
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/directory_deleteditems_list.md
 summary:
-  heading: List deleted items
+  heading: "List deleted items"
   intro: |
     Retrieve a list of recently deleted items from [deleted items](xref:graph.directory).
     Currently, deleted items functionality is only supported for the [group](xref:graph.group) and [user](xref:graph.user) resources.
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
   outro: |
@@ -19,7 +19,7 @@ permissions:
     |Delegated (personal Microsoft account)|Not supported.
     |Application|User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All
 httpRequest:
-  heading: HTTP request
+  heading: "HTTP request"
   sampleCode: |
     ```http
     GET /directory/deletedItems/microsoft.graph.group
@@ -29,39 +29,39 @@ httpRequest:
   outro: |
     This API currently supports retrieving object types of groups (microsoft.graph.group) or users (microsoft.graph.user) from deleted items. The type is specified as a required part of the URI. Calling GET /directory/deletedItems without a type is not supported.
 queryParameters:
-  heading: Optional query parameters
+  heading: "Optional query parameters"
   intro: |
     This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 requestHeaders:
-  heading: Request headers
+  heading: "Request headers"
   list:
-  - name: Authorization
-    value: 
-    description: Bearer code Required
-  - name: Accept
-    value: 
-    description: application/json
+  - name: "Authorization"
+    value: ""
+    description: "Bearer code Required"
+  - name: "Accept"
+    value: ""
+    description: "application/json"
 requestBody:
-  heading: Request body
+  heading: "Request body"
   intro: |
     Do not supply a request body for this method.
 response:
-  heading: Response
+  heading: "Response"
   intro: |
     If successful, this method returns a `200 OK` response code and collection of [directoryObject](xref:graph.directoryobject) objects in the response body.
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         request:
-            heading: Request
+            heading: "Request"
             sampleCode: |
               ```http
               GET https://graph.microsoft.com/v1.0/directory/deletedItems/microsoft.graph.group
               ```
               
         response:
-            heading: Response
+            heading: "Response"
             intro: |
               Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
             sampleCode: |

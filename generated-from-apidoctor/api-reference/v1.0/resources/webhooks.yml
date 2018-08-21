@@ -3,7 +3,7 @@ uid: graph.webhooks
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/webhooks.md
 summary:
-  heading: Use the Microsoft Graph API to get change notifications
+  heading: "Use the Microsoft Graph API to get change notifications"
   intro: |
     The Microsoft Graph REST API uses a webhook mechanism to deliver notifications to clients. A client is a web service that configures its own URL to receive notifications. Client apps use notifications to update their state upon changes. For more details, including how to subscribe to and handle incoming notifications, see [Set up notifications for changes in user data](xref:graph.webhooks).
     Using the Microsoft Graph API, an app can subscribe to changes on the following resources:
@@ -18,16 +18,16 @@ summary:
     * Users' personal OneDrive folders
     
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     In general, subscription operations require read permission to the resource. For example, to get notifications for messages, your app needs the `Mail.Read` permission. The [create subscription](xref:graph.subscription_post_subscriptions) article lists permissions needed for each resource type. The following table lists the types of permissions your app can request to use webhooks for specific resource types.
   list:
-  - resource: Delegated - work or school account
-    permission: 
-  - resource: Delegated - personal Microsoft account
-    permission: 
-  - resource: Application
-    permission: 
+  - resource: "Delegated - work or school account"
+    permission: ""
+  - resource: "Delegated - personal Microsoft account"
+    permission: ""
+  - resource: "Application"
+    permission: ""
   outro: |
     ## See also
     

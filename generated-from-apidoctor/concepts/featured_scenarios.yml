@@ -3,7 +3,7 @@ uid: graph.featured_scenarios
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/featured_scenarios.md
 summary:
-  heading: Featured scenarios for Microsoft Graph
+  heading: "Featured scenarios for Microsoft Graph"
   intro: |
     Check out some common and featured scenarios for working with the Microsoft Graph API. Explore the topics in this section, and try out some of the popular requests listed in the following table. The links take you to our [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).
   outro: |

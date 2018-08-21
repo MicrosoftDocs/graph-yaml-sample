@@ -3,35 +3,35 @@ uid: graph.intune_remoteassistance_remoteassistancepartner
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_remoteassistance_remoteassistancepartner.md
 summary:
-  heading: remoteAssistancePartner resource type
+  heading: "remoteAssistancePartner resource type"
   intro: |
     remoteAssistPartner resources represent the metadata and status of a given Remote Assistance partner service.
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [List remoteAssistancePartners](xref:graph.intune_remoteassistance_remoteassistancepartner_list)
-    type: [remoteAssistancePartner](xref:graph.intune_remoteassistance_remoteassistancepartner) collection
-    description: List properties and relationships of the remoteAssistancePartner objects.
-  - method: [Get remoteAssistancePartner](xref:graph.intune_remoteassistance_remoteassistancepartner_get)
-    type: [remoteAssistancePartner](xref:graph.intune_remoteassistance_remoteassistancepartner)
-    description: Read properties and relationships of the remoteAssistancePartner object.
-  - method: [Create remoteAssistancePartner](xref:graph.intune_remoteassistance_remoteassistancepartner_create)
-    type: [remoteAssistancePartner](xref:graph.intune_remoteassistance_remoteassistancepartner)
-    description: Create a new remoteAssistancePartner object.
-  - method: [Delete remoteAssistancePartner](xref:graph.intune_remoteassistance_remoteassistancepartner_delete)
-    type: None
-    description: Deletes a remoteAssistancePartner.
-  - method: [Update remoteAssistancePartner](xref:graph.intune_remoteassistance_remoteassistancepartner_update)
-    type: [remoteAssistancePartner](xref:graph.intune_remoteassistance_remoteassistancepartner)
-    description: Update the properties of a remoteAssistancePartner object.
-  - method: [beginOnboarding action](xref:graph.intune_remoteassistance_remoteassistancepartner_beginonboarding)
-    type: None
-    description: Not yet documented
-  - method: [disconnect action](xref:graph.intune_remoteassistance_remoteassistancepartner_disconnect)
-    type: None
-    description: Not yet documented
+  - method: "[List remoteAssistancePartners](xref:graph.intune_remoteassistance_remoteassistancepartner_list)"
+    type: "[remoteAssistancePartner](xref:graph.intune_remoteassistance_remoteassistancepartner) collection"
+    description: "List properties and relationships of the remoteAssistancePartner objects."
+  - method: "[Get remoteAssistancePartner](xref:graph.intune_remoteassistance_remoteassistancepartner_get)"
+    type: "[remoteAssistancePartner](xref:graph.intune_remoteassistance_remoteassistancepartner)"
+    description: "Read properties and relationships of the remoteAssistancePartner object."
+  - method: "[Create remoteAssistancePartner](xref:graph.intune_remoteassistance_remoteassistancepartner_create)"
+    type: "[remoteAssistancePartner](xref:graph.intune_remoteassistance_remoteassistancepartner)"
+    description: "Create a new remoteAssistancePartner object."
+  - method: "[Delete remoteAssistancePartner](xref:graph.intune_remoteassistance_remoteassistancepartner_delete)"
+    type: "None"
+    description: "Deletes a remoteAssistancePartner."
+  - method: "[Update remoteAssistancePartner](xref:graph.intune_remoteassistance_remoteassistancepartner_update)"
+    type: "[remoteAssistancePartner](xref:graph.intune_remoteassistance_remoteassistancepartner)"
+    description: "Update the properties of a remoteAssistancePartner object."
+  - method: "[beginOnboarding action](xref:graph.intune_remoteassistance_remoteassistancepartner_beginonboarding)"
+    type: "None"
+    description: "Not yet documented"
+  - method: "[disconnect action](xref:graph.intune_remoteassistance_remoteassistancepartner_disconnect)"
+    type: "None"
+    description: "Not yet documented"
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -47,24 +47,24 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: id
-    type: String
-    description: Unique identifier of the partner.
-  - property: displayName
-    type: String
-    description: Display name of the partner.
-  - property: onboardingUrl
-    type: String
-    description: URL of the partner's onboarding portal, where an administrator can configure their Remote Assistance service.
-  - property: onboardingStatus
-    type: microsoft.graph.remoteAssistanceOnboardingStatus
-    description: TBD. The possible values are: notOnboarded, onboarding, onboarded.
-  - property: lastConnectionDateTime
-    type: DateTimeOffset
-    description: Timestamp of the last request sent to Intune by the TEM partner.
+  - property: "id"
+    type: "String"
+    description: "Unique identifier of the partner."
+  - property: "displayName"
+    type: "String"
+    description: "Display name of the partner."
+  - property: "onboardingUrl"
+    type: "String"
+    description: "URL of the partner's onboarding portal, where an administrator can configure their Remote Assistance service."
+  - property: "onboardingStatus"
+    type: "microsoft.graph.remoteAssistanceOnboardingStatus"
+    description: "TBD. The possible values are: notOnboarded, onboarding, onboarded."
+  - property: "lastConnectionDateTime"
+    type: "DateTimeOffset"
+    description: "Timestamp of the last request sent to Intune by the TEM partner."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

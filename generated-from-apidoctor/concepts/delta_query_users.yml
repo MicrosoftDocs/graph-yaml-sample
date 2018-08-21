@@ -3,7 +3,7 @@ uid: graph.delta_query_users
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/delta_query_users.md
 summary:
-  heading: Get incremental changes for users
+  heading: "Get incremental changes for users"
   intro: |
     [Delta query](xref:graph.delta_query_overview) lets you query for additions, deletions, or updates to users, by way of a series of [delta](xref:graph.user_delta) function calls. Delta query enables you discover changes to users without having to fetch the entire set of users from Microsoft Graph and compare changes.
     Clients using synchronizing users with a local profile store can use Delta Query for both their initial full synchronization along with incremental synchronizations in the future. Typically, a client would do an initial full synchronization of all the users in a tenant, and subsequently, get incremental changes to users periodically.
@@ -17,7 +17,7 @@ summary:
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         intro: |
           The following example shows a series  requests to track changes to users:
           

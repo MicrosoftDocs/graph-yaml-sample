@@ -3,11 +3,11 @@ uid: graph.scoredemailaddress
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/scoredemailaddress.md
 summary:
-  heading: scoredEmailAddress resource type
+  heading: "scoredEmailAddress resource type"
   intro: |
     Represents a scored email address.
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -19,11 +19,11 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: address
-    type: String
-    description: The email address.
-  - property: relevanceScore
-    type: Double
-    description: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user’s communication and collaboration patterns and business relationships.
+  - property: "address"
+    type: "String"
+    description: "The email address."
+  - property: "relevanceScore"
+    type: "Double"
+    description: "The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user’s communication and collaboration patterns and business relationships."

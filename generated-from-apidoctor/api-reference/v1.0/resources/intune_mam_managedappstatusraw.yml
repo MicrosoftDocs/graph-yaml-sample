@@ -3,21 +3,21 @@ uid: graph.intune_mam_managedappstatusraw
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_mam_managedappstatusraw.md
 summary:
-  heading: managedAppStatusRaw resource type
+  heading: "managedAppStatusRaw resource type"
   intro: |
     Represents an un-typed status report about organizations app protection and configuration.
     Inherits from [managedAppStatus](xref:graph.intune_mam_managedappstatus)
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [List managedAppStatusRaws](xref:graph.intune_mam_managedappstatusraw_list)
-    type: [managedAppStatusRaw](xref:graph.intune_mam_managedappstatusraw) collection
-    description: List properties and relationships of the managedAppStatusRaw objects.
-  - method: [Get managedAppStatusRaw](xref:graph.intune_mam_managedappstatusraw_get)
-    type: [managedAppStatusRaw](xref:graph.intune_mam_managedappstatusraw)
-    description: Read properties and relationships of the managedAppStatusRaw object.
+  - method: "[List managedAppStatusRaws](xref:graph.intune_mam_managedappstatusraw_list)"
+    type: "[managedAppStatusRaw](xref:graph.intune_mam_managedappstatusraw) collection"
+    description: "List properties and relationships of the managedAppStatusRaw objects."
+  - method: "[Get managedAppStatusRaw](xref:graph.intune_mam_managedappstatusraw_get)"
+    type: "[managedAppStatusRaw](xref:graph.intune_mam_managedappstatusraw)"
+    description: "Read properties and relationships of the managedAppStatusRaw object."
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -34,21 +34,21 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: displayName
-    type: String
-    description: Friendly name of the status report. Inherited from managedAppStatus
-  - property: id
-    type: String
-    description: Key of the entity. Inherited from managedAppStatus
-  - property: version
-    type: String
-    description: Version of the entity. Inherited from managedAppStatus
-  - property: content
-    type: microsoft.graph.Json
-    description: Status report content.
+  - property: "displayName"
+    type: "String"
+    description: "Friendly name of the status report. Inherited from managedAppStatus"
+  - property: "id"
+    type: "String"
+    description: "Key of the entity. Inherited from managedAppStatus"
+  - property: "version"
+    type: "String"
+    description: "Version of the entity. Inherited from managedAppStatus"
+  - property: "content"
+    type: "microsoft.graph.Json"
+    description: "Status report content."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

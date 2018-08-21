@@ -3,29 +3,29 @@ uid: graph.intune_onboarding_mobilethreatdefenseconnector
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_onboarding_mobilethreatdefenseconnector.md
 summary:
-  heading: mobileThreatDefenseConnector resource type
+  heading: "mobileThreatDefenseConnector resource type"
   intro: |
     Entity which represents a connection to Mobile threat defense partner.
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [List mobileThreatDefenseConnectors](xref:graph.intune_onboarding_mobilethreatdefenseconnector_list)
-    type: [mobileThreatDefenseConnector](xref:graph.intune_onboarding_mobilethreatdefenseconnector) collection
-    description: List properties and relationships of the mobileThreatDefenseConnector objects.
-  - method: [Get mobileThreatDefenseConnector](xref:graph.intune_onboarding_mobilethreatdefenseconnector_get)
-    type: [mobileThreatDefenseConnector](xref:graph.intune_onboarding_mobilethreatdefenseconnector)
-    description: Read properties and relationships of the mobileThreatDefenseConnector object.
-  - method: [Create mobileThreatDefenseConnector](xref:graph.intune_onboarding_mobilethreatdefenseconnector_create)
-    type: [mobileThreatDefenseConnector](xref:graph.intune_onboarding_mobilethreatdefenseconnector)
-    description: Create a new mobileThreatDefenseConnector object.
-  - method: [Delete mobileThreatDefenseConnector](xref:graph.intune_onboarding_mobilethreatdefenseconnector_delete)
-    type: None
-    description: Deletes a mobileThreatDefenseConnector.
-  - method: [Update mobileThreatDefenseConnector](xref:graph.intune_onboarding_mobilethreatdefenseconnector_update)
-    type: [mobileThreatDefenseConnector](xref:graph.intune_onboarding_mobilethreatdefenseconnector)
-    description: Update the properties of a mobileThreatDefenseConnector object.
+  - method: "[List mobileThreatDefenseConnectors](xref:graph.intune_onboarding_mobilethreatdefenseconnector_list)"
+    type: "[mobileThreatDefenseConnector](xref:graph.intune_onboarding_mobilethreatdefenseconnector) collection"
+    description: "List properties and relationships of the mobileThreatDefenseConnector objects."
+  - method: "[Get mobileThreatDefenseConnector](xref:graph.intune_onboarding_mobilethreatdefenseconnector_get)"
+    type: "[mobileThreatDefenseConnector](xref:graph.intune_onboarding_mobilethreatdefenseconnector)"
+    description: "Read properties and relationships of the mobileThreatDefenseConnector object."
+  - method: "[Create mobileThreatDefenseConnector](xref:graph.intune_onboarding_mobilethreatdefenseconnector_create)"
+    type: "[mobileThreatDefenseConnector](xref:graph.intune_onboarding_mobilethreatdefenseconnector)"
+    description: "Create a new mobileThreatDefenseConnector object."
+  - method: "[Delete mobileThreatDefenseConnector](xref:graph.intune_onboarding_mobilethreatdefenseconnector_delete)"
+    type: "None"
+    description: "Deletes a mobileThreatDefenseConnector."
+  - method: "[Update mobileThreatDefenseConnector](xref:graph.intune_onboarding_mobilethreatdefenseconnector_update)"
+    type: "[mobileThreatDefenseConnector](xref:graph.intune_onboarding_mobilethreatdefenseconnector)"
+    description: "Update the properties of a mobileThreatDefenseConnector object."
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -45,36 +45,36 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: id
-    type: String
-    description: Not yet documented
-  - property: lastHeartbeatDateTime
-    type: DateTimeOffset
-    description: DateTime of last Heartbeat recieved from the Data Sync Partner
-  - property: partnerState
-    type: microsoft.graph.mobileThreatPartnerTenantState
-    description: Data Sync Partner state for this account. The possible values are: unavailable, available, enabled, unresponsive.
-  - property: androidEnabled
-    type: Boolean
-    description: For Android, set whether data from the data sync partner should be used during compliance evaluations
-  - property: iosEnabled
-    type: Boolean
-    description: For IOS, get or set whether data from the data sync partner should be used during compliance evaluations
-  - property: androidDeviceBlockedOnMissingPartnerData
-    type: Boolean
-    description: For Android, set whether Intune must receive data from the data sync partner prior to marking a device compliant
-  - property: iosDeviceBlockedOnMissingPartnerData
-    type: Boolean
-    description: For IOS, set whether Intune must receive data from the data sync partner prior to marking a device compliant
-  - property: partnerUnsupportedOsVersionBlocked
-    type: Boolean
-    description: Get or set whether to block devices on the enabled platforms that do not meet the minimum version requirements of the Data Sync Partner
-  - property: partnerUnresponsivenessThresholdInDays
-    type: Int32
-    description: Get or Set days the per tenant tolerance to unresponsiveness for this partner integration
+  - property: "id"
+    type: "String"
+    description: "Not yet documented"
+  - property: "lastHeartbeatDateTime"
+    type: "DateTimeOffset"
+    description: "DateTime of last Heartbeat recieved from the Data Sync Partner"
+  - property: "partnerState"
+    type: "microsoft.graph.mobileThreatPartnerTenantState"
+    description: "Data Sync Partner state for this account. The possible values are: unavailable, available, enabled, unresponsive."
+  - property: "androidEnabled"
+    type: "Boolean"
+    description: "For Android, set whether data from the data sync partner should be used during compliance evaluations"
+  - property: "iosEnabled"
+    type: "Boolean"
+    description: "For IOS, get or set whether data from the data sync partner should be used during compliance evaluations"
+  - property: "androidDeviceBlockedOnMissingPartnerData"
+    type: "Boolean"
+    description: "For Android, set whether Intune must receive data from the data sync partner prior to marking a device compliant"
+  - property: "iosDeviceBlockedOnMissingPartnerData"
+    type: "Boolean"
+    description: "For IOS, set whether Intune must receive data from the data sync partner prior to marking a device compliant"
+  - property: "partnerUnsupportedOsVersionBlocked"
+    type: "Boolean"
+    description: "Get or set whether to block devices on the enabled platforms that do not meet the minimum version requirements of the Data Sync Partner"
+  - property: "partnerUnresponsivenessThresholdInDays"
+    type: "Int32"
+    description: "Get or Set days the per tenant tolerance to unresponsiveness for this partner integration"
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

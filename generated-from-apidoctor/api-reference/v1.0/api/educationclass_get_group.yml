@@ -3,48 +3,48 @@ uid: graph.educationclass_get_group
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/educationclass_get_group.md
 summary:
-  heading: Get group
+  heading: "Get group"
   intro: |
     Retrieve the Office 365 **group** that corresponds to this **educationClass**.
     
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     A combination of permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
   list:
-  - resource: Delegated (work or school account)
-    permission: One from EduRoster.ReadBasic, EduRoster.Read, EduRoster.Write plus Directory.Read.All
-  - resource: Delegated (personal Microsoft account)
-    permission: Not supported.
-  - resource: Application
-    permission: EduRoster.Read.All, EduRoster.ReadWrite.All plus Directory.Read.All
+  - resource: "Delegated (work or school account)"
+    permission: "One from EduRoster.ReadBasic, EduRoster.Read, EduRoster.Write plus Directory.Read.All"
+  - resource: "Delegated (personal Microsoft account)"
+    permission: "Not supported."
+  - resource: "Application"
+    permission: "EduRoster.Read.All, EduRoster.ReadWrite.All plus Directory.Read.All"
 httpRequest:
-  heading: HTTP request
+  heading: "HTTP request"
   sampleCode: |
     ```http
     GET /education/classes/{id}/group
     ```
     
 requestHeaders:
-  heading: Request headers
+  heading: "Request headers"
   list:
-  - name: Authorization
-    value: String
-    description: 
+  - name: "Authorization"
+    value: "String"
+    description: ""
 requestBody:
-  heading: Request body
+  heading: "Request body"
   intro: |
     Do not supply a request body for this method.
 response:
-  heading: Response
+  heading: "Response"
   intro: |
     If successful, this method returns a `200 OK` response code and a [group](xref:graph.group) object in the response body.
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         request:
-            heading: Request
+            heading: "Request"
             intro: |
               The following is an example of the request.
             sampleCode: |
@@ -53,7 +53,7 @@ examples:
               ```
               
         response:
-            heading: Response
+            heading: "Response"
             intro: |
               The following is an example of the response. 
               

@@ -3,7 +3,7 @@ uid: graph.email_activity_reports
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/email_activity_reports.md
 summary:
-  heading: Email activity reports
+  heading: "Email activity reports"
   intro: |
     Use the email activity reports to get a high level view of email traffic within your organization. You can also drill into the Email Activity widget to understand the trends and details of the email activity per user in your organization.
     

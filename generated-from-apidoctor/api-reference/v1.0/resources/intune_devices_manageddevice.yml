@@ -3,83 +3,83 @@ uid: graph.intune_devices_manageddevice
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_devices_manageddevice.md
 summary:
-  heading: managedDevice resource type
+  heading: "managedDevice resource type"
   intro: |
     Devices that are managed or pre-enrolled through Intune
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [List managedDevices](xref:graph.intune_devices_manageddevice_list)
-    type: [managedDevice](xref:graph.intune_devices_manageddevice) collection
-    description: List properties and relationships of the managedDevice objects.
-  - method: [Get managedDevice](xref:graph.intune_devices_manageddevice_get)
-    type: [managedDevice](xref:graph.intune_devices_manageddevice)
-    description: Read properties and relationships of the managedDevice object.
-  - method: [Create managedDevice](xref:graph.intune_devices_manageddevice_create)
-    type: [managedDevice](xref:graph.intune_devices_manageddevice)
-    description: Create a new managedDevice object.
-  - method: [Delete managedDevice](xref:graph.intune_devices_manageddevice_delete)
-    type: None
-    description: Deletes a managedDevice.
-  - method: [Update managedDevice](xref:graph.intune_devices_manageddevice_update)
-    type: [managedDevice](xref:graph.intune_devices_manageddevice)
-    description: Update the properties of a managedDevice object.
-  - method: [retire action](xref:graph.intune_devices_manageddevice_retire)
-    type: None
-    description: Retire a device
-  - method: [wipe action](xref:graph.intune_devices_manageddevice_wipe)
-    type: None
-    description: Wipe a device
-  - method: [resetPasscode action](xref:graph.intune_devices_manageddevice_resetpasscode)
-    type: None
-    description: Reset passcode
-  - method: [remoteLock action](xref:graph.intune_devices_manageddevice_remotelock)
-    type: None
-    description: Remote lock
-  - method: [requestRemoteAssistance action](xref:graph.intune_devices_manageddevice_requestremoteassistance)
-    type: None
-    description: Request remote assistance
-  - method: [disableLostMode action](xref:graph.intune_devices_manageddevice_disablelostmode)
-    type: None
-    description: Disable lost mode
-  - method: [locateDevice action](xref:graph.intune_devices_manageddevice_locatedevice)
-    type: None
-    description: Locate a device
-  - method: [bypassActivationLock action](xref:graph.intune_devices_manageddevice_bypassactivationlock)
-    type: None
-    description: Bypass activation lock
-  - method: [rebootNow action](xref:graph.intune_devices_manageddevice_rebootnow)
-    type: None
-    description: Reboot device
-  - method: [shutDown action](xref:graph.intune_devices_manageddevice_shutdown)
-    type: None
-    description: Shut down device
-  - method: [recoverPasscode action](xref:graph.intune_devices_manageddevice_recoverpasscode)
-    type: None
-    description: Recover passcode
-  - method: [cleanWindowsDevice action](xref:graph.intune_devices_manageddevice_cleanwindowsdevice)
-    type: None
-    description: Clean Windows device
-  - method: [logoutSharedAppleDeviceActiveUser action](xref:graph.intune_devices_manageddevice_logoutsharedappledeviceactiveuser)
-    type: None
-    description: Logout shared Apple device active user
-  - method: [deleteUserFromSharedAppleDevice action](xref:graph.intune_devices_manageddevice_deleteuserfromsharedappledevice)
-    type: None
-    description: Delete user from shared Apple device
-  - method: [syncDevice action](xref:graph.intune_devices_manageddevice_syncdevice)
-    type: None
-    description: Not yet documented
-  - method: [windowsDefenderScan action](xref:graph.intune_devices_manageddevice_windowsdefenderscan)
-    type: None
-    description: Not yet documented
-  - method: [windowsDefenderUpdateSignatures action](xref:graph.intune_devices_manageddevice_windowsdefenderupdatesignatures)
-    type: None
-    description: Not yet documented
-  - method: [updateWindowsDeviceAccount action](xref:graph.intune_devices_manageddevice_updatewindowsdeviceaccount)
-    type: None
-    description: Not yet documented
+  - method: "[List managedDevices](xref:graph.intune_devices_manageddevice_list)"
+    type: "[managedDevice](xref:graph.intune_devices_manageddevice) collection"
+    description: "List properties and relationships of the managedDevice objects."
+  - method: "[Get managedDevice](xref:graph.intune_devices_manageddevice_get)"
+    type: "[managedDevice](xref:graph.intune_devices_manageddevice)"
+    description: "Read properties and relationships of the managedDevice object."
+  - method: "[Create managedDevice](xref:graph.intune_devices_manageddevice_create)"
+    type: "[managedDevice](xref:graph.intune_devices_manageddevice)"
+    description: "Create a new managedDevice object."
+  - method: "[Delete managedDevice](xref:graph.intune_devices_manageddevice_delete)"
+    type: "None"
+    description: "Deletes a managedDevice."
+  - method: "[Update managedDevice](xref:graph.intune_devices_manageddevice_update)"
+    type: "[managedDevice](xref:graph.intune_devices_manageddevice)"
+    description: "Update the properties of a managedDevice object."
+  - method: "[retire action](xref:graph.intune_devices_manageddevice_retire)"
+    type: "None"
+    description: "Retire a device"
+  - method: "[wipe action](xref:graph.intune_devices_manageddevice_wipe)"
+    type: "None"
+    description: "Wipe a device"
+  - method: "[resetPasscode action](xref:graph.intune_devices_manageddevice_resetpasscode)"
+    type: "None"
+    description: "Reset passcode"
+  - method: "[remoteLock action](xref:graph.intune_devices_manageddevice_remotelock)"
+    type: "None"
+    description: "Remote lock"
+  - method: "[requestRemoteAssistance action](xref:graph.intune_devices_manageddevice_requestremoteassistance)"
+    type: "None"
+    description: "Request remote assistance"
+  - method: "[disableLostMode action](xref:graph.intune_devices_manageddevice_disablelostmode)"
+    type: "None"
+    description: "Disable lost mode"
+  - method: "[locateDevice action](xref:graph.intune_devices_manageddevice_locatedevice)"
+    type: "None"
+    description: "Locate a device"
+  - method: "[bypassActivationLock action](xref:graph.intune_devices_manageddevice_bypassactivationlock)"
+    type: "None"
+    description: "Bypass activation lock"
+  - method: "[rebootNow action](xref:graph.intune_devices_manageddevice_rebootnow)"
+    type: "None"
+    description: "Reboot device"
+  - method: "[shutDown action](xref:graph.intune_devices_manageddevice_shutdown)"
+    type: "None"
+    description: "Shut down device"
+  - method: "[recoverPasscode action](xref:graph.intune_devices_manageddevice_recoverpasscode)"
+    type: "None"
+    description: "Recover passcode"
+  - method: "[cleanWindowsDevice action](xref:graph.intune_devices_manageddevice_cleanwindowsdevice)"
+    type: "None"
+    description: "Clean Windows device"
+  - method: "[logoutSharedAppleDeviceActiveUser action](xref:graph.intune_devices_manageddevice_logoutsharedappledeviceactiveuser)"
+    type: "None"
+    description: "Logout shared Apple device active user"
+  - method: "[deleteUserFromSharedAppleDevice action](xref:graph.intune_devices_manageddevice_deleteuserfromsharedappledevice)"
+    type: "None"
+    description: "Delete user from shared Apple device"
+  - method: "[syncDevice action](xref:graph.intune_devices_manageddevice_syncdevice)"
+    type: "None"
+    description: "Not yet documented"
+  - method: "[windowsDefenderScan action](xref:graph.intune_devices_manageddevice_windowsdefenderscan)"
+    type: "None"
+    description: "Not yet documented"
+  - method: "[windowsDefenderUpdateSignatures action](xref:graph.intune_devices_manageddevice_windowsdefenderupdatesignatures)"
+    type: "None"
+    description: "Not yet documented"
+  - method: "[updateWindowsDeviceAccount action](xref:graph.intune_devices_manageddevice_updatewindowsdeviceaccount)"
+    type: "None"
+    description: "Not yet documented"
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -187,152 +187,152 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: id
-    type: String
-    description: Unique Identifier for the device
-  - property: userId
-    type: String
-    description: Unique Identifier for the user associated with the device
-  - property: deviceName
-    type: String
-    description: Name of the device
-  - property: managedDeviceOwnerType
-    type: microsoft.graph.managedDeviceOwnerType
-    description: Ownership of the device. Can be 'company' or 'personal'. The possible values are: unknown, company, personal.
-  - property: deviceActionResults
-    type: Collection(microsoft.graph.deviceActionResult)
-    description: List of ComplexType deviceActionResult objects.
-  - property: enrolledDateTime
-    type: DateTimeOffset
-    description: Enrollment time of the device.
-  - property: lastSyncDateTime
-    type: DateTimeOffset
-    description: The date and time that the device last completed a successful sync with Intune.
-  - property: operatingSystem
-    type: String
-    description: Operating system of the device. Windows, iOS, etc.
-  - property: complianceState
-    type: microsoft.graph.complianceState
-    description: Compliance state of the device. The possible values are: unknown, compliant, noncompliant, conflict, error, inGracePeriod, configManager.
-  - property: jailBroken
-    type: String
-    description: whether the device is jail broken or rooted.
-  - property: managementAgent
-    type: microsoft.graph.managementAgentType
-    description: Management channel of the device. Intune, EAS, etc. The possible values are: eas, mdm, easMdm, intuneClient, easIntuneClient, configurationManagerClient, configurationManagerClientMdm, configurationManagerClientMdmEas, unknown, jamf, googleCloudDevicePolicyController.
-  - property: osVersion
-    type: String
-    description: Operating system version of the device.
-  - property: easActivated
-    type: Boolean
-    description: Whether the device is Exchange ActiveSync activated.
-  - property: easDeviceId
-    type: String
-    description: Exchange ActiveSync Id of the device.
-  - property: easActivationDateTime
-    type: DateTimeOffset
-    description: Exchange ActivationSync activation time of the device.
-  - property: azureADRegistered
-    type: Boolean
-    description: Whether the device is Azure Active Directory registered.
-  - property: deviceEnrollmentType
-    type: microsoft.graph.deviceEnrollmentType
-    description: Enrollment type of the device. The possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement.
-  - property: activationLockBypassCode
-    type: String
-    description: Code that allows the Activation Lock on a device to be bypassed.
-  - property: emailAddress
-    type: String
-    description: Email(s) for the user associated with the device
-  - property: azureADDeviceId
-    type: String
-    description: The unique identifier for the Azure Active Directory device. Read only.
-  - property: deviceRegistrationState
-    type: microsoft.graph.deviceRegistrationState
-    description: Device registration state. The possible values are: notRegistered, registered, revoked, keyConflict, approvalPending, certificateReset, notRegisteredPendingEnrollment, unknown.
-  - property: deviceCategoryDisplayName
-    type: String
-    description: Device category display name
-  - property: isSupervised
-    type: Boolean
-    description: Device supervised status
-  - property: exchangeLastSuccessfulSyncDateTime
-    type: DateTimeOffset
-    description: Last time the device contacted Exchange.
-  - property: exchangeAccessState
-    type: microsoft.graph.deviceManagementExchangeAccessState
-    description: The Access State of the device in Exchange. The possible values are: none, unknown, allowed, blocked, quarantined.
-  - property: exchangeAccessStateReason
-    type: microsoft.graph.deviceManagementExchangeAccessStateReason
-    description: The reason for the device's access state in Exchange. The possible values are: none, unknown, exchangeGlobalRule, exchangeIndividualRule, exchangeDeviceRule, exchangeUpgrade, exchangeMailboxPolicy, other, compliant, notCompliant, notEnrolled, unknownLocation, mfaRequired, azureADBlockDueToAccessPolicy, compromisedPassword, deviceNotKnownWithManagedApp.
-  - property: remoteAssistanceSessionUrl
-    type: String
-    description: Url that allows a Remote Assistance session to be established with the device.
-  - property: remoteAssistanceSessionErrorDetails
-    type: String
-    description: An error string that identifies issues when creating Remote Assistance session objects.
-  - property: isEncrypted
-    type: Boolean
-    description: Device encryption status
-  - property: userPrincipalName
-    type: String
-    description: Device user principal name
-  - property: model
-    type: String
-    description: Model of the device
-  - property: manufacturer
-    type: String
-    description: Manufacturer of the device
-  - property: imei
-    type: String
-    description: IMEI
-  - property: complianceGracePeriodExpirationDateTime
-    type: DateTimeOffset
-    description: The DateTime when device compliance grace period expires
-  - property: serialNumber
-    type: String
-    description: SerialNumber
-  - property: phoneNumber
-    type: String
-    description: Phone number of the device
-  - property: androidSecurityPatchLevel
-    type: String
-    description: Android security patch level
-  - property: userDisplayName
-    type: String
-    description: User display name
-  - property: configurationManagerClientEnabledFeatures
-    type: microsoft.graph.configurationManagerClientEnabledFeatures
-    description: ConfigrMgr client enabled features
-  - property: wiFiMacAddress
-    type: String
-    description: Wi-Fi MAC
-  - property: deviceHealthAttestationState
-    type: microsoft.graph.deviceHealthAttestationState
-    description: The device health attestation state.
-  - property: subscriberCarrier
-    type: String
-    description: Subscriber Carrier
-  - property: meid
-    type: String
-    description: MEID
-  - property: totalStorageSpaceInBytes
-    type: Int64
-    description: Total Storage in Bytes
-  - property: freeStorageSpaceInBytes
-    type: Int64
-    description: Free Storage in Bytes
-  - property: managedDeviceName
-    type: String
-    description: Automatically generated name to identify a device. Can be overwritten to a user friendly name.
-  - property: partnerReportedThreatState
-    type: microsoft.graph.managedDevicePartnerReportedHealthState
-    description: Indicates the threat state of a device when a Mobile Threat Defense partner is in use by the account and device. Read Only. The possible values are: unknown, activated, deactivated, secured, lowSeverity, mediumSeverity, highSeverity, unresponsive.
+  - property: "id"
+    type: "String"
+    description: "Unique Identifier for the device"
+  - property: "userId"
+    type: "String"
+    description: "Unique Identifier for the user associated with the device"
+  - property: "deviceName"
+    type: "String"
+    description: "Name of the device"
+  - property: "managedDeviceOwnerType"
+    type: "microsoft.graph.managedDeviceOwnerType"
+    description: "Ownership of the device. Can be 'company' or 'personal'. The possible values are: unknown, company, personal."
+  - property: "deviceActionResults"
+    type: "Collection(microsoft.graph.deviceActionResult)"
+    description: "List of ComplexType deviceActionResult objects."
+  - property: "enrolledDateTime"
+    type: "DateTimeOffset"
+    description: "Enrollment time of the device."
+  - property: "lastSyncDateTime"
+    type: "DateTimeOffset"
+    description: "The date and time that the device last completed a successful sync with Intune."
+  - property: "operatingSystem"
+    type: "String"
+    description: "Operating system of the device. Windows, iOS, etc."
+  - property: "complianceState"
+    type: "microsoft.graph.complianceState"
+    description: "Compliance state of the device. The possible values are: unknown, compliant, noncompliant, conflict, error, inGracePeriod, configManager."
+  - property: "jailBroken"
+    type: "String"
+    description: "whether the device is jail broken or rooted."
+  - property: "managementAgent"
+    type: "microsoft.graph.managementAgentType"
+    description: "Management channel of the device. Intune, EAS, etc. The possible values are: eas, mdm, easMdm, intuneClient, easIntuneClient, configurationManagerClient, configurationManagerClientMdm, configurationManagerClientMdmEas, unknown, jamf, googleCloudDevicePolicyController."
+  - property: "osVersion"
+    type: "String"
+    description: "Operating system version of the device."
+  - property: "easActivated"
+    type: "Boolean"
+    description: "Whether the device is Exchange ActiveSync activated."
+  - property: "easDeviceId"
+    type: "String"
+    description: "Exchange ActiveSync Id of the device."
+  - property: "easActivationDateTime"
+    type: "DateTimeOffset"
+    description: "Exchange ActivationSync activation time of the device."
+  - property: "azureADRegistered"
+    type: "Boolean"
+    description: "Whether the device is Azure Active Directory registered."
+  - property: "deviceEnrollmentType"
+    type: "microsoft.graph.deviceEnrollmentType"
+    description: "Enrollment type of the device. The possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement."
+  - property: "activationLockBypassCode"
+    type: "String"
+    description: "Code that allows the Activation Lock on a device to be bypassed."
+  - property: "emailAddress"
+    type: "String"
+    description: "Email(s) for the user associated with the device"
+  - property: "azureADDeviceId"
+    type: "String"
+    description: "The unique identifier for the Azure Active Directory device. Read only."
+  - property: "deviceRegistrationState"
+    type: "microsoft.graph.deviceRegistrationState"
+    description: "Device registration state. The possible values are: notRegistered, registered, revoked, keyConflict, approvalPending, certificateReset, notRegisteredPendingEnrollment, unknown."
+  - property: "deviceCategoryDisplayName"
+    type: "String"
+    description: "Device category display name"
+  - property: "isSupervised"
+    type: "Boolean"
+    description: "Device supervised status"
+  - property: "exchangeLastSuccessfulSyncDateTime"
+    type: "DateTimeOffset"
+    description: "Last time the device contacted Exchange."
+  - property: "exchangeAccessState"
+    type: "microsoft.graph.deviceManagementExchangeAccessState"
+    description: "The Access State of the device in Exchange. The possible values are: none, unknown, allowed, blocked, quarantined."
+  - property: "exchangeAccessStateReason"
+    type: "microsoft.graph.deviceManagementExchangeAccessStateReason"
+    description: "The reason for the device's access state in Exchange. The possible values are: none, unknown, exchangeGlobalRule, exchangeIndividualRule, exchangeDeviceRule, exchangeUpgrade, exchangeMailboxPolicy, other, compliant, notCompliant, notEnrolled, unknownLocation, mfaRequired, azureADBlockDueToAccessPolicy, compromisedPassword, deviceNotKnownWithManagedApp."
+  - property: "remoteAssistanceSessionUrl"
+    type: "String"
+    description: "Url that allows a Remote Assistance session to be established with the device."
+  - property: "remoteAssistanceSessionErrorDetails"
+    type: "String"
+    description: "An error string that identifies issues when creating Remote Assistance session objects."
+  - property: "isEncrypted"
+    type: "Boolean"
+    description: "Device encryption status"
+  - property: "userPrincipalName"
+    type: "String"
+    description: "Device user principal name"
+  - property: "model"
+    type: "String"
+    description: "Model of the device"
+  - property: "manufacturer"
+    type: "String"
+    description: "Manufacturer of the device"
+  - property: "imei"
+    type: "String"
+    description: "IMEI"
+  - property: "complianceGracePeriodExpirationDateTime"
+    type: "DateTimeOffset"
+    description: "The DateTime when device compliance grace period expires"
+  - property: "serialNumber"
+    type: "String"
+    description: "SerialNumber"
+  - property: "phoneNumber"
+    type: "String"
+    description: "Phone number of the device"
+  - property: "androidSecurityPatchLevel"
+    type: "String"
+    description: "Android security patch level"
+  - property: "userDisplayName"
+    type: "String"
+    description: "User display name"
+  - property: "configurationManagerClientEnabledFeatures"
+    type: "microsoft.graph.configurationManagerClientEnabledFeatures"
+    description: "ConfigrMgr client enabled features"
+  - property: "wiFiMacAddress"
+    type: "String"
+    description: "Wi-Fi MAC"
+  - property: "deviceHealthAttestationState"
+    type: "microsoft.graph.deviceHealthAttestationState"
+    description: "The device health attestation state."
+  - property: "subscriberCarrier"
+    type: "String"
+    description: "Subscriber Carrier"
+  - property: "meid"
+    type: "String"
+    description: "MEID"
+  - property: "totalStorageSpaceInBytes"
+    type: "Int64"
+    description: "Total Storage in Bytes"
+  - property: "freeStorageSpaceInBytes"
+    type: "Int64"
+    description: "Free Storage in Bytes"
+  - property: "managedDeviceName"
+    type: "String"
+    description: "Automatically generated name to identify a device. Can be overwritten to a user friendly name."
+  - property: "partnerReportedThreatState"
+    type: "microsoft.graph.managedDevicePartnerReportedHealthState"
+    description: "Indicates the threat state of a device when a Mobile Threat Defense partner is in use by the account and device. Read Only. The possible values are: unknown, activated, deactivated, secured, lowSeverity, mediumSeverity, highSeverity, unresponsive."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   list:
-  - relationship: deviceCategory
-    type: microsoft.graph.deviceCategory
-    description: Device category
+  - relationship: "deviceCategory"
+    type: "microsoft.graph.deviceCategory"
+    description: "Device category"

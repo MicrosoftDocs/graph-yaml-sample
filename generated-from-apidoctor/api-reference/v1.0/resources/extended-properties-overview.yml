@@ -3,7 +3,7 @@ uid: graph.extended-properties-overview
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/extended-properties-overview.md
 summary:
-  heading: Outlook extended properties overview
+  heading: "Outlook extended properties overview"
   intro: |
     Extended properties allow storing custom data and specifically serve as a fallback mechanism for apps to access 
     custom data for Outlook MAPI properties when these properties are _not already exposed in the Microsoft Graph API metadata_. 

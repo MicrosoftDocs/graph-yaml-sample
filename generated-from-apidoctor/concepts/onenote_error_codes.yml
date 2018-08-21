@@ -3,7 +3,7 @@ uid: graph.onenote_error_codes
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/onenote_error_codes.md
 summary:
-  heading: Error codes for OneNote APIs in Microsoft Graph
+  heading: "Error codes for OneNote APIs in Microsoft Graph"
   intro: |
     This article describes error codes that are returned by the OneNote APIs in Microsoft Graph whenever a request sent through the API fails.
   outro: |

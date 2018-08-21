@@ -7,11 +7,11 @@ metadata:
   ms.date: 09/10/2017
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/thumbnail.md
 summary:
-  heading: Thumbnail resource type
+  heading: "Thumbnail resource type"
   intro: |
     The **thumbnail** resource type represents a thumbnail for an image, video, document, or any item that has a bitmap representation.
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the **thumbnail** resource.
   sampleCode: |
@@ -26,20 +26,20 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: height
-    type: Int32
-    description: The height of the thumbnail, in pixels.
-  - property: sourceItemId
-    type: String
-    description: The unique identifier of the item that provided the thumbnail. This is only available when a folder thumbnail is requested.
-  - property: url
-    type: String
-    description: The URL used to fetch the thumbnail content.
-  - property: width
-    type: Int32
-    description: The width of the thumbnail, in pixels.
-  - property: content
-    type: Stream
-    description: The content stream for the thumbnail.
+  - property: "height"
+    type: "Int32"
+    description: "The height of the thumbnail, in pixels."
+  - property: "sourceItemId"
+    type: "String"
+    description: "The unique identifier of the item that provided the thumbnail. This is only available when a folder thumbnail is requested."
+  - property: "url"
+    type: "String"
+    description: "The URL used to fetch the thumbnail content."
+  - property: "width"
+    type: "Int32"
+    description: "The width of the thumbnail, in pixels."
+  - property: "content"
+    type: "Stream"
+    description: "The content stream for the thumbnail."

@@ -3,7 +3,7 @@ uid: graph.open_onenote_client
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/open_onenote_client.md
 summary:
-  heading: Open the OneNote client
+  heading: "Open the OneNote client"
   intro: |
     You can use the **links** property of a page or notebook to open a OneNote application to a particular page or notebook. 
     The **links** property is a JSON object that contains two URLs. The URLs will open the page or notebook in the OneNote client application or in OneNote Online.

@@ -3,11 +3,11 @@ uid: graph.outlookgeocoordinates
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/outlookgeocoordinates.md
 summary:
-  heading: outlookGeoCoordinates resource type
+  heading: "outlookGeoCoordinates resource type"
   intro: |
     The geographic coordinates, elevation, and their degree of accuracy for a physical location.
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -22,20 +22,20 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: accuracy
-    type: Double
-    description: The accuracy of the latitude and longitude. As an example, the accuracy can be measured in meters, such as the latitude and longitude are accurate to within 50 meters.
-  - property: altitude
-    type: Double
-    description: The altitude of the location.
-  - property: altitudeAccuracy
-    type: Double
-    description: The accuracy of the altitude.
-  - property: latitude
-    type: Double
-    description: The latitude of the location.
-  - property: longitude
-    type: Double
-    description: The longitude of the location.
+  - property: "accuracy"
+    type: "Double"
+    description: "The accuracy of the latitude and longitude. As an example, the accuracy can be measured in meters, such as the latitude and longitude are accurate to within 50 meters."
+  - property: "altitude"
+    type: "Double"
+    description: "The altitude of the location."
+  - property: "altitudeAccuracy"
+    type: "Double"
+    description: "The accuracy of the altitude."
+  - property: "latitude"
+    type: "Double"
+    description: "The latitude of the location."
+  - property: "longitude"
+    type: "Double"
+    description: "The longitude of the location."

@@ -3,11 +3,11 @@ uid: graph.projectrome_imageinfo
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/projectrome_imageinfo.md
 summary:
-  heading: imageInfo resource type
+  heading: "imageInfo resource type"
   intro: |
     A complex type for representing the **attribution** property in the [visualInfo](xref:graph.projectrome_visualinfo) part of the [activity](xref:graph.projectrome_activity) object.
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource
   sampleCode: |
@@ -21,14 +21,14 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: iconUrl
-    type: String
-    description: Optional; URI that points to an icon which represents the application used to generate the activity
-  - property: alternateText
-    type: String
-    description: Optional; alt-text accessible content for the image
-  - property: addImageQuery
-    type: Boolean
-    description: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example – a high contrast image
+  - property: "iconUrl"
+    type: "String"
+    description: "Optional; URI that points to an icon which represents the application used to generate the activity"
+  - property: "alternateText"
+    type: "String"
+    description: "Optional; alt-text accessible content for the image"
+  - property: "addImageQuery"
+    type: "Boolean"
+    description: "Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example – a high contrast image"

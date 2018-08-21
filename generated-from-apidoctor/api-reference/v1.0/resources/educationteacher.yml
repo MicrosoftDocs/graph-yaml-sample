@@ -3,11 +3,11 @@ uid: graph.educationteacher
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/educationteacher.md
 summary:
-  heading: educationTeacher resource type
+  heading: "educationTeacher resource type"
   intro: |
     Additional information added to an [educationUser](xref:graph.educationuser) that is present when the primaryRole of a user is `teacher`.
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     The following is a JSON representation of the resource.
   sampleCode: |
@@ -19,11 +19,11 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: externalId
-    type: String
-    description: ID of the teacher in the source system.
-  - property: teacherNumber
-    type: String
-    description: Teacher number.
+  - property: "externalId"
+    type: "String"
+    description: "ID of the teacher in the source system."
+  - property: "teacherNumber"
+    type: "String"
+    description: "Teacher number."

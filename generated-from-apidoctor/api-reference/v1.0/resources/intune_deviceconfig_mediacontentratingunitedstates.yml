@@ -3,11 +3,11 @@ uid: graph.intune_deviceconfig_mediacontentratingunitedstates
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_mediacontentratingunitedstates.md
 summary:
-  heading: mediaContentRatingUnitedStates resource type
+  heading: "mediaContentRatingUnitedStates resource type"
   intro: |
     Not yet documented
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -20,15 +20,15 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: movieRating
-    type: microsoft.graph.ratingUnitedStatesMoviesType
-    description: Movies rating selected for United States. The possible values are: allAllowed, allBlocked, general, parentalGuidance, parentalGuidance13, restricted, adults.
-  - property: tvRating
-    type: microsoft.graph.ratingUnitedStatesTelevisionType
-    description: TV rating selected for United States. The possible values are: allAllowed, allBlocked, childrenAll, childrenAbove7, general, parentalGuidance, childrenAbove14, adults.
+  - property: "movieRating"
+    type: "microsoft.graph.ratingUnitedStatesMoviesType"
+    description: "Movies rating selected for United States. The possible values are: allAllowed, allBlocked, general, parentalGuidance, parentalGuidance13, restricted, adults."
+  - property: "tvRating"
+    type: "microsoft.graph.ratingUnitedStatesTelevisionType"
+    description: "TV rating selected for United States. The possible values are: allAllowed, allBlocked, childrenAll, childrenAbove7, general, parentalGuidance, childrenAbove14, adults."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

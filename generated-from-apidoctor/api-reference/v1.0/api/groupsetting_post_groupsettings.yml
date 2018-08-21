@@ -3,23 +3,23 @@ uid: graph.groupsetting_post_groupsettings
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/groupsetting_post_groupsettings.md
 summary:
-  heading: Create a group setting
+  heading: "Create a group setting"
   intro: |
     Use this API to create a new setting, based on the templates available in [groupSettingTemplates](xref:graph.groupsettingtemplate). These settings can be at the tenant-level or at the group level. The creation request must provide [settingValues](xref:graph.settingvalue) for all the settings defined in the template. For group-specific settings, only the setting governing whether members of a group can invite guest users can be set. This will govern this behavior once the ability to add guest users to a group is generally available.
     For a list of templates and the properties they support in v1.0, use a [groupSettingTemplate query](https://developer.microsoft.com/en-us/graph/graph-explorer?request=groupSettingTemplates&version=v1.0)  (For beta endpoints, call [directorySettingTemplates](https://developer.microsoft.com/en-us/graph/graph-explorer?request=directorySettingTemplates&version=beta).)
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
   list:
-  - resource: Delegated (work or school account)
-    permission: Directory.ReadWrite.All, Directory.AccessAsUser.All
-  - resource: Delegated (personal Microsoft account)
-    permission: Not supported.
-  - resource: Application
-    permission: Directory.ReadWrite.All
+  - resource: "Delegated (work or school account)"
+    permission: "Directory.ReadWrite.All, Directory.AccessAsUser.All"
+  - resource: "Delegated (personal Microsoft account)"
+    permission: "Not supported."
+  - resource: "Application"
+    permission: "Directory.ReadWrite.All"
 httpRequest:
-  heading: HTTP request
+  heading: "HTTP request"
   sampleCode: |
     ```http
     POST /groupSettings
@@ -27,28 +27,28 @@ httpRequest:
     ```
     
 requestHeaders:
-  heading: Request headers
+  heading: "Request headers"
   list:
-  - name: Authorization
-    value: 
-    description: Bearer {token}. Required.
-  - name: Content-Type
-    value: 
-    description: application/json
+  - name: "Authorization"
+    value: ""
+    description: "Bearer {token}. Required."
+  - name: "Content-Type"
+    value: ""
+    description: "application/json"
 requestBody:
-  heading: Request body
+  heading: "Request body"
   intro: |
     In the request body, supply a JSON representation of [groupSetting](xref:graph.groupsetting) object. However, the display name for the setting will be set based on the referenced settings template name.
 response:
-  heading: Response
+  heading: "Response"
   intro: |
     If successful, this method returns `201 Created` response code and [groupSetting](xref:graph.groupsetting) object in the response body.
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         request:
-            heading: Request
+            heading: "Request"
             sampleCode: |
               ```http
               POST https://graph.microsoft.com/v1.0/groupSettings
@@ -70,7 +70,7 @@ examples:
             outro: |
               In the request body, supply a JSON representation of [groupSetting](xref:graph.groupsetting) object.
         response:
-            heading: Response
+            heading: "Response"
             intro: |
               Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
             sampleCode: |

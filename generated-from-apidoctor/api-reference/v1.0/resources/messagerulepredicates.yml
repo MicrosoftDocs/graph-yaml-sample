@@ -3,11 +3,11 @@ uid: graph.messagerulepredicates
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/messagerulepredicates.md
 summary:
-  heading: messageRulePredicates resource type
+  heading: "messageRulePredicates resource type"
   intro: |
     Represents the set of conditions and exceptions that are available for a rule.
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -47,95 +47,95 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: bodyContains
-    type: Collection(String)
-    description: Represents the strings that should appear in the body of an incoming message in order for the condition or exception to apply.
-  - property: bodyOrSubjectContains
-    type: Collection(String)
-    description: Represents the strings that should appear in the body or subject of an incoming message in order for the condition or exception to apply.
-  - property: categories
-    type: Collection(String)
-    description: Represents the categories that an incoming message should be labeled with in order for the condition or exception to apply.
-  - property: fromAddresses
-    type: Collection(microsoft.graph.recipient)
-    description: Represents the specific sender email addresses of an incoming message in order for the condition or exception to apply.
-  - property: hasAttachments
-    type: Boolean
-    description: Indicates whether an incoming message must have attachments in order for the condition or exception to apply.
-  - property: headerContains
-    type: Collection(String)
-    description: Represents the strings that appear in the headers of an incoming message in order for the condition or exception to apply.
-  - property: importance
-    type: microsoft.graph.importance
-    description: The importance that is stamped on an incoming message in order for the condition or exception to apply: low, normal, high.
-  - property: isApprovalRequest
-    type: Boolean
-    description: Indicates whether an incoming message must be an approval request in order for the condition or exception to apply.
-  - property: isAutomaticForward
-    type: Boolean
-    description: Indicates whether an incoming message must be automatically forwarded in order for the condition or exception to apply.
-  - property: isAutomaticReply
-    type: Boolean
-    description: Indicates whether an incoming message must be an auto reply in order for the condition or exception to apply.
-  - property: isEncrypted
-    type: Boolean
-    description: Indicates whether an incoming message must be encrypted in order for the condition or exception to apply.
-  - property: isMeetingRequest
-    type: Boolean
-    description: Indicates whether an incoming message must be a meeting request in order for the condition or exception to apply.
-  - property: isMeetingResponse
-    type: Boolean
-    description: Indicates whether an incoming message must be a meeting response in order for the condition or exception to apply.
-  - property: isNonDeliveryReport
-    type: Boolean
-    description: Indicates whether an incoming message must be a non-delivery report in order for the condition or exception to apply.
-  - property: isPermissionControlled
-    type: Boolean
-    description: Indicates whether an incoming message must be permission controlled (RMS-protected) in order for the condition or exception to apply.
-  - property: isReadReceipt
-    type: Boolean
-    description: Indicates whether an incoming message must be a read receipt in order for the condition or exception to apply.
-  - property: isSigned
-    type: Boolean
-    description: Indicates whether an incoming message must be S/MIME-signed in order for the condition or exception to apply.
-  - property: isVoicemail
-    type: Boolean
-    description: Indicates whether an incoming message must be a voice mail in order for the condition or exception to apply.
-  - property: messageActionFlag
-    type: microsoft.graph.messageActionFlag
-    description: Represents the flag-for-action value that appears on an incoming message in order for the condition or exception to apply. The possible values are: any, call, doNotForward, followUp, fyi, forward, noResponseNecessary, read, reply, replyToAll, review.
-  - property: notSentToMe
-    type: Boolean
-    description: Indicates whether the owner of the mailbox must not be a recipient of an incoming message in order for the condition or exception to apply.
-  - property: recipientContains
-    type: Collection(String)
-    description: Represents the strings that appear in either the toRecipients or ccRecipients properties of an incoming message in order for the condition or exception to apply.
-  - property: senderContains
-    type: Collection(String)
-    description: Represents the strings that appear in the from property of an incoming message in order for the condition or exception to apply.
-  - property: sensitivity
-    type: microsoft.graph.sensitivity
-    description: Represents the sensitivity level that must be stamped on an incoming message in order for the condition or exception to apply. The possible values are: normal, personal, private, confidential.
-  - property: sentCcMe
-    type: Boolean
-    description: Indicates whether the owner of the mailbox must be in the ccRecipients property of an incoming message in order for the condition or exception to apply.
-  - property: sentOnlyToMe
-    type: Boolean
-    description: Indicates whether the owner of the mailbox must be the only recipient in an incoming message in order for the condition or exception to apply.
-  - property: sentToAddresses
-    type: Collection(microsoft.graph.recipient)
-    description: Represents the email addresses that an incoming message must have been sent to in order for the condition or exception to apply.
-  - property: sentToMe
-    type: Boolean
-    description: Indicates whether the owner of the mailbox must be in the toRecipients property of an incoming message in order for the condition or exception to apply.
-  - property: sentToOrCcMe
-    type: Boolean
-    description: Indicates whether the owner of the mailbox must be in either a toRecipients or ccRecipients property of an incoming message in order for the condition or exception to apply.
-  - property: subjectContains
-    type: Collection(String)
-    description: Represents the strings that appear in the subject of an incoming message in order for the condition or exception to apply.
-  - property: withinSizeRange
-    type: microsoft.graph.sizeRange
-    description: Represents the minimum and maximum sizes (in kilobytes) that an incoming message must fall in between in order for the condition or exception to apply.
+  - property: "bodyContains"
+    type: "Collection(String)"
+    description: "Represents the strings that should appear in the body of an incoming message in order for the condition or exception to apply."
+  - property: "bodyOrSubjectContains"
+    type: "Collection(String)"
+    description: "Represents the strings that should appear in the body or subject of an incoming message in order for the condition or exception to apply."
+  - property: "categories"
+    type: "Collection(String)"
+    description: "Represents the categories that an incoming message should be labeled with in order for the condition or exception to apply."
+  - property: "fromAddresses"
+    type: "Collection(microsoft.graph.recipient)"
+    description: "Represents the specific sender email addresses of an incoming message in order for the condition or exception to apply."
+  - property: "hasAttachments"
+    type: "Boolean"
+    description: "Indicates whether an incoming message must have attachments in order for the condition or exception to apply."
+  - property: "headerContains"
+    type: "Collection(String)"
+    description: "Represents the strings that appear in the headers of an incoming message in order for the condition or exception to apply."
+  - property: "importance"
+    type: "microsoft.graph.importance"
+    description: "The importance that is stamped on an incoming message in order for the condition or exception to apply: low, normal, high."
+  - property: "isApprovalRequest"
+    type: "Boolean"
+    description: "Indicates whether an incoming message must be an approval request in order for the condition or exception to apply."
+  - property: "isAutomaticForward"
+    type: "Boolean"
+    description: "Indicates whether an incoming message must be automatically forwarded in order for the condition or exception to apply."
+  - property: "isAutomaticReply"
+    type: "Boolean"
+    description: "Indicates whether an incoming message must be an auto reply in order for the condition or exception to apply."
+  - property: "isEncrypted"
+    type: "Boolean"
+    description: "Indicates whether an incoming message must be encrypted in order for the condition or exception to apply."
+  - property: "isMeetingRequest"
+    type: "Boolean"
+    description: "Indicates whether an incoming message must be a meeting request in order for the condition or exception to apply."
+  - property: "isMeetingResponse"
+    type: "Boolean"
+    description: "Indicates whether an incoming message must be a meeting response in order for the condition or exception to apply."
+  - property: "isNonDeliveryReport"
+    type: "Boolean"
+    description: "Indicates whether an incoming message must be a non-delivery report in order for the condition or exception to apply."
+  - property: "isPermissionControlled"
+    type: "Boolean"
+    description: "Indicates whether an incoming message must be permission controlled (RMS-protected) in order for the condition or exception to apply."
+  - property: "isReadReceipt"
+    type: "Boolean"
+    description: "Indicates whether an incoming message must be a read receipt in order for the condition or exception to apply."
+  - property: "isSigned"
+    type: "Boolean"
+    description: "Indicates whether an incoming message must be S/MIME-signed in order for the condition or exception to apply."
+  - property: "isVoicemail"
+    type: "Boolean"
+    description: "Indicates whether an incoming message must be a voice mail in order for the condition or exception to apply."
+  - property: "messageActionFlag"
+    type: "microsoft.graph.messageActionFlag"
+    description: "Represents the flag-for-action value that appears on an incoming message in order for the condition or exception to apply. The possible values are: any, call, doNotForward, followUp, fyi, forward, noResponseNecessary, read, reply, replyToAll, review."
+  - property: "notSentToMe"
+    type: "Boolean"
+    description: "Indicates whether the owner of the mailbox must not be a recipient of an incoming message in order for the condition or exception to apply."
+  - property: "recipientContains"
+    type: "Collection(String)"
+    description: "Represents the strings that appear in either the toRecipients or ccRecipients properties of an incoming message in order for the condition or exception to apply."
+  - property: "senderContains"
+    type: "Collection(String)"
+    description: "Represents the strings that appear in the from property of an incoming message in order for the condition or exception to apply."
+  - property: "sensitivity"
+    type: "microsoft.graph.sensitivity"
+    description: "Represents the sensitivity level that must be stamped on an incoming message in order for the condition or exception to apply. The possible values are: normal, personal, private, confidential."
+  - property: "sentCcMe"
+    type: "Boolean"
+    description: "Indicates whether the owner of the mailbox must be in the ccRecipients property of an incoming message in order for the condition or exception to apply."
+  - property: "sentOnlyToMe"
+    type: "Boolean"
+    description: "Indicates whether the owner of the mailbox must be the only recipient in an incoming message in order for the condition or exception to apply."
+  - property: "sentToAddresses"
+    type: "Collection(microsoft.graph.recipient)"
+    description: "Represents the email addresses that an incoming message must have been sent to in order for the condition or exception to apply."
+  - property: "sentToMe"
+    type: "Boolean"
+    description: "Indicates whether the owner of the mailbox must be in the toRecipients property of an incoming message in order for the condition or exception to apply."
+  - property: "sentToOrCcMe"
+    type: "Boolean"
+    description: "Indicates whether the owner of the mailbox must be in either a toRecipients or ccRecipients property of an incoming message in order for the condition or exception to apply."
+  - property: "subjectContains"
+    type: "Collection(String)"
+    description: "Represents the strings that appear in the subject of an incoming message in order for the condition or exception to apply."
+  - property: "withinSizeRange"
+    type: "microsoft.graph.sizeRange"
+    description: "Represents the minimum and maximum sizes (in kilobytes) that an incoming message must fall in between in order for the condition or exception to apply."

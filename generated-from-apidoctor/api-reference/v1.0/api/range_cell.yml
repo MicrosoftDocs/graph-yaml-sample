@@ -3,22 +3,22 @@ uid: graph.range_cell
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/range_cell.md
 summary:
-  heading: Range: Cell
+  heading: "Range: Cell"
   intro: |
     Gets the range object containing the single cell based on row and column numbers. The cell can be outside the bounds of its parent range, so long as it's stays within the worksheet grid. The returned cell is located relative to the top left cell of the range.
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
   list:
-  - resource: Delegated (work or school account)
-    permission: Files.ReadWrite
-  - resource: Delegated (personal Microsoft account)
-    permission: Not supported.
-  - resource: Application
-    permission: Not supported.
+  - resource: "Delegated (work or school account)"
+    permission: "Files.ReadWrite"
+  - resource: "Delegated (personal Microsoft account)"
+    permission: "Not supported."
+  - resource: "Application"
+    permission: "Not supported."
 httpRequest:
-  heading: HTTP request
+  heading: "HTTP request"
   sampleCode: |
     ```http
     GET /workbook/names/{name}/range/cell
@@ -27,37 +27,37 @@ httpRequest:
     ```
     
 parameters:
-  heading: Path parameters
+  heading: "Path parameters"
   intro: |
     In the path, provide the following parameters.
   list:
-  - name: row
-    value: Int32
-    description: Row number of the cell to be retrieved. Zero-indexed.
-  - name: column
-    value: Int32
-    description: Column number of the cell to be retrieved. Zero-indexed.
+  - name: "row"
+    value: "Int32"
+    description: "Row number of the cell to be retrieved. Zero-indexed."
+  - name: "column"
+    value: "Int32"
+    description: "Column number of the cell to be retrieved. Zero-indexed."
 requestHeaders:
-  heading: Request headers
+  heading: "Request headers"
   list:
-  - name: Authorization
-    value: 
-    description: Bearer {token}. Required.
-  - name: Workbook-Session-Id
-    value: 
-    description: Workbook session Id that determines if changes are persisted or not. Optional.
+  - name: "Authorization"
+    value: ""
+    description: "Bearer {token}. Required."
+  - name: "Workbook-Session-Id"
+    value: ""
+    description: "Workbook session Id that determines if changes are persisted or not. Optional."
 response:
-  heading: Response
+  heading: "Response"
   intro: |
     If successful, this method returns `200 OK` response code and [Range](xref:graph.range) object in the response body.
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         intro: |
           Here is an example of how to call this API.
         request:
-            heading: Request
+            heading: "Request"
             intro: |
               Here is an example of the request.
             sampleCode: |
@@ -66,7 +66,7 @@ examples:
               ```
               
         response:
-            heading: Response
+            heading: "Response"
             intro: |
               Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
             sampleCode: |

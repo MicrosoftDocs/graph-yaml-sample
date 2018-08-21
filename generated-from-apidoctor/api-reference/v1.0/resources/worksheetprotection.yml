@@ -3,23 +3,23 @@ uid: graph.worksheetprotection
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.worksheetprotection
 summary:
-  heading: WorksheetProtection resource type
+  heading: "WorksheetProtection resource type"
   intro: |
     Represents the protection of a sheet object.
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [Get WorksheetProtection](xref:graph.worksheetprotection_get)
-    type: [WorkbookWorksheetProtection](xref:graph.worksheetprotection)
-    description: Read properties and relationships of worksheetProtection object.
-  - method: [Protect](xref:graph.worksheetprotection_protect)
-    type: None
-    description: Protect a worksheet. It throws if the worksheet has been protected.
-  - method: [Unprotect](xref:graph.worksheetprotection_unprotect)
-    type: None
-    description: Unprotect a worksheet
+  - method: "[Get WorksheetProtection](xref:graph.worksheetprotection_get)"
+    type: "[WorkbookWorksheetProtection](xref:graph.worksheetprotection)"
+    description: "Read properties and relationships of worksheetProtection object."
+  - method: "[Protect](xref:graph.worksheetprotection_protect)"
+    type: "None"
+    description: "Protect a worksheet. It throws if the worksheet has been protected."
+  - method: "[Unprotect](xref:graph.worksheetprotection_unprotect)"
+    type: "None"
+    description: "Unprotect a worksheet"
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -31,11 +31,11 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: options
-    type: microsoft.graph.workbookWorksheetProtectionOptions
-    description: Sheet protection options. Read-only.
-  - property: protected
-    type: Boolean
-    description: Indicates if the worksheet is protected.  Read-only.
+  - property: "options"
+    type: "microsoft.graph.workbookWorksheetProtectionOptions"
+    description: "Sheet protection options. Read-only."
+  - property: "protected"
+    type: "Boolean"
+    description: "Indicates if the worksheet is protected.  Read-only."

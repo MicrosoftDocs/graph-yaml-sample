@@ -3,7 +3,7 @@ uid: graph.intune_rbac_conceptual
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_rbac_conceptual.md
 summary:
-  heading: Role-based access control in Microsoft Intune
+  heading: "Role-based access control in Microsoft Intune"
   intro: |
     Intune's role-based access control determines who can perform actions on Intune objects and make changes for managed applications, users and devices.   
     The following Graph resources are available to manage role-based access control in Intune:

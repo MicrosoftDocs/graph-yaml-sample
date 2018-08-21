@@ -3,7 +3,7 @@ uid: graph.permissions_reference
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/permissions_reference.md
 summary:
-  heading: Microsoft Graph permissions reference
+  heading: "Microsoft Graph permissions reference"
   intro: |
     Microsoft Graph exposes granular permissions that control the access that apps have to resources, like users, groups, and mail. As a developer, you decide which permissions for Microsoft Graph your app requests. When a user signs in to your app they, or, in some cases, an administrator, are given a chance to consent to these permissions. If the user consents, your app is given access to the resources and APIs that it has requested. For apps that don't take a signed-in user, permissions can be pre-consented to by an administrator when the app is installed or during sign-up. 
   outro: |
@@ -21,12 +21,12 @@ summary:
 examples:
   - items:
     - Example usage:
-        heading: Example usage
+        heading: "Example usage"
         outro: |
           #### Delegated
           None.
     - Example usage:
-        heading: Example usage
+        heading: "Example usage"
         outro: |
           #### Delegated
           
@@ -36,7 +36,7 @@ examples:
           * _Bookings.Manage_: Make the scheduling page of this business available to external customers (`POST /bookingBusinesses/{id}/publish`).
           
     - Example usage:
-        heading: Example usage
+        heading: "Example usage"
         outro: |
           #### Delegated
           
@@ -45,7 +45,7 @@ examples:
           * _Calendars.ReadWrite_: Add an event to the user's calendar (`POST /me/events`).
           
     - Example usage:
-        heading: Example usage
+        heading: "Example usage"
         outro: |
           #### Delegated
           
@@ -54,7 +54,7 @@ examples:
           * _Contacts.ReadWrite_: Add contacts to the root folder of the signed-in user (`POST /me/contacts`).
           
     - Example usage:
-        heading: Example usage
+        heading: "Example usage"
         outro: |
           #### Application
           
@@ -63,7 +63,7 @@ examples:
           For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
           ---
     - Example usage:
-        heading: Example usage
+        heading: "Example usage"
         outro: |
           #### Delegated
           
@@ -71,7 +71,7 @@ examples:
           * _Directory.ReadWrite.All_: Add members to a directory role (`POST /directoryRoles/{id}/members/$ref`)
           
     - Example usage:
-        heading: Example usage
+        heading: "Example usage"
         outro: |
           #### Delegated
           
@@ -82,7 +82,7 @@ examples:
           For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
           ---
     - Example usage:
-        heading: Example usage
+        heading: "Example usage"
         outro: |
           #### Delegated
           
@@ -95,7 +95,7 @@ examples:
           For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
           ---
     - Example usage:
-        heading: Example usage
+        heading: "Example usage"
         outro: |
           #### Delegated
           
@@ -105,7 +105,7 @@ examples:
           * _Group.ReadWrite.All_: Update group members (`POST /groups/{id}/members/$ref`). NOTE: This also requires _User.ReadBasic.All_ to read the user to add as a member.
           
     - Example usage:
-        heading: Example usage
+        heading: "Example usage"
         outro: |
           #### Delegated and Application
           The following usages are valid for both delegated and application permissions:
@@ -117,7 +117,7 @@ examples:
           For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
           ---
     - Example usage:
-        heading: Example usage
+        heading: "Example usage"
         outro: |
           #### Delegated
           The following usages are valid for both delegated permissions:
@@ -131,7 +131,7 @@ examples:
           For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
           ---
     - Example usage:
-        heading: Example usage
+        heading: "Example usage"
         outro: |
           #### Delegated
           
@@ -150,7 +150,7 @@ examples:
           For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
           ---
     - Example usage:
-        heading: Example usage
+        heading: "Example usage"
         outro: |
           #### Delegated
           
@@ -161,7 +161,7 @@ examples:
           * _MailboxSettings.ReadWrite_: Update the user's automatic reply (`PATCH /me/mailboxSettings`).
           
     - Example usage:
-        heading: Example usage
+        heading: "Example usage"
         outro: |
           #### Delegated
           
@@ -169,7 +169,7 @@ examples:
           * _Member.Read.Hidden_: Read the members of a group with hidden membership on behalf of the signed-in user (`GET /groups/{id}/members`).
           
     - Example usage:
-        heading: Example usage
+        heading: "Example usage"
         outro: |
           #### Delegated
           
@@ -180,7 +180,7 @@ examples:
           * _Notes.ReadWrite.All_: Create a page in another user's notebook that the signed-in user has access to within the organization (`POST /users/{id}/onenote/pages`).
           
     - Example usage:
-        heading: Example usage
+        heading: "Example usage"
         outro: |
           #### Delegated
           
@@ -190,7 +190,7 @@ examples:
           For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
           ---
     - Example usage:
-        heading: Example usage
+        heading: "Example usage"
         outro: |
           #### Application
           
@@ -201,7 +201,7 @@ examples:
           For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
           ---
     - Example usage:
-        heading: Example usage
+        heading: "Example usage"
         outro: |
           #### Delegated and Application
           
@@ -210,7 +210,7 @@ examples:
           
           ---
     - Example usage:
-        heading: Example usage
+        heading: "Example usage"
         outro: |
           #### Delegated
           
@@ -221,7 +221,7 @@ examples:
           
           ---
     - Example usage:
-        heading: Example usage
+        heading: "Example usage"
         outro: |
           #### Delegated
           
@@ -235,7 +235,7 @@ examples:
           For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
           ---
     - Example usage:
-        heading: Example usage
+        heading: "Example usage"
         outro: |
           #### Delegated
           The following usages are valid for both delegated permissions:
@@ -247,7 +247,7 @@ examples:
           For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
           ---
     - Example usage:
-        heading: Example usage
+        heading: "Example usage"
         outro: |
           #### Delegated
           
@@ -257,7 +257,7 @@ examples:
           * _User.Read.All_: Read a user's manager (`GET /user/{id | userPrincipalName}/manager`).
           
     - Example usage:
-        heading: Example usage
+        heading: "Example usage"
         outro: |
           #### Delegated
           
@@ -269,7 +269,7 @@ examples:
           
           <br/>
 remarks:
-  heading: Remarks
+  heading: "Remarks"
   intro: |
     The _Application.ReadWrite.OwnedBy_ permission allows the same operations as _Application.ReadWrite.All_ except that the former allows these operations only on applications and service principals that the calling app is an owner of. Ownership is indicated by the `owners` navigation property on the target [application](xref:graph.application_list_owners) or [service principal](xref:graph.serviceprincipal_list_owners) resource.
     

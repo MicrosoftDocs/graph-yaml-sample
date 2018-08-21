@@ -3,30 +3,30 @@ uid: graph.intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration.md
 summary:
-  heading: deviceEnrollmentPlatformRestrictionsConfiguration resource type
+  heading: "deviceEnrollmentPlatformRestrictionsConfiguration resource type"
   intro: |
     Not yet documented
     Inherits from [deviceEnrollmentConfiguration](xref:graph.intune_onboarding_deviceenrollmentconfiguration)
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [List deviceEnrollmentPlatformRestrictionsConfigurations](xref:graph.intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration_list)
-    type: [deviceEnrollmentPlatformRestrictionsConfiguration](xref:graph.intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration) collection
-    description: List properties and relationships of the deviceEnrollmentPlatformRestrictionsConfiguration objects.
-  - method: [Get deviceEnrollmentPlatformRestrictionsConfiguration](xref:graph.intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration_get)
-    type: [deviceEnrollmentPlatformRestrictionsConfiguration](xref:graph.intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration)
-    description: Read properties and relationships of the deviceEnrollmentPlatformRestrictionsConfiguration object.
-  - method: [Create deviceEnrollmentPlatformRestrictionsConfiguration](xref:graph.intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration_create)
-    type: [deviceEnrollmentPlatformRestrictionsConfiguration](xref:graph.intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration)
-    description: Create a new deviceEnrollmentPlatformRestrictionsConfiguration object.
-  - method: [Delete deviceEnrollmentPlatformRestrictionsConfiguration](xref:graph.intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration_delete)
-    type: None
-    description: Deletes a deviceEnrollmentPlatformRestrictionsConfiguration.
-  - method: [Update deviceEnrollmentPlatformRestrictionsConfiguration](xref:graph.intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration_update)
-    type: [deviceEnrollmentPlatformRestrictionsConfiguration](xref:graph.intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration)
-    description: Update the properties of a deviceEnrollmentPlatformRestrictionsConfiguration object.
+  - method: "[List deviceEnrollmentPlatformRestrictionsConfigurations](xref:graph.intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration_list)"
+    type: "[deviceEnrollmentPlatformRestrictionsConfiguration](xref:graph.intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration) collection"
+    description: "List properties and relationships of the deviceEnrollmentPlatformRestrictionsConfiguration objects."
+  - method: "[Get deviceEnrollmentPlatformRestrictionsConfiguration](xref:graph.intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration_get)"
+    type: "[deviceEnrollmentPlatformRestrictionsConfiguration](xref:graph.intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration)"
+    description: "Read properties and relationships of the deviceEnrollmentPlatformRestrictionsConfiguration object."
+  - method: "[Create deviceEnrollmentPlatformRestrictionsConfiguration](xref:graph.intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration_create)"
+    type: "[deviceEnrollmentPlatformRestrictionsConfiguration](xref:graph.intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration)"
+    description: "Create a new deviceEnrollmentPlatformRestrictionsConfiguration object."
+  - method: "[Delete deviceEnrollmentPlatformRestrictionsConfiguration](xref:graph.intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration_delete)"
+    type: "None"
+    description: "Deletes a deviceEnrollmentPlatformRestrictionsConfiguration."
+  - method: "[Update deviceEnrollmentPlatformRestrictionsConfiguration](xref:graph.intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration_update)"
+    type: "[deviceEnrollmentPlatformRestrictionsConfiguration](xref:graph.intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration)"
+    description: "Update the properties of a deviceEnrollmentPlatformRestrictionsConfiguration object."
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -79,47 +79,47 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: id
-    type: String
-    description: Not yet documented Inherited from deviceEnrollmentConfiguration
-  - property: displayName
-    type: String
-    description: Not yet documented Inherited from deviceEnrollmentConfiguration
-  - property: description
-    type: String
-    description: Not yet documented Inherited from deviceEnrollmentConfiguration
-  - property: priority
-    type: Int32
-    description: Not yet documented Inherited from deviceEnrollmentConfiguration
-  - property: createdDateTime
-    type: DateTimeOffset
-    description: Not yet documented Inherited from deviceEnrollmentConfiguration
-  - property: lastModifiedDateTime
-    type: DateTimeOffset
-    description: Not yet documented Inherited from deviceEnrollmentConfiguration
-  - property: version
-    type: Int32
-    description: Not yet documented Inherited from deviceEnrollmentConfiguration
-  - property: iosRestriction
-    type: microsoft.graph.deviceEnrollmentPlatformRestriction
-    description: Not yet documented
-  - property: windowsRestriction
-    type: microsoft.graph.deviceEnrollmentPlatformRestriction
-    description: Not yet documented
-  - property: windowsMobileRestriction
-    type: microsoft.graph.deviceEnrollmentPlatformRestriction
-    description: Not yet documented
-  - property: androidRestriction
-    type: microsoft.graph.deviceEnrollmentPlatformRestriction
-    description: Not yet documented
-  - property: macOSRestriction
-    type: microsoft.graph.deviceEnrollmentPlatformRestriction
-    description: Not yet documented
+  - property: "id"
+    type: "String"
+    description: "Not yet documented Inherited from deviceEnrollmentConfiguration"
+  - property: "displayName"
+    type: "String"
+    description: "Not yet documented Inherited from deviceEnrollmentConfiguration"
+  - property: "description"
+    type: "String"
+    description: "Not yet documented Inherited from deviceEnrollmentConfiguration"
+  - property: "priority"
+    type: "Int32"
+    description: "Not yet documented Inherited from deviceEnrollmentConfiguration"
+  - property: "createdDateTime"
+    type: "DateTimeOffset"
+    description: "Not yet documented Inherited from deviceEnrollmentConfiguration"
+  - property: "lastModifiedDateTime"
+    type: "DateTimeOffset"
+    description: "Not yet documented Inherited from deviceEnrollmentConfiguration"
+  - property: "version"
+    type: "Int32"
+    description: "Not yet documented Inherited from deviceEnrollmentConfiguration"
+  - property: "iosRestriction"
+    type: "microsoft.graph.deviceEnrollmentPlatformRestriction"
+    description: "Not yet documented"
+  - property: "windowsRestriction"
+    type: "microsoft.graph.deviceEnrollmentPlatformRestriction"
+    description: "Not yet documented"
+  - property: "windowsMobileRestriction"
+    type: "microsoft.graph.deviceEnrollmentPlatformRestriction"
+    description: "Not yet documented"
+  - property: "androidRestriction"
+    type: "microsoft.graph.deviceEnrollmentPlatformRestriction"
+    description: "Not yet documented"
+  - property: "macOSRestriction"
+    type: "microsoft.graph.deviceEnrollmentPlatformRestriction"
+    description: "Not yet documented"
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   list:
-  - relationship: assignments
-    type: Collection(microsoft.graph.enrollmentConfigurationAssignment)
-    description: The list of group assignments for the device configuration profile. Inherited from deviceEnrollmentConfiguration
+  - relationship: "assignments"
+    type: "Collection(microsoft.graph.enrollmentConfigurationAssignment)"
+    description: "The list of group assignments for the device configuration profile. Inherited from deviceEnrollmentConfiguration"

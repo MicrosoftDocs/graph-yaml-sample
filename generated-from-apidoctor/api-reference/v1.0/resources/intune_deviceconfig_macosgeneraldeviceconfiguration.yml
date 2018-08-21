@@ -3,30 +3,30 @@ uid: graph.intune_deviceconfig_macosgeneraldeviceconfiguration
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_macosgeneraldeviceconfiguration.md
 summary:
-  heading: macOSGeneralDeviceConfiguration resource type
+  heading: "macOSGeneralDeviceConfiguration resource type"
   intro: |
     This topic provides descriptions of the declared methods, properties and relationships exposed by the macOSGeneralDeviceConfiguration resource.
     Inherits from [deviceConfiguration](xref:graph.intune_deviceconfig_deviceconfiguration)
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [List macOSGeneralDeviceConfigurations](xref:graph.intune_deviceconfig_macosgeneraldeviceconfiguration_list)
-    type: [macOSGeneralDeviceConfiguration](xref:graph.intune_deviceconfig_macosgeneraldeviceconfiguration) collection
-    description: List properties and relationships of the macOSGeneralDeviceConfiguration objects.
-  - method: [Get macOSGeneralDeviceConfiguration](xref:graph.intune_deviceconfig_macosgeneraldeviceconfiguration_get)
-    type: [macOSGeneralDeviceConfiguration](xref:graph.intune_deviceconfig_macosgeneraldeviceconfiguration)
-    description: Read properties and relationships of the macOSGeneralDeviceConfiguration object.
-  - method: [Create macOSGeneralDeviceConfiguration](xref:graph.intune_deviceconfig_macosgeneraldeviceconfiguration_create)
-    type: [macOSGeneralDeviceConfiguration](xref:graph.intune_deviceconfig_macosgeneraldeviceconfiguration)
-    description: Create a new macOSGeneralDeviceConfiguration object.
-  - method: [Delete macOSGeneralDeviceConfiguration](xref:graph.intune_deviceconfig_macosgeneraldeviceconfiguration_delete)
-    type: None
-    description: Deletes a macOSGeneralDeviceConfiguration.
-  - method: [Update macOSGeneralDeviceConfiguration](xref:graph.intune_deviceconfig_macosgeneraldeviceconfiguration_update)
-    type: [macOSGeneralDeviceConfiguration](xref:graph.intune_deviceconfig_macosgeneraldeviceconfiguration)
-    description: Update the properties of a macOSGeneralDeviceConfiguration object.
+  - method: "[List macOSGeneralDeviceConfigurations](xref:graph.intune_deviceconfig_macosgeneraldeviceconfiguration_list)"
+    type: "[macOSGeneralDeviceConfiguration](xref:graph.intune_deviceconfig_macosgeneraldeviceconfiguration) collection"
+    description: "List properties and relationships of the macOSGeneralDeviceConfiguration objects."
+  - method: "[Get macOSGeneralDeviceConfiguration](xref:graph.intune_deviceconfig_macosgeneraldeviceconfiguration_get)"
+    type: "[macOSGeneralDeviceConfiguration](xref:graph.intune_deviceconfig_macosgeneraldeviceconfiguration)"
+    description: "Read properties and relationships of the macOSGeneralDeviceConfiguration object."
+  - method: "[Create macOSGeneralDeviceConfiguration](xref:graph.intune_deviceconfig_macosgeneraldeviceconfiguration_create)"
+    type: "[macOSGeneralDeviceConfiguration](xref:graph.intune_deviceconfig_macosgeneraldeviceconfiguration)"
+    description: "Create a new macOSGeneralDeviceConfiguration object."
+  - method: "[Delete macOSGeneralDeviceConfiguration](xref:graph.intune_deviceconfig_macosgeneraldeviceconfiguration_delete)"
+    type: "None"
+    description: "Deletes a macOSGeneralDeviceConfiguration."
+  - method: "[Update macOSGeneralDeviceConfiguration](xref:graph.intune_deviceconfig_macosgeneraldeviceconfiguration_update)"
+    type: "[macOSGeneralDeviceConfiguration](xref:graph.intune_deviceconfig_macosgeneraldeviceconfiguration)"
+    description: "Update the properties of a macOSGeneralDeviceConfiguration object."
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -65,80 +65,80 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: id
-    type: String
-    description: Key of the entity. Inherited from deviceConfiguration
-  - property: lastModifiedDateTime
-    type: DateTimeOffset
-    description: DateTime the object was last modified. Inherited from deviceConfiguration
-  - property: createdDateTime
-    type: DateTimeOffset
-    description: DateTime the object was created. Inherited from deviceConfiguration
-  - property: description
-    type: String
-    description: Admin provided description of the Device Configuration. Inherited from deviceConfiguration
-  - property: displayName
-    type: String
-    description: Admin provided name of the device configuration. Inherited from deviceConfiguration
-  - property: version
-    type: Int32
-    description: Version of the device configuration. Inherited from deviceConfiguration
-  - property: compliantAppsList
-    type: Collection(microsoft.graph.appListItem)
-    description: List of apps in the compliance (either allow list or block list, controlled by CompliantAppListType). This collection can contain a maximum of 10000 elements.
-  - property: compliantAppListType
-    type: microsoft.graph.appListType
-    description: List that is in the CompliantAppsList. The possible values are: none, appsInListCompliant, appsNotInListCompliant.
-  - property: emailInDomainSuffixes
-    type: Collection(String)
-    description: An email address lacking a suffix that matches any of these strings will be considered out-of-domain.
-  - property: passwordBlockSimple
-    type: Boolean
-    description: Block simple passwords.
-  - property: passwordExpirationDays
-    type: Int32
-    description: Number of days before the password expires.
-  - property: passwordMinimumCharacterSetCount
-    type: Int32
-    description: Number of character sets a password must contain. Valid values 0 to 4
-  - property: passwordMinimumLength
-    type: Int32
-    description: Minimum length of passwords.
-  - property: passwordMinutesOfInactivityBeforeLock
-    type: Int32
-    description: Minutes of inactivity required before a password is required.
-  - property: passwordMinutesOfInactivityBeforeScreenTimeout
-    type: Int32
-    description: Minutes of inactivity required before the screen times out.
-  - property: passwordPreviousPasswordBlockCount
-    type: Int32
-    description: Number of previous passwords to block.
-  - property: passwordRequiredType
-    type: microsoft.graph.requiredPasswordType
-    description: Type of password that is required. The possible values are: deviceDefault, alphanumeric, numeric.
-  - property: passwordRequired
-    type: Boolean
-    description: Whether or not to require a password.
+  - property: "id"
+    type: "String"
+    description: "Key of the entity. Inherited from deviceConfiguration"
+  - property: "lastModifiedDateTime"
+    type: "DateTimeOffset"
+    description: "DateTime the object was last modified. Inherited from deviceConfiguration"
+  - property: "createdDateTime"
+    type: "DateTimeOffset"
+    description: "DateTime the object was created. Inherited from deviceConfiguration"
+  - property: "description"
+    type: "String"
+    description: "Admin provided description of the Device Configuration. Inherited from deviceConfiguration"
+  - property: "displayName"
+    type: "String"
+    description: "Admin provided name of the device configuration. Inherited from deviceConfiguration"
+  - property: "version"
+    type: "Int32"
+    description: "Version of the device configuration. Inherited from deviceConfiguration"
+  - property: "compliantAppsList"
+    type: "Collection(microsoft.graph.appListItem)"
+    description: "List of apps in the compliance (either allow list or block list, controlled by CompliantAppListType). This collection can contain a maximum of 10000 elements."
+  - property: "compliantAppListType"
+    type: "microsoft.graph.appListType"
+    description: "List that is in the CompliantAppsList. The possible values are: none, appsInListCompliant, appsNotInListCompliant."
+  - property: "emailInDomainSuffixes"
+    type: "Collection(String)"
+    description: "An email address lacking a suffix that matches any of these strings will be considered out-of-domain."
+  - property: "passwordBlockSimple"
+    type: "Boolean"
+    description: "Block simple passwords."
+  - property: "passwordExpirationDays"
+    type: "Int32"
+    description: "Number of days before the password expires."
+  - property: "passwordMinimumCharacterSetCount"
+    type: "Int32"
+    description: "Number of character sets a password must contain. Valid values 0 to 4"
+  - property: "passwordMinimumLength"
+    type: "Int32"
+    description: "Minimum length of passwords."
+  - property: "passwordMinutesOfInactivityBeforeLock"
+    type: "Int32"
+    description: "Minutes of inactivity required before a password is required."
+  - property: "passwordMinutesOfInactivityBeforeScreenTimeout"
+    type: "Int32"
+    description: "Minutes of inactivity required before the screen times out."
+  - property: "passwordPreviousPasswordBlockCount"
+    type: "Int32"
+    description: "Number of previous passwords to block."
+  - property: "passwordRequiredType"
+    type: "microsoft.graph.requiredPasswordType"
+    description: "Type of password that is required. The possible values are: deviceDefault, alphanumeric, numeric."
+  - property: "passwordRequired"
+    type: "Boolean"
+    description: "Whether or not to require a password."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   list:
-  - relationship: assignments
-    type: Collection(microsoft.graph.deviceConfigurationAssignment)
-    description: The list of assignments for the device configuration profile. Inherited from deviceConfiguration
-  - relationship: deviceStatuses
-    type: Collection(microsoft.graph.deviceConfigurationDeviceStatus)
-    description: Device configuration installation status by device. Inherited from deviceConfiguration
-  - relationship: userStatuses
-    type: Collection(microsoft.graph.deviceConfigurationUserStatus)
-    description: Device configuration installation status by user. Inherited from deviceConfiguration
-  - relationship: deviceStatusOverview
-    type: microsoft.graph.deviceConfigurationDeviceOverview
-    description: Device Configuration devices status overview Inherited from deviceConfiguration
-  - relationship: userStatusOverview
-    type: microsoft.graph.deviceConfigurationUserOverview
-    description: Device Configuration users status overview Inherited from deviceConfiguration
-  - relationship: deviceSettingStateSummaries
-    type: Collection(microsoft.graph.settingStateDeviceSummary)
-    description: Device Configuration Setting State Device Summary Inherited from deviceConfiguration
+  - relationship: "assignments"
+    type: "Collection(microsoft.graph.deviceConfigurationAssignment)"
+    description: "The list of assignments for the device configuration profile. Inherited from deviceConfiguration"
+  - relationship: "deviceStatuses"
+    type: "Collection(microsoft.graph.deviceConfigurationDeviceStatus)"
+    description: "Device configuration installation status by device. Inherited from deviceConfiguration"
+  - relationship: "userStatuses"
+    type: "Collection(microsoft.graph.deviceConfigurationUserStatus)"
+    description: "Device configuration installation status by user. Inherited from deviceConfiguration"
+  - relationship: "deviceStatusOverview"
+    type: "microsoft.graph.deviceConfigurationDeviceOverview"
+    description: "Device Configuration devices status overview Inherited from deviceConfiguration"
+  - relationship: "userStatusOverview"
+    type: "microsoft.graph.deviceConfigurationUserOverview"
+    description: "Device Configuration users status overview Inherited from deviceConfiguration"
+  - relationship: "deviceSettingStateSummaries"
+    type: "Collection(microsoft.graph.settingStateDeviceSummary)"
+    description: "Device Configuration Setting State Device Summary Inherited from deviceConfiguration"

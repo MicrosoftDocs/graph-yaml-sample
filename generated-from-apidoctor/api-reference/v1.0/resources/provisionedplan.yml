@@ -3,11 +3,11 @@ uid: graph.provisionedplan
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/provisionedplan.md
 summary:
-  heading: provisionedPlan resource type
+  heading: "provisionedPlan resource type"
   intro: |
     The **provisionedPlans** property of the [user](xref:graph.user) entity and the [organization](xref:graph.organization) entity is a collection of **provisionedPlan**.
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource
   sampleCode: |
@@ -20,14 +20,14 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: capabilityStatus
-    type: String
-    description: For example, “Enabled”.
-  - property: provisioningStatus
-    type: String
-    description: For example, “Success”.
-  - property: service
-    type: String
-    description: The name of the service; for example, “AccessControlS2S”
+  - property: "capabilityStatus"
+    type: "String"
+    description: "For example, “Enabled”."
+  - property: "provisioningStatus"
+    type: "String"
+    description: "For example, “Success”."
+  - property: "service"
+    type: "String"
+    description: "The name of the service; for example, “AccessControlS2S”"

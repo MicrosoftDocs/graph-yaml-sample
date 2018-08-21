@@ -7,12 +7,12 @@ metadata:
   ms.date: 09/10/2017
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/thumbnailset.md
 summary:
-  heading: ThumbnailSet resource type
+  heading: "ThumbnailSet resource type"
   intro: |
     The **ThumbnailSet** resource is a keyed collection of [thumbnail](xref:graph.thumbnail) resources.
     It is used to represent a set of thumbnails associated with a DriveItem.
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -27,20 +27,20 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: id
-    type: String
-    description: The id within the item. Read-only.
-  - property: large
-    type: microsoft.graph.thumbnail
-    description: A 1920x1920 scaled thumbnail.
-  - property: medium
-    type: microsoft.graph.thumbnail
-    description: A 176x176 scaled thumbnail.
-  - property: small
-    type: microsoft.graph.thumbnail
-    description: A 48x48 cropped thumbnail.
-  - property: source
-    type: microsoft.graph.thumbnail
-    description: A custom thumbnail image or the original image used to generate other thumbnails.
+  - property: "id"
+    type: "String"
+    description: "The id within the item. Read-only."
+  - property: "large"
+    type: "microsoft.graph.thumbnail"
+    description: "A 1920x1920 scaled thumbnail."
+  - property: "medium"
+    type: "microsoft.graph.thumbnail"
+    description: "A 176x176 scaled thumbnail."
+  - property: "small"
+    type: "microsoft.graph.thumbnail"
+    description: "A 48x48 cropped thumbnail."
+  - property: "source"
+    type: "microsoft.graph.thumbnail"
+    description: "A custom thumbnail image or the original image used to generate other thumbnails."

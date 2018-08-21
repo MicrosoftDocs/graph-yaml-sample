@@ -3,7 +3,7 @@ uid: graph.v1-overview
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/v1-overview.md
 summary:
-  heading: Microsoft Graph REST API v1.0 reference
+  heading: "Microsoft Graph REST API v1.0 reference"
   intro: |
     Welcome to Microsoft Graph REST API reference for the v1.0 endpoint.
     API sets on the v1.0 endpoint (`https://graph.microsoft.com/v1.0`) are in general availability (GA) status, and have gone through a rigorous review-and-feedback process with customers to meet practical, production needs. Updates to APIs on this endpoint are additive in nature and do not break existing app scenarios.

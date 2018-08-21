@@ -3,29 +3,29 @@ uid: graph.intune_apps_mobileappassignment
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_apps_mobileappassignment.md
 summary:
-  heading: mobileAppAssignment resource type
+  heading: "mobileAppAssignment resource type"
   intro: |
     A class containing the properties used for Group Assignment of a Mobile App.
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [List mobileAppAssignments](xref:graph.intune_apps_mobileappassignment_list)
-    type: [mobileAppAssignment](xref:graph.intune_apps_mobileappassignment) collection
-    description: List properties and relationships of the mobileAppAssignment objects.
-  - method: [Get mobileAppAssignment](xref:graph.intune_apps_mobileappassignment_get)
-    type: [mobileAppAssignment](xref:graph.intune_apps_mobileappassignment)
-    description: Read properties and relationships of the mobileAppAssignment object.
-  - method: [Create mobileAppAssignment](xref:graph.intune_apps_mobileappassignment_create)
-    type: [mobileAppAssignment](xref:graph.intune_apps_mobileappassignment)
-    description: Create a new mobileAppAssignment object.
-  - method: [Delete mobileAppAssignment](xref:graph.intune_apps_mobileappassignment_delete)
-    type: None
-    description: Deletes a mobileAppAssignment.
-  - method: [Update mobileAppAssignment](xref:graph.intune_apps_mobileappassignment_update)
-    type: [mobileAppAssignment](xref:graph.intune_apps_mobileappassignment)
-    description: Update the properties of a mobileAppAssignment object.
+  - method: "[List mobileAppAssignments](xref:graph.intune_apps_mobileappassignment_list)"
+    type: "[mobileAppAssignment](xref:graph.intune_apps_mobileappassignment) collection"
+    description: "List properties and relationships of the mobileAppAssignment objects."
+  - method: "[Get mobileAppAssignment](xref:graph.intune_apps_mobileappassignment_get)"
+    type: "[mobileAppAssignment](xref:graph.intune_apps_mobileappassignment)"
+    description: "Read properties and relationships of the mobileAppAssignment object."
+  - method: "[Create mobileAppAssignment](xref:graph.intune_apps_mobileappassignment_create)"
+    type: "[mobileAppAssignment](xref:graph.intune_apps_mobileappassignment)"
+    description: "Create a new mobileAppAssignment object."
+  - method: "[Delete mobileAppAssignment](xref:graph.intune_apps_mobileappassignment_delete)"
+    type: "None"
+    description: "Deletes a mobileAppAssignment."
+  - method: "[Update mobileAppAssignment](xref:graph.intune_apps_mobileappassignment_update)"
+    type: "[mobileAppAssignment](xref:graph.intune_apps_mobileappassignment)"
+    description: "Update the properties of a mobileAppAssignment object."
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -44,21 +44,21 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: id
-    type: String
-    description: Key of the entity.
-  - property: intent
-    type: microsoft.graph.installIntent
-    description: The install intent defined by the admin. The possible values are: available, required, uninstall, availableWithoutEnrollment.
-  - property: target
-    type: microsoft.graph.deviceAndAppManagementAssignmentTarget
-    description: The target group assignment defined by the admin.
-  - property: settings
-    type: microsoft.graph.mobileAppAssignmentSettings
-    description: The settings for target assignment defined by the admin.
+  - property: "id"
+    type: "String"
+    description: "Key of the entity."
+  - property: "intent"
+    type: "microsoft.graph.installIntent"
+    description: "The install intent defined by the admin. The possible values are: available, required, uninstall, availableWithoutEnrollment."
+  - property: "target"
+    type: "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    description: "The target group assignment defined by the admin."
+  - property: "settings"
+    type: "microsoft.graph.mobileAppAssignmentSettings"
+    description: "The settings for target assignment defined by the admin."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

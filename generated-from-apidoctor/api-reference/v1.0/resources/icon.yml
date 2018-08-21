@@ -3,20 +3,20 @@ uid: graph.icon
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.icon
 summary:
-  heading: Icon resource type
+  heading: "Icon resource type"
   intro: |
     Represents a cell icon.
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [Get Icon](xref:graph.icon_get)
-    type: [Icon](xref:graph.icon)
-    description: Read properties and relationships of icon object.
-  - method: [Update](xref:graph.icon_update)
-    type: [Icon](xref:graph.icon)
-    description: Update Icon object.
+  - method: "[Get Icon](xref:graph.icon_get)"
+    type: "[Icon](xref:graph.icon)"
+    description: "Read properties and relationships of icon object."
+  - method: "[Update](xref:graph.icon_update)"
+    type: "[Icon](xref:graph.icon)"
+    description: "Update Icon object."
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -28,15 +28,15 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: index
-    type: Int32
-    description: Represents the index of the icon in the given set.
-  - property: set
-    type: String
-    description: Represents the set that the icon is part of. The possible values are: Invalid, ThreeArrows, ThreeArrowsGray, ThreeFlags, ThreeTrafficLights1, ThreeTrafficLights2, ThreeSigns, ThreeSymbols, ThreeSymbols2, FourArrows, FourArrowsGray, FourRedToBlack, FourRating, FourTrafficLights, FiveArrows, FiveArrowsGray, FiveRating, FiveQuarters, ThreeStars, ThreeTriangles, FiveBoxes.
+  - property: "index"
+    type: "Int32"
+    description: "Represents the index of the icon in the given set."
+  - property: "set"
+    type: "String"
+    description: "Represents the set that the icon is part of. The possible values are: Invalid, ThreeArrows, ThreeArrowsGray, ThreeFlags, ThreeTrafficLights1, ThreeTrafficLights2, ThreeSigns, ThreeSymbols, ThreeSymbols2, FourArrows, FourArrowsGray, FourRedToBlack, FourRating, FourTrafficLights, FiveArrows, FiveArrowsGray, FiveRating, FiveQuarters, ThreeStars, ThreeTriangles, FiveBoxes."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

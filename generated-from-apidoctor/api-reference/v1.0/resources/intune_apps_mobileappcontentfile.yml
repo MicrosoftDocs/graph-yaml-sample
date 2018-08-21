@@ -3,35 +3,35 @@ uid: graph.intune_apps_mobileappcontentfile
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_apps_mobileappcontentfile.md
 summary:
-  heading: mobileAppContentFile resource type
+  heading: "mobileAppContentFile resource type"
   intro: |
     Contains properties for a single installer file that is associated with a given mobileAppContent version.
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [List mobileAppContentFiles](xref:graph.intune_apps_mobileappcontentfile_list)
-    type: [mobileAppContentFile](xref:graph.intune_apps_mobileappcontentfile) collection
-    description: List properties and relationships of the mobileAppContentFile objects.
-  - method: [Get mobileAppContentFile](xref:graph.intune_apps_mobileappcontentfile_get)
-    type: [mobileAppContentFile](xref:graph.intune_apps_mobileappcontentfile)
-    description: Read properties and relationships of the mobileAppContentFile object.
-  - method: [Create mobileAppContentFile](xref:graph.intune_apps_mobileappcontentfile_create)
-    type: [mobileAppContentFile](xref:graph.intune_apps_mobileappcontentfile)
-    description: Create a new mobileAppContentFile object.
-  - method: [Delete mobileAppContentFile](xref:graph.intune_apps_mobileappcontentfile_delete)
-    type: None
-    description: Deletes a mobileAppContentFile.
-  - method: [Update mobileAppContentFile](xref:graph.intune_apps_mobileappcontentfile_update)
-    type: [mobileAppContentFile](xref:graph.intune_apps_mobileappcontentfile)
-    description: Update the properties of a mobileAppContentFile object.
-  - method: [commit action](xref:graph.intune_apps_mobileappcontentfile_commit)
-    type: None
-    description: Commits a file of a given app.
-  - method: [renewUpload action](xref:graph.intune_apps_mobileappcontentfile_renewupload)
-    type: None
-    description: Renews the SAS URI for an application file upload.
+  - method: "[List mobileAppContentFiles](xref:graph.intune_apps_mobileappcontentfile_list)"
+    type: "[mobileAppContentFile](xref:graph.intune_apps_mobileappcontentfile) collection"
+    description: "List properties and relationships of the mobileAppContentFile objects."
+  - method: "[Get mobileAppContentFile](xref:graph.intune_apps_mobileappcontentfile_get)"
+    type: "[mobileAppContentFile](xref:graph.intune_apps_mobileappcontentfile)"
+    description: "Read properties and relationships of the mobileAppContentFile object."
+  - method: "[Create mobileAppContentFile](xref:graph.intune_apps_mobileappcontentfile_create)"
+    type: "[mobileAppContentFile](xref:graph.intune_apps_mobileappcontentfile)"
+    description: "Create a new mobileAppContentFile object."
+  - method: "[Delete mobileAppContentFile](xref:graph.intune_apps_mobileappcontentfile_delete)"
+    type: "None"
+    description: "Deletes a mobileAppContentFile."
+  - method: "[Update mobileAppContentFile](xref:graph.intune_apps_mobileappcontentfile_update)"
+    type: "[mobileAppContentFile](xref:graph.intune_apps_mobileappcontentfile)"
+    description: "Update the properties of a mobileAppContentFile object."
+  - method: "[commit action](xref:graph.intune_apps_mobileappcontentfile_commit)"
+    type: "None"
+    description: "Commits a file of a given app."
+  - method: "[renewUpload action](xref:graph.intune_apps_mobileappcontentfile_renewupload)"
+    type: "None"
+    description: "Renews the SAS URI for an application file upload."
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -52,39 +52,39 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: azureStorageUri
-    type: String
-    description: The Azure Storage URI.
-  - property: isCommitted
-    type: Boolean
-    description: A value indicating whether the file is committed.
-  - property: id
-    type: String
-    description: The File Id.
-  - property: createdDateTime
-    type: DateTimeOffset
-    description: The time the file was created.
-  - property: name
-    type: String
-    description: the file name.
-  - property: size
-    type: Int64
-    description: The size of the file prior to encryption.
-  - property: sizeEncrypted
-    type: Int64
-    description: The size of the file after encryption.
-  - property: azureStorageUriExpirationDateTime
-    type: DateTimeOffset
-    description: The time the Azure storage Uri expires.
-  - property: manifest
-    type: Binary
-    description: The manifest information.
-  - property: uploadState
-    type: microsoft.graph.mobileAppContentFileUploadState
-    description: The state of the current upload request. The possible values are: success, transientError, error, unknown, azureStorageUriRequestSuccess, azureStorageUriRequestPending, azureStorageUriRequestFailed, azureStorageUriRequestTimedOut, azureStorageUriRenewalSuccess, azureStorageUriRenewalPending, azureStorageUriRenewalFailed, azureStorageUriRenewalTimedOut, commitFileSuccess, commitFilePending, commitFileFailed, commitFileTimedOut.
+  - property: "azureStorageUri"
+    type: "String"
+    description: "The Azure Storage URI."
+  - property: "isCommitted"
+    type: "Boolean"
+    description: "A value indicating whether the file is committed."
+  - property: "id"
+    type: "String"
+    description: "The File Id."
+  - property: "createdDateTime"
+    type: "DateTimeOffset"
+    description: "The time the file was created."
+  - property: "name"
+    type: "String"
+    description: "the file name."
+  - property: "size"
+    type: "Int64"
+    description: "The size of the file prior to encryption."
+  - property: "sizeEncrypted"
+    type: "Int64"
+    description: "The size of the file after encryption."
+  - property: "azureStorageUriExpirationDateTime"
+    type: "DateTimeOffset"
+    description: "The time the Azure storage Uri expires."
+  - property: "manifest"
+    type: "Binary"
+    description: "The manifest information."
+  - property: "uploadState"
+    type: "microsoft.graph.mobileAppContentFileUploadState"
+    description: "The state of the current upload request. The possible values are: success, transientError, error, unknown, azureStorageUriRequestSuccess, azureStorageUriRequestPending, azureStorageUriRequestFailed, azureStorageUriRequestTimedOut, azureStorageUriRenewalSuccess, azureStorageUriRenewalPending, azureStorageUriRenewalFailed, azureStorageUriRenewalTimedOut, commitFileSuccess, commitFilePending, commitFileFailed, commitFileTimedOut."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

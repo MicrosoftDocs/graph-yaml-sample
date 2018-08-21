@@ -3,31 +3,31 @@ uid: graph.intune_rbac_deviceandappmanagementroleassignment_update
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/intune_rbac_deviceandappmanagementroleassignment_update.md
 summary:
-  heading: Update deviceAndAppManagementRoleAssignment
+  heading: "Update deviceAndAppManagementRoleAssignment"
   intro: |
     Update the properties of a [deviceAndAppManagementRoleAssignment](xref:graph.intune_rbac_deviceandappmanagementroleassignment) object.
 permissions:
-  heading: Prerequisites
+  heading: "Prerequisites"
   intro: |
     One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
 httpRequest:
-  heading: HTTP Request
+  heading: "HTTP Request"
   sampleCode: |
     ```http
     PATCH /deviceManagement/roleAssignments/{deviceAndAppManagementRoleAssignmentId}
     ```
     
 requestHeaders:
-  heading: Request headers
+  heading: "Request headers"
   list:
-  - name: Authorization
-    value: String
-    description: 
-  - name: Accept
-    value: String
-    description: 
+  - name: "Authorization"
+    value: "String"
+    description: ""
+  - name: "Accept"
+    value: "String"
+    description: ""
 requestBody:
-  heading: Request body
+  heading: "Request body"
   intro: |
     In the request body, supply a JSON representation for the [deviceAndAppManagementRoleAssignment](xref:graph.intune_rbac_deviceandappmanagementroleassignment) object.
     The following table shows the properties that are required when you create the [deviceAndAppManagementRoleAssignment](xref:graph.intune_rbac_deviceandappmanagementroleassignment).
@@ -39,15 +39,15 @@ requestBody:
     |resourceScopes|String collection|List of ids of role scope member security groups.  These are IDs from Azure Active Directory. Inherited from [roleAssignment](xref:graph.intune_rbac_roleassignment)
     |members|String collection|The list of ids of role member security groups. These are IDs from Azure Active Directory.
 response:
-  heading: Response
+  heading: "Response"
   intro: |
     If successful, this method returns a `200 OK` response code and an updated [deviceAndAppManagementRoleAssignment](xref:graph.intune_rbac_deviceandappmanagementroleassignment) object in the response body.
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         request:
-            heading: Request
+            heading: "Request"
             intro: |
               Here is an example of the request.
               PATCH https://graph.microsoft.com/v1.0/deviceManagement/roleAssignments/{deviceAndAppManagementRoleAssignmentId}
@@ -66,7 +66,7 @@ examples:
               }
 
         response:
-            heading: Response
+            heading: "Response"
             intro: |
               Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
               HTTP/1.1 200 OK

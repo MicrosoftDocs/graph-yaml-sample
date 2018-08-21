@@ -3,7 +3,7 @@ uid: graph.onenote-branding
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/onenote-branding.md
 summary:
-  heading: Branding guidelines for OneNote API developers
+  heading: "Branding guidelines for OneNote API developers"
   intro: |
     **Applies to** Consumer notebooks on OneDrive | Enterprise notebooks on Office 365
     Follow the guidance in this article to best integrate the OneNote brand within your product and satisfy OneNote branding requirements.
@@ -13,7 +13,7 @@ summary:
     You can download the logos shown in this article and a PDF copy of these guidelines from our [Branding guidelines for OneNote API developers](https://www.microsoft.com/download/details.aspx?id=42977) download page.
     <a name="variations"></a>
 examples:
-  heading: Examples
+  heading: "Examples"
   intro: |
     **Applications**
     ![Good example of logo in a mobile app](images/OneNoteUsageApps.png)

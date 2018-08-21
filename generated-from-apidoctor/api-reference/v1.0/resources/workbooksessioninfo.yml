@@ -3,11 +3,11 @@ uid: graph.workbooksessioninfo
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/workbooksessioninfo.md
 summary:
-  heading: workbookSessionInfo resource type
+  heading: "workbookSessionInfo resource type"
   intro: |
     Provides information about workbook session.
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource
   sampleCode: |
@@ -19,11 +19,11 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: id
-    type: String
-    description: Id of the workbook session.
-  - property: persistChanges
-    type: Boolean
-    description: true for persistent session. false for non-persistent session (view mode)
+  - property: "id"
+    type: "String"
+    description: "Id of the workbook session."
+  - property: "persistChanges"
+    type: "Boolean"
+    description: "true for persistent session. false for non-persistent session (view mode)"

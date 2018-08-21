@@ -3,36 +3,36 @@ uid: graph.intune_mam_targetedmanagedappconfiguration
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_mam_targetedmanagedappconfiguration.md
 summary:
-  heading: targetedManagedAppConfiguration resource type
+  heading: "targetedManagedAppConfiguration resource type"
   intro: |
     Configuration used to deliver a set of custom settings as-is to all users in the targeted security group
     Inherits from [managedAppConfiguration](xref:graph.intune_mam_managedappconfiguration)
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [List targetedManagedAppConfigurations](xref:graph.intune_mam_targetedmanagedappconfiguration_list)
-    type: [targetedManagedAppConfiguration](xref:graph.intune_mam_targetedmanagedappconfiguration) collection
-    description: List properties and relationships of the targetedManagedAppConfiguration objects.
-  - method: [Get targetedManagedAppConfiguration](xref:graph.intune_mam_targetedmanagedappconfiguration_get)
-    type: [targetedManagedAppConfiguration](xref:graph.intune_mam_targetedmanagedappconfiguration)
-    description: Read properties and relationships of the targetedManagedAppConfiguration object.
-  - method: [Create targetedManagedAppConfiguration](xref:graph.intune_mam_targetedmanagedappconfiguration_create)
-    type: [targetedManagedAppConfiguration](xref:graph.intune_mam_targetedmanagedappconfiguration)
-    description: Create a new targetedManagedAppConfiguration object.
-  - method: [Delete targetedManagedAppConfiguration](xref:graph.intune_mam_targetedmanagedappconfiguration_delete)
-    type: None
-    description: Deletes a targetedManagedAppConfiguration.
-  - method: [Update targetedManagedAppConfiguration](xref:graph.intune_mam_targetedmanagedappconfiguration_update)
-    type: [targetedManagedAppConfiguration](xref:graph.intune_mam_targetedmanagedappconfiguration)
-    description: Update the properties of a targetedManagedAppConfiguration object.
-  - method: [assign action](xref:graph.intune_mam_targetedmanagedappconfiguration_assign)
-    type: None
-    description: Not yet documented
-  - method: [targetApps action](xref:graph.intune_mam_targetedmanagedappconfiguration_targetapps)
-    type: None
-    description: Not yet documented
+  - method: "[List targetedManagedAppConfigurations](xref:graph.intune_mam_targetedmanagedappconfiguration_list)"
+    type: "[targetedManagedAppConfiguration](xref:graph.intune_mam_targetedmanagedappconfiguration) collection"
+    description: "List properties and relationships of the targetedManagedAppConfiguration objects."
+  - method: "[Get targetedManagedAppConfiguration](xref:graph.intune_mam_targetedmanagedappconfiguration_get)"
+    type: "[targetedManagedAppConfiguration](xref:graph.intune_mam_targetedmanagedappconfiguration)"
+    description: "Read properties and relationships of the targetedManagedAppConfiguration object."
+  - method: "[Create targetedManagedAppConfiguration](xref:graph.intune_mam_targetedmanagedappconfiguration_create)"
+    type: "[targetedManagedAppConfiguration](xref:graph.intune_mam_targetedmanagedappconfiguration)"
+    description: "Create a new targetedManagedAppConfiguration object."
+  - method: "[Delete targetedManagedAppConfiguration](xref:graph.intune_mam_targetedmanagedappconfiguration_delete)"
+    type: "None"
+    description: "Deletes a targetedManagedAppConfiguration."
+  - method: "[Update targetedManagedAppConfiguration](xref:graph.intune_mam_targetedmanagedappconfiguration_update)"
+    type: "[targetedManagedAppConfiguration](xref:graph.intune_mam_targetedmanagedappconfiguration)"
+    description: "Update the properties of a targetedManagedAppConfiguration object."
+  - method: "[assign action](xref:graph.intune_mam_targetedmanagedappconfiguration_assign)"
+    type: "None"
+    description: "Not yet documented"
+  - method: "[targetApps action](xref:graph.intune_mam_targetedmanagedappconfiguration_targetapps)"
+    type: "None"
+    description: "Not yet documented"
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -58,44 +58,44 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: displayName
-    type: String
-    description: Policy display name. Inherited from managedAppPolicy
-  - property: description
-    type: String
-    description: The policy's description. Inherited from managedAppPolicy
-  - property: createdDateTime
-    type: DateTimeOffset
-    description: The date and time the policy was created. Inherited from managedAppPolicy
-  - property: lastModifiedDateTime
-    type: DateTimeOffset
-    description: Last time the policy was modified. Inherited from managedAppPolicy
-  - property: id
-    type: String
-    description: Key of the entity. Inherited from managedAppPolicy
-  - property: version
-    type: String
-    description: Version of the entity. Inherited from managedAppPolicy
-  - property: customSettings
-    type: Collection(microsoft.graph.keyValuePair)
-    description: A set of string key and string value pairs to be sent to apps for users to whom the configuration is scoped, unalterned by this service Inherited from managedAppConfiguration
-  - property: deployedAppCount
-    type: Int32
-    description: Count of apps to which the current policy is deployed.
-  - property: isAssigned
-    type: Boolean
-    description: Indicates if the policy is deployed to any inclusion groups or not.
+  - property: "displayName"
+    type: "String"
+    description: "Policy display name. Inherited from managedAppPolicy"
+  - property: "description"
+    type: "String"
+    description: "The policy's description. Inherited from managedAppPolicy"
+  - property: "createdDateTime"
+    type: "DateTimeOffset"
+    description: "The date and time the policy was created. Inherited from managedAppPolicy"
+  - property: "lastModifiedDateTime"
+    type: "DateTimeOffset"
+    description: "Last time the policy was modified. Inherited from managedAppPolicy"
+  - property: "id"
+    type: "String"
+    description: "Key of the entity. Inherited from managedAppPolicy"
+  - property: "version"
+    type: "String"
+    description: "Version of the entity. Inherited from managedAppPolicy"
+  - property: "customSettings"
+    type: "Collection(microsoft.graph.keyValuePair)"
+    description: "A set of string key and string value pairs to be sent to apps for users to whom the configuration is scoped, unalterned by this service Inherited from managedAppConfiguration"
+  - property: "deployedAppCount"
+    type: "Int32"
+    description: "Count of apps to which the current policy is deployed."
+  - property: "isAssigned"
+    type: "Boolean"
+    description: "Indicates if the policy is deployed to any inclusion groups or not."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   list:
-  - relationship: apps
-    type: Collection(microsoft.graph.managedMobileApp)
-    description: List of apps to which the policy is deployed.
-  - relationship: deploymentSummary
-    type: microsoft.graph.managedAppPolicyDeploymentSummary
-    description: Navigation property to deployment summary of the configuration.
-  - relationship: assignments
-    type: Collection(microsoft.graph.targetedManagedAppPolicyAssignment)
-    description: Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
+  - relationship: "apps"
+    type: "Collection(microsoft.graph.managedMobileApp)"
+    description: "List of apps to which the policy is deployed."
+  - relationship: "deploymentSummary"
+    type: "microsoft.graph.managedAppPolicyDeploymentSummary"
+    description: "Navigation property to deployment summary of the configuration."
+  - relationship: "assignments"
+    type: "Collection(microsoft.graph.targetedManagedAppPolicyAssignment)"
+    description: "Navigation property to list of inclusion and exclusion groups to which the policy is deployed."

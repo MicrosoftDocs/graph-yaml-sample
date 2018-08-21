@@ -3,29 +3,29 @@ uid: graph.intune_rbac_resourceoperation
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_rbac_resourceoperation.md
 summary:
-  heading: resourceOperation resource type
+  heading: "resourceOperation resource type"
   intro: |
     This defines an operation or action that can be performed on an Intune resource (or entity).  Common operations are Read, Delete, Update or Create.  These operations provide basic management of the underlying Intune resource itself.  In some cases, an Intune resource can have operations that are used by the resource to take action in combination with other resources.  For example, the Assign operation is used to assign a MobileApp resource to an AAD security group.  Resource operations cannot be modified for built-in roles.This defines an operation or action that can be performed on an Intune resource (or entity).  Common operations are Get, List, Delete, Update or Create.  These operations provide basic management of the underlying Intune resource itself.  In some cases, an Intune resource can have operations that are used by the resource to take action in combination with other resources.  For example, the "Assign" operation is used to assign a MobileApp resource to an AAD security group.  Resource operations cannot be modified for built-in roles.
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [List resourceOperations](xref:graph.intune_rbac_resourceoperation_list)
-    type: [resourceOperation](xref:graph.intune_rbac_resourceoperation) collection
-    description: List properties and relationships of the resourceOperation objects.
-  - method: [Get resourceOperation](xref:graph.intune_rbac_resourceoperation_get)
-    type: [resourceOperation](xref:graph.intune_rbac_resourceoperation)
-    description: Read properties and relationships of the resourceOperation object.
-  - method: [Create resourceOperation](xref:graph.intune_rbac_resourceoperation_create)
-    type: [resourceOperation](xref:graph.intune_rbac_resourceoperation)
-    description: Create a new resourceOperation object.
-  - method: [Delete resourceOperation](xref:graph.intune_rbac_resourceoperation_delete)
-    type: None
-    description: Deletes a resourceOperation.
-  - method: [Update resourceOperation](xref:graph.intune_rbac_resourceoperation_update)
-    type: [resourceOperation](xref:graph.intune_rbac_resourceoperation)
-    description: Update the properties of a resourceOperation object.
+  - method: "[List resourceOperations](xref:graph.intune_rbac_resourceoperation_list)"
+    type: "[resourceOperation](xref:graph.intune_rbac_resourceoperation) collection"
+    description: "List properties and relationships of the resourceOperation objects."
+  - method: "[Get resourceOperation](xref:graph.intune_rbac_resourceoperation_get)"
+    type: "[resourceOperation](xref:graph.intune_rbac_resourceoperation)"
+    description: "Read properties and relationships of the resourceOperation object."
+  - method: "[Create resourceOperation](xref:graph.intune_rbac_resourceoperation_create)"
+    type: "[resourceOperation](xref:graph.intune_rbac_resourceoperation)"
+    description: "Create a new resourceOperation object."
+  - method: "[Delete resourceOperation](xref:graph.intune_rbac_resourceoperation_delete)"
+    type: "None"
+    description: "Deletes a resourceOperation."
+  - method: "[Update resourceOperation](xref:graph.intune_rbac_resourceoperation_update)"
+    type: "[resourceOperation](xref:graph.intune_rbac_resourceoperation)"
+    description: "Update the properties of a resourceOperation object."
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -40,21 +40,21 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: id
-    type: String
-    description: Key of the Resource Operation. Read-only, automatically generated.
-  - property: resourceName
-    type: String
-    description: Name of the Resource this operation is performed on.
-  - property: actionName
-    type: String
-    description: Type of action this operation is going to perform. The actionName should be concise and limited to as few words as possible.
-  - property: description
-    type: String
-    description: Description of the resource operation. The description is used in mouse-over text for the operation when shown in the Azure Portal.
+  - property: "id"
+    type: "String"
+    description: "Key of the Resource Operation. Read-only, automatically generated."
+  - property: "resourceName"
+    type: "String"
+    description: "Name of the Resource this operation is performed on."
+  - property: "actionName"
+    type: "String"
+    description: "Type of action this operation is going to perform. The actionName should be concise and limited to as few words as possible."
+  - property: "description"
+    type: "String"
+    description: "Description of the resource operation. The description is used in mouse-over text for the operation when shown in the Azure Portal."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

@@ -3,18 +3,18 @@ uid: graph.microsoft_teams_user_activity_reports
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/microsoft_teams_user_activity_reports.md
 summary:
-  heading: Microsoft Teams user activity reports
+  heading: "Microsoft Teams user activity reports"
   intro: |
     Use the Microsoft Teams activity reports to get insights into the Microsoft Teams user activity in your organization.
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [Get user detail](xref:graph.reportroot_getteamsuseractivityuserdetail)
-    type: Stream
-    description: Get details about Microsoft Teams user activity by user.
-  - method: [Get activity counts](xref:graph.reportroot_getteamsuseractivitycounts)
-    type: Stream
-    description: Get the number of Microsoft Teams activities by activity type. The activity types are number of teams chat messages, private chat messages, calls, or meetings.
-  - method: [Get user counts](xref:graph.reportroot_getteamsuseractivityusercounts)
-    type: Stream
-    description: Get the number of users by activity type. The activity types are number of teams chat messages, private chat messages, calls, or meetings.
+  - method: "[Get user detail](xref:graph.reportroot_getteamsuseractivityuserdetail)"
+    type: "Stream"
+    description: "Get details about Microsoft Teams user activity by user."
+  - method: "[Get activity counts](xref:graph.reportroot_getteamsuseractivitycounts)"
+    type: "Stream"
+    description: "Get the number of Microsoft Teams activities by activity type. The activity types are number of teams chat messages, private chat messages, calls, or meetings."
+  - method: "[Get user counts](xref:graph.reportroot_getteamsuseractivityusercounts)"
+    type: "Stream"
+    description: "Get the number of users by activity type. The activity types are number of teams chat messages, private chat messages, calls, or meetings."

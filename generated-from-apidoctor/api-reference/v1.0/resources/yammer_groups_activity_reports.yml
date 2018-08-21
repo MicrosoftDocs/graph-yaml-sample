@@ -3,7 +3,7 @@ uid: graph.yammer_groups_activity_reports
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/yammer_groups_activity_reports.md
 summary:
-  heading: Yammer groups activity reports
+  heading: "Yammer groups activity reports"
   intro: |
     You can use the Yammer groups activity reports to gain insights into the activity of Yammer groups in your organization and see how many Yammer groups are being created and used.
     

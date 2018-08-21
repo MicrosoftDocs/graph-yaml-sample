@@ -3,29 +3,29 @@ uid: graph.intune_tem_telecomexpensemanagementpartner
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_tem_telecomexpensemanagementpartner.md
 summary:
-  heading: telecomExpenseManagementPartner resource type
+  heading: "telecomExpenseManagementPartner resource type"
   intro: |
     telecomExpenseManagementPartner resources represent the metadata and status of a given TEM service. Once your organization has onboarded with a partner, the partner can be enabled or disabled to switch TEM functionality on or off.
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [List telecomExpenseManagementPartners](xref:graph.intune_tem_telecomexpensemanagementpartner_list)
-    type: [telecomExpenseManagementPartner](xref:graph.intune_tem_telecomexpensemanagementpartner) collection
-    description: List properties and relationships of the telecomExpenseManagementPartner objects.
-  - method: [Get telecomExpenseManagementPartner](xref:graph.intune_tem_telecomexpensemanagementpartner_get)
-    type: [telecomExpenseManagementPartner](xref:graph.intune_tem_telecomexpensemanagementpartner)
-    description: Read properties and relationships of the telecomExpenseManagementPartner object.
-  - method: [Create telecomExpenseManagementPartner](xref:graph.intune_tem_telecomexpensemanagementpartner_create)
-    type: [telecomExpenseManagementPartner](xref:graph.intune_tem_telecomexpensemanagementpartner)
-    description: Create a new telecomExpenseManagementPartner object.
-  - method: [Delete telecomExpenseManagementPartner](xref:graph.intune_tem_telecomexpensemanagementpartner_delete)
-    type: None
-    description: Deletes a telecomExpenseManagementPartner.
-  - method: [Update telecomExpenseManagementPartner](xref:graph.intune_tem_telecomexpensemanagementpartner_update)
-    type: [telecomExpenseManagementPartner](xref:graph.intune_tem_telecomexpensemanagementpartner)
-    description: Update the properties of a telecomExpenseManagementPartner object.
+  - method: "[List telecomExpenseManagementPartners](xref:graph.intune_tem_telecomexpensemanagementpartner_list)"
+    type: "[telecomExpenseManagementPartner](xref:graph.intune_tem_telecomexpensemanagementpartner) collection"
+    description: "List properties and relationships of the telecomExpenseManagementPartner objects."
+  - method: "[Get telecomExpenseManagementPartner](xref:graph.intune_tem_telecomexpensemanagementpartner_get)"
+    type: "[telecomExpenseManagementPartner](xref:graph.intune_tem_telecomexpensemanagementpartner)"
+    description: "Read properties and relationships of the telecomExpenseManagementPartner object."
+  - method: "[Create telecomExpenseManagementPartner](xref:graph.intune_tem_telecomexpensemanagementpartner_create)"
+    type: "[telecomExpenseManagementPartner](xref:graph.intune_tem_telecomexpensemanagementpartner)"
+    description: "Create a new telecomExpenseManagementPartner object."
+  - method: "[Delete telecomExpenseManagementPartner](xref:graph.intune_tem_telecomexpensemanagementpartner_delete)"
+    type: "None"
+    description: "Deletes a telecomExpenseManagementPartner."
+  - method: "[Update telecomExpenseManagementPartner](xref:graph.intune_tem_telecomexpensemanagementpartner_update)"
+    type: "[telecomExpenseManagementPartner](xref:graph.intune_tem_telecomexpensemanagementpartner)"
+    description: "Update the properties of a telecomExpenseManagementPartner object."
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -42,27 +42,27 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: id
-    type: String
-    description: Unique identifier of the TEM partner.
-  - property: displayName
-    type: String
-    description: Display name of the TEM partner.
-  - property: url
-    type: String
-    description: URL of the TEM partner's administrative control panel, where an administrator can configure their TEM service.
-  - property: appAuthorized
-    type: Boolean
-    description: Whether the partner's AAD app has been authorized to access Intune.
-  - property: enabled
-    type: Boolean
-    description: Whether Intune's connection to the TEM service is currently enabled or disabled.
-  - property: lastConnectionDateTime
-    type: DateTimeOffset
-    description: Timestamp of the last request sent to Intune by the TEM partner.
+  - property: "id"
+    type: "String"
+    description: "Unique identifier of the TEM partner."
+  - property: "displayName"
+    type: "String"
+    description: "Display name of the TEM partner."
+  - property: "url"
+    type: "String"
+    description: "URL of the TEM partner's administrative control panel, where an administrator can configure their TEM service."
+  - property: "appAuthorized"
+    type: "Boolean"
+    description: "Whether the partner's AAD app has been authorized to access Intune."
+  - property: "enabled"
+    type: "Boolean"
+    description: "Whether Intune's connection to the TEM service is currently enabled or disabled."
+  - property: "lastConnectionDateTime"
+    type: "DateTimeOffset"
+    description: "Timestamp of the last request sent to Intune by the TEM partner."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

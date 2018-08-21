@@ -3,29 +3,29 @@ uid: graph.intune_onboarding_enrollmentconfigurationassignment
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_onboarding_enrollmentconfigurationassignment.md
 summary:
-  heading: enrollmentConfigurationAssignment resource type
+  heading: "enrollmentConfigurationAssignment resource type"
   intro: |
     Not yet documented
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [List enrollmentConfigurationAssignments](xref:graph.intune_onboarding_enrollmentconfigurationassignment_list)
-    type: [enrollmentConfigurationAssignment](xref:graph.intune_onboarding_enrollmentconfigurationassignment) collection
-    description: List properties and relationships of the enrollmentConfigurationAssignment objects.
-  - method: [Get enrollmentConfigurationAssignment](xref:graph.intune_onboarding_enrollmentconfigurationassignment_get)
-    type: [enrollmentConfigurationAssignment](xref:graph.intune_onboarding_enrollmentconfigurationassignment)
-    description: Read properties and relationships of the enrollmentConfigurationAssignment object.
-  - method: [Create enrollmentConfigurationAssignment](xref:graph.intune_onboarding_enrollmentconfigurationassignment_create)
-    type: [enrollmentConfigurationAssignment](xref:graph.intune_onboarding_enrollmentconfigurationassignment)
-    description: Create a new enrollmentConfigurationAssignment object.
-  - method: [Delete enrollmentConfigurationAssignment](xref:graph.intune_onboarding_enrollmentconfigurationassignment_delete)
-    type: None
-    description: Deletes a enrollmentConfigurationAssignment.
-  - method: [Update enrollmentConfigurationAssignment](xref:graph.intune_onboarding_enrollmentconfigurationassignment_update)
-    type: [enrollmentConfigurationAssignment](xref:graph.intune_onboarding_enrollmentconfigurationassignment)
-    description: Update the properties of a enrollmentConfigurationAssignment object.
+  - method: "[List enrollmentConfigurationAssignments](xref:graph.intune_onboarding_enrollmentconfigurationassignment_list)"
+    type: "[enrollmentConfigurationAssignment](xref:graph.intune_onboarding_enrollmentconfigurationassignment) collection"
+    description: "List properties and relationships of the enrollmentConfigurationAssignment objects."
+  - method: "[Get enrollmentConfigurationAssignment](xref:graph.intune_onboarding_enrollmentconfigurationassignment_get)"
+    type: "[enrollmentConfigurationAssignment](xref:graph.intune_onboarding_enrollmentconfigurationassignment)"
+    description: "Read properties and relationships of the enrollmentConfigurationAssignment object."
+  - method: "[Create enrollmentConfigurationAssignment](xref:graph.intune_onboarding_enrollmentconfigurationassignment_create)"
+    type: "[enrollmentConfigurationAssignment](xref:graph.intune_onboarding_enrollmentconfigurationassignment)"
+    description: "Create a new enrollmentConfigurationAssignment object."
+  - method: "[Delete enrollmentConfigurationAssignment](xref:graph.intune_onboarding_enrollmentconfigurationassignment_delete)"
+    type: "None"
+    description: "Deletes a enrollmentConfigurationAssignment."
+  - method: "[Update enrollmentConfigurationAssignment](xref:graph.intune_onboarding_enrollmentconfigurationassignment_update)"
+    type: "[enrollmentConfigurationAssignment](xref:graph.intune_onboarding_enrollmentconfigurationassignment)"
+    description: "Update the properties of a enrollmentConfigurationAssignment object."
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -40,15 +40,15 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: id
-    type: String
-    description: Not yet documented
-  - property: target
-    type: microsoft.graph.deviceAndAppManagementAssignmentTarget
-    description: Not yet documented
+  - property: "id"
+    type: "String"
+    description: "Not yet documented"
+  - property: "target"
+    type: "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    description: "Not yet documented"
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

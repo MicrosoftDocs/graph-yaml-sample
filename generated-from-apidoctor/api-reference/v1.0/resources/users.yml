@@ -3,7 +3,7 @@ uid: graph.users
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/users.md
 summary:
-  heading: Working with users in Microsoft Graph
+  heading: "Working with users in Microsoft Graph"
   intro: |
     You can use Microsoft Graph to build compelling app experiences based on users, their relationships with other users and groups, and their mail, calendar, and files.
     You can access [users](xref:graph.user) through Microsoft Graph in two ways:

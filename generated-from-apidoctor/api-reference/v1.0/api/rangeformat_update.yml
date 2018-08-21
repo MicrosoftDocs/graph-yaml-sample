@@ -3,22 +3,22 @@ uid: graph.rangeformat_update
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/rangeformat_update.md
 summary:
-  heading: Update rangeformat
+  heading: "Update rangeformat"
   intro: |
     Update the properties of rangeformat object.
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
   list:
-  - resource: Delegated (work or school account)
-    permission: Files.ReadWrite
-  - resource: Delegated (personal Microsoft account)
-    permission: Not supported.
-  - resource: Application
-    permission: Not supported.
+  - resource: "Delegated (work or school account)"
+    permission: "Files.ReadWrite"
+  - resource: "Delegated (personal Microsoft account)"
+    permission: "Not supported."
+  - resource: "Application"
+    permission: "Not supported."
 httpRequest:
-  heading: HTTP request
+  heading: "HTTP request"
   sampleCode: |
     ```http
     PATCH /workbook/names/{name}/range/format
@@ -27,16 +27,16 @@ httpRequest:
     ```
     
 requestHeaders:
-  heading: Request headers
+  heading: "Request headers"
   list:
-  - name: Authorization
-    value: 
-    description: Bearer {token}. Required.
-  - name: Workbook-Session-Id
-    value: 
-    description: Workbook session Id that determines if changes are persisted or not. Optional.
+  - name: "Authorization"
+    value: ""
+    description: "Bearer {token}. Required."
+  - name: "Workbook-Session-Id"
+    value: ""
+    description: "Workbook session Id that determines if changes are persisted or not. Optional."
 requestBody:
-  heading: Request body
+  heading: "Request body"
   intro: |
     In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
     |Property|Type|Description
@@ -47,24 +47,24 @@ requestBody:
     |verticalAlignment|string|Represents the vertical alignment for the specified object. The possible values are: `Top`, `Center`, `Bottom`, `Justify`, `Distributed`.
     |wrapText|boolean|Indicates if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform wrap setting
 response:
-  heading: Response
+  heading: "Response"
   intro: |
     If successful, this method returns a `200 OK` response code and updated [WorkbookRangeFormat](xref:graph.rangeformat) object in the response body.
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         outro: |
           ### Update the format, fill, and font properties in three table cells
           The following examples demonstrate how to update properties of the [WorkbookRangeFormat](xref:graph.rangeformat), [WorkbookRangeFill](xref:graph.rangefill), and [WorkbookRangeFont](xref:graph.rangefont) properties of a specified range.
           The result of this set of requests is a table with three cells formatted like the top three cells in the image below.
           ![Excel chart table with three cells whose format, fill, and font properties have been updated.](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/ExcelRangeFormatting.png)
     - Request:
-        heading: Request
+        heading: "Request"
         intro: |
           This request updates the vertical alignment, row height, and column height of the first cell. 
         request:
-            heading: request
+            heading: "request"
             sampleCode: |
               ```http
               PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{sheet-id}/range(address='$A$1')/format
@@ -79,7 +79,7 @@ examples:
               ```
               
         response:
-            heading: Response
+            heading: "Response"
             intro: |
               Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
             sampleCode: |
@@ -97,11 +97,11 @@ examples:
               ```
               
     - Request:
-        heading: Request
+        heading: "Request"
         intro: |
           This request updates the font style, size, and color of the first cell. 
         request:
-            heading: request
+            heading: "request"
             sampleCode: |
               ```http
               PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{sheet-id}/range(address='$A$1')/format/font
@@ -115,7 +115,7 @@ examples:
               ```
               
         response:
-            heading: Response
+            heading: "Response"
             intro: |
               Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
             sampleCode: |
@@ -134,11 +134,11 @@ examples:
               ```
               
     - Request:
-        heading: Request
+        heading: "Request"
         intro: |
           This request updates the background color of the first cell. 
         request:
-            heading: request
+            heading: "request"
             sampleCode: |
               ```http
               PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{sheet-id}/range(address='$A$1')/format/fill
@@ -150,7 +150,7 @@ examples:
               ```
               
         response:
-            heading: Response
+            heading: "Response"
             intro: |
               Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
             sampleCode: |
@@ -164,11 +164,11 @@ examples:
               ```
               
     - Request:
-        heading: Request
+        heading: "Request"
         intro: |
           This request updates the vertical alignment, horizontal alignment, row height, and column height of the second cell. 
         request:
-            heading: request
+            heading: "request"
             sampleCode: |
               ```http
               PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{sheet-id}/range(address='$B$1')/format
@@ -184,7 +184,7 @@ examples:
               ```
               
         response:
-            heading: Response
+            heading: "Response"
             intro: |
               Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
             sampleCode: |
@@ -202,11 +202,11 @@ examples:
               ```
               
     - Request:
-        heading: Request
+        heading: "Request"
         intro: |
           This request updates the font style and size of the second cell. 
         request:
-            heading: request
+            heading: "request"
             sampleCode: |
               ```http
               PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{sheet-id}/range(address='$B$1')/format/font
@@ -219,7 +219,7 @@ examples:
               ```
               
         response:
-            heading: Response
+            heading: "Response"
             intro: |
               Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
             sampleCode: |
@@ -238,11 +238,11 @@ examples:
               ```
               
     - Request:
-        heading: Request
+        heading: "Request"
         intro: |
           This request updates the background color of the second cell. 
         request:
-            heading: request
+            heading: "request"
             sampleCode: |
               ```http
               PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{sheet-id}/range(address='$B$1')/format/fill
@@ -254,7 +254,7 @@ examples:
               ```
               
         response:
-            heading: Response
+            heading: "Response"
             intro: |
               Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
             sampleCode: |
@@ -268,11 +268,11 @@ examples:
               ```
               
     - Request:
-        heading: Request
+        heading: "Request"
         intro: |
           This request updates the horizontal alignment, vertical alignment, row height, and column height of the third cell. 
         request:
-            heading: request
+            heading: "request"
             sampleCode: |
               ```http
               PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{sheet-id}/range(address='$C$1')/format
@@ -288,7 +288,7 @@ examples:
               ```
               
         response:
-            heading: Response
+            heading: "Response"
             intro: |
               Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
             sampleCode: |
@@ -306,11 +306,11 @@ examples:
               ```
               
     - Request:
-        heading: Request
+        heading: "Request"
         intro: |
           This request updates the font style, size, and color of the third cell. Note that the underline property takes **Single** or **Double** as values.
         request:
-            heading: request
+            heading: "request"
             sampleCode: |
               ```http
               PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{sheet-id}/range(address='$C$1')/format/font
@@ -324,7 +324,7 @@ examples:
               ```
               
         response:
-            heading: Response
+            heading: "Response"
             intro: |
               Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
             sampleCode: |
@@ -343,11 +343,11 @@ examples:
               ```
               
     - Request:
-        heading: Request
+        heading: "Request"
         intro: |
           This request updates the background color of the third cell. 
         request:
-            heading: request
+            heading: "request"
             sampleCode: |
               ```http
               PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{sheet-id}/range(address='$C$1')/format/fill
@@ -359,7 +359,7 @@ examples:
               ```
               
         response:
-            heading: Response
+            heading: "Response"
             intro: |
               Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
             sampleCode: |

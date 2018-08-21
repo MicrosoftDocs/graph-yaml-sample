@@ -3,20 +3,20 @@ uid: graph.directoryroletemplate
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.directoryroletemplate
 summary:
-  heading: directoryRoleTemplate resource type
+  heading: "directoryRoleTemplate resource type"
   intro: |
     Represents a directory role template. A directory role template specifies the property values of a directory role ([directoryRole](xref:graph.directoryrole)). There is an associated directory role template object for each of the directory roles that may be activated in a tenant. To read a directory role or update its members, it must first be activated in the tenant. Only the Company Administrators directory role is activated by default. To activate other available directory roles you send a POST request to the `/directoryRoles` endpoint with the ID of the directory role template on which the directory role is based specified in the **roleTemplateId** parameter of the request. Upon successful completion of this request, you can then start to read and assign members to the directory role. **Note**: A directory role template is exposed for the Users directory role. The Users directory role is implicit and is not visible to directory clients. Every User in the tenant is assigned to this role by the infrastructure. The role is already activated. Do not use this template.
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [Get directoryRoleTemplate](xref:graph.directoryroletemplate_get)
-    type: [directoryRoleTemplate](xref:graph.directoryroletemplate)
-    description: Read properties and relationships of directoryRoleTemplate object.
-  - method: [List directoryRoleTemplate](xref:graph.directoryroletemplate_list)
-    type: [directoryRoleTemplate](xref:graph.directoryroletemplate) collection
-    description: Retrieve a list of directoryRoleTemplate objects.
+  - method: "[Get directoryRoleTemplate](xref:graph.directoryroletemplate_get)"
+    type: "[directoryRoleTemplate](xref:graph.directoryroletemplate)"
+    description: "Read properties and relationships of directoryRoleTemplate object."
+  - method: "[List directoryRoleTemplate](xref:graph.directoryroletemplate_list)"
+    type: "[directoryRoleTemplate](xref:graph.directoryroletemplate) collection"
+    description: "Retrieve a list of directoryRoleTemplate objects."
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource
   sampleCode: |
@@ -29,18 +29,18 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: description
-    type: String
-    description: The description to set for the directory role. Read-only.
-  - property: displayName
-    type: String
-    description: The display name to set for the directory role. Read-only.
-  - property: id
-    type: String
-    description: The unique identifier for the template. Inherited from directoryObject. You specify the id of the directory role template for the roleTemplateId property in the POST request activate a directoryRole in a tenant. Key, Not nullable. Read-only.
+  - property: "description"
+    type: "String"
+    description: "The description to set for the directory role. Read-only."
+  - property: "displayName"
+    type: "String"
+    description: "The display name to set for the directory role. Read-only."
+  - property: "id"
+    type: "String"
+    description: "The unique identifier for the template. Inherited from directoryObject. You specify the id of the directory role template for the roleTemplateId property in the POST request activate a directoryRole in a tenant. Key, Not nullable. Read-only."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

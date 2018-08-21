@@ -3,21 +3,21 @@ uid: graph.intune_deviceconfig_automaticupdatemode
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_automaticupdatemode.md
 summary:
-  heading: automaticUpdateMode enum type
+  heading: "automaticUpdateMode enum type"
   intro: |
     Possible values for automatic update mode.
 enum:
-  heading: Members
+  heading: "Members"
   table:
-  - member: userDefined
-    description: User Defined, default value, no intent.
-  - member: notifyDownload
-    description: Notify on download.
-  - member: autoInstallAtMaintenanceTime
-    description: Auto-install at maintenance time.
-  - member: autoInstallAndRebootAtMaintenanceTime
-    description: Auto-install and reboot at maintenance time.
-  - member: autoInstallAndRebootAtScheduledTime
-    description: Auto-install and reboot at scheduled time.
-  - member: autoInstallAndRebootWithoutEndUserControl
-    description: Auto-install and restart without end-user control
+  - member: "userDefined"
+    description: "User Defined, default value, no intent."
+  - member: "notifyDownload"
+    description: "Notify on download."
+  - member: "autoInstallAtMaintenanceTime"
+    description: "Auto-install at maintenance time."
+  - member: "autoInstallAndRebootAtMaintenanceTime"
+    description: "Auto-install and reboot at maintenance time."
+  - member: "autoInstallAndRebootAtScheduledTime"
+    description: "Auto-install and reboot at scheduled time."
+  - member: "autoInstallAndRebootWithoutEndUserControl"
+    description: "Auto-install and restart without end-user control"

@@ -3,7 +3,7 @@ uid: graph.group
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.group
 summary:
-  heading: group resource type
+  heading: "group resource type"
   intro: |
     Represents an Azure Active Directory (Azure AD) group, which can be an Office 365 group, a dynamic group, or a security group.
     Inherits from [directoryObject](xref:graph.directoryobject).
@@ -13,205 +13,205 @@ summary:
     * Using [delta query](xref:graph.delta_query_overview) to track incremental additions, deletions, and updates, by providing a [delta](xref:graph.user_delta) function.
     
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: **Group management**
-    type: 
-    description: 
-  - method: [Create group](xref:graph.group_post_groups)
-    type: [group](xref:graph.group)
-    description: Create a new group. It can be an Office 365 group, dynamic group, or security group.
-  - method: [Get group](xref:graph.group_get)
-    type: [group](xref:graph.group)
-    description: Read properties of a group object.
-  - method: [List groups](xref:graph.group_list)
-    type: [group](xref:graph.group) collection
-    description: List group objects and their properties.
-  - method: [Update group](xref:graph.group_update)
-    type: None
-    description: Update the properties of a group object.
-  - method: [Delete group](xref:graph.group_delete)
-    type: None
-    description: Delete group object.
-  - method: [delta](xref:graph.group_delta)
-    type: group collection
-    description: Get incremental changes for groups.
-  - method: [List groupLifecyclePolicies](xref:graph.group_list_grouplifecyclepolicies)
-    type: [groupLifecyclePolicy](xref:graph.grouplifecyclepolicy) collection
-    description: List group lifecycle policies.
-  - method: [Renew](xref:graph.group_renew)
-    type: Boolean
-    description: Renews a group's expiration. When a group is renewed, the group expiration is extended by the number of days defined in the policy.
-  - method: [Add owner](xref:graph.group_post_owners)
-    type: None
-    description: Add a new owner for the group by posting to the owners navigation property (supported for security groups and mail-enabled security groups only).
-  - method: [List owners](xref:graph.group_list_owners)
-    type: [directoryObject](xref:graph.directoryobject) collection
-    description: Get the owners of the group from the owners navigation property.
-  - method: [Remove owner](xref:graph.group_delete_owners)
-    type: None
-    description: Remove an owner from an Office 365 group, a security group or a mail-enabled security group through the owners navigation property.
-  - method: [Add member](xref:graph.group_post_members)
-    type: None
-    description: Add a user or group to this group by posting to the members navigation property (supported for security groups and mail-enabled security groups only).
-  - method: [List members](xref:graph.group_list_members)
-    type: [directoryObject](xref:graph.directoryobject) collection
-    description: Get the users and groups that are direct members of this group from the members navigation property.
-  - method: [Remove member](xref:graph.group_delete_members)
-    type: None
-    description: Remove a member from an Office 365 group, a security group or a mail-enabled security group through the members navigation property. You can remove users or other groups.
-  - method: [checkMemberGroups](xref:graph.group_checkmembergroups)
-    type: String collection
-    description: Check this group for membership in a list of groups. The function is transitive.
-  - method: [getMemberGroups](xref:graph.group_getmembergroups)
-    type: String collection
-    description: Return all the groups that the group is a member of. The function is transitive.
-  - method: [getMemberObjects](xref:graph.group_getmemberobjects)
-    type: String collection
-    description: Return all of the groups that the group is a member of. The function is transitive.
-  - method: [Create setting](xref:graph.groupsetting_post_groupsettings)
-    type: [groupSetting](xref:graph.groupsetting)
-    description: Create a setting object based on a groupSettingTemplate. The POST request must provide settingValues for all the settings defined in the template. Only groups specific templates may be used for this operation.
-  - method: [Get setting](xref:graph.groupsetting_get)
-    type: [groupSetting](xref:graph.groupsetting)
-    description: Read properties of a specific setting object.
-  - method: [List settings](xref:graph.groupsetting_list)
-    type: [groupSetting](xref:graph.groupsetting) collection
-    description: List properties of all setting objects.
-  - method: [Update setting](xref:graph.groupsetting_update)
-    type: [groupSetting](xref:graph.groupsetting)
-    description: Update a setting object.
-  - method: [Delete setting](xref:graph.groupsetting_delete)
-    type: None
-    description: Delete a setting object.
-  - method: **Calendar**
-    type: 
-    description: 
-  - method: [Create event](xref:graph.group_post_events)
-    type: [event](xref:graph.event)
-    description: Create a new event by posting to the events collection.
-  - method: [Get event](xref:graph.group_get_event)
-    type: [event](xref:graph.event)
-    description: Read properties of an event object.
-  - method: [List events](xref:graph.group_list_events)
-    type: [event](xref:graph.event) collection
-    description: Get an event object collection.
-  - method: [Update event](xref:graph.group_update_event)
-    type: None
-    description: Update the properties of an event object.
-  - method: [Delete event](xref:graph.group_delete_event)
-    type: None
-    description: Delete event object.
-  - method: [List calendarView](xref:graph.group_list_calendarview)
-    type: [event](xref:graph.event) collection
-    description: Get a collection of events in a specified time window.
-  - method: **Conversations**
-    type: 
-    description: 
-  - method: [Create conversation](xref:graph.group_post_conversations)
-    type: [conversation](xref:graph.conversation)
-    description: Create a new conversation by posting to the conversations collection.
-  - method: [Get conversation](xref:graph.group_get_conversation)
-    type: [conversation](xref:graph.conversation)
-    description: Read properties of a conversation object.
-  - method: [List conversations](xref:graph.group_list_conversations)
-    type: [conversation](xref:graph.conversation) collection
-    description: Get a conversation object collection.
-  - method: [Delete conversation](xref:graph.group_delete_conversation)
-    type: None
-    description: Delete conversation object.
-  - method: [Get thread](xref:graph.group_get_thread)
-    type: [conversationThread](xref:graph.conversationthread)
-    description: Read properties of a thread object.
-  - method: [List threads](xref:graph.group_list_threads)
-    type: [conversationThread](xref:graph.conversationthread) collection
-    description: Get all the threads of a group.
-  - method: [Update thread](xref:graph.group_update_thread)
-    type: None
-    description: Update properties of a thread object.
-  - method: [Delete thread](xref:graph.group_delete_thread)
-    type: None
-    description: Delete thread object.
-  - method: [List acceptedSenders](xref:graph.group_list_acceptedsenders)
-    type: [directoryObject](xref:graph.directoryobject) collection
-    description: Get a list of users or groups that are in the acceptedSenders list for this group.
-  - method: [Add acceptedSender](xref:graph.group_post_acceptedsenders)
-    type: [directoryObject](xref:graph.directoryobject)
-    description: Add a User or Group to the acceptSenders collection.
-  - method: [Remove acceptedSender](xref:graph.group_delete_acceptedsenders)
-    type: [directoryObject](xref:graph.directoryobject)
-    description: Remove a User or Group from the acceptedSenders collection.
-  - method: [List rejectedSenders](xref:graph.group_list_rejectedsenders)
-    type: [directoryObject](xref:graph.directoryobject) collection
-    description: Get a list of users or groups that are in the rejectedSenders list for this group.
-  - method: [Add rejectedSender](xref:graph.group_post_rejectedsenders)
-    type: [directoryObject](xref:graph.directoryobject)
-    description: Add a new User or Group to the rejectedSenders collection.
-  - method: [Remove rejectedSender](xref:graph.group_delete_rejectedsenders)
-    type: [directoryObject](xref:graph.directoryobject)
-    description: Remove new new User or Group from the rejectedSenders collection.
-  - method: [Create setting](xref:graph.groupsetting_post_groupsettings)
-    type: [groupSetting](xref:graph.groupsetting)
-    description: Create a setting object based on a groupSettingTemplate. The POST request must provide settingValues for all the settings defined in the template. Only groups specific templates may be used for this operation.
-  - method: [Get setting](xref:graph.groupsetting_get)
-    type: [groupSetting](xref:graph.groupsetting)
-    description: Read properties of a specific setting object.
-  - method: [List settings](xref:graph.groupsetting_list)
-    type: [groupSetting](xref:graph.groupsetting) collection
-    description: List properties of all setting objects.
-  - method: [Update setting](xref:graph.groupsetting_update)
-    type: None
-    description: Update a setting object.
-  - method: [Delete setting](xref:graph.groupsetting_delete)
-    type: None
-    description: Delete a setting object.
-  - method: **Open extensions**
-    type: 
-    description: 
-  - method: [Create open extension](xref:graph.opentypeextension_post_opentypeextension)
-    type: [openTypeExtension](xref:graph.opentypeextension)
-    description: Create an open extension and add custom properties to a new or existing resource.
-  - method: [Get open extension](xref:graph.opentypeextension_get)
-    type: [openTypeExtension](xref:graph.opentypeextension) collection
-    description: Get an open extension identified by the extension name.
-  - method: **Schema extensions**
-    type: 
-    description: 
-  - method: [Add schema extension values](xref:graph.extensibility_schema_groups)
-    type: 
-    description: Create a schema extension definition and then use it to add custom typed data to a resource.
-  - method: **Other group resources**
-    type: 
-    description: 
-  - method: [List photos](xref:graph.group_list_photos)
-    type: [profilePhoto](xref:graph.photo) collection
-    description: Get a collection of profile photos for the group.
-  - method: [List plannerPlans](xref:graph.plannergroup_list_plans)
-    type: [plannerPlan](xref:graph.plannerPlan) collection
-    description: Get Planner plans owned by the group.
-  - method: **User settings**
-    type: 
-    description: 
-  - method: [addFavorite](xref:graph.group_addfavorite)
-    type: None
-    description: Add the group to the list of the current user's favorite groups. Supported for only Office 365 groups.
-  - method: [removeFavorite](xref:graph.group_removefavorite)
-    type: None
-    description: Remove the group from the list of the current user's favorite groups. Supported for only Office 365 groups.
-  - method: [List memberOf](xref:graph.group_list_memberof)
-    type: [directoryObject](xref:graph.directoryobject) collection
-    description: Get the groups and administative units that this user is a direct member of, from the memberOf navigation property.
-  - method: [subscribeByMail](xref:graph.group_subscribebymail)
-    type: None
-    description: Set the isSubscribedByMail property to true. Enabling the current user to receive email conversations. Supported for only Office 365 groups.
-  - method: [unsubscribeByMail](xref:graph.group_unsubscribebymail)
-    type: None
-    description: Set the isSubscribedByMail property to false. Disabling the current user from receive email conversations. Supported for only Office 365 groups.
-  - method: [resetUnseenCount](xref:graph.group_resetunseencount)
-    type: None
-    description: Reset the unseenCount to 0 of all the posts that the current user has not seen since their last visit. Supported for only Office 365 groups.
+  - method: "**Group management**"
+    type: ""
+    description: ""
+  - method: "[Create group](xref:graph.group_post_groups)"
+    type: "[group](xref:graph.group)"
+    description: "Create a new group. It can be an Office 365 group, dynamic group, or security group."
+  - method: "[Get group](xref:graph.group_get)"
+    type: "[group](xref:graph.group)"
+    description: "Read properties of a group object."
+  - method: "[List groups](xref:graph.group_list)"
+    type: "[group](xref:graph.group) collection"
+    description: "List group objects and their properties."
+  - method: "[Update group](xref:graph.group_update)"
+    type: "None"
+    description: "Update the properties of a group object."
+  - method: "[Delete group](xref:graph.group_delete)"
+    type: "None"
+    description: "Delete group object."
+  - method: "[delta](xref:graph.group_delta)"
+    type: "group collection"
+    description: "Get incremental changes for groups."
+  - method: "[List groupLifecyclePolicies](xref:graph.group_list_grouplifecyclepolicies)"
+    type: "[groupLifecyclePolicy](xref:graph.grouplifecyclepolicy) collection"
+    description: "List group lifecycle policies."
+  - method: "[Renew](xref:graph.group_renew)"
+    type: "Boolean"
+    description: "Renews a group's expiration. When a group is renewed, the group expiration is extended by the number of days defined in the policy."
+  - method: "[Add owner](xref:graph.group_post_owners)"
+    type: "None"
+    description: "Add a new owner for the group by posting to the owners navigation property (supported for security groups and mail-enabled security groups only)."
+  - method: "[List owners](xref:graph.group_list_owners)"
+    type: "[directoryObject](xref:graph.directoryobject) collection"
+    description: "Get the owners of the group from the owners navigation property."
+  - method: "[Remove owner](xref:graph.group_delete_owners)"
+    type: "None"
+    description: "Remove an owner from an Office 365 group, a security group or a mail-enabled security group through the owners navigation property."
+  - method: "[Add member](xref:graph.group_post_members)"
+    type: "None"
+    description: "Add a user or group to this group by posting to the members navigation property (supported for security groups and mail-enabled security groups only)."
+  - method: "[List members](xref:graph.group_list_members)"
+    type: "[directoryObject](xref:graph.directoryobject) collection"
+    description: "Get the users and groups that are direct members of this group from the members navigation property."
+  - method: "[Remove member](xref:graph.group_delete_members)"
+    type: "None"
+    description: "Remove a member from an Office 365 group, a security group or a mail-enabled security group through the members navigation property. You can remove users or other groups."
+  - method: "[checkMemberGroups](xref:graph.group_checkmembergroups)"
+    type: "String collection"
+    description: "Check this group for membership in a list of groups. The function is transitive."
+  - method: "[getMemberGroups](xref:graph.group_getmembergroups)"
+    type: "String collection"
+    description: "Return all the groups that the group is a member of. The function is transitive."
+  - method: "[getMemberObjects](xref:graph.group_getmemberobjects)"
+    type: "String collection"
+    description: "Return all of the groups that the group is a member of. The function is transitive."
+  - method: "[Create setting](xref:graph.groupsetting_post_groupsettings)"
+    type: "[groupSetting](xref:graph.groupsetting)"
+    description: "Create a setting object based on a groupSettingTemplate. The POST request must provide settingValues for all the settings defined in the template. Only groups specific templates may be used for this operation."
+  - method: "[Get setting](xref:graph.groupsetting_get)"
+    type: "[groupSetting](xref:graph.groupsetting)"
+    description: "Read properties of a specific setting object."
+  - method: "[List settings](xref:graph.groupsetting_list)"
+    type: "[groupSetting](xref:graph.groupsetting) collection"
+    description: "List properties of all setting objects."
+  - method: "[Update setting](xref:graph.groupsetting_update)"
+    type: "[groupSetting](xref:graph.groupsetting)"
+    description: "Update a setting object."
+  - method: "[Delete setting](xref:graph.groupsetting_delete)"
+    type: "None"
+    description: "Delete a setting object."
+  - method: "**Calendar**"
+    type: ""
+    description: ""
+  - method: "[Create event](xref:graph.group_post_events)"
+    type: "[event](xref:graph.event)"
+    description: "Create a new event by posting to the events collection."
+  - method: "[Get event](xref:graph.group_get_event)"
+    type: "[event](xref:graph.event)"
+    description: "Read properties of an event object."
+  - method: "[List events](xref:graph.group_list_events)"
+    type: "[event](xref:graph.event) collection"
+    description: "Get an event object collection."
+  - method: "[Update event](xref:graph.group_update_event)"
+    type: "None"
+    description: "Update the properties of an event object."
+  - method: "[Delete event](xref:graph.group_delete_event)"
+    type: "None"
+    description: "Delete event object."
+  - method: "[List calendarView](xref:graph.group_list_calendarview)"
+    type: "[event](xref:graph.event) collection"
+    description: "Get a collection of events in a specified time window."
+  - method: "**Conversations**"
+    type: ""
+    description: ""
+  - method: "[Create conversation](xref:graph.group_post_conversations)"
+    type: "[conversation](xref:graph.conversation)"
+    description: "Create a new conversation by posting to the conversations collection."
+  - method: "[Get conversation](xref:graph.group_get_conversation)"
+    type: "[conversation](xref:graph.conversation)"
+    description: "Read properties of a conversation object."
+  - method: "[List conversations](xref:graph.group_list_conversations)"
+    type: "[conversation](xref:graph.conversation) collection"
+    description: "Get a conversation object collection."
+  - method: "[Delete conversation](xref:graph.group_delete_conversation)"
+    type: "None"
+    description: "Delete conversation object."
+  - method: "[Get thread](xref:graph.group_get_thread)"
+    type: "[conversationThread](xref:graph.conversationthread)"
+    description: "Read properties of a thread object."
+  - method: "[List threads](xref:graph.group_list_threads)"
+    type: "[conversationThread](xref:graph.conversationthread) collection"
+    description: "Get all the threads of a group."
+  - method: "[Update thread](xref:graph.group_update_thread)"
+    type: "None"
+    description: "Update properties of a thread object."
+  - method: "[Delete thread](xref:graph.group_delete_thread)"
+    type: "None"
+    description: "Delete thread object."
+  - method: "[List acceptedSenders](xref:graph.group_list_acceptedsenders)"
+    type: "[directoryObject](xref:graph.directoryobject) collection"
+    description: "Get a list of users or groups that are in the acceptedSenders list for this group."
+  - method: "[Add acceptedSender](xref:graph.group_post_acceptedsenders)"
+    type: "[directoryObject](xref:graph.directoryobject)"
+    description: "Add a User or Group to the acceptSenders collection."
+  - method: "[Remove acceptedSender](xref:graph.group_delete_acceptedsenders)"
+    type: "[directoryObject](xref:graph.directoryobject)"
+    description: "Remove a User or Group from the acceptedSenders collection."
+  - method: "[List rejectedSenders](xref:graph.group_list_rejectedsenders)"
+    type: "[directoryObject](xref:graph.directoryobject) collection"
+    description: "Get a list of users or groups that are in the rejectedSenders list for this group."
+  - method: "[Add rejectedSender](xref:graph.group_post_rejectedsenders)"
+    type: "[directoryObject](xref:graph.directoryobject)"
+    description: "Add a new User or Group to the rejectedSenders collection."
+  - method: "[Remove rejectedSender](xref:graph.group_delete_rejectedsenders)"
+    type: "[directoryObject](xref:graph.directoryobject)"
+    description: "Remove new new User or Group from the rejectedSenders collection."
+  - method: "[Create setting](xref:graph.groupsetting_post_groupsettings)"
+    type: "[groupSetting](xref:graph.groupsetting)"
+    description: "Create a setting object based on a groupSettingTemplate. The POST request must provide settingValues for all the settings defined in the template. Only groups specific templates may be used for this operation."
+  - method: "[Get setting](xref:graph.groupsetting_get)"
+    type: "[groupSetting](xref:graph.groupsetting)"
+    description: "Read properties of a specific setting object."
+  - method: "[List settings](xref:graph.groupsetting_list)"
+    type: "[groupSetting](xref:graph.groupsetting) collection"
+    description: "List properties of all setting objects."
+  - method: "[Update setting](xref:graph.groupsetting_update)"
+    type: "None"
+    description: "Update a setting object."
+  - method: "[Delete setting](xref:graph.groupsetting_delete)"
+    type: "None"
+    description: "Delete a setting object."
+  - method: "**Open extensions**"
+    type: ""
+    description: ""
+  - method: "[Create open extension](xref:graph.opentypeextension_post_opentypeextension)"
+    type: "[openTypeExtension](xref:graph.opentypeextension)"
+    description: "Create an open extension and add custom properties to a new or existing resource."
+  - method: "[Get open extension](xref:graph.opentypeextension_get)"
+    type: "[openTypeExtension](xref:graph.opentypeextension) collection"
+    description: "Get an open extension identified by the extension name."
+  - method: "**Schema extensions**"
+    type: ""
+    description: ""
+  - method: "[Add schema extension values](xref:graph.extensibility_schema_groups)"
+    type: ""
+    description: "Create a schema extension definition and then use it to add custom typed data to a resource."
+  - method: "**Other group resources**"
+    type: ""
+    description: ""
+  - method: "[List photos](xref:graph.group_list_photos)"
+    type: "[profilePhoto](xref:graph.photo) collection"
+    description: "Get a collection of profile photos for the group."
+  - method: "[List plannerPlans](xref:graph.plannergroup_list_plans)"
+    type: "[plannerPlan](xref:graph.plannerPlan) collection"
+    description: "Get Planner plans owned by the group."
+  - method: "**User settings**"
+    type: ""
+    description: ""
+  - method: "[addFavorite](xref:graph.group_addfavorite)"
+    type: "None"
+    description: "Add the group to the list of the current user's favorite groups. Supported for only Office 365 groups."
+  - method: "[removeFavorite](xref:graph.group_removefavorite)"
+    type: "None"
+    description: "Remove the group from the list of the current user's favorite groups. Supported for only Office 365 groups."
+  - method: "[List memberOf](xref:graph.group_list_memberof)"
+    type: "[directoryObject](xref:graph.directoryobject) collection"
+    description: "Get the groups and administative units that this user is a direct member of, from the memberOf navigation property."
+  - method: "[subscribeByMail](xref:graph.group_subscribebymail)"
+    type: "None"
+    description: "Set the isSubscribedByMail property to true. Enabling the current user to receive email conversations. Supported for only Office 365 groups."
+  - method: "[unsubscribeByMail](xref:graph.group_unsubscribebymail)"
+    type: "None"
+    description: "Set the isSubscribedByMail property to false. Disabling the current user from receive email conversations. Supported for only Office 365 groups."
+  - method: "[resetUnseenCount](xref:graph.group_resetunseencount)"
+    type: "None"
+    description: "Reset the unseenCount to 0 of all the posts that the current user has not seen since their last visit. Supported for only Office 365 groups."
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     The following is a JSON representation of the resource.
   sampleCode: |
@@ -262,131 +262,131 @@ resource:
     * [Add custom data to groups using schema extensions](xref:graph.extensibility_schema_groups)
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: allowExternalSenders
-    type: Boolean
-    description: Default is false. Indicates if people external to the organization can send messages to the group.
-  - property: autoSubscribeNewMembers
-    type: Boolean
-    description: Default is false. Indicates if new members added to the group will be auto-subscribed to receive email notifications. You can set this property in a PATCH request for the group; do not set it in the initial POST request that creates the group.
-  - property: classification
-    type: String
-    description: Describes a classification for the group (such as low, medium or high business impact). Valid values for this property are defined by creating a ClassificationList setting value, based on the template definition.
-  - property: createdDateTime
-    type: DateTimeOffset
-    description: Timestamp of when the group was created. The value cannot be modified and is automatically populated when the group is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Read-only.
-  - property: description
-    type: String
-    description: An optional description for the group.
-  - property: displayName
-    type: String
-    description: The display name for the group. This property is required when a group is created and it cannot be cleared during updates. Supports $filter and $orderby.
-  - property: groupTypes
-    type: Collection(String)
-    description: Specifies the type of group to create. Possible values are Unified to create an Office 365 group, or DynamicMembership for dynamic groups.  For all other group types, like security-enabled groups and email-enabled security groups, do not set this property. Supports $filter.
-  - property: id
-    type: String
-    description: The unique identifier for the group. Inherited from directoryObject. Key. Not nullable. Read-only.
-  - property: isSubscribedByMail
-    type: Boolean
-    description: Default value is true. Indicates whether the current user is subscribed to receive email conversations.
-  - property: mail
-    type: String
-    description: The SMTP address for the group, for example, "serviceadmins@contoso.onmicrosoft.com". Read-only. Supports $filter.
-  - property: mailEnabled
-    type: Boolean
-    description: Specifies whether the group is mail-enabled. If the securityEnabled property is also true, the group is a mail-enabled security group; otherwise, the group is a Microsoft Exchange distribution group.
-  - property: mailNickname
-    type: String
-    description: The mail alias for the group, unique in the organization. This property must be specified when a group is created. Supports $filter.
-  - property: onPremisesLastSyncDateTime
-    type: DateTimeOffset
-    description: Indicates the last time at which the group was synced with the on-premises directory.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Read-only. Supports $filter.
-  - property: onPremisesSecurityIdentifier
-    type: String
-    description: Contains the on-premises security identifier (SID) for the group that was synchronized from on-premises to the cloud. Read-only.
-  - property: onPremisesSyncEnabled
-    type: Boolean
-    description: true if this group is synced from an on-premises directory; false if this group was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default). Read-only. Supports $filter.
-  - property: proxyAddresses
-    type: Collection(String)
-    description: The any operator is required for filter expressions on multi-valued properties. Read-only. Not nullable. Supports $filter.
-  - property: renewedDateTime
-    type: DateTimeOffset
-    description: Timestamp of when the group was last renewed. This cannot be modified directly and is only updated via the renew service action. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Read-only.
-  - property: securityEnabled
-    type: Boolean
-    description: Specifies whether the group is a security group. If the mailEnabled property is also true, the group is a mail-enabled security group; otherwise it is a security group. Must be false for Office 365 groups. Supports $filter.
-  - property: unseenCount
-    type: Int32
-    description: Count of posts that the current  user has not seen since his last visit.
-  - property: visibility
-    type: String
-    description: Specifies the visibility of an Office 365 group. The possible values are: Private, Public, HiddenMembership, or empty (which is interpreted as Public).
+  - property: "allowExternalSenders"
+    type: "Boolean"
+    description: "Default is false. Indicates if people external to the organization can send messages to the group."
+  - property: "autoSubscribeNewMembers"
+    type: "Boolean"
+    description: "Default is false. Indicates if new members added to the group will be auto-subscribed to receive email notifications. You can set this property in a PATCH request for the group; do not set it in the initial POST request that creates the group."
+  - property: "classification"
+    type: "String"
+    description: "Describes a classification for the group (such as low, medium or high business impact). Valid values for this property are defined by creating a ClassificationList setting value, based on the template definition."
+  - property: "createdDateTime"
+    type: "DateTimeOffset"
+    description: "Timestamp of when the group was created. The value cannot be modified and is automatically populated when the group is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Read-only."
+  - property: "description"
+    type: "String"
+    description: "An optional description for the group."
+  - property: "displayName"
+    type: "String"
+    description: "The display name for the group. This property is required when a group is created and it cannot be cleared during updates. Supports $filter and $orderby."
+  - property: "groupTypes"
+    type: "Collection(String)"
+    description: "Specifies the type of group to create. Possible values are Unified to create an Office 365 group, or DynamicMembership for dynamic groups.  For all other group types, like security-enabled groups and email-enabled security groups, do not set this property. Supports $filter."
+  - property: "id"
+    type: "String"
+    description: "The unique identifier for the group. Inherited from directoryObject. Key. Not nullable. Read-only."
+  - property: "isSubscribedByMail"
+    type: "Boolean"
+    description: "Default value is true. Indicates whether the current user is subscribed to receive email conversations."
+  - property: "mail"
+    type: "String"
+    description: "The SMTP address for the group, for example, "serviceadmins@contoso.onmicrosoft.com". Read-only. Supports $filter."
+  - property: "mailEnabled"
+    type: "Boolean"
+    description: "Specifies whether the group is mail-enabled. If the securityEnabled property is also true, the group is a mail-enabled security group; otherwise, the group is a Microsoft Exchange distribution group."
+  - property: "mailNickname"
+    type: "String"
+    description: "The mail alias for the group, unique in the organization. This property must be specified when a group is created. Supports $filter."
+  - property: "onPremisesLastSyncDateTime"
+    type: "DateTimeOffset"
+    description: "Indicates the last time at which the group was synced with the on-premises directory.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Read-only. Supports $filter."
+  - property: "onPremisesSecurityIdentifier"
+    type: "String"
+    description: "Contains the on-premises security identifier (SID) for the group that was synchronized from on-premises to the cloud. Read-only."
+  - property: "onPremisesSyncEnabled"
+    type: "Boolean"
+    description: "true if this group is synced from an on-premises directory; false if this group was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default). Read-only. Supports $filter."
+  - property: "proxyAddresses"
+    type: "Collection(String)"
+    description: "The any operator is required for filter expressions on multi-valued properties. Read-only. Not nullable. Supports $filter."
+  - property: "renewedDateTime"
+    type: "DateTimeOffset"
+    description: "Timestamp of when the group was last renewed. This cannot be modified directly and is only updated via the renew service action. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Read-only."
+  - property: "securityEnabled"
+    type: "Boolean"
+    description: "Specifies whether the group is a security group. If the mailEnabled property is also true, the group is a mail-enabled security group; otherwise it is a security group. Must be false for Office 365 groups. Supports $filter."
+  - property: "unseenCount"
+    type: "Int32"
+    description: "Count of posts that the current  user has not seen since his last visit."
+  - property: "visibility"
+    type: "String"
+    description: "Specifies the visibility of an Office 365 group. The possible values are: Private, Public, HiddenMembership, or empty (which is interpreted as Public)."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   list:
-  - relationship: acceptedSenders
-    type: Collection(microsoft.graph.directoryObject)
-    description: The list of users or groups that are allowed to create post's or calendar events in this group. If this list is non-empty then only users or groups listed here are allowed to post.
-  - relationship: calendar
-    type: microsoft.graph.calendar
-    description: The group's calendar. Read-only.
-  - relationship: calendarView
-    type: Collection(microsoft.graph.event)
-    description: The calendar view for the calendar. Read-only.
-  - relationship: conversations
-    type: Collection(microsoft.graph.conversation)
-    description: The group's conversations.
-  - relationship: createdOnBehalfOf
-    type: microsoft.graph.directoryObject
-    description: The user (or application) that created the group. NOTE: This is not set if the user is an administrator. Read-only.
-  - relationship: drive
-    type: microsoft.graph.drive
-    description: The group's default drive. Read-only.
-  - relationship: drives
-    type: Collection(microsoft.graph.drive)
-    description: The group's drives. Read-only.
-  - relationship: events
-    type: Collection(microsoft.graph.event)
-    description: The group's calendar events.
-  - relationship: extensions
-    type: Collection(microsoft.graph.extension)
-    description: The collection of open extensions defined for the group. Read-only. Nullable.
-  - relationship: groupLifecyclePolicies
-    type: Collection(microsoft.graph.groupLifecyclePolicy)
-    description: The collection of lifecycle policies for this group. Read-only. Nullable.
-  - relationship: memberOf
-    type: Collection(microsoft.graph.directoryObject)
-    description: Groups that this group is a member of. HTTP Methods: GET (supported for all groups). Read-only. Nullable.
-  - relationship: members
-    type: Collection(microsoft.graph.directoryObject)
-    description: Users and groups that are members of this group. HTTP Methods: GET (supported for all groups), POST (supported for Office 365 groups, security groups and mail-enabled security groups), DELETE (supported for Office 365 groups and security groups) Nullable.
-  - relationship: onenote
-    type: microsoft.graph.onenote
-    description: Read-only.
-  - relationship: owners
-    type: Collection(microsoft.graph.directoryObject)
-    description: The owners of the group. The owners are a set of non-admin users who are allowed to modify this object. Limited to 10 owners. HTTP Methods: GET (supported for all groups), POST (supported for Office 365 groups, security groups and mail-enabled security groups), DELETE (supported for Office 365 groups and security groups). Nullable.
-  - relationship: photo
-    type: microsoft.graph.profilePhoto
-    description: The group's profile photo
-  - relationship: photos
-    type: Collection(microsoft.graph.profilePhoto)
-    description: The profile photos owned by the group. Read-only. Nullable.
-  - relationship: planner
-    type: microsoft.graph.plannerGroup
-    description: Entry-point to Planner resource that might exist for a Unified Group.
-  - relationship: rejectedSenders
-    type: Collection(microsoft.graph.directoryObject)
-    description: The list of users or groups that are not allowed to create posts or calendar events in this group. Nullable
-  - relationship: settings
-    type: Collection(microsoft.graph.groupSetting)
-    description: Read-only. Nullable.
-  - relationship: sites
-    type: Collection(microsoft.graph.site)
-    description: The list of SharePoint sites in this group. Access the default site with /sites/root.
-  - relationship: threads
-    type: Collection(microsoft.graph.conversationThread)
-    description: The group's conversation threads. Nullable.
+  - relationship: "acceptedSenders"
+    type: "Collection(microsoft.graph.directoryObject)"
+    description: "The list of users or groups that are allowed to create post's or calendar events in this group. If this list is non-empty then only users or groups listed here are allowed to post."
+  - relationship: "calendar"
+    type: "microsoft.graph.calendar"
+    description: "The group's calendar. Read-only."
+  - relationship: "calendarView"
+    type: "Collection(microsoft.graph.event)"
+    description: "The calendar view for the calendar. Read-only."
+  - relationship: "conversations"
+    type: "Collection(microsoft.graph.conversation)"
+    description: "The group's conversations."
+  - relationship: "createdOnBehalfOf"
+    type: "microsoft.graph.directoryObject"
+    description: "The user (or application) that created the group. NOTE: This is not set if the user is an administrator. Read-only."
+  - relationship: "drive"
+    type: "microsoft.graph.drive"
+    description: "The group's default drive. Read-only."
+  - relationship: "drives"
+    type: "Collection(microsoft.graph.drive)"
+    description: "The group's drives. Read-only."
+  - relationship: "events"
+    type: "Collection(microsoft.graph.event)"
+    description: "The group's calendar events."
+  - relationship: "extensions"
+    type: "Collection(microsoft.graph.extension)"
+    description: "The collection of open extensions defined for the group. Read-only. Nullable."
+  - relationship: "groupLifecyclePolicies"
+    type: "Collection(microsoft.graph.groupLifecyclePolicy)"
+    description: "The collection of lifecycle policies for this group. Read-only. Nullable."
+  - relationship: "memberOf"
+    type: "Collection(microsoft.graph.directoryObject)"
+    description: "Groups that this group is a member of. HTTP Methods: GET (supported for all groups). Read-only. Nullable."
+  - relationship: "members"
+    type: "Collection(microsoft.graph.directoryObject)"
+    description: "Users and groups that are members of this group. HTTP Methods: GET (supported for all groups), POST (supported for Office 365 groups, security groups and mail-enabled security groups), DELETE (supported for Office 365 groups and security groups) Nullable."
+  - relationship: "onenote"
+    type: "microsoft.graph.onenote"
+    description: "Read-only."
+  - relationship: "owners"
+    type: "Collection(microsoft.graph.directoryObject)"
+    description: "The owners of the group. The owners are a set of non-admin users who are allowed to modify this object. Limited to 10 owners. HTTP Methods: GET (supported for all groups), POST (supported for Office 365 groups, security groups and mail-enabled security groups), DELETE (supported for Office 365 groups and security groups). Nullable."
+  - relationship: "photo"
+    type: "microsoft.graph.profilePhoto"
+    description: "The group's profile photo"
+  - relationship: "photos"
+    type: "Collection(microsoft.graph.profilePhoto)"
+    description: "The profile photos owned by the group. Read-only. Nullable."
+  - relationship: "planner"
+    type: "microsoft.graph.plannerGroup"
+    description: "Entry-point to Planner resource that might exist for a Unified Group."
+  - relationship: "rejectedSenders"
+    type: "Collection(microsoft.graph.directoryObject)"
+    description: "The list of users or groups that are not allowed to create posts or calendar events in this group. Nullable"
+  - relationship: "settings"
+    type: "Collection(microsoft.graph.groupSetting)"
+    description: "Read-only. Nullable."
+  - relationship: "sites"
+    type: "Collection(microsoft.graph.site)"
+    description: "The list of SharePoint sites in this group. Access the default site with /sites/root."
+  - relationship: "threads"
+    type: "Collection(microsoft.graph.conversationThread)"
+    description: "The group's conversation threads. Nullable."

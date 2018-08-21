@@ -3,11 +3,11 @@ uid: graph.intune_deviceconfig_applistitem
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_applistitem.md
 summary:
-  heading: appListItem resource type
+  heading: "appListItem resource type"
   intro: |
     Represents an app in the list of managed applications
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -22,21 +22,21 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: name
-    type: String
-    description: The application name
-  - property: publisher
-    type: String
-    description: The publisher of the application
-  - property: appStoreUrl
-    type: String
-    description: The Store URL of the application
-  - property: appId
-    type: String
-    description: The application or bundle identifier of the application
+  - property: "name"
+    type: "String"
+    description: "The application name"
+  - property: "publisher"
+    type: "String"
+    description: "The publisher of the application"
+  - property: "appStoreUrl"
+    type: "String"
+    description: "The Store URL of the application"
+  - property: "appId"
+    type: "String"
+    description: "The application or bundle identifier of the application"
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

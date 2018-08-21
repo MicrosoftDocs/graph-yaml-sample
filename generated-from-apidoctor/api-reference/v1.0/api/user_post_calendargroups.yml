@@ -3,50 +3,50 @@ uid: graph.user_post_calendargroups
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/user_post_calendargroups.md
 summary:
-  heading: Create CalendarGroup
+  heading: "Create CalendarGroup"
   intro: |
     Use this API to create a new CalendarGroup.
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
   list:
-  - resource: Delegated (work or school account)
-    permission: Calendars.ReadWrite
-  - resource: Delegated (personal Microsoft account)
-    permission: Calendars.ReadWrite
-  - resource: Application
-    permission: Calendars.ReadWrite
+  - resource: "Delegated (work or school account)"
+    permission: "Calendars.ReadWrite"
+  - resource: "Delegated (personal Microsoft account)"
+    permission: "Calendars.ReadWrite"
+  - resource: "Application"
+    permission: "Calendars.ReadWrite"
 httpRequest:
-  heading: HTTP request
+  heading: "HTTP request"
   sampleCode: |
     ```http
     POST /users/{id | userPrincipalName}/calendarGroups
     ```
     
 requestHeaders:
-  heading: Request headers
+  heading: "Request headers"
   list:
-  - name: Authorization
-    value: String
-    description: 
-  - name: Content-Type
-    value: String
-    description: 
+  - name: "Authorization"
+    value: "String"
+    description: ""
+  - name: "Content-Type"
+    value: "String"
+    description: ""
 requestBody:
-  heading: Request body
+  heading: "Request body"
   intro: |
     In the request body, supply a JSON representation of [CalendarGroup](xref:graph.calendargroup) object.
 response:
-  heading: Response
+  heading: "Response"
   intro: |
     If successful, this method returns `201 Created` response code and [CalendarGroup](xref:graph.calendargroup) object in the response body.
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         request:
-            heading: Request
+            heading: "Request"
             intro: |
               Here is an example of the request.
             sampleCode: |
@@ -65,7 +65,7 @@ examples:
             outro: |
               In the request body, supply a JSON representation of [calendarGroup](xref:graph.calendargroup) object.
         response:
-            heading: Response
+            heading: "Response"
             intro: |
               Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
             sampleCode: |

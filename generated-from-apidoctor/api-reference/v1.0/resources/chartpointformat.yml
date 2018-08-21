@@ -3,15 +3,15 @@ uid: graph.chartpointformat
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/chartpointformat.md
 summary:
-  heading: ChartPointFormat resource type
+  heading: "ChartPointFormat resource type"
   intro: |
     Represents formatting object for chart points.
 methods:
-  heading: Methods
+  heading: "Methods"
   intro: |
     None
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -22,12 +22,12 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   intro: |
     None
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   list:
-  - relationship: fill
-    type: microsoft.graph.workbookChartFill
-    description: Represents the fill format of a chart, which includes background formating information. Read-only.
+  - relationship: "fill"
+    type: "microsoft.graph.workbookChartFill"
+    description: "Represents the fill format of a chart, which includes background formating information. Read-only."

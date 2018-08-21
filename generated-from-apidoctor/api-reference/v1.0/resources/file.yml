@@ -7,13 +7,13 @@ metadata:
   ms.date: 09/10/2017
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/file.md
 summary:
-  heading: File resource type
+  heading: "File resource type"
   intro: |
     The **File** resource groups file-related data items into a single structure.
     If a [**DriveItem**](xref:graph.driveitem) has a non-null **file** facet, the item represents an file.
     In addition to other properties, files have a **content** relationship which contains the byte stream of the file.
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -25,15 +25,15 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: hashes
-    type: microsoft.graph.hashes
-    description: Hashes of the file's binary content, if available. Read-only.
-  - property: mimeType
-    type: String
-    description: The MIME type for the file. This is determined by logic on the server and might not be the value provided when the file was uploaded. Read-only.
+  - property: "hashes"
+    type: "microsoft.graph.hashes"
+    description: "Hashes of the file's binary content, if available. Read-only."
+  - property: "mimeType"
+    type: "String"
+    description: "The MIME type for the file. This is determined by logic on the server and might not be the value provided when the file was uploaded. Read-only."
 remarks:
-  heading: Remarks
+  heading: "Remarks"
   intro: |
     For more information about the facets on a DriveItem, see [DriveItem](xref:graph.driveitem).

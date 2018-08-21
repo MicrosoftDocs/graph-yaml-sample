@@ -3,31 +3,31 @@ uid: graph.intune_shared_devicemanagement_update
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/intune_shared_devicemanagement_update.md
 summary:
-  heading: Update deviceManagement
+  heading: "Update deviceManagement"
   intro: |
     Update the properties of a [deviceManagement](xref:graph.intune_shared_devicemanagement) object.
 permissions:
-  heading: Prerequisites
+  heading: "Prerequisites"
   intro: |
     One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
 httpRequest:
-  heading: HTTP Request
+  heading: "HTTP Request"
   sampleCode: |
     ```http
     PATCH /deviceManagement
     ```
     
 requestHeaders:
-  heading: Request headers
+  heading: "Request headers"
   list:
-  - name: Authorization
-    value: String
-    description: 
-  - name: Accept
-    value: String
-    description: 
+  - name: "Authorization"
+    value: "String"
+    description: ""
+  - name: "Accept"
+    value: "String"
+    description: ""
 requestBody:
-  heading: Request body
+  heading: "Request body"
   intro: |
     In the request body, supply a JSON representation for the [deviceManagement](xref:graph.intune_shared_devicemanagement) object.
     The following table shows the properties that are required when you create the [deviceManagement](xref:graph.intune_shared_devicemanagement).
@@ -42,15 +42,15 @@ requestBody:
     |intuneBrand|[intuneBrand](xref:graph.intune_onboarding_intunebrand)|intuneBrand contains data which is used in customizing the appearance of the Company Portal applications as well as the end user web portal.
     Request body property support varies according to workflow.
 response:
-  heading: Response
+  heading: "Response"
   intro: |
     If successful, this method returns a `200 OK` response code and an updated [deviceManagement](xref:graph.intune_shared_devicemanagement) object in the response body.
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         request:
-            heading: Request
+            heading: "Request"
             intro: |
               Here is an example of the request.
               PATCH https://graph.microsoft.com/beta/deviceManagement
@@ -81,7 +81,7 @@ examples:
               }
 
         response:
-            heading: Response
+            heading: "Response"
             intro: |
               Here is an example of the response. Note: The response object shown here may be truncated for brevity. Returned properties vary according to workflow and context.
               HTTP/1.1 200 OK

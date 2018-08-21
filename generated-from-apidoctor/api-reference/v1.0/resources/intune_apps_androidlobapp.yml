@@ -3,30 +3,30 @@ uid: graph.intune_apps_androidlobapp
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_apps_androidlobapp.md
 summary:
-  heading: androidLobApp resource type
+  heading: "androidLobApp resource type"
   intro: |
     Contains properties and inherited properties for Android Line Of Business apps.
     Inherits from [mobileLobApp](xref:graph.intune_apps_mobilelobapp)
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [List androidLobApps](xref:graph.intune_apps_androidlobapp_list)
-    type: [androidLobApp](xref:graph.intune_apps_androidlobapp) collection
-    description: List properties and relationships of the androidLobApp objects.
-  - method: [Get androidLobApp](xref:graph.intune_apps_androidlobapp_get)
-    type: [androidLobApp](xref:graph.intune_apps_androidlobapp)
-    description: Read properties and relationships of the androidLobApp object.
-  - method: [Create androidLobApp](xref:graph.intune_apps_androidlobapp_create)
-    type: [androidLobApp](xref:graph.intune_apps_androidlobapp)
-    description: Create a new androidLobApp object.
-  - method: [Delete androidLobApp](xref:graph.intune_apps_androidlobapp_delete)
-    type: None
-    description: Deletes a androidLobApp.
-  - method: [Update androidLobApp](xref:graph.intune_apps_androidlobapp_update)
-    type: [androidLobApp](xref:graph.intune_apps_androidlobapp)
-    description: Update the properties of a androidLobApp object.
+  - method: "[List androidLobApps](xref:graph.intune_apps_androidlobapp_list)"
+    type: "[androidLobApp](xref:graph.intune_apps_androidlobapp) collection"
+    description: "List properties and relationships of the androidLobApp objects."
+  - method: "[Get androidLobApp](xref:graph.intune_apps_androidlobapp_get)"
+    type: "[androidLobApp](xref:graph.intune_apps_androidlobapp)"
+    description: "Read properties and relationships of the androidLobApp object."
+  - method: "[Create androidLobApp](xref:graph.intune_apps_androidlobapp_create)"
+    type: "[androidLobApp](xref:graph.intune_apps_androidlobapp)"
+    description: "Create a new androidLobApp object."
+  - method: "[Delete androidLobApp](xref:graph.intune_apps_androidlobapp_delete)"
+    type: "None"
+    description: "Deletes a androidLobApp."
+  - method: "[Update androidLobApp](xref:graph.intune_apps_androidlobapp_update)"
+    type: "[androidLobApp](xref:graph.intune_apps_androidlobapp)"
+    description: "Update the properties of a androidLobApp object."
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -72,80 +72,80 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: id
-    type: String
-    description: Key of the entity. Inherited from mobileApp
-  - property: displayName
-    type: String
-    description: The admin provided or imported title of the app. Inherited from mobileApp
-  - property: description
-    type: String
-    description: The description of the app. Inherited from mobileApp
-  - property: publisher
-    type: String
-    description: The publisher of the app. Inherited from mobileApp
-  - property: largeIcon
-    type: microsoft.graph.mimeContent
-    description: The large icon, to be displayed in the app details and used for upload of the icon. Inherited from mobileApp
-  - property: createdDateTime
-    type: DateTimeOffset
-    description: The date and time the app was created. Inherited from mobileApp
-  - property: lastModifiedDateTime
-    type: DateTimeOffset
-    description: The date and time the app was last modified. Inherited from mobileApp
-  - property: isFeatured
-    type: Boolean
-    description: The value indicating whether the app is marked as featured by the admin. Inherited from mobileApp
-  - property: privacyInformationUrl
-    type: String
-    description: The privacy statement Url. Inherited from mobileApp
-  - property: informationUrl
-    type: String
-    description: The more information Url. Inherited from mobileApp
-  - property: owner
-    type: String
-    description: The owner of the app. Inherited from mobileApp
-  - property: developer
-    type: String
-    description: The developer of the app. Inherited from mobileApp
-  - property: notes
-    type: String
-    description: Notes for the app. Inherited from mobileApp
-  - property: publishingState
-    type: microsoft.graph.mobileAppPublishingState
-    description: The publishing state for the app. The app cannot be assigned unless the app is published. Inherited from mobileApp. The possible values are: notPublished, processing, published.
-  - property: committedContentVersion
-    type: String
-    description: The internal committed content version. Inherited from mobileLobApp
-  - property: fileName
-    type: String
-    description: The name of the main Lob application file. Inherited from mobileLobApp
-  - property: size
-    type: Int64
-    description: The total size, including all uploaded files. Inherited from mobileLobApp
-  - property: packageId
-    type: String
-    description: The package identifier.
-  - property: minimumSupportedOperatingSystem
-    type: microsoft.graph.androidMinimumOperatingSystem
-    description: The value for the minimum applicable operating system.
-  - property: versionName
-    type: String
-    description: The version name of Android Line of Business (LoB) app.
-  - property: versionCode
-    type: String
-    description: The version code of Android Line of Business (LoB) app.
+  - property: "id"
+    type: "String"
+    description: "Key of the entity. Inherited from mobileApp"
+  - property: "displayName"
+    type: "String"
+    description: "The admin provided or imported title of the app. Inherited from mobileApp"
+  - property: "description"
+    type: "String"
+    description: "The description of the app. Inherited from mobileApp"
+  - property: "publisher"
+    type: "String"
+    description: "The publisher of the app. Inherited from mobileApp"
+  - property: "largeIcon"
+    type: "microsoft.graph.mimeContent"
+    description: "The large icon, to be displayed in the app details and used for upload of the icon. Inherited from mobileApp"
+  - property: "createdDateTime"
+    type: "DateTimeOffset"
+    description: "The date and time the app was created. Inherited from mobileApp"
+  - property: "lastModifiedDateTime"
+    type: "DateTimeOffset"
+    description: "The date and time the app was last modified. Inherited from mobileApp"
+  - property: "isFeatured"
+    type: "Boolean"
+    description: "The value indicating whether the app is marked as featured by the admin. Inherited from mobileApp"
+  - property: "privacyInformationUrl"
+    type: "String"
+    description: "The privacy statement Url. Inherited from mobileApp"
+  - property: "informationUrl"
+    type: "String"
+    description: "The more information Url. Inherited from mobileApp"
+  - property: "owner"
+    type: "String"
+    description: "The owner of the app. Inherited from mobileApp"
+  - property: "developer"
+    type: "String"
+    description: "The developer of the app. Inherited from mobileApp"
+  - property: "notes"
+    type: "String"
+    description: "Notes for the app. Inherited from mobileApp"
+  - property: "publishingState"
+    type: "microsoft.graph.mobileAppPublishingState"
+    description: "The publishing state for the app. The app cannot be assigned unless the app is published. Inherited from mobileApp. The possible values are: notPublished, processing, published."
+  - property: "committedContentVersion"
+    type: "String"
+    description: "The internal committed content version. Inherited from mobileLobApp"
+  - property: "fileName"
+    type: "String"
+    description: "The name of the main Lob application file. Inherited from mobileLobApp"
+  - property: "size"
+    type: "Int64"
+    description: "The total size, including all uploaded files. Inherited from mobileLobApp"
+  - property: "packageId"
+    type: "String"
+    description: "The package identifier."
+  - property: "minimumSupportedOperatingSystem"
+    type: "microsoft.graph.androidMinimumOperatingSystem"
+    description: "The value for the minimum applicable operating system."
+  - property: "versionName"
+    type: "String"
+    description: "The version name of Android Line of Business (LoB) app."
+  - property: "versionCode"
+    type: "String"
+    description: "The version code of Android Line of Business (LoB) app."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   list:
-  - relationship: categories
-    type: Collection(microsoft.graph.mobileAppCategory)
-    description: The list of categories for this app. Inherited from mobileApp
-  - relationship: assignments
-    type: Collection(microsoft.graph.mobileAppAssignment)
-    description: The list of group assignments for this mobile app. Inherited from mobileApp
-  - relationship: contentVersions
-    type: Collection(microsoft.graph.mobileAppContent)
-    description: The list of content versions for this app. Inherited from mobileLobApp
+  - relationship: "categories"
+    type: "Collection(microsoft.graph.mobileAppCategory)"
+    description: "The list of categories for this app. Inherited from mobileApp"
+  - relationship: "assignments"
+    type: "Collection(microsoft.graph.mobileAppAssignment)"
+    description: "The list of group assignments for this mobile app. Inherited from mobileApp"
+  - relationship: "contentVersions"
+    type: "Collection(microsoft.graph.mobileAppContent)"
+    description: "The list of content versions for this app. Inherited from mobileLobApp"

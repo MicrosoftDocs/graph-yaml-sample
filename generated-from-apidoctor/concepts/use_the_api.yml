@@ -3,7 +3,7 @@ uid: graph.use_the_api
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/use_the_api.md
 summary:
-  heading: Use the Microsoft Graph API
+  heading: "Use the Microsoft Graph API"
   intro: |
     Microsoft Graph is a RESTful web API that enables you to access Microsoft Cloud service resources. After you [register your app](xref:graph.auth_register_app_v2) and [get authentication tokens for a user](xref:graph.auth_v2_user) or [service](xref:graph.auth_v2_service), you can make requests to the Microsoft Graph API.
     

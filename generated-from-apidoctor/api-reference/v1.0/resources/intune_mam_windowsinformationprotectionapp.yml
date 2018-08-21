@@ -3,11 +3,11 @@ uid: graph.intune_mam_windowsinformationprotectionapp
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_mam_windowsinformationprotectionapp.md
 summary:
-  heading: windowsInformationProtectionApp resource type
+  heading: "windowsInformationProtectionApp resource type"
   intro: |
     App for Windows information protection
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -23,24 +23,24 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: displayName
-    type: String
-    description: App display name.
-  - property: description
-    type: String
-    description: The app's description.
-  - property: publisherName
-    type: String
-    description: The publisher name
-  - property: productName
-    type: String
-    description: The product name.
-  - property: denied
-    type: Boolean
-    description: If true, app is denied protection or exemption.
+  - property: "displayName"
+    type: "String"
+    description: "App display name."
+  - property: "description"
+    type: "String"
+    description: "The app's description."
+  - property: "publisherName"
+    type: "String"
+    description: "The publisher name"
+  - property: "productName"
+    type: "String"
+    description: "The product name."
+  - property: "denied"
+    type: "Boolean"
+    description: "If true, app is denied protection or exemption."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

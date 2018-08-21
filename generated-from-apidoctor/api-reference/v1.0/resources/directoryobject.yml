@@ -3,32 +3,32 @@ uid: graph.directoryobject
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.directoryobject
 summary:
-  heading: directoryObject resource type
+  heading: "directoryObject resource type"
   intro: |
     Represents an Azure Active Directory object. The **directoryObject** type is the base type for many other directory entity types.
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [Get directoryObject](xref:graph.directoryobject_get)
-    type: [directoryObject](xref:graph.directoryobject)
-    description: Read the properties  of a directory object.
-  - method: [Delete directoryObject](xref:graph.directoryobject_delete)
-    type: None
-    description: Delete a directory object.
-  - method: [checkMemberGroups](xref:graph.directoryobject_checkmembergroups)
-    type: String collection
-    description: Check for membership in a list of groups. The check is transitive.
-  - method: [getMemberGroups](xref:graph.directoryobject_getmembergroups)
-    type: String collection
-    description: Return all the groups that the user, group, or directory object is a member of. The check is transitive.
-  - method: [getMemberObjects](xref:graph.directoryobject_getmemberobjects)
-    type: String collection
-    description: Return all of the groups and directory roles that the user, group, or directory object is a member of. The check is transitive.
-  - method: [getByIds](xref:graph.directoryobject_getbyids)
-    type: [directoryObject](xref:graph.directoryobject) collection
-    description: Get a set of directory objects based on a set of supplied ids.
+  - method: "[Get directoryObject](xref:graph.directoryobject_get)"
+    type: "[directoryObject](xref:graph.directoryobject)"
+    description: "Read the properties  of a directory object."
+  - method: "[Delete directoryObject](xref:graph.directoryobject_delete)"
+    type: "None"
+    description: "Delete a directory object."
+  - method: "[checkMemberGroups](xref:graph.directoryobject_checkmembergroups)"
+    type: "String collection"
+    description: "Check for membership in a list of groups. The check is transitive."
+  - method: "[getMemberGroups](xref:graph.directoryobject_getmembergroups)"
+    type: "String collection"
+    description: "Return all the groups that the user, group, or directory object is a member of. The check is transitive."
+  - method: "[getMemberObjects](xref:graph.directoryobject_getmemberobjects)"
+    type: "String collection"
+    description: "Return all of the groups and directory roles that the user, group, or directory object is a member of. The check is transitive."
+  - method: "[getByIds](xref:graph.directoryobject_getbyids)"
+    type: "[directoryObject](xref:graph.directoryobject) collection"
+    description: "Get a set of directory objects based on a set of supplied ids."
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource
   sampleCode: |
@@ -39,12 +39,12 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: id
-    type: String
-    description: A Guid that is the unique identifier for the object; for example, 12345678-9abc-def0-1234-56789abcde. Key. Not nullable. Read-only.
+  - property: "id"
+    type: "String"
+    description: "A Guid that is the unique identifier for the object; for example, 12345678-9abc-def0-1234-56789abcde. Key. Not nullable. Read-only."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

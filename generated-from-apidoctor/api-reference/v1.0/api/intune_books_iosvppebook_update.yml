@@ -3,31 +3,31 @@ uid: graph.intune_books_iosvppebook_update
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/intune_books_iosvppebook_update.md
 summary:
-  heading: Update iosVppEBook
+  heading: "Update iosVppEBook"
   intro: |
     Update the properties of a [iosVppEBook](xref:graph.intune_books_iosvppebook) object.
 permissions:
-  heading: Prerequisites
+  heading: "Prerequisites"
   intro: |
     One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
 httpRequest:
-  heading: HTTP Request
+  heading: "HTTP Request"
   sampleCode: |
     ```http
     PATCH /deviceAppManagement/managedEBooks/{managedEBookId}
     ```
     
 requestHeaders:
-  heading: Request headers
+  heading: "Request headers"
   list:
-  - name: Authorization
-    value: String
-    description: 
-  - name: Accept
-    value: String
-    description: 
+  - name: "Authorization"
+    value: "String"
+    description: ""
+  - name: "Accept"
+    value: "String"
+    description: ""
 requestBody:
-  heading: Request body
+  heading: "Request body"
   intro: |
     In the request body, supply a JSON representation for the [iosVppEBook](xref:graph.intune_books_iosvppebook) object.
     The following table shows the properties that are required when you create the [iosVppEBook](xref:graph.intune_books_iosvppebook).
@@ -52,15 +52,15 @@ requestBody:
     |totalLicenseCount|Int32|Total license count.
     |usedLicenseCount|Int32|Used license count.
 response:
-  heading: Response
+  heading: "Response"
   intro: |
     If successful, this method returns a `200 OK` response code and an updated [iosVppEBook](xref:graph.intune_books_iosvppebook) object in the response body.
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         request:
-            heading: Request
+            heading: "Request"
             intro: |
               Here is an example of the request.
               PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/managedEBooks/{managedEBookId}
@@ -93,7 +93,7 @@ examples:
               }
 
         response:
-            heading: Response
+            heading: "Response"
             intro: |
               Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
               HTTP/1.1 200 OK

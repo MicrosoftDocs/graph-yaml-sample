@@ -3,7 +3,7 @@ uid: graph.singlevaluelegacyextendedproperty_post_singlevalueextendedproperties
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md
 summary:
-  heading: Create single-value extended property
+  heading: "Create single-value extended property"
   intro: |
     Create one or more single-value extended properties in a new or existing instance of a resource. 
     The following user resources are supported:
@@ -24,7 +24,7 @@ summary:
     See [Extended properties overview](xref:graph.extended-properties-overview) for more information about when to use 
     open extensions or extended properties, and how to specify extended properties.
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     One of the following permissions is required to call this API, depending on the resource you're
     creating the extended property in. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
@@ -35,7 +35,7 @@ permissions:
     * Group.ReadWrite.All
     
 httpRequest:
-  heading: HTTP request
+  heading: "HTTP request"
   intro: |
     You can create extended properties in a new or existing resource instance.
     To create one or more extended properties in a _new_ resource instance, use the same REST request as creating the
@@ -106,16 +106,16 @@ httpRequest:
     ```
     
 requestHeaders:
-  heading: Request headers
+  heading: "Request headers"
   list:
-  - name: Authorization
-    value: String
-    description: 
-  - name: Content-Type
-    value: String
-    description: 
+  - name: "Authorization"
+    value: "String"
+    description: ""
+  - name: "Content-Type"
+    value: "String"
+    description: ""
 requestBody:
-  heading: Request body
+  heading: "Request body"
   intro: |
     Provide a JSON body of each [singleValueLegacyExtendedProperty](xref:graph.singleValueLegacyExtendedProperty) object in the 
     **singleValueExtendedProperties** collection property of the resource instance.
@@ -128,7 +128,7 @@ requestBody:
     new **singleValueExtendedProperties** collection, provide a JSON representation of that resource instance (that is, a [message](xref:graph.message), 
     [mailFolder](xref:graph.mailfolder), [event](xref:graph.event), etc.)
 response:
-  heading: Response
+  heading: "Response"
   outro: |
     #### Response code
     An operation successful in creating an extended property in a new resource instance returns `201 Created`, except in a new group post, 
@@ -141,7 +141,7 @@ response:
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         outro: |
           ##### Request 1
           The first example creates a new event and a single-value extended property in the same POST operation. Apart from the properties you'd normally 

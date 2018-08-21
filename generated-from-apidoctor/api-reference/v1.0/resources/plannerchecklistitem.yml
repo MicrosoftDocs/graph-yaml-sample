@@ -3,11 +3,11 @@ uid: graph.plannerchecklistitem
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/plannerchecklistitem.md
 summary:
-  heading: plannerChecklistItem resource type
+  heading: "plannerChecklistItem resource type"
   intro: |
     The **plannerChecklistItem** resource represents an item in the checklist of a task. The checklist on a task is represented by the [checklistItems object](xref:graph.plannerchecklistitems).
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -22,20 +22,20 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: isChecked
-    type: Boolean
-    description: Value is true if the item is checked and false otherwise.
-  - property: lastModifiedBy
-    type: microsoft.graph.identitySet
-    description: Read-only. User ID by which this is last modified.
-  - property: lastModifiedDateTime
-    type: DateTimeOffset
-    description: Read-only. Date and time at which this is last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
-  - property: orderHint
-    type: String
-    description: Used to set the relative order of items in the checklist. The format is defined as outlined here.
-  - property: title
-    type: String
-    description: Title of the checklist item
+  - property: "isChecked"
+    type: "Boolean"
+    description: "Value is true if the item is checked and false otherwise."
+  - property: "lastModifiedBy"
+    type: "microsoft.graph.identitySet"
+    description: "Read-only. User ID by which this is last modified."
+  - property: "lastModifiedDateTime"
+    type: "DateTimeOffset"
+    description: "Read-only. Date and time at which this is last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'"
+  - property: "orderHint"
+    type: "String"
+    description: "Used to set the relative order of items in the checklist. The format is defined as outlined here."
+  - property: "title"
+    type: "String"
+    description: "Title of the checklist item"

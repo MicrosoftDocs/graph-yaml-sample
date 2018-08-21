@@ -3,11 +3,11 @@ uid: graph.serviceplaninfo
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/serviceplaninfo.md
 summary:
-  heading: servicePlanInfo resource type
+  heading: "servicePlanInfo resource type"
   intro: |
     Contains information about a service plan associated with a subscribed SKU. The **servicePlans** property of the [subscribedSku](xref:graph.subscribedsku) entity is a collection of **servicePlanInfo**.
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource
   sampleCode: |
@@ -21,17 +21,17 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: servicePlanId
-    type: Guid
-    description: The unique identifier of the service plan.
-  - property: servicePlanName
-    type: String
-    description: The name of the service plan.
-  - property: provisioningStatus
-    type: String
-    description: The provisioning status of the service plan. Possible values:"Success" - Service is fully provisioned."Disabled" - Service has been disabled."PendingInput" - Service is not yet provisioned; awaiting service confirmation."PendingActivation" - Service is provisioned but requires explicit activation by administrator (for example, Intune_O365 service plan)"PendingProvisioning" - Microsoft has added a new service to the product SKU and it has not been activated in the tenant, yet.
-  - property: appliesTo
-    type: String
-    description: The object the service plan can be assigned to. Possible values:"User" - service plan can be assigned to individual users."Company" - service plan can be assigned to the entire tenant.
+  - property: "servicePlanId"
+    type: "Guid"
+    description: "The unique identifier of the service plan."
+  - property: "servicePlanName"
+    type: "String"
+    description: "The name of the service plan."
+  - property: "provisioningStatus"
+    type: "String"
+    description: "The provisioning status of the service plan. Possible values:"Success" - Service is fully provisioned."Disabled" - Service has been disabled."PendingInput" - Service is not yet provisioned; awaiting service confirmation."PendingActivation" - Service is provisioned but requires explicit activation by administrator (for example, Intune_O365 service plan)"PendingProvisioning" - Microsoft has added a new service to the product SKU and it has not been activated in the tenant, yet."
+  - property: "appliesTo"
+    type: "String"
+    description: "The object the service plan can be assigned to. Possible values:"User" - service plan can be assigned to individual users."Company" - service plan can be assigned to the entire tenant."

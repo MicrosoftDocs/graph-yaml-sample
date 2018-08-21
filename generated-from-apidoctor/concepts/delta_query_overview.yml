@@ -3,7 +3,7 @@ uid: graph.delta_query_overview
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/delta_query_overview.md
 summary:
-  heading: Use delta query to track changes in Microsoft Graph data
+  heading: "Use delta query to track changes in Microsoft Graph data"
   intro: |
     Delta query enables applications to discover newly created, updated, or deleted entities without performing a full read of the target resource with every request. Microsoft Graph applications can use delta query to efficiently synchronize changes with a local data store.
   outro: |
@@ -18,7 +18,7 @@ summary:
     1. Microsoft Graph returns a response describing changes to the resource since the previous request, and either a `nextLink` URL or a `deltaLink` URL.
     
 permissions:
-  heading: Prerequisites
+  heading: "Prerequisites"
   intro: |
     The same [permissions](xref:graph.permissions_reference) that are required to read a specific resource are also required to perform delta query on that resource.
   outro: |
@@ -30,7 +30,7 @@ permissions:
     * [Get incremental changes to users](xref:graph.delta_query_users)
     
 queryParameters:
-  heading: Optional query parameters
+  heading: "Optional query parameters"
   intro: |
     If a client uses a query parameter, it must be specified in the initial request. Microsoft Graph automatically encodes the specified parameter into the `nextLink` or `deltaLink` provided in the response. The calling application only needs to specify their desired query parameters once upfront. Microsoft Graph adds the specified parameters automatically for all subsequent requests.
     For users and groups, there are restrictions on using some query parameters:

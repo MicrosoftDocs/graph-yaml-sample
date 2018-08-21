@@ -7,17 +7,17 @@ metadata:
   ms.date: 09/10/2017
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/driveitem_get_content_format.md
 summary:
-  heading: Download a file in another format
+  heading: "Download a file in another format"
   intro: |
     Use this API to retrieve the contents of an item in a specific format.
     Not all files can be converted into all formats.
     To download the item in it's original format, see [download an item's contents](xref:graph.driveitem_get_content).
 permissions:
-  heading: Prerequisites
+  heading: "Prerequisites"
   intro: |
     To call this API, the user must have granted the application read access to the file the app wishes to convert.
 httpRequest:
-  heading: HTTP request
+  heading: "HTTP request"
   sampleCode: |
     ```http
     GET /drive/items/{item-id}/content?format={format}
@@ -25,11 +25,11 @@ httpRequest:
     ```
     
 requestHeaders:
-  heading: Optional request headers
+  heading: "Optional request headers"
   list:
-  - name: if-none-match
-    value: String
-    description: If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an HTTP 304 Not Modified response is returned.
+  - name: "if-none-match"
+    value: "String"
+    description: "If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an HTTP 304 Not Modified response is returned."
   outro: |
     ### Query string parameters
     |Name|Value|Description
@@ -38,16 +38,16 @@ requestHeaders:
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         request:
-            heading: request
+            heading: "request"
             sampleCode: |
               ```http
               GET /me/drive/items/{item-id}/content?format={format}
               ```
               
         response:
-            heading: Response
+            heading: "Response"
             intro: |
               Returns a `302 Found` response redirecting to a pre-authenticated download URL for the converted file.
               To download the converted file, your app must follow the `Location` header in the response.

@@ -3,11 +3,11 @@ uid: graph.educationterm
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/educationterm.md
 summary:
-  heading: educationTerm resource type
+  heading: "educationTerm resource type"
   intro: |
     A term. This represents a designated portion of the academic year. It is used within [educationClass](xref:graph.educationclass).
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     The following is a JSON representation of the resource.
   sampleCode: |
@@ -21,17 +21,17 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: displayName
-    type: String
-    description: Display name of the term.
-  - property: externalId
-    type: String
-    description: ID of term in the syncing system.
-  - property: startDate
-    type: Date
-    description: Start of the term.
-  - property: endDate
-    type: Date
-    description: End of the term.
+  - property: "displayName"
+    type: "String"
+    description: "Display name of the term."
+  - property: "externalId"
+    type: "String"
+    description: "ID of term in the syncing system."
+  - property: "startDate"
+    type: "Date"
+    description: "Start of the term."
+  - property: "endDate"
+    type: "Date"
+    description: "End of the term."

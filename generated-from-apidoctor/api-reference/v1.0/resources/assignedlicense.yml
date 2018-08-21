@@ -3,11 +3,11 @@ uid: graph.assignedlicense
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/assignedlicense.md
 summary:
-  heading: assignedLicense resource type
+  heading: "assignedLicense resource type"
   intro: |
     Represents a license assigned to a user. The **assignedLicenses** property of the [user](xref:graph.user) entity is a collection of **assignedLicense**.
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource
   sampleCode: |
@@ -19,11 +19,11 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: disabledPlans
-    type: Collection(Guid)
-    description: A collection of the unique identifiers for plans that have been disabled.
-  - property: skuId
-    type: Guid
-    description: The unique identifier for the SKU.
+  - property: "disabledPlans"
+    type: "Collection(Guid)"
+    description: "A collection of the unique identifiers for plans that have been disabled."
+  - property: "skuId"
+    type: "Guid"
+    description: "The unique identifier for the SKU."

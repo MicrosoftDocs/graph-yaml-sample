@@ -3,22 +3,22 @@ uid: graph.intune_mam_iosmanagedappregistration
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_mam_iosmanagedappregistration.md
 summary:
-  heading: iosManagedAppRegistration resource type
+  heading: "iosManagedAppRegistration resource type"
   intro: |
     Represents the synchronization details of an ios app, with management capabilities, for a specific user.
     The ManagedAppRegistration resource represents the details of an app, with management capability, used by a member of the organization.
     Inherits from [managedAppRegistration](xref:graph.intune_mam_managedappregistration)
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [List iosManagedAppRegistrations](xref:graph.intune_mam_iosmanagedappregistration_list)
-    type: [iosManagedAppRegistration](xref:graph.intune_mam_iosmanagedappregistration) collection
-    description: List properties and relationships of the iosManagedAppRegistration objects.
-  - method: [Get iosManagedAppRegistration](xref:graph.intune_mam_iosmanagedappregistration_get)
-    type: [iosManagedAppRegistration](xref:graph.intune_mam_iosmanagedappregistration)
-    description: Read properties and relationships of the iosManagedAppRegistration object.
+  - method: "[List iosManagedAppRegistrations](xref:graph.intune_mam_iosmanagedappregistration_list)"
+    type: "[iosManagedAppRegistration](xref:graph.intune_mam_iosmanagedappregistration) collection"
+    description: "List properties and relationships of the iosManagedAppRegistration objects."
+  - method: "[Get iosManagedAppRegistration](xref:graph.intune_mam_iosmanagedappregistration_get)"
+    type: "[iosManagedAppRegistration](xref:graph.intune_mam_iosmanagedappregistration)"
+    description: "Read properties and relationships of the iosManagedAppRegistration object."
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -47,56 +47,56 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: createdDateTime
-    type: DateTimeOffset
-    description: Date and time of creation Inherited from managedAppRegistration
-  - property: lastSyncDateTime
-    type: DateTimeOffset
-    description: Date and time of last the app synced with management service. Inherited from managedAppRegistration
-  - property: applicationVersion
-    type: String
-    description: App version Inherited from managedAppRegistration
-  - property: managementSdkVersion
-    type: String
-    description: App management SDK version Inherited from managedAppRegistration
-  - property: platformVersion
-    type: String
-    description: Operating System version Inherited from managedAppRegistration
-  - property: deviceType
-    type: String
-    description: Host device type Inherited from managedAppRegistration
-  - property: deviceTag
-    type: String
-    description: App management SDK generated tag, which helps relate apps hosted on the same device. Not guaranteed to relate apps in all conditions. Inherited from managedAppRegistration
-  - property: deviceName
-    type: String
-    description: Host device name Inherited from managedAppRegistration
-  - property: flaggedReasons
-    type: Collection(microsoft.graph.managedAppFlaggedReason)
-    description: Zero or more reasons an app registration is flagged. E.g. app running on rooted device Inherited from managedAppRegistration
-  - property: userId
-    type: String
-    description: The user Id to who this app registration belongs. Inherited from managedAppRegistration
-  - property: appIdentifier
-    type: microsoft.graph.mobileAppIdentifier
-    description: The app package Identifier Inherited from managedAppRegistration
-  - property: id
-    type: String
-    description: Key of the entity. Inherited from managedAppRegistration
-  - property: version
-    type: String
-    description: Version of the entity. Inherited from managedAppRegistration
+  - property: "createdDateTime"
+    type: "DateTimeOffset"
+    description: "Date and time of creation Inherited from managedAppRegistration"
+  - property: "lastSyncDateTime"
+    type: "DateTimeOffset"
+    description: "Date and time of last the app synced with management service. Inherited from managedAppRegistration"
+  - property: "applicationVersion"
+    type: "String"
+    description: "App version Inherited from managedAppRegistration"
+  - property: "managementSdkVersion"
+    type: "String"
+    description: "App management SDK version Inherited from managedAppRegistration"
+  - property: "platformVersion"
+    type: "String"
+    description: "Operating System version Inherited from managedAppRegistration"
+  - property: "deviceType"
+    type: "String"
+    description: "Host device type Inherited from managedAppRegistration"
+  - property: "deviceTag"
+    type: "String"
+    description: "App management SDK generated tag, which helps relate apps hosted on the same device. Not guaranteed to relate apps in all conditions. Inherited from managedAppRegistration"
+  - property: "deviceName"
+    type: "String"
+    description: "Host device name Inherited from managedAppRegistration"
+  - property: "flaggedReasons"
+    type: "Collection(microsoft.graph.managedAppFlaggedReason)"
+    description: "Zero or more reasons an app registration is flagged. E.g. app running on rooted device Inherited from managedAppRegistration"
+  - property: "userId"
+    type: "String"
+    description: "The user Id to who this app registration belongs. Inherited from managedAppRegistration"
+  - property: "appIdentifier"
+    type: "microsoft.graph.mobileAppIdentifier"
+    description: "The app package Identifier Inherited from managedAppRegistration"
+  - property: "id"
+    type: "String"
+    description: "Key of the entity. Inherited from managedAppRegistration"
+  - property: "version"
+    type: "String"
+    description: "Version of the entity. Inherited from managedAppRegistration"
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   list:
-  - relationship: appliedPolicies
-    type: Collection(microsoft.graph.managedAppPolicy)
-    description: Zero or more policys already applied on the registered app when it last synchronized with managment service. Inherited from managedAppRegistration
-  - relationship: intendedPolicies
-    type: Collection(microsoft.graph.managedAppPolicy)
-    description: Zero or more policies admin intended for the app as of now. Inherited from managedAppRegistration
-  - relationship: operations
-    type: Collection(microsoft.graph.managedAppOperation)
-    description: Zero or more long running operations triggered on the app registration. Inherited from managedAppRegistration
+  - relationship: "appliedPolicies"
+    type: "Collection(microsoft.graph.managedAppPolicy)"
+    description: "Zero or more policys already applied on the registered app when it last synchronized with managment service. Inherited from managedAppRegistration"
+  - relationship: "intendedPolicies"
+    type: "Collection(microsoft.graph.managedAppPolicy)"
+    description: "Zero or more policies admin intended for the app as of now. Inherited from managedAppRegistration"
+  - relationship: "operations"
+    type: "Collection(microsoft.graph.managedAppOperation)"
+    description: "Zero or more long running operations triggered on the app registration. Inherited from managedAppRegistration"

@@ -3,7 +3,7 @@ uid: graph.users-you-can-reach
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/users-you-can-reach.md
 summary:
-  heading: Users you can reach with Microsoft Graph
+  heading: "Users you can reach with Microsoft Graph"
   intro: |
     Microsoft offers services and solutions that expand modern work and modern life. 
     As a developer, you can use the Microsoft Graph API to build applications that connect to the millions of users that use Microsoft cloud products for work, school, and personal productivity. 

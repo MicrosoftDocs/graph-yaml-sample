@@ -3,20 +3,20 @@ uid: graph.filter
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/filter.md
 summary:
-  heading: Filter resource type
+  heading: "Filter resource type"
   intro: |
     Manages the filtering of a table's column.
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [Apply](xref:graph.filter_apply)
-    type: None
-    description: Apply the given filter criteria on the given column.
-  - method: [Clear](xref:graph.filter_clear)
-    type: None
-    description: Clear the filter on the given column.
+  - method: "[Apply](xref:graph.filter_apply)"
+    type: "None"
+    description: "Apply the given filter criteria on the given column."
+  - method: "[Clear](xref:graph.filter_clear)"
+    type: "None"
+    description: "Clear the filter on the given column."
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -27,8 +27,8 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: criteria
-    type: microsoft.graph.workbookFilterCriteria
-    description: The currently applied filter on the given column. Read-only.
+  - property: "criteria"
+    type: "microsoft.graph.workbookFilterCriteria"
+    description: "The currently applied filter on the given column. Read-only."

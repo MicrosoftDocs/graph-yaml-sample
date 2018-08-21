@@ -3,11 +3,11 @@ uid: graph.alternativeSecurityId
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/alternativeSecurityId.md
 summary:
-  heading: alternativeSecurityId resource type
+  heading: "alternativeSecurityId resource type"
   intro: |
     For internal use only.
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   sampleCode: |
     ```json
     {
@@ -18,14 +18,14 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: type
-    type: Int32
-    description: For internal use only
-  - property: identityProvider
-    type: String
-    description: For internal use only
-  - property: key
-    type: Binary
-    description: For internal use only
+  - property: "type"
+    type: "Int32"
+    description: "For internal use only"
+  - property: "identityProvider"
+    type: "String"
+    description: "For internal use only"
+  - property: "key"
+    type: "Binary"
+    description: "For internal use only"

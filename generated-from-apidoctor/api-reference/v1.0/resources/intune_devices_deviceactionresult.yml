@@ -3,11 +3,11 @@ uid: graph.intune_devices_deviceactionresult
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_devices_deviceactionresult.md
 summary:
-  heading: deviceActionResult resource type
+  heading: "deviceActionResult resource type"
   intro: |
     Device action result
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -22,21 +22,21 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: actionName
-    type: String
-    description: Action name
-  - property: actionState
-    type: microsoft.graph.actionState
-    description: State of the action. The possible values are: none, pending, canceled, active, done, failed, notSupported.
-  - property: startDateTime
-    type: DateTimeOffset
-    description: Time the action was initiated
-  - property: lastUpdatedDateTime
-    type: DateTimeOffset
-    description: Time the action state was last updated
+  - property: "actionName"
+    type: "String"
+    description: "Action name"
+  - property: "actionState"
+    type: "microsoft.graph.actionState"
+    description: "State of the action. The possible values are: none, pending, canceled, active, done, failed, notSupported."
+  - property: "startDateTime"
+    type: "DateTimeOffset"
+    description: "Time the action was initiated"
+  - property: "lastUpdatedDateTime"
+    type: "DateTimeOffset"
+    description: "Time the action state was last updated"
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

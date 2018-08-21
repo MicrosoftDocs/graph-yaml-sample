@@ -7,11 +7,11 @@ metadata:
   ms.date: 09/11/2017
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/numbercolumn.md
 summary:
-  heading: NumberColumn resource type
+  heading: "NumberColumn resource type"
   intro: |
     The **numberColumn** on a [columnDefinition](xref:graph.columnDefinition) resource indicates that the column's values are numbers.
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of a **numberColumn** resource.
   sampleCode: |
@@ -25,20 +25,20 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: decimalPlaces
-    type: String
-    description: How many decimal places to display. See below for information about the possible values.
-  - property: displayAs
-    type: String
-    description: How the value should be presented in the UX. Must be one of number or percentage. If unspecified, treated as number.
-  - property: maximum
-    type: Double
-    description: The maximum permitted value.
-  - property: minimum
-    type: Double
-    description: The minimum permitted value.
+  - property: "decimalPlaces"
+    type: "String"
+    description: "How many decimal places to display. See below for information about the possible values."
+  - property: "displayAs"
+    type: "String"
+    description: "How the value should be presented in the UX. Must be one of number or percentage. If unspecified, treated as number."
+  - property: "maximum"
+    type: "Double"
+    description: "The maximum permitted value."
+  - property: "minimum"
+    type: "Double"
+    description: "The minimum permitted value."
   outro: |
     ## DecimalPlaces
     |Value|Description

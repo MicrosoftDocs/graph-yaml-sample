@@ -3,23 +3,23 @@ uid: graph.chartpoint
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.chartpoint
 summary:
-  heading: ChartPoint resource type
+  heading: "ChartPoint resource type"
   intro: |
     Represents a point of a series in a chart.
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [Get ChartPoint](xref:graph.chartpoint_get)
-    type: [WorkbookChartPoint](xref:graph.chartpoint)
-    description: Read properties and relationships of chartPoint object.
-  - method: [List](xref:graph.chartpoint_list)
-    type: [WorkbookChartPoint](xref:graph.chartpoint) collection
-    description: Get chartPoint object collection.
-  - method: [ItemAt](xref:graph.chartpointscollection_itemat)
-    type: [WorkbookChartPoint](xref:graph.chartpoint)
-    description: Retrieve a point based on its position within the series.
+  - method: "[Get ChartPoint](xref:graph.chartpoint_get)"
+    type: "[WorkbookChartPoint](xref:graph.chartpoint)"
+    description: "Read properties and relationships of chartPoint object."
+  - method: "[List](xref:graph.chartpoint_list)"
+    type: "[WorkbookChartPoint](xref:graph.chartpoint) collection"
+    description: "Get chartPoint object collection."
+  - method: "[ItemAt](xref:graph.chartpointscollection_itemat)"
+    type: "[WorkbookChartPoint](xref:graph.chartpoint)"
+    description: "Retrieve a point based on its position within the series."
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -31,17 +31,17 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: value
-    type: microsoft.graph.Json
-    description: Returns the value of a chart point. Read-only.
-  - property: id
-    type: String
-    description: unique identifier
+  - property: "value"
+    type: "microsoft.graph.Json"
+    description: "Returns the value of a chart point. Read-only."
+  - property: "id"
+    type: "String"
+    description: "unique identifier"
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   list:
-  - relationship: format
-    type: microsoft.graph.workbookChartPointFormat
-    description: Encapsulates the format properties chart point. Read-only.
+  - relationship: "format"
+    type: "microsoft.graph.workbookChartPointFormat"
+    description: "Encapsulates the format properties chart point. Read-only."

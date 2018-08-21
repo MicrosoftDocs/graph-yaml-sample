@@ -3,7 +3,7 @@ uid: graph.contactfolder_delta
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/contactfolder_delta.md
 summary:
-  heading: contactFolder: delta
+  heading: "contactFolder: delta"
   intro: |
     Get a set of contact folders that have been added, deleted, or removed from the user's mailbox.
     A **delta** function call for contact folders in a mailbox is similar to a GET request, except that by appropriately 
@@ -11,18 +11,18 @@ summary:
     you can query for incremental changes in the contact folders. This allows you to maintain and synchronize 
     a local store of a user's contact folders without having to fetch all the contact folders of that mailbox from the server every time.
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
   list:
-  - resource: Delegated (work or school account)
-    permission: Contacts.Read, Contacts.ReadWrite
-  - resource: Delegated (personal Microsoft account)
-    permission: Contacts.Read, Contacts.ReadWrite
-  - resource: Application
-    permission: Contacts.Read, Contacts.ReadWrite
+  - resource: "Delegated (work or school account)"
+    permission: "Contacts.Read, Contacts.ReadWrite"
+  - resource: "Delegated (personal Microsoft account)"
+    permission: "Contacts.Read, Contacts.ReadWrite"
+  - resource: "Application"
+    permission: "Contacts.Read, Contacts.ReadWrite"
 httpRequest:
-  heading: HTTP request
+  heading: "HTTP request"
   sampleCode: |
     ```http
     GET /me/contactFolders/delta
@@ -30,7 +30,7 @@ httpRequest:
     ```
     
 queryParameters:
-  heading: Query parameters
+  heading: "Query parameters"
   intro: |
     Tracking changes in contact folders incurs a round of one or more **delta** function calls. If you use any query parameter 
     (other than `$deltatoken` and `$skiptoken`), you must specify 
@@ -40,38 +40,38 @@ queryParameters:
     In subsequent requests, simply copy and apply the `nextLink` or `deltaLink` URL from the previous response, as that URL already 
     includes the encoded, desired parameters.
   list:
-  - name: $deltatoken
-    value: String
-    description: A state token returned in the deltaLink URL of the previous delta function call for the same contact folder collection, indicating the completion of that round of change tracking. Save and apply the entire deltaLink URL including this token in the first request of the next round of change tracking for that collection.
-  - name: $skiptoken
-    value: String
-    description: A state token returned in the nextLink URL of the previous delta function call, indicating there are further changes to be tracked in the same contact folder collection.
+  - name: "$deltatoken"
+    value: "String"
+    description: "A state token returned in the deltaLink URL of the previous delta function call for the same contact folder collection, indicating the completion of that round of change tracking. Save and apply the entire deltaLink URL including this token in the first request of the next round of change tracking for that collection."
+  - name: "$skiptoken"
+    value: "String"
+    description: "A state token returned in the nextLink URL of the previous delta function call, indicating there are further changes to be tracked in the same contact folder collection."
   outro: |
     #### OData query parameters
     You can use a `$select` query parameter as in any GET request to specify only the properties your need for best performance. The 
     _id_ property is always returned. 
 requestHeaders:
-  heading: Request headers
+  heading: "Request headers"
   list:
-  - name: Authorization
-    value: String
-    description: Bearer {token}. Required.
-  - name: Content-Type
-    value: String
-    description: application/json. Required.
-  - name: Prefer
-    value: String
-    description: odata.maxpagesize={x}. Optional.
+  - name: "Authorization"
+    value: "String"
+    description: "Bearer {token}. Required."
+  - name: "Content-Type"
+    value: "String"
+    description: "application/json. Required."
+  - name: "Prefer"
+    value: "String"
+    description: "odata.maxpagesize={x}. Optional."
 response:
-  heading: Response
+  heading: "Response"
   intro: |
     If successful, this method returns a `200 OK` response code and [contactFolder](xref:graph.contactfolder) collection object in the response body.
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         request:
-            heading: Request
+            heading: "Request"
             intro: |
               The following example shows how to make a single **delta** function call, and limit the maximum number of contact folders 
               in the response body to 2.
@@ -88,7 +88,7 @@ examples:
               ```
               
         response:
-            heading: Response
+            heading: "Response"
             intro: |
               If the request is successful, the response would include a state token, which is either a _skipToken_  
               (in an _@odata.nextLink_ response header) or a _deltaToken_ (in an _@odata.deltaLink_ response header). 

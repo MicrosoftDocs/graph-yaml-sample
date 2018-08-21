@@ -3,29 +3,29 @@ uid: graph.intune_troubleshooting_devicemanagementtroubleshootingevent
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_troubleshooting_devicemanagementtroubleshootingevent.md
 summary:
-  heading: deviceManagementTroubleshootingEvent resource type
+  heading: "deviceManagementTroubleshootingEvent resource type"
   intro: |
     Event representing an general failure.
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [List deviceManagementTroubleshootingEvents](xref:graph.intune_troubleshooting_devicemanagementtroubleshootingevent_list)
-    type: [deviceManagementTroubleshootingEvent](xref:graph.intune_troubleshooting_devicemanagementtroubleshootingevent) collection
-    description: List properties and relationships of the deviceManagementTroubleshootingEvent objects.
-  - method: [Get deviceManagementTroubleshootingEvent](xref:graph.intune_troubleshooting_devicemanagementtroubleshootingevent_get)
-    type: [deviceManagementTroubleshootingEvent](xref:graph.intune_troubleshooting_devicemanagementtroubleshootingevent)
-    description: Read properties and relationships of the deviceManagementTroubleshootingEvent object.
-  - method: [Create deviceManagementTroubleshootingEvent](xref:graph.intune_troubleshooting_devicemanagementtroubleshootingevent_create)
-    type: [deviceManagementTroubleshootingEvent](xref:graph.intune_troubleshooting_devicemanagementtroubleshootingevent)
-    description: Create a new deviceManagementTroubleshootingEvent object.
-  - method: [Delete deviceManagementTroubleshootingEvent](xref:graph.intune_troubleshooting_devicemanagementtroubleshootingevent_delete)
-    type: None
-    description: Deletes a deviceManagementTroubleshootingEvent.
-  - method: [Update deviceManagementTroubleshootingEvent](xref:graph.intune_troubleshooting_devicemanagementtroubleshootingevent_update)
-    type: [deviceManagementTroubleshootingEvent](xref:graph.intune_troubleshooting_devicemanagementtroubleshootingevent)
-    description: Update the properties of a deviceManagementTroubleshootingEvent object.
+  - method: "[List deviceManagementTroubleshootingEvents](xref:graph.intune_troubleshooting_devicemanagementtroubleshootingevent_list)"
+    type: "[deviceManagementTroubleshootingEvent](xref:graph.intune_troubleshooting_devicemanagementtroubleshootingevent) collection"
+    description: "List properties and relationships of the deviceManagementTroubleshootingEvent objects."
+  - method: "[Get deviceManagementTroubleshootingEvent](xref:graph.intune_troubleshooting_devicemanagementtroubleshootingevent_get)"
+    type: "[deviceManagementTroubleshootingEvent](xref:graph.intune_troubleshooting_devicemanagementtroubleshootingevent)"
+    description: "Read properties and relationships of the deviceManagementTroubleshootingEvent object."
+  - method: "[Create deviceManagementTroubleshootingEvent](xref:graph.intune_troubleshooting_devicemanagementtroubleshootingevent_create)"
+    type: "[deviceManagementTroubleshootingEvent](xref:graph.intune_troubleshooting_devicemanagementtroubleshootingevent)"
+    description: "Create a new deviceManagementTroubleshootingEvent object."
+  - method: "[Delete deviceManagementTroubleshootingEvent](xref:graph.intune_troubleshooting_devicemanagementtroubleshootingevent_delete)"
+    type: "None"
+    description: "Deletes a deviceManagementTroubleshootingEvent."
+  - method: "[Update deviceManagementTroubleshootingEvent](xref:graph.intune_troubleshooting_devicemanagementtroubleshootingevent_update)"
+    type: "[deviceManagementTroubleshootingEvent](xref:graph.intune_troubleshooting_devicemanagementtroubleshootingevent)"
+    description: "Update the properties of a deviceManagementTroubleshootingEvent object."
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -39,18 +39,18 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: id
-    type: String
-    description: UUID for the object
-  - property: eventDateTime
-    type: DateTimeOffset
-    description: Time when the event occurred .
-  - property: correlationId
-    type: String
-    description: Id used for tracing the failure in the service.
+  - property: "id"
+    type: "String"
+    description: "UUID for the object"
+  - property: "eventDateTime"
+    type: "DateTimeOffset"
+    description: "Time when the event occurred ."
+  - property: "correlationId"
+    type: "String"
+    description: "Id used for tracing the failure in the service."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

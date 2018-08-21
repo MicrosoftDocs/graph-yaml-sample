@@ -3,11 +3,11 @@ uid: graph.intune_devices_devicegeolocation
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_devices_devicegeolocation.md
 summary:
-  heading: deviceGeoLocation resource type
+  heading: "deviceGeoLocation resource type"
   intro: |
     Device location
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -27,33 +27,33 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: lastCollectedDateTime
-    type: DateTimeOffset
-    description: Time at which location was recorded, relative to UTC
-  - property: longitude
-    type: Double
-    description: Longitude coordinate of the device's location
-  - property: latitude
-    type: Double
-    description: Latitude coordinate of the device's location
-  - property: altitude
-    type: Double
-    description: Altitude, given in meters above sea level
-  - property: horizontalAccuracy
-    type: Double
-    description: Accuracy of longitude and latitude in meters
-  - property: verticalAccuracy
-    type: Double
-    description: Accuracy of altitude in meters
-  - property: heading
-    type: Double
-    description: Heading in degrees from true north
-  - property: speed
-    type: Double
-    description: Speed the device is traveling in meters per second
+  - property: "lastCollectedDateTime"
+    type: "DateTimeOffset"
+    description: "Time at which location was recorded, relative to UTC"
+  - property: "longitude"
+    type: "Double"
+    description: "Longitude coordinate of the device's location"
+  - property: "latitude"
+    type: "Double"
+    description: "Latitude coordinate of the device's location"
+  - property: "altitude"
+    type: "Double"
+    description: "Altitude, given in meters above sea level"
+  - property: "horizontalAccuracy"
+    type: "Double"
+    description: "Accuracy of longitude and latitude in meters"
+  - property: "verticalAccuracy"
+    type: "Double"
+    description: "Accuracy of altitude in meters"
+  - property: "heading"
+    type: "Double"
+    description: "Heading in degrees from true north"
+  - property: "speed"
+    type: "Double"
+    description: "Speed the device is traveling in meters per second"
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

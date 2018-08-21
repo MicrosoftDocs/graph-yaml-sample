@@ -3,32 +3,32 @@ uid: graph.intune_onboarding_vpptoken
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_onboarding_vpptoken.md
 summary:
-  heading: vppToken resource type
+  heading: "vppToken resource type"
   intro: |
     You purchase multiple licenses for iOS apps through the Apple Volume Purchase Program for Business or Education. This involves setting up an Apple VPP account from the Apple website and uploading the Apple VPP Business or Education token to Intune. You can then synchronize your volume purchase information with Intune and track your volume-purchased app use. You can upload multiple Apple VPP Business or Education tokens.
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [List vppTokens](xref:graph.intune_onboarding_vpptoken_list)
-    type: [vppToken](xref:graph.intune_onboarding_vpptoken) collection
-    description: List properties and relationships of the vppToken objects.
-  - method: [Get vppToken](xref:graph.intune_onboarding_vpptoken_get)
-    type: [vppToken](xref:graph.intune_onboarding_vpptoken)
-    description: Read properties and relationships of the vppToken object.
-  - method: [Create vppToken](xref:graph.intune_onboarding_vpptoken_create)
-    type: [vppToken](xref:graph.intune_onboarding_vpptoken)
-    description: Create a new vppToken object.
-  - method: [Delete vppToken](xref:graph.intune_onboarding_vpptoken_delete)
-    type: None
-    description: Deletes a vppToken.
-  - method: [Update vppToken](xref:graph.intune_onboarding_vpptoken_update)
-    type: [vppToken](xref:graph.intune_onboarding_vpptoken)
-    description: Update the properties of a vppToken object.
-  - method: [syncLicenses action](xref:graph.intune_onboarding_vpptoken_synclicenses)
-    type: [vppToken](xref:graph.intune_onboarding_vpptoken)
-    description: Syncs licenses associated with a specific appleVolumePurchaseProgramToken
+  - method: "[List vppTokens](xref:graph.intune_onboarding_vpptoken_list)"
+    type: "[vppToken](xref:graph.intune_onboarding_vpptoken) collection"
+    description: "List properties and relationships of the vppToken objects."
+  - method: "[Get vppToken](xref:graph.intune_onboarding_vpptoken_get)"
+    type: "[vppToken](xref:graph.intune_onboarding_vpptoken)"
+    description: "Read properties and relationships of the vppToken object."
+  - method: "[Create vppToken](xref:graph.intune_onboarding_vpptoken_create)"
+    type: "[vppToken](xref:graph.intune_onboarding_vpptoken)"
+    description: "Create a new vppToken object."
+  - method: "[Delete vppToken](xref:graph.intune_onboarding_vpptoken_delete)"
+    type: "None"
+    description: "Deletes a vppToken."
+  - method: "[Update vppToken](xref:graph.intune_onboarding_vpptoken_update)"
+    type: "[vppToken](xref:graph.intune_onboarding_vpptoken)"
+    description: "Update the properties of a vppToken object."
+  - method: "[syncLicenses action](xref:graph.intune_onboarding_vpptoken_synclicenses)"
+    type: "[vppToken](xref:graph.intune_onboarding_vpptoken)"
+    description: "Syncs licenses associated with a specific appleVolumePurchaseProgramToken"
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -51,45 +51,45 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: id
-    type: String
-    description: This is automatically generated when the appleVolumePurchaseProgramToken is created. It is the Key of the entity.
-  - property: organizationName
-    type: String
-    description: The organization associated with the Apple Volume Purchase Program Token
-  - property: vppTokenAccountType
-    type: microsoft.graph.vppTokenAccountType
-    description: The type of volume purchase program which the given Apple Volume Purchase Program Token is associated with. The possible values are: business, education. The possible values are: business, education.
-  - property: appleId
-    type: String
-    description: The apple Id associated with the given Apple Volume Purchase Program Token.
-  - property: expirationDateTime
-    type: DateTimeOffset
-    description: The expiration date time of the Apple Volume Purchase Program Token.
-  - property: lastSyncDateTime
-    type: DateTimeOffset
-    description: The last time when an application sync was done with the Apple volume purchase program service using the the Apple Volume Purchase Program Token.
-  - property: token
-    type: String
-    description: The Apple Volume Purchase Program Token string downloaded from the Apple Volume Purchase Program.
-  - property: lastModifiedDateTime
-    type: DateTimeOffset
-    description: Last modification date time associated with the Apple Volume Purchase Program Token.
-  - property: state
-    type: microsoft.graph.vppTokenState
-    description: Current state of the Apple Volume Purchase Program Token. The possible values are: unknown, valid, expired, invalid. The possible values are: unknown, valid, expired, invalid.
-  - property: lastSyncStatus
-    type: microsoft.graph.vppTokenSyncStatus
-    description: Current sync status of the last application sync which was triggered using the Apple Volume Purchase Program Token. The possible values are: none, inProgress, completed, failed. The possible values are: none, inProgress, completed, failed.
-  - property: automaticallyUpdateApps
-    type: Boolean
-    description: Whether or not apps for the VPP token will be automatically updated.
-  - property: countryOrRegion
-    type: String
-    description: Whether or not apps for the VPP token will be automatically updated.
+  - property: "id"
+    type: "String"
+    description: "This is automatically generated when the appleVolumePurchaseProgramToken is created. It is the Key of the entity."
+  - property: "organizationName"
+    type: "String"
+    description: "The organization associated with the Apple Volume Purchase Program Token"
+  - property: "vppTokenAccountType"
+    type: "microsoft.graph.vppTokenAccountType"
+    description: "The type of volume purchase program which the given Apple Volume Purchase Program Token is associated with. The possible values are: business, education. The possible values are: business, education."
+  - property: "appleId"
+    type: "String"
+    description: "The apple Id associated with the given Apple Volume Purchase Program Token."
+  - property: "expirationDateTime"
+    type: "DateTimeOffset"
+    description: "The expiration date time of the Apple Volume Purchase Program Token."
+  - property: "lastSyncDateTime"
+    type: "DateTimeOffset"
+    description: "The last time when an application sync was done with the Apple volume purchase program service using the the Apple Volume Purchase Program Token."
+  - property: "token"
+    type: "String"
+    description: "The Apple Volume Purchase Program Token string downloaded from the Apple Volume Purchase Program."
+  - property: "lastModifiedDateTime"
+    type: "DateTimeOffset"
+    description: "Last modification date time associated with the Apple Volume Purchase Program Token."
+  - property: "state"
+    type: "microsoft.graph.vppTokenState"
+    description: "Current state of the Apple Volume Purchase Program Token. The possible values are: unknown, valid, expired, invalid. The possible values are: unknown, valid, expired, invalid."
+  - property: "lastSyncStatus"
+    type: "microsoft.graph.vppTokenSyncStatus"
+    description: "Current sync status of the last application sync which was triggered using the Apple Volume Purchase Program Token. The possible values are: none, inProgress, completed, failed. The possible values are: none, inProgress, completed, failed."
+  - property: "automaticallyUpdateApps"
+    type: "Boolean"
+    description: "Whether or not apps for the VPP token will be automatically updated."
+  - property: "countryOrRegion"
+    type: "String"
+    description: "Whether or not apps for the VPP token will be automatically updated."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

@@ -7,13 +7,13 @@ metadata:
   ms.date: 09/10/2017
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/filesysteminfo.md
 summary:
-  heading: FileSystemInfo facet
+  heading: "FileSystemInfo facet"
   intro: |
     The **FileSystemInfo** resource contains properties that are reported by the device's local file system for the local version of an item.
     This facet can be used to specify the last modified date or created date of the item as it was on the local device.
     It is available on the fileSystemInfo property of [driveItem][item-resource] resources.
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   sampleCode: |
     ```json
     {
@@ -24,17 +24,17 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: createdDateTime
-    type: DateTimeOffset
-    description: The UTC date and time the file was created on a client.
-  - property: lastAccessedDateTime
-    type: DateTimeOffset
-    description: The UTC date and time the file was last accessed. Available for the recent file list only.
-  - property: lastModifiedDateTime
-    type: DateTimeOffset
-    description: The UTC date and time the file was last modified on a client.
+  - property: "createdDateTime"
+    type: "DateTimeOffset"
+    description: "The UTC date and time the file was created on a client."
+  - property: "lastAccessedDateTime"
+    type: "DateTimeOffset"
+    description: "The UTC date and time the file was last accessed. Available for the recent file list only."
+  - property: "lastModifiedDateTime"
+    type: "DateTimeOffset"
+    description: "The UTC date and time the file was last modified on a client."
   outro: |
     ## Notes
     Values for **createdDateTime** and **lastModifiedDateTime** vary from the same properties on the [DriveItem](xref:graph.driveitem) resource.
@@ -46,7 +46,7 @@ properties:
     If you are uploading a file and know the local client values for these fields, you should include them in the request.
     If the file's content is updated and these properties are not provided, **lastModifiedDateTime** automatically resets to the current time.
 remarks:
-  heading: Remarks
+  heading: "Remarks"
   intro: |
     * **lastAccessedDateTime** is not available for items in SharePoint online or OneDrive for Business.
     

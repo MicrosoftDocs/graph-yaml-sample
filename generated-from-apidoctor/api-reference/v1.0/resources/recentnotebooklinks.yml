@@ -3,11 +3,11 @@ uid: graph.recentnotebooklinks
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/recentnotebooklinks.md
 summary:
-  heading: recentNotebookLinks resource type
+  heading: "recentNotebookLinks resource type"
   intro: |
     Links for opening a OneNote notebook. This resource type exists as a property on a [recentNotebook](xref:graph.recentnotebook) resource.
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     The following is a JSON representation of the resource.
   sampleCode: |
@@ -19,11 +19,11 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: oneNoteClientUrl
-    type: microsoft.graph.externalLink
-    description: Opens the notebook in the OneNote native client if it's installed.
-  - property: oneNoteWebUrl
-    type: microsoft.graph.externalLink
-    description: Opens the notebook in OneNote Online.
+  - property: "oneNoteClientUrl"
+    type: "microsoft.graph.externalLink"
+    description: "Opens the notebook in the OneNote native client if it's installed."
+  - property: "oneNoteWebUrl"
+    type: "microsoft.graph.externalLink"
+    description: "Opens the notebook in OneNote Online."

@@ -3,66 +3,66 @@ uid: graph.user_reminderview
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/user_reminderview.md
 summary:
-  heading: user: reminderView
+  heading: "user: reminderView"
   intro: |
     Return a list of calendar reminders within the specified start and end times. 
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
   list:
-  - resource: Delegated (work or school account)
-    permission: Calendars.Read, Calendars.ReadWrite
-  - resource: Delegated (personal Microsoft account)
-    permission: Calendars.Read, Calendars.ReadWrite
-  - resource: Application
-    permission: Calendars.Read, Calendars.ReadWrite
+  - resource: "Delegated (work or school account)"
+    permission: "Calendars.Read, Calendars.ReadWrite"
+  - resource: "Delegated (personal Microsoft account)"
+    permission: "Calendars.Read, Calendars.ReadWrite"
+  - resource: "Application"
+    permission: "Calendars.Read, Calendars.ReadWrite"
 httpRequest:
-  heading: HTTP request
+  heading: "HTTP request"
   sampleCode: |
     ```http
     GET /users/{id | userPrincipalName}/reminderView(startDateTime=startDateTime-value,endDateTime=endDateTime-value)
     ```
     
 parameters:
-  heading: Function Parameters
+  heading: "Function Parameters"
   intro: |
     In the request URL, provide the following function parameters with values.
   list:
-  - name: startDateTime
-    value: String
-    description: The start date and time of the event for which the reminder is set up. The value is represented in ISO 8601 format, for example, "2015-11-08T19:00:00.0000000".
-  - name: endDateTime
-    value: String
-    description: The end date and time of the event for which the reminder is set up. The value is represented in ISO 8601 format, for example, "2015-11-08T20:00:00.0000000".
+  - name: "startDateTime"
+    value: "String"
+    description: "The start date and time of the event for which the reminder is set up. The value is represented in ISO 8601 format, for example, "2015-11-08T19:00:00.0000000"."
+  - name: "endDateTime"
+    value: "String"
+    description: "The end date and time of the event for which the reminder is set up. The value is represented in ISO 8601 format, for example, "2015-11-08T20:00:00.0000000"."
 requestHeaders:
-  heading: Request headers
+  heading: "Request headers"
   list:
-  - name: Authorization
-    value: String
-    description: 
-  - name: Content-Type
-    value: String
-    description: 
-  - name: Prefer
-    value: String
-    description: 
+  - name: "Authorization"
+    value: "String"
+    description: ""
+  - name: "Content-Type"
+    value: "String"
+    description: ""
+  - name: "Prefer"
+    value: "String"
+    description: ""
 requestBody:
-  heading: Request body
+  heading: "Request body"
   intro: |
     Do not supply a request body for this method.
 response:
-  heading: Response
+  heading: "Response"
   intro: |
     If successful, this method returns `200 OK` response code and [reminder](xref:graph.reminder) collection object in the response body.
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         intro: |
           Here is an example of how to call this API.
         request:
-            heading: Request
+            heading: "Request"
             intro: |
               Here is an example of the request.
             sampleCode: |
@@ -71,7 +71,7 @@ examples:
               ```
               
         response:
-            heading: Response
+            heading: "Response"
             intro: |
               Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
             sampleCode: |

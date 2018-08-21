@@ -3,7 +3,7 @@ uid: graph.nodejs
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/nodejs.md
 summary:
-  heading: Get started with Microsoft Graph in a Node.js app
+  heading: "Get started with Microsoft Graph in a Node.js app"
   intro: |
     This article describes the tasks required to get an access token from the Azure AD v2.0 endpoint and call Microsoft Graph. It walks you through building the [Microsoft Connect sample for Node.js](https://github.com/microsoftgraph/nodejs-connect-rest-sample) and explains the main concepts that you implement to use Microsoft Graph. The article describes how to access the Microsoft Graph API by using raw REST calls. If you're interested in building a Node.js app that connects to Microsoft Graph with the JavaScript SDK, see our [Microsoft Graph SDK-based Node.js Connect sample](https://github.com/microsoftgraph/nodejs-connect-sample).
     The following image shows is the app you'll create. 
@@ -11,7 +11,7 @@ summary:
     **Don't feel like building an app?** Use the [Microsoft Graph quick start](https://graph.microsoft.io/en-us/getting-started) to get up and running fast.
     To download a version of the Connect sample that uses the Azure AD endpoint, see [Microsoft Graph Connect Sample for Node.js](https://github.com/microsoftgraph/nodejs-connect-rest-sample/releases/tag/last_v1_auth).
 permissions:
-  heading: Prerequisites
+  heading: "Prerequisites"
   intro: |
     To get started, you'll need: 
     

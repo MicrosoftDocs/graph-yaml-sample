@@ -7,11 +7,11 @@ metadata:
   ms.date: 09/11/2017
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/choicecolumn.md
 summary:
-  heading: ChoiceColumn resource type
+  heading: "ChoiceColumn resource type"
   intro: |
     The **choiceColumn** on a [columnDefinition](xref:graph.columnDefinition) resource indicates that the column's values can be selected from a list of choices.
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of a **choiceColumn** resource.
   sampleCode: |
@@ -24,14 +24,14 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: allowTextEntry
-    type: Boolean
-    description: If true, allows custom values that aren't in the configured choices.
-  - property: choices
-    type: Collection(String)
-    description: The list of values available for this column.
-  - property: displayAs
-    type: String
-    description: How the choices are to be presented in the UX. Must be one of checkBoxes, dropDownMenu, or radioButtons
+  - property: "allowTextEntry"
+    type: "Boolean"
+    description: "If true, allows custom values that aren't in the configured choices."
+  - property: "choices"
+    type: "Collection(String)"
+    description: "The list of values available for this column."
+  - property: "displayAs"
+    type: "String"
+    description: "How the choices are to be presented in the UX. Must be one of checkBoxes, dropDownMenu, or radioButtons"

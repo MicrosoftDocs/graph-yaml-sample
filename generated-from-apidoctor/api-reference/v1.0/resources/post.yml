@@ -3,7 +3,7 @@ uid: graph.post
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.post
 summary:
-  heading: post resource type
+  heading: "post resource type"
   intro: |
     Represents an individual Post item within a [conversationThread](xref:graph.conversationthread) entity.
     Even though you cannot explicitly create a post, doing any of the following would create a post:
@@ -15,61 +15,61 @@ summary:
     
     This resource lets you add your own data to custom properties using [extensions](xref:graph.extensibility_overview).
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [List posts](xref:graph.conversationthread_list_posts)
-    type: [post](xref:graph.post)
-    description: Get the posts of the specified thread.
-  - method: [Get post](xref:graph.post_get)
-    type: [post](xref:graph.post)
-    description: Get the properties and relationships of a post in a specified thread.
-  - method: [Reply](xref:graph.post_reply)
-    type: None
-    description: Reply to a post and add a new post to the specified thread in a group conversation.
-  - method: [Forward](xref:graph.post_forward)
-    type: None
-    description: Forward a post to a recipient.
-  - method: **Attachments**
-    type: 
-    description: 
-  - method: [List attachments](xref:graph.post_list_attachments)
-    type: [attachment](xref:graph.attachment) collection
-    description: Get all attachments on a post.
-  - method: [Add attachment](xref:graph.post_post_attachments)
-    type: [attachment](xref:graph.attachment)
-    description: Add an attachment to a post.
-  - method: **Open extensions**
-    type: 
-    description: 
-  - method: [Create open extension](xref:graph.opentypeextension_post_opentypeextension)
-    type: [openTypeExtension](xref:graph.opentypeextension)
-    description: Create an open extension and add custom properties in a new or existing instance of a resource.
-  - method: [Get open extension](xref:graph.opentypeextension_get)
-    type: [openTypeExtension](xref:graph.opentypeextension) collection
-    description: Get an open extension object or objects identified by name or fully qualified name.
-  - method: **Schema extensions**
-    type: 
-    description: 
-  - method: [Add schema extension values](xref:graph.extensibility_schema_groups)
-    type: 
-    description: Create a schema extension definition and then use it to add custom typed data to a resource.
-  - method: **Extended properties**
-    type: 
-    description: 
-  - method: [Create single-value extended property](xref:graph.singlevaluelegacyextendedproperty_post_singlevalueextendedproperties)
-    type: [post](xref:graph.post)
-    description: Create one or more single-value extended properties in a new or existing post.
-  - method: [Get post with single-value extended property](xref:graph.singlevaluelegacyextendedproperty_get)
-    type: [post](xref:graph.post)
-    description: Get posts that contain a single-value extended property by using $expand or $filter.
-  - method: [Create multi-value extended property](xref:graph.multivaluelegacyextendedproperty_post_multivalueextendedproperties)
-    type: [post](xref:graph.post)
-    description: Create one or more multi-value extended properties in a new or existing post.
-  - method: [Get post with multi-value extended property](xref:graph.multivaluelegacyextendedproperty_get)
-    type: [post](xref:graph.post)
-    description: Get a post that contains a multi-value extended property by using $expand.
+  - method: "[List posts](xref:graph.conversationthread_list_posts)"
+    type: "[post](xref:graph.post)"
+    description: "Get the posts of the specified thread."
+  - method: "[Get post](xref:graph.post_get)"
+    type: "[post](xref:graph.post)"
+    description: "Get the properties and relationships of a post in a specified thread."
+  - method: "[Reply](xref:graph.post_reply)"
+    type: "None"
+    description: "Reply to a post and add a new post to the specified thread in a group conversation."
+  - method: "[Forward](xref:graph.post_forward)"
+    type: "None"
+    description: "Forward a post to a recipient."
+  - method: "**Attachments**"
+    type: ""
+    description: ""
+  - method: "[List attachments](xref:graph.post_list_attachments)"
+    type: "[attachment](xref:graph.attachment) collection"
+    description: "Get all attachments on a post."
+  - method: "[Add attachment](xref:graph.post_post_attachments)"
+    type: "[attachment](xref:graph.attachment)"
+    description: "Add an attachment to a post."
+  - method: "**Open extensions**"
+    type: ""
+    description: ""
+  - method: "[Create open extension](xref:graph.opentypeextension_post_opentypeextension)"
+    type: "[openTypeExtension](xref:graph.opentypeextension)"
+    description: "Create an open extension and add custom properties in a new or existing instance of a resource."
+  - method: "[Get open extension](xref:graph.opentypeextension_get)"
+    type: "[openTypeExtension](xref:graph.opentypeextension) collection"
+    description: "Get an open extension object or objects identified by name or fully qualified name."
+  - method: "**Schema extensions**"
+    type: ""
+    description: ""
+  - method: "[Add schema extension values](xref:graph.extensibility_schema_groups)"
+    type: ""
+    description: "Create a schema extension definition and then use it to add custom typed data to a resource."
+  - method: "**Extended properties**"
+    type: ""
+    description: ""
+  - method: "[Create single-value extended property](xref:graph.singlevaluelegacyextendedproperty_post_singlevalueextendedproperties)"
+    type: "[post](xref:graph.post)"
+    description: "Create one or more single-value extended properties in a new or existing post."
+  - method: "[Get post with single-value extended property](xref:graph.singlevaluelegacyextendedproperty_get)"
+    type: "[post](xref:graph.post)"
+    description: "Get posts that contain a single-value extended property by using $expand or $filter."
+  - method: "[Create multi-value extended property](xref:graph.multivaluelegacyextendedproperty_post_multivalueextendedproperties)"
+    type: "[post](xref:graph.post)"
+    description: "Create one or more multi-value extended properties in a new or existing post."
+  - method: "[Get post with multi-value extended property](xref:graph.multivaluelegacyextendedproperty_get)"
+    type: "[post](xref:graph.post)"
+    description: "Get a post that contains a multi-value extended property by using $expand."
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource
   sampleCode: |
@@ -99,62 +99,62 @@ resource:
     * [Add custom data to groups using schema extensions](xref:graph.extensibility_schema_groups)
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: body
-    type: microsoft.graph.itemBody
-    description: The contents of the post. This is a default property. This property can be null.
-  - property: categories
-    type: Collection(String)
-    description: The categories associated with the post.
-  - property: changeKey
-    type: String
-    description: Identifies the version of the post. Every time the post is changed, ChangeKey changes as well. This allows Exchange to apply changes to the correct version of the object.
-  - property: conversationId
-    type: String
-    description: Unique ID of the conversation. Read-only.
-  - property: conversationThreadId
-    type: String
-    description: Unique ID of the conversation thread. Read-only.
-  - property: createdDateTime
-    type: DateTimeOffset
-    description: Specifies when the post was created. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
-  - property: from
-    type: microsoft.graph.recipient
-    description: Used in delegate access scenarios. Indicates who posted the message on behalf of another user. This is a default property.
-  - property: hasAttachments
-    type: Boolean
-    description: Indicates whether the post has at least one attachment. This is a default property.
-  - property: id
-    type: String
-    description: Read-only.
-  - property: lastModifiedDateTime
-    type: DateTimeOffset
-    description: Specifies when the post was last modified. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
-  - property: newParticipants
-    type: Collection(microsoft.graph.recipient)
-    description: Conversation participants that were added to the thread as part of this post.
-  - property: receivedDateTime
-    type: DateTimeOffset
-    description: Specifies when the post was received. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
-  - property: sender
-    type: microsoft.graph.recipient
-    description: Contains the address of the sender. The value of Sender is assumed to be the address of the authenticated user in the case when Sender is not specified. This is a default property.
+  - property: "body"
+    type: "microsoft.graph.itemBody"
+    description: "The contents of the post. This is a default property. This property can be null."
+  - property: "categories"
+    type: "Collection(String)"
+    description: "The categories associated with the post."
+  - property: "changeKey"
+    type: "String"
+    description: "Identifies the version of the post. Every time the post is changed, ChangeKey changes as well. This allows Exchange to apply changes to the correct version of the object."
+  - property: "conversationId"
+    type: "String"
+    description: "Unique ID of the conversation. Read-only."
+  - property: "conversationThreadId"
+    type: "String"
+    description: "Unique ID of the conversation thread. Read-only."
+  - property: "createdDateTime"
+    type: "DateTimeOffset"
+    description: "Specifies when the post was created. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'"
+  - property: "from"
+    type: "microsoft.graph.recipient"
+    description: "Used in delegate access scenarios. Indicates who posted the message on behalf of another user. This is a default property."
+  - property: "hasAttachments"
+    type: "Boolean"
+    description: "Indicates whether the post has at least one attachment. This is a default property."
+  - property: "id"
+    type: "String"
+    description: "Read-only."
+  - property: "lastModifiedDateTime"
+    type: "DateTimeOffset"
+    description: "Specifies when the post was last modified. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'"
+  - property: "newParticipants"
+    type: "Collection(microsoft.graph.recipient)"
+    description: "Conversation participants that were added to the thread as part of this post."
+  - property: "receivedDateTime"
+    type: "DateTimeOffset"
+    description: "Specifies when the post was received. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'"
+  - property: "sender"
+    type: "microsoft.graph.recipient"
+    description: "Contains the address of the sender. The value of Sender is assumed to be the address of the authenticated user in the case when Sender is not specified. This is a default property."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   list:
-  - relationship: attachments
-    type: Collection(microsoft.graph.attachment)
-    description: Read-only. Nullable.
-  - relationship: extensions
-    type: Collection(microsoft.graph.extension)
-    description: The collection of open extensions defined for the post. Read-only. Nullable.
-  - relationship: inReplyTo
-    type: microsoft.graph.post
-    description: Read-only.
-  - relationship: multiValueExtendedProperties
-    type: Collection(microsoft.graph.multiValueLegacyExtendedProperty)
-    description: The collection of multi-value extended properties defined for the post. Read-only. Nullable.
-  - relationship: singleValueExtendedProperties
-    type: Collection(microsoft.graph.singleValueLegacyExtendedProperty)
-    description: The collection of single-value extended properties defined for the post. Read-only. Nullable.
+  - relationship: "attachments"
+    type: "Collection(microsoft.graph.attachment)"
+    description: "Read-only. Nullable."
+  - relationship: "extensions"
+    type: "Collection(microsoft.graph.extension)"
+    description: "The collection of open extensions defined for the post. Read-only. Nullable."
+  - relationship: "inReplyTo"
+    type: "microsoft.graph.post"
+    description: "Read-only."
+  - relationship: "multiValueExtendedProperties"
+    type: "Collection(microsoft.graph.multiValueLegacyExtendedProperty)"
+    description: "The collection of multi-value extended properties defined for the post. Read-only. Nullable."
+  - relationship: "singleValueExtendedProperties"
+    type: "Collection(microsoft.graph.singleValueLegacyExtendedProperty)"
+    description: "The collection of single-value extended properties defined for the post. Read-only. Nullable."

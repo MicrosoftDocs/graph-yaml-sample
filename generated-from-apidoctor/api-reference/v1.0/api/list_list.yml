@@ -7,38 +7,38 @@ metadata:
   ms.date: 09/11/2017
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/list_list.md
 summary:
-  heading: Enumerate lists in a site
+  heading: "Enumerate lists in a site"
   intro: |
     Get the collection of [lists][] for a [site][].
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
   list:
-  - resource: Delegated (work or school account)
-    permission: Sites.Read.All, Sites.ReadWrite.All
-  - resource: Delegated (personal Microsoft account)
-    permission: Not supported.
-  - resource: Application
-    permission: Sites.Read.All, Sites.ReadWrite.All
+  - resource: "Delegated (work or school account)"
+    permission: "Sites.Read.All, Sites.ReadWrite.All"
+  - resource: "Delegated (personal Microsoft account)"
+    permission: "Not supported."
+  - resource: "Application"
+    permission: "Sites.Read.All, Sites.ReadWrite.All"
 httpRequest:
-  heading: HTTP request
+  heading: "HTTP request"
   intro: |
     GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         request:
-            heading: Request
+            heading: "Request"
             sampleCode: |
               ```http
               GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
               ```
               
         response:
-            heading: Response
+            heading: "Response"
             sampleCode: |
               ```json
               HTTP/1.1 200 OK
@@ -71,7 +71,7 @@ examples:
               ```
               
 remarks:
-  heading: Remarks
+  heading: "Remarks"
   intro: |
     Lists with the [system][] facet are hidden by default.
     To list them, include `system` in your `$select` statement.

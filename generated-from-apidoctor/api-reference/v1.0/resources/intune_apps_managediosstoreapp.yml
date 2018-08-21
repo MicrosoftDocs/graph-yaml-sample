@@ -3,30 +3,30 @@ uid: graph.intune_apps_managediosstoreapp
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_apps_managediosstoreapp.md
 summary:
-  heading: managedIOSStoreApp resource type
+  heading: "managedIOSStoreApp resource type"
   intro: |
     Contains properties and inherited properties for an iOS store app that you can manage with an Intune app protection policy.
     Inherits from [managedApp](xref:graph.intune_apps_managedapp)
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [List managedIOSStoreApps](xref:graph.intune_apps_managediosstoreapp_list)
-    type: [managedIOSStoreApp](xref:graph.intune_apps_managediosstoreapp) collection
-    description: List properties and relationships of the managedIOSStoreApp objects.
-  - method: [Get managedIOSStoreApp](xref:graph.intune_apps_managediosstoreapp_get)
-    type: [managedIOSStoreApp](xref:graph.intune_apps_managediosstoreapp)
-    description: Read properties and relationships of the managedIOSStoreApp object.
-  - method: [Create managedIOSStoreApp](xref:graph.intune_apps_managediosstoreapp_create)
-    type: [managedIOSStoreApp](xref:graph.intune_apps_managediosstoreapp)
-    description: Create a new managedIOSStoreApp object.
-  - method: [Delete managedIOSStoreApp](xref:graph.intune_apps_managediosstoreapp_delete)
-    type: None
-    description: Deletes a managedIOSStoreApp.
-  - method: [Update managedIOSStoreApp](xref:graph.intune_apps_managediosstoreapp_update)
-    type: [managedIOSStoreApp](xref:graph.intune_apps_managediosstoreapp)
-    description: Update the properties of a managedIOSStoreApp object.
+  - method: "[List managedIOSStoreApps](xref:graph.intune_apps_managediosstoreapp_list)"
+    type: "[managedIOSStoreApp](xref:graph.intune_apps_managediosstoreapp) collection"
+    description: "List properties and relationships of the managedIOSStoreApp objects."
+  - method: "[Get managedIOSStoreApp](xref:graph.intune_apps_managediosstoreapp_get)"
+    type: "[managedIOSStoreApp](xref:graph.intune_apps_managediosstoreapp)"
+    description: "Read properties and relationships of the managedIOSStoreApp object."
+  - method: "[Create managedIOSStoreApp](xref:graph.intune_apps_managediosstoreapp_create)"
+    type: "[managedIOSStoreApp](xref:graph.intune_apps_managediosstoreapp)"
+    description: "Create a new managedIOSStoreApp object."
+  - method: "[Delete managedIOSStoreApp](xref:graph.intune_apps_managediosstoreapp_delete)"
+    type: "None"
+    description: "Deletes a managedIOSStoreApp."
+  - method: "[Update managedIOSStoreApp](xref:graph.intune_apps_managediosstoreapp_update)"
+    type: "[managedIOSStoreApp](xref:graph.intune_apps_managediosstoreapp)"
+    description: "Update the properties of a managedIOSStoreApp object."
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -71,74 +71,74 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: id
-    type: String
-    description: Key of the entity. Inherited from mobileApp
-  - property: displayName
-    type: String
-    description: The admin provided or imported title of the app. Inherited from mobileApp
-  - property: description
-    type: String
-    description: The description of the app. Inherited from mobileApp
-  - property: publisher
-    type: String
-    description: The publisher of the app. Inherited from mobileApp
-  - property: largeIcon
-    type: microsoft.graph.mimeContent
-    description: The large icon, to be displayed in the app details and used for upload of the icon. Inherited from mobileApp
-  - property: createdDateTime
-    type: DateTimeOffset
-    description: The date and time the app was created. Inherited from mobileApp
-  - property: lastModifiedDateTime
-    type: DateTimeOffset
-    description: The date and time the app was last modified. Inherited from mobileApp
-  - property: isFeatured
-    type: Boolean
-    description: The value indicating whether the app is marked as featured by the admin. Inherited from mobileApp
-  - property: privacyInformationUrl
-    type: String
-    description: The privacy statement Url. Inherited from mobileApp
-  - property: informationUrl
-    type: String
-    description: The more information Url. Inherited from mobileApp
-  - property: owner
-    type: String
-    description: The owner of the app. Inherited from mobileApp
-  - property: developer
-    type: String
-    description: The developer of the app. Inherited from mobileApp
-  - property: notes
-    type: String
-    description: Notes for the app. Inherited from mobileApp
-  - property: publishingState
-    type: microsoft.graph.mobileAppPublishingState
-    description: The publishing state for the app. The app cannot be assigned unless the app is published. Inherited from mobileApp. The possible values are: notPublished, processing, published.
-  - property: appAvailability
-    type: microsoft.graph.managedAppAvailability
-    description: The Application's availability. Inherited from managedApp. The possible values are: global, lineOfBusiness.
-  - property: version
-    type: String
-    description: The Application's version. Inherited from managedApp
-  - property: bundleId
-    type: String
-    description: The app's Bundle ID.
-  - property: appStoreUrl
-    type: String
-    description: The Apple AppStoreUrl.
-  - property: applicableDeviceType
-    type: microsoft.graph.iosDeviceType
-    description: The iOS architecture for which this app can run on.
-  - property: minimumSupportedOperatingSystem
-    type: microsoft.graph.iosMinimumOperatingSystem
-    description: The value for the minimum supported operating system.
+  - property: "id"
+    type: "String"
+    description: "Key of the entity. Inherited from mobileApp"
+  - property: "displayName"
+    type: "String"
+    description: "The admin provided or imported title of the app. Inherited from mobileApp"
+  - property: "description"
+    type: "String"
+    description: "The description of the app. Inherited from mobileApp"
+  - property: "publisher"
+    type: "String"
+    description: "The publisher of the app. Inherited from mobileApp"
+  - property: "largeIcon"
+    type: "microsoft.graph.mimeContent"
+    description: "The large icon, to be displayed in the app details and used for upload of the icon. Inherited from mobileApp"
+  - property: "createdDateTime"
+    type: "DateTimeOffset"
+    description: "The date and time the app was created. Inherited from mobileApp"
+  - property: "lastModifiedDateTime"
+    type: "DateTimeOffset"
+    description: "The date and time the app was last modified. Inherited from mobileApp"
+  - property: "isFeatured"
+    type: "Boolean"
+    description: "The value indicating whether the app is marked as featured by the admin. Inherited from mobileApp"
+  - property: "privacyInformationUrl"
+    type: "String"
+    description: "The privacy statement Url. Inherited from mobileApp"
+  - property: "informationUrl"
+    type: "String"
+    description: "The more information Url. Inherited from mobileApp"
+  - property: "owner"
+    type: "String"
+    description: "The owner of the app. Inherited from mobileApp"
+  - property: "developer"
+    type: "String"
+    description: "The developer of the app. Inherited from mobileApp"
+  - property: "notes"
+    type: "String"
+    description: "Notes for the app. Inherited from mobileApp"
+  - property: "publishingState"
+    type: "microsoft.graph.mobileAppPublishingState"
+    description: "The publishing state for the app. The app cannot be assigned unless the app is published. Inherited from mobileApp. The possible values are: notPublished, processing, published."
+  - property: "appAvailability"
+    type: "microsoft.graph.managedAppAvailability"
+    description: "The Application's availability. Inherited from managedApp. The possible values are: global, lineOfBusiness."
+  - property: "version"
+    type: "String"
+    description: "The Application's version. Inherited from managedApp"
+  - property: "bundleId"
+    type: "String"
+    description: "The app's Bundle ID."
+  - property: "appStoreUrl"
+    type: "String"
+    description: "The Apple AppStoreUrl."
+  - property: "applicableDeviceType"
+    type: "microsoft.graph.iosDeviceType"
+    description: "The iOS architecture for which this app can run on."
+  - property: "minimumSupportedOperatingSystem"
+    type: "microsoft.graph.iosMinimumOperatingSystem"
+    description: "The value for the minimum supported operating system."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   list:
-  - relationship: categories
-    type: Collection(microsoft.graph.mobileAppCategory)
-    description: The list of categories for this app. Inherited from mobileApp
-  - relationship: assignments
-    type: Collection(microsoft.graph.mobileAppAssignment)
-    description: The list of group assignments for this mobile app. Inherited from mobileApp
+  - relationship: "categories"
+    type: "Collection(microsoft.graph.mobileAppCategory)"
+    description: "The list of categories for this app. Inherited from mobileApp"
+  - relationship: "assignments"
+    type: "Collection(microsoft.graph.mobileAppAssignment)"
+    description: "The list of group assignments for this mobile app. Inherited from mobileApp"

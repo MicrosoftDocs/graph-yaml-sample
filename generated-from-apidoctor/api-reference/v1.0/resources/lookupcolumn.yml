@@ -7,11 +7,11 @@ metadata:
   ms.date: 09/11/2017
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/lookupcolumn.md
 summary:
-  heading: LookupColumn resource type
+  heading: "LookupColumn resource type"
   intro: |
     The **lookupColumn** on a [columnDefinition](xref:graph.columnDefinition) resource indicates that the column's values are looked up from another source in the site.
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of a **lookupColumn** resource.
   sampleCode: |
@@ -26,20 +26,20 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: allowMultipleValues
-    type: Boolean
-    description: Indicates whether multiple values can be selected from the source.
-  - property: allowUnlimitedLength
-    type: Boolean
-    description: Indicates whether values in the column should be able to exceed the standard limit of 255 characters.
-  - property: columnName
-    type: String
-    description: The name of the lookup source column.
-  - property: listId
-    type: String
-    description: The unique identifier of the lookup source list.
-  - property: primaryLookupColumnId
-    type: String
-    description: If specified, this column is a secondary lookup, pulling an additional field from the list item looked up by the primary lookup. Use the list item looked up by the primary as the source for the column named here.
+  - property: "allowMultipleValues"
+    type: "Boolean"
+    description: "Indicates whether multiple values can be selected from the source."
+  - property: "allowUnlimitedLength"
+    type: "Boolean"
+    description: "Indicates whether values in the column should be able to exceed the standard limit of 255 characters."
+  - property: "columnName"
+    type: "String"
+    description: "The name of the lookup source column."
+  - property: "listId"
+    type: "String"
+    description: "The unique identifier of the lookup source list."
+  - property: "primaryLookupColumnId"
+    type: "String"
+    description: "If specified, this column is a secondary lookup, pulling an additional field from the list item looked up by the primary lookup. Use the list item looked up by the primary as the source for the column named here."

@@ -3,20 +3,20 @@ uid: graph.plannerprogresstaskboardtaskformat
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.plannerprogresstaskboardtaskformat
 summary:
-  heading: plannerProgressTaskBoardTaskFormat resource type
+  heading: "plannerProgressTaskBoardTaskFormat resource type"
   intro: |
     The **plannerProgressTaskBoardTaskFormat** resource represents the information used to render a task correctly in the Progress view of the Task Board (a view organized by the state of the PercentComplete field on the task object, with columns for Not Started, In Progress and Complete). Each [task](xref:graph.plannertask) will have one **plannerProgressTaskBoardTaskFormat** object associated with it.
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [Get plannerProgressTaskBoardTaskFormat](xref:graph.plannerprogresstaskboardtaskformat_get)
-    type: [plannerProgressTaskBoardTaskFormat](xref:graph.plannerprogresstaskboardtaskformat)
-    description: Read properties and relationships of plannerProgressTaskBoardTaskFormat object.
-  - method: [Update](xref:graph.plannerprogresstaskboardtaskformat_update)
-    type: [plannerProgressTaskBoardTaskFormat](xref:graph.plannerprogresstaskboardtaskformat)
-    description: Update plannerProgressTaskBoardTaskFormat object.
+  - method: "[Get plannerProgressTaskBoardTaskFormat](xref:graph.plannerprogresstaskboardtaskformat_get)"
+    type: "[plannerProgressTaskBoardTaskFormat](xref:graph.plannerprogresstaskboardtaskformat)"
+    description: "Read properties and relationships of plannerProgressTaskBoardTaskFormat object."
+  - method: "[Update](xref:graph.plannerprogresstaskboardtaskformat_update)"
+    type: "[plannerProgressTaskBoardTaskFormat](xref:graph.plannerprogresstaskboardtaskformat)"
+    description: "Update plannerProgressTaskBoardTaskFormat object."
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -28,15 +28,15 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: id
-    type: String
-    description: Read-only. ID of the resource. It is 28 characters long and case-sensitive. Format validation is done on the service.
-  - property: orderHint
-    type: String
-    description: Hint value used to order the task on the Progress view of the Task Board. The format is defined as outlined here.
+  - property: "id"
+    type: "String"
+    description: "Read-only. ID of the resource. It is 28 characters long and case-sensitive. Format validation is done on the service."
+  - property: "orderHint"
+    type: "String"
+    description: "Hint value used to order the task on the Progress view of the Task Board. The format is defined as outlined here."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

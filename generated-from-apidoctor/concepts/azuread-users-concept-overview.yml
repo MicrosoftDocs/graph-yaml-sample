@@ -3,7 +3,7 @@ uid: graph.azuread-users-concept-overview
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/azuread-users-concept-overview.md
 summary:
-  heading: Overview of users in Microsoft Graph
+  heading: "Overview of users in Microsoft Graph"
   intro: |
     Users are the representation of an Azure Active Directory (Azure AD) work or school user account or a Microsoft account in Microsoft Graph. The **user** resource in Microsoft Graph is a hub from which you can access the relationships and resources that are relevant to your users.
     ![Diagram showing a user connected to calendar, email, contacts, meetings, tasks, sites, and documents](images/users.png)

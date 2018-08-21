@@ -3,29 +3,29 @@ uid: graph.intune_books_userinstallstatesummary
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_books_userinstallstatesummary.md
 summary:
-  heading: userInstallStateSummary resource type
+  heading: "userInstallStateSummary resource type"
   intro: |
     Contains properties for the installation state summary for a user.
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [List userInstallStateSummaries](xref:graph.intune_books_userinstallstatesummary_list)
-    type: [userInstallStateSummary](xref:graph.intune_books_userinstallstatesummary) collection
-    description: List properties and relationships of the userInstallStateSummary objects.
-  - method: [Get userInstallStateSummary](xref:graph.intune_books_userinstallstatesummary_get)
-    type: [userInstallStateSummary](xref:graph.intune_books_userinstallstatesummary)
-    description: Read properties and relationships of the userInstallStateSummary object.
-  - method: [Create userInstallStateSummary](xref:graph.intune_books_userinstallstatesummary_create)
-    type: [userInstallStateSummary](xref:graph.intune_books_userinstallstatesummary)
-    description: Create a new userInstallStateSummary object.
-  - method: [Delete userInstallStateSummary](xref:graph.intune_books_userinstallstatesummary_delete)
-    type: None
-    description: Deletes a userInstallStateSummary.
-  - method: [Update userInstallStateSummary](xref:graph.intune_books_userinstallstatesummary_update)
-    type: [userInstallStateSummary](xref:graph.intune_books_userinstallstatesummary)
-    description: Update the properties of a userInstallStateSummary object.
+  - method: "[List userInstallStateSummaries](xref:graph.intune_books_userinstallstatesummary_list)"
+    type: "[userInstallStateSummary](xref:graph.intune_books_userinstallstatesummary) collection"
+    description: "List properties and relationships of the userInstallStateSummary objects."
+  - method: "[Get userInstallStateSummary](xref:graph.intune_books_userinstallstatesummary_get)"
+    type: "[userInstallStateSummary](xref:graph.intune_books_userinstallstatesummary)"
+    description: "Read properties and relationships of the userInstallStateSummary object."
+  - method: "[Create userInstallStateSummary](xref:graph.intune_books_userinstallstatesummary_create)"
+    type: "[userInstallStateSummary](xref:graph.intune_books_userinstallstatesummary)"
+    description: "Create a new userInstallStateSummary object."
+  - method: "[Delete userInstallStateSummary](xref:graph.intune_books_userinstallstatesummary_delete)"
+    type: "None"
+    description: "Deletes a userInstallStateSummary."
+  - method: "[Update userInstallStateSummary](xref:graph.intune_books_userinstallstatesummary_update)"
+    type: "[userInstallStateSummary](xref:graph.intune_books_userinstallstatesummary)"
+    description: "Update the properties of a userInstallStateSummary object."
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -41,26 +41,26 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: id
-    type: String
-    description: Key of the entity.
-  - property: userName
-    type: String
-    description: User name.
-  - property: installedDeviceCount
-    type: Int32
-    description: Installed Device Count.
-  - property: failedDeviceCount
-    type: Int32
-    description: Failed Device Count.
-  - property: notInstalledDeviceCount
-    type: Int32
-    description: Not installed device count.
+  - property: "id"
+    type: "String"
+    description: "Key of the entity."
+  - property: "userName"
+    type: "String"
+    description: "User name."
+  - property: "installedDeviceCount"
+    type: "Int32"
+    description: "Installed Device Count."
+  - property: "failedDeviceCount"
+    type: "Int32"
+    description: "Failed Device Count."
+  - property: "notInstalledDeviceCount"
+    type: "Int32"
+    description: "Not installed device count."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   list:
-  - relationship: deviceStates
-    type: Collection(microsoft.graph.deviceInstallState)
-    description: The install state of the eBook.
+  - relationship: "deviceStates"
+    type: "Collection(microsoft.graph.deviceInstallState)"
+    description: "The install state of the eBook."

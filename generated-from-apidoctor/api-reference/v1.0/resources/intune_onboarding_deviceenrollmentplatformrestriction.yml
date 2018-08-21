@@ -3,11 +3,11 @@ uid: graph.intune_onboarding_deviceenrollmentplatformrestriction
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_onboarding_deviceenrollmentplatformrestriction.md
 summary:
-  heading: deviceEnrollmentPlatformRestriction resource type
+  heading: "deviceEnrollmentPlatformRestriction resource type"
   intro: |
     Platform specific enrollment restrictions
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -22,21 +22,21 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: platformBlocked
-    type: Boolean
-    description: Block the platform from enrolling
-  - property: personalDeviceEnrollmentBlocked
-    type: Boolean
-    description: Block personally owned devices from enrolling
-  - property: osMinimumVersion
-    type: String
-    description: Min OS version supported
-  - property: osMaximumVersion
-    type: String
-    description: Max OS version supported
+  - property: "platformBlocked"
+    type: "Boolean"
+    description: "Block the platform from enrolling"
+  - property: "personalDeviceEnrollmentBlocked"
+    type: "Boolean"
+    description: "Block personally owned devices from enrolling"
+  - property: "osMinimumVersion"
+    type: "String"
+    description: "Min OS version supported"
+  - property: "osMaximumVersion"
+    type: "String"
+    description: "Max OS version supported"
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

@@ -3,7 +3,7 @@ uid: graph.onenote-get-content
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/onenote-get-content.md
 summary:
-  heading: Get OneNote content and structure with Microsoft Graph
+  heading: "Get OneNote content and structure with Microsoft Graph"
   intro: |
     **Applies to**: Consumer notebooks on OneDrive | Enterprise notebooks on Office 365
     To get OneNote content and structure, you send a GET request to the target endpoint. For example:
@@ -28,7 +28,7 @@ summary:
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         intro: |
           `GET ../sections/{section-id}/pages?pagelevel=true`
           <a name="get-page"></a> 
@@ -41,7 +41,7 @@ examples:
           The default query expands the parent section and selects the section's `id`, `name`, and `self` properties.
           Use **pagelevel** to return the indentation level of the page and its order within its parent section. 
     - Example:
-        heading: Example
+        heading: "Example"
         intro: |
           `GET ../pages/{page-id}?pagelevel=true`
           <a name="get-page-preview"></a> 
@@ -64,7 +64,7 @@ examples:
           The **previewText** property contains a text snippet from the page. Microsoft Graph returns complete phrases, up to a maximum of 300 characters. 
           If the page has an image that can be used to build a preview UI, the **href** property in the **previewImageUrl** object contains a link to a public, pre-authenticated [image resource](#image-or-other-file-resource). You can use this link in HTML. Otherwise, **href** returns null.
     - Example:
-        heading: Example
+        heading: "Example"
         intro: |
           `<img src="https://www.onenote.com/api/v1.0/resources/{id}/content?publicAuth=true&mimeType=image/png" />`
           <a name="get-page-content"></a> 
@@ -78,7 +78,7 @@ examples:
           Use the **preAuthenticated=true** query string option to get public URLs to the [image resources](#image-or-other-file-resource) that are on the page. The public URLs are valid for one hour. 
           <a name="get-sections"></a>
     - Example:
-        heading: Example
+        heading: "Example"
         intro: |
           <img 
               src="https://www.onenote.com/api/v1.0/me/notes/resources/{image-id}/$value"  
@@ -88,7 +88,7 @@ examples:
 
           And an **object** tag includes the endpoint for the file resource in the **data** attribute. 
     - Example:
-        heading: Example
+        heading: "Example"
         intro: |
           <object
               data="http://www.onenote.com/api/v1.0/me/notes/resources/{file-id}/$value"
@@ -107,7 +107,7 @@ examples:
           
           <a name="example"></a>
     - Example GET requests:
-        heading: Example GET requests
+        heading: "Example GET requests"
         intro: |
           You can query for OneNote entities and search page content to get just the information you need. The following examples show some ways you can use [supported query string options](#supported-odata-query-string-options) in GET requests to Microsoft Graph. 
           **Remember:**
@@ -122,7 +122,7 @@ examples:
           [GET] ../pages?search=recipe&filter=createdByAppId eq 'WLID-000000004C12821A'
 
     - Example:
-        heading: Example
+        heading: "Example"
         intro: |
           `../sections?filter=createdTime ge 2015-01-01&select=name,pagesUrl&orderby=lastModifiedTime desc` 
           Property names are case-sensitive in query expressions.

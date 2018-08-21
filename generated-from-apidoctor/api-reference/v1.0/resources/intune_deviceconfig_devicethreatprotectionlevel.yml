@@ -3,21 +3,21 @@ uid: graph.intune_deviceconfig_devicethreatprotectionlevel
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_devicethreatprotectionlevel.md
 summary:
-  heading: deviceThreatProtectionLevel enum type
+  heading: "deviceThreatProtectionLevel enum type"
   intro: |
     Device threat protection levels for the Device Threat Protection API.
 enum:
-  heading: Members
+  heading: "Members"
   table:
-  - member: unavailable
-    description: Default Value. Do not use.
-  - member: secured
-    description: Device Threat Level requirement: Secured. This is the most secure level, and represents that no threats were found on the device.
-  - member: low
-    description: Device Threat Protection level requirement: Low. Low represents a severity of threat that poses minimal risk to the device or device data.
-  - member: medium
-    description: Device Threat Protection level requirement: Medium. Medium represents a severity of threat that poses moderate risk to the device or device data.
-  - member: high
-    description: Device Threat Protection level requirement: High. High represents a severity of threat that poses severe risk to the device or device data.
-  - member: notSet
-    description: Device Threat Protection level requirement: Not Set. Not set represents that there is no requirement for the device to meet a Threat Protection level.
+  - member: "unavailable"
+    description: "Default Value. Do not use."
+  - member: "secured"
+    description: "Device Threat Level requirement: Secured. This is the most secure level, and represents that no threats were found on the device."
+  - member: "low"
+    description: "Device Threat Protection level requirement: Low. Low represents a severity of threat that poses minimal risk to the device or device data."
+  - member: "medium"
+    description: "Device Threat Protection level requirement: Medium. Medium represents a severity of threat that poses moderate risk to the device or device data."
+  - member: "high"
+    description: "Device Threat Protection level requirement: High. High represents a severity of threat that poses severe risk to the device or device data."
+  - member: "notSet"
+    description: "Device Threat Protection level requirement: Not Set. Not set represents that there is no requirement for the device to meet a Threat Protection level."

@@ -3,23 +3,23 @@ uid: graph.listitem_list_versions
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/listitem_list_versions.md
 summary:
-  heading: Listing versions of a ListItem
+  heading: "Listing versions of a ListItem"
   intro: |
     SharePoint can be configured to retain the history for list items.
     Previous versions may be retained for a finite period of time depending on admin settings which may be unique per user or location.
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
   list:
-  - resource: Delegated (work or school account)
-    permission: Sites.Read.All, Sites.ReadWrite.All
-  - resource: Delegated (personal Microsoft account)
-    permission: n/a
-  - resource: Application
-    permission: Sites.Read.All, Sites.ReadWrite.All
+  - resource: "Delegated (work or school account)"
+    permission: "Sites.Read.All, Sites.ReadWrite.All"
+  - resource: "Delegated (personal Microsoft account)"
+    permission: "n/a"
+  - resource: "Application"
+    permission: "Sites.Read.All, Sites.ReadWrite.All"
 httpRequest:
-  heading: HTTP request
+  heading: "HTTP request"
   sampleCode: |
     ```http
     GET /sites/{site-id}/items/{item-id}/versions
@@ -27,24 +27,24 @@ httpRequest:
     ```
     
 response:
-  heading: Response
+  heading: "Response"
   intro: |
     If successful, this method returns a `200 OK` response code and collection of [ListItemVersion](xref:graph.listitemversion) objects in the response body.
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         intro: |
           This example retrieves the versions of a listItem in a SharePoint list:
         request:
-            heading: request
+            heading: "request"
             sampleCode: |
               ```http
               GET /sites/{site-id}/lists/{list-id}/items/{item-id}/versions
               ```
               
         response:
-            heading: Response
+            heading: "Response"
             intro: |
               This returns a collection of versions:
             sampleCode: |

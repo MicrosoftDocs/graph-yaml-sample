@@ -3,30 +3,30 @@ uid: graph.intune_deviceconfig_windows81compliancepolicy
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_windows81compliancepolicy.md
 summary:
-  heading: windows81CompliancePolicy resource type
+  heading: "windows81CompliancePolicy resource type"
   intro: |
     This class contains compliance settings for Windows 8.1.
     Inherits from [deviceCompliancePolicy](xref:graph.intune_deviceconfig_devicecompliancepolicy)
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [List windows81CompliancePolicies](xref:graph.intune_deviceconfig_windows81compliancepolicy_list)
-    type: [windows81CompliancePolicy](xref:graph.intune_deviceconfig_windows81compliancepolicy) collection
-    description: List properties and relationships of the windows81CompliancePolicy objects.
-  - method: [Get windows81CompliancePolicy](xref:graph.intune_deviceconfig_windows81compliancepolicy_get)
-    type: [windows81CompliancePolicy](xref:graph.intune_deviceconfig_windows81compliancepolicy)
-    description: Read properties and relationships of the windows81CompliancePolicy object.
-  - method: [Create windows81CompliancePolicy](xref:graph.intune_deviceconfig_windows81compliancepolicy_create)
-    type: [windows81CompliancePolicy](xref:graph.intune_deviceconfig_windows81compliancepolicy)
-    description: Create a new windows81CompliancePolicy object.
-  - method: [Delete windows81CompliancePolicy](xref:graph.intune_deviceconfig_windows81compliancepolicy_delete)
-    type: None
-    description: Deletes a windows81CompliancePolicy.
-  - method: [Update windows81CompliancePolicy](xref:graph.intune_deviceconfig_windows81compliancepolicy_update)
-    type: [windows81CompliancePolicy](xref:graph.intune_deviceconfig_windows81compliancepolicy)
-    description: Update the properties of a windows81CompliancePolicy object.
+  - method: "[List windows81CompliancePolicies](xref:graph.intune_deviceconfig_windows81compliancepolicy_list)"
+    type: "[windows81CompliancePolicy](xref:graph.intune_deviceconfig_windows81compliancepolicy) collection"
+    description: "List properties and relationships of the windows81CompliancePolicy objects."
+  - method: "[Get windows81CompliancePolicy](xref:graph.intune_deviceconfig_windows81compliancepolicy_get)"
+    type: "[windows81CompliancePolicy](xref:graph.intune_deviceconfig_windows81compliancepolicy)"
+    description: "Read properties and relationships of the windows81CompliancePolicy object."
+  - method: "[Create windows81CompliancePolicy](xref:graph.intune_deviceconfig_windows81compliancepolicy_create)"
+    type: "[windows81CompliancePolicy](xref:graph.intune_deviceconfig_windows81compliancepolicy)"
+    description: "Create a new windows81CompliancePolicy object."
+  - method: "[Delete windows81CompliancePolicy](xref:graph.intune_deviceconfig_windows81compliancepolicy_delete)"
+    type: "None"
+    description: "Deletes a windows81CompliancePolicy."
+  - method: "[Update windows81CompliancePolicy](xref:graph.intune_deviceconfig_windows81compliancepolicy_update)"
+    type: "[windows81CompliancePolicy](xref:graph.intune_deviceconfig_windows81compliancepolicy)"
+    description: "Update the properties of a windows81CompliancePolicy object."
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -54,80 +54,80 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: id
-    type: String
-    description: Key of the entity. Inherited from deviceCompliancePolicy
-  - property: createdDateTime
-    type: DateTimeOffset
-    description: DateTime the object was created. Inherited from deviceCompliancePolicy
-  - property: description
-    type: String
-    description: Admin provided description of the Device Configuration. Inherited from deviceCompliancePolicy
-  - property: lastModifiedDateTime
-    type: DateTimeOffset
-    description: DateTime the object was last modified. Inherited from deviceCompliancePolicy
-  - property: displayName
-    type: String
-    description: Admin provided name of the device configuration. Inherited from deviceCompliancePolicy
-  - property: version
-    type: Int32
-    description: Version of the device configuration. Inherited from deviceCompliancePolicy
-  - property: passwordRequired
-    type: Boolean
-    description: Require a password to unlock Windows device.
-  - property: passwordBlockSimple
-    type: Boolean
-    description: Indicates whether or not to block simple password.
-  - property: passwordExpirationDays
-    type: Int32
-    description: Password expiration in days.
-  - property: passwordMinimumLength
-    type: Int32
-    description: The minimum password length.
-  - property: passwordMinutesOfInactivityBeforeLock
-    type: Int32
-    description: Minutes of inactivity before a password is required.
-  - property: passwordMinimumCharacterSetCount
-    type: Int32
-    description: The number of character sets required in the password.
-  - property: passwordRequiredType
-    type: microsoft.graph.requiredPasswordType
-    description: The required password type. The possible values are: deviceDefault, alphanumeric, numeric.
-  - property: passwordPreviousPasswordBlockCount
-    type: Int32
-    description: The number of previous passwords to prevent re-use of. Valid values 0 to 24
-  - property: osMinimumVersion
-    type: String
-    description: Minimum Windows 8.1 version.
-  - property: osMaximumVersion
-    type: String
-    description: Maximum Windows 8.1 version.
-  - property: storageRequireEncryption
-    type: Boolean
-    description: Indicates whether or not to require encryption on a windows 8.1 device.
+  - property: "id"
+    type: "String"
+    description: "Key of the entity. Inherited from deviceCompliancePolicy"
+  - property: "createdDateTime"
+    type: "DateTimeOffset"
+    description: "DateTime the object was created. Inherited from deviceCompliancePolicy"
+  - property: "description"
+    type: "String"
+    description: "Admin provided description of the Device Configuration. Inherited from deviceCompliancePolicy"
+  - property: "lastModifiedDateTime"
+    type: "DateTimeOffset"
+    description: "DateTime the object was last modified. Inherited from deviceCompliancePolicy"
+  - property: "displayName"
+    type: "String"
+    description: "Admin provided name of the device configuration. Inherited from deviceCompliancePolicy"
+  - property: "version"
+    type: "Int32"
+    description: "Version of the device configuration. Inherited from deviceCompliancePolicy"
+  - property: "passwordRequired"
+    type: "Boolean"
+    description: "Require a password to unlock Windows device."
+  - property: "passwordBlockSimple"
+    type: "Boolean"
+    description: "Indicates whether or not to block simple password."
+  - property: "passwordExpirationDays"
+    type: "Int32"
+    description: "Password expiration in days."
+  - property: "passwordMinimumLength"
+    type: "Int32"
+    description: "The minimum password length."
+  - property: "passwordMinutesOfInactivityBeforeLock"
+    type: "Int32"
+    description: "Minutes of inactivity before a password is required."
+  - property: "passwordMinimumCharacterSetCount"
+    type: "Int32"
+    description: "The number of character sets required in the password."
+  - property: "passwordRequiredType"
+    type: "microsoft.graph.requiredPasswordType"
+    description: "The required password type. The possible values are: deviceDefault, alphanumeric, numeric."
+  - property: "passwordPreviousPasswordBlockCount"
+    type: "Int32"
+    description: "The number of previous passwords to prevent re-use of. Valid values 0 to 24"
+  - property: "osMinimumVersion"
+    type: "String"
+    description: "Minimum Windows 8.1 version."
+  - property: "osMaximumVersion"
+    type: "String"
+    description: "Maximum Windows 8.1 version."
+  - property: "storageRequireEncryption"
+    type: "Boolean"
+    description: "Indicates whether or not to require encryption on a windows 8.1 device."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   list:
-  - relationship: scheduledActionsForRule
-    type: Collection(microsoft.graph.deviceComplianceScheduledActionForRule)
-    description: The list of scheduled action for this rule Inherited from deviceCompliancePolicy
-  - relationship: deviceStatuses
-    type: Collection(microsoft.graph.deviceComplianceDeviceStatus)
-    description: List of DeviceComplianceDeviceStatus. Inherited from deviceCompliancePolicy
-  - relationship: userStatuses
-    type: Collection(microsoft.graph.deviceComplianceUserStatus)
-    description: List of DeviceComplianceUserStatus. Inherited from deviceCompliancePolicy
-  - relationship: deviceStatusOverview
-    type: microsoft.graph.deviceComplianceDeviceOverview
-    description: Device compliance devices status overview Inherited from deviceCompliancePolicy
-  - relationship: userStatusOverview
-    type: microsoft.graph.deviceComplianceUserOverview
-    description: Device compliance users status overview Inherited from deviceCompliancePolicy
-  - relationship: deviceSettingStateSummaries
-    type: Collection(microsoft.graph.settingStateDeviceSummary)
-    description: Compliance Setting State Device Summary Inherited from deviceCompliancePolicy
-  - relationship: assignments
-    type: Collection(microsoft.graph.deviceCompliancePolicyAssignment)
-    description: The collection of assignments for this compliance policy. Inherited from deviceCompliancePolicy
+  - relationship: "scheduledActionsForRule"
+    type: "Collection(microsoft.graph.deviceComplianceScheduledActionForRule)"
+    description: "The list of scheduled action for this rule Inherited from deviceCompliancePolicy"
+  - relationship: "deviceStatuses"
+    type: "Collection(microsoft.graph.deviceComplianceDeviceStatus)"
+    description: "List of DeviceComplianceDeviceStatus. Inherited from deviceCompliancePolicy"
+  - relationship: "userStatuses"
+    type: "Collection(microsoft.graph.deviceComplianceUserStatus)"
+    description: "List of DeviceComplianceUserStatus. Inherited from deviceCompliancePolicy"
+  - relationship: "deviceStatusOverview"
+    type: "microsoft.graph.deviceComplianceDeviceOverview"
+    description: "Device compliance devices status overview Inherited from deviceCompliancePolicy"
+  - relationship: "userStatusOverview"
+    type: "microsoft.graph.deviceComplianceUserOverview"
+    description: "Device compliance users status overview Inherited from deviceCompliancePolicy"
+  - relationship: "deviceSettingStateSummaries"
+    type: "Collection(microsoft.graph.settingStateDeviceSummary)"
+    description: "Compliance Setting State Device Summary Inherited from deviceCompliancePolicy"
+  - relationship: "assignments"
+    type: "Collection(microsoft.graph.deviceCompliancePolicyAssignment)"
+    description: "The collection of assignments for this compliance policy. Inherited from deviceCompliancePolicy"

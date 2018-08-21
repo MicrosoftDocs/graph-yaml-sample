@@ -3,17 +3,17 @@ uid: graph.onenoteoperation
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.onenoteoperation
 summary:
-  heading: onenoteOperation resource type
+  heading: "onenoteOperation resource type"
   intro: |
     The status of certain long-running OneNote operations.
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [Get operation](xref:graph.onenoteoperation_get)
-    type: [onenoteOperation](xref:graph.onenoteoperation)
-    description: Get the status of the operation.
+  - method: "[Get operation](xref:graph.onenoteoperation_get)"
+    type: "[onenoteOperation](xref:graph.onenoteoperation)"
+    description: "Get the status of the operation."
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -31,33 +31,33 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: createdDateTime
-    type: DateTimeOffset
-    description: The start time of the operation.
-  - property: error
-    type: microsoft.graph.onenoteOperationError
-    description: The error returned by the operation.
-  - property: id
-    type: String
-    description: The operation id. Read-only.
-  - property: lastActionDateTime
-    type: DateTimeOffset
-    description: The time of the last action of the operation.
-  - property: resourceId
-    type: String
-    description: The resource id.
-  - property: resourceLocation
-    type: String
-    description: The resource URI for the object. For example, the resource URI for a copied page or section.
-  - property: status
-    type: String
-    description: The current status of the operation: notstarted, running, completed, failed
-  - property: percentComplete
-    type: String
-    description: The operation percent complete if the operation is still in running status
+  - property: "createdDateTime"
+    type: "DateTimeOffset"
+    description: "The start time of the operation."
+  - property: "error"
+    type: "microsoft.graph.onenoteOperationError"
+    description: "The error returned by the operation."
+  - property: "id"
+    type: "String"
+    description: "The operation id. Read-only."
+  - property: "lastActionDateTime"
+    type: "DateTimeOffset"
+    description: "The time of the last action of the operation."
+  - property: "resourceId"
+    type: "String"
+    description: "The resource id."
+  - property: "resourceLocation"
+    type: "String"
+    description: "The resource URI for the object. For example, the resource URI for a copied page or section."
+  - property: "status"
+    type: "String"
+    description: "The current status of the operation: notstarted, running, completed, failed"
+  - property: "percentComplete"
+    type: "String"
+    description: "The operation percent complete if the operation is still in running status"
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

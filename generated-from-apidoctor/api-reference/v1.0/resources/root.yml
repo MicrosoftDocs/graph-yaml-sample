@@ -7,14 +7,14 @@ metadata:
   ms.date: 09/10/2017
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/root.md
 summary:
-  heading: Root resource type
+  heading: "Root resource type"
   intro: |
     The **Root** facet indicates that an object is the top-most one in its hierarchy.
     The presence (non-null) of the facet value indicates that the object is the root.
     A null (or missing) value indicates the object is not the root.
     **Note**: While this facet is empty today, in future API revisions the facet may be populated with additional properties.
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   sampleCode: |
     ```json
     {
@@ -22,6 +22,6 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   intro: |
     The **Root** resource has no properties.

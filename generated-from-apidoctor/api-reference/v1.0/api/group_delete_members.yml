@@ -3,47 +3,47 @@ uid: graph.group_delete_members
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/group_delete_members.md
 summary:
-  heading: Remove member
+  heading: "Remove member"
   intro: |
     Use this API to remove a member from an Office 365 group, a security group, or a mail-enabled security group through the **members** navigation property. You can remove users or other groups.
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
   list:
-  - resource: Delegated (work or school account)
-    permission: Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All
-  - resource: Delegated (personal Microsoft account)
-    permission: Not supported.
-  - resource: Application
-    permission: Group.ReadWrite.All, Directory.ReadWrite.All
+  - resource: "Delegated (work or school account)"
+    permission: "Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All"
+  - resource: "Delegated (personal Microsoft account)"
+    permission: "Not supported."
+  - resource: "Application"
+    permission: "Group.ReadWrite.All, Directory.ReadWrite.All"
 httpRequest:
-  heading: HTTP request
+  heading: "HTTP request"
   sampleCode: |
     ```http
     DELETE /groups/{id}/members/{id}/$ref
     ```
     
 requestHeaders:
-  heading: Request headers
+  heading: "Request headers"
   list:
-  - name: Authorization
-    value: String
-    description: Bearer {token}. Required.
+  - name: "Authorization"
+    value: "String"
+    description: "Bearer {token}. Required."
 requestBody:
-  heading: Request body
+  heading: "Request body"
   intro: |
     Do not supply a request body for this method.
 response:
-  heading: Response
+  heading: "Response"
   intro: |
     If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         request:
-            heading: Request
+            heading: "Request"
             intro: |
               The following is an example of the request.
             sampleCode: |
@@ -54,7 +54,7 @@ examples:
             outro: |
               In the request, specify the `id` of the directory object you want to remove after the $ref segment.
         response:
-            heading: Response
+            heading: "Response"
             intro: |
               The following is an example of the response.
               

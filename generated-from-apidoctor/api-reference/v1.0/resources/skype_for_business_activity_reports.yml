@@ -3,7 +3,7 @@ uid: graph.skype_for_business_activity_reports
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/skype_for_business_activity_reports.md
 summary:
-  heading: Skype for Business activity reports
+  heading: "Skype for Business activity reports"
   intro: |
     You can use the Skype for Business activity reports to get details on activity across your organization. These details can help you investigate, plan, and make other business decisions for your organization.
     

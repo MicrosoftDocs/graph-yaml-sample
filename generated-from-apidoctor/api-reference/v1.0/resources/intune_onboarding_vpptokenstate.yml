@@ -3,17 +3,17 @@ uid: graph.intune_onboarding_vpptokenstate
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_onboarding_vpptokenstate.md
 summary:
-  heading: vppTokenState enum type
+  heading: "vppTokenState enum type"
   intro: |
     Possible states associated with an Apple Volume Purchase Program token.
 enum:
-  heading: Members
+  heading: "Members"
   table:
-  - member: unknown
-    description: Default state.
-  - member: valid
-    description: Token is valid.
-  - member: expired
-    description: Token is expired.
-  - member: invalid
-    description: Token is invalid.
+  - member: "unknown"
+    description: "Default state."
+  - member: "valid"
+    description: "Token is valid."
+  - member: "expired"
+    description: "Token is expired."
+  - member: "invalid"
+    description: "Token is invalid."

@@ -7,13 +7,13 @@ metadata:
   ms.date: 09/10/2017
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/image.md
 summary:
-  heading: Image resource type
+  heading: "Image resource type"
   intro: |
     The **Image** resource groups image-related properties into a single structure.
     If a [**DriveItem**](xref:graph.driveitem) has a non-null **image** facet, the item represents a bitmap image.
     **Note:** If the service is unable to determine the width and height of the image, the **Image** resource may be empty.
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   sampleCode: |
     ```json
     {
@@ -23,16 +23,16 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: height
-    type: Int32
-    description: Optional. Height of the image, in pixels. Read-only.
-  - property: width
-    type: Int32
-    description: Optional. Width of the image, in pixels. Read-only.
+  - property: "height"
+    type: "Int32"
+    description: "Optional. Height of the image, in pixels. Read-only."
+  - property: "width"
+    type: "Int32"
+    description: "Optional. Width of the image, in pixels. Read-only."
 remarks:
-  heading: Remarks
+  heading: "Remarks"
   intro: |
     In OneDrive for Business, this resource is returned on items that are expected to be images based on file extension.
     For more information about the facets on a DriveItem, see [DriveItem](xref:graph.driveitem).

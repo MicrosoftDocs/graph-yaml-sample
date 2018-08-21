@@ -3,7 +3,7 @@ uid: graph.python-excel
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/python-excel.md
 summary:
-  heading: Use Microsoft Graph to access Excel in a Python app
+  heading: "Use Microsoft Graph to access Excel in a Python app"
   intro: |
     You can use the Microsoft Graph API to read and update workbooks stored in supported online storage platforms including, OneDrive and SharePoint. The `Workbook` (or Excel file) resource contains all the other Excel resources and your app can access them via simple navigations. 
     You can access a set of Excel objects (such as Table, Range, or Chart) by using standard REST APIs to perform create, read, update, and delete (CRUD) operations on the workbook. For example, 
@@ -11,7 +11,7 @@ summary:
     returns a collection of worksheet objects that are part of the workbook.    
     This walkthrough describes how to make requests to the Excel REST API from a Python web app. 
 permissions:
-  heading: Prerequisites
+  heading: "Prerequisites"
   intro: |
     * [Python 3.5.2](https://www.python.org/downloads/)
     * [Flask-OAuthlib](https://github.com/lepture/flask-oauthlib)
@@ -26,7 +26,7 @@ permissions:
     * Files.ReadWrite
     
 requestHeaders:
-  heading: Request headers
+  heading: "Request headers"
   intro: |
     With an access token, your app can make authenticated requests to the Microsoft Graph API. Your app must append the access token to the **Authorization** header of each request.
     	# Set request headers.
@@ -41,7 +41,7 @@ requestHeaders:
   outro: |
     ### Getting an Excel Session
 requestBody:
-  heading: Request
+  heading: "Request"
   intro: |
     Pass a JSON object by setting the `persistChanges` value to `true` or `false`. When the value of `persistChanges` is set to `false`, a non-persistent session id is returned. This example uses the [Requests](http://docs.python-requests.org/en/latest/user/quickstart) HTTP library 
      	# Replace the id with your Excel workbook's drive id
@@ -61,7 +61,7 @@ requestBody:
     	response = requests.post(url, headers = headers, json = body)
 
 response:
-  heading: Response
+  heading: "Response"
   intro: |
     ```http
     HTTP code: 201 Created

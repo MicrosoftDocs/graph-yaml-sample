@@ -3,11 +3,11 @@ uid: graph.mailboxsettings
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/mailboxsettings.md
 summary:
-  heading: mailboxSettings resource type
+  heading: "mailboxSettings resource type"
   intro: |
     Settings for the primary mailbox of the signed-in user.
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -22,20 +22,20 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: archiveFolder
-    type: String
-    description: Folder ID of an archive folder for the user.
-  - property: automaticRepliesSetting
-    type: microsoft.graph.automaticRepliesSetting
-    description: Configuration settings to automatically notify the sender of an incoming email with a message from the signed-in user.
-  - property: language
-    type: microsoft.graph.localeInfo
-    description: The locale information for the user, including the preferred language and country/region.
-  - property: timeZone
-    type: String
-    description: The default time zone for the user's mailbox.
-  - property: workingHours
-    type: microsoft.graph.workingHours
-    description: The days of the week and hours in a specific time zone that the user works.
+  - property: "archiveFolder"
+    type: "String"
+    description: "Folder ID of an archive folder for the user."
+  - property: "automaticRepliesSetting"
+    type: "microsoft.graph.automaticRepliesSetting"
+    description: "Configuration settings to automatically notify the sender of an incoming email with a message from the signed-in user."
+  - property: "language"
+    type: "microsoft.graph.localeInfo"
+    description: "The locale information for the user, including the preferred language and country/region."
+  - property: "timeZone"
+    type: "String"
+    description: "The default time zone for the user's mailbox."
+  - property: "workingHours"
+    type: "microsoft.graph.workingHours"
+    description: "The days of the week and hours in a specific time zone that the user works."

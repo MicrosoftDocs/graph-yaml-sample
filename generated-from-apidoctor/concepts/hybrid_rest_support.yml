@@ -3,7 +3,7 @@ uid: graph.hybrid_rest_support
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/hybrid_rest_support.md
 summary:
-  heading: Use REST APIs to access mailboxes in Exchange hybrid deployments (preview)
+  heading: "Use REST APIs to access mailboxes in Exchange hybrid deployments (preview)"
   intro: |
     Microsoft Graph has always provided access to customer mailboxes in the cloud on Exchange Online as part of Office 365.
     Exchange 2016 Cumulative Update 3 (CU3), released in September 2016 for Exchange on-premises servers, adds support for 

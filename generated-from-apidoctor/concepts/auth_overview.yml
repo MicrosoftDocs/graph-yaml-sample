@@ -3,7 +3,7 @@ uid: graph.auth_overview
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/auth_overview.md
 summary:
-  heading: Get access tokens to call Microsoft Graph
+  heading: "Get access tokens to call Microsoft Graph"
   intro: |
     To call Microsoft Graph, your app must acquire an access token from Azure Active Directory (Azure AD), Microsoft's cloud identity service. The access token contains information (or claims) about your app and the permissions it has for the resources and APIs available through Microsoft Graph. To get an access token, your app must be able to authenticate with Azure AD and be authorized by either a user or an administrator for access to the Microsoft Graph resources it needs. 
     This topic provides an overview of access tokens, Azure AD, and how your app can get access tokens. If you are already familiar with integrating an app with Azure AD to get tokens, then you can skip ahead to [Next Steps](#next-steps) for information and samples specific to Microsoft Graph. 

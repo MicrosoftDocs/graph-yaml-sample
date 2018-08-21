@@ -3,7 +3,7 @@ uid: graph.onenote_update_page
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/xref:graph.onenote_update_page
 summary:
-  heading: Update OneNote page content
+  heading: "Update OneNote page content"
   intro: |
     **Applies to** Consumer notebooks on OneDrive | Enterprise notebooks on Office 365
     To update the content of a OneNote page, you send a PATCH request to the page's *content* endpoint:
@@ -25,7 +25,7 @@ summary:
     Learn more about the [service root URL](../api-reference/v1.0/resources/onenote-api-overview.md#root-url).
     <a name="message-body"></a>
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     To update OneNote pages, you'll need to request appropriate permissions. Choose the lowest level of permissions that your app needs to do its work.
     
@@ -46,7 +46,7 @@ permissions:
 examples:
   - items:
     - Example requests:
-        heading: Example requests
+        heading: "Example requests"
         intro: |
           An update request contains one or more changes represented as JSON change objects. These objects can define different targets on the page and different actions and content for the targets.
           The following examples include JSON objects used in PATCH requests and complete PATCH requests:

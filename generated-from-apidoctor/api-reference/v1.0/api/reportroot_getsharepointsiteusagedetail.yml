@@ -3,23 +3,23 @@ uid: graph.reportroot_getsharepointsiteusagedetail
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/reportroot_getsharepointsiteusagedetail.md
 summary:
-  heading: reportRoot: getSharePointSiteUsageDetail
+  heading: "reportRoot: getSharePointSiteUsageDetail"
   intro: |
     Get details about SharePoint site usage.
     
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
   list:
-  - resource: Delegated (work or school account)
-    permission: Reports.Read.All
-  - resource: Delegated (personal Microsoft account)
-    permission: Not supported.
-  - resource: Application
-    permission: Reports.Read.All
+  - resource: "Delegated (work or school account)"
+    permission: "Reports.Read.All"
+  - resource: "Delegated (personal Microsoft account)"
+    permission: "Not supported."
+  - resource: "Application"
+    permission: "Reports.Read.All"
 httpRequest:
-  heading: HTTP request
+  heading: "HTTP request"
   sampleCode: |
     ```http
     GET /reports/getSharePointSiteUsageDetail(period='{period_value}')
@@ -35,16 +35,16 @@ httpRequest:
     |date|Date|Specifies the date for which you would like to view the users who performed any activity. {date_value} must have a format of YYYY-MM-DD. As this report is only available for the past 30 days, {date_value} should be a date from that range.
     
 requestHeaders:
-  heading: Request headers
+  heading: "Request headers"
   list:
-  - name: Authorization
-    value: 
-    description: Bearer {token}. Required.
-  - name: If-None-Match
-    value: 
-    description: If this request header is included and the eTag provided matches the current tag on the file, a 304 Not Modified response code is returned. Optional.
+  - name: "Authorization"
+    value: ""
+    description: "Bearer {token}. Required."
+  - name: "If-None-Match"
+    value: ""
+    description: "If this request header is included and the eTag provided matches the current tag on the file, a 304 Not Modified response code is returned. Optional."
 response:
-  heading: Response
+  heading: "Response"
   intro: |
     If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report. That URL can be found in the `Location` header in the response.
     Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.
@@ -67,9 +67,9 @@ response:
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         request:
-            heading: Request
+            heading: "Request"
             intro: |
               The following is an example of the request.
             sampleCode: |
@@ -78,7 +78,7 @@ examples:
               ```
               
         response:
-            heading: Response
+            heading: "Response"
             intro: |
               The following is an example of the response.
             sampleCode: |

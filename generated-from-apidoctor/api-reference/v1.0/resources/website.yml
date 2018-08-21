@@ -3,11 +3,11 @@ uid: graph.website
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/website.md
 summary:
-  heading: website resource type
+  heading: "website resource type"
   intro: |
     Represents a website.
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     The following is a JSON representation of the resource.
   sampleCode: |
@@ -20,14 +20,14 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: type
-    type: microsoft.graph.websiteType
-    description: The possible values are: other, home, work, blog, profile.
-  - property: address
-    type: String
-    description: The URL of the website.
-  - property: displayName
-    type: String
-    description: The display name of the web site.
+  - property: "type"
+    type: "microsoft.graph.websiteType"
+    description: "The possible values are: other, home, work, blog, profile."
+  - property: "address"
+    type: "String"
+    description: "The URL of the website."
+  - property: "displayName"
+    type: "String"
+    description: "The display name of the web site."

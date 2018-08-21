@@ -7,13 +7,13 @@ metadata:
   ms.date: 09/12/2017
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/systemFacet.md
 summary:
-  heading: System facet
+  heading: "System facet"
   intro: |
     The **System** facet indicates that the object is managed by the system for its own operation.
     Most apps should ignore items that have a System facet.
     **Note**: While this facet is empty today, in future API revisions the facet may be populated with additional properties.
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   sampleCode: |
     ```json
     {
@@ -21,6 +21,6 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   intro: |
     None. This facet is a null or not-null value and contains no properties.

@@ -3,7 +3,7 @@ uid: graph.opentypeextension
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.opentypeextension
 summary:
-  heading: openTypeExtension resource type (open extensions)
+  heading: "openTypeExtension resource type (open extensions)"
   intro: |
     Open extensions (formerly known as Office 365 data extensions) provide an easy way to directly add untyped properties to a resource in Microsoft Graph.
     Open extensions are represented by the **openTypeExtension** resource. Any open extension added to a resource shows up in the **extensions** navigation property, which is derived from the [extension](xref:graph.extension) abstract type. Each extension has an **extensionName** property which is the only pre-defined, writable property for all extensions, along with your custom data.
@@ -31,22 +31,22 @@ summary:
     * Avoid naming extensions in a variable manner (such as based on user input, etc.). Each time an open extension is created with a new name that has not been used in a user's mailbox before, a new MAPI named property is created. Removing the extension does not remove the named property.
     
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [Post](xref:graph.opentypeextension_post_opentypeextension)
-    type: [openTypeExtension](xref:graph.opentypeextension) (in an existing resource instance), or a new [contact](xref:graph.contact), [event](xref:graph.event), or [message](xref:graph.message) that contains an openTypeExtension object
-    description: Create an openTypeExtension object in an existing or new resource instance.
-  - method: [Get](xref:graph.opentypeextension_get)
-    type: [openTypeExtension](xref:graph.opentypeextension)
-    description: Read properties and relationships of openTypeExtension object.
-  - method: [Update](xref:graph.opentypeextension_update)
-    type: [openTypeExtension](xref:graph.opentypeextension)
-    description: Update openTypeExtension object.
-  - method: [Delete](xref:graph.opentypeextension_delete)
-    type: None
-    description: Delete openTypeExtension object.
+  - method: "[Post](xref:graph.opentypeextension_post_opentypeextension)"
+    type: "[openTypeExtension](xref:graph.opentypeextension) (in an existing resource instance), or a new [contact](xref:graph.contact), [event](xref:graph.event), or [message](xref:graph.message) that contains an openTypeExtension object"
+    description: "Create an openTypeExtension object in an existing or new resource instance."
+  - method: "[Get](xref:graph.opentypeextension_get)"
+    type: "[openTypeExtension](xref:graph.opentypeextension)"
+    description: "Read properties and relationships of openTypeExtension object."
+  - method: "[Update](xref:graph.opentypeextension_update)"
+    type: "[openTypeExtension](xref:graph.opentypeextension)"
+    description: "Update openTypeExtension object."
+  - method: "[Delete](xref:graph.opentypeextension_delete)"
+    type: "None"
+    description: "Delete openTypeExtension object."
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -58,15 +58,15 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: extensionName
-    type: String
-    description: A unique text identifier for an open type open extension. Required.
-  - property: id
-    type: String
-    description: A fully qualified identifier that concatenates the extension type with the extensionName. Read-only.
+  - property: "extensionName"
+    type: "String"
+    description: "A unique text identifier for an open type open extension. Required."
+  - property: "id"
+    type: "String"
+    description: "A fully qualified identifier that concatenates the extension type with the extensionName. Read-only."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

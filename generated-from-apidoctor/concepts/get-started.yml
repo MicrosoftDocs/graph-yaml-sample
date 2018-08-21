@@ -3,7 +3,7 @@ uid: graph.get-started
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/get-started.md
 summary:
-  heading: Getting started building Microsoft Graph apps
+  heading: "Getting started building Microsoft Graph apps"
   intro: |
     The articles in this section provide detailed guidance on how to build apps that connect to Microsoft Graph across a variety of languages and development platforms. Each article works from a starter project and walks you through the fundamental steps for connecting to Microsoft Graph:
     

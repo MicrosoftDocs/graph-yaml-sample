@@ -3,7 +3,7 @@ uid: graph.event_delta
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/event_delta.md
 summary:
-  heading: event: delta
+  heading: "event: delta"
   intro: |
     Get a set of events that have been added, deleted, or updated in a **calendarView** (a range of events) 
     of the user's primary calendar.
@@ -14,18 +14,18 @@ summary:
     a local store of a user's events in the primary calendar, without having to fetch all the events of that calendar 
     from the server every time.
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
   list:
-  - resource: Delegated (work or school account)
-    permission: Calendars.Read
-  - resource: Delegated (personal Microsoft account)
-    permission: Calendars.Read
-  - resource: Application
-    permission: Calendars.Read
+  - resource: "Delegated (work or school account)"
+    permission: "Calendars.Read"
+  - resource: "Delegated (personal Microsoft account)"
+    permission: "Calendars.Read"
+  - resource: "Application"
+    permission: "Calendars.Read"
 httpRequest:
-  heading: HTTP request
+  heading: "HTTP request"
   sampleCode: |
     ```http
     GET /me/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datetime}
@@ -33,7 +33,7 @@ httpRequest:
     ```
     
 queryParameters:
-  heading: Query parameters
+  heading: "Query parameters"
   intro: |
     Tracking changes in events incurs a round of one or more **delta** function calls. If you use any query parameter 
     (other than `$deltatoken` and `$skiptoken`), you must specify 
@@ -42,46 +42,46 @@ queryParameters:
     In subsequent requests, simply copy and apply the `nextLink` or `deltaLink` URL from the previous response, as that URL already 
     includes the encoded, desired parameters.
   list:
-  - name: startDateTime
-    value: String
-    description: The start date and time of the time range, represented in ISO 8601 format. For example, "2015-11-08T19:00:00.0000000".
-  - name: endDateTime
-    value: String
-    description: The end date and time of the time range, represented in ISO 8601 format. For example, "2015-11-08T20:00:00.0000000".
-  - name: $deltatoken
-    value: String
-    description: A state token returned in the deltaLink URL of the previous delta function call for the same calendar view, indicating the completion of that round of change tracking. Save and apply the entire deltaLink URL including this token in the first request of the next round of change tracking for that calendar view.
-  - name: $skiptoken
-    value: String
-    description: A state token returned in the nextLink URL of the previous delta function call, indicating there are further changes to be tracked in the same calendar view.
+  - name: "startDateTime"
+    value: "String"
+    description: "The start date and time of the time range, represented in ISO 8601 format. For example, "2015-11-08T19:00:00.0000000"."
+  - name: "endDateTime"
+    value: "String"
+    description: "The end date and time of the time range, represented in ISO 8601 format. For example, "2015-11-08T20:00:00.0000000"."
+  - name: "$deltatoken"
+    value: "String"
+    description: "A state token returned in the deltaLink URL of the previous delta function call for the same calendar view, indicating the completion of that round of change tracking. Save and apply the entire deltaLink URL including this token in the first request of the next round of change tracking for that calendar view."
+  - name: "$skiptoken"
+    value: "String"
+    description: "A state token returned in the nextLink URL of the previous delta function call, indicating there are further changes to be tracked in the same calendar view."
   outro: |
     When you do a delta query on a calendar view, expect to get all the properties you'd normally get from 
     a `GET /calendarview` request. `$select` is not supported in this case. 
 requestHeaders:
-  heading: Request headers
+  heading: "Request headers"
   list:
-  - name: Authorization
-    value: String
-    description: Bearer {token}. Required.
-  - name: Content-Type
-    value: String
-    description: application/json. Required.
-  - name: Prefer
-    value: String
-    description: odata.maxpagesize={x}. Optional.
-  - name: Prefer
-    value: String
-    description: {Time zone}. Optional, UTC assumed if absent.
+  - name: "Authorization"
+    value: "String"
+    description: "Bearer {token}. Required."
+  - name: "Content-Type"
+    value: "String"
+    description: "application/json. Required."
+  - name: "Prefer"
+    value: "String"
+    description: "odata.maxpagesize={x}. Optional."
+  - name: "Prefer"
+    value: "String"
+    description: "{Time zone}. Optional, UTC assumed if absent."
 response:
-  heading: Response
+  heading: "Response"
   intro: |
     If successful, this method returns a `200 OK` response code and [event](xref:graph.event) collection object in the response body.
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         request:
-            heading: Request
+            heading: "Request"
             intro: |
               The following example shows how to make a single **delta** function call, and limit the maximum number of events 
               in the response body to 2.
@@ -95,7 +95,7 @@ examples:
               ```
               
         response:
-            heading: Response
+            heading: "Response"
             intro: |
               If the request is successful, the response would include a state token, which is either a _skipToken_ 
               (in an _@odata.nextLink_ response header) or a _deltaToken_ (in an _@odata.deltaLink_ response header). 

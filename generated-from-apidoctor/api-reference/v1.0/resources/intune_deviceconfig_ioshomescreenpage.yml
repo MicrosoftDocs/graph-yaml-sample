@@ -3,11 +3,11 @@ uid: graph.intune_deviceconfig_ioshomescreenpage
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_ioshomescreenpage.md
 summary:
-  heading: iosHomeScreenPage resource type
+  heading: "iosHomeScreenPage resource type"
   intro: |
     A page containing apps and folders on the Home Screen
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -38,15 +38,15 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: displayName
-    type: String
-    description: Name of the page
-  - property: icons
-    type: Collection(microsoft.graph.iosHomeScreenItem)
-    description: A list of apps and folders to appear on a page. This collection can contain a maximum of 500 elements.
+  - property: "displayName"
+    type: "String"
+    description: "Name of the page"
+  - property: "icons"
+    type: "Collection(microsoft.graph.iosHomeScreenItem)"
+    description: "A list of apps and folders to appear on a page. This collection can contain a maximum of 500 elements."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

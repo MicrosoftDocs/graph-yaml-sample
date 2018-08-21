@@ -3,11 +3,11 @@ uid: graph.patchcontentcommand
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/patchcontentcommand.md
 summary:
-  heading: patchContentCommand resource type
+  heading: "patchContentCommand resource type"
   intro: |
     The changes to make to a OneNote page in a PATCH request.
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource, which is sent in the body of the [PATCH pages/{id}`](xref:graph.page_update) request. 
   sampleCode: |
@@ -21,17 +21,17 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: action
-    type: microsoft.graph.onenotePatchActionType
-    description: The action to perform on the target element. The possible values are: replace, append, delete, insert, or prepend.
-  - property: content
-    type: String
-    description: A string of well-formed HTML to add to the page, and any image or file binary data. If the content contains binary data, the request must be sent using the multipart/form-data content type with a "Commands" part.
-  - property: position
-    type: microsoft.graph.onenotePatchInsertPosition
-    description: The location to add the supplied content, relative to the target element. The possible values are: after (default) or before.
-  - property: target
-    type: String
-    description: The element to update. Must be the #<data-id> or the generated <id> of the element, or the body or title keyword.
+  - property: "action"
+    type: "microsoft.graph.onenotePatchActionType"
+    description: "The action to perform on the target element. The possible values are: replace, append, delete, insert, or prepend."
+  - property: "content"
+    type: "String"
+    description: "A string of well-formed HTML to add to the page, and any image or file binary data. If the content contains binary data, the request must be sent using the multipart/form-data content type with a "Commands" part."
+  - property: "position"
+    type: "microsoft.graph.onenotePatchInsertPosition"
+    description: "The location to add the supplied content, relative to the target element. The possible values are: after (default) or before."
+  - property: "target"
+    type: "String"
+    description: "The element to update. Must be the #<data-id> or the generated <id> of the element, or the body or title keyword."

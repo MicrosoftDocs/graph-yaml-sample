@@ -7,34 +7,34 @@ metadata:
   ms.date: 09/10/2017
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/shares_get.md
 summary:
-  heading: Accessing shared DriveItems
+  heading: "Accessing shared DriveItems"
   intro: |
     Access a shared [DriveItem](xref:graph.driveitem) or a collection of shared items by using a **shareId** or sharing URL.
     To use a sharing URL with this API, your app needs to [transform the URL into a sharing token](#encoding-sharing-urls).
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
   list:
-  - resource: Delegated (work or school account)
-    permission: Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All
-  - resource: Delegated (personal Microsoft account)
-    permission: Files.ReadWrite, Files.ReadWrite.All
-  - resource: Application
-    permission: Files.ReadWrite.All, Sites.ReadWrite.All
+  - resource: "Delegated (work or school account)"
+    permission: "Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All"
+  - resource: "Delegated (personal Microsoft account)"
+    permission: "Files.ReadWrite, Files.ReadWrite.All"
+  - resource: "Application"
+    permission: "Files.ReadWrite.All, Sites.ReadWrite.All"
 httpRequest:
-  heading: HTTP request
+  heading: "HTTP request"
   sampleCode: |
     ```http
     GET /shares/{shareIdOrEncodedSharingUrl}
     ```
     
 parameters:
-  heading: Path Parameters
+  heading: "Path Parameters"
   list:
-  - name: sharingTokenOrUrl
-    value: String
-    description: Required. A sharing token as returned by the API or a properly encoded sharing URL.
+  - name: "sharingTokenOrUrl"
+    value: "String"
+    description: "Required. A sharing token as returned by the API or a properly encoded sharing URL."
   outro: |
     ### Encoding sharing URLs
     To encode a sharing URL, use the following logic:
@@ -50,15 +50,15 @@ parameters:
     string encodedUrl = "u!" + base64Value.TrimEnd('=').Replace('/','_').Replace('+','-');
 
 response:
-  heading: Response
+  heading: "Response"
   intro: |
     If successful, this method returns a `200 OK` response code and a [sharedDriveItem](xref:graph.shareddriveitem) resource in the response body.
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         request:
-            heading: Request
+            heading: "Request"
             intro: |
               Here is an example of the request to retrieve a shared item:
             sampleCode: |
@@ -67,7 +67,7 @@ examples:
               ```
               
         response:
-            heading: Response
+            heading: "Response"
             intro: |
               Here is an example of the response.
             sampleCode: |
@@ -92,9 +92,9 @@ examples:
               While the [**SharedDriveItem**](xref:graph.shareddriveitem) contains some useful information, most apps will want to directly access the shared [DriveItem](xref:graph.driveitem).
               The **SharedDriveItem** resource includes a **root** and **items** relationships which can access content within the scope of the shared item.
     - Example (single file):
-        heading: Example (single file)
+        heading: "Example (single file)"
         request:
-            heading: Request
+            heading: "Request"
             intro: |
               By requesting the **driveItem** relationship, the **DriveItem** that was shared will be returned.
             sampleCode: |
@@ -103,7 +103,7 @@ examples:
               ```
               
         response:
-            heading: Response
+            heading: "Response"
             sampleCode: |
               ```http
               HTTP/1.1 200 OK
@@ -119,9 +119,9 @@ examples:
               ```
               
     - Example (shared folder):
-        heading: Example (shared folder)
+        heading: "Example (shared folder)"
         request:
-            heading: Request
+            heading: "Request"
             intro: |
               By requesting the **driveItem** relationship and expanding the **children** collection, the **DriveItem** that was shared will be returned along with the files within the shared folder.
             sampleCode: |
@@ -130,7 +130,7 @@ examples:
               ```
               
         response:
-            heading: Response
+            heading: "Response"
             sampleCode: |
               ```http
               HTTP/1.1 200 OK
@@ -164,7 +164,7 @@ examples:
               Read the [Error Responses][error-response] topic for more information about
               how errors are returned.
 remarks:
-  heading: Remarks
+  heading: "Remarks"
   intro: |
     * For OneDrive for Business and SharePoint, the Shares API always requires authentication and cannot be used to access anonymously shared content without a user context.
     

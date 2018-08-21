@@ -3,15 +3,15 @@ uid: graph.domaindnsunavailablerecord
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/domaindnsunavailablerecord.md
 summary:
-  heading: domainDnsUnavailableRecord resource type
+  heading: "domainDnsUnavailableRecord resource type"
   intro: |
     When you query for the navigation property **serviceConfigurationRecords** for a [Domain](xref:graph.domain) entity, you may get back one or more [DomainDnsCnameRecord](xref:graph.domaindnscnamerecord), [DomainDnsMxRecord](xref:graph.domaindnsmxrecord), [DomainDnsSrvRecord](xref:graph.domaindnssrvrecord), and/or [DomainDnsTxtRecord](xref:graph.domaindnstxtrecord) entities. These entities indicate what DNS records you must add to the zone file of the domain, before the domain can be used by Microsoft Online Services. When it is not possible to generate such entities, a DomainDnsUnavailableRecord Entity is returned instead. Inherited from [DomainDnsRecord](xref:graph.domaindnsrecord) entity.
 methods:
-  heading: Methods
+  heading: "Methods"
   intro: |
     Direct queries to this resource are not supported. Please see the [domain](xref:graph.domain) topic for information on how to query for domain service records.
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -22,12 +22,12 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: description
-    type: String
-    description: Provides the reason why the DomainDnsUnavailableRecord entity is returned.
+  - property: "description"
+    type: "String"
+    description: "Provides the reason why the DomainDnsUnavailableRecord entity is returned."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

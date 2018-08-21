@@ -3,32 +3,32 @@ uid: graph.intune_notification_notificationmessagetemplate
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_notification_notificationmessagetemplate.md
 summary:
-  heading: notificationMessageTemplate resource type
+  heading: "notificationMessageTemplate resource type"
   intro: |
     Notification messages are messages that are sent to end users who are determined to be not-compliant with the compliance policies defined by the administrator. Administrators choose notifications and configure them in the Intune Admin Console using the compliance policy creation page under the “Actions for non-compliance” section. Use the notificationMessageTemplate object to create your own custom notifications for administrators to choose while configuring actions for non-compliance.
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [List notificationMessageTemplates](xref:graph.intune_notification_notificationmessagetemplate_list)
-    type: [notificationMessageTemplate](xref:graph.intune_notification_notificationmessagetemplate) collection
-    description: List properties and relationships of the notificationMessageTemplate objects.
-  - method: [Get notificationMessageTemplate](xref:graph.intune_notification_notificationmessagetemplate_get)
-    type: [notificationMessageTemplate](xref:graph.intune_notification_notificationmessagetemplate)
-    description: Read properties and relationships of the notificationMessageTemplate object.
-  - method: [Create notificationMessageTemplate](xref:graph.intune_notification_notificationmessagetemplate_create)
-    type: [notificationMessageTemplate](xref:graph.intune_notification_notificationmessagetemplate)
-    description: Create a new notificationMessageTemplate object.
-  - method: [Delete notificationMessageTemplate](xref:graph.intune_notification_notificationmessagetemplate_delete)
-    type: None
-    description: Deletes a notificationMessageTemplate.
-  - method: [Update notificationMessageTemplate](xref:graph.intune_notification_notificationmessagetemplate_update)
-    type: [notificationMessageTemplate](xref:graph.intune_notification_notificationmessagetemplate)
-    description: Update the properties of a notificationMessageTemplate object.
-  - method: [sendTestMessage action](xref:graph.intune_notification_notificationmessagetemplate_sendtestmessage)
-    type: None
-    description: Sends test message using the specified notificationMessageTemplate in the default locale
+  - method: "[List notificationMessageTemplates](xref:graph.intune_notification_notificationmessagetemplate_list)"
+    type: "[notificationMessageTemplate](xref:graph.intune_notification_notificationmessagetemplate) collection"
+    description: "List properties and relationships of the notificationMessageTemplate objects."
+  - method: "[Get notificationMessageTemplate](xref:graph.intune_notification_notificationmessagetemplate_get)"
+    type: "[notificationMessageTemplate](xref:graph.intune_notification_notificationmessagetemplate)"
+    description: "Read properties and relationships of the notificationMessageTemplate object."
+  - method: "[Create notificationMessageTemplate](xref:graph.intune_notification_notificationmessagetemplate_create)"
+    type: "[notificationMessageTemplate](xref:graph.intune_notification_notificationmessagetemplate)"
+    description: "Create a new notificationMessageTemplate object."
+  - method: "[Delete notificationMessageTemplate](xref:graph.intune_notification_notificationmessagetemplate_delete)"
+    type: "None"
+    description: "Deletes a notificationMessageTemplate."
+  - method: "[Update notificationMessageTemplate](xref:graph.intune_notification_notificationmessagetemplate_update)"
+    type: "[notificationMessageTemplate](xref:graph.intune_notification_notificationmessagetemplate)"
+    description: "Update the properties of a notificationMessageTemplate object."
+  - method: "[sendTestMessage action](xref:graph.intune_notification_notificationmessagetemplate_sendtestmessage)"
+    type: "None"
+    description: "Sends test message using the specified notificationMessageTemplate in the default locale"
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -44,26 +44,26 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: id
-    type: String
-    description: Key of the entity.
-  - property: lastModifiedDateTime
-    type: DateTimeOffset
-    description: DateTime the object was last modified.
-  - property: displayName
-    type: String
-    description: Display name for the Notification Message Template.
-  - property: defaultLocale
-    type: String
-    description: The default locale to fallback onto when the requested locale is not available.
-  - property: brandingOptions
-    type: microsoft.graph.notificationTemplateBrandingOptions
-    description: The Message Template Branding Options. Branding is defined in the Intune Admin Console. The possible values are: none, includeCompanyLogo, includeCompanyName, includeContactInformation.
+  - property: "id"
+    type: "String"
+    description: "Key of the entity."
+  - property: "lastModifiedDateTime"
+    type: "DateTimeOffset"
+    description: "DateTime the object was last modified."
+  - property: "displayName"
+    type: "String"
+    description: "Display name for the Notification Message Template."
+  - property: "defaultLocale"
+    type: "String"
+    description: "The default locale to fallback onto when the requested locale is not available."
+  - property: "brandingOptions"
+    type: "microsoft.graph.notificationTemplateBrandingOptions"
+    description: "The Message Template Branding Options. Branding is defined in the Intune Admin Console. The possible values are: none, includeCompanyLogo, includeCompanyName, includeContactInformation."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   list:
-  - relationship: localizedNotificationMessages
-    type: Collection(microsoft.graph.localizedNotificationMessage)
-    description: The list of localized messages for this Notification Message Template.
+  - relationship: "localizedNotificationMessages"
+    type: "Collection(microsoft.graph.localizedNotificationMessage)"
+    description: "The list of localized messages for this Notification Message Template."

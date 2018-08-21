@@ -3,15 +3,15 @@ uid: graph.domaindnsmxrecord
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/domaindnsmxrecord.md
 summary:
-  heading: domainDnsMxRecord resource type
+  heading: "domainDnsMxRecord resource type"
   intro: |
     Represents a MX record added to the DNS zone file of a particular domain in the tenant. Inherited from [DomainDnsRecord](xref:graph.domaindnsrecord) entity.
 methods:
-  heading: Methods
+  heading: "Methods"
   intro: |
     Direct queries to this resource are not supported. Please see the [domain](xref:graph.domain) topic for information on how to query for domain service records.
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -29,33 +29,33 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: id
-    type: String
-    description: Unique identifier assigned to this entity. Not nullable, Read-only.
-  - property: isOptional
-    type: Boolean
-    description: If false, the MX record must be configured by the customer at the DNS host for Microsoft Online Services to operate correctly with the domain.
-  - property: label
-    type: String
-    description: Value used when configuring the alias/host/name property of the MX record at the DNS host.
-  - property: mailExchange
-    type: String
-    description: Value used when configuring the answer/destination/value of the MX record at the DNS host.
-  - property: preference
-    type: Int32
-    description: Value used when configuring the Preference/Priority property of the MX record at the DNS host.
-  - property: recordType
-    type: String
-    description: Type of DNS record. The value is always Mx. Key
-  - property: supportedService
-    type: String
-    description: Microsoft Online Service or feature that has a dependency on this MX record.Can be one of the following values: null, Email, Sharepoint, EmailInternalRelayOnly, OfficeCommunicationsOnline, SharePointDefaultDomain, FullRedelegation, SharePointPublic, OrgIdAuthentication, Yammer, Intune
-  - property: ttl
-    type: Int32
-    description: Value to use when configuring the time-to-live (ttl) property of the MX record at the DNS host. Not nullable
+  - property: "id"
+    type: "String"
+    description: "Unique identifier assigned to this entity. Not nullable, Read-only."
+  - property: "isOptional"
+    type: "Boolean"
+    description: "If false, the MX record must be configured by the customer at the DNS host for Microsoft Online Services to operate correctly with the domain."
+  - property: "label"
+    type: "String"
+    description: "Value used when configuring the alias/host/name property of the MX record at the DNS host."
+  - property: "mailExchange"
+    type: "String"
+    description: "Value used when configuring the answer/destination/value of the MX record at the DNS host."
+  - property: "preference"
+    type: "Int32"
+    description: "Value used when configuring the Preference/Priority property of the MX record at the DNS host."
+  - property: "recordType"
+    type: "String"
+    description: "Type of DNS record. The value is always Mx. Key"
+  - property: "supportedService"
+    type: "String"
+    description: "Microsoft Online Service or feature that has a dependency on this MX record.Can be one of the following values: null, Email, Sharepoint, EmailInternalRelayOnly, OfficeCommunicationsOnline, SharePointDefaultDomain, FullRedelegation, SharePointPublic, OrgIdAuthentication, Yammer, Intune"
+  - property: "ttl"
+    type: "Int32"
+    description: "Value to use when configuring the time-to-live (ttl) property of the MX record at the DNS host. Not nullable"
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

@@ -3,21 +3,21 @@ uid: graph.intune_onboarding_devicemanagementpartnertenantstate
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_onboarding_devicemanagementpartnertenantstate.md
 summary:
-  heading: deviceManagementPartnerTenantState enum type
+  heading: "deviceManagementPartnerTenantState enum type"
   intro: |
     Partner state of this tenant.
 enum:
-  heading: Members
+  heading: "Members"
   table:
-  - member: unknown
-    description: Partner state is unknown.
-  - member: unavailable
-    description: Partner is unavailable.
-  - member: enabled
-    description: Partner is enabled.
-  - member: terminated
-    description: Partner connection is terminated.
-  - member: rejected
-    description: Partner messages are rejected.
-  - member: unresponsive
-    description: Partner is unresponsive.
+  - member: "unknown"
+    description: "Partner state is unknown."
+  - member: "unavailable"
+    description: "Partner is unavailable."
+  - member: "enabled"
+    description: "Partner is enabled."
+  - member: "terminated"
+    description: "Partner connection is terminated."
+  - member: "rejected"
+    description: "Partner messages are rejected."
+  - member: "unresponsive"
+    description: "Partner is unresponsive."

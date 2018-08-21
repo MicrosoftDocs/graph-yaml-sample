@@ -3,13 +3,13 @@ uid: graph.intune_wip_applicationtype
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_wip_applicationtype.md
 summary:
-  heading: applicationType enum type
+  heading: "applicationType enum type"
   intro: |
     Possible types of Application
 enum:
-  heading: Members
+  heading: "Members"
   table:
-  - member: universal
-    description: The windows universal application
-  - member: desktop
-    description: The windows desktop application
+  - member: "universal"
+    description: "The windows universal application"
+  - member: "desktop"
+    description: "The windows desktop application"

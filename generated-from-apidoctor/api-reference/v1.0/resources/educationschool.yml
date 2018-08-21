@@ -3,41 +3,41 @@ uid: graph.educationschool
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.educationschool
 summary:
-  heading: educationSchool resource type
+  heading: "educationSchool resource type"
   intro: |
     A resource representing a school and used to manage the classes, teachers, and students of the represented school.  
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [Get](xref:graph.educationschool_get)
-    type: [educationSchool](xref:graph.educationschool)
-    description: Read properties and relationships of an educationSchool object.
-  - method: [Add class](xref:graph.educationschool_post_classes)
-    type: [educationClass](xref:graph.educationclass)
-    description: Add a new educationClass for the school by posting to the classes navigation property.
-  - method: [List classes](xref:graph.educationschool_list_classes)
-    type: [educationClass](xref:graph.educationclass) collection
-    description: Get the educationClass object collection.
-  - method: [Remove class](xref:graph.educationschool_delete_classes)
-    type: [educationClass](xref:graph.educationclass)
-    description: Remove an educationClass from the school through the classes navigation property.
-  - method: [Add user](xref:graph.educationschool_post_users)
-    type: [educationUser](xref:graph.educationuser)
-    description: Add a new educationUser for the school by posting to the users navigation property.
-  - method: [List users](xref:graph.educationschool_list_users)
-    type: [educationUser](xref:graph.educationuser) collection
-    description: Get the educationUser object collection.
-  - method: [Remove user](xref:graph.educationschool_delete_users)
-    type: [educationUser](xref:graph.educationuser)
-    description: Remove an educationUser from the school through the users navigation property.
-  - method: [Update](xref:graph.educationschool_update)
-    type: [educationSchool](xref:graph.educationschool)
-    description: Update an educationSchool object.
-  - method: [Delete](xref:graph.educationschool_delete)
-    type: None
-    description: Delete an educationSchool object.
+  - method: "[Get](xref:graph.educationschool_get)"
+    type: "[educationSchool](xref:graph.educationschool)"
+    description: "Read properties and relationships of an educationSchool object."
+  - method: "[Add class](xref:graph.educationschool_post_classes)"
+    type: "[educationClass](xref:graph.educationclass)"
+    description: "Add a new educationClass for the school by posting to the classes navigation property."
+  - method: "[List classes](xref:graph.educationschool_list_classes)"
+    type: "[educationClass](xref:graph.educationclass) collection"
+    description: "Get the educationClass object collection."
+  - method: "[Remove class](xref:graph.educationschool_delete_classes)"
+    type: "[educationClass](xref:graph.educationclass)"
+    description: "Remove an educationClass from the school through the classes navigation property."
+  - method: "[Add user](xref:graph.educationschool_post_users)"
+    type: "[educationUser](xref:graph.educationuser)"
+    description: "Add a new educationUser for the school by posting to the users navigation property."
+  - method: "[List users](xref:graph.educationschool_list_users)"
+    type: "[educationUser](xref:graph.educationuser) collection"
+    description: "Get the educationUser object collection."
+  - method: "[Remove user](xref:graph.educationschool_delete_users)"
+    type: "[educationUser](xref:graph.educationuser)"
+    description: "Remove an educationUser from the school through the users navigation property."
+  - method: "[Update](xref:graph.educationschool_update)"
+    type: "[educationSchool](xref:graph.educationschool)"
+    description: "Update an educationSchool object."
+  - method: "[Delete](xref:graph.educationschool_delete)"
+    type: "None"
+    description: "Delete an educationSchool object."
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     The following is a JSON representation of the resource.
   sampleCode: |
@@ -63,62 +63,62 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: id
-    type: String
-    description: GUID of this school.
-  - property: displayName
-    type: String
-    description: Display name of the school.
-  - property: description
-    type: String
-    description: Description of the school.
-  - property: status
-    type: String
-    description: Read-Only. The possible values are: inactive, active, expired, deleteable.
-  - property: externalSource
-    type: microsoft.graph.educationExternalSource
-    description: Read-Only.  The possible values are: sis, manual, unknownFutureValue.
-  - property: principalEmail
-    type: String
-    description: Email address of the principal.
-  - property: principalName
-    type: String
-    description: Name of the principal.
-  - property: externalPrincipalId
-    type: String
-    description: ID of principal in syncing system.
-  - property: highestGrade
-    type: String
-    description: Highest grade taught.
-  - property: lowestGrade
-    type: String
-    description: Lowest grade taught.
-  - property: schoolNumber
-    type: String
-    description: School Number.
-  - property: externalId
-    type: String
-    description: ID of school in syncing system.
-  - property: phone
-    type: String
-    description: Phone number of school.
-  - property: fax
-    type: String
-    description: Fax number of school.
-  - property: address
-    type: microsoft.graph.physicalAddress
-    description: Address of the school.
-  - property: createdBy
-    type: microsoft.graph.identitySet
-    description: Entity who created the school.
+  - property: "id"
+    type: "String"
+    description: "GUID of this school."
+  - property: "displayName"
+    type: "String"
+    description: "Display name of the school."
+  - property: "description"
+    type: "String"
+    description: "Description of the school."
+  - property: "status"
+    type: "String"
+    description: "Read-Only. The possible values are: inactive, active, expired, deleteable."
+  - property: "externalSource"
+    type: "microsoft.graph.educationExternalSource"
+    description: "Read-Only.  The possible values are: sis, manual, unknownFutureValue."
+  - property: "principalEmail"
+    type: "String"
+    description: "Email address of the principal."
+  - property: "principalName"
+    type: "String"
+    description: "Name of the principal."
+  - property: "externalPrincipalId"
+    type: "String"
+    description: "ID of principal in syncing system."
+  - property: "highestGrade"
+    type: "String"
+    description: "Highest grade taught."
+  - property: "lowestGrade"
+    type: "String"
+    description: "Lowest grade taught."
+  - property: "schoolNumber"
+    type: "String"
+    description: "School Number."
+  - property: "externalId"
+    type: "String"
+    description: "ID of school in syncing system."
+  - property: "phone"
+    type: "String"
+    description: "Phone number of school."
+  - property: "fax"
+    type: "String"
+    description: "Fax number of school."
+  - property: "address"
+    type: "microsoft.graph.physicalAddress"
+    description: "Address of the school."
+  - property: "createdBy"
+    type: "microsoft.graph.identitySet"
+    description: "Entity who created the school."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   list:
-  - relationship: classes
-    type: Collection(microsoft.graph.educationClass)
-    description: Classes taught at the school. Nullable.
-  - relationship: users
-    type: Collection(microsoft.graph.educationUser)
-    description: Users in the school. Nullable.
+  - relationship: "classes"
+    type: "Collection(microsoft.graph.educationClass)"
+    description: "Classes taught at the school. Nullable."
+  - relationship: "users"
+    type: "Collection(microsoft.graph.educationUser)"
+    description: "Users in the school. Nullable."

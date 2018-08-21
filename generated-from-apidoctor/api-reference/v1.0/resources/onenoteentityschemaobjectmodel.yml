@@ -3,11 +3,11 @@ uid: graph.onenoteentityschemaobjectmodel
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/onenoteentityschemaobjectmodel.md
 summary:
-  heading: onenoteEntitySchemaObjectModel resource
+  heading: "onenoteEntitySchemaObjectModel resource"
   intro: |
     This is a base type for OneNote entities.
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -18,8 +18,8 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: createdDateTime
-    type: DateTimeOffset
-    description: The date and time when the page was created. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Read-only.
+  - property: "createdDateTime"
+    type: "DateTimeOffset"
+    description: "The date and time when the page was created. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Read-only."

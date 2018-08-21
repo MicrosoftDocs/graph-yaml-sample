@@ -3,22 +3,22 @@ uid: graph.event_update
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/event_update.md
 summary:
-  heading: Update event
+  heading: "Update event"
   intro: |
     Update the properties of the [event](xref:graph.event) object.
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
   list:
-  - resource: Delegated (work or school account)
-    permission: Calendars.ReadWrite
-  - resource: Delegated (personal Microsoft account)
-    permission: Calendars.ReadWrite
-  - resource: Application
-    permission: Calendars.ReadWrite
+  - resource: "Delegated (work or school account)"
+    permission: "Calendars.ReadWrite"
+  - resource: "Delegated (personal Microsoft account)"
+    permission: "Calendars.ReadWrite"
+  - resource: "Application"
+    permission: "Calendars.ReadWrite"
 httpRequest:
-  heading: HTTP request
+  heading: "HTTP request"
   sampleCode: |
     ```http
     PATCH /me/events/{id}
@@ -40,13 +40,13 @@ httpRequest:
     ```
     
 requestHeaders:
-  heading: Request headers
+  heading: "Request headers"
   list:
-  - name: Authorization
-    value: String
-    description: Bearer {token}. Required.
+  - name: "Authorization"
+    value: "String"
+    description: "Bearer {token}. Required."
 requestBody:
-  heading: Request body
+  heading: "Request body"
   intro: |
     In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
     |Property|Type|Description
@@ -71,16 +71,16 @@ requestBody:
     add, update, or delete your own app-specific data in custom properties of an extension in an existing **event** instance.  
     If the **event** you're updating is the master event of a recurring series, contains multiple attendees, and has instances that have been updated separately, multiple notification emails will be sent out: one for the master series and one per instance that has been updated.  
 response:
-  heading: Response
+  heading: "Response"
   intro: |
     If successful, this method returns a `200 OK` response code and updated [event](xref:graph.event) object in the response body.  
     
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         request:
-            heading: Request
+            heading: "Request"
             intro: |
               Here is an example of the request.
             sampleCode: |
@@ -104,7 +104,7 @@ examples:
               ```
               
         response:
-            heading: Response
+            heading: "Response"
             intro: |
               Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
             sampleCode: |

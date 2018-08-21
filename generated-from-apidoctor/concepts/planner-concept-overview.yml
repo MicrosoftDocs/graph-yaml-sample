@@ -3,7 +3,7 @@ uid: graph.planner-concept-overview
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/planner-concept-overview.md
 summary:
-  heading: Planner tasks and plans API overview
+  heading: "Planner tasks and plans API overview"
   intro: |
     Planner provides a simple and visual way for teams to organize their work. Customers can use Planner to create plans, organize and assign tasks, share progress, and collaborate on content.  Planner provides several interactive experiences including a task board, a charts page, and a schedule view, as well as integrations throughout Office 365.
     **Office 365 Planner task board**

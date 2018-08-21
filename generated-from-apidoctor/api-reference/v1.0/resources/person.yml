@@ -3,17 +3,17 @@ uid: graph.person
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/person.md
 summary:
-  heading: person resource type
+  heading: "person resource type"
   intro: |
     An aggregation of information about a person from across mail, contacts, and social networks. People can be local contacts, contacts from social networking or your organization's directory, and people from recent communications (such as email and Skype).
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [List people](xref:graph.user_list_people)
-    type: **person**
-    description: Get a collection of person objects ordered by their relevance to the user.
+  - method: "[List people](xref:graph.user_list_people)"
+    type: "**person**"
+    description: "Get a collection of person objects ordered by their relevance to the user."
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     The following is a JSON representation of the resource.
   sampleCode: |
@@ -43,69 +43,69 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: birthday
-    type: String
-    description: The person's birthday.
-  - property: companyName
-    type: String
-    description: The name of the person's company.
-  - property: department
-    type: String
-    description: The person's department.
-  - property: displayName
-    type: String
-    description: The person's display name.
-  - property: scoredEmailAddresses
-    type: Collection(microsoft.graph.scoredEmailAddress)
-    description: The person's email addresses.
-  - property: givenName
-    type: String
-    description: The person's given name.
-  - property: id
-    type: String
-    description: The person's unique identifier. Read-only.
-  - property: imAddress
-    type: String
-    description: The instant message voice over IP (VOIP) session initiation protocol (SIP) address for the user. Read-only.
-  - property: isFavorite
-    type: Boolean
-    description: true if the user has flagged this person as a favorite.
-  - property: jobTitle
-    type: String
-    description: The person's job title.
-  - property: officeLocation
-    type: String
-    description: The location of the person's office.
-  - property: personNotes
-    type: String
-    description: Free-form notes that the user has taken about this person.
-  - property: personType
-    type: microsoft.graph.personType
-    description: The type of person.
-  - property: phones
-    type: Collection(microsoft.graph.phone)
-    description: The person's phone numbers.
-  - property: postalAddresses
-    type: Collection(microsoft.graph.location)
-    description: The person's addresses.
-  - property: profession
-    type: String
-    description: The person's profession.
-  - property: surname
-    type: String
-    description: The person's surname.
-  - property: userPrincipalName
-    type: String
-    description: The user principal name (UPN) of the person. The UPN is an Internet-style login name for the person based on the Internet standard RFC 822. By convention, this should map to the person's email name. The general format is alias@domain.
-  - property: websites
-    type: Collection(microsoft.graph.website)
-    description: The person's websites.
-  - property: yomiCompany
-    type: String
-    description: The phonetic Japanese name of the person's company.
+  - property: "birthday"
+    type: "String"
+    description: "The person's birthday."
+  - property: "companyName"
+    type: "String"
+    description: "The name of the person's company."
+  - property: "department"
+    type: "String"
+    description: "The person's department."
+  - property: "displayName"
+    type: "String"
+    description: "The person's display name."
+  - property: "scoredEmailAddresses"
+    type: "Collection(microsoft.graph.scoredEmailAddress)"
+    description: "The person's email addresses."
+  - property: "givenName"
+    type: "String"
+    description: "The person's given name."
+  - property: "id"
+    type: "String"
+    description: "The person's unique identifier. Read-only."
+  - property: "imAddress"
+    type: "String"
+    description: "The instant message voice over IP (VOIP) session initiation protocol (SIP) address for the user. Read-only."
+  - property: "isFavorite"
+    type: "Boolean"
+    description: "true if the user has flagged this person as a favorite."
+  - property: "jobTitle"
+    type: "String"
+    description: "The person's job title."
+  - property: "officeLocation"
+    type: "String"
+    description: "The location of the person's office."
+  - property: "personNotes"
+    type: "String"
+    description: "Free-form notes that the user has taken about this person."
+  - property: "personType"
+    type: "microsoft.graph.personType"
+    description: "The type of person."
+  - property: "phones"
+    type: "Collection(microsoft.graph.phone)"
+    description: "The person's phone numbers."
+  - property: "postalAddresses"
+    type: "Collection(microsoft.graph.location)"
+    description: "The person's addresses."
+  - property: "profession"
+    type: "String"
+    description: "The person's profession."
+  - property: "surname"
+    type: "String"
+    description: "The person's surname."
+  - property: "userPrincipalName"
+    type: "String"
+    description: "The user principal name (UPN) of the person. The UPN is an Internet-style login name for the person based on the Internet standard RFC 822. By convention, this should map to the person's email name. The general format is alias@domain."
+  - property: "websites"
+    type: "Collection(microsoft.graph.website)"
+    description: "The person's websites."
+  - property: "yomiCompany"
+    type: "String"
+    description: "The phonetic Japanese name of the person's company."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None.

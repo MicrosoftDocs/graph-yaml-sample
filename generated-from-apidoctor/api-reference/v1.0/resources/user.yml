@@ -3,7 +3,7 @@ uid: graph.user
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.user
 summary:
-  heading: user resource type
+  heading: "user resource type"
   intro: |
     Represents an Azure AD user account. Inherits from [directoryObject](xref:graph.directoryobject).
     This resource supports:
@@ -12,130 +12,130 @@ summary:
     * Using [delta query](xref:graph.delta_query_overview) to track incremental additions, deletions, and updates, by providing a [delta](xref:graph.user_delta) function.
     
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [List users](xref:graph.user_list)
-    type: [user](xref:graph.user) collection
-    description: Get a list of user objects.
-  - method: [Create user](xref:graph.user_post_users)
-    type: [user](xref:graph.user)
-    description: Create a new user object.
-  - method: [Get user](xref:graph.user_get)
-    type: [user](xref:graph.user)
-    description: Read properties and relationships of user object.
-  - method: [Update user](xref:graph.user_update)
-    type: [user](xref:graph.user)
-    description: Update user object.
-  - method: [Delete user](xref:graph.user_delete)
-    type: None
-    description: Delete user object.
-  - method: [List messages](xref:graph.user_list_messages)
-    type: [Message](xref:graph.message) collection
-    description: Get all the messages in the signed-in user's mailbox.
-  - method: [Create Message](xref:graph.user_post_messages)
-    type: [Message](xref:graph.message)
-    description: Create a new Message by posting to the messages collection.
-  - method: [List mailFolders](xref:graph.user_list_mailfolders)
-    type: [MailFolder](xref:graph.mailfolder) collection
-    description: Get the mail folder collection under the root folder of the signed-in user.
-  - method: [Create mailFolder](xref:graph.user_post_mailfolders)
-    type: [MailFolder](xref:graph.mailfolder)
-    description: Create a new MailFolder by posting to the mailFolders collection.
-  - method: [sendMail](xref:graph.user_sendmail)
-    type: None
-    description: Send the message specified in the request body.
-  - method: [List events](xref:graph.user_list_events)
-    type: [Event](xref:graph.event) collection
-    description: Get a list of event objects in the user's mailbox. The list contains single instance meetings and series masters.
-  - method: [Create event](xref:graph.user_post_events)
-    type: [Event](xref:graph.event)
-    description: Create a new Event by posting to the events collection.
-  - method: [List calendars](xref:graph.user_list_calendars)
-    type: [Calendar](xref:graph.calendar) collection
-    description: Get a Calendar object collection.
-  - method: [Create calendar](xref:graph.user_post_calendars)
-    type: [Calendar](xref:graph.calendar)
-    description: Create a new Calendar by posting to the calendars collection.
-  - method: [List calendarGroups](xref:graph.user_list_calendargroups)
-    type: [CalendarGroup](xref:graph.calendargroup) collection
-    description: Get a CalendarGroup object collection.
-  - method: [Create calendarGroup](xref:graph.user_post_calendargroups)
-    type: [CalendarGroup](xref:graph.calendargroup)
-    description: Create a new CalendarGroup by posting to the calendarGroups collection.
-  - method: [List calendarView](xref:graph.user_list_calendarview)
-    type: [Event](xref:graph.event) collection
-    description: Get a Event object collection.
-  - method: [List contacts](xref:graph.user_list_contacts)
-    type: [Contact](xref:graph.contact) collection
-    description: Get a contact collection from the default Contacts folder of the signed-in user.
-  - method: [Create Contact](xref:graph.user_post_contacts)
-    type: [Contact](xref:graph.contact)
-    description: Create a new Contact by posting to the contacts collection.
-  - method: [List contactFolders](xref:graph.user_list_contactfolders)
-    type: [ContactFolder](xref:graph.contactfolder) collection
-    description: Get the contact folder collection in the default Contacts folder of the signed-in user.
-  - method: [Create ContactFolder](xref:graph.user_post_contactfolders)
-    type: [ContactFolder](xref:graph.contactfolder)
-    description: Create a new ContactFolder by posting to the contactFolders collection.
-  - method: [List directReports](xref:graph.user_list_directreports)
-    type: [directoryObject](xref:graph.directoryobject) collection
-    description: Get the users and contacts that report to the user from the directReports navigation property.
-  - method: [List manager](xref:graph.user_list_manager)
-    type: [directoryObject](xref:graph.directoryobject)
-    description: Get the user or contact that is this user's manager from the manager navigation property.
-  - method: [List memberOf](xref:graph.user_list_memberof)
-    type: [directoryObject](xref:graph.directoryobject) collection
-    description: Get the groups and directory roles that the user is a direct member of from the memberOf navigation property.
-  - method: [List ownedDevices](xref:graph.user_list_owneddevices)
-    type: [directoryObject](xref:graph.directoryobject) collection
-    description: Get the devices that are owned by the user from the ownedDevices navigation property.
-  - method: [List ownedObjects](xref:graph.user_list_ownedobjects)
-    type: [directoryObject](xref:graph.directoryobject) collection
-    description: Get the directory objects that are owned by the user from the ownedObjects navigation property.
-  - method: [List registeredDevices](xref:graph.user_list_registereddevices)
-    type: [directoryObject](xref:graph.directoryobject) collection
-    description: Get the devices that are retistered for the user from the registeredDevices navigation property.
-  - method: [List createdObjects](xref:graph.user_list_createdobjects)
-    type: [directoryObject](xref:graph.directoryobject) collection
-    description: Get the directory objects created by the user from the createdObjects navigation property.
-  - method: [assignLicense](xref:graph.user_assignlicense)
-    type: [user](xref:graph.user)
-    description: Add or remove subscriptions for the user. You can also enable and disable specific plans associated with a subscription.
-  - method: [List licenseDetails](xref:graph.user_list_licensedetails)
-    type: [licenseDetails](xref:graph.licensedetails) collection
-    description: Get a licenseDetails object collection.
-  - method: [checkMemberGroups](xref:graph.user_checkmembergroups)
-    type: String collection
-    description: Check for membership in a list of groups. The check is transitive.
-  - method: [getMemberGroups](xref:graph.user_getmembergroups)
-    type: String collection
-    description: Return all the groups that the user is a member of. The check is transitive.
-  - method: [getMemberObjects](xref:graph.user_getmemberobjects)
-    type: String collection
-    description: Return all of the groups and directory roles that the user is a member of. The check is transitive.
-  - method: [reminderView](xref:graph.user_reminderview)
-    type: [Reminder](xref:graph.reminder) collection
-    description: Return a list of calendar reminders within the start and end times specified.
-  - method: [delta](xref:graph.user_delta)
-    type: user collection
-    description: Get incremental changes for users.
-  - method: **Open extensions**
-    type: 
-    description: 
-  - method: [Create open extension](xref:graph.opentypeextension_post_opentypeextension)
-    type: [openTypeExtension](xref:graph.opentypeextension)
-    description: Create an open extension and add custom properties to a new or existing resource.
-  - method: [Get open extension](xref:graph.opentypeextension_get)
-    type: [openTypeExtension](xref:graph.opentypeextension) collection
-    description: Get an open extension identified by the extension name.
-  - method: **Schema extensions**
-    type: 
-    description: 
-  - method: [Add schema extension values](xref:graph.extensibility_schema_groups)
-    type: 
-    description: Create a schema extension definition and then use it to add custom typed data to a resource.
+  - method: "[List users](xref:graph.user_list)"
+    type: "[user](xref:graph.user) collection"
+    description: "Get a list of user objects."
+  - method: "[Create user](xref:graph.user_post_users)"
+    type: "[user](xref:graph.user)"
+    description: "Create a new user object."
+  - method: "[Get user](xref:graph.user_get)"
+    type: "[user](xref:graph.user)"
+    description: "Read properties and relationships of user object."
+  - method: "[Update user](xref:graph.user_update)"
+    type: "[user](xref:graph.user)"
+    description: "Update user object."
+  - method: "[Delete user](xref:graph.user_delete)"
+    type: "None"
+    description: "Delete user object."
+  - method: "[List messages](xref:graph.user_list_messages)"
+    type: "[Message](xref:graph.message) collection"
+    description: "Get all the messages in the signed-in user's mailbox."
+  - method: "[Create Message](xref:graph.user_post_messages)"
+    type: "[Message](xref:graph.message)"
+    description: "Create a new Message by posting to the messages collection."
+  - method: "[List mailFolders](xref:graph.user_list_mailfolders)"
+    type: "[MailFolder](xref:graph.mailfolder) collection"
+    description: "Get the mail folder collection under the root folder of the signed-in user."
+  - method: "[Create mailFolder](xref:graph.user_post_mailfolders)"
+    type: "[MailFolder](xref:graph.mailfolder)"
+    description: "Create a new MailFolder by posting to the mailFolders collection."
+  - method: "[sendMail](xref:graph.user_sendmail)"
+    type: "None"
+    description: "Send the message specified in the request body."
+  - method: "[List events](xref:graph.user_list_events)"
+    type: "[Event](xref:graph.event) collection"
+    description: "Get a list of event objects in the user's mailbox. The list contains single instance meetings and series masters."
+  - method: "[Create event](xref:graph.user_post_events)"
+    type: "[Event](xref:graph.event)"
+    description: "Create a new Event by posting to the events collection."
+  - method: "[List calendars](xref:graph.user_list_calendars)"
+    type: "[Calendar](xref:graph.calendar) collection"
+    description: "Get a Calendar object collection."
+  - method: "[Create calendar](xref:graph.user_post_calendars)"
+    type: "[Calendar](xref:graph.calendar)"
+    description: "Create a new Calendar by posting to the calendars collection."
+  - method: "[List calendarGroups](xref:graph.user_list_calendargroups)"
+    type: "[CalendarGroup](xref:graph.calendargroup) collection"
+    description: "Get a CalendarGroup object collection."
+  - method: "[Create calendarGroup](xref:graph.user_post_calendargroups)"
+    type: "[CalendarGroup](xref:graph.calendargroup)"
+    description: "Create a new CalendarGroup by posting to the calendarGroups collection."
+  - method: "[List calendarView](xref:graph.user_list_calendarview)"
+    type: "[Event](xref:graph.event) collection"
+    description: "Get a Event object collection."
+  - method: "[List contacts](xref:graph.user_list_contacts)"
+    type: "[Contact](xref:graph.contact) collection"
+    description: "Get a contact collection from the default Contacts folder of the signed-in user."
+  - method: "[Create Contact](xref:graph.user_post_contacts)"
+    type: "[Contact](xref:graph.contact)"
+    description: "Create a new Contact by posting to the contacts collection."
+  - method: "[List contactFolders](xref:graph.user_list_contactfolders)"
+    type: "[ContactFolder](xref:graph.contactfolder) collection"
+    description: "Get the contact folder collection in the default Contacts folder of the signed-in user."
+  - method: "[Create ContactFolder](xref:graph.user_post_contactfolders)"
+    type: "[ContactFolder](xref:graph.contactfolder)"
+    description: "Create a new ContactFolder by posting to the contactFolders collection."
+  - method: "[List directReports](xref:graph.user_list_directreports)"
+    type: "[directoryObject](xref:graph.directoryobject) collection"
+    description: "Get the users and contacts that report to the user from the directReports navigation property."
+  - method: "[List manager](xref:graph.user_list_manager)"
+    type: "[directoryObject](xref:graph.directoryobject)"
+    description: "Get the user or contact that is this user's manager from the manager navigation property."
+  - method: "[List memberOf](xref:graph.user_list_memberof)"
+    type: "[directoryObject](xref:graph.directoryobject) collection"
+    description: "Get the groups and directory roles that the user is a direct member of from the memberOf navigation property."
+  - method: "[List ownedDevices](xref:graph.user_list_owneddevices)"
+    type: "[directoryObject](xref:graph.directoryobject) collection"
+    description: "Get the devices that are owned by the user from the ownedDevices navigation property."
+  - method: "[List ownedObjects](xref:graph.user_list_ownedobjects)"
+    type: "[directoryObject](xref:graph.directoryobject) collection"
+    description: "Get the directory objects that are owned by the user from the ownedObjects navigation property."
+  - method: "[List registeredDevices](xref:graph.user_list_registereddevices)"
+    type: "[directoryObject](xref:graph.directoryobject) collection"
+    description: "Get the devices that are retistered for the user from the registeredDevices navigation property."
+  - method: "[List createdObjects](xref:graph.user_list_createdobjects)"
+    type: "[directoryObject](xref:graph.directoryobject) collection"
+    description: "Get the directory objects created by the user from the createdObjects navigation property."
+  - method: "[assignLicense](xref:graph.user_assignlicense)"
+    type: "[user](xref:graph.user)"
+    description: "Add or remove subscriptions for the user. You can also enable and disable specific plans associated with a subscription."
+  - method: "[List licenseDetails](xref:graph.user_list_licensedetails)"
+    type: "[licenseDetails](xref:graph.licensedetails) collection"
+    description: "Get a licenseDetails object collection."
+  - method: "[checkMemberGroups](xref:graph.user_checkmembergroups)"
+    type: "String collection"
+    description: "Check for membership in a list of groups. The check is transitive."
+  - method: "[getMemberGroups](xref:graph.user_getmembergroups)"
+    type: "String collection"
+    description: "Return all the groups that the user is a member of. The check is transitive."
+  - method: "[getMemberObjects](xref:graph.user_getmemberobjects)"
+    type: "String collection"
+    description: "Return all of the groups and directory roles that the user is a member of. The check is transitive."
+  - method: "[reminderView](xref:graph.user_reminderview)"
+    type: "[Reminder](xref:graph.reminder) collection"
+    description: "Return a list of calendar reminders within the start and end times specified."
+  - method: "[delta](xref:graph.user_delta)"
+    type: "user collection"
+    description: "Get incremental changes for users."
+  - method: "**Open extensions**"
+    type: ""
+    description: ""
+  - method: "[Create open extension](xref:graph.opentypeextension_post_opentypeextension)"
+    type: "[openTypeExtension](xref:graph.opentypeextension)"
+    description: "Create an open extension and add custom properties to a new or existing resource."
+  - method: "[Get open extension](xref:graph.opentypeextension_get)"
+    type: "[openTypeExtension](xref:graph.opentypeextension) collection"
+    description: "Get an open extension identified by the extension name."
+  - method: "**Schema extensions**"
+    type: ""
+    description: ""
+  - method: "[Add schema extension values](xref:graph.extensibility_schema_groups)"
+    type: ""
+    description: "Create a schema extension definition and then use it to add custom typed data to a resource."
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource
   sampleCode: |
@@ -218,221 +218,221 @@ resource:
     * [Add custom data to groups using schema extensions](xref:graph.extensibility_schema_groups)
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: aboutMe
-    type: String
-    description: A freeform text entry field for the user to describe themselves.
-  - property: accountEnabled
-    type: Boolean
-    description: true if the account is enabled; otherwise, false. This property is required when a user is created. Supports $filter.
-  - property: assignedLicenses
-    type: Collection(microsoft.graph.assignedLicense)
-    description: The licenses that are assigned to the user. Not nullable.
-  - property: assignedPlans
-    type: Collection(microsoft.graph.assignedPlan)
-    description: The plans that are assigned to the user. Read-only. Not nullable.
-  - property: birthday
-    type: DateTimeOffset
-    description: The birthday of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
-  - property: businessPhones
-    type: Collection(String)
-    description: The telephone numbers for the user. NOTE: Although this is a string collection, only one number can be set for this property.
-  - property: city
-    type: String
-    description: The city in which the user is located. Supports $filter.
-  - property: companyName
-    type: String
-    description: The company name which the user is associated. Read-only.
-  - property: country
-    type: String
-    description: The country/region in which the user is located; for example, “US” or “UK”. Supports $filter.
-  - property: department
-    type: String
-    description: The name for the department in which the user works. Supports $filter.
-  - property: displayName
-    type: String
-    description: The name displayed in the address book for the user. This is usually the combination of the user's first name, middle initial and last name. This property is required when a user is created and it cannot be cleared during updates. Supports $filter and $orderby.
-  - property: givenName
-    type: String
-    description: The given name (first name) of the user. Supports $filter.
-  - property: hireDate
-    type: DateTimeOffset
-    description: The hire date of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
-  - property: id
-    type: String
-    description: The unique identifier for the user. Inherited from directoryObject. Key. Not nullable. Read-only.
-  - property: imAddresses
-    type: Collection(String)
-    description: The instant message voice over IP (VOIP) session initiation protocol (SIP) addresses for the user. Read-only.
-  - property: interests
-    type: Collection(String)
-    description: A list for the user to describe their interests.
-  - property: jobTitle
-    type: String
-    description: The user’s job title. Supports $filter.
-  - property: mail
-    type: String
-    description: The SMTP address for the user, for example, "jeff@contoso.onmicrosoft.com". Read-Only. Supports $filter.
-  - property: mailboxSettings
-    type: microsoft.graph.mailboxSettings
-    description: Settings for the primary mailbox of the signed-in user. You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
-  - property: mailNickname
-    type: String
-    description: The mail alias for the user. This property must be specified when a user is created. Supports $filter.
-  - property: mobilePhone
-    type: String
-    description: The primary cellular telephone number for the user.
-  - property: mySite
-    type: String
-    description: The URL for the user's personal site.
-  - property: officeLocation
-    type: String
-    description: The office location in the user's place of business.
-  - property: onPremisesImmutableId
-    type: String
-    description: This property is used to associate an on-premises Active Directory user account to their Azure AD user object. This property must be specified when creating a new user account in the Graph if you are using a federated domain for the user’s userPrincipalName (UPN) property. Important: The $ and  characters cannot be used when specifying this property. Supports $filter.
-  - property: onPremisesLastSyncDateTime
-    type: DateTimeOffset
-    description: Indicates the last time at which the object was synced with the on-premises directory; for example: "2013-02-16T03:04:54Z". The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Read-only.
-  - property: onPremisesSecurityIdentifier
-    type: String
-    description: Contains the on-premises security identifier (SID) for the user that was synchronized from on-premises to the cloud. Read-only.
-  - property: onPremisesSyncEnabled
-    type: Boolean
-    description: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default). Read-only
-  - property: passwordPolicies
-    type: String
-    description: Specifies password policies for the user. This value is an enumeration with one possible value being “DisableStrongPassword”, which allows weaker passwords than the default policy to be specified. “DisablePasswordExpiration” can also be specified. The two may be specified together; for example: "DisablePasswordExpiration, DisableStrongPassword".
-  - property: passwordProfile
-    type: microsoft.graph.passwordProfile
-    description: Specifies the password profile for the user. The profile contains the user’s password. This property is required when a user is created. The password in the profile must satisfy minimum requirements as specified by the passwordPolicies property. By default, a strong password is required.
-  - property: pastProjects
-    type: Collection(String)
-    description: A list for the user to enumerate their past projects.
-  - property: postalCode
-    type: String
-    description: The postal code for the user's postal address. The postal code is specific to the user's country/region. In the United States of America, this attribute contains the ZIP code.
-  - property: preferredLanguage
-    type: String
-    description: The preferred language for the user. Should follow ISO 639-1 Code; for example "en-US".
-  - property: preferredName
-    type: String
-    description: The preferred name for the user.
-  - property: provisionedPlans
-    type: Collection(microsoft.graph.provisionedPlan)
-    description: The plans that are provisioned for the user. Read-only. Not nullable.
-  - property: proxyAddresses
-    type: Collection(String)
-    description: For example: ["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"] The any operator is required for filter expressions on multi-valued properties. Read-only, Not nullable. Supports $filter.
-  - property: responsibilities
-    type: Collection(String)
-    description: A list for the user to enumerate their responsibilities.
-  - property: schools
-    type: Collection(String)
-    description: A list for the user to enumerate the schools they have attended.
-  - property: skills
-    type: Collection(String)
-    description: A list for the user to enumerate their skills.
-  - property: state
-    type: String
-    description: The state or province in the user's address. Supports $filter.
-  - property: streetAddress
-    type: String
-    description: The street address of the user's place of business.
-  - property: surname
-    type: String
-    description: The user's surname (family name or last name). Supports $filter.
-  - property: usageLocation
-    type: String
-    description: A two letter country code (ISO standard 3166). Required for users that will be assigned licenses due to legal requirement to check for availability of services in countries.  Examples include: "US", "JP", and "GB". Not nullable. Supports $filter.
-  - property: userPrincipalName
-    type: String
-    description: The user principal name (UPN) of the user. The UPN is an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant’s collection of verified domains. This property is required when a user is created. The verified domains for the tenant can be accessed from the verifiedDomains property of organization. Supports $filter and $orderby.
-  - property: userType
-    type: String
-    description: A string value that can be used to classify user types in your directory, such as “Member” and “Guest”. Supports $filter.
+  - property: "aboutMe"
+    type: "String"
+    description: "A freeform text entry field for the user to describe themselves."
+  - property: "accountEnabled"
+    type: "Boolean"
+    description: "true if the account is enabled; otherwise, false. This property is required when a user is created. Supports $filter."
+  - property: "assignedLicenses"
+    type: "Collection(microsoft.graph.assignedLicense)"
+    description: "The licenses that are assigned to the user. Not nullable."
+  - property: "assignedPlans"
+    type: "Collection(microsoft.graph.assignedPlan)"
+    description: "The plans that are assigned to the user. Read-only. Not nullable."
+  - property: "birthday"
+    type: "DateTimeOffset"
+    description: "The birthday of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'"
+  - property: "businessPhones"
+    type: "Collection(String)"
+    description: "The telephone numbers for the user. NOTE: Although this is a string collection, only one number can be set for this property."
+  - property: "city"
+    type: "String"
+    description: "The city in which the user is located. Supports $filter."
+  - property: "companyName"
+    type: "String"
+    description: "The company name which the user is associated. Read-only."
+  - property: "country"
+    type: "String"
+    description: "The country/region in which the user is located; for example, “US” or “UK”. Supports $filter."
+  - property: "department"
+    type: "String"
+    description: "The name for the department in which the user works. Supports $filter."
+  - property: "displayName"
+    type: "String"
+    description: "The name displayed in the address book for the user. This is usually the combination of the user's first name, middle initial and last name. This property is required when a user is created and it cannot be cleared during updates. Supports $filter and $orderby."
+  - property: "givenName"
+    type: "String"
+    description: "The given name (first name) of the user. Supports $filter."
+  - property: "hireDate"
+    type: "DateTimeOffset"
+    description: "The hire date of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'"
+  - property: "id"
+    type: "String"
+    description: "The unique identifier for the user. Inherited from directoryObject. Key. Not nullable. Read-only."
+  - property: "imAddresses"
+    type: "Collection(String)"
+    description: "The instant message voice over IP (VOIP) session initiation protocol (SIP) addresses for the user. Read-only."
+  - property: "interests"
+    type: "Collection(String)"
+    description: "A list for the user to describe their interests."
+  - property: "jobTitle"
+    type: "String"
+    description: "The user’s job title. Supports $filter."
+  - property: "mail"
+    type: "String"
+    description: "The SMTP address for the user, for example, "jeff@contoso.onmicrosoft.com". Read-Only. Supports $filter."
+  - property: "mailboxSettings"
+    type: "microsoft.graph.mailboxSettings"
+    description: "Settings for the primary mailbox of the signed-in user. You can get or update settings for sending automatic replies to incoming messages, locale and time zone."
+  - property: "mailNickname"
+    type: "String"
+    description: "The mail alias for the user. This property must be specified when a user is created. Supports $filter."
+  - property: "mobilePhone"
+    type: "String"
+    description: "The primary cellular telephone number for the user."
+  - property: "mySite"
+    type: "String"
+    description: "The URL for the user's personal site."
+  - property: "officeLocation"
+    type: "String"
+    description: "The office location in the user's place of business."
+  - property: "onPremisesImmutableId"
+    type: "String"
+    description: "This property is used to associate an on-premises Active Directory user account to their Azure AD user object. This property must be specified when creating a new user account in the Graph if you are using a federated domain for the user’s userPrincipalName (UPN) property. Important: The $ and  characters cannot be used when specifying this property. Supports $filter."
+  - property: "onPremisesLastSyncDateTime"
+    type: "DateTimeOffset"
+    description: "Indicates the last time at which the object was synced with the on-premises directory; for example: "2013-02-16T03:04:54Z". The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Read-only."
+  - property: "onPremisesSecurityIdentifier"
+    type: "String"
+    description: "Contains the on-premises security identifier (SID) for the user that was synchronized from on-premises to the cloud. Read-only."
+  - property: "onPremisesSyncEnabled"
+    type: "Boolean"
+    description: "true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default). Read-only"
+  - property: "passwordPolicies"
+    type: "String"
+    description: "Specifies password policies for the user. This value is an enumeration with one possible value being “DisableStrongPassword”, which allows weaker passwords than the default policy to be specified. “DisablePasswordExpiration” can also be specified. The two may be specified together; for example: "DisablePasswordExpiration, DisableStrongPassword"."
+  - property: "passwordProfile"
+    type: "microsoft.graph.passwordProfile"
+    description: "Specifies the password profile for the user. The profile contains the user’s password. This property is required when a user is created. The password in the profile must satisfy minimum requirements as specified by the passwordPolicies property. By default, a strong password is required."
+  - property: "pastProjects"
+    type: "Collection(String)"
+    description: "A list for the user to enumerate their past projects."
+  - property: "postalCode"
+    type: "String"
+    description: "The postal code for the user's postal address. The postal code is specific to the user's country/region. In the United States of America, this attribute contains the ZIP code."
+  - property: "preferredLanguage"
+    type: "String"
+    description: "The preferred language for the user. Should follow ISO 639-1 Code; for example "en-US"."
+  - property: "preferredName"
+    type: "String"
+    description: "The preferred name for the user."
+  - property: "provisionedPlans"
+    type: "Collection(microsoft.graph.provisionedPlan)"
+    description: "The plans that are provisioned for the user. Read-only. Not nullable."
+  - property: "proxyAddresses"
+    type: "Collection(String)"
+    description: "For example: ["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"] The any operator is required for filter expressions on multi-valued properties. Read-only, Not nullable. Supports $filter."
+  - property: "responsibilities"
+    type: "Collection(String)"
+    description: "A list for the user to enumerate their responsibilities."
+  - property: "schools"
+    type: "Collection(String)"
+    description: "A list for the user to enumerate the schools they have attended."
+  - property: "skills"
+    type: "Collection(String)"
+    description: "A list for the user to enumerate their skills."
+  - property: "state"
+    type: "String"
+    description: "The state or province in the user's address. Supports $filter."
+  - property: "streetAddress"
+    type: "String"
+    description: "The street address of the user's place of business."
+  - property: "surname"
+    type: "String"
+    description: "The user's surname (family name or last name). Supports $filter."
+  - property: "usageLocation"
+    type: "String"
+    description: "A two letter country code (ISO standard 3166). Required for users that will be assigned licenses due to legal requirement to check for availability of services in countries.  Examples include: "US", "JP", and "GB". Not nullable. Supports $filter."
+  - property: "userPrincipalName"
+    type: "String"
+    description: "The user principal name (UPN) of the user. The UPN is an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant’s collection of verified domains. This property is required when a user is created. The verified domains for the tenant can be accessed from the verifiedDomains property of organization. Supports $filter and $orderby."
+  - property: "userType"
+    type: "String"
+    description: "A string value that can be used to classify user types in your directory, such as “Member” and “Guest”. Supports $filter."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   list:
-  - relationship: activities
-    type: Collection(microsoft.graph.userActivity)
-    description: The user's activities across devices. Read-only. Nullable.
-  - relationship: calendar
-    type: microsoft.graph.calendar
-    description: The user's primary calendar. Read-only.
-  - relationship: calendarGroups
-    type: Collection(microsoft.graph.calendarGroup)
-    description: The user's calendar groups. Read-only. Nullable.
-  - relationship: calendarView
-    type: Collection(microsoft.graph.event)
-    description: The calendar view for the calendar. Read-only. Nullable.
-  - relationship: calendars
-    type: Collection(microsoft.graph.calendar)
-    description: The user's calendars. Read-only. Nullable.
-  - relationship: contactFolders
-    type: Collection(microsoft.graph.contactFolder)
-    description: The user's contacts folders. Read-only. Nullable.
-  - relationship: contacts
-    type: Collection(microsoft.graph.contact)
-    description: The user's contacts. Read-only. Nullable.
-  - relationship: createdObjects
-    type: Collection(microsoft.graph.directoryObject)
-    description: Directory objects that were created by the user. Read-only. Nullable.
-  - relationship: directReports
-    type: Collection(microsoft.graph.directoryObject)
-    description: The users and contacts that report to the user. (The users and contacts that have their manager property set to this user.) Read-only. Nullable.
-  - relationship: drive
-    type: microsoft.graph.drive
-    description: The user's OneDrive. Read-only.
-  - relationship: drives
-    type: Collection(microsoft.graph.drive)
-    description: A collection of drives available for this user. Read-only.
-  - relationship: events
-    type: Collection(microsoft.graph.event)
-    description: The user's events. Default is to show Events under the Default Calendar. Read-only. Nullable.
-  - relationship: extensions
-    type: Collection(microsoft.graph.extension)
-    description: The collection of open extensions defined for the user. Read-only. Nullable.
-  - relationship: inferenceClassification
-    type: microsoft.graph.inferenceClassification
-    description: Relevance classification of the user's messages based on explicit designations which override inferred relevance or importance.
-  - relationship: licenseDetails
-    type: Collection(microsoft.graph.licenseDetails)
-    description: A collection of this user's license details. Nullable.
-  - relationship: mailFolders
-    type: Collection(microsoft.graph.mailFolder)
-    description: The user's mail folders. Read-only. Nullable.
-  - relationship: manager
-    type: microsoft.graph.directoryObject
-    description: The user or contact that is this user’s manager. Read-only. (HTTP Methods: GET, PUT, DELETE.)
-  - relationship: memberOf
-    type: Collection(microsoft.graph.directoryObject)
-    description: The groups and directory roles that the user is a member of. Read-only. Nullable.
-  - relationship: messages
-    type: Collection(microsoft.graph.message)
-    description: The messages in a mailbox or folder. Read-only. Nullable.
-  - relationship: onenote
-    type: microsoft.graph.onenote
-    description: Read-only.
-  - relationship: outlook
-    type: microsoft.graph.outlookUser
-    description: Read-only.
-  - relationship: ownedDevices
-    type: Collection(microsoft.graph.directoryObject)
-    description: Devices that are owned by the user. Read-only. Nullable.
-  - relationship: ownedObjects
-    type: Collection(microsoft.graph.directoryObject)
-    description: Directory objects that are owned by the user. Read-only. Nullable.
-  - relationship: people
-    type: Collection(microsoft.graph.person)
-    description: People that are relevant to the user. Read-only. Nullable.
-  - relationship: photo
-    type: microsoft.graph.profilePhoto
-    description: The user's profile photo. Read-only.
-  - relationship: planner
-    type: microsoft.graph.plannerUser
-    description: Entry-point to the Planner resource that might exist for a user. Read-only.
-  - relationship: registeredDevices
-    type: Collection(microsoft.graph.directoryObject)
-    description: Devices that are registered for the user. Read-only. Nullable.
+  - relationship: "activities"
+    type: "Collection(microsoft.graph.userActivity)"
+    description: "The user's activities across devices. Read-only. Nullable."
+  - relationship: "calendar"
+    type: "microsoft.graph.calendar"
+    description: "The user's primary calendar. Read-only."
+  - relationship: "calendarGroups"
+    type: "Collection(microsoft.graph.calendarGroup)"
+    description: "The user's calendar groups. Read-only. Nullable."
+  - relationship: "calendarView"
+    type: "Collection(microsoft.graph.event)"
+    description: "The calendar view for the calendar. Read-only. Nullable."
+  - relationship: "calendars"
+    type: "Collection(microsoft.graph.calendar)"
+    description: "The user's calendars. Read-only. Nullable."
+  - relationship: "contactFolders"
+    type: "Collection(microsoft.graph.contactFolder)"
+    description: "The user's contacts folders. Read-only. Nullable."
+  - relationship: "contacts"
+    type: "Collection(microsoft.graph.contact)"
+    description: "The user's contacts. Read-only. Nullable."
+  - relationship: "createdObjects"
+    type: "Collection(microsoft.graph.directoryObject)"
+    description: "Directory objects that were created by the user. Read-only. Nullable."
+  - relationship: "directReports"
+    type: "Collection(microsoft.graph.directoryObject)"
+    description: "The users and contacts that report to the user. (The users and contacts that have their manager property set to this user.) Read-only. Nullable."
+  - relationship: "drive"
+    type: "microsoft.graph.drive"
+    description: "The user's OneDrive. Read-only."
+  - relationship: "drives"
+    type: "Collection(microsoft.graph.drive)"
+    description: "A collection of drives available for this user. Read-only."
+  - relationship: "events"
+    type: "Collection(microsoft.graph.event)"
+    description: "The user's events. Default is to show Events under the Default Calendar. Read-only. Nullable."
+  - relationship: "extensions"
+    type: "Collection(microsoft.graph.extension)"
+    description: "The collection of open extensions defined for the user. Read-only. Nullable."
+  - relationship: "inferenceClassification"
+    type: "microsoft.graph.inferenceClassification"
+    description: "Relevance classification of the user's messages based on explicit designations which override inferred relevance or importance."
+  - relationship: "licenseDetails"
+    type: "Collection(microsoft.graph.licenseDetails)"
+    description: "A collection of this user's license details. Nullable."
+  - relationship: "mailFolders"
+    type: "Collection(microsoft.graph.mailFolder)"
+    description: "The user's mail folders. Read-only. Nullable."
+  - relationship: "manager"
+    type: "microsoft.graph.directoryObject"
+    description: "The user or contact that is this user’s manager. Read-only. (HTTP Methods: GET, PUT, DELETE.)"
+  - relationship: "memberOf"
+    type: "Collection(microsoft.graph.directoryObject)"
+    description: "The groups and directory roles that the user is a member of. Read-only. Nullable."
+  - relationship: "messages"
+    type: "Collection(microsoft.graph.message)"
+    description: "The messages in a mailbox or folder. Read-only. Nullable."
+  - relationship: "onenote"
+    type: "microsoft.graph.onenote"
+    description: "Read-only."
+  - relationship: "outlook"
+    type: "microsoft.graph.outlookUser"
+    description: "Read-only."
+  - relationship: "ownedDevices"
+    type: "Collection(microsoft.graph.directoryObject)"
+    description: "Devices that are owned by the user. Read-only. Nullable."
+  - relationship: "ownedObjects"
+    type: "Collection(microsoft.graph.directoryObject)"
+    description: "Directory objects that are owned by the user. Read-only. Nullable."
+  - relationship: "people"
+    type: "Collection(microsoft.graph.person)"
+    description: "People that are relevant to the user. Read-only. Nullable."
+  - relationship: "photo"
+    type: "microsoft.graph.profilePhoto"
+    description: "The user's profile photo. Read-only."
+  - relationship: "planner"
+    type: "microsoft.graph.plannerUser"
+    description: "Entry-point to the Planner resource that might exist for a user. Read-only."
+  - relationship: "registeredDevices"
+    type: "Collection(microsoft.graph.directoryObject)"
+    description: "Devices that are registered for the user. Read-only. Nullable."

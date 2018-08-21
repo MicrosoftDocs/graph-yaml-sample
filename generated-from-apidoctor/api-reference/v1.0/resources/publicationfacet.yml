@@ -3,11 +3,11 @@ uid: graph.publicationfacet
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/publicationfacet.md
 summary:
-  heading: PublicationFacet resource type
+  heading: "PublicationFacet resource type"
   intro: |
     The **publicationFacet** resource provides details on the published status of a [driveItemVersion](xref:graph.driveitemversion) or [driveItem](xref:graph.driveitem) resource.
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   sampleCode: |
     ```json
     {
@@ -17,11 +17,11 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: level
-    type: String
-    description: The state of publication for this document. Either published or checkout. Read-only.
-  - property: versionId
-    type: String
-    description: The unique identifier for the version that is visible to the current caller. Read-only.
+  - property: "level"
+    type: "String"
+    description: "The state of publication for this document. Either published or checkout. Read-only."
+  - property: "versionId"
+    type: "String"
+    description: "The unique identifier for the version that is visible to the current caller. Read-only."

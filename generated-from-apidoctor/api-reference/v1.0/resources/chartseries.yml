@@ -3,32 +3,32 @@ uid: graph.chartseries
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.chartseries
 summary:
-  heading: ChartSeries resource type
+  heading: "ChartSeries resource type"
   intro: |
     Represents a series in a chart.
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [Get ChartSeries](xref:graph.chartseries_get)
-    type: [WorkbookChartSeries](xref:graph.chartseries)
-    description: Read properties and relationships of chartSeries object.
-  - method: [Create ChartPoints](xref:graph.chartseries_post_points)
-    type: [ChartPoints](xref:graph.chartpoint)
-    description: Create a new ChartPoints by posting to the points collection.
-  - method: [List points](xref:graph.chartseries_list_points)
-    type: [ChartPoints](xref:graph.chartpoint) collection
-    description: Get a ChartPoints object collection.
-  - method: [Update](xref:graph.chartseries_update)
-    type: [WorkbookChartSeries](xref:graph.chartseries)
-    description: Update ChartSeries object.
-  - method: [List](xref:graph.chartseries_list)
-    type: [WorkbookChartSeries](xref:graph.chartseries) collection
-    description: Get chartSeries object collection.
-  - method: [ItemAt](xref:graph.chartseriescollection_itemat)
-    type: [WorkbookChartSeries](xref:graph.chartseries)
-    description: Retrieves a series based on its position in the collection
+  - method: "[Get ChartSeries](xref:graph.chartseries_get)"
+    type: "[WorkbookChartSeries](xref:graph.chartseries)"
+    description: "Read properties and relationships of chartSeries object."
+  - method: "[Create ChartPoints](xref:graph.chartseries_post_points)"
+    type: "[ChartPoints](xref:graph.chartpoint)"
+    description: "Create a new ChartPoints by posting to the points collection."
+  - method: "[List points](xref:graph.chartseries_list_points)"
+    type: "[ChartPoints](xref:graph.chartpoint) collection"
+    description: "Get a ChartPoints object collection."
+  - method: "[Update](xref:graph.chartseries_update)"
+    type: "[WorkbookChartSeries](xref:graph.chartseries)"
+    description: "Update ChartSeries object."
+  - method: "[List](xref:graph.chartseries_list)"
+    type: "[WorkbookChartSeries](xref:graph.chartseries) collection"
+    description: "Get chartSeries object collection."
+  - method: "[ItemAt](xref:graph.chartseriescollection_itemat)"
+    type: "[WorkbookChartSeries](xref:graph.chartseries)"
+    description: "Retrieves a series based on its position in the collection"
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -39,17 +39,17 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: name
-    type: String
-    description: Represents the name of a series in a chart.
+  - property: "name"
+    type: "String"
+    description: "Represents the name of a series in a chart."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   list:
-  - relationship: format
-    type: microsoft.graph.workbookChartSeriesFormat
-    description: Represents the formatting of a chart series, which includes fill and line formatting. Read-only.
-  - relationship: points
-    type: Collection(microsoft.graph.workbookChartPoint)
-    description: Represents a collection of all points in the series. Read-only.
+  - relationship: "format"
+    type: "microsoft.graph.workbookChartSeriesFormat"
+    description: "Represents the formatting of a chart series, which includes fill and line formatting. Read-only."
+  - relationship: "points"
+    type: "Collection(microsoft.graph.workbookChartPoint)"
+    description: "Represents a collection of all points in the series. Read-only."

@@ -3,11 +3,11 @@ uid: graph.intune_mam_iprange
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_mam_iprange.md
 summary:
-  heading: ipRange resource type
+  heading: "ipRange resource type"
   intro: |
     IP range base class for representing IPV4, IPV6 address ranges
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -18,8 +18,8 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

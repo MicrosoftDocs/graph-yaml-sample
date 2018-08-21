@@ -3,23 +3,23 @@ uid: graph.rangefill
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.rangefill
 summary:
-  heading: RangeFill resource type
+  heading: "RangeFill resource type"
   intro: |
     Represents the background of a range object.
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [Get RangeFill](xref:graph.rangefill_get)
-    type: [WorkbookRangeFill](xref:graph.rangefill)
-    description: Read properties and relationships of rangeFill object.
-  - method: [Update](xref:graph.rangefill_update)
-    type: [WorkbookRangeFill](xref:graph.rangefill)
-    description: Update RangeFill object.
-  - method: [Clear](xref:graph.rangefill_clear)
-    type: None
-    description: Resets the range background.
+  - method: "[Get RangeFill](xref:graph.rangefill_get)"
+    type: "[WorkbookRangeFill](xref:graph.rangefill)"
+    description: "Read properties and relationships of rangeFill object."
+  - method: "[Update](xref:graph.rangefill_update)"
+    type: "[WorkbookRangeFill](xref:graph.rangefill)"
+    description: "Update RangeFill object."
+  - method: "[Clear](xref:graph.rangefill_clear)"
+    type: "None"
+    description: "Resets the range background."
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -30,12 +30,12 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: color
-    type: String
-    description: HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange")
+  - property: "color"
+    type: "String"
+    description: "HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange")"
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

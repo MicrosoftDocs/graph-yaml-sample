@@ -7,12 +7,12 @@ metadata:
   ms.date: 09/10/2017
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/folder.md
 summary:
-  heading: Folder resource type
+  heading: "Folder resource type"
   intro: |
     The **Folder** resource groups folder-related data on an item into a single structure. 
     [**DriveItems**](xref:graph.driveitem) with a non-null **folder** facet are containers for other DriveItems.
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -24,15 +24,15 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: childCount
-    type: Int32
-    description: Number of children contained immediately within this container.
-  - property: view
-    type: microsoft.graph.folderView
-    description: A collection of properties defining the recommended view for the folder.
+  - property: "childCount"
+    type: "Int32"
+    description: "Number of children contained immediately within this container."
+  - property: "view"
+    type: "microsoft.graph.folderView"
+    description: "A collection of properties defining the recommended view for the folder."
 remarks:
-  heading: Remarks
+  heading: "Remarks"
   intro: |
     For more information about the facets on a DriveItem, see [DriveItem][].

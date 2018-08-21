@@ -3,30 +3,30 @@ uid: graph.intune_rbac_deviceandappmanagementroleassignment
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_rbac_deviceandappmanagementroleassignment.md
 summary:
-  heading: deviceAndAppManagementRoleAssignment resource type
+  heading: "deviceAndAppManagementRoleAssignment resource type"
   intro: |
     The Role Assignment resource. Role assignments tie together a role definition with members and scopes. There can be one or more role assignments per role. This applies to custom and built-in roles.
     Inherits from [roleAssignment](xref:graph.intune_rbac_roleassignment)
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [List deviceAndAppManagementRoleAssignments](xref:graph.intune_rbac_deviceandappmanagementroleassignment_list)
-    type: [deviceAndAppManagementRoleAssignment](xref:graph.intune_rbac_deviceandappmanagementroleassignment) collection
-    description: List properties and relationships of the deviceAndAppManagementRoleAssignment objects.
-  - method: [Get deviceAndAppManagementRoleAssignment](xref:graph.intune_rbac_deviceandappmanagementroleassignment_get)
-    type: [deviceAndAppManagementRoleAssignment](xref:graph.intune_rbac_deviceandappmanagementroleassignment)
-    description: Read properties and relationships of the deviceAndAppManagementRoleAssignment object.
-  - method: [Create deviceAndAppManagementRoleAssignment](xref:graph.intune_rbac_deviceandappmanagementroleassignment_create)
-    type: [deviceAndAppManagementRoleAssignment](xref:graph.intune_rbac_deviceandappmanagementroleassignment)
-    description: Create a new deviceAndAppManagementRoleAssignment object.
-  - method: [Delete deviceAndAppManagementRoleAssignment](xref:graph.intune_rbac_deviceandappmanagementroleassignment_delete)
-    type: None
-    description: Deletes a deviceAndAppManagementRoleAssignment.
-  - method: [Update deviceAndAppManagementRoleAssignment](xref:graph.intune_rbac_deviceandappmanagementroleassignment_update)
-    type: [deviceAndAppManagementRoleAssignment](xref:graph.intune_rbac_deviceandappmanagementroleassignment)
-    description: Update the properties of a deviceAndAppManagementRoleAssignment object.
+  - method: "[List deviceAndAppManagementRoleAssignments](xref:graph.intune_rbac_deviceandappmanagementroleassignment_list)"
+    type: "[deviceAndAppManagementRoleAssignment](xref:graph.intune_rbac_deviceandappmanagementroleassignment) collection"
+    description: "List properties and relationships of the deviceAndAppManagementRoleAssignment objects."
+  - method: "[Get deviceAndAppManagementRoleAssignment](xref:graph.intune_rbac_deviceandappmanagementroleassignment_get)"
+    type: "[deviceAndAppManagementRoleAssignment](xref:graph.intune_rbac_deviceandappmanagementroleassignment)"
+    description: "Read properties and relationships of the deviceAndAppManagementRoleAssignment object."
+  - method: "[Create deviceAndAppManagementRoleAssignment](xref:graph.intune_rbac_deviceandappmanagementroleassignment_create)"
+    type: "[deviceAndAppManagementRoleAssignment](xref:graph.intune_rbac_deviceandappmanagementroleassignment)"
+    description: "Create a new deviceAndAppManagementRoleAssignment object."
+  - method: "[Delete deviceAndAppManagementRoleAssignment](xref:graph.intune_rbac_deviceandappmanagementroleassignment_delete)"
+    type: "None"
+    description: "Deletes a deviceAndAppManagementRoleAssignment."
+  - method: "[Update deviceAndAppManagementRoleAssignment](xref:graph.intune_rbac_deviceandappmanagementroleassignment_update)"
+    type: "[deviceAndAppManagementRoleAssignment](xref:graph.intune_rbac_deviceandappmanagementroleassignment)"
+    description: "Update the properties of a deviceAndAppManagementRoleAssignment object."
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -46,26 +46,26 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: id
-    type: String
-    description: Key of the entity. This is read-only and automatically generated. Inherited from roleAssignment
-  - property: displayName
-    type: String
-    description: The display or friendly name of the role Assignment. Inherited from roleAssignment
-  - property: description
-    type: String
-    description: Description of the Role Assignment. Inherited from roleAssignment
-  - property: resourceScopes
-    type: Collection(String)
-    description: List of ids of role scope member security groups.  These are IDs from Azure Active Directory. Inherited from roleAssignment
-  - property: members
-    type: Collection(String)
-    description: The list of ids of role member security groups. These are IDs from Azure Active Directory.
+  - property: "id"
+    type: "String"
+    description: "Key of the entity. This is read-only and automatically generated. Inherited from roleAssignment"
+  - property: "displayName"
+    type: "String"
+    description: "The display or friendly name of the role Assignment. Inherited from roleAssignment"
+  - property: "description"
+    type: "String"
+    description: "Description of the Role Assignment. Inherited from roleAssignment"
+  - property: "resourceScopes"
+    type: "Collection(String)"
+    description: "List of ids of role scope member security groups.  These are IDs from Azure Active Directory. Inherited from roleAssignment"
+  - property: "members"
+    type: "Collection(String)"
+    description: "The list of ids of role member security groups. These are IDs from Azure Active Directory."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   list:
-  - relationship: roleDefinition
-    type: microsoft.graph.roleDefinition
-    description: Role definition this assignment is part of. Inherited from roleAssignment
+  - relationship: "roleDefinition"
+    type: "microsoft.graph.roleDefinition"
+    description: "Role definition this assignment is part of. Inherited from roleAssignment"

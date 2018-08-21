@@ -3,7 +3,7 @@ uid: graph.excel-display-chart-image
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/excel-display-chart-image.md
 summary:
-  heading: Display a chart image in Excel with Microsoft Graph
+  heading: "Display a chart image in Excel with Microsoft Graph"
   intro: |
     When you perform a [GET operation to retrieve a chart image](xref:graph.chart_image), the Excel API returns the image as a base-64 string.
     You can display the base-64 string inside an HTML image tag: `<img src="data:image/png;base64,{base-64 chart image string}/>`.

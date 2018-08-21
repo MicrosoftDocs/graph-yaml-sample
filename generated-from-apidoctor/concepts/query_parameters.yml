@@ -3,7 +3,7 @@ uid: graph.query_parameters
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/query_parameters.md
 summary:
-  heading: Use query parameters to customize responses
+  heading: "Use query parameters to customize responses"
   intro: |
     Microsoft Graph provides optional query parameters that you can use to specify and control the amount of data returned in a response. The following query parameters are supported.
     

@@ -3,7 +3,7 @@ uid: graph.user_list_events
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/user_list_events.md
 summary:
-  heading: List events
+  heading: "List events"
   intro: |
     Get a list of [event](xref:graph.event) objects in the user's mailbox. The list contains single 
     instance meetings and series masters.
@@ -39,18 +39,18 @@ summary:
     
     This capability is not available in other operations for contacts, events, messages, and their folders.
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
   list:
-  - resource: Delegated (work or school account)
-    permission: Calendars.Read, Calendars.ReadWrite
-  - resource: Delegated (personal Microsoft account)
-    permission: Calendars.Read, Calendars.ReadWrite
-  - resource: Application
-    permission: Calendars.Read, Calendars.ReadWrite
+  - resource: "Delegated (work or school account)"
+    permission: "Calendars.Read, Calendars.ReadWrite"
+  - resource: "Delegated (personal Microsoft account)"
+    permission: "Calendars.Read, Calendars.ReadWrite"
+  - resource: "Application"
+    permission: "Calendars.Read, Calendars.ReadWrite"
 httpRequest:
-  heading: HTTP request
+  heading: "HTTP request"
   sampleCode: |
     ```http
     GET /me/events
@@ -70,35 +70,35 @@ httpRequest:
     ```
     
 queryParameters:
-  heading: Optional query parameters
+  heading: "Optional query parameters"
   intro: |
     This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
 requestHeaders:
-  heading: Request headers
+  heading: "Request headers"
   list:
-  - name: Authorization
-    value: String
-    description: Bearer {token}. Required.
-  - name: Prefer: outlook.timezone
-    value: String
-    description: Use this to specify the time zone for start and end times in the response. If not specified, those time values are returned in UTC. Optional.
-  - name: Prefer: outlook.body-content-type
-    value: String
-    description: The format of the body property to be returned in. Values can be "text" or "html". A Preference-Applied header is returned as confirmation if this Prefer header is specified. If the header is not specified, the body property is returned in HTML format. Optional.
+  - name: "Authorization"
+    value: "String"
+    description: "Bearer {token}. Required."
+  - name: "Prefer: outlook.timezone"
+    value: "String"
+    description: "Use this to specify the time zone for start and end times in the response. If not specified, those time values are returned in UTC. Optional."
+  - name: "Prefer: outlook.body-content-type"
+    value: "String"
+    description: "The format of the body property to be returned in. Values can be "text" or "html". A Preference-Applied header is returned as confirmation if this Prefer header is specified. If the header is not specified, the body property is returned in HTML format. Optional."
 requestBody:
-  heading: Request body
+  heading: "Request body"
   intro: |
     Do not supply a request body for this method.
 response:
-  heading: Response
+  heading: "Response"
   intro: |
     If successful, this method returns a `200 OK` response code and collection of [event](xref:graph.event) objects in the response body.
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         request:
-            heading: Request
+            heading: "Request"
             intro: |
               Here is an example of the request. It specifies the following:
               
@@ -112,7 +112,7 @@ examples:
               ```
               
         response:
-            heading: Response
+            heading: "Response"
             intro: |
               Here is an example of the response. The **body** property is returned in the default HTML format.
             sampleCode: |

@@ -3,20 +3,20 @@ uid: graph.chartfill
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/chartfill.md
 summary:
-  heading: ChartFill resource type
+  heading: "ChartFill resource type"
   intro: |
     Represents the fill formatting for a chart element.
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [Clear](xref:graph.chartfill_clear)
-    type: None
-    description: Clear the fill color of a chart element.
-  - method: [Setsolidcolor](xref:graph.chartfill_setsolidcolor)
-    type: None
-    description: Sets the fill formatting of a chart element to a uniform color.
+  - method: "[Clear](xref:graph.chartfill_clear)"
+    type: "None"
+    description: "Clear the fill color of a chart element."
+  - method: "[Setsolidcolor](xref:graph.chartfill_setsolidcolor)"
+    type: "None"
+    description: "Sets the fill formatting of a chart element to a uniform color."
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   sampleCode: |
     ```json
     {
@@ -24,10 +24,10 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   intro: |
     None
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

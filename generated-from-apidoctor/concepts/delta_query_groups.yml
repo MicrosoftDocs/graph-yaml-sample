@@ -3,7 +3,7 @@ uid: graph.delta_query_groups
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/delta_query_groups.md
 summary:
-  heading: Get incremental changes for groups
+  heading: "Get incremental changes for groups"
   intro: |
     [Delta query](xref:graph.delta_query_overview) lets you query for additions, deletions, or updates to groups, by way of a series of [delta](xref:graph.group_delta) function calls. Delta query enables you discover changes to groups
     without having to fetch the entire set of groups from Microsoft Graph and compare changes.
@@ -19,7 +19,7 @@ summary:
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         intro: |
           The following example shows a series  requests to track changes to groups:
           

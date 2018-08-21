@@ -3,29 +3,29 @@ uid: graph.intune_deviceconfig_devicecomplianceactionitem
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_devicecomplianceactionitem.md
 summary:
-  heading: deviceComplianceActionItem resource type
+  heading: "deviceComplianceActionItem resource type"
   intro: |
     Scheduled Action Configuration
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [List deviceComplianceActionItems](xref:graph.intune_deviceconfig_devicecomplianceactionitem_list)
-    type: [deviceComplianceActionItem](xref:graph.intune_deviceconfig_devicecomplianceactionitem) collection
-    description: List properties and relationships of the deviceComplianceActionItem objects.
-  - method: [Get deviceComplianceActionItem](xref:graph.intune_deviceconfig_devicecomplianceactionitem_get)
-    type: [deviceComplianceActionItem](xref:graph.intune_deviceconfig_devicecomplianceactionitem)
-    description: Read properties and relationships of the deviceComplianceActionItem object.
-  - method: [Create deviceComplianceActionItem](xref:graph.intune_deviceconfig_devicecomplianceactionitem_create)
-    type: [deviceComplianceActionItem](xref:graph.intune_deviceconfig_devicecomplianceactionitem)
-    description: Create a new deviceComplianceActionItem object.
-  - method: [Delete deviceComplianceActionItem](xref:graph.intune_deviceconfig_devicecomplianceactionitem_delete)
-    type: None
-    description: Deletes a deviceComplianceActionItem.
-  - method: [Update deviceComplianceActionItem](xref:graph.intune_deviceconfig_devicecomplianceactionitem_update)
-    type: [deviceComplianceActionItem](xref:graph.intune_deviceconfig_devicecomplianceactionitem)
-    description: Update the properties of a deviceComplianceActionItem object.
+  - method: "[List deviceComplianceActionItems](xref:graph.intune_deviceconfig_devicecomplianceactionitem_list)"
+    type: "[deviceComplianceActionItem](xref:graph.intune_deviceconfig_devicecomplianceactionitem) collection"
+    description: "List properties and relationships of the deviceComplianceActionItem objects."
+  - method: "[Get deviceComplianceActionItem](xref:graph.intune_deviceconfig_devicecomplianceactionitem_get)"
+    type: "[deviceComplianceActionItem](xref:graph.intune_deviceconfig_devicecomplianceactionitem)"
+    description: "Read properties and relationships of the deviceComplianceActionItem object."
+  - method: "[Create deviceComplianceActionItem](xref:graph.intune_deviceconfig_devicecomplianceactionitem_create)"
+    type: "[deviceComplianceActionItem](xref:graph.intune_deviceconfig_devicecomplianceactionitem)"
+    description: "Create a new deviceComplianceActionItem object."
+  - method: "[Delete deviceComplianceActionItem](xref:graph.intune_deviceconfig_devicecomplianceactionitem_delete)"
+    type: "None"
+    description: "Deletes a deviceComplianceActionItem."
+  - method: "[Update deviceComplianceActionItem](xref:graph.intune_deviceconfig_devicecomplianceactionitem_update)"
+    type: "[deviceComplianceActionItem](xref:graph.intune_deviceconfig_devicecomplianceactionitem)"
+    description: "Update the properties of a deviceComplianceActionItem object."
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -43,24 +43,24 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: id
-    type: String
-    description: Key of the entity.
-  - property: gracePeriodHours
-    type: Int32
-    description: Number of hours to wait till the action will be enforced. Valid values 0 to 8760
-  - property: actionType
-    type: microsoft.graph.deviceComplianceActionType
-    description: What action to take. The possible values are: noAction, notification, block, retire, wipe, removeResourceAccessProfiles.
-  - property: notificationTemplateId
-    type: String
-    description: What notification Message template to use
-  - property: notificationMessageCCList
-    type: Collection(String)
-    description: A list of group IDs to speicify who to CC this notification message to.
+  - property: "id"
+    type: "String"
+    description: "Key of the entity."
+  - property: "gracePeriodHours"
+    type: "Int32"
+    description: "Number of hours to wait till the action will be enforced. Valid values 0 to 8760"
+  - property: "actionType"
+    type: "microsoft.graph.deviceComplianceActionType"
+    description: "What action to take. The possible values are: noAction, notification, block, retire, wipe, removeResourceAccessProfiles."
+  - property: "notificationTemplateId"
+    type: "String"
+    description: "What notification Message template to use"
+  - property: "notificationMessageCCList"
+    type: "Collection(String)"
+    description: "A list of group IDs to speicify who to CC this notification message to."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

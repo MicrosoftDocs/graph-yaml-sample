@@ -3,7 +3,7 @@ uid: graph.traverse_the_graph
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/traverse_the_graph.md
 summary:
-  heading: Traverse Microsoft Graph
+  heading: "Traverse Microsoft Graph"
   intro: |
     In addition to using the Microsoft Graph API to read and write data, you can use a number of request patterns to traverse through the resources in Microsoft Graph. The metadata document also helps you to understand the data model of the resources and relationships in Microsoft Graph.
   outro: |

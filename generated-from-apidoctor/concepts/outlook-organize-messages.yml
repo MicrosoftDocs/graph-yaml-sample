@@ -3,7 +3,7 @@ uid: graph.outlook-organize-messages
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/outlook-organize-messages.md
 summary:
-  heading: Organize Outlook messages
+  heading: "Organize Outlook messages"
   intro: |
     Outlook lets customers organize their messages the way they like it, be it leaving all messages in the same Inbox folder, or organizing messages in a tree-like folder structure under the Inbox to fit their specific needs. You can conveniently [filter, search, or sort](xref:graph.query_parameters) messages in the user's
     entire mailbox or in specific folders.

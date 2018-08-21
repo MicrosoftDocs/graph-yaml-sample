@@ -3,11 +3,11 @@ uid: graph.intune_deviceconfig_mediacontentratingnewzealand
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_mediacontentratingnewzealand.md
 summary:
-  heading: mediaContentRatingNewZealand resource type
+  heading: "mediaContentRatingNewZealand resource type"
   intro: |
     Not yet documented
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -20,15 +20,15 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: movieRating
-    type: microsoft.graph.ratingNewZealandMoviesType
-    description: Movies rating selected for New Zealand. The possible values are: allAllowed, allBlocked, general, parentalGuidance, mature, agesAbove13, agesAbove15, agesAbove16, agesAbove18, restricted, agesAbove16Restricted.
-  - property: tvRating
-    type: microsoft.graph.ratingNewZealandTelevisionType
-    description: TV rating selected for New Zealand. The possible values are: allAllowed, allBlocked, general, parentalGuidance, adults.
+  - property: "movieRating"
+    type: "microsoft.graph.ratingNewZealandMoviesType"
+    description: "Movies rating selected for New Zealand. The possible values are: allAllowed, allBlocked, general, parentalGuidance, mature, agesAbove13, agesAbove15, agesAbove16, agesAbove18, restricted, agesAbove16Restricted."
+  - property: "tvRating"
+    type: "microsoft.graph.ratingNewZealandTelevisionType"
+    description: "TV rating selected for New Zealand. The possible values are: allAllowed, allBlocked, general, parentalGuidance, adults."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

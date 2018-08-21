@@ -3,11 +3,11 @@ uid: graph.filtercriteria
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/filtercriteria.md
 summary:
-  heading: FilterCriteria resource type
+  heading: "FilterCriteria resource type"
   intro: |
     Represents the filtering criteria applied to a column.
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |

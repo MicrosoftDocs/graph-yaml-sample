@@ -3,29 +3,29 @@ uid: graph.intune_deviceconfig_settingstatedevicesummary
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_settingstatedevicesummary.md
 summary:
-  heading: settingStateDeviceSummary resource type
+  heading: "settingStateDeviceSummary resource type"
   intro: |
     Device Compilance Policy and Configuration for a Setting State summary
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [List settingStateDeviceSummaries](xref:graph.intune_deviceconfig_settingstatedevicesummary_list)
-    type: [settingStateDeviceSummary](xref:graph.intune_deviceconfig_settingstatedevicesummary) collection
-    description: List properties and relationships of the settingStateDeviceSummary objects.
-  - method: [Get settingStateDeviceSummary](xref:graph.intune_deviceconfig_settingstatedevicesummary_get)
-    type: [settingStateDeviceSummary](xref:graph.intune_deviceconfig_settingstatedevicesummary)
-    description: Read properties and relationships of the settingStateDeviceSummary object.
-  - method: [Create settingStateDeviceSummary](xref:graph.intune_deviceconfig_settingstatedevicesummary_create)
-    type: [settingStateDeviceSummary](xref:graph.intune_deviceconfig_settingstatedevicesummary)
-    description: Create a new settingStateDeviceSummary object.
-  - method: [Delete settingStateDeviceSummary](xref:graph.intune_deviceconfig_settingstatedevicesummary_delete)
-    type: None
-    description: Deletes a settingStateDeviceSummary.
-  - method: [Update settingStateDeviceSummary](xref:graph.intune_deviceconfig_settingstatedevicesummary_update)
-    type: [settingStateDeviceSummary](xref:graph.intune_deviceconfig_settingstatedevicesummary)
-    description: Update the properties of a settingStateDeviceSummary object.
+  - method: "[List settingStateDeviceSummaries](xref:graph.intune_deviceconfig_settingstatedevicesummary_list)"
+    type: "[settingStateDeviceSummary](xref:graph.intune_deviceconfig_settingstatedevicesummary) collection"
+    description: "List properties and relationships of the settingStateDeviceSummary objects."
+  - method: "[Get settingStateDeviceSummary](xref:graph.intune_deviceconfig_settingstatedevicesummary_get)"
+    type: "[settingStateDeviceSummary](xref:graph.intune_deviceconfig_settingstatedevicesummary)"
+    description: "Read properties and relationships of the settingStateDeviceSummary object."
+  - method: "[Create settingStateDeviceSummary](xref:graph.intune_deviceconfig_settingstatedevicesummary_create)"
+    type: "[settingStateDeviceSummary](xref:graph.intune_deviceconfig_settingstatedevicesummary)"
+    description: "Create a new settingStateDeviceSummary object."
+  - method: "[Delete settingStateDeviceSummary](xref:graph.intune_deviceconfig_settingstatedevicesummary_delete)"
+    type: "None"
+    description: "Deletes a settingStateDeviceSummary."
+  - method: "[Update settingStateDeviceSummary](xref:graph.intune_deviceconfig_settingstatedevicesummary_update)"
+    type: "[settingStateDeviceSummary](xref:graph.intune_deviceconfig_settingstatedevicesummary)"
+    description: "Update the properties of a settingStateDeviceSummary object."
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -46,39 +46,39 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: id
-    type: String
-    description: Key of the entity.
-  - property: settingName
-    type: String
-    description: Name of the setting
-  - property: instancePath
-    type: String
-    description: Name of the InstancePath for the setting
-  - property: unknownDeviceCount
-    type: Int32
-    description: Device Unkown count for the setting
-  - property: notApplicableDeviceCount
-    type: Int32
-    description: Device Not Applicable count for the setting
-  - property: compliantDeviceCount
-    type: Int32
-    description: Device Compliant count for the setting
-  - property: remediatedDeviceCount
-    type: Int32
-    description: Device Compliant count for the setting
-  - property: nonCompliantDeviceCount
-    type: Int32
-    description: Device NonCompliant count for the setting
-  - property: errorDeviceCount
-    type: Int32
-    description: Device error count for the setting
-  - property: conflictDeviceCount
-    type: Int32
-    description: Device conflict error count for the setting
+  - property: "id"
+    type: "String"
+    description: "Key of the entity."
+  - property: "settingName"
+    type: "String"
+    description: "Name of the setting"
+  - property: "instancePath"
+    type: "String"
+    description: "Name of the InstancePath for the setting"
+  - property: "unknownDeviceCount"
+    type: "Int32"
+    description: "Device Unkown count for the setting"
+  - property: "notApplicableDeviceCount"
+    type: "Int32"
+    description: "Device Not Applicable count for the setting"
+  - property: "compliantDeviceCount"
+    type: "Int32"
+    description: "Device Compliant count for the setting"
+  - property: "remediatedDeviceCount"
+    type: "Int32"
+    description: "Device Compliant count for the setting"
+  - property: "nonCompliantDeviceCount"
+    type: "Int32"
+    description: "Device NonCompliant count for the setting"
+  - property: "errorDeviceCount"
+    type: "Int32"
+    description: "Device error count for the setting"
+  - property: "conflictDeviceCount"
+    type: "Int32"
+    description: "Device conflict error count for the setting"
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

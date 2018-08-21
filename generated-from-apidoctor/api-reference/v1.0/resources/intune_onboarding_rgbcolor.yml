@@ -3,11 +3,11 @@ uid: graph.intune_onboarding_rgbcolor
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_onboarding_rgbcolor.md
 summary:
-  heading: rgbColor resource type
+  heading: "rgbColor resource type"
   intro: |
     Color in RGB.
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -21,18 +21,18 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: r
-    type: Byte
-    description: Red value
-  - property: g
-    type: Byte
-    description: Green value
-  - property: b
-    type: Byte
-    description: Blue value
+  - property: "r"
+    type: "Byte"
+    description: "Red value"
+  - property: "g"
+    type: "Byte"
+    description: "Green value"
+  - property: "b"
+    type: "Byte"
+    description: "Blue value"
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

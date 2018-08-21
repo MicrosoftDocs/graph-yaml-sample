@@ -3,11 +3,11 @@ uid: graph.extensionschemaproperty
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/extensionschemaproperty.md
 summary:
-  heading: extensionSchemaProperty resource type
+  heading: "extensionSchemaProperty resource type"
   intro: |
     Use the **extensionSchemaProperty** resource to define a property's name and its type, as part of a [schemaExtension](xref:graph.schemaextension) definition.
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -19,14 +19,14 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: name
-    type: String
-    description: The name of the strongly-typed property defined as part of a schema extension.
-  - property: type
-    type: String
-    description: The type of the property that is defined as part of a schema extension.  Allowed values are Binary, Boolean, DateTime, Integer or String.  See the table below for more details.
+  - property: "name"
+    type: "String"
+    description: "The name of the strongly-typed property defined as part of a schema extension."
+  - property: "type"
+    type: "String"
+    description: "The type of the property that is defined as part of a schema extension.  Allowed values are Binary, Boolean, DateTime, Integer or String.  See the table below for more details."
   outro: |
     #### Supported property data types
     The following data types are supported when defining a property in a schema extension:

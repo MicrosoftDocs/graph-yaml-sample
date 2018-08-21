@@ -3,29 +3,29 @@ uid: graph.intune_deviceconfig_devicecompliancepolicyassignment
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_devicecompliancepolicyassignment.md
 summary:
-  heading: deviceCompliancePolicyAssignment resource type
+  heading: "deviceCompliancePolicyAssignment resource type"
   intro: |
     Device compliance policy assignment.
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [List deviceCompliancePolicyAssignments](xref:graph.intune_deviceconfig_devicecompliancepolicyassignment_list)
-    type: [deviceCompliancePolicyAssignment](xref:graph.intune_deviceconfig_devicecompliancepolicyassignment) collection
-    description: List properties and relationships of the deviceCompliancePolicyAssignment objects.
-  - method: [Get deviceCompliancePolicyAssignment](xref:graph.intune_deviceconfig_devicecompliancepolicyassignment_get)
-    type: [deviceCompliancePolicyAssignment](xref:graph.intune_deviceconfig_devicecompliancepolicyassignment)
-    description: Read properties and relationships of the deviceCompliancePolicyAssignment object.
-  - method: [Create deviceCompliancePolicyAssignment](xref:graph.intune_deviceconfig_devicecompliancepolicyassignment_create)
-    type: [deviceCompliancePolicyAssignment](xref:graph.intune_deviceconfig_devicecompliancepolicyassignment)
-    description: Create a new deviceCompliancePolicyAssignment object.
-  - method: [Delete deviceCompliancePolicyAssignment](xref:graph.intune_deviceconfig_devicecompliancepolicyassignment_delete)
-    type: None
-    description: Deletes a deviceCompliancePolicyAssignment.
-  - method: [Update deviceCompliancePolicyAssignment](xref:graph.intune_deviceconfig_devicecompliancepolicyassignment_update)
-    type: [deviceCompliancePolicyAssignment](xref:graph.intune_deviceconfig_devicecompliancepolicyassignment)
-    description: Update the properties of a deviceCompliancePolicyAssignment object.
+  - method: "[List deviceCompliancePolicyAssignments](xref:graph.intune_deviceconfig_devicecompliancepolicyassignment_list)"
+    type: "[deviceCompliancePolicyAssignment](xref:graph.intune_deviceconfig_devicecompliancepolicyassignment) collection"
+    description: "List properties and relationships of the deviceCompliancePolicyAssignment objects."
+  - method: "[Get deviceCompliancePolicyAssignment](xref:graph.intune_deviceconfig_devicecompliancepolicyassignment_get)"
+    type: "[deviceCompliancePolicyAssignment](xref:graph.intune_deviceconfig_devicecompliancepolicyassignment)"
+    description: "Read properties and relationships of the deviceCompliancePolicyAssignment object."
+  - method: "[Create deviceCompliancePolicyAssignment](xref:graph.intune_deviceconfig_devicecompliancepolicyassignment_create)"
+    type: "[deviceCompliancePolicyAssignment](xref:graph.intune_deviceconfig_devicecompliancepolicyassignment)"
+    description: "Create a new deviceCompliancePolicyAssignment object."
+  - method: "[Delete deviceCompliancePolicyAssignment](xref:graph.intune_deviceconfig_devicecompliancepolicyassignment_delete)"
+    type: "None"
+    description: "Deletes a deviceCompliancePolicyAssignment."
+  - method: "[Update deviceCompliancePolicyAssignment](xref:graph.intune_deviceconfig_devicecompliancepolicyassignment_update)"
+    type: "[deviceCompliancePolicyAssignment](xref:graph.intune_deviceconfig_devicecompliancepolicyassignment)"
+    description: "Update the properties of a deviceCompliancePolicyAssignment object."
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -40,15 +40,15 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: id
-    type: String
-    description: Key of the entity.
-  - property: target
-    type: microsoft.graph.deviceAndAppManagementAssignmentTarget
-    description: Target for the compliance policy assignment.
+  - property: "id"
+    type: "String"
+    description: "Key of the entity."
+  - property: "target"
+    type: "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    description: "Target for the compliance policy assignment."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

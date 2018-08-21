@@ -3,7 +3,7 @@ uid: graph.outlook-schedule-recurring-events
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/outlook-schedule-recurring-events.md
 summary:
-  heading: Schedule repeating appointments as recurring events in Outlook
+  heading: "Schedule repeating appointments as recurring events in Outlook"
   intro: |
     Recurring events are an important part of Outlook calendaring. Whether it's a weekly one-on-one meeting with your manager, or a division-wide review meeting that happens on the second Tuesday of each month, recurring events make it easy to create the event once, and let the server fill in the rest of the series.
     The key bit of information that allows recurring events to "expand" into individual occurrences is the recurrence rule. The rule specifies both how often an event repeats, and for how long. The Outlook REST APIs model recurrence rules in the **recurrence** property of the [event resource](xref:graph.event). 
@@ -15,7 +15,7 @@ summary:
     
     Let's take a look at each of the possible pattern types.
 examples:
-  heading: Examples
+  heading: "Examples"
   intro: |
     * Repeat this event every day
     
@@ -34,7 +34,7 @@ examples:
 
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         intro: |
           * Repeat this event on April 15 every year
           

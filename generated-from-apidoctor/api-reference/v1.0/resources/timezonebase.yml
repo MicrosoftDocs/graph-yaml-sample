@@ -3,11 +3,11 @@ uid: graph.timezonebase
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/timezonebase.md
 summary:
-  heading: timeZoneBase resource type
+  heading: "timeZoneBase resource type"
   intro: |
     The basic representation of a time zone.
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -18,8 +18,8 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: name
-    type: String
-    description: The name of a time zone. It can be a standard time zone name such as "Hawaii-Aleutian Standard Time", or "Customized Time Zone" for a custom time zone.
+  - property: "name"
+    type: "String"
+    description: "The name of a time zone. It can be a standard time zone name such as "Hawaii-Aleutian Standard Time", or "Customized Time Zone" for a custom time zone."

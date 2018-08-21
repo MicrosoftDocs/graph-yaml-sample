@@ -3,7 +3,7 @@ uid: graph.excel-use-functions
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/excel-use-functions.md
 summary:
-  heading: Use workbook functions in Excel with Microsoft Graph
+  heading: "Use workbook functions in Excel with Microsoft Graph"
   intro: |
     You can invoke any workbook function by using the following syntax: `POST /workbook/functions/{function-name}`. You provide the function argument(s) in the body using a JSON object. The function's resulting `value` and any `error` strings are returned in the function result object. The `error` value of `null` indicates successful execution of the function.
     The complete list of supported functions are listed [here](https://support.office.com/en-us/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188). Refer to the function signature for specific parameter names and data types.
@@ -37,7 +37,7 @@ summary:
     }
 
 requestBody:
-  heading: Request
+  heading: "Request"
   intro: |
     The following example shows how to call the `median` function and one or more input ranges with the Excel REST API.
     POST https://graph.microsoft.com/beta/me/drive/root:/book1.xlsx:/workbook/functions/median
@@ -73,7 +73,7 @@ requestBody:
     * [Use the Excel REST API](xref:graph.excel)
     
 response:
-  heading: Response
+  heading: "Response"
   intro: |
     HTTP code: 200 OK
     content-type: application/json;odata.metadata

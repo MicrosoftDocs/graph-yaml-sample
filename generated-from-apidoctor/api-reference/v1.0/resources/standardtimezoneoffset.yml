@@ -3,7 +3,7 @@ uid: graph.standardtimezoneoffset
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/standardtimezoneoffset.md
 summary:
-  heading: standardTimeZoneOffset resource type
+  heading: "standardTimeZoneOffset resource type"
   intro: |
     Specifies when a time zone switches from daylight saving time to standard time.
     For example, if a time zone is specified with the following properties:
@@ -16,7 +16,7 @@ summary:
     That means the transition from daylight saving time to standard occurs at 2 AM on the third Sunday of October, every year.
     
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -31,20 +31,20 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: dayOccurrence
-    type: Int32
-    description: Represents the nth occurrence of the day of week that the transition from daylight saving time to standard time occurs.
-  - property: dayOfWeek
-    type: microsoft.graph.dayOfWeek
-    description: Represents the day of the week when the transition from daylight saving time to standard time.
-  - property: month
-    type: Int32
-    description: Represents the month of the year when the transition from daylight saving time to standard time occurs.
-  - property: time
-    type: TimeOfDay
-    description: Represents the time of day when the transition from daylight saving time to standard time occurs.
-  - property: year
-    type: Int32
-    description: Represents how frequently in terms of years the change from daylight saving time to standard time occurs. For example, a value of 0 means every year.
+  - property: "dayOccurrence"
+    type: "Int32"
+    description: "Represents the nth occurrence of the day of week that the transition from daylight saving time to standard time occurs."
+  - property: "dayOfWeek"
+    type: "microsoft.graph.dayOfWeek"
+    description: "Represents the day of the week when the transition from daylight saving time to standard time."
+  - property: "month"
+    type: "Int32"
+    description: "Represents the month of the year when the transition from daylight saving time to standard time occurs."
+  - property: "time"
+    type: "TimeOfDay"
+    description: "Represents the time of day when the transition from daylight saving time to standard time occurs."
+  - property: "year"
+    type: "Int32"
+    description: "Represents how frequently in terms of years the change from daylight saving time to standard time occurs. For example, a value of 0 means every year."

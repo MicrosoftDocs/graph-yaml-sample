@@ -3,11 +3,11 @@ uid: graph.intune_shared_uri
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_shared_uri.md
 summary:
-  heading: uri resource type
+  heading: "uri resource type"
   intro: |
     Not yet documented
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -21,12 +21,12 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: segments
-    type: Collection(String)
-    description: Not yet documented
+  - property: "segments"
+    type: "Collection(String)"
+    description: "Not yet documented"
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

@@ -3,15 +3,15 @@ uid: graph.domaindnsrecord
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/domaindnsrecord.md
 summary:
-  heading: domainDnsRecord resource type
+  heading: "domainDnsRecord resource type"
   intro: |
     For each domain in the tenant, you may be required to add DNS record(s) to the DNS zone file of the domain before the domain can be used by Microsoft Online Services. The **DomainDnsRecord** entity is used to present such DNS records. Base entity for [DomainDnsCnameRecord](xref:graph.domaindnscnamerecord), [DomainDnsMxRecord](xref:graph.domaindnsmxrecord), [DomainDnsSrvRecord](xref:graph.domaindnssrvrecord) and [DomainDnsSrvRecord](xref:graph.domaindnssrvrecord) entities.
 methods:
-  heading: Methods
+  heading: "Methods"
   intro: |
     Direct queries to this resource are not supported. Please see the [domain](xref:graph.domain) topic for information on how to query for domain service records.
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -27,27 +27,27 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: id
-    type: String
-    description: Unique identifier assigned to this entity. Not nullable, Read-only.
-  - property: isOptional
-    type: Boolean
-    description: If false, this record must be configured by the customer at the DNS host for Microsoft Online Services to operate correctly with the domain.
-  - property: label
-    type: String
-    description: Value used when configuring the name of the DNS record at the DNS host.
-  - property: recordType
-    type: String
-    description: Indicates what type of DNS record this entity represents.The value can be one of the following: CName, Mx, Srv, TxtKey
-  - property: supportedService
-    type: String
-    description: Microsoft Online Service or feature that has a dependency on this DNS record.Can be one of the following values: null, Email, Sharepoint, EmailInternalRelayOnly, OfficeCommunicationsOnline, SharePointDefaultDomain, FullRedelegation, SharePointPublic, OrgIdAuthentication, Yammer, Intune
-  - property: ttl
-    type: Int32
-    description: Value to use when configuring the time-to-live (ttl) property of the DNS record at the DNS host. Not nullable
+  - property: "id"
+    type: "String"
+    description: "Unique identifier assigned to this entity. Not nullable, Read-only."
+  - property: "isOptional"
+    type: "Boolean"
+    description: "If false, this record must be configured by the customer at the DNS host for Microsoft Online Services to operate correctly with the domain."
+  - property: "label"
+    type: "String"
+    description: "Value used when configuring the name of the DNS record at the DNS host."
+  - property: "recordType"
+    type: "String"
+    description: "Indicates what type of DNS record this entity represents.The value can be one of the following: CName, Mx, Srv, TxtKey"
+  - property: "supportedService"
+    type: "String"
+    description: "Microsoft Online Service or feature that has a dependency on this DNS record.Can be one of the following values: null, Email, Sharepoint, EmailInternalRelayOnly, OfficeCommunicationsOnline, SharePointDefaultDomain, FullRedelegation, SharePointPublic, OrgIdAuthentication, Yammer, Intune"
+  - property: "ttl"
+    type: "Int32"
+    description: "Value to use when configuring the time-to-live (ttl) property of the DNS record at the DNS host. Not nullable"
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

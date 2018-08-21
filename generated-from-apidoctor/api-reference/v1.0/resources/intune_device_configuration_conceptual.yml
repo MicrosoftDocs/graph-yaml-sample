@@ -3,7 +3,7 @@ uid: graph.intune_device_configuration_conceptual
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_device_configuration_conceptual.md
 summary:
-  heading: Device configuration in Microsoft Intune
+  heading: "Device configuration in Microsoft Intune"
   intro: |
     Use the Microsoft Intune Device Configuration workload to manage settings and features on all of the devices you manage.
     The following Graph resources are available to manage settings and features on devices in Intune:

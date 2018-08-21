@@ -3,53 +3,53 @@ uid: graph.grouplifecyclepolicy_addgroup
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/grouplifecyclepolicy_addgroup.md
 summary:
-  heading: groupLifecyclePolicy: addGroup
+  heading: "groupLifecyclePolicy: addGroup"
   intro: |
     Adds a group to a lifecycle policy.
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
   list:
-  - resource: Delegated (work or school account)
-    permission: Directory.ReadWrite.All
-  - resource: Delegated (personal Microsoft account)
-    permission: Not supported.
-  - resource: Application
-    permission: Directory.ReadWrite.All
+  - resource: "Delegated (work or school account)"
+    permission: "Directory.ReadWrite.All"
+  - resource: "Delegated (personal Microsoft account)"
+    permission: "Not supported."
+  - resource: "Application"
+    permission: "Directory.ReadWrite.All"
 httpRequest:
-  heading: HTTP request
+  heading: "HTTP request"
   sampleCode: |
     ```http
     POST /groupLifecyclePolicies/{id}/addGroup
     ```
     
 requestHeaders:
-  heading: Request headers
+  heading: "Request headers"
   list:
-  - name: Authorization
-    value: 
-    description: Bearer {token}. Required.
-  - name: Content-Type
-    value: 
-    description: application/json
+  - name: "Authorization"
+    value: ""
+    description: "Bearer {token}. Required."
+  - name: "Content-Type"
+    value: ""
+    description: "application/json"
 requestBody:
-  heading: Request body
+  heading: "Request body"
   intro: |
     In the request body, provide a JSON object with the following parameters.
     |Parameter|Type|Description
     |:-|:-|:-|
     |groupId|Guid|The id of the group to add to the policy.
 response:
-  heading: Response
+  heading: "Response"
   intro: |
     If successful, this method returns `200 OK` response code. If the group is added to the policy, a **true** value is returned in the response body. Otherwise, a **false** value is returned in the reponse body.
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         request:
-            heading: Request
+            heading: "Request"
             sampleCode: |
               ```http
               POST https://graph.microsoft.com/v1.0/groupLifecyclePolicies/{id}/addGroup
@@ -62,7 +62,7 @@ examples:
               ```
               
         response:
-            heading: Response
+            heading: "Response"
             sampleCode: |
               ```http
               HTTP/1.1 200 OK

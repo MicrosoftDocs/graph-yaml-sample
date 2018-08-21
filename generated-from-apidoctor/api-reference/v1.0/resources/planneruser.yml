@@ -3,20 +3,20 @@ uid: graph.planneruser
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/plannerxref:graph.user
 summary:
-  heading: plannerUser resource type
+  heading: "plannerUser resource type"
   intro: |
     The **plannerUser** resource provide access to Planner resources for a [user](xref:graph.user). It doesn't contain any usable properties.
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [List plans](xref:graph.planneruser_list_plans)
-    type: [plannerPlan](xref:graph.plannerplan) collection
-    description: Get a plannerPlan object collection.
-  - method: [List tasks](xref:graph.planneruser_list_tasks)
-    type: [plannerTask](xref:graph.plannertask) collection
-    description: Get a plannerTask object collection.
+  - method: "[List plans](xref:graph.planneruser_list_plans)"
+    type: "[plannerPlan](xref:graph.plannerplan) collection"
+    description: "Get a plannerPlan object collection."
+  - method: "[List tasks](xref:graph.planneruser_list_tasks)"
+    type: "[plannerTask](xref:graph.plannertask) collection"
+    description: "Get a plannerTask object collection."
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -27,17 +27,17 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: id
-    type: String
-    description: Read-only. Identifier of the planenrUser
+  - property: "id"
+    type: "String"
+    description: "Read-only. Identifier of the planenrUser"
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   list:
-  - relationship: plans
-    type: Collection(microsoft.graph.plannerPlan)
-    description: Read-only. Nullable. Returns the plannerTasks assigned to the user.
-  - relationship: tasks
-    type: Collection(microsoft.graph.plannerTask)
-    description: Read-only. Nullable. Returns the plannerPlans shared with the user.
+  - relationship: "plans"
+    type: "Collection(microsoft.graph.plannerPlan)"
+    description: "Read-only. Nullable. Returns the plannerTasks assigned to the user."
+  - relationship: "tasks"
+    type: "Collection(microsoft.graph.plannerTask)"
+    description: "Read-only. Nullable. Returns the plannerPlans shared with the user."

@@ -3,23 +3,23 @@ uid: graph.intune_deviceconfig_ratingaustraliamoviestype
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_ratingaustraliamoviestype.md
 summary:
-  heading: ratingAustraliaMoviesType enum type
+  heading: "ratingAustraliaMoviesType enum type"
   intro: |
     Movies rating labels in Australia
 enum:
-  heading: Members
+  heading: "Members"
   table:
-  - member: allAllowed
-    description: Default value, allow all movies content
-  - member: allBlocked
-    description: Do not allow any movies content
-  - member: general
-    description: The G classification is suitable for everyone
-  - member: parentalGuidance
-    description: The PG recommends viewers under 15 with guidance from parents or guardians
-  - member: mature
-    description: The M classification is not recommended for viewers under 15
-  - member: agesAbove15
-    description: The MA15+ classification is not suitable for viewers under 15
-  - member: agesAbove18
-    description: The R18+ classification is not suitable for viewers under 18
+  - member: "allAllowed"
+    description: "Default value, allow all movies content"
+  - member: "allBlocked"
+    description: "Do not allow any movies content"
+  - member: "general"
+    description: "The G classification is suitable for everyone"
+  - member: "parentalGuidance"
+    description: "The PG recommends viewers under 15 with guidance from parents or guardians"
+  - member: "mature"
+    description: "The M classification is not recommended for viewers under 15"
+  - member: "agesAbove15"
+    description: "The MA15+ classification is not suitable for viewers under 15"
+  - member: "agesAbove18"
+    description: "The R18+ classification is not suitable for viewers under 18"

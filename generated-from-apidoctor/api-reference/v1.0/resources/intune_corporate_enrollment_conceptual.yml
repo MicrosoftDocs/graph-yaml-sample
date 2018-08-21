@@ -3,7 +3,7 @@ uid: graph.intune_corporate_enrollment_conceptual
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_corporate_enrollment_conceptual.md
 summary:
-  heading: Enroll corporate-owned devices by using Intune
+  heading: "Enroll corporate-owned devices by using Intune"
   intro: |
     You can enroll organization-owned or corporate-owned devices to manage with Intune in a variety of ways, depending on the type of device, how the device was purchased, and the needs of the organization. You also can install the Company Portal app to enroll and manage corporate-owned devices, like in a "bring your own device" (BYOD) scenario.
     The following Graph resources are available to manage corporate-owned devices in Intune:

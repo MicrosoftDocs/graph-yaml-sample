@@ -3,7 +3,7 @@ uid: graph.onenote-extract-data
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/onenote-extract-data.md
 summary:
-  heading: Use OneNote API div tags to extract data from captures
+  heading: "Use OneNote API div tags to extract data from captures"
   intro: |
     **Applies to** Consumer notebooks on OneDrive | Enterprise notebooks on Office 365
     Use the OneNote API to extract business card data from an image, or recipe and product data from a URL.
@@ -18,7 +18,7 @@ summary:
     </div>
 
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     To create or update OneNote pages, you'll need to request appropriate permissions. Choose the lowest level of permissions that your app needs to do its work.
   outro: |

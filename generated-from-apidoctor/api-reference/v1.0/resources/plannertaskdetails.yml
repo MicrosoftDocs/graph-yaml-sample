@@ -3,20 +3,20 @@ uid: graph.plannertaskdetails
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.plannertaskdetails
 summary:
-  heading: plannerTaskDetails resource type
+  heading: "plannerTaskDetails resource type"
   intro: |
     The **plannerTaskDetails** resource represents the additional information about a task. Each [task](xref:graph.plannertask) object has a details object.
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [Get plannerTaskDetails](xref:graph.plannertaskdetails_get)
-    type: [plannerTaskDetails](xref:graph.plannertaskdetails)
-    description: Read properties and relationships of plannerTaskDetails object.
-  - method: [Update](xref:graph.plannertaskdetails_update)
-    type: [plannerTaskDetails](xref:graph.plannertaskdetails)
-    description: Update plannerTaskDetails object.
+  - method: "[Get plannerTaskDetails](xref:graph.plannertaskdetails_get)"
+    type: "[plannerTaskDetails](xref:graph.plannertaskdetails)"
+    description: "Read properties and relationships of plannerTaskDetails object."
+  - method: "[Update](xref:graph.plannertaskdetails_update)"
+    type: "[plannerTaskDetails](xref:graph.plannertaskdetails)"
+    description: "Update plannerTaskDetails object."
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -31,24 +31,24 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: checklist
-    type: microsoft.graph.plannerChecklistItems
-    description: The collection of checklist items on the task.
-  - property: description
-    type: String
-    description: Description of the task
-  - property: id
-    type: String
-    description: Read-only. ID of the task details. It is 28 characters long and case-sensitive. Format validation is done on the service.
-  - property: previewType
-    type: String
-    description: This sets the type of preview that shows up on the task. The possible values are: automatic, noPreview, checklist, description, reference. When set to automatic the displayed preview is chosen by the app viewing the task.
-  - property: references
-    type: microsoft.graph.plannerExternalReferences
-    description: The collection of references on the task.
+  - property: "checklist"
+    type: "microsoft.graph.plannerChecklistItems"
+    description: "The collection of checklist items on the task."
+  - property: "description"
+    type: "String"
+    description: "Description of the task"
+  - property: "id"
+    type: "String"
+    description: "Read-only. ID of the task details. It is 28 characters long and case-sensitive. Format validation is done on the service."
+  - property: "previewType"
+    type: "String"
+    description: "This sets the type of preview that shows up on the task. The possible values are: automatic, noPreview, checklist, description, reference. When set to automatic the displayed preview is chosen by the app viewing the task."
+  - property: "references"
+    type: "microsoft.graph.plannerExternalReferences"
+    description: "The collection of references on the task."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

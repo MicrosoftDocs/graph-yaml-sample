@@ -3,7 +3,7 @@ uid: graph.quick_start_faq
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/quick_start_faq.md
 summary:
-  heading: Microsoft Graph quick start FAQ
+  heading: "Microsoft Graph quick start FAQ"
   intro: |
     This FAQ answers questions related to the [Microsoft Graph Quick Starts](https://developer.microsoft.com/en-us/graph/quick-start).
   outro: |

@@ -3,26 +3,26 @@ uid: graph.rangeborder
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.rangeborder
 summary:
-  heading: RangeBorder resource type
+  heading: "RangeBorder resource type"
   intro: |
     Represents the border of an object.
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [Get RangeBorder](xref:graph.rangeborder_get)
-    type: [WorkbookRangeBorder](xref:graph.rangeborder)
-    description: Read properties and relationships of rangeBorder object.
-  - method: [Update](xref:graph.rangeborder_update)
-    type: [WorkbookRangeBorder](xref:graph.rangeborder)
-    description: Update RangeBorder object.
-  - method: [List](xref:graph.rangeborder_list)
-    type: [WorkbookRangeBorder](xref:graph.rangeborder) collection
-    description: Get rangeBorder object collection.
-  - method: [Itemat](xref:graph.rangebordercollection_itemat)
-    type: [WorkbookRangeBorder](xref:graph.rangeborder)
-    description: Gets a border object using its index
+  - method: "[Get RangeBorder](xref:graph.rangeborder_get)"
+    type: "[WorkbookRangeBorder](xref:graph.rangeborder)"
+    description: "Read properties and relationships of rangeBorder object."
+  - method: "[Update](xref:graph.rangeborder_update)"
+    type: "[WorkbookRangeBorder](xref:graph.rangeborder)"
+    description: "Update RangeBorder object."
+  - method: "[List](xref:graph.rangeborder_list)"
+    type: "[WorkbookRangeBorder](xref:graph.rangeborder) collection"
+    description: "Get rangeBorder object collection."
+  - method: "[Itemat](xref:graph.rangebordercollection_itemat)"
+    type: "[WorkbookRangeBorder](xref:graph.rangeborder)"
+    description: "Gets a border object using its index"
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -37,24 +37,24 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: color
-    type: String
-    description: HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
-  - property: id
-    type: String
-    description: Represents border identifier. The possible values are: EdgeTop, EdgeBottom, EdgeLeft, EdgeRight, InsideVertical, InsideHorizontal, DiagonalDown, DiagonalUp. Read-only.
-  - property: sideIndex
-    type: String
-    description: Constant value that indicates the specific side of the border. The possible values are: EdgeTop, EdgeBottom, EdgeLeft, EdgeRight, InsideVertical, InsideHorizontal, DiagonalDown, DiagonalUp. Read-only.
-  - property: style
-    type: String
-    description: One of the constants of line style specifying the line style for the border. The possible values are: None, Continuous, Dash, DashDot, DashDotDot, Dot, Double, SlantDashDot.
-  - property: weight
-    type: String
-    description: Specifies the weight of the border around a range. The possible values are: Hairline, Thin, Medium, Thick.
+  - property: "color"
+    type: "String"
+    description: "HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange")."
+  - property: "id"
+    type: "String"
+    description: "Represents border identifier. The possible values are: EdgeTop, EdgeBottom, EdgeLeft, EdgeRight, InsideVertical, InsideHorizontal, DiagonalDown, DiagonalUp. Read-only."
+  - property: "sideIndex"
+    type: "String"
+    description: "Constant value that indicates the specific side of the border. The possible values are: EdgeTop, EdgeBottom, EdgeLeft, EdgeRight, InsideVertical, InsideHorizontal, DiagonalDown, DiagonalUp. Read-only."
+  - property: "style"
+    type: "String"
+    description: "One of the constants of line style specifying the line style for the border. The possible values are: None, Continuous, Dash, DashDot, DashDotDot, Dot, Double, SlantDashDot."
+  - property: "weight"
+    type: "String"
+    description: "Specifies the weight of the border around a range. The possible values are: Hairline, Thin, Medium, Thick."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

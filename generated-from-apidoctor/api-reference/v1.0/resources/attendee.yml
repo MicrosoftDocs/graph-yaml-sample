@@ -3,12 +3,12 @@ uid: graph.attendee
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/attendee.md
 summary:
-  heading: attendee resource type
+  heading: "attendee resource type"
   intro: |
     An event attendee. This can be a person or resource such as a meeting room or equipment, that has been set up as a resource on the Exchange server for the tenant.
     Derived from [attendeeBase](xref:graph.attendeebase).
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource
   sampleCode: |
@@ -21,14 +21,14 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: status
-    type: microsoft.graph.responseStatus
-    description: The attendee's response (none, accepted, declined, etc.) for the event and date-time that the response was sent.
-  - property: type
-    type: String
-    description: The attendee type: required, optional, resource.
-  - property: emailAddress
-    type: microsoft.graph.emailAddress
-    description: Includes the name and SMTP address of the attendee.
+  - property: "status"
+    type: "microsoft.graph.responseStatus"
+    description: "The attendee's response (none, accepted, declined, etc.) for the event and date-time that the response was sent."
+  - property: "type"
+    type: "String"
+    description: "The attendee type: required, optional, resource."
+  - property: "emailAddress"
+    type: "microsoft.graph.emailAddress"
+    description: "Includes the name and SMTP address of the attendee."

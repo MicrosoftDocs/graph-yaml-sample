@@ -3,29 +3,29 @@ uid: graph.intune_deviceconfig_deviceconfigurationuserstatus
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_deviceconfigurationuserstatus.md
 summary:
-  heading: deviceConfigurationUserStatus resource type
+  heading: "deviceConfigurationUserStatus resource type"
   intro: |
     Not yet documented
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [List deviceConfigurationUserStatuses](xref:graph.intune_deviceconfig_deviceconfigurationuserstatus_list)
-    type: [deviceConfigurationUserStatus](xref:graph.intune_deviceconfig_deviceconfigurationuserstatus) collection
-    description: List properties and relationships of the deviceConfigurationUserStatus objects.
-  - method: [Get deviceConfigurationUserStatus](xref:graph.intune_deviceconfig_deviceconfigurationuserstatus_get)
-    type: [deviceConfigurationUserStatus](xref:graph.intune_deviceconfig_deviceconfigurationuserstatus)
-    description: Read properties and relationships of the deviceConfigurationUserStatus object.
-  - method: [Create deviceConfigurationUserStatus](xref:graph.intune_deviceconfig_deviceconfigurationuserstatus_create)
-    type: [deviceConfigurationUserStatus](xref:graph.intune_deviceconfig_deviceconfigurationuserstatus)
-    description: Create a new deviceConfigurationUserStatus object.
-  - method: [Delete deviceConfigurationUserStatus](xref:graph.intune_deviceconfig_deviceconfigurationuserstatus_delete)
-    type: None
-    description: Deletes a deviceConfigurationUserStatus.
-  - method: [Update deviceConfigurationUserStatus](xref:graph.intune_deviceconfig_deviceconfigurationuserstatus_update)
-    type: [deviceConfigurationUserStatus](xref:graph.intune_deviceconfig_deviceconfigurationuserstatus)
-    description: Update the properties of a deviceConfigurationUserStatus object.
+  - method: "[List deviceConfigurationUserStatuses](xref:graph.intune_deviceconfig_deviceconfigurationuserstatus_list)"
+    type: "[deviceConfigurationUserStatus](xref:graph.intune_deviceconfig_deviceconfigurationuserstatus) collection"
+    description: "List properties and relationships of the deviceConfigurationUserStatus objects."
+  - method: "[Get deviceConfigurationUserStatus](xref:graph.intune_deviceconfig_deviceconfigurationuserstatus_get)"
+    type: "[deviceConfigurationUserStatus](xref:graph.intune_deviceconfig_deviceconfigurationuserstatus)"
+    description: "Read properties and relationships of the deviceConfigurationUserStatus object."
+  - method: "[Create deviceConfigurationUserStatus](xref:graph.intune_deviceconfig_deviceconfigurationuserstatus_create)"
+    type: "[deviceConfigurationUserStatus](xref:graph.intune_deviceconfig_deviceconfigurationuserstatus)"
+    description: "Create a new deviceConfigurationUserStatus object."
+  - method: "[Delete deviceConfigurationUserStatus](xref:graph.intune_deviceconfig_deviceconfigurationuserstatus_delete)"
+    type: "None"
+    description: "Deletes a deviceConfigurationUserStatus."
+  - method: "[Update deviceConfigurationUserStatus](xref:graph.intune_deviceconfig_deviceconfigurationuserstatus_update)"
+    type: "[deviceConfigurationUserStatus](xref:graph.intune_deviceconfig_deviceconfigurationuserstatus)"
+    description: "Update the properties of a deviceConfigurationUserStatus object."
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -42,27 +42,27 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: id
-    type: String
-    description: Key of the entity.
-  - property: userDisplayName
-    type: String
-    description: User name of the DevicePolicyStatus.
-  - property: devicesCount
-    type: Int32
-    description: Devices count for that user.
-  - property: status
-    type: microsoft.graph.complianceStatus
-    description: Compliance status of the policy report. The possible values are: unknown, notApplicable, compliant, remediated, nonCompliant, error, conflict.
-  - property: lastReportedDateTime
-    type: DateTimeOffset
-    description: Last modified date time of the policy report.
-  - property: userPrincipalName
-    type: String
-    description: UserPrincipalName.
+  - property: "id"
+    type: "String"
+    description: "Key of the entity."
+  - property: "userDisplayName"
+    type: "String"
+    description: "User name of the DevicePolicyStatus."
+  - property: "devicesCount"
+    type: "Int32"
+    description: "Devices count for that user."
+  - property: "status"
+    type: "microsoft.graph.complianceStatus"
+    description: "Compliance status of the policy report. The possible values are: unknown, notApplicable, compliant, remediated, nonCompliant, error, conflict."
+  - property: "lastReportedDateTime"
+    type: "DateTimeOffset"
+    description: "Last modified date time of the policy report."
+  - property: "userPrincipalName"
+    type: "String"
+    description: "UserPrincipalName."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None

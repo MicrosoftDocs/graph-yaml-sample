@@ -3,7 +3,7 @@ uid: graph.rest
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/rest.md
 summary:
-  heading: Get started with Microsoft Graph and REST
+  heading: "Get started with Microsoft Graph and REST"
   intro: |
     This article describes the tasks required to get an access token from the Azure AD v2.0 endpoint and call Microsoft Graph using REST calls. It describes the sequence of requests and responses that an app uses to authenticate and retrieve email messages.
     First, you need register your app with Azure Active Directory (Azure AD). 

@@ -3,24 +3,24 @@ uid: graph.onenote_post_pages
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/onenote_post_pages.md
 summary:
-  heading: Create page
+  heading: "Create page"
   intro: |
     Create a new OneNote page in the default section of the default notebook.
     To create a page in a different section in the default notebook, you can use the `sectionName` query parameter.  Example: `../onenote/pages?sectionName=My%20section`
     The `POST /onenote/pages` operation is used only to create pages in the current user's default notebook. If you're targeting other notebooks, you can [create pages in a specified section](xref:graph.section_post_pages).           
 permissions:
-  heading: Permissions
+  heading: "Permissions"
   intro: |
     One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
   list:
-  - resource: Delegated (work or school account)
-    permission: Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All
-  - resource: Delegated (personal Microsoft account)
-    permission: Notes.Create, Notes.ReadWrite
-  - resource: Application
-    permission: Notes.ReadWrite.All
+  - resource: "Delegated (work or school account)"
+    permission: "Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All"
+  - resource: "Delegated (personal Microsoft account)"
+    permission: "Notes.Create, Notes.ReadWrite"
+  - resource: "Application"
+    permission: "Notes.ReadWrite.All"
 httpRequest:
-  heading: HTTP request
+  heading: "HTTP request"
   sampleCode: |
     ```http
     POST /me/onenote/pages
@@ -30,29 +30,29 @@ httpRequest:
     ```
     
 requestHeaders:
-  heading: Request headers
+  heading: "Request headers"
   list:
-  - name: Authorization
-    value: String
-    description: Bearer {token}. Required.
-  - name: Content-Type
-    value: String
-    description: text/html or application/xhtml+xml for the HTML content, including for the required "Presentation" part of multipart requests. Multipart requests use the multipart/form-data; boundary=your-boundary content type.
+  - name: "Authorization"
+    value: "String"
+    description: "Bearer {token}. Required."
+  - name: "Content-Type"
+    value: "String"
+    description: "text/html or application/xhtml+xml for the HTML content, including for the required "Presentation" part of multipart requests. Multipart requests use the multipart/form-data; boundary=your-boundary content type."
 requestBody:
-  heading: Request body
+  heading: "Request body"
   intro: |
     In the request body, supply the HTML content for the page.
     The body can contain HTML placed directly in the request body, or it can contain a multipart message format as shown in the example. If you're sending binary data, then you must send a multipart request.
 response:
-  heading: Response
+  heading: "Response"
   intro: |
     If successful, this method returns a `201 Created` response code and the new [page](xref:graph.page) object in the response body.
 examples:
   - items:
     - Example:
-        heading: Example
+        heading: "Example"
         request:
-            heading: Request
+            heading: "Request"
             intro: |
               Here is an example of the request.
               In the `../onenote/pages` path, you can use the `sectionName` query parameter to create a page in a specific section in the default notebook. Example: `../onenote/pages?sectionName=My%20section`. If the section doesn't exist (or was renamed), the API will create a new section.
@@ -98,7 +98,7 @@ examples:
               ```
               
         response:
-            heading: Response
+            heading: "Response"
             intro: |
               Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.
             sampleCode: |

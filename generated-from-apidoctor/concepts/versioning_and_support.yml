@@ -3,7 +3,7 @@ uid: graph.versioning_and_support
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/versioning_and_support.md
 summary:
-  heading: Versioning, support, and breaking change policies for Microsoft Graph
+  heading: "Versioning, support, and breaking change policies for Microsoft Graph"
   intro: |
     This article describes the support and breaking change policies for Microsoft Graph and the versions of the Microsoft Graph API that are currently available.
   outro: |

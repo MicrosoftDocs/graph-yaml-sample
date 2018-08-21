@@ -3,31 +3,31 @@ uid: graph.intune_deviceconfig_ratingnewzealandmoviestype
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_ratingnewzealandmoviestype.md
 summary:
-  heading: ratingNewZealandMoviesType enum type
+  heading: "ratingNewZealandMoviesType enum type"
   intro: |
     Movies rating labels in New Zealand
 enum:
-  heading: Members
+  heading: "Members"
   table:
-  - member: allAllowed
-    description: Default value, allow all movies content
-  - member: allBlocked
-    description: Do not allow any movies content
-  - member: general
-    description: Suitable for general audience
-  - member: parentalGuidance
-    description: The PG classification recommends parental guidance
-  - member: mature
-    description: The M classification is suitable for mature audience
-  - member: agesAbove13
-    description: The R13 classification is restricted to persons 13 years and over
-  - member: agesAbove15
-    description: The R15 classification is restricted to persons 15 years and over
-  - member: agesAbove16
-    description: The R16 classification is restricted to persons 16 years and over
-  - member: agesAbove18
-    description: The R18 classification is restricted to persons 18 years and over
-  - member: restricted
-    description: The R classification is restricted to a certain audience
-  - member: agesAbove16Restricted
-    description: The RP16 classification requires viewers under 16 accompanied by a parent or an adult
+  - member: "allAllowed"
+    description: "Default value, allow all movies content"
+  - member: "allBlocked"
+    description: "Do not allow any movies content"
+  - member: "general"
+    description: "Suitable for general audience"
+  - member: "parentalGuidance"
+    description: "The PG classification recommends parental guidance"
+  - member: "mature"
+    description: "The M classification is suitable for mature audience"
+  - member: "agesAbove13"
+    description: "The R13 classification is restricted to persons 13 years and over"
+  - member: "agesAbove15"
+    description: "The R15 classification is restricted to persons 15 years and over"
+  - member: "agesAbove16"
+    description: "The R16 classification is restricted to persons 16 years and over"
+  - member: "agesAbove18"
+    description: "The R18 classification is restricted to persons 18 years and over"
+  - member: "restricted"
+    description: "The R classification is restricted to a certain audience"
+  - member: "agesAbove16Restricted"
+    description: "The RP16 classification requires viewers under 16 accompanied by a parent or an adult"

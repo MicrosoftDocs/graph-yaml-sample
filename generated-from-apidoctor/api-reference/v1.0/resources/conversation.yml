@@ -3,32 +3,32 @@ uid: graph.conversation
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.conversation
 summary:
-  heading: conversation resource type
+  heading: "conversation resource type"
   intro: |
     A conversation is a collection of [threads](xref:graph.conversationthread), and a thread contains posts to that thread. All threads and posts in a conversation share the same subject.
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [List conversations](xref:graph.group_list_conversations)
-    type: [conversation](xref:graph.conversation) collection
-    description: Get the list of conversations in this group.
-  - method: [Create](xref:graph.group_post_conversations)
-    type: [conversation](xref:graph.conversation)
-    description: Create a new conversation by including a thread and a post.
-  - method: [Get conversation](xref:graph.conversation_get)
-    type: [conversation](xref:graph.conversation)
-    description: Read properties and relationships of conversation object.
-  - method: [Delete](xref:graph.conversation_delete)
-    type: None
-    description: Delete conversation object.
-  - method: [List conversation threads](xref:graph.conversation_list_threads)
-    type: [conversationThread](xref:graph.conversationthread) collection
-    description: Get all the threads in a group conversation.
-  - method: [Create conversation thread](xref:graph.conversation_post_threads)
-    type: [conversationThread](xref:graph.conversationthread) collection
-    description: Create a thread in the specified conversation.
+  - method: "[List conversations](xref:graph.group_list_conversations)"
+    type: "[conversation](xref:graph.conversation) collection"
+    description: "Get the list of conversations in this group."
+  - method: "[Create](xref:graph.group_post_conversations)"
+    type: "[conversation](xref:graph.conversation)"
+    description: "Create a new conversation by including a thread and a post."
+  - method: "[Get conversation](xref:graph.conversation_get)"
+    type: "[conversation](xref:graph.conversation)"
+    description: "Read properties and relationships of conversation object."
+  - method: "[Delete](xref:graph.conversation_delete)"
+    type: "None"
+    description: "Delete conversation object."
+  - method: "[List conversation threads](xref:graph.conversation_list_threads)"
+    type: "[conversationThread](xref:graph.conversationthread) collection"
+    description: "Get all the threads in a group conversation."
+  - method: "[Create conversation thread](xref:graph.conversation_post_threads)"
+    type: "[conversationThread](xref:graph.conversationthread) collection"
+    description: "Create a thread in the specified conversation."
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource
   sampleCode: |
@@ -46,29 +46,29 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: hasAttachments
-    type: Boolean
-    description: Indicates whether any of the posts within this Conversation has at least one attachment.
-  - property: id
-    type: String
-    description: The conversations's unique identifier. Read-only.
-  - property: lastDeliveredDateTime
-    type: DateTimeOffset
-    description: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
-  - property: preview
-    type: String
-    description: A short summary from the body of the latest post in this converstaion.
-  - property: topic
-    type: String
-    description: The topic of the conversation. This property can be set when the conversation is created, but it cannot be updated.
-  - property: uniqueSenders
-    type: Collection(String)
-    description: All the users that sent a message to this Conversation.
+  - property: "hasAttachments"
+    type: "Boolean"
+    description: "Indicates whether any of the posts within this Conversation has at least one attachment."
+  - property: "id"
+    type: "String"
+    description: "The conversations's unique identifier. Read-only."
+  - property: "lastDeliveredDateTime"
+    type: "DateTimeOffset"
+    description: "The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'"
+  - property: "preview"
+    type: "String"
+    description: "A short summary from the body of the latest post in this converstaion."
+  - property: "topic"
+    type: "String"
+    description: "The topic of the conversation. This property can be set when the conversation is created, but it cannot be updated."
+  - property: "uniqueSenders"
+    type: "Collection(String)"
+    description: "All the users that sent a message to this Conversation."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   list:
-  - relationship: threads
-    type: Collection(microsoft.graph.conversationThread)
-    description: A collection of all the conversation threads in the conversation. A navigation property. Read-only. Nullable.
+  - relationship: "threads"
+    type: "Collection(microsoft.graph.conversationThread)"
+    description: "A collection of all the conversation threads in the conversation. A navigation property. Read-only. Nullable."

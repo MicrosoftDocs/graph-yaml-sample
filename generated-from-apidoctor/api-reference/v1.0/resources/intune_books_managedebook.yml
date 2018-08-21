@@ -3,23 +3,23 @@ uid: graph.intune_books_managedebook
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_books_managedebook.md
 summary:
-  heading: managedEBook resource type
+  heading: "managedEBook resource type"
   intro: |
     An abstract class containing the base properties for Managed eBook.
 methods:
-  heading: Methods
+  heading: "Methods"
   list:
-  - method: [List managedEBooks](xref:graph.intune_books_managedebook_list)
-    type: [managedEBook](xref:graph.intune_books_managedebook) collection
-    description: List properties and relationships of the managedEBook objects.
-  - method: [Get managedEBook](xref:graph.intune_books_managedebook_get)
-    type: [managedEBook](xref:graph.intune_books_managedebook)
-    description: Read properties and relationships of the managedEBook object.
-  - method: [assign action](xref:graph.intune_books_managedebook_assign)
-    type: None
-    description: Not yet documented
+  - method: "[List managedEBooks](xref:graph.intune_books_managedebook_list)"
+    type: "[managedEBook](xref:graph.intune_books_managedebook) collection"
+    description: "List properties and relationships of the managedEBook objects."
+  - method: "[Get managedEBook](xref:graph.intune_books_managedebook_get)"
+    type: "[managedEBook](xref:graph.intune_books_managedebook)"
+    description: "Read properties and relationships of the managedEBook object."
+  - method: "[assign action](xref:graph.intune_books_managedebook_assign)"
+    type: "None"
+    description: "Not yet documented"
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -44,50 +44,50 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: id
-    type: String
-    description: Key of the entity.
-  - property: displayName
-    type: String
-    description: Name of the eBook.
-  - property: description
-    type: String
-    description: Description.
-  - property: publisher
-    type: String
-    description: Publisher.
-  - property: publishedDateTime
-    type: DateTimeOffset
-    description: The date and time when the eBook was published.
-  - property: largeCover
-    type: microsoft.graph.mimeContent
-    description: Book cover.
-  - property: createdDateTime
-    type: DateTimeOffset
-    description: The date and time when the eBook file was created.
-  - property: lastModifiedDateTime
-    type: DateTimeOffset
-    description: The date and time when the eBook was last modified.
-  - property: informationUrl
-    type: String
-    description: The more information Url.
-  - property: privacyInformationUrl
-    type: String
-    description: The privacy statement Url.
+  - property: "id"
+    type: "String"
+    description: "Key of the entity."
+  - property: "displayName"
+    type: "String"
+    description: "Name of the eBook."
+  - property: "description"
+    type: "String"
+    description: "Description."
+  - property: "publisher"
+    type: "String"
+    description: "Publisher."
+  - property: "publishedDateTime"
+    type: "DateTimeOffset"
+    description: "The date and time when the eBook was published."
+  - property: "largeCover"
+    type: "microsoft.graph.mimeContent"
+    description: "Book cover."
+  - property: "createdDateTime"
+    type: "DateTimeOffset"
+    description: "The date and time when the eBook file was created."
+  - property: "lastModifiedDateTime"
+    type: "DateTimeOffset"
+    description: "The date and time when the eBook was last modified."
+  - property: "informationUrl"
+    type: "String"
+    description: "The more information Url."
+  - property: "privacyInformationUrl"
+    type: "String"
+    description: "The privacy statement Url."
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   list:
-  - relationship: assignments
-    type: Collection(microsoft.graph.managedEBookAssignment)
-    description: The list of assignments for this eBook.
-  - relationship: installSummary
-    type: microsoft.graph.eBookInstallSummary
-    description: Mobile App Install Summary.
-  - relationship: deviceStates
-    type: Collection(microsoft.graph.deviceInstallState)
-    description: The list of installation states for this eBook.
-  - relationship: userStateSummary
-    type: Collection(microsoft.graph.userInstallStateSummary)
-    description: The list of installation states for this eBook.
+  - relationship: "assignments"
+    type: "Collection(microsoft.graph.managedEBookAssignment)"
+    description: "The list of assignments for this eBook."
+  - relationship: "installSummary"
+    type: "microsoft.graph.eBookInstallSummary"
+    description: "Mobile App Install Summary."
+  - relationship: "deviceStates"
+    type: "Collection(microsoft.graph.deviceInstallState)"
+    description: "The list of installation states for this eBook."
+  - relationship: "userStateSummary"
+    type: "Collection(microsoft.graph.userInstallStateSummary)"
+    description: "The list of installation states for this eBook."

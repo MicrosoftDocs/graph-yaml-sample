@@ -3,7 +3,7 @@ uid: graph.workinghours
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/workinghours.md
 summary:
-  heading: workingHours resource type
+  heading: "workingHours resource type"
   intro: |
     Represents the days of the week and hours in a specific time zone that the user works.
     Having access to a user's working hours is useful in scenarios that handle activity or resource planning. 
@@ -15,7 +15,7 @@ summary:
     When other people request work meetings with you in your usual place of work, they can still respect your working hours in the 
     appropriate time zone.
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -29,17 +29,17 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: daysOfWeek
-    type: Collection(microsoft.graph.dayOfWeek)
-    description: The days of the week on which the user works.
-  - property: startTime
-    type: TimeOfDay
-    description: The time of the day that the user starts working.
-  - property: endTime
-    type: TimeOfDay
-    description: The time of the day that the user stops working.
-  - property: timeZone
-    type: microsoft.graph.timeZoneBase
-    description: The time zone to which the working hours apply.
+  - property: "daysOfWeek"
+    type: "Collection(microsoft.graph.dayOfWeek)"
+    description: "The days of the week on which the user works."
+  - property: "startTime"
+    type: "TimeOfDay"
+    description: "The time of the day that the user starts working."
+  - property: "endTime"
+    type: "TimeOfDay"
+    description: "The time of the day that the user stops working."
+  - property: "timeZone"
+    type: "microsoft.graph.timeZoneBase"
+    description: "The time zone to which the working hours apply."

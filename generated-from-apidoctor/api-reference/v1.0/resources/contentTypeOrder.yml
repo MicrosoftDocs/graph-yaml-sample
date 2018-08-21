@@ -7,11 +7,11 @@ metadata:
   ms.date: 09/13/2017
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/contentTypeOrder.md
 summary:
-  heading: ContentTypeOrder resource type
+  heading: "ContentTypeOrder resource type"
   intro: |
     The **contentTypeOrder** resource specifies in which order the Content Type will appear in the selection UI.
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of a **contentTypeOrder** resource.
   sampleCode: |
@@ -23,11 +23,11 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: default
-    type: Boolean
-    description: Whether this is the default Content Type
-  - property: position
-    type: Int32
-    description: Specifies the position in which the Content Type appears in the selection UI.
+  - property: "default"
+    type: "Boolean"
+    description: "Whether this is the default Content Type"
+  - property: "position"
+    type: "Int32"
+    description: "Specifies the position in which the Content Type appears in the selection UI."

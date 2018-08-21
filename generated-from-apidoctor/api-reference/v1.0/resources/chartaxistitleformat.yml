@@ -3,15 +3,15 @@ uid: graph.chartaxistitleformat
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/chartaxistitleformat.md
 summary:
-  heading: ChartAxisTitleFormat resource type
+  heading: "ChartAxisTitleFormat resource type"
   intro: |
     Represents the chart axis title formatting.
 methods:
-  heading: Methods
+  heading: "Methods"
   intro: |
     None
 resource:
-  heading: JSON representation
+  heading: "JSON representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -22,12 +22,12 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   intro: |
     None
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   list:
-  - relationship: font
-    type: microsoft.graph.workbookChartFont
-    description: Represents the font attributes, such as font name, font size, color, etc. of chart axis title object. Read-only.
+  - relationship: "font"
+    type: "microsoft.graph.workbookChartFont"
+    description: "Represents the font attributes, such as font name, font size, color, etc. of chart axis title object. Read-only."

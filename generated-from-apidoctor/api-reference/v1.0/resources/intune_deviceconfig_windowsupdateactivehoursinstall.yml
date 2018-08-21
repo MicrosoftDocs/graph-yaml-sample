@@ -3,12 +3,12 @@ uid: graph.intune_deviceconfig_windowsupdateactivehoursinstall
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_windowsupdateactivehoursinstall.md
 summary:
-  heading: windowsUpdateActiveHoursInstall resource type
+  heading: "windowsUpdateActiveHoursInstall resource type"
   intro: |
     Not yet documented
     Inherits from [windowsUpdateInstallScheduleType](xref:graph.intune_deviceconfig_windowsupdateinstallscheduletype)
 resource:
-  heading: JSON Representation
+  heading: "JSON Representation"
   intro: |
     Here is a JSON representation of the resource.
   sampleCode: |
@@ -21,15 +21,15 @@ resource:
     ```
     
 properties:
-  heading: Properties
+  heading: "Properties"
   list:
-  - property: activeHoursStart
-    type: TimeOfDay
-    description: Active Hours Start
-  - property: activeHoursEnd
-    type: TimeOfDay
-    description: Active Hours End
+  - property: "activeHoursStart"
+    type: "TimeOfDay"
+    description: "Active Hours Start"
+  - property: "activeHoursEnd"
+    type: "TimeOfDay"
+    description: "Active Hours End"
 relationships:
-  heading: Relationships
+  heading: "Relationships"
   intro: |
     None
