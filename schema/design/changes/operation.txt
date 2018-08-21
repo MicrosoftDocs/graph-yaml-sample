@@ -1,0 +1,53 @@
+# GraphOperation schema modification spec
+
+
+## Global modifications
+[del] *.heading
+[mod] *.table ->  *.list
+[add] uid
+[add] name
+[mod] top ->  summary
+[mv]  source_url  ->  metadata.content_git_url
+
+
+## Specific modifications
+[mod] permissions.table:
+      - type  ->  resource
+        scope ->  permission
+
+[mod] httpRequest.samplePaths ->  httpRequest.samples:
+                                  - description:
+                                    sampleCode:
+
+[mod] parameters.table: ->  parameters.list:
+      - name        ->      - parameter
+
+[merge] queryParameters.table/Optional query parameters.table:  ->  queryParameters.table:
+        - type                          ->                          - value
+                                        ->                            isOptional
+
+[merge] httpHeaders.table:/Optional request Headers.table ->  requestHeaders.list:
+        - type                    ->                          - value
+                                  ->                            isOptional
+
+[mod] Request body  -> requestBody
+[add] requestBody.list:
+      - property
+        type
+        description
+
+[mod] Response  -> response
+[add] response.responseCode
+[add] response.responseBody
+
+[mod] examples:   ->  examples:
+      - Example       - title
+                        items:
+                        - request:
+                            intro
+                            sampleCode
+                            outro
+                          response:
+                            intro
+                            sampleCode
+                            outro

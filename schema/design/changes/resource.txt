@@ -1,0 +1,31 @@
+# GraphResource schema modification spec
+
+
+## Global modifications
+[del] *.heading
+[mod] *.table ->  *.list
+[add] uid
+[add] name
+[mod] top ->  summary
+[mv]  source_url  ->  metadata.content_git_url
+
+
+## Specific modifications
+[add] methods.list:
+      - method
+        type
+        description
+
+[mod] properties.table: ->  properties.list:
+      - name        ->      - property
+
+[mod] relationships.table:  ->  relationships.list:
+      - name          ->        - relationship
+
+[mod] resource.resourceDefinition -> resource.sampleCode
+
+[add] seeAlso.items:
+      - text
+        href
+[add] seeAlso.intro
+[add] seeAlso.outro

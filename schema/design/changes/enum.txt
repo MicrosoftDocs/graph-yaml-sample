@@ -1,0 +1,14 @@
+# GraphEnum schema modification spec
+
+
+## Global modifications
+[del] *.heading
+[mod] *.table ->  *.list
+[add] uid
+[add] name
+[mod] top ->  summary
+[mv]  source_url  ->  metadata.content_git_url
+
+
+## Specific modifications
+[mod] enum  -> members
