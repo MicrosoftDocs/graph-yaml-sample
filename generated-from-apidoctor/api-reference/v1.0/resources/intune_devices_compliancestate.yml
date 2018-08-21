@@ -1,0 +1,25 @@
+### YamlMime:GraphOperation
+uid:graph.intune_devices_compliancestate
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_devices_compliancestate.md
+summary:
+  heading: complianceState enum type
+  intro: |
+    Compliance state.
+enum:
+  heading: Members
+  table:
+  - member: unknown
+    description: Unknown.
+  - member: compliant
+    description: Compliant.
+  - member: noncompliant
+    description: Device is non-compliant and is blocked from corporate resources.
+  - member: conflict
+    description: Conflict with other rules.
+  - member: error
+    description: Error.
+  - member: inGracePeriod
+    description: Device is non-compliant but still has access to corporate resources
+  - member: configManager
+    description: Managed by Config Manager

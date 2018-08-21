@@ -1,0 +1,162 @@
+### YamlMime:GraphResource
+uid:graph.intune_apps_windowsuniversalappx
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_apps_windowsuniversalappx.md
+summary:
+  heading: windowsUniversalAppX resource type
+  intro: |
+    Contains properties and inherited properties for Windows Universal AppX Line Of Business apps.
+    Inherits from [mobileLobApp](xref:graph.intune_apps_mobilelobapp)
+methods:
+  heading: Methods
+  list:
+  - method: [List windowsUniversalAppXs](xref:graph.intune_apps_windowsuniversalappx_list)
+    type: [windowsUniversalAppX](xref:graph.intune_apps_windowsuniversalappx) collection
+    description: List properties and relationships of the windowsUniversalAppX objects.
+  - method: [Get windowsUniversalAppX](xref:graph.intune_apps_windowsuniversalappx_get)
+    type: [windowsUniversalAppX](xref:graph.intune_apps_windowsuniversalappx)
+    description: Read properties and relationships of the windowsUniversalAppX object.
+  - method: [Create windowsUniversalAppX](xref:graph.intune_apps_windowsuniversalappx_create)
+    type: [windowsUniversalAppX](xref:graph.intune_apps_windowsuniversalappx)
+    description: Create a new windowsUniversalAppX object.
+  - method: [Delete windowsUniversalAppX](xref:graph.intune_apps_windowsuniversalappx_delete)
+    type: None
+    description: Deletes a windowsUniversalAppX.
+  - method: [Update windowsUniversalAppX](xref:graph.intune_apps_windowsuniversalappx_update)
+    type: [windowsUniversalAppX](xref:graph.intune_apps_windowsuniversalappx)
+    description: Update the properties of a windowsUniversalAppX object.
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.windowsUniversalAppX",
+      "id": "String (identifier)",
+      "displayName": "String",
+      "description": "String",
+      "publisher": "String",
+      "largeIcon": {
+        "@odata.type": "microsoft.graph.mimeContent",
+        "type": "String",
+        "value": "binary"
+      },
+      "createdDateTime": "String (timestamp)",
+      "lastModifiedDateTime": "String (timestamp)",
+      "isFeatured": true,
+      "privacyInformationUrl": "String",
+      "informationUrl": "String",
+      "owner": "String",
+      "developer": "String",
+      "notes": "String",
+      "publishingState": "String",
+      "committedContentVersion": "String",
+      "fileName": "String",
+      "size": 1024,
+      "applicableArchitectures": "String",
+      "applicableDeviceTypes": "String",
+      "identityName": "String",
+      "identityPublisherHash": "String",
+      "identityResourceIdentifier": "String",
+      "isBundle": true,
+      "minimumSupportedOperatingSystem": {
+        "@odata.type": "microsoft.graph.windowsMinimumOperatingSystem",
+        "v8_0": true,
+        "v8_1": true,
+        "v10_0": true
+      },
+      "identityVersion": "String"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: id
+    type: String
+    description: Key of the entity. Inherited from mobileApp
+  - property: displayName
+    type: String
+    description: The admin provided or imported title of the app. Inherited from mobileApp
+  - property: description
+    type: String
+    description: The description of the app. Inherited from mobileApp
+  - property: publisher
+    type: String
+    description: The publisher of the app. Inherited from mobileApp
+  - property: largeIcon
+    type: microsoft.graph.mimeContent
+    description: The large icon, to be displayed in the app details and used for upload of the icon. Inherited from mobileApp
+  - property: createdDateTime
+    type: DateTimeOffset
+    description: The date and time the app was created. Inherited from mobileApp
+  - property: lastModifiedDateTime
+    type: DateTimeOffset
+    description: The date and time the app was last modified. Inherited from mobileApp
+  - property: isFeatured
+    type: Boolean
+    description: The value indicating whether the app is marked as featured by the admin. Inherited from mobileApp
+  - property: privacyInformationUrl
+    type: String
+    description: The privacy statement Url. Inherited from mobileApp
+  - property: informationUrl
+    type: String
+    description: The more information Url. Inherited from mobileApp
+  - property: owner
+    type: String
+    description: The owner of the app. Inherited from mobileApp
+  - property: developer
+    type: String
+    description: The developer of the app. Inherited from mobileApp
+  - property: notes
+    type: String
+    description: Notes for the app. Inherited from mobileApp
+  - property: publishingState
+    type: microsoft.graph.mobileAppPublishingState
+    description: The publishing state for the app. The app cannot be assigned unless the app is published. Inherited from mobileApp. The possible values are: notPublished, processing, published.
+  - property: committedContentVersion
+    type: String
+    description: The internal committed content version. Inherited from mobileLobApp
+  - property: fileName
+    type: String
+    description: The name of the main Lob application file. Inherited from mobileLobApp
+  - property: size
+    type: Int64
+    description: The total size, including all uploaded files. Inherited from mobileLobApp
+  - property: applicableArchitectures
+    type: microsoft.graph.windowsArchitecture
+    description: The Windows architecture(s) for which this app can run on. The possible values are: none, x86, x64, arm, neutral.
+  - property: applicableDeviceTypes
+    type: microsoft.graph.windowsDeviceType
+    description: The Windows device type(s) for which this app can run on. The possible values are: none, desktop, mobile, holographic, team.
+  - property: identityName
+    type: String
+    description: The Identity Name.
+  - property: identityPublisherHash
+    type: String
+    description: The Identity Publisher Hash.
+  - property: identityResourceIdentifier
+    type: String
+    description: The Identity Resource Identifier.
+  - property: isBundle
+    type: Boolean
+    description: Whether or not the app is a bundle.
+  - property: minimumSupportedOperatingSystem
+    type: microsoft.graph.windowsMinimumOperatingSystem
+    description: The value for the minimum applicable operating system.
+  - property: identityVersion
+    type: String
+    description: The identity version.
+relationships:
+  heading: Relationships
+  list:
+  - relationship: categories
+    type: Collection(microsoft.graph.mobileAppCategory)
+    description: The list of categories for this app. Inherited from mobileApp
+  - relationship: assignments
+    type: Collection(microsoft.graph.mobileAppAssignment)
+    description: The list of group assignments for this mobile app. Inherited from mobileApp
+  - relationship: contentVersions
+    type: Collection(microsoft.graph.mobileAppContent)
+    description: The list of content versions for this app. Inherited from mobileLobApp

@@ -1,0 +1,39 @@
+### YamlMime:GraphOperation
+uid:graph.onenote-branding
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/onenote-branding.md
+summary:
+  heading: Branding guidelines for OneNote API developers
+  intro: |
+    **Applies to** Consumer notebooks on OneDrive | Enterprise notebooks on Office 365
+    Follow the guidance in this article to best integrate the OneNote brand within your product and satisfy OneNote branding requirements.
+    <a name="download-logos"></a>
+  outro: |
+    ## Downloadable logos
+    You can download the logos shown in this article and a PDF copy of these guidelines from our [Branding guidelines for OneNote API developers](https://www.microsoft.com/download/details.aspx?id=42977) download page.
+    <a name="variations"></a>
+examples:
+  heading: Examples
+  intro: |
+    **Applications**
+    ![Good example of logo in a mobile app](images/OneNoteUsageApps.png)
+    <br/>
+    **Advertising**
+    ![Good example of logo in advertising](images/OneNoteUsageAdvertising.jpg)
+    <br/>
+    **Website**
+    ![Good example of logo in a website](images/OneNoteUsageWebsite.png)
+    <br/>
+    **Packaging**
+    ![Good example of logo in packaging](images/OneNoteUsagePackaging1.png)
+    ![Good example of logo in packaging](images/OneNoteUsagePackaging2.png)
+    If you have any questions about these guidelines or are creating new communications using the brand assets shown here, contact us at [@onenotedev](http://twitter.com/onenotedev).
+  outro: |
+    ## See also
+    
+    * [Branding guidelines for OneNote API developers](https://www.microsoft.com/download/details.aspx?id=42977) (download page)
+    * [Integrate with OneNote](xref:graph.integrate_with_onenote)
+    * [OneNote Developer Blog](http://go.microsoft.com/fwlink/?LinkID=390183)
+    * [OneNote development questions on Stack Overflow](http://go.microsoft.com/fwlink/?LinkID=390182)
+    * [OneNote GitHub repos](http://go.microsoft.com/fwlink/?LinkID=390178)  
+    

@@ -1,0 +1,69 @@
+### YamlMime:GraphOperation
+uid:graph.resource_get
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/resource_get.md
+summary:
+  heading: Get resource
+  intro: |
+    Retrieve the binary data of a file or image [resource](xref:graph.resource) object.
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+  list:
+  - resource: Delegated (work or school account)
+    permission: Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All
+  - resource: Delegated (personal Microsoft account)
+    permission: Notes.Read, Notes.ReadWrite
+  - resource: Application
+    permission: Notes.Read.All, Notes.ReadWrite.All
+httpRequest:
+  heading: HTTP request
+  sampleCode: |
+    ```http
+    GET /me/onenote/resources/{id}/content
+    GET /users/{id | userPrincipalName}/onenote/resources/{id}/content
+    GET /groups/{id}/onenote/resources/{id}/content
+    GET /sites/{id}/onenote/resources/{id}/content
+    ```
+    
+requestHeaders:
+  heading: Request headers
+  list:
+  - name: Authorization
+    value: String
+    description: Bearer {token}. Required.
+requestBody:
+  heading: Request body
+  intro: |
+    Do not supply a request body for this method.
+response:
+  heading: Response
+  intro: |
+    If successful, this method returns a `200 OK` response code and the image or file binary data in the response body.
+    Note: Images won't render directly in a browser because they require authorization to retrieve them, like the rest of the page content.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        request:
+            heading: Request
+            intro: |
+              Here is an example of the request.
+            sampleCode: |
+              ```http
+              GET https://graph.microsoft.com/v1.0/me/onenote/resources/{id}/content
+              ```
+              
+        response:
+            heading: Response
+            intro: |
+              Here is an example of the response.
+            sampleCode: |
+              ```http
+              HTTP/1.1 200 OK
+              Content-Type: application/octet-stream
+              
+              ...binary data...
+              ```
+              

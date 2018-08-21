@@ -1,0 +1,19 @@
+### YamlMime:GraphOperation
+uid:graph.intune_onboarding_devicemanagementexchangeconnectortype
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_onboarding_devicemanagementexchangeconnectortype.md
+summary:
+  heading: deviceManagementExchangeConnectorType enum type
+  intro: |
+    The type of Exchange Connector.
+enum:
+  heading: Members
+  table:
+  - member: onPremises
+    description: Connects to on-premises Exchange Environment.
+  - member: hosted
+    description: Connects to O365 multi-tenant Exchange environment
+  - member: serviceToService
+    description: Intune Service connects directly to O365 multi-tenant Exchange environment
+  - member: dedicated
+    description: Connects to O365 Dedicated Exchange environment.

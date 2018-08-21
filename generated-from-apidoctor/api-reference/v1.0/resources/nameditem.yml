@@ -1,0 +1,73 @@
+### YamlMime:GraphResource
+uid:graph.nameditem
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.nameditem
+summary:
+  heading: NamedItem resource type
+  intro: |
+    Represents a defined name for a range of cells or value. Names can be primitive named objects (as seen in the type below), range object, reference to a range. This object can be used to obtain range object associated with names.
+methods:
+  heading: Methods
+  list:
+  - method: [Add](xref:graph.nameditem_add)
+    type: [WorkbookNamedItem](xref:graph.nameditem)
+    description: Adds a new name to the collection of the given scope.
+  - method: [AddFormulaLocal](xref:graph.nameditem_addformulalocal)
+    type: [WorkbookNamedItem](xref:graph.nameditem)
+    description: Adds a new name to the collection of the given scope using the user's locale for the formula.
+  - method: [Get NamedItem](xref:graph.nameditem_get)
+    type: [WorkbookNamedItem](xref:graph.nameditem)
+    description: Read properties and relationships of namedItem object.
+  - method: [Update](xref:graph.nameditem_update)
+    type: [WorkbookNamedItem](xref:graph.nameditem)
+    description: Update NamedItem object.
+  - method: [Range](xref:graph.nameditem_range)
+    type: [Range](xref:graph.range)
+    description: Returns the range object that is associated with the name. Throws an exception if the named item's type is not a range.
+  - method: [List](xref:graph.nameditem_list)
+    type: [WorkbookNamedItem](xref:graph.nameditem) collection
+    description: Get namedItem object collection.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "name": "string",
+      "comment": "string",
+      "scope": "string",
+      "type": "string",
+      "value": {"@odata.type": "microsoft.graph.Json"},
+      "visible": true
+      
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: name
+    type: String
+    description: The name of the object. Read-only.
+  - property: comment
+    type: String
+    description: Represents the comment associated with this name.
+  - property: scope
+    type: String
+    description: Indicates whether the name is scoped to the workbook or to a specific worksheet. Read-only.
+  - property: type
+    type: String
+    description: Indicates what type of reference is associated with the name. The possible values are: String, Integer, Double, Boolean, Range. Read-only.
+  - property: value
+    type: microsoft.graph.Json
+    description: Represents the formula that the name is defined to refer to. E.g. =Sheet14!$B$2:$H$12, =4.75, etc. Read-only.
+  - property: visible
+    type: Boolean
+    description: Specifies whether the object is visible or not.
+relationships:
+  heading: Relationships
+  list:
+  - relationship: worksheet
+    type: microsoft.graph.workbookWorksheet
+    description: Returns the worksheet on which the named item is scoped to. Available only if the item is scoped to the worksheet. Read-only.

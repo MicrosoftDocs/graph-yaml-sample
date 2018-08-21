@@ -1,0 +1,33 @@
+### YamlMime:GraphResource
+uid:graph.columnLink
+metadata:
+  title: ColumnLink
+  author: daspek
+  ms.author: dspektor
+  ms.date: 09/12/2017
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/columnLink.md
+summary:
+  heading: ColumnLink resource type
+  intro: |
+    A **columnLink** on a [contentType][] attaches a site **columnDefinition** to that content type.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of a **columnLink** resource.
+  sampleCode: |
+    ```json
+    {
+      "id": "string",
+      "name": "string"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: id
+    type: String
+    description: The unique identifier for the column.
+  - property: name
+    type: String
+    description: The name of the column  in this content type.

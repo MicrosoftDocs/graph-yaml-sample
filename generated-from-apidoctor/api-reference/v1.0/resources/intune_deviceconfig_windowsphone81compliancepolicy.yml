@@ -1,0 +1,133 @@
+### YamlMime:GraphResource
+uid:graph.intune_deviceconfig_windowsphone81compliancepolicy
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_windowsphone81compliancepolicy.md
+summary:
+  heading: windowsPhone81CompliancePolicy resource type
+  intro: |
+    This class contains compliance settings for Windows 8.1 Mobile.
+    Inherits from [deviceCompliancePolicy](xref:graph.intune_deviceconfig_devicecompliancepolicy)
+methods:
+  heading: Methods
+  list:
+  - method: [List windowsPhone81CompliancePolicies](xref:graph.intune_deviceconfig_windowsphone81compliancepolicy_list)
+    type: [windowsPhone81CompliancePolicy](xref:graph.intune_deviceconfig_windowsphone81compliancepolicy) collection
+    description: List properties and relationships of the windowsPhone81CompliancePolicy objects.
+  - method: [Get windowsPhone81CompliancePolicy](xref:graph.intune_deviceconfig_windowsphone81compliancepolicy_get)
+    type: [windowsPhone81CompliancePolicy](xref:graph.intune_deviceconfig_windowsphone81compliancepolicy)
+    description: Read properties and relationships of the windowsPhone81CompliancePolicy object.
+  - method: [Create windowsPhone81CompliancePolicy](xref:graph.intune_deviceconfig_windowsphone81compliancepolicy_create)
+    type: [windowsPhone81CompliancePolicy](xref:graph.intune_deviceconfig_windowsphone81compliancepolicy)
+    description: Create a new windowsPhone81CompliancePolicy object.
+  - method: [Delete windowsPhone81CompliancePolicy](xref:graph.intune_deviceconfig_windowsphone81compliancepolicy_delete)
+    type: None
+    description: Deletes a windowsPhone81CompliancePolicy.
+  - method: [Update windowsPhone81CompliancePolicy](xref:graph.intune_deviceconfig_windowsphone81compliancepolicy_update)
+    type: [windowsPhone81CompliancePolicy](xref:graph.intune_deviceconfig_windowsphone81compliancepolicy)
+    description: Update the properties of a windowsPhone81CompliancePolicy object.
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.windowsPhone81CompliancePolicy",
+      "id": "String (identifier)",
+      "createdDateTime": "String (timestamp)",
+      "description": "String",
+      "lastModifiedDateTime": "String (timestamp)",
+      "displayName": "String",
+      "version": 1024,
+      "passwordBlockSimple": true,
+      "passwordExpirationDays": 1024,
+      "passwordMinimumLength": 1024,
+      "passwordMinutesOfInactivityBeforeLock": 1024,
+      "passwordMinimumCharacterSetCount": 1024,
+      "passwordRequiredType": "String",
+      "passwordPreviousPasswordBlockCount": 1024,
+      "passwordRequired": true,
+      "osMinimumVersion": "String",
+      "osMaximumVersion": "String",
+      "storageRequireEncryption": true
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: id
+    type: String
+    description: Key of the entity. Inherited from deviceCompliancePolicy
+  - property: createdDateTime
+    type: DateTimeOffset
+    description: DateTime the object was created. Inherited from deviceCompliancePolicy
+  - property: description
+    type: String
+    description: Admin provided description of the Device Configuration. Inherited from deviceCompliancePolicy
+  - property: lastModifiedDateTime
+    type: DateTimeOffset
+    description: DateTime the object was last modified. Inherited from deviceCompliancePolicy
+  - property: displayName
+    type: String
+    description: Admin provided name of the device configuration. Inherited from deviceCompliancePolicy
+  - property: version
+    type: Int32
+    description: Version of the device configuration. Inherited from deviceCompliancePolicy
+  - property: passwordBlockSimple
+    type: Boolean
+    description: Whether or not to block syncing the calendar.
+  - property: passwordExpirationDays
+    type: Int32
+    description: Number of days before the password expires.
+  - property: passwordMinimumLength
+    type: Int32
+    description: Minimum length of passwords.
+  - property: passwordMinutesOfInactivityBeforeLock
+    type: Int32
+    description: Minutes of inactivity before a password is required.
+  - property: passwordMinimumCharacterSetCount
+    type: Int32
+    description: The number of character sets required in the password.
+  - property: passwordRequiredType
+    type: microsoft.graph.requiredPasswordType
+    description: The required password type. The possible values are: deviceDefault, alphanumeric, numeric.
+  - property: passwordPreviousPasswordBlockCount
+    type: Int32
+    description: Number of previous passwords to block. Valid values 0 to 24
+  - property: passwordRequired
+    type: Boolean
+    description: Whether or not to require a password.
+  - property: osMinimumVersion
+    type: String
+    description: Minimum Windows Phone version.
+  - property: osMaximumVersion
+    type: String
+    description: Maximum Windows Phone version.
+  - property: storageRequireEncryption
+    type: Boolean
+    description: Require encryption on windows phone devices.
+relationships:
+  heading: Relationships
+  list:
+  - relationship: scheduledActionsForRule
+    type: Collection(microsoft.graph.deviceComplianceScheduledActionForRule)
+    description: The list of scheduled action for this rule Inherited from deviceCompliancePolicy
+  - relationship: deviceStatuses
+    type: Collection(microsoft.graph.deviceComplianceDeviceStatus)
+    description: List of DeviceComplianceDeviceStatus. Inherited from deviceCompliancePolicy
+  - relationship: userStatuses
+    type: Collection(microsoft.graph.deviceComplianceUserStatus)
+    description: List of DeviceComplianceUserStatus. Inherited from deviceCompliancePolicy
+  - relationship: deviceStatusOverview
+    type: microsoft.graph.deviceComplianceDeviceOverview
+    description: Device compliance devices status overview Inherited from deviceCompliancePolicy
+  - relationship: userStatusOverview
+    type: microsoft.graph.deviceComplianceUserOverview
+    description: Device compliance users status overview Inherited from deviceCompliancePolicy
+  - relationship: deviceSettingStateSummaries
+    type: Collection(microsoft.graph.settingStateDeviceSummary)
+    description: Compliance Setting State Device Summary Inherited from deviceCompliancePolicy
+  - relationship: assignments
+    type: Collection(microsoft.graph.deviceCompliancePolicyAssignment)
+    description: The collection of assignments for this compliance policy. Inherited from deviceCompliancePolicy

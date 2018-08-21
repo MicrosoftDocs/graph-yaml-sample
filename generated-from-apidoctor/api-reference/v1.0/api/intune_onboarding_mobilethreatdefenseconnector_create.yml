@@ -1,0 +1,93 @@
+### YamlMime:GraphOperation
+uid:graph.intune_onboarding_mobilethreatdefenseconnector_create
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/intune_onboarding_mobilethreatdefenseconnector_create.md
+summary:
+  heading: Create mobileThreatDefenseConnector
+  intro: |
+    Create a new [mobileThreatDefenseConnector](xref:graph.intune_onboarding_mobilethreatdefenseconnector) object.
+permissions:
+  heading: Prerequisites
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+httpRequest:
+  heading: HTTP Request
+  sampleCode: |
+    ```http
+    POST /deviceManagement/mobileThreatDefenseConnectors
+    ```
+    
+requestHeaders:
+  heading: Request headers
+  list:
+  - name: Authorization
+    value: String
+    description: 
+  - name: Accept
+    value: String
+    description: 
+requestBody:
+  heading: Request body
+  intro: |
+    In the request body, supply a JSON representation for the mobileThreatDefenseConnector object.
+    The following table shows the properties that are required when you create the mobileThreatDefenseConnector.
+    |Property|Type|Description
+    |:-|:-|:-|
+    |id|String|Not yet documented
+    |lastHeartbeatDateTime|DateTimeOffset|DateTime of last Heartbeat recieved from the Data Sync Partner
+    |partnerState|[mobileThreatPartnerTenantState](xref:graph.intune_onboarding_mobilethreatpartnertenantstate)|Data Sync Partner state for this account. The possible values are: `unavailable`, `available`, `enabled`, `unresponsive`.
+    |androidEnabled|Boolean|For Android, set whether data from the data sync partner should be used during compliance evaluations
+    |iosEnabled|Boolean|For IOS, get or set whether data from the data sync partner should be used during compliance evaluations
+    |androidDeviceBlockedOnMissingPartnerData|Boolean|For Android, set whether Intune must receive data from the data sync partner prior to marking a device compliant
+    |iosDeviceBlockedOnMissingPartnerData|Boolean|For IOS, set whether Intune must receive data from the data sync partner prior to marking a device compliant
+    |partnerUnsupportedOsVersionBlocked|Boolean|Get or set whether to block devices on the enabled platforms that do not meet the minimum version requirements of the Data Sync Partner
+    |partnerUnresponsivenessThresholdInDays|Int32|Get or Set days the per tenant tolerance to unresponsiveness for this partner integration
+response:
+  heading: Response
+  intro: |
+    If successful, this method returns a `201 Created` response code and a [mobileThreatDefenseConnector](xref:graph.intune_onboarding_mobilethreatdefenseconnector) object in the response body.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        request:
+            heading: Request
+            intro: |
+              Here is an example of the request.
+              POST https://graph.microsoft.com/v1.0/deviceManagement/mobileThreatDefenseConnectors
+              Content-type: application/json
+              Content-length: 414
+              
+              {
+                "@odata.type": "#microsoft.graph.mobileThreatDefenseConnector",
+                "lastHeartbeatDateTime": "2016-12-31T23:59:37.9174975-08:00",
+                "partnerState": "available",
+                "androidEnabled": true,
+                "iosEnabled": true,
+                "androidDeviceBlockedOnMissingPartnerData": true,
+                "iosDeviceBlockedOnMissingPartnerData": true,
+                "partnerUnsupportedOsVersionBlocked": true,
+                "partnerUnresponsivenessThresholdInDays": 6
+              }
+
+        response:
+            heading: Response
+            intro: |
+              Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+              HTTP/1.1 201 Created
+              Content-Type: application/json
+              Content-Length: 463
+              
+              {
+                "@odata.type": "#microsoft.graph.mobileThreatDefenseConnector",
+                "id": "e4bede14-de14-e4be-14de-bee414debee4",
+                "lastHeartbeatDateTime": "2016-12-31T23:59:37.9174975-08:00",
+                "partnerState": "available",
+                "androidEnabled": true,
+                "iosEnabled": true,
+                "androidDeviceBlockedOnMissingPartnerData": true,
+                "iosDeviceBlockedOnMissingPartnerData": true,
+                "partnerUnsupportedOsVersionBlocked": true,
+                "partnerUnresponsivenessThresholdInDays": 6
+              }
+

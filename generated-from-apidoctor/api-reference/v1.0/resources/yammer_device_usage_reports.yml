@@ -1,0 +1,16 @@
+### YamlMime:GraphOperation
+uid:graph.yammer_device_usage_reports
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/yammer_device_usage_reports.md
+summary:
+  heading: Yammer device usage reports
+  intro: |
+    The device usage reports for Yammer give you information about which devices your users utilize to engage on Yammer. You can view the number of users by device type over a selected time period and view details by user.
+    
+  outro: |
+    ## Reports
+    |Function|Return Type|Description
+    | :--------------------------------------- -| :---------- -| :--------------------------------------- -|
+    |[Get user detail](xref:graph.reportroot_getyammerdeviceusageuserdetail)|Stream|Get details about Yammer device usage by user.
+    |[Get distribution user counts](xref:graph.reportroot_getyammerdeviceusagedistributionusercounts)|Stream|Get the number of users by device type.
+    |[Get user counts](xref:graph.reportroot_getyammerdeviceusageusercounts)|Stream|Get the number of daily users by device type.

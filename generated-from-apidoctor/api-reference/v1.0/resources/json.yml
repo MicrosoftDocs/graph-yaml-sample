@@ -1,0 +1,25 @@
+### YamlMime:GraphResource
+uid:graph.json
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/json.md
+summary:
+  heading: Json resource type
+  intro: |
+    Represents data returned in JSON format
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "@odata.type": "microsoft.graph.Json"
+    }
+    ```
+    
+properties:
+  heading: Properties
+relationships:
+  heading: Relationships
+  intro: |
+    None

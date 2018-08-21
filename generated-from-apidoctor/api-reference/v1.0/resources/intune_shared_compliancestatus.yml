@@ -1,0 +1,25 @@
+### YamlMime:GraphOperation
+uid:graph.intune_shared_compliancestatus
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_shared_compliancestatus.md
+summary:
+  heading: complianceStatus enum type
+  intro: |
+    Not yet documented
+enum:
+  heading: Members
+  table:
+  - member: unknown
+    description: Not yet documented
+  - member: notApplicable
+    description: Not yet documented
+  - member: compliant
+    description: Not yet documented
+  - member: remediated
+    description: Not yet documented
+  - member: nonCompliant
+    description: Not yet documented
+  - member: error
+    description: Not yet documented
+  - member: conflict
+    description: Not yet documented

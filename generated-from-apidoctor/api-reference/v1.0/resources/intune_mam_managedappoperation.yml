@@ -1,0 +1,64 @@
+### YamlMime:GraphResource
+uid:graph.intune_mam_managedappoperation
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_mam_managedappoperation.md
+summary:
+  heading: managedAppOperation resource type
+  intro: |
+    Represents an operation applied against an app registration.
+methods:
+  heading: Methods
+  list:
+  - method: [List managedAppOperations](xref:graph.intune_mam_managedappoperation_list)
+    type: [managedAppOperation](xref:graph.intune_mam_managedappoperation) collection
+    description: List properties and relationships of the managedAppOperation objects.
+  - method: [Get managedAppOperation](xref:graph.intune_mam_managedappoperation_get)
+    type: [managedAppOperation](xref:graph.intune_mam_managedappoperation)
+    description: Read properties and relationships of the managedAppOperation object.
+  - method: [Create managedAppOperation](xref:graph.intune_mam_managedappoperation_create)
+    type: [managedAppOperation](xref:graph.intune_mam_managedappoperation)
+    description: Create a new managedAppOperation object.
+  - method: [Delete managedAppOperation](xref:graph.intune_mam_managedappoperation_delete)
+    type: None
+    description: Deletes a managedAppOperation.
+  - method: [Update managedAppOperation](xref:graph.intune_mam_managedappoperation_update)
+    type: [managedAppOperation](xref:graph.intune_mam_managedappoperation)
+    description: Update the properties of a managedAppOperation object.
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.managedAppOperation",
+      "displayName": "String",
+      "lastModifiedDateTime": "String (timestamp)",
+      "state": "String",
+      "id": "String (identifier)",
+      "version": "String"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: displayName
+    type: String
+    description: The operation name.
+  - property: lastModifiedDateTime
+    type: DateTimeOffset
+    description: The last time the app operation was modified.
+  - property: state
+    type: String
+    description: The current state of the operation
+  - property: id
+    type: String
+    description: Key of the entity.
+  - property: version
+    type: String
+    description: Version of the entity.
+relationships:
+  heading: Relationships
+  intro: |
+    None

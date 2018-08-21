@@ -1,0 +1,59 @@
+### YamlMime:GraphResource
+uid:graph.intune_books_iosvppebookassignment
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_books_iosvppebookassignment.md
+summary:
+  heading: iosVppEBookAssignment resource type
+  intro: |
+    Contains properties used to assign an iOS VPP EBook to a group.
+    Inherits from [managedEBookAssignment](xref:graph.intune_books_managedebookassignment)
+methods:
+  heading: Methods
+  list:
+  - method: [List iosVppEBookAssignments](xref:graph.intune_books_iosvppebookassignment_list)
+    type: [iosVppEBookAssignment](xref:graph.intune_books_iosvppebookassignment) collection
+    description: List properties and relationships of the iosVppEBookAssignment objects.
+  - method: [Get iosVppEBookAssignment](xref:graph.intune_books_iosvppebookassignment_get)
+    type: [iosVppEBookAssignment](xref:graph.intune_books_iosvppebookassignment)
+    description: Read properties and relationships of the iosVppEBookAssignment object.
+  - method: [Create iosVppEBookAssignment](xref:graph.intune_books_iosvppebookassignment_create)
+    type: [iosVppEBookAssignment](xref:graph.intune_books_iosvppebookassignment)
+    description: Create a new iosVppEBookAssignment object.
+  - method: [Delete iosVppEBookAssignment](xref:graph.intune_books_iosvppebookassignment_delete)
+    type: None
+    description: Deletes a iosVppEBookAssignment.
+  - method: [Update iosVppEBookAssignment](xref:graph.intune_books_iosvppebookassignment_update)
+    type: [iosVppEBookAssignment](xref:graph.intune_books_iosvppebookassignment)
+    description: Update the properties of a iosVppEBookAssignment object.
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.iosVppEBookAssignment",
+      "id": "String (identifier)",
+      "target": {
+        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+      },
+      "installIntent": "String"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: id
+    type: String
+    description: Key of the entity. Inherited from managedEBookAssignment
+  - property: target
+    type: microsoft.graph.deviceAndAppManagementAssignmentTarget
+    description: The assignment target for eBook. Inherited from managedEBookAssignment
+  - property: installIntent
+    type: microsoft.graph.installIntent
+    description: The install intent for eBook. Inherited from managedEBookAssignment. The possible values are: available, required, uninstall, availableWithoutEnrollment.
+relationships:
+  heading: Relationships
+  intro: |
+    None

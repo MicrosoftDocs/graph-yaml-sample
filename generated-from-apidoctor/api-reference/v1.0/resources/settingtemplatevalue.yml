@@ -1,0 +1,37 @@
+### YamlMime:GraphResource
+uid:graph.settingtemplatevalue
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/settingtemplatevalue.md
+summary:
+  heading: settingTemplateValue resource type
+  intro: |
+    Represents an individual template setting definition, including the default value for the setting, if the setting is not instantiated.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "defaultValue": "String",
+      "description": "String",
+      "name": "String",
+      "type": "String"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: defaultValue
+    type: String
+    description: Default value for the setting.
+  - property: description
+    type: String
+    description: Description of the setting.
+  - property: name
+    type: String
+    description: Name of the setting.
+  - property: type
+    type: String
+    description: Type of the setting.

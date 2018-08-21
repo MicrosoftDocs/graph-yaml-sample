@@ -1,0 +1,58 @@
+### YamlMime:GraphResource
+uid:graph.intune_apps_androidminimumoperatingsystem
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_apps_androidminimumoperatingsystem.md
+summary:
+  heading: androidMinimumOperatingSystem resource type
+  intro: |
+    Contains properties for the minimum operating system required for an Android mobile app.
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.androidMinimumOperatingSystem",
+      "v4_0": true,
+      "v4_0_3": true,
+      "v4_1": true,
+      "v4_2": true,
+      "v4_3": true,
+      "v4_4": true,
+      "v5_0": true,
+      "v5_1": true
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: v4_0
+    type: Boolean
+    description: Version 4.0 or later.
+  - property: v4_0_3
+    type: Boolean
+    description: Version 4.0.3 or later.
+  - property: v4_1
+    type: Boolean
+    description: Version 4.1 or later.
+  - property: v4_2
+    type: Boolean
+    description: Version 4.2 or later.
+  - property: v4_3
+    type: Boolean
+    description: Version 4.3 or later.
+  - property: v4_4
+    type: Boolean
+    description: Version 4.4 or later.
+  - property: v5_0
+    type: Boolean
+    description: Version 5.0 or later.
+  - property: v5_1
+    type: Boolean
+    description: Version 5.1 or later.
+relationships:
+  heading: Relationships
+  intro: |
+    None

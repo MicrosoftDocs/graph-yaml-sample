@@ -1,0 +1,82 @@
+### YamlMime:GraphOperation
+uid:graph.directoryrole_post_directoryroles
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/directoryrole_post_directoryroles.md
+summary:
+  heading: Activate directoryRole
+  intro: |
+    Activate a directory role. To read a directory role or update its members, it must first be activated in the tenant. Only the Company Administrators and the implicit Users directory roles are activated by default. To access and assign members to another directory role, you must first activate it with its corresponding directory role template ([directoryRoleTemplate](xref:graph.directoryroletemplate)).
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+  list:
+  - resource: Delegated (work or school account)
+    permission: Directory.ReadWrite.All, Directory.AccessAsUser.All
+  - resource: Delegated (personal Microsoft account)
+    permission: Not supported.
+  - resource: Application
+    permission: Directory.ReadWrite.All
+httpRequest:
+  heading: HTTP request
+  sampleCode: |
+    ```http
+    POST /directoryRoles
+    ```
+    
+requestHeaders:
+  heading: Request headers
+  list:
+  - name: Authorization
+    value: String
+    description: Bearer {token}. Required.
+  - name: Content-Type
+    value: String
+    description: application/json
+requestBody:
+  heading: Request body
+  intro: |
+    In the request body, supply a JSON representation of [directoryRole](xref:graph.directoryrole) object.
+    The following table shows the properties that are required when you activate a directory role.
+    |Parameter|Type|Description
+    |:-|:-|:-|
+    |roleTemplateId|string|Required. The ID of the [directoryRoleTemplate](xref:graph.directoryroletemplate) that the role is based on. This is the only property that may be specified in the request.
+response:
+  heading: Response
+  intro: |
+    If successful, this method returns `201 Created` response code and [directoryRole](xref:graph.directoryrole) object in the response body.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        request:
+            heading: Request
+            sampleCode: |
+              ```http
+              POST https://graph.microsoft.com/v1.0/directoryRoles
+              Content-type: application/json
+              
+              {
+                "roleTemplateId": "roleTemplateId-value"
+              }
+              ```
+              
+            outro: |
+              In the request body, supply a JSON representation of [directoryRole](xref:graph.directoryrole) object.
+        response:
+            heading: Response
+            intro: |
+              Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+            sampleCode: |
+              ```http
+              HTTP/1.1 201 Created
+              Content-type: application/json
+              
+              {
+                "description": "description-value",
+                "displayName": "displayName-value",
+                "roleTemplateId": "roleTemplateId-value",
+                "id": "id-value"
+              }
+              ```
+              

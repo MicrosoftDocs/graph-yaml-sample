@@ -1,0 +1,29 @@
+### YamlMime:GraphResource
+uid:graph.itembody
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/itembody.md
+summary:
+  heading: itemBody resource type
+  intro: |
+    Represents properties of the body of an item, such as a message, event or group post.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource
+  sampleCode: |
+    ```json
+    {
+      "content": "string",
+      "contentType": "String"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: content
+    type: String
+    description: The content of the item.
+  - property: contentType
+    type: microsoft.graph.bodyType
+    description: The type of the content. Possible values are Text and HTML.

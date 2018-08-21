@@ -1,0 +1,82 @@
+### YamlMime:GraphOperation
+uid:graph.rangefont_get
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/rangefont_get.md
+summary:
+  heading: Get RangeFont
+  intro: |
+    Retrieve the properties and relationships of rangefont object.
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+  list:
+  - resource: Delegated (work or school account)
+    permission: Files.ReadWrite
+  - resource: Delegated (personal Microsoft account)
+    permission: Not supported.
+  - resource: Application
+    permission: Not supported.
+httpRequest:
+  heading: HTTP request
+  sampleCode: |
+    ```http
+    GET /workbook/names/{name}/range/format/font
+    GET /workbook/worksheets/{id|name}/range(address='<address>')/format/font
+    GET /workbook/tables/{id|name}/columns/{id|name}/range/format/font
+    ```
+    
+queryParameters:
+  heading: Optional query parameters
+  intro: |
+    This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+requestHeaders:
+  heading: Request headers
+  list:
+  - name: Authorization
+    value: 
+    description: Bearer {token}. Required.
+  - name: Workbook-Session-Id
+    value: 
+    description: Workbook session Id that determines if changes are persisted or not. Optional.
+requestBody:
+  heading: Request body
+  intro: |
+    Do not supply a request body for this method.
+response:
+  heading: Response
+  intro: |
+    If successful, this method returns a `200 OK` response code and [WorkbookRangeFont](xref:graph.rangefont) object in the response body.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        request:
+            heading: Request
+            intro: |
+              Here is an example of the request.
+            sampleCode: |
+              ```http
+              GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/format/font
+              ```
+              
+        response:
+            heading: Response
+            intro: |
+              Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+            sampleCode: |
+              ```http
+              HTTP/1.1 200 OK
+              Content-type: application/json
+              Content-length: 134
+              
+              {
+                "bold": true,
+                "color": "color-value",
+                "italic": true,
+                "name": "name-value",
+                "size": 99,
+                "underline": "underline-value"
+              }
+              ```
+              

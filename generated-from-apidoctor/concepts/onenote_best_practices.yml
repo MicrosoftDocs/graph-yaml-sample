@@ -1,0 +1,17 @@
+### YamlMime:GraphOperation
+uid:graph.onenote_best_practices
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/onenote_best_practices.md
+summary:
+  heading: Best practices for working with the OneNote API in Microsoft Graph
+  intro: |
+    This article provides recommendations for working with the OneNote APIs in Microsoft Graph. These recommendations are based on answers to common questions on Stack Overflow and Twitter.
+  outro: |
+    ## Use $select to select the minimum set of properties you need
+    When you query for a resource (for example, sections inside a notebook), you make a request similar to the following.
+    GET ~/notebooks/{id}/sections
+
+    This retrieves all the properties of the sections. However, you might not need all properties. You can use the `$select` query parameter to return just the properties that you want, as shown in the following example.
+    GET ~/notebooks/{id}/sections?$select=id,displayName
+
+    The same approach applies to other OneNote APIs.

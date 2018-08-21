@@ -1,0 +1,89 @@
+### YamlMime:GraphOperation
+uid:graph.intune_deviceconfig_deviceconfigurationdevicestatesummary_update
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/intune_deviceconfig_deviceconfigurationdevicestatesummary_update.md
+summary:
+  heading: Update deviceConfigurationDeviceStateSummary
+  intro: |
+    Update the properties of a [deviceConfigurationDeviceStateSummary](xref:graph.intune_deviceconfig_deviceconfigurationdevicestatesummary) object.
+permissions:
+  heading: Prerequisites
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+httpRequest:
+  heading: HTTP Request
+  sampleCode: |
+    ```http
+    PATCH /deviceManagement/deviceConfigurationDeviceStateSummaries
+    ```
+    
+requestHeaders:
+  heading: Request headers
+  list:
+  - name: Authorization
+    value: String
+    description: 
+  - name: Accept
+    value: String
+    description: 
+requestBody:
+  heading: Request body
+  intro: |
+    In the request body, supply a JSON representation for the [deviceConfigurationDeviceStateSummary](xref:graph.intune_deviceconfig_deviceconfigurationdevicestatesummary) object.
+    The following table shows the properties that are required when you create the [deviceConfigurationDeviceStateSummary](xref:graph.intune_deviceconfig_deviceconfigurationdevicestatesummary).
+    |Property|Type|Description
+    |:-|:-|:-|
+    |id|String|Key of the entity.
+    |unknownDeviceCount|Int32|Number of unknown devices
+    |notApplicableDeviceCount|Int32|Number of not applicable devices
+    |compliantDeviceCount|Int32|Number of compliant devices
+    |remediatedDeviceCount|Int32|Number of remediated devices
+    |nonCompliantDeviceCount|Int32|Number of NonCompliant devices
+    |errorDeviceCount|Int32|Number of error devices
+    |conflictDeviceCount|Int32|Number of conflict devices
+response:
+  heading: Response
+  intro: |
+    If successful, this method returns a `200 OK` response code and an updated [deviceConfigurationDeviceStateSummary](xref:graph.intune_deviceconfig_deviceconfigurationdevicestatesummary) object in the response body.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        request:
+            heading: Request
+            intro: |
+              Here is an example of the request.
+              PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurationDeviceStateSummaries
+              Content-type: application/json
+              Content-length: 214
+              
+              {
+                "unknownDeviceCount": 2,
+                "notApplicableDeviceCount": 8,
+                "compliantDeviceCount": 4,
+                "remediatedDeviceCount": 5,
+                "nonCompliantDeviceCount": 7,
+                "errorDeviceCount": 0,
+                "conflictDeviceCount": 3
+              }
+
+        response:
+            heading: Response
+            intro: |
+              Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+              HTTP/1.1 200 OK
+              Content-Type: application/json
+              Content-Length: 339
+              
+              {
+                "@odata.type": "#microsoft.graph.deviceConfigurationDeviceStateSummary",
+                "id": "5db26f5a-6f5a-5db2-5a6f-b25d5a6fb25d",
+                "unknownDeviceCount": 2,
+                "notApplicableDeviceCount": 8,
+                "compliantDeviceCount": 4,
+                "remediatedDeviceCount": 5,
+                "nonCompliantDeviceCount": 7,
+                "errorDeviceCount": 0,
+                "conflictDeviceCount": 3
+              }
+

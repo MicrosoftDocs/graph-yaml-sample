@@ -1,0 +1,68 @@
+### YamlMime:GraphResource
+uid:graph.plannerplan
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.plannerplan
+summary:
+  heading: plannerPlan resource type
+  intro: |
+    The **plannerPlan** resource represents a plan in Office 365. A plan can be owned by a [group](xref:graph.group) and contains a collection of [plannerTasks](xref:graph.plannerTask). It can also have a collection of [plannerBuckets](xref:graph.plannerBucket). Each plan object has a [details](xref:graph.plannerPlanDetails) object that can contain more information about the plan. For more information about the relationships between groups, plans, and tasks, see [Planner](xref:graph.planner_overview).
+methods:
+  heading: Methods
+  list:
+  - method: [Get plannerPlan](xref:graph.plannerplan_get)
+    type: [plannerPlan](xref:graph.plannerplan)
+    description: Read properties and relationships of plannerPlan object.
+  - method: [List buckets](xref:graph.plannerplan_list_buckets)
+    type: [plannerBucket](xref:graph.plannerbucket) collection
+    description: Get a plannerBucket object collection.
+  - method: [List tasks](xref:graph.plannerplan_list_tasks)
+    type: [plannerTask](xref:graph.plannertask) collection
+    description: Get a plannerTask object collection.
+  - method: [Update](xref:graph.plannerplan_update)
+    type: [plannerPlan](xref:graph.plannerplan)
+    description: Update plannerPlan object.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
+      "createdDateTime": "String (timestamp)",
+      "id": "String (identifier)",
+      "owner": "String",
+      "title": "String"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: createdDateTime
+    type: DateTimeOffset
+    description: Read-only. Date and time at which the plan is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
+  - property: id
+    type: String
+    description: Read-only. ID of the plan. It is 28 characters long and case-sensitive. Format validation is done on the service.
+  - property: owner
+    type: String
+    description: ID of the Group that owns the plan. A valid group must exist before this field can be set. Once set, this can only be updated by the owner.
+  - property: title
+    type: String
+    description: Required. Title of the plan.
+  - property: createdBy
+    type: microsoft.graph.identitySet
+    description: Read-only. The user who created the plan.
+relationships:
+  heading: Relationships
+  list:
+  - relationship: buckets
+    type: Collection(microsoft.graph.plannerBucket)
+    description: Read-only. Nullable. Collection of buckets in the plan.
+  - relationship: details
+    type: microsoft.graph.plannerPlanDetails
+    description: Read-only. Nullable. Additional details about the plan.
+  - relationship: tasks
+    type: Collection(microsoft.graph.plannerTask)
+    description: Read-only. Nullable. Collection of tasks in the plan.

@@ -1,0 +1,134 @@
+### YamlMime:GraphResource
+uid:graph.intune_books_iosvppebook
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_books_iosvppebook.md
+summary:
+  heading: iosVppEBook resource type
+  intro: |
+    A class containing the properties for iOS Vpp eBook.
+    Inherits from [managedEBook](xref:graph.intune_books_managedebook)
+methods:
+  heading: Methods
+  list:
+  - method: [List iosVppEBooks](xref:graph.intune_books_iosvppebook_list)
+    type: [iosVppEBook](xref:graph.intune_books_iosvppebook) collection
+    description: List properties and relationships of the iosVppEBook objects.
+  - method: [Get iosVppEBook](xref:graph.intune_books_iosvppebook_get)
+    type: [iosVppEBook](xref:graph.intune_books_iosvppebook)
+    description: Read properties and relationships of the iosVppEBook object.
+  - method: [Create iosVppEBook](xref:graph.intune_books_iosvppebook_create)
+    type: [iosVppEBook](xref:graph.intune_books_iosvppebook)
+    description: Create a new iosVppEBook object.
+  - method: [Delete iosVppEBook](xref:graph.intune_books_iosvppebook_delete)
+    type: None
+    description: Deletes a iosVppEBook.
+  - method: [Update iosVppEBook](xref:graph.intune_books_iosvppebook_update)
+    type: [iosVppEBook](xref:graph.intune_books_iosvppebook)
+    description: Update the properties of a iosVppEBook object.
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.iosVppEBook",
+      "id": "String (identifier)",
+      "displayName": "String",
+      "description": "String",
+      "publisher": "String",
+      "publishedDateTime": "String (timestamp)",
+      "largeCover": {
+        "@odata.type": "microsoft.graph.mimeContent",
+        "type": "String",
+        "value": "binary"
+      },
+      "createdDateTime": "String (timestamp)",
+      "lastModifiedDateTime": "String (timestamp)",
+      "informationUrl": "String",
+      "privacyInformationUrl": "String",
+      "vppTokenId": "79199ed9-e50b-4257-8de4-70b9c8685061",
+      "appleId": "String",
+      "vppOrganizationName": "String",
+      "genres": [
+        "String"
+      ],
+      "language": "String",
+      "seller": "String",
+      "totalLicenseCount": 1024,
+      "usedLicenseCount": 1024
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: id
+    type: String
+    description: Key of the entity. Inherited from managedEBook
+  - property: displayName
+    type: String
+    description: Name of the eBook. Inherited from managedEBook
+  - property: description
+    type: String
+    description: Description. Inherited from managedEBook
+  - property: publisher
+    type: String
+    description: Publisher. Inherited from managedEBook
+  - property: publishedDateTime
+    type: DateTimeOffset
+    description: The date and time when the eBook was published. Inherited from managedEBook
+  - property: largeCover
+    type: microsoft.graph.mimeContent
+    description: Book cover. Inherited from managedEBook
+  - property: createdDateTime
+    type: DateTimeOffset
+    description: The date and time when the eBook file was created. Inherited from managedEBook
+  - property: lastModifiedDateTime
+    type: DateTimeOffset
+    description: The date and time when the eBook was last modified. Inherited from managedEBook
+  - property: informationUrl
+    type: String
+    description: The more information Url. Inherited from managedEBook
+  - property: privacyInformationUrl
+    type: String
+    description: The privacy statement Url. Inherited from managedEBook
+  - property: vppTokenId
+    type: Guid
+    description: The Vpp token ID.
+  - property: appleId
+    type: String
+    description: The Apple ID associated with Vpp token.
+  - property: vppOrganizationName
+    type: String
+    description: The Vpp token's organization name.
+  - property: genres
+    type: Collection(String)
+    description: Genres.
+  - property: language
+    type: String
+    description: Language.
+  - property: seller
+    type: String
+    description: Seller.
+  - property: totalLicenseCount
+    type: Int32
+    description: Total license count.
+  - property: usedLicenseCount
+    type: Int32
+    description: Used license count.
+relationships:
+  heading: Relationships
+  list:
+  - relationship: assignments
+    type: Collection(microsoft.graph.managedEBookAssignment)
+    description: The list of assignments for this eBook. Inherited from managedEBook
+  - relationship: installSummary
+    type: microsoft.graph.eBookInstallSummary
+    description: Mobile App Install Summary. Inherited from managedEBook
+  - relationship: deviceStates
+    type: Collection(microsoft.graph.deviceInstallState)
+    description: The list of installation states for this eBook. Inherited from managedEBook
+  - relationship: userStateSummary
+    type: Collection(microsoft.graph.userInstallStateSummary)
+    description: The list of installation states for this eBook. Inherited from managedEBook

@@ -1,0 +1,84 @@
+### YamlMime:GraphOperation
+uid:graph.post_forward
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/post_forward.md
+summary:
+  heading: post: forward
+  intro: |
+    Forward a post to a recipient. You can specify both the parent conversation and thread in the request, 
+    or, you can specify just the parent thread without the parent conversation. 
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+  list:
+  - resource: Delegated (work or school account)
+    permission: Group.ReadWrite.All
+  - resource: Delegated (personal Microsoft account)
+    permission: Not supported.
+  - resource: Application
+    permission: Group.ReadWrite.All
+httpRequest:
+  heading: HTTP request
+  sampleCode: |
+    ```http
+    POST /groups/{id}/threads/{id}/posts/{id}/forward
+    POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/forward
+    ```
+    
+requestHeaders:
+  heading: Request headers
+  list:
+  - name: Authorization
+    value: String
+    description: 
+requestBody:
+  heading: Request body
+  intro: |
+    In the request body, provide a JSON object with the following parameters.
+    |Parameter|Type|Description
+    |:-|:-|:-|
+    |comment|String|Optional comment that is forwarded together with the post.
+    |toRecipients|[recipient](xref:graph.recipient) collection|The recipients to whom the threaded is forwarded to.
+response:
+  heading: Response
+  intro: |
+    If successful, this method returns `200 OK` response code. It does not return anything in the response body.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        intro: |
+          Here is an example of how to call this API.
+        request:
+            heading: Request
+            intro: |
+              Here is an example of the request.
+            sampleCode: |
+              ```http
+              POST https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}/posts/{id}/forward
+              Content-type: application/json
+              Content-length: 166
+              
+              {
+                "comment": "comment-value",
+                "toRecipients": [
+                  {
+                    "emailAddress": {
+                      "name": "name-value",
+                      "address": "address-value"
+                    }
+                  }
+                ]
+              }
+              ```
+              
+        response:
+            heading: Response
+            intro: |
+              Here is an example of the response.
+            sampleCode: |
+              ```http
+              HTTP/1.1 200 OK
+              ```
+              

@@ -1,0 +1,82 @@
+### YamlMime:GraphOperation
+uid:graph.intune_mam_managedmobileapp_create
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/intune_mam_managedmobileapp_create.md
+summary:
+  heading: Create managedMobileApp
+  intro: |
+    Create a new [managedMobileApp](xref:graph.intune_mam_managedmobileapp) object.
+permissions:
+  heading: Prerequisites
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+httpRequest:
+  heading: HTTP Request
+  sampleCode: |
+    ```http
+    POST /deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/apps
+    POST /deviceAppManagement/androidManagedAppProtections/{androidManagedAppProtectionId}/apps
+    POST /deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtectionId}/apps
+    POST /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppConfigurationId}/apps
+    ```
+    
+requestHeaders:
+  heading: Request headers
+  list:
+  - name: Authorization
+    value: String
+    description: 
+  - name: Accept
+    value: String
+    description: 
+requestBody:
+  heading: Request body
+  intro: |
+    In the request body, supply a JSON representation for the managedMobileApp object.
+    The following table shows the properties that are required when you create the managedMobileApp.
+    |Property|Type|Description
+    |:-|:-|:-|
+    |mobileAppIdentifier|[mobileAppIdentifier](xref:graph.intune_mam_mobileappidentifier)|The identifier for an app with it's operating system type.
+    |id|String|Key of the entity.
+    |version|String|Version of the entity.
+response:
+  heading: Response
+  intro: |
+    If successful, this method returns a `201 Created` response code and a [managedMobileApp](xref:graph.intune_mam_managedmobileapp) object in the response body.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        request:
+            heading: Request
+            intro: |
+              Here is an example of the request.
+              POST https://graph.microsoft.com/v1.0/deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/apps
+              Content-type: application/json
+              Content-length: 181
+              
+              {
+                "@odata.type": "#microsoft.graph.managedMobileApp",
+                "mobileAppIdentifier": {
+                  "@odata.type": "microsoft.graph.mobileAppIdentifier"
+                },
+                "version": "Version value"
+              }
+
+        response:
+            heading: Response
+            intro: |
+              Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+              HTTP/1.1 201 Created
+              Content-Type: application/json
+              Content-Length: 230
+              
+              {
+                "@odata.type": "#microsoft.graph.managedMobileApp",
+                "mobileAppIdentifier": {
+                  "@odata.type": "microsoft.graph.mobileAppIdentifier"
+                },
+                "id": "0a129715-9715-0a12-1597-120a1597120a",
+                "version": "Version value"
+              }
+

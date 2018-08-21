@@ -1,0 +1,104 @@
+### YamlMime:GraphResource
+uid:graph.intune_deviceconfig_iosupdateconfiguration
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_iosupdateconfiguration.md
+summary:
+  heading: iosUpdateConfiguration resource type
+  intro: |
+    IOS Update Configuration, allows you to configure time window within week to install iOS updates
+    Inherits from [deviceConfiguration](xref:graph.intune_deviceconfig_deviceconfiguration)
+methods:
+  heading: Methods
+  list:
+  - method: [List iosUpdateConfigurations](xref:graph.intune_deviceconfig_iosupdateconfiguration_list)
+    type: [iosUpdateConfiguration](xref:graph.intune_deviceconfig_iosupdateconfiguration) collection
+    description: List properties and relationships of the iosUpdateConfiguration objects.
+  - method: [Get iosUpdateConfiguration](xref:graph.intune_deviceconfig_iosupdateconfiguration_get)
+    type: [iosUpdateConfiguration](xref:graph.intune_deviceconfig_iosupdateconfiguration)
+    description: Read properties and relationships of the iosUpdateConfiguration object.
+  - method: [Create iosUpdateConfiguration](xref:graph.intune_deviceconfig_iosupdateconfiguration_create)
+    type: [iosUpdateConfiguration](xref:graph.intune_deviceconfig_iosupdateconfiguration)
+    description: Create a new iosUpdateConfiguration object.
+  - method: [Delete iosUpdateConfiguration](xref:graph.intune_deviceconfig_iosupdateconfiguration_delete)
+    type: None
+    description: Deletes a iosUpdateConfiguration.
+  - method: [Update iosUpdateConfiguration](xref:graph.intune_deviceconfig_iosupdateconfiguration_update)
+    type: [iosUpdateConfiguration](xref:graph.intune_deviceconfig_iosupdateconfiguration)
+    description: Update the properties of a iosUpdateConfiguration object.
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.iosUpdateConfiguration",
+      "id": "String (identifier)",
+      "lastModifiedDateTime": "String (timestamp)",
+      "createdDateTime": "String (timestamp)",
+      "description": "String",
+      "displayName": "String",
+      "version": 1024,
+      "activeHoursStart": "String (time of day)",
+      "activeHoursEnd": "String (time of day)",
+      "scheduledInstallDays": [
+        "String"
+      ],
+      "utcTimeOffsetInMinutes": 1024
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: id
+    type: String
+    description: Key of the entity. Inherited from deviceConfiguration
+  - property: lastModifiedDateTime
+    type: DateTimeOffset
+    description: DateTime the object was last modified. Inherited from deviceConfiguration
+  - property: createdDateTime
+    type: DateTimeOffset
+    description: DateTime the object was created. Inherited from deviceConfiguration
+  - property: description
+    type: String
+    description: Admin provided description of the Device Configuration. Inherited from deviceConfiguration
+  - property: displayName
+    type: String
+    description: Admin provided name of the device configuration. Inherited from deviceConfiguration
+  - property: version
+    type: Int32
+    description: Version of the device configuration. Inherited from deviceConfiguration
+  - property: activeHoursStart
+    type: TimeOfDay
+    description: Active Hours Start (active hours mean the time window when updates install should not happen)
+  - property: activeHoursEnd
+    type: TimeOfDay
+    description: Active Hours End (active hours mean the time window when updates install should not happen)
+  - property: scheduledInstallDays
+    type: Collection(microsoft.graph.dayOfWeek)
+    description: Days in week for which active hours are configured. This collection can contain a maximum of 7 elements.
+  - property: utcTimeOffsetInMinutes
+    type: Int32
+    description: UTC Time Offset indicated in minutes
+relationships:
+  heading: Relationships
+  list:
+  - relationship: assignments
+    type: Collection(microsoft.graph.deviceConfigurationAssignment)
+    description: The list of assignments for the device configuration profile. Inherited from deviceConfiguration
+  - relationship: deviceStatuses
+    type: Collection(microsoft.graph.deviceConfigurationDeviceStatus)
+    description: Device configuration installation status by device. Inherited from deviceConfiguration
+  - relationship: userStatuses
+    type: Collection(microsoft.graph.deviceConfigurationUserStatus)
+    description: Device configuration installation status by user. Inherited from deviceConfiguration
+  - relationship: deviceStatusOverview
+    type: microsoft.graph.deviceConfigurationDeviceOverview
+    description: Device Configuration devices status overview Inherited from deviceConfiguration
+  - relationship: userStatusOverview
+    type: microsoft.graph.deviceConfigurationUserOverview
+    description: Device Configuration users status overview Inherited from deviceConfiguration
+  - relationship: deviceSettingStateSummaries
+    type: Collection(microsoft.graph.settingStateDeviceSummary)
+    description: Device Configuration Setting State Device Summary Inherited from deviceConfiguration

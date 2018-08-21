@@ -1,0 +1,36 @@
+### YamlMime:GraphOperation
+uid:graph.intune_corporate_enrollment_conceptual
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_corporate_enrollment_conceptual.md
+summary:
+  heading: Enroll corporate-owned devices by using Intune
+  intro: |
+    You can enroll organization-owned or corporate-owned devices to manage with Intune in a variety of ways, depending on the type of device, how the device was purchased, and the needs of the organization. You also can install the Company Portal app to enroll and manage corporate-owned devices, like in a "bring your own device" (BYOD) scenario.
+    The following Graph resources are available to manage corporate-owned devices in Intune:
+    
+    * [Device enrollment configuration](xref:graph.intune_onboarding_deviceenrollmentconfiguration)
+    * [Device enrollment limit configuration](xref:graph.intune_onboarding_deviceenrollmentlimitconfiguration)
+    * [Device enrollment platform restriction](xref:graph.intune_onboarding_deviceenrollmentplatformrestriction)
+    * [Device enrollment platform restrictions configuration](xref:graph.intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration)
+    * [Device enrollment Windows Hello for business configuration](xref:graph.intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration)
+    * [Device management exchange connector](xref:graph.intune_onboarding_devicemanagementexchangeconnector)
+    * [Device management exchange connector status](xref:graph.intune_onboarding_devicemanagementexchangeconnectorstatus)
+    * [Device management exchange connector sync type](xref:graph.intune_onboarding_devicemanagementexchangeconnectorsynctype)
+    * [Device management exchange connector type](xref:graph.intune_onboarding_devicemanagementexchangeconnectortype)
+    * [Device management partner](xref:graph.intune_onboarding_devicemanagementpartner)
+    * [Device management partner app type](xref:graph.intune_onboarding_devicemanagementpartnerapptype)
+    * [Device management partner tenant state](xref:graph.intune_onboarding_devicemanagementpartnertenantstate)
+    * [Enablement](xref:graph.intune_onboarding_enablement)
+    * [Enrollment configuration assignment](xref:graph.intune_onboarding_enrollmentconfigurationassignment)
+    * [Intune brand](xref:graph.intune_onboarding_intunebrand)
+    * [MDM authority](xref:graph.intune_onboarding_mdmauthority)
+    * [Mobile threat defense connector](xref:graph.intune_onboarding_mobilethreatdefenseconnector)
+    * [Mobile threat partner tenant state](xref:graph.intune_onboarding_mobilethreatpartnertenantstate)
+    * [On-premises conditional access settings](xref:graph.intune_onboarding_onpremisesconditionalaccesssettings)
+    * [Organization](xref:graph.intune_onboarding_organization)
+    * [RGB color](xref:graph.intune_onboarding_rgbcolor)
+    * [VPP token](xref:graph.intune_onboarding_vpptoken)
+    * [VPP token state](xref:graph.intune_onboarding_vpptokenstate)
+    * [VPP token sync status](xref:graph.intune_onboarding_vpptokensyncstatus)
+    * [Windows Hello for business PIN usage](xref:graph.intune_onboarding_windowshelloforbusinesspinusage)
+    

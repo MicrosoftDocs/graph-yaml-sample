@@ -1,0 +1,83 @@
+### YamlMime:GraphOperation
+uid:graph.user_post_contactfolders
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/user_post_contactfolders.md
+summary:
+  heading: Create ContactFolder
+  intro: |
+    Create a new contactFolder under the user's default contacts folder.
+    You can also [create a new contactfolder as a child of any specified contact folder](xref:graph.contactfolder_post_childfolders).
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+  list:
+  - resource: Delegated (work or school account)
+    permission: Contacts.ReadWrite
+  - resource: Delegated (personal Microsoft account)
+    permission: Contacts.ReadWrite
+  - resource: Application
+    permission: Contacts.ReadWrite
+httpRequest:
+  heading: HTTP request
+  sampleCode: |
+    ```http
+    POST /users/{id | userPrincipalName}/contactFolders
+    ```
+    
+requestHeaders:
+  heading: Request headers
+  list:
+  - name: Authorization
+    value: String
+    description: 
+  - name: Content-Type
+    value: String
+    description: 
+requestBody:
+  heading: Request body
+  intro: |
+    In the request body, supply a JSON representation of [ContactFolder](xref:graph.contactfolder) object.
+response:
+  heading: Response
+  intro: |
+    If successful, this method returns `201 Created` response code and [ContactFolder](xref:graph.contactfolder) object in the response body.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        request:
+            heading: Request
+            intro: |
+              Here is an example of the request.
+            sampleCode: |
+              ```http
+              POST https://graph.microsoft.com/v1.0/me/contactFolders
+              Content-type: application/json
+              Content-length: 84
+              
+              {
+                "parentFolderId": "parentFolderId-value",
+                "displayName": "displayName-value"
+              }
+              ```
+              
+            outro: |
+              In the request body, supply a JSON representation of [contactFolder](xref:graph.contactfolder) object.
+        response:
+            heading: Response
+            intro: |
+              Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+            sampleCode: |
+              ```http
+              HTTP/1.1 201 Created
+              Content-type: application/json
+              Content-length: 104
+              
+              {
+                "parentFolderId": "parentFolderId-value",
+                "displayName": "displayName-value",
+                "id": "id-value"
+              }
+              ```
+              

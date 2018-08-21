@@ -1,0 +1,87 @@
+### YamlMime:GraphOperation
+uid:graph.chart_update
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/chart_update.md
+summary:
+  heading: Update chart
+  intro: |
+    Update the properties of chart object.
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+  list:
+  - resource: Delegated (work or school account)
+    permission: Files.ReadWrite
+  - resource: Delegated (personal Microsoft account)
+    permission: Not supported.
+  - resource: Application
+    permission: Not supported.
+httpRequest:
+  heading: HTTP request
+  sampleCode: |
+    ```http
+    PATCH /workbook/worksheets/{id|name}/charts/{name}
+    ```
+    
+requestHeaders:
+  heading: Optional request headers
+  list:
+  - name: Authorization
+    value: 
+    description: Bearer {token}. Required.
+  - name: Workbook-Session-Id
+    value: 
+    description: Workbook session Id that determines if changes are persisted or not. Optional.
+requestBody:
+  heading: Request body
+  intro: |
+    In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
+    |Property|Type|Description
+    |:-|:-|:-|
+    |height|double|Represents the height, in points, of the chart object.
+    |left|double|The distance, in points, from the left side of the chart to the worksheet origin.
+    |name|string|Represents the name of a chart object.
+    |top|double|Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).
+    |width|double|Represents the width, in points, of the chart object.
+response:
+  heading: Response
+  intro: |
+    If successful, this method returns a `200 OK` response code and updated [WorkbookChart](xref:graph.chart) object in the response body.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        request:
+            heading: Request
+            intro: |
+              Here is an example of the request.
+            sampleCode: |
+              ```http
+              PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}
+              Content-type: application/json
+              Content-length: 52
+              
+              {
+                "height": 99,
+                "left": 99
+              }
+              ```
+              
+        response:
+            heading: Response
+            intro: |
+              Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+            sampleCode: |
+              ```http
+              HTTP/1.1 200 OK
+              Content-type: application/json
+              Content-length: 52
+              
+              {
+                "id": "id-value",
+                "height": 99,
+                "left": 99
+              }
+              ```
+              

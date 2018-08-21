@@ -1,0 +1,17 @@
+### YamlMime:GraphOperation
+uid:graph.intune_mam_managedappdatatransferlevel
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_mam_managedappdatatransferlevel.md
+summary:
+  heading: managedAppDataTransferLevel enum type
+  intro: |
+    Data can be transferred from/to these classes of apps
+enum:
+  heading: Members
+  table:
+  - member: allApps
+    description: All apps.
+  - member: managedApps
+    description: Managed apps.
+  - member: none
+    description: No apps.

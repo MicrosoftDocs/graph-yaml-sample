@@ -1,0 +1,37 @@
+### YamlMime:GraphResource
+uid:graph.chartseriesformat
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/chartseriesformat.md
+summary:
+  heading: ChartSeriesFormat resource type
+  intro: |
+    encapsulates the format properties for the chart series
+methods:
+  heading: Methods
+  intro: |
+    None
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "fill": {"@odata.type": "microsoft.graph.workbookChartFill"},
+      "line": {"@odata.type": "microsoft.graph.workbookChartLineFormat"}
+    }
+    ```
+    
+properties:
+  heading: Properties
+  intro: |
+    None
+relationships:
+  heading: Relationships
+  list:
+  - relationship: fill
+    type: microsoft.graph.workbookChartFill
+    description: Represents the fill format of a chart series, which includes background formating information. Read-only.
+  - relationship: line
+    type: microsoft.graph.workbookChartLineFormat
+    description: Represents line formatting. Read-only.

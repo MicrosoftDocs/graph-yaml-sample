@@ -1,0 +1,57 @@
+### YamlMime:GraphResource
+uid:graph.domaindnstxtrecord
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/domaindnstxtrecord.md
+summary:
+  heading: domainDnsTxtRecord resource type
+  intro: |
+    Represents a TXT record added to the DNS zone file of a particular domain in the tenant. Inherited from [DomainDnsRecord](xref:graph.domaindnsrecord) entity.
+methods:
+  heading: Methods
+  intro: |
+    Direct queries to this resource are not supported. Please see the [domain](xref:graph.domain) topic for information on how to query for domain service records.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "id": "String (identifier)",
+      "isOptional": true,
+      "label": "String",
+      "recordType": "String",
+      "supportedService": "String",
+      "text": "String",
+      "ttl": 1024
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: id
+    type: String
+    description: Unique identifier assigned to this entity. Not nullable, Read-only.
+  - property: isOptional
+    type: Boolean
+    description: If false, the TXT record must be configured by the customer at the DNS host for Microsoft Online Services to operate correctly with the domain.
+  - property: label
+    type: String
+    description: Value to use when configuring the name property of the TXT record at the DNS host.
+  - property: recordType
+    type: String
+    description: Type of DNS record. The value is always Txt. Key
+  - property: supportedService
+    type: String
+    description: Microsoft Online Service or feature that has a dependency on this TXT record.Can be one of the following values: null, Email, Sharepoint, EmailInternalRelayOnly, OfficeCommunicationsOnline, SharePointDefaultDomain, FullRedelegation, SharePointPublic, OrgIdAuthentication, Yammer, Intune
+  - property: text
+    type: String
+    description: Value used when configuring the text property at the DNS host.
+  - property: ttl
+    type: Int32
+    description: Value to use when configuring the time-to-live (ttl) property of the MX record at the DNS host. Not nullable
+relationships:
+  heading: Relationships
+  intro: |
+    None

@@ -1,0 +1,148 @@
+### YamlMime:GraphOperation
+uid:graph.onenote-note-tags
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/onenote-note-tags.md
+summary:
+  heading: Use note tags in OneNote pages
+  intro: |
+    **Applies to** Consumer notebooks on OneDrive | Enterprise notebooks on Office 365
+    Use the `data-tag` attribute to add and update check boxes, stars, and other built-in note tags on a OneNote page, as shown in the following image.
+    ![Three note tags displayed on a OneNote page.](images/note-tags-example.PNG)
+    <a name="attributes"></a>
+  outro: |
+    ## Note tag attributes
+    In the HTML of a OneNote page, a note tag is represented by the `data-tag` attribute. For example:
+    
+    * An unchecked to-do box:  `<p data-tag="to-do">` 
+    * A checked to-do box:  `<p data-tag="to-do:completed">` 
+    * A star:  `<h2 data-tag="important">` 
+    
+    A `data-tag` value is composed of a shape, and sometimes a status (see all [supported values](#built-in-note-tags-for-onenote)).
+    |Property|Description|
+    |:-|:-|  -
+    |shape|The identifier of the note tag (example: `to-do` or `important`).|
+    |status|The status of check box note tags. This is used only to set check boxes as completed.|
+    <a name="note-tags"></a>
+permissions:
+  heading: Permissions
+  intro: |
+    To create or update OneNote pages, you'll need to request appropriate permissions. Choose the lowest level of permissions that your app needs to do its work.
+  outro: |
+    #### Permissions for POST pages
+    
+    * Notes.Create
+    * Notes.ReadWrite
+    * Notes.ReadWrite.All  
+    
+examples:
+  heading: Examples
+  intro: |
+    Here's a simple to-do list with the first item completed.
+    <p data-tag="to-do:completed" data-id="prep">Till garden bed</p> 
+    <p data-tag="to-do" data-id="spring">Plant peas and spinach</p>
+    <p data-tag="to-do" data-id="summer">Plant tomatoes and peppers</p>
+
+    Note that the `<p>` tags above each include a `data-id` attribute. This makes it easier to update the check box note tags. For example, the following request marks the spring planting to-do item as completed.
+    PATCH https://graph.microsoft.com/v1.0/me/onenote/notebooks/pages/{page-id}/content
+    
+    Content-Type: application/json
+    Authorization: Bearer {token}
+    
+    [
+       {
+        'target':'#spring',
+        'action':'replace',
+        'content':'<p data-tag="to-do:completed"  data-id="spring">Plant peas and spinach</p>'
+      }
+    ]
+
+    The following request creates a page that contains all [built-in note tags](#built-in-note-tags-for-onenote).
+    POST https://graph.microsoft.com/v1.0/me/onenote/notebooks/pages
+    
+    Content-Type: text/html
+    Authorization: Bearer {token}
+    
+    
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <title data-tag="to-do:completed">All built-in note tags</title>
+      </head>
+      <body>
+        <h1 data-tag="important">Paragraphs with built-in note tags</h1>
+        <p data-tag="to-do">to-do</p>
+        <p data-tag="important">important</p>
+        <p data-tag="question">question</p>
+        <p data-tag="definition">definition</p>
+        <p data-tag="highlight">highlight</p>
+        <p data-tag="contact">contact</p>
+        <p data-tag="address">address</p>
+        <p data-tag="phone-number">phone-number</p>
+        <p data-tag="web-site-to-visit">web-site-to-visit</p>
+        <p data-tag="idea">idea</p>
+        <p data-tag="password">password</p>
+        <p data-tag="critical">critical</p>
+        <p data-tag="project-a">project-a</p>
+        <p data-tag="project-b">project-b</p>
+        <p data-tag="remember-for-later">remember-for-later</p>
+        <p data-tag="movie-to-see">movie-to-see</p>
+        <p data-tag="book-to-read">book-to-read</p>
+        <p data-tag="music-to-listen-to">music-to-listen-to</p>
+        <p data-tag="source-for-article">source-for-article</p>
+        <p data-tag="remember-for-blog">remember-for-blog</p>
+        <p data-tag="discuss-with-person-a">discuss-with-person-a</p>
+        <p data-tag="discuss-with-person-b">discuss-with-person-b</p>
+        <p data-tag="discuss-with-manager">discuss-with-manager</p>
+        <p data-tag="send-in-email">send-in-email</p>
+        <p data-tag="schedule-meeting">schedule-meeting</p>
+        <p data-tag="call-back">call-back</p>
+        <p data-tag="to-do-priority-1">to-do-priority-1</p>
+        <p data-tag="to-do-priority-2">to-do-priority-2</p>
+        <p data-tag="client-request">client-request</p>
+        <h1 data-tag="important">Paragraphs with check boxes marked with "completed" status</h1>
+        <p data-tag="to-do:completed">to-do:completed</p>
+        <p data-tag="discuss-with-person-a:completed">discuss-with-person-a:completed</p>
+        <p data-tag="discuss-with-person-b:completed">discuss-with-person-b:completed</p>
+        <p data-tag="discuss-with-manager:completed">discuss-with-manager:completed</p>
+        <p data-tag="schedule-meeting:completed">schedule-meeting:completed</p>
+        <p data-tag="call-back:completed">call-back:completed</p>
+        <p data-tag="to-do-priority-1:completed">to-do-priority-1:completed</p>
+        <p data-tag="to-do-priority-2:completed">to-do-priority-2:completed</p>
+        <p data-tag="client-request:completed">client-request:completed</p>
+        <h1 data-tag="important">Multiple note tags</h1>
+        <p data-tag="project-a,  client-request:completed">Two note tags:  project-a, client-request:completed</p>
+        <p data-tag="idea, send-in-email, question">Three note tags:  idea, send-in-email, question</p>
+        <h1 data-tag="important">Using note tags with other elements</h1>
+        <p><b>Note tag on a list item:</b></p>
+        <ul>
+          <li data-tag="to-do-priority-1:completed">Make a to-do list</li>
+        </ul>
+        <p><b>Note tag on an image:</b></p>
+        <img data-tag="source-for-article" src="http://placecorgi.com/200" />
+        <p><b>Note tag with embedded style:</b></p>
+        <p data-tag="important">Next time, <b>don't</b> forget to invite <span style="background-color:yellow">Dan</span>.</p>
+      </body>
+    </html>
+
+    For more information about creating pages, see [Create OneNote pages](xref:graph.onenote-create-page). For more about updating pages, see [Update OneNote pages](xref:graph.onenote_update_page).
+    <a name="note-tags-lists"></a>
+  outro: |
+    ## Note tags on lists
+    Here are some guidelines for working with note tags on lists:
+    
+    * Use `p` elements for to-do lists. They don't display a bullet or number, and they're easier to update.
+    * To create or update lists that display the **same** note tag for all list items, define `data-tag` on the `ul` or `ol`. To update the entire list, you'll need to redefine `data-tag` on the `ul` or `ol`.
+    * To create or update lists that display a **unique** note tag for some or all list items, define `data-tag` on `li` elements, and don't nest the `li` elements in a `ul` or `ol`. To update the entire list, you'll need to remove the `ul` that's returned in the output HTML and provide only the unnested `li` elements.
+    * To update specific `li` elements, target the `li` elements individually and define the `data-tag` on the `li` element. Any individually addressed `li` element can be updated to display a unique note tag, no matter how the list was originally defined.
+    
+    The guidelines are based on the following rules that are applied by Microsoft Graph:
+    
+    * The `data-tag` setting for a `ul` or `ol` overrides all settings on child `li` elements. This applies even when the `ul` or `ol` doesn't specify a `data-tag` but its child `li` elements do.
+    * For example, if you create a `ul` or `ol` that defines `data-tag="project-a"`, all its list items will display the *Project A* note tag. Or if the `ul` or `ol` doesn't define a `data-tag`, none of its items will display a note tag. This override happens regardless of any explicit settings on child `li` elements.
+    * Unique `data-tag` settings are honored for list items under the following conditions:
+    * The `li` elements are not nested in a `ul` or `ol` in a create or update request.
+    * An `li` element is individually addressed in an update request.
+    * Unnested `li` elements sent in input HTML are returned in a `ul` in the output HTML.
+    * In output HTML, all `data-tag` list settings are defined on `span` elements on the list items.
+    
+    The following code shows how some of these rules are applied. The input HTML creates two lists with note tags. The output HTML is what's returned for the lists when you retrieve page content.

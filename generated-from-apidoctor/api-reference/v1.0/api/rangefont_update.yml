@@ -1,0 +1,97 @@
+### YamlMime:GraphOperation
+uid:graph.rangefont_update
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/rangefont_update.md
+summary:
+  heading: Update rangefont
+  intro: |
+    Update the properties of rangefont object.
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+  list:
+  - resource: Delegated (work or school account)
+    permission: Files.ReadWrite
+  - resource: Delegated (personal Microsoft account)
+    permission: Not supported.
+  - resource: Application
+    permission: Not supported.
+httpRequest:
+  heading: HTTP request
+  sampleCode: |
+    ```http
+    PATCH /workbook/names/{name}/range/format/font
+    PATCH /workbook/worksheets/{id|name}/range(address='<address>')/format/font
+    PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/font
+    ```
+    
+requestHeaders:
+  heading: Request headers
+  list:
+  - name: Authorization
+    value: 
+    description: Bearer {token}. Required.
+  - name: Workbook-Session-Id
+    value: 
+    description: Workbook session Id that determines if changes are persisted or not. Optional.
+requestBody:
+  heading: Request body
+  intro: |
+    In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
+    |Property|Type|Description
+    |:-|:-|:-|
+    |bold|boolean|Represents the bold status of font.
+    |color|string|HTML color code representation of the text color. E.g. #FF0000 represents Red.
+    |italic|boolean|Represents the italic status of the font.
+    |name|string|Font name (e.g. "Calibri")
+    |size|double|Font size.
+    |underline|string|Type of underline applied to the font. The possible values are: `None`, `Single`, `Double`, `SingleAccountant`, `DoubleAccountant`.
+response:
+  heading: Response
+  intro: |
+    If successful, this method returns a `200 OK` response code and updated [WorkbookRangeFont](xref:graph.rangefont) object in the response body.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        request:
+            heading: Request
+            intro: |
+              Here is an example of the request.
+            sampleCode: |
+              ```http
+              PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/format/font
+              Content-type: application/json
+              Content-length: 134
+              
+              {
+                "bold": true,
+                "color": "color-value",
+                "italic": true,
+                "name": "name-value",
+                "size": 99,
+                "underline": "underline-value"
+              }
+              ```
+              
+        response:
+            heading: Response
+            intro: |
+              Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+            sampleCode: |
+              ```http
+              HTTP/1.1 200 OK
+              Content-type: application/json
+              Content-length: 134
+              
+              {
+                "bold": true,
+                "color": "color-value",
+                "italic": true,
+                "name": "name-value",
+                "size": 99,
+                "underline": "underline-value"
+              }
+              ```
+              

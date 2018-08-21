@@ -1,0 +1,41 @@
+### YamlMime:GraphOperation
+uid:graph.delta_query_groups
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/delta_query_groups.md
+summary:
+  heading: Get incremental changes for groups
+  intro: |
+    [Delta query](xref:graph.delta_query_overview) lets you query for additions, deletions, or updates to groups, by way of a series of [delta](xref:graph.group_delta) function calls. Delta query enables you discover changes to groups
+    without having to fetch the entire set of groups from Microsoft Graph and compare changes.
+    Clients using synchronizing groups with a local profile store can use Delta Query for both their initial full synchronization along with incremental synchronizations in the future. Typically, a client would do an initial full synchronization of all the groups in a tenant, and subsequently, get incremental changes to groups periodically.
+  outro: |
+    ## Tracking group changes
+    Tracking group changes is a round of one or more GET requests with the **delta** function. You make a GET
+    request much like the way you [list groups](xref:graph.group_list), except that you include the following:
+    
+    * The **delta** function.
+    * A [state token](xref:graph.delta_query_overview) (*deltaToken* or *skipToken*) from the previous GET **delta** function call.
+    
+examples:
+  - items:
+    - Example:
+        heading: Example
+        intro: |
+          The following example shows a series  requests to track changes to groups:
+          
+          1. [Initial request](#initial-request) and [response](#initial-response)
+          1. [nextLink request](#nextlink-request) and [response](#nextlink-response)
+          1. [Final nextLink request](#final-nextlink-request) and [response](#final-nextlink-response)
+          1. [deltaLink request](#deltalink-request) and [deltaLink response](#deltalink-response)
+          
+        outro: |
+          ## Initial request
+          To begin tracking changes in the group resource, you make a request including the delta function on the group resource.
+          Note the following:
+          
+          * The optional `$select` query parameter is included in the request to demonstrate how query parameters are automatically included in future requests.
+          * The optional `$expand` query parameter is included to show how group members can be retrieved together with group objects. This allows tracking of membership changes, such as when users are added or removed from groups.
+          * The initial request does not include a state token. State tokens will be used in subsequent requests.
+          
+          GET https://graph.microsoft.com/v1.0/groups/delta?$select=displayName,description&$expand=members
+

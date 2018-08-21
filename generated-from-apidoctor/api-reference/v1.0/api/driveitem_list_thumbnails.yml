@@ -1,0 +1,154 @@
+### YamlMime:GraphOperation
+uid:graph.driveitem_list_thumbnails
+metadata:
+  title: Retrieve thumbnails for a file or folder
+  author: rgregg
+  ms.author: rgregg
+  ms.date: 09/10/2017
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/driveitem_list_thumbnails.md
+summary:
+  heading: List thumbnails for a DriveItem
+  intro: |
+    Retrieve a collection of [ThumbnailSet](xref:graph.thumbnailset) resources for a [DriveItem](xref:graph.driveitem) resource.
+    A DriveItem can be represented by zero or more [ThumbnailSet](xref:graph.thumbnailset) resources.
+    Each **thumbnailSet** can have one or more [**thumbnail**](xref:graph.thumbnail) objects, which are images that represent the item.
+    For example, a **thumbnailSet** may include **thumbnail** objects, such as common ones including `small`, `medium`, or `large`.
+    There are many ways to work with thumbnails on OneDrive.
+    Here are the most common ones:
+    
+    * Enumerate available thumbnails for an item
+    * Retrieve a single thumbnail for an item
+    * Retrieve thumbnail content
+    * Retrieve thumbnails for multiple items in a single request
+    * Retrieve custom thumbnail sizes
+    * Upload a custom thumbnail for an item
+    * Determine if a custom uploaded thumbnail exists
+    
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+  list:
+  - resource: Delegated (work or school account)
+    permission: Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All
+  - resource: Delegated (personal Microsoft account)
+    permission: Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All
+  - resource: Application
+    permission: Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All
+httpRequest:
+  heading: HTTP request
+  sampleCode: |
+    ```http
+    GET /drives/{drive-id}/items/{item-id}/thumbnails
+    GET /groups/{group-id}/drive/items/{item-id}/thumbnails
+    GET /me/drive/items/{item-id}/thumbnails
+    GET /sites/{site-id}/drive/items/{item-id}/thumbnails
+    GET /users/{user-id}/drive/items/{item-id}/thumbnails
+    ```
+    
+queryParameters:
+  heading: Optional query parameters
+  intro: |
+    This method supports the `$select` [OData puery parameter](xref:graph.query_parameters) to customize the response.
+parameters:
+  heading: Path parameters
+  list:
+  - name: item-id
+    value: String
+    description: The unique identifier for the item referenced.
+  - name: thumb-id
+    value: Int64
+    description: The index of the thumbnail, usually 0-4. If there is a custom thumbnail, its index is 0.
+  - name: size
+    value: String
+    description: The size of the thumbnail requested. This can be one of the standard sizes listed below or a custom size.
+  outro: |
+    ```http
+    HTTP/1.1 200 OK
+    Content-Type: application/json
+    
+    {
+      "width": 100,
+      "height": 100,
+      "url": "http://onedrive.com/asd123a/asdjlkasjdkasdjlk.jpg"
+    }
+    ```
+    
+    ## Retrieve thumbnail binary content
+    You can directly retrieve the content of the thumbnail by requesting the **content** property of the thumbnail.
+    
+    ```http
+    GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}/content
+    ```
+    
+response:
+  heading: Response
+  intro: |
+    If successful, this method returns a `200 OK` response code and collection of [ThumbnailSet](xref:graph.thumbnailset) objects in the response body.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        intro: |
+          Here is an example of the request which retrieves available thumbnails for an item in the current user's OneDrive.
+          This returns an array of available **thumbnailSets** for the item. 
+          Any item in a drive can have zero or more thumbnails.
+          **Note:** You can use the _select_ query string parameter to control which thumbnail sizes are returned in the **ThumbnailSet**.
+          For example, `/thumbnails?select=medium` retrieves only the medium sized thumbnails.
+        request:
+            heading: request
+            sampleCode: |
+              ```http
+              GET /me/drive/items/{item-id}/thumbnails
+              ```
+              
+        response:
+            heading: Response
+            sampleCode: |
+              ```http
+              HTTP/1.1 200 OK
+              Content-type: application/json
+              
+              {
+                "value": [
+                  {
+                    "id": "0",
+                    "small": { "height": 64, "width": 96, "url": "https://sn3302files..."},
+                    "medium": { "height": 117, "width": 176, "url": "https://sn3302files..."},
+                    "large": { "height": 533, "width": 800, "url": "https://sn3302files..."}
+                  }
+                ]
+              }
+              ```
+              
+            outro: |
+              ## Get a single thumbnail
+              Retrieve the metadata for a single thumbnail and size by addressing it directly in a request.
+              
+              ```http
+              GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}
+              ```
+              
+    - Examples of custom identifiers:
+        heading: Examples of custom identifiers
+        intro: |
+          |Thumbnail identifier|Resolution|Aspect ratio|Description
+          |:-|:-|:-|:-|
+          |c300x400|Bounded by 300x400 box|Original|Generate a thumbnail that fits inside a 300x400 pixel box, maintaining aspect ratio
+          |c300x400_Crop|300x400|Cropped|Generate a thumbnail that is 300x400 pixels. This works by resizing the image to fill the 300x400 box and cropping whatever spills outside the box.
+          **Note:** The thumbnail returned may not exactly match the pixel dimensions that was requested, but will match the aspect ratio.
+          In some cases, a larger thumbnail may be returned than was requested, if the thumbnail already exists and can easily be scaled to match the requested resolution.
+remarks:
+  heading: Remarks
+  intro: |
+    **Note** In OneDrive for Business and SharePoint:
+    Using these calls to expand the thumbnails collection will not work:
+    
+    * `GET /drive/root:/{item-path}?expand=children(expand=thumbnails)`
+    * `GET /drive/items/{item-id}/children?expand=thumbnails`
+    
+    Thumbnails are not supported on SharePoint Server 2016.
+  outro: |
+    ### Error responses
+    See [Error Responses][error-response] for more info about
+    how errors are returned.

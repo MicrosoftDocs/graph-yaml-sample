@@ -1,0 +1,64 @@
+### YamlMime:GraphResource
+uid:graph.planner
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/planner.md
+summary:
+  heading: planner resource type
+  intro: |
+    The **planner** resource is the entry point for the Planner object model. It returns a singleton **planner** resource.  It doesn't contain any usable properties.
+methods:
+  heading: Methods
+  list:
+  - method: [Create plannerBucket](xref:graph.planner_post_buckets)
+    type: [plannerBucket](xref:graph.plannerbucket)
+    description: Create a new plannerBucket by posting to the buckets collection.
+  - method: [Create plannerPlan](xref:graph.planner_post_plans)
+    type: [plannerPlan](xref:graph.plannerplan)
+    description: Create a new plannerPlan by posting to the plans collection.
+  - method: [Create plannerTask](xref:graph.planner_post_tasks)
+    type: [plannerTask](xref:graph.plannertask)
+    description: Create a new plannerTask by posting to the tasks collection.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+    }
+    ```
+    
+relationships:
+  heading: Relationships
+  list:
+  - relationship: buckets
+    type: Collection(microsoft.graph.plannerBucket)
+    description: Read-only. Nullable. Returns a collection of the specified buckets
+  - relationship: plans
+    type: Collection(microsoft.graph.plannerPlan)
+    description: Read-only. Nullable. Returns a collection of the specified plans
+  - relationship: tasks
+    type: Collection(microsoft.graph.plannerTask)
+    description: Read-only. Nullable. Returns a collection of the specified tasks
+examples:
+  - items:
+    - Example:
+        heading: Example
+        intro: |
+          The **planner** resource is available at the root of the graph.
+          
+          ```json
+          HTTP/1.1 200 OK
+          Content-type: application/json
+          
+          {
+          }
+          ```
+          
+        request:
+            heading: request
+            sampleCode: |
+              ```http
+              GET https://graph.microsoft.com/v1.0/planner
+              ```
+              

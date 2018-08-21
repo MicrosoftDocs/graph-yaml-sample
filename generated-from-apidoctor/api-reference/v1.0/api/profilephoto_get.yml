@@ -1,0 +1,75 @@
+### YamlMime:GraphOperation
+uid:graph.profilephoto_get
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/profilephoto_get.md
+summary:
+  heading: Get photo
+  intro: |
+    Get the specified [profilePhoto](xref:graph.profilephoto) or its metadata (profilePhoto properties).
+    
+    The supported sizes of HD photos on Office 365 are as follows: '48x48', '64x64', '96x96', '120x120', '240x240', 
+    '360x360','432x432', '504x504', and '648x648'. Photos can be any dimension if they are stored in Azure Active Directory.
+    You can get the metadata of the largest available photo, or specify a size to get the metadata for that photo size.
+    If the size you request is not available, you can still get a smaller size that the user has uploaded and made available.
+    For example, if the user uploads a photo that is 504x504 pixels, then all but the 648x648 size of photo will be available for download.
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+  list:
+  - resource: Delegated (work or school account)
+    permission: For user resource:User.Read, User.ReadBasic.All, User.Read.All, User.ReadWrite, User.ReadWrite.AllFor group resource:Group.Read.All, Group.ReadWrite.AllFor contact resource:Contacts.Read, Contacts.ReadWrite
+  - resource: Delegated (personal Microsoft account)
+    permission: Not supported
+  - resource: Application
+    permission: For user resource:User.Read.All, User.ReadWrite.AllFor group resource:Group.Read.All, Group.ReadWrite.AllFor contact resource:Contacts.Read, Contacts.ReadWrite
+  outro: |
+    ## HTTP request to get the photo
+    
+    ```http
+    GET /me/photo/$value
+    GET /users/{id | userPrincipalName}/photo/$value
+    GET /groups/{id}/photo/$value
+    GET /me/contacts/{id}/photo/$value
+    GET /users/{id | userPrincipalName}/contacts/{id}/photo/$value
+    GET /me/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
+    GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
+    ```
+    
+queryParameters:
+  heading: Optional query parameters
+  intro: |
+    This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+parameters:
+  heading: Parameters
+  list:
+  - name: size
+    value: String
+    description: A photo size. The supported sizes of HD photos on Office 365 are as follows: '48x48', '64x64', '96x96', '120x120', '240x240',
+  outro: |
+    '360x360','432x432', '504x504', and '648x648'. Photos can be any dimension if they are stored in Azure Active Directory. |
+requestHeaders:
+  heading: Request headers
+  list:
+  - name: Authorization
+    value: String
+    description: Bearer {token}. Required.
+requestBody:
+  heading: Request body
+  intro: |
+    Do not supply a request body for this method.
+  outro: |
+    ## Response for getting the photo
+    If successful, this method returns a `200 OK` response code and binary data of the requested photo.  If no photo exists, the operation returns `404 Not Found`.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        outro: |
+          ##### Request 1
+          This request gets the photo for the signed-in user, in the largest available size.
+          
+          ```http
+          GET https://graph.microsoft.com/v1.0/me/photo/$value
+          ```
+          

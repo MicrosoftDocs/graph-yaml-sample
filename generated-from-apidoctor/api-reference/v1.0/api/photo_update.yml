@@ -1,0 +1,82 @@
+### YamlMime:GraphOperation
+uid:graph.photo_update
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/photo_update.md
+summary:
+  heading: Update photo
+  intro: |
+    Update the properties of photo object.
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+  list:
+  - resource: Delegated (work or school account)
+    permission: Not supported.
+  - resource: Delegated (personal Microsoft account)
+    permission: Not supported.
+  - resource: Application
+    permission: Not supported.
+httpRequest:
+  heading: HTTP request
+  sampleCode: |
+    ```http
+    PATCH /users/{id | userPrincipalName}/photo
+    PATCH /groups/{id}/photo
+    PATCH /drive/root/createdByUser/photo
+    ```
+    
+requestHeaders:
+  heading: Request headers
+  list:
+  - name: Authorization
+    value: String
+    description: Bearer {token}. Required.
+requestBody:
+  heading: Request body
+  intro: |
+    In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
+    |Property|Type|Description
+    |:-|:-|:-|
+response:
+  heading: Response
+  intro: |
+    If successful, this method returns a `200 OK` response code and updated [photo](xref:graph.photo) object in the response body.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        request:
+            heading: Request
+            intro: |
+              Here is an example of the request.
+            sampleCode: |
+              ```http
+              PATCH https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/photo
+              Content-type: application/json
+              Content-length: 53
+              
+              {
+                "height": 99,
+                "width": 99,
+                "id": "id-value"
+              }
+              ```
+              
+        response:
+            heading: Response
+            intro: |
+              Here is an example of the response.
+            sampleCode: |
+              ```http
+              HTTP/1.1 200 OK
+              Content-type: application/json
+              Content-length: 53
+              
+              {
+                "height": 99,
+                "width": 99,
+                "id": "id-value"
+              }
+              ```
+              

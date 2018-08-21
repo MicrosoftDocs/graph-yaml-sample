@@ -1,0 +1,15 @@
+### YamlMime:GraphOperation
+uid:graph.intune_deviceconfig_edgesearchenginetype
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_edgesearchenginetype.md
+summary:
+  heading: edgeSearchEngineType enum type
+  intro: |
+    Allows IT admind to set a predefined default search engine for MDM-Controlled devices
+enum:
+  heading: Members
+  table:
+  - member: default
+    description: Uses factory settings of Edge to assign the default search engine as per the user market
+  - member: bing
+    description: Sets Bing as the default search engine

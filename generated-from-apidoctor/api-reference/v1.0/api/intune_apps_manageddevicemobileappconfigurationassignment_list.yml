@@ -1,0 +1,66 @@
+### YamlMime:GraphOperation
+uid:graph.intune_apps_manageddevicemobileappconfigurationassignment_list
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfigurationassignment_list.md
+summary:
+  heading: List managedDeviceMobileAppConfigurationAssignments
+  intro: |
+    List properties and relationships of the [managedDeviceMobileAppConfigurationAssignment](xref:graph.intune_apps_manageddevicemobileappconfigurationassignment) objects.
+permissions:
+  heading: Prerequisites
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+httpRequest:
+  heading: HTTP Request
+  sampleCode: |
+    ```http
+    GET /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/assignments
+    ```
+    
+requestHeaders:
+  heading: Request headers
+  list:
+  - name: Authorization
+    value: String
+    description: 
+  - name: Accept
+    value: String
+    description: 
+requestBody:
+  heading: Request body
+  intro: |
+    Do not supply a request body for this method.
+response:
+  heading: Response
+  intro: |
+    If successful, this method returns a `200 OK` response code and a collection of [managedDeviceMobileAppConfigurationAssignment](xref:graph.intune_apps_manageddevicemobileappconfigurationassignment) objects in the response body.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        request:
+            heading: Request
+            intro: |
+              Here is an example of the request.
+              GET https://graph.microsoft.com/v1.0/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/assignments
+
+        response:
+            heading: Response
+            intro: |
+              Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+              HTTP/1.1 200 OK
+              Content-Type: application/json
+              Content-Length: 287
+              
+              {
+                "value": [
+                  {
+                    "@odata.type": "#microsoft.graph.managedDeviceMobileAppConfigurationAssignment",
+                    "id": "4df81c9c-1c9c-4df8-9c1c-f84d9c1cf84d",
+                    "target": {
+                      "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+                    }
+                  }
+                ]
+              }
+

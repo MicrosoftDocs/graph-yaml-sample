@@ -1,0 +1,72 @@
+### YamlMime:GraphOperation
+uid:graph.subscription_delete
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/subscription_delete.md
+summary:
+  heading: Delete subscription
+  intro: |
+    Delete a subscription.
+permissions:
+  heading: Permissions
+  intro: |
+    The following table lists the suggested permission needed for each resource. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+  list:
+  - resource: 
+    permission: 
+  - resource: 
+    permission: 
+  - resource: 
+    permission: 
+  - resource: 
+    permission: 
+  - resource: 
+    permission: 
+  - resource: 
+    permission: 
+  - resource: 
+    permission: 
+  - resource: 
+    permission: 
+httpRequest:
+  heading: HTTP request
+  sampleCode: |
+    ```http
+    DELETE /subscriptions/{id}
+    ```
+    
+requestHeaders:
+  heading: Request headers
+  list:
+  - name: Authorization
+    value: String
+    description: Bearer {token}. Required.
+requestBody:
+  heading: Request body
+  intro: |
+    Do not supply a request body for this method.
+response:
+  heading: Response
+  intro: |
+    If successful, this method returns a `204 No Content` response code.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        request:
+            heading: Request
+            intro: |
+              Here is an example of the request.
+            sampleCode: |
+              ```http
+              DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
+              ```
+              
+        response:
+            heading: Response
+            intro: |
+              Here is an example of the response.
+            sampleCode: |
+              ```http
+              HTTP/1.1 204 No Content
+              ```
+              

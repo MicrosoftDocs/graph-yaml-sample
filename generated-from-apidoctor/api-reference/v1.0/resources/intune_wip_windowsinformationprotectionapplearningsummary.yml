@@ -1,0 +1,60 @@
+### YamlMime:GraphResource
+uid:graph.intune_wip_windowsinformationprotectionapplearningsummary
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_wip_windowsinformationprotectionapplearningsummary.md
+summary:
+  heading: windowsInformationProtectionAppLearningSummary resource type
+  intro: |
+    Windows Information Protection AppLearning Summary entity.
+methods:
+  heading: Methods
+  list:
+  - method: [List windowsInformationProtectionAppLearningSummaries](xref:graph.intune_wip_windowsinformationprotectionapplearningsummary_list)
+    type: [windowsInformationProtectionAppLearningSummary](xref:graph.intune_wip_windowsinformationprotectionapplearningsummary) collection
+    description: List properties and relationships of the windowsInformationProtectionAppLearningSummary objects.
+  - method: [Get windowsInformationProtectionAppLearningSummary](xref:graph.intune_wip_windowsinformationprotectionapplearningsummary_get)
+    type: [windowsInformationProtectionAppLearningSummary](xref:graph.intune_wip_windowsinformationprotectionapplearningsummary)
+    description: Read properties and relationships of the windowsInformationProtectionAppLearningSummary object.
+  - method: [Create windowsInformationProtectionAppLearningSummary](xref:graph.intune_wip_windowsinformationprotectionapplearningsummary_create)
+    type: [windowsInformationProtectionAppLearningSummary](xref:graph.intune_wip_windowsinformationprotectionapplearningsummary)
+    description: Create a new windowsInformationProtectionAppLearningSummary object.
+  - method: [Delete windowsInformationProtectionAppLearningSummary](xref:graph.intune_wip_windowsinformationprotectionapplearningsummary_delete)
+    type: None
+    description: Deletes a windowsInformationProtectionAppLearningSummary.
+  - method: [Update windowsInformationProtectionAppLearningSummary](xref:graph.intune_wip_windowsinformationprotectionapplearningsummary_update)
+    type: [windowsInformationProtectionAppLearningSummary](xref:graph.intune_wip_windowsinformationprotectionapplearningsummary)
+    description: Update the properties of a windowsInformationProtectionAppLearningSummary object.
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.windowsInformationProtectionAppLearningSummary",
+      "id": "String (identifier)",
+      "applicationName": "String",
+      "applicationType": "String",
+      "deviceCount": 1024
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: id
+    type: String
+    description: Unique Identifier for the WindowsInformationProtectionAppLearningSummary.
+  - property: applicationName
+    type: String
+    description: Application Name
+  - property: applicationType
+    type: microsoft.graph.applicationType
+    description: Application Type. The possible values are: universal, desktop.
+  - property: deviceCount
+    type: Int32
+    description: Device Count
+relationships:
+  heading: Relationships
+  intro: |
+    None

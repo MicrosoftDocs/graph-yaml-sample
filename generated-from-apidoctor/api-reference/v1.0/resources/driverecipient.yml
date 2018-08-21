@@ -1,0 +1,42 @@
+### YamlMime:GraphResource
+uid:graph.driverecipient
+metadata:
+  title: DriveRecipient
+  author: rgregg
+  ms.author: rgregg
+  ms.date: 09/10/2017
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/driverecipient.md
+summary:
+  heading: DriveRecipient resource
+  intro: |
+    The **DriveRecipient** resource represents a person, group, or other recipient to share with using the [invite](xref:graph.driveitem_invite) action.
+resource:
+  heading: JSON representation
+  sampleCode: |
+    ```json
+    {
+      "email": "string",
+      "alias": "string",
+      "objectId": "string",
+    }
+    ```
+    
+properties:
+  heading: Properties
+  intro: |
+    The recipients resource has these properties.
+  list:
+  - property: email
+    type: String
+    description: The email address for the recipient, if the recipient has an associated email address.
+  - property: alias
+    type: String
+    description: The alias of the domain object, for cases where an email address is unavailable (e.g. security groups).
+  - property: objectId
+    type: String
+    description: The unique identifier for the recipient in the directory.
+remarks:
+  heading: Remarks
+  intro: |
+    When using [invite](xref:graph.driveitem_invite) to add permissions, the DriveRecipient can specify **email**, **alias**, or **objectId**.
+    Only one of these values is required.

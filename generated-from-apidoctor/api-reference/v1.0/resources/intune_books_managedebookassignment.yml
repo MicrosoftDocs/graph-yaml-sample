@@ -1,0 +1,58 @@
+### YamlMime:GraphResource
+uid:graph.intune_books_managedebookassignment
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_books_managedebookassignment.md
+summary:
+  heading: managedEBookAssignment resource type
+  intro: |
+    Contains properties used to assign a eBook to a group.
+methods:
+  heading: Methods
+  list:
+  - method: [List managedEBookAssignments](xref:graph.intune_books_managedebookassignment_list)
+    type: [managedEBookAssignment](xref:graph.intune_books_managedebookassignment) collection
+    description: List properties and relationships of the managedEBookAssignment objects.
+  - method: [Get managedEBookAssignment](xref:graph.intune_books_managedebookassignment_get)
+    type: [managedEBookAssignment](xref:graph.intune_books_managedebookassignment)
+    description: Read properties and relationships of the managedEBookAssignment object.
+  - method: [Create managedEBookAssignment](xref:graph.intune_books_managedebookassignment_create)
+    type: [managedEBookAssignment](xref:graph.intune_books_managedebookassignment)
+    description: Create a new managedEBookAssignment object.
+  - method: [Delete managedEBookAssignment](xref:graph.intune_books_managedebookassignment_delete)
+    type: None
+    description: Deletes a managedEBookAssignment.
+  - method: [Update managedEBookAssignment](xref:graph.intune_books_managedebookassignment_update)
+    type: [managedEBookAssignment](xref:graph.intune_books_managedebookassignment)
+    description: Update the properties of a managedEBookAssignment object.
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.managedEBookAssignment",
+      "id": "String (identifier)",
+      "target": {
+        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+      },
+      "installIntent": "String"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: id
+    type: String
+    description: Key of the entity.
+  - property: target
+    type: microsoft.graph.deviceAndAppManagementAssignmentTarget
+    description: The assignment target for eBook.
+  - property: installIntent
+    type: microsoft.graph.installIntent
+    description: The install intent for eBook. The possible values are: available, required, uninstall, availableWithoutEnrollment.
+relationships:
+  heading: Relationships
+  intro: |
+    None

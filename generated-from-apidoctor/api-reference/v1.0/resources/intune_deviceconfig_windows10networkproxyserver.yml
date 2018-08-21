@@ -1,0 +1,40 @@
+### YamlMime:GraphResource
+uid:graph.intune_deviceconfig_windows10networkproxyserver
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_windows10networkproxyserver.md
+summary:
+  heading: windows10NetworkProxyServer resource type
+  intro: |
+    Network Proxy Server Policy.
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.windows10NetworkProxyServer",
+      "address": "String",
+      "exceptions": [
+        "String"
+      ],
+      "useForLocalAddresses": true
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: address
+    type: String
+    description: Address to the proxy server. Specify an address in the format [“:”]
+  - property: exceptions
+    type: Collection(String)
+    description: Addresses that should not use the proxy server. The system will not use the proxy server for addresses beginning with what is specified in this node.
+  - property: useForLocalAddresses
+    type: Boolean
+    description: Specifies whether the proxy server should be used for local (intranet) addresses.
+relationships:
+  heading: Relationships
+  intro: |
+    None

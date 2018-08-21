@@ -1,0 +1,77 @@
+### YamlMime:GraphResource
+uid:graph.fileattachment
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.fileattachment
+summary:
+  heading: fileAttachment resource type
+  intro: |
+    A file (such as a text file or Word document) attached to an event, message or post. The  **contentBytes** 
+    property contains the base64-encoded contents of the file.  
+    When creating a file attachment, include the following in the request body:
+    
+    * `"@odata.type": "#microsoft.graph.fileAttachment"`
+    * The required properties **name** and **contentBytes**.
+    
+    Derived from [attachment](xref:graph.attachment).
+methods:
+  heading: Methods
+  list:
+  - method: [Get](xref:graph.attachment_get)
+    type: [fileAttachment](xref:graph.fileattachment)
+    description: Read properties and relationships of fileAttachment object.
+  - method: [Delete](xref:graph.attachment_delete)
+    type: None
+    description: Delete fileAttachment object.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource
+  sampleCode: |
+    ```json
+    {
+      "contentBytes": "binary",
+      "contentId": "string",
+      "contentLocation": "string",
+      "contentType": "string",
+      "id": "string (identifier)",
+      "isInline": true,
+      "lastModifiedDateTime": "String (timestamp)",
+      "name": "string",
+      "size": 1024
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: contentBytes
+    type: Binary
+    description: The base64-encoded contents of the file.
+  - property: contentId
+    type: String
+    description: The ID of the attachment in the Exchange store.
+  - property: contentLocation
+    type: String
+    description: The Uniform Resource Identifier (URI) that corresponds to the location of the content of the attachment.
+  - property: contentType
+    type: String
+    description: The content type of the attachment.
+  - property: id
+    type: String
+    description: The attachment ID.
+  - property: isInline
+    type: Boolean
+    description: Set to true if this is an inline attachment.
+  - property: lastModifiedDateTime
+    type: DateTimeOffset
+    description: The date and time when the attachment was last modified.
+  - property: name
+    type: String
+    description: The name representing the text that is displayed below the icon representing the embedded attachment.This does not need to be the actual file name.
+  - property: size
+    type: Int32
+    description: The size in bytes of the attachment.
+relationships:
+  heading: Relationships
+  intro: |
+    None

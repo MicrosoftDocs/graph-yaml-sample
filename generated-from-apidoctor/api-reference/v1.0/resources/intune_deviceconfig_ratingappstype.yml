@@ -1,0 +1,23 @@
+### YamlMime:GraphOperation
+uid:graph.intune_deviceconfig_ratingappstype
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_ratingappstype.md
+summary:
+  heading: ratingAppsType enum type
+  intro: |
+    Apps rating as in media content
+enum:
+  heading: Members
+  table:
+  - member: allAllowed
+    description: Default value, allow all apps content
+  - member: allBlocked
+    description: Do not allow any apps content
+  - member: agesAbove4
+    description: 4+, age 4 and above
+  - member: agesAbove9
+    description: 9+, age 9 and above
+  - member: agesAbove12
+    description: 12+, age 12 and above
+  - member: agesAbove17
+    description: 17+, age 17 and above

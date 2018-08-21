@@ -1,0 +1,69 @@
+### YamlMime:GraphOperation
+uid:graph.directoryrole_post_members
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/directoryrole_post_members.md
+summary:
+  heading: Add directory role member
+  intro: |
+    Use this API to create a new directory role member.
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+  list:
+  - resource: Delegated (work or school account)
+    permission: Directory.AccessAsUser.All
+  - resource: Delegated (personal Microsoft account)
+    permission: Not supported.
+  - resource: Application
+    permission: Not supported.
+httpRequest:
+  heading: HTTP request
+  sampleCode: |
+    ```http
+    POST /directoryRoles/{id}/members/$ref
+    ```
+    
+requestHeaders:
+  heading: Request headers
+  list:
+  - name: Authorization
+    value: String
+    description: Bearer {token}. Required.
+  - name: Content-Type
+    value: String
+    description: application/json
+requestBody:
+  heading: Request body
+  intro: |
+    In the request body, supply a JSON representation of a [directoryObject](xref:graph.directoryobject) or [user](xref:graph.user) object to be added.
+response:
+  heading: Response
+  intro: |
+    If successful, this method returns `204 No Content` response code.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        request:
+            heading: Request
+            sampleCode: |
+              ```http
+              POST https://graph.microsoft.com/v1.0/directoryRoles/{id}/members/$ref
+              Content-type: application/json
+              
+              {
+                "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/{id}"
+              }
+              ```
+              
+        response:
+            heading: Response
+            intro: |
+              Note: The response object shown here may be truncated for brevity. 
+            sampleCode: |
+              ```http
+              HTTP/1.1 204 No Content
+              Content-type: text/plain
+              ```
+              

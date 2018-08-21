@@ -1,0 +1,35 @@
+### YamlMime:GraphResource
+uid:graph.intune_deviceconfig_ioshomescreenapp
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_ioshomescreenapp.md
+summary:
+  heading: iosHomeScreenApp resource type
+  intro: |
+    Represents an icon for an app on the Home Screen
+    Inherits from [iosHomeScreenItem](xref:graph.intune_deviceconfig_ioshomescreenitem)
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.iosHomeScreenApp",
+      "displayName": "String",
+      "bundleID": "String"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: displayName
+    type: String
+    description: Name of the app Inherited from iosHomeScreenItem
+  - property: bundleID
+    type: String
+    description: BundleID of app
+relationships:
+  heading: Relationships
+  intro: |
+    None

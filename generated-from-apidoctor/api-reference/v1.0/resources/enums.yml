@@ -1,0 +1,526 @@
+### YamlMime:GraphOperation
+uid:graph.enums
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/enums.md
+summary:
+enum:
+  heading: timeZoneStandard values
+  table:
+  - member: windows
+    description: 
+  - member: iana
+    description: 
+enum:
+  heading: freeBusyStatus values
+  table:
+  - member: free
+    description: 
+  - member: tentative
+    description: 
+  - member: busy
+    description: 
+  - member: oof
+    description: 
+  - member: workingElsewhere
+    description: 
+  - member: unknown
+    description: 
+enum:
+  heading: attendeeType values
+  table:
+  - member: required
+    description: 
+  - member: optional
+    description: 
+  - member: resource
+    description: 
+enum:
+  heading: externalAudienceScope values
+  table:
+  - member: none
+    description: 
+  - member: contactsOnly
+    description: 
+  - member: all
+    description: 
+enum:
+  heading: automaticRepliesStatus values
+  table:
+  - member: disabled
+    description: 
+  - member: alwaysEnabled
+    description: 
+  - member: scheduled
+    description: 
+enum:
+  heading: calendarColor values
+  table:
+  - member: auto
+    description: 
+  - member: lightBlue
+    description: 
+  - member: lightGreen
+    description: 
+  - member: lightOrange
+    description: 
+  - member: lightGray
+    description: 
+  - member: lightYellow
+    description: 
+  - member: lightTeal
+    description: 
+  - member: lightPink
+    description: 
+  - member: lightBrown
+    description: 
+  - member: lightRed
+    description: 
+  - member: maxColor
+    description: 
+enum:
+  heading: educationExternalSource values
+  table:
+  - member: sis
+    description: 
+  - member: manual
+    description: 
+  - member: unknownFutureValue
+    description: 
+enum:
+  heading: educationGender values
+  table:
+  - member: female
+    description: 
+  - member: male
+    description: 
+  - member: other
+    description: 
+  - member: unknownFutureValue
+    description: 
+enum:
+  heading: eventType values
+  table:
+  - member: singleInstance
+    description: 
+  - member: occurrence
+    description: 
+  - member: exception
+    description: 
+  - member: seriesMaster
+    description: 
+enum:
+  heading: sensitivity values
+  table:
+  - member: normal
+    description: 
+  - member: personal
+    description: 
+  - member: private
+    description: 
+  - member: confidential
+    description: 
+enum:
+  heading: importance values
+  table:
+  - member: low
+    description: 
+  - member: normal
+    description: 
+  - member: high
+    description: 
+enum:
+  heading: educationUserRole values
+  table:
+  - member: student
+    description: 
+  - member: teacher
+    description: 
+  - member: none
+    description: 
+  - member: unknownFutureValue
+    description: 
+enum:
+  heading: meetingMessageType values
+  table:
+  - member: none
+    description: 
+  - member: meetingRequest
+    description: 
+  - member: meetingCancelled
+    description: 
+  - member: meetingAccepted
+    description: 
+  - member: meetingTentativelyAccepted
+    description: 
+  - member: meetingDeclined
+    description: 
+enum:
+  heading: followupFlagStatus values
+  table:
+  - member: notFlagged
+    description: 
+  - member: complete
+    description: 
+  - member: flagged
+    description: 
+enum:
+  heading: inferenceClassificationType values
+  table:
+  - member: focused
+    description: 
+  - member: other
+    description: 
+enum:
+  heading: iosNotificationAlertType values
+  table:
+  - member: deviceDefault
+    description: 
+  - member: banner
+    description: 
+  - member: modal
+    description: 
+  - member: none
+    description: 
+enum:
+  heading: deviceEnrollmentFailureReason values
+  table:
+  - member: unknown
+    description: 
+  - member: authentication
+    description: 
+  - member: authorization
+    description: 
+  - member: accountValidation
+    description: 
+  - member: userValidation
+    description: 
+  - member: deviceNotSupported
+    description: 
+  - member: inMaintenance
+    description: 
+  - member: badRequest
+    description: 
+  - member: featureNotSupported
+    description: 
+  - member: enrollmentRestrictionsEnforced
+    description: 
+  - member: clientDisconnected
+    description: 
+enum:
+  heading: bodyType values
+  table:
+  - member: text
+    description: 
+  - member: html
+    description: 
+enum:
+  heading: locationType values
+  table:
+  - member: default
+    description: 
+  - member: conferenceRoom
+    description: 
+  - member: homeAddress
+    description: 
+  - member: businessAddress
+    description: 
+  - member: geoCoordinates
+    description: 
+  - member: streetAddress
+    description: 
+  - member: hotel
+    description: 
+  - member: restaurant
+    description: 
+  - member: localBusiness
+    description: 
+  - member: postalAddress
+    description: 
+enum:
+  heading: locationUniqueIdType values
+  table:
+  - member: unknown
+    description: 
+  - member: locationStore
+    description: 
+  - member: directory
+    description: 
+  - member: private
+    description: 
+  - member: bing
+    description: 
+enum:
+  heading: messageActionFlag values
+  table:
+  - member: any
+    description: 
+  - member: call
+    description: 
+  - member: doNotForward
+    description: 
+  - member: followUp
+    description: 
+  - member: fyi
+    description: 
+  - member: forward
+    description: 
+  - member: noResponseNecessary
+    description: 
+  - member: read
+    description: 
+  - member: reply
+    description: 
+  - member: replyToAll
+    description: 
+  - member: review
+    description: 
+enum:
+  heading: onenoteUserRole values
+  table:
+  - member: Owner
+    description: 
+  - member: Contributor
+    description: 
+  - member: Reader
+    description: 
+  - member: None
+    description: 
+enum:
+  heading: operationStatus values
+  table:
+  - member: NotStarted
+    description: 
+  - member: Running
+    description: 
+  - member: Completed
+    description: 
+  - member: Failed
+    description: 
+enum:
+  heading: onenotePatchActionType values
+  table:
+  - member: Replace
+    description: 
+  - member: Append
+    description: 
+  - member: Delete
+    description: 
+  - member: Insert
+    description: 
+  - member: Prepend
+    description: 
+enum:
+  heading: onenotePatchInsertPosition values
+  table:
+  - member: After
+    description: 
+  - member: Before
+    description: 
+enum:
+  heading: phoneType values
+  table:
+  - member: home
+    description: 
+  - member: business
+    description: 
+  - member: mobile
+    description: 
+  - member: other
+    description: 
+  - member: assistant
+    description: 
+  - member: homeFax
+    description: 
+  - member: businessFax
+    description: 
+  - member: otherFax
+    description: 
+  - member: pager
+    description: 
+  - member: radio
+    description: 
+enum:
+  heading: plannerPreviewType values
+  table:
+  - member: automatic
+    description: 
+  - member: noPreview
+    description: 
+  - member: checklist
+    description: 
+  - member: description
+    description: 
+  - member: reference
+    description: 
+enum:
+  heading: status values
+  table:
+  - member: active
+    description: 
+  - member: updated
+    description: 
+  - member: deleted
+    description: 
+  - member: ignored
+    description: 
+  - member: unknownFutureValue
+    description: 
+enum:
+  heading: weekIndex values
+  table:
+  - member: first
+    description: 
+  - member: second
+    description: 
+  - member: third
+    description: 
+  - member: fourth
+    description: 
+  - member: last
+    description: 
+enum:
+  heading: dayOfWeek values
+  table:
+  - member: sunday
+    description: 
+  - member: monday
+    description: 
+  - member: tuesday
+    description: 
+  - member: wednesday
+    description: 
+  - member: thursday
+    description: 
+  - member: friday
+    description: 
+  - member: saturday
+    description: 
+enum:
+  heading: recurrencePatternType values
+  table:
+  - member: daily
+    description: 
+  - member: weekly
+    description: 
+  - member: absoluteMonthly
+    description: 
+  - member: relativeMonthly
+    description: 
+  - member: absoluteYearly
+    description: 
+  - member: relativeYearly
+    description: 
+enum:
+  heading: recurrenceRangeType values
+  table:
+  - member: endDate
+    description: 
+  - member: noEnd
+    description: 
+  - member: numbered
+    description: 
+enum:
+  heading: onenoteSourceService values
+  table:
+  - member: Unknown
+    description: 
+  - member: OneDrive
+    description: 
+  - member: OneDriveForBusiness
+    description: 
+  - member: OnPremOneDriveForBusiness
+    description: 
+enum:
+  heading: responseType values
+  table:
+  - member: none
+    description: 
+  - member: organizer
+    description: 
+  - member: tentativelyAccepted
+    description: 
+  - member: accepted
+    description: 
+  - member: declined
+    description: 
+  - member: notResponded
+    description: 
+enum:
+  heading: activityDomain values
+  table:
+  - member: unknown
+    description: 
+  - member: work
+    description: 
+  - member: personal
+    description: 
+  - member: unrestricted
+    description: 
+enum:
+  heading: websiteType values
+  table:
+  - member: other
+    description: 
+  - member: home
+    description: 
+  - member: work
+    description: 
+  - member: blog
+    description: 
+  - member: profile
+    description: 
+enum:
+  heading: categoryColor values
+  table:
+  - member: none
+    description: 
+  - member: preset0
+    description: 
+  - member: preset1
+    description: 
+  - member: preset2
+    description: 
+  - member: preset3
+    description: 
+  - member: preset4
+    description: 
+  - member: preset5
+    description: 
+  - member: preset6
+    description: 
+  - member: preset7
+    description: 
+  - member: preset8
+    description: 
+  - member: preset9
+    description: 
+  - member: preset10
+    description: 
+  - member: preset11
+    description: 
+  - member: preset12
+    description: 
+  - member: preset13
+    description: 
+  - member: preset14
+    description: 
+  - member: preset15
+    description: 
+  - member: preset16
+    description: 
+  - member: preset17
+    description: 
+  - member: preset18
+    description: 
+  - member: preset19
+    description: 
+  - member: preset20
+    description: 
+  - member: preset21
+    description: 
+  - member: preset22
+    description: 
+  - member: preset23
+    description: 
+  - member: preset24
+    description: 

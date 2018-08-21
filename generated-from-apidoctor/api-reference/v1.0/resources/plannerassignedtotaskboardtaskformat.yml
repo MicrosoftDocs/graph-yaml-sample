@@ -1,0 +1,46 @@
+### YamlMime:GraphResource
+uid:graph.plannerassignedtotaskboardtaskformat
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.plannerassignedtotaskboardtaskformat
+summary:
+  heading: plannerAssignedToTaskBoardTaskFormat resource type
+  intro: |
+    The **plannerAssignedToTaskBoardTaskFormat** resource represents the information used to render a task correctly in the AssignedTo view of the Task Board (a view organized by users to whom tasks are assigned to). Each [task](xref:graph.plannertask) will have one **plannerAssignedToTaskBoardTaskFormat** object associated with it.
+methods:
+  heading: Methods
+  list:
+  - method: [Get plannerAssignedToTaskBoardTaskFormat](xref:graph.plannerassignedtotaskboardtaskformat_get)
+    type: [plannerAssignedToTaskBoardTaskFormat](xref:graph.plannerassignedtotaskboardtaskformat)
+    description: Read properties and relationships of plannerAssignedToTaskBoardTaskFormat object.
+  - method: [Update](xref:graph.plannerassignedtotaskboardtaskformat_update)
+    type: [plannerAssignedToTaskBoardTaskFormat](xref:graph.plannerassignedtotaskboardtaskformat)
+    description: Update plannerAssignedToTaskBoardTaskFormat object.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "id": "String (identifier)",
+      "orderHintsByAssignee": {"@odata.type": "microsoft.graph.plannerOrderHintsByAssignee"},
+      "unassignedOrderHint": "String"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: id
+    type: String
+    description: Read-only. ID of the resource. It is 28 characters long and case-sensitive. Format validation is done on the service.
+  - property: orderHintsByAssignee
+    type: microsoft.graph.plannerOrderHintsByAssignee
+    description: Dictionary of hints used to order tasks on the AssignedTo view of the Task Board. The key of each entry is one of the users the task is assigned to and the value is the order hint. The format of each value is defined as outlined here.
+  - property: unassignedOrderHint
+    type: String
+    description: Hint value used to order the task on the AssignedTo view of the Task Board when the task is not assigned to anyone, or if the orderHintsByAssignee dictionary does not provide an order hint for the user the task is assigned to. The format is defined as outlined here.
+relationships:
+  heading: Relationships
+  intro: |
+    None

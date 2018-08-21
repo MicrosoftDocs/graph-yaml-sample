@@ -1,0 +1,108 @@
+### YamlMime:GraphOperation
+uid:graph.opentypeextension_get
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/opentypeextension_get.md
+summary:
+  heading: Get open extension
+  intro: |
+    Get an open extension ([openTypeExtension](xref:graph.openTypeExtension) object) identified by name or fully qualified name.
+    The following table lists the three scenarios where you can get an open extension from a supported resource instance.
+    |**GET scenario**|**Supported resources**|**Response body**
+    |:-|:-|:-|
+    |Get a specific extension from a known resource instance.|[Device](xref:graph.device), [event](xref:graph.event), [group](xref:graph.group), [group event](xref:graph.event), [group post](xref:graph.post), [message](xref:graph.message), [organization](xref:graph.organization), [personal contact](xref:graph.contact), [user](xref:graph.user)|Open extension only.
+    |Get a known resource instance expanded with a specific extension.|Device, event, group, group event, group post, message, organization, personal contact, user|A resource instance expanded with the open extension.
+    |Find and expand resource instances with a specific extension.|Event, group event, group post, message, personal contact|Resource instances expanded with the open extension.
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API, depending on the resource that contains the extension. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+  list:
+  - resource: 
+    permission: 
+  - resource: 
+    permission: 
+  - resource: 
+    permission: 
+  - resource: 
+    permission: 
+  - resource: 
+    permission: 
+httpRequest:
+  heading: HTTP request
+  intro: |
+    This section lists the syntax for each of the three `GET` scenarios described above.
+  outro: |
+    ### Get a specific extension in a known resource instance
+    Use the same REST request as getting the resource instance, and identify the extension using the **extensions** 
+    navigation property of that instance.
+    
+    ```http
+    GET /devices/{Id}/extensions/{extensionId}
+    GET /users/{Id|userPrincipalName}/events/{Id}/extensions/{extensionId}
+    GET /groups/{Id}/extensions/{extensionId}
+    GET /groups/{Id}/events/{Id}/extensions/{extensionId}
+    GET /groups/{Id}/threads/{Id}/posts/{Id}/extensions/{extensionId}
+    GET /users/{Id|userPrincipalName}/messages/{Id}/extensions/{extensionId}
+    GET /organization/{Id}/extensions/{extensionId}
+    GET /users/{Id|userPrincipalName}/contacts/{Id}/extensions/{extensionId}
+    GET /users/{Id|userPrincipalName}/extensions/{extensionId}
+    ```
+    
+queryParameters:
+  heading: Optional query parameters
+  intro: |
+    Make sure you apply [URL encoding](http://www.w3schools.com/tags/ref_urlencode.asp) to the space characters in the `$filter` string.
+  list:
+  - name: $filter
+    value: String
+    description: Returns an extension with its id matching the extensionId parameter value.
+  - name: $filter with any operator
+    value: String
+    description: Returns instances of a resource collection that contain an extension with its id matching the extensionId parameter value.
+  - name: $expand
+    value: String
+    description: Expands a resource instance to include an extension.
+parameters:
+  heading: Path parameters
+  list:
+  - name: Id
+    value: String
+    description: Placeholder for a unique identifier for an object in the corresponding collection such as messages, events, contacts. Required. Not to be confused with the id property of an openTypeExtension.
+  - name: extensionId
+    value: String
+    description: Placeholder for an extension name which is a unique text identifier for an extension, or a fully qualified name which concatenates the extension type and unique text identifier. The fully qualified name is returned in the id property when you create the extension. Required.
+requestHeaders:
+  heading: Request headers
+  list:
+  - name: Authorization
+    value: String
+    description: 
+requestBody:
+  heading: Request body
+  intro: |
+    Do not supply a request body for this method.
+response:
+  heading: Response
+  intro: |
+    If successful, this method returns a `200 OK` response code and [openTypeExtension](xref:graph.opentypeextension) object in the response body.
+    Depending on the GET query, the exact response body differs.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        outro: |
+          #### Request 1
+          The first example shows 2 ways of referencing an extension and gets the extension in the specified message. The
+          response is the same regardless of the way used to reference the extension.
+          First, by its name: 
+          
+          ```http
+          GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===/extensions/Com.Contoso.Referral
+          ```
+          
+          Second, by its ID (fully qualified name):
+          
+          ```http
+          GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===/extensions/Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral
+          ```
+          

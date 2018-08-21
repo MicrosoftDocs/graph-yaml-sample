@@ -1,0 +1,141 @@
+### YamlMime:GraphResource
+uid:graph.device
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.device
+summary:
+  heading: device resource type
+  intro: |
+    Represents a device registered in the organization. Devices are created in the cloud using the Device Registration Service or by Intune. They're used by conditional access policies for multi-factor authentication. These devices can range from desktop and laptop machines to phones and tablets. Inherits from [directoryObject](xref:graph.directoryobject).
+    This resource lets you add your own data to custom properties using [extensions](xref:graph.extensibility_overview).
+methods:
+  heading: Methods
+  list:
+  - method: [Get device](xref:graph.device_get)
+    type: [device](xref:graph.device)
+    description: Read properties and relationships of a device object.
+  - method: [List devices](xref:graph.device_list)
+    type: [device](xref:graph.device) collection
+    description: Retrieve a list of devices registered in the directory.
+  - method: [Update device](xref:graph.device_update)
+    type: [device](xref:graph.device)
+    description: Update the properties of a device object.
+  - method: [Delete device](xref:graph.device_delete)
+    type: None
+    description: Delete a device object.
+  - method: [List registeredOwners](xref:graph.device_list_registeredowners)
+    type: [directoryObject](xref:graph.directoryobject) collection
+    description: Get the users that are registered owners of the device from the registeredOwners navigation property.
+  - method: [List registeredUsers](xref:graph.device_list_registeredusers)
+    type: [directoryObject](xref:graph.directoryobject) collection
+    description: Get the registered users of the device from the registeredUsers navigation property.
+  - method: **Open extensions**
+    type: 
+    description: 
+  - method: [Create open extension](xref:graph.opentypeextension_post_opentypeextension)
+    type: [openTypeExtension](xref:graph.opentypeextension)
+    description: Create an open extension and add custom properties to a new or existing resource.
+  - method: [Get open extension](xref:graph.opentypeextension_get)
+    type: [openTypeExtension](xref:graph.opentypeextension) collection
+    description: Get an open extension identified by the extension name.
+  - method: **Schema extensions**
+    type: 
+    description: 
+  - method: [Add schema extension values](xref:graph.extensibility_schema_groups)
+    type: 
+    description: Create a schema extension definition and then use it to add custom typed data to a resource.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource
+  sampleCode: |
+    ```json
+    {
+      "accountEnabled": true,
+      "alternativeSecurityIds": [{"@odata.type": "microsoft.graph.alternativeSecurityId"}],
+      "approximateLastSignInDateTime": "String (timestamp)",
+      "deviceId": "string",
+      "deviceMetadata": "string",
+      "deviceVersion": 1024,
+      "displayName": "string",
+      "id": "string (identifier)",
+      "isCompliant": true,
+      "isManaged": true,
+      "onPremisesLastSyncDateTime": "String (timestamp)",
+      "onPremisesSyncEnabled": true,
+      "operatingSystem": "string",
+      "operatingSystemVersion": "string",
+      "physicalIds": ["string"],
+      "trustType": "string"
+    }
+    ```
+    
+  outro: |
+    ## See also
+    
+    * [Add custom data to resources using extensions](xref:graph.extensibility_overview)
+    * [Add custom data to users using open extensions](xref:graph.extensibility_open_users)
+    * [Add custom data to groups using schema extensions](xref:graph.extensibility_schema_groups)
+    
+properties:
+  heading: Properties
+  list:
+  - property: accountEnabled
+    type: Boolean
+    description: true if the account is enabled; otherwise, false. Required.
+  - property: alternativeSecurityIds
+    type: Collection(microsoft.graph.alternativeSecurityId)
+    description: For internal use only. Not nullable.
+  - property: approximateLastSignInDateTime
+    type: DateTimeOffset
+    description: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z' Read-only.
+  - property: deviceId
+    type: String
+    description: Unique identifier set by Azure Device Registration Service at the time of registration.
+  - property: deviceMetadata
+    type: String
+    description: For interal use only. Set to null.
+  - property: deviceVersion
+    type: Int32
+    description: For interal use only.
+  - property: displayName
+    type: String
+    description: The display name for the device. Required.
+  - property: id
+    type: String
+    description: The unique identifier for the device. Inherited from directoryObject. Key, Not nullable. Read-only.
+  - property: isCompliant
+    type: Boolean
+    description: true if the device complies with Mobile Device Management (MDM) policies; otherwise, false. Read-only. This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices.
+  - property: isManaged
+    type: Boolean
+    description: true if the device is managed by a Mobile Device Management (MDM) app; otherwise, false. This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices.
+  - property: onPremisesLastSyncDateTime
+    type: DateTimeOffset
+    description: The last time at which the object was synced with the on-premises directory.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z' Read-only.
+  - property: onPremisesSyncEnabled
+    type: Boolean
+    description: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default). Read-only.
+  - property: operatingSystem
+    type: String
+    description: The type of operating system on the device. Required.
+  - property: operatingSystemVersion
+    type: String
+    description: The version of the operating system on the device. Required.
+  - property: physicalIds
+    type: Collection(String)
+    description: For interal use only. Not nullable.
+  - property: trustType
+    type: String
+    description: Type of trust for the joined device. Read-only. Possible values: Workplace - indicates bring your own personal devicesAzureAd - Cloud only joined devicesServerAd - on-premises domain joined devices joined to Azure AD. For more details, see Introduction to device management in Azure Active Directory
+relationships:
+  heading: Relationships
+  list:
+  - relationship: extensions
+    type: Collection(microsoft.graph.extension)
+    description: The collection of open extensions defined for the device. Read-only. Nullable.
+  - relationship: registeredOwners
+    type: Collection(microsoft.graph.directoryObject)
+    description: The user that cloud joined the device or registered their personal device. The registered owner is set at the time of registration. Currently, there can be only one owner. Read-only. Nullable.
+  - relationship: registeredUsers
+    type: Collection(microsoft.graph.directoryObject)
+    description: Collection of registered users of the device. For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration. Read-only. Nullable.

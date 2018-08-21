@@ -1,0 +1,17 @@
+### YamlMime:GraphOperation
+uid:graph.planner_overview
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/planner_overview.md
+summary:
+  heading: Use the Planner REST API
+  intro: |
+    You can use the Planner API in Microsoft Graph to create tasks and assign them to users in a group in Office 365.
+    Before you get started with Planner API, it is worth understanding how the main objects relate to each other as well as to Office 365 groups.
+  outro: |
+    ## Groups
+    Office 365 groups are the owners of the plans in the Planner API.
+    To [get the plans owned by a group](xref:graph.plannergroup_list_plans), make the following HTTP request.
+    GET /groups/{id}/planner/plans
+
+    When [creating a new plan](xref:graph.planner_post_plans), make a group its owner by setting the `owner` property on a plan object. Plans must be owned by groups.
+    

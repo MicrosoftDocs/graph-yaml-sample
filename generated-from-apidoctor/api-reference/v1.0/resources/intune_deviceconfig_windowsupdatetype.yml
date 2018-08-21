@@ -1,0 +1,23 @@
+### YamlMime:GraphOperation
+uid:graph.intune_deviceconfig_windowsupdatetype
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_windowsupdatetype.md
+summary:
+  heading: windowsUpdateType enum type
+  intro: |
+    Which branch devices will receive their updates from
+enum:
+  heading: Members
+  table:
+  - member: userDefined
+    description: Allow the user to set.
+  - member: all
+    description: Semi-annual Channel (Targeted). Device gets all applicable feature updates from Semi-annual Channel (Targeted).
+  - member: businessReadyOnly
+    description: Semi-annual Channel. Device gets feature updates from Semi-annual Channel.
+  - member: windowsInsiderBuildFast
+    description: Windows Insider build - Fast
+  - member: windowsInsiderBuildSlow
+    description: Windows Insider build - Slow
+  - member: windowsInsiderBuildRelease
+    description: Release Windows Insider build

@@ -1,0 +1,74 @@
+### YamlMime:GraphResource
+uid:graph.intune_devices_manageddeviceoverview
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_devices_manageddeviceoverview.md
+summary:
+  heading: managedDeviceOverview resource type
+  intro: |
+    Summary data for managed devices
+methods:
+  heading: Methods
+  list:
+  - method: [Get managedDeviceOverview](xref:graph.intune_devices_manageddeviceoverview_get)
+    type: [managedDeviceOverview](xref:graph.intune_devices_manageddeviceoverview)
+    description: Read properties and relationships of the managedDeviceOverview object.
+  - method: [Update managedDeviceOverview](xref:graph.intune_devices_manageddeviceoverview_update)
+    type: [managedDeviceOverview](xref:graph.intune_devices_manageddeviceoverview)
+    description: Update the properties of a managedDeviceOverview object.
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.managedDeviceOverview",
+      "id": "String (identifier)",
+      "enrolledDeviceCount": 1024,
+      "mdmEnrolledCount": 1024,
+      "dualEnrolledDeviceCount": 1024,
+      "deviceOperatingSystemSummary": {
+        "@odata.type": "microsoft.graph.deviceOperatingSystemSummary",
+        "androidCount": 1024,
+        "iosCount": 1024,
+        "macOSCount": 1024,
+        "windowsMobileCount": 1024,
+        "windowsCount": 1024,
+        "unknownCount": 1024
+      },
+      "deviceExchangeAccessStateSummary": {
+        "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",
+        "allowedDeviceCount": 1024,
+        "blockedDeviceCount": 1024,
+        "quarantinedDeviceCount": 1024,
+        "unknownDeviceCount": 1024,
+        "unavailableDeviceCount": 1024
+      }
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: id
+    type: String
+    description: Unique Identifier for the summary
+  - property: enrolledDeviceCount
+    type: Int32
+    description: Total enrolled device count. Does not include PC devices managed via Intune PC Agent
+  - property: mdmEnrolledCount
+    type: Int32
+    description: The number of devices enrolled in MDM
+  - property: dualEnrolledDeviceCount
+    type: Int32
+    description: The number of devices enrolled in both MDM and EAS
+  - property: deviceOperatingSystemSummary
+    type: microsoft.graph.deviceOperatingSystemSummary
+    description: Device operating system summary.
+  - property: deviceExchangeAccessStateSummary
+    type: microsoft.graph.deviceExchangeAccessStateSummary
+    description: Distribution of Exchange Access State in Intune
+relationships:
+  heading: Relationships
+  intro: |
+    None

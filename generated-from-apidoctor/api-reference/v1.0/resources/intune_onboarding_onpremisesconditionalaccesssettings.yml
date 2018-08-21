@@ -1,0 +1,59 @@
+### YamlMime:GraphResource
+uid:graph.intune_onboarding_onpremisesconditionalaccesssettings
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_onboarding_onpremisesconditionalaccesssettings.md
+summary:
+  heading: onPremisesConditionalAccessSettings resource type
+  intro: |
+    Singleton entity which represents the Exchange OnPremises Conditional Access Settings for a tenant.
+methods:
+  heading: Methods
+  list:
+  - method: [Get onPremisesConditionalAccessSettings](xref:graph.intune_onboarding_onpremisesconditionalaccesssettings_get)
+    type: [onPremisesConditionalAccessSettings](xref:graph.intune_onboarding_onpremisesconditionalaccesssettings)
+    description: Read properties and relationships of the onPremisesConditionalAccessSettings object.
+  - method: [Update onPremisesConditionalAccessSettings](xref:graph.intune_onboarding_onpremisesconditionalaccesssettings_update)
+    type: [onPremisesConditionalAccessSettings](xref:graph.intune_onboarding_onpremisesconditionalaccesssettings)
+    description: Update the properties of a onPremisesConditionalAccessSettings object.
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.onPremisesConditionalAccessSettings",
+      "id": "String (identifier)",
+      "enabled": true,
+      "includedGroups": [
+        "fe4d7f2b-e7b8-4276-9976-7a3fc83edbbc"
+      ],
+      "excludedGroups": [
+        "79199ed9-e50b-4257-8de4-70b9c8685061"
+      ],
+      "overrideDefaultRule": true
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: id
+    type: String
+    description: Not yet documented
+  - property: enabled
+    type: Boolean
+    description: Indicates if on premises conditional access is enabled for this organization
+  - property: includedGroups
+    type: Collection(Guid)
+    description: User groups that will be targeted by on premises conditional access. All users in these groups will be required to have mobile device managed and compliant for mail access.
+  - property: excludedGroups
+    type: Collection(Guid)
+    description: User groups that will be exempt by on premises conditional access. All users in these groups will be exempt from the conditional access policy.
+  - property: overrideDefaultRule
+    type: Boolean
+    description: Override the default access rule when allowing a device to ensure access is granted.
+relationships:
+  heading: Relationships
+  intro: |
+    None

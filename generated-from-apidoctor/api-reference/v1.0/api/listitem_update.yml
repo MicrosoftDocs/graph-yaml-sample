@@ -1,0 +1,76 @@
+### YamlMime:GraphOperation
+uid:graph.listitem_update
+metadata:
+  title: Update a record in a SharePoint list
+  author: rgregg
+  ms.author: rgregg
+  ms.date: 09/11/2017
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/listitem_update.md
+summary:
+  heading: Update an item in a list
+  intro: |
+    Update the properties on a **[listItem][]**.
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+  list:
+  - resource: Delegated (work or school account)
+    permission: Sites.ReadWrite.All
+  - resource: Delegated (personal Microsoft account)
+    permission: Not supported.
+  - resource: Application
+    permission: Sites.ReadWrite.All
+httpRequest:
+  heading: HTTP request
+  sampleCode: |
+    ```http
+    PATCH https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}/fields
+    ```
+    
+requestHeaders:
+  heading: Optional request headers
+  list:
+  - name: if-match
+    value: String
+    description: If this request header is included and the eTag provided does not match the current eTag on the item, a 412 Precondition Failed response is returned and the item will not be updated.
+requestBody:
+  heading: Request body
+  intro: |
+    In the request body, supply a JSON representation of a [fieldValueSet][] specifying the fields to update.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        intro: |
+          Here is an example that updates the Color and Quantity fields of the list item with new values.
+          All other values on the listItem are left alone. 
+        request:
+            heading: request
+            sampleCode: |
+              ```json
+              PATCH https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}/fields
+              Content-Type: application/json
+              
+              {
+                  "Color": "Fuchsia",
+                  "Quantity": 934
+              }
+              ```
+              
+        response:
+            heading: Response
+            intro: |
+              If successful, this method returns a [fieldValueSet][] in the response body for the updated list item.
+            sampleCode: |
+              ```json
+              HTTP/1.1 201 Created
+              Content-type: application/json
+              
+              {
+                "Name": "Widget",
+                "Color": "Fuchsia",
+                "Quantity": 934
+              }
+              ```
+              

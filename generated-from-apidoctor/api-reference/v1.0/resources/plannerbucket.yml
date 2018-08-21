@@ -1,0 +1,61 @@
+### YamlMime:GraphResource
+uid:graph.plannerbucket
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.plannerbucket
+summary:
+  heading: plannerBucket resource type
+  intro: |
+    The **plannerBucket** resource represents a bucket (or "custom column") for tasks in a plan in Office 365. It is contained in a [plannerPlan](xref:graph.plannerPlan) and can have a collection of [plannerTasks](xref:graph.plannerTask).
+methods:
+  heading: Methods
+  list:
+  - method: [Get plannerBucket](xref:graph.plannerbucket_get)
+    type: [plannerBucket](xref:graph.plannerbucket)
+    description: Read properties and relationships of plannerBucket object.
+  - method: [List plannerTasks](xref:graph.plannerbucket_list_tasks)
+    type: [plannerTask](xref:graph.plannertask) collection
+    description: Get a plannerTask object collection.
+  - method: [Create](xref:graph.planner_post_buckets)
+    type: [plannerBucket](xref:graph.plannerbucket)
+    description: Create a new plannerBucket object.
+  - method: [Update](xref:graph.plannerbucket_update)
+    type: [plannerBucket](xref:graph.plannerbucket)
+    description: Update plannerBucket object.
+  - method: [Delete](xref:graph.plannerbucket_delete)
+    type: None
+    description: Delete plannerBucket object.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "id": "String (identifier)",
+      "name": "String",
+      "orderHint": "String",
+      "planId": "String"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: id
+    type: String
+    description: Read-only. ID of the bucket. It is 28 characters long and case-sensitive. Format validation is done on the service.
+  - property: name
+    type: String
+    description: Name of the bucket.
+  - property: orderHint
+    type: String
+    description: Hint used to order items of this type in a list view. The format is defined as outlined here.
+  - property: planId
+    type: String
+    description: Plan ID to which the bucket belongs.
+relationships:
+  heading: Relationships
+  list:
+  - relationship: tasks
+    type: Collection(microsoft.graph.plannerTask)
+    description: Read-only. Nullable. The collection of tasks in the bucket.

@@ -1,0 +1,90 @@
+### YamlMime:GraphOperation
+uid:graph.intune_apps_manageddevicemobileappconfigurationdevicestatus_create
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfigurationdevicestatus_create.md
+summary:
+  heading: Create managedDeviceMobileAppConfigurationDeviceStatus
+  intro: |
+    Create a new [managedDeviceMobileAppConfigurationDeviceStatus](xref:graph.intune_apps_manageddevicemobileappconfigurationdevicestatus) object.
+permissions:
+  heading: Prerequisites
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+httpRequest:
+  heading: HTTP Request
+  sampleCode: |
+    ```http
+    POST /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/deviceStatuses
+    ```
+    
+requestHeaders:
+  heading: Request headers
+  list:
+  - name: Authorization
+    value: String
+    description: 
+  - name: Accept
+    value: String
+    description: 
+requestBody:
+  heading: Request body
+  intro: |
+    In the request body, supply a JSON representation for the managedDeviceMobileAppConfigurationDeviceStatus object.
+    The following table shows the properties that are required when you create the managedDeviceMobileAppConfigurationDeviceStatus.
+    |Property|Type|Description
+    |:-|:-|:-|
+    |id|String|Key of the entity.
+    |deviceDisplayName|String|Device name of the DevicePolicyStatus.
+    |userName|String|The User Name that is being reported
+    |deviceModel|String|The device model that is being reported
+    |complianceGracePeriodExpirationDateTime|DateTimeOffset|The DateTime when device compliance grace period expires
+    |status|[complianceStatus](xref:graph.intune_shared_compliancestatus)|Compliance status of the policy report. The possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`.
+    |lastReportedDateTime|DateTimeOffset|Last modified date time of the policy report.
+    |userPrincipalName|String|UserPrincipalName.
+response:
+  heading: Response
+  intro: |
+    If successful, this method returns a `201 Created` response code and a [managedDeviceMobileAppConfigurationDeviceStatus](xref:graph.intune_apps_manageddevicemobileappconfigurationdevicestatus) object in the response body.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        request:
+            heading: Request
+            intro: |
+              Here is an example of the request.
+              POST https://graph.microsoft.com/v1.0/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/deviceStatuses
+              Content-type: application/json
+              Content-length: 445
+              
+              {
+                "@odata.type": "#microsoft.graph.managedDeviceMobileAppConfigurationDeviceStatus",
+                "deviceDisplayName": "Device Display Name value",
+                "userName": "User Name value",
+                "deviceModel": "Device Model value",
+                "complianceGracePeriodExpirationDateTime": "2016-12-31T23:56:44.951111-08:00",
+                "status": "notApplicable",
+                "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00",
+                "userPrincipalName": "User Principal Name value"
+              }
+
+        response:
+            heading: Response
+            intro: |
+              Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+              HTTP/1.1 201 Created
+              Content-Type: application/json
+              Content-Length: 494
+              
+              {
+                "@odata.type": "#microsoft.graph.managedDeviceMobileAppConfigurationDeviceStatus",
+                "id": "477d3651-3651-477d-5136-7d4751367d47",
+                "deviceDisplayName": "Device Display Name value",
+                "userName": "User Name value",
+                "deviceModel": "Device Model value",
+                "complianceGracePeriodExpirationDateTime": "2016-12-31T23:56:44.951111-08:00",
+                "status": "notApplicable",
+                "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00",
+                "userPrincipalName": "User Principal Name value"
+              }
+

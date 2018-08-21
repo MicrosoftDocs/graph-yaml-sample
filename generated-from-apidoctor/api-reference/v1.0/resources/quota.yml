@@ -1,0 +1,47 @@
+### YamlMime:GraphResource
+uid:graph.quota
+metadata:
+  title: Quota
+  author: rgregg
+  ms.author: rgregg
+  ms.date: 09/10/2017
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/quota.md
+summary:
+  heading: Quota resource type
+  intro: |
+    The **quota** resource provides details about space constrains on a [Drive](xref:graph.drive) resource.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "deleted": 1024,
+      "remaining": 1024,
+      "state": "normal | nearing | critical | exceeded",
+      "total": 1024,
+      "used": 1024
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: total
+    type: Int64
+    description: Total allowed storage space, in bytes. Read-only.
+  - property: used
+    type: Int64
+    description: Total space used, in bytes. Read-only.
+  - property: remaining
+    type: Int64
+    description: Total space remaining before reaching the quota limit, in bytes. Read-only.
+  - property: deleted
+    type: Int64
+    description: Total space consumed by files in the recycle bin, in bytes. Read-only.
+  - property: state
+    type: String
+    description: Enumeration value that indicates the state of the storage space. Read-only.
+enum:
+  heading: State Enumeration

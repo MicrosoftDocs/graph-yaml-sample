@@ -1,0 +1,103 @@
+### YamlMime:GraphOperation
+uid:graph.driveitem_list_versions
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/driveitem_list_versions.md
+summary:
+  heading: Listing versions of a DriveItem
+  intro: |
+    OneDrive and SharePoint can be configured to retain the history for files.
+    Depending on the service and configuration, a new version can be created for each edit, each time the file is saved, manually, or never.
+    Previous versions of a document may be retained for a finite period of time depending on admin settings which may be unique per user or location.
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+  list:
+  - resource: Delegated (work or school account)
+    permission: Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All
+  - resource: Delegated (personal Microsoft account)
+    permission: Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All
+  - resource: Application
+    permission: Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All
+httpRequest:
+  heading: HTTP request
+  sampleCode: |
+    ```http
+    GET /drives/{drive-id}/items/{item-id}/versions
+    GET /groups/{group-id}/drive/{item-id}/versions
+    GET /me/drive/items/{item-id}/versions
+    GET /sites/{site-id}/drive/items/{item-id}/versions
+    GET /users/{user-id}/drive/items/{item-id}/versions
+    ```
+    
+response:
+  heading: Response
+  intro: |
+    If successful, this method returns a `200 OK` response code and collection of [DriveItemVersion](xref:graph.driveitemversion) objects in the response body.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        intro: |
+          This example retrieves the versions of a file in the current user's drive.
+        request:
+            heading: request
+            sampleCode: |
+              ```http
+              GET /me/drive/items/{item-id}/versions
+              ```
+              
+        response:
+            heading: Response
+            intro: |
+              This returns a collection of versions:
+            sampleCode: |
+              ```http
+              HTTP/1.1 200 OK
+              Content-Type: application/json
+              
+              {
+                "value":
+                [
+                  {
+                    "id": "3.0",
+                    "lastModifiedBy": {
+                      "user": {
+                        "id": "CE251278-EF9E-4FE5-833C-1D89EEAE68E0",
+                        "displayName": "Ryan Gregg"
+                      }
+                    },
+                    "lastModifiedDateTime": "2017-09-14T12:34:53.912Z",
+                    "size": 123
+                  },
+                  {
+                    "id": "2.0",
+                    "lastModifiedBy": {
+                      "user": {
+                        "id": "CE251278-EF9E-4FE5-833C-1D89EEAE68E0",
+                        "displayName": "Ryan Gregg"
+                      }
+                    },
+                    "lastModifiedDateTime": "2017-09-11T10:21:03.000Z",
+                    "size": 62
+                  },
+                  {
+                    "id": "1.0",
+                    "lastModifiedBy": {
+                      "user": {
+                        "id": "CE251278-EF9E-4FE5-833C-1D89EEAE68E0",
+                        "displayName": "Ryan Gregg"
+                      }
+                    },
+                    "lastModifiedDateTime": "2017-09-10T15:20:01.125Z",
+                    "size": 16
+                  }
+                ]
+              }
+              ```
+              
+remarks:
+  heading: Remarks
+  intro: |
+    OneDrive does not preserve the complete metadata for previous versions of a file.
+    When your app retrieves the list of available versions for a file, a [DriveItemVersion](xref:graph.driveItemVersion) resource is returned that provides the available information about the specific version.

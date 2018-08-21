@@ -1,0 +1,65 @@
+### YamlMime:GraphResource
+uid:graph.messageruleactions
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/messageruleactions.md
+summary:
+  heading: messageRuleActions resource type
+  intro: |
+    Represents the set of actions that are available to a rule.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "assignCategories": ["String"],
+      "copyToFolder": "String",
+      "delete": "Boolean",
+      "forwardAsAttachmentTo": [{"@odata.type": "microsoft.graph.recipient"}],
+      "forwardTo": [{"@odata.type": "microsoft.graph.recipient"}],
+      "markAsRead": "Boolean",
+      "markImportance": "String",
+      "moveToFolder": "String",
+      "permanentDelete": "Boolean",
+      "redirectTo": [{"@odata.type": "microsoft.graph.recipient"}],
+      "stopProcessingRules": "Boolean"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: assignCategories
+    type: Collection(String)
+    description: A list of categories to be assigned to a message.
+  - property: copyToFolder
+    type: String
+    description: The ID of a folder that a message is to be copied to.
+  - property: delete
+    type: Boolean
+    description: Indicates whether a message should be moved to the Deleted Items folder.
+  - property: forwardAsAttachmentTo
+    type: Collection(microsoft.graph.recipient)
+    description: The email addresses of the recipients to which a message should be forwarded as an attachment.
+  - property: forwardTo
+    type: Collection(microsoft.graph.recipient)
+    description: The email addresses of the recipients to which a message should be forwarded.
+  - property: markAsRead
+    type: Boolean
+    description: Indicates whether a message should be marked as read.
+  - property: markImportance
+    type: microsoft.graph.importance
+    description: Sets the importance of the message, which can be: low, normal, high.
+  - property: moveToFolder
+    type: String
+    description: The ID of the folder that a message will be moved to.
+  - property: permanentDelete
+    type: Boolean
+    description: Indicates whether a message should be permanently deleted and not saved to the Deleted Items folder.
+  - property: redirectTo
+    type: Collection(microsoft.graph.recipient)
+    description: The email addresses to which a message should be redirected.
+  - property: stopProcessingRules
+    type: Boolean
+    description: Indicates whether subsequent rules should be evaluated.

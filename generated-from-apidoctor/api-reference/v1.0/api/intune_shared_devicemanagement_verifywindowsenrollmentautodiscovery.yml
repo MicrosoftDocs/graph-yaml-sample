@@ -1,0 +1,62 @@
+### YamlMime:GraphOperation
+uid:graph.intune_shared_devicemanagement_verifywindowsenrollmentautodiscovery
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/intune_shared_devicemanagement_verifywindowsenrollmentautodiscovery.md
+summary:
+  heading: verifyWindowsEnrollmentAutoDiscovery function
+  intro: |
+    Not yet documented
+permissions:
+  heading: Prerequisites
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+httpRequest:
+  heading: HTTP Request
+  sampleCode: |
+    ```http
+    GET /deviceManagement/verifyWindowsEnrollmentAutoDiscovery
+    ```
+    
+requestHeaders:
+  heading: Request headers
+  list:
+  - name: Authorization
+    value: String
+    description: 
+  - name: Accept
+    value: String
+    description: 
+requestBody:
+  heading: Request body
+  intro: |
+    In the request URL, provide the following query parameters with values.
+    The following table shows the parameters that can be used with this function.
+    |Property|Type|Description
+    |:-|:-|:-|
+    |domainName|String|Not yet documented
+response:
+  heading: Response
+  intro: |
+    If successful, this function returns a `200 OK` response code and a Boolean in the response body.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        request:
+            heading: Request
+            intro: |
+              Here is an example of the request.
+              GET https://graph.microsoft.com/v1.0/deviceManagement/verifyWindowsEnrollmentAutoDiscovery(domainName='parameterValue')
+
+        response:
+            heading: Response
+            intro: |
+              Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+              HTTP/1.1 200 OK
+              Content-Type: application/json
+              Content-Length: 21
+              
+              {
+                "value": true
+              }
+

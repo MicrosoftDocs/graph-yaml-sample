@@ -1,0 +1,47 @@
+### YamlMime:GraphResource
+uid:graph.intune_devices_remotelockactionresult
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_devices_remotelockactionresult.md
+summary:
+  heading: remoteLockActionResult resource type
+  intro: |
+    Lock action result with a pin to unlock
+    Inherits from [deviceActionResult](xref:graph.intune_devices_deviceactionresult)
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.remoteLockActionResult",
+      "actionName": "String",
+      "actionState": "String",
+      "startDateTime": "String (timestamp)",
+      "lastUpdatedDateTime": "String (timestamp)",
+      "unlockPin": "String"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: actionName
+    type: String
+    description: Action name Inherited from deviceActionResult
+  - property: actionState
+    type: microsoft.graph.actionState
+    description: State of the action Inherited from deviceActionResult. The possible values are: none, pending, canceled, active, done, failed, notSupported.
+  - property: startDateTime
+    type: DateTimeOffset
+    description: Time the action was initiated Inherited from deviceActionResult
+  - property: lastUpdatedDateTime
+    type: DateTimeOffset
+    description: Time the action state was last updated Inherited from deviceActionResult
+  - property: unlockPin
+    type: String
+    description: Pin to unlock the client
+relationships:
+  heading: Relationships
+  intro: |
+    None

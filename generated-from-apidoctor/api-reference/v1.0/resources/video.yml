@@ -1,0 +1,71 @@
+### YamlMime:GraphResource
+uid:graph.video
+metadata:
+  title: Video
+  author: rgregg
+  ms.author: rgregg
+  ms.date: 09/10/2017
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/video.md
+summary:
+  heading: Video resource type
+  intro: |
+    The **Video** resource groups video-related data items into a single structure.
+    If a [**DriveItem**](xref:graph.driveitem) has a non-null **video** facet, the item represents a video file.
+    The properties of the **Video** resource are populated by extracting metadata from the file.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource
+  sampleCode: |
+    ```json
+    {
+      "audioBitsPerSample": 16,
+      "audioChannels": 1,
+      "audioFormat": "AAC",
+      "audioSamplesPerSecond": 44100,
+      "bitrate": 39101896,
+      "duration": 8053,
+      "fourCC": "H264",
+      "frameRate": 239.877,
+      "height": 1280,
+      "width": 720
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: audioBitsPerSample
+    type: Int32
+    description: Number of audio bits per sample.
+  - property: audioChannels
+    type: Int32
+    description: Number of audio channels.
+  - property: audioFormat
+    type: String
+    description: Name of the audio format (AAC, MP3, etc.).
+  - property: audioSamplesPerSecond
+    type: Int32
+    description: Number of audio samples per second.
+  - property: bitrate
+    type: Int32
+    description: Bit rate of the video in bits per second.
+  - property: duration
+    type: Int64
+    description: Duration of the file in milliseconds.
+  - property: fourCC
+    type: String
+    description: "Four character code" name of the video format.
+  - property: frameRate
+    type: Double
+    description: Frame rate of the video.
+  - property: height
+    type: Int32
+    description: Height of the video, in pixels.
+  - property: width
+    type: Int32
+    description: Width of the video, in pixels.
+remarks:
+  heading: Remarks
+  intro: |
+    For more information about the facets on a DriveItem, see [DriveItem](xref:graph.driveitem).

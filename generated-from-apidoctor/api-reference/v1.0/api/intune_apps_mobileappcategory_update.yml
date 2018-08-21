@@ -1,0 +1,75 @@
+### YamlMime:GraphOperation
+uid:graph.intune_apps_mobileappcategory_update
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/intune_apps_mobileappcategory_update.md
+summary:
+  heading: Update mobileAppCategory
+  intro: |
+    Update the properties of a [mobileAppCategory](xref:graph.intune_apps_mobileappcategory) object.
+permissions:
+  heading: Prerequisites
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+httpRequest:
+  heading: HTTP Request
+  sampleCode: |
+    ```http
+    PATCH /deviceAppManagement/mobileAppCategories/{mobileAppCategoryId}
+    PATCH /deviceAppManagement/mobileApps/{mobileAppId}/categories/{mobileAppCategoryId}
+    ```
+    
+requestHeaders:
+  heading: Request headers
+  list:
+  - name: Authorization
+    value: String
+    description: 
+  - name: Accept
+    value: String
+    description: 
+requestBody:
+  heading: Request body
+  intro: |
+    In the request body, supply a JSON representation for the [mobileAppCategory](xref:graph.intune_apps_mobileappcategory) object.
+    The following table shows the properties that are required when you create the [mobileAppCategory](xref:graph.intune_apps_mobileappcategory).
+    |Property|Type|Description
+    |:-|:-|:-|
+    |id|String|The key of the entity.
+    |displayName|String|The name of the app category.
+    |lastModifiedDateTime|DateTimeOffset|The date and time the mobileAppCategory was last modified.
+response:
+  heading: Response
+  intro: |
+    If successful, this method returns a `200 OK` response code and an updated [mobileAppCategory](xref:graph.intune_apps_mobileappcategory) object in the response body.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        request:
+            heading: Request
+            intro: |
+              Here is an example of the request.
+              PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/mobileAppCategories/{mobileAppCategoryId}
+              Content-type: application/json
+              Content-length: 107
+              
+              {
+                "displayName": "Display Name value",
+                "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
+              }
+
+        response:
+            heading: Response
+            intro: |
+              Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+              HTTP/1.1 200 OK
+              Content-Type: application/json
+              Content-Length: 212
+              
+              {
+                "@odata.type": "#microsoft.graph.mobileAppCategory",
+                "id": "d85d9cee-9cee-d85d-ee9c-5dd8ee9c5dd8",
+                "displayName": "Display Name value",
+                "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
+              }
+

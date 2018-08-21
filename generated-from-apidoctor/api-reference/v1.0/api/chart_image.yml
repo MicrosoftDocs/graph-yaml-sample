@@ -1,0 +1,92 @@
+### YamlMime:GraphOperation
+uid:graph.chart_image
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/chart_image.md
+summary:
+  heading: Chart: Image
+  intro: |
+    Renders the chart as a base64-encoded image by scaling the chart to fit the specified dimensions.
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+  list:
+  - resource: Delegated (work or school account)
+    permission: Files.ReadWrite
+  - resource: Delegated (personal Microsoft account)
+    permission: Not supported.
+  - resource: Application
+    permission: Not supported.
+httpRequest:
+  heading: HTTP request
+  sampleCode: |
+    ```http
+    GET /workbook/worksheets/{id|name}/charts/{name}/image
+    GET /workbook/worksheets/{id|name}/charts/{name}/image(width=640)
+    GET /workbook/worksheets/{id|name}/charts/{name}/image(width=640,height=480)
+    GET /workbook/worksheets/{id|name}/charts/{name}/image(width=640,height=480,fittingMode='fit')
+    ```
+    
+parameters:
+  heading: Path parameters
+  intro: |
+    In the request body, provide a JSON object with the following parameters.
+  list:
+  - name: height
+    value: Int32
+    description: The desired height of the resulting image. Optional.
+  - name: width
+    value: Int32
+    description: The desired width of the resulting image. Optional.
+  - name: fittingMode
+    value: String
+    description: The method used to scale the chart to the specified dimensions (if both height and width are set)."  The possible values are: Fit, FitAndCenter, Fill.
+requestHeaders:
+  heading: Request headers
+  list:
+  - name: Authorization
+    value: 
+    description: Bearer {token}. Required.
+  - name: Workbook-Session-Id
+    value: 
+    description: Workbook session Id that determines if changes are persisted or not. Optional.
+response:
+  heading: Response
+  intro: |
+    If successful, this method returns `200 OK` response code and base-64 image string in the response body.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        intro: |
+          Here is an example of how to call this API.
+        request:
+            heading: Request
+            intro: |
+              Here is an example of the request.
+            sampleCode: |
+              ```http
+              GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/image(width=640,height=480,fittingMode='fit')
+              ```
+              
+        response:
+            heading: Response
+            intro: |
+              Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+            sampleCode: |
+              ```http
+              HTTP/1.1 200 OK
+              Content-type: application/json;odata.metadata=minimal;odata.streaming=true
+              
+              {
+              "value" : "base-64 chart image string"
+              }
+              ```
+              
+            outro: |
+              ## Usage
+              You can display the base-64 string inside an HTML image tag: `<img src="data:image/png;base64,{base-64 chart image string}/>`.
+              For default behavior, use `Image(width=0,height=0,fittingMode='fit')`. Here is an example of a chart image returned with the default parameters.
+              ![Excel chart image with default height and width.](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/GetChart-default.png)
+              If you want to customize the display of the image, specify a height, width, and a fitting mode. Here is what the same chart image looks like if you retrieve it with these parameters: `Image(width=500,height=500,fittingMode='Fill')`.
+              ![Excel chart image with default height and width.](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/GetChart-fill.png)

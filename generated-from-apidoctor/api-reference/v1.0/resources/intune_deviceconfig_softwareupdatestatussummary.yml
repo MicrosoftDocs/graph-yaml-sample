@@ -1,0 +1,99 @@
+### YamlMime:GraphResource
+uid:graph.intune_deviceconfig_softwareupdatestatussummary
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_softwareupdatestatussummary.md
+summary:
+  heading: softwareUpdateStatusSummary resource type
+  intro: |
+    Not yet documented
+methods:
+  heading: Methods
+  list:
+  - method: [Get softwareUpdateStatusSummary](xref:graph.intune_deviceconfig_softwareupdatestatussummary_get)
+    type: [softwareUpdateStatusSummary](xref:graph.intune_deviceconfig_softwareupdatestatussummary)
+    description: Read properties and relationships of the softwareUpdateStatusSummary object.
+  - method: [Update softwareUpdateStatusSummary](xref:graph.intune_deviceconfig_softwareupdatestatussummary_update)
+    type: [softwareUpdateStatusSummary](xref:graph.intune_deviceconfig_softwareupdatestatussummary)
+    description: Update the properties of a softwareUpdateStatusSummary object.
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.softwareUpdateStatusSummary",
+      "id": "String (identifier)",
+      "displayName": "String",
+      "compliantDeviceCount": 1024,
+      "nonCompliantDeviceCount": 1024,
+      "remediatedDeviceCount": 1024,
+      "errorDeviceCount": 1024,
+      "unknownDeviceCount": 1024,
+      "conflictDeviceCount": 1024,
+      "notApplicableDeviceCount": 1024,
+      "compliantUserCount": 1024,
+      "nonCompliantUserCount": 1024,
+      "remediatedUserCount": 1024,
+      "errorUserCount": 1024,
+      "unknownUserCount": 1024,
+      "conflictUserCount": 1024,
+      "notApplicableUserCount": 1024
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: id
+    type: String
+    description: Key of the entity.
+  - property: displayName
+    type: String
+    description: The name of the policy.
+  - property: compliantDeviceCount
+    type: Int32
+    description: Number of compliant devices.
+  - property: nonCompliantDeviceCount
+    type: Int32
+    description: Number of non compliant devices.
+  - property: remediatedDeviceCount
+    type: Int32
+    description: Number of remediated devices.
+  - property: errorDeviceCount
+    type: Int32
+    description: Number of devices had error.
+  - property: unknownDeviceCount
+    type: Int32
+    description: Number of unknown devices.
+  - property: conflictDeviceCount
+    type: Int32
+    description: Number of conflict devices.
+  - property: notApplicableDeviceCount
+    type: Int32
+    description: Number of not applicable devices.
+  - property: compliantUserCount
+    type: Int32
+    description: Number of compliant users.
+  - property: nonCompliantUserCount
+    type: Int32
+    description: Number of non compliant users.
+  - property: remediatedUserCount
+    type: Int32
+    description: Number of remediated users.
+  - property: errorUserCount
+    type: Int32
+    description: Number of users had error.
+  - property: unknownUserCount
+    type: Int32
+    description: Number of unknown users.
+  - property: conflictUserCount
+    type: Int32
+    description: Number of conflict users.
+  - property: notApplicableUserCount
+    type: Int32
+    description: Number of not applicable users.
+relationships:
+  heading: Relationships
+  intro: |
+    None

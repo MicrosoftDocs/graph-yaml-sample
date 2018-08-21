@@ -1,0 +1,57 @@
+### YamlMime:GraphResource
+uid:graph.tablerow
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.tablerow
+summary:
+  heading: TableRow resource type
+  intro: |
+    Represents a row in a table.
+methods:
+  heading: Methods
+  list:
+  - method: [Get TableRow](xref:graph.tablerow_get)
+    type: [WorkbookTableRow](xref:graph.tablerow)
+    description: Read properties and relationships of tableRow object.
+  - method: [Update](xref:graph.tablerow_update)
+    type: [WorkbookTableRow](xref:graph.tablerow)
+    description: Update TableRow object.
+  - method: [Range](xref:graph.tablerow_range)
+    type: [Range](xref:graph.range)
+    description: Returns the range object associated with the entire row.
+  - method: [Delete](xref:graph.tablerow_delete)
+    type: None
+    description: Deletes the row from the table.
+  - method: [List](xref:graph.tablerow_list)
+    type: [WorkbookTableRow](xref:graph.tablerow) collection
+    description: Get tableRow object collection.
+  - method: [Itemat](xref:graph.tablerowcollection_itemat)
+    type: [WorkbookTableRow](xref:graph.tablerow)
+    description: Gets a row based on its position in the collection.
+  - method: [Add](xref:graph.tablerowcollection_add)
+    type: [WorkbookTableRow](xref:graph.tablerow)
+    description: Adds a new row to the table.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "index": 1024,
+      "values": "json"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: index
+    type: Int32
+    description: Returns the index number of the row within the rows collection of the table. Zero-indexed. Read-only.
+  - property: values
+    type: microsoft.graph.Json
+    description: Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cell that contain an error will return the error string.
+relationships:
+  heading: Relationships
+  intro: |
+    None

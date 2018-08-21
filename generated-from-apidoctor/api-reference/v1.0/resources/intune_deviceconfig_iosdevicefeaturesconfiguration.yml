@@ -1,0 +1,161 @@
+### YamlMime:GraphResource
+uid:graph.intune_deviceconfig_iosdevicefeaturesconfiguration
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_iosdevicefeaturesconfiguration.md
+summary:
+  heading: iosDeviceFeaturesConfiguration resource type
+  intro: |
+    iOS Device Features Configuration Profile.
+    Inherits from [appleDeviceFeaturesConfigurationBase](xref:graph.intune_deviceconfig_appledevicefeaturesconfigurationbase)
+methods:
+  heading: Methods
+  list:
+  - method: [List iosDeviceFeaturesConfigurations](xref:graph.intune_deviceconfig_iosdevicefeaturesconfiguration_list)
+    type: [iosDeviceFeaturesConfiguration](xref:graph.intune_deviceconfig_iosdevicefeaturesconfiguration) collection
+    description: List properties and relationships of the iosDeviceFeaturesConfiguration objects.
+  - method: [Get iosDeviceFeaturesConfiguration](xref:graph.intune_deviceconfig_iosdevicefeaturesconfiguration_get)
+    type: [iosDeviceFeaturesConfiguration](xref:graph.intune_deviceconfig_iosdevicefeaturesconfiguration)
+    description: Read properties and relationships of the iosDeviceFeaturesConfiguration object.
+  - method: [Create iosDeviceFeaturesConfiguration](xref:graph.intune_deviceconfig_iosdevicefeaturesconfiguration_create)
+    type: [iosDeviceFeaturesConfiguration](xref:graph.intune_deviceconfig_iosdevicefeaturesconfiguration)
+    description: Create a new iosDeviceFeaturesConfiguration object.
+  - method: [Delete iosDeviceFeaturesConfiguration](xref:graph.intune_deviceconfig_iosdevicefeaturesconfiguration_delete)
+    type: None
+    description: Deletes a iosDeviceFeaturesConfiguration.
+  - method: [Update iosDeviceFeaturesConfiguration](xref:graph.intune_deviceconfig_iosdevicefeaturesconfiguration_update)
+    type: [iosDeviceFeaturesConfiguration](xref:graph.intune_deviceconfig_iosdevicefeaturesconfiguration)
+    description: Update the properties of a iosDeviceFeaturesConfiguration object.
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.iosDeviceFeaturesConfiguration",
+      "id": "String (identifier)",
+      "lastModifiedDateTime": "String (timestamp)",
+      "createdDateTime": "String (timestamp)",
+      "description": "String",
+      "displayName": "String",
+      "version": 1024,
+      "assetTagTemplate": "String",
+      "lockScreenFootnote": "String",
+      "homeScreenDockIcons": [
+        {
+          "@odata.type": "microsoft.graph.iosHomeScreenItem",
+          "displayName": "String",
+          "pages": [
+            {
+              "@odata.type": "microsoft.graph.iosHomeScreenFolderPage",
+              "displayName": "String",
+              "apps": [
+                {
+                  "@odata.type": "microsoft.graph.iosHomeScreenApp",
+                  "displayName": "String",
+                  "bundleID": "String"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "homeScreenPages": [
+        {
+          "@odata.type": "microsoft.graph.iosHomeScreenPage",
+          "displayName": "String",
+          "icons": [
+            {
+              "@odata.type": "microsoft.graph.iosHomeScreenFolder",
+              "displayName": "String",
+              "pages": [
+                {
+                  "@odata.type": "microsoft.graph.iosHomeScreenFolderPage",
+                  "displayName": "String",
+                  "apps": [
+                    {
+                      "@odata.type": "microsoft.graph.iosHomeScreenApp",
+                      "displayName": "String",
+                      "bundleID": "String"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "notificationSettings": [
+        {
+          "@odata.type": "microsoft.graph.iosNotificationSettings",
+          "bundleID": "String",
+          "appName": "String",
+          "publisher": "String",
+          "enabled": true,
+          "showInNotificationCenter": true,
+          "showOnLockScreen": true,
+          "alertType": "String",
+          "badgesEnabled": true,
+          "soundsEnabled": true
+        }
+      ]
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: id
+    type: String
+    description: Key of the entity. Inherited from deviceConfiguration
+  - property: lastModifiedDateTime
+    type: DateTimeOffset
+    description: DateTime the object was last modified. Inherited from deviceConfiguration
+  - property: createdDateTime
+    type: DateTimeOffset
+    description: DateTime the object was created. Inherited from deviceConfiguration
+  - property: description
+    type: String
+    description: Admin provided description of the Device Configuration. Inherited from deviceConfiguration
+  - property: displayName
+    type: String
+    description: Admin provided name of the device configuration. Inherited from deviceConfiguration
+  - property: version
+    type: Int32
+    description: Version of the device configuration. Inherited from deviceConfiguration
+  - property: assetTagTemplate
+    type: String
+    description: Asset tag information for the device, displayed on the login window and lock screen.
+  - property: lockScreenFootnote
+    type: String
+    description: A footnote displayed on the login window and lock screen. Available in iOS 9.3.1 and later.
+  - property: homeScreenDockIcons
+    type: Collection(microsoft.graph.iosHomeScreenItem)
+    description: A list of app and folders to appear on the Home Screen Dock. This collection can contain a maximum of 500 elements.
+  - property: homeScreenPages
+    type: Collection(microsoft.graph.iosHomeScreenPage)
+    description: A list of pages on the Home Screen. This collection can contain a maximum of 500 elements.
+  - property: notificationSettings
+    type: Collection(microsoft.graph.iosNotificationSettings)
+    description: Notification settings for each bundle id. Applicable to devices in supervised mode only (iOS 9.3 and later). This collection can contain a maximum of 500 elements.
+relationships:
+  heading: Relationships
+  list:
+  - relationship: assignments
+    type: Collection(microsoft.graph.deviceConfigurationAssignment)
+    description: The list of assignments for the device configuration profile. Inherited from deviceConfiguration
+  - relationship: deviceStatuses
+    type: Collection(microsoft.graph.deviceConfigurationDeviceStatus)
+    description: Device configuration installation status by device. Inherited from deviceConfiguration
+  - relationship: userStatuses
+    type: Collection(microsoft.graph.deviceConfigurationUserStatus)
+    description: Device configuration installation status by user. Inherited from deviceConfiguration
+  - relationship: deviceStatusOverview
+    type: microsoft.graph.deviceConfigurationDeviceOverview
+    description: Device Configuration devices status overview Inherited from deviceConfiguration
+  - relationship: userStatusOverview
+    type: microsoft.graph.deviceConfigurationUserOverview
+    description: Device Configuration users status overview Inherited from deviceConfiguration
+  - relationship: deviceSettingStateSummaries
+    type: Collection(microsoft.graph.settingStateDeviceSummary)
+    description: Device Configuration Setting State Device Summary Inherited from deviceConfiguration

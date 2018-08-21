@@ -1,0 +1,21 @@
+### YamlMime:GraphOperation
+uid:graph.intune_apps_mdmappconfigkeytype
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_apps_mdmappconfigkeytype.md
+summary:
+  heading: mdmAppConfigKeyType enum type
+  intro: |
+    App configuration key types.
+enum:
+  heading: Members
+  table:
+  - member: stringType
+    description: Not yet documented
+  - member: integerType
+    description: Not yet documented
+  - member: realType
+    description: Not yet documented
+  - member: booleanType
+    description: Not yet documented
+  - member: tokenType
+    description: Not yet documented

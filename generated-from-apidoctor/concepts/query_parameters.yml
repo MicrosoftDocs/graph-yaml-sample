@@ -1,0 +1,32 @@
+### YamlMime:GraphOperation
+uid:graph.query_parameters
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/query_parameters.md
+summary:
+  heading: Use query parameters to customize responses
+  intro: |
+    Microsoft Graph provides optional query parameters that you can use to specify and control the amount of data returned in a response. The following query parameters are supported.
+    
+    |Name|Description|Example
+    |:-|:-|:-|
+    |[$count](#count-parameter)|Retrieves the total count of matching resources.|[`/me/messages?$top=2&$count=true`][count-example]
+    |[$expand](#expand-parameter)|Retrieves related resources.|[`/groups?$expand=members`][expand-example]
+    |[$filter](#filter-parameter)|Filters results (rows).|[`/users?$filter=startswith(givenName,'J')`][filter-example]
+    |[$format](#format-parameter)|Returns the results in the specified media format.|[`/users?$format=json`][format-example]
+    |[$orderby](#orderby-parameter)|Orders results.|[`/users?$orderby=displayName desc`][orderby-example]
+    |[$search](#search-parameter)|Returns results based on search criteria. Currently supported on **messages** and **person** collections.|[`/me/messages?$search=pizza`][search-example]
+    |[$select](#select-parameter)|Filters properties (columns).|[`/users?$select=givenName,surname`][select-example]
+    |[$skip](#skip-parameter)|Indexes into a result set. Also used by some APIs to implement paging and can be used together with `$top` to manually page results.|[`/me/messages?$skip=11`][skip-example]
+    |[$skipToken](#skiptoken-parameter)|Retrieves the next page of results from result sets that span multiple pages. (Some APIs use `$skip` instead.)|`/users?$skiptoken=X%274453707402000100000017...`
+    |[$top](#top-parameter)|Sets the page size of results.|[`/users?$top=2`][top-example]
+    These parameters are compatible with the [OData V4 query language][odata-query]. Not all parameters are supported across all Microsoft Graph APIs, and support might differ significantly between the `v1.0` and `beta` endpoints. 
+    
+  outro: |
+    ## Encoding query parameters
+    The values of query parameters should be percent-encoded. Many HTTP clients, browsers, and tools (such as the [Graph Explorer][graph-explorer]) will help you with this. If a query is failing, one possible cause is failure to encode the query parameter values appropriately.
+    An unencoded URL looks like this:
+    GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName, 'J')
+
+    A properly encoded URL looks like this:
+    GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName%2C+'J')
+

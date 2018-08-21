@@ -1,0 +1,61 @@
+### YamlMime:GraphOperation
+uid:graph.listitem_delete
+metadata:
+  title: Delete an entry from a SharePoint list
+  author: rgregg
+  ms.author: rgregg
+  ms.date: 09/11/2017
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/listitem_delete.md
+summary:
+  heading: Delete an item from a list
+  intro: |
+    Removes an item from a [list][].
+permissions:
+  heading: Permissions
+  intro: |
+    To delete an item, the user must have granted the application write access to the item to be deleted.
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+  list:
+  - resource: Delegated (work or school account)
+    permission: Sites.ReadWrite.All
+  - resource: Delegated (personal Microsoft account)
+    permission: Not supported.
+  - resource: Application
+    permission: Sites.ReadWrite.All
+httpRequest:
+  heading: HTTP request
+  sampleCode: |
+    ```http
+    DELETE https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}
+    ```
+    
+requestHeaders:
+  heading: Optional request headers
+  list:
+  - name: if-match
+    value: String
+    description: If this request header is included and the eTag provided does not match the current tag on the item, a 412 Precondition Failed response is returned and the item will not be deleted.
+requestBody:
+  heading: Request body
+  intro: |
+    Do not supply a request body with this method.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        request:
+            heading: request
+            sampleCode: |
+              ```http
+              DELETE https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}
+              ```
+              
+        response:
+            heading: Response
+            intro: |
+              If successful, this call returns a `204 No Content` response to indicate that resource was deleted and there was nothing to return.
+            sampleCode: |
+              ```http
+              HTTP/1.1 204 No Content
+              ```
+              

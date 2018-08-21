@@ -1,0 +1,33 @@
+### YamlMime:GraphResource
+uid:graph.timestamp
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/timestamp.md
+summary:
+  heading: timeStamp resource type
+  intro: |
+    Date and time information for a point in time.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource
+  sampleCode: |
+    ```json
+    {
+      "date": "String (timestamp)",
+      "time": "String (timestamp)",
+      "timeZone": "string"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: date
+    type: Date
+    description: The date portion of the timestamp.
+  - property: time
+    type: TimeOfDay
+    description: The time portion of the timestamp.
+  - property: timeZone
+    type: String
+    description: The timezone portion of the timestamp, which is one of the 24 longitudinal areas in the world.

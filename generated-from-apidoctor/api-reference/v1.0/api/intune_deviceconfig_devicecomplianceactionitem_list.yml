@@ -1,0 +1,69 @@
+### YamlMime:GraphOperation
+uid:graph.intune_deviceconfig_devicecomplianceactionitem_list
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/intune_deviceconfig_devicecomplianceactionitem_list.md
+summary:
+  heading: List deviceComplianceActionItems
+  intro: |
+    List properties and relationships of the [deviceComplianceActionItem](xref:graph.intune_deviceconfig_devicecomplianceactionitem) objects.
+permissions:
+  heading: Prerequisites
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+httpRequest:
+  heading: HTTP Request
+  sampleCode: |
+    ```http
+    GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/scheduledActionsForRule/{deviceComplianceScheduledActionForRuleId}/scheduledActionConfigurations
+    ```
+    
+requestHeaders:
+  heading: Request headers
+  list:
+  - name: Authorization
+    value: String
+    description: 
+  - name: Accept
+    value: String
+    description: 
+requestBody:
+  heading: Request body
+  intro: |
+    Do not supply a request body for this method.
+response:
+  heading: Response
+  intro: |
+    If successful, this method returns a `200 OK` response code and a collection of [deviceComplianceActionItem](xref:graph.intune_deviceconfig_devicecomplianceactionitem) objects in the response body.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        request:
+            heading: Request
+            intro: |
+              Here is an example of the request.
+              GET https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/scheduledActionsForRule/{deviceComplianceScheduledActionForRuleId}/scheduledActionConfigurations
+
+        response:
+            heading: Response
+            intro: |
+              Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+              HTTP/1.1 200 OK
+              Content-Type: application/json
+              Content-Length: 385
+              
+              {
+                "value": [
+                  {
+                    "@odata.type": "#microsoft.graph.deviceComplianceActionItem",
+                    "id": "e01a1893-1893-e01a-9318-1ae093181ae0",
+                    "gracePeriodHours": 0,
+                    "actionType": "notification",
+                    "notificationTemplateId": "Notification Template Id value",
+                    "notificationMessageCCList": [
+                      "Notification Message CCList value"
+                    ]
+                  }
+                ]
+              }
+

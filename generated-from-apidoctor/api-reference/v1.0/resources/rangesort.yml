@@ -1,0 +1,58 @@
+### YamlMime:GraphResource
+uid:graph.rangesort
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/rangesort.md
+summary:
+  heading: RangeSort resource type
+  intro: |
+    Manages sorting operations on Range objects.
+methods:
+  heading: Methods
+  list:
+  - method: [Apply](xref:graph.rangesort_apply)
+    type: None
+    description: Perform a sort operation.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+    }
+    ```
+    
+properties:
+  heading: Properties
+  intro: |
+    None
+relationships:
+  heading: Relationships
+  intro: |
+    None
+requestBody:
+  heading: Request
+  intro: |
+    Here is an example of the request.
+  request:
+      heading: request
+      sampleCode: |
+        ```http
+        GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/sort
+        ```
+        
+response:
+  heading: Response
+  intro: |
+    Here is an example of the response. 
+  request:
+      heading: request
+      sampleCode: |
+        ```http
+        HTTP/1.1 200 OK
+        Content-Type: application/json
+        
+        {
+        }
+        ```
+        

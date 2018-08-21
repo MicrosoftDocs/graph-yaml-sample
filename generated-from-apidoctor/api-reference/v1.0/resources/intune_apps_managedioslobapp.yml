@@ -1,0 +1,167 @@
+### YamlMime:GraphResource
+uid:graph.intune_apps_managedioslobapp
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_apps_managedioslobapp.md
+summary:
+  heading: managedIOSLobApp resource type
+  intro: |
+    Contains properties and inherited properties for Managed iOS Line Of Business apps.
+    Inherits from [managedMobileLobApp](xref:graph.intune_apps_managedmobilelobapp)
+methods:
+  heading: Methods
+  list:
+  - method: [List managedIOSLobApps](xref:graph.intune_apps_managedioslobapp_list)
+    type: [managedIOSLobApp](xref:graph.intune_apps_managedioslobapp) collection
+    description: List properties and relationships of the managedIOSLobApp objects.
+  - method: [Get managedIOSLobApp](xref:graph.intune_apps_managedioslobapp_get)
+    type: [managedIOSLobApp](xref:graph.intune_apps_managedioslobapp)
+    description: Read properties and relationships of the managedIOSLobApp object.
+  - method: [Create managedIOSLobApp](xref:graph.intune_apps_managedioslobapp_create)
+    type: [managedIOSLobApp](xref:graph.intune_apps_managedioslobapp)
+    description: Create a new managedIOSLobApp object.
+  - method: [Delete managedIOSLobApp](xref:graph.intune_apps_managedioslobapp_delete)
+    type: None
+    description: Deletes a managedIOSLobApp.
+  - method: [Update managedIOSLobApp](xref:graph.intune_apps_managedioslobapp_update)
+    type: [managedIOSLobApp](xref:graph.intune_apps_managedioslobapp)
+    description: Update the properties of a managedIOSLobApp object.
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.managedIOSLobApp",
+      "id": "String (identifier)",
+      "displayName": "String",
+      "description": "String",
+      "publisher": "String",
+      "largeIcon": {
+        "@odata.type": "microsoft.graph.mimeContent",
+        "type": "String",
+        "value": "binary"
+      },
+      "createdDateTime": "String (timestamp)",
+      "lastModifiedDateTime": "String (timestamp)",
+      "isFeatured": true,
+      "privacyInformationUrl": "String",
+      "informationUrl": "String",
+      "owner": "String",
+      "developer": "String",
+      "notes": "String",
+      "publishingState": "String",
+      "appAvailability": "String",
+      "version": "String",
+      "committedContentVersion": "String",
+      "fileName": "String",
+      "size": 1024,
+      "bundleId": "String",
+      "applicableDeviceType": {
+        "@odata.type": "microsoft.graph.iosDeviceType",
+        "iPad": true,
+        "iPhoneAndIPod": true
+      },
+      "minimumSupportedOperatingSystem": {
+        "@odata.type": "microsoft.graph.iosMinimumOperatingSystem",
+        "v8_0": true,
+        "v9_0": true,
+        "v10_0": true,
+        "v11_0": true
+      },
+      "expirationDateTime": "String (timestamp)",
+      "versionNumber": "String",
+      "buildNumber": "String"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: id
+    type: String
+    description: Key of the entity. Inherited from mobileApp
+  - property: displayName
+    type: String
+    description: The admin provided or imported title of the app. Inherited from mobileApp
+  - property: description
+    type: String
+    description: The description of the app. Inherited from mobileApp
+  - property: publisher
+    type: String
+    description: The publisher of the app. Inherited from mobileApp
+  - property: largeIcon
+    type: microsoft.graph.mimeContent
+    description: The large icon, to be displayed in the app details and used for upload of the icon. Inherited from mobileApp
+  - property: createdDateTime
+    type: DateTimeOffset
+    description: The date and time the app was created. Inherited from mobileApp
+  - property: lastModifiedDateTime
+    type: DateTimeOffset
+    description: The date and time the app was last modified. Inherited from mobileApp
+  - property: isFeatured
+    type: Boolean
+    description: The value indicating whether the app is marked as featured by the admin. Inherited from mobileApp
+  - property: privacyInformationUrl
+    type: String
+    description: The privacy statement Url. Inherited from mobileApp
+  - property: informationUrl
+    type: String
+    description: The more information Url. Inherited from mobileApp
+  - property: owner
+    type: String
+    description: The owner of the app. Inherited from mobileApp
+  - property: developer
+    type: String
+    description: The developer of the app. Inherited from mobileApp
+  - property: notes
+    type: String
+    description: Notes for the app. Inherited from mobileApp
+  - property: publishingState
+    type: microsoft.graph.mobileAppPublishingState
+    description: The publishing state for the app. The app cannot be assigned unless the app is published. Inherited from mobileApp. The possible values are: notPublished, processing, published.
+  - property: appAvailability
+    type: microsoft.graph.managedAppAvailability
+    description: The Application's availability. Inherited from managedApp. The possible values are: global, lineOfBusiness.
+  - property: version
+    type: String
+    description: The Application's version. Inherited from managedApp
+  - property: committedContentVersion
+    type: String
+    description: The internal committed content version. Inherited from managedMobileLobApp
+  - property: fileName
+    type: String
+    description: The name of the main Lob application file. Inherited from managedMobileLobApp
+  - property: size
+    type: Int64
+    description: The total size, including all uploaded files. Inherited from managedMobileLobApp
+  - property: bundleId
+    type: String
+    description: The Identity Name.
+  - property: applicableDeviceType
+    type: microsoft.graph.iosDeviceType
+    description: The iOS architecture for which this app can run on.
+  - property: minimumSupportedOperatingSystem
+    type: microsoft.graph.iosMinimumOperatingSystem
+    description: The value for the minimum applicable operating system.
+  - property: expirationDateTime
+    type: DateTimeOffset
+    description: The expiration time.
+  - property: versionNumber
+    type: String
+    description: The version number of managed iOS Line of Business (LoB) app.
+  - property: buildNumber
+    type: String
+    description: The build number of managed iOS Line of Business (LoB) app.
+relationships:
+  heading: Relationships
+  list:
+  - relationship: categories
+    type: Collection(microsoft.graph.mobileAppCategory)
+    description: The list of categories for this app. Inherited from mobileApp
+  - relationship: assignments
+    type: Collection(microsoft.graph.mobileAppAssignment)
+    description: The list of group assignments for this mobile app. Inherited from mobileApp
+  - relationship: contentVersions
+    type: Collection(microsoft.graph.mobileAppContent)
+    description: The list of content versions for this app. Inherited from managedMobileLobApp

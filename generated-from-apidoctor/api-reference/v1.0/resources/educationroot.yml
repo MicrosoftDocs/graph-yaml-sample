@@ -1,0 +1,73 @@
+### YamlMime:GraphResource
+uid:graph.educationroot
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/educationroot.md
+summary:
+  heading: educationRoot resource type
+  intro: |
+    The `/education` namespace exposes functionality that is specific to the education sector. 
+    Some objects in the `/education` namespace can be found in other parts of Microsoft Graph (for example, [users](xref:graph.user)). The education namespace provides education-specific properties and features on these objects.
+methods:
+  heading: Methods
+  list:
+  - method: [Create educationClass](xref:graph.educationroot_post_classes)
+    type: [educationClass](xref:graph.educationclass)
+    description: Create a new educationClass by posting to the classes collection.
+  - method: [List classes](xref:graph.educationroot_list_classes)
+    type: [educationClass](xref:graph.educationclass) collection
+    description: Get an educationClass object collection.
+  - method: [Create educationSchool](xref:graph.educationroot_post_schools)
+    type: [educationSchool](xref:graph.educationschool)
+    description: Create a new educationSchool by posting to the schools collection.
+  - method: [List schools](xref:graph.educationroot_list_schools)
+    type: [educationSchool](xref:graph.educationschool) collection
+    description: Get an educationSchool object collection.
+  - method: [Create educationUser](xref:graph.educationroot_post_users)
+    type: [educationUser](xref:graph.educationuser)
+    description: Create a new educationUser by posting to the users collection.
+  - method: [List users](xref:graph.educationroot_list_users)
+    type: [educationUser](xref:graph.educationuser) collection
+    description: Get an educationUser object collection.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+    }
+    ```
+    
+  outro: |
+    ```http
+    GET https://graph.microsoft.com/v1.0/education
+    ```
+    
+    
+    ```http
+    HTTP/1.1 200 OK
+    Content-type: application/json
+    
+    {
+    }
+    ```
+    
+properties:
+  heading: Properties
+  intro: |
+    None.
+relationships:
+  heading: Relationships
+  list:
+  - relationship: classes
+    type: Collection(microsoft.graph.educationClass)
+    description: Read-only. Nullable.
+  - relationship: me
+    type: microsoft.graph.educationUser
+    description: Read-only. Nullable.
+  - relationship: schools
+    type: Collection(microsoft.graph.educationSchool)
+    description: Read-only. Nullable.
+  - relationship: users
+    type: Collection(microsoft.graph.educationUser)
+    description: Read-only. Nullable.

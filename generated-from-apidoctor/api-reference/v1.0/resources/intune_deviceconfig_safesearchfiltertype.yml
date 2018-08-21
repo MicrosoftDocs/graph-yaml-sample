@@ -1,0 +1,17 @@
+### YamlMime:GraphOperation
+uid:graph.intune_deviceconfig_safesearchfiltertype
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_safesearchfiltertype.md
+summary:
+  heading: safeSearchFilterType enum type
+  intro: |
+    Specifies what level of safe search (filtering adult content) is required
+enum:
+  heading: Members
+  table:
+  - member: userDefined
+    description: User Defined, default value, no intent.
+  - member: strict
+    description: Strict, highest filtering against adult content.
+  - member: moderate
+    description: Moderate filtering against adult content (valid search results will not be filtered).

@@ -1,0 +1,128 @@
+### YamlMime:GraphOperation
+uid:graph.educationuser_update
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/educationuser_update.md
+summary:
+  heading: Update educationUser properties
+  intro: |
+    Update the properties of an **educationuser** object.
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+  list:
+  - resource: Delegated (work or school account)
+    permission: Not supported.
+  - resource: Delegated (personal Microsoft account)
+    permission: Not supported.
+  - resource: Application
+    permission: EduRoster.ReadWrite.All
+httpRequest:
+  heading: HTTP request
+  sampleCode: |
+    ```http
+    PATCH /education/me
+    PATCH /education/users/{id}
+    ```
+    
+requestHeaders:
+  heading: Request headers
+  list:
+  - name: Authorization
+    value: String
+    description: 
+  - name: Content-Type
+    value: String
+    description: 
+requestBody:
+  heading: Request body
+  intro: |
+    In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+    |Property|Type|Description
+    |:-|:-|:-|
+    |displayName|String|Display Name of User
+    |givenName|String|First Name
+    |middleName|String|Middle Name of user
+    |surname|String|Surname of user
+    |mail|String|email address
+    |mobilePhone|String|Mobile number of user
+    |externalSource|string|The possible values are: `sis`, `manual`, `enum_sentinel`.
+    |externalSource|string|Where this user was created from.  The possible values are: `sis`, `manual`, `enum_sentinel`.
+    |mailingAddress|[physicalAddress](xref:graph.physicaladdress)|Mail address of user.
+    |residenceAddress|[physicalAddress](xref:graph.physicaladdress)|Address where user lives.
+    |primaryRole|string|Default Role for a user.  The user's role might be different in an individual class. The possible values are: `student`, `teacher`, `enum_sentinel`.
+    |student|[educationStudent](xref:graph.educationstudent)|If the primary role is student, this block will contain student specific data.
+    |teacher|[educationTeacher](xref:graph.educationteacher)|If the primary role is teacher, this block will conatin teacher specific data.
+response:
+  heading: Response
+  intro: |
+    If successful, this method returns a `200 OK` response code and updated [educationUser](xref:graph.educationuser) object in the response body.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        request:
+            heading: Request
+            intro: |
+              Here is an example of the request.
+            sampleCode: |
+              ```http
+              PATCH https://graph.microsoft.com/v1.0/education/users/{user-id}
+              Content-type: application/json
+              Content-length: 508
+              
+              {
+                "displayName": "Rogelio Cazares",
+                "givenName": "Rogelio",
+                "middleName": "Fernando",
+                "surname": "Cazares",
+              }
+              ```
+              
+        response:
+            heading: Response
+            intro: |
+              Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+            sampleCode: |
+              ```http
+              HTTP/1.1 200 OK
+              Content-type: application/json
+              Content-length: 508
+              
+              {
+                "id": "13020",
+                "displayName": "Rogelio Cazares",
+                "givenName": "Rogelio",
+                "middleName": "Fernando",
+                "surname": "Cazares",
+                "mail": "rogelioC@contoso.com",
+                "mobilePhone": "+1 (253) 555-0101",
+                "createdBy": {
+                      "user": {
+                        "displayName": "Susana Rocha",
+                        "id": "14012",
+                      }
+                },
+                "externalSource": "sis",
+                "mailingAddress": {
+                      "city": "Los Angeles",
+                      "countryOrRegion": "United States",
+                      "postalCode": "98055",
+                      "state": "CA",
+                      "street": "12345 Main St."
+                    },
+                "primaryRole": "student",
+                "residenceAddress": {
+                      "city": "Los Angeles",
+                      "countryOrRegion": "United States",
+                      "postalCode": "98055",
+                      "state": "CA",
+                      "street": "12345 Main St."
+                    },
+                "student": {
+                    "externalId": "13005",
+                    "birthDate": "2001-01-01T00:00:00Z"
+                  }
+              }
+              ```
+              

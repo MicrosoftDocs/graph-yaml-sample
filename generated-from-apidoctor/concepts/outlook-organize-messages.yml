@@ -1,0 +1,21 @@
+### YamlMime:GraphOperation
+uid:graph.outlook-organize-messages
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/outlook-organize-messages.md
+summary:
+  heading: Organize Outlook messages
+  intro: |
+    Outlook lets customers organize their messages the way they like it, be it leaving all messages in the same Inbox folder, or organizing messages in a tree-like folder structure under the Inbox to fit their specific needs. You can conveniently [filter, search, or sort](xref:graph.query_parameters) messages in the user's
+    entire mailbox or in specific folders.
+  outro: |
+    ## Accessing mail folders
+    Programmatically, message folders are represented by the [mailFolder](xref:graph.mailfolder) resource, and the Inbox is one of the
+    folders at the root of the folder structure.
+    Each **mailFolder** is identified by its folder ID, and has a writable **displayName** property. Outlook creates a few other folders for customers by default. You can reference these default folders by their folder IDs, or by their well-known names. For a list of available well-known folder names, see [mailFolder resource type](xref:graph.mailfolder).
+    For a custom, non-default folder, if you know its folder path, you can access the folder by first using the `/users/{id}/mailfolders` shortcut to get to the root level and get all the top level folders:
+    GET https://graph.microsoft.com/v1.0/users/{id}/mailFolders
+
+    Then, specify the appropriate folder ID (`{folder_id}`) as you navigate each level of the folder tree:
+    GET https://graph.microsoft.com/v1.0/users/{id}/mailFolders/{folder_id}/childfolders
+
+    Repeat until you finally get to the custom folder in the tree.

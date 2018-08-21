@@ -1,0 +1,38 @@
+### YamlMime:GraphOperation
+uid:graph.associate_account
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/associate_account.md
+summary:
+  heading: Associate your Office 365 account with Azure AD to create and manage apps
+  intro: |
+    To authenticate your applications using Microsoft Azure Active Directory (Azure AD), you need to register them in Azure AD. This is where Office 365 user account and application information is stored. To manage Azure AD through the Azure portal, you need a Microsoft Azure subscription. You can use the portal in Microsoft Azure to manage users, roles, and apps. 
+    This article shows you how to associate your Office 365 account with Azure AD to create and manage apps.
+    
+permissions:
+  heading: Prerequisites
+  intro: |
+    **Office 365 for business account**
+    If you don't have an existing Office 365 for business account, you can:
+    
+    * Sign up for an [Office 365 for business plans](http://products.office.com/en-us/business/compare-office-365-for-business-plans) listed above, or
+    * [Join the Office 365 Developer Program and get a free 1 year subscription to Office 365](https://aka.ms/devprogramsignup).
+    
+    **Microsoft Azure subscription** 
+    
+    * If you can have an existing Microsoft Azure subscription, you can associate your Office 365 for business subscription with it. 
+    * Otherwise, you'll need to create a new Azure subscription and associate it with your Office 365 account in order to register and manage apps.
+    
+  outro: |
+    ## To associate an existing Azure subscription with your Office 365 account
+    
+    1. Log on to the  [Microsoft Azure portal](https://portal.azure.com) with your existing Azure credentials (for example, your Microsoft ID such as user@live.com).
+    1. Select the  **Active Directory** node, then select the **Directory** tab and, at the bottom of the screen, select **New**. 
+    1. On the **New** menu, select **Active Directory** > **Directory** > **Custom Create**.
+    1. In **Add directory**, in the **Directory** dropdown box, select  **Use existing directory**. Check **I am ready to be signed out**, and then select the check mark in the lower-right corner. 
+    1. This brings you back to the Azure portal.
+    1. Log in with your Office 365 account information. 
+    1. You will be prompted whether to use your directory with Azure. 
+    1. Select  **continue**, and then **Sign out now**.
+    1. Close the browser and reopen the  [portal](https://manage.windowsazure.com). Otherwise, you will get an access denied error.
+    1. Log on again with your existing Azure credentials (for example, your Microsoft ID such as user@live.com). Go to the  **Active Directory** node and, under **Directory**, you should now see your Office 365 account listed.
+    

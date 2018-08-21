@@ -1,0 +1,62 @@
+### YamlMime:GraphResource
+uid:graph.intune_devices_applepushnotificationcertificate
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_devices_applepushnotificationcertificate.md
+summary:
+  heading: applePushNotificationCertificate resource type
+  intro: |
+    Apple push notification certificate.
+methods:
+  heading: Methods
+  list:
+  - method: [Get applePushNotificationCertificate](xref:graph.intune_devices_applepushnotificationcertificate_get)
+    type: [applePushNotificationCertificate](xref:graph.intune_devices_applepushnotificationcertificate)
+    description: Read properties and relationships of the applePushNotificationCertificate object.
+  - method: [Update applePushNotificationCertificate](xref:graph.intune_devices_applepushnotificationcertificate_update)
+    type: [applePushNotificationCertificate](xref:graph.intune_devices_applepushnotificationcertificate)
+    description: Update the properties of a applePushNotificationCertificate object.
+  - method: [downloadApplePushNotificationCertificateSigningRequest function](xref:graph.intune_devices_applepushnotificationcertificate_downloadapplepushnotificationcertificatesigningrequest)
+    type: String
+    description: Download Apple push notification certificate signing request
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.applePushNotificationCertificate",
+      "id": "String (identifier)",
+      "appleIdentifier": "String",
+      "topicIdentifier": "String",
+      "lastModifiedDateTime": "String (timestamp)",
+      "expirationDateTime": "String (timestamp)",
+      "certificate": "String"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: id
+    type: String
+    description: Unique Identifier for the certificate
+  - property: appleIdentifier
+    type: String
+    description: Apple Id of the account used to create the MDM push certificate.
+  - property: topicIdentifier
+    type: String
+    description: Topic Id.
+  - property: lastModifiedDateTime
+    type: DateTimeOffset
+    description: Last modified date and time for Apple push notification certificate.
+  - property: expirationDateTime
+    type: DateTimeOffset
+    description: The expiration date and time for Apple push notification certificate.
+  - property: certificate
+    type: String
+    description: Not yet documented
+relationships:
+  heading: Relationships
+  intro: |
+    None

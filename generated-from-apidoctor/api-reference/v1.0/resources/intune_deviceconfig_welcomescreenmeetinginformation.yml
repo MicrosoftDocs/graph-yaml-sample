@@ -1,0 +1,17 @@
+### YamlMime:GraphOperation
+uid:graph.intune_deviceconfig_welcomescreenmeetinginformation
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_welcomescreenmeetinginformation.md
+summary:
+  heading: welcomeScreenMeetingInformation enum type
+  intro: |
+    Possible values for welcome screen meeting information.
+enum:
+  heading: Members
+  table:
+  - member: userDefined
+    description: User Defined, default value, no intent.
+  - member: showOrganizerAndTimeOnly
+    description: Show organizer and time only.
+  - member: showOrganizerAndTimeAndSubject
+    description: Show organizer, time and subject (subject is hidden for private meetings).

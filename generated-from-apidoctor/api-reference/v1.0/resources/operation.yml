@@ -1,0 +1,33 @@
+### YamlMime:GraphResource
+uid:graph.operation
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/operation.md
+summary:
+  heading: operation resource type
+  intro: |
+    The status of a long-running operation.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "createdDateTime": "String (timestamp)",
+      "lastActionDateTime": "String (timestamp)",
+      "status": "notStarted | running | completed | failed"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: createdDateTime
+    type: DateTimeOffset
+    description: The start time of the operation.
+  - property: lastActionDateTime
+    type: DateTimeOffset
+    description: The time of the last action of the operation.
+  - property: status
+    type: microsoft.graph.operationStatus
+    description: The current status of the operation: notStarted, running, completed, failed

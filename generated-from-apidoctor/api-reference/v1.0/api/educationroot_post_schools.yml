@@ -1,0 +1,123 @@
+### YamlMime:GraphOperation
+uid:graph.educationroot_post_schools
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/educationroot_post_schools.md
+summary:
+  heading: Create educationSchool
+  intro: |
+    Create a school.
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+  list:
+  - resource: Delegated (work or school account)
+    permission: Not supported.
+  - resource: Delegated (personal Microsoft account)
+    permission: Not supported.
+  - resource: Application
+    permission: EduRoster.ReadWrite.All
+httpRequest:
+  heading: HTTP request
+  sampleCode: |
+    ```http
+    POST /education/schools
+    ```
+    
+requestHeaders:
+  heading: Request headers
+  list:
+  - name: Authorization
+    value: String
+    description: 
+  - name: Content-Type
+    value: String
+    description: 
+requestBody:
+  heading: Request body
+  intro: |
+    In the request body, supply a JSON representation of an [educationSchool](xref:graph.educationschool) object.
+response:
+  heading: Response
+  intro: |
+    If successful, this method returns a `201 Created` response code and an [educationSchool](xref:graph.educationschool) object in the response body.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        request:
+            heading: Request
+            intro: |
+              The following is an example of the request.
+            sampleCode: |
+              ```http
+              POST https://graph.microsoft.com/v1.0/education/schools
+              Content-type: application/json
+              Content-length: 292
+              
+              {
+                "displayName": "Fabrikam High School",
+                "description": "Magnate school for the arts. Los Angeles School District",
+                "status": "String",
+                "externalSource": "String",
+                "principalEmail": "AmyR@fabrikam.com",
+                "principalName": "Amy Roebuck",
+                "externalPrincipalId": "14007",
+                "highestGrade": "12",
+                "lowestGrade": "9",
+                "schoolNumber": "10002",
+                "address": {
+                  "city": "Los Angeles",
+                  "countryOrRegion": "United States",
+                  "postalCode": "98055",
+                  "state": "CA",
+                  "street": "12345 Main St."
+                },
+                "externalId": "10002",
+                "fax": "+1 (253) 555-0101",
+                "phone": "+1 (253) 555-0102",
+              }
+              ```
+              
+        response:
+            heading: Response
+            intro: |
+              The following is an example of the response. 
+              
+            sampleCode: |
+              ```http
+              HTTP/1.1 201 Created
+              Content-type: application/json
+              Content-length: 292
+              
+              {
+                "id": "10002",
+                "displayName": "Fabrikam High School",
+                "description": "Magnate school for the arts. Los Angeles School District",
+                "status": "String",
+                "externalSource": "String",
+                "principalEmail": "AmyR@fabrikam.com",
+                "principalName": "Amy Roebuck",
+                "externalPrincipalId": "14007",
+                "highestGrade": "12",
+                "lowestGrade": "9",
+                "schoolNumber": "10002",
+                "address": {
+                  "city": "Los Angeles",
+                  "countryOrRegion": "United States",
+                  "postalCode": "98055",
+                  "state": "CA",
+                  "street": "12345 Main St."
+                },
+                "createdBy": {
+                  "user": {
+                    "displayName": "Susana Rocha",
+                    "id": "14012",
+                  }
+                },
+                "externalId": "10002",
+                "fax": "+1 (253) 555-0101",
+                "phone": "+1 (253) 555-0102",
+              }
+              ```
+              

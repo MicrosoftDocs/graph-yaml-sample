@@ -1,0 +1,92 @@
+### YamlMime:GraphOperation
+uid:graph.notebook_get
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/notebook_get.md
+summary:
+  heading: Get notebook
+  intro: |
+    Retrieve the properties and relationships of a [notebook](xref:graph.notebook) object.
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+  list:
+  - resource: Delegated (work or school account)
+    permission: Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All
+  - resource: Delegated (personal Microsoft account)
+    permission: Notes.Create, Notes.Read, Notes.ReadWrite
+  - resource: Application
+    permission: Notes.Read.All, Notes.ReadWrite.All
+httpRequest:
+  heading: HTTP request
+  sampleCode: |
+    ```http
+    GET /me/onenote/notebooks/{id}
+    GET /users/{id | userPrincipalName}/onenote/notebooks/{id}
+    GET /groups/{id}/onenote/notebooks/{id}
+    GET /sites/{id}/onenote/notebooks/{id}
+    ```
+    
+queryParameters:
+  heading: Optional query parameters
+  intro: |
+    This method supports the `select` and `expand` [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+    Valid `expand` values for notebooks are `sections` and `sectionGroups`.
+requestHeaders:
+  heading: Request headers
+  list:
+  - name: Authorization
+    value: String
+    description: Bearer {token}. Required.
+  - name: Accept
+    value: String
+    description: application/json
+requestBody:
+  heading: Request body
+  intro: |
+    Do not supply a request body for this method.
+response:
+  heading: Response
+  intro: |
+    If successful, this method returns a `200 OK` response code and a [notebook](xref:graph.notebook) object in the response body.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        request:
+            heading: Request
+            intro: |
+              Here is an example of the request.
+            sampleCode: |
+              ```http
+              GET https://graph.microsoft.com/v1.0/me/onenote/notebooks/{id}
+              ```
+              
+        response:
+            heading: Response
+            intro: |
+              Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.
+            sampleCode: |
+              ```http
+              HTTP/1.1 200 OK
+              Content-type: application/json
+              Content-length: 284
+              
+              {
+                "isDefault": true,
+                "userRole": {
+                },
+                "isShared": true,
+                "sectionsUrl": "sectionsUrl-value",
+                "sectionGroupsUrl": "sectionGroupsUrl-value",
+                "links": {
+                  "oneNoteClientUrl": {
+                    "href": "href-value"
+                  },
+                  "oneNoteWebUrl": {
+                    "href": "href-value"
+                  }
+                }
+              }
+              ```
+              

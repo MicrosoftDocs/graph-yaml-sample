@@ -1,0 +1,68 @@
+### YamlMime:GraphResource
+uid:graph.intune_mam_managedapppolicydeploymentsummary
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_mam_managedapppolicydeploymentsummary.md
+summary:
+  heading: managedAppPolicyDeploymentSummary resource type
+  intro: |
+    The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
+methods:
+  heading: Methods
+  list:
+  - method: [Get managedAppPolicyDeploymentSummary](xref:graph.intune_mam_managedapppolicydeploymentsummary_get)
+    type: [managedAppPolicyDeploymentSummary](xref:graph.intune_mam_managedapppolicydeploymentsummary)
+    description: Read properties and relationships of the managedAppPolicyDeploymentSummary object.
+  - method: [Update managedAppPolicyDeploymentSummary](xref:graph.intune_mam_managedapppolicydeploymentsummary_update)
+    type: [managedAppPolicyDeploymentSummary](xref:graph.intune_mam_managedapppolicydeploymentsummary)
+    description: Update the properties of a managedAppPolicyDeploymentSummary object.
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.managedAppPolicyDeploymentSummary",
+      "displayName": "String",
+      "configurationDeployedUserCount": 1024,
+      "lastRefreshTime": "String (timestamp)",
+      "configurationDeploymentSummaryPerApp": [
+        {
+          "@odata.type": "microsoft.graph.managedAppPolicyDeploymentSummaryPerApp",
+          "mobileAppIdentifier": {
+            "@odata.type": "microsoft.graph.androidMobileAppIdentifier",
+            "packageId": "String"
+          },
+          "configurationAppliedUserCount": 1024
+        }
+      ],
+      "id": "String (identifier)",
+      "version": "String"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: displayName
+    type: String
+    description: Not yet documented
+  - property: configurationDeployedUserCount
+    type: Int32
+    description: Not yet documented
+  - property: lastRefreshTime
+    type: DateTimeOffset
+    description: Not yet documented
+  - property: configurationDeploymentSummaryPerApp
+    type: Collection(microsoft.graph.managedAppPolicyDeploymentSummaryPerApp)
+    description: Not yet documented
+  - property: id
+    type: String
+    description: Key of the entity.
+  - property: version
+    type: String
+    description: Version of the entity.
+relationships:
+  heading: Relationships
+  intro: |
+    None

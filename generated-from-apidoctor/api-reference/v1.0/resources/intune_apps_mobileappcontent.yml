@@ -1,0 +1,50 @@
+### YamlMime:GraphResource
+uid:graph.intune_apps_mobileappcontent
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_apps_mobileappcontent.md
+summary:
+  heading: mobileAppContent resource type
+  intro: |
+    Contains content properties for a specific app version. Each mobileAppContent can have multiple mobileAppContentFile.
+methods:
+  heading: Methods
+  list:
+  - method: [List mobileAppContents](xref:graph.intune_apps_mobileappcontent_list)
+    type: [mobileAppContent](xref:graph.intune_apps_mobileappcontent) collection
+    description: List properties and relationships of the mobileAppContent objects.
+  - method: [Get mobileAppContent](xref:graph.intune_apps_mobileappcontent_get)
+    type: [mobileAppContent](xref:graph.intune_apps_mobileappcontent)
+    description: Read properties and relationships of the mobileAppContent object.
+  - method: [Create mobileAppContent](xref:graph.intune_apps_mobileappcontent_create)
+    type: [mobileAppContent](xref:graph.intune_apps_mobileappcontent)
+    description: Create a new mobileAppContent object.
+  - method: [Delete mobileAppContent](xref:graph.intune_apps_mobileappcontent_delete)
+    type: None
+    description: Deletes a mobileAppContent.
+  - method: [Update mobileAppContent](xref:graph.intune_apps_mobileappcontent_update)
+    type: [mobileAppContent](xref:graph.intune_apps_mobileappcontent)
+    description: Update the properties of a mobileAppContent object.
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.mobileAppContent",
+      "id": "String (identifier)"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: id
+    type: String
+    description: The app content version.
+relationships:
+  heading: Relationships
+  list:
+  - relationship: files
+    type: Collection(microsoft.graph.mobileAppContentFile)
+    description: The list of files for this app content version.

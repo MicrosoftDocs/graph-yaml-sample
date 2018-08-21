@@ -1,0 +1,36 @@
+### YamlMime:GraphResource
+uid:graph.intune_mam_windowsinformationprotectionresourcecollection
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_mam_windowsinformationprotectionresourcecollection.md
+summary:
+  heading: windowsInformationProtectionResourceCollection resource type
+  intro: |
+    Windows Information Protection Resource Collection
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.windowsInformationProtectionResourceCollection",
+      "displayName": "String",
+      "resources": [
+        "String"
+      ]
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: displayName
+    type: String
+    description: Display name
+  - property: resources
+    type: Collection(String)
+    description: Collection of resources
+relationships:
+  heading: Relationships
+  intro: |
+    None

@@ -1,0 +1,33 @@
+### YamlMime:GraphResource
+uid:graph.extension
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/extension.md
+summary:
+  heading: extension resource type
+  intro: |
+    An abstract type to support the OData v4 open type [openTypeExtension](xref:graph.openTypeExtension).
+methods:
+  heading: Methods
+  intro: |
+    See the methods of the derived type [openTypeExtension](xref:graph.openTypeExtension) for actually supported methods.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource
+  sampleCode: |
+    ```json
+    {
+      "id": "string (identifier)"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: id
+    type: String
+    description: Read-only.
+relationships:
+  heading: Relationships
+  intro: |
+    None

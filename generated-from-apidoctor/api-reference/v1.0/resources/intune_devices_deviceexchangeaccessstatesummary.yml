@@ -1,0 +1,46 @@
+### YamlMime:GraphResource
+uid:graph.intune_devices_deviceexchangeaccessstatesummary
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_devices_deviceexchangeaccessstatesummary.md
+summary:
+  heading: deviceExchangeAccessStateSummary resource type
+  intro: |
+    Device Exchange Access State summary
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.deviceExchangeAccessStateSummary",
+      "allowedDeviceCount": 1024,
+      "blockedDeviceCount": 1024,
+      "quarantinedDeviceCount": 1024,
+      "unknownDeviceCount": 1024,
+      "unavailableDeviceCount": 1024
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: allowedDeviceCount
+    type: Int32
+    description: Total count of devices with Exchange Access State: Allowed.
+  - property: blockedDeviceCount
+    type: Int32
+    description: Total count of devices with Exchange Access State: Blocked.
+  - property: quarantinedDeviceCount
+    type: Int32
+    description: Total count of devices with Exchange Access State: Quarantined.
+  - property: unknownDeviceCount
+    type: Int32
+    description: Total count of devices with Exchange Access State: Unknown.
+  - property: unavailableDeviceCount
+    type: Int32
+    description: Total count of devices for which no Exchange Access State could be found.
+relationships:
+  heading: Relationships
+  intro: |
+    None

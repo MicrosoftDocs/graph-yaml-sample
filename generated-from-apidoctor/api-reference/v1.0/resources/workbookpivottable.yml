@@ -1,0 +1,47 @@
+### YamlMime:GraphResource
+uid:graph.workbookpivottable
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.workbookpivottable
+summary:
+  heading: pivotTable resource type
+  intro: |
+    Represents an Excel PivotTable.
+methods:
+  heading: Methods
+  list:
+  - method: [Get workbookPivotTable](xref:graph.workbookpivottable_get)
+    type: [workbookPivotTable](xref:graph.workbookpivottable)
+    description: Read properties and relationships of workbookPivotTable object.
+  - method: [Refresh](xref:graph.workbookpivottable_refresh)
+    type: None
+    description: Refreshes the PivotTable.
+  - method: [Refreshall](xref:graph.workbookpivottable_refreshall)
+    type: None
+    description: Refresh all tables within given worksheet. Note that this action is available only on the pivot table collection.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "id": "String (identifier)",
+      "name": "String"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: id
+    type: String
+    description: Id of the PivotTable.	Read-only.
+  - property: name
+    type: String
+    description: Name of the PivotTable.
+relationships:
+  heading: Relationships
+  list:
+  - relationship: worksheet
+    type: microsoft.graph.workbookWorksheet
+    description: The worksheet containing the current PivotTable. Read-only.

@@ -1,0 +1,38 @@
+### YamlMime:GraphResource
+uid:graph.locationconstraintitem
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/locationconstraintitem.md
+summary:
+  heading: locationConstraintItem resource type
+  intro: |
+    The conditions stated by a client for the location of a meeting.
+    Derived from [location](xref:graph.location).
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource
+  sampleCode: |
+    ```json
+    {
+      "resolveAvailability": true,
+      "address": {"@odata.type": "microsoft.graph.physicalAddress"},
+      "displayName": "string",
+      "locationEmailAddress": "string"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: address
+    type: microsoft.graph.physicalAddress
+    description: The street address of the location.
+  - property: displayName
+    type: String
+    description: The name associated with the location.
+  - property: locationEmailAddress
+    type: String
+    description: Optional email address of the location.
+  - property: resolveAvailability
+    type: Boolean
+    description: If set to true and the specified resource is busy, findMeetingTimes looks for another resource that is free. If set to false and the specified resource is busy, findMeetingTimes returns the resource best ranked in the user's cache without checking if it's free. Default is true.

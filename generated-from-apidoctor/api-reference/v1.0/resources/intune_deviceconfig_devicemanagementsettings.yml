@@ -1,0 +1,38 @@
+### YamlMime:GraphResource
+uid:graph.intune_deviceconfig_devicemanagementsettings
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_devicemanagementsettings.md
+summary:
+  heading: deviceManagementSettings resource type
+  intro: |
+    Not yet documented
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.deviceManagementSettings",
+      "deviceComplianceCheckinThresholdDays": 1024,
+      "isScheduledActionEnabled": true,
+      "secureByDefault": true
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: deviceComplianceCheckinThresholdDays
+    type: Int32
+    description: The number of days a device is allowed to go without checking in to remain compliant. Valid values 0 to 120
+  - property: isScheduledActionEnabled
+    type: Boolean
+    description: Is feature enabled or not for scheduled action for rule.
+  - property: secureByDefault
+    type: Boolean
+    description: Device should be noncompliant when there is no compliance policy targeted when this is true
+relationships:
+  heading: Relationships
+  intro: |
+    None

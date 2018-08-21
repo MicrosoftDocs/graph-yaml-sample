@@ -1,0 +1,70 @@
+### YamlMime:GraphOperation
+uid:graph.plannerprogresstaskboardtaskformat_get
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/plannerprogresstaskboardtaskformat_get.md
+summary:
+  heading: Get plannerProgressTaskBoardTaskFormat
+  intro: |
+    Retrieve the properties and relationships of **plannerProgressTaskBoardTaskFormat** object.
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+  list:
+  - resource: Delegated (work or school account)
+    permission: Group.Read.All, Group.ReadWrite.All
+  - resource: Delegated (personal Microsoft account)
+    permission: Not supported.
+  - resource: Application
+    permission: Not supported.
+httpRequest:
+  heading: HTTP request
+  sampleCode: |
+    ```http
+    GET /planner/tasks/{id}/progressTaskBoardFormat
+    ```
+    
+requestHeaders:
+  heading: Request headers
+  list:
+  - name: Authorization
+    value: 
+    description: Bearer {token}. Required.
+requestBody:
+  heading: Request body
+  intro: |
+    Do not supply a request body for this method.
+response:
+  heading: Response
+  intro: |
+    If successful, this method returns a `200 OK` response code and [plannerProgressTaskBoardTaskFormat](xref:graph.plannerprogresstaskboardtaskformat) object in the response body.
+    This method can return any of the [HTTP status codes](xref:graph.errors). The most common errors that apps should handle for this method are the 403 and 404 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner_overview.md#common-planner-error-conditions).
+examples:
+  - items:
+    - Example:
+        heading: Example
+        request:
+            heading: Request
+            intro: |
+              Here is an example of the request.
+            sampleCode: |
+              ```http
+              GET https://graph.microsoft.com/v1.0/planner/tasks/{task-id}/progressTaskBoardFormat
+              ```
+              
+        response:
+            heading: Response
+            intro: |
+              Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+            sampleCode: |
+              ```http
+              HTTP/1.1 200 OK
+              Content-type: application/json
+              Content-length: 76
+              
+              {
+                "id": "01gzSlKkIUSUl6DF_EilrmQAKDhh",
+                "orderHint": "85752723360752+"
+              }
+              ```
+              

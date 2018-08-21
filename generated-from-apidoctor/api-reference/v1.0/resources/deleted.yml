@@ -1,0 +1,36 @@
+### YamlMime:GraphResource
+uid:graph.deleted
+metadata:
+  title: Deleted
+  author: rgregg
+  ms.author: rgregg
+  ms.date: 09/10/2017
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/deleted.md
+summary:
+  heading: Deleted facet
+  intro: |
+    The **Deleted** resource indicates that the item has been deleted.
+    In this version of the API, the presence (non-null) of the resource value indicates that the file was deleted.
+    A null (or missing) value indicates that the file is not deleted.
+    See [view changes for an item](xref:graph.driveitem_delta) for more information on tracking changes and finding deleted items.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "state": "string"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: state
+    type: String
+    description: Represents the state of the deleted item.
+remarks:
+  heading: Remarks
+  intro: |
+    For more information about the facets on a DriveItem, see [DriveItem](xref:graph.driveitem).

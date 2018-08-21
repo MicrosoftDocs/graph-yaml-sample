@@ -1,0 +1,218 @@
+### YamlMime:GraphResource
+uid:graph.intune_deviceconfig_windows81generalconfiguration
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_windows81generalconfiguration.md
+summary:
+  heading: windows81GeneralConfiguration resource type
+  intro: |
+    This topic provides descriptions of the declared methods, properties and relationships exposed by the windows81GeneralConfiguration resource.
+    Inherits from [deviceConfiguration](xref:graph.intune_deviceconfig_deviceconfiguration)
+methods:
+  heading: Methods
+  list:
+  - method: [List windows81GeneralConfigurations](xref:graph.intune_deviceconfig_windows81generalconfiguration_list)
+    type: [windows81GeneralConfiguration](xref:graph.intune_deviceconfig_windows81generalconfiguration) collection
+    description: List properties and relationships of the windows81GeneralConfiguration objects.
+  - method: [Get windows81GeneralConfiguration](xref:graph.intune_deviceconfig_windows81generalconfiguration_get)
+    type: [windows81GeneralConfiguration](xref:graph.intune_deviceconfig_windows81generalconfiguration)
+    description: Read properties and relationships of the windows81GeneralConfiguration object.
+  - method: [Create windows81GeneralConfiguration](xref:graph.intune_deviceconfig_windows81generalconfiguration_create)
+    type: [windows81GeneralConfiguration](xref:graph.intune_deviceconfig_windows81generalconfiguration)
+    description: Create a new windows81GeneralConfiguration object.
+  - method: [Delete windows81GeneralConfiguration](xref:graph.intune_deviceconfig_windows81generalconfiguration_delete)
+    type: None
+    description: Deletes a windows81GeneralConfiguration.
+  - method: [Update windows81GeneralConfiguration](xref:graph.intune_deviceconfig_windows81generalconfiguration_update)
+    type: [windows81GeneralConfiguration](xref:graph.intune_deviceconfig_windows81generalconfiguration)
+    description: Update the properties of a windows81GeneralConfiguration object.
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.windows81GeneralConfiguration",
+      "id": "String (identifier)",
+      "lastModifiedDateTime": "String (timestamp)",
+      "createdDateTime": "String (timestamp)",
+      "description": "String",
+      "displayName": "String",
+      "version": 1024,
+      "accountsBlockAddingNonMicrosoftAccountEmail": true,
+      "applyOnlyToWindows81": true,
+      "browserBlockAutofill": true,
+      "browserBlockAutomaticDetectionOfIntranetSites": true,
+      "browserBlockEnterpriseModeAccess": true,
+      "browserBlockJavaScript": true,
+      "browserBlockPlugins": true,
+      "browserBlockPopups": true,
+      "browserBlockSendingDoNotTrackHeader": true,
+      "browserBlockSingleWordEntryOnIntranetSites": true,
+      "browserRequireSmartScreen": true,
+      "browserEnterpriseModeSiteListLocation": "String",
+      "browserInternetSecurityLevel": "String",
+      "browserIntranetSecurityLevel": "String",
+      "browserLoggingReportLocation": "String",
+      "browserRequireHighSecurityForRestrictedSites": true,
+      "browserRequireFirewall": true,
+      "browserRequireFraudWarning": true,
+      "browserTrustedSitesSecurityLevel": "String",
+      "cellularBlockDataRoaming": true,
+      "diagnosticsBlockDataSubmission": true,
+      "passwordBlockPicturePasswordAndPin": true,
+      "passwordExpirationDays": 1024,
+      "passwordMinimumLength": 1024,
+      "passwordMinutesOfInactivityBeforeScreenTimeout": 1024,
+      "passwordMinimumCharacterSetCount": 1024,
+      "passwordPreviousPasswordBlockCount": 1024,
+      "passwordRequiredType": "String",
+      "passwordSignInFailureCountBeforeFactoryReset": 1024,
+      "storageRequireDeviceEncryption": true,
+      "updatesRequireAutomaticUpdates": true,
+      "userAccountControlSettings": "String",
+      "workFoldersUrl": "String"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: id
+    type: String
+    description: Key of the entity. Inherited from deviceConfiguration
+  - property: lastModifiedDateTime
+    type: DateTimeOffset
+    description: DateTime the object was last modified. Inherited from deviceConfiguration
+  - property: createdDateTime
+    type: DateTimeOffset
+    description: DateTime the object was created. Inherited from deviceConfiguration
+  - property: description
+    type: String
+    description: Admin provided description of the Device Configuration. Inherited from deviceConfiguration
+  - property: displayName
+    type: String
+    description: Admin provided name of the device configuration. Inherited from deviceConfiguration
+  - property: version
+    type: Int32
+    description: Version of the device configuration. Inherited from deviceConfiguration
+  - property: accountsBlockAddingNonMicrosoftAccountEmail
+    type: Boolean
+    description: Indicates whether or not to Block the user from adding email accounts to the device that are not associated with a Microsoft account.
+  - property: applyOnlyToWindows81
+    type: Boolean
+    description: Value indicating whether this policy only applies to Windows 8.1. This property is read-only.
+  - property: browserBlockAutofill
+    type: Boolean
+    description: Indicates whether or not to block auto fill.
+  - property: browserBlockAutomaticDetectionOfIntranetSites
+    type: Boolean
+    description: Indicates whether or not to block automatic detection of Intranet sites.
+  - property: browserBlockEnterpriseModeAccess
+    type: Boolean
+    description: Indicates whether or not to block enterprise mode access.
+  - property: browserBlockJavaScript
+    type: Boolean
+    description: Indicates whether or not to Block the user from using JavaScript.
+  - property: browserBlockPlugins
+    type: Boolean
+    description: Indicates whether or not to block plug-ins.
+  - property: browserBlockPopups
+    type: Boolean
+    description: Indicates whether or not to block popups.
+  - property: browserBlockSendingDoNotTrackHeader
+    type: Boolean
+    description: Indicates whether or not to Block the user from sending the do not track header.
+  - property: browserBlockSingleWordEntryOnIntranetSites
+    type: Boolean
+    description: Indicates whether or not to block a single word entry on Intranet sites.
+  - property: browserRequireSmartScreen
+    type: Boolean
+    description: Indicates whether or not to require the user to use the smart screen filter.
+  - property: browserEnterpriseModeSiteListLocation
+    type: String
+    description: The enterprise mode site list location. Could be a local file, local network or http location.
+  - property: browserInternetSecurityLevel
+    type: microsoft.graph.internetSiteSecurityLevel
+    description: The internet security level. The possible values are: userDefined, medium, mediumHigh, high.
+  - property: browserIntranetSecurityLevel
+    type: microsoft.graph.siteSecurityLevel
+    description: The Intranet security level. The possible values are: userDefined, low, mediumLow, medium, mediumHigh, high.
+  - property: browserLoggingReportLocation
+    type: String
+    description: The logging report location.
+  - property: browserRequireHighSecurityForRestrictedSites
+    type: Boolean
+    description: Indicates whether or not to require high security for restricted sites.
+  - property: browserRequireFirewall
+    type: Boolean
+    description: Indicates whether or not to require a firewall.
+  - property: browserRequireFraudWarning
+    type: Boolean
+    description: Indicates whether or not to require fraud warning.
+  - property: browserTrustedSitesSecurityLevel
+    type: microsoft.graph.siteSecurityLevel
+    description: The trusted sites security level. The possible values are: userDefined, low, mediumLow, medium, mediumHigh, high.
+  - property: cellularBlockDataRoaming
+    type: Boolean
+    description: Indicates whether or not to block data roaming.
+  - property: diagnosticsBlockDataSubmission
+    type: Boolean
+    description: Indicates whether or not to block diagnostic data submission.
+  - property: passwordBlockPicturePasswordAndPin
+    type: Boolean
+    description: Indicates whether or not to Block the user from using a pictures password and pin.
+  - property: passwordExpirationDays
+    type: Int32
+    description: Password expiration in days.
+  - property: passwordMinimumLength
+    type: Int32
+    description: The minimum password length.
+  - property: passwordMinutesOfInactivityBeforeScreenTimeout
+    type: Int32
+    description: The minutes of inactivity before the screen times out.
+  - property: passwordMinimumCharacterSetCount
+    type: Int32
+    description: The number of character sets required in the password.
+  - property: passwordPreviousPasswordBlockCount
+    type: Int32
+    description: The number of previous passwords to prevent re-use of. Valid values 0 to 24
+  - property: passwordRequiredType
+    type: microsoft.graph.requiredPasswordType
+    description: The required password type. The possible values are: deviceDefault, alphanumeric, numeric.
+  - property: passwordSignInFailureCountBeforeFactoryReset
+    type: Int32
+    description: The number of sign in failures before factory reset.
+  - property: storageRequireDeviceEncryption
+    type: Boolean
+    description: Indicates whether or not to require encryption on a mobile device.
+  - property: updatesRequireAutomaticUpdates
+    type: Boolean
+    description: Indicates whether or not to require automatic updates.
+  - property: userAccountControlSettings
+    type: microsoft.graph.windowsUserAccountControlSettings
+    description: The user account control settings. The possible values are: userDefined, alwaysNotify, notifyOnAppChanges, notifyOnAppChangesWithoutDimming, neverNotify.
+  - property: workFoldersUrl
+    type: String
+    description: The work folders url.
+relationships:
+  heading: Relationships
+  list:
+  - relationship: assignments
+    type: Collection(microsoft.graph.deviceConfigurationAssignment)
+    description: The list of assignments for the device configuration profile. Inherited from deviceConfiguration
+  - relationship: deviceStatuses
+    type: Collection(microsoft.graph.deviceConfigurationDeviceStatus)
+    description: Device configuration installation status by device. Inherited from deviceConfiguration
+  - relationship: userStatuses
+    type: Collection(microsoft.graph.deviceConfigurationUserStatus)
+    description: Device configuration installation status by user. Inherited from deviceConfiguration
+  - relationship: deviceStatusOverview
+    type: microsoft.graph.deviceConfigurationDeviceOverview
+    description: Device Configuration devices status overview Inherited from deviceConfiguration
+  - relationship: userStatusOverview
+    type: microsoft.graph.deviceConfigurationUserOverview
+    description: Device Configuration users status overview Inherited from deviceConfiguration
+  - relationship: deviceSettingStateSummaries
+    type: Collection(microsoft.graph.settingStateDeviceSummary)
+    description: Device Configuration Setting State Device Summary Inherited from deviceConfiguration

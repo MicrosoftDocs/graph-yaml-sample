@@ -1,0 +1,106 @@
+### YamlMime:GraphResource
+uid:graph.intune_deviceconfig_windows10secureassessmentconfiguration
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_windows10secureassessmentconfiguration.md
+summary:
+  heading: windows10SecureAssessmentConfiguration resource type
+  intro: |
+    This topic provides descriptions of the declared methods, properties and relationships exposed by the secureAssessment resource.
+    Inherits from [deviceConfiguration](xref:graph.intune_deviceconfig_deviceconfiguration)
+methods:
+  heading: Methods
+  list:
+  - method: [List windows10SecureAssessmentConfigurations](xref:graph.intune_deviceconfig_windows10secureassessmentconfiguration_list)
+    type: [windows10SecureAssessmentConfiguration](xref:graph.intune_deviceconfig_windows10secureassessmentconfiguration) collection
+    description: List properties and relationships of the windows10SecureAssessmentConfiguration objects.
+  - method: [Get windows10SecureAssessmentConfiguration](xref:graph.intune_deviceconfig_windows10secureassessmentconfiguration_get)
+    type: [windows10SecureAssessmentConfiguration](xref:graph.intune_deviceconfig_windows10secureassessmentconfiguration)
+    description: Read properties and relationships of the windows10SecureAssessmentConfiguration object.
+  - method: [Create windows10SecureAssessmentConfiguration](xref:graph.intune_deviceconfig_windows10secureassessmentconfiguration_create)
+    type: [windows10SecureAssessmentConfiguration](xref:graph.intune_deviceconfig_windows10secureassessmentconfiguration)
+    description: Create a new windows10SecureAssessmentConfiguration object.
+  - method: [Delete windows10SecureAssessmentConfiguration](xref:graph.intune_deviceconfig_windows10secureassessmentconfiguration_delete)
+    type: None
+    description: Deletes a windows10SecureAssessmentConfiguration.
+  - method: [Update windows10SecureAssessmentConfiguration](xref:graph.intune_deviceconfig_windows10secureassessmentconfiguration_update)
+    type: [windows10SecureAssessmentConfiguration](xref:graph.intune_deviceconfig_windows10secureassessmentconfiguration)
+    description: Update the properties of a windows10SecureAssessmentConfiguration object.
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.windows10SecureAssessmentConfiguration",
+      "id": "String (identifier)",
+      "lastModifiedDateTime": "String (timestamp)",
+      "createdDateTime": "String (timestamp)",
+      "description": "String",
+      "displayName": "String",
+      "version": 1024,
+      "launchUri": "String",
+      "configurationAccount": "String",
+      "allowPrinting": true,
+      "allowScreenCapture": true,
+      "allowTextSuggestion": true
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: id
+    type: String
+    description: Key of the entity. Inherited from deviceConfiguration
+  - property: lastModifiedDateTime
+    type: DateTimeOffset
+    description: DateTime the object was last modified. Inherited from deviceConfiguration
+  - property: createdDateTime
+    type: DateTimeOffset
+    description: DateTime the object was created. Inherited from deviceConfiguration
+  - property: description
+    type: String
+    description: Admin provided description of the Device Configuration. Inherited from deviceConfiguration
+  - property: displayName
+    type: String
+    description: Admin provided name of the device configuration. Inherited from deviceConfiguration
+  - property: version
+    type: Int32
+    description: Version of the device configuration. Inherited from deviceConfiguration
+  - property: launchUri
+    type: String
+    description: Url link to an assessment that's automatically loaded when the secure assessment browser is launched. It has to be a valid Url (http[s]://msdn.microsoft.com/).
+  - property: configurationAccount
+    type: String
+    description: The account used to configure the Windows device for taking the test. The user can be a domain account (domain\user), an AAD account (username@tenant.com) or a local account (username).
+  - property: allowPrinting
+    type: Boolean
+    description: Indicates whether or not to allow the app from printing during the test.
+  - property: allowScreenCapture
+    type: Boolean
+    description: Indicates whether or not to allow screen capture capability during a test.
+  - property: allowTextSuggestion
+    type: Boolean
+    description: Indicates whether or not to allow text suggestions during the test.
+relationships:
+  heading: Relationships
+  list:
+  - relationship: assignments
+    type: Collection(microsoft.graph.deviceConfigurationAssignment)
+    description: The list of assignments for the device configuration profile. Inherited from deviceConfiguration
+  - relationship: deviceStatuses
+    type: Collection(microsoft.graph.deviceConfigurationDeviceStatus)
+    description: Device configuration installation status by device. Inherited from deviceConfiguration
+  - relationship: userStatuses
+    type: Collection(microsoft.graph.deviceConfigurationUserStatus)
+    description: Device configuration installation status by user. Inherited from deviceConfiguration
+  - relationship: deviceStatusOverview
+    type: microsoft.graph.deviceConfigurationDeviceOverview
+    description: Device Configuration devices status overview Inherited from deviceConfiguration
+  - relationship: userStatusOverview
+    type: microsoft.graph.deviceConfigurationUserOverview
+    description: Device Configuration users status overview Inherited from deviceConfiguration
+  - relationship: deviceSettingStateSummaries
+    type: Collection(microsoft.graph.settingStateDeviceSummary)
+    description: Device Configuration Setting State Device Summary Inherited from deviceConfiguration

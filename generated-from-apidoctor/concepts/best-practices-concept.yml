@@ -1,0 +1,12 @@
+### YamlMime:GraphOperation
+uid:graph.best-practices-concept
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/best-practices-concept.md
+summary:
+  heading: Best practices for working with Microsoft Graph
+  intro: |
+    This article describes best practices that you can apply to help your applications get the most out of Microsoft Graph - whether that involves learning about Microsoft Graph, improving app performance, or making your application more reliable for end users.
+  outro: |
+    ## Use Graph Explorer to get to know the API
+    The easiest way to start exploring the data available through Microsoft Graph is to use [Graph Explorer](https://aka.ms/ge). Graph Explorer lets you craft REST requests (with full CRUD support), adapt the HTTP request headers, and see the data responses. To help you get started, Graph Explorer also provides a set of sample queries.
+    Experiment with new APIs before you integrate them into your application.

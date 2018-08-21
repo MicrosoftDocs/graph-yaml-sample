@@ -1,0 +1,104 @@
+### YamlMime:GraphOperation
+uid:graph.calendar_update
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/calendar_update.md
+summary:
+  heading: Update calendar
+  intro: |
+    Update the properties of of a [calendar](xref:graph.calendar) object. The calendar can be one for a [user](xref:graph.user), 
+    or the default calendar of an Office 365 [group](xref:graph.group).
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+  list:
+  - resource: Delegated (work or school account)
+    permission: Calendars.ReadWrite
+  - resource: Delegated (personal Microsoft account)
+    permission: Calendars.ReadWrite
+  - resource: Application
+    permission: Calendars.ReadWrite
+httpRequest:
+  heading: HTTP request
+  intro: |
+    A user's or group's default [calendar](xref:graph.calendar).
+    PATCH /me/calendar
+    PATCH /users/{id | userPrincipalName}/calendar
+    PATCH /groups/{id}/calendar
+
+    A user's [calendar](xref:graph.calendar) in the default [calendarGroup](xref:graph.calendargroup).
+    PATCH /me/calendars/{id}
+    PATCH /users/{id | userPrincipalName}/calendars/{id}
+    
+    PATCH /me/calendarGroup/calendars/{id}
+    PATCH /users/{id | userPrincipalName}/calendarGroup/calendars/{id}
+
+    A user's [calendar](xref:graph.calendar) in a specific [calendarGroup](xref:graph.calendargroup).
+    PATCH /me/calendarGroups/{id}/calendars/{id}
+    PATCH /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
+
+requestHeaders:
+  heading: Request headers
+  list:
+  - name: Authorization
+    value: String
+    description: 
+  - name: Content-Type
+    value: String
+    description: 
+requestBody:
+  heading: Request body
+  intro: |
+    In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
+    |Property|Type|Description
+    |:-|:-|:-|
+    |color|String|Specifies the color theme to distinguish the calendar from other calendars in a UI. The property values are: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1
+    |name|String|The calendar name.
+response:
+  heading: Response
+  intro: |
+    If successful, this method returns a `200 OK` response code and updated [calendar](xref:graph.calendar) object in the response body.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        request:
+            heading: Request
+            intro: |
+              Here is an example of the request.
+            sampleCode: |
+              ```http
+              PATCH https://graph.microsoft.com/v1.0/me/calendar
+              Content-type: application/json
+              
+              {
+                "name": "Social events"
+              }
+              ```
+              
+        response:
+            heading: Response
+            intro: |
+              Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+            sampleCode: |
+              ```http
+              HTTP/1.1 200 OK
+              Content-type: application/json
+              
+              {
+                  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#me/calendars/$entity",
+                  "@odata.id":"https://graph.microsoft.com/v1.0/users('266efe5a-0fd7-4edd-877b-b2d1e561f193@ae01a323-3934-4475-a32d-af1274312bb0')/calendars('AAMkADJmMVAAA=')",
+                  "id":"AAMkADJmMVAAA=",
+                  "name":"Social events",
+                  "color":"auto",
+                  "changeKey":"DxYSthXJXEWwAQSYQnXvIgAAIxGttg==",
+                  "canShare":true,
+                  "canViewPrivateItems":true,
+                  "canEdit":true,
+                  "owner":{
+                      "name":"Samantha Booth",
+                      "address":"samanthab@adatum.onmicrosoft.com"
+                  }
+              }
+              ```
+              

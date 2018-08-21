@@ -1,0 +1,67 @@
+### YamlMime:GraphResource
+uid:graph.intune_deviceconfig_deviceconfigurationdevicestatesummary
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_deviceconfigurationdevicestatesummary.md
+summary:
+  heading: deviceConfigurationDeviceStateSummary resource type
+  intro: |
+    Not yet documented
+methods:
+  heading: Methods
+  list:
+  - method: [Get deviceConfigurationDeviceStateSummary](xref:graph.intune_deviceconfig_deviceconfigurationdevicestatesummary_get)
+    type: [deviceConfigurationDeviceStateSummary](xref:graph.intune_deviceconfig_deviceconfigurationdevicestatesummary)
+    description: Read properties and relationships of the deviceConfigurationDeviceStateSummary object.
+  - method: [Update deviceConfigurationDeviceStateSummary](xref:graph.intune_deviceconfig_deviceconfigurationdevicestatesummary_update)
+    type: [deviceConfigurationDeviceStateSummary](xref:graph.intune_deviceconfig_deviceconfigurationdevicestatesummary)
+    description: Update the properties of a deviceConfigurationDeviceStateSummary object.
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.deviceConfigurationDeviceStateSummary",
+      "id": "String (identifier)",
+      "unknownDeviceCount": 1024,
+      "notApplicableDeviceCount": 1024,
+      "compliantDeviceCount": 1024,
+      "remediatedDeviceCount": 1024,
+      "nonCompliantDeviceCount": 1024,
+      "errorDeviceCount": 1024,
+      "conflictDeviceCount": 1024
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: id
+    type: String
+    description: Key of the entity.
+  - property: unknownDeviceCount
+    type: Int32
+    description: Number of unknown devices
+  - property: notApplicableDeviceCount
+    type: Int32
+    description: Number of not applicable devices
+  - property: compliantDeviceCount
+    type: Int32
+    description: Number of compliant devices
+  - property: remediatedDeviceCount
+    type: Int32
+    description: Number of remediated devices
+  - property: nonCompliantDeviceCount
+    type: Int32
+    description: Number of NonCompliant devices
+  - property: errorDeviceCount
+    type: Int32
+    description: Number of error devices
+  - property: conflictDeviceCount
+    type: Int32
+    description: Number of conflict devices
+relationships:
+  heading: Relationships
+  intro: |
+    None

@@ -1,0 +1,18 @@
+### YamlMime:GraphOperation
+uid:graph.office_365_groups_activity_reports
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/office_365_groups_activity_reports.md
+summary:
+  heading: Office 365 Groups activity reports
+  intro: |
+    You can use the Groups activity reports to gain insights into the activity of Office 365 Groups in your organization and see how many Office 365 Groups are being created and used.
+    
+  outro: |
+    ## Reports
+    |Function|Return Type|Description
+    | :--------------------------------------- -| :-------------- -|  ---------------------------------------- -|
+    |[Get group detail](xref:graph.reportroot_getoffice365groupsactivitydetail)|Stream|Get details about Office 365 Groups activity by group.
+    |[Get activity counts](xref:graph.reportroot_getoffice365groupsactivitycounts)|Stream|Get the number of group activities across group workloads.
+    |[Get group counts](xref:graph.reportroot_getoffice365groupsactivitygroupcounts)|Stream|Get the daily total number of groups and how many of them were active based on email conversations, Yammer posts, and SharePoint file activities.
+    |[Get storage](xref:graph.reportroot_getoffice365groupsactivitystorage)|Stream|Get the total storage used across all group mailboxes and group sites.
+    |[Get file counts](xref:graph.reportroot_getoffice365groupsactivityfilecounts)|Stream|Get the total number of files and how many of them were active across all group sites associated with an Office 365 Group.

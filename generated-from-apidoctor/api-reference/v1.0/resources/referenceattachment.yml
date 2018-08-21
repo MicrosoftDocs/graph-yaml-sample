@@ -1,0 +1,59 @@
+### YamlMime:GraphResource
+uid:graph.referenceattachment
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.referenceattachment
+summary:
+  heading: referenceAttachment resource type
+  intro: |
+    A link to a file (such as a text file or Word document) on a OneDrive for Business cloud drive or other supported storage locations, attached to an event, message, or post.
+    Derived from [attachment](xref:graph.attachment).
+methods:
+  heading: Methods
+  list:
+  - method: [Get](xref:graph.attachment_get)
+    type: [referenceAttachment](xref:graph.referenceattachment)
+    description: Read properties and relationships of referenceAttachment object.
+  - method: [Delete](xref:graph.attachment_delete)
+    type: None
+    description: Delete referenceAttachment object.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource
+  sampleCode: |
+    ```json
+    {
+      "contentType": "string",
+      "id": "string (identifier)",
+      "isInline": true,
+      "lastModifiedDateTime": "String (timestamp)",
+      "name": "string",
+      "size": 1024
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: contentType
+    type: String
+    description: The content type of the attachment.
+  - property: id
+    type: String
+    description: The attachment ID.  Read-only.
+  - property: isInline
+    type: Boolean
+    description: Set to true if the attachment appears inline in the body of the embedding object.
+  - property: lastModifiedDateTime
+    type: DateTimeOffset
+    description: The date and time when the attachment was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
+  - property: name
+    type: String
+    description: The text that is displayed below the icon representing the embedded attachment. This does not need to be the actual file name.
+  - property: size
+    type: Int32
+    description: The size of the metadata that is stored on the message for the attachment in bytes. This value does not indicate the size of the actual file.
+relationships:
+  heading: Relationships
+  intro: |
+    None

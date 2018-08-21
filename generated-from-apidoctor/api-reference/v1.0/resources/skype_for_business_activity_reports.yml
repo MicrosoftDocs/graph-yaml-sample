@@ -1,0 +1,16 @@
+### YamlMime:GraphOperation
+uid:graph.skype_for_business_activity_reports
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/skype_for_business_activity_reports.md
+summary:
+  heading: Skype for Business activity reports
+  intro: |
+    You can use the Skype for Business activity reports to get details on activity across your organization. These details can help you investigate, plan, and make other business decisions for your organization.
+    
+  outro: |
+    ## Reports
+    |Function|Return Type|Description
+    | :--------------------------------------- -| :---------- -| :--------------------------------------- -|
+    |[Get user detail](xref:graph.reportroot_getskypeforbusinessactivityuserdetail)|Stream|Get details about Skype for Business activity by user.
+    |[Get activity counts](xref:graph.reportroot_getskypeforbusinessactivitycounts)|Stream|Get the trends on how many users organized and participated in conference sessions held in your organization through Skype for Business. The report also includes the number of peer-to-peer sessions.
+    |[Get user counts](xref:graph.reportroot_getskypeforbusinessactivityusercounts)|Stream|Get the trends on how many unique users organized and participated in conference sessions held in your organization through Skype for Business. The report also includes the number of peer-to-peer sessions.

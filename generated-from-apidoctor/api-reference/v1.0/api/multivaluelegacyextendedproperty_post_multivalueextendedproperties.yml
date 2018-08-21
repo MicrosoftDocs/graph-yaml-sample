@@ -1,0 +1,198 @@
+### YamlMime:GraphOperation
+uid:graph.multivaluelegacyextendedproperty_post_multivalueextendedproperties
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md
+summary:
+  heading: Create multi-value extended property
+  intro: |
+    Create one or more multi-value extended properties in a new or existing instance of a resource. 
+    The following user resources are supported:
+    
+    * [message](xref:graph.message)
+    * [mailFolder](xref:graph.mailfolder)
+    * [event](xref:graph.event)
+    * [calendar](xref:graph.calendar)
+    * [contact](xref:graph.contact)
+    * [contactFolder](xref:graph.contactfolder) 
+    
+    As well as the following group resources:
+    
+    * group [event](xref:graph.event)
+    * group [calendar](xref:graph.calendar)
+    * group [post](xref:graph.post) 
+    
+    See [Extended properties overview](xref:graph.extended-properties-overview) for more information about when to use 
+    open extensions or extended properties, and how to specify extended properties.
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API, depending on the resource you're
+    creating the extended property in. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+    
+    * Mail.ReadWrite
+    * Calendars.ReadWrite
+    * Contacts.ReadWrite
+    * Group.ReadWrite.All
+    
+httpRequest:
+  heading: HTTP request
+  intro: |
+    You can create extended properties in a new or existing resource instance.
+    To create one or more extended properties in a _new_ resource instance, use the same REST request as creating the
+    instance, and include the properties of the new resource instance _and extended property_ in the request body.
+    Note that some resources support creation in more than one way. For more information on creating these resource instances,
+    see the corresponding topics for creating a [message](xref:graph.message), [mailFolder](xref:graph.user_post_mailfolders),
+    [event](xref:graph.user_post_events), [calendar](xref:graph.user_post_calendars),
+    [contact](xref:graph.user_post_contacts), [contactFolder](xref:graph.user_post_contactfolders),
+    [group event](xref:graph.group_post_events), and [group post](xref:graph.post). 
+    The following is the syntax of the requests. 
+  sampleCode: |
+    ```http
+    POST /me/messages
+    POST /users/{id|userPrincipalName}/messages
+    POST /me/mailFolders/{id}/messages
+    
+    POST /me/mailFolders
+    POST /users/{id|userPrincipalName}/mailFolders
+    
+    POST /me/events
+    POST /users/{id|userPrincipalName}/events
+    
+    POST /me/calendars
+    POST /users/{id|userPrincipalName}/calendars
+    
+    POST /me/contacts
+    POST /users/{id|userPrincipalName}/contacts
+    
+    POST /me/contactFolders
+    POST /users/{id|userPrincipalName}/contactFolders
+    
+    POST /groups/{id}/events
+    
+    POST /groups/{id}/threads/{id}/posts/{id}/reply
+    POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/reply
+    POST /groups/{id}/threads/{id}/reply
+    POST /groups/{id}/conversations/{id}/threads/{id}/reply
+    POST /groups/{id}/threads
+    POST /groups/{id}/conversations
+    ```
+    
+  outro: |
+    To create one or more extended properties in an existing resource instance, specify the instance in the
+    request, and include the extended property in the request body.
+    **Note** You cannot create an extended property in an existing group post.
+    
+    ```http
+    PATCH /me/messages/{id}
+    PATCH /users/{id|userPrincipalName}/messages/{id}
+    PATCH /me/mailFolders/{id}/messages/{id}
+    
+    PATCH /me/mailFolders/{id}
+    PATCH /users/{id|userPrincipalName}/mailFolders/{id}
+    
+    PATCH /me/events/{id}
+    PATCH /users/{id|userPrincipalName}/events/{id}
+    
+    PATCH /me/calendars/{id}
+    PATCH /users/{id|userPrincipalName}/calendars/{id}
+    
+    PATCH /me/contacts/{id}
+    PATCH /users/{id|userPrincipalName}/contacts/{id}
+    
+    PATCH /me/contactFolders/{id}
+    PATCH /users/{id|userPrincipalName}/contactFolders/{id}
+    
+    PATCH /groups/{id}/events/{id}
+    ```
+    
+requestHeaders:
+  heading: Request headers
+  list:
+  - name: Authorization
+    value: String
+    description: 
+  - name: Content-Type
+    value: String
+    description: 
+requestBody:
+  heading: Request body
+  intro: |
+    Provide a JSON body of each [multiValueLegacyExtendedProperty](xref:graph.multiValueLegacyExtendedProperty) object in the 
+    **multiValueExtendedProperties** collection property of the resource instance.
+    |Property|Type|Description
+    |:-|:-|:-|
+    |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](xref:graph.multiValueLegacyExtendedProperty) collection|An array of one or more multi-valued extended properties.
+    |id|String|For each property in the **multiValueExtendedProperties** collection, specify this to identify the property. It must follow one of the supported formats. See [Outlook extended properties overview](xref:graph.extended-properties-overview) for more information. Required.
+    |value|string|For each property in the **multiValueExtendedProperties** collection, specify the property value. Required.
+    When creating an extended property in a _new_ resource instance, in addition to the 
+    new **multiValueExtendedProperties** collection, provide a JSON representation of that resource instance as well (that is, a [message](xref:graph.message), 
+    [mailFolder](xref:graph.mailfolder), [event](xref:graph.event), etc.).
+response:
+  heading: Response
+  outro: |
+    #### Response code
+    An operation successful in creating an extended property in a new resource instance returns `201 Created`, except in a new group post, 
+    depending on the method used, the operation can return `200 OK` or `202 Accepted`.
+    In an existing resource instance, a successful create operation returns `200 OK`. 
+    When creating an extended property in a supported resource other than [group post](xref:graph.post), the response includes only 
+    the new or existing instance but not the new extended property. To see the newly
+    created extended property, [get the instance expanded with the extended property](xref:graph.multivaluelegacyextendedproperty_get).
+    When creating an extended property in a _new_ group post, the response includes only a response code but not the new post nor 
+    the extended property. You cannot create an extended property in an existing group post.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        outro: |
+          ##### Request 1
+          The first example creates a multi-value extended property in a new event all in the same POST operation. Apart from the properties you'd normally 
+          include for a new event, the request body includes the **multiValueExtendedProperties** collection which contains one extended property. 
+          The request body includes the following for that multi-value extended property:
+          
+          * **id** which specifies the property as an array of strings with the specified GUID and the name `Recreation`. 
+          * **value** which specifies `Recreation` as an array of 3 string values, `["Food", "Hiking", "Swimming"]`.
+          
+          
+          ```http
+          POST https://graph.microsoft.com/v1.0/me/events
+          Content-Type: application/json
+          
+          {
+            "subject": "Family reunion",
+            "body": {
+              "contentType": "HTML",
+              "content": "Let's get together this Thanksgiving!"
+            },
+            "start": {
+                "dateTime": "2015-11-26T09:00:00",
+                "timeZone": "Pacific Standard Time"
+            },
+            "end": {
+                "dateTime": "2015-11-29T21:00:00",
+                "timeZone": "Pacific Standard Time"
+            },
+            "attendees": [
+              {
+                "emailAddress": {
+                  "address": "Terrie@contoso.com",
+                  "name": "Terrie Barrera"
+                },
+                "type": "Required"
+              },
+              {
+                "emailAddress": {
+                  "address": "Lauren@contoso.com",
+                  "name": "Lauren Solis"
+                },
+                "type": "Required"
+              }
+            ],
+            "multiValueExtendedProperties": [
+               {
+                     "id":"StringArray {66f5a359-4659-4830-9070-00050ec6ac6e} Name Recreation",
+                     "value": ["Food", "Hiking", "Swimming"]
+               }
+            ]
+          }
+          ```
+          

@@ -1,0 +1,68 @@
+### YamlMime:GraphResource
+uid:graph.intune_notification_localizednotificationmessage
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_notification_localizednotificationmessage.md
+summary:
+  heading: localizedNotificationMessage resource type
+  intro: |
+    The text content of a Notification Message Template for the specified locale.
+methods:
+  heading: Methods
+  list:
+  - method: [List localizedNotificationMessages](xref:graph.intune_notification_localizednotificationmessage_list)
+    type: [localizedNotificationMessage](xref:graph.intune_notification_localizednotificationmessage) collection
+    description: List properties and relationships of the localizedNotificationMessage objects.
+  - method: [Get localizedNotificationMessage](xref:graph.intune_notification_localizednotificationmessage_get)
+    type: [localizedNotificationMessage](xref:graph.intune_notification_localizednotificationmessage)
+    description: Read properties and relationships of the localizedNotificationMessage object.
+  - method: [Create localizedNotificationMessage](xref:graph.intune_notification_localizednotificationmessage_create)
+    type: [localizedNotificationMessage](xref:graph.intune_notification_localizednotificationmessage)
+    description: Create a new localizedNotificationMessage object.
+  - method: [Delete localizedNotificationMessage](xref:graph.intune_notification_localizednotificationmessage_delete)
+    type: None
+    description: Deletes a localizedNotificationMessage.
+  - method: [Update localizedNotificationMessage](xref:graph.intune_notification_localizednotificationmessage_update)
+    type: [localizedNotificationMessage](xref:graph.intune_notification_localizednotificationmessage)
+    description: Update the properties of a localizedNotificationMessage object.
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.localizedNotificationMessage",
+      "id": "String (identifier)",
+      "lastModifiedDateTime": "String (timestamp)",
+      "locale": "String",
+      "subject": "String",
+      "messageTemplate": "String",
+      "isDefault": true
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: id
+    type: String
+    description: Key of the entity.
+  - property: lastModifiedDateTime
+    type: DateTimeOffset
+    description: DateTime the object was last modified.
+  - property: locale
+    type: String
+    description: The Locale for which this message is destined.
+  - property: subject
+    type: String
+    description: The Message Template Subject.
+  - property: messageTemplate
+    type: String
+    description: The Message Template content.
+  - property: isDefault
+    type: Boolean
+    description: Flag to indicate whether or not this is the default locale for language fallback. This flag can only be set. To unset, set this property to true on another Localized Notification Message.
+relationships:
+  heading: Relationships
+  intro: |
+    None

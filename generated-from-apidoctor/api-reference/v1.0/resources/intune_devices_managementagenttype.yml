@@ -1,0 +1,33 @@
+### YamlMime:GraphOperation
+uid:graph.intune_devices_managementagenttype
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_devices_managementagenttype.md
+summary:
+  heading: managementAgentType enum type
+  intro: |
+    Management agent type.
+enum:
+  heading: Members
+  table:
+  - member: eas
+    description: The device is managed by Exchange server.
+  - member: mdm
+    description: The device is managed by Intune MDM.
+  - member: easMdm
+    description: The device is managed by both Exchange server and Intune MDM.
+  - member: intuneClient
+    description: Intune client managed.
+  - member: easIntuneClient
+    description: The device is EAS and Intune client dual managed.
+  - member: configurationManagerClient
+    description: The device is managed by Configuration Manager.
+  - member: configurationManagerClientMdm
+    description: The device is managed by Configuration Manager and MDM.
+  - member: configurationManagerClientMdmEas
+    description: The device is managed by Configuration Manager, MDM and Eas.
+  - member: unknown
+    description: Unknown management agent type.
+  - member: jamf
+    description: The device attributes are fetched from Jamf.
+  - member: googleCloudDevicePolicyController
+    description: The device is managed by Google's CloudDPC.

@@ -1,0 +1,77 @@
+### YamlMime:GraphOperation
+uid:graph.list_list
+metadata:
+  title: List the SharePoint lists in a site
+  author: rgregg
+  ms.author: rgregg
+  ms.date: 09/11/2017
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/list_list.md
+summary:
+  heading: Enumerate lists in a site
+  intro: |
+    Get the collection of [lists][] for a [site][].
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+  list:
+  - resource: Delegated (work or school account)
+    permission: Sites.Read.All, Sites.ReadWrite.All
+  - resource: Delegated (personal Microsoft account)
+    permission: Not supported.
+  - resource: Application
+    permission: Sites.Read.All, Sites.ReadWrite.All
+httpRequest:
+  heading: HTTP request
+  intro: |
+    GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
+
+examples:
+  - items:
+    - Example:
+        heading: Example
+        request:
+            heading: Request
+            sampleCode: |
+              ```http
+              GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
+              ```
+              
+        response:
+            heading: Response
+            sampleCode: |
+              ```json
+              HTTP/1.1 200 OK
+              Content-type: application/json
+              
+              {
+                "value": [
+                  {
+                    "id": "b57af081-936c-4803-a120-d94887b03864",
+                    "name": "Documents",
+                    "createdDateTime": "2016-08-30T08:32:00Z",
+                    "lastModifiedDateTime": "2016-08-30T08:32:00Z",
+                    "list": {
+                      "hidden": false,
+                      "template": "documentLibrary"
+                     }
+                  },
+                  {
+                    "id": "1234-112-112-4",
+                    "name": "MicroFeed",
+                    "createdDateTime": "2016-08-30T08:32:00Z",
+                    "lastModifiedDateTime": "2016-08-30T08:32:00Z",
+                    "list": {
+                      "hidden": false,
+                      "template": "genericList"
+                     }
+                  }
+                ]
+              }
+              ```
+              
+remarks:
+  heading: Remarks
+  intro: |
+    Lists with the [system][] facet are hidden by default.
+    To list them, include `system` in your `$select` statement.

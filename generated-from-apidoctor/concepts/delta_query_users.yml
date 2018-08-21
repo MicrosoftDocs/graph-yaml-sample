@@ -1,0 +1,38 @@
+### YamlMime:GraphOperation
+uid:graph.delta_query_users
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/delta_query_users.md
+summary:
+  heading: Get incremental changes for users
+  intro: |
+    [Delta query](xref:graph.delta_query_overview) lets you query for additions, deletions, or updates to users, by way of a series of [delta](xref:graph.user_delta) function calls. Delta query enables you discover changes to users without having to fetch the entire set of users from Microsoft Graph and compare changes.
+    Clients using synchronizing users with a local profile store can use Delta Query for both their initial full synchronization along with incremental synchronizations in the future. Typically, a client would do an initial full synchronization of all the users in a tenant, and subsequently, get incremental changes to users periodically.
+  outro: |
+    ## Tracking user changes
+    Tracking user changes is a round of one or more GET requests with the **delta** function. You make a GET request much like the way you [list users](xref:graph.user_list), except that you include the following:
+    
+    * The **delta** function.
+    * A [state token](xref:graph.delta_query_overview) (_deltaToken_ or _skipToken_) from the previous GET **delta** function call.
+    
+examples:
+  - items:
+    - Example:
+        heading: Example
+        intro: |
+          The following example shows a series  requests to track changes to users:
+          
+          1. [Initial request](#initial-request) and [response](#initial-response)
+          1. [nextLink request](#nextlink-request) and [response](#nextlink-response)
+          1. [Final nextLink request](#final-nextlink-request) and [response](#final-nextlink-response)
+          1. [deltaLink request](#deltalink-request) and [deltaLink response](#deltalink-response)
+          
+        outro: |
+          ## Initial request
+          To begin tracking changes in the user resource, you make a request including the delta function on the user resource.
+          Note the following:
+          
+          * The optional $select query parameter is included in the request to demonstrate how query parameters are automatically included in future requests.
+          * The initial request does not include a state token. State tokens will be used in subsequent requests.
+          
+          GET https://graph.microsoft.com/v1.0/users/delta?$select=displayName,givenName,surname
+

@@ -1,0 +1,92 @@
+### YamlMime:GraphOperation
+uid:graph.tablerowcollection_add
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/tablerowcollection_add.md
+summary:
+  heading: TableRowCollection: add
+  intro: |
+    Adds rows to the end of the table. Note that the API can accept multiple rows data using this API. Adding one row at a time could lead to performance degradation. The recommended approach would be to batch the rows together in a single call rather than doing single row insertion. For best results, collect the rows to be inserted on the application side and perform single rows add operation. Experiment with the number of rows to determine the ideal number of rows to use in single API call. 
+  outro: |
+    ## Error Handling
+    This request might occasionally receive a 504 HTTP error. The appropriate response to this error is to repeat the request.
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+  list:
+  - resource: Delegated (work or school account)
+    permission: Files.ReadWrite
+  - resource: Delegated (personal Microsoft account)
+    permission: Not supported.
+  - resource: Application
+    permission: Not supported.
+httpRequest:
+  heading: HTTP request
+  sampleCode: |
+    ```http
+    POST /workbook/tables/{id|name}/rows/add
+    POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/add
+    ```
+    
+requestHeaders:
+  heading: Request headers
+  list:
+  - name: Authorization
+    value: 
+    description: Bearer {token}. Required.
+  - name: Workbook-Session-Id
+    value: 
+    description: Workbook session Id that determines if changes are persisted or not. Optional.
+requestBody:
+  heading: Request body
+  intro: |
+    In the request body, provide a JSON object with the following parameters.
+    |Parameter|Type|Description
+    |:-|:-|:-|
+    |index|Int32|Optional. Specifies the relative position of the new row. If null, the addition happens at the end. Any rows below the inserted row are shifted downwards. Zero-indexed.
+    |values|Json|Optional. A 2-dimensional array of unformatted values of the table row.
+response:
+  heading: Response
+  intro: |
+    If successful, this method returns `200 OK` response code and [WorkbookTableRow](xref:graph.tablerow) object in the response body.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        intro: |
+          In this example two rows of data are inserted at the end of the table. 
+        request:
+            heading: Request
+            intro: |
+              Here is an example of the request.
+            sampleCode: |
+              ```http
+              POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/rows/add
+              Content-type: application/json
+              Content-length: 51
+              
+              {
+                "index": 5,
+                "values": [
+                  [1, 2, 3],
+                  [4, 5, 6]
+                ]
+              }
+              ```
+              
+        response:
+            heading: Response
+            intro: |
+              Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+            sampleCode: |
+              ```http
+              HTTP/1.1 200 OK
+              Content-type: application/json
+              Content-length: 45
+              
+              {
+                "index": 99,
+                "values": "values-value"
+              }
+              ```
+              

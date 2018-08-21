@@ -1,0 +1,68 @@
+### YamlMime:GraphResource
+uid:graph.intune_apps_manageddevicemobileappconfigurationuserstatus
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_apps_manageddevicemobileappconfigurationuserstatus.md
+summary:
+  heading: managedDeviceMobileAppConfigurationUserStatus resource type
+  intro: |
+    Contains properties, inherited properties and actions for an MDM mobile app configuration status for a user.
+methods:
+  heading: Methods
+  list:
+  - method: [List managedDeviceMobileAppConfigurationUserStatuses](xref:graph.intune_apps_manageddevicemobileappconfigurationuserstatus_list)
+    type: [managedDeviceMobileAppConfigurationUserStatus](xref:graph.intune_apps_manageddevicemobileappconfigurationuserstatus) collection
+    description: List properties and relationships of the managedDeviceMobileAppConfigurationUserStatus objects.
+  - method: [Get managedDeviceMobileAppConfigurationUserStatus](xref:graph.intune_apps_manageddevicemobileappconfigurationuserstatus_get)
+    type: [managedDeviceMobileAppConfigurationUserStatus](xref:graph.intune_apps_manageddevicemobileappconfigurationuserstatus)
+    description: Read properties and relationships of the managedDeviceMobileAppConfigurationUserStatus object.
+  - method: [Create managedDeviceMobileAppConfigurationUserStatus](xref:graph.intune_apps_manageddevicemobileappconfigurationuserstatus_create)
+    type: [managedDeviceMobileAppConfigurationUserStatus](xref:graph.intune_apps_manageddevicemobileappconfigurationuserstatus)
+    description: Create a new managedDeviceMobileAppConfigurationUserStatus object.
+  - method: [Delete managedDeviceMobileAppConfigurationUserStatus](xref:graph.intune_apps_manageddevicemobileappconfigurationuserstatus_delete)
+    type: None
+    description: Deletes a managedDeviceMobileAppConfigurationUserStatus.
+  - method: [Update managedDeviceMobileAppConfigurationUserStatus](xref:graph.intune_apps_manageddevicemobileappconfigurationuserstatus_update)
+    type: [managedDeviceMobileAppConfigurationUserStatus](xref:graph.intune_apps_manageddevicemobileappconfigurationuserstatus)
+    description: Update the properties of a managedDeviceMobileAppConfigurationUserStatus object.
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.managedDeviceMobileAppConfigurationUserStatus",
+      "id": "String (identifier)",
+      "userDisplayName": "String",
+      "devicesCount": 1024,
+      "status": "String",
+      "lastReportedDateTime": "String (timestamp)",
+      "userPrincipalName": "String"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: id
+    type: String
+    description: Key of the entity.
+  - property: userDisplayName
+    type: String
+    description: User name of the DevicePolicyStatus.
+  - property: devicesCount
+    type: Int32
+    description: Devices count for that user.
+  - property: status
+    type: microsoft.graph.complianceStatus
+    description: Compliance status of the policy report. The possible values are: unknown, notApplicable, compliant, remediated, nonCompliant, error, conflict.
+  - property: lastReportedDateTime
+    type: DateTimeOffset
+    description: Last modified date time of the policy report.
+  - property: userPrincipalName
+    type: String
+    description: UserPrincipalName.
+relationships:
+  heading: Relationships
+  intro: |
+    None

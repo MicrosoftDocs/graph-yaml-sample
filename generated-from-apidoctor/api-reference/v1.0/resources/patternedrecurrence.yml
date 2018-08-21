@@ -1,0 +1,29 @@
+### YamlMime:GraphResource
+uid:graph.patternedrecurrence
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/patternedrecurrence.md
+summary:
+  heading: patternedRecurrence resource type
+  intro: |
+    The recurrence pattern and range.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource
+  sampleCode: |
+    ```json
+    {
+      "pattern": {"@odata.type": "microsoft.graph.recurrencePattern"},
+      "range": {"@odata.type": "microsoft.graph.recurrenceRange"}
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: pattern
+    type: microsoft.graph.recurrencePattern
+    description: The frequency of an event.
+  - property: range
+    type: microsoft.graph.recurrenceRange
+    description: The duration of an event.

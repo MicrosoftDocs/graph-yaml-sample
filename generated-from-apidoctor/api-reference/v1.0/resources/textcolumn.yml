@@ -1,0 +1,45 @@
+### YamlMime:GraphResource
+uid:graph.textcolumn
+metadata:
+  title: TextColumn
+  author: rgregg
+  ms.author: rgregg
+  ms.date: 09/11/2017
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/textcolumn.md
+summary:
+  heading: TextColumn resource type
+  intro: |
+    The **textColumn** on a [columnDefinition](xref:graph.columnDefinition) resource indicates that the column's values are text.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of a **textColumn** resource.
+  sampleCode: |
+    ```json
+    {
+      "allowMultipleLines": true,
+      "appendChangesToExistingText": false,
+      "linesForEditing": 6,
+      "maxLength": 300,
+      "textType": "plain | richText"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: allowMultipleLines
+    type: Boolean
+    description: Whether to allow multiple lines of text.
+  - property: appendChangesToExistingText
+    type: Boolean
+    description: Whether updates to this column should replace existing text, or append to it.
+  - property: linesForEditing
+    type: Int32
+    description: The size of the text box.
+  - property: maxLength
+    type: Int32
+    description: The maximum number of characters for the value.
+  - property: textType
+    type: String
+    description: The type of text being stored. Must be one of plain or richText

@@ -1,0 +1,106 @@
+### YamlMime:GraphResource
+uid:graph.notebook
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.notebook
+summary:
+  heading: notebook resource type
+  intro: |
+    A OneNote notebook.
+methods:
+  heading: Methods
+  list:
+  - method: [Get notebook](xref:graph.notebook_get)
+    type: [Notebook](xref:graph.notebook)
+    description: Read the properties and relationships of the notebook.
+  - method: [getRecentNotebooks](xref:graph.notebook_getrecentnotebooks)
+    type: [recentNotebook](xref:graph.recentnotebook) collection
+    description: Get a collection of the most recently accessed notebooks for the user.
+  - method: [Create section group](xref:graph.notebook_post_sectiongroups)
+    type: [SectionGroup](xref:graph.sectiongroup)
+    description: Create a section group by posting to the sectionGroups collection in the specified notebook.
+  - method: [List section groups](xref:graph.notebook_list_sectiongroups)
+    type: [SectionGroup](xref:graph.sectiongroup) collection
+    description: Get a collection of section groups in the specified notebook.
+  - method: [Create section](xref:graph.notebook_post_sections)
+    type: [OnenoteSection](xref:graph.section)
+    description: Create a section by posting to the sections collection in the specified notebook.
+  - method: [List sections](xref:graph.notebook_list_sections)
+    type: [OnenoteSection](xref:graph.section) collection
+    description: Get a collection of sections in the specified notebook.
+  - method: [copyNotebook](xref:graph.notebook_copynotebook)
+    type: None
+    description: Copies a notebook.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource
+  sampleCode: |
+    ```json
+    {
+      "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
+      "createdDateTime": "String (timestamp)",
+      "id": "string (identifier)",
+      "isDefault": true,
+      "isShared": true,
+      "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
+      "lastModifiedDateTime": "String (timestamp)",
+      "links": {"@odata.type": "microsoft.graph.notebookLinks"},
+      "displayName": "string",
+      "sectionGroupsUrl": "string",
+      "sectionsUrl": "string",
+      "self": "string",
+      "userRole": "String"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: createdBy
+    type: microsoft.graph.identitySet
+    description: Identity of the user, device, and application which created the item. Read-only.
+  - property: createdDateTime
+    type: DateTimeOffset
+    description: The date and time when the notebook was created. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Read-only.
+  - property: id
+    type: String
+    description: The unique identifier of the notebook. Read-only.
+  - property: isDefault
+    type: Boolean
+    description: Indicates whether this is the user's default notebook. Read-only.
+  - property: isShared
+    type: Boolean
+    description: Indicates whether the notebook is shared. If true, the contents of the notebook can be seen by people other than the owner. Read-only.
+  - property: lastModifiedBy
+    type: microsoft.graph.identitySet
+    description: Identity of the user, device, and application which created the item. Read-only.
+  - property: lastModifiedDateTime
+    type: DateTimeOffset
+    description: The date and time when the notebook was last modified. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Read-only.
+  - property: links
+    type: microsoft.graph.notebookLinks
+    description: Links for opening the notebook. The oneNoteClientURL link opens the notebook in the OneNote native client if it's installed. The oneNoteWebURL link opens the notebook in OneNote Online.
+  - property: displayName
+    type: String
+    description: The name of the notebook.
+  - property: sectionGroupsUrl
+    type: String
+    description: The URL for the sectionGroups navigation property, which returns all the section groups in the notebook. Read-only.
+  - property: sectionsUrl
+    type: String
+    description: The URL for the sections navigation property, which returns all the sections in the notebook. Read-only.
+  - property: self
+    type: String
+    description: The endpoint where you can get details about the notebook. Read-only.
+  - property: userRole
+    type: microsoft.graph.onenoteUserRole
+    description: Possible values are: Owner, Contributor, Reader, None. Owner represents owner-level access to the notebook. Contributor represents read/write access to the notebook. Reader represents read-only access to the notebook. Read-only.
+relationships:
+  heading: Relationships
+  list:
+  - relationship: sectionGroups
+    type: Collection(microsoft.graph.sectionGroup)
+    description: The section groups in the notebook. Read-only. Nullable.
+  - relationship: sections
+    type: Collection(microsoft.graph.onenoteSection)
+    description: The sections in the notebook. Read-only. Nullable.

@@ -1,0 +1,78 @@
+### YamlMime:GraphOperation
+uid:graph.auth_v2_user
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/auth_v2_user.md
+summary:
+  heading: Get access on behalf of a user
+  intro: |
+    To use Microsoft Graph to read and write resources on behalf of a user, your app must get an access token from Azure AD and attach the token to requests that it sends to Microsoft Graph. The exact authentication flow that you will use to get access tokens will depend on the kind of app you are developing and whether you want to use OpenID Connect to sign the user in to your app. One common flow used by native and mobile apps and also by some Web apps is the OAuth 2.0 authorization code grant flow. In this topic, we will walk through an example using this flow. 
+  outro: |
+    ## Authentication and Authorization steps
+    The basic steps required to use the OAuth 2.0 authorization code grant flow to get an access token from the Azure AD v2.0 endpoint are:
+    
+    1. Register your app with Azure AD. 
+    1. Get authorization. 
+    1. Get an access token.
+    1. Call Microsoft Graph with the access token.
+    1. Use a refresh token to get a new access token.
+    
+requestBody:
+  heading: Request
+  intro: |
+    // Line breaks for legibility only
+    
+    POST /common/oauth2/v2.0/token HTTP/1.1
+    Host: https://login.microsoftonline.com
+    Content-Type: application/x-www-form-urlencoded
+    
+    client_id=6731de76-14a6-49ae-97bc-6eba6914391e
+    &scope=user.read%20mail.read
+    &refresh_token=OAAABAAAAiL9Kn2Z27UubvWFPbm0gLWQJVzCTE9UkP3pSx1aXxUjq...
+    &redirect_uri=http%3A%2F%2Flocalhost%2Fmyapp%2F
+    &grant_type=refresh_token
+    &client_secret=JqQX2PNo9bpM0uEihUPzyrh      // NOTE: Only required for web apps
+
+    |Parameter||Description
+    | --- -| --- -| --- -|
+    |client_id|required|The Application ID that the registration portal ([apps.dev.microsoft.com](https://apps.dev.microsoft.com/?referrer=https://azure.microsoft.com/documentation/articles&deeplink=/appList)) assigned your app.
+    |grant_type|required|Must be `refresh_token`.
+    |scope|required|A space-separated list of permissions (scopes).  The permissions requested must be equivalent to or a subset of the permissions requested in the original authorization_code request.
+    |refresh_token|required|The refresh_token that you acquired during the token request.
+    |redirect_uri|required|The same redirect_uri value that was used to acquire the authorization_code.
+    |client_secret|required for web apps|The application secret that you created in the app registration portal for your app.  It should not be used in a native app, because client_secrets cannot be reliably stored on devices.  It is required for web apps and web APIs, which have the ability to store the client_secret securely on the server side.
+response:
+  heading: Response
+  intro: |
+    A successful token response will look similar to the following.
+    {
+        "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ik5HVEZ2ZEstZnl0aEV1Q...",
+        "token_type": "Bearer",
+        "expires_in": 3599,
+        "scope": "user.read%20mail.read",
+        "refresh_token": "AwABAAAAvPM1KaPlrEqdFSBzjqfTGAMxZGUTdM0t4B4...",
+    }
+
+    |Parameter|Description
+    | --- -| --- -|
+    |access_token|The requested access token. The app can use this token in calls to Microsoft Graph.
+    |token_type|Indicates the token type value. The only type that Azure AD supports is Bearer
+    |expires_in|How long the access token is valid (in seconds).
+    |scope|The permissions (scopes) that the access_token is valid for.
+    |refresh_token|A new OAuth 2.0 refresh token. You should replace the old refresh token with this newly acquired refresh token to ensure your refresh tokens remain valid for as long as possible.
+  outro: |
+    ## Supported app scenarios and additional resources
+    You can call Microsoft Graph on behalf of a user from the following kinds of apps: 
+    
+    * Native/Mobile apps 
+    * Web apps
+    * Single page apps (SPA)
+    * Back-end Web APIs: For example, in scenarios where a client app, like a native app, implements functionality in a Web API back end. With the Azure AD v2.0 endpoint, both the client app and the back-end Web API must have the same Application ID. 
+    
+    For more information about supported app types with the Azure AD v2.0 endpoint, see [Types of apps](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-flows).
+    
+    For more information about getting access to Microsoft Graph on behalf of a user from the Azure AD v2.0 endpoint:
+    
+    * For links to protocol documentation and getting started articles for different kinds of apps, see the [Azure AD v2.0 endpoint documentation](https://docs.microsoft.com/azure/active-directory/develop/active-directory-appmodel-v2-overview). 
+    * For detailed explanations of authentication flows, see [v2.0 protocols](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols).
+    * For more information about recommended Microsoft and third-party authentication libraries and server middleware for Azure AD v2.0, see [Azure Active Directory v2.0 authentication libraries](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-libraries).
+    

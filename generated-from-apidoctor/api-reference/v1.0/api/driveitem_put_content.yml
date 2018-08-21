@@ -1,0 +1,112 @@
+### YamlMime:GraphOperation
+uid:graph.driveitem_put_content
+metadata:
+  title: Upload small files
+  author: rgregg
+  ms.author: rgregg
+  ms.date: 09/10/2017
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/driveitem_put_content.md
+summary:
+  heading: Upload or replace the contents of a DriveItem
+  intro: |
+    The simple upload API allows you to provide the contents of a new file or update the contents of an existing file in a single API call. 
+    This method only supports files up to 4MB in size.
+    To upload large files see [Upload large files with an upload session](xref:graph.driveitem_createuploadsession).
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+  list:
+  - resource: Delegated (work or school account)
+    permission: Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All
+  - resource: Delegated (personal Microsoft account)
+    permission: Files.ReadWrite, Files.ReadWrite.All
+  - resource: Application
+    permission: Files.ReadWrite.All, Sites.ReadWrite.All
+  outro: |
+    ## HTTP request (to replace an existing item)
+    
+    ```http
+    PUT /drives/{drive-id}/items/{item-id}/content
+    PUT /groups/{group-id}/drive/items/{item-id}/content
+    PUT /me/drive/items/{item-id}/content
+    PUT /sites/{site-id}/drive/items/{item-id}/content
+    PUT /users/{user-id}/drive/items/{item-id}/content
+    ```
+    
+requestBody:
+  heading: Request body
+  intro: |
+    The contents of the request body should be the binary stream of the file to be uploaded.
+response:
+  heading: Response
+  intro: |
+    If successful, this method returns a [driveItem](xref:graph.driveitem) object in the response body for the newly created or updated file.
+examples:
+  - items:
+    - Example (upload a new file):
+        heading: Example (upload a new file)
+        intro: |
+          This example uploads the string "The contents of the file goes here." to a file in the signed-in user's drive under FolderA named FileB.txt.
+        request:
+            heading: request
+            sampleCode: |
+              ```http
+              PUT /me/drive/root:/FolderA/FileB.txt:/content
+              Content-Type: text/plain
+              
+              The contents of the file goes here.
+              ```
+              
+        response:
+            heading: Response
+            intro: |
+              If successful, this method returns an [driveItem][item-resource] resource in the response body for the newly created file.
+            sampleCode: |
+              ```http
+              HTTP/1.1 201 Created
+              Content-Type: application/json
+              
+              {
+                "id": "0123456789abc",
+                "name": "FileB.txt",
+                "size": 35,
+                "file": { }
+              }
+              ```
+              
+    - Example (updating an existing file):
+        heading: Example (updating an existing file)
+        intro: |
+          This example replaces the contents of a file with a known ID.
+        request:
+            heading: request
+            sampleCode: |
+              ```http
+              PUT /me/drive/items/{item-id}/content
+              Content-Type: text/plain
+              
+              The contents of the file goes here.
+              ```
+              
+        response:
+            heading: Response
+            intro: |
+              If successful, this method returns an [driveItem][item-resource] resource in the response body for the newly created file.
+            sampleCode: |
+              ```http
+              HTTP/1.1 201 Created
+              Content-Type: application/json
+              
+              {
+                "id": "0123456789abc",
+                "name": "FileB.txt",
+                "size": 35,
+                "file": { }
+              }
+              ```
+              
+            outro: |
+              ## Error responses
+              See [Error Responses][error-response] for details about
+              how errors are returned.

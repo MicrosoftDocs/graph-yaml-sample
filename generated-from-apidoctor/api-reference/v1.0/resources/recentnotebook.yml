@@ -1,0 +1,43 @@
+### YamlMime:GraphResource
+uid:graph.recentnotebook
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/recentxref:graph.notebook
+summary:
+  heading: recentNotebook resource type
+  intro: |
+    A recently accessed OneNote notebook. A **recentNotebook** is similar to a [notebook](xref:graph.notebook) but has fewer properties.
+methods:
+  heading: Methods
+  list:
+  - method: [getRecentNotebooks](xref:graph.notebook_getrecentnotebooks)
+    type: [notebook](xref:graph.notebook) collection
+    description: Get a collection of the most recently accessed notebooks for the user.
+resource:
+  heading: JSON representation
+  intro: |
+    The following is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "displayName": "String",
+      "lastAccessedTime": "String (timestamp)",
+      "links": {"@odata.type": "microsoft.graph.recentNotebookLinks"},
+      "sourceService": "String"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: displayName
+    type: String
+    description: The name of the notebook.
+  - property: lastAccessedTime
+    type: DateTimeOffset
+    description: The date and time when the notebook was last modified. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Read-only.
+  - property: links
+    type: microsoft.graph.recentNotebookLinks
+    description: Links for opening the notebook. The oneNoteClientURL link opens the notebook in the OneNote client, if it's installed. The oneNoteWebURL link opens the notebook in OneNote Online.
+  - property: sourceService
+    type: microsoft.graph.onenoteSourceService
+    description: The backend store where the Notebook resides, either OneDriveForBusiness or OneDrive.

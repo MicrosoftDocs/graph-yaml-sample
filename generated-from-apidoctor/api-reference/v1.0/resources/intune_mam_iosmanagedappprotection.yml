@@ -1,0 +1,203 @@
+### YamlMime:GraphResource
+uid:graph.intune_mam_iosmanagedappprotection
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_mam_iosmanagedappprotection.md
+summary:
+  heading: iosManagedAppProtection resource type
+  intro: |
+    Policy used to configure detailed management settings targeted to specific security groups and for a specified set of apps on an iOS device
+    Inherits from [targetedManagedAppProtection](xref:graph.intune_mam_targetedmanagedappprotection)
+methods:
+  heading: Methods
+  list:
+  - method: [List iosManagedAppProtections](xref:graph.intune_mam_iosmanagedappprotection_list)
+    type: [iosManagedAppProtection](xref:graph.intune_mam_iosmanagedappprotection) collection
+    description: List properties and relationships of the iosManagedAppProtection objects.
+  - method: [Get iosManagedAppProtection](xref:graph.intune_mam_iosmanagedappprotection_get)
+    type: [iosManagedAppProtection](xref:graph.intune_mam_iosmanagedappprotection)
+    description: Read properties and relationships of the iosManagedAppProtection object.
+  - method: [Create iosManagedAppProtection](xref:graph.intune_mam_iosmanagedappprotection_create)
+    type: [iosManagedAppProtection](xref:graph.intune_mam_iosmanagedappprotection)
+    description: Create a new iosManagedAppProtection object.
+  - method: [Delete iosManagedAppProtection](xref:graph.intune_mam_iosmanagedappprotection_delete)
+    type: None
+    description: Deletes a iosManagedAppProtection.
+  - method: [Update iosManagedAppProtection](xref:graph.intune_mam_iosmanagedappprotection_update)
+    type: [iosManagedAppProtection](xref:graph.intune_mam_iosmanagedappprotection)
+    description: Update the properties of a iosManagedAppProtection object.
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.iosManagedAppProtection",
+      "displayName": "String",
+      "description": "String",
+      "createdDateTime": "String (timestamp)",
+      "lastModifiedDateTime": "String (timestamp)",
+      "id": "String (identifier)",
+      "version": "String",
+      "periodOfflineBeforeAccessCheck": "String (duration)",
+      "periodOnlineBeforeAccessCheck": "String (duration)",
+      "allowedInboundDataTransferSources": "String",
+      "allowedOutboundDataTransferDestinations": "String",
+      "organizationalCredentialsRequired": true,
+      "allowedOutboundClipboardSharingLevel": "String",
+      "dataBackupBlocked": true,
+      "deviceComplianceRequired": true,
+      "managedBrowserToOpenLinksRequired": true,
+      "saveAsBlocked": true,
+      "periodOfflineBeforeWipeIsEnforced": "String (duration)",
+      "pinRequired": true,
+      "maximumPinRetries": 1024,
+      "simplePinBlocked": true,
+      "minimumPinLength": 1024,
+      "pinCharacterSet": "String",
+      "periodBeforePinReset": "String (duration)",
+      "allowedDataStorageLocations": [
+        "String"
+      ],
+      "contactSyncBlocked": true,
+      "printBlocked": true,
+      "fingerprintBlocked": true,
+      "disableAppPinIfDevicePinIsSet": true,
+      "minimumRequiredOsVersion": "String",
+      "minimumWarningOsVersion": "String",
+      "minimumRequiredAppVersion": "String",
+      "minimumWarningAppVersion": "String",
+      "isAssigned": true,
+      "appDataEncryptionType": "String",
+      "minimumRequiredSdkVersion": "String",
+      "deployedAppCount": 1024,
+      "faceIdBlocked": true
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: displayName
+    type: String
+    description: Policy display name. Inherited from managedAppPolicy
+  - property: description
+    type: String
+    description: The policy's description. Inherited from managedAppPolicy
+  - property: createdDateTime
+    type: DateTimeOffset
+    description: The date and time the policy was created. Inherited from managedAppPolicy
+  - property: lastModifiedDateTime
+    type: DateTimeOffset
+    description: Last time the policy was modified. Inherited from managedAppPolicy
+  - property: id
+    type: String
+    description: Key of the entity. Inherited from managedAppPolicy
+  - property: version
+    type: String
+    description: Version of the entity. Inherited from managedAppPolicy
+  - property: periodOfflineBeforeAccessCheck
+    type: Duration
+    description: The period after which access is checked when the device is not connected to the internet. Inherited from managedAppProtection
+  - property: periodOnlineBeforeAccessCheck
+    type: Duration
+    description: The period after which access is checked when the device is connected to the internet. Inherited from managedAppProtection
+  - property: allowedInboundDataTransferSources
+    type: microsoft.graph.managedAppDataTransferLevel
+    description: Sources from which data is allowed to be transferred. Inherited from managedAppProtection. The possible values are: allApps, managedApps, none.
+  - property: allowedOutboundDataTransferDestinations
+    type: microsoft.graph.managedAppDataTransferLevel
+    description: Destinations to which data is allowed to be transferred. Inherited from managedAppProtection. The possible values are: allApps, managedApps, none.
+  - property: organizationalCredentialsRequired
+    type: Boolean
+    description: Indicates whether organizational credentials are required for app use. Inherited from managedAppProtection
+  - property: allowedOutboundClipboardSharingLevel
+    type: microsoft.graph.managedAppClipboardSharingLevel
+    description: The level to which the clipboard may be shared between apps on the managed device. Inherited from managedAppProtection. The possible values are: allApps, managedAppsWithPasteIn, managedApps, blocked.
+  - property: dataBackupBlocked
+    type: Boolean
+    description: Indicates whether the backup of a managed app's data is blocked. Inherited from managedAppProtection
+  - property: deviceComplianceRequired
+    type: Boolean
+    description: Indicates whether device compliance is required. Inherited from managedAppProtection
+  - property: managedBrowserToOpenLinksRequired
+    type: Boolean
+    description: Indicates whether internet links should be opened in the managed browser app. Inherited from managedAppProtection
+  - property: saveAsBlocked
+    type: Boolean
+    description: Indicates whether users may use the "Save As" menu item to save a copy of protected files. Inherited from managedAppProtection
+  - property: periodOfflineBeforeWipeIsEnforced
+    type: Duration
+    description: The amount of time an app is allowed to remain disconnected from the internet before all managed data it is wiped. Inherited from managedAppProtection
+  - property: pinRequired
+    type: Boolean
+    description: Indicates whether an app-level pin is required. Inherited from managedAppProtection
+  - property: maximumPinRetries
+    type: Int32
+    description: Maximum number of incorrect pin retry attempts before the managed app is either blocked or wiped. Inherited from managedAppProtection
+  - property: simplePinBlocked
+    type: Boolean
+    description: Indicates whether simplePin is blocked. Inherited from managedAppProtection
+  - property: minimumPinLength
+    type: Int32
+    description: Minimum pin length required for an app-level pin if PinRequired is set to True Inherited from managedAppProtection
+  - property: pinCharacterSet
+    type: microsoft.graph.managedAppPinCharacterSet
+    description: Character set which may be used for an app-level pin if PinRequired is set to True. Inherited from managedAppProtection. The possible values are: numeric, alphanumericAndSymbol.
+  - property: periodBeforePinReset
+    type: Duration
+    description: TimePeriod before the all-level pin must be reset if PinRequired is set to True. Inherited from managedAppProtection
+  - property: allowedDataStorageLocations
+    type: Collection(microsoft.graph.managedAppDataStorageLocation)
+    description: Data storage locations where a user may store managed data. Inherited from managedAppProtection
+  - property: contactSyncBlocked
+    type: Boolean
+    description: Indicates whether contacts can be synced to the user's device. Inherited from managedAppProtection
+  - property: printBlocked
+    type: Boolean
+    description: Indicates whether printing is allowed from managed apps. Inherited from managedAppProtection
+  - property: fingerprintBlocked
+    type: Boolean
+    description: Indicates whether use of the fingerprint reader is allowed in place of a pin if PinRequired is set to True. Inherited from managedAppProtection
+  - property: disableAppPinIfDevicePinIsSet
+    type: Boolean
+    description: Indicates whether use of the app pin is required if the device pin is set. Inherited from managedAppProtection
+  - property: minimumRequiredOsVersion
+    type: String
+    description: Versions less than the specified version will block the managed app from accessing company data. Inherited from managedAppProtection
+  - property: minimumWarningOsVersion
+    type: String
+    description: Versions less than the specified version will result in warning message on the managed app from accessing company data. Inherited from managedAppProtection
+  - property: minimumRequiredAppVersion
+    type: String
+    description: Versions less than the specified version will block the managed app from accessing company data. Inherited from managedAppProtection
+  - property: minimumWarningAppVersion
+    type: String
+    description: Versions less than the specified version will result in warning message on the managed app. Inherited from managedAppProtection
+  - property: isAssigned
+    type: Boolean
+    description: Indicates if the policy is deployed to any inclusion groups or not. Inherited from targetedManagedAppProtection
+  - property: appDataEncryptionType
+    type: microsoft.graph.managedAppDataEncryptionType
+    description: Type of encryption which should be used for data in a managed app. The possible values are: useDeviceSettings, afterDeviceRestart, whenDeviceLockedExceptOpenFiles, whenDeviceLocked.
+  - property: minimumRequiredSdkVersion
+    type: String
+    description: Versions less than the specified version will block the managed app from accessing company data.
+  - property: deployedAppCount
+    type: Int32
+    description: Count of apps to which the current policy is deployed.
+  - property: faceIdBlocked
+    type: Boolean
+    description: Indicates whether use of the FaceID is allowed in place of a pin if PinRequired is set to True.
+relationships:
+  heading: Relationships
+  list:
+  - relationship: assignments
+    type: Collection(microsoft.graph.targetedManagedAppPolicyAssignment)
+    description: Navigation property to list of inclusion and exclusion groups to which the policy is deployed. Inherited from targetedManagedAppProtection
+  - relationship: apps
+    type: Collection(microsoft.graph.managedMobileApp)
+    description: List of apps to which the policy is deployed.
+  - relationship: deploymentSummary
+    type: microsoft.graph.managedAppPolicyDeploymentSummary
+    description: Navigation property to deployment summary of the configuration.

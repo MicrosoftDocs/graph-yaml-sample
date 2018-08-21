@@ -1,0 +1,38 @@
+### YamlMime:GraphResource
+uid:graph.intune_mam_managedappdiagnosticstatus
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_mam_managedappdiagnosticstatus.md
+summary:
+  heading: managedAppDiagnosticStatus resource type
+  intro: |
+    Represents diagnostics status.
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.managedAppDiagnosticStatus",
+      "validationName": "String",
+      "state": "String",
+      "mitigationInstruction": "String"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: validationName
+    type: String
+    description: The validation friendly name
+  - property: state
+    type: String
+    description: The state of the operation
+  - property: mitigationInstruction
+    type: String
+    description: Instruction on how to mitigate a failed validation
+relationships:
+  heading: Relationships
+  intro: |
+    None

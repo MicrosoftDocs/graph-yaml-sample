@@ -1,0 +1,90 @@
+### YamlMime:GraphOperation
+uid:graph.mailfolder_post_childfolders
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/mailfolder_post_childfolders.md
+summary:
+  heading: Create MailFolder
+  intro: |
+    Use this API to create a new child mailfolder.
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+  list:
+  - resource: Delegated (work or school account)
+    permission: Mail.ReadWrite
+  - resource: Delegated (personal Microsoft account)
+    permission: Mail.ReadWrite
+  - resource: Application
+    permission: Mail.ReadWrite
+httpRequest:
+  heading: HTTP request
+  sampleCode: |
+    ```http
+    POST /me/mailFolders/{id}/childFolders
+    POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
+    ```
+    
+  outro: |
+    Specify the parent folder in the query URL as a folder ID, or a well-known folder name. For a list of supported well-known folder names, see [mailFolder resource type](xref:graph.mailfolder).
+requestHeaders:
+  heading: Request headers
+  list:
+  - name: Authorization
+    value: String
+    description: 
+  - name: Content-Type
+    value: String
+    description: 
+requestBody:
+  heading: Request body
+  intro: |
+    In the request body, provide a JSON object with the following parameters. **displayName** is the only writable property for a
+    [mailFolder](xref:graph.mailfolder) object.
+    |Parameter|Type|Description
+    |:-|:-|:-|
+    |displayName|String|The display name of the new folder.
+response:
+  heading: Response
+  intro: |
+    If successful, this method returns `201 Created` response code and a [mailFolder](xref:graph.mailfolder) resource in the response body.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        request:
+            heading: Request
+            intro: |
+              Here is an example of the request.
+            sampleCode: |
+              ```http
+              POST https://graph.microsoft.com/v1.0/me/mailFolders/{id}/childFolders
+              Content-type: application/json
+              Content-length: 159
+              
+              {
+                "displayName": "displayName-value",
+              }
+              ```
+              
+        response:
+            heading: Response
+            intro: |
+              Here is an example of the response.
+              
+            sampleCode: |
+              ```http
+              HTTP/1.1 200 OK
+              Content-type: application/json
+              Content-length: 179
+              
+              {
+                "displayName": "displayName-value",
+                "parentFolderId": "parentFolderId-value",
+                "childFolderCount": 99,
+                "unreadItemCount": 99,
+                "totalItemCount": 99,
+                "id": "id-value"
+              }
+              ```
+              

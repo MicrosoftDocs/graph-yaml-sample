@@ -1,0 +1,85 @@
+### YamlMime:GraphResource
+uid:graph.intune_deviceconfig_devicecompliancepolicy
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_devicecompliancepolicy.md
+summary:
+  heading: deviceCompliancePolicy resource type
+  intro: |
+    This is the base class for Compliance policy. Compliance policies are platform specific and individual per-platform compliance policies inherit from here. 
+methods:
+  heading: Methods
+  list:
+  - method: [List deviceCompliancePolicies](xref:graph.intune_deviceconfig_devicecompliancepolicy_list)
+    type: [deviceCompliancePolicy](xref:graph.intune_deviceconfig_devicecompliancepolicy) collection
+    description: List properties and relationships of the deviceCompliancePolicy objects.
+  - method: [Get deviceCompliancePolicy](xref:graph.intune_deviceconfig_devicecompliancepolicy_get)
+    type: [deviceCompliancePolicy](xref:graph.intune_deviceconfig_devicecompliancepolicy)
+    description: Read properties and relationships of the deviceCompliancePolicy object.
+  - method: [assign action](xref:graph.intune_deviceconfig_devicecompliancepolicy_assign)
+    type: [deviceCompliancePolicyAssignment](xref:graph.intune_deviceconfig_devicecompliancepolicyassignment) collection
+    description: Not yet documented
+  - method: [scheduleActionsForRules action](xref:graph.intune_deviceconfig_devicecompliancepolicy_scheduleactionsforrules)
+    type: None
+    description: Not yet documented
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.deviceCompliancePolicy",
+      "id": "String (identifier)",
+      "createdDateTime": "String (timestamp)",
+      "description": "String",
+      "lastModifiedDateTime": "String (timestamp)",
+      "displayName": "String",
+      "version": 1024
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: id
+    type: String
+    description: Key of the entity.
+  - property: createdDateTime
+    type: DateTimeOffset
+    description: DateTime the object was created.
+  - property: description
+    type: String
+    description: Admin provided description of the Device Configuration.
+  - property: lastModifiedDateTime
+    type: DateTimeOffset
+    description: DateTime the object was last modified.
+  - property: displayName
+    type: String
+    description: Admin provided name of the device configuration.
+  - property: version
+    type: Int32
+    description: Version of the device configuration.
+relationships:
+  heading: Relationships
+  list:
+  - relationship: scheduledActionsForRule
+    type: Collection(microsoft.graph.deviceComplianceScheduledActionForRule)
+    description: The list of scheduled action for this rule
+  - relationship: deviceStatuses
+    type: Collection(microsoft.graph.deviceComplianceDeviceStatus)
+    description: List of DeviceComplianceDeviceStatus.
+  - relationship: userStatuses
+    type: Collection(microsoft.graph.deviceComplianceUserStatus)
+    description: List of DeviceComplianceUserStatus.
+  - relationship: deviceStatusOverview
+    type: microsoft.graph.deviceComplianceDeviceOverview
+    description: Device compliance devices status overview
+  - relationship: userStatusOverview
+    type: microsoft.graph.deviceComplianceUserOverview
+    description: Device compliance users status overview
+  - relationship: deviceSettingStateSummaries
+    type: Collection(microsoft.graph.settingStateDeviceSummary)
+    description: Compliance Setting State Device Summary
+  - relationship: assignments
+    type: Collection(microsoft.graph.deviceCompliancePolicyAssignment)
+    description: The collection of assignments for this compliance policy.

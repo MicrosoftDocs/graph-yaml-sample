@@ -1,0 +1,40 @@
+### YamlMime:GraphResource
+uid:graph.intune_mam_windowsinformationprotectionproxieddomaincollection
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_mam_windowsinformationprotectionproxieddomaincollection.md
+summary:
+  heading: windowsInformationProtectionProxiedDomainCollection resource type
+  intro: |
+    Windows Information Protection Proxied Domain Collection
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.windowsInformationProtectionProxiedDomainCollection",
+      "displayName": "String",
+      "proxiedDomains": [
+        {
+          "@odata.type": "microsoft.graph.proxiedDomain",
+          "ipAddressOrFQDN": "String",
+          "proxy": "String"
+        }
+      ]
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: displayName
+    type: String
+    description: Display name
+  - property: proxiedDomains
+    type: Collection(microsoft.graph.proxiedDomain)
+    description: Collection of proxied domains
+relationships:
+  heading: Relationships
+  intro: |
+    None

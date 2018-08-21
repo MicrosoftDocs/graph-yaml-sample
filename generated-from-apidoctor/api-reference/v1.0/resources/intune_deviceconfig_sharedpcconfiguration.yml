@@ -1,0 +1,140 @@
+### YamlMime:GraphResource
+uid:graph.intune_deviceconfig_sharedpcconfiguration
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_sharedpcconfiguration.md
+summary:
+  heading: sharedPCConfiguration resource type
+  intro: |
+    This topic provides descriptions of the declared methods, properties and relationships exposed by the sharedPCConfiguration resource.
+    Inherits from [deviceConfiguration](xref:graph.intune_deviceconfig_deviceconfiguration)
+methods:
+  heading: Methods
+  list:
+  - method: [List sharedPCConfigurations](xref:graph.intune_deviceconfig_sharedpcconfiguration_list)
+    type: [sharedPCConfiguration](xref:graph.intune_deviceconfig_sharedpcconfiguration) collection
+    description: List properties and relationships of the sharedPCConfiguration objects.
+  - method: [Get sharedPCConfiguration](xref:graph.intune_deviceconfig_sharedpcconfiguration_get)
+    type: [sharedPCConfiguration](xref:graph.intune_deviceconfig_sharedpcconfiguration)
+    description: Read properties and relationships of the sharedPCConfiguration object.
+  - method: [Create sharedPCConfiguration](xref:graph.intune_deviceconfig_sharedpcconfiguration_create)
+    type: [sharedPCConfiguration](xref:graph.intune_deviceconfig_sharedpcconfiguration)
+    description: Create a new sharedPCConfiguration object.
+  - method: [Delete sharedPCConfiguration](xref:graph.intune_deviceconfig_sharedpcconfiguration_delete)
+    type: None
+    description: Deletes a sharedPCConfiguration.
+  - method: [Update sharedPCConfiguration](xref:graph.intune_deviceconfig_sharedpcconfiguration_update)
+    type: [sharedPCConfiguration](xref:graph.intune_deviceconfig_sharedpcconfiguration)
+    description: Update the properties of a sharedPCConfiguration object.
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.sharedPCConfiguration",
+      "id": "String (identifier)",
+      "lastModifiedDateTime": "String (timestamp)",
+      "createdDateTime": "String (timestamp)",
+      "description": "String",
+      "displayName": "String",
+      "version": 1024,
+      "accountManagerPolicy": {
+        "@odata.type": "microsoft.graph.sharedPCAccountManagerPolicy",
+        "accountDeletionPolicy": "String",
+        "cacheAccountsAboveDiskFreePercentage": 1024,
+        "inactiveThresholdDays": 1024,
+        "removeAccountsBelowDiskFreePercentage": 1024
+      },
+      "allowedAccounts": "String",
+      "allowLocalStorage": true,
+      "disableAccountManager": true,
+      "disableEduPolicies": true,
+      "disablePowerPolicies": true,
+      "disableSignInOnResume": true,
+      "enabled": true,
+      "idleTimeBeforeSleepInSeconds": 1024,
+      "kioskAppDisplayName": "String",
+      "kioskAppUserModelId": "String",
+      "maintenanceStartTime": "String (time of day)"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: id
+    type: String
+    description: Key of the entity. Inherited from deviceConfiguration
+  - property: lastModifiedDateTime
+    type: DateTimeOffset
+    description: DateTime the object was last modified. Inherited from deviceConfiguration
+  - property: createdDateTime
+    type: DateTimeOffset
+    description: DateTime the object was created. Inherited from deviceConfiguration
+  - property: description
+    type: String
+    description: Admin provided description of the Device Configuration. Inherited from deviceConfiguration
+  - property: displayName
+    type: String
+    description: Admin provided name of the device configuration. Inherited from deviceConfiguration
+  - property: version
+    type: Int32
+    description: Version of the device configuration. Inherited from deviceConfiguration
+  - property: accountManagerPolicy
+    type: microsoft.graph.sharedPCAccountManagerPolicy
+    description: Specifies how accounts are managed on a shared PC. Only applies when disableAccountManager is false.
+  - property: allowedAccounts
+    type: microsoft.graph.sharedPCAllowedAccountType
+    description: Indicates which type of accounts are allowed to use on a shared PC. The possible values are: guest, domain.
+  - property: allowLocalStorage
+    type: Boolean
+    description: Specifies whether local storage is allowed on a shared PC.
+  - property: disableAccountManager
+    type: Boolean
+    description: Disables the account manager for shared PC mode.
+  - property: disableEduPolicies
+    type: Boolean
+    description: Specifies whether the default shared PC education environment policies should be disabled. For Windows 10 RS2 and later, this policy will be applied without setting Enabled to true.
+  - property: disablePowerPolicies
+    type: Boolean
+    description: Specifies whether the default shared PC power policies should be disabled.
+  - property: disableSignInOnResume
+    type: Boolean
+    description: Disables the requirement to sign in whenever the device wakes up from sleep mode.
+  - property: enabled
+    type: Boolean
+    description: Enables shared PC mode and applies the shared pc policies.
+  - property: idleTimeBeforeSleepInSeconds
+    type: Int32
+    description: Specifies the time in seconds that a device must sit idle before the PC goes to sleep. Setting this value to 0 prevents the sleep timeout from occurring.
+  - property: kioskAppDisplayName
+    type: String
+    description: Specifies the display text for the account shown on the sign-in screen which launches the app specified by SetKioskAppUserModelId. Only applies when KioskAppUserModelId is set.
+  - property: kioskAppUserModelId
+    type: String
+    description: Specifies the application user model ID of the app to use with assigned access.
+  - property: maintenanceStartTime
+    type: TimeOfDay
+    description: Specifies the daily start time of maintenance hour.
+relationships:
+  heading: Relationships
+  list:
+  - relationship: assignments
+    type: Collection(microsoft.graph.deviceConfigurationAssignment)
+    description: The list of assignments for the device configuration profile. Inherited from deviceConfiguration
+  - relationship: deviceStatuses
+    type: Collection(microsoft.graph.deviceConfigurationDeviceStatus)
+    description: Device configuration installation status by device. Inherited from deviceConfiguration
+  - relationship: userStatuses
+    type: Collection(microsoft.graph.deviceConfigurationUserStatus)
+    description: Device configuration installation status by user. Inherited from deviceConfiguration
+  - relationship: deviceStatusOverview
+    type: microsoft.graph.deviceConfigurationDeviceOverview
+    description: Device Configuration devices status overview Inherited from deviceConfiguration
+  - relationship: userStatusOverview
+    type: microsoft.graph.deviceConfigurationUserOverview
+    description: Device Configuration users status overview Inherited from deviceConfiguration
+  - relationship: deviceSettingStateSummaries
+    type: Collection(microsoft.graph.settingStateDeviceSummary)
+    description: Device Configuration Setting State Device Summary Inherited from deviceConfiguration

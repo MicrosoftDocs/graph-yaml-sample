@@ -1,0 +1,76 @@
+### YamlMime:GraphResource
+uid:graph.intune_apps_manageddevicemobileappconfigurationdevicestatus
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_apps_manageddevicemobileappconfigurationdevicestatus.md
+summary:
+  heading: managedDeviceMobileAppConfigurationDeviceStatus resource type
+  intro: |
+    Contains properties, inherited properties and actions for an MDM mobile app configuration status for a device.
+methods:
+  heading: Methods
+  list:
+  - method: [List managedDeviceMobileAppConfigurationDeviceStatuses](xref:graph.intune_apps_manageddevicemobileappconfigurationdevicestatus_list)
+    type: [managedDeviceMobileAppConfigurationDeviceStatus](xref:graph.intune_apps_manageddevicemobileappconfigurationdevicestatus) collection
+    description: List properties and relationships of the managedDeviceMobileAppConfigurationDeviceStatus objects.
+  - method: [Get managedDeviceMobileAppConfigurationDeviceStatus](xref:graph.intune_apps_manageddevicemobileappconfigurationdevicestatus_get)
+    type: [managedDeviceMobileAppConfigurationDeviceStatus](xref:graph.intune_apps_manageddevicemobileappconfigurationdevicestatus)
+    description: Read properties and relationships of the managedDeviceMobileAppConfigurationDeviceStatus object.
+  - method: [Create managedDeviceMobileAppConfigurationDeviceStatus](xref:graph.intune_apps_manageddevicemobileappconfigurationdevicestatus_create)
+    type: [managedDeviceMobileAppConfigurationDeviceStatus](xref:graph.intune_apps_manageddevicemobileappconfigurationdevicestatus)
+    description: Create a new managedDeviceMobileAppConfigurationDeviceStatus object.
+  - method: [Delete managedDeviceMobileAppConfigurationDeviceStatus](xref:graph.intune_apps_manageddevicemobileappconfigurationdevicestatus_delete)
+    type: None
+    description: Deletes a managedDeviceMobileAppConfigurationDeviceStatus.
+  - method: [Update managedDeviceMobileAppConfigurationDeviceStatus](xref:graph.intune_apps_manageddevicemobileappconfigurationdevicestatus_update)
+    type: [managedDeviceMobileAppConfigurationDeviceStatus](xref:graph.intune_apps_manageddevicemobileappconfigurationdevicestatus)
+    description: Update the properties of a managedDeviceMobileAppConfigurationDeviceStatus object.
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.managedDeviceMobileAppConfigurationDeviceStatus",
+      "id": "String (identifier)",
+      "deviceDisplayName": "String",
+      "userName": "String",
+      "deviceModel": "String",
+      "complianceGracePeriodExpirationDateTime": "String (timestamp)",
+      "status": "String",
+      "lastReportedDateTime": "String (timestamp)",
+      "userPrincipalName": "String"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: id
+    type: String
+    description: Key of the entity.
+  - property: deviceDisplayName
+    type: String
+    description: Device name of the DevicePolicyStatus.
+  - property: userName
+    type: String
+    description: The User Name that is being reported
+  - property: deviceModel
+    type: String
+    description: The device model that is being reported
+  - property: complianceGracePeriodExpirationDateTime
+    type: DateTimeOffset
+    description: The DateTime when device compliance grace period expires
+  - property: status
+    type: microsoft.graph.complianceStatus
+    description: Compliance status of the policy report. The possible values are: unknown, notApplicable, compliant, remediated, nonCompliant, error, conflict.
+  - property: lastReportedDateTime
+    type: DateTimeOffset
+    description: Last modified date time of the policy report.
+  - property: userPrincipalName
+    type: String
+    description: UserPrincipalName.
+relationships:
+  heading: Relationships
+  intro: |
+    None

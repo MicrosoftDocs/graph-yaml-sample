@@ -1,0 +1,32 @@
+### YamlMime:GraphResource
+uid:graph.internetmessageheader
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/internetmessageheader.md
+summary:
+  heading: internetMessageHeader resource type
+  intro: |
+    A key-value pair that represents an Internet message header, as defined by [RFC5322](https://www.ietf.org/rfc/rfc5322.txt), that provides 
+    details of the network path taken by a message from the sender to the recipient. 
+    For examples of an Internet message header, see 
+    [View e-mail message headers](https://support.office.com/en-us/article/View-e-mail-message-headers-CD039382-DC6E-4264-AC74-C048563D212C#bm4).
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "name": "string",
+      "value": "string"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: name
+    type: String
+    description: Represents the key in a key-value pair.
+  - property: value
+    type: String
+    description: The value in a key-value pair.

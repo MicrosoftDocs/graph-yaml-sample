@@ -1,0 +1,78 @@
+### YamlMime:GraphOperation
+uid:graph.user_post_messages
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/user_post_messages.md
+summary:
+  heading: Create Message
+  intro: |
+    Use this API to create a draft of a new message. Drafts can be created in any folder and optionally updated before sending. To save to the Drafts folder, use the /messages shortcut.
+    While creating the draft in the same **POST** call, you can include an [attachment](xref:graph.attachment).
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+  list:
+  - resource: Delegated (work or school account)
+    permission: Mail.ReadWrite
+  - resource: Delegated (personal Microsoft account)
+    permission: Mail.ReadWrite
+  - resource: Application
+    permission: Mail.ReadWrite
+httpRequest:
+  heading: HTTP request
+  sampleCode: |
+    ```http
+    POST /me/messages
+    POST /users/{id|userPrincipalName}/messages
+    POST /me/mailFolders/{id}/messages
+    POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
+    ```
+    
+requestHeaders:
+  heading: Request headers
+  list:
+  - name: Authorization
+    value: String
+    description: 
+  - name: Content-Type
+    value: String
+    description: 
+requestBody:
+  heading: Request body
+  intro: |
+    In the request body, supply a JSON representation of [message](xref:graph.message) object.
+    Since the **message** resource supports [extensions](xref:graph.extensibility_overview), you can use the `POST` operation and add custom properties with your own data to the message while creating it.
+response:
+  heading: Response
+  intro: |
+    If successful, this method returns `201 Created` response code and [message](xref:graph.message) object in the response body.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        outro: |
+          ##### Request 1
+          Here is an example of the request.
+          
+          ```http
+          POST https://graph.microsoft.com/v1.0/me/messages
+          Content-type: application/json
+          
+          {
+              "subject":"Did you see last night's game?",
+              "importance":"Low",
+              "body":{
+                  "contentType":"HTML",
+                  "content":"They were <b>awesome</b>!"
+              },
+              "toRecipients":[
+                  {
+                      "emailAddress":{
+                          "address":"AdeleV@contoso.onmicrosoft.com"
+                      }
+                  }
+              ]
+          }
+          ```
+          
+          In the request body, supply a JSON representation of [message](xref:graph.message) object.

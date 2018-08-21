@@ -1,0 +1,94 @@
+### YamlMime:GraphOperation
+uid:graph.schemaextension_update
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/schemaextension_update.md
+summary:
+  heading: Update schemaExtension
+  intro: |
+    Update properties in the definition of the specified [schemaExtension](xref:graph.schemaextension).
+    The update applies to all the resources that are included in the **targetTypes** property of the extension. These resources are among the 
+    [supporting resource types](xref:graph.extensibility_overview#supported-resources).
+    Only the app that created a schema extension (owner app) can make additive updates to the extension when the extension is in the **InDevelopment** or **Available** status. 
+    That means the app cannot remove custom properties or target resource types from the definition. The app can, however, change the description of the extension.
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+  list:
+  - resource: Delegated (work or school account)
+    permission: Directory.AccessAsUser.All
+  - resource: Delegated (personal Microsoft account)
+    permission: Not supported.
+  - resource: Application
+    permission: Not supported.
+httpRequest:
+  heading: HTTP request
+  sampleCode: |
+    ```http
+    PATCH /schemaExtensions/{id}
+    ```
+    
+requestHeaders:
+  heading: Optional request headers
+  list:
+  - name: Authorization
+    value: 
+    description: Bearer {token}. Required.
+  - name: Content-Type
+    value: 
+    description: application/json
+requestBody:
+  heading: Request body
+  intro: |
+    In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
+    |Property|Type|Description
+    |:-|:-|:-|
+    |description|String|Description for the schema extension.
+    |properties|[extensionSchemaProperty](xref:graph.extensionschemaproperty) collection|The collection of property names and types that make up the schema extension definition. Only additive changes are permitted.
+    |status|String|The lifecycle state of the schema extension. The initial state upon creation is **InDevelopment**. Possible states transitions are from **InDevelopment** to **Available**, **Available** to **Deprecated** and **Deprecated** to **Available**.
+    |targetTypes|String collection|Set of Microsoft Graph types (that can support extensions) that the schema extension can be applied to.  Only additive changes are permitted.
+response:
+  heading: Response
+  intro: |
+    If successful, this method returns a `204 No Content` response code.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        request:
+            heading: Request
+            intro: |
+              Here is an example of the request.
+            sampleCode: |
+              ```http
+              PATCH https://graph.microsoft.com/v1.0/schemaExtensions/{id}
+              Content-type: application/json
+              Content-length: 201
+              
+              {
+                "properties": [
+                  {
+                    "name":"new-name-value",
+                    "type":"new-type-value"
+                  },
+                  {
+                    "name":"additional-name-value",
+                    "type":"additional-type-value"
+                  }
+                ],
+              }
+              ```
+              
+        response:
+            heading: Response
+            sampleCode: |
+              ```http
+              HTTP/1.1 204 No Content
+              ```
+              
+            outro: |
+              ## See also
+              
+              * [Add custom data to resources using extensions](xref:graph.extensibility_overview)
+              * [Add custom data to groups using schema extensions](xref:graph.extensibility_schema_groups)
+              

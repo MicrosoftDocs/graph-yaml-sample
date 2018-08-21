@@ -1,0 +1,18 @@
+### YamlMime:GraphOperation
+uid:graph.outlook-create-send-messages
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/outlook-create-send-messages.md
+summary:
+  heading: Create and send Outlook messages
+  intro: |
+    Emails are represented by the [message](xref:graph.message) resource in Microsoft Graph.
+    By default, messages are identified by a unique entry ID in the **id** property. A store provider assigns a message an entry ID when the message is initially
+    saved as a draft or sent. That ID changes when the message is copied or moved to another folder, store, or .PST file.
+  outro: |
+    ## Creating and sending mail
+    In Outlook, you can create and send an email in the same [sendMail](xref:graph.user_sendmail) action, or you can [create](xref:graph.user_post_messages) a draft, subsequently [add content](xref:graph.message_update) and [send](xref:graph.message_send) the draft.
+    Similarly, when responding to an email, you can create and send the response in the same action ([reply](xref:graph.message_reply), [reply-all](xref:graph.message_replyall), or [forward](xref:graph.message_forward)). Or, you can create a draft for the response ([reply](xref:graph.message_createreply), [reply-all](xref:graph.message_createreplyall), or [forward](xref:graph.message_createforward)), [add content](xref:graph.message_update), and then [send](xref:graph.message_send) the draft at a later time.
+    To distinguish between a draft and a sent message programmatically, check the **isDraft** property.
+    By default, draft messages are saved in the `Drafts` folder, sent messages are saved in the `Sent Items` folder. For convenience, you can identify the Drafts folder and SentItems folder by their corresponding [well-known folder names](xref:graph.mailfolder). For example, you can do the following to [get the messages](xref:graph.user_list_messages) in the Drafts folder:
+    GET /me/mailfolders('Drafts')
+

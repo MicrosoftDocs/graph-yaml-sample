@@ -1,0 +1,13 @@
+### YamlMime:GraphOperation
+uid:graph.azuread-users-concept-overview
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/azuread-users-concept-overview.md
+summary:
+  heading: Overview of users in Microsoft Graph
+  intro: |
+    Users are the representation of an Azure Active Directory (Azure AD) work or school user account or a Microsoft account in Microsoft Graph. The **user** resource in Microsoft Graph is a hub from which you can access the relationships and resources that are relevant to your users.
+    ![Diagram showing a user connected to calendar, email, contacts, meetings, tasks, sites, and documents](images/users.png)
+  outro: |
+    ## Develop user-centric applications
+    You can use Microsoft Graph to access the relationships, documents, contacts, and preferences that are contextually relevant to the signed-in user. The **user** resource provides straightforward way for you to access and manipulate user resources without having to perform additional calls, look up specific authentication information, and directly issue queries against other Microsoft Graph resources.
+    To access a user's information and data, you'll need to [get access on their behalf](https://developer.microsoft.com/graph/docs/concepts/auth_v2_user). Authenticating your application with [admin consent](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference) enables you to work with and update a wider range of entities associated with a user.

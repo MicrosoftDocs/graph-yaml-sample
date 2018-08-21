@@ -1,0 +1,44 @@
+### YamlMime:GraphResource
+uid:graph.multivaluelegacyextendedproperty
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.multivaluelegacyextendedproperty
+summary:
+  heading: multiValueLegacyExtendedProperty resource type
+  intro: |
+    An extended property that contains a collection of values.
+    See [Extended properties overview](xref:graph.extended-properties-overview) for more information about when to use 
+    open extensions or extended properties, and how to specify extended properties.
+methods:
+  heading: Methods
+  list:
+  - method: [Post](xref:graph.multivaluelegacyextendedproperty_post_multivalueextendedproperties)
+    type: A supported resource instance: [message](xref:graph.message), [mailFolder](xref:graph.mailfolder), [event](xref:graph.event), [calendar](xref:graph.calendar), [contact](xref:graph.contact), or [contactFolder](xref:graph.contactfolder). Note that group [post](xref:graph.post) is not supported.
+    description: Create a multiValueLegacyExtendedProperty in a new or existing instance of a supported resource.
+  - method: [Get](xref:graph.multivaluelegacyextendedproperty_get)
+    type: A supported resource instance ([message](xref:graph.message), [mailFolder](xref:graph.mailfolder), [event](xref:graph.event), [calendar](xref:graph.calendar), [contact](xref:graph.contact), [contactFolder](xref:graph.contactfolder), or group [post](xref:graph.post)) expanded with a [multiValueLegacyExtendedProperty](xref:graph.multivaluelegacyextendedproperty) object.
+    description: Get a resource instance with an extended property using $expand.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "id": "string (identifier)",
+      "value": ["string"]
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: id
+    type: String
+    description: The property identifier. Read-only.
+  - property: value
+    type: Collection(String)
+    description: A collection of property values.
+relationships:
+  heading: Relationships
+  intro: |
+    None

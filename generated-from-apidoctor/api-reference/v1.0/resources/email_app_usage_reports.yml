@@ -1,0 +1,17 @@
+### YamlMime:GraphOperation
+uid:graph.email_app_usage_reports
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/email_app_usage_reports.md
+summary:
+  heading: Email app usage reports
+  intro: |
+    Use the email app usage reports to see how many email apps are used to connect to Exchange Online. You can also see which versions of Outlook apps are used which will enable you to follow up with users who should upgrade to supported Outlook versions.
+    
+  outro: |
+    ## Reports
+    |Function|Return Type|Description
+    | :--------------------------------------- -| :---------- -| :--------------------------------------- -|
+    |[Get user detail](xref:graph.reportroot_getemailappusageuserdetail)|Stream|Get details about which activities users performed on the various email apps.
+    |[Get apps user counts](xref:graph.reportroot_getemailappusageappsusercounts)|Stream|Get the count of unique users per email app.
+    |[Get user counts](xref:graph.reportroot_getemailappusageusercounts)|Stream|Get the count of unique users that connected to Exchange Online using any email app.
+    |[Get versions user counts](xref:graph.reportroot_getemailappusageversionsusercounts)|Stream|Get the count of unique users by Outlook desktop version.

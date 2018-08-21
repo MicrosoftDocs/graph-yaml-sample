@@ -1,0 +1,80 @@
+### YamlMime:GraphOperation
+uid:graph.open_onenote_client
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/open_onenote_client.md
+summary:
+  heading: Open the OneNote client
+  intro: |
+    You can use the **links** property of a page or notebook to open a OneNote application to a particular page or notebook. 
+    The **links** property is a JSON object that contains two URLs. The URLs will open the page or notebook in the OneNote client application or in OneNote Online.
+    { 
+        "links": {
+            "oneNoteClientUrl": {
+                "href": "onenote:https://..."
+            },
+            "oneNoteWebUrl": {
+                "href": "https://..."
+            }
+        }
+    }
+
+    
+    * **oneNoteClientUrl** 
+        * Opens the OneNote client if it is already installed on the device. This URL includes the *onenote* prefix.
+        * Opens the language-specific version if one is installed on the device. Otherwise, uses the platform language setting.
+    * **oneNoteWebUrl** 
+        * Opens OneNote Online if the default browser on the device supports it. 
+        * Uses the browser language setting.
+    
+    The OneNote API returns the **links** property in the HTTP response for the following operations:
+    
+    * Create a page by sending a [`POST pages`](xref:graph.section_post_pages) request.
+    * Create a notebook by sending a [`POST notebooks`](xref:graph.onenote_post_notebooks) request.
+    * Get page metadata by sending a [`GET pages`](xref:graph.page_get) or [`GET pages/{id}`](xref:graph.page_get) request.
+    * Get notebook metadata by sending a [`GET notebooks`](xref:graph.notebook_get) or [`GET notebooks/{id}`](xref:graph.notebook_get) request.
+    
+    The following examples show how to check the status code of the response, parse the JSON to extract the URLs, and then open the OneNote client.
+  outro: |
+    ## iOS example
+    The following example gets the OneNote client URLs from the JSON response. It uses the AFNetworking library (http://afnetworking.com/) to extract the two URLs. In the example, `created` is a pointer to the **ONSCPSStandardResponse** object used to store the response values, and `responseObject` holds the parsed JSON.
+        /* Import the JSON library */
+        #import "AFURLRequestSerialization.h"
+    
+        - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
+                if(delegate) {
+                      int status = [returnResponse statusCode];
+                      ONSCPSStandardResponse *standardResponse = nil;
+                      if (status == 201) {
+                            ONSCPSCreateSuccessResponse *created = 
+                                  [[ONSCPSCreateSuccessResponse alloc] init];
+                            created.httpStatusCode = status;
+                            NSError *jsonError;
+                            NSDictionary *responseObject = 
+                                  [NSJSONSerialization JSONObjectWithData:returnData options:0 error:&jsonError];
+                            if(responseObject && !jsonError) {
+                                  created.oneNoteClientUrl = ((NSDictionary *)
+                                        ((NSDictionary *)responseObject[@"links"])[@"oneNoteClientUrl"])[@"href"];
+                                  created.oneNoteWebUrl = ((NSDictionary *)
+                                        ((NSDictionary *)responseObject[@"links"])[@"oneNoteWebUrl"])[@"href"];
+                            }
+                      standardResponse = created;
+                      }
+                      else {
+                            ONSCPSStandardErrorResponse *error = [[ONSCPSStandardErrorResponse alloc] init];
+                            error.httpStatusCode = status;
+                            error.message = [[NSString alloc] initWithData:returnData 
+                                  encoding:NSUTF8StringEncoding];
+                            standardResponse = error;
+                      }
+                      // Send the response back to the client.
+                      if (standardResponse) {
+                            [delegate exampleServiceActionDidCompleteWithResponse: standardResponse];
+                      }
+                }
+          }
+
+    <br/>
+    After you parse the URLs from the response, you can open OneNote by using the following code. Use `oneNoteClientUrl` to open the installed OneNote client or `oneNoteWebURL` to open OneNote Online.
+    NSURL *url = [NSURL URLWithString:standardResponse.oneNoteWebUrl];
+    [[UIApplication sharedApplication] openURL:url];
+

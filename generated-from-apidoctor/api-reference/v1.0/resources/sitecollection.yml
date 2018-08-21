@@ -1,0 +1,34 @@
+### YamlMime:GraphResource
+uid:graph.sitecollection
+metadata:
+  title: SiteCollection
+  author: rgregg
+  ms.author: rgregg
+  ms.date: 09/10/2017
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/sitecollection.md
+summary:
+  heading: SiteCollection resource
+  intro: |
+    The **siteCollection** resource provides more information about a site collection.
+    If a [**site**](xref:graph.site) resource has a non-null **siteCollection** property, then the site is a root site for a site collection.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "hostname": "contoso.sharepoint.com",
+      "root": { "@odata.type": "microsoft.graph.root" }
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: hostname
+    type: String
+    description: The hostname for the site collection. Read-only.
+  - property: root
+    type: microsoft.graph.root
+    description: If present, indicates that this is a root site collection in SharePoint. Read-only.

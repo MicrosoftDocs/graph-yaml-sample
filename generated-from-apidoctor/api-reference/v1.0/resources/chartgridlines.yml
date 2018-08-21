@@ -1,0 +1,40 @@
+### YamlMime:GraphResource
+uid:graph.chartgridlines
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.chartgridlines
+summary:
+  heading: ChartGridlines resource type
+  intro: |
+    Represents major or minor gridlines on a chart axis.
+methods:
+  heading: Methods
+  list:
+  - method: [Get ChartGridlines](xref:graph.chartgridlines_get)
+    type: [WorkbookChartGridlines](xref:graph.chartgridlines)
+    description: Read properties and relationships of chartGridlines object.
+  - method: [Update](xref:graph.chartgridlines_update)
+    type: [WorkbookChartGridlines](xref:graph.chartgridlines)
+    description: Update ChartGridlines object.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "visible": true
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: visible
+    type: Boolean
+    description: Boolean value representing if the axis gridlines are visible or not.
+relationships:
+  heading: Relationships
+  list:
+  - relationship: format
+    type: microsoft.graph.workbookChartGridlinesFormat
+    description: Represents the formatting of chart gridlines. Read-only.

@@ -1,0 +1,67 @@
+### YamlMime:GraphResource
+uid:graph.intune_apps_manageddevicemobileappconfigurationdevicesummary
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_apps_manageddevicemobileappconfigurationdevicesummary.md
+summary:
+  heading: managedDeviceMobileAppConfigurationDeviceSummary resource type
+  intro: |
+    Contains properties, inherited properties and actions for an MDM mobile app configuration device status summary.
+methods:
+  heading: Methods
+  list:
+  - method: [Get managedDeviceMobileAppConfigurationDeviceSummary](xref:graph.intune_apps_manageddevicemobileappconfigurationdevicesummary_get)
+    type: [managedDeviceMobileAppConfigurationDeviceSummary](xref:graph.intune_apps_manageddevicemobileappconfigurationdevicesummary)
+    description: Read properties and relationships of the managedDeviceMobileAppConfigurationDeviceSummary object.
+  - method: [Update managedDeviceMobileAppConfigurationDeviceSummary](xref:graph.intune_apps_manageddevicemobileappconfigurationdevicesummary_update)
+    type: [managedDeviceMobileAppConfigurationDeviceSummary](xref:graph.intune_apps_manageddevicemobileappconfigurationdevicesummary)
+    description: Update the properties of a managedDeviceMobileAppConfigurationDeviceSummary object.
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.managedDeviceMobileAppConfigurationDeviceSummary",
+      "id": "String (identifier)",
+      "pendingCount": 1024,
+      "notApplicableCount": 1024,
+      "successCount": 1024,
+      "errorCount": 1024,
+      "failedCount": 1024,
+      "lastUpdateDateTime": "String (timestamp)",
+      "configurationVersion": 1024
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: id
+    type: String
+    description: Key of the entity.
+  - property: pendingCount
+    type: Int32
+    description: Number of pending devices
+  - property: notApplicableCount
+    type: Int32
+    description: Number of not applicable devices
+  - property: successCount
+    type: Int32
+    description: Number of succeeded devices
+  - property: errorCount
+    type: Int32
+    description: Number of error devices
+  - property: failedCount
+    type: Int32
+    description: Number of failed devices
+  - property: lastUpdateDateTime
+    type: DateTimeOffset
+    description: Last update time
+  - property: configurationVersion
+    type: Int32
+    description: Version of the policy for that overview
+relationships:
+  heading: Relationships
+  intro: |
+    None

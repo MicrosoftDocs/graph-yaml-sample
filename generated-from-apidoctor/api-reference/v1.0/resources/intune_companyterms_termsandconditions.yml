@@ -1,0 +1,85 @@
+### YamlMime:GraphResource
+uid:graph.intune_companyterms_termsandconditions
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_companyterms_termsandconditions.md
+summary:
+  heading: termsAndConditions resource type
+  intro: |
+    A termsAndConditions entity represents the metadata and contents of a given Terms and Conditions (T&C) policy. T&C policies’ contents are presented to users upon their first attempt to enroll into Intune and subsequently upon edits where an administrator has required re-acceptance. They enable administrators to communicate the provisions to which a user must agree in order to have devices enrolled into Intune.
+methods:
+  heading: Methods
+  list:
+  - method: [List termsAndConditionses](xref:graph.intune_companyterms_termsandconditions_list)
+    type: [termsAndConditions](xref:graph.intune_companyterms_termsandconditions) collection
+    description: List properties and relationships of the termsAndConditions objects.
+  - method: [Get termsAndConditions](xref:graph.intune_companyterms_termsandconditions_get)
+    type: [termsAndConditions](xref:graph.intune_companyterms_termsandconditions)
+    description: Read properties and relationships of the termsAndConditions object.
+  - method: [Create termsAndConditions](xref:graph.intune_companyterms_termsandconditions_create)
+    type: [termsAndConditions](xref:graph.intune_companyterms_termsandconditions)
+    description: Create a new termsAndConditions object.
+  - method: [Delete termsAndConditions](xref:graph.intune_companyterms_termsandconditions_delete)
+    type: None
+    description: Deletes a termsAndConditions.
+  - method: [Update termsAndConditions](xref:graph.intune_companyterms_termsandconditions_update)
+    type: [termsAndConditions](xref:graph.intune_companyterms_termsandconditions)
+    description: Update the properties of a termsAndConditions object.
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.termsAndConditions",
+      "id": "String (identifier)",
+      "createdDateTime": "String (timestamp)",
+      "lastModifiedDateTime": "String (timestamp)",
+      "displayName": "String",
+      "description": "String",
+      "title": "String",
+      "bodyText": "String",
+      "acceptanceStatement": "String",
+      "version": 1024
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: id
+    type: String
+    description: Unique identifier of the T&C policy.
+  - property: createdDateTime
+    type: DateTimeOffset
+    description: DateTime the object was created.
+  - property: lastModifiedDateTime
+    type: DateTimeOffset
+    description: DateTime the object was last modified.
+  - property: displayName
+    type: String
+    description: Administrator-supplied name for the T&C policy.
+  - property: description
+    type: String
+    description: Administrator-supplied description of the T&C policy.
+  - property: title
+    type: String
+    description: Administrator-supplied title of the terms and conditions. This is shown to the user on prompts to accept the T&C policy.
+  - property: bodyText
+    type: String
+    description: Administrator-supplied body text of the terms and conditions, typically the terms themselves. This is shown to the user on prompts to accept the T&C policy.
+  - property: acceptanceStatement
+    type: String
+    description: Administrator-supplied explanation of the terms and conditions, typically describing what it means to accept the terms and conditions set out in the T&C policy. This is shown to the user on prompts to accept the T&C policy.
+  - property: version
+    type: Int32
+    description: Integer indicating the current version of the terms. Incremented when an administrator makes a change to the terms and wishes to require users to re-accept the modified T&C policy.
+relationships:
+  heading: Relationships
+  list:
+  - relationship: assignments
+    type: Collection(microsoft.graph.termsAndConditionsAssignment)
+    description: The list of assignments for this T&C policy.
+  - relationship: acceptanceStatuses
+    type: Collection(microsoft.graph.termsAndConditionsAcceptanceStatus)
+    description: The list of acceptance statuses for this T&C policy.

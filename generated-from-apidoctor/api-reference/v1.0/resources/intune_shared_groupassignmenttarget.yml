@@ -1,0 +1,31 @@
+### YamlMime:GraphResource
+uid:graph.intune_shared_groupassignmenttarget
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_shared_groupassignmenttarget.md
+summary:
+  heading: groupAssignmentTarget resource type
+  intro: |
+    Represents an assignment to a group.
+    Inherits from [deviceAndAppManagementAssignmentTarget](xref:graph.intune_shared_deviceandappmanagementassignmenttarget)
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+      "groupId": "String"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: groupId
+    type: String
+    description: The group Id that is the target of the assignment.
+relationships:
+  heading: Relationships
+  intro: |
+    None

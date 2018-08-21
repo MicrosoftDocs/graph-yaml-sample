@@ -1,0 +1,21 @@
+### YamlMime:GraphOperation
+uid:graph.traverse_the_graph
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/traverse_the_graph.md
+summary:
+  heading: Traverse Microsoft Graph
+  intro: |
+    In addition to using the Microsoft Graph API to read and write data, you can use a number of request patterns to traverse through the resources in Microsoft Graph. The metadata document also helps you to understand the data model of the resources and relationships in Microsoft Graph.
+  outro: |
+    ## Microsoft Graph API metadata
+    The metadata document ($metadata) is published at the service root. You can view the service document for the v1.0 and beta versions of the Microsoft Graph API via the following URLs.
+    **Microsoft Graph API v1.0 metadata**
+    	https://graph.microsoft.com/v1.0/$metadata
+
+    **Microsoft Graph API beta metadata**
+    	https://graph.microsoft.com/beta/$metadata
+
+    The metadata allows you to see and understand the Microsoft Graph data model, including the entity types, complex types, and enumerations that make up the resources represented in the request and response packets.
+    You can use the metadata to learn the realtionships between entities in Microsoft Graph and establish URLs that navigate between those entities.
+    Path URL resource names, query parameters, and action parameters and values are not case-sensitive. 
+    However, values you assign, entity IDs, and other base-64-encoded values are case-sensitive.

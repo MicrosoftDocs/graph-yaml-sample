@@ -1,0 +1,30 @@
+### YamlMime:GraphResource
+uid:graph.intune_deviceconfig_report
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_report.md
+summary:
+  heading: report resource type
+  intro: |
+    Device Configuration profile History reports.
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.report",
+      "content": {"@odata.type": "Edm.Stream"}
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: content
+    type: Stream
+    description: Not yet documented
+relationships:
+  heading: Relationships
+  intro: |
+    None

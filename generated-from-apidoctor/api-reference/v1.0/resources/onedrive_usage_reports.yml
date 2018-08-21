@@ -1,0 +1,17 @@
+### YamlMime:GraphOperation
+uid:graph.onedrive_usage_reports
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/onedrive_usage_reports.md
+summary:
+  heading: OneDrive usage reports
+  intro: |
+    You can use the OneDrive usage reports to gain a high-level view of the value you are getting from OneDrive in terms of the total number of files and storage used across all the OneDrive accounts in your organization. You can then drill down to understand the trends of active OneDrive accounts, how many files users have interacted with, and how much storage is used. These reports can also give you the details per OneDrive account.
+    
+  outro: |
+    ## Reports
+    |Function|Return Type|Description
+    | :--------------------------------------- -| :---------- -| ---------------------------------------- -|
+    |[Get account detail](xref:graph.reportroot_getonedriveusageaccountdetail)|Stream|Get details about OneDrive usage by account.
+    |[Get account counts](xref:graph.reportroot_getonedriveusageaccountcounts)|Stream|Get the trend in the number of active OneDrive for Business sites. Any site on which users viewed, modified, uploaded, downloaded, shared, or synced files is considered an active site.
+    |[Get file counts](xref:graph.reportroot_getonedriveusagefilecounts)|Stream|Get the total number of files across all sites and how many are active files. A file is considered active if it has been saved, synced, modified, or shared within the specified time period.
+    |[Get storage](xref:graph.reportroot_getonedriveusagestorage)|Stream|Get the trend on the amount of storage you are using in OneDrive for Business.

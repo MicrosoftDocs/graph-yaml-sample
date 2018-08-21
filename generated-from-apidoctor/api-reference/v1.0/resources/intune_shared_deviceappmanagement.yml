@@ -1,0 +1,102 @@
+### YamlMime:GraphResource
+uid:graph.intune_shared_deviceappmanagement
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_shared_deviceappmanagement.md
+summary:
+  heading: deviceAppManagement resource type
+  intro: |
+    Singleton entity that acts as a container for all device app management functionality.
+methods:
+  heading: Methods
+  list:
+  - method: [Get deviceAppManagement](xref:graph.intune_shared_deviceappmanagement_get)
+    type: Read properties and relationships of the [deviceAppManagement](xref:graph.intune_shared_deviceappmanagement) object.
+    description: 
+  - method: [Update deviceAppManagement](xref:graph.intune_shared_deviceappmanagement_update)
+    type: Update the properties of a [deviceAppManagement](xref:graph.intune_shared_deviceappmanagement) object.
+    description: 
+  - method: **On-boarding**
+    type: &nbsp;
+    description: 
+  - method: [syncMicrosoftStoreForBusinessApps action](xref:graph.intune_shared_deviceappmanagement_syncmicrosoftstoreforbusinessapps)
+    type: None
+    description: Syncs Intune account with Microsoft Store For Business
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.  Note that this is only an example; query responses to actual queries will contain the properties appropriate for the context.  
+  sampleCode: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.deviceAppManagement",
+      "id": "String (identifier)",
+      "microsoftStoreForBusinessLastSuccessfulSyncDateTime": "String (timestamp)",
+      "isEnabledForMicrosoftStoreForBusiness": true,
+      "microsoftStoreForBusinessLanguage": "String",
+      "microsoftStoreForBusinessLastCompletedApplicationSyncTime": "String (timestamp)"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: id
+    type: String
+    description: Key of the entity.
+  - property: isEnabledForMicrosoftStoreForBusiness
+    type: Boolean
+    description: Whether the account is enabled for syncing applications from the Microsoft Store for Business.
+  - property: microsoftStoreForBusinessLanguage
+    type: String
+    description: The locale information used to sync applications from the Microsoft Store for Business. Cultures that are specific to a country/region. The names of these cultures follow RFC 4646 (Windows Vista and later). The format is -<country/regioncode2>, where  is a lowercase two-letter code derived from ISO 639-1 and <country/regioncode2> is an uppercase two-letter code derived from ISO 3166. For example, en-US for English (United States) is a specific culture.
+  - property: microsoftStoreForBusinessLastCompletedApplicationSyncTime
+    type: DateTimeOffset
+    description: The last time an application sync from the Microsoft Store for Business was completed.
+  - property: microsoftStoreForBusinessLastSuccessfulSyncDateTime
+    type: DateTimeOffset
+    description: The last time the apps from the Microsoft Store for Business were synced successfully for the account.
+relationships:
+  heading: Relationships
+  list:
+  - relationship: mobileAppCategories
+    type: Collection(microsoft.graph.mobileAppCategory)
+    description: The mobile app categories.
+  - relationship: mobileAppConfigurations
+    type: Collection(microsoft.graph.managedDeviceMobileAppConfiguration)
+    description: The Managed Device Mobile Application Configurations.
+  - relationship: mobileApps
+    type: Collection(microsoft.graph.mobileApp)
+    description: The mobile apps.
+  - relationship: managedEBooks
+    type: Collection(microsoft.graph.managedEBook)
+    description: The Managed eBook.
+  - relationship: androidManagedAppProtections
+    type: Collection(microsoft.graph.androidManagedAppProtection)
+    description: Android managed app policies.
+  - relationship: defaultManagedAppProtections
+    type: Collection(microsoft.graph.defaultManagedAppProtection)
+    description: Default managed app policies.
+  - relationship: iosManagedAppProtections
+    type: Collection(microsoft.graph.iosManagedAppProtection)
+    description: iOS managed app policies.
+  - relationship: managedAppPolicies
+    type: Collection(microsoft.graph.managedAppPolicy)
+    description: Managed app policies.
+  - relationship: managedAppRegistrations
+    type: Collection(microsoft.graph.managedAppRegistration)
+    description: The managed app registrations.
+  - relationship: managedAppStatuses
+    type: Collection(microsoft.graph.managedAppStatus)
+    description: The managed app statuses.
+  - relationship: mdmWindowsInformationProtectionPolicies
+    type: Collection(microsoft.graph.mdmWindowsInformationProtectionPolicy)
+    description: Windows information protection for apps running on devices which are MDM enrolled.
+  - relationship: targetedManagedAppConfigurations
+    type: Collection(microsoft.graph.targetedManagedAppConfiguration)
+    description: Targeted managed app configurations.
+  - relationship: windowsInformationProtectionPolicies
+    type: Collection(microsoft.graph.windowsInformationProtectionPolicy)
+    description: Windows information protection for apps running on devices which are not MDM enrolled.
+  - relationship: vppTokens
+    type: Collection(microsoft.graph.vppToken)
+    description: List of Vpp tokens for this organization.

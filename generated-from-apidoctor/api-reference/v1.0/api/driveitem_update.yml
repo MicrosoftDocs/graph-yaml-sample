@@ -1,0 +1,88 @@
+### YamlMime:GraphOperation
+uid:graph.driveitem_update
+metadata:
+  title: Update a file or folder
+  author: rgregg
+  ms.author: rgregg
+  ms.date: 09/10/2017
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/driveitem_update.md
+summary:
+  heading: Update DriveItem properties
+  intro: |
+    Update the metadata for a [DriveItem](xref:graph.driveitem) by ID or path.
+    You can also use update to [move an item](xref:graph.driveitem_move) to another parent by updating the item's **parentReference** property.
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+  list:
+  - resource: Delegated (work or school account)
+    permission: Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All
+  - resource: Delegated (personal Microsoft account)
+    permission: Files.ReadWrite, Files.ReadWrite.All
+  - resource: Application
+    permission: Files.ReadWrite.All, Sites.ReadWrite.All
+httpRequest:
+  heading: HTTP request
+  sampleCode: |
+    ```http
+    PATCH /drives/{drive-id}/items/{item-id}
+    PATCH /groups/{group-id}/drive/items/{item-id}
+    PATCH /me/drive/items/{item-id}
+    PATCH /sites/{site-id}/drive/items/{item-id}
+    PATCH /users/{user-id}/drive/items/{item-id}
+    ```
+    
+requestHeaders:
+  heading: Optional request headers
+  list:
+  - name: if-match
+    value: String
+    description: If this request header is included and the eTag (or cTag) provided does not match the current eTag on the folder, a 412 Precondition Failed response is returned.
+requestBody:
+  heading: Request body
+  intro: |
+    In the request body, supply the values for properties that should be updated.
+    Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.
+    For best performance your app should not include properties that haven't changed.
+response:
+  heading: Response
+  intro: |
+    If successful, this method returns a `200 OK` response code and updated [DriveItem](xref:graph.driveitem) resource in the response body.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        intro: |
+          This example renames the DriveItem resource to "new-file-name.docx".
+        request:
+            heading: request
+            sampleCode: |
+              ```http
+              PATCH /me/drive/items/{item-id}
+              Content-type: application/json
+              
+              {
+                "name": "new-file-name.docx"
+              }
+              ```
+              
+        response:
+            heading: Response
+            intro: |
+              If successful, this method returns an [driveItem][item-resource] resource in the response body.
+            sampleCode: |
+              ```http
+              HTTP/1.1 200 OK
+              Content-type: application/json
+              
+              {
+                "id": "01NKDM7HMOJTVYMDOSXFDK2QJDXCDI3WUK",
+                "name": "new-file-name.docx",
+                "file": { }
+              }
+              ```
+              
+            outro: |
+              ## Error responses
+              See [Error Responses][error-response] for details about how errors are returned.

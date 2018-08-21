@@ -1,0 +1,31 @@
+### YamlMime:GraphResource
+uid:graph.searchresult
+metadata:
+  title: SearchResult
+  author: rgregg
+  ms.author: rgregg
+  ms.date: 09/10/2017
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/searchresult.md
+summary:
+  heading: SearchResult resource type
+  intro: |
+    The **SearchResult** resource indicates than an item is the response to a search query.
+resource:
+  heading: JSON representation
+  sampleCode: |
+    ```json
+    {
+      "onClickTelemetryUrl": "url"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: onClickTelemetryUrl
+    type: String
+    description: A callback URL that can be used to record telemetry information. The application should issue a GET on this URL if the user interacts with this item to improve the quality of results.
+remarks:
+  heading: Remarks
+  intro: |
+    For more information about the facets on a DriveItem, see [DriveItem](xref:graph.driveitem).

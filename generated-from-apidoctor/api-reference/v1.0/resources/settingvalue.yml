@@ -1,0 +1,29 @@
+### YamlMime:GraphResource
+uid:graph.settingvalue
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/settingvalue.md
+summary:
+  heading: settingValue resource type
+  intro: |
+    A setting represented by a name/value pair.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "name": "String",
+      "value": "String"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: name
+    type: String
+    description: Name of the setting (as defined by the groupSettingTemplate).
+  - property: value
+    type: String
+    description: Value of the setting.

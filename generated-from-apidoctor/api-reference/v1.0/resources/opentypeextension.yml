@@ -1,0 +1,72 @@
+### YamlMime:GraphResource
+uid:graph.opentypeextension
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.opentypeextension
+summary:
+  heading: openTypeExtension resource type (open extensions)
+  intro: |
+    Open extensions (formerly known as Office 365 data extensions) provide an easy way to directly add untyped properties to a resource in Microsoft Graph.
+    Open extensions are represented by the **openTypeExtension** resource. Any open extension added to a resource shows up in the **extensions** navigation property, which is derived from the [extension](xref:graph.extension) abstract type. Each extension has an **extensionName** property which is the only pre-defined, writable property for all extensions, along with your custom data.
+    One way to help make sure extension names are unique is to use a reverse domain name system (DNS) format that is dependent on _your own domain_, for example, `Com.Contoso.ContactInfo`. Do not use the Microsoft domain (`Com.Microsoft` or `Com.OnMicrosoft`) in an extension name.
+    Open extension example: [Add custom data to users using open extensions](xref:graph.extensibility_open_users)
+    Open extensions are supported by the following resources in the corresponding versions - general availability (GA: /v1.0 and /beta) or preview (/beta).
+    |Resource|Version
+    |:-|:-|
+    |[Administrative unit](xref:graph.administrativeunit)|Preview only
+    |[Calendar event](xref:graph.event)|GA
+    |Group [calendar event](xref:graph.event)|GA
+    |Group conversation thread [post](xref:graph.post)|GA
+    |[device](xref:graph.device)|GA
+    |[group](xref:graph.group)|GA
+    |[message](xref:graph.message)|GA
+    |[organization](xref:graph.organization)|GA
+    |[Personal contact](xref:graph.contact)|GA
+    |[user](xref:graph.user)|GA
+  outro: |
+    ## Outlook-specific considerations
+    Each open extension present on an Outlook resource (event, message, or personal contact) is stored in a [MAPI named property](https://msdn.microsoft.com/en-us/library/cc765864(v=office.15).aspx). When you create open extensions for Outlook, consider that MAPI named properties are a finite resource in a user's mailbox. When a user's named property quota is exhausted, you can't create any more named properties for that user. This can result in unexpected behavior from clients that rely on named properties to function.
+    Apply the following guidelines when you create open extensions on Outlook resources:
+    
+    * Create the minimum number of extensions required. Most applications should require no more than one extension. Extensions have no set defined properties or structure, so you can store multiple values in a single extension.
+    * Avoid naming extensions in a variable manner (such as based on user input, etc.). Each time an open extension is created with a new name that has not been used in a user's mailbox before, a new MAPI named property is created. Removing the extension does not remove the named property.
+    
+methods:
+  heading: Methods
+  list:
+  - method: [Post](xref:graph.opentypeextension_post_opentypeextension)
+    type: [openTypeExtension](xref:graph.opentypeextension) (in an existing resource instance), or a new [contact](xref:graph.contact), [event](xref:graph.event), or [message](xref:graph.message) that contains an openTypeExtension object
+    description: Create an openTypeExtension object in an existing or new resource instance.
+  - method: [Get](xref:graph.opentypeextension_get)
+    type: [openTypeExtension](xref:graph.opentypeextension)
+    description: Read properties and relationships of openTypeExtension object.
+  - method: [Update](xref:graph.opentypeextension_update)
+    type: [openTypeExtension](xref:graph.opentypeextension)
+    description: Update openTypeExtension object.
+  - method: [Delete](xref:graph.opentypeextension_delete)
+    type: None
+    description: Delete openTypeExtension object.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "extensionName": "string",
+      "id": "string (identifier)"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: extensionName
+    type: String
+    description: A unique text identifier for an open type open extension. Required.
+  - property: id
+    type: String
+    description: A fully qualified identifier that concatenates the extension type with the extensionName. Read-only.
+relationships:
+  heading: Relationships
+  intro: |
+    None

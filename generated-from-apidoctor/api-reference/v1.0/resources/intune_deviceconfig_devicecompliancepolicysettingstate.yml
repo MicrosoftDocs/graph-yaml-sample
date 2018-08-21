@@ -1,0 +1,80 @@
+### YamlMime:GraphResource
+uid:graph.intune_deviceconfig_devicecompliancepolicysettingstate
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_devicecompliancepolicysettingstate.md
+summary:
+  heading: deviceCompliancePolicySettingState resource type
+  intro: |
+    Device Compilance Policy Setting State for a given device.
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.deviceCompliancePolicySettingState",
+      "setting": "String",
+      "settingName": "String",
+      "instanceDisplayName": "String",
+      "state": "String",
+      "errorCode": 1024,
+      "errorDescription": "String",
+      "userId": "String",
+      "userName": "String",
+      "userEmail": "String",
+      "userPrincipalName": "String",
+      "sources": [
+        {
+          "@odata.type": "microsoft.graph.settingSource",
+          "id": "String",
+          "displayName": "String"
+        }
+      ],
+      "currentValue": "String"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: setting
+    type: String
+    description: The setting that is being reported
+  - property: settingName
+    type: String
+    description: Localized/user friendly setting name that is being reported
+  - property: instanceDisplayName
+    type: String
+    description: Name of setting instance that is being reported.
+  - property: state
+    type: microsoft.graph.complianceStatus
+    description: The compliance state of the setting. The possible values are: unknown, notApplicable, compliant, remediated, nonCompliant, error, conflict.
+  - property: errorCode
+    type: Int64
+    description: Error code for the setting
+  - property: errorDescription
+    type: String
+    description: Error description
+  - property: userId
+    type: String
+    description: UserId
+  - property: userName
+    type: String
+    description: UserName
+  - property: userEmail
+    type: String
+    description: UserEmail
+  - property: userPrincipalName
+    type: String
+    description: UserPrincipalName.
+  - property: sources
+    type: Collection(microsoft.graph.settingSource)
+    description: Contributing policies
+  - property: currentValue
+    type: String
+    description: Current value of setting on device
+relationships:
+  heading: Relationships
+  intro: |
+    None

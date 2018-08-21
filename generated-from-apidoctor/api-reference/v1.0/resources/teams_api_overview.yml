@@ -1,0 +1,12 @@
+### YamlMime:GraphOperation
+uid:graph.teams_api_overview
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/teams_api_overview.md
+summary:
+  heading: Use the Microsoft Graph API to work with Microsoft Teams
+  intro: |
+    Microsoft Teams is built on Office 365 groups. You can use the [group APIs](xref:graph.group) with teams, with the following exception: 
+    
+    * Currently, you can't use [Create group](xref:graph.group_post_groups) to create a team.  
+    
+    

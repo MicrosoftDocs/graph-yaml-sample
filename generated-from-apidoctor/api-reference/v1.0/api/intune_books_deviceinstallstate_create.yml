@@ -1,0 +1,94 @@
+### YamlMime:GraphOperation
+uid:graph.intune_books_deviceinstallstate_create
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/intune_books_deviceinstallstate_create.md
+summary:
+  heading: Create deviceInstallState
+  intro: |
+    Create a new [deviceInstallState](xref:graph.intune_books_deviceinstallstate) object.
+permissions:
+  heading: Prerequisites
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+httpRequest:
+  heading: HTTP Request
+  sampleCode: |
+    ```http
+    POST /deviceAppManagement/managedEBooks/{managedEBookId}/deviceStates
+    POST /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userInstallStateSummaryId}/deviceStates
+    ```
+    
+requestHeaders:
+  heading: Request headers
+  list:
+  - name: Authorization
+    value: String
+    description: 
+  - name: Accept
+    value: String
+    description: 
+requestBody:
+  heading: Request body
+  intro: |
+    In the request body, supply a JSON representation for the deviceInstallState object.
+    The following table shows the properties that are required when you create the deviceInstallState.
+    |Property|Type|Description
+    |:-|:-|:-|
+    |id|String|Key of the entity.
+    |deviceName|String|Device name.
+    |deviceId|String|Device Id.
+    |lastSyncDateTime|DateTimeOffset|Last sync date and time.
+    |installState|[installState](xref:graph.intune_books_installstate)|The install state of the eBook. The possible values are: `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed`, `unknown`.
+    |errorCode|String|The error code for install failures.
+    |osVersion|String|OS Version.
+    |osDescription|String|OS Description.
+    |userName|String|Device User Name.
+response:
+  heading: Response
+  intro: |
+    If successful, this method returns a `201 Created` response code and a [deviceInstallState](xref:graph.intune_books_deviceinstallstate) object in the response body.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        request:
+            heading: Request
+            intro: |
+              Here is an example of the request.
+              POST https://graph.microsoft.com/v1.0/deviceAppManagement/managedEBooks/{managedEBookId}/deviceStates
+              Content-type: application/json
+              Content-length: 374
+              
+              {
+                "@odata.type": "#microsoft.graph.deviceInstallState",
+                "deviceName": "Device Name value",
+                "deviceId": "Device Id value",
+                "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
+                "installState": "installed",
+                "errorCode": "Error Code value",
+                "osVersion": "Os Version value",
+                "osDescription": "Os Description value",
+                "userName": "User Name value"
+              }
+
+        response:
+            heading: Response
+            intro: |
+              Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+              HTTP/1.1 201 Created
+              Content-Type: application/json
+              Content-Length: 423
+              
+              {
+                "@odata.type": "#microsoft.graph.deviceInstallState",
+                "id": "b9feb68f-b68f-b9fe-8fb6-feb98fb6feb9",
+                "deviceName": "Device Name value",
+                "deviceId": "Device Id value",
+                "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
+                "installState": "installed",
+                "errorCode": "Error Code value",
+                "osVersion": "Os Version value",
+                "osDescription": "Os Description value",
+                "userName": "User Name value"
+              }
+

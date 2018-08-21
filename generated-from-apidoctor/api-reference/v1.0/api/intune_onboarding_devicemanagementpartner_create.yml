@@ -1,0 +1,93 @@
+### YamlMime:GraphOperation
+uid:graph.intune_onboarding_devicemanagementpartner_create
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/intune_onboarding_devicemanagementpartner_create.md
+summary:
+  heading: Create deviceManagementPartner
+  intro: |
+    Create a new [deviceManagementPartner](xref:graph.intune_onboarding_devicemanagementpartner) object.
+permissions:
+  heading: Prerequisites
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+httpRequest:
+  heading: HTTP Request
+  sampleCode: |
+    ```http
+    POST /deviceManagement/deviceManagementPartners
+    ```
+    
+requestHeaders:
+  heading: Request headers
+  list:
+  - name: Authorization
+    value: String
+    description: 
+  - name: Accept
+    value: String
+    description: 
+requestBody:
+  heading: Request body
+  intro: |
+    In the request body, supply a JSON representation for the deviceManagementPartner object.
+    The following table shows the properties that are required when you create the deviceManagementPartner.
+    |Property|Type|Description
+    |:-|:-|:-|
+    |id|String|Not yet documented
+    |lastHeartbeatDateTime|DateTimeOffset|Timestamp of last heartbeat after admin enabled option Connect to Device management Partner
+    |partnerState|[deviceManagementPartnerTenantState](xref:graph.intune_onboarding_devicemanagementpartnertenantstate)|Partner state of this tenant. The possible values are: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.
+    |partnerAppType|[deviceManagementPartnerAppType](xref:graph.intune_onboarding_devicemanagementpartnerapptype)|Partner App type. The possible values are: `unknown`, `singleTenantApp`, `multiTenantApp`.
+    |singleTenantAppId|String|Partner Single tenant App id
+    |displayName|String|Partner display name
+    |isConfigured|Boolean|Whether device management partner is configured or not
+    |whenPartnerDevicesWillBeRemovedDateTime|DateTimeOffset|DateTime in UTC when PartnerDevices will be removed
+    |whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime|DateTimeOffset|DateTime in UTC when PartnerDevices will be marked as NonCompliant
+response:
+  heading: Response
+  intro: |
+    If successful, this method returns a `201 Created` response code and a [deviceManagementPartner](xref:graph.intune_onboarding_devicemanagementpartner) object in the response body.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        request:
+            heading: Request
+            intro: |
+              Here is an example of the request.
+              POST https://graph.microsoft.com/v1.0/deviceManagement/deviceManagementPartners
+              Content-type: application/json
+              Content-length: 502
+              
+              {
+                "@odata.type": "#microsoft.graph.deviceManagementPartner",
+                "lastHeartbeatDateTime": "2016-12-31T23:59:37.9174975-08:00",
+                "partnerState": "unavailable",
+                "partnerAppType": "singleTenantApp",
+                "singleTenantAppId": "Single Tenant App Id value",
+                "displayName": "Display Name value",
+                "isConfigured": true,
+                "whenPartnerDevicesWillBeRemovedDateTime": "2016-12-31T23:56:38.2655023-08:00",
+                "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "2016-12-31T23:58:42.2131231-08:00"
+              }
+
+        response:
+            heading: Response
+            intro: |
+              Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+              HTTP/1.1 201 Created
+              Content-Type: application/json
+              Content-Length: 551
+              
+              {
+                "@odata.type": "#microsoft.graph.deviceManagementPartner",
+                "id": "d21e377a-377a-d21e-7a37-1ed27a371ed2",
+                "lastHeartbeatDateTime": "2016-12-31T23:59:37.9174975-08:00",
+                "partnerState": "unavailable",
+                "partnerAppType": "singleTenantApp",
+                "singleTenantAppId": "Single Tenant App Id value",
+                "displayName": "Display Name value",
+                "isConfigured": true,
+                "whenPartnerDevicesWillBeRemovedDateTime": "2016-12-31T23:56:38.2655023-08:00",
+                "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "2016-12-31T23:58:42.2131231-08:00"
+              }
+

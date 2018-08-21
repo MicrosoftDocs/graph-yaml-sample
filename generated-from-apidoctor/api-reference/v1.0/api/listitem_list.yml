@@ -1,0 +1,78 @@
+### YamlMime:GraphOperation
+uid:graph.listitem_list
+metadata:
+  title: Retrieve items from a SharePoint list
+  author: rgregg
+  ms.author: rgregg
+  ms.date: 09/11/2017
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/listitem_list.md
+summary:
+  heading: Enumerate items in a list
+  intro: |
+    Get the collection of [items][item] in a [list][].
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+  list:
+  - resource: Delegated (work or school account)
+    permission: Sites.Read.All, Sites.ReadWrite.All
+  - resource: Delegated (personal Microsoft account)
+    permission: Not supported.
+  - resource: Application
+    permission: Sites.Read.All, Sites.ReadWrite.All
+httpRequest:
+  heading: HTTP request
+  intro: |
+    GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items
+    GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items?expand=fields
+    GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items?expand=fields(select=Column1,Column2)
+
+examples:
+  - items:
+    - Example:
+        heading: Example
+        request:
+            heading: Request
+            sampleCode: |
+              ```http
+              GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items?expand=fields(select=Name,Color,Quantity)
+              ```
+              
+        response:
+            heading: Response
+            sampleCode: |
+              ```json
+              HTTP/1.1 200 OK
+              Content-type: application/json
+              
+              {
+                "value": [
+                  {
+                    "id": "2",
+                    "fields": {
+                      "Name": "Gadget",
+                      "Color": "Red",
+                      "Quantity": 503
+                     }
+                  },
+                  {
+                    "id": "4",
+                    "fields": {
+                      "Name": "Widget",
+                      "Color": "Blue",
+                      "Quantity": 2357
+                     }
+                  },
+                  {
+                    "id": "7",
+                    "fields": {
+                      "Name": "Gizmo",
+                      "Color": "Green",
+                      "Quantity": 92
+                     }
+                  }
+                ]
+              }
+              ```
+              

@@ -1,0 +1,47 @@
+### YamlMime:GraphResource
+uid:graph.licensedetails
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/licensedetails.md
+summary:
+  heading: licenseDetails resource type
+  intro: |
+    Contains information about a license assigned to a user.
+methods:
+  heading: Methods
+  list:
+  - method: [List licenseDetails](xref:graph.user_list_licensedetails)
+    type: licenseDetails collection
+    description: Retrieve a list of licenseDetails objects for a user.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "id": "String (identifier)",
+      "servicePlans": [{"@odata.type": "microsoft.graph.servicePlanInfo"}],
+      "skuId": "Guid",
+      "skuPartNumber": "String"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: id
+    type: String
+    description: The unique identifier for the license detail object. Read-only, Key, Not nullable
+  - property: servicePlans
+    type: Collection(microsoft.graph.servicePlanInfo)
+    description: Information about the service plans assigned with the license. Read-only, Not nullable
+  - property: skuId
+    type: Guid
+    description: Unique identifier (GUID) for the service SKU. Equal to the skuId property on the related SubscribedSku object. Read-only
+  - property: skuPartNumber
+    type: String
+    description: Unique SKU display name. Equal to the skuPartNumber on the related SubscribedSku object; for example: "AAD_Premium". Read-only
+relationships:
+  heading: Relationships
+  intro: |
+    None

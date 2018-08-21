@@ -1,0 +1,34 @@
+### YamlMime:GraphResource
+uid:graph.intune_deviceconfig_mediacontentratingfrance
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_mediacontentratingfrance.md
+summary:
+  heading: mediaContentRatingFrance resource type
+  intro: |
+    Not yet documented
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.mediaContentRatingFrance",
+      "movieRating": "String",
+      "tvRating": "String"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: movieRating
+    type: microsoft.graph.ratingFranceMoviesType
+    description: Movies rating selected for France. The possible values are: allAllowed, allBlocked, agesAbove10, agesAbove12, agesAbove16, agesAbove18.
+  - property: tvRating
+    type: microsoft.graph.ratingFranceTelevisionType
+    description: TV rating selected for France. The possible values are: allAllowed, allBlocked, agesAbove10, agesAbove12, agesAbove16, agesAbove18.
+relationships:
+  heading: Relationships
+  intro: |
+    None

@@ -1,0 +1,56 @@
+### YamlMime:GraphResource
+uid:graph.outlookcategory
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/outlookcategory.md
+summary:
+  heading: outlookCategory resource type
+  intro: |
+    Represents a category by which a user can group Outlook items such as messages and events. The user defines categories in a master list, and can apply one or more of these user-defined
+    categories to an item. 
+    Using the REST API, you can [create](xref:graph.outlookuser_post_mastercategories) and define categories in the master list of categories for a user. 
+    You can also [get this master list of categories](xref:graph.outlookuser_list_mastercategories), [get a specific category](xref:graph.outlookcategory_get), 
+    [update](xref:graph.outlookcategory_update) the color associated with a category, or [delete](xref:graph.outlookcategory_delete) a category. 
+    You can apply a category to an item by assigning the **displayName** property of the category to the **categories** collection of the item.
+    Resources that can be assigned categories include [contact](xref:graph.contact), [event](xref:graph.event), [message](xref:graph.message), and [post](xref:graph.post).   
+    Each category is attributed by 2 properties: **displayName** and **color**. The **displayName** value must be unique in a user's master list. 
+    The **color** however does not have to be unique; multiple categories in the master list can be mapped to the same color. You can map up 
+    to 25 different colors to categories in a user's master list.
+methods:
+  heading: Methods
+  list:
+  - method: [List categories](xref:graph.outlookuser_list_mastercategories)
+    type: [outlookCategory](xref:graph.outlookcategory) collection
+    description: Get all the categories that have been defined for the user.
+  - method: [Get category](xref:graph.outlookcategory_get)
+    type: [outlookCategory](xref:graph.outlookcategory)
+    description: Get the properties and relationships of the specified outlookCategory object.
+  - method: [Create](xref:graph.outlookuser_post_mastercategories)
+    type: [outlookCategory](xref:graph.outlookcategory)
+    description: Create an outlookCategory object in the user's master list of categories.
+  - method: [Update](xref:graph.outlookcategory_update)
+    type: [outlookCategory](xref:graph.outlookcategory)
+    description: Update the writable property, color, of the specified outlookCategory object.
+  - method: [Delete](xref:graph.outlookcategory_delete)
+    type: None
+    description: Delete the specified outlookCategory object.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "color": "String",
+      "displayName": "String"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: displayName
+    type: String
+    description: A unique name that identifies a category in the user's mailbox. After a category is created, the name cannot be changed. Read-only.
+  - property: color
+    type: microsoft.graph.categoryColor
+    description: A pre-set color constant that characterizes a category, and that is mapped to one of 25 predefined colors. See the note below.

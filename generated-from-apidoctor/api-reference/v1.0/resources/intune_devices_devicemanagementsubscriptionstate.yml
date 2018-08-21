@@ -1,0 +1,25 @@
+### YamlMime:GraphOperation
+uid:graph.intune_devices_devicemanagementsubscriptionstate
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_devices_devicemanagementsubscriptionstate.md
+summary:
+  heading: deviceManagementSubscriptionState enum type
+  intro: |
+    Tenant mobile device management subscription state.
+enum:
+  heading: Members
+  table:
+  - member: pending
+    description: Pending
+  - member: active
+    description: Active
+  - member: warning
+    description: Warning
+  - member: disabled
+    description: Disabled
+  - member: deleted
+    description: Deleted
+  - member: blocked
+    description: Blocked
+  - member: lockedOut
+    description: LockedOut

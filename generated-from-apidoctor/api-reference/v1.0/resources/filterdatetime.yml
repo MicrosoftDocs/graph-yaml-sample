@@ -1,0 +1,33 @@
+### YamlMime:GraphResource
+uid:graph.filterdatetime
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/filterdatetime.md
+summary:
+  heading: FilterDatetime resource type
+  intro: |
+    Represents how to filter a date when filtering on values.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "date": "string",
+      "specificity": "string"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: date
+    type: String
+    description: The date in ISO8601 format used to filter data.
+  - property: specificity
+    type: String
+    description: How specific the date should be used to keep data. For example, if the date is 2005-04-02 and the specifity is set to "month", the filter operation will keep all rows with a date in the month of april 2009. The possible values are: Year, Monday, Day, Hour, Minute, Second.
+relationships:
+  heading: Relationships
+  intro: |
+    None

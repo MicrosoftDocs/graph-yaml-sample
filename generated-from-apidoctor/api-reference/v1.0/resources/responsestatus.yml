@@ -1,0 +1,29 @@
+### YamlMime:GraphResource
+uid:graph.responsestatus
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/responsestatus.md
+summary:
+  heading: responseStatus resource type
+  intro: |
+    The response status of a meeting request.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource
+  sampleCode: |
+    ```json
+    {
+      "response": "String",
+      "time": "String (timestamp)"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: response
+    type: microsoft.graph.responseType
+    description: The response type. The possible values are: None, Organizer, TentativelyAccepted, Accepted, Declined, NotResponded.
+  - property: time
+    type: DateTimeOffset
+    description: The date and time that the response was returned. It uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'

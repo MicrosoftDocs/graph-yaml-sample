@@ -1,0 +1,73 @@
+### YamlMime:GraphOperation
+uid:graph.intune_onboarding_onpremisesconditionalaccesssettings_get
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/intune_onboarding_onpremisesconditionalaccesssettings_get.md
+summary:
+  heading: Get onPremisesConditionalAccessSettings
+  intro: |
+    Read properties and relationships of the [onPremisesConditionalAccessSettings](xref:graph.intune_onboarding_onpremisesconditionalaccesssettings) object.
+permissions:
+  heading: Prerequisites
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+httpRequest:
+  heading: HTTP Request
+  sampleCode: |
+    ```http
+    GET /deviceManagement/conditionalAccessSettings
+    ```
+    
+queryParameters:
+  heading: Optional query parameters
+  intro: |
+    This method supports the [OData Query Parameters](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+requestHeaders:
+  heading: Request headers
+  list:
+  - name: Authorization
+    value: String
+    description: 
+  - name: Accept
+    value: String
+    description: 
+requestBody:
+  heading: Request body
+  intro: |
+    Do not supply a request body for this method.
+response:
+  heading: Response
+  intro: |
+    If successful, this method returns a `200 OK` response code and [onPremisesConditionalAccessSettings](xref:graph.intune_onboarding_onpremisesconditionalaccesssettings) object in the response body.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        request:
+            heading: Request
+            intro: |
+              Here is an example of the request.
+              GET https://graph.microsoft.com/v1.0/deviceManagement/conditionalAccessSettings
+
+        response:
+            heading: Response
+            intro: |
+              Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+              HTTP/1.1 200 OK
+              Content-Type: application/json
+              Content-Length: 357
+              
+              {
+                "value": {
+                  "@odata.type": "#microsoft.graph.onPremisesConditionalAccessSettings",
+                  "id": "a0efde21-de21-a0ef-21de-efa021deefa0",
+                  "enabled": true,
+                  "includedGroups": [
+                    "79199ed9-e50b-4257-8de4-70b9c8685061"
+                  ],
+                  "excludedGroups": [
+                    "79199ed9-e50b-4257-8de4-70b9c8685061"
+                  ],
+                  "overrideDefaultRule": true
+                }
+              }
+

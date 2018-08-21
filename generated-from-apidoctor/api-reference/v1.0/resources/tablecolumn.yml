@@ -1,0 +1,76 @@
+### YamlMime:GraphResource
+uid:graph.tablecolumn
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.tablecolumn
+summary:
+  heading: TableColumn resource type
+  intro: |
+    Represents a column in a table.
+methods:
+  heading: Methods
+  list:
+  - method: [Get TableColumn](xref:graph.tablecolumn_get)
+    type: [WorkbookTableColumn](xref:graph.tablecolumn)
+    description: Read properties and relationships of tableColumn object.
+  - method: [Update](xref:graph.tablecolumn_update)
+    type: [WorkbookTableColumn](xref:graph.tablecolumn)
+    description: Update TableColumn object.
+  - method: [Databodyrange](xref:graph.tablecolumn_databodyrange)
+    type: [Range](xref:graph.range)
+    description: Gets the range object associated with the data body of the column.
+  - method: [Headerrowrange](xref:graph.tablecolumn_headerrowrange)
+    type: [Range](xref:graph.range)
+    description: Gets the range object associated with the header row of the column.
+  - method: [Range](xref:graph.tablecolumn_range)
+    type: [Range](xref:graph.range)
+    description: Gets the range object associated with the entire column.
+  - method: [Totalrowrange](xref:graph.tablecolumn_totalrowrange)
+    type: [Range](xref:graph.range)
+    description: Gets the range object associated with the totals row of the column.
+  - method: [Delete](xref:graph.tablecolumn_delete)
+    type: None
+    description: Deletes the column from the table.
+  - method: [List](xref:graph.tablecolumn_list)
+    type: [WorkbookTableColumn](xref:graph.tablecolumn) collection
+    description: Get tableColumn object collection.
+  - method: [Itemat](xref:graph.tablecolumncollection_itemat)
+    type: [WorkbookTableColumn](xref:graph.tablecolumn)
+    description: Gets a column based on its position in the collection.
+  - method: [Add](xref:graph.tablecolumncollection_add)
+    type: [WorkbookTableColumn](xref:graph.tablecolumn)
+    description: Adds a new column to the table.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "id": 1024,
+      "index": 1024,
+      "name": "string",
+      "values": "json"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: id
+    type: String
+    description: Returns a unique key that identifies the column within the table. This property should be interpreted as an opaque string value and should not be parsed to any other type. Read-only.
+  - property: index
+    type: Int32
+    description: Returns the index number of the column within the columns collection of the table. Zero-indexed. Read-only.
+  - property: name
+    type: String
+    description: Returns the name of the table column. Read-only.
+  - property: values
+    type: microsoft.graph.Json
+    description: Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cell that contain an error will return the error string.
+relationships:
+  heading: Relationships
+  list:
+  - relationship: filter
+    type: microsoft.graph.workbookFilter
+    description: Retrieve the filter applied to the column. Read-only.

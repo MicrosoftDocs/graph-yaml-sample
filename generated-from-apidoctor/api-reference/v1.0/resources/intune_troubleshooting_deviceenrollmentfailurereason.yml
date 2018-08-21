@@ -1,0 +1,33 @@
+### YamlMime:GraphOperation
+uid:graph.intune_troubleshooting_deviceenrollmentfailurereason
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_troubleshooting_deviceenrollmentfailurereason.md
+summary:
+  heading: deviceEnrollmentFailureReason enum type
+  intro: |
+    Top level failure categories for enrollment.
+enum:
+  heading: Members
+  table:
+  - member: unknown
+    description: Default value, failure reason is unknown.
+  - member: authentication
+    description: Authentication failed
+  - member: authorization
+    description: Call was authenticated, but not authorized to enroll.
+  - member: accountValidation
+    description: Failed to validate the account for enrollment. (Account blocked, enrollment not enabled)
+  - member: userValidation
+    description: User could not be valiudated. (User does not exist, missing license)
+  - member: deviceNotSupported
+    description: Device is not supported for mobile device management.
+  - member: inMaintenance
+    description: Account is in maintenance.
+  - member: badRequest
+    description: Client sent a request that is not understood/supported by the service.
+  - member: featureNotSupported
+    description: Feature(s) used by this enrollment are not supported for this account.
+  - member: enrollmentRestrictionsEnforced
+    description: Enrollment restrictions configured by admin blocked this enrollment.
+  - member: clientDisconnected
+    description: Client timed out or enrollment was aborted by enduser.

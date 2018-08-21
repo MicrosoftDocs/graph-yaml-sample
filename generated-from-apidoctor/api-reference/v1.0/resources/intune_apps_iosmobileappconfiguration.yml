@@ -1,0 +1,104 @@
+### YamlMime:GraphResource
+uid:graph.intune_apps_iosmobileappconfiguration
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_apps_iosmobileappconfiguration.md
+summary:
+  heading: iosMobileAppConfiguration resource type
+  intro: |
+    Contains properties, inherited properties and actions for iOS mobile app configurations.
+    Inherits from [managedDeviceMobileAppConfiguration](xref:graph.intune_apps_manageddevicemobileappconfiguration)
+methods:
+  heading: Methods
+  list:
+  - method: [List iosMobileAppConfigurations](xref:graph.intune_apps_iosmobileappconfiguration_list)
+    type: [iosMobileAppConfiguration](xref:graph.intune_apps_iosmobileappconfiguration) collection
+    description: List properties and relationships of the iosMobileAppConfiguration objects.
+  - method: [Get iosMobileAppConfiguration](xref:graph.intune_apps_iosmobileappconfiguration_get)
+    type: [iosMobileAppConfiguration](xref:graph.intune_apps_iosmobileappconfiguration)
+    description: Read properties and relationships of the iosMobileAppConfiguration object.
+  - method: [Create iosMobileAppConfiguration](xref:graph.intune_apps_iosmobileappconfiguration_create)
+    type: [iosMobileAppConfiguration](xref:graph.intune_apps_iosmobileappconfiguration)
+    description: Create a new iosMobileAppConfiguration object.
+  - method: [Delete iosMobileAppConfiguration](xref:graph.intune_apps_iosmobileappconfiguration_delete)
+    type: None
+    description: Deletes a iosMobileAppConfiguration.
+  - method: [Update iosMobileAppConfiguration](xref:graph.intune_apps_iosmobileappconfiguration_update)
+    type: [iosMobileAppConfiguration](xref:graph.intune_apps_iosmobileappconfiguration)
+    description: Update the properties of a iosMobileAppConfiguration object.
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.iosMobileAppConfiguration",
+      "id": "String (identifier)",
+      "targetedMobileApps": [
+        "String"
+      ],
+      "createdDateTime": "String (timestamp)",
+      "description": "String",
+      "lastModifiedDateTime": "String (timestamp)",
+      "displayName": "String",
+      "version": 1024,
+      "encodedSettingXml": "binary",
+      "settings": [
+        {
+          "@odata.type": "microsoft.graph.appConfigurationSettingItem",
+          "appConfigKey": "String",
+          "appConfigKeyType": "String",
+          "appConfigKeyValue": "String"
+        }
+      ]
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: id
+    type: String
+    description: Key of the entity. Inherited from managedDeviceMobileAppConfiguration
+  - property: targetedMobileApps
+    type: Collection(String)
+    description: the associated app. Inherited from managedDeviceMobileAppConfiguration
+  - property: createdDateTime
+    type: DateTimeOffset
+    description: DateTime the object was created. Inherited from managedDeviceMobileAppConfiguration
+  - property: description
+    type: String
+    description: Admin provided description of the Device Configuration. Inherited from managedDeviceMobileAppConfiguration
+  - property: lastModifiedDateTime
+    type: DateTimeOffset
+    description: DateTime the object was last modified. Inherited from managedDeviceMobileAppConfiguration
+  - property: displayName
+    type: String
+    description: Admin provided name of the device configuration. Inherited from managedDeviceMobileAppConfiguration
+  - property: version
+    type: Int32
+    description: Version of the device configuration. Inherited from managedDeviceMobileAppConfiguration
+  - property: encodedSettingXml
+    type: Binary
+    description: mdm app configuration Base64 binary.
+  - property: settings
+    type: Collection(microsoft.graph.appConfigurationSettingItem)
+    description: app configuration setting items.
+relationships:
+  heading: Relationships
+  list:
+  - relationship: assignments
+    type: Collection(microsoft.graph.managedDeviceMobileAppConfigurationAssignment)
+    description: The list of group assignemenets for app configration. Inherited from managedDeviceMobileAppConfiguration
+  - relationship: deviceStatuses
+    type: Collection(microsoft.graph.managedDeviceMobileAppConfigurationDeviceStatus)
+    description: List of ManagedDeviceMobileAppConfigurationDeviceStatus. Inherited from managedDeviceMobileAppConfiguration
+  - relationship: userStatuses
+    type: Collection(microsoft.graph.managedDeviceMobileAppConfigurationUserStatus)
+    description: List of ManagedDeviceMobileAppConfigurationUserStatus. Inherited from managedDeviceMobileAppConfiguration
+  - relationship: deviceStatusSummary
+    type: microsoft.graph.managedDeviceMobileAppConfigurationDeviceSummary
+    description: App configuration device status summary. Inherited from managedDeviceMobileAppConfiguration
+  - relationship: userStatusSummary
+    type: microsoft.graph.managedDeviceMobileAppConfigurationUserSummary
+    description: App configuration user status summary. Inherited from managedDeviceMobileAppConfiguration

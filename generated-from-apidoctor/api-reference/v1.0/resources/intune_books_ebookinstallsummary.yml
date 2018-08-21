@@ -1,0 +1,63 @@
+### YamlMime:GraphResource
+uid:graph.intune_books_ebookinstallsummary
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_books_ebookinstallsummary.md
+summary:
+  heading: eBookInstallSummary resource type
+  intro: |
+    Contains properties for the installation summary of a book for a device.
+methods:
+  heading: Methods
+  list:
+  - method: [Get eBookInstallSummary](xref:graph.intune_books_ebookinstallsummary_get)
+    type: [eBookInstallSummary](xref:graph.intune_books_ebookinstallsummary)
+    description: Read properties and relationships of the eBookInstallSummary object.
+  - method: [Update eBookInstallSummary](xref:graph.intune_books_ebookinstallsummary_update)
+    type: [eBookInstallSummary](xref:graph.intune_books_ebookinstallsummary)
+    description: Update the properties of a eBookInstallSummary object.
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.eBookInstallSummary",
+      "id": "String (identifier)",
+      "installedDeviceCount": 1024,
+      "failedDeviceCount": 1024,
+      "notInstalledDeviceCount": 1024,
+      "installedUserCount": 1024,
+      "failedUserCount": 1024,
+      "notInstalledUserCount": 1024
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: id
+    type: String
+    description: Key of the entity.
+  - property: installedDeviceCount
+    type: Int32
+    description: Number of Devices that have successfully installed this book.
+  - property: failedDeviceCount
+    type: Int32
+    description: Number of Devices that have failed to install this book.
+  - property: notInstalledDeviceCount
+    type: Int32
+    description: Number of Devices that does not have this book installed.
+  - property: installedUserCount
+    type: Int32
+    description: Number of Users whose devices have all succeeded to install this book.
+  - property: failedUserCount
+    type: Int32
+    description: Number of Users that have 1 or more device that failed to install this book.
+  - property: notInstalledUserCount
+    type: Int32
+    description: Number of Users that did not install this book.
+relationships:
+  heading: Relationships
+  intro: |
+    None

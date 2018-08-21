@@ -1,0 +1,44 @@
+### YamlMime:GraphResource
+uid:graph.singlevaluelegacyextendedproperty
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.singlevaluelegacyextendedproperty
+summary:
+  heading: singleValueLegacyExtendedProperty resource type
+  intro: |
+    An extended property that contains a single value. 
+    See [Extended properties overview](xref:graph.extended-properties-overview) for more information about when to use 
+    open extensions or extended properties, and how to specify extended properties. 
+methods:
+  heading: Methods
+  list:
+  - method: [Post](xref:graph.singlevaluelegacyextendedproperty_post_singlevalueextendedproperties)
+    type: A supported resource instance: [message](xref:graph.message), [mailFolder](xref:graph.mailfolder), [event](xref:graph.event), [calendar](xref:graph.calendar), [contact](xref:graph.contact), or [contactFolder](xref:graph.contactfolder), but not group [post](xref:graph.post).
+    description: Create a singleValueLegacyExtendedProperty in a new or existing instance of a supported resource.
+  - method: [Get](xref:graph.singlevaluelegacyextendedproperty_get)
+    type: One or a collection of supported resource instance ([message](xref:graph.message), [mailFolder](xref:graph.mailfolder), [event](xref:graph.event), [calendar](xref:graph.calendar), [contact](xref:graph.contact), [contactFolder](xref:graph.contactfolder), or group [post](xref:graph.post)), or one such instance expanded with a [singleValueLegacyExtendedProperty](xref:graph.singlevaluelegacyextendedproperty) object.
+    description: Get a resource instance with an extended property using $expand or $filter.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "id": "string (identifier)",
+      "value": "string"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: id
+    type: String
+    description: The property ID used to identify the property. Read-only.
+  - property: value
+    type: String
+    description: A property value.
+relationships:
+  heading: Relationships
+  intro: |
+    None

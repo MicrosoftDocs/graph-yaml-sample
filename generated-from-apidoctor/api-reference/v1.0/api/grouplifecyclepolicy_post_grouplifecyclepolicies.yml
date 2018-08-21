@@ -1,0 +1,82 @@
+### YamlMime:GraphOperation
+uid:graph.grouplifecyclepolicy_post_grouplifecyclepolicies
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/grouplifecyclepolicy_post_grouplifecyclepolicies.md
+summary:
+  heading: Create groupLifecyclePolicy
+  intro: |
+    Creates a new [groupLifecyclePolicy](xref:graph.grouplifecyclepolicy).
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+  list:
+  - resource: Delegated (work or school account)
+    permission: Directory.ReadWrite.All
+  - resource: Delegated (personal Microsoft account)
+    permission: Not supported.
+  - resource: Application
+    permission: Directory.ReadWrite.All
+httpRequest:
+  heading: HTTP request
+  sampleCode: |
+    ```http
+    POST /groupLifecyclePolicies
+    ```
+    
+requestHeaders:
+  heading: Request headers
+  list:
+  - name: Authorization
+    value: 
+    description: Bearer {token}. Required.
+  - name: Content-Type
+    value: 
+    description: application/json
+requestBody:
+  heading: Request body
+  intro: |
+    In the request body, supply a JSON representation of [groupLifecyclePolicy](xref:graph.grouplifecyclepolicy) object.
+response:
+  heading: Response
+  intro: |
+    If successful, this method returns `201 Created` response code and [groupLifecyclePolicy](xref:graph.grouplifecyclepolicy) object in the response body.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        request:
+            heading: Request
+            sampleCode: |
+              ```http
+              POST https://graph.microsoft.com/v1.0/groupLifecyclePolicies
+              Content-type: application/json
+              Content-length: 125
+              
+              {
+                "groupLifetimeInDays": 100,
+                "managedGroupTypes": "Selected",
+                "alternateNotificationEmails": "admin@contoso.com"
+              }
+              ```
+              
+            outro: |
+              In the request body, supply a JSON representation of [groupLifecyclePolicy](xref:graph.grouplifecyclepolicy) object.
+        response:
+            heading: Response
+            intro: |
+              Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+            sampleCode: |
+              ```http
+              HTTP/1.1 201 Created
+              Content-type: application/json
+              Content-length: 174
+              
+              {
+                "id": "ffffffff-ffff-ffff-ffff-ffffffffffff",
+                "groupLifetimeInDays": 100,
+                "managedGroupTypes": "Selected",
+                "alternateNotificationEmails": "admin@contoso.com"
+              }
+              ```
+              

@@ -1,0 +1,62 @@
+### YamlMime:GraphResource
+uid:graph.intune_deviceconfig_iosnotificationsettings
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_iosnotificationsettings.md
+summary:
+  heading: iosNotificationSettings resource type
+  intro: |
+    An item describing notification setting.
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.iosNotificationSettings",
+      "bundleID": "String",
+      "appName": "String",
+      "publisher": "String",
+      "enabled": true,
+      "showInNotificationCenter": true,
+      "showOnLockScreen": true,
+      "alertType": "String",
+      "badgesEnabled": true,
+      "soundsEnabled": true
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: bundleID
+    type: String
+    description: Bundle id of app to which to apply these notification settings.
+  - property: appName
+    type: String
+    description: Application name to be associated with the bundleID.
+  - property: publisher
+    type: String
+    description: Publisher to be associated with the bundleID.
+  - property: enabled
+    type: Boolean
+    description: Indicates whether notifications are allowed for this app.
+  - property: showInNotificationCenter
+    type: Boolean
+    description: Indicates whether notifications can be shown in notification center.
+  - property: showOnLockScreen
+    type: Boolean
+    description: Indicates whether notifications can be shown on the lock screen.
+  - property: alertType
+    type: microsoft.graph.iosNotificationAlertType
+    description: Indicates the type of alert for notifications for this app. The possible values are: deviceDefault, banner, modal, none.
+  - property: badgesEnabled
+    type: Boolean
+    description: Indicates whether badges are allowed for this app.
+  - property: soundsEnabled
+    type: Boolean
+    description: Indicates whether sounds are allowed for this app.
+relationships:
+  heading: Relationships
+  intro: |
+    None

@@ -1,0 +1,101 @@
+### YamlMime:GraphResource
+uid:graph.permission
+metadata:
+  title: Permission
+  author: rgregg
+  ms.author: rgregg
+  ms.date: 09/10/2017
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/permission.md
+summary:
+  heading: Permission resource type
+  intro: |
+    The **Permission** resource provides information about a sharing permission granted for a [DriveItem](xref:graph.driveitem) resource.
+    Sharing permissions have a number of different forms.
+    The **Permission** resource represents these different forms through facets on the resource.
+methods:
+  heading: Methods
+  list:
+  - method: [List permissions](xref:graph.driveitem_list_permissions)
+    type: 
+    description: 
+  - method: [Get permission](xref:graph.permission_get)
+    type: 
+    description: 
+  - method: [Add](xref:graph.driveitem_invite)
+    type: 
+    description: 
+  - method: [Update](xref:graph.permission_update)
+    type: 
+    description: 
+  - method: [Delete](xref:graph.permission_delete)
+    type: 
+    description: 
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource
+  sampleCode: |
+    ```json
+    {
+      "id": "string (identifier)",
+      "grantedTo": {"@odata.type": "microsoft.graph.identitySet"},
+      "inheritedFrom": {"@odata.type": "microsoft.graph.itemReference"},
+      "invitation": {"@odata.type": "microsoft.graph.sharingInvitation"},
+      "link": {"@odata.type": "microsoft.graph.sharingLink"},
+      "roles": ["string"],
+      "shareId": "string"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: id
+    type: String
+    description: The unique identifier of the permission among all permissions on the item. Read-only.
+  - property: grantedTo
+    type: microsoft.graph.identitySet
+    description: For user type permissions, the details of the users & applications for this permission. Read-only.
+  - property: invitation
+    type: microsoft.graph.sharingInvitation
+    description: Details of any associated sharing invitation for this permission. Read-only.
+  - property: inheritedFrom
+    type: microsoft.graph.itemReference
+    description: Provides a reference to the ancestor of the current permission, if it is inherited from an ancestor. Read-only.
+  - property: link
+    type: microsoft.graph.sharingLink
+    description: Provides the link details of the current permission, if it is a link type permissions. Read-only.
+  - property: roles
+    type: Collection(String)
+    description: The type of permission, e.g. read. See below for the full list of roles. Read-only.
+  - property: shareId
+    type: String
+    description: A unique token that can be used to access this shared item via the **shares** API. Read-only.
+  outro: |
+    The permission resource uses _facets_ to provide information about the kind of permission represented by the resource.
+    Permissions with a [**link**][SharingLink] facet represent sharing links created on the item. 
+    Sharing links contain a unique token that provides access to the item for anyone with the link.
+    Permissions with an [**invitation**][SharingInvitation] facet represent permissions added by inviting specific users or groups to have access to the file.
+enum:
+  heading: Roles enumeration
+  table:
+  - member: 
+    description: 
+  - member: 
+    description: 
+  - member: 
+    description: 
+  - member: 
+    description: 
+  outro: |
+    ## Sharing links
+    The most common type of permissions are sharing links.
+    Sharing links provide a unique URL that includes both the resource being shared
+    and an authentication token that provides access to the resource. Users don't
+    need to sign-in to access the content shared with a sharing link. Users can
+    share a link that gives read-only access to the content or writable access to
+    the content.
+remarks:
+  heading: Remarks
+  intro: |
+    OneDrive for Business and SharePoint document libraries do not return the **inheritedFrom** property.

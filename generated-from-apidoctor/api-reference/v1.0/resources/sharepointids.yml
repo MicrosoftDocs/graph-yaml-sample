@@ -1,0 +1,54 @@
+### YamlMime:GraphResource
+uid:graph.sharepointids
+metadata:
+  title: SharePointIds
+  author: rgregg
+  ms.author: rgregg
+  ms.date: 09/10/2017
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/sharepointids.md
+summary:
+  heading: SharePointIds resource type
+  intro: |
+    The **SharePointIds** resource groups the various identifiers for an item stored in a SharePoint site or OneDrive for Business into a single structure.
+    **Note:** items returned from OneDrive personal will not include a **SharePointIds** facet.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource
+  sampleCode: |
+    ```json
+    {
+        "listId": "string",
+        "listItemId": "string",
+        "listItemUniqueId": "string",
+        "siteId": "string",
+        "siteUrl": "url",
+        "webId": "string"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: listId
+    type: String
+    description: The unique identifier (guid) for the item's list in SharePoint.
+  - property: listItemId
+    type: String
+    description: An integer identifier for the item within the containing list.
+  - property: listItemUniqueId
+    type: String
+    description: The unique identifier (guid) for the item within OneDrive for Business or a SharePoint site.
+  - property: siteId
+    type: String
+    description: The unique identifier (guid) for the item's site collection (SPSite).
+  - property: siteUrl
+    type: String
+    description: The SharePoint URL for the site that contains the item.
+  - property: webId
+    type: String
+    description: The unique identifier (guid) for the item's site (SPWeb).
+remarks:
+  heading: Remarks
+  intro: |
+    For more information about the facets on a **driveItem**, see [**driveItem**](xref:graph.driveitem).

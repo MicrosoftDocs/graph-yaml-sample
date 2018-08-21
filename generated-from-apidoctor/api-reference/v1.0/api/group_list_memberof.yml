@@ -1,0 +1,78 @@
+### YamlMime:GraphOperation
+uid:graph.group_list_memberof
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/group_list_memberof.md
+summary:
+  heading: List memberOf
+  intro: |
+    Get groups that the group is a direct member of. 
+    This operation is not transitive. Unlike getting a user's Office 365 Groups, this returns all types of groups, not just Office 365 groups.
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+  list:
+  - resource: Delegated (work or school account)
+    permission: Group.Read.All
+  - resource: Delegated (personal Microsoft account)
+    permission: Not supported.
+  - resource: Application
+    permission: Group.Read.All, Directory.Read.All
+httpRequest:
+  heading: HTTP request
+  sampleCode: |
+    ```http
+    GET /groups/{id}/memberOf
+    ```
+    
+queryParameters:
+  heading: Optional query parameters
+  intro: |
+    This method supports the [OData Query Parameters](xref:graph.query_parameters) to help customize the response.
+requestHeaders:
+  heading: Request headers
+  list:
+  - name: Authorization
+    value: String
+    description: Bearer {token}. Required.
+requestBody:
+  heading: Request body
+  intro: |
+    Do not supply a request body for this method.
+response:
+  heading: Response
+  intro: |
+    If successful, this method returns a `200 OK` response code and collection of [directoryObject](xref:graph.directoryobject) objects in the response body.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        request:
+            heading: Request
+            intro: |
+              The following is an example of the request.
+            sampleCode: |
+              ```http
+              GET https://graph.microsoft.com/v1.0/groups/{id}/memberOf
+              ```
+              
+        response:
+            heading: Response
+            intro: |
+              The following is an example of the response.
+              
+            sampleCode: |
+              ```http
+              HTTP/1.1 200 OK
+              Content-type: application/json
+              Content-length: 55
+              
+              {
+                "value": [
+                  {
+                    "id": "id-value"
+                  }
+                ]
+              }
+              ```
+              

@@ -1,0 +1,29 @@
+### YamlMime:GraphResource
+uid:graph.persontype
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/persontype.md
+summary:
+  heading: personType resource type
+  intro: |
+    Represents the type of person.
+resource:
+  heading: JSON representation
+  intro: |
+    The following is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "class": "string",
+      "subclass": "string"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: class
+    type: String
+    description: The type of data source, such as Person.
+  - property: subclass
+    type: String
+    description: The secondary type of data source, such as OrganizationUser.

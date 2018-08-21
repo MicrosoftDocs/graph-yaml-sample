@@ -1,0 +1,25 @@
+### YamlMime:GraphOperation
+uid:graph.intune_devices_actionstate
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_devices_actionstate.md
+summary:
+  heading: actionState enum type
+  intro: |
+    State of the action on the device
+enum:
+  heading: Members
+  table:
+  - member: none
+    description: Not a valid action state
+  - member: pending
+    description: Action is pending
+  - member: canceled
+    description: Action has been cancelled.
+  - member: active
+    description: Action is active.
+  - member: done
+    description: Action completed without errors.
+  - member: failed
+    description: Action failed
+  - member: notSupported
+    description: Action is not supported.

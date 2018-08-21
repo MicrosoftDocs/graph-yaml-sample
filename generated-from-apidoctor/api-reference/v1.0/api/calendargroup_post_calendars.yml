@@ -1,0 +1,89 @@
+### YamlMime:GraphOperation
+uid:graph.calendargroup_post_calendars
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/calendargroup_post_calendars.md
+summary:
+  heading: Create Calendar
+  intro: |
+    Use this API to create a new calendar in a calendar group for a [user](xref:graph.user).
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+  list:
+  - resource: Delegated (work or school account)
+    permission: Calendars.ReadWrite
+  - resource: Delegated (personal Microsoft account)
+    permission: Calendars.ReadWrite
+  - resource: Application
+    permission: Calendars.ReadWrite
+httpRequest:
+  heading: HTTP request
+  intro: |
+    A user's default [calendarGroup](xref:graph.calendargroup).
+    POST /me/calendarGroup/calendars
+    POST /users/{id | userPrincipalName}/calendarGroup/calendars
+
+    Any [calendarGroup](xref:graph.calendargroup) of a user.
+    POST /me/calendarGroups/{id}/calendars
+    POST /users/{id | userPrincipalName}/calendarGroups/{id}/calendars
+
+requestHeaders:
+  heading: Request headers
+  list:
+  - name: Authorization
+    value: String
+    description: 
+  - name: Content-Type
+    value: String
+    description: 
+requestBody:
+  heading: Request body
+  intro: |
+    In the request body, supply a JSON representation of [calendar](xref:graph.calendar) object.
+response:
+  heading: Response
+  intro: |
+    If successful, this method returns `201 Created` response code and [calendar](xref:graph.calendar) object in the response body.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        request:
+            heading: Request
+            intro: |
+              Here is an example of the request.
+            sampleCode: |
+              ```http
+              POST https://graph.microsoft.com/v1.0/me/calendarGroups/{id}/calendars
+              Content-type: application/json
+              Content-length: 78
+              
+              {
+                "name": "name-value",
+                "color": {
+                }
+              }
+              ```
+              
+            outro: |
+              In the request body, supply a JSON representation of [calendar](xref:graph.calendar) object.
+        response:
+            heading: Response
+            intro: |
+              Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+            sampleCode: |
+              ```http
+              HTTP/1.1 200 OK
+              Content-type: application/json
+              Content-length: 98
+              
+              {
+                "name": "name-value",
+                "color": {
+                },
+                "changeKey": "changeKey-value",
+                "id": "id-value"
+              }
+              ```
+              

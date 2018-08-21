@@ -1,0 +1,23 @@
+### YamlMime:GraphOperation
+uid:graph.intune_deviceconfig_devicecomplianceactiontype
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_devicecomplianceactiontype.md
+summary:
+  heading: deviceComplianceActionType enum type
+  intro: |
+    Scheduled Action Type Enum
+enum:
+  heading: Members
+  table:
+  - member: noAction
+    description: No Action
+  - member: notification
+    description: Send Notification
+  - member: block
+    description: Block the device in AAD
+  - member: retire
+    description: Retire the device
+  - member: wipe
+    description: Wipe the device
+  - member: removeResourceAccessProfiles
+    description: Remove Resource Access Profiles from the device

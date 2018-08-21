@@ -1,0 +1,30 @@
+### YamlMime:GraphOperation
+uid:graph.android
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/android.md
+summary:
+  heading: Get started with Microsoft Graph in an Android app
+  intro: |
+    This article describes the tasks required to get an access token from the Azure AD v2.0 endpoint and call Microsoft Graph. It walks you through building the [Connect Sample for Android](https://github.com/microsoftgraph/android-java-connect-sample) and explains the main concepts that you implement to use Microsoft Graph in your app for Android. The article also describes how to access Microsoft Graph by using either the [Microsoft Graph SDK for Android](https://github.com/microsoftgraph/msgraph-sdk-android) or raw REST calls.
+    To use Microsoft Graph in your app for Android, you need to show the Microsoft sign-in page to your users, as shown in the following screenshot.
+    ![Sign-in page for Microsoft accounts on Android](images/AndroidConnect.png)
+    <br/>
+    **Don't feel like building an app?** Get up and running fast by downloading the [Connect Sample for Android](https://github.com/microsoftgraph/android-java-connect-sample) that this article is based on.
+permissions:
+  heading: Prerequisites
+  intro: |
+    To get started, you'll need: 
+    
+    * A [Microsoft account](https://www.outlook.com/) or a [work or school account](https://docs.microsoft.com/en-us/office/developer-program/office-365-developer-program-faq#account-types)
+    * Android Studio 2.0 or newer version
+    
+  outro: |
+    ## Configure a new project
+    If you have downloaded the [Connect Sample for Android](https://github.com/microsoftgraph/android-java-connect-sample), skip this step. 
+    Start a new project in Android Studio. You can leave the default values for most of the wizard; just make sure to choose the following options:
+    
+    * Target Android Devices: **Phone and Tablet**
+    * Minimum SDK: **API 16: Android 4.1 (Jelly Bean)**
+    * Add an Activity to Mobile: **Basic Activity**
+    
+    This provides you with an Android project with an activity and a button that you can use to authenticate the user.

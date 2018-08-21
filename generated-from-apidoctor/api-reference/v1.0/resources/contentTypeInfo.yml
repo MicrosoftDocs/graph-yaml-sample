@@ -1,0 +1,29 @@
+### YamlMime:GraphResource
+uid:graph.contentTypeInfo
+metadata:
+  title: ContentTypeInfo
+  author: daspek
+  ms.author: dspektor
+  ms.date: 09/12/2017
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/contentTypeInfo.md
+summary:
+  heading: ContentTypeInfo resource type
+  intro: |
+    The **contentTypeInfo** resource indicates the SharePoint content type of an item.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of a **contentTypeInfo** resource.
+  sampleCode: |
+    ```json
+    {
+      "id": "string"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: id
+    type: String
+    description: The id of the content type.

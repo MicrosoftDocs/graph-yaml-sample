@@ -1,0 +1,85 @@
+### YamlMime:GraphOperation
+uid:graph.domain_post_domains
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/domain_post_domains.md
+summary:
+  heading: Create domain
+  intro: |
+    Adds a domain to the tenant.
+    **Important**: You cannot use an associated domain with your Azure AD tenant until ownership is verified. See [List verificationDnsRecords](xref:graph.domain_list_verificationdnsrecords) for details. Root domains require verification. For example, contoso.com requires verification. If a root domain is verified, subdomains of the root domain are automatically verified. For example, subdomain.contoso.com is automatically be verified if contoso.com has been verified.
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+  list:
+  - resource: Delegated (work or school account)
+    permission: Directory.AccessAsUser.All
+  - resource: Delegated (personal Microsoft account)
+    permission: Not supported.
+  - resource: Application
+    permission: Domain.ReadWrite.All
+httpRequest:
+  heading: HTTP request
+  sampleCode: |
+    ```http
+    POST /domains
+    ```
+    
+requestHeaders:
+  heading: Request headers
+  list:
+  - name: Authorization
+    value: 
+    description: Bearer {token}. Required.
+  - name: Content-Type
+    value: 
+    description: application/json
+requestBody:
+  heading: Request body
+  intro: |
+    In the request body, supply a JSON representation of [domain](xref:graph.domain) object.
+    
+response:
+  heading: Response
+  intro: |
+    If successful, this method returns `201 Created` response code and [domain](xref:graph.domain) object in the response body.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        request:
+            heading: Request
+            intro: |
+              In the request body, supply a JSON representation of [domain](xref:graph.domain) object.
+            sampleCode: |
+              ```http
+              POST https://graph.microsoft.com/v1.0/domains
+              Content-type: application/json
+              Content-length: 192
+              
+              {
+                "id": "contoso.com"
+              }
+              ```
+              
+        response:
+            heading: Response
+            intro: |
+              Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+            sampleCode: |
+              ```http
+              HTTP/1.1 201 Created
+              Content-type: application/json
+              Content-length: 192
+              
+              {
+                "authenticationType": "authenticationType-value",
+                "availabilityStatus": "availabilityStatus-value",
+                "id": "contoso.com",
+                "isAdminManaged": true,
+                "isDefault": true,
+                "isInitial": true,
+                "isRoot": true
+              }
+              ```
+              

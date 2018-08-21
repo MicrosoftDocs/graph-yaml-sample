@@ -1,0 +1,119 @@
+### YamlMime:GraphResource
+uid:graph.site
+metadata:
+  title: Site
+  author: rgregg
+  ms.author: rgregg
+  ms.date: 09/10/2017
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.site
+summary:
+  heading: Site resource
+  intro: |
+    The **site** resource provides metadata and relationships for a SharePoint site.
+  outro: |
+    ## Tasks
+    All examples below are relative to `https://graph.microsoft.com/v1.0`.
+    |Task name|Example Request
+    |:-|:-
+    |[Get root site][]|GET /sites/root
+    |[Get site][]|GET /sites/{site-id}
+    |[Get site by path][]|GET /sites/{hostname}:/{site-path}
+    |[Get site for a group][]|GET /groups/{group-id}/sites/root
+    |[Search for sites][]|GET /sites?search={query}
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of a **site** resource.
+    The **site** resource is derived from [**baseItem**](xref:graph.baseitem) and inherits properties from that resource.
+  sampleCode: |
+    ```json
+    {
+      "id": "string",
+      "root": { "@odata.type": "microsoft.graph.root" },
+      "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
+      "siteCollection": {"@odata.type": "microsoft.graph.siteCollection"},
+      "displayName": "string",
+    
+      /* relationships */
+      "contentTypes": [ { "@odata.type": "microsoft.graph.contentType" }],
+      "drive": { "@odata.type": "microsoft.graph.drive" },
+      "drives": [ { "@odata.type": "microsoft.graph.drive" }],
+      "items": [ { "@odata.type": "microsoft.graph.baseItem" }],
+      "lists": [ { "@odata.type": "microsoft.graph.list" }],
+      "sites": [ { "@odata.type": "microsoft.graph.site"} ],
+      "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
+      "onenote": { "@odata.type": "microsoft.graph.onenote"},
+    
+      /* inherited from baseItem */
+      "name": "string",
+      "createdDateTime": "datetime",
+      "description": "string",
+      "eTag": "string",
+      "lastModifiedDateTime": "datetime",
+      "webUrl": "url"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: id
+    type: String
+    description: The unique identifier of the item. Read-only.
+  - property: createdDateTime
+    type: DateTimeOffset
+    description: The date and time the item was created. Read-only.
+  - property: description
+    type: String
+    description: The descriptive text for the site.
+  - property: displayName
+    type: String
+    description: The full title for the site. Read-only.
+  - property: eTag
+    type: String
+    description: ETag for the item. Read-only.
+  - property: lastModifiedDateTime
+    type: DateTimeOffset
+    description: The date and time the item was last modified. Read-only.
+  - property: name
+    type: String
+    description: The name / title of the item.
+  - property: root
+    type: microsoft.graph.root
+    description: If present, indicates that this is the root site in the site collection. Read-only.
+  - property: sharepointIds
+    type: microsoft.graph.sharepointIds
+    description: Returns identifiers useful for SharePoint REST compatibility. Read-only.
+  - property: siteCollection
+    type: microsoft.graph.siteCollection
+    description: Provides details about the site's site collection. Available only on the root site. Read-only.
+  - property: webUrl
+    type: String
+    description: URL that displays the item in the browser. Read-only.
+relationships:
+  heading: Relationships
+  list:
+  - relationship: columns
+    type: Collection(microsoft.graph.columnDefinition)
+    description: The collection of column definitions reusable across lists under this site.
+  - relationship: contentTypes
+    type: Collection(microsoft.graph.contentType)
+    description: The collection of content types defined for this site.
+  - relationship: drive
+    type: microsoft.graph.drive
+    description: The default drive (document library) for this site.
+  - relationship: drives
+    type: Collection(microsoft.graph.drive)
+    description: The collection of drives (document libraries) under this site.
+  - relationship: items
+    type: Collection(microsoft.graph.baseItem)
+    description: Used to address any item contained in this site. This collection cannot be enumerated.
+  - relationship: lists
+    type: Collection(microsoft.graph.list)
+    description: The collection of lists under this site.
+  - relationship: sites
+    type: Collection(microsoft.graph.site)
+    description: The collection of the sub-sites under this site.
+  - relationship: onenote
+    type: microsoft.graph.onenote
+    description: Calls the OneNote service for notebook related operations.

@@ -1,0 +1,45 @@
+### YamlMime:GraphResource
+uid:graph.plannercategorydescriptions
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/plannercategorydescriptions.md
+summary:
+  heading: plannerCategoryDescriptions resource type
+  intro: |
+    The **plannerCategoryDescriptions** resource represents the descriptive labels for the categories that have been defined for a plan. It belongs to the [plan details](xref:graph.plannerplandetails) object. There can be up to 6 categories defined. 
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "category1": "String",
+      "category2": "String",
+      "category3": "String",
+      "category4": "String",
+      "category5": "String",
+      "category6": "String"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: category1
+    type: String
+    description: The label associated with Category 1
+  - property: category2
+    type: String
+    description: The label associated with Category 2
+  - property: category3
+    type: String
+    description: The label associated with Category 3
+  - property: category4
+    type: String
+    description: The label associated with Category 4
+  - property: category5
+    type: String
+    description: The label associated with Category 5
+  - property: category6
+    type: String
+    description: The label associated with Category 6

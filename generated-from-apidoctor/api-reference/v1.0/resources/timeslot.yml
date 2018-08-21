@@ -1,0 +1,29 @@
+### YamlMime:GraphResource
+uid:graph.timeslot
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/timeslot.md
+summary:
+  heading: timeSlot resource type
+  intro: |
+    A time period.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource
+  sampleCode: |
+    ```json
+    {
+      "end": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
+      "start": {"@odata.type": "microsoft.graph.dateTimeTimeZone"}
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: end
+    type: microsoft.graph.dateTimeTimeZone
+    description: The time a period begins.
+  - property: start
+    type: microsoft.graph.dateTimeTimeZone
+    description: The time the period ends.

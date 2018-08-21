@@ -1,0 +1,77 @@
+### YamlMime:GraphResource
+uid:graph.rangeformat
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.rangeformat
+summary:
+  heading: RangeFormat resource type
+  intro: |
+    A format object encapsulating the range's font, fill, borders, alignment, and other properties.
+methods:
+  heading: Methods
+  list:
+  - method: [Get RangeFormat](xref:graph.rangeformat_get)
+    type: [WorkbookRangeFormat](xref:graph.rangeformat)
+    description: Read properties and relationships of rangeFormat object.
+  - method: [Create RangeBorder](xref:graph.rangeformat_post_borders)
+    type: [WorkbookRangeBorder](xref:graph.rangeborder)
+    description: Create a new RangeBorder by posting to the borders collection.
+  - method: [List borders](xref:graph.rangeformat_list_borders)
+    type: [WorkbookRangeBorder](xref:graph.rangeborder) collection
+    description: Get a RangeBorder object collection.
+  - method: [Update](xref:graph.rangeformat_update)
+    type: [WorkbookRangeFormat](xref:graph.rangeformat)
+    description: Update RangeFormat object.
+  - method: [Autofitcolumns](xref:graph.rangeformat_autofitcolumns)
+    type: None
+    description: Changes the width of the columns of the current range to achieve the best fit, based on the current data in the columns.
+  - method: [Autofitrows](xref:graph.rangeformat_autofitrows)
+    type: None
+    description: Changes the height of the rows of the current range to achieve the best fit, based on the current data in the columns.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "columnWidth": 1024,
+      "horizontalAlignment": "string",
+      "rowHeight": 1024,
+      "verticalAlignment": "string",
+      "wrapText": true
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: columnWidth
+    type: Double
+    description: Gets or sets the width of all colums within the range. If the column widths are not uniform, null will be returned.
+  - property: horizontalAlignment
+    type: String
+    description: Represents the horizontal alignment for the specified object. The possible values are: General, Left, Center, Right, Fill, Justify, CenterAcrossSelection, Distributed.
+  - property: rowHeight
+    type: Double
+    description: Gets or sets the height of all rows in the range. If the row heights are not uniform null will be returned.
+  - property: verticalAlignment
+    type: String
+    description: Represents the vertical alignment for the specified object. The possible values are: Top, Center, Bottom, Justify, Distributed.
+  - property: wrapText
+    type: Boolean
+    description: Indicates if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform wrap setting
+relationships:
+  heading: Relationships
+  list:
+  - relationship: borders
+    type: Collection(microsoft.graph.workbookRangeBorder)
+    description: Collection of border objects that apply to the overall range selected Read-only.
+  - relationship: fill
+    type: microsoft.graph.workbookRangeFill
+    description: Returns the fill object defined on the overall range. Read-only.
+  - relationship: font
+    type: microsoft.graph.workbookRangeFont
+    description: Returns the font object defined on the overall range selected Read-only.
+  - relationship: protection
+    type: microsoft.graph.workbookFormatProtection
+    description: Returns the format protection object for a range. Read-only.

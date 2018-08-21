@@ -1,0 +1,61 @@
+### YamlMime:GraphResource
+uid:graph.itemreference
+metadata:
+  title: ItemReference
+  author: rgregg
+  ms.author: rgregg
+  ms.date: 09/10/2017
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/itemreference.md
+summary:
+  heading: ItemReference resource type
+  intro: |
+    The **ItemReference** resource provides information necessary to address a [DriveItem](xref:graph.driveitem) via the API.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource
+  sampleCode: |
+    ```json
+    {
+      "driveId": "string",
+      "driveType": "personal | business | documentLibrary",
+      "id": "string",
+      "name": "string",
+      "path": "string",
+      "shareId": "string",
+      "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" }
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: driveId
+    type: String
+    description: Unique identifier of the drive instance that contains the item. Read-only.
+  - property: driveType
+    type: String
+    description: Identifies the type of drive. See [drive][] resource for values.
+  - property: id
+    type: String
+    description: Unique identifier of the item in the drive. Read-only.
+  - property: name
+    type: String
+    description: The name of the item being referenced. Read-only.
+  - property: path
+    type: String
+    description: Path that can be used to navigate to the item. Read-only.
+  - property: shareId
+    type: String
+    description: A unique identifier for a shared resource that can be accessed via the [Shares][] API.
+  - property: sharepointIds
+    type: microsoft.graph.sharepointIds
+    description: Returns identifiers useful for SharePoint REST compatibility. Read-only.
+remarks:
+  heading: Remarks
+  intro: |
+    To address a **driveItem** from an **itemReference** resource, construct a URL of the format:
+    GET https://graph.microsoft.com/v1.0/drives/{driveId}/items/{id}
+
+    The **path** value is an API path relative to the target drive, for example: `/drive/root:/Documents/myfile.docx`.
+    To retrieve the human-readable path for a breadcrumb, you can safely ignore everything up to the first `:` in the path string.

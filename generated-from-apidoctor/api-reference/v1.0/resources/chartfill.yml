@@ -1,0 +1,33 @@
+### YamlMime:GraphResource
+uid:graph.chartfill
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/chartfill.md
+summary:
+  heading: ChartFill resource type
+  intro: |
+    Represents the fill formatting for a chart element.
+methods:
+  heading: Methods
+  list:
+  - method: [Clear](xref:graph.chartfill_clear)
+    type: None
+    description: Clear the fill color of a chart element.
+  - method: [Setsolidcolor](xref:graph.chartfill_setsolidcolor)
+    type: None
+    description: Sets the fill formatting of a chart element to a uniform color.
+resource:
+  heading: JSON representation
+  sampleCode: |
+    ```json
+    {
+    }
+    ```
+    
+properties:
+  heading: Properties
+  intro: |
+    None
+relationships:
+  heading: Relationships
+  intro: |
+    None

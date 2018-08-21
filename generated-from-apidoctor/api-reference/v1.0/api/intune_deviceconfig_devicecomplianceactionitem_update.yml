@@ -1,0 +1,84 @@
+### YamlMime:GraphOperation
+uid:graph.intune_deviceconfig_devicecomplianceactionitem_update
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/intune_deviceconfig_devicecomplianceactionitem_update.md
+summary:
+  heading: Update deviceComplianceActionItem
+  intro: |
+    Update the properties of a [deviceComplianceActionItem](xref:graph.intune_deviceconfig_devicecomplianceactionitem) object.
+permissions:
+  heading: Prerequisites
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+httpRequest:
+  heading: HTTP Request
+  sampleCode: |
+    ```http
+    PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/scheduledActionsForRule/{deviceComplianceScheduledActionForRuleId}/scheduledActionConfigurations/{deviceComplianceActionItemId}
+    ```
+    
+requestHeaders:
+  heading: Request headers
+  list:
+  - name: Authorization
+    value: String
+    description: 
+  - name: Accept
+    value: String
+    description: 
+requestBody:
+  heading: Request body
+  intro: |
+    In the request body, supply a JSON representation for the [deviceComplianceActionItem](xref:graph.intune_deviceconfig_devicecomplianceactionitem) object.
+    The following table shows the properties that are required when you create the [deviceComplianceActionItem](xref:graph.intune_deviceconfig_devicecomplianceactionitem).
+    |Property|Type|Description
+    |:-|:-|:-|
+    |id|String|Key of the entity.
+    |gracePeriodHours|Int32|Number of hours to wait till the action will be enforced. Valid values 0 to 8760
+    |actionType|[deviceComplianceActionType](xref:graph.intune_deviceconfig_devicecomplianceactiontype)|What action to take. The possible values are: `noAction`, `notification`, `block`, `retire`, `wipe`, `removeResourceAccessProfiles`.
+    |notificationTemplateId|String|What notification Message template to use
+    |notificationMessageCCList|String collection|A list of group IDs to speicify who to CC this notification message to.
+response:
+  heading: Response
+  intro: |
+    If successful, this method returns a `200 OK` response code and an updated [deviceComplianceActionItem](xref:graph.intune_deviceconfig_devicecomplianceactionitem) object in the response body.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        request:
+            heading: Request
+            intro: |
+              Here is an example of the request.
+              PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/scheduledActionsForRule/{deviceComplianceScheduledActionForRuleId}/scheduledActionConfigurations/{deviceComplianceActionItemId}
+              Content-type: application/json
+              Content-length: 206
+              
+              {
+                "gracePeriodHours": 0,
+                "actionType": "notification",
+                "notificationTemplateId": "Notification Template Id value",
+                "notificationMessageCCList": [
+                  "Notification Message CCList value"
+                ]
+              }
+
+        response:
+            heading: Response
+            intro: |
+              Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+              HTTP/1.1 200 OK
+              Content-Type: application/json
+              Content-Length: 320
+              
+              {
+                "@odata.type": "#microsoft.graph.deviceComplianceActionItem",
+                "id": "e01a1893-1893-e01a-9318-1ae093181ae0",
+                "gracePeriodHours": 0,
+                "actionType": "notification",
+                "notificationTemplateId": "Notification Template Id value",
+                "notificationMessageCCList": [
+                  "Notification Message CCList value"
+                ]
+              }
+

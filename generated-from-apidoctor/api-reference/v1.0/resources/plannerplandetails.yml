@@ -1,0 +1,46 @@
+### YamlMime:GraphResource
+uid:graph.plannerplandetails
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.plannerplandetails
+summary:
+  heading: plannerPlanDetails resource type
+  intro: |
+    The **plannerPlanDetails** resource represents the additional information about a plan. Each [plan](xref:graph.plannerplan) object has a details object.
+methods:
+  heading: Methods
+  list:
+  - method: [Get plannerPlanDetails](xref:graph.plannerplandetails_get)
+    type: [plannerPlanDetails](xref:graph.plannerplandetails)
+    description: Read properties and relationships of plannerPlanDetails object.
+  - method: [Update](xref:graph.plannerplandetails_update)
+    type: [plannerPlanDetails](xref:graph.plannerplandetails)
+    description: Update plannerPlanDetails object.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "categoryDescriptions": {"@odata.type": "microsoft.graph.plannerCategoryDescriptions"},
+      "id": "String (identifier)",
+      "sharedWith": {"@odata.type": "microsoft.graph.plannerUserIds"}
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: categoryDescriptions
+    type: microsoft.graph.plannerCategoryDescriptions
+    description: An object that specifies the descriptions of the six categories that can be associated with tasks in the plan
+  - property: id
+    type: String
+    description: Read-only. ID of the plan details. It is 28 characters long and case-sensitive. Format validation is done on the service.
+  - property: sharedWith
+    type: microsoft.graph.plannerUserIds
+    description: Set of user ids that this plan is shared with. If you are leveraging Office 365 Groups, use the Groups API to manage group membership to share the group's plan. You can also add existing members of the group to this collection though it is not required for them to access the plan owned by the group.
+relationships:
+  heading: Relationships
+  intro: |
+    None

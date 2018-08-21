@@ -1,0 +1,25 @@
+### YamlMime:GraphOperation
+uid:graph.missing-request-examples
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/missing-request-examples.md
+summary:
+  heading: Helpers (examples that aren't included in the docs)
+  intro: |
+    These are things I had to add in the docs to make sure the Markdown-Scanner
+    tool was able to properly handle the Graph docs.
+  outro: |
+    ## Define the /me as singleton
+    
+    ```http
+    GET https://graph.microsoft.com/v1.0/me
+    ```
+    
+    
+    ```http
+    HTTP/1.1 200 OK
+    Content-Type: application/json
+    
+    {
+    }
+    ```
+    

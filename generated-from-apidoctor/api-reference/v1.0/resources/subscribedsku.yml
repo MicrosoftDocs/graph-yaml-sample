@@ -1,0 +1,67 @@
+### YamlMime:GraphResource
+uid:graph.subscribedsku
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.subscribedsku
+summary:
+  heading: subscribedSku resource type
+  intro: |
+    Contains information about a service SKU that a company is subscribed to.
+    Only the read operation is supported on subscribed SKUs; create, update, and delete are not supported. Query filter expressions are not supported. Inherits from [directoryObject](xref:graph.directoryobject).
+methods:
+  heading: Methods
+  list:
+  - method: [Get subscribedSku](xref:graph.subscribedsku_get)
+    type: [subscribedSku](xref:graph.subscribedsku)
+    description: Read properties and relationships of subscribedSku object.
+  - method: [List subscribedsku](xref:graph.subscribedsku_list)
+    type: [subscribedSku](xref:graph.subscribedsku) collection
+    description: Retrieve the list of commercial subscriptions that an organization has acquired.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource
+  sampleCode: |
+    ```json
+    {
+      "appliesTo": "string",
+      "capabilityStatus": "string",
+      "consumedUnits": 1024,
+      "id": "string (identifier)",
+      "prepaidUnits": {"@odata.type": "microsoft.graph.licenseUnitsDetail"},
+      "servicePlans": [{"@odata.type": "microsoft.graph.servicePlanInfo"}],
+      "skuId": "guid",
+      "skuPartNumber": "string"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: appliesTo
+    type: String
+    description: For example, "User" or "Company".
+  - property: capabilityStatus
+    type: String
+    description: For example, "Enabled".
+  - property: consumedUnits
+    type: Int32
+    description: The number of licenses that have been assigned.
+  - property: id
+    type: String
+    description: The unique identifier for the subscribed sku object. Key, not nullable.
+  - property: prepaidUnits
+    type: microsoft.graph.licenseUnitsDetail
+    description: Information about the number and status of prepaid licenses.
+  - property: servicePlans
+    type: Collection(microsoft.graph.servicePlanInfo)
+    description: Information about the service plans that are available with the SKU. Not nullable
+  - property: skuId
+    type: Guid
+    description: The unique identifier (GUID) for the service SKU.
+  - property: skuPartNumber
+    type: String
+    description: The SKU part number; for example: "AAD_PREMIUM" or "RMSBASIC".
+relationships:
+  heading: Relationships
+  intro: |
+    None

@@ -1,0 +1,19 @@
+### YamlMime:GraphOperation
+uid:graph.intune_mam_windowsinformationprotectionenforcementlevel
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_mam_windowsinformationprotectionenforcementlevel.md
+summary:
+  heading: windowsInformationProtectionEnforcementLevel enum type
+  intro: |
+    Possible values for WIP Protection enforcement levels
+enum:
+  heading: Members
+  table:
+  - member: noProtection
+    description: No protection enforcement
+  - member: encryptAndAuditOnly
+    description: Encrypt and Audit only
+  - member: encryptAuditAndPrompt
+    description: Encrypt, Audit and Prompt
+  - member: encryptAuditAndBlock
+    description: Encrypt, Audit and Block

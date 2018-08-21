@@ -1,0 +1,123 @@
+### YamlMime:GraphOperation
+uid:graph.group_get
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/group_get.md
+summary:
+  heading: Get group
+  intro: |
+    Get the properties and relationships of a group object.
+  outro: |
+    ##### Default properties
+    The following represent the default set of properties that are returned when getting or listing groups.
+    These are a subset of all available properties.
+    
+    * description
+    * displayName
+    * groupTypes
+    * id
+    * mail
+    * mailEnabled
+    * mailNickname
+    * onPremisesLastSyncDateTime
+    * onPremisesSecurityIdentifier
+    * onPremisesSyncEnabled
+    * proxyAddresses
+    * securityEnabled
+    * visibility
+    
+    The following group properties are not returned by default:
+    
+    * allowExternalSenders
+    * autoSubscribeNewMembers
+    * isSubscribedByMail
+    * unseenCount
+    
+    To get these properties, use the **$select** query parameter. The following are examples: 
+    
+    ```http
+    GET https://graph.microsoft.com/v1.0/groups/c28c1cc9-e1ab-4c4d-98d1-d8fdf128b60f?$select=allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount
+    
+    GET https://graph.microsoft.com/v1.0/groups/c28c1cc9-e1ab-4c4d-98d1-d8fdf128b60f?$select=description,allowExternalSenders
+    ```
+    
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+  list:
+  - resource: Delegated (work or school account)
+    permission: Group.Read.All, Group.ReadWrite.All
+  - resource: Delegated (personal Microsoft account)
+    permission: Not supported.
+  - resource: Application
+    permission: Group.Read.All, Group.ReadWrite.All
+httpRequest:
+  heading: HTTP request
+  sampleCode: |
+    ```http
+    GET /groups/{id}
+    ```
+    
+queryParameters:
+  heading: Optional query parameters
+  intro: |
+    This method supports the [OData Query Parameters](xref:graph.query_parameters) to help customize the response.
+requestHeaders:
+  heading: Request headers
+  list:
+  - name: Authorization
+    value: String
+    description: Bearer {token}. Required.
+requestBody:
+  heading: Request body
+  intro: |
+    Do not supply a request body for this method.
+response:
+  heading: Response
+  intro: |
+    If successful, this method returns a `200 OK` response code and [group](xref:graph.group) object in the response body.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        request:
+            heading: Request
+            intro: |
+              The following is an example of the request.
+            sampleCode: |
+              ```http
+              GET https://graph.microsoft.com/v1.0/groups/{id}
+              ```
+              
+        response:
+            heading: Response
+            intro: |
+              The following is an example of the response.
+              
+            sampleCode: |
+              ```http
+              HTTP/1.1 200 OK
+              Content-type: application/json
+              Content-length: xxx
+              
+              {
+                "id": "id-value",
+                "description": "description-value",
+                "displayName": "displayName-value",
+                "groupTypes": [
+                  "groupTypes-value"
+                ],
+                "mail": "mail-value",
+                "mailEnabled": true,
+                "mailNickname": "mailNickname-value",
+                "onPremisesLastSyncDateTime": "onPremisesLastSyncDateTime-value",
+                "onPremisesSecurityIdentifier": "onPremisesSecurityIdentifier-value",
+                "onPremisesSyncEnabled": true,
+                "proxyAddresses": [
+                  "proxyAddresses-value"
+                 ],
+                 "securityEnabled": true,
+                 "visibility": "visibility-value"
+              }
+              ```
+              

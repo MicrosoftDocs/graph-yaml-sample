@@ -1,0 +1,17 @@
+### YamlMime:GraphOperation
+uid:graph.intune_onboarding_enablement
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_onboarding_enablement.md
+summary:
+  heading: enablement enum type
+  intro: |
+    Not yet documented
+enum:
+  heading: Members
+  table:
+  - member: notConfigured
+    description: Not yet documented
+  - member: enabled
+    description: Not yet documented
+  - member: disabled
+    description: Not yet documented

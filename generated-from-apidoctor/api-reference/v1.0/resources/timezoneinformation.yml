@@ -1,0 +1,30 @@
+### YamlMime:GraphResource
+uid:graph.timezoneinformation
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/timezoneinformation.md
+summary:
+  heading: timeZoneInformation resource type
+  intro: |
+    Represents a time zone. The supported format is Windows, and [Internet Assigned Numbers Authority (IANA) time zone](http://www.iana.org/time-zones) (also known as Olson time zone)
+    format as well when the current known problem is fixed.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "alias": "string",
+      "displayName": "string"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: alias
+    type: String
+    description: An identifier for the time zone.
+  - property: displayName
+    type: String
+    description: A display string that represents the time zone.

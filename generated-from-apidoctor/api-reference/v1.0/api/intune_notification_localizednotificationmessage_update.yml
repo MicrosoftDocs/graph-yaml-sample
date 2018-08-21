@@ -1,0 +1,83 @@
+### YamlMime:GraphOperation
+uid:graph.intune_notification_localizednotificationmessage_update
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/intune_notification_localizednotificationmessage_update.md
+summary:
+  heading: Update localizedNotificationMessage
+  intro: |
+    Update the properties of a [localizedNotificationMessage](xref:graph.intune_notification_localizednotificationmessage) object.
+permissions:
+  heading: Prerequisites
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+httpRequest:
+  heading: HTTP Request
+  sampleCode: |
+    ```http
+    PATCH /deviceManagement/notificationMessageTemplates/{notificationMessageTemplateId}/localizedNotificationMessages/{localizedNotificationMessageId}
+    ```
+    
+requestHeaders:
+  heading: Request headers
+  list:
+  - name: Authorization
+    value: String
+    description: 
+  - name: Accept
+    value: String
+    description: 
+requestBody:
+  heading: Request body
+  intro: |
+    In the request body, supply a JSON representation for the [localizedNotificationMessage](xref:graph.intune_notification_localizednotificationmessage) object.
+    The following table shows the properties that are required when you create the [localizedNotificationMessage](xref:graph.intune_notification_localizednotificationmessage).
+    |Property|Type|Description
+    |:-|:-|:-|
+    |id|String|Key of the entity.
+    |lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified.
+    |locale|String|The Locale for which this message is destined.
+    |subject|String|The Message Template Subject.
+    |messageTemplate|String|The Message Template content.
+    |isDefault|Boolean|Flag to indicate whether or not this is the default locale for language fallback. This flag can only be set. To unset, set this property to true on another Localized Notification Message.
+response:
+  heading: Response
+  intro: |
+    If successful, this method returns a `200 OK` response code and an updated [localizedNotificationMessage](xref:graph.intune_notification_localizednotificationmessage) object in the response body.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        request:
+            heading: Request
+            intro: |
+              Here is an example of the request.
+              PATCH https://graph.microsoft.com/v1.0/deviceManagement/notificationMessageTemplates/{notificationMessageTemplateId}/localizedNotificationMessages/{localizedNotificationMessageId}
+              Content-type: application/json
+              Content-length: 197
+              
+              {
+                "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+                "locale": "Locale value",
+                "subject": "Subject value",
+                "messageTemplate": "Message Template value",
+                "isDefault": true
+              }
+
+        response:
+            heading: Response
+            intro: |
+              Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+              HTTP/1.1 200 OK
+              Content-Type: application/json
+              Content-Length: 313
+              
+              {
+                "@odata.type": "#microsoft.graph.localizedNotificationMessage",
+                "id": "7a777708-7708-7a77-0877-777a0877777a",
+                "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+                "locale": "Locale value",
+                "subject": "Subject value",
+                "messageTemplate": "Message Template value",
+                "isDefault": true
+              }
+

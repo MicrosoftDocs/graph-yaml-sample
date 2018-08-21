@@ -1,0 +1,283 @@
+### YamlMime:GraphResource
+uid:graph.intune_deviceconfig_windows10endpointprotectionconfiguration
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_windows10endpointprotectionconfiguration.md
+summary:
+  heading: windows10EndpointProtectionConfiguration resource type
+  intro: |
+    This topic provides descriptions of the declared methods, properties and relationships exposed by the Windows10EndpointProtectionConfiguration resource.
+    Inherits from [deviceConfiguration](xref:graph.intune_deviceconfig_deviceconfiguration)
+methods:
+  heading: Methods
+  list:
+  - method: [List windows10EndpointProtectionConfigurations](xref:graph.intune_deviceconfig_windows10endpointprotectionconfiguration_list)
+    type: [windows10EndpointProtectionConfiguration](xref:graph.intune_deviceconfig_windows10endpointprotectionconfiguration) collection
+    description: List properties and relationships of the windows10EndpointProtectionConfiguration objects.
+  - method: [Get windows10EndpointProtectionConfiguration](xref:graph.intune_deviceconfig_windows10endpointprotectionconfiguration_get)
+    type: [windows10EndpointProtectionConfiguration](xref:graph.intune_deviceconfig_windows10endpointprotectionconfiguration)
+    description: Read properties and relationships of the windows10EndpointProtectionConfiguration object.
+  - method: [Create windows10EndpointProtectionConfiguration](xref:graph.intune_deviceconfig_windows10endpointprotectionconfiguration_create)
+    type: [windows10EndpointProtectionConfiguration](xref:graph.intune_deviceconfig_windows10endpointprotectionconfiguration)
+    description: Create a new windows10EndpointProtectionConfiguration object.
+  - method: [Delete windows10EndpointProtectionConfiguration](xref:graph.intune_deviceconfig_windows10endpointprotectionconfiguration_delete)
+    type: None
+    description: Deletes a windows10EndpointProtectionConfiguration.
+  - method: [Update windows10EndpointProtectionConfiguration](xref:graph.intune_deviceconfig_windows10endpointprotectionconfiguration_update)
+    type: [windows10EndpointProtectionConfiguration](xref:graph.intune_deviceconfig_windows10endpointprotectionconfiguration)
+    description: Update the properties of a windows10EndpointProtectionConfiguration object.
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.windows10EndpointProtectionConfiguration",
+      "id": "String (identifier)",
+      "lastModifiedDateTime": "String (timestamp)",
+      "createdDateTime": "String (timestamp)",
+      "description": "String",
+      "displayName": "String",
+      "version": 1024,
+      "firewallBlockStatefulFTP": true,
+      "firewallIdleTimeoutForSecurityAssociationInSeconds": 1024,
+      "firewallPreSharedKeyEncodingMethod": "String",
+      "firewallIPSecExemptionsAllowNeighborDiscovery": true,
+      "firewallIPSecExemptionsAllowICMP": true,
+      "firewallIPSecExemptionsAllowRouterDiscovery": true,
+      "firewallIPSecExemptionsAllowDHCP": true,
+      "firewallCertificateRevocationListCheckMethod": "String",
+      "firewallMergeKeyingModuleSettings": true,
+      "firewallPacketQueueingMethod": "String",
+      "firewallProfileDomain": {
+        "@odata.type": "microsoft.graph.windowsFirewallNetworkProfile",
+        "firewallEnabled": "String",
+        "stealthModeBlocked": true,
+        "incomingTrafficBlocked": true,
+        "unicastResponsesToMulticastBroadcastsBlocked": true,
+        "inboundNotificationsBlocked": true,
+        "authorizedApplicationRulesFromGroupPolicyMerged": true,
+        "globalPortRulesFromGroupPolicyMerged": true,
+        "connectionSecurityRulesFromGroupPolicyMerged": true,
+        "outboundConnectionsBlocked": true,
+        "inboundConnectionsBlocked": true,
+        "securedPacketExemptionAllowed": true,
+        "policyRulesFromGroupPolicyMerged": true
+      },
+      "firewallProfilePublic": {
+        "@odata.type": "microsoft.graph.windowsFirewallNetworkProfile",
+        "firewallEnabled": "String",
+        "stealthModeBlocked": true,
+        "incomingTrafficBlocked": true,
+        "unicastResponsesToMulticastBroadcastsBlocked": true,
+        "inboundNotificationsBlocked": true,
+        "authorizedApplicationRulesFromGroupPolicyMerged": true,
+        "globalPortRulesFromGroupPolicyMerged": true,
+        "connectionSecurityRulesFromGroupPolicyMerged": true,
+        "outboundConnectionsBlocked": true,
+        "inboundConnectionsBlocked": true,
+        "securedPacketExemptionAllowed": true,
+        "policyRulesFromGroupPolicyMerged": true
+      },
+      "firewallProfilePrivate": {
+        "@odata.type": "microsoft.graph.windowsFirewallNetworkProfile",
+        "firewallEnabled": "String",
+        "stealthModeBlocked": true,
+        "incomingTrafficBlocked": true,
+        "unicastResponsesToMulticastBroadcastsBlocked": true,
+        "inboundNotificationsBlocked": true,
+        "authorizedApplicationRulesFromGroupPolicyMerged": true,
+        "globalPortRulesFromGroupPolicyMerged": true,
+        "connectionSecurityRulesFromGroupPolicyMerged": true,
+        "outboundConnectionsBlocked": true,
+        "inboundConnectionsBlocked": true,
+        "securedPacketExemptionAllowed": true,
+        "policyRulesFromGroupPolicyMerged": true
+      },
+      "defenderAttackSurfaceReductionExcludedPaths": [
+        "String"
+      ],
+      "defenderGuardedFoldersAllowedAppPaths": [
+        "String"
+      ],
+      "defenderAdditionalGuardedFolders": [
+        "String"
+      ],
+      "defenderExploitProtectionXml": "binary",
+      "defenderExploitProtectionXmlFileName": "String",
+      "defenderSecurityCenterBlockExploitProtectionOverride": true,
+      "appLockerApplicationControl": "String",
+      "smartScreenEnableInShell": true,
+      "smartScreenBlockOverrideForFiles": true,
+      "applicationGuardEnabled": true,
+      "applicationGuardBlockFileTransfer": "String",
+      "applicationGuardBlockNonEnterpriseContent": true,
+      "applicationGuardAllowPersistence": true,
+      "applicationGuardForceAuditing": true,
+      "applicationGuardBlockClipboardSharing": "String",
+      "applicationGuardAllowPrintToPDF": true,
+      "applicationGuardAllowPrintToXPS": true,
+      "applicationGuardAllowPrintToLocalPrinters": true,
+      "applicationGuardAllowPrintToNetworkPrinters": true,
+      "bitLockerDisableWarningForOtherDiskEncryption": true,
+      "bitLockerEnableStorageCardEncryptionOnMobile": true,
+      "bitLockerEncryptDevice": true,
+      "bitLockerRemovableDrivePolicy": {
+        "@odata.type": "microsoft.graph.bitLockerRemovableDrivePolicy",
+        "encryptionMethod": "String",
+        "requireEncryptionForWriteAccess": true,
+        "blockCrossOrganizationWriteAccess": true
+      }
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: id
+    type: String
+    description: Key of the entity. Inherited from deviceConfiguration
+  - property: lastModifiedDateTime
+    type: DateTimeOffset
+    description: DateTime the object was last modified. Inherited from deviceConfiguration
+  - property: createdDateTime
+    type: DateTimeOffset
+    description: DateTime the object was created. Inherited from deviceConfiguration
+  - property: description
+    type: String
+    description: Admin provided description of the Device Configuration. Inherited from deviceConfiguration
+  - property: displayName
+    type: String
+    description: Admin provided name of the device configuration. Inherited from deviceConfiguration
+  - property: version
+    type: Int32
+    description: Version of the device configuration. Inherited from deviceConfiguration
+  - property: firewallBlockStatefulFTP
+    type: Boolean
+    description: Blocks stateful FTP connections to the device
+  - property: firewallIdleTimeoutForSecurityAssociationInSeconds
+    type: Int32
+    description: Configures the idle timeout for security associations, in seconds, from 300 to 3600 inclusive. This is the period after which security associations will expire and be deleted. Valid values 300 to 3600
+  - property: firewallPreSharedKeyEncodingMethod
+    type: microsoft.graph.firewallPreSharedKeyEncodingMethodType
+    description: Select the preshared key encoding to be used. The possible values are: deviceDefault, none, utF8.
+  - property: firewallIPSecExemptionsAllowNeighborDiscovery
+    type: Boolean
+    description: Configures IPSec exemptions to allow neighbor discovery IPv6 ICMP type-codes
+  - property: firewallIPSecExemptionsAllowICMP
+    type: Boolean
+    description: Configures IPSec exemptions to allow ICMP
+  - property: firewallIPSecExemptionsAllowRouterDiscovery
+    type: Boolean
+    description: Configures IPSec exemptions to allow router discovery IPv6 ICMP type-codes
+  - property: firewallIPSecExemptionsAllowDHCP
+    type: Boolean
+    description: Configures IPSec exemptions to allow both IPv4 and IPv6 DHCP traffic
+  - property: firewallCertificateRevocationListCheckMethod
+    type: microsoft.graph.firewallCertificateRevocationListCheckMethodType
+    description: Specify how the certificate revocation list is to be enforced. The possible values are: deviceDefault, none, attempt, require.
+  - property: firewallMergeKeyingModuleSettings
+    type: Boolean
+    description: If an authentication set is not fully supported by a keying module, direct the module to ignore only unsupported authentication suites rather than the entire set
+  - property: firewallPacketQueueingMethod
+    type: microsoft.graph.firewallPacketQueueingMethodType
+    description: Configures how packet queueing should be applied in the tunnel gateway scenario. The possible values are: deviceDefault, disabled, queueInbound, queueOutbound, queueBoth.
+  - property: firewallProfileDomain
+    type: microsoft.graph.windowsFirewallNetworkProfile
+    description: Configures the firewall profile settings for domain networks
+  - property: firewallProfilePublic
+    type: microsoft.graph.windowsFirewallNetworkProfile
+    description: Configures the firewall profile settings for public networks
+  - property: firewallProfilePrivate
+    type: microsoft.graph.windowsFirewallNetworkProfile
+    description: Configures the firewall profile settings for private networks
+  - property: defenderAttackSurfaceReductionExcludedPaths
+    type: Collection(String)
+    description: List of exe files and folders to be excluded from attack surface reduction rules
+  - property: defenderGuardedFoldersAllowedAppPaths
+    type: Collection(String)
+    description: List of paths to exe that are allowed to access protected folders
+  - property: defenderAdditionalGuardedFolders
+    type: Collection(String)
+    description: List of folder paths to be added to the list of protected folders
+  - property: defenderExploitProtectionXml
+    type: Binary
+    description: Xml content containing information regarding exploit protection details.
+  - property: defenderExploitProtectionXmlFileName
+    type: String
+    description: Name of the file from which DefenderExploitProtectionXml was obtained.
+  - property: defenderSecurityCenterBlockExploitProtectionOverride
+    type: Boolean
+    description: Indicates whether or not to block user from overriding Exploit Protection settings.
+  - property: appLockerApplicationControl
+    type: microsoft.graph.appLockerApplicationControlType
+    description: Enables the Admin to choose what types of app to allow on devices. The possible values are: notConfigured, enforceComponentsAndStoreApps, auditComponentsAndStoreApps, enforceComponentsStoreAppsAndSmartlocker, auditComponentsStoreAppsAndSmartlocker.
+  - property: smartScreenEnableInShell
+    type: Boolean
+    description: Allows IT Admins to configure SmartScreen for Windows.
+  - property: smartScreenBlockOverrideForFiles
+    type: Boolean
+    description: Allows IT Admins to control whether users can can ignore SmartScreen warnings and run malicious files.
+  - property: applicationGuardEnabled
+    type: Boolean
+    description: Enable Windows Defender Application Guard
+  - property: applicationGuardBlockFileTransfer
+    type: microsoft.graph.applicationGuardBlockFileTransferType
+    description: Block clipboard to transfer image file, text file or neither of them. The possible values are: notConfigured, blockImageAndTextFile, blockImageFile, blockNone, blockTextFile.
+  - property: applicationGuardBlockNonEnterpriseContent
+    type: Boolean
+    description: Block enterprise sites to load non-enterprise content, such as third party plug-ins
+  - property: applicationGuardAllowPersistence
+    type: Boolean
+    description: Allow persisting user generated data inside the App Guard Containter (favorites, cookies, web passwords, etc.)
+  - property: applicationGuardForceAuditing
+    type: Boolean
+    description: Force auditing will persist Windows logs and events to meet security/compliance criteria (sample events are user login-logoff, use of privilege rights, software installation, system changes, etc.)
+  - property: applicationGuardBlockClipboardSharing
+    type: microsoft.graph.applicationGuardBlockClipboardSharingType
+    description: Block clipboard to share data from Host to Container, or from Container to Host, or both ways, or neither ways. The possible values are: notConfigured, blockBoth, blockHostToContainer, blockContainerToHost, blockNone.
+  - property: applicationGuardAllowPrintToPDF
+    type: Boolean
+    description: Allow printing to PDF from Container
+  - property: applicationGuardAllowPrintToXPS
+    type: Boolean
+    description: Allow printing to XPS from Container
+  - property: applicationGuardAllowPrintToLocalPrinters
+    type: Boolean
+    description: Allow printing to Local Printers from Container
+  - property: applicationGuardAllowPrintToNetworkPrinters
+    type: Boolean
+    description: Allow printing to Network Printers from Container
+  - property: bitLockerDisableWarningForOtherDiskEncryption
+    type: Boolean
+    description: Allows the Admin to disable the warning prompt for other disk encryption on the user machines.
+  - property: bitLockerEnableStorageCardEncryptionOnMobile
+    type: Boolean
+    description: Allows the admin to require encryption to be turned on using BitLocker. This policy is valid only for a mobile SKU.
+  - property: bitLockerEncryptDevice
+    type: Boolean
+    description: Allows the admin to require encryption to be turned on using BitLocker.
+  - property: bitLockerRemovableDrivePolicy
+    type: microsoft.graph.bitLockerRemovableDrivePolicy
+    description: BitLocker Removable Drive Policy.
+relationships:
+  heading: Relationships
+  list:
+  - relationship: assignments
+    type: Collection(microsoft.graph.deviceConfigurationAssignment)
+    description: The list of assignments for the device configuration profile. Inherited from deviceConfiguration
+  - relationship: deviceStatuses
+    type: Collection(microsoft.graph.deviceConfigurationDeviceStatus)
+    description: Device configuration installation status by device. Inherited from deviceConfiguration
+  - relationship: userStatuses
+    type: Collection(microsoft.graph.deviceConfigurationUserStatus)
+    description: Device configuration installation status by user. Inherited from deviceConfiguration
+  - relationship: deviceStatusOverview
+    type: microsoft.graph.deviceConfigurationDeviceOverview
+    description: Device Configuration devices status overview Inherited from deviceConfiguration
+  - relationship: userStatusOverview
+    type: microsoft.graph.deviceConfigurationUserOverview
+    description: Device Configuration users status overview Inherited from deviceConfiguration
+  - relationship: deviceSettingStateSummaries
+    type: Collection(microsoft.graph.settingStateDeviceSummary)
+    description: Device Configuration Setting State Device Summary Inherited from deviceConfiguration

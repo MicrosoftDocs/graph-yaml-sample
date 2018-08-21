@@ -1,0 +1,108 @@
+### YamlMime:GraphOperation
+uid:graph.user_assignlicense
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/user_assignlicense.md
+summary:
+  heading: assignLicense
+  intro: |
+    Add or remove subscriptions for the user. You can also enable and disable specific plans associated with a subscription.
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+  list:
+  - resource: Delegated (work or school account)
+    permission: User.ReadWrite.All, Directory.ReadWrite.All
+  - resource: Delegated (personal Microsoft account)
+    permission: Not supported.
+  - resource: Application
+    permission: User.ReadWrite.All, Directory.ReadWrite.All
+httpRequest:
+  heading: HTTP request
+  sampleCode: |
+    ```http
+    POST /users/{id | userPrincipalName}/assignLicense
+    ```
+    
+requestHeaders:
+  heading: Request headers
+  list:
+  - name: Authorization
+    value: String
+    description: 
+  - name: Content-Type
+    value: String
+    description: 
+requestBody:
+  heading: Request body
+  intro: |
+    In the request body, provide a JSON object with the following parameters.
+    |Parameter|Type|Description
+    |:-|:-|:-|
+    |addLicenses|AssignedLicense collection|A collection of [assignedLicense](xref:graph.assignedlicense) objects that specify the licenses to add. You can disable plans associated with a license by setting the **disabledPlans** property on an [assignedLicense](xref:graph.assignedlicense) object.
+    |removeLicenses|Guid collection|A collection of GUIDs that identify the licenses to remove.
+response:
+  heading: Response
+  intro: |
+    If successful, this method returns `200 OK` response code and [user](xref:graph.user) object in the response body.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        intro: |
+          Here is an example of how to call this API.
+        request:
+            heading: Request
+            intro: |
+              Here is an example of the request.
+            sampleCode: |
+              ```http
+              POST https://graph.microsoft.com/v1.0/me/assignLicense
+              Content-type: application/json
+              Content-length: 185
+              
+              {
+                "addLicenses": [
+                  {
+                    "disabledPlans": [ "11b0131d-43c8-4bbb-b2c8-e80f9a50834a" ],
+                    "skuId": "guid"
+                  }
+                ],
+                "removeLicenses": [ "bea13e0c-3828-4daa-a392-28af7ff61a0f" ]
+              }
+              ```
+              
+        response:
+            heading: Response
+            intro: |
+              Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+            sampleCode: |
+              ```http
+              HTTP/1.1 200 OK
+              Content-type: application/json
+              Content-length: 491
+              
+              {
+                "accountEnabled": true,
+                "assignedLicenses": [
+                  {
+                    "disabledPlans": [ "11b0131d-43c8-4bbb-b2c8-e80f9a50834a" ],
+                    "skuId": "0118A350-71FC-4EC3-8F0C-6A1CB8867561"
+                  }
+                ],
+                "assignedPlans": [
+                  {
+                    "assignedDateTime": "2016-10-02T12:13:14Z",
+                    "capabilityStatus": "capabilityStatus-value",
+                    "service": "service-value",
+                    "servicePlanId": "bea13e0c-3828-4daa-a392-28af7ff61a0f"
+                  }
+                ],
+                "businessPhones": [
+                  "businessPhones-value"
+                ],
+                "city": "city-value",
+                "companyName": "companyName-value"
+              }
+              ```
+              

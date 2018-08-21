@@ -1,0 +1,64 @@
+### YamlMime:GraphResource
+uid:graph.intune_mam_windowsinformationprotectionapplockerfile
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_mam_windowsinformationprotectionapplockerfile.md
+summary:
+  heading: windowsInformationProtectionAppLockerFile resource type
+  intro: |
+    Windows Information Protection AppLocker File
+methods:
+  heading: Methods
+  list:
+  - method: [List windowsInformationProtectionAppLockerFiles](xref:graph.intune_mam_windowsinformationprotectionapplockerfile_list)
+    type: [windowsInformationProtectionAppLockerFile](xref:graph.intune_mam_windowsinformationprotectionapplockerfile) collection
+    description: List properties and relationships of the windowsInformationProtectionAppLockerFile objects.
+  - method: [Get windowsInformationProtectionAppLockerFile](xref:graph.intune_mam_windowsinformationprotectionapplockerfile_get)
+    type: [windowsInformationProtectionAppLockerFile](xref:graph.intune_mam_windowsinformationprotectionapplockerfile)
+    description: Read properties and relationships of the windowsInformationProtectionAppLockerFile object.
+  - method: [Create windowsInformationProtectionAppLockerFile](xref:graph.intune_mam_windowsinformationprotectionapplockerfile_create)
+    type: [windowsInformationProtectionAppLockerFile](xref:graph.intune_mam_windowsinformationprotectionapplockerfile)
+    description: Create a new windowsInformationProtectionAppLockerFile object.
+  - method: [Delete windowsInformationProtectionAppLockerFile](xref:graph.intune_mam_windowsinformationprotectionapplockerfile_delete)
+    type: None
+    description: Deletes a windowsInformationProtectionAppLockerFile.
+  - method: [Update windowsInformationProtectionAppLockerFile](xref:graph.intune_mam_windowsinformationprotectionapplockerfile_update)
+    type: [windowsInformationProtectionAppLockerFile](xref:graph.intune_mam_windowsinformationprotectionapplockerfile)
+    description: Update the properties of a windowsInformationProtectionAppLockerFile object.
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.windowsInformationProtectionAppLockerFile",
+      "displayName": "String",
+      "fileHash": "String",
+      "file": "binary",
+      "id": "String (identifier)",
+      "version": "String"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: displayName
+    type: String
+    description: The friendly name
+  - property: fileHash
+    type: String
+    description: SHA256 hash of the file
+  - property: file
+    type: Binary
+    description: File as a byte array
+  - property: id
+    type: String
+    description: Key of the entity.
+  - property: version
+    type: String
+    description: Version of the entity.
+relationships:
+  heading: Relationships
+  intro: |
+    None

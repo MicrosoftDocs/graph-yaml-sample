@@ -1,0 +1,65 @@
+### YamlMime:GraphOperation
+uid:graph.outlookuser_supportedtimezones
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/outlookuser_supportedtimezones.md
+summary:
+  heading: outlookUser: supportedTimeZones
+  intro: |
+    Get the list of time zones that are supported for the user, as configured on the user's mailbox server.
+    You can explicitly specify to have time zones returned in the Windows time zone format or  [Internet Assigned Numbers Authority (IANA) time zone](http://www.iana.org/time-zones) (also known as Olson time zone) format. The Windows format is the default.
+    When setting up an Outlook client, the user selects the preferred time zone from this supported list. You can subsequently get the preferred time zone by 
+    [getting the user's mailbox settings](xref:graph.user_get_mailboxsettings).
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+  list:
+  - resource: Delegated (work or school account)
+    permission: User.Read, User.ReadBasic.All
+  - resource: Delegated (personal Microsoft account)
+    permission: User.Read
+  - resource: Application
+    permission: User.Read.All
+httpRequest:
+  heading: HTTP request
+  sampleCode: |
+    ```http
+    GET /me/outlook/supportedTimeZones
+    GET /users/{id|userPrincipalName}/outlook/supportedTimeZones
+    
+    GET /me/outlook/supportedTimeZones(TimeZoneStandard=microsoft.graph.timeZoneStandard'{timezone_format}')
+    GET /users/{id|userPrincipalName}/outlook/supportedTimeZones(TimeZoneStandard=microsoft.graph.timeZoneStandard'{timezone_format}')
+    ```
+    
+parameters:
+  heading: Function parameters
+  list:
+  - name: TimeZoneStandard
+    value: microsoft.graph.timeZoneStandard
+    description: A time zone format. Supported values are: Windows, and Iana. Optional.
+requestHeaders:
+  heading: Request headers
+  list:
+  - name: Authorization
+    value: String
+    description: Bearer {token}. Required.
+requestBody:
+  heading: Request body
+  intro: |
+    Do not supply a request body for this method.
+response:
+  heading: Response
+  intro: |
+    If successful, this method returns `200 OK` response code and a collection of [timeZoneInformation](xref:graph.timezoneinformation) objects in the response body.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        outro: |
+          ##### Request 1
+          The following example does not specify the `timeZoneStandard` parameter, and gets the list of supported time zones represented in the Windows time zone format. 
+          
+          ```http
+          GET https://graph.microsoft.com/v1.0/me/outlook/supportedTimeZones
+          ```
+          

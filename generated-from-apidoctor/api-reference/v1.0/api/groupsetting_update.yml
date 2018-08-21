@@ -1,0 +1,125 @@
+### YamlMime:GraphOperation
+uid:graph.groupsetting_update
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/groupsetting_update.md
+summary:
+  heading: Update a group setting
+  intro: |
+    Update the properties of a specific group setting object.
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+  list:
+  - resource: Delegated (work or school account)
+    permission: Directory.ReadWrite.All, Directory.AccessAsUser.All
+  - resource: Delegated (personal Microsoft account)
+    permission: Not supported.
+  - resource: Application
+    permission: Directory.ReadWrite.All
+httpRequest:
+  heading: HTTP request
+  intro: |
+    Update a tenant-wide or group specific setting.
+    PATCH /groupSettings/{id}
+    PATCH /groups/{id}/settings/{id}
+
+requestHeaders:
+  heading: Optional request headers
+  list:
+  - name: Authorization
+    value: 
+    description: Bearer {token}. Required.
+  - name: Content-Type
+    value: 
+    description: application/json
+requestBody:
+  heading: Request body
+  intro: |
+    In the request body, supply the values for relevant fields that should be updated. 
+    |Property|Type|Description
+    |:-|:-|:-|
+    |values|settingValue collection|The updated set of values.  NOTE: You must supply the entire collection set. You cannot update a single set of values.
+response:
+  heading: Response
+  intro: |
+    If successful, this method returns a `204 No Content` response code.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        request:
+            heading: Request
+            sampleCode: |
+              ```http
+              PATCH https://graph.microsoft.com/v1.0/groupSettings/{id}
+              Content-type: application/json
+              Content-length: 173
+              
+              {
+                "displayName": "displayName-value",
+                "templateId": "templateId-value",
+                "values": [
+                  {
+                    "name": "CustomBlockedWordsList",
+                    "value": ""
+                  },
+                  {
+                    "name": "EnableMSStandardBlockedWords",
+                    "value": "False"
+                  },
+                  {
+                    "name": "ClassificationDescriptions",
+                    "value": ""
+                  },
+                  {
+                    "name": "DefaultClassification",
+                    "value": ""
+                  },
+                  {
+                    "name": "PrefixSuffixNamingRequirement",
+                    "value": ""
+                  },
+                  {
+                    "name": "AllowGuestsToBeGroupOwner",
+                    "value": "False"
+                  },
+                  {
+                    "name": "AllowGuestsToAccessGroups",
+                    "value": "True"
+                  },
+                  {
+                    "name": "GuestUsageGuidelinesUrl",
+                    "value": ""
+                  },
+                  {
+                    "name": "GroupCreationAllowedGroupId",
+                    "value": "62e90394-69f5-4237-9190-012177145e10"
+                  },
+                  {
+                    "name": "AllowToAddGuests",
+                    "value": "True"
+                  },
+                  {
+                    "name": "UsageGuidelinesUrl",
+                    "value": ""
+                  },
+                  {
+                    "name": "ClassificationList",
+                    "value": ""
+                  },
+                  {
+                    "name": "EnableGroupCreation",
+                    "value": "True"
+                  }
+                ]
+              }
+              ```
+              
+        response:
+            heading: Response
+            sampleCode: |
+              ```http
+              HTTP/1.1 204 No Content
+              ```
+              

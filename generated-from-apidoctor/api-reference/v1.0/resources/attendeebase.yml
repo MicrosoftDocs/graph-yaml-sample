@@ -1,0 +1,30 @@
+### YamlMime:GraphResource
+uid:graph.attendeebase
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/attendeebase.md
+summary:
+  heading: attendeeBase resource type
+  intro: |
+    The type of attendee.
+    Derived from [recipient](xref:graph.recipient).
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource
+  sampleCode: |
+    ```json
+    {
+      "type": "String",
+      "emailAddress": {"@odata.type": "microsoft.graph.emailAddress"}
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: type
+    type: microsoft.graph.attendeeType
+    description: The type of attendee. The possible values are: required, optional, resource. Currently if the attendee is a person, findMeetingTimes always considers the person is of the Required type.
+  - property: emailAddress
+    type: microsoft.graph.emailAddress
+    description: Includes the name and SMTP address of the attendee.

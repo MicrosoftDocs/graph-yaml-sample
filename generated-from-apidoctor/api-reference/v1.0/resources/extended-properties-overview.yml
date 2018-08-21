@@ -1,0 +1,30 @@
+### YamlMime:GraphOperation
+uid:graph.extended-properties-overview
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/extended-properties-overview.md
+summary:
+  heading: Outlook extended properties overview
+  intro: |
+    Extended properties allow storing custom data and specifically serve as a fallback mechanism for apps to access 
+    custom data for Outlook MAPI properties when these properties are _not already exposed in the Microsoft Graph API metadata_. 
+    You can use extended properties REST API to store or get such custom data in the following user resources:
+    
+    * [message](xref:graph.message)
+    * [mailFolder](xref:graph.mailfolder)
+    * [event](xref:graph.event)
+    * [calendar](xref:graph.calendar)
+    * [contact](xref:graph.contact)
+    * [contactFolder](xref:graph.contactfolder) 
+    
+    Or, in the following Office 365 group resources:
+    
+    * group [event](xref:graph.event)
+    * group [calendar](xref:graph.calendar)
+    * group [post](xref:graph.post) 
+    
+  outro: |
+    ## Use extended properties or open extensions?
+    In most common scenarios, you should be able to use open extensions (represented by [openTypeExtension](xref:graph.opentypeextension), formerly known as 
+    Office 365 data extensions) to store and access custom data for resource instances in a user's mailbox. Use extended properties only if you
+    need to access custom data for Outlook MAPI properties that are not already exposed in the 
+    [Microsoft Graph API metadata](http://developer.microsoft.com/en-us/graph/docs/overview/call_api). 

@@ -1,0 +1,29 @@
+### YamlMime:GraphResource
+uid:graph.onenoteoperationerror
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/onenoteoperationerror.md
+summary:
+  heading: onenoteOperationError resource type
+  intro: |
+    An error from a failed OneNote operation.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "code": "string",
+      "message": "string"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: code
+    type: String
+    description: The error code.
+  - property: message
+    type: String
+    description: The error message.

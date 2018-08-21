@@ -1,0 +1,62 @@
+### YamlMime:GraphResource
+uid:graph.intune_companyterms_termsandconditionsacceptancestatus
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_companyterms_termsandconditionsacceptancestatus.md
+summary:
+  heading: termsAndConditionsAcceptanceStatus resource type
+  intro: |
+    A termsAndConditionsAcceptanceStatus entity represents the acceptance status of a given Terms and Conditions (T&C) policy by a given user. Users must accept the most up-to-date version of the terms in order to retain access to the Company Portal.
+methods:
+  heading: Methods
+  list:
+  - method: [List termsAndConditionsAcceptanceStatuses](xref:graph.intune_companyterms_termsandconditionsacceptancestatus_list)
+    type: [termsAndConditionsAcceptanceStatus](xref:graph.intune_companyterms_termsandconditionsacceptancestatus) collection
+    description: List properties and relationships of the termsAndConditionsAcceptanceStatus objects.
+  - method: [Get termsAndConditionsAcceptanceStatus](xref:graph.intune_companyterms_termsandconditionsacceptancestatus_get)
+    type: [termsAndConditionsAcceptanceStatus](xref:graph.intune_companyterms_termsandconditionsacceptancestatus)
+    description: Read properties and relationships of the termsAndConditionsAcceptanceStatus object.
+  - method: [Create termsAndConditionsAcceptanceStatus](xref:graph.intune_companyterms_termsandconditionsacceptancestatus_create)
+    type: [termsAndConditionsAcceptanceStatus](xref:graph.intune_companyterms_termsandconditionsacceptancestatus)
+    description: Create a new termsAndConditionsAcceptanceStatus object.
+  - method: [Delete termsAndConditionsAcceptanceStatus](xref:graph.intune_companyterms_termsandconditionsacceptancestatus_delete)
+    type: None
+    description: Deletes a termsAndConditionsAcceptanceStatus.
+  - method: [Update termsAndConditionsAcceptanceStatus](xref:graph.intune_companyterms_termsandconditionsacceptancestatus_update)
+    type: [termsAndConditionsAcceptanceStatus](xref:graph.intune_companyterms_termsandconditionsacceptancestatus)
+    description: Update the properties of a termsAndConditionsAcceptanceStatus object.
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.termsAndConditionsAcceptanceStatus",
+      "id": "String (identifier)",
+      "userDisplayName": "String",
+      "acceptedVersion": 1024,
+      "acceptedDateTime": "String (timestamp)"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: id
+    type: String
+    description: Unique identifier of the entity.
+  - property: userDisplayName
+    type: String
+    description: Display name of the user whose acceptance the entity represents.
+  - property: acceptedVersion
+    type: Int32
+    description: Most recent version number of the T&C accepted by the user.
+  - property: acceptedDateTime
+    type: DateTimeOffset
+    description: DateTime when the terms were last accepted by the user.
+relationships:
+  heading: Relationships
+  list:
+  - relationship: termsAndConditions
+    type: microsoft.graph.termsAndConditions
+    description: Navigation link to the terms and conditions that are assigned.

@@ -1,0 +1,77 @@
+### YamlMime:GraphOperation
+uid:graph.tablecolumn_databodyrange
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/tablecolumn_databodyrange.md
+summary:
+  heading: TableColumn: DataBodyRange
+  intro: |
+    Gets the range object associated with the data body of the column.
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+  list:
+  - resource: Delegated (work or school account)
+    permission: Files.ReadWrite
+  - resource: Delegated (personal Microsoft account)
+    permission: Not supported.
+  - resource: Application
+    permission: Not supported.
+httpRequest:
+  heading: HTTP request
+  sampleCode: |
+    ```http
+    POST /workbook/tables/{id|name}/columns/{id|name}/dataBodyRange
+    POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/dataBodyRange
+    ```
+    
+requestHeaders:
+  heading: Request headers
+  list:
+  - name: Authorization
+    value: 
+    description: Bearer {token}. Required.
+  - name: Workbook-Session-Id
+    value: 
+    description: Workbook session Id that determines if changes are persisted or not. Optional.
+requestBody:
+  heading: Request body
+response:
+  heading: Response
+  intro: |
+    If successful, this method returns `200 OK` response code and [Range](xref:graph.range) object in the response body.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        intro: |
+          Here is an example of how to call this API.
+        request:
+            heading: Request
+            intro: |
+              Here is an example of the request.
+            sampleCode: |
+              ```http
+              POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/dataBodyRange
+              ```
+              
+        response:
+            heading: Response
+            intro: |
+              Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+            sampleCode: |
+              ```http
+              HTTP/1.1 200 OK
+              Content-type: application/json
+              Content-length: 169
+              
+              {
+                "address": "address-value",
+                "addressLocal": "addressLocal-value",
+                "cellCount": 99,
+                "columnCount": 99,
+                "columnIndex": 99,
+                "valueTypes": "valueTypes-value"
+              }
+              ```
+              

@@ -1,0 +1,100 @@
+### YamlMime:GraphResource
+uid:graph.worksheet
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.worksheet
+summary:
+  heading: Worksheet resource type
+  intro: |
+    An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc.
+methods:
+  heading: Methods
+  list:
+  - method: [Get Worksheet](xref:graph.worksheet_get)
+    type: [WorkbookWorksheet](xref:graph.worksheet)
+    description: Read properties and relationships of worksheet object.
+  - method: [Create Chart](xref:graph.worksheet_post_charts)
+    type: [WorkbookChart](xref:graph.chart)
+    description: Create a new Chart by posting to the charts collection.
+  - method: [List names](xref:graph.worksheet_list_names)
+    type: [WorkbookNamedItem](xref:graph.nameditem) collection
+    description: Get named item collection associated with the worksheet.
+  - method: [List charts](xref:graph.worksheet_list_charts)
+    type: [WorkbookChart](xref:graph.chart) collection
+    description: Get a Chart object collection.
+  - method: [Create Table](xref:graph.worksheet_post_tables)
+    type: [WorkbookTable](xref:graph.table)
+    description: Create a new Table by posting to the tables collection.
+  - method: [List tables](xref:graph.worksheet_list_tables)
+    type: [WorkbookTable](xref:graph.table) collection
+    description: Get a Table object collection.
+  - method: [Update](xref:graph.worksheet_update)
+    type: [WorkbookWorksheet](xref:graph.worksheet)
+    description: Update Worksheet object.
+  - method: [Cell](xref:graph.worksheet_cell)
+    type: [Range](xref:graph.range)
+    description: Gets the range object containing the single cell based on row and column numbers. The cell can be outside the bounds of its parent range, so long as it's stays within the worksheet grid.
+  - method: [Range](xref:graph.worksheet_range)
+    type: [Range](xref:graph.range)
+    description: Gets the range object specified by the address or name.
+  - method: [Usedrange](xref:graph.worksheet_usedrange)
+    type: [Range](xref:graph.range)
+    description: The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them. If the worksheet is blank, this function will return the top left cell.
+  - method: [Delete](xref:graph.worksheet_delete)
+    type: None
+    description: Deletes the worksheet from the workbook.
+  - method: [List](xref:graph.worksheet_list)
+    type: [WorkbookWorksheet](xref:graph.worksheet) collection
+    description: Get worksheet object collection.
+  - method: [Add](xref:graph.worksheetcollection_add)
+    type: [WorkbookWorksheet](xref:graph.worksheet)
+    description: Adds a new worksheet to the workbook. The worksheet will be added at the end of existing worksheets.
+  - method: [List pivotTables](xref:graph.workbookworksheet_list_pivottables)
+    type: [workbookPivotTable](xref:graph.workbookpivottable) collection
+    description: Get a workbookPivotTable object collection.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "id": "string",
+      "name": "string",
+      "position": 1024,
+      "visibility": "string"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: id
+    type: String
+    description: Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains the same even when the worksheet is renamed or moved. Read-only.
+  - property: name
+    type: String
+    description: The display name of the worksheet.
+  - property: position
+    type: Int32
+    description: The zero-based position of the worksheet within the workbook.
+  - property: visibility
+    type: String
+    description: The Visibility of the worksheet. The possible values are: Visible, Hidden, VeryHidden.
+relationships:
+  heading: Relationships
+  list:
+  - relationship: charts
+    type: Collection(microsoft.graph.workbookChart)
+    description: Returns collection of charts that are part of the worksheet. Read-only.
+  - relationship: names
+    type: Collection(microsoft.graph.workbookNamedItem)
+    description: Returns collection of names that are associated with the worksheet. Read-only.
+  - relationship: pivotTables
+    type: Collection(microsoft.graph.workbookPivotTable)
+    description: Collection of PivotTables that are part of the worksheet.
+  - relationship: protection
+    type: microsoft.graph.workbookWorksheetProtection
+    description: Returns sheet protection object for a worksheet. Read-only.
+  - relationship: tables
+    type: Collection(microsoft.graph.workbookTable)
+    description: Collection of tables that are part of the worksheet. Read-only.

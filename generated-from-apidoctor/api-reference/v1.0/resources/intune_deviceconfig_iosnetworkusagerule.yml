@@ -1,0 +1,46 @@
+### YamlMime:GraphResource
+uid:graph.intune_deviceconfig_iosnetworkusagerule
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_iosnetworkusagerule.md
+summary:
+  heading: iosNetworkUsageRule resource type
+  intro: |
+    Network Usage Rules allow enterprises to specify how managed apps use networks, such as cellular data networks.
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.iosNetworkUsageRule",
+      "managedApps": [
+        {
+          "@odata.type": "microsoft.graph.appListItem",
+          "name": "String",
+          "publisher": "String",
+          "appStoreUrl": "String",
+          "appId": "String"
+        }
+      ],
+      "cellularDataBlockWhenRoaming": true,
+      "cellularDataBlocked": true
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: managedApps
+    type: Collection(microsoft.graph.appListItem)
+    description: Information about the managed apps that this rule is going to apply to. This collection can contain a maximum of 500 elements.
+  - property: cellularDataBlockWhenRoaming
+    type: Boolean
+    description: If set to true, corresponding managed apps will not be allowed to use cellular data when roaming.
+  - property: cellularDataBlocked
+    type: Boolean
+    description: If set to true, corresponding managed apps will not be allowed to use cellular data at any time.
+relationships:
+  heading: Relationships
+  intro: |
+    None

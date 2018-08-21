@@ -1,0 +1,52 @@
+### YamlMime:GraphOperation
+uid:graph.long_running_actions_overview
+metadata:
+  author: rgregg
+  ms.author: rgregg
+  ms.date: 09/10/2017
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/long_running_actions_overview.md
+summary:
+  heading: Working with long running actions (beta)
+  intro: |
+    Some API responses require indeterminate time to complete.
+    Instead of waiting until the action is complete before returning a response, Microsoft Graph may use a long running actions pattern.
+    This pattern provides your app a wait to poll for status updates on a long running action, without any request waiting for the action to complete.
+    The general pattern follows these steps:
+    
+    1. Your app requests a long running action via the API. The API accepts the action and returns a `202 Accepted` response along with a Location header for the API URL to retrieve action status reports.
+    1. Your app requests the action status report URL and receives an [AsyncJobStatus](xref:graph.asyncjobstatus) response with the progress of the long running action.
+    1. The long running action completes. 
+    1. Your app requests the action status report URL again and receives an [AsyncJobStatus](xref:graph.asyncjobstatus) response showing the completion of the action.
+    
+  outro: |
+    ## Initial action request
+    Let's walk through the steps for an example [DriveItem Copy](xref:graph.driveitem_copy) scenario.
+    In this scenario, your app requests to copy a folder that contains a large amount of data.
+    This request will likely take several seconds to complete since the amount of data is large.
+    
+    ```http
+    POST https://graph.microsoft.com/beta/me/drive/items/{folder-item-id}/copy
+    Content-Type: application/json
+    
+    {
+      "parentReference": {
+        "path": "/drive/root:/Documents"
+      },
+      "name": "Copy of LargeFolder1"
+    }
+    ```
+    
+    The API responds that the action was accepted and the URL for retrieving the status of the long running action.
+    
+    ```http
+    HTTP/1.1 202 Accepted
+    Location: https://api.onedrive.com/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
+    ```
+    
+    **Note:** The location URL returned may not be on the Microsoft Graph API endpoint.
+    In many cases this may be the end of the request, since the copy action will complete without the app doing any additional work.
+    However, if your app needs to show the status of the copy action or ensure that it completes without error, it can do so using the monitor URL.
+permissions:
+  heading: Prerequisites
+  intro: |
+    The same [permissions](xref:graph.permissions_reference) that are required to perform a long running action are also required to query the status of a long running action.

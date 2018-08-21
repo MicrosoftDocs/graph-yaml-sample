@@ -1,0 +1,33 @@
+### YamlMime:GraphResource
+uid:graph.licenseunitsdetail
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/licenseunitsdetail.md
+summary:
+  heading: licenseUnitsDetail resource type
+  intro: |
+    The **prepaidUnits** property of the [subscribedSku](xref:graph.subscribedsku) entity is of type **licenseUnitsDetail**.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource
+  sampleCode: |
+    ```json
+    {
+      "enabled": 1024,
+      "suspended": 1024,
+      "warning": 1024
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: enabled
+    type: Int32
+    description: The number of units that are enabled.
+  - property: suspended
+    type: Int32
+    description: The number of units that are suspended.
+  - property: warning
+    type: Int32
+    description: The number of units that are in warning status.

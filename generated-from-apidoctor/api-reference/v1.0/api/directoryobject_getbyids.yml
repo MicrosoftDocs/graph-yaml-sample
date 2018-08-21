@@ -1,0 +1,97 @@
+### YamlMime:GraphOperation
+uid:graph.directoryobject_getbyids
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/directoryobject_getbyids.md
+summary:
+  heading: Get directory objects from a list of ids
+  intro: |
+    Returns the directory objects specified in a list of ids.  NOTE: The directory objects returned are the full objects containing **all** their properties. The `$select` query option is not available for this operation.
+    Some common uses for this function are to:
+    
+    * Resolve ids returned by functions (that return collections of ids) such as [getMemberObjects](xref:graph.directoryobject_getmemberobjects) or [getMemberGroups](xref:graph.directoryobject_getmembergroups)  to their backing directory objects.
+    * Resolve ids persisted in an external store by the application to their backing directory objects.
+    
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+  list:
+  - resource: Delegated (work or school account)
+    permission: Directory.Read.All, Directory.AccessAsUser.All
+  - resource: Delegated (personal Microsoft account)
+    permission: Not supported.
+  - resource: Application
+    permission: Directory.Read.All
+httpRequest:
+  heading: HTTP request
+  sampleCode: |
+    ```http
+    POST /directoryObjects/getByIds
+    ```
+    
+requestHeaders:
+  heading: Request headers
+  list:
+  - name: Authorization
+    value: String
+    description: Bearer {token}. Required.
+  - name: Content-Type
+    value: String
+    description: application/json
+requestBody:
+  heading: Request body
+  intro: |
+    In the request body, provide a JSON object with the following parameters.
+    |Parameter|Type|Description
+    |:-|:-|:-|
+    |ids|String collection|A collection of ids for which to return objects. You can specify up to 1000 ids.
+    |types|String collection|A collection of resource types that specifies the set of resource collections to search. If not specified, the default is [directoryObject](xref:graph.directoryobject), which contains all of the resource types defined in the directory. Any object that derives from `directoryObject` may be specified in the collection; for example: [user](xref:graph.user), [group](xref:graph.group), [device](xref:graph.device), and so on. The values are not case-sensitive.
+response:
+  heading: Response
+  intro: |
+    If successful, this method returns `200 OK` response code and String collection object in the response body.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        request:
+            heading: Request
+            sampleCode: |
+              ```http
+              POST https://graph.microsoft.com/v1.0/directoryObjects/getByIds
+              Content-type: application/json
+              
+              {
+                  "ids":["84b80893874940a3-97b7-68513b600544","5d6059b6368d-45f8-91e18e07d485f1d0"],
+                  "types":["user"]
+              }
+              ```
+              
+        response:
+            heading: Response
+            intro: |
+              Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+            sampleCode: |
+              ```http
+              HTTP/1.1 200 OK
+              Content-type: application/json
+              
+              {
+                  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directoryObjects",
+                  "value": [
+                    {
+                      "@odata.type": "#microsoft.graph.user",
+                      "id": "84b80893-8749-40a3-97b7-68513b600544",
+                      "accountEnabled": true,
+                      "displayName": "Trevor Jones"
+                    },
+                    {
+                      "@odata.type": "#microsoft.graph.user",
+                      "id": "84b80893-8749-40a3-97b7-68513b600544",
+                      "accountEnabled": true,
+                      "displayName": "Billy Smith"
+                    }
+                  ]
+              }
+              ```
+              

@@ -1,0 +1,82 @@
+### YamlMime:GraphResource
+uid:graph.intune_rbac_deviceandappmanagementroledefinition
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_rbac_deviceandappmanagementroledefinition.md
+summary:
+  heading: deviceAndAppManagementRoleDefinition resource type
+  intro: |
+    The Role Definition resource. The role definition is the foundation of role based access in Intune. The role combines an Intune resource such as a Mobile App and associated role permissions such as Create or Read for the resource. There are two types of roles, built-in and custom. Built-in roles cannot be modified. Both built-in roles and custom roles must have assignments to be enforced. Create custom roles if you want to define a role that allows any of the available resources and role permissions to be combined into a single role.
+    Inherits from [roleDefinition](xref:graph.intune_rbac_roledefinition)
+methods:
+  heading: Methods
+  list:
+  - method: [List deviceAndAppManagementRoleDefinitions](xref:graph.intune_rbac_deviceandappmanagementroledefinition_list)
+    type: [deviceAndAppManagementRoleDefinition](xref:graph.intune_rbac_deviceandappmanagementroledefinition) collection
+    description: List properties and relationships of the deviceAndAppManagementRoleDefinition objects.
+  - method: [Get deviceAndAppManagementRoleDefinition](xref:graph.intune_rbac_deviceandappmanagementroledefinition_get)
+    type: [deviceAndAppManagementRoleDefinition](xref:graph.intune_rbac_deviceandappmanagementroledefinition)
+    description: Read properties and relationships of the deviceAndAppManagementRoleDefinition object.
+  - method: [Create deviceAndAppManagementRoleDefinition](xref:graph.intune_rbac_deviceandappmanagementroledefinition_create)
+    type: [deviceAndAppManagementRoleDefinition](xref:graph.intune_rbac_deviceandappmanagementroledefinition)
+    description: Create a new deviceAndAppManagementRoleDefinition object.
+  - method: [Delete deviceAndAppManagementRoleDefinition](xref:graph.intune_rbac_deviceandappmanagementroledefinition_delete)
+    type: None
+    description: Deletes a deviceAndAppManagementRoleDefinition.
+  - method: [Update deviceAndAppManagementRoleDefinition](xref:graph.intune_rbac_deviceandappmanagementroledefinition_update)
+    type: [deviceAndAppManagementRoleDefinition](xref:graph.intune_rbac_deviceandappmanagementroledefinition)
+    description: Update the properties of a deviceAndAppManagementRoleDefinition object.
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.deviceAndAppManagementRoleDefinition",
+      "id": "String (identifier)",
+      "displayName": "String",
+      "description": "String",
+      "rolePermissions": [
+        {
+          "@odata.type": "microsoft.graph.rolePermission",
+          "resourceActions": [
+            {
+              "@odata.type": "microsoft.graph.resourceAction",
+              "allowedResourceActions": [
+                "String"
+              ],
+              "notAllowedResourceActions": [
+                "String"
+              ]
+            }
+          ]
+        }
+      ],
+      "isBuiltIn": true
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: id
+    type: String
+    description: Key of the entity. This is read-only and automatically generated. Inherited from roleDefinition
+  - property: displayName
+    type: String
+    description: Display Name of the Role definition. Inherited from roleDefinition
+  - property: description
+    type: String
+    description: Description of the Role definition. Inherited from roleDefinition
+  - property: rolePermissions
+    type: Collection(microsoft.graph.rolePermission)
+    description: List of Role Permissions this role is allowed to perform. These must match the actionName that is defined as part of the rolePermission. Inherited from roleDefinition
+  - property: isBuiltIn
+    type: Boolean
+    description: Type of Role. Set to True if it is built-in, or set to False if it is a custom role definition. Inherited from roleDefinition
+relationships:
+  heading: Relationships
+  list:
+  - relationship: roleAssignments
+    type: Collection(microsoft.graph.roleAssignment)
+    description: List of Role assignments for this role definition. Inherited from roleDefinition

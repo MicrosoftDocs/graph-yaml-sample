@@ -1,0 +1,54 @@
+### YamlMime:GraphResource
+uid:graph.intune_deviceconfig_deviceconfigurationassignment
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_deviceconfigurationassignment.md
+summary:
+  heading: deviceConfigurationAssignment resource type
+  intro: |
+    The device configuration assignment entity assigns an AAD group to a specific device configuration.
+methods:
+  heading: Methods
+  list:
+  - method: [List deviceConfigurationAssignments](xref:graph.intune_deviceconfig_deviceconfigurationassignment_list)
+    type: [deviceConfigurationAssignment](xref:graph.intune_deviceconfig_deviceconfigurationassignment) collection
+    description: List properties and relationships of the deviceConfigurationAssignment objects.
+  - method: [Get deviceConfigurationAssignment](xref:graph.intune_deviceconfig_deviceconfigurationassignment_get)
+    type: [deviceConfigurationAssignment](xref:graph.intune_deviceconfig_deviceconfigurationassignment)
+    description: Read properties and relationships of the deviceConfigurationAssignment object.
+  - method: [Create deviceConfigurationAssignment](xref:graph.intune_deviceconfig_deviceconfigurationassignment_create)
+    type: [deviceConfigurationAssignment](xref:graph.intune_deviceconfig_deviceconfigurationassignment)
+    description: Create a new deviceConfigurationAssignment object.
+  - method: [Delete deviceConfigurationAssignment](xref:graph.intune_deviceconfig_deviceconfigurationassignment_delete)
+    type: None
+    description: Deletes a deviceConfigurationAssignment.
+  - method: [Update deviceConfigurationAssignment](xref:graph.intune_deviceconfig_deviceconfigurationassignment_update)
+    type: [deviceConfigurationAssignment](xref:graph.intune_deviceconfig_deviceconfigurationassignment)
+    description: Update the properties of a deviceConfigurationAssignment object.
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.deviceConfigurationAssignment",
+      "id": "String (identifier)",
+      "target": {
+        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+      }
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: id
+    type: String
+    description: The key of the assignment.
+  - property: target
+    type: microsoft.graph.deviceAndAppManagementAssignmentTarget
+    description: The assignment target for the device configuration.
+relationships:
+  heading: Relationships
+  intro: |
+    None

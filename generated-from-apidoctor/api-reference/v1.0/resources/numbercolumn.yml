@@ -1,0 +1,54 @@
+### YamlMime:GraphResource
+uid:graph.numbercolumn
+metadata:
+  title: NumberColumn
+  author: rgregg
+  ms.author: rgregg
+  ms.date: 09/11/2017
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/numbercolumn.md
+summary:
+  heading: NumberColumn resource type
+  intro: |
+    The **numberColumn** on a [columnDefinition](xref:graph.columnDefinition) resource indicates that the column's values are numbers.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of a **numberColumn** resource.
+  sampleCode: |
+    ```json
+    {
+      "decimalPlaces": "automatic | none | one | two | three | four | five",
+      "displayAs": "number | percentage",
+      "maximum": 10.551,
+      "minimum": 99.993
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: decimalPlaces
+    type: String
+    description: How many decimal places to display. See below for information about the possible values.
+  - property: displayAs
+    type: String
+    description: How the value should be presented in the UX. Must be one of number or percentage. If unspecified, treated as number.
+  - property: maximum
+    type: Double
+    description: The maximum permitted value.
+  - property: minimum
+    type: Double
+    description: The minimum permitted value.
+  outro: |
+    ## DecimalPlaces
+    |Value|Description
+    |:-|:-
+    |**automatic**|Default. Automatically display decimal places as needed.
+    |**none**|Do not display any decimal places.
+    |**one**|Always display one decimal place.
+    |**two**|Always display two decimal places.
+    |**three**|Always display three decimal places.
+    |**four**|Always display four decimal places.
+    |**five**|Always display five decimal places.
+    Note: **decimalPlaces** and **displayAs** apply to how numbers are rendered, not stored.
+    These properties may be updated.

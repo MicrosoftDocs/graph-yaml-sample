@@ -1,0 +1,69 @@
+### YamlMime:GraphOperation
+uid:graph.group_post_rejectedsenders
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/group_post_rejectedsenders.md
+summary:
+  heading: Create rejectedSender
+  intro: |
+    Add a new user or group to the rejectedSender list.
+    Specify the user or group in `@odata.id` in the request body. Users in the rejected senders list cannot post to conversations of the group (identified in the POST request URL). Make sure you do not specify the same user or group in the rejected senders and accepted senders lists, otherwise you will get an error.
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+  list:
+  - resource: Delegated (work or school account)
+    permission: Group.ReadWrite.All
+  - resource: Delegated (personal Microsoft account)
+    permission: Not supported.
+  - resource: Application
+    permission: Not supported.
+httpRequest:
+  heading: HTTP request
+  sampleCode: |
+    ```http
+    POST /groups/{id}/rejectedSenders/$ref
+    ```
+    
+requestHeaders:
+  heading: Request headers
+  list:
+  - name: Authorization
+    value: String
+    description: 
+requestBody:
+  heading: Request body
+  intro: |
+    In the request body, supply the id of a user or group object.
+response:
+  heading: Response
+  intro: |
+    This method returns `204 No Content` response code and no response body.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        request:
+            heading: Request
+            intro: |
+              The following is an example of the request.
+            sampleCode: |
+              ```http
+              POST https://graph.microsoft.com/v1.0/groups/{id}/rejectedSenders/$ref
+              Content-type: application/json
+              Content-length: 30
+              
+              {
+                "@odata.id":"https://graph.microsoft.com/v1.0/users/alexd@contoso.com"
+              }
+              ```
+              
+        response:
+            heading: Response
+            intro: |
+              The following is an example of the response.
+            sampleCode: |
+              ```http
+              HTTP/1.1 204 No Content
+              ```
+              

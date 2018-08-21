@@ -1,0 +1,81 @@
+### YamlMime:GraphOperation
+uid:graph.message_createreply
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/message_createreply.md
+summary:
+  heading: message: createReply
+  intro: |
+    Create a draft of the reply to the specified [message](xref:graph.message). You can then [update](xref:graph.message_update) the draft to add reply content to the **body** or change other message properties, or, simply [send](xref:graph.message_send) the draft.
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+  list:
+  - resource: Delegated (work or school account)
+    permission: Mail.ReadWrite
+  - resource: Delegated (personal Microsoft account)
+    permission: Mail.ReadWrite
+  - resource: Application
+    permission: Mail.ReadWrite
+httpRequest:
+  heading: HTTP request
+  sampleCode: |
+    ```http
+    POST /me/messages/{id}/createReply
+    POST /users/{id | userPrincipalName}/messages/{id}/createReply
+    POST /me/mailFolders/{id}/messages/{id}/createReply
+    POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReply
+    ```
+    
+requestHeaders:
+  heading: Request headers
+  list:
+  - name: Authorization
+    value: String
+    description: Bearer {token}. Required.
+requestBody:
+  heading: Request body
+  intro: |
+    Do not supply a request body for this method.
+response:
+  heading: Response
+  intro: |
+    If successful, this method returns `201 Created` response code and [Message](xref:graph.message) object in the response body.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        intro: |
+          Here is an example of how to call this API.
+        request:
+            heading: Request
+            intro: |
+              Here is an example of the request.
+            sampleCode: |
+              ```http
+              POST https://graph.microsoft.com/v1.0/me/messages/{id}/createReply
+              ```
+              
+        response:
+            heading: Response
+            intro: |
+              Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+            sampleCode: |
+              ```http
+              HTTP/1.1 200 OK
+              Content-type: application/json
+              Content-length: 248
+              
+              {
+                "receivedDateTime": "datetime-value",
+                "sentDateTime": "datetime-value",
+                "hasAttachments": true,
+                "subject": "subject-value",
+                "body": {
+                  "contentType": "",
+                  "content": "content-value"
+                },
+                "bodyPreview": "bodyPreview-value"
+              }
+              ```
+              

@@ -1,0 +1,104 @@
+### YamlMime:GraphOperation
+uid:graph.intune_mam_managedapppolicydeploymentsummary_update
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/intune_mam_managedapppolicydeploymentsummary_update.md
+summary:
+  heading: Update managedAppPolicyDeploymentSummary
+  intro: |
+    Update the properties of a [managedAppPolicyDeploymentSummary](xref:graph.intune_mam_managedapppolicydeploymentsummary) object.
+permissions:
+  heading: Prerequisites
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+httpRequest:
+  heading: HTTP Request
+  sampleCode: |
+    ```http
+    PATCH /deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/deploymentSummary
+    PATCH /deviceAppManagement/androidManagedAppProtections/{androidManagedAppProtectionId}/deploymentSummary
+    PATCH /deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtectionId}/deploymentSummary
+    PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppConfigurationId}/deploymentSummary
+    ```
+    
+requestHeaders:
+  heading: Request headers
+  list:
+  - name: Authorization
+    value: String
+    description: 
+  - name: Accept
+    value: String
+    description: 
+requestBody:
+  heading: Request body
+  intro: |
+    In the request body, supply a JSON representation for the [managedAppPolicyDeploymentSummary](xref:graph.intune_mam_managedapppolicydeploymentsummary) object.
+    The following table shows the properties that are required when you create the [managedAppPolicyDeploymentSummary](xref:graph.intune_mam_managedapppolicydeploymentsummary).
+    |Property|Type|Description
+    |:-|:-|:-|
+    |displayName|String|Not yet documented
+    |configurationDeployedUserCount|Int32|Not yet documented
+    |lastRefreshTime|DateTimeOffset|Not yet documented
+    |configurationDeploymentSummaryPerApp|[managedAppPolicyDeploymentSummaryPerApp](xref:graph.intune_mam_managedapppolicydeploymentsummaryperapp) collection|Not yet documented
+    |id|String|Key of the entity.
+    |version|String|Version of the entity.
+response:
+  heading: Response
+  intro: |
+    If successful, this method returns a `200 OK` response code and an updated [managedAppPolicyDeploymentSummary](xref:graph.intune_mam_managedapppolicydeploymentsummary) object in the response body.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        request:
+            heading: Request
+            intro: |
+              Here is an example of the request.
+              PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/deploymentSummary
+              Content-type: application/json
+              Content-length: 516
+              
+              {
+                "displayName": "Display Name value",
+                "configurationDeployedUserCount": 14,
+                "lastRefreshTime": "2017-01-01T00:01:30.1240368-08:00",
+                "configurationDeploymentSummaryPerApp": [
+                  {
+                    "@odata.type": "microsoft.graph.managedAppPolicyDeploymentSummaryPerApp",
+                    "mobileAppIdentifier": {
+                      "@odata.type": "microsoft.graph.androidMobileAppIdentifier",
+                      "packageId": "Package Id value"
+                    },
+                    "configurationAppliedUserCount": 13
+                  }
+                ],
+                "version": "Version value"
+              }
+
+        response:
+            heading: Response
+            intro: |
+              Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+              HTTP/1.1 200 OK
+              Content-Type: application/json
+              Content-Length: 637
+              
+              {
+                "@odata.type": "#microsoft.graph.managedAppPolicyDeploymentSummary",
+                "displayName": "Display Name value",
+                "configurationDeployedUserCount": 14,
+                "lastRefreshTime": "2017-01-01T00:01:30.1240368-08:00",
+                "configurationDeploymentSummaryPerApp": [
+                  {
+                    "@odata.type": "microsoft.graph.managedAppPolicyDeploymentSummaryPerApp",
+                    "mobileAppIdentifier": {
+                      "@odata.type": "microsoft.graph.androidMobileAppIdentifier",
+                      "packageId": "Package Id value"
+                    },
+                    "configurationAppliedUserCount": 13
+                  }
+                ],
+                "id": "61f2f688-f688-61f2-88f6-f26188f6f261",
+                "version": "Version value"
+              }
+

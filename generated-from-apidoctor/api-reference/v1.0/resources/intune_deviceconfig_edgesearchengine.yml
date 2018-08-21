@@ -1,0 +1,31 @@
+### YamlMime:GraphResource
+uid:graph.intune_deviceconfig_edgesearchengine
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_edgesearchengine.md
+summary:
+  heading: edgeSearchEngine resource type
+  intro: |
+    Allows IT admins to set a predefined default search engine for MDM-Controlled devices.
+    Inherits from [edgeSearchEngineBase](xref:graph.intune_deviceconfig_edgesearchenginebase)
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.edgeSearchEngine",
+      "edgeSearchEngineType": "String"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: edgeSearchEngineType
+    type: microsoft.graph.edgeSearchEngineType
+    description: Allows IT admins to set a predefined default search engine for MDM-Controlled devices. The possible values are: default, bing.
+relationships:
+  heading: Relationships
+  intro: |
+    None

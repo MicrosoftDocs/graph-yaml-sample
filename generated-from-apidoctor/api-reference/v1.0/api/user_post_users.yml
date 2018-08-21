@@ -1,0 +1,105 @@
+### YamlMime:GraphOperation
+uid:graph.user_post_users
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/user_post_users.md
+summary:
+  heading: Create User
+  intro: |
+    Use this API to create a new User.
+    The request body contains the user to create. At a minimum, you must specify the required properties for the user. You can optionally specify any other writable properties.
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+  list:
+  - resource: Delegated (work or school account)
+    permission: User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All
+  - resource: Delegated (personal Microsoft account)
+    permission: Not supported.
+  - resource: Application
+    permission: User.ReadWrite.All, Directory.ReadWrite.All
+httpRequest:
+  heading: HTTP request
+  sampleCode: |
+    ```http
+    POST /users
+    ```
+    
+requestHeaders:
+  heading: Request headers
+  list:
+  - name: Authorization
+    value: String
+    description: 
+  - name: Content-Type
+    value: String
+    description: 
+requestBody:
+  heading: Request body
+  intro: |
+    In the request body, supply a JSON representation of [user](xref:graph.user) object.
+    The following table shows the properties that are required when you create a user.
+    |Parameter|Type|Description
+    |:-|:-|:-|
+    |accountEnabled|boolean|true if the account is enabled; otherwise, false.
+    |displayName|string|The name to display in the address book for the user.
+    |onPremisesImmutableId|string|Only needs to be specified when creating a new user account if you are using a federated domain for the user's userPrincipalName (UPN) property.
+    |mailNickname|string|The mail alias for the user.
+    |passwordProfile|[PasswordProfile](xref:graph.passwordprofile)|The password profile for the user.
+    |userPrincipalName|string|The user principal name (someuser@contoso.com).
+response:
+  heading: Response
+  intro: |
+    If successful, this method returns `201 Created` response code and [user](xref:graph.user) object in the response body.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        request:
+            heading: Request
+            intro: |
+              Here is an example of the request.
+            sampleCode: |
+              ```http
+              POST https://graph.microsoft.com/v1.0/users
+              Content-type: application/json
+              
+              {
+                "accountEnabled": true,
+                "displayName": "displayName-value",
+                "mailNickname": "mailNickname-value",
+                "userPrincipalName": "upn-value@tenant-value.onmicrosoft.com",
+                "passwordProfile" : {
+                  "forceChangePasswordNextSignIn": true,
+                  "password": "password-value"
+                }
+              }
+              ```
+              
+            outro: |
+              In the request body, supply a JSON representation of [user](xref:graph.user) object.
+        response:
+            heading: Response
+            intro: |
+              Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+            sampleCode: |
+              ```http
+              HTTP/1.1 200 OK
+              Content-type: application/json
+              
+              {
+                  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/$entity",
+                  "id": "id-value",
+                  "businessPhones": [],
+                  "displayName": "displayName-value",
+                  "givenName": null,
+                  "jobTitle": null,
+                  "mail": null,
+                  "mobilePhone": null,
+                  "officeLocation": null,
+                  "preferredLanguage": null,
+                  "surname": null,
+                  "userPrincipalName": "upn-value@tenant-value.onmicrosoft.com"
+              }
+              ```
+              

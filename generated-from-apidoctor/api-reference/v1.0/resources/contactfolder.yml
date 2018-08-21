@@ -1,0 +1,95 @@
+### YamlMime:GraphResource
+uid:graph.contactfolder
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.contactfolder
+summary:
+  heading: contactFolder resource type
+  intro: |
+    A folder that contains contacts.
+    This resource supports using [delta query](xref:graph.delta_query_overview) to track incremental additions, deletions, and updates, 
+    by providing a [delta](xref:graph.contactfolder_delta) function.
+methods:
+  heading: Methods
+  list:
+  - method: [Get contactFolder](xref:graph.contactfolder_get)
+    type: [contactFolder](xref:graph.contactfolder)
+    description: Get a contact folder by using the contact folder ID.
+  - method: [Update](xref:graph.contactfolder_update)
+    type: [contactFolder](xref:graph.contactfolder)
+    description: Update contactFolder object.
+  - method: [Delete](xref:graph.contactfolder_delete)
+    type: None
+    description: Delete contactFolder object.
+  - method: [List childFolders](xref:graph.contactfolder_list_childfolders)
+    type: [ContactFolder](xref:graph.contactfolder) collection
+    description: Get a collection of child folders under the specified contact folder.
+  - method: [Create child contactFolder](xref:graph.contactfolder_post_childfolders)
+    type: [ContactFolder](xref:graph.contactfolder)
+    description: Create a new contactFolder as a child of a specified folder.
+  - method: [delta](xref:graph.contact_delta)
+    type: [contact](xref:graph.contact) collection
+    description: Get a set of contact folders that have been added, deleted, or removed from the user's mailbox.
+  - method: [List contacts in folder](xref:graph.contactfolder_list_contacts)
+    type: [Contact](xref:graph.contact) collection
+    description: Get a contact collection from the default Contacts folder of the signed-in user (.../me/contacts), or from the specified contact folder.
+  - method: [Create contact in folder](xref:graph.contactfolder_post_contacts)
+    type: [Contact](xref:graph.contact)
+    description: Add a contact to the root Contacts folder or to the contacts endpoint of another contact folder.
+  - method: [Create single-value extended property](xref:graph.singlevaluelegacyextendedproperty_post_singlevalueextendedproperties)
+    type: [contactFolder](xref:graph.contactFolder)
+    description: Create one or more single-value extended properties in a new or existing contactFolder.
+  - method: [Get contactFolder with single-value extended property](xref:graph.singlevaluelegacyextendedproperty_get)
+    type: [contactFolder](xref:graph.contactFolder)
+    description: Get contactFolders that contain a single-value extended property by using $expand or $filter.
+  - method: [Create multi-value extended property](xref:graph.multivaluelegacyextendedproperty_post_multivalueextendedproperties)
+    type: [contactFolder](xref:graph.contactFolder)
+    description: Create one or more multi-value extended properties in a new or existing contactFolder.
+  - method: [Get contactFolder with multi-value extended property](xref:graph.multivaluelegacyextendedproperty_get)
+    type: [contactFolder](xref:graph.contactFolder)
+    description: Get a contactFolder that contains a multi-value extended property by using $expand.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource
+  sampleCode: |
+    ```json
+    {
+      "displayName": "string",
+      "id": "string (identifier)",
+      "parentFolderId": "string"
+    }
+    ```
+    
+  outro: |
+    ## See also
+    
+    * [Use delta query to track changes in Microsoft Graph data](xref:graph.delta_query_overview)
+    * [Get incremental changes to messages in a folder](xref:graph.delta_query_messages)
+    
+properties:
+  heading: Properties
+  list:
+  - property: displayName
+    type: String
+    description: The folder's display name.
+  - property: id
+    type: String
+    description: Unique identifier of the contact folder. Read-only.
+  - property: parentFolderId
+    type: String
+    description: The ID of the folder's parent folder.
+relationships:
+  heading: Relationships
+  list:
+  - relationship: childFolders
+    type: Collection(microsoft.graph.contactFolder)
+    description: The collection of child folders in the folder. Navigation property. Read-only. Nullable.
+  - relationship: contacts
+    type: Collection(microsoft.graph.contact)
+    description: The contacts in the folder. Navigation property. Read-only. Nullable.
+  - relationship: multiValueExtendedProperties
+    type: Collection(microsoft.graph.multiValueLegacyExtendedProperty)
+    description: The collection of multi-value extended properties defined for the contactFolder. Read-only. Nullable.
+  - relationship: singleValueExtendedProperties
+    type: Collection(microsoft.graph.singleValueLegacyExtendedProperty)
+    description: The collection of single-value extended properties defined for the contactFolder. Read-only. Nullable.

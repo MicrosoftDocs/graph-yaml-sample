@@ -1,0 +1,75 @@
+### YamlMime:GraphOperation
+uid:graph.workbook_refreshsession
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/workbook_refreshsession.md
+summary:
+  heading: Refresh Session
+  intro: |
+    Use this API to refresh an existing workbook session. 
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+  list:
+  - resource: Delegated (work or school account)
+    permission: Files.ReadWrite
+  - resource: Delegated (personal Microsoft account)
+    permission: Not supported.
+  - resource: Application
+    permission: Not supported.
+httpRequest:
+  heading: HTTP request
+  sampleCode: |
+    ```http
+    POST /workbook/refreshSession
+    workbook-session-id: {session-id}
+    ```
+    
+requestHeaders:
+  heading: Request headers
+  list:
+  - name: Authorization
+    value: 
+    description: Bearer {token}. Required.
+  - name: workbook-session-id
+    value: 
+    description: Workbook session Id to be refreshed
+requestBody:
+  heading: Request body
+  intro: |
+    This API does not require any request body.
+response:
+  heading: Response
+  intro: |
+    If successful, this method returns `204 No Content` response code.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        request:
+            heading: Request
+            intro: |
+              Here is an example of the request.
+            sampleCode: |
+              ```http
+              POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/refreshSession
+              Content-type: application/json
+              workbook-session-id: {session-id}
+              Content-length: 0
+              
+              {
+              
+              }
+              ```
+              
+            outro: |
+              Note that workbook-session-id header is required. 
+        response:
+            heading: Response
+            intro: |
+              Here is an example of the response. 
+            sampleCode: |
+              ```http
+              HTTP/1.1 204 No Content
+              ```
+              

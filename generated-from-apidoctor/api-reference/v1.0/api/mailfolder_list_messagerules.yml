@@ -1,0 +1,115 @@
+### YamlMime:GraphOperation
+uid:graph.mailfolder_list_messagerules
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/mailfolder_list_messagerules.md
+summary:
+  heading: List rules
+  intro: |
+    Get all the [messageRule](xref:graph.messagerule) objects defined for the user's Inbox.
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+  list:
+  - resource: Delegated (work or school account)
+    permission: MailboxSettings.Read
+  - resource: Delegated (personal Microsoft account)
+    permission: MailboxSettings.Read
+  - resource: Application
+    permission: MailboxSettings.Read
+httpRequest:
+  heading: HTTP request
+  sampleCode: |
+    ```http
+    GET /me/mailFolders/inbox/messageRules
+    GET /users/{id | userPrincipalName}/mailFolders/inbox/messageRules
+    ```
+    
+queryParameters:
+  heading: Optional query parameters
+  intro: |
+    This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+requestHeaders:
+  heading: Request headers
+  list:
+  - name: Authorization
+    value: String
+    description: Bearer {token}. Required.
+requestBody:
+  heading: Request body
+  intro: |
+    Do not supply a request body for this method.
+response:
+  heading: Response
+  intro: |
+    If successful, this method returns a `200 OK` response code and collection of [messageRule](xref:graph.messagerule) objects in the response body.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        request:
+            heading: Request
+            intro: |
+              Here is an example of the request.
+            sampleCode: |
+              ```http
+              GET https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules
+              ```
+              
+        response:
+            heading: Response
+            intro: |
+              Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+            sampleCode: |
+              ```http
+              HTTP/1.1 200 OK
+              Content-type: application/json
+              
+              {
+                "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Me/mailFolders('inbox')/messageRules",
+                "value":[
+                  {
+                    "id":"AQAAAJ5dZp8=",
+                    "displayName":"Remove spam",
+                    "sequence":1,
+                    "isEnabled":true,
+                    "hasError":false,
+                    "isReadOnly":false,
+                    "conditions":{
+                      "subjectContains":[
+                        "enter to win"
+                      ]
+                    },
+                    "actions":{
+                      "delete":true,
+                      "stopProcessingRules":true
+                    }
+                  },
+                  {
+                    "id":"AQAAAJ5dZqA=",
+                    "displayName":"From partner",
+                    "sequence":2,
+                    "isEnabled":true,
+                    "hasError":false,
+                    "isReadOnly":false,
+                    "conditions":{
+                      "senderContains":[
+                        "ADELE"
+                      ]
+                    },
+                    "actions":{
+                      "stopProcessingRules":true,
+                      "forwardTo":[
+                        {
+                          "emailAddress":{
+                            "name":"Alex Wilbur",
+                            "address":"AlexW@contoso.onmicrosoft.com"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+              ```
+              

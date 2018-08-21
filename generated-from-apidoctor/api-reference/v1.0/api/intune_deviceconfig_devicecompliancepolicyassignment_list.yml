@@ -1,0 +1,66 @@
+### YamlMime:GraphOperation
+uid:graph.intune_deviceconfig_devicecompliancepolicyassignment_list
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicyassignment_list.md
+summary:
+  heading: List deviceCompliancePolicyAssignments
+  intro: |
+    List properties and relationships of the [deviceCompliancePolicyAssignment](xref:graph.intune_deviceconfig_devicecompliancepolicyassignment) objects.
+permissions:
+  heading: Prerequisites
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+httpRequest:
+  heading: HTTP Request
+  sampleCode: |
+    ```http
+    GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assignments
+    ```
+    
+requestHeaders:
+  heading: Request headers
+  list:
+  - name: Authorization
+    value: String
+    description: 
+  - name: Accept
+    value: String
+    description: 
+requestBody:
+  heading: Request body
+  intro: |
+    Do not supply a request body for this method.
+response:
+  heading: Response
+  intro: |
+    If successful, this method returns a `200 OK` response code and a collection of [deviceCompliancePolicyAssignment](xref:graph.intune_deviceconfig_devicecompliancepolicyassignment) objects in the response body.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        request:
+            heading: Request
+            intro: |
+              Here is an example of the request.
+              GET https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assignments
+
+        response:
+            heading: Response
+            intro: |
+              Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+              HTTP/1.1 200 OK
+              Content-Type: application/json
+              Content-Length: 274
+              
+              {
+                "value": [
+                  {
+                    "@odata.type": "#microsoft.graph.deviceCompliancePolicyAssignment",
+                    "id": "92dc3fef-3fef-92dc-ef3f-dc92ef3fdc92",
+                    "target": {
+                      "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+                    }
+                  }
+                ]
+              }
+

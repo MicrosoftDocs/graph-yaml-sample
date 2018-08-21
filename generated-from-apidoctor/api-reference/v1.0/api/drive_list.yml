@@ -1,0 +1,190 @@
+### YamlMime:GraphOperation
+uid:graph.drive_list
+metadata:
+  title: List Drives
+  author: rgregg
+  ms.author: rgregg
+  ms.date: 09/10/2017
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/drive_list.md
+summary:
+  heading: List available drives
+  intro: |
+    Retrieve the list of [Drive](xref:graph.drive) resources available for a target User, Group, or [Site](xref:graph.site).
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+  list:
+  - resource: Delegated (work or school account)
+    permission: Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All
+  - resource: Delegated (personal Microsoft account)
+    permission: Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All
+  - resource: Application
+    permission: Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All
+  outro: |
+    ## List a group's drives
+    To list the document libraries for a group, your app requests the **drives** relationship on the Group.
+httpRequest:
+  heading: HTTP request
+  sampleCode: |
+    ```http
+    GET /groups/{groupId}/drives
+    ```
+    
+  outro: |
+    ## List a site's drives
+    To list the document libraries for a site, your app requests the **drives** relationship on the Site.
+    
+    ```http
+    GET /sites/{siteId}/drives
+    ```
+    
+queryParameters:
+  heading: Optional query parameters
+  intro: |
+    This method supports the `$expand`, `$select`, `$skipToken`, `$top`, and `$orderby` [OData query parameters](xref:graph.query_parameters) to customize the response.
+response:
+  heading: Response
+  intro: |
+    If successful, this method returns a `200 OK` response code and collection of [Drive](xref:graph.drive) objects in the response body.
+    
+    ```http
+    HTTP/1.1 200 OK
+    Content-Type: application/json
+    
+    {
+      "value": [
+        {
+          "id": "942CAEB0-13AE-491B-85E4-7557CDC0F25F",
+          "driveType": "documentLibrary",
+          "name": "Shared Documents",
+          "owner": {
+            "user": {
+              "id": "AE2A1EE9-81A7-423C-ABE4-B945F47509BB",
+              "displayName": "Ryan Gregg"
+            }
+          }
+        },
+        {
+          "id": "C1CD3ED9-0E98-4B0B-82D3-C8FB784B9DCC",
+          "driveType": "documentLibrary",
+          "name": "Contoso Project Files",
+          "owner": {
+            "user": {
+              "id": "406B2281-18E8-4416-9857-38C531B904F1",
+              "displayName": "Daron Spektor"
+            }
+          }
+        }
+      ]
+    }
+    ```
+    
+    
+    ```http
+    HTTP/1.1 200 OK
+    Content-Type: application/json
+    
+    {
+      "value": [
+        {
+          "id": "942CAEB0-13AE-491B-85E4-7557CDC0F25F",
+          "driveType": "documentLibrary",
+          "name": "Shared Documents",
+          "owner": {
+            "user": {
+              "id": "AE2A1EE9-81A7-423C-ABE4-B945F47509BB",
+              "displayName": "Ryan Gregg"
+            }
+          }
+        },
+        {
+          "id": "C1CD3ED9-0E98-4B0B-82D3-C8FB784B9DCC",
+          "driveType": "documentLibrary",
+          "name": "Contoso Project Files",
+          "owner": {
+            "user": {
+              "id": "406B2281-18E8-4416-9857-38C531B904F1",
+              "displayName": "Daron Spektor"
+            }
+          }
+        }
+      ]
+    }
+    ```
+    
+    
+    ```http
+    HTTP/1.1 200 OK
+    Content-Type: application/json
+    
+    {
+      "value": [
+        {
+          "id": "942CAEB0-13AE-491B-85E4-7557CDC0F25F",
+          "driveType": "documentLibrary",
+          "name": "Shared Documents",
+          "owner": {
+            "user": {
+              "id": "AE2A1EE9-81A7-423C-ABE4-B945F47509BB",
+              "displayName": "Ryan Gregg"
+            }
+          }
+        },
+        {
+          "id": "C1CD3ED9-0E98-4B0B-82D3-C8FB784B9DCC",
+          "driveType": "documentLibrary",
+          "name": "Contoso Project Files",
+          "owner": {
+            "user": {
+              "id": "406B2281-18E8-4416-9857-38C531B904F1",
+              "displayName": "Daron Spektor"
+            }
+          }
+        }
+      ]
+    }
+    ```
+    
+  request:
+      heading: request
+      sampleCode: |
+        ```http
+        HTTP/1.1 200 OK
+        Content-Type: application/json
+        
+        {
+          "value": [
+            {
+              "id": "942CAEB0-13AE-491B-85E4-7557CDC0F25F",
+              "driveType": "documentLibrary",
+              "name": "Shared Documents",
+              "owner": {
+                "user": {
+                  "id": "AE2A1EE9-81A7-423C-ABE4-B945F47509BB",
+                  "displayName": "Ryan Gregg"
+                }
+              }
+            },
+            {
+              "id": "C1CD3ED9-0E98-4B0B-82D3-C8FB784B9DCC",
+              "driveType": "documentLibrary",
+              "name": "Contoso Project Files",
+              "owner": {
+                "user": {
+                  "id": "406B2281-18E8-4416-9857-38C531B904F1",
+                  "displayName": "Daron Spektor"
+                }
+              }
+            }
+          ]
+        }
+        ```
+        
+remarks:
+  heading: Remarks
+  intro: |
+    Most users will only have a single Drive resource.
+    Groups and Sites may have multiple Drive resources available.
+    Drives with the [system][] facet are hidden by default.
+    To list them, include `system` in your `$select` statement.

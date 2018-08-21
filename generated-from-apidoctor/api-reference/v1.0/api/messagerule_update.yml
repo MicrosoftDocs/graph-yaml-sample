@@ -1,0 +1,101 @@
+### YamlMime:GraphOperation
+uid:graph.messagerule_update
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/messagerule_update.md
+summary:
+  heading: Update rule
+  intro: |
+    Change writable properties on a [messageRule](xref:graph.messagerule) object and save the changes.
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+  list:
+  - resource: Delegated (work or school account)
+    permission: MailboxSettings.ReadWrite
+  - resource: Delegated (personal Microsoft account)
+    permission: MailboxSettings.ReadWrite
+  - resource: Application
+    permission: MailboxSettings.ReadWrite
+httpRequest:
+  heading: HTTP request
+  sampleCode: |
+    ```http
+    PATCH /me/mailFolders/inbox/messageRules/{id}
+    PATCH /users/{id | userPrincipalName}/mailFolders/inbox/messageRules/{id}
+    ```
+    
+requestHeaders:
+  heading: Optional request headers
+  list:
+  - name: Authorization
+    value: 
+    description: Bearer {token}. Required.
+requestBody:
+  heading: Request body
+  intro: |
+    In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will 
+    maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
+    |Property|Type|Description
+    |:-|:-|:-|
+    |actions|[messageRuleActions](xref:graph.messageruleactions)|Actions to be taken on a message when the corresponding conditions are fulfilled.
+    |conditions|[messageRulePredicates](xref:graph.messagerulepredicates)|Conditions that when fulfilled, will trigger the corresponding actions for that rule.
+    |displayName|String|The display name of the rule.
+    |exceptions|[messageRulePredicates](xref:graph.messagerulepredicates)|Exception conditions for the rule.
+    |isEnabled|Boolean|Indicates whether the rule is enabled to be applied to messages.
+    |isReadOnly|Boolean|Indicates if the rule is read-only and cannot be modified or deleted by the rules REST API.
+    |sequence|Int32|Indicates the order in which the rule is executed, among other rules.
+response:
+  heading: Response
+  intro: |
+    If successful, this method returns a `200 OK` response code and updated [messageRule](xref:graph.messagerule) object in the response body.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        request:
+            heading: Request
+            intro: |
+              The following example changes the name of the rule, and the actions to be taken for that rule in the 
+              [example](xref:graph.messagerule_get#example) in [Get rule](xref:graph.messagerule_get), from forwarding to an address to marking its importance as high. 
+            sampleCode: |
+              ```http
+              PATCH https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules/AQAAAJ5dZqA=
+              Content-type: application/json
+              
+              {
+                  "displayName": "Important from partner",
+                  "actions": {
+                      "markImportance": "high"
+                   }
+              }
+              ```
+              
+        response:
+            heading: Response
+            intro: |
+              Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+            sampleCode: |
+              ```http
+              HTTP/1.1 200 OK
+              Content-type: application/json
+              
+              {
+                "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Me/mailFolders('inbox')/messageRules/$entity",
+                "id":"AQAAAJ5dZqA=",
+                "displayName":"Important from partner",
+                "sequence":2,
+                "isEnabled":true,
+                "hasError":false,
+                "isReadOnly":false,
+                "conditions":{
+                  "senderContains":[
+                    "ADELE"
+                  ]
+                },
+                "actions":{
+                  "markImportance": "high"
+                }
+              }
+              ```
+              

@@ -1,0 +1,60 @@
+### YamlMime:GraphResource
+uid:graph.intune_auditing_auditactor
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_auditing_auditactor.md
+summary:
+  heading: auditActor resource type
+  intro: |
+    A class containing the properties for Audit Actor.
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.auditActor",
+      "type": "String",
+      "userPermissions": [
+        "String"
+      ],
+      "applicationId": "String",
+      "applicationDisplayName": "String",
+      "userPrincipalName": "String",
+      "servicePrincipalName": "String",
+      "ipAddress": "String",
+      "userId": "String"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: type
+    type: String
+    description: Actor Type.
+  - property: userPermissions
+    type: Collection(String)
+    description: List of user permissions when the audit was performed.
+  - property: applicationId
+    type: String
+    description: AAD Application Id.
+  - property: applicationDisplayName
+    type: String
+    description: Name of the Application.
+  - property: userPrincipalName
+    type: String
+    description: User Principal Name (UPN).
+  - property: servicePrincipalName
+    type: String
+    description: Service Principal Name (SPN).
+  - property: ipAddress
+    type: String
+    description: IPAddress.
+  - property: userId
+    type: String
+    description: User Id.
+relationships:
+  heading: Relationships
+  intro: |
+    None

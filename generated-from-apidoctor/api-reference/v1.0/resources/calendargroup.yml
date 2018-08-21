@@ -1,0 +1,67 @@
+### YamlMime:GraphResource
+uid:graph.calendargroup
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.calendargroup
+summary:
+  heading: calendarGroup resource type
+  intro: |
+    A group of user calendars.
+methods:
+  heading: Methods
+  list:
+  - method: [List calendar groups](xref:graph.user_list_calendargroups)
+    type: [Calendar](xref:graph.calendar) collection
+    description: Get the user's calendar groups.
+  - method: [Create calendar group](xref:graph.user_post_calendargroups)
+    type: [Calendar](xref:graph.calendar)
+    description: Create a new calendar group.
+  - method: [Get calendar group](xref:graph.calendargroup_get)
+    type: [calendarGroup](xref:graph.calendargroup)
+    description: Read properties and relationships of a calendar group object.
+  - method: [Update](xref:graph.calendargroup_update)
+    type: [calendarGroup](xref:graph.calendargroup)
+    description: Update calendarGroup object.
+  - method: [Delete](xref:graph.calendargroup_delete)
+    type: None
+    description: Delete calendarGroup object.
+  - method: [List calendars](xref:graph.calendargroup_list_calendars)
+    type: [Calendar](xref:graph.calendar) collection
+    description: List calendars in a calendar group.
+  - method: [Create Calendar](xref:graph.calendargroup_post_calendars)
+    type: [Calendar](xref:graph.calendar)
+    description: Create a new Calendar in a calendar group.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource
+  sampleCode: |
+    ```json
+    {
+      "changeKey": "string",
+      "classId": "guid",
+      "id": "string (identifier)",
+      "name": "string"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: name
+    type: String
+    description: The group name.
+  - property: changeKey
+    type: String
+    description: Identifies the version of the calendar group. Every time the calendar group is changed, ChangeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
+  - property: classId
+    type: Guid
+    description: The class identifier. Read-only.
+  - property: id
+    type: String
+    description: The group's unique identifier. Read-only.
+relationships:
+  heading: Relationships
+  list:
+  - relationship: calendars
+    type: Collection(microsoft.graph.calendar)
+    description: The calendars in the calendar group. Navigation property. Read-only. Nullable.

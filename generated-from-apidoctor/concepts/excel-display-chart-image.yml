@@ -1,0 +1,21 @@
+### YamlMime:GraphOperation
+uid:graph.excel-display-chart-image
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/excel-display-chart-image.md
+summary:
+  heading: Display a chart image in Excel with Microsoft Graph
+  intro: |
+    When you perform a [GET operation to retrieve a chart image](xref:graph.chart_image), the Excel API returns the image as a base-64 string.
+    You can display the base-64 string inside an HTML image tag: `<img src="data:image/png;base64,{base-64 chart image string}/>`.
+    For default behavior, use `Image(width=0,height=0,fittingMode='fit')`. Here is an example of a chart image returned with the default parameters.
+    ![Excel chart image with default height and width.](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/GetChart-default.png)
+    If you want to customize the display of the image, specify a height, width, and a fitting mode. Here is what the same chart image looks like if you retrieve it with these parameters: `Image(width=500,height=500,fittingMode='Fill')`.
+  outro: |
+    ## See also
+    
+    * [Manage sessions in Excel with Microsoft Graph](xref:graph.excel-manage-sessions)
+    * [Write to an Excel workbook using Microsoft Graph](xref:graph.excel-write-to-workbook)
+    * [Use workbook functions in Excel with Microsoft Graph](xref:graph.excel-use-functions)
+    * [Update a range’s format in Excel with Microsoft Graph](xref:graph.excel-update-range-format)
+    * [Use the Excel REST API](xref:graph.excel)
+    

@@ -1,0 +1,16 @@
+### YamlMime:GraphOperation
+uid:graph.onedrive_activity_reports
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/onedrive_activity_reports.md
+summary:
+  heading: OneDrive activity reports
+  intro: |
+    Use the OneDrive activity reports to get the activity of every user licensed to use OneDrive by looking at their interaction with files on OneDrive. These reports can help you to understand the level of collaboration going on by showing the number of files shared.
+    
+  outro: |
+    ## Reports
+    |Function|Return Type|Description
+    | :--------------------------------------- -| :---------- -| :--------------------------------------- -|
+    |[Get user detail](xref:graph.reportroot_getonedriveactivityuserdetail)|Stream|Get details about OneDrive activity by user.
+    |[Get user counts](xref:graph.reportroot_getonedriveactivityusercounts)|Stream|Get the trend in the number of active OneDrive users.
+    |[Get file counts](xref:graph.reportroot_getonedriveactivityfilecounts)|Stream|Get the number of unique, licensed users that performed file interactions against any OneDrive account.

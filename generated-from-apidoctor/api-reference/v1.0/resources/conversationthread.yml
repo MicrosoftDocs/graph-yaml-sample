@@ -1,0 +1,89 @@
+### YamlMime:GraphResource
+uid:graph.conversationthread
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.conversationthread
+summary:
+  heading: conversationThread resource type
+  intro: |
+    A conversationThread is a collection of [posts](xref:graph.post).
+    The last post's recipients collection is the aggregated recipients of the entire thread. A thread can have a growing collection of recipients.
+    A new thread is created when a recipient is removed from the thread.
+methods:
+  heading: Methods
+  list:
+  - method: [List threads](xref:graph.group_list_threads)
+    type: [conversationThread](xref:graph.conversationthread) collection
+    description: Get all the threads of a group.
+  - method: [Create thread](xref:graph.group_post_threads)
+    type: [conversationThread](xref:graph.conversationthread)
+    description: Start a new conversation by first creating a thread. A new conversation, conversation thread, and post are created in the group.
+  - method: [Get conversationThread](xref:graph.conversationthread_get)
+    type: [conversationThread](xref:graph.conversationthread)
+    description: Get a specific thread that belongs to a group.
+  - method: [Update](xref:graph.conversationthread_update)
+    type: [conversationThread](xref:graph.conversationthread)
+    description: Update conversationThread object.
+  - method: [Delete](xref:graph.conversationthread_delete)
+    type: None
+    description: Delete conversationThread object.
+  - method: [Reply](xref:graph.conversationthread_reply)
+    type: None
+    description: Reply to this thread by creating a new Post entity.
+  - method: [List Posts](xref:graph.conversationthread_list_posts)
+    type: [post](xref:graph.post) collection
+    description: Get the posts of the specified thread.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource
+  sampleCode: |
+    ```json
+    {
+      "ccRecipients": [{"@odata.type": "microsoft.graph.recipient"}],
+      "hasAttachments": true,
+      "id": "string (identifier)",
+      "isLocked": true,
+      "lastDeliveredDateTime": "String (timestamp)",
+      "preview": "string",
+      "toRecipients": [{"@odata.type": "microsoft.graph.recipient"}],
+      "topic": "string",
+      "uniqueSenders": ["string"]
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: id
+    type: String
+    description: Read-only.
+  - property: toRecipients
+    type: Collection(microsoft.graph.recipient)
+    description: The To: recipients for the thread.
+  - property: ccRecipients
+    type: Collection(microsoft.graph.recipient)
+    description: The Cc: recipients for the thread.
+  - property: topic
+    type: String
+    description: The topic of the conversation. This property can be set when the conversation is created, but it cannot be updated.
+  - property: hasAttachments
+    type: Boolean
+    description: Indicates whether any of the posts within this thread has at least one attachment.
+  - property: lastDeliveredDateTime
+    type: DateTimeOffset
+    description: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
+  - property: uniqueSenders
+    type: Collection(String)
+    description: All the users that sent a message to this thread.
+  - property: preview
+    type: String
+    description: A short summary from the body of the latest post in this converstaion.
+  - property: isLocked
+    type: Boolean
+    description: Indicates if the thread is locked.
+relationships:
+  heading: Relationships
+  list:
+  - relationship: posts
+    type: Collection(microsoft.graph.post)
+    description: Read-only. Nullable.

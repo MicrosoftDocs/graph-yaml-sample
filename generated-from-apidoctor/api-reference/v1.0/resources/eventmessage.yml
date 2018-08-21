@@ -1,0 +1,241 @@
+### YamlMime:GraphResource
+uid:graph.eventmessage
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.eventmessage
+summary:
+  heading: eventMessage resource type
+  intro: |
+    A message that represents a meeting request, cancellation, or response (which can be one of the following: acceptance, tentative acceptance, or decline).
+    The **eventMessage** entity is derived from [message](xref:graph.message). The **meetingMessageType** property identifies the type of the event message.
+    When an organizer or app sends a meeting request, the meeting request arrives in an attendee's Inbox as an **eventMessage** instance with the **meetingMessageType** of **meetingRequest**. In addition, Outlook automatically creates an **event** instance in the attendee's calendar, with the **showAs** property as **tentative**. 
+    To get the properties of the associated event in the attendee's mailbox, the app can use the **event** navigation property of the **eventMessage**, as shown in 
+    this [get event message example](xref:graph.eventmessage_get#request-2). The app can also respond to the event on behalf of the attendee programmatically, by [accepting](xref:graph.event_accept), [tentatively accepting](xref:graph.event_tentativelyaccept), or [declining](xref:graph.event_decline) the event.
+    Aside from a meeting request, an **eventMessage** instance can be found in an attendee's Inbox folder as the result of an event organizer cancelling a meeting, or in the organizer's Inbox as a result of an attendee responding to the meeting request. An app can act on event messages in the same way as on messages with minor differences.
+methods:
+  heading: Methods
+  list:
+  - method: [Get eventMessage](xref:graph.eventmessage_get)
+    type: [eventMessage](xref:graph.eventmessage)
+    description: Read properties and relationships of eventMessage object.
+  - method: [Update](xref:graph.eventmessage_update)
+    type: [eventMessage](xref:graph.eventmessage)
+    description: Update eventMessage object.
+  - method: [Delete](xref:graph.message_delete)
+    type: None
+    description: Delete eventMessage object.
+  - method: [copy](xref:graph.message_copy)
+    type: [message](xref:graph.message)
+    description: Copy a message to a folder.
+  - method: [createForward](xref:graph.message_createforward)
+    type: [message](xref:graph.message)
+    description: Create a draft of the Forward message. You can then update or send the draft.
+  - method: [createReply](xref:graph.message_createreply)
+    type: [message](xref:graph.message)
+    description: Create a draft of the Reply message. You can then update or send the draft.
+  - method: [createReplyAll](xref:graph.message_createreplyall)
+    type: [message](xref:graph.message)
+    description: Create a draft of the Reply All message. You can then update or send the draft.
+  - method: [forward](xref:graph.message_forward)
+    type: None
+    description: Forward a message. The message is then saved in the Sent Items folder.
+  - method: [move](xref:graph.message_move)
+    type: [message](xref:graph.message)
+    description: Move a message to a folder. This creates a new copy of the message in the destination folder.
+  - method: [reply](xref:graph.message_reply)
+    type: None
+    description: Reply to the sender of a message. The message is then saved in the Sent Items folder.
+  - method: [replyAll](xref:graph.message_replyall)
+    type: None
+    description: Reply to all recipients of a message. The message is then saved in the Sent Items folder.
+  - method: [send](xref:graph.message_send)
+    type: None
+    description: Sends a previously created message draft. The message is then saved in the Sent Items folder.
+  - method: **Attachments**
+    type: 
+    description: 
+  - method: [List attachments](xref:graph.eventmessage_list_attachments)
+    type: [attachment](xref:graph.attachment) collection
+    description: Get all attachments on an eventMessage.
+  - method: [Add attachment](xref:graph.eventmessage_post_attachments)
+    type: [attachment](xref:graph.attachment)
+    description: Add a new attachment to an eventMessage by posting to the attachments collection.
+  - method: **Open extensions**
+    type: 
+    description: 
+  - method: [Create open extension](xref:graph.opentypeextension_post_opentypeextension)
+    type: [openTypeExtension](xref:graph.opentypeextension)
+    description: Create an open extension and add custom properties in a new or existing instance of a resource.
+  - method: [Get open extension](xref:graph.opentypeextension_get)
+    type: [openTypeExtension](xref:graph.opentypeextension) collection
+    description: Get an open extension object or objects identified by name or fully qualified name.
+  - method: **Extended properties**
+    type: 
+    description: 
+  - method: [Create single-value extended property](xref:graph.singlevaluelegacyextendedproperty_post_singlevalueextendedproperties)
+    type: [eventMessage](xref:graph.eventMessage)
+    description: Create one or more single-value extended properties in a new or existing eventMessage.
+  - method: [Get eventMessage with single-value extended property](xref:graph.singlevaluelegacyextendedproperty_get)
+    type: [eventMessage](xref:graph.eventMessage)
+    description: Get eventMessages that contain a single-value extended property by using $expand or $filter.
+  - method: [Create multi-value extended property](xref:graph.multivaluelegacyextendedproperty_post_multivalueextendedproperties)
+    type: [eventMessage](xref:graph.eventMessage)
+    description: Create one or more multi-value extended properties in a new or existing eventMessage.
+  - method: [Get eventMessage with multi-value extended property](xref:graph.multivaluelegacyextendedproperty_get)
+    type: [eventMessage](xref:graph.eventMessage)
+    description: Get an eventMessage that contains a multi-value extended property by using $expand.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource  
+  sampleCode: |
+    ```json
+    {
+      "bccRecipients": [{"@odata.type": "microsoft.graph.recipient"}],
+      "body": {"@odata.type": "microsoft.graph.itemBody"},
+      "bodyPreview": "string",
+      "categories": ["string"],
+      "ccRecipients": [{"@odata.type": "microsoft.graph.recipient"}],
+      "changeKey": "string",
+      "conversationId": "string",
+      "createdDateTime": "DateTimeOffset",
+      "event": { "@odata.type": "microsoft.graph.event" },
+      "flag": {"@odata.type": "microsoft.graph.followupFlag"},
+      "from": {"@odata.type": "microsoft.graph.recipient"},
+      "hasAttachments": true,
+      "id": "string (identifier)",
+      "importance": "String",
+      "inferenceClassification": "String",
+      "internetMessageHeaders": [{"@odata.type": "microsoft.graph.internetMessageHeader"}],
+      "internetMessageId": "String",
+      "isDeliveryReceiptRequested": true,
+      "isDraft": true,
+      "isRead": true,
+      "isReadReceiptRequested": true,
+      "lastModifiedDateTime": "DateTimeOffset",
+      "meetingMessageType": "String",
+      "parentFolderId": "string",
+      "receivedDateTime": "DateTimeOffset",
+      "replyTo": [{"@odata.type": "microsoft.graph.recipient"}],
+      "sender": {"@odata.type": "microsoft.graph.recipient"},
+      "sentDateTime": "DateTimeOffset",
+      "subject": "string",
+      "toRecipients": [{"@odata.type": "microsoft.graph.recipient"}],
+      "uniqueBody": {"@odata.type": "microsoft.graph.itemBody"},
+      "webLink": "string"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: bccRecipients
+    type: Collection(microsoft.graph.recipient)
+    description: The Bcc: recipients for the message.
+  - property: body
+    type: microsoft.graph.itemBody
+    description: The body of the message. It can be in HTML or text format.
+  - property: bodyPreview
+    type: String
+    description: The first 255 characters of the message body. It is in text format.
+  - property: categories
+    type: Collection(String)
+    description: The categories associated with the message.
+  - property: ccRecipients
+    type: Collection(microsoft.graph.recipient)
+    description: The Cc: recipients for the message.
+  - property: changeKey
+    type: String
+    description: The version of the message.
+  - property: conversationId
+    type: String
+    description: The ID of the conversation the email belongs to.
+  - property: createdDateTime
+    type: DateTimeOffset
+    description: The date and time the message was created.
+  - property: flag
+    type: microsoft.graph.followupFlag
+    description: The flag value that indicates the status, start date, due date, or completion date for the message.
+  - property: from
+    type: microsoft.graph.recipient
+    description: The mailbox owner and sender of the message.
+  - property: hasAttachments
+    type: Boolean
+    description: Indicates whether the message has attachments.
+  - property: id
+    type: String
+    description: Unique identifier for the event message (note that this value may change if a message is moved or altered)
+  - property: importance
+    type: String
+    description: The importance of the message: low, normal, high.
+  - property: inferenceClassification
+    type: String
+    description: The possible values are: focused, other.
+  - property: internetMessageHeaders
+    type: Collection(microsoft.graph.internetMessageHeader)
+    description: The collection of message headers, defined by RFC5322, that provide details of the network path taken by a message from the sender to the recipient. Read-only.
+  - property: internetMessageId
+    type: String
+    description: The message ID in the format specified by RFC2822.
+  - property: isDeliveryReceiptRequested
+    type: Boolean
+    description: Indicates whether a read receipt is requested for the message.
+  - property: isDraft
+    type: Boolean
+    description: Indicates whether the message is a draft. A message is a draft if it hasn't been sent yet.
+  - property: isRead
+    type: Boolean
+    description: Indicates whether the message has been read.
+  - property: isReadReceiptRequested
+    type: Boolean
+    description: Indicates whether a read receipt is requested for the message.
+  - property: lastModifiedDateTime
+    type: DateTimeOffset
+    description: The date and time the message was last changed.
+  - property: meetingMessageType
+    type: microsoft.graph.meetingMessageType
+    description: The type of event message: none, meetingRequest, meetingCancelled, meetingAccepted, meetingTenativelyAccepted, meetingDeclined.
+  - property: parentFolderId
+    type: String
+    description: The unique identifier for the message's parent mailFolder.
+  - property: receivedDateTime
+    type: DateTimeOffset
+    description: The date and time the message was received.
+  - property: replyTo
+    type: Collection(microsoft.graph.recipient)
+    description: The email addresses to use when replying.
+  - property: sender
+    type: microsoft.graph.recipient
+    description: The account that is actually used to generate the message.
+  - property: sentDateTime
+    type: DateTimeOffset
+    description: The date and time the message was sent.
+  - property: subject
+    type: String
+    description: The subject of the message.
+  - property: toRecipients
+    type: Collection(microsoft.graph.recipient)
+    description: The To: recipients for the message.
+  - property: uniqueBody
+    type: microsoft.graph.itemBody
+    description: The part of the body of the message that is unique to the current message.
+  - property: webLink
+    type: String
+    description: The URL to open the message in Outlook Web App.You can append an ispopout argument to the end of the URL to change how the message is displayed. If ispopout is not present or if it is set to 1, then the message is shown in a popout window. If ispopout is set to 0, then the browser will show the message in the Outlook Web App review pane.The message will open in the browser if you are logged in to your mailbox via Outlook Web App. You will be prompted to login if you are not already logged in with the browser.This URL can be accessed from within an iFrame.
+relationships:
+  heading: Relationships
+  list:
+  - relationship: attachments
+    type: Collection(microsoft.graph.attachment)
+    description: Read-only. Nullable.
+  - relationship: event
+    type: microsoft.graph.event
+    description: The event associated with the event message. The assumption for attendees or room resources is that the Calendar Attendant is set to automatically update the calendar with an event when meeting request event messages arrive. Navigation property.  Read-only.
+  - relationship: extensions
+    type: Collection(microsoft.graph.extension)
+    description: The collection of open extensions defined for the eventMessage. Read-only. Nullable.
+  - relationship: multiValueExtendedProperties
+    type: Collection(microsoft.graph.multiValueLegacyExtendedProperty)
+    description: The collection of multi-value extended properties defined for the eventMessage. Read-only. Nullable.
+  - relationship: singleValueExtendedProperties
+    type: Collection(microsoft.graph.singleValueLegacyExtendedProperty)
+    description: The collection of single-value extended properties defined for the eventMessage. Read-only. Nullable.

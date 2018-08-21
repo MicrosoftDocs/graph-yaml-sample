@@ -1,0 +1,21 @@
+### YamlMime:GraphOperation
+uid:graph.intune_deviceconfig_defendermonitorfileactivity
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_defendermonitorfileactivity.md
+summary:
+  heading: defenderMonitorFileActivity enum type
+  intro: |
+    Possible values for monitoring file activity.
+enum:
+  heading: Members
+  table:
+  - member: userDefined
+    description: User Defined, default value, no intent.
+  - member: disable
+    description: Disable monitoring file activity.
+  - member: monitorAllFiles
+    description: Monitor all files.
+  - member: monitorIncomingFilesOnly
+    description: Monitor incoming files only.
+  - member: monitorOutgoingFilesOnly
+    description: Monitor outgoing files only.

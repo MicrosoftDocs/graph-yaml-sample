@@ -1,0 +1,23 @@
+### YamlMime:GraphOperation
+uid:graph.onenote_error_codes
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/onenote_error_codes.md
+summary:
+  heading: Error codes for OneNote APIs in Microsoft Graph
+  intro: |
+    This article describes error codes that are returned by the OneNote APIs in Microsoft Graph whenever a request sent through the API fails.
+  outro: |
+    ## Error response example
+    When your request generates an error, the OneNote API stops performing the request and returns an error response as a JSON object. An error response contains the associated error code, a message, and a link to the appropriate section of this article. The following example shows how an error response looks.
+    {
+       "error":{
+          "code":"10002",
+          "message":"The service is currently unavailable. Please try again later.",
+          "innerError": {
+            "requestId": "request-id",
+            "date": "date-time"
+          }
+       }
+    }
+
+    For more information about Microsoft Graph errors, see [Microsoft Graph error responses and resource types](xref:graph.errors).

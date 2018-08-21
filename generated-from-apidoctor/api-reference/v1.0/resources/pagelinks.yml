@@ -1,0 +1,29 @@
+### YamlMime:GraphResource
+uid:graph.pagelinks
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/pagelinks.md
+summary:
+  heading: pageLinks resource type
+  intro: |
+    Links for opening a OneNote page.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "oneNoteClientUrl": {"@odata.type": "microsoft.graph.externalLink"},
+      "oneNoteWebUrl": {"@odata.type": "microsoft.graph.externalLink"}
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: oneNoteClientUrl
+    type: microsoft.graph.externalLink
+    description: Opens the page in the OneNote native client if it's installed.
+  - property: oneNoteWebUrl
+    type: microsoft.graph.externalLink
+    description: Opens the page in OneNote Online.

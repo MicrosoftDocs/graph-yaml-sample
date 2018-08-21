@@ -1,0 +1,71 @@
+### YamlMime:GraphOperation
+uid:graph.group_post_owners
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/group_post_owners.md
+summary:
+  heading: Add group owner
+  intro: |
+    Add a user to the group's owners. The owners are a set of non-admin users who are allowed to modify the group object.
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+  list:
+  - resource: Delegated (work or school account)
+    permission: Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All
+  - resource: Delegated (personal Microsoft account)
+    permission: Not supported.
+  - resource: Application
+    permission: Group.ReadWrite.All and User.ReadWrite.All
+httpRequest:
+  heading: HTTP request
+  sampleCode: |
+    ```http
+    POST /groups/{id}/owners/$ref
+    ```
+    
+requestHeaders:
+  heading: Request headers
+  list:
+  - name: Authorization
+    value: String
+    description: Bearer {token}. Required.
+requestBody:
+  heading: Request body
+  intro: |
+    In the request body, supply a JSON representation of [user](xref:graph.user) object to be added.
+response:
+  heading: Response
+  intro: |
+    If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        request:
+            heading: Request
+            intro: |
+              The following is an example of the request.
+            sampleCode: |
+              ```http
+              POST https://graph.microsoft.com/v1.0/groups/{id}/owners/$ref
+              Content-type: application/json
+              Content-length: 30
+              
+              {
+                "@odata.id": "https://graph.microsoft.com/v1.0/users/{id}"
+              }
+              ```
+              
+            outro: |
+              In the request body, supply a JSON representation of [user](xref:graph.user) object to be added.
+        response:
+            heading: Response
+            intro: |
+              The following is an example of the response.
+              
+            sampleCode: |
+              ```http
+              HTTP/1.1 204 No Content
+              ```
+              

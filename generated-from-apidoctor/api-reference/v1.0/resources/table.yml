@@ -1,0 +1,131 @@
+### YamlMime:GraphResource
+uid:graph.table
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.table
+summary:
+  heading: Table resource type
+  intro: |
+    Represents an Excel table.
+methods:
+  heading: Methods
+  list:
+  - method: [Get Table](xref:graph.table_get)
+    type: [WorkbookTable](xref:graph.table)
+    description: Read properties and relationships of table object.
+  - method: [Create TableColumn](xref:graph.table_post_columns)
+    type: [WorkbookTableColumn](xref:graph.tablecolumn)
+    description: Create a new TableColumn by posting to the columns collection.
+  - method: [List columns](xref:graph.table_list_columns)
+    type: [WorkbookTableColumn](xref:graph.tablecolumn) collection
+    description: Get a TableColumn object collection.
+  - method: [Create TableRow](xref:graph.table_post_rows)
+    type: [WorkbookTableRow](xref:graph.tablerow)
+    description: Create a new TableRow by posting to the rows collection.
+  - method: [List rows](xref:graph.table_list_rows)
+    type: [WorkbookTableRow](xref:graph.tablerow) collection
+    description: Get a TableRow object collection.
+  - method: [Update](xref:graph.table_update)
+    type: [WorkbookTable](xref:graph.table)
+    description: Update Table object.
+  - method: [Databodyrange](xref:graph.table_databodyrange)
+    type: [Range](xref:graph.range)
+    description: Gets the range object associated with the data body of the table.
+  - method: [Headerrowrange](xref:graph.table_headerrowrange)
+    type: [Range](xref:graph.range)
+    description: Gets the range object associated with header row of the table.
+  - method: [Range](xref:graph.table_range)
+    type: [Range](xref:graph.range)
+    description: Gets the range object associated with the entire table.
+  - method: [Totalrowrange](xref:graph.table_totalrowrange)
+    type: [Range](xref:graph.range)
+    description: Gets the range object associated with totals row of the table.
+  - method: [Clearfilters](xref:graph.table_clearfilters)
+    type: None
+    description: Clears all the filters currently applied on the table.
+  - method: [Converttorange](xref:graph.table_converttorange)
+    type: [Range](xref:graph.range)
+    description: Converts the table into a normal range of cells. All data is preserved.
+  - method: [Delete](xref:graph.table_delete)
+    type: None
+    description: Deletes the table.
+  - method: [Reapplyfilters](xref:graph.table_reapplyfilters)
+    type: None
+    description: Reapplies all the filters currently on the table.
+  - method: [List](xref:graph.table_list)
+    type: [WorkbookTable](xref:graph.table) collection
+    description: Get table object collection.
+  - method: [Add](xref:graph.tablecollection_add)
+    type: [WorkbookTable](xref:graph.table)
+    description: Create a new table. The range source address determines the worksheet under which the table will be added. If the table cannot be added (e.g., because the address is invalid, or the table would overlap with another table), an error will be thrown.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "highlightFirstColumn": true,
+      "highlightLastColumn": true,
+      "id": "String (identifier)",
+      "name": "String",
+      "showBandedColumns": true,
+      "showBandedRows": true,
+      "showFilterButton": true,
+      "showHeaders": true,
+      "showTotals": true,
+      "style": "String",
+      "legacyId": "String"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: id
+    type: String
+    description: Returns a value that uniquely identifies the table in a given workbook. The value of the identifier remains the same even when the table is renamed. This property should be interpreted as an opaque string value and should not be parsed to any other type. Read-only.
+  - property: name
+    type: String
+    description: Name of the table.
+  - property: showHeaders
+    type: Boolean
+    description: Indicates whether the header row is visible or not. This value can be set to show or remove the header row.
+  - property: showTotals
+    type: Boolean
+    description: Indicates whether the total row is visible or not. This value can be set to show or remove the total row.
+  - property: style
+    type: String
+    description: Constant value that represents the Table style. The possible values are: TableStyleLight1 thru TableStyleLight21, TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. A custom user-defined style present in the workbook can also be specified.
+  - property: highlightFirstColumn
+    type: Boolean
+    description: Indicates whether the first column contains special formatting.
+  - property: highlightLastColumn
+    type: Boolean
+    description: Indicates whether the last column contains special formatting.
+  - property: showBandedColumns
+    type: Boolean
+    description: Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.
+  - property: showBandedRows
+    type: Boolean
+    description: Indicates whether the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier.
+  - property: showFilterButton
+    type: Boolean
+    description: Indicates whether the filter buttons are visible at the top of each column header. Setting this is only allowed if the table contains a header row.
+  - property: legacyId
+    type: String
+    description: Legacy Id used in older Excle clients. The value of the identifier remains the same even when the table is renamed. This property should be interpreted as an opaque string value and should not be parsed to any other type. Read-only.
+relationships:
+  heading: Relationships
+  list:
+  - relationship: columns
+    type: Collection(microsoft.graph.workbookTableColumn)
+    description: Represents a collection of all the columns in the table. Read-only.
+  - relationship: rows
+    type: Collection(microsoft.graph.workbookTableRow)
+    description: Represents a collection of all the rows in the table. Read-only.
+  - relationship: sort
+    type: microsoft.graph.workbookTableSort
+    description: Represents the sorting for the table. Read-only.
+  - relationship: worksheet
+    type: microsoft.graph.workbookWorksheet
+    description: The worksheet containing the current table. Read-only.

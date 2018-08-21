@@ -1,0 +1,15 @@
+### YamlMime:GraphOperation
+uid:graph.intune_shared_vpptokenaccounttype
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_shared_vpptokenaccounttype.md
+summary:
+  heading: vppTokenAccountType enum type
+  intro: |
+    Possible types of an Apple Volume Purchase Program token.
+enum:
+  heading: Members
+  table:
+  - member: business
+    description: Apple Volume Purchase Program token associated with an business program.
+  - member: education
+    description: Apple Volume Purchase Program token associated with an education program.

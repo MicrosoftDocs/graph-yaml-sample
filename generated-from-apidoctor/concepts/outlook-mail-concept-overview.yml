@@ -1,0 +1,11 @@
+### YamlMime:GraphOperation
+uid:graph.outlook-mail-concept-overview
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/outlook-mail-concept-xref:graph.overview
+summary:
+  heading: Outlook mail API overview
+  intro: |
+    Outlook is a messaging communication hub in Office 365. It also lets you manage contacts, schedule meetings, find information about users in an organization, 
+    initiate online conversations, share files, and collaborate in groups.
+  outro: |
+    ## Why integrate with Outlook mail?

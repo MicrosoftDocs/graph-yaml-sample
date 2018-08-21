@@ -1,0 +1,104 @@
+### YamlMime:GraphOperation
+uid:graph.conversationthread_update
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/conversationthread_update.md
+summary:
+  heading: Update conversationthread
+  intro: |
+    Lock or unlock a thread, to allow or avoid further posting to the thread.
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+  list:
+  - resource: Delegated (work or school account)
+    permission: Group.ReadWrite.All
+  - resource: Delegated (personal Microsoft account)
+    permission: Not supported.
+  - resource: Application
+    permission: Group.ReadWrite.All
+httpRequest:
+  heading: HTTP request
+  sampleCode: |
+    ```http
+    PATCH /groups/{id}/threads/{id}
+    PATCH /groups/{id}/conversations/{id}/threads/{id}
+    ```
+    
+requestHeaders:
+  heading: Request headers
+  list:
+  - name: Authorization
+    value: String
+    description: 
+  - name: Content-Type
+    value: String
+    description: 
+requestBody:
+  heading: Request body
+  intro: |
+    In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
+    |Property|Type|Description
+    |:-|:-|:-|
+    |isLocked|Boolean|Indicates if the thread is locked. Set to `true` to disallow posting.
+response:
+  heading: Response
+  intro: |
+    If successful, this method returns a `200 OK` response code and updated [conversationThread](xref:graph.conversationthread) object in the response body.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        request:
+            heading: Request
+            intro: |
+              Here is an example of the request.
+            sampleCode: |
+              ```http
+              PATCH https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}
+              Content-type: application/json
+              Content-length: 419
+              
+              {
+                "@odata.type":"#Microsoft.OutlookServices.ConversationThread",
+                "isLocked": true
+              }
+              ```
+              
+        response:
+            heading: Response
+            intro: |
+              Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+            sampleCode: |
+              ```http
+              HTTP/1.1 200 OK
+              Content-type: application/json
+              Content-length: 419
+              
+              {
+                "toRecipients": [
+                  {
+                    "emailAddress": {
+                      "name": "name-value",
+                      "address": "address-value"
+                    }
+                  }
+                ],
+                "topic": "topic-value",
+                "hasAttachments": true,
+                "lastDeliveredDateTime": "datetime-value",
+                "uniqueSenders": [
+                  "uniqueSenders-value"
+                ],
+                "ccRecipients": [
+                  {
+                    "emailAddress": {
+                      "name": "name-value",
+                      "address": "address-value"
+                    }
+                  }
+                ],
+                "isLocked": true 
+              }
+              ```
+              

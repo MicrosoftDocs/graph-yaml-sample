@@ -1,0 +1,76 @@
+### YamlMime:GraphOperation
+uid:graph.intune_companyterms_termsandconditionsassignment_create
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/intune_companyterms_termsandconditionsassignment_create.md
+summary:
+  heading: Create termsAndConditionsAssignment
+  intro: |
+    Create a new [termsAndConditionsAssignment](xref:graph.intune_companyterms_termsandconditionsassignment) object.
+permissions:
+  heading: Prerequisites
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+httpRequest:
+  heading: HTTP Request
+  sampleCode: |
+    ```http
+    POST /deviceManagement/termsAndConditions/{termsAndConditionsId}/assignments
+    ```
+    
+requestHeaders:
+  heading: Request headers
+  list:
+  - name: Authorization
+    value: String
+    description: 
+  - name: Accept
+    value: String
+    description: 
+requestBody:
+  heading: Request body
+  intro: |
+    In the request body, supply a JSON representation for the termsAndConditionsAssignment object.
+    The following table shows the properties that are required when you create the termsAndConditionsAssignment.
+    |Property|Type|Description
+    |:-|:-|:-|
+    |id|String|Unique identifier of the entity.
+    |target|[deviceAndAppManagementAssignmentTarget](xref:graph.intune_shared_deviceandappmanagementassignmenttarget)|Assignment target that the T&C policy is assigned to.
+response:
+  heading: Response
+  intro: |
+    If successful, this method returns a `201 Created` response code and a [termsAndConditionsAssignment](xref:graph.intune_companyterms_termsandconditionsassignment) object in the response body.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        request:
+            heading: Request
+            intro: |
+              Here is an example of the request.
+              POST https://graph.microsoft.com/v1.0/deviceManagement/termsAndConditions/{termsAndConditionsId}/assignments
+              Content-type: application/json
+              Content-length: 168
+              
+              {
+                "@odata.type": "#microsoft.graph.termsAndConditionsAssignment",
+                "target": {
+                  "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+                }
+              }
+
+        response:
+            heading: Response
+            intro: |
+              Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+              HTTP/1.1 201 Created
+              Content-Type: application/json
+              Content-Length: 217
+              
+              {
+                "@odata.type": "#microsoft.graph.termsAndConditionsAssignment",
+                "id": "64c1a196-a196-64c1-96a1-c16496a1c164",
+                "target": {
+                  "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+                }
+              }
+

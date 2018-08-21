@@ -1,0 +1,40 @@
+### YamlMime:GraphResource
+uid:graph.calculatedcolumn
+metadata:
+  title: CalculatedColumn
+  author: rgregg
+  ms.author: rgregg
+  ms.date: 09/11/2017
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/calculatedcolumn.md
+summary:
+  heading: CalculatedColumn resource type
+  intro: |
+    The **calculatedColumn** on a [columnDefinition](xref:graph.columnDefinition) resource indicates that the column's data is calculated based on other columns in the site.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of a **calculatedColumn** resource.
+  sampleCode: |
+    ```json
+    {
+      "format": "dateOnly | dateTime",
+      "formula": "=[Column1]+[Column2]+[Column3]",
+      "outputType": "boolean | currency | dateTime | number | text",
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: format
+    type: String
+    description: For dateTime output types, the format of the value. Must be one of dateOnly or dateTime.
+  - property: formula
+    type: String
+    description: The formula used to compute the value for this column.
+  - property: outputType
+    type: String
+    description: The output type used to format values in this column. Must be one of boolean, currency, dateTime, number, or text.
+  outro: |
+    SharePoint formulas use a syntax similar to Excel formulas.
+    See [Examples of common formulas in SharePoint Lists][SPFormulas] for more information.

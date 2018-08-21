@@ -1,0 +1,67 @@
+### YamlMime:GraphResource
+uid:graph.intune_deviceconfig_deviceconfigurationuseroverview
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_deviceconfigurationuseroverview.md
+summary:
+  heading: deviceConfigurationUserOverview resource type
+  intro: |
+    Not yet documented
+methods:
+  heading: Methods
+  list:
+  - method: [Get deviceConfigurationUserOverview](xref:graph.intune_deviceconfig_deviceconfigurationuseroverview_get)
+    type: [deviceConfigurationUserOverview](xref:graph.intune_deviceconfig_deviceconfigurationuseroverview)
+    description: Read properties and relationships of the deviceConfigurationUserOverview object.
+  - method: [Update deviceConfigurationUserOverview](xref:graph.intune_deviceconfig_deviceconfigurationuseroverview_update)
+    type: [deviceConfigurationUserOverview](xref:graph.intune_deviceconfig_deviceconfigurationuseroverview)
+    description: Update the properties of a deviceConfigurationUserOverview object.
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.deviceConfigurationUserOverview",
+      "id": "String (identifier)",
+      "pendingCount": 1024,
+      "notApplicableCount": 1024,
+      "successCount": 1024,
+      "errorCount": 1024,
+      "failedCount": 1024,
+      "lastUpdateDateTime": "String (timestamp)",
+      "configurationVersion": 1024
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: id
+    type: String
+    description: Key of the entity.
+  - property: pendingCount
+    type: Int32
+    description: Number of pending Users
+  - property: notApplicableCount
+    type: Int32
+    description: Number of not applicable users
+  - property: successCount
+    type: Int32
+    description: Number of succeeded Users
+  - property: errorCount
+    type: Int32
+    description: Number of error Users
+  - property: failedCount
+    type: Int32
+    description: Number of failed Users
+  - property: lastUpdateDateTime
+    type: DateTimeOffset
+    description: Last update time
+  - property: configurationVersion
+    type: Int32
+    description: Version of the policy for that overview
+relationships:
+  heading: Relationships
+  intro: |
+    None

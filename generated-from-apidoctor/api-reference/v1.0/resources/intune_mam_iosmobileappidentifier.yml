@@ -1,0 +1,31 @@
+### YamlMime:GraphResource
+uid:graph.intune_mam_iosmobileappidentifier
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_mam_iosmobileappidentifier.md
+summary:
+  heading: iosMobileAppIdentifier resource type
+  intro: |
+    The identifier for an iOS app.
+    Inherits from [mobileAppIdentifier](xref:graph.intune_mam_mobileappidentifier)
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.iosMobileAppIdentifier",
+      "bundleId": "String"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: bundleId
+    type: String
+    description: The identifier for an app, as specified in the app store.
+relationships:
+  heading: Relationships
+  intro: |
+    None

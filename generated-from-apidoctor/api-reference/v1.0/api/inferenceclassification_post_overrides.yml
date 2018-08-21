@@ -1,0 +1,92 @@
+### YamlMime:GraphOperation
+uid:graph.inferenceclassification_post_overrides
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/inferenceclassification_post_overrides.md
+summary:
+  heading: Create inferenceClassificationOverride
+  intro: |
+    Create an override for a sender identified by an SMTP address. Future messages from that SMTP address will be consistently classified 
+    as specified in the override.
+    **Note**
+    
+    * If an override already exists with the same STMP address, then the **classifyAs** and **name** fields of that override are updated with the provided values.
+    * The maximum number of overrides supported for a mailbox is 1000, based on unique sender SMTP addresses.
+    * The POST operation supports creating only one override at a time.
+    
+permissions:
+  heading: Permissions
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+  list:
+  - resource: Delegated (work or school account)
+    permission: Mail.ReadWrite
+  - resource: Delegated (personal Microsoft account)
+    permission: Mail.ReadWrite
+  - resource: Application
+    permission: Mail.ReadWrite
+httpRequest:
+  heading: HTTP request
+  sampleCode: |
+    ```http
+    POST /me/inferenceClassification/overrides
+    POST /users/{id}/inferenceClassification/overrides
+    ```
+    
+requestHeaders:
+  heading: Request headers
+  list:
+  - name: Authorization
+    value: String
+    description: Bearer {token}. Required.
+  - name: Content-Type
+    value: String
+    description: Nature of the data in the body of an entity. Required.
+requestBody:
+  heading: Request body
+  intro: |
+    In the request body, supply a JSON representation of [inferenceClassificationOverride](xref:graph.inferenceclassificationoverride) object.
+response:
+  heading: Response
+  intro: |
+    If successful, this method returns `201 Created` response code and an [inferenceClassificationOverride](xref:graph.inferenceclassificationoverride) object in the response body.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        request:
+            heading: Request
+            intro: |
+              Here is an example of the request.
+            sampleCode: |
+              ```http
+              POST https://graph.microsoft.com/v1.0/me/inferenceClassification/overrides
+              Content-type: application/json
+              
+              {
+                "classifyAs": "focused",
+                "senderEmailAddress": {
+                  "name": "Samantha Booth",
+                  "address": "samanthab@adatum.onmicrosoft.com"
+                }
+              }
+              ```
+              
+        response:
+            heading: Response
+            intro: |
+              Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+            sampleCode: |
+              ```http
+              HTTP/1.1 201 Created
+              Content-type: application/json
+              
+              {
+                "classifyAs": "focused",
+                "senderEmailAddress": {
+                  "name": "Samantha Booth",
+                  "address": "samanthab@adatum.onmicrosoft.com"
+                },
+                "id": "98f5bdef-576a-404d-a2ea-07a3cf11a9b9"
+              }
+              ```
+              

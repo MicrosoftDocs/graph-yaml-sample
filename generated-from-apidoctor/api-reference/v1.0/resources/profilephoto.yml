@@ -1,0 +1,48 @@
+### YamlMime:GraphResource
+uid:graph.profilephoto
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.profilephoto
+summary:
+  heading: profilePhoto resource type
+  intro: |
+    A profile photo of a user, group or an Outlook contact accessed from Exchange Online. It's binary data not encoded in base-64.
+    The supported sizes of HD photos on Exchange Online are as follows: '48x48', '64x64', '96x96', '120x120', 
+    '240x240', '360x360','432x432', '504x504', and '648x648'. 
+methods:
+  heading: Methods
+  list:
+  - method: [Get profilePhoto](xref:graph.profilephoto_get)
+    type: [profilePhoto](xref:graph.profilephoto)
+    description: Get the specified profilePhoto or its metadata (profilePhoto properties).
+  - method: [Update](xref:graph.profilephoto_update)
+    type: [profilePhoto](xref:graph.profilephoto)
+    description: Assign a photo to the specified user, group, or contact. The photo should be in binary. It replaces the existing photo, if any.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "id": "240X240",
+      "height": 240,
+      "width": 240
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: id
+    type: String
+    description: Read-only.
+  - property: height
+    type: Int32
+    description: The height of the photo. Read-only.
+  - property: width
+    type: Int32
+    description: The width of the photo. Read-only.
+relationships:
+  heading: Relationships
+  intro: |
+    None

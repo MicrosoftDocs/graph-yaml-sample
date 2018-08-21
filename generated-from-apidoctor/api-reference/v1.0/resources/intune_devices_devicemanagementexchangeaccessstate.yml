@@ -1,0 +1,21 @@
+### YamlMime:GraphOperation
+uid:graph.intune_devices_devicemanagementexchangeaccessstate
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_devices_devicemanagementexchangeaccessstate.md
+summary:
+  heading: deviceManagementExchangeAccessState enum type
+  intro: |
+    Device Exchange Access State.
+enum:
+  heading: Members
+  table:
+  - member: none
+    description: No access state discovered from Exchange
+  - member: unknown
+    description: Device access state to Exchange is unknown
+  - member: allowed
+    description: Device has access to Exchange
+  - member: blocked
+    description: Device is Blocked in Exchange
+  - member: quarantined
+    description: Device is Quarantined in Exchange

@@ -1,0 +1,46 @@
+### YamlMime:GraphResource
+uid:graph.meetingtimesuggestion
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/meetingtimesuggestion.md
+summary:
+  heading: meetingTimeSuggestion resource type
+  intro: |
+    A meeting suggestion that includes information like meeting time, attendance likelihood, individual 
+    availability, and available meeting locations.
+resource:
+  heading: JSON representation
+  intro: |
+    Here is a JSON representation of the resource
+  sampleCode: |
+    ```json
+    {
+      "attendeeAvailability": [{"@odata.type": "microsoft.graph.attendeeAvailability"}],
+      "confidence": 100.0,
+      "locations": [{"@odata.type": "microsoft.graph.location"}],
+      "meetingTimeSlot": {"@odata.type": "microsoft.graph.timeSlot"},
+      "organizerAvailability": "String",
+      "suggestionReason": "String"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: attendeeAvailability
+    type: Collection(microsoft.graph.attendeeAvailability)
+    description: An array that shows the availability status of each attendee for this meeting suggestion.
+  - property: confidence
+    type: Double
+    description: A percentage that represents the likelhood of all the attendees attending.
+  - property: locations
+    type: Collection(microsoft.graph.location)
+    description: An array that specifies the name and geographic location of each meeting location for this meeting suggestion.
+  - property: meetingTimeSlot
+    type: microsoft.graph.timeSlot
+    description: A time period suggested for the meeting.
+  - property: organizerAvailability
+    type: microsoft.graph.freeBusyStatus
+    description: Availability of the meeting organizer for this meeting suggestion. The possible values are: free, tentative, busy, oof, workingElsewhere, unknown.
+  - property: suggestionReason
+    type: String
+    description: Reason for suggesting the meeting time.

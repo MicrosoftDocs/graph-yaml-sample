@@ -1,0 +1,80 @@
+### YamlMime:GraphResource
+uid:graph.intune_onboarding_devicemanagementpartner
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_onboarding_devicemanagementpartner.md
+summary:
+  heading: deviceManagementPartner resource type
+  intro: |
+    Entity which represents a connection to device management partner.
+methods:
+  heading: Methods
+  list:
+  - method: [List deviceManagementPartners](xref:graph.intune_onboarding_devicemanagementpartner_list)
+    type: [deviceManagementPartner](xref:graph.intune_onboarding_devicemanagementpartner) collection
+    description: List properties and relationships of the deviceManagementPartner objects.
+  - method: [Get deviceManagementPartner](xref:graph.intune_onboarding_devicemanagementpartner_get)
+    type: [deviceManagementPartner](xref:graph.intune_onboarding_devicemanagementpartner)
+    description: Read properties and relationships of the deviceManagementPartner object.
+  - method: [Create deviceManagementPartner](xref:graph.intune_onboarding_devicemanagementpartner_create)
+    type: [deviceManagementPartner](xref:graph.intune_onboarding_devicemanagementpartner)
+    description: Create a new deviceManagementPartner object.
+  - method: [Delete deviceManagementPartner](xref:graph.intune_onboarding_devicemanagementpartner_delete)
+    type: None
+    description: Deletes a deviceManagementPartner.
+  - method: [Update deviceManagementPartner](xref:graph.intune_onboarding_devicemanagementpartner_update)
+    type: [deviceManagementPartner](xref:graph.intune_onboarding_devicemanagementpartner)
+    description: Update the properties of a deviceManagementPartner object.
+resource:
+  heading: JSON Representation
+  intro: |
+    Here is a JSON representation of the resource.
+  sampleCode: |
+    ```json
+    {
+      "@odata.type": "#microsoft.graph.deviceManagementPartner",
+      "id": "String (identifier)",
+      "lastHeartbeatDateTime": "String (timestamp)",
+      "partnerState": "String",
+      "partnerAppType": "String",
+      "singleTenantAppId": "String",
+      "displayName": "String",
+      "isConfigured": true,
+      "whenPartnerDevicesWillBeRemovedDateTime": "String (timestamp)",
+      "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "String (timestamp)"
+    }
+    ```
+    
+properties:
+  heading: Properties
+  list:
+  - property: id
+    type: String
+    description: Not yet documented
+  - property: lastHeartbeatDateTime
+    type: DateTimeOffset
+    description: Timestamp of last heartbeat after admin enabled option Connect to Device management Partner
+  - property: partnerState
+    type: microsoft.graph.deviceManagementPartnerTenantState
+    description: Partner state of this tenant. The possible values are: unknown, unavailable, enabled, terminated, rejected, unresponsive.
+  - property: partnerAppType
+    type: microsoft.graph.deviceManagementPartnerAppType
+    description: Partner App type. The possible values are: unknown, singleTenantApp, multiTenantApp.
+  - property: singleTenantAppId
+    type: String
+    description: Partner Single tenant App id
+  - property: displayName
+    type: String
+    description: Partner display name
+  - property: isConfigured
+    type: Boolean
+    description: Whether device management partner is configured or not
+  - property: whenPartnerDevicesWillBeRemovedDateTime
+    type: DateTimeOffset
+    description: DateTime in UTC when PartnerDevices will be removed
+  - property: whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime
+    type: DateTimeOffset
+    description: DateTime in UTC when PartnerDevices will be marked as NonCompliant
+relationships:
+  heading: Relationships
+  intro: |
+    None

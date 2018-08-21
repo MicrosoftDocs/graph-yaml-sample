@@ -1,0 +1,89 @@
+### YamlMime:GraphOperation
+uid:graph.intune_deviceconfig_devicecomplianceuseroverview_update
+metadata:
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/intune_deviceconfig_devicecomplianceuseroverview_update.md
+summary:
+  heading: Update deviceComplianceUserOverview
+  intro: |
+    Update the properties of a [deviceComplianceUserOverview](xref:graph.intune_deviceconfig_devicecomplianceuseroverview) object.
+permissions:
+  heading: Prerequisites
+  intro: |
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+httpRequest:
+  heading: HTTP Request
+  sampleCode: |
+    ```http
+    PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/userStatusOverview
+    ```
+    
+requestHeaders:
+  heading: Request headers
+  list:
+  - name: Authorization
+    value: String
+    description: 
+  - name: Accept
+    value: String
+    description: 
+requestBody:
+  heading: Request body
+  intro: |
+    In the request body, supply a JSON representation for the [deviceComplianceUserOverview](xref:graph.intune_deviceconfig_devicecomplianceuseroverview) object.
+    The following table shows the properties that are required when you create the [deviceComplianceUserOverview](xref:graph.intune_deviceconfig_devicecomplianceuseroverview).
+    |Property|Type|Description
+    |:-|:-|:-|
+    |id|String|Key of the entity.
+    |pendingCount|Int32|Number of pending Users
+    |notApplicableCount|Int32|Number of not applicable users
+    |successCount|Int32|Number of succeeded Users
+    |errorCount|Int32|Number of error Users
+    |failedCount|Int32|Number of failed Users
+    |lastUpdateDateTime|DateTimeOffset|Last update time
+    |configurationVersion|Int32|Version of the policy for that overview
+response:
+  heading: Response
+  intro: |
+    If successful, this method returns a `200 OK` response code and an updated [deviceComplianceUserOverview](xref:graph.intune_deviceconfig_devicecomplianceuseroverview) object in the response body.
+examples:
+  - items:
+    - Example:
+        heading: Example
+        request:
+            heading: Request
+            intro: |
+              Here is an example of the request.
+              PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/userStatusOverview
+              Content-type: application/json
+              Content-length: 212
+              
+              {
+                "pendingCount": 12,
+                "notApplicableCount": 2,
+                "successCount": 12,
+                "errorCount": 10,
+                "failedCount": 11,
+                "lastUpdateDateTime": "2016-12-31T23:58:21.6459442-08:00",
+                "configurationVersion": 4
+              }
+
+        response:
+            heading: Response
+            intro: |
+              Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+              HTTP/1.1 200 OK
+              Content-Type: application/json
+              Content-Length: 328
+              
+              {
+                "@odata.type": "#microsoft.graph.deviceComplianceUserOverview",
+                "id": "2d4f5bf4-5bf4-2d4f-f45b-4f2df45b4f2d",
+                "pendingCount": 12,
+                "notApplicableCount": 2,
+                "successCount": 12,
+                "errorCount": 10,
+                "failedCount": 11,
+                "lastUpdateDateTime": "2016-12-31T23:58:21.6459442-08:00",
+                "configurationVersion": 4
+              }
+
