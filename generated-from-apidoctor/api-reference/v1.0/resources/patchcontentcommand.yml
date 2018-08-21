@@ -28,7 +28,7 @@ properties:
     description: "The action to perform on the target element. The possible values are: replace, append, delete, insert, or prepend."
   - property: "content"
     type: "String"
-    description: "A string of well-formed HTML to add to the page, and any image or file binary data. If the content contains binary data, the request must be sent using the multipart/form-data content type with a "Commands" part."
+    description: "A string of well-formed HTML to add to the page, and any image or file binary data. If the content contains binary data, the request must be sent using the multipart/form-data content type with a \"Commands\" part."
   - property: "position"
     type: "microsoft.graph.onenotePatchInsertPosition"
     description: "The location to add the supplied content, relative to the target element. The possible values are: after (default) or before."

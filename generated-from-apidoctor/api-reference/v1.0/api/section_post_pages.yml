@@ -35,7 +35,7 @@ requestHeaders:
     description: "Bearer {token}. Required."
   - name: "Content-Type"
     value: "String"
-    description: "text/html or application/xhtml+xml for the HTML content, including for the required "Presentation" part of multipart requests. Multipart requests use the multipart/form-data; boundary=your-boundary content type."
+    description: "text/html or application/xhtml+xml for the HTML content, including for the required \"Presentation\" part of multipart requests. Multipart requests use the multipart/form-data; boundary=your-boundary content type."
 requestBody:
   heading: "Request body"
   intro: |

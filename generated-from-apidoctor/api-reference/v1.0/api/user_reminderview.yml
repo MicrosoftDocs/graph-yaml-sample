@@ -31,10 +31,10 @@ parameters:
   list:
   - name: "startDateTime"
     value: "String"
-    description: "The start date and time of the event for which the reminder is set up. The value is represented in ISO 8601 format, for example, "2015-11-08T19:00:00.0000000"."
+    description: "The start date and time of the event for which the reminder is set up. The value is represented in ISO 8601 format, for example, \"2015-11-08T19:00:00.0000000\"."
   - name: "endDateTime"
     value: "String"
-    description: "The end date and time of the event for which the reminder is set up. The value is represented in ISO 8601 format, for example, "2015-11-08T20:00:00.0000000"."
+    description: "The end date and time of the event for which the reminder is set up. The value is represented in ISO 8601 format, for example, \"2015-11-08T20:00:00.0000000\"."
 requestHeaders:
   heading: "Request headers"
   list:

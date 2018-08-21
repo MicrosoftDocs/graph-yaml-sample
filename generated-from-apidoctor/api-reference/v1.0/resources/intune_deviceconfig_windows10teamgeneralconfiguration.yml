@@ -115,7 +115,7 @@ properties:
     description: "Indicates whether or not to require a pin for wireless projection."
   - property: "settingsBlockMyMeetingsAndFiles"
     type: "Boolean"
-    description: "Specifies whether to disable the "My meetings and files" feature in the Start menu, which shows the signed-in user's meetings and files from Office 365."
+    description: "Specifies whether to disable the \"My meetings and files\" feature in the Start menu, which shows the signed-in user's meetings and files from Office 365."
   - property: "settingsBlockSessionResume"
     type: "Boolean"
     description: "Specifies whether to allow the ability to resume a session when the session times out."
