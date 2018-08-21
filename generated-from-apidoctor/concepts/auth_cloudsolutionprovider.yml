@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.auth_cloudsolutionprovider
+uid: graph.auth_cloudsolutionprovider
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/auth_cloudsolutionprovider.md
 summary:

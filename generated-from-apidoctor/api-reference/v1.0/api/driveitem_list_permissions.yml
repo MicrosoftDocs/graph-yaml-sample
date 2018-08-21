@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.driveitem_list_permissions
+uid: graph.driveitem_list_permissions
 metadata:
   title: List who has access to a file
   author: rgregg

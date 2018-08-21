@@ -1,5 +1,5 @@
 ### YamlMime:GraphResource
-uid:graph.lookupcolumn
+uid: graph.lookupcolumn
 metadata:
   title: LookupColumn
   author: rgregg

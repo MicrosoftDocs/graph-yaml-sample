@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.device_list_registeredowners
+uid: graph.device_list_registeredowners
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/device_list_registeredowners.md
 summary:

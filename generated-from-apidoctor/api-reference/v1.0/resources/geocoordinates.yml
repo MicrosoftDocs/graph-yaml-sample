@@ -1,5 +1,5 @@
 ### YamlMime:GraphResource
-uid:graph.geocoordinates
+uid: graph.geocoordinates
 metadata:
   title: GeoCoordinates
   author: rgregg

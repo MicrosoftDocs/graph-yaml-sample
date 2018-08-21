@@ -1,5 +1,5 @@
 ### YamlMime:GraphResource
-uid:graph.intune_mam_windowsinformationprotectionapp
+uid: graph.intune_mam_windowsinformationprotectionapp
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_mam_windowsinformationprotectionapp.md
 summary:

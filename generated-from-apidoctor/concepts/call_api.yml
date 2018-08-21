@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.call_api
+uid: graph.call_api
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/call_api.md
 summary:

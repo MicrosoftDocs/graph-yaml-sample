@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.list_get
+uid: graph.list_get
 metadata:
   title: Get a SharePoint list
   author: rgregg

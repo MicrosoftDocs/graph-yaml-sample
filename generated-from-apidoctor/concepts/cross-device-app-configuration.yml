@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.cross-device-app-configuration
+uid: graph.cross-device-app-configuration
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/cross-device-app-configuration.md
 summary:

@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.driveitem_invite
+uid: graph.driveitem_invite
 metadata:
   title: Send an invite to access an item
   author: rgregg

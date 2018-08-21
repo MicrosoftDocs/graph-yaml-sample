@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.groupsetting_get
+uid: graph.groupsetting_get
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/groupsetting_get.md
 summary:

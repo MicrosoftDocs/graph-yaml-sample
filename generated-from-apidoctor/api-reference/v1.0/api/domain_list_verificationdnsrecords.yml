@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.domain_list_verificationdnsrecords
+uid: graph.domain_list_verificationdnsrecords
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/domain_list_verificationdnsrecords.md
 summary:

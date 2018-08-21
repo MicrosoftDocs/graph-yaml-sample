@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.opentypeextension_delete
+uid: graph.opentypeextension_delete
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/opentypeextension_delete.md
 summary:

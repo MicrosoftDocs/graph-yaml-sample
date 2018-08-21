@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.site_search
+uid: graph.site_search
 metadata:
   title: Find SharePoint sites by keyword
   author: rgregg

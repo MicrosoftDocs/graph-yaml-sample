@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.domain_list_serviceconfigurationrecords
+uid: graph.domain_list_serviceconfigurationrecords
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/domain_list_serviceconfigurationrecords.md
 summary:

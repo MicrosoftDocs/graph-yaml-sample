@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.range_unmerge
+uid: graph.range_unmerge
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/range_unmerge.md
 summary:

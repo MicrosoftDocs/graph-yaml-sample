@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.drive_get_specialfolder
+uid: graph.drive_get_specialfolder
 metadata:
   title: Get Special Folders
   author: rgregg

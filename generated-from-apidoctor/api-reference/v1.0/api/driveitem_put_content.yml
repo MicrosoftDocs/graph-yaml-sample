@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.driveitem_put_content
+uid: graph.driveitem_put_content
 metadata:
   title: Upload small files
   author: rgregg

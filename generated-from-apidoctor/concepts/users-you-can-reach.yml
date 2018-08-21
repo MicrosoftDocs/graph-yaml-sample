@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.users-you-can-reach
+uid: graph.users-you-can-reach
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/users-you-can-reach.md
 summary:

@@ -1,5 +1,5 @@
 ### YamlMime:GraphResource
-uid:graph.uploadsession
+uid: graph.uploadsession
 metadata:
   title: UploadSession
   author: rgregg

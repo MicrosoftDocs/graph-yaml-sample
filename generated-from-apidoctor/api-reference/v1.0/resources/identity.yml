@@ -1,5 +1,5 @@
 ### YamlMime:GraphResource
-uid:graph.identity
+uid: graph.identity
 metadata:
   title: Identity
   author: rgregg

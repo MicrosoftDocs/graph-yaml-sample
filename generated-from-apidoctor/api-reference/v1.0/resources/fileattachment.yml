@@ -1,5 +1,5 @@
 ### YamlMime:GraphResource
-uid:graph.fileattachment
+uid: graph.fileattachment
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.fileattachment
 summary:

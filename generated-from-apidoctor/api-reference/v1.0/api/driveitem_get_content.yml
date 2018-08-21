@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.driveitem_get_content
+uid: graph.driveitem_get_content
 metadata:
   title: Download a file
   author: rgregg

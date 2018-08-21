@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.associate_account
+uid: graph.associate_account
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/associate_account.md
 summary:

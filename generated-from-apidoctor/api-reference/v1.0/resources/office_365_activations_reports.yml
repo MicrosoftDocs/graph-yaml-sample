@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.office_365_activations_reports
+uid: graph.office_365_activations_reports
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/office_365_activations_reports.md
 summary:

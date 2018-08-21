@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.driveitem_list_children
+uid: graph.driveitem_list_children
 metadata:
   title: List the contents of a folder
   author: rgregg

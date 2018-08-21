@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.list_create
+uid: graph.list_create
 metadata:
   title: Create a SharePoint List
   author: rgregg

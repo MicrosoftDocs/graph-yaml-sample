@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.chartaxis_get
+uid: graph.chartaxis_get
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/chartaxis_get.md
 summary:

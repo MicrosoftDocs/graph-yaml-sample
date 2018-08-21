@@ -1,5 +1,5 @@
 ### YamlMime:GraphResource
-uid:graph.intune_tem_telecomexpensemanagementpartner
+uid: graph.intune_tem_telecomexpensemanagementpartner
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_tem_telecomexpensemanagementpartner.md
 summary:

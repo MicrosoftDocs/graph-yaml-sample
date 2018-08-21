@@ -1,5 +1,5 @@
 ### YamlMime:GraphResource
-uid:graph.attendeebase
+uid: graph.attendeebase
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/attendeebase.md
 summary:

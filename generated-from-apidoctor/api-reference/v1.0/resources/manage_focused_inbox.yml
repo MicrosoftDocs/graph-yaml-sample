@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.manage_focused_inbox
+uid: graph.manage_focused_inbox
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/manage_focused_inbox.md
 summary:

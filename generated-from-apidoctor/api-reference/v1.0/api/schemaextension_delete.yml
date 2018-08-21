@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.schemaextension_delete
+uid: graph.schemaextension_delete
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/schemaextension_delete.md
 summary:

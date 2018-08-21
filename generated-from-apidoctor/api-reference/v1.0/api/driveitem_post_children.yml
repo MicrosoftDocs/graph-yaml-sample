@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.driveitem_post_children
+uid: graph.driveitem_post_children
 metadata:
   title: Create a new folder
   author: rgregg

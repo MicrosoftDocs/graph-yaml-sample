@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.driveitem_list_thumbnails
+uid: graph.driveitem_list_thumbnails
 metadata:
   title: Retrieve thumbnails for a file or folder
   author: rgregg

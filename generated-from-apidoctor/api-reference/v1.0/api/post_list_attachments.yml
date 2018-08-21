@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.post_list_attachments
+uid: graph.post_list_attachments
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/post_list_attachments.md
 summary:

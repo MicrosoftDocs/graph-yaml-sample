@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.driveitem_delete
+uid: graph.driveitem_delete
 metadata:
   title: Delete a file or folder
   author: rgregg

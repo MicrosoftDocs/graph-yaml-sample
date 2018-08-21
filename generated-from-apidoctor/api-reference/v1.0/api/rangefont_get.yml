@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.rangefont_get
+uid: graph.rangefont_get
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/rangefont_get.md
 summary:

@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.json_batching
+uid: graph.json_batching
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/json_batching.md
 summary:

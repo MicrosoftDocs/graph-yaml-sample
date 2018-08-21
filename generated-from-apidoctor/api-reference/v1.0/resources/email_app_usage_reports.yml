@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.email_app_usage_reports
+uid: graph.email_app_usage_reports
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/email_app_usage_reports.md
 summary:

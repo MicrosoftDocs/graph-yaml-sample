@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.directory_deleteditems_user_owned
+uid: graph.directory_deleteditems_user_owned
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/directory_deleteditems_user_owned.md
 summary:

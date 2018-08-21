@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.chartfont_get
+uid: graph.chartfont_get
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/chartfont_get.md
 summary:

@@ -1,5 +1,5 @@
 ### YamlMime:GraphResource
-uid:graph.quota
+uid: graph.quota
 metadata:
   title: Quota
   author: rgregg

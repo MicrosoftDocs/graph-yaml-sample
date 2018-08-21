@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.driveitem_createuploadsession
+uid: graph.driveitem_createuploadsession
 metadata:
   title: Resumable file upload
   author: rgregg

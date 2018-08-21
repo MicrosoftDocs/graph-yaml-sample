@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.page_delete
+uid: graph.page_delete
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/page_delete.md
 summary:

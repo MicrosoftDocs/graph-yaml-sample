@@ -1,5 +1,5 @@
 ### YamlMime:GraphResource
-uid:graph.intune_devices_windowsdefenderscanactionresult
+uid: graph.intune_devices_windowsdefenderscanactionresult
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_devices_windowsdefenderscanactionresult.md
 summary:

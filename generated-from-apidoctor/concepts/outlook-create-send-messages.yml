@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.outlook-create-send-messages
+uid: graph.outlook-create-send-messages
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/outlook-create-send-messages.md
 summary:

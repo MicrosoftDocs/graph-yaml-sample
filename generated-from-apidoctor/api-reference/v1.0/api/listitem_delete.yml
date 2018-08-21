@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.listitem_delete
+uid: graph.listitem_delete
 metadata:
   title: Delete an entry from a SharePoint list
   author: rgregg

@@ -1,5 +1,5 @@
 ### YamlMime:GraphResource
-uid:graph.calculatedcolumn
+uid: graph.calculatedcolumn
 metadata:
   title: CalculatedColumn
   author: rgregg

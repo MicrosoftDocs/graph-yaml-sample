@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.user_list_createdobjects
+uid: graph.user_list_createdobjects
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/user_list_createdobjects.md
 summary:

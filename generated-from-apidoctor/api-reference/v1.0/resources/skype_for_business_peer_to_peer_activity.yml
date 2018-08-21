@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.skype_for_business_peer_to_peer_activity
+uid: graph.skype_for_business_peer_to_peer_activity
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/skype_for_business_peer_to_peer_activity.md
 summary:

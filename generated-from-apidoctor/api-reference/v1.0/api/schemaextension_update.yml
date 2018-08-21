@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.schemaextension_update
+uid: graph.schemaextension_update
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/schemaextension_update.md
 summary:

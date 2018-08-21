@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.organization_update
+uid: graph.organization_update
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/organization_update.md
 summary:

@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.conversationthread_list_posts
+uid: graph.conversationthread_list_posts
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/conversationthread_list_posts.md
 summary:

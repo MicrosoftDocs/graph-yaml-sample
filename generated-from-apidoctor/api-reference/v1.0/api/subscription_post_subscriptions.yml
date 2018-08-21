@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.subscription_post_subscriptions
+uid: graph.subscription_post_subscriptions
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/subscription_post_subscriptions.md
 summary:

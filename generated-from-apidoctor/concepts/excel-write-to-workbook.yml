@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.excel-write-to-workbook
+uid: graph.excel-write-to-workbook
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/excel-write-to-workbook.md
 summary:

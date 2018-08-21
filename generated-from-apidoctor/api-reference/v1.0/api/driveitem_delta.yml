@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.driveitem_delta
+uid: graph.driveitem_delta
 metadata:
   title: Sync the contents of a drive
   author: rgregg

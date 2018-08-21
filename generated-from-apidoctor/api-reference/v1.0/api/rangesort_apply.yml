@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.rangesort_apply
+uid: graph.rangesort_apply
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/rangesort_apply.md
 summary:

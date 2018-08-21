@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.outlookuser_supportedtimezones
+uid: graph.outlookuser_supportedtimezones
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/outlookuser_supportedtimezones.md
 summary:

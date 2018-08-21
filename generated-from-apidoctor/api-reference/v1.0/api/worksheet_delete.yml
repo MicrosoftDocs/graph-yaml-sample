@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.worksheet_delete
+uid: graph.worksheet_delete
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/worksheet_delete.md
 summary:

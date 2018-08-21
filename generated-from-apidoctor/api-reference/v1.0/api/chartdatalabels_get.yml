@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.chartdatalabels_get
+uid: graph.chartdatalabels_get
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/chartdatalabels_get.md
 summary:

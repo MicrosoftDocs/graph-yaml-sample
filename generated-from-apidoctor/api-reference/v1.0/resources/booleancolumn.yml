@@ -1,5 +1,5 @@
 ### YamlMime:GraphResource
-uid:graph.booleancolumn
+uid: graph.booleancolumn
 metadata:
   title: BooleanColumn
   author: rgregg

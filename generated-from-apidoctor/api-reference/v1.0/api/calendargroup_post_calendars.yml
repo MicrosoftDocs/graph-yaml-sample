@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.calendargroup_post_calendars
+uid: graph.calendargroup_post_calendars
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/calendargroup_post_calendars.md
 summary:

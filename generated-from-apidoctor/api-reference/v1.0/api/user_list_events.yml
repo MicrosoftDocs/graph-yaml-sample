@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.user_list_events
+uid: graph.user_list_events
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/user_list_events.md
 summary:

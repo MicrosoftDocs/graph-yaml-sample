@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.notebook_getrecentnotebooks
+uid: graph.notebook_getrecentnotebooks
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/notebook_getrecentnotebooks.md
 summary:

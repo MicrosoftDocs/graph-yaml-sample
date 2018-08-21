@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.directoryobject_getbyids
+uid: graph.directoryobject_getbyids
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/directoryobject_getbyids.md
 summary:

@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.workbook_list_tables
+uid: graph.workbook_list_tables
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/workbook_list_tables.md
 summary:

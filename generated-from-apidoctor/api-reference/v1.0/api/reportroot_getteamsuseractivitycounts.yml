@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.reportroot_getteamsuseractivitycounts
+uid: graph.reportroot_getteamsuseractivitycounts
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/reportroot_getteamsuseractivitycounts.md
 summary:

@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.driveitem_get_content_format
+uid: graph.driveitem_get_content_format
 metadata:
   title: Convert to other formats
   author: rgregg

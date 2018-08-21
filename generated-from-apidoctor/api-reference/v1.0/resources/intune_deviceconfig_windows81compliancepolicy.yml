@@ -1,5 +1,5 @@
 ### YamlMime:GraphResource
-uid:graph.intune_deviceconfig_windows81compliancepolicy
+uid: graph.intune_deviceconfig_windows81compliancepolicy
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_windows81compliancepolicy.md
 summary:

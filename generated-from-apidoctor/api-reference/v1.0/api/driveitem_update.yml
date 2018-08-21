@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.driveitem_update
+uid: graph.driveitem_update
 metadata:
   title: Update a file or folder
   author: rgregg

@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.group_renew
+uid: graph.group_renew
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/group_renew.md
 summary:

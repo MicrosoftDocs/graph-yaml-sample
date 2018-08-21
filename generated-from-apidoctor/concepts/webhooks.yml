@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.webhooks
+uid: graph.webhooks
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/webhooks.md
 summary:

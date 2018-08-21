@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.deployments
+uid: graph.deployments
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/deployments.md
 summary:

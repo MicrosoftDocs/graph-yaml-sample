@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.group_addfavorite
+uid: graph.group_addfavorite
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/group_addfavorite.md
 summary:

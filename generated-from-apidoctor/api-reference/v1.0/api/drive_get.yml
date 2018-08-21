@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.drive_get
+uid: graph.drive_get
 metadata:
   title: Get Drive
   author: rgregg

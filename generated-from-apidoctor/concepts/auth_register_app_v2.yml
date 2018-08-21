@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.auth_register_app_v2
+uid: graph.auth_register_app_v2
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/auth_register_app_v2.md
 summary:

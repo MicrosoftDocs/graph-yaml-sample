@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.plannertask_update
+uid: graph.plannertask_update
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/plannertask_update.md
 summary:

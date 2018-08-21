@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.messagerule_get
+uid: graph.messagerule_get
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/messagerule_get.md
 summary:

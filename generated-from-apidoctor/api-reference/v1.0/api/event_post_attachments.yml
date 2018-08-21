@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.event_post_attachments
+uid: graph.event_post_attachments
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/event_post_attachments.md
 summary:

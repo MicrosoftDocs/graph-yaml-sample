@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.conversation_get
+uid: graph.conversation_get
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/conversation_get.md
 summary:

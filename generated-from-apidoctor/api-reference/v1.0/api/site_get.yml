@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.site_get
+uid: graph.site_get
 metadata:
   title: Get a SharePoint Site
   author: rgregg

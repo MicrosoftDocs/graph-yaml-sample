@@ -1,5 +1,5 @@
 ### YamlMime:GraphResource
-uid:graph.permission
+uid: graph.permission
 metadata:
   title: Permission
   author: rgregg

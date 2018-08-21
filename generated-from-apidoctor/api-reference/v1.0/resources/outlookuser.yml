@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.outlookuser
+uid: graph.outlookuser
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/outlookuser.md
 summary:

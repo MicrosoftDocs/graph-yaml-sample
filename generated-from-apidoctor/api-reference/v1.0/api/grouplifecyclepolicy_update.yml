@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.grouplifecyclepolicy_update
+uid: graph.grouplifecyclepolicy_update
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/grouplifecyclepolicy_update.md
 summary:

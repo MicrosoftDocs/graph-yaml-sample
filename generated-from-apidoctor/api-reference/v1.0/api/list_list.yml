@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.list_list
+uid: graph.list_list
 metadata:
   title: List the SharePoint lists in a site
   author: rgregg

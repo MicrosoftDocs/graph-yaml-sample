@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.message_replyall
+uid: graph.message_replyall
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/message_replyall.md
 summary:

@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.driveitem_copy
+uid: graph.driveitem_copy
 metadata:
   title: Copy a file or folder
   author: rgregg

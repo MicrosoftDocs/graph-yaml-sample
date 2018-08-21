@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.intune_remoteassistance_remoteassistancepartner_update
+uid: graph.intune_remoteassistance_remoteassistancepartner_update
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/intune_remoteassistance_remoteassistancepartner_update.md
 summary:

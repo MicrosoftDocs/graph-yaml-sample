@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.reportroot_getonedriveusagestorage
+uid: graph.reportroot_getonedriveusagestorage
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/reportroot_getonedriveusagestorage.md
 summary:

@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.filter_clear
+uid: graph.filter_clear
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/filter_clear.md
 summary:

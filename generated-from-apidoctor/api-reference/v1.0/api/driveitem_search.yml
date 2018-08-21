@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.driveitem_search
+uid: graph.driveitem_search
 metadata:
   title: Search for files
   author: rgregg

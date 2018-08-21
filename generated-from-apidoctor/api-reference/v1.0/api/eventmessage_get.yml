@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.eventmessage_get
+uid: graph.eventmessage_get
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/eventmessage_get.md
 summary:

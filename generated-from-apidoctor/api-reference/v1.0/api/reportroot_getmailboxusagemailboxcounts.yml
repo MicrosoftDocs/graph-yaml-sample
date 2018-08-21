@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.reportroot_getmailboxusagemailboxcounts
+uid: graph.reportroot_getmailboxusagemailboxcounts
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/reportroot_getmailboxusagemailboxcounts.md
 summary:

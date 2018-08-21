@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.driveitem_createlink
+uid: graph.driveitem_createlink
 metadata:
   title: Share a file with a link
   author: rgregg

@@ -1,5 +1,5 @@
 ### YamlMime:GraphResource
-uid:graph.localeinfo
+uid: graph.localeinfo
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/localeinfo.md
 summary:

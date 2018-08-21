@@ -1,5 +1,5 @@
 ### YamlMime:GraphResource
-uid:graph.sitecollection
+uid: graph.sitecollection
 metadata:
   title: SiteCollection
   author: rgregg

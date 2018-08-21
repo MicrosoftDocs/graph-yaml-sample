@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.listitem_get
+uid: graph.listitem_get
 metadata:
   title: Get an entry from a SharePoint list
   author: rgregg

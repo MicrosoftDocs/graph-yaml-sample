@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.driveitemversion_get_contents
+uid: graph.driveitemversion_get_contents
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/driveitemversion_get_contents.md
 summary:

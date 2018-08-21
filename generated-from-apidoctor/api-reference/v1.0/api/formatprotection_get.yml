@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.formatprotection_get
+uid: graph.formatprotection_get
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/formatprotection_get.md
 summary:

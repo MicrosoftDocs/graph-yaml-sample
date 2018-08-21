@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.yammer_activity_reports
+uid: graph.yammer_activity_reports
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/yammer_activity_reports.md
 summary:

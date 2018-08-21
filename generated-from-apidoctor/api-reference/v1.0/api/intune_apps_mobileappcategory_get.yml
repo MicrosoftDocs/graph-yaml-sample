@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.intune_apps_mobileappcategory_get
+uid: graph.intune_apps_mobileappcategory_get
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/intune_apps_mobileappcategory_get.md
 summary:

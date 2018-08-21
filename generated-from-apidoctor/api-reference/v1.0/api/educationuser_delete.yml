@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.educationuser_delete
+uid: graph.educationuser_delete
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/educationuser_delete.md
 summary:

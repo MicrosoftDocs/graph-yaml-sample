@@ -1,5 +1,5 @@
 ### YamlMime:GraphResource
-uid:graph.planner
+uid: graph.planner
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/planner.md
 summary:

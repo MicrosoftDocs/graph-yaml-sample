@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.reportroot_getoffice365activeuserdetail
+uid: graph.reportroot_getoffice365activeuserdetail
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/reportroot_getoffice365activeuserdetail.md
 summary:

@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.site_list_subsites
+uid: graph.site_list_subsites
 metadata:
   title: List the subsites for a SharePoint site
   author: rgregg

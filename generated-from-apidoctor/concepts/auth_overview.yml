@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.auth_overview
+uid: graph.auth_overview
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/auth_overview.md
 summary:

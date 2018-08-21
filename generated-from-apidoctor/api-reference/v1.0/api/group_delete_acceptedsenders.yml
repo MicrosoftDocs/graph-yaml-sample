@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.group_delete_acceptedsenders
+uid: graph.group_delete_acceptedsenders
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/group_delete_acceptedsenders.md
 summary:

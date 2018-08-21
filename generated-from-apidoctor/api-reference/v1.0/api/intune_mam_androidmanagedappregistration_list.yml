@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.intune_mam_androidmanagedappregistration_list
+uid: graph.intune_mam_androidmanagedappregistration_list
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/intune_mam_androidmanagedappregistration_list.md
 summary:

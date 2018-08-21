@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.driveitem_get
+uid: graph.driveitem_get
 metadata:
   title: Get a file or folder
   author: rgregg

@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.plannerbucket_list_tasks
+uid: graph.plannerbucket_list_tasks
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/plannerbucket_list_tasks.md
 summary:

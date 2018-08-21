@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.permission_get
+uid: graph.permission_get
 metadata:
   title: Get permissions
   author: rgregg

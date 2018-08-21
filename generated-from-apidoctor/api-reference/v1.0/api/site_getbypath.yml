@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.site_getbypath
+uid: graph.site_getbypath
 metadata:
   title: Get SharePoint site by path
   author: rgregg

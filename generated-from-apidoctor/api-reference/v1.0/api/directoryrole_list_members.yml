@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.directoryrole_list_members
+uid: graph.directoryrole_list_members
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/directoryrole_list_members.md
 summary:

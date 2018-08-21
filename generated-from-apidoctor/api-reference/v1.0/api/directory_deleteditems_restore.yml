@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.directory_deleteditems_restore
+uid: graph.directory_deleteditems_restore
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/directory_deleteditems_restore.md
 summary:

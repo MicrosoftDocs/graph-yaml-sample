@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.contact_delete
+uid: graph.contact_delete
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/contact_delete.md
 summary:

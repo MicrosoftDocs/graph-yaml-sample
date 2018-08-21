@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.delta_query_events
+uid: graph.delta_query_events
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/delta_query_events.md
 summary:

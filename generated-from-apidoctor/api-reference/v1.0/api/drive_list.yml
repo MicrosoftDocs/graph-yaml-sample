@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.drive_list
+uid: graph.drive_list
 metadata:
   title: List Drives
   author: rgregg

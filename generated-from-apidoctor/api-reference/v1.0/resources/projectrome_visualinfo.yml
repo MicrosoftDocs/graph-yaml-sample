@@ -1,5 +1,5 @@
 ### YamlMime:GraphResource
-uid:graph.projectrome_visualinfo
+uid: graph.projectrome_visualinfo
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/projectrome_visualinfo.md
 summary:

@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.projectrome_get_activities
+uid: graph.projectrome_get_activities
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/projectrome_get_activities.md
 summary:

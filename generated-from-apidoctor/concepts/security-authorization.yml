@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.security-authorization
+uid: graph.security-authorization
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/security-authorization.md
 summary:

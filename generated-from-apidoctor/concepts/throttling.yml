@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.throttling
+uid: graph.throttling
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/throttling.md
 summary:

@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.driveitem_move
+uid: graph.driveitem_move
 metadata:
   title: Move a file or folder
   author: rgregg

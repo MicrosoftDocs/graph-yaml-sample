@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.listitem_list
+uid: graph.listitem_list
 metadata:
   title: Retrieve items from a SharePoint list
   author: rgregg

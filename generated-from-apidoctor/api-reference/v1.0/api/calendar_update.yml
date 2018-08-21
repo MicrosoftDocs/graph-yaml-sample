@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.calendar_update
+uid: graph.calendar_update
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/calendar_update.md
 summary:

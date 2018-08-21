@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.intune_deviceconfig_iosdevicefeaturesconfiguration_delete
+uid: graph.intune_deviceconfig_iosdevicefeaturesconfiguration_delete
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/intune_deviceconfig_iosdevicefeaturesconfiguration_delete.md
 summary:

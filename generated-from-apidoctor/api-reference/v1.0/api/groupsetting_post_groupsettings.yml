@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.groupsetting_post_groupsettings
+uid: graph.groupsetting_post_groupsettings
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/groupsetting_post_groupsettings.md
 summary:

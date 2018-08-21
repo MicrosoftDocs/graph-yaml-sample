@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.tablerowcollection_add
+uid: graph.tablerowcollection_add
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/tablerowcollection_add.md
 summary:

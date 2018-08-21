@@ -1,5 +1,5 @@
 ### YamlMime:GraphResource
-uid:graph.columndefinition
+uid: graph.columndefinition
 metadata:
   title: ColumnDefinition
   author: rgregg

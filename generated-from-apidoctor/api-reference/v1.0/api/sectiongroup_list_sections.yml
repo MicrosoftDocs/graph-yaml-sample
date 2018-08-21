@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.sectiongroup_list_sections
+uid: graph.sectiongroup_list_sections
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/sectiongroup_list_sections.md
 summary:

@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.shares_get
+uid: graph.shares_get
 metadata:
   title: Access shared items
   author: rgregg

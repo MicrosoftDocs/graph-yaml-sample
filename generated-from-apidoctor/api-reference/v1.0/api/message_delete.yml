@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.message_delete
+uid: graph.message_delete
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/message_delete.md
 summary:

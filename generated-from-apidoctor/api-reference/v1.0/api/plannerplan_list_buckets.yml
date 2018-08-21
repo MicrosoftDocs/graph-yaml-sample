@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.plannerplan_list_buckets
+uid: graph.plannerplan_list_buckets
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/plannerplan_list_buckets.md
 summary:

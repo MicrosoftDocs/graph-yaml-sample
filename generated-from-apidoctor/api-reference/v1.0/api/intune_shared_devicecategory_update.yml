@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.intune_shared_devicecategory_update
+uid: graph.intune_shared_devicecategory_update
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/intune_shared_devicecategory_update.md
 summary:

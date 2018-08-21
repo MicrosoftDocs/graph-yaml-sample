@@ -1,5 +1,5 @@
 ### YamlMime:GraphResource
-uid:graph.onenotebasemodel
+uid: graph.onenotebasemodel
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/onenotebasemodel.md
 summary:

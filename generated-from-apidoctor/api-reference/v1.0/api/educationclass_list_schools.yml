@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.educationclass_list_schools
+uid: graph.educationclass_list_schools
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/educationclass_list_schools.md
 summary:

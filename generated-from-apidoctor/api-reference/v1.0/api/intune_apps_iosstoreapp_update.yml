@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.intune_apps_iosstoreapp_update
+uid: graph.intune_apps_iosstoreapp_update
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/intune_apps_iosstoreapp_update.md
 summary:

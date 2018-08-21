@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.calendar_delete
+uid: graph.calendar_delete
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/calendar_delete.md
 summary:

@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.permission_delete
+uid: graph.permission_delete
 metadata:
   title: Remove access to an item
   author: rgregg

@@ -1,5 +1,5 @@
 ### YamlMime:GraphResource
-uid:graph.textcolumn
+uid: graph.textcolumn
 metadata:
   title: TextColumn
   author: rgregg

@@ -1,5 +1,5 @@
 ### YamlMime:GraphOperation
-uid:graph.device_delete
+uid: graph.device_delete
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/api/device_delete.md
 summary:

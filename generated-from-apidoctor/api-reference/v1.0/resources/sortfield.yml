@@ -1,5 +1,5 @@
 ### YamlMime:GraphResource
-uid:graph.sortfield
+uid: graph.sortfield
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/sortfield.md
 summary:
