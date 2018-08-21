@@ -4,9 +4,7 @@
       {
         "files": [
           "**/*.md",
-          "**/Operation_sample.yml",
-          "**/Resource_sample.yml",
-          "**/Enum_sample.yml"
+          "**/*.yml"
         ],
         "exclude": [
           "**/obj/**",
