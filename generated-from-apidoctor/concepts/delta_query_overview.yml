@@ -24,7 +24,7 @@ permissions:
   outro: |
     ## Delta query request examples
     
-    * [Get incremental changes to events in a calendar view](xref:graph.delta_query_events)
+    * [Get incremental changes to events in a calendar view](../concepts/delta_query_events.md)
     * [Get incremental changes to messages in a folder](xref:graph.delta_query_messages)
     * [Get incremental changes to groups](xref:graph.delta_query_groups)
     * [Get incremental changes to users](xref:graph.delta_query_users)

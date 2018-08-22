@@ -13,5 +13,5 @@ summary:
     An Office 365 _group_ is the fundamental entity that lets users collaborate. It integrates with other services, enabling richer scenarios in task planning, teamwork, education, and more. 
     |Feature|Supporting services|Description|More information
     |:-|:-|:-|:-|
-    |Users|Azure AD and most productivity, collaboration, intelligence, and education services|The user is a core focus of Microsoft Graph, around which many Microsoft Graph services build user-centric functionality.|[Overview of users in Microsoft Graph](xref:graph.azuread-users-concept-overview)
-    |Groups|Azure AD, OneDrive, OneNote, Outlook, Planner|An Office 365 group provides the fundamental collaborative unit for users to share conversations, files, notes, calendar, plans, and more.|[Overview of Office 365 groups in Microsoft Graph](xref:graph.office365-groups-concept-overview)
+    |Users|Azure AD and most productivity, collaboration, intelligence, and education services|The user is a core focus of Microsoft Graph, around which many Microsoft Graph services build user-centric functionality.|[Overview of users in Microsoft Graph](../concepts/azuread-users-concept-overview.md)
+    |Groups|Azure AD, OneDrive, OneNote, Outlook, Planner|An Office 365 group provides the fundamental collaborative unit for users to share conversations, files, notes, calendar, plans, and more.|[Overview of Office 365 groups in Microsoft Graph](../concepts/office365-groups-concept-overview.md)

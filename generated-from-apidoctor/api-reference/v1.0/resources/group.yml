@@ -9,8 +9,8 @@ summary:
     Inherits from [directoryObject](xref:graph.directoryobject).
     This resource supports:
     
-    * Adding your own data to custom properties using [extensions](xref:graph.extensibility_overview).
-    * Using [delta query](xref:graph.delta_query_overview) to track incremental additions, deletions, and updates, by providing a [delta](xref:graph.user_delta) function.
+    * Adding your own data to custom properties using [extensions](../../../concepts/extensibility_overview.md).
+    * Using [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, by providing a [delta](xref:graph.user_delta) function.
     
 methods:
   heading: "Methods"
@@ -177,7 +177,7 @@ methods:
   - method: "**Schema extensions**"
     type: ""
     description: ""
-  - method: "[Add schema extension values](xref:graph.extensibility_schema_groups)"
+  - method: "[Add schema extension values](../../../concepts/extensibility_schema_groups.md)"
     type: ""
     description: "Create a schema extension definition and then use it to add custom typed data to a resource."
   - method: "**Other group resources**"
@@ -257,9 +257,9 @@ resource:
   outro: |
     ## See also
     
-    * [Add custom data to resources using extensions](xref:graph.extensibility_overview)
-    * [Add custom data to users using open extensions](xref:graph.extensibility_open_users)
-    * [Add custom data to groups using schema extensions](xref:graph.extensibility_schema_groups)
+    * [Add custom data to resources using extensions](../../../concepts/extensibility_overview.md)
+    * [Add custom data to users using open extensions](../../../concepts/extensibility_open_users.md)
+    * [Add custom data to groups using schema extensions](../../../concepts/extensibility_schema_groups.md)
     
 properties:
   heading: "Properties"

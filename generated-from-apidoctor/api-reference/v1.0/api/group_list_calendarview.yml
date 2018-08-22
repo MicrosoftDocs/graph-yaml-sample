@@ -10,7 +10,7 @@ summary:
 permissions:
   heading: "Permissions"
   intro: |
-    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
   list:
   - resource: "Delegated (work or school account)"
     permission: "Group.Read.All, Group.ReadWrite.All"
@@ -38,7 +38,7 @@ queryParameters:
     value: "String"
     description: "The end date and time of the time range, represented in ISO 8601 format. For example, \"2015-11-08T20:00:00.0000000\"."
   outro: |
-    This method also supports the [OData Query Parameters](xref:graph.query_parameters) to help customize the response.
+    This method also supports the [OData Query Parameters](../../../concepts/query_parameters.md) to help customize the response.
 requestHeaders:
   heading: "Request headers"
   list:

@@ -6,7 +6,7 @@ summary:
   heading: "Get message"
   intro: |
     Retrieve the properties and relationships of a [message](xref:graph.message) object.
-    Since the **message** resource supports [extensions](xref:graph.extensibility_overview), you can also use the `GET` operation to get custom properties and extension data in a **message** instance.
+    Since the **message** resource supports [extensions](../../../concepts/extensibility_overview.md), you can also use the `GET` operation to get custom properties and extension data in a **message** instance.
     Currently, this operation returns message bodies in only HTML format.
   outro: |
     ### Get messages in another user's message folder
@@ -39,7 +39,7 @@ summary:
 permissions:
   heading: "Permissions"
   intro: |
-    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
   list:
   - resource: "Delegated (work or school account)"
     permission: "Mail.Read"

@@ -9,6 +9,6 @@ summary:
   outro: |
     # Next steps
     
-    * [Overview of enabling cross-device experience using activity feed API in Microsoft Graph](xref:graph.activity-feed-concept-overview)
+    * [Overview of enabling cross-device experience using activity feed API in Microsoft Graph](../../../concepts/activity-feed-concept-overview.md)
     * [Use the activity feed API to resume a user's activity across devices](xref:graph.activity-feed-api-overview)
     

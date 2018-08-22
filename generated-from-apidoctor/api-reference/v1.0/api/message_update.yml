@@ -9,7 +9,7 @@ summary:
 permissions:
   heading: "Permissions"
   intro: |
-    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
   list:
   - resource: "Delegated (work or school account)"
     permission: "Mail.ReadWrite"
@@ -58,7 +58,7 @@ requestBody:
     |isDeliveryReceiptRequested|Boolean|Indicates whether a read receipt is requested for the message.
     |isReadReceiptRequested|Boolean|Indicates whether a read receipt is requested for the message.
     |subject|String|The subject of the message. Updatable only if IsDraft = true.
-    Since the **message** resource supports [extensions](xref:graph.extensibility_overview), you can use the `PATCH` operation to 
+    Since the **message** resource supports [extensions](../../../concepts/extensibility_overview.md), you can use the `PATCH` operation to 
     add, update, or delete your own app-specific data in custom properties of an extension in an existing **message** instance.
 response:
   heading: "Response"

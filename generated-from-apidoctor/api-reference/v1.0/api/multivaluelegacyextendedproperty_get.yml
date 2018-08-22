@@ -30,7 +30,7 @@ permissions:
   heading: "Permissions"
   intro: |
     One of the following permissions is required to call this API, depending on the resource you're
-    getting. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+    getting. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
     
     * Mail.Read
     * Calendars.Read

@@ -27,7 +27,7 @@ summary:
 permissions:
   heading: "Permissions"
   intro: |
-    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
   list:
   - resource: "Delegated (work or school account)"
     permission: "Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All"
@@ -50,7 +50,7 @@ section:
 queryParameters:
   heading: "Optional query parameters"
   intro: |
-    This method supports the `$select` [OData puery parameter](xref:graph.query_parameters) to customize the response.
+    This method supports the `$select` [OData puery parameter](../../../concepts/query_parameters.md) to customize the response.
 parameters:
   heading: "Path parameters"
   list:

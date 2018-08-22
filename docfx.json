@@ -8,6 +8,9 @@
         ],
         "exclude": [
           "**/enums.yml",
+          "**/service_root.yml",
+          "**/workbookrange_visibleview.yml",
+          "**/workbookrangeview_itemat.yml",
           "**/obj/**",
           "**/includes/**",
           "_themes/**",

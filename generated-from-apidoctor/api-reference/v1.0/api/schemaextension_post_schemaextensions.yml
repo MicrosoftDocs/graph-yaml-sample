@@ -5,16 +5,16 @@ metadata:
 summary:
   heading: "Create schemaExtension"
   intro: |
-    Create a new [schemaExtension](xref:graph.schemaextension) definition to extend a [supporting resource type](xref:graph.extensibility_overview#supported-resources).
+    Create a new [schemaExtension](xref:graph.schemaextension) definition to extend a [supporting resource type](../../../concepts/extensibility_overview.md#supported-resources).
     Schema extensions let you add strongly-typed custom data to a resource. The app that creates a schema extension is the owner app. Depending on the 
-    [state](xref:graph.extensibility_overview#schema-extensions-lifecycle) of the extension, the owner app, and only the owner app, may update or delete the extension. 
-    See examples of how to [define a schema extension that describes a training course](xref:graph.extensibility_schema_groups#2-register-a-schema-extension-definition-that-describes-a-training-course), 
-    use the schema extension definition to [create a new group with training course data](xref:graph.extensibility_schema_groups#3-create-a-new-group-with-extended-data), and 
-    [add training course data to an existing group](xref:graph.extensibility_schema_groups#4-add-update-or-remove-custom-data-in-an-existing-group).
+    [state](../../../concepts/extensibility_overview.md#schema-extensions-lifecycle) of the extension, the owner app, and only the owner app, may update or delete the extension. 
+    See examples of how to [define a schema extension that describes a training course](../../../concepts/extensibility_schema_groups.md#2-register-a-schema-extension-definition-that-describes-a-training-course), 
+    use the schema extension definition to [create a new group with training course data](../../../concepts/extensibility_schema_groups.md#3-create-a-new-group-with-extended-data), and 
+    [add training course data to an existing group](../../../concepts/extensibility_schema_groups.md#4-add-update-or-remove-custom-data-in-an-existing-group).
 permissions:
   heading: "Permissions"
   intro: |
-    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
   list:
   - resource: "Delegated (work or school account)"
     permission: "Directory.AccessAsUser.All"

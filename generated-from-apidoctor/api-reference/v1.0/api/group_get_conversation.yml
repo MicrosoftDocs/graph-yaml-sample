@@ -9,7 +9,7 @@ summary:
 permissions:
   heading: "Permissions"
   intro: |
-    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
   list:
   - resource: "Delegated (work or school account)"
     permission: "Group.Read.All, Group.ReadWrite.All"
@@ -28,7 +28,7 @@ section:
 queryParameters:
   heading: "Optional query parameters"
   intro: |
-    This method supports the [OData Query Parameters](xref:graph.query_parameters) to help customize the response.
+    This method supports the [OData Query Parameters](../../../concepts/query_parameters.md) to help customize the response.
 requestHeaders:
   heading: "Request headers"
   list:

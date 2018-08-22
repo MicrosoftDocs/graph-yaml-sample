@@ -5,11 +5,11 @@ metadata:
 summary:
   heading: "group: delta"
   intro: |
-    [Delta query](xref:graph.delta_query_overview) enables applications to discover newly created, updated, or deleted entities without performing a full read of the target resource with every request. To discover changes to groups, perform a request using the *delta* function. See [Using Delta Query](xref:graph.delta_query_overview) for details.
+    [Delta query](../../../concepts/delta_query_overview.md) enables applications to discover newly created, updated, or deleted entities without performing a full read of the target resource with every request. To discover changes to groups, perform a request using the *delta* function. See [Using Delta Query](../../../concepts/delta_query_overview.md) for details.
 permissions:
   heading: "Permissions"
   intro: |
-    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
   list:
   - resource: "Delegated (work or school account)"
     permission: "Group.Read.All, Group.ReadWrite.All"
@@ -73,5 +73,5 @@ response:
     * If a deltaLink URL is returned, there is no more data about the existing state of the resource to be returned. For future requests, the application uses the deltaLink URL to learn about changes to the resource.
     
     See:</br>
-    - [Using Delta Query](xref:graph.delta_query_overview) for more details.</br>
-    - [Get incremental changes for groups](xref:graph.delta_query_groups) for a more detailed walkthrough.</br>
+    - [Using Delta Query](../../../concepts/delta_query_overview.md) for more details.</br>
+    - [Get incremental changes for groups](../../../concepts/delta_query_groups.md) for a more detailed walkthrough.</br>

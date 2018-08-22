@@ -7,13 +7,13 @@ summary:
   intro: |
     Update properties in the definition of the specified [schemaExtension](xref:graph.schemaextension).
     The update applies to all the resources that are included in the **targetTypes** property of the extension. These resources are among the 
-    [supporting resource types](xref:graph.extensibility_overview#supported-resources).
+    [supporting resource types](../../../concepts/extensibility_overview.md#supported-resources).
     Only the app that created a schema extension (owner app) can make additive updates to the extension when the extension is in the **InDevelopment** or **Available** status. 
     That means the app cannot remove custom properties or target resource types from the definition. The app can, however, change the description of the extension.
 permissions:
   heading: "Permissions"
   intro: |
-    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
   list:
   - resource: "Delegated (work or school account)"
     permission: "Directory.AccessAsUser.All"

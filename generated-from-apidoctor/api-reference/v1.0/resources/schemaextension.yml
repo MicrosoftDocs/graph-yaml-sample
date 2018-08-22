@@ -17,7 +17,7 @@ summary:
     * [organization](xref:graph.organization)
     * [user](xref:graph.user)
     
-    See the [schema extension example](xref:graph.extensibility_schema_groups) to learn how to add custom data to groups.
+    See the [schema extension example](../../../concepts/extensibility_schema_groups.md) to learn how to add custom data to groups.
 methods:
   heading: "Methods"
   list:

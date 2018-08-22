@@ -6,7 +6,7 @@ summary:
   heading: "contactFolder resource type"
   intro: |
     A folder that contains contacts.
-    This resource supports using [delta query](xref:graph.delta_query_overview) to track incremental additions, deletions, and updates, 
+    This resource supports using [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, 
     by providing a [delta](xref:graph.contactfolder_delta) function.
 methods:
   heading: "Methods"
@@ -63,8 +63,8 @@ resource:
   outro: |
     ## See also
     
-    * [Use delta query to track changes in Microsoft Graph data](xref:graph.delta_query_overview)
-    * [Get incremental changes to messages in a folder](xref:graph.delta_query_messages)
+    * [Use delta query to track changes in Microsoft Graph data](../../../concepts/delta_query_overview.md)
+    * [Get incremental changes to messages in a folder](../../../concepts/delta_query_messages.md)
     
 properties:
   heading: "Properties"

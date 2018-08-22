@@ -9,14 +9,14 @@ summary:
     of the user's primary calendar.
     A **delta** function call for events is similar to a `GET /calendarview` request for 
     a range of dates in the user's primary calendar, except that by appropriately 
-    applying [state tokens](xref:graph.delta_query_overview) in one or more of these calls, 
+    applying [state tokens](../../../concepts/delta_query_overview.md) in one or more of these calls, 
     you can query for incremental changes in that calender view. This allows you to maintain and synchronize 
     a local store of a user's events in the primary calendar, without having to fetch all the events of that calendar 
     from the server every time.
 permissions:
   heading: "Permissions"
   intro: |
-    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
+    One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
   list:
   - resource: "Delegated (work or school account)"
     permission: "Calendars.Read"
