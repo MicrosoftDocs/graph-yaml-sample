@@ -1,4 +1,4 @@
-### YamlMime:GraphOperation
+### YamlMime:GraphEnum
 uid: graph.intune_onboarding_devicemanagementpartnerapptype
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_onboarding_devicemanagementpartnerapptype.md
@@ -6,9 +6,9 @@ summary:
   heading: "deviceManagementPartnerAppType enum type"
   intro: |
     Partner App Type.
-enum:
+members:
   heading: "Members"
-  table:
+  list:
   - member: "unknown"
     description: "Partner App type is unknown."
   - member: "singleTenantApp"

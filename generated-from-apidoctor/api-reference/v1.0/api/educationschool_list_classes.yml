@@ -43,3 +43,47 @@ response:
   heading: "Response"
   intro: |
     If successful, this method returns a `200 OK` response code and a collection of [educationClass](xref:graph.educationclass) objects in the response body.
+examples:
+- items:
+  - request:
+      heading: "Request"
+      intro: |
+        The following is an example of the request.
+      sampleCode: |
+        ```http
+        GET https://graph.microsoft.com/v1.0/education/schools/{school-id}/classes
+        ```
+        
+    response:
+      heading: "Response"
+      intro: |
+        The following is an example of the response. 
+        
+      sampleCode: |
+        ```http
+        HTTP/1.1 200 OK
+        Content-type: application/json
+        Content-length: 277
+        
+        {
+          "value": [
+            {
+              "id": "11019",
+              "description": "Health Level 1",
+              "classCode": "Health 501",
+              "createdBy": {
+                "user": {
+                  "displayName": "Susana Rocha",
+                  "id": "14012",
+                }
+              },
+              "displayName": "Health 1",
+              "externalId": "11019",
+              "externalName": "Health Level 1",
+              "externalSource": "sis",
+              "mailNickname": "fineartschool.net"
+            }  
+          ]
+        }
+        ```
+        

@@ -1,4 +1,4 @@
-### YamlMime:GraphOperation
+### YamlMime:GraphEnum
 uid: graph.intune_mam_managedappflaggedreason
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_mam_managedappflaggedreason.md
@@ -6,9 +6,9 @@ summary:
   heading: "managedAppFlaggedReason enum type"
   intro: |
     The reason for which a user has been flagged
-enum:
+members:
   heading: "Members"
-  table:
+  list:
   - member: "none"
     description: "No issue."
   - member: "rootedDevice"

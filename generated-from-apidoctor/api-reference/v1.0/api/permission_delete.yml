@@ -45,8 +45,19 @@ response:
   heading: "Response"
   intro: |
     If successful, this method returns `204 No Content` response code.
-remarks:
-  heading: "Remarks"
-  intro: |
-    * [Drives](xref:graph.drive) with a **driveType** of `personal` (OneDrive Personal) cannot create or modify permissions on the root DriveItem. 
-    
+examples:
+- items:
+  - request:
+      heading: "request"
+      sampleCode: |
+        ```http
+        DELETE /me/drive/items/{item-id}/permissions/{perm-id}
+        ```
+        
+    response:
+      heading: "Response"
+      sampleCode: |
+        ```http
+        HTTP/1.1 204 No Content
+        ```
+        

@@ -1,4 +1,4 @@
-### YamlMime:GraphOperation
+### YamlMime:GraphEnum
 uid: graph.intune_deviceconfig_webbrowsercookiesettings
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_webbrowsercookiesettings.md
@@ -6,9 +6,9 @@ summary:
   heading: "webBrowserCookieSettings enum type"
   intro: |
     Web Browser Cookie Settings.
-enum:
+members:
   heading: "Members"
-  table:
+  list:
   - member: "browserDefault"
     description: "Browser default value, no intent."
   - member: "blockAlways"

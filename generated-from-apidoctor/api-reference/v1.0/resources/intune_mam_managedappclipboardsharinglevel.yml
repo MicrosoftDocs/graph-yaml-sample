@@ -1,4 +1,4 @@
-### YamlMime:GraphOperation
+### YamlMime:GraphEnum
 uid: graph.intune_mam_managedappclipboardsharinglevel
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_mam_managedappclipboardsharinglevel.md
@@ -6,9 +6,9 @@ summary:
   heading: "managedAppClipboardSharingLevel enum type"
   intro: |
     Represents the level to which the device's clipboard may be shared between apps
-enum:
+members:
   heading: "Members"
-  table:
+  list:
   - member: "allApps"
     description: "Sharing is allowed between all apps, managed or not"
   - member: "managedAppsWithPasteIn"

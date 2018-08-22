@@ -81,3 +81,88 @@ response:
   intro: |
     If successful, this method returns a `200 OK` response code and the updated
     [openTypeExtension](xref:graph.openTypeExtension) object.
+examples:
+- items:
+  - request:
+      heading: "request"
+      sampleCode: |
+        ```http
+        {
+            "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions/$entity",
+            "@odata.type": "#microsoft.graph.openTypeExtension",
+            "@odata.id": "https://graph.microsoft.com/v1.0/users('ddfc984d-b826-40d7-b48b-57002df85e00@1717f226-49d1-4d0c-9d74-709fad6677b4')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions
+        ('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')",
+            "extensionName": "Com.Contoso.Referral",
+            "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral",
+            "companyName": "Wingtip Toys",
+            "dealValue": 500050,
+            "expirationDate": "2015-12-03T10:00:00Z"
+        }
+        ```
+        
+  - request:
+      heading: "request"
+      sampleCode: |
+        ```http
+        HTTP/1.1 200 OK
+        Content-type: application/json
+        
+        {
+            "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions/$entity",
+            "@odata.type": "#microsoft.graph.openTypeExtension",
+            "@odata.id": "https://graph.microsoft.com/v1.0/users('ddfc984d-b826-40d7-b48b-57002df85e00@1717f226-49d1-4d0c-9d74-709fad6677b4')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions
+        ('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')",
+            "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral",
+            "extensionName": "Com.Contoso.Referral",
+            "companyName": "Wingtip Toys (USA)",
+            "dealValue": 500100,
+            "expirationDate": "2015-12-03T10:00:00Z",
+            "updated": "2015-10-29T11:00:00.000Z"
+        }
+        ```
+        
+  - request:
+      heading: "request"
+      sampleCode: |
+        ```http
+        {
+            "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups('37df2ff0-0de0-4c33-8aee-75289364aef6')/threads('AAQkADJizZJpEWwqDHsEpV_KA%3D%3D')/posts('AAMkADJiUg96QZUkA-ICwMubAADDEd7UAAA%3D')/extensions/$entity",
+            "@odata.type": "#microsoft.graph.openTypeExtension",
+            "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Estimate",
+            "extensionName": "Com.Contoso.Estimate",
+            "companyName": "Contoso",
+            "expirationDate": "2015-07-03T13:04:00Z",
+            "DealValue": 1010100,
+            "Strings@odata.type": "#Collection(String)",
+            "topPicks": [
+                "Employees only",
+                "Add spouse or guest",
+                "Add family"
+            ]
+        }
+        ```
+        
+  - request:
+      heading: "request"
+      sampleCode: |
+        ```http
+        HTTP/1.1 200 OK
+        Content-Type: application/json
+        
+        {
+            "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups('37df2ff0-0de0-4c33-8aee-75289364aef6')/threads('AAQkADJizZJpEWwqDHsEpV_KA%3D%3D')/posts('AAMkADJiUg96QZUkA-ICwMubAADDEd7UAAA%3D')/extensions/$entity",
+            "@odata.type": "#microsoft.graph.openTypeExtension",
+            "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Estimate",
+            "extensionName": "Com.Contoso.Estimate",
+            "companyName": "Contoso",
+            "expirationDate": "2016-07-30T11:00:00Z",
+            "DealValue": 1010100,
+            "Strings@odata.type": "#Collection(String)",
+            "topPicks": [
+                "Employees only",
+                "Add spouse or guest",
+                "Add family"
+            ]
+        }
+        ```
+        

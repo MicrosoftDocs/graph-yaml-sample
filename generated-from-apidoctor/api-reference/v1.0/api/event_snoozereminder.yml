@@ -58,3 +58,32 @@ response:
   heading: "Response"
   intro: |
     If successful, this method returns `200 OK` response code. It does not return anything in the response body.
+examples:
+- items:
+  - request:
+      heading: "Request"
+      intro: |
+        Here is an example of the request.
+      sampleCode: |
+        ```http
+        POST https://graph.microsoft.com/v1.0/me/events/{id}/snoozeReminder
+        Content-type: application/json
+        Content-length: 97
+        
+        {
+          "newReminderTime": {
+            "dateTime": "dateTime-value",
+            "timeZone": "timeZone-value"
+          }
+        }
+        ```
+        
+    response:
+      heading: "Response"
+      intro: |
+        Here is an example of the response.
+      sampleCode: |
+        ```http
+        HTTP/1.1 200 OK
+        ```
+        

@@ -36,7 +36,3 @@ properties:
   - property: "longitude"
     type: "Double"
     description: "Optional. The longitude, in decimal, for the item. Read-only."
-remarks:
-  heading: "Remarks"
-  intro: |
-    For more information about the facets on a DriveItem, see [DriveItem](xref:graph.driveitem).

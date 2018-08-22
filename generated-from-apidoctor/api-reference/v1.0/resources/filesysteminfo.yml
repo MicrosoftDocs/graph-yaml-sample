@@ -45,9 +45,3 @@ properties:
     These properties are read/write.
     If you are uploading a file and know the local client values for these fields, you should include them in the request.
     If the file's content is updated and these properties are not provided, **lastModifiedDateTime** automatically resets to the current time.
-remarks:
-  heading: "Remarks"
-  intro: |
-    * **lastAccessedDateTime** is not available for items in SharePoint online or OneDrive for Business.
-    
-    For more information about the facets on a DriveItem, see [DriveItem](xref:graph.driveitem).

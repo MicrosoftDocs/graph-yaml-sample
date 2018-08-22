@@ -51,11 +51,3 @@ properties:
   - property: "sharepointIds"
     type: "microsoft.graph.sharepointIds"
     description: "Returns identifiers useful for SharePoint REST compatibility. Read-only."
-remarks:
-  heading: "Remarks"
-  intro: |
-    To address a **driveItem** from an **itemReference** resource, construct a URL of the format:
-    GET https://graph.microsoft.com/v1.0/drives/{driveId}/items/{id}
-
-    The **path** value is an API path relative to the target drive, for example: `/drive/root:/Documents/myfile.docx`.
-    To retrieve the human-readable path for a breadcrumb, you can safely ignore everything up to the first `:` in the path string.

@@ -30,7 +30,3 @@ properties:
   - property: "state"
     type: "String"
     description: "Represents the state of the deleted item."
-remarks:
-  heading: "Remarks"
-  intro: |
-    For more information about the facets on a DriveItem, see [DriveItem](xref:graph.driveitem).

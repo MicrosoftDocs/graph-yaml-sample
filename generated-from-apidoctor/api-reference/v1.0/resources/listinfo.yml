@@ -35,9 +35,3 @@ properties:
   - property: "template"
     type: "String"
     description: "An enumerated value that represents the base list template used in creating the list. Possible values include documentLibrary, genericList, task, survey, announcements, contacts, and more."
-remarks:
-  heading: "Remarks"
-  intro: |
-    While most lists created by users will have one of the values listed above, other values are possible as well.
-    Your app should be prepared to handle any values that are not listed here.
-    For developers familiar with SharePoint's CSOM APIs, the `template` value corresponds to the `SPListTemplateType` enumeration.

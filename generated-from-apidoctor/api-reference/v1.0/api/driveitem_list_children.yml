@@ -44,3 +44,13 @@ requestHeaders:
   - name: "if-none-match"
     value: "String"
     description: "If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an HTTP 304 Not Modified response is returned."
+examples:
+  heading: "Examples"
+  outro: |
+    ### List children in the root of the current user's drive
+    To retrieve files in the root of the drive, use the `root` relationship on the drive, then access the children relationship.
+    
+    ```http
+    GET /me/drive/root/children
+    ```
+    

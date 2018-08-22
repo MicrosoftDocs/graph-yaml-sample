@@ -40,3 +40,35 @@ response:
   heading: "Response"
   intro: |
     If successful, this method returns a `200 OK` response code and [settingStateDeviceSummary](xref:graph.intune_deviceconfig_settingstatedevicesummary) object in the response body.
+examples:
+- items:
+  - request:
+      heading: "Request"
+      intro: |
+        Here is an example of the request.
+        GET https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceSettingStateSummaries/{settingStateDeviceSummaryId}
+
+    response:
+      heading: "Response"
+      intro: |
+        Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+        HTTP/1.1 200 OK
+        Content-Type: application/json
+        Content-Length: 450
+        
+        {
+          "value": {
+            "@odata.type": "#microsoft.graph.settingStateDeviceSummary",
+            "id": "3e2d4526-4526-3e2d-2645-2d3e26452d3e",
+            "settingName": "Setting Name value",
+            "instancePath": "Instance Path value",
+            "unknownDeviceCount": 2,
+            "notApplicableDeviceCount": 8,
+            "compliantDeviceCount": 4,
+            "remediatedDeviceCount": 5,
+            "nonCompliantDeviceCount": 7,
+            "errorDeviceCount": 0,
+            "conflictDeviceCount": 3
+          }
+        }
+

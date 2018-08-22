@@ -1,4 +1,4 @@
-### YamlMime:GraphOperation
+### YamlMime:GraphEnum
 uid: graph.intune_deviceconfig_devicethreatprotectionlevel
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_devicethreatprotectionlevel.md
@@ -6,9 +6,9 @@ summary:
   heading: "deviceThreatProtectionLevel enum type"
   intro: |
     Device threat protection levels for the Device Threat Protection API.
-enum:
+members:
   heading: "Members"
-  table:
+  list:
   - member: "unavailable"
     description: "Default Value. Do not use."
   - member: "secured"

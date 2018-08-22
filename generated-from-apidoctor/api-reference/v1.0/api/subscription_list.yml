@@ -51,3 +51,41 @@ response:
   heading: "Response"
   intro: |
     If successful, this method returns a `200 OK` response code and a list of [subscription](xref:graph.subscription) objects in the response body.
+examples:
+- items:
+  - request:
+      heading: "Request"
+      sampleCode: |
+        ```http
+        GET https://graph.microsoft.com/v1.0/subscriptions
+        ```
+        
+    response:
+      heading: "Response"
+      intro: |
+        Here's an an example of the response.  Note that it may be truncated for brevity.  All supported properties appropriate for the request and the calling context will be returned from an actual call.
+      sampleCode: |
+        ```http
+        HTTP/1.1 200 OK
+        Content-type: application/json
+        Content-length: 586
+        
+        {
+          "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#subscriptions",
+          "value": [
+            {
+              "id": "0fc0d6db-0073-42e5-a186-853da75fb308",
+              "resource": "Users",
+              "applicationId": "24d3b144-21ae-4080-943f-7067b395b913",
+              "changeType": "updated,deleted",
+              "clientState": null,
+              "notificationUrl": "https://webhookappexample.azurewebsites.net/api/notifications",
+              "expirationDateTime": "2018-03-12T05:00:00Z",
+              "creatorId": "8ee44408-0679-472c-bc2a-692812af3437"
+            }
+          ]
+        }
+        ```
+        
+      outro: |
+        When a request returns multiple pages of data, the response includes an `@odata.nextLink` property to help you manage the results.  To learn more, see [Paging Microsoft Graph data in your app](../../../concepts/paging.md).

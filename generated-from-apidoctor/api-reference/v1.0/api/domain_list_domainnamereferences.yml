@@ -43,3 +43,38 @@ response:
   heading: "Response"
   intro: |
     If successful, this method returns a `200 OK` response code and collection of [directoryObject](xref:graph.directoryobject) objects in the response body.
+examples:
+- items:
+  - request:
+      heading: "Request"
+      sampleCode: |
+        ```http
+        GET https://graph.microsoft.com/v1.0/domains/{domain-name}/domainNameReferences
+        ```
+        
+    response:
+      heading: "Response"
+      intro: |
+        Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+      sampleCode: |
+        ```http
+        HTTP/1.1 200 OK
+        Content-type: application/json
+        
+        {
+          "value": [
+            {
+                "odata.type": "Microsoft.DirectoryServices.User",
+                "objectType": "User",
+                "objectId": "567a0db6-289c-43f7-a650-2645c03cbbbb",
+                "accountEnabled": true,
+                "displayName": "TestUser1",
+                "facsimileTelephoneNumber": null,
+                "mailNickname": "testuser1",
+                "mobile": null,
+                "userPrincipalName": "testuser1@contoso.com"
+            }
+          ]
+        }
+        ```
+        

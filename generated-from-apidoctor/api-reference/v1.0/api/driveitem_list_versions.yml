@@ -35,8 +35,61 @@ response:
   heading: "Response"
   intro: |
     If successful, this method returns a `200 OK` response code and collection of [DriveItemVersion](xref:graph.driveitemversion) objects in the response body.
-remarks:
-  heading: "Remarks"
-  intro: |
-    OneDrive does not preserve the complete metadata for previous versions of a file.
-    When your app retrieves the list of available versions for a file, a [DriveItemVersion](xref:graph.driveItemVersion) resource is returned that provides the available information about the specific version.
+examples:
+- items:
+  - request:
+      heading: "request"
+      sampleCode: |
+        ```http
+        GET /me/drive/items/{item-id}/versions
+        ```
+        
+    response:
+      heading: "Response"
+      intro: |
+        This returns a collection of versions:
+      sampleCode: |
+        ```http
+        HTTP/1.1 200 OK
+        Content-Type: application/json
+        
+        {
+          "value":
+          [
+            {
+              "id": "3.0",
+              "lastModifiedBy": {
+                "user": {
+                  "id": "CE251278-EF9E-4FE5-833C-1D89EEAE68E0",
+                  "displayName": "Ryan Gregg"
+                }
+              },
+              "lastModifiedDateTime": "2017-09-14T12:34:53.912Z",
+              "size": 123
+            },
+            {
+              "id": "2.0",
+              "lastModifiedBy": {
+                "user": {
+                  "id": "CE251278-EF9E-4FE5-833C-1D89EEAE68E0",
+                  "displayName": "Ryan Gregg"
+                }
+              },
+              "lastModifiedDateTime": "2017-09-11T10:21:03.000Z",
+              "size": 62
+            },
+            {
+              "id": "1.0",
+              "lastModifiedBy": {
+                "user": {
+                  "id": "CE251278-EF9E-4FE5-833C-1D89EEAE68E0",
+                  "displayName": "Ryan Gregg"
+                }
+              },
+              "lastModifiedDateTime": "2017-09-10T15:20:01.125Z",
+              "size": 16
+            }
+          ]
+        }
+        ```
+        

@@ -1,4 +1,4 @@
-### YamlMime:GraphOperation
+### YamlMime:GraphEnum
 uid: graph.intune_apps_mobileapppublishingstate
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_apps_mobileapppublishingstate.md
@@ -6,9 +6,9 @@ summary:
   heading: "mobileAppPublishingState enum type"
   intro: |
     Indicates the publishing state of an app.
-enum:
+members:
   heading: "Members"
-  table:
+  list:
   - member: "notPublished"
     description: "The app is not yet published."
   - member: "processing"

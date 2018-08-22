@@ -42,3 +42,4 @@ summary:
     when you begin the next round.
     See the [example](#example-to-synchronize-events-in-a-calendar-view) below to learn how to use these `nextLink` and 
     `deltaLink` URLs.
+examples:

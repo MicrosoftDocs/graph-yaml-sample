@@ -76,9 +76,9 @@ properties:
     Permissions with a [**link**][SharingLink] facet represent sharing links created on the item. 
     Sharing links contain a unique token that provides access to the item for anyone with the link.
     Permissions with an [**invitation**][SharingInvitation] facet represent permissions added by inviting specific users or groups to have access to the file.
-enum:
+members:
   heading: "Roles enumeration"
-  table:
+  list:
   - member: ""
     description: ""
   - member: ""
@@ -95,7 +95,3 @@ enum:
     need to sign-in to access the content shared with a sharing link. Users can
     share a link that gives read-only access to the content or writable access to
     the content.
-remarks:
-  heading: "Remarks"
-  intro: |
-    OneDrive for Business and SharePoint document libraries do not return the **inheritedFrom** property.

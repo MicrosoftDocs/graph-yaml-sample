@@ -1,18 +1,18 @@
-### YamlMime:GraphOperation
+### YamlMime:GraphEnum
 uid: graph.enums
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/enums.md
 summary:
-enum:
+members:
   heading: "timeZoneStandard values"
-  table:
+  list:
   - member: "windows"
     description: ""
   - member: "iana"
     description: ""
-enum:
+members:
   heading: "freeBusyStatus values"
-  table:
+  list:
   - member: "free"
     description: ""
   - member: "tentative"
@@ -25,36 +25,36 @@ enum:
     description: ""
   - member: "unknown"
     description: ""
-enum:
+members:
   heading: "attendeeType values"
-  table:
+  list:
   - member: "required"
     description: ""
   - member: "optional"
     description: ""
   - member: "resource"
     description: ""
-enum:
+members:
   heading: "externalAudienceScope values"
-  table:
+  list:
   - member: "none"
     description: ""
   - member: "contactsOnly"
     description: ""
   - member: "all"
     description: ""
-enum:
+members:
   heading: "automaticRepliesStatus values"
-  table:
+  list:
   - member: "disabled"
     description: ""
   - member: "alwaysEnabled"
     description: ""
   - member: "scheduled"
     description: ""
-enum:
+members:
   heading: "calendarColor values"
-  table:
+  list:
   - member: "auto"
     description: ""
   - member: "lightBlue"
@@ -77,18 +77,18 @@ enum:
     description: ""
   - member: "maxColor"
     description: ""
-enum:
+members:
   heading: "educationExternalSource values"
-  table:
+  list:
   - member: "sis"
     description: ""
   - member: "manual"
     description: ""
   - member: "unknownFutureValue"
     description: ""
-enum:
+members:
   heading: "educationGender values"
-  table:
+  list:
   - member: "female"
     description: ""
   - member: "male"
@@ -97,9 +97,9 @@ enum:
     description: ""
   - member: "unknownFutureValue"
     description: ""
-enum:
+members:
   heading: "eventType values"
-  table:
+  list:
   - member: "singleInstance"
     description: ""
   - member: "occurrence"
@@ -108,9 +108,9 @@ enum:
     description: ""
   - member: "seriesMaster"
     description: ""
-enum:
+members:
   heading: "sensitivity values"
-  table:
+  list:
   - member: "normal"
     description: ""
   - member: "personal"
@@ -119,18 +119,18 @@ enum:
     description: ""
   - member: "confidential"
     description: ""
-enum:
+members:
   heading: "importance values"
-  table:
+  list:
   - member: "low"
     description: ""
   - member: "normal"
     description: ""
   - member: "high"
     description: ""
-enum:
+members:
   heading: "educationUserRole values"
-  table:
+  list:
   - member: "student"
     description: ""
   - member: "teacher"
@@ -139,9 +139,9 @@ enum:
     description: ""
   - member: "unknownFutureValue"
     description: ""
-enum:
+members:
   heading: "meetingMessageType values"
-  table:
+  list:
   - member: "none"
     description: ""
   - member: "meetingRequest"
@@ -154,25 +154,25 @@ enum:
     description: ""
   - member: "meetingDeclined"
     description: ""
-enum:
+members:
   heading: "followupFlagStatus values"
-  table:
+  list:
   - member: "notFlagged"
     description: ""
   - member: "complete"
     description: ""
   - member: "flagged"
     description: ""
-enum:
+members:
   heading: "inferenceClassificationType values"
-  table:
+  list:
   - member: "focused"
     description: ""
   - member: "other"
     description: ""
-enum:
+members:
   heading: "iosNotificationAlertType values"
-  table:
+  list:
   - member: "deviceDefault"
     description: ""
   - member: "banner"
@@ -181,9 +181,9 @@ enum:
     description: ""
   - member: "none"
     description: ""
-enum:
+members:
   heading: "deviceEnrollmentFailureReason values"
-  table:
+  list:
   - member: "unknown"
     description: ""
   - member: "authentication"
@@ -206,16 +206,16 @@ enum:
     description: ""
   - member: "clientDisconnected"
     description: ""
-enum:
+members:
   heading: "bodyType values"
-  table:
+  list:
   - member: "text"
     description: ""
   - member: "html"
     description: ""
-enum:
+members:
   heading: "locationType values"
-  table:
+  list:
   - member: "default"
     description: ""
   - member: "conferenceRoom"
@@ -236,9 +236,9 @@ enum:
     description: ""
   - member: "postalAddress"
     description: ""
-enum:
+members:
   heading: "locationUniqueIdType values"
-  table:
+  list:
   - member: "unknown"
     description: ""
   - member: "locationStore"
@@ -249,9 +249,9 @@ enum:
     description: ""
   - member: "bing"
     description: ""
-enum:
+members:
   heading: "messageActionFlag values"
-  table:
+  list:
   - member: "any"
     description: ""
   - member: "call"
@@ -274,9 +274,9 @@ enum:
     description: ""
   - member: "review"
     description: ""
-enum:
+members:
   heading: "onenoteUserRole values"
-  table:
+  list:
   - member: "Owner"
     description: ""
   - member: "Contributor"
@@ -285,9 +285,9 @@ enum:
     description: ""
   - member: "None"
     description: ""
-enum:
+members:
   heading: "operationStatus values"
-  table:
+  list:
   - member: "NotStarted"
     description: ""
   - member: "Running"
@@ -296,9 +296,9 @@ enum:
     description: ""
   - member: "Failed"
     description: ""
-enum:
+members:
   heading: "onenotePatchActionType values"
-  table:
+  list:
   - member: "Replace"
     description: ""
   - member: "Append"
@@ -309,16 +309,16 @@ enum:
     description: ""
   - member: "Prepend"
     description: ""
-enum:
+members:
   heading: "onenotePatchInsertPosition values"
-  table:
+  list:
   - member: "After"
     description: ""
   - member: "Before"
     description: ""
-enum:
+members:
   heading: "phoneType values"
-  table:
+  list:
   - member: "home"
     description: ""
   - member: "business"
@@ -339,9 +339,9 @@ enum:
     description: ""
   - member: "radio"
     description: ""
-enum:
+members:
   heading: "plannerPreviewType values"
-  table:
+  list:
   - member: "automatic"
     description: ""
   - member: "noPreview"
@@ -352,9 +352,9 @@ enum:
     description: ""
   - member: "reference"
     description: ""
-enum:
+members:
   heading: "status values"
-  table:
+  list:
   - member: "active"
     description: ""
   - member: "updated"
@@ -365,9 +365,9 @@ enum:
     description: ""
   - member: "unknownFutureValue"
     description: ""
-enum:
+members:
   heading: "weekIndex values"
-  table:
+  list:
   - member: "first"
     description: ""
   - member: "second"
@@ -378,9 +378,9 @@ enum:
     description: ""
   - member: "last"
     description: ""
-enum:
+members:
   heading: "dayOfWeek values"
-  table:
+  list:
   - member: "sunday"
     description: ""
   - member: "monday"
@@ -395,9 +395,9 @@ enum:
     description: ""
   - member: "saturday"
     description: ""
-enum:
+members:
   heading: "recurrencePatternType values"
-  table:
+  list:
   - member: "daily"
     description: ""
   - member: "weekly"
@@ -410,18 +410,18 @@ enum:
     description: ""
   - member: "relativeYearly"
     description: ""
-enum:
+members:
   heading: "recurrenceRangeType values"
-  table:
+  list:
   - member: "endDate"
     description: ""
   - member: "noEnd"
     description: ""
   - member: "numbered"
     description: ""
-enum:
+members:
   heading: "onenoteSourceService values"
-  table:
+  list:
   - member: "Unknown"
     description: ""
   - member: "OneDrive"
@@ -430,9 +430,9 @@ enum:
     description: ""
   - member: "OnPremOneDriveForBusiness"
     description: ""
-enum:
+members:
   heading: "responseType values"
-  table:
+  list:
   - member: "none"
     description: ""
   - member: "organizer"
@@ -445,9 +445,9 @@ enum:
     description: ""
   - member: "notResponded"
     description: ""
-enum:
+members:
   heading: "activityDomain values"
-  table:
+  list:
   - member: "unknown"
     description: ""
   - member: "work"
@@ -456,9 +456,9 @@ enum:
     description: ""
   - member: "unrestricted"
     description: ""
-enum:
+members:
   heading: "websiteType values"
-  table:
+  list:
   - member: "other"
     description: ""
   - member: "home"
@@ -469,9 +469,9 @@ enum:
     description: ""
   - member: "profile"
     description: ""
-enum:
+members:
   heading: "categoryColor values"
-  table:
+  list:
   - member: "none"
     description: ""
   - member: "preset0"

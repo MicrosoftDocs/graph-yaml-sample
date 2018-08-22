@@ -55,3 +55,131 @@ response:
   heading: "Response"
   intro: |
     If successful, this method returns `201 Created` response code and [schemaExtension](xref:graph.schemaextension) object in the response body.
+examples:
+- items:
+  - request:
+      heading: "request"
+      sampleCode: |
+        ```http
+        POST https://graph.microsoft.com/v1.0/schemaExtensions
+        Content-type: application/json
+        
+        {
+            "id":"graphlearn_courses",
+            "description": "Graph Learn training courses extensions",
+            "targetTypes": [
+                "Group"
+            ],
+            "properties": [
+                {
+                    "name": "courseId",
+                    "type": "Integer"
+                },
+                {
+                    "name": "courseName",
+                    "type": "String"
+                },
+                {
+                    "name": "courseType",
+                    "type": "String"
+                }
+            ]
+        }
+        ```
+        
+  - request:
+      heading: "request"
+      sampleCode: |
+        ```http
+        HTTP/1.1 201 Created
+        Content-type: application/json
+        Content-length: 420
+        
+        {
+            "id": "graphlearn_courses",
+            "description": "Graph Learn training courses extensions",
+            "targetTypes": [
+                "Group"
+            ],
+            "status": "InDevelopment",
+            "owner": "24d3b144-21ae-4080-943f-7067b395b913",
+            "properties": [
+                {
+                    "name": "courseId",
+                    "type": "String"
+                },
+                {
+                    "name": "courseName",
+                    "type": "String"
+                },
+                {
+                    "name": "courseType",
+                    "type": "String"
+                }
+            ]
+        }
+        ```
+        
+  - request:
+      heading: "request"
+      sampleCode: |
+        ```http
+        POST https://graph.microsoft.com/v1.0/schemaExtensions
+        Content-type: application/json
+        
+        {
+            "id":"courses",
+            "description": "Graph Learn training courses extensions",
+            "targetTypes": [
+                "Group"
+            ],
+            "properties": [
+                {
+                    "name": "courseId",
+                    "type": "Integer"
+                },
+                {
+                    "name": "courseName",
+                    "type": "String"
+                },
+                {
+                    "name": "courseType",
+                    "type": "String"
+                }
+            ]
+        }
+        ```
+        
+  - request:
+      heading: "request"
+      sampleCode: |
+        ```http
+        HTTP/1.1 201 Created
+        Content-type: application/json
+        Content-length: 420
+        
+        {
+            "id": "extk9eruy7c_courses",
+            "description": "Graph Learn training courses extensions",
+            "targetTypes": [
+                "Group"
+            ],
+            "status": "InDevelopment",
+            "owner": "24d3b144-21ae-4080-943f-7067b395b913",
+            "properties": [
+                {
+                    "name": "courseId",
+                    "type": "String"
+                },
+                {
+                    "name": "courseName",
+                    "type": "String"
+                },
+                {
+                    "name": "courseType",
+                    "type": "String"
+                }
+            ]
+        }
+        ```
+        

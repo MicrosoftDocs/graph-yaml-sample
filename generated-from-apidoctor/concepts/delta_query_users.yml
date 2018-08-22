@@ -14,3 +14,4 @@ summary:
     * The **delta** function.
     * A [state token](xref:graph.delta_query_overview) (_deltaToken_ or _skipToken_) from the previous GET **delta** function call.
     
+examples:

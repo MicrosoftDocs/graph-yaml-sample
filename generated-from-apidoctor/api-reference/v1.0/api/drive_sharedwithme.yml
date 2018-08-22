@@ -76,13 +76,3 @@ response:
         }
         ```
         
-remarks:
-  heading: "Remarks"
-  intro: |
-    DriveItems returned from the **sharedWithMe** action will always include the [**remoteItem**](xref:graph.remoteitem) facet which indicates they are items from a different drive.
-    To access the shared DriveItem resource, you will need to make a request using the information provided in **remoteItem** in the following format:
-    
-    ```http
-    GET /drives/{remoteItem-driveId}/items/{remoteItem-id}
-    ```
-    

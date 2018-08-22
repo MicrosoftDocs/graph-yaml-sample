@@ -1,4 +1,4 @@
-### YamlMime:GraphOperation
+### YamlMime:GraphEnum
 uid: graph.intune_troubleshooting_mobileappintent
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_troubleshooting_mobileappintent.md
@@ -6,9 +6,9 @@ summary:
   heading: "mobileAppIntent enum type"
   intro: |
     Indicates the status of the mobile app on the device.
-enum:
+members:
   heading: "Members"
-  table:
+  list:
   - member: "available"
     description: "Available"
   - member: "notAvailable"

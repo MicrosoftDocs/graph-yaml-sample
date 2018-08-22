@@ -1,4 +1,4 @@
-### YamlMime:GraphOperation
+### YamlMime:GraphEnum
 uid: graph.intune_deviceconfig_defenderthreataction
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_defenderthreataction.md
@@ -6,9 +6,9 @@ summary:
   heading: "defenderThreatAction enum type"
   intro: |
     Defender’s default action to take on detected Malware threats.
-enum:
+members:
   heading: "Members"
-  table:
+  list:
   - member: "deviceDefault"
     description: "Apply action based on the update definition."
   - member: "clean"

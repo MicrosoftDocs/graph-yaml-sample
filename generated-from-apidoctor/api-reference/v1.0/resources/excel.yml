@@ -25,30 +25,34 @@ requestBody:
   heading: "Request"
   intro: |
     Pass a JSON object by setting the `persistchanges` value to `true` or `false`. 
-    
-    ```http
-    POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/createSession
-    content-type: Application/Json 
-    authorization: Bearer {access-token}
-    
-    { "persistChanges": true }
-    ```
-    
     When the value of `persistChanges` is set to `false`, a non-persistent session id is returned.  
+  request:
+      heading: "request"
+      sampleCode: |
+        ```http
+        POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/createSession
+        content-type: Application/Json 
+        authorization: Bearer {access-token}
+        
+        { "persistChanges": true }
+        ```
+        
 response:
   heading: "Response"
-  intro: |
-    ```http
-    HTTP code: 201 Created
-    content-type: application/json;odata.metadata 
-    
-    {
-      "@odata.context": "https://graph.microsoft.com/{version}/$metadata#microsoft.graph.sessionInfo",
-      "id": "{session-id}",
-      "persistChanges": true
-    }
-    ```
-    
+  request:
+      heading: "request"
+      sampleCode: |
+        ```http
+        HTTP code: 201 Created
+        content-type: application/json;odata.metadata 
+        
+        {
+          "@odata.context": "https://graph.microsoft.com/{version}/$metadata#microsoft.graph.sessionInfo",
+          "id": "{session-id}",
+          "persistChanges": true
+        }
+        ```
+        
   outro: |
     #### Usage
     The session ID returned from the previous call is passed as a header on subsequent API requests in  
@@ -61,3 +65,19 @@ response:
     ```
     
     
+examples:
+  heading: "Examples"
+  intro: |
+    The following request updates the selected range with the text of "Sample text". Note that Range has 200 cells, whereas the provided input only has 1 cell value.
+    
+    ```http
+    PATCH /workbook/worksheets/{id}/range(address="A1:B00")
+    
+    {
+      "values" : "Sample text"
+    }
+    ```
+    
+  outro: |
+    ### Workbook functions
+    You can access the workbook functions through a collection of functions included in the /Functions resource. 

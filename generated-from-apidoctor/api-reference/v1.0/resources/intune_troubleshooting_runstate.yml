@@ -1,4 +1,4 @@
-### YamlMime:GraphOperation
+### YamlMime:GraphEnum
 uid: graph.intune_troubleshooting_runstate
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_troubleshooting_runstate.md
@@ -6,9 +6,9 @@ summary:
   heading: "runState enum type"
   intro: |
     Indicates the type of execution status of the device management script.
-enum:
+members:
   heading: "Members"
-  table:
+  list:
   - member: "unknown"
     description: "Unknown result."
   - member: "success"

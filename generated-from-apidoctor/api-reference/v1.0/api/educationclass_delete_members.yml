@@ -40,3 +40,23 @@ response:
   heading: "Response"
   intro: |
     If successful, this method returns a `204 No Content` response code and an empty response body.
+examples:
+- items:
+  - request:
+      heading: "Request"
+      intro: |
+        The following is an example of the request.
+      sampleCode: |
+        ```http
+        DELETE https://graph.microsoft.com/v1.0/education/classes/{class-id}/members/{member-id}
+        ```
+        
+    response:
+      heading: "Response"
+      intro: |
+        The following is an example of the response. 
+      sampleCode: |
+        ```http
+        HTTP/1.1 204 No Content
+        ```
+        

@@ -65,7 +65,3 @@ properties:
   - property: "width"
     type: "Int32"
     description: "Width of the video, in pixels."
-remarks:
-  heading: "Remarks"
-  intro: |
-    For more information about the facets on a DriveItem, see [DriveItem](xref:graph.driveitem).

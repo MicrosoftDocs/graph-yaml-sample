@@ -43,5 +43,5 @@ properties:
   - property: "state"
     type: "String"
     description: "Enumeration value that indicates the state of the storage space. Read-only."
-enum:
+members:
   heading: "State Enumeration"

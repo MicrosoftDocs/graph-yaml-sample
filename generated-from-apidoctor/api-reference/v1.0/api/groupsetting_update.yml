@@ -44,3 +44,80 @@ response:
   heading: "Response"
   intro: |
     If successful, this method returns a `204 No Content` response code.
+examples:
+- items:
+  - request:
+      heading: "Request"
+      sampleCode: |
+        ```http
+        PATCH https://graph.microsoft.com/v1.0/groupSettings/{id}
+        Content-type: application/json
+        Content-length: 173
+        
+        {
+          "displayName": "displayName-value",
+          "templateId": "templateId-value",
+          "values": [
+            {
+              "name": "CustomBlockedWordsList",
+              "value": ""
+            },
+            {
+              "name": "EnableMSStandardBlockedWords",
+              "value": "False"
+            },
+            {
+              "name": "ClassificationDescriptions",
+              "value": ""
+            },
+            {
+              "name": "DefaultClassification",
+              "value": ""
+            },
+            {
+              "name": "PrefixSuffixNamingRequirement",
+              "value": ""
+            },
+            {
+              "name": "AllowGuestsToBeGroupOwner",
+              "value": "False"
+            },
+            {
+              "name": "AllowGuestsToAccessGroups",
+              "value": "True"
+            },
+            {
+              "name": "GuestUsageGuidelinesUrl",
+              "value": ""
+            },
+            {
+              "name": "GroupCreationAllowedGroupId",
+              "value": "62e90394-69f5-4237-9190-012177145e10"
+            },
+            {
+              "name": "AllowToAddGuests",
+              "value": "True"
+            },
+            {
+              "name": "UsageGuidelinesUrl",
+              "value": ""
+            },
+            {
+              "name": "ClassificationList",
+              "value": ""
+            },
+            {
+              "name": "EnableGroupCreation",
+              "value": "True"
+            }
+          ]
+        }
+        ```
+        
+    response:
+      heading: "Response"
+      sampleCode: |
+        ```http
+        HTTP/1.1 204 No Content
+        ```
+        

@@ -48,7 +48,3 @@ properties:
   - property: "webId"
     type: "String"
     description: "The unique identifier (guid) for the item's site (SPWeb)."
-remarks:
-  heading: "Remarks"
-  intro: |
-    For more information about the facets on a **driveItem**, see [**driveItem**](xref:graph.driveitem).

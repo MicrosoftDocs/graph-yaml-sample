@@ -31,8 +31,3 @@ properties:
   - property: "id"
     type: "String"
     description: "Unique identifier for the identity."
-remarks:
-  heading: "Remarks"
-  intro: |
-    In some circumstances, the unique identifier for the actor may not be available.
-    In this case, the **displayName** property for the identity will be returned, but the **id** property will be missing from the resource.

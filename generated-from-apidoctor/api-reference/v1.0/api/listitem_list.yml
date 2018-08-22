@@ -28,3 +28,49 @@ httpRequest:
     GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items?expand=fields
     GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items?expand=fields(select=Column1,Column2)
 
+examples:
+- items:
+  - request:
+      heading: "Request"
+      sampleCode: |
+        ```http
+        GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items?expand=fields(select=Name,Color,Quantity)
+        ```
+        
+    response:
+      heading: "Response"
+      sampleCode: |
+        ```json
+        HTTP/1.1 200 OK
+        Content-type: application/json
+        
+        {
+          "value": [
+            {
+              "id": "2",
+              "fields": {
+                "Name": "Gadget",
+                "Color": "Red",
+                "Quantity": 503
+               }
+            },
+            {
+              "id": "4",
+              "fields": {
+                "Name": "Widget",
+                "Color": "Blue",
+                "Quantity": 2357
+               }
+            },
+            {
+              "id": "7",
+              "fields": {
+                "Name": "Gizmo",
+                "Color": "Green",
+                "Quantity": 92
+               }
+            }
+          ]
+        }
+        ```
+        

@@ -35,7 +35,3 @@ properties:
   - property: "signInRequired"
     type: "Boolean"
     description: "If true the recipient of the invitation needs to sign in in order to access the shared item. Read-only."
-remarks:
-  heading: "Remarks"
-  intro: |
-    For more information about the facets on a DriveItem, see [DriveItem](xref:graph.driveitem).

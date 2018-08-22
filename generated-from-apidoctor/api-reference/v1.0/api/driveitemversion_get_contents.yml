@@ -36,8 +36,22 @@ response:
     To download the contents of the file your application will need to follow the `Location` header in the response.
     Many HTTP client libraries will automatically follow the 302 redirection and start downloading the file immedately.
     Pre-authenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header to download.
-remarks:
-  heading: "Remarks"
-  intro: |
-    OneDrive does not preserve the complete metadata for previous versions of a file.
-    When your app retrieves the list of available versions for a file, a [DriveItemVersion](xref:graph.driveItemVersion) resource is returned that provides the available information about the specific version.
+examples:
+- items:
+  - request:
+      heading: "request"
+      sampleCode: |
+        ```http
+        GET /me/drive/items/{item-id}/versions/{version-id}/content
+        ```
+        
+    response:
+      heading: "Response"
+      intro: |
+        This returns a redirect to where the contents of the version can be downloaded.
+      sampleCode: |
+        ```http
+        HTTP/1.1 302 Found
+        Location: https://onedrive.com/34FF49D6...
+        ```
+        

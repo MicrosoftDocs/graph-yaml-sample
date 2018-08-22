@@ -1,4 +1,4 @@
-### YamlMime:GraphOperation
+### YamlMime:GraphEnum
 uid: graph.intune_devices_devicemanagementexchangeaccessstate
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_devices_devicemanagementexchangeaccessstate.md
@@ -6,9 +6,9 @@ summary:
   heading: "deviceManagementExchangeAccessState enum type"
   intro: |
     Device Exchange Access State.
-enum:
+members:
   heading: "Members"
-  table:
+  list:
   - member: "none"
     description: "No access state discovered from Exchange"
   - member: "unknown"

@@ -140,3 +140,69 @@ response:
     created extended property, [get the instance expanded with the extended property](xref:graph.multivaluelegacyextendedproperty_get).
     When creating an extended property in a _new_ group post, the response includes only a response code but not the new post nor 
     the extended property. You cannot create an extended property in an existing group post.
+examples:
+- items:
+  - request:
+      heading: "request"
+      sampleCode: |
+        ```http
+        POST https://graph.microsoft.com/v1.0/me/events
+        Content-Type: application/json
+        
+        {
+          "subject": "Family reunion",
+          "body": {
+            "contentType": "HTML",
+            "content": "Let's get together this Thanksgiving!"
+          },
+          "start": {
+              "dateTime": "2015-11-26T09:00:00",
+              "timeZone": "Pacific Standard Time"
+          },
+          "end": {
+              "dateTime": "2015-11-29T21:00:00",
+              "timeZone": "Pacific Standard Time"
+          },
+          "attendees": [
+            {
+              "emailAddress": {
+                "address": "Terrie@contoso.com",
+                "name": "Terrie Barrera"
+              },
+              "type": "Required"
+            },
+            {
+              "emailAddress": {
+                "address": "Lauren@contoso.com",
+                "name": "Lauren Solis"
+              },
+              "type": "Required"
+            }
+          ],
+          "multiValueExtendedProperties": [
+             {
+                   "id":"StringArray {66f5a359-4659-4830-9070-00050ec6ac6e} Name Recreation",
+                   "value": ["Food", "Hiking", "Swimming"]
+             }
+          ]
+        }
+        ```
+        
+  - request:
+      heading: "request"
+      sampleCode: |
+        ```http
+        PATCH https://graph.microsoft.com/v1.0/me/messages('AAMkAGE1M2_as77AACHsLrBBBA=')
+        
+        Content-Type: application/json
+        
+        {
+          "multiValueExtendedProperties": [
+              {
+                 "id":"StringArray {66f5a359-4659-4830-9070-00049ec6ac6e} Name Palette",
+                 "value":["Green", "Aqua", "Blue"]
+              }
+            ]
+        }
+        ```
+        

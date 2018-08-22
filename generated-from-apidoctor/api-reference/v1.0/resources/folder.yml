@@ -32,7 +32,3 @@ properties:
   - property: "view"
     type: "microsoft.graph.folderView"
     description: "A collection of properties defining the recommended view for the folder."
-remarks:
-  heading: "Remarks"
-  intro: |
-    For more information about the facets on a DriveItem, see [DriveItem][].

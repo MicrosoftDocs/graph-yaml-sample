@@ -26,8 +26,45 @@ httpRequest:
   intro: |
     GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 
-remarks:
-  heading: "Remarks"
-  intro: |
-    Lists with the [system][] facet are hidden by default.
-    To list them, include `system` in your `$select` statement.
+examples:
+- items:
+  - request:
+      heading: "Request"
+      sampleCode: |
+        ```http
+        GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
+        ```
+        
+    response:
+      heading: "Response"
+      sampleCode: |
+        ```json
+        HTTP/1.1 200 OK
+        Content-type: application/json
+        
+        {
+          "value": [
+            {
+              "id": "b57af081-936c-4803-a120-d94887b03864",
+              "name": "Documents",
+              "createdDateTime": "2016-08-30T08:32:00Z",
+              "lastModifiedDateTime": "2016-08-30T08:32:00Z",
+              "list": {
+                "hidden": false,
+                "template": "documentLibrary"
+               }
+            },
+            {
+              "id": "1234-112-112-4",
+              "name": "MicroFeed",
+              "createdDateTime": "2016-08-30T08:32:00Z",
+              "lastModifiedDateTime": "2016-08-30T08:32:00Z",
+              "list": {
+                "hidden": false,
+                "template": "genericList"
+               }
+            }
+          ]
+        }
+        ```
+        

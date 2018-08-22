@@ -36,7 +36,3 @@ properties:
   - property: "user"
     type: "microsoft.graph.identity"
     description: "Optional. The user associated with this action."
-remarks:
-  heading: "Remarks"
-  intro: |
-    See [DriveItem](xref:graph.driveitem) for usage of **IdentitySet** resources.

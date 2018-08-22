@@ -87,7 +87,3 @@ properties:
   - property: "year"
     type: "Int32"
     description: "The year the audio file was recorded."
-remarks:
-  heading: "Remarks"
-  intro: |
-    For more information about the facets on a DriveItem, see [DriveItem](xref:graph.driveitem).

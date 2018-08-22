@@ -46,7 +46,3 @@ properties:
     |`anonymous`|The item is shared by using a link that works for anyone with the link.
     |`organization`|The item is shared by using a link that works for anyone in the owner's organization.
     |`users`|The item is shared with specific users only.
-remarks:
-  heading: "Remarks"
-  intro: |
-    For more information about the facets on a **driveItem**, see [**driveItem**](xref:graph.driveitem).

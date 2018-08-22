@@ -42,3 +42,37 @@ response:
   heading: "Response"
   intro: |
     If successful, this method returns `201 Created` response code and [Message](xref:graph.message) object in the response body.
+examples:
+- items:
+  - request:
+      heading: "Request"
+      intro: |
+        Here is an example of the request.
+      sampleCode: |
+        ```http
+        POST https://graph.microsoft.com/v1.0/me/messages/{id}/createReplyAll
+        ```
+        
+    response:
+      heading: "Response"
+      intro: |
+        Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+      sampleCode: |
+        ```http
+        HTTP/1.1 200 OK
+        Content-type: application/json
+        Content-length: 248
+        
+        {
+          "receivedDateTime": "datetime-value",
+          "sentDateTime": "datetime-value",
+          "hasAttachments": true,
+          "subject": "subject-value",
+          "body": {
+            "contentType": "",
+            "content": "content-value"
+          },
+          "bodyPreview": "bodyPreview-value"
+        }
+        ```
+        

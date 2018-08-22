@@ -86,17 +86,39 @@ response:
   heading: "Response"
   intro: |
     If successful, this method returns a `200 OK` response code and collection of [ThumbnailSet](xref:graph.thumbnailset) objects in the response body.
-remarks:
-  heading: "Remarks"
-  intro: |
-    **Note** In OneDrive for Business and SharePoint:
-    Using these calls to expand the thumbnails collection will not work:
-    
-    * `GET /drive/root:/{item-path}?expand=children(expand=thumbnails)`
-    * `GET /drive/items/{item-id}/children?expand=thumbnails`
-    
-    Thumbnails are not supported on SharePoint Server 2016.
-  outro: |
-    ### Error responses
-    See [Error Responses][error-response] for more info about
-    how errors are returned.
+examples:
+- items:
+  - request:
+      heading: "request"
+      sampleCode: |
+        ```http
+        GET /me/drive/items/{item-id}/thumbnails
+        ```
+        
+    response:
+      heading: "Response"
+      sampleCode: |
+        ```http
+        HTTP/1.1 200 OK
+        Content-type: application/json
+        
+        {
+          "value": [
+            {
+              "id": "0",
+              "small": { "height": 64, "width": 96, "url": "https://sn3302files..."},
+              "medium": { "height": 117, "width": 176, "url": "https://sn3302files..."},
+              "large": { "height": 533, "width": 800, "url": "https://sn3302files..."}
+            }
+          ]
+        }
+        ```
+        
+      outro: |
+        ## Get a single thumbnail
+        Retrieve the metadata for a single thumbnail and size by addressing it directly in a request.
+        
+        ```http
+        GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}
+        ```
+        

@@ -1,4 +1,4 @@
-### YamlMime:GraphOperation
+### YamlMime:GraphEnum
 uid: graph.intune_deviceconfig_windowsstartmenuapplistvisibilitytype
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_windowsstartmenuapplistvisibilitytype.md
@@ -6,9 +6,9 @@ summary:
   heading: "windowsStartMenuAppListVisibilityType enum type"
   intro: |
     Type of start menu app list visibility.
-enum:
+members:
   heading: "windowsStartMenuAppListVisibilityType flags"
-  table:
+  list:
   - member: "userDefined"
     value: "0"
     description: "User defined. Default value."

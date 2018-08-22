@@ -76,3 +76,60 @@ response:
   intro: |
     If successful, this method returns a `200 OK` response code and updated [event](xref:graph.event) object in the response body.  
     
+examples:
+- items:
+  - request:
+      heading: "Request"
+      intro: |
+        Here is an example of the request.
+      sampleCode: |
+        ```http
+        PATCH https://graph.microsoft.com/v1.0/me/events/{id}
+        Content-type: application/json
+        Content-length: 285
+        
+        {
+          "originalStartTimeZone": "originalStartTimeZone-value",
+          "originalEndTimeZone": "originalEndTimeZone-value",
+          "responseStatus": {
+            "response": "",
+            "time": "datetime-value"
+          },
+          "recurrence": null,
+          "iCalUId": "iCalUId-value",
+          "reminderMinutesBeforeStart": 99,
+          "isReminderOn": true
+        }
+        ```
+        
+    response:
+      heading: "Response"
+      intro: |
+        Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+      sampleCode: |
+        ```http
+        HTTP/1.1 200 OK
+        Content-type: application/json
+        Content-length: 285
+        
+        {
+          "originalStartTimeZone": "originalStartTimeZone-value",
+          "originalEndTimeZone": "originalEndTimeZone-value",
+          "responseStatus": {
+            "response": "",
+            "time": "datetime-value"
+          },
+          "recurrence": null,  
+          "iCalUId": "iCalUId-value",
+          "reminderMinutesBeforeStart": 99,
+          "isReminderOn": true
+        }
+        ```
+        
+      outro: |
+        ## See also
+        
+        * [Add custom data to resources using extensions](../../../concepts/extensibility_overview.md)
+        * [Add custom data to users using open extensions](../../../concepts/extensibility_open_users.md)
+        * [Add custom data to groups using schema extensions](../../../concepts/extensibility_schema_groups.md)
+        

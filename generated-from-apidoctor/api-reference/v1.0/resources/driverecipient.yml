@@ -35,8 +35,3 @@ properties:
   - property: "objectId"
     type: "String"
     description: "The unique identifier for the recipient in the directory."
-remarks:
-  heading: "Remarks"
-  intro: |
-    When using [invite](xref:graph.driveitem_invite) to add permissions, the DriveRecipient can specify **email**, **alias**, or **objectId**.
-    Only one of these values is required.

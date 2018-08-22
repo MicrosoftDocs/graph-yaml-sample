@@ -1,4 +1,4 @@
-### YamlMime:GraphOperation
+### YamlMime:GraphEnum
 uid: graph.intune_deviceconfig_iosupdatesinstallstatus
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_iosupdatesinstallstatus.md
@@ -6,9 +6,9 @@ summary:
   heading: "iosUpdatesInstallStatus enum type"
   intro: |
     Not yet documented
-enum:
+members:
   heading: "Members"
-  table:
+  list:
   - member: "success"
     description: "Not yet documented"
   - member: "available"

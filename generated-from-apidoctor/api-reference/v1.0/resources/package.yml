@@ -28,7 +28,3 @@ properties:
   - property: "type"
     type: "String"
     description: "A string indicating the type of package. While oneNote is the only currently defined value, you should expect other package types to be returned and handle them accordingly."
-remarks:
-  heading: "Remarks"
-  intro: |
-    For more information about the facets on a DriveItem, see [DriveItem](xref:graph.driveitem).

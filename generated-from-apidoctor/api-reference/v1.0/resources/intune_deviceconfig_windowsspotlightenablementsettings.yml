@@ -1,4 +1,4 @@
-### YamlMime:GraphOperation
+### YamlMime:GraphEnum
 uid: graph.intune_deviceconfig_windowsspotlightenablementsettings
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_windowsspotlightenablementsettings.md
@@ -6,9 +6,9 @@ summary:
   heading: "windowsSpotlightEnablementSettings enum type"
   intro: |
     Allows IT admind to set a predefined default search engine for MDM-Controlled devices
-enum:
+members:
   heading: "Members"
-  table:
+  list:
   - member: "notConfigured"
     description: "Spotlight on lock screen is not configured"
   - member: "disabled"

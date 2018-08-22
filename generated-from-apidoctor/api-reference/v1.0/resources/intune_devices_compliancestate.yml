@@ -1,4 +1,4 @@
-### YamlMime:GraphOperation
+### YamlMime:GraphEnum
 uid: graph.intune_devices_compliancestate
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_devices_compliancestate.md
@@ -6,9 +6,9 @@ summary:
   heading: "complianceState enum type"
   intro: |
     Compliance state.
-enum:
+members:
   heading: "Members"
-  table:
+  list:
   - member: "unknown"
     description: "Unknown."
   - member: "compliant"

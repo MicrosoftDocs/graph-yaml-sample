@@ -41,3 +41,33 @@ response:
   heading: "Response"
   intro: |
     If successful, this method returns a `200 OK` response code and an updated [deviceManagementTroubleshootingEvent](xref:graph.intune_troubleshooting_devicemanagementtroubleshootingevent) object in the response body.
+examples:
+- items:
+  - request:
+      heading: "Request"
+      intro: |
+        Here is an example of the request.
+        PATCH https://graph.microsoft.com/beta/deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEventId}
+        Content-type: application/json
+        Content-length: 104
+        
+        {
+          "eventDateTime": "2016-12-31T23:59:23.3984029-08:00",
+          "correlationId": "Correlation Id value"
+        }
+
+    response:
+      heading: "Response"
+      intro: |
+        Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+        HTTP/1.1 200 OK
+        Content-Type: application/json
+        Content-Length: 228
+        
+        {
+          "@odata.type": "#microsoft.graph.deviceManagementTroubleshootingEvent",
+          "id": "fb26dcee-dcee-fb26-eedc-26fbeedc26fb",
+          "eventDateTime": "2016-12-31T23:59:23.3984029-08:00",
+          "correlationId": "Correlation Id value"
+        }
+

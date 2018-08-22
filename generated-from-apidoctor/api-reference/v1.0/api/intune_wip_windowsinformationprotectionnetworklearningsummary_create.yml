@@ -41,3 +41,34 @@ response:
   heading: "Response"
   intro: |
     If successful, this method returns a `201 Created` response code and a [windowsInformationProtectionNetworkLearningSummary](xref:graph.intune_wip_windowsinformationprotectionnetworklearningsummary) object in the response body.
+examples:
+- items:
+  - request:
+      heading: "Request"
+      intro: |
+        Here is an example of the request.
+        POST https://graph.microsoft.com/v1.0/deviceManagement/windowsInformationProtectionNetworkLearningSummaries
+        Content-type: application/json
+        Content-length: 137
+        
+        {
+          "@odata.type": "#microsoft.graph.windowsInformationProtectionNetworkLearningSummary",
+          "url": "Url value",
+          "deviceCount": 11
+        }
+
+    response:
+      heading: "Response"
+      intro: |
+        Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+        HTTP/1.1 201 Created
+        Content-Type: application/json
+        Content-Length: 186
+        
+        {
+          "@odata.type": "#microsoft.graph.windowsInformationProtectionNetworkLearningSummary",
+          "id": "242108f7-08f7-2421-f708-2124f7082124",
+          "url": "Url value",
+          "deviceCount": 11
+        }
+

@@ -54,3 +54,45 @@ response:
   heading: "Response"
   intro: |
     If successful, this method returns a `200 OK` response code and updated [DriveItem](xref:graph.driveitem) resource in the response body.
+examples:
+- items:
+  - request:
+      heading: "request"
+      sampleCode: |
+        ```http
+        PATCH /me/drive/items/{item-id}
+        Content-type: application/json
+        
+        {
+          "parentReference": {
+            "id": "{new-parent-folder-id}"
+          },
+          "name": "new-item-name.txt"
+        }
+        ```
+        
+    response:
+      heading: "Response"
+      intro: |
+        The following example shows the response for this move request.
+      sampleCode: |
+        ```http
+        HTTP/1.1 200 OK
+        Content-type: application/json
+        
+        {
+          "id": "0123456789abc",
+          "name": "new-item-name.txt",
+          "parentReference":
+          {
+            "driveId": "11231001",
+            "path": "/drive/root:/Documents",
+            "id": "1231203102!1011"
+          }
+        }
+        ```
+        
+      outro: |
+        ## Error responses
+        See [Error Responses][error-response] for more info about
+        how errors are returned.

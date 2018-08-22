@@ -1,4 +1,4 @@
-### YamlMime:GraphOperation
+### YamlMime:GraphEnum
 uid: graph.intune_deviceconfig_automaticupdatemode
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_automaticupdatemode.md
@@ -6,9 +6,9 @@ summary:
   heading: "automaticUpdateMode enum type"
   intro: |
     Possible values for automatic update mode.
-enum:
+members:
   heading: "Members"
-  table:
+  list:
   - member: "userDefined"
     description: "User Defined, default value, no intent."
   - member: "notifyDownload"

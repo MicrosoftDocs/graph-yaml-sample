@@ -41,3 +41,42 @@ response:
   heading: "Response"
   intro: |
     If successful, this method returns a `200 OK` response code and a [user](xref:graph.user) object in the response body.
+examples:
+- items:
+  - request:
+      heading: "Request"
+      intro: |
+        The following is an example of the request.
+      sampleCode: |
+        ```http
+        GET https://graph.microsoft.com/v1.0/education/me/user
+        ```
+        
+    response:
+      heading: "Response"
+      intro: |
+        The following is an example of the response. 
+        
+      sampleCode: |
+        ```http
+        HTTP/1.1 200 OK
+        Content-type: application/json
+        Content-length: 491
+        
+        {
+          "businessPhones": [
+               "businessPhones-value"
+           ],
+           "displayName": "displayName-value",
+           "givenName": "givenName-value",
+           "jobTitle": "jobTitle-value",
+           "mail": "mail-value",
+           "mobilePhone": "mobilePhone-value",
+           "officeLocation": "officeLocation-value",
+           "preferredLanguage": "preferredLanguage-value",
+           "surname": "surname-value",
+           "userPrincipalName": "userPrincipalName-value",
+           "id": "id-value"
+        }
+        ```
+        

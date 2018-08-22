@@ -79,7 +79,3 @@ relationships:
   - relationship: "lastModifiedByUser"
     type: "microsoft.graph.user"
     description: "Identity of the user who last modified the item. Read-only."
-remarks:
-  heading: "Remarks"
-  intro: |
-    The `baseItem` type is not expected to be used directly.

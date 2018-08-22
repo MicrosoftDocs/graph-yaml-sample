@@ -72,7 +72,3 @@ relationships:
     description: "Used to access the underlying driveItem. Deprecated -- use driveItem instead."
   outro: |
     Alternatively, for **driveItems** shared from personal OneDrive accounts, the following relationships may also be used.
-remarks:
-  heading: "Remarks"
-  intro: |
-    For more information about the facets on a DriveItem, see [DriveItem](xref:graph.driveitem).

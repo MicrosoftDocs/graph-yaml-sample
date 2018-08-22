@@ -1,4 +1,4 @@
-### YamlMime:GraphOperation
+### YamlMime:GraphEnum
 uid: graph.intune_deviceconfig_defenderscantype
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_deviceconfig_defenderscantype.md
@@ -6,9 +6,9 @@ summary:
   heading: "defenderScanType enum type"
   intro: |
     Possible values for system scan type.
-enum:
+members:
   heading: "Members"
-  table:
+  list:
   - member: "userDefined"
     description: "User Defined, default value, no intent."
   - member: "disabled"

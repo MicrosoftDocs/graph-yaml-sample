@@ -92,7 +92,3 @@ properties:
   - property: "webUrl"
     type: "String"
     description: "URL that displays the resource in the browser. Read-only."
-remarks:
-  heading: "Remarks"
-  intro: |
-    For more information about the facets on a **driveItem**, see [driveItem](xref:graph.driveitem).

@@ -65,3 +65,53 @@ response:
     * Used Others
     * Report Period
     
+examples:
+- items:
+  - request:
+      heading: "Request"
+      intro: |
+        The following is an example of the request.
+      sampleCode: |
+        ```http
+        GET https://graph.microsoft.com/v1.0/reports/getYammerDeviceUsageUserDetail(period='D7')
+        ```
+        
+    response:
+      heading: "Response"
+      intro: |
+        The following is an example of the response.
+      sampleCode: |
+        ```http
+        HTTP/1.1 302 Found
+        Content-Type: text/plain
+        Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
+        ```
+        
+  - request:
+      heading: "request"
+      sampleCode: |
+        ```http
+        GET https://graph.microsoft.com/v1.0/reports/getYammerDeviceUsageUserDetail(date='2018-03-05')
+        ```
+        
+    response:
+      heading: "Response"
+      intro: |
+        The following is an example of the response.
+      sampleCode: |
+        ```http
+        HTTP/1.1 302 Found
+        Content-Type: text/plain
+        Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
+        ```
+        
+      outro: |
+        Follow the 302 redirection and the CSV file that downloads will have the following schema.
+        
+        ```http
+        HTTP/1.1 200 OK
+        Content-Type: application/octet-stream
+        
+        Report Refresh Date,User Principal Name,Display Name,User State,State Change Date,Last Activity Date,Used Web,Used Windows Phone,Used Android Phone,Used iPhone,Used iPad,Used Others,Report Period
+        ```
+        

@@ -1,4 +1,4 @@
-### YamlMime:GraphOperation
+### YamlMime:GraphEnum
 uid: graph.intune_notification_notificationtemplatebrandingoptions
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_notification_notificationtemplatebrandingoptions.md
@@ -6,9 +6,9 @@ summary:
   heading: "notificationTemplateBrandingOptions enum type"
   intro: |
     Branding Options for the Message Template. Branding is defined in the Intune Admin Console.
-enum:
+members:
   heading: "notificationTemplateBrandingOptions flags"
-  table:
+  list:
   - member: "none"
     value: "0"
     description: "No Branding."

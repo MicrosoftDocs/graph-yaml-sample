@@ -25,7 +25,3 @@ properties:
   - property: "onClickTelemetryUrl"
     type: "String"
     description: "A callback URL that can be used to record telemetry information. The application should issue a GET on this URL if the user interacts with this item to improve the quality of results."
-remarks:
-  heading: "Remarks"
-  intro: |
-    For more information about the facets on a DriveItem, see [DriveItem](xref:graph.driveitem).

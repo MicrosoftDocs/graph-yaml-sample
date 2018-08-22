@@ -1,4 +1,4 @@
-### YamlMime:GraphOperation
+### YamlMime:GraphEnum
 uid: graph.intune_mam_managedappdatastoragelocation
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/intune_mam_managedappdatastoragelocation.md
@@ -6,9 +6,9 @@ summary:
   heading: "managedAppDataStorageLocation enum type"
   intro: |
     Storage locations where managed apps can potentially store their data
-enum:
+members:
   heading: "Members"
-  table:
+  list:
   - member: "oneDriveForBusiness"
     description: "OneDrive for business"
   - member: "sharePoint"

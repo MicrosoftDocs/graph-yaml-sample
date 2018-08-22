@@ -42,7 +42,3 @@ properties:
     |Documents|`documents`|The Documents folder.
     |Music|`music`|The Music folder. Not available in OneDrive for Business.
     |Photos|`photos`|The Photos folder.
-remarks:
-  heading: "Remarks"
-  intro: |
-    For more information about the facets on a DriveItem, see [DriveItem](xref:graph.driveitem).

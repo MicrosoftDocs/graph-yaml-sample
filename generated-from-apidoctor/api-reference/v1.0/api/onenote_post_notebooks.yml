@@ -46,3 +46,48 @@ response:
   heading: "Response"
   intro: |
     If successful, this method returns a `201 Created` response code and the new [notebook](xref:graph.notebook) object in the response body.
+examples:
+- items:
+  - request:
+      heading: "Request"
+      intro: |
+        Here is an example of the request.
+      sampleCode: |
+        ```http
+        POST https://graph.microsoft.com/v1.0/me/onenote/notebooks
+        Content-type: application/json
+        Content-length: 30
+        
+        {
+          "displayName": "Notebook name"
+        }
+        ```
+        
+    response:
+      heading: "Response"
+      intro: |
+        Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.
+      sampleCode: |
+        ```http
+        HTTP/1.1 200 OK
+        Content-type: application/json
+        Content-length: 284
+        
+        {
+          "isDefault": true,
+          "userRole": {
+          },
+          "isShared": true,
+          "sectionsUrl": "sectionsUrl-value",
+          "sectionGroupsUrl": "sectionGroupsUrl-value",
+          "links": {
+            "oneNoteClientUrl": {
+              "href": "href-value"
+            },
+            "oneNoteWebUrl": {
+              "href": "href-value"
+            }
+          }
+        }
+        ```
+        

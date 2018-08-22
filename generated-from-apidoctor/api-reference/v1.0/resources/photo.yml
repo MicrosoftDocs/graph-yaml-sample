@@ -53,8 +53,3 @@ properties:
   - property: "iso"
     type: "Int32"
     description: "The ISO value from the camera. Read-only."
-remarks:
-  heading: "Remarks"
-  intro: |
-    OneDrive for Business and SharePoint only return the **takenDateTime** property.
-    For more information about the facets on a DriveItem, see [DriveItem](xref:graph.driveitem).

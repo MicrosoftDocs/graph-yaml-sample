@@ -31,8 +31,3 @@ properties:
   - property: "width"
     type: "Int32"
     description: "Optional. Width of the image, in pixels. Read-only."
-remarks:
-  heading: "Remarks"
-  intro: |
-    In OneDrive for Business, this resource is returned on items that are expected to be images based on file extension.
-    For more information about the facets on a DriveItem, see [DriveItem](xref:graph.driveitem).

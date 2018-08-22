@@ -277,7 +277,3 @@ relationships:
     |@microsoft.graph.sourceUrl|string|When issuing a PUT request, this instance annotation can be used to instruct the service to download the contents of the URL, and store it as the file. Write-only.
     **Note:** The @microsoft.graph.downloadUrl value is a short-lived URL and can't be cached.
     The URL will only be available for a short period of time (1 hour) before it is invalidated.
-remarks:
-  heading: "Remarks"
-  intro: |
-    In OneDrive for Business or SharePoint document libraries, the **cTag** property is not returned, if the **driveItem** has a [folder][] facet.
