@@ -1,7 +1,7 @@
 ### YamlMime:GraphResource
 uid: graph.tablesort
 metadata:
-  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.tablesort
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/tablesort.md
 summary:
   heading: "TableSort resource type"
   intro: |

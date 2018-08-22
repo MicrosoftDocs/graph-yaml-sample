@@ -1,7 +1,7 @@
 ### YamlMime:GraphResource
 uid: graph.groupsetting
 metadata:
-  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.groupsetting
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/groupsetting.md
 summary:
   heading: "groupSetting resource type"
   intro: |

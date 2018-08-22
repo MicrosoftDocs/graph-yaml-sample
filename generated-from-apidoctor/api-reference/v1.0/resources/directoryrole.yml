@@ -1,7 +1,7 @@
 ### YamlMime:GraphResource
 uid: graph.directoryrole
 metadata:
-  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.directoryrole
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/directoryrole.md
 summary:
   heading: "directoryRole resource type"
   intro: |

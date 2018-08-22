@@ -1,7 +1,7 @@
 ### YamlMime:GraphResource
 uid: graph.post
 metadata:
-  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.post
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/post.md
 summary:
   heading: "post resource type"
   intro: |

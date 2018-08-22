@@ -5,7 +5,7 @@ metadata:
   author: rgregg
   ms.author: rgregg
   ms.date: 09/10/2017
-  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/sharedxref:graph.driveitem
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/shareddriveitem.md
 summary:
   heading: "SharedDriveItem resource type"
   intro: |

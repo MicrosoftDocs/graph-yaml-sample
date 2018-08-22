@@ -1,7 +1,7 @@
 ### YamlMime:GraphResource
 uid: graph.contactfolder
 metadata:
-  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.contactfolder
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/contactfolder.md
 summary:
   heading: "contactFolder resource type"
   intro: |

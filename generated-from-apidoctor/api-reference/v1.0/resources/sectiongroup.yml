@@ -1,7 +1,7 @@
 ### YamlMime:GraphResource
 uid: graph.sectiongroup
 metadata:
-  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.sectiongroup
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/sectiongroup.md
 summary:
   heading: "sectionGroup resource type"
   intro: |

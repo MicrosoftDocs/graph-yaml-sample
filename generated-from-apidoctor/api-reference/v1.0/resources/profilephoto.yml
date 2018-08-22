@@ -1,7 +1,7 @@
 ### YamlMime:GraphResource
 uid: graph.profilephoto
 metadata:
-  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.profilephoto
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/profilephoto.md
 summary:
   heading: "profilePhoto resource type"
   intro: |

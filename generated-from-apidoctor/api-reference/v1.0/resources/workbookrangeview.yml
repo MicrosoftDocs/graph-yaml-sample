@@ -1,7 +1,7 @@
 ### YamlMime:GraphResource
 uid: graph.workbookrangeview
 metadata:
-  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.workbookrangeview
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/workbookrangeview.md
 summary:
   heading: "rangeView resource type"
   intro: |

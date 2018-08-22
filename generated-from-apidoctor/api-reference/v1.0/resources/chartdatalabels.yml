@@ -1,7 +1,7 @@
 ### YamlMime:GraphResource
 uid: graph.chartdatalabels
 metadata:
-  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.chartdatalabels
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/chartdatalabels.md
 summary:
   heading: "ChartDataLabels resource type"
   intro: |

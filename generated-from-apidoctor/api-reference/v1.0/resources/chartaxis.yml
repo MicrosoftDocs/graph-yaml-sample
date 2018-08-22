@@ -1,7 +1,7 @@
 ### YamlMime:GraphResource
 uid: graph.chartaxis
 metadata:
-  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.chartaxis
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/chartaxis.md
 summary:
   heading: "ChartAxis resource type"
   intro: |

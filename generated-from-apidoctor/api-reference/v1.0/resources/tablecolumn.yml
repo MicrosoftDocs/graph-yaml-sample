@@ -1,7 +1,7 @@
 ### YamlMime:GraphResource
 uid: graph.tablecolumn
 metadata:
-  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.tablecolumn
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/tablecolumn.md
 summary:
   heading: "TableColumn resource type"
   intro: |

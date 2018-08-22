@@ -1,7 +1,7 @@
 ### YamlMime:GraphResource
 uid: graph.directoryobject
 metadata:
-  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.directoryobject
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/directoryobject.md
 summary:
   heading: "directoryObject resource type"
   intro: |

@@ -1,7 +1,7 @@
 ### YamlMime:GraphResource
 uid: graph.plannerplan
 metadata:
-  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.plannerplan
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/plannerplan.md
 summary:
   heading: "plannerPlan resource type"
   intro: |

@@ -1,7 +1,7 @@
 ### YamlMime:GraphResource
 uid: graph.referenceattachment
 metadata:
-  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.referenceattachment
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/referenceattachment.md
 summary:
   heading: "referenceAttachment resource type"
   intro: |

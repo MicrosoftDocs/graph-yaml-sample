@@ -1,7 +1,7 @@
 ### YamlMime:GraphResource
 uid: graph.plannerassignedtotaskboardtaskformat
 metadata:
-  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.plannerassignedtotaskboardtaskformat
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/plannerassignedtotaskboardtaskformat.md
 summary:
   heading: "plannerAssignedToTaskBoardTaskFormat resource type"
   intro: |

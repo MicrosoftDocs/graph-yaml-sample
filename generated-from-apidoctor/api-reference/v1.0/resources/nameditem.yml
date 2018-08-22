@@ -1,7 +1,7 @@
 ### YamlMime:GraphResource
 uid: graph.nameditem
 metadata:
-  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.nameditem
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/nameditem.md
 summary:
   heading: "NamedItem resource type"
   intro: |

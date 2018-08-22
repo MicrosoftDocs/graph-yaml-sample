@@ -1,7 +1,7 @@
 ### YamlMime:GraphResource
 uid: graph.device
 metadata:
-  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.device
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/device.md
 summary:
   heading: "device resource type"
   intro: |

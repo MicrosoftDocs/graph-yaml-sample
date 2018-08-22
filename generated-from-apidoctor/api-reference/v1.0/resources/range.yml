@@ -1,7 +1,7 @@
 ### YamlMime:GraphResource
 uid: graph.range
 metadata:
-  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.range
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/range.md
 summary:
   heading: "Range resource type"
   intro: |

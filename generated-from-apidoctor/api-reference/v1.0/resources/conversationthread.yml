@@ -1,7 +1,7 @@
 ### YamlMime:GraphResource
 uid: graph.conversationthread
 metadata:
-  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.conversationthread
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/conversationthread.md
 summary:
   heading: "conversationThread resource type"
   intro: |

@@ -1,7 +1,7 @@
 ### YamlMime:GraphResource
 uid: graph.chartlegend
 metadata:
-  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.chartlegend
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/chartlegend.md
 summary:
   heading: "ChartLegend resource type"
   intro: |

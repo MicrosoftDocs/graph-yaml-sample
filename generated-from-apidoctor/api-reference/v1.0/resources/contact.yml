@@ -1,7 +1,7 @@
 ### YamlMime:GraphResource
 uid: graph.contact
 metadata:
-  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.contact
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/contact.md
 summary:
   heading: "contact resource type"
   intro: |

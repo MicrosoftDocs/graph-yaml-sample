@@ -1,7 +1,7 @@
 ### YamlMime:GraphResource
 uid: graph.icon
 metadata:
-  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.icon
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/icon.md
 summary:
   heading: "Icon resource type"
   intro: |

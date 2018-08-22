@@ -1,7 +1,7 @@
 ### YamlMime:GraphResource
 uid: graph.onedrive
 metadata:
-  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/onexref:graph.drive
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/onedrive.md
 summary:
   heading: "Working with files in Microsoft Graph"
   intro: |

@@ -1,7 +1,7 @@
 ### YamlMime:GraphResource
 uid: graph.multivaluelegacyextendedproperty
 metadata:
-  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.multivaluelegacyextendedproperty
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/multivaluelegacyextendedproperty.md
 summary:
   heading: "multiValueLegacyExtendedProperty resource type"
   intro: |

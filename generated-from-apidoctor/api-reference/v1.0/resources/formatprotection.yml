@@ -1,7 +1,7 @@
 ### YamlMime:GraphResource
 uid: graph.formatprotection
 metadata:
-  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.formatprotection
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/formatprotection.md
 summary:
   heading: "FormatProtection resource type"
   intro: |

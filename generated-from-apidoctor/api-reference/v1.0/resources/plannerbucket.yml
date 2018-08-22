@@ -1,7 +1,7 @@
 ### YamlMime:GraphResource
 uid: graph.plannerbucket
 metadata:
-  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.plannerbucket
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/plannerbucket.md
 summary:
   heading: "plannerBucket resource type"
   intro: |

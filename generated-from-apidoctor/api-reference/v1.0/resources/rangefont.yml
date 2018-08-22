@@ -1,7 +1,7 @@
 ### YamlMime:GraphResource
 uid: graph.rangefont
 metadata:
-  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.rangefont
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/rangefont.md
 summary:
   heading: "RangeFont resource type"
   intro: |

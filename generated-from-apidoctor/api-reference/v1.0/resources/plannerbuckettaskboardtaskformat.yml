@@ -1,7 +1,7 @@
 ### YamlMime:GraphResource
 uid: graph.plannerbuckettaskboardtaskformat
 metadata:
-  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.plannerbuckettaskboardtaskformat
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/plannerbuckettaskboardtaskformat.md
 summary:
   heading: "plannerBucketTaskBoardTaskFormat resource type"
   intro: |

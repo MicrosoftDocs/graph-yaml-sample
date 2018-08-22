@@ -1,7 +1,7 @@
 ### YamlMime:GraphResource
 uid: graph.tablerow
 metadata:
-  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.tablerow
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/tablerow.md
 summary:
   heading: "TableRow resource type"
   intro: |

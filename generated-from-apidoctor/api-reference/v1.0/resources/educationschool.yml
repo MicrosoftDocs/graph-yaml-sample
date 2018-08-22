@@ -1,7 +1,7 @@
 ### YamlMime:GraphResource
 uid: graph.educationschool
 metadata:
-  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.educationschool
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/educationschool.md
 summary:
   heading: "educationSchool resource type"
   intro: |

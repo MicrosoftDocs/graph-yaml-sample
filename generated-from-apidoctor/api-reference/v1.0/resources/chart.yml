@@ -1,7 +1,7 @@
 ### YamlMime:GraphResource
 uid: graph.chart
 metadata:
-  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.chart
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/chart.md
 summary:
   heading: "Chart resource type"
   intro: |

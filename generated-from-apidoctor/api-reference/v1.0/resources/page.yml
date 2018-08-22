@@ -1,7 +1,7 @@
 ### YamlMime:GraphResource
 uid: graph.page
 metadata:
-  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.page
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/page.md
 summary:
   heading: "page resource type"
   intro: |

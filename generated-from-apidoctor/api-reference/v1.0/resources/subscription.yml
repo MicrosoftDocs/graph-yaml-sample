@@ -1,7 +1,7 @@
 ### YamlMime:GraphResource
 uid: graph.subscription
 metadata:
-  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.subscription
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/subscription.md
 summary:
   heading: "subscription resource type"
   intro: |

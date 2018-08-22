@@ -1,7 +1,7 @@
 ### YamlMime:GraphResource
 uid: graph.workbookpivottable
 metadata:
-  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.workbookpivottable
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/workbookpivottable.md
 summary:
   heading: "pivotTable resource type"
   intro: |

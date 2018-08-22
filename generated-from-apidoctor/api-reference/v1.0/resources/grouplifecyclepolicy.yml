@@ -1,7 +1,7 @@
 ### YamlMime:GraphResource
 uid: graph.grouplifecyclepolicy
 metadata:
-  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.grouplifecyclepolicy
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/grouplifecyclepolicy.md
 summary:
   heading: "groupLifecyclePolicy resource type"
   intro: |

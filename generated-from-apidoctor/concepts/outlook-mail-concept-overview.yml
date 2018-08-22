@@ -1,7 +1,7 @@
 ### YamlMime:GraphOperation
 uid: graph.outlook-mail-concept-overview
 metadata:
-  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/outlook-mail-concept-xref:graph.overview
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/concepts/outlook-mail-concept-overview.md
 summary:
   heading: "Outlook mail API overview"
   intro: |

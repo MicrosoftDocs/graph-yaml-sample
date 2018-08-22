@@ -1,7 +1,7 @@
 ### YamlMime:GraphResource
 uid: graph.message
 metadata:
-  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.message
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/message.md
 summary:
   heading: "message resource type"
   intro: |

@@ -1,7 +1,7 @@
 ### YamlMime:GraphResource
 uid: graph.user
 metadata:
-  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.user
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/user.md
 summary:
   heading: "user resource type"
   intro: |

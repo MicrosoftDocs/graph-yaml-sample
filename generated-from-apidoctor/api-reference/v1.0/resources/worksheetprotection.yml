@@ -1,7 +1,7 @@
 ### YamlMime:GraphResource
 uid: graph.worksheetprotection
 metadata:
-  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.worksheetprotection
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/worksheetprotection.md
 summary:
   heading: "WorksheetProtection resource type"
   intro: |

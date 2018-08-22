@@ -1,7 +1,7 @@
 ### YamlMime:GraphResource
 uid: graph.chartgridlines
 metadata:
-  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.chartgridlines
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/chartgridlines.md
 summary:
   heading: "ChartGridlines resource type"
   intro: |

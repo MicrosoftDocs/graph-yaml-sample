@@ -1,7 +1,7 @@
 ### YamlMime:GraphResource
 uid: graph.mailfolder
 metadata:
-  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.mailfolder
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/mailfolder.md
 summary:
   heading: "mailFolder resource type"
   intro: |

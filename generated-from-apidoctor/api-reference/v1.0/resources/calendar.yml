@@ -1,7 +1,7 @@
 ### YamlMime:GraphResource
 uid: graph.calendar
 metadata:
-  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/xref:graph.calendar
+  content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/calendar.md
 summary:
   heading: "calendar resource type"
   intro: |
