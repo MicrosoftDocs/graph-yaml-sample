@@ -43,5 +43,11 @@ properties:
   - property: "state"
     type: "String"
     description: "Enumeration value that indicates the state of the storage space. Read-only."
-members:
-  heading: "State Enumeration"
+  outro: |
+    ## State options
+    |Value|Description
+    |:-|:-|
+    |`normal`|The drive has plenty of remaining quota left.
+    |`nearing`|Remaining quota is less than 10% of total quota space.
+    |`critical`|Remaining quota is less than 1% of total quota space.
+    |`exceeded`|The used quota has exceeded the total quota. New files or folders cannot be added to the drive until it is under the total quota amount or more storage space is purchased.

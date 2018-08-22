@@ -1,4 +1,4 @@
-### YamlMime:GraphOperation
+### YamlMime:GraphResource
 uid: graph.sharepoint_site_usage_reports
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/sharepoint_site_usage_reports.md

@@ -50,17 +50,14 @@ requestHeaders:
   - name: "if-match"
     value: "String"
     description: "If this request header is included and the eTag (or cTag) provided does not match the current etag on the item, a 412 Precondition Failed error response is returned."
-properties:
-  heading: "Properties"
-  list:
-  - property: "description"
-    type: "String"
+  - name: "description"
+    value: "String"
     description: "Provides a user-visible description of the item. Read-write. Only on OneDrive Personal"
-  - property: "fileSystemInfo"
-    type: "microsoft.graph.fileSystemInfo"
+  - name: "fileSystemInfo"
+    value: "microsoft.graph.fileSystemInfo"
     description: "File system information on client. Read-write."
-  - property: "name"
-    type: "String"
+  - name: "name"
+    value: "String"
     description: "The name of the item (filename and extension). Read-write."
   outro: |
     The response to this request will provide the details of the newly created [uploadSession](xref:graph.uploadsession), which includes the URL used for uploading the parts of the file. 

@@ -1,4 +1,4 @@
-### YamlMime:GraphOperation
+### YamlMime:GraphResource
 uid: graph.microsoft_teams_user_activity_reports
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/microsoft_teams_user_activity_reports.md

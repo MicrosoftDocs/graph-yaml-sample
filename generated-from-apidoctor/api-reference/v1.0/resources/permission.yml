@@ -76,22 +76,10 @@ properties:
     Permissions with a [**link**][SharingLink] facet represent sharing links created on the item. 
     Sharing links contain a unique token that provides access to the item for anyone with the link.
     Permissions with an [**invitation**][SharingInvitation] facet represent permissions added by inviting specific users or groups to have access to the file.
-members:
-  heading: "Roles enumeration"
-  list:
-  - member: ""
-    description: ""
-  - member: ""
-    description: ""
-  - member: ""
-    description: ""
-  - member: ""
-    description: ""
-  outro: |
-    ## Sharing links
-    The most common type of permissions are sharing links.
-    Sharing links provide a unique URL that includes both the resource being shared
-    and an authentication token that provides access to the resource. Users don't
-    need to sign-in to access the content shared with a sharing link. Users can
-    share a link that gives read-only access to the content or writable access to
-    the content.
+    ## Roles
+    |Role|Details
+    |:-|:-|
+    |`read`|Provides the ability to read the metadata and contents of the item.
+    |`write`|Provides the ability to read and modify the metadata and contents of the item.
+    |`sp.owner`|For SharePoint and OneDrive for Business this represents the owner role.
+    |`sp.member`|For SharePoint and OneDrive for Business this represents the member role.

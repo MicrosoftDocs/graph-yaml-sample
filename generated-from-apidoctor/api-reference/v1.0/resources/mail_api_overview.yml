@@ -1,4 +1,4 @@
-### YamlMime:GraphOperation
+### YamlMime:GraphResource
 uid: graph.mail_api_overview
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/mail_api_overview.md

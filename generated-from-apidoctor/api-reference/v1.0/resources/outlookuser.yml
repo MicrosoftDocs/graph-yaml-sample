@@ -1,4 +1,4 @@
-### YamlMime:GraphOperation
+### YamlMime:GraphResource
 uid: graph.outlookuser
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/outlookuser.md
@@ -21,6 +21,16 @@ methods:
   - method: "[supportedTimeZones](xref:graph.outlookuser_supportedtimezones)"
     type: "[timeZoneInformation](xref:graph.timezoneinformation) collection"
     description: "Get the list of time zones that is supported for the user, as configured on the user's mailbox server."
+resource:
+  heading: "JSON representation"
+  intro: |
+    Here is a JSON representation of the resource
+  sampleCode: |
+    ```json
+    {
+    }
+    ```
+    
 properties:
   heading: "Properties"
   intro: |
@@ -31,9 +41,3 @@ relationships:
   - relationship: "masterCategories"
     type: "Collection(microsoft.graph.outlookCategory)"
     description: "A list of categories defined for the user."
-  outro: |
-    ```json
-    {
-    }
-    ```
-    

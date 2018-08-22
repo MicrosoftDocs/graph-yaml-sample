@@ -1,4 +1,4 @@
-### YamlMime:GraphOperation
+### YamlMime:GraphResource
 uid: graph.groups-overview
 metadata:
   content_git_url: https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/api-reference/v1.0/resources/groups-overview.md
