@@ -51,43 +51,41 @@ response:
   intro: |
     If successful, this method returns `201 Created` response code and an [inferenceClassificationOverride](xref:graph.inferenceclassificationoverride) object in the response body.
 examples:
-  - items:
-    - Example:
-        heading: "Example"
-        request:
-            heading: "Request"
-            intro: |
-              Here is an example of the request.
-            sampleCode: |
-              ```http
-              POST https://graph.microsoft.com/v1.0/me/inferenceClassification/overrides
-              Content-type: application/json
-              
-              {
-                "classifyAs": "focused",
-                "senderEmailAddress": {
-                  "name": "Samantha Booth",
-                  "address": "samanthab@adatum.onmicrosoft.com"
-                }
-              }
-              ```
-              
-        response:
-            heading: "Response"
-            intro: |
-              Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-            sampleCode: |
-              ```http
-              HTTP/1.1 201 Created
-              Content-type: application/json
-              
-              {
-                "classifyAs": "focused",
-                "senderEmailAddress": {
-                  "name": "Samantha Booth",
-                  "address": "samanthab@adatum.onmicrosoft.com"
-                },
-                "id": "98f5bdef-576a-404d-a2ea-07a3cf11a9b9"
-              }
-              ```
-              
+- items:
+  - request:
+      heading: "Request"
+      intro: |
+        Here is an example of the request.
+      sampleCode: |
+        ```http
+        POST https://graph.microsoft.com/v1.0/me/inferenceClassification/overrides
+        Content-type: application/json
+        
+        {
+          "classifyAs": "focused",
+          "senderEmailAddress": {
+            "name": "Samantha Booth",
+            "address": "samanthab@adatum.onmicrosoft.com"
+          }
+        }
+        ```
+        
+    response:
+      heading: "Response"
+      intro: |
+        Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+      sampleCode: |
+        ```http
+        HTTP/1.1 201 Created
+        Content-type: application/json
+        
+        {
+          "classifyAs": "focused",
+          "senderEmailAddress": {
+            "name": "Samantha Booth",
+            "address": "samanthab@adatum.onmicrosoft.com"
+          },
+          "id": "98f5bdef-576a-404d-a2ea-07a3cf11a9b9"
+        }
+        ```
+        

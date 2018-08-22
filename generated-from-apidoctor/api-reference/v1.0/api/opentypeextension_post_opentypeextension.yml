@@ -78,45 +78,4 @@ response:
     |Creating an extension while implicitly creating a resource instance|[post](xref:graph.post)|The response includes only a response code but not a response body.
     |Creating an extension in an _existing_ resource instance|All supported resources|Includes the **openTypeExtension** object.
 examples:
-  - items:
-    - Example:
-        heading: "Example"
-        outro: |
-          ### Request 1
-          The first example creates a message and an extension in the same call. The request body includes the following:
-          
-          * The **subject**, **body**, and **toRecipients** properties typical of a new message.
-          * And for the extension:
-              * The type `microsoft.graph.openTypeExtension`.
-              * The extension name "Com.Contoso.Referral".
-              * Additional data to be stored as three custom properties in the JSON payload: `companyName`, `expirationDate`, and `dealValue`.
-          
-          
-          ```http
-          POST https://graph.microsoft.com/v1.0/me/messages
-          
-          {
-            "subject": "Annual review",
-            "body": {
-              "contentType": "HTML",
-              "content": "You should be proud!"
-            },
-            "toRecipients": [
-              {
-                "emailAddress": {
-                  "address": "rufus@contoso.com"
-                }
-              }
-            ],
-            "extensions": [
-              {
-                "@odata.type": "microsoft.graph.openTypeExtension",
-                "extensionName": "Com.Contoso.Referral",
-                "companyName": "Wingtip Toys",
-                "expirationDate": "2015-12-30T11:00:00.000Z",
-                "dealValue": 10000
-              }
-            ]
-          }
-          ```
-          
+- items:

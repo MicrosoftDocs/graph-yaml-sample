@@ -36,32 +36,30 @@ response:
   intro: |
     If successful, this method returns a `200 OK` response code and a collection of [deviceCompliancePolicyAssignment](xref:graph.intune_deviceconfig_devicecompliancepolicyassignment) objects in the response body.
 examples:
-  - items:
-    - Example:
-        heading: "Example"
-        request:
-            heading: "Request"
-            intro: |
-              Here is an example of the request.
-              GET https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assignments
+- items:
+  - request:
+      heading: "Request"
+      intro: |
+        Here is an example of the request.
+        GET https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assignments
 
-        response:
-            heading: "Response"
-            intro: |
-              Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-              HTTP/1.1 200 OK
-              Content-Type: application/json
-              Content-Length: 274
-              
-              {
-                "value": [
-                  {
-                    "@odata.type": "#microsoft.graph.deviceCompliancePolicyAssignment",
-                    "id": "92dc3fef-3fef-92dc-ef3f-dc92ef3fdc92",
-                    "target": {
-                      "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
-                    }
-                  }
-                ]
+    response:
+      heading: "Response"
+      intro: |
+        Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+        HTTP/1.1 200 OK
+        Content-Type: application/json
+        Content-Length: 274
+        
+        {
+          "value": [
+            {
+              "@odata.type": "#microsoft.graph.deviceCompliancePolicyAssignment",
+              "id": "92dc3fef-3fef-92dc-ef3f-dc92ef3fdc92",
+              "target": {
+                "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
               }
+            }
+          ]
+        }
 

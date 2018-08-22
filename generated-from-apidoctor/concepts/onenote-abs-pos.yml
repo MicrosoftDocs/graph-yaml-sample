@@ -31,48 +31,4 @@ permissions:
     * Notes.ReadWrite.All  
     
 examples:
-  - items:
-    - Example:
-        heading: "Example"
-        intro: |
-          The following example contains a direct `p` child, an absolute positioned div, and a non-absolute positioned div.
-        outro: |
-          #### Input HTML
-             <body data-absolute-enabled="true">
-                 <p>This content will appear in the _default div.</p>
-                 <div style="position:absolute;top:175px;left:100px" data-id="div1">
-                   <p>This content will appear in an absolute positioned div.</p>
-                 </div>
-                 <div>
-                     <p>This content will also appear in the _default div.</p>
-                 </div>
-             </body>
-
-          The API renders the non-absolute positioned div in the default div. Note that the nested `<div>` tags are discarded because they do not define any semantic information (such as `data-id`).
-    - Example:
-        heading: "Example"
-        intro: |
-          The following example creates a page that contains one absolute positioned div and one absolute positioned image.
-        outro: |
-          #### Input HTML
-          <html>
-              <head>
-                  <title>Page Title</title>
-              </head>
-              <body data-absolute-enabled="true">
-                  <div style="position:absolute;width:280px;top:120px;left:68px">
-                      <p>Some text</p>
-                      <img style="width:120px" src="http://officeimg.vo.msecnd.net/en-us/files/018/949/ZA103278226.png" />
-                      <div>
-                          <p>More text inside a regular, nested div</p>
-                      </div>
-                  </div>
-                  <img style="position:absolute;width:360px;top:350px;left:300px" src="http://officeimg.vo.msecnd.net/en-us/files/018/949/ZA103278226.png" />
-              </body>
-          </html>
-
-          The OneNote API evaluates the input HTML and preserves all semantic content and any structural information that is supported by OneNote. The resulting page renders as shown in the following image (but without the visible borders for the div and image). 
-          ![Resulting page with absolute positioned div and image](images/abs-pos.PNG)
-          Notice the changes to the non-contributing, nested div from the input HTML. The API preserves the div's content but discards the `<div>` tags because the div doesn't define semantic information (such as `data-id`).
-          For more information about how the OneNote API handles input and output HTML, see [Input and output HTML for OneNote pages](xref:graph.onenote_input_output_html).
-          <a name="style-attributes"></a>
+- items:

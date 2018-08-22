@@ -76,58 +76,56 @@ response:
     - [Using Delta Query](xref:graph.delta_query_overview) for more details.</br>
     - [Get incremental changes for groups](xref:graph.delta_query_groups) for a more detailed walkthrough.</br>
 examples:
-  - items:
-    - Example:
-        heading: "Example"
-        request:
-            heading: "Request"
-            intro: |
-              The following is an example of the request.
-            sampleCode: |
-              ```http
-              GET https://graph.microsoft.com/v1.0/groups/delta
-              ```
-              
-        response:
-            heading: "Response"
-            intro: |
-              The following is an example of the response.
-              
-            sampleCode: |
-              ```http
-              HTTP/1.1 200 OK
-              Content-type: application/json
-              
-              {
-                "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups","@odata.nextLink":"https://graph.microsoft.com/v1.0/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjvY1FSSc_",
-                "value":[
-                  {
-                    "classification": "classification-value",
-                    "createdDateTime":"datetime-value",
-                    "description":"Test group 1",
-                    "displayName":"TestGroup1",
-                    "groupTypes": [
-                      "groupTypes-value"
-                    ],
-                    "mail": "mail-value",
-                    "members@delta": [
-                             {
-                                 "@odata.type": "#microsoft.graph.user",
-                                 "id": "693acd06-2877-4339-8ade-b704261fe7a0"
-                             },
-                             {
-                                 "@odata.type": "#microsoft.graph.user",
-                                 "id": "49320844-be99-4164-8167-87ff5d047ace"
-                             }
-                    ]
-                  }
-                ]
-              }
-              ```
-              
-            outro: |
-              ## See also
-              
-              * [Using Delta Query](xref:graph.delta_query_overview) for more details.
-              * [Get incremental changes for groups](xref:graph.delta_query_groups) for a more detailed walkthrough.
-              
+- items:
+  - request:
+      heading: "Request"
+      intro: |
+        The following is an example of the request.
+      sampleCode: |
+        ```http
+        GET https://graph.microsoft.com/v1.0/groups/delta
+        ```
+        
+    response:
+      heading: "Response"
+      intro: |
+        The following is an example of the response.
+        
+      sampleCode: |
+        ```http
+        HTTP/1.1 200 OK
+        Content-type: application/json
+        
+        {
+          "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups","@odata.nextLink":"https://graph.microsoft.com/v1.0/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjvY1FSSc_",
+          "value":[
+            {
+              "classification": "classification-value",
+              "createdDateTime":"datetime-value",
+              "description":"Test group 1",
+              "displayName":"TestGroup1",
+              "groupTypes": [
+                "groupTypes-value"
+              ],
+              "mail": "mail-value",
+              "members@delta": [
+                       {
+                           "@odata.type": "#microsoft.graph.user",
+                           "id": "693acd06-2877-4339-8ade-b704261fe7a0"
+                       },
+                       {
+                           "@odata.type": "#microsoft.graph.user",
+                           "id": "49320844-be99-4164-8167-87ff5d047ace"
+                       }
+              ]
+            }
+          ]
+        }
+        ```
+        
+      outro: |
+        ## See also
+        
+        * [Using Delta Query](xref:graph.delta_query_overview) for more details.
+        * [Get incremental changes for groups](xref:graph.delta_query_groups) for a more detailed walkthrough.
+        

@@ -40,34 +40,32 @@ response:
   intro: |
     If successful, this method returns a `200 OK` response code and [deviceComplianceUserOverview](xref:graph.intune_deviceconfig_devicecomplianceuseroverview) object in the response body.
 examples:
-  - items:
-    - Example:
-        heading: "Example"
-        request:
-            heading: "Request"
-            intro: |
-              Here is an example of the request.
-              GET https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/userStatusOverview
+- items:
+  - request:
+      heading: "Request"
+      intro: |
+        Here is an example of the request.
+        GET https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/userStatusOverview
 
-        response:
-            heading: "Response"
-            intro: |
-              Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-              HTTP/1.1 200 OK
-              Content-Type: application/json
-              Content-Length: 365
-              
-              {
-                "value": {
-                  "@odata.type": "#microsoft.graph.deviceComplianceUserOverview",
-                  "id": "2d4f5bf4-5bf4-2d4f-f45b-4f2df45b4f2d",
-                  "pendingCount": 12,
-                  "notApplicableCount": 2,
-                  "successCount": 12,
-                  "errorCount": 10,
-                  "failedCount": 11,
-                  "lastUpdateDateTime": "2016-12-31T23:58:21.6459442-08:00",
-                  "configurationVersion": 4
-                }
-              }
+    response:
+      heading: "Response"
+      intro: |
+        Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+        HTTP/1.1 200 OK
+        Content-Type: application/json
+        Content-Length: 365
+        
+        {
+          "value": {
+            "@odata.type": "#microsoft.graph.deviceComplianceUserOverview",
+            "id": "2d4f5bf4-5bf4-2d4f-f45b-4f2df45b4f2d",
+            "pendingCount": 12,
+            "notApplicableCount": 2,
+            "successCount": 12,
+            "errorCount": 10,
+            "failedCount": 11,
+            "lastUpdateDateTime": "2016-12-31T23:58:21.6459442-08:00",
+            "configurationVersion": 4
+          }
+        }
 

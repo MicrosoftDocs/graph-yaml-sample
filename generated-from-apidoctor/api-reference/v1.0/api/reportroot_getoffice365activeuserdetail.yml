@@ -77,36 +77,34 @@ response:
     * Assigned Products
     
 examples:
-  - items:
-    - Example:
-        heading: "Example"
-        request:
-            heading: "Request"
-            intro: |
-              The following is an example of the request.
-            sampleCode: |
-              ```http
-              GET https://graph.microsoft.com/v1.0/reports/getOffice365ActiveUserDetail(period='D7')
-              ```
-              
-        response:
-            heading: "Response"
-            intro: |
-              The following is an example of the response.
-            sampleCode: |
-              ```http
-              HTTP/1.1 302 Found
-              Content-Type: text/plain
-              Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
-              ```
-              
-            outro: |
-              Follow the 302 redirection and the CSV file that downloads will have the following schema.
-              
-              ```http
-              HTTP/1.1 200 OK
-              Content-Type: application/octet-stream
-              
-              Report Refresh Date,User Principal Name,Display Name,Is Deleted,Deleted Date,Has Exchange License,Has OneDrive License,Has SharePoint License,Has Skype For Business License,Has Yammer License,Has Teams License,Exchange Last Activity Date,OneDrive Last Activity Date,SharePoint Last Activity Date,Skype For Business Last Activity Date,Yammer Last Activity Date,Teams Last Activity Date,Exchange License Assign Date,OneDrive License Assign Date,SharePoint License Assign Date,Skype For Business License Assign Date,Yammer License Assign Date,Teams License Assign Date,Assigned Products
-              ```
-              
+- items:
+  - request:
+      heading: "Request"
+      intro: |
+        The following is an example of the request.
+      sampleCode: |
+        ```http
+        GET https://graph.microsoft.com/v1.0/reports/getOffice365ActiveUserDetail(period='D7')
+        ```
+        
+    response:
+      heading: "Response"
+      intro: |
+        The following is an example of the response.
+      sampleCode: |
+        ```http
+        HTTP/1.1 302 Found
+        Content-Type: text/plain
+        Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
+        ```
+        
+      outro: |
+        Follow the 302 redirection and the CSV file that downloads will have the following schema.
+        
+        ```http
+        HTTP/1.1 200 OK
+        Content-Type: application/octet-stream
+        
+        Report Refresh Date,User Principal Name,Display Name,Is Deleted,Deleted Date,Has Exchange License,Has OneDrive License,Has SharePoint License,Has Skype For Business License,Has Yammer License,Has Teams License,Exchange Last Activity Date,OneDrive Last Activity Date,SharePoint Last Activity Date,Skype For Business Last Activity Date,Yammer Last Activity Date,Teams Last Activity Date,Exchange License Assign Date,OneDrive License Assign Date,SharePoint License Assign Date,Skype For Business License Assign Date,Yammer License Assign Date,Teams License Assign Date,Assigned Products
+        ```
+        

@@ -41,29 +41,27 @@ response:
   intro: |
     If successful, this method returns a `200 OK` response code and [deviceCategory](xref:graph.intune_shared_devicecategory) object in the response body.
 examples:
-  - items:
-    - Example:
-        heading: "Example"
-        request:
-            heading: "Request"
-            intro: |
-              Here is an example of the request.
-              GET https://graph.microsoft.com/beta/deviceManagement/deviceCategories/{deviceCategoryId}
+- items:
+  - request:
+      heading: "Request"
+      intro: |
+        Here is an example of the request.
+        GET https://graph.microsoft.com/beta/deviceManagement/deviceCategories/{deviceCategoryId}
 
-        response:
-            heading: "Response"
-            intro: |
-              Here is an example of the response. Note: The response object shown here may be truncated for brevity. Properties returned from an actual call vary according to context.
-              HTTP/1.1 200 OK
-              Content-Type: application/json
-              Content-Length: 211
-              
-              {
-                "value": {
-                  "@odata.type": "#microsoft.graph.deviceCategory",
-                  "id": "f881b841-b841-f881-41b8-81f841b881f8",
-                  "displayName": "Display Name value",
-                  "description": "Description value"
-                }
-              }
+    response:
+      heading: "Response"
+      intro: |
+        Here is an example of the response. Note: The response object shown here may be truncated for brevity. Properties returned from an actual call vary according to context.
+        HTTP/1.1 200 OK
+        Content-Type: application/json
+        Content-Length: 211
+        
+        {
+          "value": {
+            "@odata.type": "#microsoft.graph.deviceCategory",
+            "id": "f881b841-b841-f881-41b8-81f841b881f8",
+            "displayName": "Display Name value",
+            "description": "Description value"
+          }
+        }
 

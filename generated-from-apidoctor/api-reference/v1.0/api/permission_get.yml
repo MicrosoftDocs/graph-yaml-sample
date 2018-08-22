@@ -46,39 +46,37 @@ response:
   intro: |
     If successful, this method returns a `200 OK` response code and [Permission](xref:graph.permission) resource in the response body.
 examples:
-  - items:
-    - Example:
-        heading: "Example"
-        request:
-            heading: "Request"
-            intro: |
-              Here is an example of the request to access a permission on a folder.
-            sampleCode: |
-              ```http
-              GET /me/drive/items/{item-id}/permissions/{perm-id}
-              ```
-              
-        response:
-            heading: "Response"
-            intro: |
-              If successful, this method returns a [Permission](xref:graph.permission) resource for the specified ID. 
-            sampleCode: |
-              ```http
-              HTTP/1.1 200 OK
-              Content-type: application/json
-              
-              {
-                "grantedTo": {
-                  "user": {
-                    "displayName": "Ryan Gregg",
-                    "id": "efee1b77-fb3b-4f65-99d6-274c11914d12"
-                  }
-                },
-                "id": "1",
-                "roles": [ "write" ]
-              }
-              ```
-              
+- items:
+  - request:
+      heading: "Request"
+      intro: |
+        Here is an example of the request to access a permission on a folder.
+      sampleCode: |
+        ```http
+        GET /me/drive/items/{item-id}/permissions/{perm-id}
+        ```
+        
+    response:
+      heading: "Response"
+      intro: |
+        If successful, this method returns a [Permission](xref:graph.permission) resource for the specified ID. 
+      sampleCode: |
+        ```http
+        HTTP/1.1 200 OK
+        Content-type: application/json
+        
+        {
+          "grantedTo": {
+            "user": {
+              "displayName": "Ryan Gregg",
+              "id": "efee1b77-fb3b-4f65-99d6-274c11914d12"
+            }
+          },
+          "id": "1",
+          "roles": [ "write" ]
+        }
+        ```
+        
 remarks:
   heading: "Remarks"
   intro: |

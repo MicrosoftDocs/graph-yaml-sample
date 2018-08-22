@@ -53,14 +53,4 @@ response:
   intro: |
     If successful, this method returns `200 OK` response code and a collection of [timeZoneInformation](xref:graph.timezoneinformation) objects in the response body.
 examples:
-  - items:
-    - Example:
-        heading: "Example"
-        outro: |
-          ##### Request 1
-          The following example does not specify the `timeZoneStandard` parameter, and gets the list of supported time zones represented in the Windows time zone format. 
-          
-          ```http
-          GET https://graph.microsoft.com/v1.0/me/outlook/supportedTimeZones
-          ```
-          
+- items:

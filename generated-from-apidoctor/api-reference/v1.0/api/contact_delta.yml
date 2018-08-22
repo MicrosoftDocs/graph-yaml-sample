@@ -70,60 +70,58 @@ response:
   intro: |
     If successful, this method returns a `200 OK` response code and [contact](xref:graph.contact) collection object in the response body.
 examples:
-  - items:
-    - Example:
-        heading: "Example"
-        request:
-            heading: "Request"
-            intro: |
-              The following example shows how to make a single **delta** function call, use the `$select` parameter to get only 
-              each contact's **displayName** property, and limit the maximum number of contacts 
-              in the response body to 2.
-              To track changes in the contacts in a folder, you would make one or more **delta** function calls, with 
-              appropriate state tokens, to get the set of incremental changes since the last delta query. 
-              You can find a similar example that shows how to use the state tokens to track changes in the messages of a mail folder: 
-              [Get incremental changes to messages in a folder](xref:graph.delta_query_messages). The main differences
-              between tracking contacts and tracking messages in a folder are in the delta query request URLs, and the query responses 
-              returning **contact** rather than **message** collections.
-            sampleCode: |
-              ```http
-              GET https://graph.microsoft.com/v1.0/me/contactFolders/{id}/contacts/delta?$select=displayName
-              Prefer: odata.maxpagesize=2
-              ```
-              
-        response:
-            heading: "Response"
-            intro: |
-              If the request is successful, the response would include a state token, which is either a _skipToken_  
-              (in an _@odata.nextLink_ response header) or a _deltaToken_ (in an _@odata.deltaLink_ response header). 
-              Respectively, they indicate whether you should continue with the round or you have completed 
-              getting all the changes for that round.
-              The response below shows a _skipToken_ in an _@odata.nextLink_ response header.
-              Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-            sampleCode: |
-              ```http
-              HTTP/1.1 200 OK
-              Content-type: application/json
-              Content-length: 337
-              
-              {
-                "@odata.nextLink":"https://graph.microsoft.com/v1.0/me/contactfolders('{id}')/contacts/delta?$skiptoken={_skipToken_}",
-                "value": [
-                  {
-                    "parentFolderId": "parentFolderId-value",
-                    "birthday": "2016-10-19T10:37:00Z",
-                    "fileAs": "fileAs-value",
-                    "displayName": "displayName-value",
-                    "givenName": "givenName-value",
-                    "initials": "initials-value"
-                  }
-                ]
-              }
-              ```
-              
-            outro: |
-              ### See also
-              
-              * [Use delta query to track changes in Microsoft Graph data](xref:graph.delta_query_overview)
-              * [Get incremental changes to messages in a folder](xref:graph.delta_query_messages)
-              
+- items:
+  - request:
+      heading: "Request"
+      intro: |
+        The following example shows how to make a single **delta** function call, use the `$select` parameter to get only 
+        each contact's **displayName** property, and limit the maximum number of contacts 
+        in the response body to 2.
+        To track changes in the contacts in a folder, you would make one or more **delta** function calls, with 
+        appropriate state tokens, to get the set of incremental changes since the last delta query. 
+        You can find a similar example that shows how to use the state tokens to track changes in the messages of a mail folder: 
+        [Get incremental changes to messages in a folder](xref:graph.delta_query_messages). The main differences
+        between tracking contacts and tracking messages in a folder are in the delta query request URLs, and the query responses 
+        returning **contact** rather than **message** collections.
+      sampleCode: |
+        ```http
+        GET https://graph.microsoft.com/v1.0/me/contactFolders/{id}/contacts/delta?$select=displayName
+        Prefer: odata.maxpagesize=2
+        ```
+        
+    response:
+      heading: "Response"
+      intro: |
+        If the request is successful, the response would include a state token, which is either a _skipToken_  
+        (in an _@odata.nextLink_ response header) or a _deltaToken_ (in an _@odata.deltaLink_ response header). 
+        Respectively, they indicate whether you should continue with the round or you have completed 
+        getting all the changes for that round.
+        The response below shows a _skipToken_ in an _@odata.nextLink_ response header.
+        Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+      sampleCode: |
+        ```http
+        HTTP/1.1 200 OK
+        Content-type: application/json
+        Content-length: 337
+        
+        {
+          "@odata.nextLink":"https://graph.microsoft.com/v1.0/me/contactfolders('{id}')/contacts/delta?$skiptoken={_skipToken_}",
+          "value": [
+            {
+              "parentFolderId": "parentFolderId-value",
+              "birthday": "2016-10-19T10:37:00Z",
+              "fileAs": "fileAs-value",
+              "displayName": "displayName-value",
+              "givenName": "givenName-value",
+              "initials": "initials-value"
+            }
+          ]
+        }
+        ```
+        
+      outro: |
+        ### See also
+        
+        * [Use delta query to track changes in Microsoft Graph data](xref:graph.delta_query_overview)
+        * [Get incremental changes to messages in a folder](xref:graph.delta_query_messages)
+        

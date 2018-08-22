@@ -49,79 +49,77 @@ response:
   intro: |
     If successful, this method returns a `201 Created` response code and the new [page](xref:graph.page) object in the response body.
 examples:
-  - items:
-    - Example:
-        heading: "Example"
-        request:
-            heading: "Request"
-            intro: |
-              Here is an example of the request.
-              In the `../onenote/pages` path, you can use the `sectionName` query parameter to create a page in a specific section in the default notebook. Example: `../onenote/pages?sectionName=My%20section`. If the section doesn't exist (or was renamed), the API will create a new section.
-            sampleCode: |
-              ```http
-              POST https://graph.microsoft.com/v1.0/me/onenote/pages
-              Content-length: 312
-              Content-type: multipart/form-data; boundary=MyPartBoundary198374
-              
-              --MyPartBoundary198374
-              Content-Disposition:form-data; name="Presentation"
-              Content-Type:text/html
-              
-              <!DOCTYPE html>
-              <html>
-                <head>
-                  <title>A page with <i>rendered</i> images and an <b>attached</b> file</title>
-                  <meta name="created" content="2015-07-22T09:00:00-08:00" />
-                </head>
-                <body>
-                  <p>Here's an image from an online source:</p>
-                  <img src="http://..." alt="an image on the page" width="500" />
-                  <p>Here's an image uploaded as binary data:</p>
-                  <img src="name:imageBlock1" alt="an image on the page" width="300" />
-                  <p>Here's a file attachment:</p>
-                  <object data-attachment="FileName.pdf" data="name:fileBlock1" type="application/pdf" />
-                </body>
-              </html>
-              
-              --MyPartBoundary198374
-              Content-Disposition:form-data; name="imageBlock1"
-              Content-Type:image/jpeg
-              
-              ... binary image data ...
-              
-              --MyPartBoundary198374
-              Content-Disposition:form-data; name="fileBlock1"
-              Content-Type:application/pdf
-              
-              ... binary file data ...
-              
-              --MyPartBoundary198374--
-              ```
-              
-        response:
-            heading: "Response"
-            intro: |
-              Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.
-            sampleCode: |
-              ```http
-              HTTP/1.1 200 OK
-              Content-type: application/json
-              Content-length: 312
-              
-              {
-                "title": "title-value",
-                "createdByAppId": "createdByAppId-value",
-                "links": {
-                  "oneNoteClientUrl": {
-                    "href": "href-value"
-                  },
-                  "oneNoteWebUrl": {
-                    "href": "href-value"
-                  }
-                },
-                "contentUrl": "contentUrl-value",
-                "content": "content-value",
-                "lastModifiedDateTime": "2016-10-19T10:37:00Z"
-              }
-              ```
-              
+- items:
+  - request:
+      heading: "Request"
+      intro: |
+        Here is an example of the request.
+        In the `../onenote/pages` path, you can use the `sectionName` query parameter to create a page in a specific section in the default notebook. Example: `../onenote/pages?sectionName=My%20section`. If the section doesn't exist (or was renamed), the API will create a new section.
+      sampleCode: |
+        ```http
+        POST https://graph.microsoft.com/v1.0/me/onenote/pages
+        Content-length: 312
+        Content-type: multipart/form-data; boundary=MyPartBoundary198374
+        
+        --MyPartBoundary198374
+        Content-Disposition:form-data; name="Presentation"
+        Content-Type:text/html
+        
+        <!DOCTYPE html>
+        <html>
+          <head>
+            <title>A page with <i>rendered</i> images and an <b>attached</b> file</title>
+            <meta name="created" content="2015-07-22T09:00:00-08:00" />
+          </head>
+          <body>
+            <p>Here's an image from an online source:</p>
+            <img src="http://..." alt="an image on the page" width="500" />
+            <p>Here's an image uploaded as binary data:</p>
+            <img src="name:imageBlock1" alt="an image on the page" width="300" />
+            <p>Here's a file attachment:</p>
+            <object data-attachment="FileName.pdf" data="name:fileBlock1" type="application/pdf" />
+          </body>
+        </html>
+        
+        --MyPartBoundary198374
+        Content-Disposition:form-data; name="imageBlock1"
+        Content-Type:image/jpeg
+        
+        ... binary image data ...
+        
+        --MyPartBoundary198374
+        Content-Disposition:form-data; name="fileBlock1"
+        Content-Type:application/pdf
+        
+        ... binary file data ...
+        
+        --MyPartBoundary198374--
+        ```
+        
+    response:
+      heading: "Response"
+      intro: |
+        Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.
+      sampleCode: |
+        ```http
+        HTTP/1.1 200 OK
+        Content-type: application/json
+        Content-length: 312
+        
+        {
+          "title": "title-value",
+          "createdByAppId": "createdByAppId-value",
+          "links": {
+            "oneNoteClientUrl": {
+              "href": "href-value"
+            },
+            "oneNoteWebUrl": {
+              "href": "href-value"
+            }
+          },
+          "contentUrl": "contentUrl-value",
+          "content": "content-value",
+          "lastModifiedDateTime": "2016-10-19T10:37:00Z"
+        }
+        ```
+        

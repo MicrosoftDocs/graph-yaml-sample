@@ -41,35 +41,4 @@ permissions:
     * Notes.ReadWrite.All 
     
 examples:
-  - items:
-    - Example:
-        heading: "Example"
-        intro: |
-          In the input HTML of your request, include `<iframe data-original-src="http://..." />` and specify the URL of the video for the **data-original-src** attribute.
-          Content-Type: multipart/form-data; boundary=MyAppPartBoundary
-          Authorization: Bearer {access-token}
-          
-          --MyAppPartBoundary
-          Content-Disposition: form-data; name="Presentation"
-          Content-Type: text/html
-          
-          <!DOCTYPE html>
-          <html>
-              <head>
-                  <title>A page with an embedded video</title>
-              </head>
-              <body>
-                  <iframe data-original-src="https://www.youtube.com/watch?v=3Ztr44aKmQ8" width="340" height="280"/>
-              </body>
-          </html>
-          
-          --MyAppPartBoundary--
-
-          <a name="adding-files"></a>
-        outro: |
-          ## Adding files
-          You can add file attachments to OneNote pages using an **object** element in the input HTML. If you're adding a PDF file, you can use an **img** element to render the PDF pages as images. 
-          [Add a file attachment](#add-a-file-attachment)
-          Use `<object .../>` and send the file in a data part of a multipart request. Adds a file attachment that displays a file icon on the OneNote page.
-          [Add images of PDF file contents](#add-images-of-pdf-file-contents)
-          Use `<img data-render-src="name:part-name" />` and send a PDF file in the data part of a multipart request. Renders each PDF page as a separate image on the OneNote page.
+- items:

@@ -32,22 +32,7 @@ examples:
           "interval": 3
         }
 
-  - items:
-    - Example:
-        heading: "Example"
-        intro: |
-          * Repeat this event on April 15 every year
-          
-              "pattern": {
-                "type": "absoluteYearly",
-                "interval": 1,
-                "dayOfMonth": 15,
-                "month": 4
-              }
-
-        outro: |
-          ### Relative yearly
-          The relative yearly pattern causes an event to repeat on the same day of the week in the same relative position in a specific month, based on the number of years between each occurrence. For example, "every last Wednesday of November."
+- items:
   outro: |
     ### Weekly
     The weekly recurrence pattern causes an event to repeat on the same day or days of the week, based on the number of weeks between each set of occurrences.

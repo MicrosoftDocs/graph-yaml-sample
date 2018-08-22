@@ -40,45 +40,43 @@ response:
   intro: |
     If successful, this method returns a `200 OK` response code and [deviceEnrollmentWindowsHelloForBusinessConfiguration](xref:graph.intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration) object in the response body.
 examples:
-  - items:
-    - Example:
-        heading: "Example"
-        request:
-            heading: "Request"
-            intro: |
-              Here is an example of the request.
-              GET https://graph.microsoft.com/v1.0/deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurationId}
+- items:
+  - request:
+      heading: "Request"
+      intro: |
+        Here is an example of the request.
+        GET https://graph.microsoft.com/v1.0/deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurationId}
 
-        response:
-            heading: "Response"
-            intro: |
-              Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-              HTTP/1.1 200 OK
-              Content-Type: application/json
-              Content-Length: 860
-              
-              {
-                "value": {
-                  "@odata.type": "#microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration",
-                  "id": "3068e0cd-e0cd-3068-cde0-6830cde06830",
-                  "displayName": "Display Name value",
-                  "description": "Description value",
-                  "priority": 8,
-                  "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
-                  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-                  "version": 7,
-                  "pinMinimumLength": 0,
-                  "pinMaximumLength": 0,
-                  "pinUppercaseCharactersUsage": "required",
-                  "pinLowercaseCharactersUsage": "required",
-                  "pinSpecialCharactersUsage": "required",
-                  "state": "enabled",
-                  "securityDeviceRequired": true,
-                  "unlockWithBiometricsEnabled": true,
-                  "remotePassportEnabled": true,
-                  "pinPreviousBlockCount": 5,
-                  "pinExpirationInDays": 3,
-                  "enhancedBiometricsState": "enabled"
-                }
-              }
+    response:
+      heading: "Response"
+      intro: |
+        Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+        HTTP/1.1 200 OK
+        Content-Type: application/json
+        Content-Length: 860
+        
+        {
+          "value": {
+            "@odata.type": "#microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration",
+            "id": "3068e0cd-e0cd-3068-cde0-6830cde06830",
+            "displayName": "Display Name value",
+            "description": "Description value",
+            "priority": 8,
+            "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
+            "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+            "version": 7,
+            "pinMinimumLength": 0,
+            "pinMaximumLength": 0,
+            "pinUppercaseCharactersUsage": "required",
+            "pinLowercaseCharactersUsage": "required",
+            "pinSpecialCharactersUsage": "required",
+            "state": "enabled",
+            "securityDeviceRequired": true,
+            "unlockWithBiometricsEnabled": true,
+            "remotePassportEnabled": true,
+            "pinPreviousBlockCount": 5,
+            "pinExpirationInDays": 3,
+            "enhancedBiometricsState": "enabled"
+          }
+        }
 

@@ -29,30 +29,28 @@ section:
     GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}?expand=fields(select=Column1,Column2)
 
 examples:
-  - items:
-    - Example:
-        heading: "Example"
-        request:
-            heading: "Request"
-            sampleCode: |
-              ```http
-              GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}?expand=fields
-              ```
-              
-        response:
-            heading: "Response"
-            sampleCode: |
-              ```json
-              HTTP/1.1 200 OK
-              Content-type: application/json
-              
-              {
-                "id": "5",
-                "fields": {
-                  "Name": "Widget",
-                  "Color": "Blue",
-                  "Quantity": 2357
-                  }
-              }
-              ```
-              
+- items:
+  - request:
+      heading: "Request"
+      sampleCode: |
+        ```http
+        GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}?expand=fields
+        ```
+        
+    response:
+      heading: "Response"
+      sampleCode: |
+        ```json
+        HTTP/1.1 200 OK
+        Content-type: application/json
+        
+        {
+          "id": "5",
+          "fields": {
+            "Name": "Widget",
+            "Color": "Blue",
+            "Quantity": 2357
+            }
+        }
+        ```
+        

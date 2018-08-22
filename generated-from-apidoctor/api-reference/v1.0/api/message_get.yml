@@ -80,44 +80,42 @@ response:
   intro: |
     If successful, this method returns a `200 OK` response code and [message](xref:graph.message) object in the response body.
 examples:
-  - items:
-    - Example:
-        heading: "Example"
-        request:
-            heading: "Request"
-            intro: |
-              Here is an example of the request.
-            sampleCode: |
-              ```http
-              GET https://graph.microsoft.com/v1.0/me/messages/{id}
-              ```
-              
-        response:
-            heading: "Response"
-            intro: |
-              Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-            sampleCode: |
-              ```http
-              HTTP/1.1 200 OK
-              Content-type: application/json
-              Content-length: 248
-              
-              {
-                "receivedDateTime": "datetime-value",
-                "sentDateTime": "datetime-value",
-                "hasAttachments": true,
-                "subject": "subject-value",
-                "body": {
-                  "contentType": "html",
-                  "content": "content-value"
-                },
-                "bodyPreview": "bodyPreview-value"
-              }
-              ```
-              
-            outro: |
-              ## See also
-              
-              * [Add custom data to resources using extensions](xref:graph.extensibility_overview)
-              * [Add custom data to users using open extensions (preview)](xref:graph.extensibility_open_users)
-              
+- items:
+  - request:
+      heading: "Request"
+      intro: |
+        Here is an example of the request.
+      sampleCode: |
+        ```http
+        GET https://graph.microsoft.com/v1.0/me/messages/{id}
+        ```
+        
+    response:
+      heading: "Response"
+      intro: |
+        Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+      sampleCode: |
+        ```http
+        HTTP/1.1 200 OK
+        Content-type: application/json
+        Content-length: 248
+        
+        {
+          "receivedDateTime": "datetime-value",
+          "sentDateTime": "datetime-value",
+          "hasAttachments": true,
+          "subject": "subject-value",
+          "body": {
+            "contentType": "html",
+            "content": "content-value"
+          },
+          "bodyPreview": "bodyPreview-value"
+        }
+        ```
+        
+      outro: |
+        ## See also
+        
+        * [Add custom data to resources using extensions](xref:graph.extensibility_overview)
+        * [Add custom data to users using open extensions (preview)](xref:graph.extensibility_open_users)
+        

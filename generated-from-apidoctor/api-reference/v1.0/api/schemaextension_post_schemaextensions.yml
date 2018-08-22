@@ -56,39 +56,4 @@ response:
   intro: |
     If successful, this method returns `201 Created` response code and [schemaExtension](xref:graph.schemaextension) object in the response body.
 examples:
-  - items:
-    - Example:
-        heading: "Example"
-        outro: |
-          ##### Request 1
-          The first example shows using a verified domain name, `graphlearn`, and a schema name, `courses`, to form a unique string for the **id** property of the 
-          schema extension definition. The unique string is based on this format, \{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}.
-          In the request body, supply a JSON representation of the [schemaExtension](xref:graph.schemaextension) object.
-          
-          ```http
-          POST https://graph.microsoft.com/v1.0/schemaExtensions
-          Content-type: application/json
-          
-          {
-              "id":"graphlearn_courses",
-              "description": "Graph Learn training courses extensions",
-              "targetTypes": [
-                  "Group"
-              ],
-              "properties": [
-                  {
-                      "name": "courseId",
-                      "type": "Integer"
-                  },
-                  {
-                      "name": "courseName",
-                      "type": "String"
-                  },
-                  {
-                      "name": "courseType",
-                      "type": "String"
-                  }
-              ]
-          }
-          ```
-          
+- items:

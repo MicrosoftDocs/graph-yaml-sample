@@ -47,48 +47,46 @@ response:
   intro: |
     If successful, this method returns a `200 OK` response code and [schemaExtension](xref:graph.schemaextension) object in the response body.
 examples:
-  - items:
-    - Example:
-        heading: "Example"
-        request:
-            heading: "Request"
-            intro: |
-              Here is an example of the request.
-            sampleCode: |
-              ```http
-              GET https://graph.microsoft.com/v1.0/schemaExtensions/graphlearn_test
-              ```
-              
-        response:
-            heading: "Response"
-            intro: |
-              Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-            sampleCode: |
-              ```http
-              HTTP/1.1 200 OK
-              Content-type: application/json
-              Content-length: 201
-              
-              {
-                  "id":"graphlearn_test",
-                  "description": "Yet another test schema",
-                  "targetTypes": [
-                      "User", "Group"
-                  ],
-                  "status": "InDevelopment",
-                  "owner": "24d3b144-21ae-4080-943f-7067b395b913",
-                  "properties": [
-                      {
-                          "name": "testName",
-                          "type": "String"
-                      }
-                  ]
-              }
-              ```
-              
-            outro: |
-              ## See also
-              
-              * [Add custom data to resources using extensions](xref:graph.extensibility_overview)
-              * [Add custom data to groups using schema extensions](xref:graph.extensibility_schema_groups)
-              
+- items:
+  - request:
+      heading: "Request"
+      intro: |
+        Here is an example of the request.
+      sampleCode: |
+        ```http
+        GET https://graph.microsoft.com/v1.0/schemaExtensions/graphlearn_test
+        ```
+        
+    response:
+      heading: "Response"
+      intro: |
+        Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+      sampleCode: |
+        ```http
+        HTTP/1.1 200 OK
+        Content-type: application/json
+        Content-length: 201
+        
+        {
+            "id":"graphlearn_test",
+            "description": "Yet another test schema",
+            "targetTypes": [
+                "User", "Group"
+            ],
+            "status": "InDevelopment",
+            "owner": "24d3b144-21ae-4080-943f-7067b395b913",
+            "properties": [
+                {
+                    "name": "testName",
+                    "type": "String"
+                }
+            ]
+        }
+        ```
+        
+      outro: |
+        ## See also
+        
+        * [Add custom data to resources using extensions](xref:graph.extensibility_overview)
+        * [Add custom data to groups using schema extensions](xref:graph.extensibility_schema_groups)
+        

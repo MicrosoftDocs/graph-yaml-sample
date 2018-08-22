@@ -36,22 +36,11 @@ relationships:
   intro: |
     None
 examples:
-  - items:
-    - Example:
-        heading: "Example"
-        intro: |
-          ```json
-          HTTP/1.1 200 OK
-          Content-Type: application/json
-          
-          {
-          }
-          ```
-          
-        request:
-            heading: "request"
-            sampleCode: |
-              ```http
-              GET https://graph.microsoft.com/v1.0/reports
-              ```
-              
+- items:
+  - request:
+      heading: "request"
+      sampleCode: |
+        ```http
+        GET https://graph.microsoft.com/v1.0/reports
+        ```
+        

@@ -34,30 +34,4 @@ summary:
     See the [example](#example-to-synchronize-messages-in-a-folder) below to learn how to use the `nextLink` and
     `deltaLink` URLs.
 examples:
-  - items:
-    - Example to synchronize messages in a folder:
-        heading: "Example to synchronize messages in a folder"
-        intro: |
-          The following example shows 2 rounds of synchronization of a specific folder which initially contains 5 messages.
-          The first round involves a series of 3 requests to synchronize all 5 messages in the folder:
-          
-          * [Sample initial request](#sample-initial-request) and [response](#sample-initial-response)
-          * [Sample second request](#sample-second-request) and [response](#sample-second-response)
-          * [Sample third request](#sample-third-request) and [final response](#sample-third-and-final-response)
-          
-          After the first round, one of the messages is deleted, and another is marked as read. The [second round](#synchronize-messages-in-the-same-folder-in-the-next-round) of synchronization returns only the delta (the deletion and update), without returning the other messages that have remained the same.
-        outro: |
-          ### Sample initial request
-          In this example, the specified folder is being synchronized for the first time, so the initial sync request does not include any state token.
-          This round will return all the messages in that folder.
-          The first request specifies the following:
-          
-          * A `$select` parameter to return the `subject`, `sender`, and `isRead` properties for each message in the response.
-          * The [optional request header](#optional-request-header), _odata.maxpagesize_, returning 2 messages at a time.
-          
-          
-          ```http
-          GET https://graph.microsoft.com/v1.0/me/mailfolders/AQMkADNkNAAAgEMAAAA/messages/delta?$select=subject,sender,isRead HTTP/1.1
-          Prefer: odata.maxpagesize=2
-          ```
-          
+- items:

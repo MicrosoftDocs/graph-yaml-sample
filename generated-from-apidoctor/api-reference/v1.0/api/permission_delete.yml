@@ -46,25 +46,21 @@ response:
   intro: |
     If successful, this method returns `204 No Content` response code.
 examples:
-  - items:
-    - Example:
-        heading: "Example"
-        intro: |
-          This example removes the permission identified as {perm-id} from the item {item-id} in the current user's OneDrive.
-        request:
-            heading: "request"
-            sampleCode: |
-              ```http
-              DELETE /me/drive/items/{item-id}/permissions/{perm-id}
-              ```
-              
-        response:
-            heading: "Response"
-            sampleCode: |
-              ```http
-              HTTP/1.1 204 No Content
-              ```
-              
+- items:
+  - request:
+      heading: "request"
+      sampleCode: |
+        ```http
+        DELETE /me/drive/items/{item-id}/permissions/{perm-id}
+        ```
+        
+    response:
+      heading: "Response"
+      sampleCode: |
+        ```http
+        HTTP/1.1 204 No Content
+        ```
+        
 remarks:
   heading: "Remarks"
   intro: |

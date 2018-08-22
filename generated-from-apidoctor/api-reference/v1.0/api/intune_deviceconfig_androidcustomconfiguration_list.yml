@@ -36,43 +36,41 @@ response:
   intro: |
     If successful, this method returns a `200 OK` response code and a collection of [androidCustomConfiguration](xref:graph.intune_deviceconfig_androidcustomconfiguration) objects in the response body.
 examples:
-  - items:
-    - Example:
-        heading: "Example"
-        request:
-            heading: "Request"
-            intro: |
-              Here is an example of the request.
-              GET https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations
+- items:
+  - request:
+      heading: "Request"
+      intro: |
+        Here is an example of the request.
+        GET https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations
 
-        response:
-            heading: "Response"
-            intro: |
-              Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-              HTTP/1.1 200 OK
-              Content-Type: application/json
-              Content-Length: 671
-              
-              {
-                "value": [
-                  {
-                    "@odata.type": "#microsoft.graph.androidCustomConfiguration",
-                    "id": "619b5e6d-5e6d-619b-6d5e-9b616d5e9b61",
-                    "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-                    "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
-                    "description": "Description value",
-                    "displayName": "Display Name value",
-                    "version": 7,
-                    "omaSettings": [
-                      {
-                        "@odata.type": "microsoft.graph.omaSettingInteger",
-                        "displayName": "Display Name value",
-                        "description": "Description value",
-                        "omaUri": "Oma Uri value",
-                        "value": 5
-                      }
-                    ]
-                  }
-                ]
-              }
+    response:
+      heading: "Response"
+      intro: |
+        Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+        HTTP/1.1 200 OK
+        Content-Type: application/json
+        Content-Length: 671
+        
+        {
+          "value": [
+            {
+              "@odata.type": "#microsoft.graph.androidCustomConfiguration",
+              "id": "619b5e6d-5e6d-619b-6d5e-9b616d5e9b61",
+              "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+              "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
+              "description": "Description value",
+              "displayName": "Display Name value",
+              "version": 7,
+              "omaSettings": [
+                {
+                  "@odata.type": "microsoft.graph.omaSettingInteger",
+                  "displayName": "Display Name value",
+                  "description": "Description value",
+                  "omaUri": "Oma Uri value",
+                  "value": 5
+                }
+              ]
+            }
+          ]
+        }
 

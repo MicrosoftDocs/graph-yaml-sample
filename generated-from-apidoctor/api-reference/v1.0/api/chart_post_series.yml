@@ -43,38 +43,36 @@ response:
   intro: |
     If successful, this method returns `201 Created` response code and [WorkbookChartSeries](xref:graph.chartseries) object in the response body.
 examples:
-  - items:
-    - Example:
-        heading: "Example"
-        request:
-            heading: "Request"
-            intro: |
-              Here is an example of the request.
-            sampleCode: |
-              ```http
-              POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/series
-              Content-type: application/json
-              Content-length: 26
-              
-              {
-                "name": "name-value"
-              }
-              ```
-              
-            outro: |
-              In the request body, supply a JSON representation of [WorkbookChartSeries](xref:graph.chartseries) object.
-        response:
-            heading: "Response"
-            intro: |
-              Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-            sampleCode: |
-              ```http
-              HTTP/1.1 201 Created
-              Content-type: application/json
-              Content-length: 26
-              
-              {
-                "name": "name-value"
-              }
-              ```
-              
+- items:
+  - request:
+      heading: "Request"
+      intro: |
+        Here is an example of the request.
+      sampleCode: |
+        ```http
+        POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/series
+        Content-type: application/json
+        Content-length: 26
+        
+        {
+          "name": "name-value"
+        }
+        ```
+        
+      outro: |
+        In the request body, supply a JSON representation of [WorkbookChartSeries](xref:graph.chartseries) object.
+    response:
+      heading: "Response"
+      intro: |
+        Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+      sampleCode: |
+        ```http
+        HTTP/1.1 201 Created
+        Content-type: application/json
+        Content-length: 26
+        
+        {
+          "name": "name-value"
+        }
+        ```
+        

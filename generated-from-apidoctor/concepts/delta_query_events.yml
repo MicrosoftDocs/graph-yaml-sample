@@ -43,32 +43,4 @@ summary:
     See the [example](#example-to-synchronize-events-in-a-calendar-view) below to learn how to use these `nextLink` and 
     `deltaLink` URLs.
 examples:
-  - items:
-    - Example to synchronize events in a calendar view:
-        heading: "Example to synchronize events in a calendar view"
-        intro: |
-          The following example shows a series of 3 requests to synchronize the user's default calendar in a specific time range. 
-          There are 5 events in that calendar view.
-          
-          * [Step 1: sample initial request](#step-1-sample-initial-request) and [response](#sample-initial-response)
-          * [Step 2: sample second request](#step-2-sample-second-request) and [response](#sample-second-response)
-          * [Step 3: sample third request](#step-3-sample-third-request) and [final response](#sample-third-and-final-response)
-          
-          For brevity, the sample responses show only a subset of the properties for an event. In an actual call, most event properties
-          are returned. 
-          See also what you'll do in the [next round](#the-next-round-sample-first-response).
-        outro: |
-          ### Step 1: sample initial request
-          In this example, the specified calendar view is being synchronized for the first time, so the initial sync request does not include any state token. 
-          This round will return all the events in that calendar view.
-          The first request specifies the following:
-          
-          * Date/time values for the _startDateTime_ and _endDateTime_ parameters.
-          * The [optional request header](#optional-request-header), _odata.maxpagesize_, returning 2 events at a time.
-          
-          
-          ```http
-          GET https://graph.microsoft.com/v1.0/me/calendarView/delta?startdatetime=2016-12-01T00:00:00Z&enddatetime=2016-12-30T00:00:00Z HTTP/1.1
-          Prefer: odata.maxpagesize=2
-          ```
-          
+- items:

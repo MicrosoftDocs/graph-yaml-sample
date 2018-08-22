@@ -75,15 +75,4 @@ response:
     * [workingHours](xref:graph.workinghours)
     
 examples:
-  - items:
-    - Example:
-        heading: "Example"
-        outro: |
-          ##### Request 1
-          The first example gets all the mailbox settings of the signed-in user's mailbox, which include settings for time zone, automatic replies, 
-          locale (language and country/region), and working hours.
-          
-          ```http
-          GET https://graph.microsoft.com/v1.0/me/mailboxSettings
-          ```
-          
+- items:

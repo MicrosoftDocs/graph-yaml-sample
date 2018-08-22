@@ -17,25 +17,4 @@ summary:
     * A [state token](xref:graph.delta_query_overview) (*deltaToken* or *skipToken*) from the previous GET **delta** function call.
     
 examples:
-  - items:
-    - Example:
-        heading: "Example"
-        intro: |
-          The following example shows a series  requests to track changes to groups:
-          
-          1. [Initial request](#initial-request) and [response](#initial-response)
-          1. [nextLink request](#nextlink-request) and [response](#nextlink-response)
-          1. [Final nextLink request](#final-nextlink-request) and [response](#final-nextlink-response)
-          1. [deltaLink request](#deltalink-request) and [deltaLink response](#deltalink-response)
-          
-        outro: |
-          ## Initial request
-          To begin tracking changes in the group resource, you make a request including the delta function on the group resource.
-          Note the following:
-          
-          * The optional `$select` query parameter is included in the request to demonstrate how query parameters are automatically included in future requests.
-          * The optional `$expand` query parameter is included to show how group members can be retrieved together with group objects. This allows tracking of membership changes, such as when users are added or removed from groups.
-          * The initial request does not include a state token. State tokens will be used in subsequent requests.
-          
-          GET https://graph.microsoft.com/v1.0/groups/delta?$select=displayName,description&$expand=members
-
+- items:

@@ -36,48 +36,46 @@ response:
   intro: |
     If successful, this method returns a `200 OK` response code and a collection of [deviceAndAppManagementRoleDefinition](xref:graph.intune_rbac_deviceandappmanagementroledefinition) objects in the response body.
 examples:
-  - items:
-    - Example:
-        heading: "Example"
-        request:
-            heading: "Request"
-            intro: |
-              Here is an example of the request.
-              GET https://graph.microsoft.com/v1.0/deviceManagement/roleDefinitions
+- items:
+  - request:
+      heading: "Request"
+      intro: |
+        Here is an example of the request.
+        GET https://graph.microsoft.com/v1.0/deviceManagement/roleDefinitions
 
-        response:
-            heading: "Response"
-            intro: |
-              Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-              HTTP/1.1 200 OK
-              Content-Type: application/json
-              Content-Length: 768
-              
-              {
-                "value": [
-                  {
-                    "@odata.type": "#microsoft.graph.deviceAndAppManagementRoleDefinition",
-                    "id": "bca1dfb5-dfb5-bca1-b5df-a1bcb5dfa1bc",
-                    "displayName": "Display Name value",
-                    "description": "Description value",
-                    "rolePermissions": [
-                      {
-                        "@odata.type": "microsoft.graph.rolePermission",
-                        "resourceActions": [
-                          {
-                            "@odata.type": "microsoft.graph.resourceAction",
-                            "allowedResourceActions": [
-                              "Allowed Resource Actions value"
-                            ],
-                            "notAllowedResourceActions": [
-                              "Not Allowed Resource Actions value"
-                            ]
-                          }
-                        ]
-                      }
-                    ],
-                    "isBuiltIn": true
-                  }
-                ]
-              }
+    response:
+      heading: "Response"
+      intro: |
+        Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+        HTTP/1.1 200 OK
+        Content-Type: application/json
+        Content-Length: 768
+        
+        {
+          "value": [
+            {
+              "@odata.type": "#microsoft.graph.deviceAndAppManagementRoleDefinition",
+              "id": "bca1dfb5-dfb5-bca1-b5df-a1bcb5dfa1bc",
+              "displayName": "Display Name value",
+              "description": "Description value",
+              "rolePermissions": [
+                {
+                  "@odata.type": "microsoft.graph.rolePermission",
+                  "resourceActions": [
+                    {
+                      "@odata.type": "microsoft.graph.resourceAction",
+                      "allowedResourceActions": [
+                        "Allowed Resource Actions value"
+                      ],
+                      "notAllowedResourceActions": [
+                        "Not Allowed Resource Actions value"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "isBuiltIn": true
+            }
+          ]
+        }
 

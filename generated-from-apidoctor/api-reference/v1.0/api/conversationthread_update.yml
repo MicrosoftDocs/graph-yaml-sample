@@ -47,59 +47,57 @@ response:
   intro: |
     If successful, this method returns a `200 OK` response code and updated [conversationThread](xref:graph.conversationthread) object in the response body.
 examples:
-  - items:
-    - Example:
-        heading: "Example"
-        request:
-            heading: "Request"
-            intro: |
-              Here is an example of the request.
-            sampleCode: |
-              ```http
-              PATCH https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}
-              Content-type: application/json
-              Content-length: 419
-              
-              {
-                "@odata.type":"#Microsoft.OutlookServices.ConversationThread",
-                "isLocked": true
+- items:
+  - request:
+      heading: "Request"
+      intro: |
+        Here is an example of the request.
+      sampleCode: |
+        ```http
+        PATCH https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}
+        Content-type: application/json
+        Content-length: 419
+        
+        {
+          "@odata.type":"#Microsoft.OutlookServices.ConversationThread",
+          "isLocked": true
+        }
+        ```
+        
+    response:
+      heading: "Response"
+      intro: |
+        Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+      sampleCode: |
+        ```http
+        HTTP/1.1 200 OK
+        Content-type: application/json
+        Content-length: 419
+        
+        {
+          "toRecipients": [
+            {
+              "emailAddress": {
+                "name": "name-value",
+                "address": "address-value"
               }
-              ```
-              
-        response:
-            heading: "Response"
-            intro: |
-              Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-            sampleCode: |
-              ```http
-              HTTP/1.1 200 OK
-              Content-type: application/json
-              Content-length: 419
-              
-              {
-                "toRecipients": [
-                  {
-                    "emailAddress": {
-                      "name": "name-value",
-                      "address": "address-value"
-                    }
-                  }
-                ],
-                "topic": "topic-value",
-                "hasAttachments": true,
-                "lastDeliveredDateTime": "datetime-value",
-                "uniqueSenders": [
-                  "uniqueSenders-value"
-                ],
-                "ccRecipients": [
-                  {
-                    "emailAddress": {
-                      "name": "name-value",
-                      "address": "address-value"
-                    }
-                  }
-                ],
-                "isLocked": true 
+            }
+          ],
+          "topic": "topic-value",
+          "hasAttachments": true,
+          "lastDeliveredDateTime": "datetime-value",
+          "uniqueSenders": [
+            "uniqueSenders-value"
+          ],
+          "ccRecipients": [
+            {
+              "emailAddress": {
+                "name": "name-value",
+                "address": "address-value"
               }
-              ```
-              
+            }
+          ],
+          "isLocked": true 
+        }
+        ```
+        

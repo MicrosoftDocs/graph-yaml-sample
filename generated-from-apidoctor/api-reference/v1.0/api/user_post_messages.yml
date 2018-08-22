@@ -48,32 +48,4 @@ response:
   intro: |
     If successful, this method returns `201 Created` response code and [message](xref:graph.message) object in the response body.
 examples:
-  - items:
-    - Example:
-        heading: "Example"
-        outro: |
-          ##### Request 1
-          Here is an example of the request.
-          
-          ```http
-          POST https://graph.microsoft.com/v1.0/me/messages
-          Content-type: application/json
-          
-          {
-              "subject":"Did you see last night's game?",
-              "importance":"Low",
-              "body":{
-                  "contentType":"HTML",
-                  "content":"They were <b>awesome</b>!"
-              },
-              "toRecipients":[
-                  {
-                      "emailAddress":{
-                          "address":"AdeleV@contoso.onmicrosoft.com"
-                      }
-                  }
-              ]
-          }
-          ```
-          
-          In the request body, supply a JSON representation of [message](xref:graph.message) object.
+- items:

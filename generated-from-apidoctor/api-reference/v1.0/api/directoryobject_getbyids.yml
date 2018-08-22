@@ -52,47 +52,45 @@ response:
   intro: |
     If successful, this method returns `200 OK` response code and String collection object in the response body.
 examples:
-  - items:
-    - Example:
-        heading: "Example"
-        request:
-            heading: "Request"
-            sampleCode: |
-              ```http
-              POST https://graph.microsoft.com/v1.0/directoryObjects/getByIds
-              Content-type: application/json
-              
+- items:
+  - request:
+      heading: "Request"
+      sampleCode: |
+        ```http
+        POST https://graph.microsoft.com/v1.0/directoryObjects/getByIds
+        Content-type: application/json
+        
+        {
+            "ids":["84b80893874940a3-97b7-68513b600544","5d6059b6368d-45f8-91e18e07d485f1d0"],
+            "types":["user"]
+        }
+        ```
+        
+    response:
+      heading: "Response"
+      intro: |
+        Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+      sampleCode: |
+        ```http
+        HTTP/1.1 200 OK
+        Content-type: application/json
+        
+        {
+            "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directoryObjects",
+            "value": [
               {
-                  "ids":["84b80893874940a3-97b7-68513b600544","5d6059b6368d-45f8-91e18e07d485f1d0"],
-                  "types":["user"]
-              }
-              ```
-              
-        response:
-            heading: "Response"
-            intro: |
-              Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-            sampleCode: |
-              ```http
-              HTTP/1.1 200 OK
-              Content-type: application/json
-              
+                "@odata.type": "#microsoft.graph.user",
+                "id": "84b80893-8749-40a3-97b7-68513b600544",
+                "accountEnabled": true,
+                "displayName": "Trevor Jones"
+              },
               {
-                  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directoryObjects",
-                  "value": [
-                    {
-                      "@odata.type": "#microsoft.graph.user",
-                      "id": "84b80893-8749-40a3-97b7-68513b600544",
-                      "accountEnabled": true,
-                      "displayName": "Trevor Jones"
-                    },
-                    {
-                      "@odata.type": "#microsoft.graph.user",
-                      "id": "84b80893-8749-40a3-97b7-68513b600544",
-                      "accountEnabled": true,
-                      "displayName": "Billy Smith"
-                    }
-                  ]
+                "@odata.type": "#microsoft.graph.user",
+                "id": "84b80893-8749-40a3-97b7-68513b600544",
+                "accountEnabled": true,
+                "displayName": "Billy Smith"
               }
-              ```
-              
+            ]
+        }
+        ```
+        

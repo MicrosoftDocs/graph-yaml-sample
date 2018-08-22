@@ -44,19 +44,4 @@ permissions:
     * [OneNote GitHub repos](http://go.microsoft.com/fwlink/?LinkID=390178)  
     
 examples:
-  - items:
-    - Example requests:
-        heading: "Example requests"
-        intro: |
-          An update request contains one or more changes represented as JSON change objects. These objects can define different targets on the page and different actions and content for the targets.
-          The following examples include JSON objects used in PATCH requests and complete PATCH requests:
-          
-          * [Append child elements](#append-child-elements)
-          * [Insert sibling elements](#insert-sibling-elements)
-          * [Replace elements](#replace-elements)
-          * [Complete PATCH requests](#complete-patch-request-examples)
-          
-          <a name="append-examples"></a>
-        outro: |
-          ### Append child elements
-          The **append** action adds a child to a **body**, **div** (within a div), **ol**, or **ul** element. The **position** attribute determines whether to append the child before or after the target. The default position is **after**.
+- items:

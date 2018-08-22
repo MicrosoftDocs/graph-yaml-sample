@@ -44,46 +44,44 @@ response:
   intro: |
     If successful, this method returns a `200 OK` response code and an updated [onPremisesConditionalAccessSettings](xref:graph.intune_onboarding_onpremisesconditionalaccesssettings) object in the response body.
 examples:
-  - items:
-    - Example:
-        heading: "Example"
-        request:
-            heading: "Request"
-            intro: |
-              Here is an example of the request.
-              PATCH https://graph.microsoft.com/v1.0/deviceManagement/conditionalAccessSettings
-              Content-type: application/json
-              Content-length: 195
-              
-              {
-                "enabled": true,
-                "includedGroups": [
-                  "79199ed9-e50b-4257-8de4-70b9c8685061"
-                ],
-                "excludedGroups": [
-                  "79199ed9-e50b-4257-8de4-70b9c8685061"
-                ],
-                "overrideDefaultRule": true
-              }
+- items:
+  - request:
+      heading: "Request"
+      intro: |
+        Here is an example of the request.
+        PATCH https://graph.microsoft.com/v1.0/deviceManagement/conditionalAccessSettings
+        Content-type: application/json
+        Content-length: 195
+        
+        {
+          "enabled": true,
+          "includedGroups": [
+            "79199ed9-e50b-4257-8de4-70b9c8685061"
+          ],
+          "excludedGroups": [
+            "79199ed9-e50b-4257-8de4-70b9c8685061"
+          ],
+          "overrideDefaultRule": true
+        }
 
-        response:
-            heading: "Response"
-            intro: |
-              Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-              HTTP/1.1 200 OK
-              Content-Type: application/json
-              Content-Length: 318
-              
-              {
-                "@odata.type": "#microsoft.graph.onPremisesConditionalAccessSettings",
-                "id": "a0efde21-de21-a0ef-21de-efa021deefa0",
-                "enabled": true,
-                "includedGroups": [
-                  "79199ed9-e50b-4257-8de4-70b9c8685061"
-                ],
-                "excludedGroups": [
-                  "79199ed9-e50b-4257-8de4-70b9c8685061"
-                ],
-                "overrideDefaultRule": true
-              }
+    response:
+      heading: "Response"
+      intro: |
+        Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+        HTTP/1.1 200 OK
+        Content-Type: application/json
+        Content-Length: 318
+        
+        {
+          "@odata.type": "#microsoft.graph.onPremisesConditionalAccessSettings",
+          "id": "a0efde21-de21-a0ef-21de-efa021deefa0",
+          "enabled": true,
+          "includedGroups": [
+            "79199ed9-e50b-4257-8de4-70b9c8685061"
+          ],
+          "excludedGroups": [
+            "79199ed9-e50b-4257-8de4-70b9c8685061"
+          ],
+          "overrideDefaultRule": true
+        }
 

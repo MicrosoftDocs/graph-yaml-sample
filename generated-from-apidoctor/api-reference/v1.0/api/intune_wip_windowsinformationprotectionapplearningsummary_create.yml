@@ -43,37 +43,35 @@ response:
   intro: |
     If successful, this method returns a `201 Created` response code and a [windowsInformationProtectionAppLearningSummary](xref:graph.intune_wip_windowsinformationprotectionapplearningsummary) object in the response body.
 examples:
-  - items:
-    - Example:
-        heading: "Example"
-        request:
-            heading: "Request"
-            intro: |
-              Here is an example of the request.
-              POST https://graph.microsoft.com/v1.0/deviceManagement/windowsInformationProtectionAppLearningSummaries
-              Content-type: application/json
-              Content-length: 191
-              
-              {
-                "@odata.type": "#microsoft.graph.windowsInformationProtectionAppLearningSummary",
-                "applicationName": "Application Name value",
-                "applicationType": "desktop",
-                "deviceCount": 11
-              }
+- items:
+  - request:
+      heading: "Request"
+      intro: |
+        Here is an example of the request.
+        POST https://graph.microsoft.com/v1.0/deviceManagement/windowsInformationProtectionAppLearningSummaries
+        Content-type: application/json
+        Content-length: 191
+        
+        {
+          "@odata.type": "#microsoft.graph.windowsInformationProtectionAppLearningSummary",
+          "applicationName": "Application Name value",
+          "applicationType": "desktop",
+          "deviceCount": 11
+        }
 
-        response:
-            heading: "Response"
-            intro: |
-              Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-              HTTP/1.1 201 Created
-              Content-Type: application/json
-              Content-Length: 240
-              
-              {
-                "@odata.type": "#microsoft.graph.windowsInformationProtectionAppLearningSummary",
-                "id": "063baf50-af50-063b-50af-3b0650af3b06",
-                "applicationName": "Application Name value",
-                "applicationType": "desktop",
-                "deviceCount": 11
-              }
+    response:
+      heading: "Response"
+      intro: |
+        Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+        HTTP/1.1 201 Created
+        Content-Type: application/json
+        Content-Length: 240
+        
+        {
+          "@odata.type": "#microsoft.graph.windowsInformationProtectionAppLearningSummary",
+          "id": "063baf50-af50-063b-50af-3b0650af3b06",
+          "applicationName": "Application Name value",
+          "applicationType": "desktop",
+          "deviceCount": 11
+        }
 

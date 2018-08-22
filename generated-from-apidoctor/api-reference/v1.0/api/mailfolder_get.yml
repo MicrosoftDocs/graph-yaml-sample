@@ -73,35 +73,33 @@ response:
   intro: |
     If successful, this method returns a `200 OK` response code and [mailFolder](xref:graph.mailfolder) object in the response body.
 examples:
-  - items:
-    - Example:
-        heading: "Example"
-        request:
-            heading: "Request"
-            intro: |
-              Here is an example of the request.
-            sampleCode: |
-              ```http
-              GET https://graph.microsoft.com/v1.0/me/mailFolders/{id}
-              ```
-              
-        response:
-            heading: "Response"
-            intro: |
-              Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-            sampleCode: |
-              ```http
-              HTTP/1.1 200 OK
-              Content-type: application/json
-              Content-length: 179
-              
-              {
-                "displayName": "displayName-value",
-                "parentFolderId": "parentFolderId-value",
-                "childFolderCount": 99,
-                "unreadItemCount": 99,
-                "totalItemCount": 99,
-                "id": "id-value"
-              }
-              ```
-              
+- items:
+  - request:
+      heading: "Request"
+      intro: |
+        Here is an example of the request.
+      sampleCode: |
+        ```http
+        GET https://graph.microsoft.com/v1.0/me/mailFolders/{id}
+        ```
+        
+    response:
+      heading: "Response"
+      intro: |
+        Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+      sampleCode: |
+        ```http
+        HTTP/1.1 200 OK
+        Content-type: application/json
+        Content-length: 179
+        
+        {
+          "displayName": "displayName-value",
+          "parentFolderId": "parentFolderId-value",
+          "childFolderCount": 99,
+          "unreadItemCount": 99,
+          "totalItemCount": 99,
+          "id": "id-value"
+        }
+        ```
+        

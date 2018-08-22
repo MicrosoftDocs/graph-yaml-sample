@@ -43,31 +43,29 @@ response:
   intro: |
     If successful, this method returns a `201 Created` response code and a [user](xref:graph.intune_shared_user) object in the response body.
 examples:
-  - items:
-    - Example:
-        heading: "Example"
-        request:
-            heading: "Request"
-            intro: |
-              Here is an example of the request.
-              POST https://graph.microsoft.com/v1.0/users
-              Content-type: application/json
-              Content-length: 46
-              
-              {
-                "@odata.type": "#microsoft.graph.user"
-              }
+- items:
+  - request:
+      heading: "Request"
+      intro: |
+        Here is an example of the request.
+        POST https://graph.microsoft.com/v1.0/users
+        Content-type: application/json
+        Content-length: 46
+        
+        {
+          "@odata.type": "#microsoft.graph.user"
+        }
 
-        response:
-            heading: "Response"
-            intro: |
-              Here is an example of the response. Note: The response object shown here may be truncated for brevity. Properties returned from an actual call vary according to context.
-              HTTP/1.1 201 Created
-              Content-Type: application/json
-              Content-Length: 95
-              
-              {
-                "@odata.type": "#microsoft.graph.user",
-                "id": "d36894ae-94ae-d368-ae94-68d3ae9468d3"
-              }
+    response:
+      heading: "Response"
+      intro: |
+        Here is an example of the response. Note: The response object shown here may be truncated for brevity. Properties returned from an actual call vary according to context.
+        HTTP/1.1 201 Created
+        Content-Type: application/json
+        Content-Length: 95
+        
+        {
+          "@odata.type": "#microsoft.graph.user",
+          "id": "d36894ae-94ae-d368-ae94-68d3ae9468d3"
+        }
 

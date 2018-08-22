@@ -47,37 +47,35 @@ response:
   intro: |
     If successful, this method returns `201 Created` response code and [directoryRole](xref:graph.directoryrole) object in the response body.
 examples:
-  - items:
-    - Example:
-        heading: "Example"
-        request:
-            heading: "Request"
-            sampleCode: |
-              ```http
-              POST https://graph.microsoft.com/v1.0/directoryRoles
-              Content-type: application/json
-              
-              {
-                "roleTemplateId": "roleTemplateId-value"
-              }
-              ```
-              
-            outro: |
-              In the request body, supply a JSON representation of [directoryRole](xref:graph.directoryrole) object.
-        response:
-            heading: "Response"
-            intro: |
-              Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-            sampleCode: |
-              ```http
-              HTTP/1.1 201 Created
-              Content-type: application/json
-              
-              {
-                "description": "description-value",
-                "displayName": "displayName-value",
-                "roleTemplateId": "roleTemplateId-value",
-                "id": "id-value"
-              }
-              ```
-              
+- items:
+  - request:
+      heading: "Request"
+      sampleCode: |
+        ```http
+        POST https://graph.microsoft.com/v1.0/directoryRoles
+        Content-type: application/json
+        
+        {
+          "roleTemplateId": "roleTemplateId-value"
+        }
+        ```
+        
+      outro: |
+        In the request body, supply a JSON representation of [directoryRole](xref:graph.directoryrole) object.
+    response:
+      heading: "Response"
+      intro: |
+        Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+      sampleCode: |
+        ```http
+        HTTP/1.1 201 Created
+        Content-type: application/json
+        
+        {
+          "description": "description-value",
+          "displayName": "displayName-value",
+          "roleTemplateId": "roleTemplateId-value",
+          "id": "id-value"
+        }
+        ```
+        

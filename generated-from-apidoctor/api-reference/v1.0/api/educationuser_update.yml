@@ -59,71 +59,69 @@ response:
   intro: |
     If successful, this method returns a `200 OK` response code and updated [educationUser](xref:graph.educationuser) object in the response body.
 examples:
-  - items:
-    - Example:
-        heading: "Example"
-        request:
-            heading: "Request"
-            intro: |
-              Here is an example of the request.
-            sampleCode: |
-              ```http
-              PATCH https://graph.microsoft.com/v1.0/education/users/{user-id}
-              Content-type: application/json
-              Content-length: 508
-              
-              {
-                "displayName": "Rogelio Cazares",
-                "givenName": "Rogelio",
-                "middleName": "Fernando",
-                "surname": "Cazares",
-              }
-              ```
-              
-        response:
-            heading: "Response"
-            intro: |
-              Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-            sampleCode: |
-              ```http
-              HTTP/1.1 200 OK
-              Content-type: application/json
-              Content-length: 508
-              
-              {
-                "id": "13020",
-                "displayName": "Rogelio Cazares",
-                "givenName": "Rogelio",
-                "middleName": "Fernando",
-                "surname": "Cazares",
-                "mail": "rogelioC@contoso.com",
-                "mobilePhone": "+1 (253) 555-0101",
-                "createdBy": {
-                      "user": {
-                        "displayName": "Susana Rocha",
-                        "id": "14012",
-                      }
-                },
-                "externalSource": "sis",
-                "mailingAddress": {
-                      "city": "Los Angeles",
-                      "countryOrRegion": "United States",
-                      "postalCode": "98055",
-                      "state": "CA",
-                      "street": "12345 Main St."
-                    },
-                "primaryRole": "student",
-                "residenceAddress": {
-                      "city": "Los Angeles",
-                      "countryOrRegion": "United States",
-                      "postalCode": "98055",
-                      "state": "CA",
-                      "street": "12345 Main St."
-                    },
-                "student": {
-                    "externalId": "13005",
-                    "birthDate": "2001-01-01T00:00:00Z"
-                  }
-              }
-              ```
-              
+- items:
+  - request:
+      heading: "Request"
+      intro: |
+        Here is an example of the request.
+      sampleCode: |
+        ```http
+        PATCH https://graph.microsoft.com/v1.0/education/users/{user-id}
+        Content-type: application/json
+        Content-length: 508
+        
+        {
+          "displayName": "Rogelio Cazares",
+          "givenName": "Rogelio",
+          "middleName": "Fernando",
+          "surname": "Cazares",
+        }
+        ```
+        
+    response:
+      heading: "Response"
+      intro: |
+        Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+      sampleCode: |
+        ```http
+        HTTP/1.1 200 OK
+        Content-type: application/json
+        Content-length: 508
+        
+        {
+          "id": "13020",
+          "displayName": "Rogelio Cazares",
+          "givenName": "Rogelio",
+          "middleName": "Fernando",
+          "surname": "Cazares",
+          "mail": "rogelioC@contoso.com",
+          "mobilePhone": "+1 (253) 555-0101",
+          "createdBy": {
+                "user": {
+                  "displayName": "Susana Rocha",
+                  "id": "14012",
+                }
+          },
+          "externalSource": "sis",
+          "mailingAddress": {
+                "city": "Los Angeles",
+                "countryOrRegion": "United States",
+                "postalCode": "98055",
+                "state": "CA",
+                "street": "12345 Main St."
+              },
+          "primaryRole": "student",
+          "residenceAddress": {
+                "city": "Los Angeles",
+                "countryOrRegion": "United States",
+                "postalCode": "98055",
+                "state": "CA",
+                "street": "12345 Main St."
+              },
+          "student": {
+              "externalId": "13005",
+              "birthDate": "2001-01-01T00:00:00Z"
+            }
+        }
+        ```
+        
