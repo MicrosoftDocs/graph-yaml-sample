@@ -125,7 +125,7 @@ properties:
     description: "Indicates whether internet links should be opened in the managed browser app. Inherited from managedAppProtection"
   - property: "saveAsBlocked"
     type: "Boolean"
-    description: "Indicates whether users may use the \\"Save As\\" menu item to save a copy of protected files. Inherited from managedAppProtection"
+    description: "Indicates whether users may use the \"Save As\" menu item to save a copy of protected files. Inherited from managedAppProtection"
   - property: "periodOfflineBeforeWipeIsEnforced"
     type: "Duration"
     description: "The amount of time an app is allowed to remain disconnected from the internet before all managed data it is wiped. Inherited from managedAppProtection"

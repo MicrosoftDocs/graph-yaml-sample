@@ -53,7 +53,7 @@ properties:
     description: "Represents the formula in A1-style notation."
   - property: "formulasLocal"
     type: "microsoft.graph.Json"
-    description: "Represents the formula in A1-style notation, in the user's language and number-formatting locale. For example, the English \\"=SUM(A1, 1.5)\\" formula would become \\"=SUMME(A1; 1,5)\\" in German."
+    description: "Represents the formula in A1-style notation, in the user's language and number-formatting locale. For example, the English \"=SUM(A1, 1.5)\" formula would become \"=SUMME(A1; 1,5)\" in German."
   - property: "formulasR1C1"
     type: "microsoft.graph.Json"
     description: "Represents the formula in R1C1-style notation."

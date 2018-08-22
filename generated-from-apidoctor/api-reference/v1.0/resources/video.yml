@@ -55,7 +55,7 @@ properties:
     description: "Duration of the file in milliseconds."
   - property: "fourCC"
     type: "String"
-    description: "\\"Four character code\\" name of the video format."
+    description: "\"Four character code\" name of the video format."
   - property: "frameRate"
     type: "Double"
     description: "Frame rate of the video."

@@ -293,7 +293,7 @@ properties:
     description: "Default value is true. Indicates whether the current user is subscribed to receive email conversations."
   - property: "mail"
     type: "String"
-    description: "The SMTP address for the group, for example, \\"serviceadmins@contoso.onmicrosoft.com\\". Read-only. Supports $filter."
+    description: "The SMTP address for the group, for example, \"serviceadmins@contoso.onmicrosoft.com\". Read-only. Supports $filter."
   - property: "mailEnabled"
     type: "Boolean"
     description: "Specifies whether the group is mail-enabled. If the securityEnabled property is also true, the group is a mail-enabled security group; otherwise, the group is a Microsoft Exchange distribution group."
