@@ -44,10 +44,10 @@ queryParameters:
   list:
   - name: "startDateTime"
     value: "String"
-    description: "The start date and time of the time range, represented in ISO 8601 format. For example, \"2015-11-08T19:00:00.0000000\"."
+    description: "The start date and time of the time range, represented in ISO 8601 format. For example, \\"2015-11-08T19:00:00.0000000\\"."
   - name: "endDateTime"
     value: "String"
-    description: "The end date and time of the time range, represented in ISO 8601 format. For example, \"2015-11-08T20:00:00.0000000\"."
+    description: "The end date and time of the time range, represented in ISO 8601 format. For example, \\"2015-11-08T20:00:00.0000000\\"."
   - name: "$deltatoken"
     value: "String"
     description: "A state token returned in the deltaLink URL of the previous delta function call for the same calendar view, indicating the completion of that round of change tracking. Save and apply the entire deltaLink URL including this token in the first request of the next round of change tracking for that calendar view."

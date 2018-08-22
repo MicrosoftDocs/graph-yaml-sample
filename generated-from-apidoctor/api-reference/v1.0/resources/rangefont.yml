@@ -45,7 +45,7 @@ properties:
     description: "Represents the italic status of the font."
   - property: "name"
     type: "String"
-    description: "Font name (e.g. \"Calibri\")"
+    description: "Font name (e.g. \\"Calibri\\")"
   - property: "size"
     type: "Double"
     description: "Font size."

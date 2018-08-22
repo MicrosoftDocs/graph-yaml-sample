@@ -67,7 +67,7 @@ properties:
     description: "Version of the device configuration. Inherited from deviceConfiguration"
   - property: "allowSampleSharing"
     type: "Boolean"
-    description: "Windows Defender AdvancedThreatProtection \"Allow Sample Sharing\" Rule"
+    description: "Windows Defender AdvancedThreatProtection \\"Allow Sample Sharing\\" Rule"
   - property: "enableExpeditedTelemetryReporting"
     type: "Boolean"
     description: "Expedite Windows Defender Advanced Threat Protection telemetry reporting frequency."

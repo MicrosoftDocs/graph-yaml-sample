@@ -40,7 +40,7 @@ properties:
     description: "Unique identifier (GUID) for the service SKU. Equal to the skuId property on the related SubscribedSku object. Read-only"
   - property: "skuPartNumber"
     type: "String"
-    description: "Unique SKU display name. Equal to the skuPartNumber on the related SubscribedSku object; for example: \"AAD_Premium\". Read-only"
+    description: "Unique SKU display name. Equal to the skuPartNumber on the related SubscribedSku object; for example: \\"AAD_Premium\\". Read-only"
 relationships:
   heading: "Relationships"
   intro: |

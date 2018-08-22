@@ -51,10 +51,10 @@ queryParameters:
   list:
   - name: "startDateTime"
     value: "String"
-    description: "The start date and time of the time range, represented in ISO 8601 format. For example, \"2015-11-08T19:00:00.0000000\"."
+    description: "The start date and time of the time range, represented in ISO 8601 format. For example, \\"2015-11-08T19:00:00.0000000\\"."
   - name: "endDateTime"
     value: "String"
-    description: "The end date and time of the time range, represented in ISO 8601 format. For example, \"2015-11-08T20:00:00.0000000\"."
+    description: "The end date and time of the time range, represented in ISO 8601 format. For example, \\"2015-11-08T20:00:00.0000000\\"."
   outro: |
     This method also supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
 requestHeaders:

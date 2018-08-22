@@ -114,7 +114,7 @@ properties:
     description: "Postal code of the address for the organization"
   - property: "preferredLanguage"
     type: "String"
-    description: "The preferred language for the organization. Should follow ISO 639-1 Code; for example \"en\"."
+    description: "The preferred language for the organization. Should follow ISO 639-1 Code; for example \\"en\\"."
   - property: "privacyProfile"
     type: "microsoft.graph.privacyProfile"
     description: "The privacy profile of an organization."

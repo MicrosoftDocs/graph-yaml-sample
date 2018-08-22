@@ -4,7 +4,7 @@
       {
         "files": [
           "**/*.md",
-          "**/*.yml"
+          "**/api-reference/**/*.yml"
         ],
         "exclude": [
           "**/obj/**",

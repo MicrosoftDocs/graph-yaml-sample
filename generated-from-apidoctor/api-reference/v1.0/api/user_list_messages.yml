@@ -76,7 +76,7 @@ requestHeaders:
     description: "Bearer {token}. Required."
   - name: "Prefer: outlook.body-content-type"
     value: "String"
-    description: "The format of the body and uniqueBody properties to be returned in. Values can be \"text\" or \"html\". If the header is not specified, the body and uniqueBody properties are returned in HTML format. Optional."
+    description: "The format of the body and uniqueBody properties to be returned in. Values can be \\"text\\" or \\"html\\". If the header is not specified, the body and uniqueBody properties are returned in HTML format. Optional."
 requestBody:
   heading: "Request body"
   intro: |

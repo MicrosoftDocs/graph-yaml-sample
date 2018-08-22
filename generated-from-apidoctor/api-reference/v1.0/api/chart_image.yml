@@ -40,7 +40,7 @@ parameters:
     description: "The desired width of the resulting image. Optional."
   - name: "fittingMode"
     value: "String"
-    description: "The method used to scale the chart to the specified dimensions (if both height and width are set).\"  The possible values are: Fit, FitAndCenter, Fill."
+    description: "The method used to scale the chart to the specified dimensions (if both height and width are set).\\"  The possible values are: Fit, FitAndCenter, Fill."
 requestHeaders:
   heading: "Request headers"
   list:

@@ -39,10 +39,10 @@ properties:
   list:
   - property: "appliesTo"
     type: "String"
-    description: "For example, \"User\" or \"Company\"."
+    description: "For example, \\"User\\" or \\"Company\\"."
   - property: "capabilityStatus"
     type: "String"
-    description: "For example, \"Enabled\"."
+    description: "For example, \\"Enabled\\"."
   - property: "consumedUnits"
     type: "Int32"
     description: "The number of licenses that have been assigned."
@@ -60,7 +60,7 @@ properties:
     description: "The unique identifier (GUID) for the service SKU."
   - property: "skuPartNumber"
     type: "String"
-    description: "The SKU part number; for example: \"AAD_PREMIUM\" or \"RMSBASIC\"."
+    description: "The SKU part number; for example: \\"AAD_PREMIUM\\" or \\"RMSBASIC\\"."
 relationships:
   heading: "Relationships"
   intro: |
