@@ -139,3 +139,89 @@ response:
     created extended property, [get the instance expanded with the extended property](xref:graph.singlevaluelegacyextendedproperty_get).
     When creating an extended property in a _new_ [group post](xref:graph.post) by replying to a thread or post, the response includes only 
     a response code but not the new post nor the extended property.
+examples:
+  - items:
+    - request:
+      heading: "Request 1"
+      intro: |
+        The first example creates a new event and a single-value extended property in the same POST operation. Apart from the properties you'd normally 
+        include for a new event, the request body includes the **singleValueExtendedProperties** collection that contains one single-value 
+        extended property, and the following for the property:
+        - **id** specifies the property type as `String`, the GUID, and the property named `Fun`.
+        - **value** specifies `Food` as the value of the `Fun` property. 
+      sampleCode: |
+        ```http
+        POST https://graph.microsoft.com/v1.0/me/events
+        Content-Type: application/json
+        
+        {
+          "subject": "Celebrate Thanksgiving",
+          "body": {
+            "contentType": "HTML",
+            "content": "Let's get together!"
+          },
+          "start": {
+              "dateTime": "2015-11-26T18:00:00",
+              "timeZone": "Pacific Standard Time"
+          },
+          "end": {
+              "dateTime": "2015-11-26T23:00:00",
+              "timeZone": "Pacific Standard Time"
+          },
+          "attendees": [
+            {
+              "emailAddress": {
+                "address": "Terrie@contoso.com",
+                "name": "Terrie Barrera"
+              },
+              "type": "Required"
+            }
+          ],
+          "singleValueExtendedProperties": [
+             {
+                   "id":"String {66f5a359-4659-4830-9070-00040ec6ac6e} Name Fun",
+                   "value":"Food"
+             }
+          ]
+        }
+        ```
+        
+    - request:
+      heading: "Response 1"
+      intro: |
+        A successful response is indicated by an `HTTP 201 Created` response code, and includes the new event 
+        in the response body, similar to the response from [creating just an event](xref:graph.user_post_events). 
+        The response does not include any newly created extended properties.
+        To see the newly created extended property, [get the event expanded with the extended property](xref:graph.singlevaluelegacyextendedproperty_get).
+        ****
+    - request:
+      heading: "Request 2"
+      intro: |
+        The second example creates one single-value extended property for the specified existing message. That extended property is the only
+        element in the **singleValueExtendedProperties** array. The request body includes the following for the 
+        extended property:
+        - **id** specifies the property type as `String`, the GUID, and the property named `Color`.
+        - **value** specifies `Green` as the value of the `Color` property.
+      sampleCode: |
+        ```http
+        PATCH https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2_bs88AACHsLqWAAA=
+        
+        Content-Type: application/json
+        
+        {
+          "singleValueExtendedProperties": [
+              {
+                 "id":"String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color",
+                 "value":"Green"
+              }
+            ]
+        }
+        ```
+        
+    - request:
+      heading: "Response 2"
+      intro: |
+        A successful response is indicated by an `HTTP 200 OK` response code, and includes the specified message in the response body, 
+        similar to the response from [updating a message](xref:graph.message_update). The response does not 
+        include the newly created extended property.
+        To see the newly created extended property, [get the message expanded with the extended property](xref:graph.singlevaluelegacyextendedproperty_get).

@@ -42,3 +42,27 @@ response:
   heading: "Response"
   intro: |
     If successful, this method returns `204 No Content` response code.
+examples:
+  - items:
+    - request:
+      heading: "Request"
+      sampleCode: |
+        ```http
+        POST https://graph.microsoft.com/v1.0/directoryRoles/{id}/members/$ref
+        Content-type: application/json
+        
+        {
+          "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/{id}"
+        }
+        ```
+        
+      response:
+      heading: "Response"
+      intro: |
+        Note: The response object shown here may be truncated for brevity. 
+      sampleCode: |
+        ```http
+        HTTP/1.1 204 No Content
+        Content-type: text/plain
+        ```
+        

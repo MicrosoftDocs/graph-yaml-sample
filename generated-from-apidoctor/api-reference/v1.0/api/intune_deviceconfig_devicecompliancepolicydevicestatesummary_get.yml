@@ -39,3 +39,35 @@ response:
   heading: "Response"
   intro: |
     If successful, this method returns a `200 OK` response code and [deviceCompliancePolicyDeviceStateSummary](xref:graph.intune_deviceconfig_devicecompliancepolicydevicestatesummary) object in the response body.
+examples:
+  - items:
+    - request:
+      heading: "Request"
+      intro: |
+        Here is an example of the request.
+        GET https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicyDeviceStateSummary
+
+      response:
+      heading: "Response"
+      intro: |
+        Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+        HTTP/1.1 200 OK
+        Content-Type: application/json
+        Content-Length: 439
+        
+        {
+          "value": {
+            "@odata.type": "#microsoft.graph.deviceCompliancePolicyDeviceStateSummary",
+            "inGracePeriodCount": 2,
+            "configManagerCount": 2,
+            "id": "8c4de8a7-e8a7-8c4d-a7e8-4d8ca7e84d8c",
+            "unknownDeviceCount": 2,
+            "notApplicableDeviceCount": 8,
+            "compliantDeviceCount": 4,
+            "remediatedDeviceCount": 5,
+            "nonCompliantDeviceCount": 7,
+            "errorDeviceCount": 0,
+            "conflictDeviceCount": 3
+          }
+        }
+

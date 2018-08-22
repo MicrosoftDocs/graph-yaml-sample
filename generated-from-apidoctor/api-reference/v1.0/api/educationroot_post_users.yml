@@ -42,3 +42,91 @@ response:
   heading: "Response"
   intro: |
     If successful, this method returns a `201 Created` response code and an [educationUser](xref:graph.educationuser) object in the response body.
+examples:
+  - items:
+    - request:
+      heading: "Request"
+      intro: |
+        The following is an example of the request.
+      sampleCode: |
+        ```http
+        POST https://graph.microsoft.com/v1.0/education/users
+        Content-type: application/json
+        Content-length: 508
+        
+        {
+          "displayName": "Dion Matheson",
+          "givenName": "Dion",
+          "middleName": null,
+          "surname": "Matheson",
+          "mail": "DionM@contoso.com",
+          "mobilePhone": "+1 (253) 555-0101",
+          "createdBy": {
+            "user": {
+              "displayName": "Susana Rocha",
+              "id": "14012"
+            }
+          },
+          "externalSource": "sis",
+          "mailingAddress": {
+            "city": "Los Angeles",
+            "countryOrRegion": "United States",
+            "postalCode": "98055",
+            "state": "CA",
+            "street": "12345 Main St."
+          },
+          "primaryRole": "student",
+          "residenceAddress": {
+            "city": "Los Angeles",
+            "countryOrRegion": "United States",
+            "postalCode": "98055",
+            "state": "CA",
+            "street": "12345 Main St."
+          }
+        }
+        ```
+        
+      response:
+      heading: "Response"
+      intro: |
+        The following is an example of the response. 
+        
+      sampleCode: |
+        ```http
+        HTTP/1.1 201 Created
+        Content-type: application/json
+        Content-length: 508
+        
+        {
+          "id": "13012",
+          "displayName": "Dion Matheson",
+          "givenName": "Dion",
+          "middleName": " ",
+          "surname": "Matheson",
+          "mail": "DionM@contoso.com",
+          "mobilePhone": "+1 (253) 555-0101",
+          "createdBy": {
+            "user": {
+              "displayName": "Susana Rocha",
+              "id": "14012",
+            }
+          },
+          "externalSource": "sis",
+          "mailingAddress": {
+            "city": "Los Angeles",
+            "countryOrRegion": "United States",
+            "postalCode": "98055",
+            "state": "CA",
+            "street": "12345 Main St."
+          },
+          "primaryRole": "student",
+          "residenceAddress": {
+            "city": "Los Angeles",
+            "countryOrRegion": "United States",
+            "postalCode": "98055",
+            "state": "CA",
+            "street": "12345 Main St."
+          }
+        }
+        ```
+        

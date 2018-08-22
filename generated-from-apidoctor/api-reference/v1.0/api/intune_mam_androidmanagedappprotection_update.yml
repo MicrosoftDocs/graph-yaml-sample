@@ -77,3 +77,108 @@ response:
   heading: "Response"
   intro: |
     If successful, this method returns a `200 OK` response code and an updated [androidManagedAppProtection](xref:graph.intune_mam_androidmanagedappprotection) object in the response body.
+examples:
+  - items:
+    - request:
+      heading: "Request"
+      intro: |
+        Here is an example of the request.
+        PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/androidManagedAppProtections/{androidManagedAppProtectionId}
+        Content-type: application/json
+        Content-length: 1690
+        
+        {
+          "displayName": "Display Name value",
+          "description": "Description value",
+          "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+          "version": "Version value",
+          "periodOfflineBeforeAccessCheck": "-PT17.1357909S",
+          "periodOnlineBeforeAccessCheck": "PT35.0018757S",
+          "allowedInboundDataTransferSources": "managedApps",
+          "allowedOutboundDataTransferDestinations": "managedApps",
+          "organizationalCredentialsRequired": true,
+          "allowedOutboundClipboardSharingLevel": "managedAppsWithPasteIn",
+          "dataBackupBlocked": true,
+          "deviceComplianceRequired": true,
+          "managedBrowserToOpenLinksRequired": true,
+          "saveAsBlocked": true,
+          "periodOfflineBeforeWipeIsEnforced": "-PT3M22.1587532S",
+          "pinRequired": true,
+          "maximumPinRetries": 1,
+          "simplePinBlocked": true,
+          "minimumPinLength": 0,
+          "pinCharacterSet": "alphanumericAndSymbol",
+          "periodBeforePinReset": "PT3M29.6631862S",
+          "allowedDataStorageLocations": [
+            "sharePoint"
+          ],
+          "contactSyncBlocked": true,
+          "printBlocked": true,
+          "fingerprintBlocked": true,
+          "disableAppPinIfDevicePinIsSet": true,
+          "minimumRequiredOsVersion": "Minimum Required Os Version value",
+          "minimumWarningOsVersion": "Minimum Warning Os Version value",
+          "minimumRequiredAppVersion": "Minimum Required App Version value",
+          "minimumWarningAppVersion": "Minimum Warning App Version value",
+          "isAssigned": true,
+          "screenCaptureBlocked": true,
+          "disableAppEncryptionIfDeviceEncryptionIsEnabled": true,
+          "encryptAppData": true,
+          "deployedAppCount": 0,
+          "minimumRequiredPatchVersion": "Minimum Required Patch Version value",
+          "minimumWarningPatchVersion": "Minimum Warning Patch Version value"
+        }
+
+      response:
+      heading: "Response"
+      intro: |
+        Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+        HTTP/1.1 200 OK
+        Content-Type: application/json
+        Content-Length: 1864
+        
+        {
+          "@odata.type": "#microsoft.graph.androidManagedAppProtection",
+          "displayName": "Display Name value",
+          "description": "Description value",
+          "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
+          "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+          "id": "cf517ced-7ced-cf51-ed7c-51cfed7c51cf",
+          "version": "Version value",
+          "periodOfflineBeforeAccessCheck": "-PT17.1357909S",
+          "periodOnlineBeforeAccessCheck": "PT35.0018757S",
+          "allowedInboundDataTransferSources": "managedApps",
+          "allowedOutboundDataTransferDestinations": "managedApps",
+          "organizationalCredentialsRequired": true,
+          "allowedOutboundClipboardSharingLevel": "managedAppsWithPasteIn",
+          "dataBackupBlocked": true,
+          "deviceComplianceRequired": true,
+          "managedBrowserToOpenLinksRequired": true,
+          "saveAsBlocked": true,
+          "periodOfflineBeforeWipeIsEnforced": "-PT3M22.1587532S",
+          "pinRequired": true,
+          "maximumPinRetries": 1,
+          "simplePinBlocked": true,
+          "minimumPinLength": 0,
+          "pinCharacterSet": "alphanumericAndSymbol",
+          "periodBeforePinReset": "PT3M29.6631862S",
+          "allowedDataStorageLocations": [
+            "sharePoint"
+          ],
+          "contactSyncBlocked": true,
+          "printBlocked": true,
+          "fingerprintBlocked": true,
+          "disableAppPinIfDevicePinIsSet": true,
+          "minimumRequiredOsVersion": "Minimum Required Os Version value",
+          "minimumWarningOsVersion": "Minimum Warning Os Version value",
+          "minimumRequiredAppVersion": "Minimum Required App Version value",
+          "minimumWarningAppVersion": "Minimum Warning App Version value",
+          "isAssigned": true,
+          "screenCaptureBlocked": true,
+          "disableAppEncryptionIfDeviceEncryptionIsEnabled": true,
+          "encryptAppData": true,
+          "deployedAppCount": 0,
+          "minimumRequiredPatchVersion": "Minimum Required Patch Version value",
+          "minimumWarningPatchVersion": "Minimum Warning Patch Version value"
+        }
+

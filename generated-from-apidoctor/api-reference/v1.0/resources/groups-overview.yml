@@ -25,3 +25,56 @@ summary:
     * Planner plans
     * Intune device management
     
+examples:
+  - items:
+    - request:
+      heading: "Group in Outlook example"
+      intro: |
+        The following is a JSON representation of groups in Outlook. 
+        
+        {
+            "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups/$entity",
+            "id": "4c5ee71b-e6a5-4343-9e2c-4244bc7e0938",
+            "deletedDateTime": null,
+            "classification": "MBI",
+            "createdDateTime": "2016-08-23T14:46:56Z",
+            "description": "This is a group in Outlook",
+            "displayName": "OutlookGroup101",
+            "groupTypes": [
+                "Unified"
+            ],
+            "mail": "outlookgroup101@service.microsoft.com",
+            "mailEnabled": true,
+            "mailNickname": "outlookgroup101",
+            "preferredLanguage": null,
+            "proxyAddresses": [
+                "smtp:outlookgroup101@microsoft.onmicrosoft.com",
+                "SMTP:outlookgroup101@service.microsoft.com"
+            ],
+            "securityEnabled": false,
+            "theme": null,
+            "visibility": "Public"
+        }
+
+        To learn more about Office 365 groups and the administrator experiences, see [Learn about Office 365 Groups](https://support.office.com/en-us/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2).
+    - request:
+      heading: "Security group example"
+      intro: |
+        The following is a JSON representation of a security group. 
+        {
+            "@odata.type": "#microsoft.graph.group",
+            "id": "f87faa71-57a8-4c14-91f0-517f54645106",
+            "deletedDateTime": null,
+            "classification": null,
+            "createdDateTime": "2016-07-20T09:21:23Z",
+            "description": "This group is a Security Group",
+            "displayName": "SecurityGroup101",
+            "groupTypes": [],
+            "mail": null,
+            "mailEnabled": false,
+            "mailNickname": "",
+            "preferredLanguage": null,
+            "proxyAddresses": [],
+            "securityEnabled": true
+        }
+

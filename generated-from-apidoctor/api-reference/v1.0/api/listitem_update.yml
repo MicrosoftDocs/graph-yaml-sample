@@ -39,3 +39,37 @@ requestBody:
   heading: "Request body"
   intro: |
     In the request body, supply a JSON representation of a [fieldValueSet][] specifying the fields to update.
+examples:
+  - items:
+    - request:
+      heading: "Example"
+      intro: |
+        Here is an example that updates the Color and Quantity fields of the list item with new values.
+        All other values on the listItem are left alone. 
+      sampleCode: |
+        ```json
+        PATCH https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}/fields
+        Content-Type: application/json
+        
+        {
+            "Color": "Fuchsia",
+            "Quantity": 934
+        }
+        ```
+        
+      response:
+      heading: "Response"
+      intro: |
+        If successful, this method returns a [fieldValueSet][] in the response body for the updated list item.
+      sampleCode: |
+        ```json
+        HTTP/1.1 201 Created
+        Content-type: application/json
+        
+        {
+          "Name": "Widget",
+          "Color": "Fuchsia",
+          "Quantity": 934
+        }
+        ```
+        

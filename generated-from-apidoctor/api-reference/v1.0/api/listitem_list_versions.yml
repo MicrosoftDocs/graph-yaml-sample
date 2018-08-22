@@ -31,3 +31,60 @@ response:
   heading: "Response"
   intro: |
     If successful, this method returns a `200 OK` response code and collection of [ListItemVersion](xref:graph.listitemversion) objects in the response body.
+examples:
+  - items:
+    - request:
+      heading: "Example"
+      intro: |
+        This example retrieves the versions of a listItem in a SharePoint list:
+      sampleCode: |
+        ```http
+        GET /sites/{site-id}/lists/{list-id}/items/{item-id}/versions
+        ```
+        
+      response:
+      heading: "Response"
+      intro: |
+        This returns a collection of versions:
+      sampleCode: |
+        ```http
+        HTTP/1.1 200 OK
+        Content-Type: application/json
+        
+        {
+          "value":
+          [
+            {
+              "id": "3.0",
+              "lastModifiedBy": {
+                "user": {
+                  "id": "CE251278-EF9E-4FE5-833C-1D89EEAE68E0",
+                  "displayName": "Ryan Gregg"
+                }
+              },
+              "lastModifiedDateTime": "2017-09-14T12:34:53.912Z"
+            },
+            {
+              "id": "2.0",
+              "lastModifiedBy": {
+                "user": {
+                  "id": "CE251278-EF9E-4FE5-833C-1D89EEAE68E0",
+                  "displayName": "Ryan Gregg"
+                }
+              },
+              "lastModifiedDateTime": "2017-09-11T10:21:03.000Z"
+            },
+            {
+              "id": "1.0",
+              "lastModifiedBy": {
+                "user": {
+                  "id": "CE251278-EF9E-4FE5-833C-1D89EEAE68E0",
+                  "displayName": "Ryan Gregg"
+                }
+              },
+              "lastModifiedDateTime": "2017-09-10T15:20:01.125Z"
+            }
+          ]
+        }
+        ```
+        

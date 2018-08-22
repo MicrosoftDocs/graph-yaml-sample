@@ -44,3 +44,50 @@ response:
   heading: "Response"
   intro: |
     If successful, this method returns `201 Created` response code and [groupSetting](xref:graph.groupsetting) object in the response body.
+examples:
+  - items:
+    - request:
+      heading: "Request"
+      sampleCode: |
+        ```http
+        POST https://graph.microsoft.com/v1.0/groupSettings
+        Content-type: application/json
+        Content-length: 215
+        
+        {
+          "displayName": "displayName-value",
+          "templateId": "templateId-value",
+          "values": [
+            {
+              "name": "name-value",
+              "value": "value-value"
+            }
+          ]
+        }
+        ```
+        
+      outro: |
+        In the request body, supply a JSON representation of [groupSetting](xref:graph.groupsetting) object.
+      response:
+      heading: "Response"
+      intro: |
+        Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+      sampleCode: |
+        ```http
+        HTTP/1.1 201 Created
+        Content-type: application/json
+        Content-length: 238
+        
+        {
+          "displayName": "displayName-value",
+          "templateId": "templateId-value",
+          "values": [
+            {
+              "name": "name-value",
+              "value": "value-value"
+            }
+          ],
+          "id": "id-value"
+        }
+        ```
+        

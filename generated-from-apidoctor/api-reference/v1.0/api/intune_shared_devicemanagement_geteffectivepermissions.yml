@@ -39,3 +39,41 @@ response:
   heading: "Response"
   intro: |
     If successful, this function returns a `200 OK` response code and a [rolePermission](xref:graph.intune_rbac_rolepermission) collection in the response body.
+examples:
+  - items:
+    - request:
+      heading: "Request"
+      intro: |
+        Here is an example of the request.
+        GET https://graph.microsoft.com/v1.0/deviceManagement/getEffectivePermissions(scope='parameterValue')
+
+      response:
+      heading: "Response"
+      intro: |
+        Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+        HTTP/1.1 200 OK
+        Content-Type: application/json
+        Content-Length: 471
+        
+        {
+          "value": [
+            {
+              "@odata.type": "microsoft.graph.rolePermission",
+              "actions": [
+                "Actions value"
+              ],
+              "resourceActions": [
+                {
+                  "@odata.type": "microsoft.graph.resourceAction",
+                  "allowedResourceActions": [
+                    "Allowed Resource Actions value"
+                  ],
+                  "notAllowedResourceActions": [
+                    "Not Allowed Resource Actions value"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+

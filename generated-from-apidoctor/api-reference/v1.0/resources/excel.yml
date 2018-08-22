@@ -21,3 +21,19 @@ summary:
     * Files.Read (for read actions)
     * Files.ReadWrite (for read and write actions)
     
+examples:
+  heading: "Examples"
+  intro: |
+    The following request updates the selected range with the text of "Sample text". Note that Range has 200 cells, whereas the provided input only has 1 cell value.
+    
+    ```http
+    PATCH /workbook/worksheets/{id}/range(address="A1:B00")
+    
+    {
+      "values" : "Sample text"
+    }
+    ```
+    
+  outro: |
+    ### Workbook functions
+    You can access the workbook functions through a collection of functions included in the /Functions resource. 

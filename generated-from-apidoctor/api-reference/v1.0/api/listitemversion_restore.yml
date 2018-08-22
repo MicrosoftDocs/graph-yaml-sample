@@ -30,3 +30,23 @@ requestBody:
   heading: "Request body"
   intro: |
     No request body is required.
+examples:
+  - items:
+    - request:
+      heading: "Example"
+      intro: |
+        This example restores a version of a listItem identified by `{item-id}` and `{version-id}`.
+      sampleCode: |
+        ```http
+        POST /sites/{site-id}/lists/{list-id}/items/{item-id}/versions/{version-id}/restoreVersion
+        ```
+        
+      response:
+      heading: "Response"
+      intro: |
+        If successful, the API call returns a `204 No Content`.
+      sampleCode: |
+        ```http
+        HTTP/1.1 204 No Content
+        ```
+        

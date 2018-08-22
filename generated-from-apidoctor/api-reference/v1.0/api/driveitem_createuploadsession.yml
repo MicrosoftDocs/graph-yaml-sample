@@ -125,3 +125,86 @@ response:
     Uploading fragments out of order will result in an error.
     **Note:** If your app splits a file into multiple byte ranges, the size of each byte range **MUST** be a multiple of 320 KiB (327,680 bytes). 
     Using a fragment size that does not divide evenly by 320 KiB will result in errors committing some files.
+examples:
+  - items:
+    - request:
+      heading: "Example"
+      intro: |
+        In this example, the app is uploading the first 26 bytes of a 128 byte file.
+        
+        * The **Content-Length** header specifies the size of the current request.
+        * The **Content-Range** header indicates the range of bytes in the overall file that this request represents.
+        * The total length of the file is known before you can upload the first fragment of the file.
+        
+      sampleCode: |
+        ```http
+        PUT https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF866337
+        Content-Length: 26
+        Content-Range: bytes 0-25/128
+        
+        <bytes 0-25 of the file>
+        ```
+        
+      outro: |
+        **Important:** Your app must ensure the total file size specified in the **Content-Range** header is the same for all requests.
+        If a byte range declares a different file size, the request will fail.
+      response:
+      heading: "Response"
+      intro: |
+        When the request is complete, the server will respond with `202 Accepted` if there are more byte ranges that need to be uploaded.
+      sampleCode: |
+        ```http
+        HTTP/1.1 202 Accepted
+        Content-Type: application/json
+        
+        {
+          "expirationDateTime": "2015-01-29T09:21:55.523Z",
+          "nextExpectedRanges": ["26-"]
+        }
+        ```
+        
+      outro: |
+        Your app can use the **nextExpectedRanges** value to determine where to start the next byte range.
+        You may see multiple ranges specified, indicating parts of the file that the server has not yet received. 
+        This is useful if you need to resume a transfer that was interrupted and your client is unsure of the state on the service.
+        You should always determine the size of your byte ranges according to the best practices below. 
+        Do not assume that **nextExpectedRanges** will return reanges of proper size for a byte range to upload.
+        The **nextExpectedRanges** property indicates ranges of the file that have not been received and not a pattern for how your app should upload the file.
+        
+        ```http
+        HTTP/1.1 202 Accepted
+        Content-Type: application/json
+        
+        {
+          "expirationDateTime": "2015-01-29T09:21:55.523Z",
+          "nextExpectedRanges": [
+          "12345-55232",
+          "77829-99375"
+          ]
+        }
+        ```
+        
+    - request:
+      heading: "Example"
+      intro: |
+        Query the status of the upload by sending a GET request to the `uploadUrl`.
+      sampleCode: |
+        ```
+        GET https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF86633784148bb98a1zjcUhf7b0mpUadahs
+        ```
+        
+      outro: |
+        The server will respond with a list of missing byte ranges that need to be uploaded and the expiration time for the upload session.
+      response:
+      heading: "Example"
+      sampleCode: |
+        ```http
+        HTTP/1.1 200 OK
+        Content-Type: application/json
+        
+        {
+          "expirationDateTime": "2015-01-29T09:21:55.523Z",
+          "nextExpectedRanges": ["12345-"]
+        }
+        ```
+        

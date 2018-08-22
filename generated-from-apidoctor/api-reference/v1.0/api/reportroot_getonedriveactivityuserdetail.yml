@@ -66,3 +66,35 @@ response:
     * Assigned Products
     * Report Period
     
+examples:
+  - items:
+    - request:
+      heading: "Request"
+      intro: |
+        The following is an example of the request.
+      sampleCode: |
+        ```http
+        GET https://graph.microsoft.com/v1.0/reports/getOneDriveActivityUserDetail(period='D7')
+        ```
+        
+      response:
+      heading: "Response"
+      intro: |
+        The following is an example of the response.
+      sampleCode: |
+        ```http
+        HTTP/1.1 302 Found
+        Content-Type: text/plain
+        Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
+        ```
+        
+      outro: |
+        Follow the 302 redirection and the CSV file that downloads will have the following schema.
+        
+        ```http
+        HTTP/1.1 200 OK
+        Content-Type: application/octet-stream
+        
+        Report Refresh Date,User Principal Name,Is Deleted,Deleted Date,Last Activity Date,Viewed Or Edited File Count,Synced File Count,Shared Internally File Count,Shared Externally File Count,Assigned Products,Report Period
+        ```
+        

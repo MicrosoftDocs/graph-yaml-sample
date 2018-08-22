@@ -60,3 +60,109 @@ response:
     |:-|:-|:-|
     |**@odata.nextLink**|url|A URL to retrieve the next available page of changes, if there are additional changes in the current set.
     |**@odata.deltaLink**|url|A URL returned instead of **@odata.nextLink** after all current changes have been returned. Used to read the next set of changes in the future.
+examples:
+  - items:
+    - request:
+      heading: "Example (Initial Request)"
+      intro: |
+        Here is an example of how to call this API to establish your local state.
+    - request:
+      heading: "Request"
+      intro: |
+        Here is an example of the initial request.
+      sampleCode: |
+        ```http
+        GET https://graph.microsoft.com/v1.0/me/drive/root/delta
+        ```
+        
+      response:
+      heading: "Response"
+      intro: |
+        Here is an example of the response.
+      sampleCode: |
+        ```http
+        HTTP/1.1 200 OK
+        Content-type: application/json
+        
+        {
+            "value": [
+                {
+                    "id": "0123456789abc",
+                    "name": "folder2",
+                    "folder": { }
+                },
+                {
+                    "id": "123010204abac",
+                    "name": "file.txt",
+                    "file": { }
+                },
+                {
+                    "id": "2353010204ddgg",
+                    "name": "file5.txt",
+                    "deleted": { }
+                }
+            ],
+            "@odata.nextLink": "https://graph.microsoft.com/v1.0/me/drive/delta(token=1230919asd190410jlka)"
+        }
+        ```
+        
+      outro: |
+        This response includes the first page of changes, and the **@odata.nextLink** property indicates that there are more items available in the current set of items.
+        Your app should continue to request the URL value of **@odata.nextLink** until all pages of items have been retrieved.
+    - request:
+      heading: "Example (Last page in a set)"
+      intro: |
+        Here is an example of how to call this API to update your local state.
+    - request:
+      heading: "Request"
+      intro: |
+        Here is an example request after the initial request.
+      sampleCode: |
+        ```http
+        GET https://graph.microsoft.com/v1.0/me/drive/root/delta(token='1230919asd190410jlka')
+        ```
+        
+      response:
+      heading: "Response"
+      intro: |
+        Here is an example of the response.
+      sampleCode: |
+        ```http
+        HTTP/1.1 200 OK
+        Content-type: application/json
+        
+        {
+            "value": [
+                {
+                    "id": "0123456789abc",
+                    "name": "folder2",
+                    "folder": { },
+                    "deleted": { }
+                },
+                {
+                    "id": "123010204abac",
+                    "name": "file.txt",
+                    "file": { }
+                }
+            ],
+            "@odata.deltaLink": "https://graph.microsoft.com/v1.0/me/drive/root/delta?(token='1230919asd190410jlka')"
+        }
+        ```
+        
+      outro: |
+        This response indicates that the item named `folder2` was deleted and the item `file.txt` was either added or modified between the initial request and this request to update the local state.
+        The final page of items will include the **@odata.deltaLink** property, which provides the URL that can be used later to retrieve changes since the current set of items.
+        There may be cases when the service can't provide a list of changes for a given token (for example, if a client tries to reuse an old token after being disconnected for a long time, or if server state has changed and a new token is required).
+        In these cases the service will return an `HTTP 410 Gone` error with an error response containing one of the error codes below, and a `Location` header containing a new nextLink that starts a fresh delta enumeration from scratch.
+        After finishing the full enumeration, compare the returned items with your local state and follow these instructions.
+        |Error Type|Instructions
+        |:-|:-|
+        |`resyncChangesApplyDifferences`|Replace any local items with the server's version (including deletes) if you're sure that the service was up to date with your local changes when you last sync'd. Upload any local changes that the server doesn't know about.
+        |`resyncChangesUploadDifferences`|Upload any local items that the service did not return, and upload any files that differ from the server's version (keeping both copies if you're not sure which one is more up-to-date).
+        ## Retrieving the current deltaLink
+        In some scenarios, it may be useful to request the current deltaLink value without first enumerating all of the items in the drive already.
+        This can be useful if your app only wants to know about changes, and doesn't need to know about existing items.
+        To retrieve the latest deltaLink, call `delta` with a query string parameter `?token=latest`.
+        **Note: If you are trying to maintain a full local representation of the items in a folder or a drive, you must use `delta` for the initial enumeration.
+        Other approaches, such as paging through the `children` collection of a folder, are not guaranteed to return every single item if any writes take place during the enumeration. 
+        Using `delta` is the only way to guarantee that you've read all of the data you need to.**

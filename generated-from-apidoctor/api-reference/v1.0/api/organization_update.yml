@@ -46,3 +46,33 @@ response:
   heading: "Response"
   intro: |
     If successful, this method returns a `204 No Content` response code.
+examples:
+  - items:
+    - request:
+      heading: "Request"
+      sampleCode: |
+        ```http
+        PATCH https://graph.microsoft.com/v1.0/organization
+        Content-type: application/json
+        Content-length: 411
+        
+        {
+          "marketingNotificationEmails" : ["marketing@contoso.com"],
+          "privacyProfile" :
+            {
+              "contactEmail":"alice@contoso.com",
+              "statementUrl":"https://contoso.com/privacyStatement"
+            },
+          "securityComplianceNotificationMails" : ["security@contoso.com"],
+          "securityComplianceNotificationPhones" : ["(123) 456-7890"],
+          "technicalNotificationMails" : ["tech@contoso.com"]
+        }
+        ```
+        
+      response:
+      heading: "Response"
+      sampleCode: |
+        ```http
+        HTTP/1.1 204 No Content
+        ```
+        

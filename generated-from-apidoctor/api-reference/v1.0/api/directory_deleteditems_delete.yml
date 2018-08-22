@@ -43,3 +43,21 @@ response:
   heading: "Response"
   intro: |
     If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+examples:
+  - items:
+    - request:
+      heading: "Request"
+      sampleCode: |
+        ```http
+        DELETE https://graph.microsoft.com/v1.0/directory/deletedItems/{object-id}
+        ```
+        
+      response:
+      heading: "Response"
+      intro: |
+        Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+      sampleCode: |
+        ```http
+        HTTP/1.1 204 No Content
+        ```
+        

@@ -64,3 +64,150 @@ response:
     |Start time is greater than end time|400|ErrorInvalidTimeSettings|Start Time should occur before End Time.
     |Invalid day in **daysOfWeek**|400|InvalidArguments|Requested value 'RandomDay' was not found.
     |Invalid **timeZone**|400|InvalidTimeZone|Time Zone settings provided are invalid.
+examples:
+  - items:
+    - request:
+      heading: "Request"
+      intro: |
+        The first example enables automatic replies for a date range, by setting the following properties of the **automaticRepliesSetting** property:
+        **status**, **scheduledStartDateTime** and **scheduledEndDateTime**.
+      sampleCode: |
+        ```http
+        PATCH https://graph.microsoft.com/v1.0/me/mailboxSettings
+        Content-Type: application/json
+        
+        {
+            "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Me/mailboxSettings",
+            "automaticRepliesSetting": {
+                "status": "Scheduled",
+                "scheduledStartDateTime": {
+                  "dateTime": "2016-03-20T18:00:00.0000000",
+                  "timeZone": "UTC"
+                },
+                "scheduledEndDateTime": {
+                  "dateTime": "2016-03-28T18:00:00.0000000",
+                  "timeZone": "UTC"
+                }
+            }
+        }
+        ```
+        
+      response:
+      heading: "Response"
+      intro: |
+        The response includes the updated settings for automatic replies. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+      sampleCode: |
+        ```http
+        HTTP/1.1 200 OK
+        Content-type: application/json
+        
+        {
+            "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Me/mailboxSettings",
+            "automaticRepliesSetting": {
+                "status": "scheduled",
+                "externalAudience": "all",
+                "scheduledStartDateTime": {
+                    "dateTime": "2016-03-20T02:00:00.0000000",
+                    "timeZone": "UTC"
+                },
+                "scheduledEndDateTime": {
+                    "dateTime": "2016-03-28T02:00:00.0000000",
+                    "timeZone": "UTC"
+                },
+            "internalReplyMessage": "<html>\n<body>\n<p>I'm at our company's worldwide reunion and will respond to your message as soon as I return.<br>\n</p></body>\n</html>\n",
+            "externalReplyMessage": "<html>\n<body>\n<p>I'm at the Contoso worldwide reunion and will respond to your message as soon as I return.<br>\n</p></body>\n</html>\n"
+            }
+        }
+        ```
+        
+    - request:
+      heading: "Request 2"
+      intro: |
+        The second example customizes the time zone for the working hours of the signed-in user, by setting the **timeZone** property 
+        to a [custom time zone](xref:graph.customtimezone).
+      sampleCode: |
+        ```http
+        PATCH https://graph.microsoft.com/v1.0/me/mailboxSettings
+        Content-Type: application/json
+        
+        {
+          "workingHours": {
+              "endTime" : "18:30:00.0000000", 
+              "daysOfWeek": [ 
+                  "Monday", 
+                  "Tuesday", 
+                  "Wednesday", 
+                  "Thursday", 
+                  "Friday", 
+                  "Saturday" 
+              ], 
+              "timeZone" : { 
+                 "@odata.type": "#microsoft.graph.customTimeZone", 
+                 "bias":-300, 
+                 "name": "Customized Time Zone",
+                 "standardOffset":{   
+                   "time":"02:00:00.0000000", 
+                   "dayOccurrence":2, 
+                   "dayOfWeek":"Sunday", 
+                   "month":10, 
+                   "year":0 
+                 }, 
+                 "daylightOffset":{   
+                   "daylightBias":100, 
+                   "time":"02:00:00.0000000", 
+                   "dayOccurrence":4, 
+                   "dayOfWeek":"Sunday", 
+                   "month":5, 
+                   "year":0 
+                 } 
+              } 
+          }
+        }
+        ```
+        
+      response:
+      heading: "Response 2"
+      intro: |
+        Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+      sampleCode: |
+        ```http
+        HTTP/1.1 200 OK
+        Content-type: application/json
+        
+        {
+            "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('94447c6e-ea4c-494c-a9ed-d905e366c5cb')/mailboxSettings",
+            "workingHours":{
+                "daysOfWeek":[
+                    "monday",
+                    "tuesday",
+                    "wednesday",
+                    "thursday",
+                    "friday",
+                    "saturday"
+                ],
+                "startTime":"09:00:00.0000000",
+                "endTime":"18:30:00.0000000",
+                "timeZone":{
+                    "@odata.type":"#microsoft.graph.customTimeZone",
+                    "bias":-200,
+                    "name":"Customized Time Zone",
+                    "standardOffset":{
+                        "time":"02:00:00.0000000",
+                        "dayOccurrence":4,
+                        "dayOfWeek":"sunday",
+                        "month":5,
+                        "year":0
+                    },
+                    "daylightOffset":{
+                        "daylightBias":-100,
+                        "time":"02:00:00.0000000",
+                        "dayOccurrence":2,
+                        "dayOfWeek":"sunday",
+                        "month":10,
+                        "year":0
+                    }
+                }
+            }
+        }
+        ```
+        

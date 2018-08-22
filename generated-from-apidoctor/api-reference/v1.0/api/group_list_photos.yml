@@ -44,3 +44,36 @@ response:
   heading: "Response"
   intro: |
     If successful, this method returns a `200 OK` response code and collection of [profilePhoto](xref:graph.profilephoto) objects in the response body.
+examples:
+  - items:
+    - request:
+      heading: "Request"
+      intro: |
+        The following is an example of the request.
+      sampleCode: |
+        ```http
+        GET https://graph.microsoft.com/v1.0/groups/{id}/photos
+        ```
+        
+      response:
+      heading: "Response"
+      intro: |
+        The following is an example of the response.
+        
+      sampleCode: |
+        ```http
+        HTTP/1.1 200 OK
+        Content-type: application/json
+        Content-length: 94
+        
+        {
+          "value": [
+            {
+              "height": 99,
+              "width": 99,
+              "id": "id-value"
+            }
+          ]
+        }
+        ```
+        

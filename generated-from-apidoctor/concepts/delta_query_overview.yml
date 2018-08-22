@@ -43,3 +43,13 @@ queryParameters:
     - *Changed* indicates the item was deleted and can be restored from [deletedItems](xref:graph.directory).
     - *Deleted* indicates the item is deleted and cannot be restored.
     The `@removed` object can be returned in the initial delta query response and in tracked (deltaLink) responses. Clients using delta query requests should be designed to handle these objects in the responses.
+examples:
+  - items:
+    - request:
+      heading: "Delta query request examples"
+      intro: |
+        * [Get incremental changes to events in a calendar view](../concepts/delta_query_events.md)
+        * [Get incremental changes to messages in a folder](xref:graph.delta_query_messages)
+        * [Get incremental changes to groups](xref:graph.delta_query_groups)
+        * [Get incremental changes to users](xref:graph.delta_query_users)
+        

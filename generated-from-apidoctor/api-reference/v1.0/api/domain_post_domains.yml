@@ -44,3 +44,41 @@ response:
   heading: "Response"
   intro: |
     If successful, this method returns `201 Created` response code and [domain](xref:graph.domain) object in the response body.
+examples:
+  - items:
+    - request:
+      heading: "Request"
+      intro: |
+        In the request body, supply a JSON representation of [domain](xref:graph.domain) object.
+      sampleCode: |
+        ```http
+        POST https://graph.microsoft.com/v1.0/domains
+        Content-type: application/json
+        Content-length: 192
+        
+        {
+          "id": "contoso.com"
+        }
+        ```
+        
+      response:
+      heading: "Response"
+      intro: |
+        Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+      sampleCode: |
+        ```http
+        HTTP/1.1 201 Created
+        Content-type: application/json
+        Content-length: 192
+        
+        {
+          "authenticationType": "authenticationType-value",
+          "availabilityStatus": "availabilityStatus-value",
+          "id": "contoso.com",
+          "isAdminManaged": true,
+          "isDefault": true,
+          "isInitial": true,
+          "isRoot": true
+        }
+        ```
+        

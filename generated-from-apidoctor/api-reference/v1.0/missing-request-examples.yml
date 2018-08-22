@@ -7,3 +7,59 @@ summary:
   intro: |
     These are things I had to add in the docs to make sure the Markdown-Scanner
     tool was able to properly handle the Graph docs.
+examples:
+  - items:
+    - request:
+      heading: "Define the /me as singleton"
+      sampleCode: |
+        ```http
+        GET https://graph.microsoft.com/v1.0/me
+        ```
+        
+      response:
+      heading: "Define the /me as singleton"
+      sampleCode: |
+        ```http
+        HTTP/1.1 200 OK
+        Content-Type: application/json
+        
+        {
+        }
+        ```
+        
+    - request:
+      heading: "Define drives as an queryable entityset"
+      sampleCode: |
+        ```http
+        GET https://graph.microsoft.com/v1.0/drives/{drive-id}
+        ```
+        
+      response:
+      heading: "Define drives as an queryable entityset"
+      sampleCode: |
+        ```http
+        HTTP/1.1 200 OK
+        Content-Type: application/json
+        
+        {
+        }
+        ```
+        
+    - request:
+      heading: "define users as an queryable entityset"
+      sampleCode: |
+        ```http
+        GET https://graph.microsoft.com/v1.0/users/{user-id}
+        ```
+        
+      response:
+      heading: "define users as an queryable entityset"
+      sampleCode: |
+        ```http
+        HTTP/1.1 200 OK
+        Content-Type: application/json
+        
+        {
+        }
+        ```
+        

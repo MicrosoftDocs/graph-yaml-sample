@@ -36,3 +36,11 @@ permissions:
     Additionally, to create and manage schema extension definitions, an application must be granted the *Directory.AccessAsUser.All* permission.
   outro: |
     ## Data limits
+examples:
+  - items:
+    - request:
+      heading: "Extension examples"
+      intro: |
+        * [Add custom data to users using open extensions](xref:graph.extensibility_open_users)
+        * [Add custom data to groups using schema extensions](xref:graph.extensibility_schema_groups)
+        
