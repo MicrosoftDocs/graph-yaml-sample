@@ -42,29 +42,3 @@ response:
   heading: "Response"
   intro: |
     If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
-examples:
-  - items:
-    - request:
-      heading: "Request"
-      intro: |
-        Here is an example of the request.
-      sampleCode: |
-        ```http
-        DELETE https://graph.microsoft.com/v1.0/schemaExtensions/{id}
-        ```
-        
-      response:
-      heading: "Response"
-      intro: |
-        Here is an example of the response. 
-      sampleCode: |
-        ```http
-        HTTP/1.1 204 No Content
-        ```
-        
-      outro: |
-        ## See also
-        
-        * [Add custom data to resources using extensions](../../../concepts/extensibility_overview.md)
-        * [Add custom data to groups using schema extensions](../../../concepts/extensibility_schema_groups.md)
-        

@@ -43,28 +43,3 @@ response:
   heading: "Response"
   intro: |
     If successful, this method returns a `204 No Content` response code and no response body.
-examples:
-  - items:
-    - request:
-      heading: "Request"
-      sampleCode: |
-        ```http
-        PATCH https://graph.microsoft.com/v1.0/domains/contoso.com
-        Content-type: application/json
-        
-        {
-          "isDefault": true,
-          "supportedServices": [
-            "Email",
-            "OfficeCommunicationsOnline"
-          ]
-        }
-        ```
-        
-      response:
-      heading: "Response"
-      sampleCode: |
-        ```http
-        HTTP/1.1 204 No Content
-        ```
-        

@@ -39,28 +39,3 @@ response:
   heading: "Response"
   intro: |
     If successful, this method returns a `200 OK` response code and [windowsInformationProtectionNetworkLearningSummary](xref:graph.intune_wip_windowsinformationprotectionnetworklearningsummary) object in the response body.
-examples:
-  - items:
-    - request:
-      heading: "Request"
-      intro: |
-        Here is an example of the request.
-        GET https://graph.microsoft.com/v1.0/deviceManagement/windowsInformationProtectionNetworkLearningSummaries/{windowsInformationProtectionNetworkLearningSummaryId}
-
-      response:
-      heading: "Response"
-      intro: |
-        Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-        HTTP/1.1 200 OK
-        Content-Type: application/json
-        Content-Length: 213
-        
-        {
-          "value": {
-            "@odata.type": "#microsoft.graph.windowsInformationProtectionNetworkLearningSummary",
-            "id": "242108f7-08f7-2421-f708-2124f7082124",
-            "url": "Url value",
-            "deviceCount": 11
-          }
-        }
-

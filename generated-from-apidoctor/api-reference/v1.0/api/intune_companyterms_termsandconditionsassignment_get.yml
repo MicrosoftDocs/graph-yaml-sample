@@ -39,29 +39,3 @@ response:
   heading: "Response"
   intro: |
     If successful, this method returns a `200 OK` response code and [termsAndConditionsAssignment](xref:graph.intune_companyterms_termsandconditionsassignment) object in the response body.
-examples:
-  - items:
-    - request:
-      heading: "Request"
-      intro: |
-        Here is an example of the request.
-        GET https://graph.microsoft.com/v1.0/deviceManagement/termsAndConditions/{termsAndConditionsId}/assignments/{termsAndConditionsAssignmentId}
-
-      response:
-      heading: "Response"
-      intro: |
-        Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-        HTTP/1.1 200 OK
-        Content-Type: application/json
-        Content-Length: 246
-        
-        {
-          "value": {
-            "@odata.type": "#microsoft.graph.termsAndConditionsAssignment",
-            "id": "64c1a196-a196-64c1-96a1-c16496a1c164",
-            "target": {
-              "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
-            }
-          }
-        }
-

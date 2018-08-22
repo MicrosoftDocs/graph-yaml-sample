@@ -39,36 +39,3 @@ response:
   heading: "Response"
   intro: |
     If successful, this method returns a `200 OK` response code and [enrollmentTroubleshootingEvent](xref:graph.intune_troubleshooting_enrollmenttroubleshootingevent) object in the response body.
-examples:
-  - items:
-    - request:
-      heading: "Request"
-      intro: |
-        Here is an example of the request.
-        GET https://graph.microsoft.com/beta/deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEventId}
-
-      response:
-      heading: "Response"
-      intro: |
-        Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-        HTTP/1.1 200 OK
-        Content-Type: application/json
-        Content-Length: 601
-        
-        {
-          "value": {
-            "@odata.type": "#microsoft.graph.enrollmentTroubleshootingEvent",
-            "id": "c4a623f5-23f5-c4a6-f523-a6c4f523a6c4",
-            "eventDateTime": "2016-12-31T23:59:23.3984029-08:00",
-            "correlationId": "Correlation Id value",
-            "managedDeviceIdentifier": "Managed Device Identifier value",
-            "operatingSystem": "Operating System value",
-            "osVersion": "Os Version value",
-            "userId": "User Id value",
-            "deviceId": "Device Id value",
-            "enrollmentType": "userEnrollment",
-            "failureCategory": "authentication",
-            "failureReason": "Failure Reason value"
-          }
-        }
-

@@ -43,35 +43,3 @@ response:
   heading: "Response"
   intro: |
     If successful, this method returns a `200 OK` response code and an updated [deviceCategory](xref:graph.intune_shared_devicecategory) object in the response body.
-examples:
-  - items:
-    - request:
-      heading: "Request"
-      intro: |
-        Here are examples of the request.
-        PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceCategories/{deviceCategoryId}
-        Content-type: application/json
-        Content-length: 82
-        
-        {
-          "displayName": "Display Name value",
-          "description": "Description value"
-        }
-        
-        PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/deviceCategory
-
-      response:
-      heading: "Response"
-      intro: |
-        Here is an example of the response. Note: The response object shown here may be truncated for brevity. Response properties will vary according to context.
-        HTTP/1.1 200 OK
-        Content-Type: application/json
-        Content-Length: 184
-        
-        {
-          "@odata.type": "#microsoft.graph.deviceCategory",
-          "id": "f881b841-b841-f881-41b8-81f841b881f8",
-          "displayName": "Display Name value",
-          "description": "Description value"
-        }
-

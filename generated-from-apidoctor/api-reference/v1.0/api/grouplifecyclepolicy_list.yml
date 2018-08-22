@@ -43,34 +43,3 @@ response:
   heading: "Response"
   intro: |
     If successful, this method returns a `200 OK` response code and a collection of [groupLifecyclePolicy](xref:graph.grouplifecyclepolicy) objects in the response body.
-examples:
-  - items:
-    - request:
-      heading: "Request"
-      sampleCode: |
-        ```http
-        GET https://graph.microsoft.com/v1.0/groupLifecyclePolicies
-        ```
-        
-      response:
-      heading: "Response"
-      intro: |
-        Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-      sampleCode: |
-        ```http
-        HTTP/1.1 200 OK
-        Content-type: application/json
-        Content-length: 223
-        
-        {
-          "value": [
-            {
-              "id": "ffffffff-ffff-ffff-ffff-ffffffffffff",
-              "groupLifetimeInDays": 100,
-              "managedGroupTypes": "Selected",
-              "alternateNotificationEmails": "admin@contoso.com"
-            }
-          ]
-        }
-        ```
-        

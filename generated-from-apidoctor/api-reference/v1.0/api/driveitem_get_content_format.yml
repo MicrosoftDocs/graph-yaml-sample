@@ -36,27 +36,3 @@ requestHeaders:
     |Name|Value|Description
     |:-|:-|:-|
     |_format_|string|Specify the format the item's content should be downloaded as.
-examples:
-  - items:
-    - request:
-      heading: "Example"
-      sampleCode: |
-        ```http
-        GET /me/drive/items/{item-id}/content?format={format}
-        ```
-        
-      response:
-      heading: "Response"
-      intro: |
-        Returns a `302 Found` response redirecting to a pre-authenticated download URL for the converted file.
-        To download the converted file, your app must follow the `Location` header in the response.
-        Pre-authenticated URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header to access.
-      sampleCode: |
-        ```http
-        HTTP/1.1 302 Found
-        Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
-        ```
-        
-      outro: |
-        ### Error responses
-        See [Error Responses][error-response] for more info about how errors are returned.

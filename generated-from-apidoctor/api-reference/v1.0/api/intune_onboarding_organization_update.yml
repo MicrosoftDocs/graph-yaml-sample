@@ -40,31 +40,3 @@ response:
   heading: "Response"
   intro: |
     If successful, this method returns a `200 OK` response code and an updated [organization](xref:graph.intune_onboarding_organization) object in the response body.
-examples:
-  - items:
-    - request:
-      heading: "Request"
-      intro: |
-        Here is an example of the request.
-        PATCH https://graph.microsoft.com/v1.0/organization/{organizationId}
-        Content-type: application/json
-        Content-length: 51
-        
-        {
-          "mobileDeviceManagementAuthority": "intune"
-        }
-
-      response:
-      heading: "Response"
-      intro: |
-        Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-        HTTP/1.1 200 OK
-        Content-Type: application/json
-        Content-Length: 151
-        
-        {
-          "@odata.type": "#microsoft.graph.organization",
-          "id": "9efe224a-224a-9efe-4a22-fe9e4a22fe9e",
-          "mobileDeviceManagementAuthority": "intune"
-        }
-
