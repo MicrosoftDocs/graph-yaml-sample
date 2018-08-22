@@ -47,5 +47,3 @@ response:
   heading: "Response"
   intro: |
     If successful, this method returns `201 Created` response code and [message](xref:graph.message) object in the response body.
-examples:
-- items:

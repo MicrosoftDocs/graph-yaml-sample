@@ -47,35 +47,3 @@ response:
   heading: "Response"
   intro: |
     If successful, this method returns a `200 OK` response code and updated [WorkbookChartLineFormat](xref:graph.chartlineformat) object in the response body.
-examples:
-- items:
-  - request:
-      heading: "Request"
-      intro: |
-        Here is an example of the request.
-      sampleCode: |
-        ```http
-        PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/format/line
-        Content-type: application/json
-        Content-length: 28
-        
-        {
-          "color": "color-value"
-        }
-        ```
-        
-    response:
-      heading: "Response"
-      intro: |
-        Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-      sampleCode: |
-        ```http
-        HTTP/1.1 200 OK
-        Content-type: application/json
-        Content-length: 28
-        
-        {
-          "color": "color-value"
-        }
-        ```
-        

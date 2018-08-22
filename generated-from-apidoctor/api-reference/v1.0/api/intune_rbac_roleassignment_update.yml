@@ -42,39 +42,3 @@ response:
   heading: "Response"
   intro: |
     If successful, this method returns a `200 OK` response code and an updated [roleAssignment](xref:graph.intune_rbac_roleassignment) object in the response body.
-examples:
-- items:
-  - request:
-      heading: "Request"
-      intro: |
-        Here is an example of the request.
-        PATCH https://graph.microsoft.com/v1.0/deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAssignmentId}
-        Content-type: application/json
-        Content-length: 140
-        
-        {
-          "displayName": "Display Name value",
-          "description": "Description value",
-          "resourceScopes": [
-            "Resource Scopes value"
-          ]
-        }
-
-    response:
-      heading: "Response"
-      intro: |
-        Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-        HTTP/1.1 200 OK
-        Content-Type: application/json
-        Content-Length: 242
-        
-        {
-          "@odata.type": "#microsoft.graph.roleAssignment",
-          "id": "b3234d24-4d24-b323-244d-23b3244d23b3",
-          "displayName": "Display Name value",
-          "description": "Description value",
-          "resourceScopes": [
-            "Resource Scopes value"
-          ]
-        }
-

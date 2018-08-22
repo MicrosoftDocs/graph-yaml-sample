@@ -134,5 +134,3 @@ response:
   outro: |
     #### GET resource instance expanded with a matching extended property
     The response body includes an object representing the requested resource instance, expanded with the matching [singleValueLegacyExtendedProperty](xref:graph.singlevaluelegacyextendedproperty) object.
-examples:
-- items:

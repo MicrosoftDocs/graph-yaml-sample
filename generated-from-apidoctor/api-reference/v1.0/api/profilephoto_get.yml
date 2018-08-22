@@ -61,5 +61,3 @@ requestBody:
   outro: |
     ## Response for getting the photo
     If successful, this method returns a `200 OK` response code and binary data of the requested photo.  If no photo exists, the operation returns `404 Not Found`.
-examples:
-- items:

@@ -43,30 +43,3 @@ response:
   heading: "Response"
   intro: |
     If successful, this action returns a `204 No Content` response code.
-examples:
-- items:
-  - request:
-      heading: "Request"
-      intro: |
-        Here is an example of the request.
-      sampleCode: |
-        ```http
-        POST https://graph.microsoft.com/v1.0/users/{usersId}/managedDevices/{managedDeviceId}/wipe
-        Content-type: application/json
-        
-        {
-          "keepEnrollmentData": true,
-          "keepUserData": true,
-          "macOsUnlockCode": "Mac Os Unlock Code value"
-        }
-        ```
-        
-    response:
-      heading: "Response"
-      intro: |
-        Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-      sampleCode: |
-        ```http
-        HTTP/1.1 204 No Content
-        ```
-        

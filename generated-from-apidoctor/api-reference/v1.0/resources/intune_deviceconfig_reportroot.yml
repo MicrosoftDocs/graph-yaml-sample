@@ -35,12 +35,3 @@ relationships:
   heading: "Relationships"
   intro: |
     None
-examples:
-- items:
-  - request:
-      heading: "request"
-      sampleCode: |
-        ```http
-        GET https://graph.microsoft.com/v1.0/reports
-        ```
-        

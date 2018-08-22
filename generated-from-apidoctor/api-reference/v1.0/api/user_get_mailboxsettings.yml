@@ -74,5 +74,3 @@ response:
     * string (for **timeZone**)
     * [workingHours](xref:graph.workinghours)
     
-examples:
-- items:

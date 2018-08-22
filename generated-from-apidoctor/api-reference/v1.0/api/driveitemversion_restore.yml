@@ -33,21 +33,3 @@ requestBody:
   heading: "Request body"
   intro: |
     No request body is required.
-examples:
-- items:
-  - request:
-      heading: "request"
-      sampleCode: |
-        ```http
-        POST /drives/{drive-id}/items/{item-id}/versions/{version-id}/restoreVersion
-        ```
-        
-    response:
-      heading: "Response"
-      intro: |
-        If successful, the API call returns a `204 No Content`.
-      sampleCode: |
-        ```http
-        HTTP/1.1 204 No Content
-        ```
-        

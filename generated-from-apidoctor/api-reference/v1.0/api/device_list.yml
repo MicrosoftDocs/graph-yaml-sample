@@ -43,37 +43,3 @@ response:
   heading: "Response"
   intro: |
     If successful, this method returns a `200 OK` response code and collection of [device](xref:graph.device) objects in the response body.
-examples:
-- items:
-  - request:
-      heading: "Request"
-      intro: |
-        Here is an example of the request.
-      sampleCode: |
-        ```http
-        GET https://graph.microsoft.com/v1.0/devices
-        ```
-        
-    response:
-      heading: "Response"
-      intro: |
-        Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-      sampleCode: |
-        ```http
-        HTTP/1.1 200 OK
-        Content-type: application/json
-        
-        {
-          "value": [
-            {
-              "accountEnabled":false,
-              "deviceId":"4c299165-6e8f-4b45-a5ba-c5d250a707ff",
-              "displayName":"Test device",
-              "id": "id-value",
-              "operatingSystem":"linux",
-              "operatingSystemVersion":"1"
-            }
-          ]
-        }
-        ```
-        

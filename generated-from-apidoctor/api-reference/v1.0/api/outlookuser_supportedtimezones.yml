@@ -52,5 +52,3 @@ response:
   heading: "Response"
   intro: |
     If successful, this method returns `200 OK` response code and a collection of [timeZoneInformation](xref:graph.timezoneinformation) objects in the response body.
-examples:
-- items:

@@ -45,22 +45,6 @@ response:
   heading: "Response"
   intro: |
     If successful, this method returns `204 No Content` response code.
-examples:
-- items:
-  - request:
-      heading: "request"
-      sampleCode: |
-        ```http
-        DELETE /me/drive/items/{item-id}/permissions/{perm-id}
-        ```
-        
-    response:
-      heading: "Response"
-      sampleCode: |
-        ```http
-        HTTP/1.1 204 No Content
-        ```
-        
 remarks:
   heading: "Remarks"
   intro: |

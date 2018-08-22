@@ -45,31 +45,3 @@ response:
   heading: "Response"
   intro: |
     If successful, this method returns `200 OK` response code. If the group is removed from the policy, a **true** value is returned in the response body. Otherwise, a **false** value is returned in the reponse body.
-examples:
-- items:
-  - request:
-      heading: "Request"
-      sampleCode: |
-        ```http
-        POST https://graph.microsoft.com/v1.0/groupLifecyclePolicies/{id}/removeGroup
-        Content-type: application/json
-        Content-length: 57
-        
-        {
-          "groupId": "ffffffff-ffff-ffff-ffff-ffffffffffff"
-        }
-        ```
-        
-    response:
-      heading: "Response"
-      sampleCode: |
-        ```http
-        HTTP/1.1 200 OK
-        Content-type: application/json
-        Content-length: 21
-        
-        {
-          "value": true
-        }
-        ```
-        

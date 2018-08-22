@@ -40,12 +40,3 @@ relationships:
   - relationship: "tasks"
     type: "Collection(microsoft.graph.plannerTask)"
     description: "Read-only. Nullable. Returns a collection of the specified tasks"
-examples:
-- items:
-  - request:
-      heading: "request"
-      sampleCode: |
-        ```http
-        GET https://graph.microsoft.com/v1.0/planner
-        ```
-        

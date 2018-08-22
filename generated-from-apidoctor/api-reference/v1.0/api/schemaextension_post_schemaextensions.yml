@@ -55,5 +55,3 @@ response:
   heading: "Response"
   intro: |
     If successful, this method returns `201 Created` response code and [schemaExtension](xref:graph.schemaextension) object in the response body.
-examples:
-- items:

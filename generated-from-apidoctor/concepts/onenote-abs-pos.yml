@@ -30,5 +30,3 @@ permissions:
     * Notes.ReadWrite
     * Notes.ReadWrite.All  
     
-examples:
-- items:

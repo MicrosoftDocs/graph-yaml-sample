@@ -21,5 +21,3 @@ summary:
     If **findMeetingTimes** cannot suggest any meeting times, it indicates a specific reason (**emptySuggestionsReason**), such as the organizer or a required attendee not available.
     Based on this value, you can better adjust the parameters and call **findMeetingTimes** again.
     
-examples:
-- items:

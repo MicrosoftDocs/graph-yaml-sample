@@ -77,33 +77,3 @@ response:
   heading: "Response"
   intro: |
     If successful, this method returns a `204 No Content` response code.
-examples:
-- items:
-  - request:
-      heading: "Request"
-      intro: |
-        Here is an example of the request.
-      sampleCode: |
-        ```http
-        PATCH https://graph.microsoft.com/v1.0/me
-        Content-type: application/json
-        Content-length: 491
-        
-        {
-          "accountEnabled": true,
-          "businessPhones": [
-            "businessPhones-value"
-          ],
-          "city": "city-value"
-        }
-        ```
-        
-    response:
-      heading: "Response"
-      intro: |
-        Here is an example of the response.
-      sampleCode: |
-        ```http
-        HTTP/1.1 204 No Content
-        ```
-        

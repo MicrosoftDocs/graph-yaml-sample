@@ -39,23 +39,3 @@ response:
   heading: "Response"
   intro: |
     If successful, this method returns the `204 No Content` response code if the history item was deleted.
-examples:
-- items:
-  - request:
-      heading: "Request"
-      intro: |
-        Here is an example of the request.
-      sampleCode: |
-        ```http
-        PUT https://graph.microsoft.com/v1.0/me/activities/{activity-id}/historyItems/{item-id}
-        ```
-        
-    response:
-      heading: "Response"
-      intro: |
-        Here is an example of the response.
-      sampleCode: |
-        ```http
-        HTTP/1.1 204 No Content
-        ```
-        

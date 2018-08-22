@@ -139,5 +139,3 @@ response:
     created extended property, [get the instance expanded with the extended property](xref:graph.singlevaluelegacyextendedproperty_get).
     When creating an extended property in a _new_ [group post](xref:graph.post) by replying to a thread or post, the response includes only 
     a response code but not the new post nor the extended property.
-examples:
-- items:

@@ -41,12 +41,3 @@ relationships:
   - relationship: "deletedItems"
     type: "Collection(microsoft.graph.directoryObject)"
     description: "Recently deleted items. Read-only. Nullable."
-examples:
-- items:
-  - request:
-      heading: "request"
-      sampleCode: |
-        ```http
-        GET https://graph.microsoft.com/v1.0/directory
-        ```
-        

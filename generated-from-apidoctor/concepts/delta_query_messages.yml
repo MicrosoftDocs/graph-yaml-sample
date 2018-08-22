@@ -33,5 +33,3 @@ summary:
     when you begin the next round.
     See the [example](#example-to-synchronize-messages-in-a-folder) below to learn how to use the `nextLink` and
     `deltaLink` URLs.
-examples:
-- items:

@@ -77,5 +77,3 @@ response:
     |Creating an extension while explicitly creating a _new_ resource instance|[contact](xref:graph.contact), [event](xref:graph.event), [message](xref:graph.message)|Includes the new instance expanded with the [openTypeExtension](xref:graph.openTypeExtension) object.
     |Creating an extension while implicitly creating a resource instance|[post](xref:graph.post)|The response includes only a response code but not a response body.
     |Creating an extension in an _existing_ resource instance|All supported resources|Includes the **openTypeExtension** object.
-examples:
-- items:

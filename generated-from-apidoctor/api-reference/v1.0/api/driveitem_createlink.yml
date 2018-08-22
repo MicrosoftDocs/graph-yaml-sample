@@ -58,48 +58,6 @@ response:
   intro: |
     If successful, this method returns a single [Permission](xref:graph.permission) resource in the response body that represents the requested sharing permissions.
     The response will be `201 Created` if a new sharing link is created for the item or `200 OK` if an existing link is returned.
-examples:
-- items:
-  - request:
-      heading: "Request"
-      sampleCode: |
-        ```http
-        POST /me/drive/items/{item-id}/createLink
-        Content-type: application/json
-        
-        {
-          "type": "view",
-          "scope": "anonymous"
-        }
-        ```
-        
-    response:
-      heading: "Response"
-      sampleCode: |
-        ```http
-        HTTP/1.1 201 Created
-        Content-Type: application/json
-        
-        {
-          "id": "123ABC",
-          "roles": ["write"],
-          "link": {
-            "type": "view",
-            "scope": "anonymous",
-            "webUrl": "https://1drv.ms/A6913278E564460AA616C71B28AD6EB6",
-            "application": {
-              "id": "1234",
-              "displayName": "Sample Application"
-            },
-          }
-        }
-        ```
-        
-      outro: |
-        ## Creating company sharable links
-        OneDrive for Business and SharePoint support company sharable links.
-        These are similar to anonymous links, except they only work for members of the owning organization.
-        To create a company sharable link, use the **scope** parameter with a value of `organization`.
 remarks:
   heading: "Remarks"
   intro: |

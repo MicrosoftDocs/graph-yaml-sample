@@ -44,37 +44,3 @@ response:
   heading: "Response"
   intro: |
     If successful, this method returns `200 OK` response code and [directoryObject](xref:graph.directoryobject) object in the response body.
-examples:
-- items:
-  - request:
-      heading: "Request"
-      sampleCode: |
-        ```http
-        POST https://graph.microsoft.com/v1.0/directory/deletedItems/{object-id}/restore
-        ```
-        
-      outro: |
-        In the request body, supply a JSON representation of [directoryObject](xref:graph.directoryobject) object.
-    response:
-      heading: "Response"
-      intro: |
-        Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-      sampleCode: |
-        ```http
-        HTTP/1.1 200 OK
-        Content-type: application/json
-        
-        {
-          "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#directoryObjects/$entity",
-          "@odata.type":"#microsoft.graph.group",
-          "id":"46cc6179-19d0-473e-97ad-6ff84347bbbb",
-          "displayName":"SampleGroup",
-          "groupTypes":["Unified"],
-          "mail":"example@contoso.com",
-          "mailEnabled":true,
-          "mailNickname":"Example",
-          "securityEnabled":false,
-          "visibility":"Public"
-        }
-        ```
-        

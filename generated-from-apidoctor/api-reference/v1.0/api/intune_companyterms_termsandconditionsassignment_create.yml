@@ -40,36 +40,3 @@ response:
   heading: "Response"
   intro: |
     If successful, this method returns a `201 Created` response code and a [termsAndConditionsAssignment](xref:graph.intune_companyterms_termsandconditionsassignment) object in the response body.
-examples:
-- items:
-  - request:
-      heading: "Request"
-      intro: |
-        Here is an example of the request.
-        POST https://graph.microsoft.com/v1.0/deviceManagement/termsAndConditions/{termsAndConditionsId}/assignments
-        Content-type: application/json
-        Content-length: 168
-        
-        {
-          "@odata.type": "#microsoft.graph.termsAndConditionsAssignment",
-          "target": {
-            "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
-          }
-        }
-
-    response:
-      heading: "Response"
-      intro: |
-        Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-        HTTP/1.1 201 Created
-        Content-Type: application/json
-        Content-Length: 217
-        
-        {
-          "@odata.type": "#microsoft.graph.termsAndConditionsAssignment",
-          "id": "64c1a196-a196-64c1-96a1-c16496a1c164",
-          "target": {
-            "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
-          }
-        }
-

@@ -72,5 +72,3 @@ response:
   heading: "Response"
   intro: |
     If successful, this method returns `201 Created` response code and [event](xref:graph.event) object in the response body.
-examples:
-- items:

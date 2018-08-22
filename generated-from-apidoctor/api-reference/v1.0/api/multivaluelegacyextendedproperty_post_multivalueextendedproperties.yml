@@ -140,5 +140,3 @@ response:
     created extended property, [get the instance expanded with the extended property](xref:graph.multivaluelegacyextendedproperty_get).
     When creating an extended property in a _new_ group post, the response includes only a response code but not the new post nor 
     the extended property. You cannot create an extended property in an existing group post.
-examples:
-- items:

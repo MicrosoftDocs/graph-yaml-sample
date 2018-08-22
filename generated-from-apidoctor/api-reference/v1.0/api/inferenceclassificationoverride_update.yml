@@ -50,38 +50,3 @@ response:
   heading: "Response"
   intro: |
     If successful, this method returns a `200 OK` response code and updated [inferenceClassificationOverride](xref:graph.inferenceclassificationoverride) object in the response body.
-examples:
-- items:
-  - request:
-      heading: "Request"
-      intro: |
-        The following example changes the override for the SMTP address randiw@adatum.onmicrosoft.com from `other` to `focused`.
-      sampleCode: |
-        ```http
-        PATCH https://graph.microsoft.com/v1.0/me/inferenceClassification/overrides/{id}
-        Content-type: application/json
-        
-        {
-          "classifyAs": "focused"
-        }
-        ```
-        
-    response:
-      heading: "Response"
-      intro: |
-        Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-      sampleCode: |
-        ```http
-        HTTP/1.1 200 OK
-        Content-type: application/json
-        
-        {
-          "classifyAs": "focused",
-          "senderEmailAddress": {
-            "name": "Randi Welch",
-            "address": "randiw@adatum.onmicrosoft.com"
-          },
-          "id": "98f5bdef-576a-404d-a2ea-07a3cf34af4r"
-        }
-        ```
-        
