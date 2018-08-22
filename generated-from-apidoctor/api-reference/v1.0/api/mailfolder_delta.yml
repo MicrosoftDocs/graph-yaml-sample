@@ -68,8 +68,8 @@ response:
   intro: |
     If successful, this method returns a `200 OK` response code and [mailFolder](xref:graph.mailfolder) collection object in the response body.
 examples:
-- items:
-  - request:
+  - items:
+    - request:
       heading: "Request"
       intro: |
         The following example shows how to make a single **delta** function call, and limit the maximum number of mail folders 
@@ -87,7 +87,7 @@ examples:
         Prefer: odata.maxpagesize=2
         ```
         
-    response:
+      response:
       heading: "Response"
       intro: |
         If the request is successful, the response would include a state token, which is either a _skipToken_  
@@ -116,7 +116,7 @@ examples:
         }
         ```
         
-  - request:
+    - request:
       heading: "See also"
       intro: |
         * [Use delta query to track changes in Microsoft Graph data](../../../concepts/delta_query_overview.md)

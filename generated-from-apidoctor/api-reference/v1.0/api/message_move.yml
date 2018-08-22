@@ -49,12 +49,12 @@ response:
   intro: |
     If successful, this method returns `201 Created` response code and a [message](xref:graph.message) resource in the response body.
 examples:
-- items:
-  - request:
+  - items:
+    - request:
       heading: "Example"
       intro: |
         Here is an example of how to call this API.
-  - request:
+    - request:
       heading: "Request"
       intro: |
         The following request moves the specified message to the Deleted Items folder, identified by its well-known folder name `deleteditems`.
@@ -68,7 +68,7 @@ examples:
         }
         ```
         
-    response:
+      response:
       heading: "Response"
       intro: |
         Here is an example of the response.

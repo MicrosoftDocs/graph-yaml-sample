@@ -68,8 +68,8 @@ response:
     * Report Period
     
 examples:
-- items:
-  - request:
+  - items:
+    - request:
       heading: "Request"
       intro: |
         The following is an example of the request.
@@ -78,7 +78,7 @@ examples:
         GET https://graph.microsoft.com/v1.0/reports/getYammerGroupsActivityDetail(period='D7')
         ```
         
-    response:
+      response:
       heading: "Response"
       intro: |
         The following is an example of the response.
@@ -88,7 +88,7 @@ examples:
         Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
         ```
         
-  - request:
+    - request:
       heading: "Request"
       intro: |
         If called with a `date`, the report is scoped to activity on the given date.
@@ -97,7 +97,7 @@ examples:
         GET https://graph.microsoft.com/v1.0/reports/getYammerGroupsActivityDetail(date='2018-03-05')
         ```
         
-    response:
+      response:
       heading: "Response"
       intro: |
         The following is an example of the response.

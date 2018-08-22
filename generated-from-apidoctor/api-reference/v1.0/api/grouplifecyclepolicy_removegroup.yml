@@ -46,8 +46,8 @@ response:
   intro: |
     If successful, this method returns `200 OK` response code. If the group is removed from the policy, a **true** value is returned in the response body. Otherwise, a **false** value is returned in the reponse body.
 examples:
-- items:
-  - request:
+  - items:
+    - request:
       heading: "Request"
       sampleCode: |
         ```http
@@ -60,7 +60,7 @@ examples:
         }
         ```
         
-    response:
+      response:
       heading: "Response"
       sampleCode: |
         ```http

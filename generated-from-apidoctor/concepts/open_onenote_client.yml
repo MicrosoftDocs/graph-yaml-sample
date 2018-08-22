@@ -35,8 +35,8 @@ summary:
     
     The following examples show how to check the status code of the response, parse the JSON to extract the URLs, and then open the OneNote client.
 examples:
-- items:
-  - request:
+  - items:
+    - request:
       heading: "iOS example"
       intro: |
         The following example gets the OneNote client URLs from the JSON response. It uses the AFNetworking library (http://afnetworking.com/) to extract the two URLs. In the example, `created` is a pointer to the **ONSCPSStandardResponse** object used to store the response values, and `responseObject` holds the parsed JSON.
@@ -81,7 +81,7 @@ examples:
         NSURL *url = [NSURL URLWithString:standardResponse.oneNoteWebUrl];
         [[UIApplication sharedApplication] openURL:url];
 
-  - request:
+    - request:
       heading: "Android example"
       intro: |
         First, check for the success status code, and then parse the JSON. The example assumes a POST request was sent, so it checks for a `201 Created` status code. If you made a `GET` request, check for a `200` status code instead.

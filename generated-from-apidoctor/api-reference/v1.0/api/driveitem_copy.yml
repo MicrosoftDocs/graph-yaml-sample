@@ -43,8 +43,8 @@ requestBody:
     |name|string|Optional. The new name for the copy. If this isn't provided, the same name will be used as the original.
     **Note:** The _parentReference_ should include the `driveId` and `id` parameters for the target folder.
 examples:
-- items:
-  - request:
+  - items:
+    - request:
       heading: "Example"
       intro: |
         This example copies a file identified by `{item-id}` into a folder identified with a `driveId` and `id` value.
@@ -63,7 +63,7 @@ examples:
         }
         ```
         
-    response:
+      response:
       heading: "Response"
       intro: |
         Returns details about how to [monitor the progress](../../../concepts/long_running_actions_overview.md) of the copy, upon accepting the request.

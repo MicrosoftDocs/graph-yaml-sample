@@ -34,8 +34,8 @@ requestBody:
   intro: |
     In the request body, supply a JSON representation of the [list][] resource to create.
 examples:
-- items:
-  - request:
+  - items:
+    - request:
       heading: "Example"
       intro: |
         Here is an example of how to create a new generic list.
@@ -66,7 +66,7 @@ examples:
         **Note:** Custom columns are optional.
         In addition to any columns specified here, new lists are created with columns defined in the referenced **template**.
         If the **list** facet or **template** is unspecified, the list defaults to the `genericList` template, which includes a _Title_ column.
-    response:
+      response:
       heading: "Response"
       intro: |
         If successful, this method returns a [list][] in the response body for the created list.

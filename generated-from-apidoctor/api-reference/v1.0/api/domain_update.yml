@@ -44,8 +44,8 @@ response:
   intro: |
     If successful, this method returns a `204 No Content` response code and no response body.
 examples:
-- items:
-  - request:
+  - items:
+    - request:
       heading: "Request"
       sampleCode: |
         ```http
@@ -61,7 +61,7 @@ examples:
         }
         ```
         
-    response:
+      response:
       heading: "Response"
       sampleCode: |
         ```http

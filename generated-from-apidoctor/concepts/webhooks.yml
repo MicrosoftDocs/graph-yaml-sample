@@ -32,8 +32,8 @@ summary:
     `/drives/{id}/root`
     `/drives/{id}/root/subfolder`
 examples:
-- items:
-  - request:
+  - items:
+    - request:
       heading: "Subscription request example"
       intro: |
         POST https://graph.microsoft.com/v1.0/subscriptions
@@ -49,7 +49,7 @@ examples:
         The `changeType`, `notificationUrl`, `resource`, and `expirationDateTime` properties are required. See [subscription resource type](xref:graph.subscription) for property definitions and values.
         Although `clientState` is not required, you must include it to comply with our recommended notification handling process. Setting this property will allow you to confirm that notifications you receive originate from the Microsoft Graph service. For this reason, the value of the property should remain secret and known only to your application and the Microsoft Graph service.
         If successful, Microsoft Graph returns a `201 Created` code and a [subscription](xref:graph.subscription) object in the body.
-  - request:
+    - request:
       heading: "Subscription renewal example"
       intro: |
         PATCH https://graph.microsoft.com/v1.0/subscriptions/{id}
@@ -60,7 +60,7 @@ examples:
         }
 
         If successful, Microsoft Graph returns a `200 OK` code and a [subscription](xref:graph.subscription) object in the body. The subscription object includes the new `expirationDateTime` value.
-  - request:
+    - request:
       heading: "Notification example"
       intro: |
         When the user receives an email, Microsoft Graph sends a notification like the following:

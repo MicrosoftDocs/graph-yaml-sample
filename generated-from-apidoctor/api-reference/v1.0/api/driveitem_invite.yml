@@ -61,8 +61,8 @@ requestBody:
     |sendInvitation|Boolean|If true, a [sharing link][] is sent to the recipient. Otherwise, a permission is granted directly without sending a notification.
     |roles|Collection(String)|Specify the roles that are to be granted to the recipients of the sharing invitation.
 examples:
-- items:
-  - request:
+  - items:
+    - request:
       heading: "Example"
       intro: |
         This example sends a sharing invitation to a user with email address "ryan@contoso.com" with a message about a file being collaborated on.
@@ -86,7 +86,7 @@ examples:
         }
         ```
         
-    response:
+      response:
       heading: "Response"
       intro: |
         Here is an example of the response.

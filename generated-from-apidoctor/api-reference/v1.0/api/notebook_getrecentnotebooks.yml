@@ -51,12 +51,12 @@ response:
   intro: |
     A successful response returns a `200 OK` that contains a JSON collection of **recentNotebooks**.
 examples:
-- items:
-  - request:
+  - items:
+    - request:
       heading: "Example"
       intro: |
         The following example shows how to call this API.
-  - request:
+    - request:
       heading: "Request"
       intro: |
         The following example shows the request.
@@ -65,7 +65,7 @@ examples:
         GET https://graph.microsoft.com/v1.0/me/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks=true)
         ```
         
-    response:
+      response:
       heading: "Response"
       intro: |
         The following example shows the response.

@@ -44,8 +44,8 @@ queryParameters:
     - *Deleted* indicates the item is deleted and cannot be restored.
     The `@removed` object can be returned in the initial delta query response and in tracked (deltaLink) responses. Clients using delta query requests should be designed to handle these objects in the responses.
 examples:
-- items:
-  - request:
+  - items:
+    - request:
       heading: "Delta query request examples"
       intro: |
         * [Get incremental changes to events in a calendar view](../concepts/delta_query_events.md)

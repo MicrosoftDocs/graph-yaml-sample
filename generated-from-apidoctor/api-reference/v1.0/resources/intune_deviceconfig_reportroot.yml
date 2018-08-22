@@ -36,15 +36,15 @@ relationships:
   intro: |
     None
 examples:
-- items:
-  - request:
+  - items:
+    - request:
       heading: "Example"
       sampleCode: |
         ```http
         GET https://graph.microsoft.com/v1.0/reports
         ```
         
-    response:
+      response:
       heading: "Example"
       sampleCode: |
         ```json

@@ -27,15 +27,15 @@ httpRequest:
     GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 
 examples:
-- items:
-  - request:
+  - items:
+    - request:
       heading: "Request"
       sampleCode: |
         ```http
         GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
         ```
         
-    response:
+      response:
       heading: "Response"
       sampleCode: |
         ```json

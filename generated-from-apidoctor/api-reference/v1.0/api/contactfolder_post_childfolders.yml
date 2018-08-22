@@ -45,8 +45,8 @@ response:
   intro: |
     If successful, this method returns `201 Created` response code and [ContactFolder](xref:graph.contactfolder) object in the response body.
 examples:
-- items:
-  - request:
+  - items:
+    - request:
       heading: "Request"
       intro: |
         Here is an example of the request.
@@ -63,7 +63,7 @@ examples:
         
       outro: |
         In the request body, supply a JSON representation of [contactFolder](xref:graph.contactfolder) object.
-    response:
+      response:
       heading: "Response"
       intro: |
         Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

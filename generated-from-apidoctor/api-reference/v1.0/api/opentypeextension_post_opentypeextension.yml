@@ -78,8 +78,8 @@ response:
     |Creating an extension while implicitly creating a resource instance|[post](xref:graph.post)|The response includes only a response code but not a response body.
     |Creating an extension in an _existing_ resource instance|All supported resources|Includes the **openTypeExtension** object.
 examples:
-- items:
-  - request:
+  - items:
+    - request:
       heading: "Request 1"
       intro: |
         The first example creates a message and an extension in the same call. The request body includes the following:
@@ -119,7 +119,7 @@ examples:
         }
         ```
         
-  - request:
+    - request:
       heading: "Response 1"
       intro: |
         Here is the response for the first example. The response body includes properties of the new message,
@@ -198,7 +198,7 @@ examples:
         
       outro: |
         ****
-  - request:
+    - request:
       heading: "Request 2"
       intro: |
         The second example creates an extension in the specified message. The request body includes the following for the
@@ -221,7 +221,7 @@ examples:
         }
         ```
         
-  - request:
+    - request:
       heading: "Response 2"
       intro: |
         Here is the response for the second example. The response body includes the following for the new extension:
@@ -250,7 +250,7 @@ examples:
         
       outro: |
         ****
-  - request:
+    - request:
       heading: "Request 3"
       intro: |
         The third example creates an extension in the specified group event. The request body includes the following for the
@@ -273,7 +273,7 @@ examples:
         }
         ```
         
-  - request:
+    - request:
       heading: "Response 3"
       intro: |
         Here is the response from the third example request.
@@ -295,7 +295,7 @@ examples:
         
       outro: |
         ****
-  - request:
+    - request:
       heading: "Request 4"
       intro: |
         The fourth example creates an extension in a new group post, using the same **reply** action call to an existing group post. The **reply** action
@@ -333,7 +333,7 @@ examples:
         }
         ```
         
-  - request:
+    - request:
       heading: "Response 4"
       intro: |
         Here is the response from the fourth example. Successfully creating an extension in a new group post results in only the
@@ -347,7 +347,7 @@ examples:
         
       outro: |
         ****
-  - request:
+    - request:
       heading: "Request 5"
       intro: |
         The fifth example creates an extension in a new group post using the same POST operation to create a conversation. The POST operation
@@ -393,7 +393,7 @@ examples:
         }
         ```
         
-  - request:
+    - request:
       heading: "Response 5"
       intro: |
         Here is the response from the fifth example which contains the new conversation and a thread ID. This new thread contains an automatically

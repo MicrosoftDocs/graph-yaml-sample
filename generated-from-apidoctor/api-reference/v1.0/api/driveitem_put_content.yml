@@ -43,8 +43,8 @@ response:
   intro: |
     If successful, this method returns a [driveItem](xref:graph.driveitem) object in the response body for the newly created or updated file.
 examples:
-- items:
-  - request:
+  - items:
+    - request:
       heading: "Example (upload a new file)"
       intro: |
         This example uploads the string "The contents of the file goes here." to a file in the signed-in user's drive under FolderA named FileB.txt.
@@ -56,7 +56,7 @@ examples:
         The contents of the file goes here.
         ```
         
-    response:
+      response:
       heading: "Response"
       intro: |
         If successful, this method returns an [driveItem][item-resource] resource in the response body for the newly created file.
@@ -73,7 +73,7 @@ examples:
         }
         ```
         
-  - request:
+    - request:
       heading: "Example (updating an existing file)"
       intro: |
         This example replaces the contents of a file with a known ID.
@@ -85,7 +85,7 @@ examples:
         The contents of the file goes here.
         ```
         
-    response:
+      response:
       heading: "Response"
       intro: |
         If successful, this method returns an [driveItem][item-resource] resource in the response body for the newly created file.

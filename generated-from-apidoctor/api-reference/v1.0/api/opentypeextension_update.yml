@@ -82,8 +82,8 @@ response:
     If successful, this method returns a `200 OK` response code and the updated
     [openTypeExtension](xref:graph.openTypeExtension) object.
 examples:
-- items:
-  - request:
+  - items:
+    - request:
       heading: "Request 1"
       intro: |
         The first example shows how to update an extension in a message. The extension is initially represented by the following JSON payload:
@@ -131,7 +131,7 @@ examples:
         }
         ```
         
-  - request:
+    - request:
       heading: "Response 1"
       intro: |
         Here is the response which is the same regardless of the way used to reference the extension.
@@ -156,7 +156,7 @@ examples:
         
       outro: |
         ****
-  - request:
+    - request:
       heading: "Request 2"
       intro: |
         The second example shows how to update an extension in a group post. The extension is initially represented by the following JSON payload, 
@@ -201,7 +201,7 @@ examples:
         }
         ```
         
-  - request:
+    - request:
       heading: "Response 2"
       intro: |
         Here is the response of the second example which shows the updated `expirationDate` in the extension.

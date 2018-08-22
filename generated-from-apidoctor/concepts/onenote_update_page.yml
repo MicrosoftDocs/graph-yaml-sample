@@ -44,8 +44,8 @@ permissions:
     * [OneNote GitHub repos](http://go.microsoft.com/fwlink/?LinkID=390178)  
     
 examples:
-- items:
-  - request:
+  - items:
+    - request:
       heading: "Example requests"
       intro: |
         An update request contains one or more changes represented as JSON change objects. These objects can define different targets on the page and different actions and content for the targets.
@@ -57,11 +57,11 @@ examples:
         * [Complete PATCH requests](#complete-patch-request-examples)
         
         <a name="append-examples"></a>
-  - request:
+    - request:
       heading: "Append child elements"
       intro: |
         The **append** action adds a child to a **body**, **div** (within a div), **ol**, or **ul** element. The **position** attribute determines whether to append the child before or after the target. The default position is **after**.
-  - request:
+    - request:
       heading: "Append to a div"
       intro: |
         The following example adds two child nodes to the **div1** element. It adds an image as the first child and a paragraph as the last child. 
@@ -79,7 +79,7 @@ examples:
           }
         ]
 
-  - request:
+    - request:
       heading: "Append to the *body* element"
       intro: |
         You can use the **body** shortcut to append a child element inside the first div on any page.
@@ -97,7 +97,7 @@ examples:
           }
         ]
 
-  - request:
+    - request:
       heading: "Append to a list"
       intro: |
         The following example adds a list item as a last child to the target list. The **list-style-type** property is defined because the item uses a non-default list style.
@@ -110,11 +110,11 @@ examples:
         ]
 
         <a name="insert-examples"></a>
-  - request:
+    - request:
       heading: "Insert sibling elements"
       intro: |
         The **insert** action adds a sibling to the target element. The **position** attribute determines whether to insert the sibling before or after the target. The default position is **after**. See [elements that support **insert**](#supported-elements-and-actions).
-  - request:
+    - request:
       heading: "Insert siblings"
       intro: |
         The following example adds two sibling nodes to the page. It adds an image above the **para1** element and a paragraph below the **para2** element.
@@ -133,11 +133,11 @@ examples:
         ]
 
         <a name="replace-examples"></a>
-  - request:
+    - request:
       heading: "Replace elements"
       intro: |
         You can use either the **data-id** or generated **id** as the target value to replace **img** and **object** elements that are within a div. To replace the page title, use the **title** keyword. For all other [elements that support **replace**](#supported-elements-and-actions), you must use the generated ID.
-  - request:
+    - request:
       heading: "Replace an image"
       intro: |
         The following example replaces an image with a div by using the image's **data-id** as the target. 
@@ -149,7 +149,7 @@ examples:
           }
         ]
 
-  - request:
+    - request:
       heading: "Update a table"
       intro: |
         This example shows how to update a table by using its generated ID. Replacing **tr** and **td** elements is not supported, but you can replace the entire table.
@@ -165,7 +165,7 @@ examples:
           }
         ]
 
-  - request:
+    - request:
       heading: "Change the title"
       intro: |
         This example shows how to change the title of a page. To change the title, use the **title** keyword as the target value. Don't use a # with the title target.
@@ -177,7 +177,7 @@ examples:
           }
         ]
 
-  - request:
+    - request:
       heading: "Update a to-do item"
       intro: |
         The following example uses the replace action to change a to-do check box item to a completed state.
@@ -191,11 +191,11 @@ examples:
 
         See [Use note tags](xref:graph.onenote-note-tags) for more about using the **data-tag** attribute.
         <a name="complete-requests"></a>
-  - request:
+    - request:
       heading: "Complete PATCH request examples"
       intro: |
         The following examples show complete PATCH requests.
-  - request:
+    - request:
       heading: "Request with text content only"
       intro: |
         The following example shows a PATCH request that uses the **application/json** content type. You can use this format when your content doesn't contain binary data.
@@ -219,7 +219,7 @@ examples:
         ]
 
         <a name="multipart"></a>
-  - request:
+    - request:
       heading: "Multipart request with binary content"
       intro: |
         The following example shows a multipart PATCH request that includes binary data. Multipart requests require a "Commands" part that specifies the **application/json** content type and contains the array of JSON change objects. Other data parts can contain binary data. Part names typically are strings appended with the current time in milliseconds or a random GUID.
@@ -254,7 +254,7 @@ examples:
         --PartBoundary123--
 
         <a name="request-response-info"></a>
-  - request:
+    - request:
       heading: "Request and response information for PATCH requests"
       intro: |
         |Request data|Description|

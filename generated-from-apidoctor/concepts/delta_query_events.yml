@@ -43,8 +43,8 @@ summary:
     See the [example](#example-to-synchronize-events-in-a-calendar-view) below to learn how to use these `nextLink` and 
     `deltaLink` URLs.
 examples:
-- items:
-  - request:
+  - items:
+    - request:
       heading: "Example to synchronize events in a calendar view"
       intro: |
         The following example shows a series of 3 requests to synchronize the user's default calendar in a specific time range. 
@@ -57,7 +57,7 @@ examples:
         For brevity, the sample responses show only a subset of the properties for an event. In an actual call, most event properties
         are returned. 
         See also what you'll do in the [next round](#the-next-round-sample-first-response).
-  - request:
+    - request:
       heading: "Step 1: sample initial request"
       intro: |
         In this example, the specified calendar view is being synchronized for the first time, so the initial sync request does not include any state token. 
@@ -73,12 +73,12 @@ examples:
         Prefer: odata.maxpagesize=2
         ```
         
-  - request:
+    - request:
       heading: "Sample initial response"
       intro: |
         The response includes two events and a `@odata.nextLink` response header with a `skipToken`. 
         The `nextLink` URL indicates there are more events in the calendar view to get.
-    response:
+      response:
       heading: "Sample initial response"
       sampleCode: |
         ```http
@@ -147,7 +147,7 @@ examples:
         }
         ```
         
-  - request:
+    - request:
       heading: "Step 2: sample second request"
       intro: |
         The second request specifies the `nextLink` URL returned from the previous response. Notice that it no longer has to specify
@@ -158,12 +158,12 @@ examples:
         Prefer: odata.maxpagesize=2
         ```
         
-  - request:
+    - request:
       heading: "Sample second response"
       intro: |
         The second response returns the next 2 events in the calendar view and another `nextLink`, indicating there are 
         more events to get from the calendar view.
-    response:
+      response:
       heading: "Sample second response"
       sampleCode: |
         ```http
@@ -232,7 +232,7 @@ examples:
         }
         ```
         
-  - request:
+    - request:
       heading: "Step 3: sample third request"
       intro: |
         The third request continues to use the latest `nextLink` returned from the last sync request. 
@@ -242,13 +242,13 @@ examples:
         Prefer: odata.maxpagesize=2
         ```
         
-  - request:
+    - request:
       heading: "Sample third and final response"
       intro: |
         The third response returns the only remaining event in the calendar view, and a `deltaLink` URL which indicates 
         synchronization is complete for this calendar view. Save and use the `deltaLink` URL to 
         [synchronize that calendar view in the next round](#the-next-round-sample-first-request).
-    response:
+      response:
       heading: "Sample third and final response"
       sampleCode: |
         ```http
@@ -293,7 +293,7 @@ examples:
         }
         ```
         
-  - request:
+    - request:
       heading: "The next round: sample first request"
       intro: |
         Using the `deltaLink` from the [last request](#step-3-sample-third-request) in the last round, 
@@ -305,7 +305,7 @@ examples:
         Prefer: odata.maxpagesize=2
         ```
         
-    response:
+      response:
       heading: "The next round: sample first response"
       sampleCode: |
         ```http

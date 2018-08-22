@@ -53,8 +53,8 @@ response:
   intro: |
     If successful, this method returns `200 OK` response code and a collection of [timeZoneInformation](xref:graph.timezoneinformation) objects in the response body.
 examples:
-- items:
-  - request:
+  - items:
+    - request:
       heading: "Request 1"
       intro: |
         The following example does not specify the `timeZoneStandard` parameter, and gets the list of supported time zones represented in the Windows time zone format. 
@@ -63,11 +63,11 @@ examples:
         GET https://graph.microsoft.com/v1.0/me/outlook/supportedTimeZones
         ```
         
-  - request:
+    - request:
       heading: "Response 1"
       intro: |
         Here is an example of the response. 
-    response:
+      response:
       heading: "Response 1"
       sampleCode: |
         ```http
@@ -97,7 +97,7 @@ examples:
         }
         ```
         
-  - request:
+    - request:
       heading: "Request 2"
       intro: |
         The following example specifies `Iana` for the `TimeZoneStandard` parameter, and gets the list of supported time zones represented in IANA format. 
@@ -106,11 +106,11 @@ examples:
         GET https://graph.microsoft.com/v1.0/me/outlook/supportedTimeZones(TimeZoneStandard=microsoft.graph.timeZoneStandard'Iana')
         ```
         
-  - request:
+    - request:
       heading: "Response 2"
       intro: |
         Here is an example of the response. 
-    response:
+      response:
       heading: "Response 2"
       sampleCode: |
         ```http

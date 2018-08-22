@@ -37,8 +37,8 @@ response:
     Many HTTP client libraries will automatically follow the 302 redirection and start downloading the file immedately.
     Pre-authenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header to download.
 examples:
-- items:
-  - request:
+  - items:
+    - request:
       heading: "Example"
       intro: |
         This example retrieves a version of a file in the current user's drive.
@@ -47,7 +47,7 @@ examples:
         GET /me/drive/items/{item-id}/versions/{version-id}/content
         ```
         
-    response:
+      response:
       heading: "Response"
       intro: |
         This returns a redirect to where the contents of the version can be downloaded.

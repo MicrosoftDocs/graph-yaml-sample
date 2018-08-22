@@ -54,8 +54,8 @@ response:
   intro: |
     If successful, this method returns a `200 OK` response code and updated [permission](xref:graph.permission) object in the response body.
 examples:
-- items:
-  - request:
+  - items:
+    - request:
       heading: "Example"
       intro: |
         Here is an example of the request that changes the role on the sharing permission to read-only.
@@ -69,7 +69,7 @@ examples:
         }
         ```
         
-    response:
+      response:
       heading: "Response"
       intro: |
         If successful, this method returns a [Permission](xref:graph.permission) resource in the response body that represents the updated state of the permission.

@@ -93,8 +93,8 @@ response:
     Then the confidence of the meeting time suggestion, which is the average chance of attendance, is (100% + 49% + 0%)/3 = 49.66%.
     If you specify a **minimumAttendeePercentage** of 80% in a **findMeetingTimes** operation, because 49.66% < 80%, the operation will not suggest this time in the response.
 examples:
-- items:
-  - request:
+  - items:
+    - request:
       heading: "Example"
       intro: |
         The following example shows how to find time to meet at a pre-determined location, and request a reason for each suggestion, by specifying the following parameters in the request body:
@@ -109,7 +109,7 @@ examples:
         By setting the **returnSuggestionReasons** parameter, you also get an explanation in the **suggestionReason** property for each suggestion, if **findMeetingTimes** returns any suggestion.
         Notice that the request specifies time in the PST time zone, and the response returns meeting time suggestions in UTC, by default. You can use the `Prefer: outlook.timezone` request 
         header to specify PST as well for the time values in the response.
-  - request:
+    - request:
       heading: "Request"
       intro: |
         Here is the example request.
@@ -160,7 +160,7 @@ examples:
         }
         ```
         
-    response:
+      response:
       heading: "Response"
       intro: |
         Here is an example response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

@@ -45,8 +45,8 @@ parameters:
     value: "String"
     description: "The query text used to search for items. Values may be matched across several fields including filename, metadata, and file content."
 examples:
-- items:
-  - request:
+  - items:
+    - request:
       heading: "Request"
       intro: |
         Here is an example of the request searching the current user's OneDrive
@@ -55,7 +55,7 @@ examples:
         GET /me/drive/root/search(q='{search-query}')
         ```
         
-    response:
+      response:
       heading: "Response"
       intro: |
         This method returns an object containing an collection of [DriveItems](xref:graph.driveitem) that match the search criteria.
@@ -90,14 +90,14 @@ examples:
         ## Searching for items a user can access
         In addition to searching for items within a drive, your app can search more broadly to include items shared with the current user.
         To broaden the search scope, use the **search** method on the [Drive](xref:graph.drive) resource.
-  - request:
+    - request:
       heading: "Example"
       sampleCode: |
         ```http
         GET /me/drive/search(q='{search-query}')
         ```
         
-    response:
+      response:
       heading: "Response"
       intro: |
         Responses when searching from the **drive** resource may include items outside of the drive (items shared with the current user).

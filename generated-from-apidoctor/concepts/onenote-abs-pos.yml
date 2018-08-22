@@ -31,12 +31,12 @@ permissions:
     * Notes.ReadWrite.All  
     
 examples:
-- items:
-  - request:
+  - items:
+    - request:
       heading: "Example"
       intro: |
         The following example contains a direct `p` child, an absolute positioned div, and a non-absolute positioned div.
-  - request:
+    - request:
       heading: "Input HTML"
       intro: |
            <body data-absolute-enabled="true">
@@ -50,7 +50,7 @@ examples:
            </body>
 
         The API renders the non-absolute positioned div in the default div. Note that the nested `<div>` tags are discarded because they do not define any semantic information (such as `data-id`).
-  - request:
+    - request:
       heading: "Output HTML"
       intro: |
            <body data-absolute-enabled="true" style="font-family:Calibri;font-size:11pt">
@@ -63,11 +63,11 @@ examples:
                </div>
            </body>
 
-  - request:
+    - request:
       heading: "Example"
       intro: |
         The following example creates a page that contains one absolute positioned div and one absolute positioned image.
-  - request:
+    - request:
       heading: "Input HTML"
       intro: |
         <html>

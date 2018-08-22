@@ -26,23 +26,23 @@ summary:
     
     <a name="resource-paths"></a>
 examples:
-- items:
-  - request:
+  - items:
+    - request:
       heading: "Example"
       intro: |
         `GET ../sections/{section-id}/pages?pagelevel=true`
         <a name="get-page"></a> 
-  - request:
+    - request:
       heading: "Example"
       intro: |
         `GET ../pages/{page-id}?pagelevel=true`
         <a name="get-page-preview"></a> 
-  - request:
+    - request:
       heading: "Example"
       intro: |
         `<img src="https://www.onenote.com/api/v1.0/resources/{id}/content?publicAuth=true&mimeType=image/png" />`
         <a name="get-page-content"></a> 
-  - request:
+    - request:
       heading: "Example"
       intro: |
         <img 
@@ -52,7 +52,7 @@ examples:
             data-fullres-src-type="image/png" ... />
 
         And an **object** tag includes the endpoint for the file resource in the **data** attribute. 
-  - request:
+    - request:
       heading: "Example"
       intro: |
         <object
@@ -71,7 +71,7 @@ examples:
         * [GET Notebooks](xref:graph.notebook_get) 
         
         <a name="example"></a>
-  - request:
+    - request:
       heading: "Example GET requests"
       intro: |
         You can query for OneNote entities and search page content to get just the information you need. The following examples show some ways you can use [supported query string options](#supported-odata-query-string-options) in GET requests to Microsoft Graph. 
@@ -81,19 +81,19 @@ examples:
         * Spaces in the URL query string must use %20 encoding.<br/><br/>**Example**: `filter=title%20eq%20'biology'`
         * Property names and OData string comparisons are case-sensitive. We recommend using the OData **tolower** function for string comparisons.<br/><br/>**Example**: `filter=tolower(name) eq 'spring'`
         
-  - request:
+    - request:
       heading: "search & filter"
       intro: |
         Get all pages that contain the term *recipe* that were created by a specific app (`search` is available for consumer notebooks only).
         [GET] ../pages?search=recipe&filter=createdByAppId eq 'WLID-000000004C12821A'
 
-  - request:
+    - request:
       heading: "search & select"
       intro: |
         Get the title, OneNote client links, and **contentUrl** link for all pages that contain the term *golgi app* (`search` is available for consumer notebooks only).
         [GET] ../pages?search=golgi app&select=title,links,contentUrl
 
-  - request:
+    - request:
       heading: "expand"
       intro: |
         Get all notebooks and expand their sections and section groups.  
@@ -107,14 +107,14 @@ examples:
         Get a page and expand its parent section and parent notebook.
         [GET] ../pages/{page-id}?expand=parentSection,parentNotebook
 
-  - request:
+    - request:
       heading: "expand (multiple levels)"
       intro: |
         Get all notebooks and expand their sections and section groups, and expand all sections in each section group.  
         [GET] ../notebooks?expand=sections,sectionGroups(expand=sections)
 
         
-  - request:
+    - request:
       heading: "expand & select (multiple levels)"
       intro: |
         Get the name and **self** link for a specific section group, and get the name and **self** links for all its sections.  
@@ -128,13 +128,13 @@ examples:
         Get the title and ID for all pages, and get the name of the parent section and parent notebook.
         [GET] ../pages?select=id,title&expand=parentSection(select=name),parentNotebook(select=name)
 
-  - request:
+    - request:
       heading: "expand & levels (multiple levels)"
       intro: |
         Get all notebooks, sections, and section groups.  
         [GET] ../notebooks?expand=sections,sectionGroups(expand=sections,sectionGroups(levels=max;expand=sections))
 
-  - request:
+    - request:
       heading: "filter"
       intro: |
         Get all sections that were created in October 2014.
@@ -144,7 +144,7 @@ examples:
         Get the pages that were created by a specific app since January 1, 2015.
         [GET] ../pages?filter=createdByAppId eq 'WLID-0000000048118631' and createdTime ge 2015-01-01
 
-  - request:
+    - request:
       heading: "filter & expand"
       intro: |
         Get all pages in a specific notebook. The API returns 20 entries by default.
@@ -154,25 +154,25 @@ examples:
         Get the name and **pagesUrl** link for all sections from the *School* notebook. OData string comparisons are case-sensitive, so use the **tolower** function as a best practice.
         [GET] ../notebooks?filter=tolower(name) eq 'school'&expand=sections(select=name,pagesUrl)
 
-  - request:
+    - request:
       heading: "filter & select & orderby"
       intro: |
         Get the name and **pagesUrl** link for all sections that contain the term *spring* in the section name. Order sections by last modified date.
         [GET] ../sections?filter=contains(tolower(name),'spring')&select=name,pagesUrl&orderby=lastModifiedTime desc
 
-  - request:
+    - request:
       heading: "orderby"
       intro: |
         Get the first 20 pages ordered by **createdByAppId** property and then by most recent created time. The API returns 20 entries by default.
         [GET] ../pages?orderby=createdByAppId,createdTime desc
 
-  - request:
+    - request:
       heading: "search & filter & top"
       intro: |
         Get the five newest pages created since January 1, 2015 that contain the phrase *cell division*. The API returns 20 entries by default with a maximum of 100. The default sort order for pages is `lastModifiedTime desc` (`search` is available for consumer notebooks only).
         [GET] ../pages?search="cell division"&filter=createdTime ge 2015-01-01&top=5
 
-  - request:
+    - request:
       heading: "search & filter & top & skip"
       intro: |
         Get the next five pages in the result set (`search` is available for consumer notebooks only).
@@ -183,7 +183,7 @@ examples:
         [GET] ../pages?search=biology&filter=createdTime ge 2015-01-01&top=5&skip=10
 
         
-  - request:
+    - request:
       heading: "select"
       intro: |
         Get the name, created time, and **self** link for all sections in the user's notebooks.
@@ -193,19 +193,19 @@ examples:
         Get the title, created time, and OneNote client links for a specific page.
         [GET] ../pages/{page-id}?select=title,createdTime,links
 
-  - request:
+    - request:
       heading: "select & expand & filter (multiple levels)"
       intro: |
         Get the name and **pagesUrl** link for all sections in the user's default notebook.
         [GET] ../notebooks?select=name&expand=sections(select=name,pagesUrl)&filter=isDefault eq true
 
-  - request:
+    - request:
       heading: "top & select & orderby"
       intro: |
         Get the title and **self** link for the first 50 pages, ordered alphabetically by title. The API returns 20 entries by default with a maximum of 100. The default sort order for pages is `lastModifiedTime desc`.
         [GET] ../pages?top=50&select=title,self&orderby=title
 
-  - request:
+    - request:
       heading: "skip & top & select & orderby"
       intro: |
         Get pages 51 to 100. The API returns 20 entries by default with a maximum of 100.
@@ -213,7 +213,7 @@ examples:
 
         
         <a name="supported-odata-query-string-options"></a>
-  - request:
+    - request:
       heading: "Example"
       intro: |
         `../sections?filter=createdTime ge 2015-01-01&select=name,pagesUrl&orderby=lastModifiedTime desc` 
@@ -233,7 +233,7 @@ examples:
         * Notebooks: **sections**, **sectionGroups**
         
         <a name="request-response-info"></a>
-  - request:
+    - request:
       heading: "Request and response information for *GET* requests"
       intro: |
         |Request data|Description|

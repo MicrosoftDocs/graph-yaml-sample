@@ -32,8 +32,8 @@ examples:
           "interval": 3
         }
 
-- items:
-  - request:
+  - items:
+    - request:
       heading: "Example"
       intro: |
         * Repeat this event on April 15 every year

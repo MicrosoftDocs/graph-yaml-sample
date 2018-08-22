@@ -13,8 +13,8 @@ summary:
     ## body element
     The HTML content in the page body represents the page content and structure, including image and file resources. The **body** element can contain the following attributes in the input and output HTML.
 examples:
-- items:
-  - request:
+  - items:
+    - request:
       heading: "Output HTML examples for images"
       intro: |
         Output **img** elements contain endpoints for image file resources and the image type, as shown below. You can make separate [GET requests to image resource endpoints](xref:graph.resource_get) to retrieve their binary contents.
@@ -25,7 +25,7 @@ examples:
             data-fullres-src-type="image/png" ... />
 
         By default, images won't render directly in a browser because they are private and require authorization to retrieve them, like the rest of the page contents. To get public URLs to the image resources on a page, include **preAuthenticated=true** in the query string when you retrieve the page content (example: `GET ../pages/{page-id}/content?preAuthenticated=true`). The public URLs that are returned are valid for one hour. 
-  - request:
+    - request:
       heading: "Image with public URL when _preAuthenticated=true_ is included in the request"
       intro: |
         <img 
@@ -37,7 +37,7 @@ examples:
         />
 
         The following examples show the information an **img** element might contain in the output HTML.
-  - request:
+    - request:
       heading: "Image with web-ready and high resolution resources"
       intro: |
         <img
@@ -51,7 +51,7 @@ examples:
             [width="345"] [height="180"]
             [style="..."] />
 
-  - request:
+    - request:
       heading: "Image created by using the *data-render-src* attribute"
       intro: |
         <img
@@ -67,7 +67,7 @@ examples:
             [width="1024"] [height="1900"]
             [style="..."] />
 
-  - request:
+    - request:
       heading: "Output HTML example for videos"
       intro: |
         Output **iframe** elements contain endpoints that link to the source page and video, as shown. 
@@ -76,7 +76,7 @@ examples:
             data-original-src="https://www.youtube.com/watch?v=3Ztr44aKmQ8" 
             src="https://www.youtube.com/embed/3Ztr44aKmQ8?feature=oembed&autoplay=true" />
 
-  - request:
+    - request:
       heading: "Output HTML example for objects"
       intro: |
         Output **object** elements contain endpoints that link to the file resources in the page, as shown. You can make separate [GET requests to file resource endpoints](xref:graph.resource_get) to retrieve their binary contents.
@@ -86,7 +86,7 @@ examples:
             type="application/pdf" 
             [style="..."] />
 
-  - request:
+    - request:
       heading: "Input and output HTML example"
       intro: |
         The following image shows a simple page that was created with Microsoft Graph.

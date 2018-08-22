@@ -58,8 +58,8 @@ permissions:
     * [OneNote GitHub repos](http://go.microsoft.com/fwlink/?LinkID=390178)  
     
 examples:
-- items:
-  - request:
+  - items:
+    - request:
       heading: "Example request"
       intro: |
         This example multipart request creates a page that contains images and an embedded file. The required **Presentation** part contains the input HTML that defines the page. The **imageBlock1** part contains the binary image data, and **fileBlock1** contains the binary file data. Data parts can also contain HTML, in which case Microsoft Graph [renders the HTML as an image](xref:graph.onenote_images_files#add-an-image-using-binary-data) on the OneNote page. 
@@ -106,7 +106,7 @@ examples:
         If you do receive a 400 status for a malformed payload, check the formatting of newlines and whitespaces, and check for encoding issues. For example, try using `charset=utf-8` (example: `Content-Type: text/html; charset=utf-8`).
         See [requirements and limitations for input HTML](#requirements-and-limitations-for-input-html-in-post-pages-requests) and [size limits for POST requests](xref:graph.onenote_images_files#size-limitations-for-post-pages-requests).
         <a name="request-response-info"></a>
-  - request:
+    - request:
       heading: "Request and response information for *POST pages* requests"
       intro: |
         |Request data|Description|

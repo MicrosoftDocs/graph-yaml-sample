@@ -43,15 +43,15 @@ permissions:
     ```
     
 examples:
-- items:
-  - request:
+  - items:
+    - request:
       heading: "Request"
       sampleCode: |
         ```http
         GET /sites/{site-id}
         ```
         
-    response:
+      response:
       heading: "Response"
       sampleCode: |
         ```http

@@ -57,8 +57,8 @@ response:
     If successful, this method returns a `200 OK` response code and updated [plannerTask](xref:graph.plannertask) object in the response body.
     This method can return any of the [HTTP status codes](../../../concepts/errors.md). The most common errors that apps should handle for this method are the 400, 403, 404, 409, and 412 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner_overview.md#common-planner-error-conditions).
 examples:
-- items:
-  - request:
+  - items:
+    - request:
       heading: "Request"
       intro: |
         Here is an example of the request.
@@ -83,7 +83,7 @@ examples:
         }
         ```
         
-    response:
+      response:
       heading: "Response"
       intro: |
         Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

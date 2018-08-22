@@ -59,8 +59,8 @@ response:
     * Report Period
     
 examples:
-- items:
-  - request:
+  - items:
+    - request:
       heading: "Request"
       intro: |
         The following is an example of the request.
@@ -69,7 +69,7 @@ examples:
         GET https://graph.microsoft.com/v1.0/reports/getOneDriveActivityFileCounts(period='D7')
         ```
         
-    response:
+      response:
       heading: "Response"
       intro: |
         The following is an example of the response.

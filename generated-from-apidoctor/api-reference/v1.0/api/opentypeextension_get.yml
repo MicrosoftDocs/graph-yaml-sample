@@ -87,8 +87,8 @@ response:
     If successful, this method returns a `200 OK` response code and [openTypeExtension](xref:graph.opentypeextension) object in the response body.
     Depending on the GET query, the exact response body differs.
 examples:
-- items:
-  - request:
+  - items:
+    - request:
       heading: "Request 1"
       intro: |
         The first example shows 2 ways of referencing an extension and gets the extension in the specified message. The
@@ -106,11 +106,11 @@ examples:
         GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===/extensions/Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral
         ```
         
-  - request:
+    - request:
       heading: "Response 1"
       intro: |
         Here is the response for the first example.
-    response:
+      response:
       heading: "Response 1"
       sampleCode: |
         ```http
@@ -132,7 +132,7 @@ examples:
         
       outro: |
         ****
-  - request:
+    - request:
       heading: "Request 2"
       intro: |
         The second example references an extension by its name and gets the extension in the specified group event.
@@ -141,11 +141,11 @@ examples:
         GET https://graph.microsoft.com/v1.0/groups/f5480dfd-7d77-4d0b-ba2e-3391953cc74a/events/AAMkADVl17IsAAA=/extensions/Com.Contoso.Deal/
         ```
         
-  - request:
+    - request:
       heading: "Response 2"
       intro: |
         Here is the response from the second example.
-    response:
+      response:
       heading: "Response 2"
       sampleCode: |
         ```http
@@ -165,7 +165,7 @@ examples:
         
       outro: |
         ****
-  - request:
+    - request:
       heading: "Request 3"
       intro: |
         The third example gets and expands the specified message by including the extension returned from a filter. 
@@ -175,11 +175,11 @@ examples:
         GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===?$expand=extensions($filter=id%20eq%20'Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')
         ```
         
-  - request:
+    - request:
       heading: "Response 3"
       intro: |
         And here is the response from the third example. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-    response:
+      response:
       heading: "Response 3"
       sampleCode: |
         ```http
@@ -257,7 +257,7 @@ examples:
         
       outro: |
         ****
-  - request:
+    - request:
       heading: "Request 4"
       intro: |
         The fourth example references an extension by its fully qualified name and gets the extension in the specified group post.
@@ -266,7 +266,7 @@ examples:
         GET https://graph.microsoft.com/v1.0/groups/37df2ff0-0de0-4c33-8aee-75289364aef6/threads/AAQkADJizZJpEWwqDHsEpV_KA==/posts/AAMkADJiUg96QZUkA-ICwMubAADDEd7UAAA=/extensions/Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Estimate
         ```
         
-  - request:
+    - request:
       heading: "Response 4"
       intro: |
         Here is the response from the fourth example. 
@@ -291,7 +291,7 @@ examples:
         }
         ```
         
-  - request:
+    - request:
       heading: "Request 5"
       intro: |
         The fifth example looks at all messages in the signed-in user's mailbox to find those that contain an extension matching a filter, and 
@@ -302,13 +302,13 @@ examples:
         GET https://graph.microsoft.com/v1.0/me/messages?$filter=Extensions/any(f:f/id%20eq%20'Com.Contoso.Referral')&$expand=Extensions($filter=id%20eq%20'Com.Contoso.Referral')
         ```
         
-  - request:
+    - request:
       heading: "Response 5"
       intro: |
         In this response for the fifth example, there is only one message in the user's mailbox that has an extension with its **id** equal to
         `Com.Contoso.Referral`.
         Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-    response:
+      response:
       heading: "Response 5"
       sampleCode: |
         ```http

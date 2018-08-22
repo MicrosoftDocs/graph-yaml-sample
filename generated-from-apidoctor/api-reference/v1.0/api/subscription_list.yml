@@ -52,15 +52,15 @@ response:
   intro: |
     If successful, this method returns a `200 OK` response code and a list of [subscription](xref:graph.subscription) objects in the response body.
 examples:
-- items:
-  - request:
+  - items:
+    - request:
       heading: "Request"
       sampleCode: |
         ```http
         GET https://graph.microsoft.com/v1.0/subscriptions
         ```
         
-    response:
+      response:
       heading: "Response"
       intro: |
         Here's an an example of the response.  Note that it may be truncated for brevity.  All supported properties appropriate for the request and the calling context will be returned from an actual call.

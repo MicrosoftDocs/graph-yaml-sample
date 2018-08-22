@@ -41,8 +41,8 @@ response:
   intro: |
     If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 examples:
-- items:
-  - request:
+  - items:
+    - request:
       heading: "Request"
       intro: |
         The following is an example of the request.
@@ -51,7 +51,7 @@ examples:
         DELETE https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315/events/AQMkAGI5MWY5ZmUyLTJiNzYtNDE0ZC04OWEwLWM3M2FjYmM3NwAzZWYARgAAA_b2VnUAiWNLj0xeSOs499YHAMT2RdsuOqRIlQZ4vOzp66YAAAIBDQAAAMT2RdsuOqRIlQZ4vOzp66YAAAIJOgAAAA==
         ```
         
-    response:
+      response:
       heading: "Response"
       intro: |
         The following is an example of the response. 
