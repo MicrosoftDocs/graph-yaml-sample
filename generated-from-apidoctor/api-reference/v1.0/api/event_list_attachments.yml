@@ -19,9 +19,9 @@ permissions:
     permission: "Calendars.Read"
 httpRequest:
   heading: "HTTP request"
-  samples:
   intro: |
     Attachments for an [event](xref:graph.event) in the user's default [calendar](xref:graph.calendar).
+  samples:
   - sampleCode: |
     ```http
     GET /me/events/{id}/attachments

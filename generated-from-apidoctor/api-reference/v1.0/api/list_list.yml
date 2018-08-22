@@ -23,7 +23,6 @@ permissions:
     permission: "Sites.Read.All, Sites.ReadWrite.All"
 httpRequest:
   heading: "HTTP request"
-  samples:
   intro: |
     GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 

@@ -45,7 +45,6 @@ permissions:
     
 httpRequest:
   heading: "HTTP request"
-  samples:
   outro: |
     #### GET a resource instance expanded with an extended property that matches a filter
     Get a resource instance expanded with the extended property which matches a filter on the 

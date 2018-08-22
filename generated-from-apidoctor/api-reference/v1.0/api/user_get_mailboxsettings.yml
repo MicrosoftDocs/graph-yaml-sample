@@ -23,9 +23,9 @@ permissions:
     permission: "MailboxSettings.Read, MailboxSettings.ReadWrite"
 httpRequest:
   heading: "HTTP request"
-  samples:
   intro: |
     To get all mailbox settings for a user:
+  samples:
   - sampleCode: |
     ```http
     GET /me/mailboxSettings

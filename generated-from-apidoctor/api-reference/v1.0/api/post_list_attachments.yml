@@ -19,7 +19,6 @@ permissions:
     permission: "Group.Read.All, Group.ReadWrite.All"
 httpRequest:
   heading: "HTTP request"
-  samples:
   intro: |
     Attachments for a [post](xref:graph.post) in a [thread](xref:graph.conversationthread) belonging to a [conversation](xref:graph.conversation) of a group.
     GET /groups/{id}/threads/{id}/posts/{id}/attachments

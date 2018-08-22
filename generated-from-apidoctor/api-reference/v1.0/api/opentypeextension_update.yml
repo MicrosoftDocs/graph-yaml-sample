@@ -29,10 +29,10 @@ permissions:
     permission: ""
 httpRequest:
   heading: "HTTP request"
-  samples:
   intro: |
     In the request, identify the resource instance, use the **extensions** 
     navigation property of that instance to identify the extension, and do a `PATCH` on that extension instance.
+  samples:
   - sampleCode: |
     ```http
     PATCH /devices/{Id}/extensions/{extensionId}

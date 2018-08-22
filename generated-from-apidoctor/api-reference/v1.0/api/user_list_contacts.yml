@@ -47,9 +47,9 @@ permissions:
     permission: "Contacts.Read, Contacts.ReadWrite"
 httpRequest:
   heading: "HTTP request"
-  samples:
   intro: |
     To get all the contacts in a user's mailbox:
+  samples:
   - sampleCode: |
     ```http
     GET /me/contacts

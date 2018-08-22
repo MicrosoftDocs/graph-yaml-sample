@@ -19,9 +19,9 @@ permissions:
     permission: "Group.Read.All, Group.ReadWrite.All"
 httpRequest:
   heading: "HTTP request"
-  samples:
   intro: |
     To begin tracking changes, you make a request including the delta function on the groups resource.
+  samples:
   - sampleCode: |
     ```http
     GET /groups/delta

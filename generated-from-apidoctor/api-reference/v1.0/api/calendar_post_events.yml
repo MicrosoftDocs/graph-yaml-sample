@@ -19,7 +19,6 @@ permissions:
     permission: "Calendars.ReadWrite"
 httpRequest:
   heading: "HTTP request"
-  samples:
   intro: |
     A user's or group's default [calendar](xref:graph.calendar).
     POST /me/calendar/events

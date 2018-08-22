@@ -20,9 +20,9 @@ permissions:
     permission: "User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All"
 httpRequest:
   heading: "HTTP request"
-  samples:
   intro: |
     For a specific user:
+  samples:
   - sampleCode: |
     ```http
     GET /users/{id | userPrincipalName}

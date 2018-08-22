@@ -19,7 +19,6 @@ permissions:
     permission: "Calendars.ReadWrite"
 httpRequest:
   heading: "HTTP request"
-  samples:
   intro: |
     A user's [calendar](xref:graph.calendar) other than the default calendar in the default [calendarGroup](xref:graph.calendargroup).
     DELETE /me/calendars/{id}

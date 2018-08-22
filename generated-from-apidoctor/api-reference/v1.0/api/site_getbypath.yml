@@ -34,9 +34,9 @@ permissions:
     permission: "Sites.Read.All, Sites.ReadWrite.All"
 httpRequest:
   heading: "HTTP Request"
-  samples:
   intro: |
     To access the root SharePoint site with a relative path:
+  samples:
   - sampleCode: |
     ```http
     GET /sites/{hostname}:/{relative-path}
