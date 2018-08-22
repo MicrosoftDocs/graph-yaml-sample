@@ -21,7 +21,8 @@ permissions:
     |Application|User.ReadWrite.All
 httpRequest:
   heading: "HTTP request"
-  sampleCode: |
+  samples:
+  - sampleCode: |
     ```http
     POST /directory/deletedItems/{id}/restore
     ```

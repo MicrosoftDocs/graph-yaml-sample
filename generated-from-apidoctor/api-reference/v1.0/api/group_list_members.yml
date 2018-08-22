@@ -20,7 +20,8 @@ permissions:
     permission: "User.Read.All, Directory.Read.All"
 httpRequest:
   heading: "HTTP request"
-  sampleCode: |
+  samples:
+  - sampleCode: |
     ```http
     GET /groups/{id}/members
     ```

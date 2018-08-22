@@ -19,7 +19,8 @@ permissions:
     permission: "MailboxSettings.Read"
 httpRequest:
   heading: "HTTP request"
-  sampleCode: |
+  samples:
+  - sampleCode: |
     ```http
     GET /me/mailFolders/inbox/messageRules/{id}
     GET /users/{id | userPrincipalName}/mailFolders/inbox/messageRules/{id}

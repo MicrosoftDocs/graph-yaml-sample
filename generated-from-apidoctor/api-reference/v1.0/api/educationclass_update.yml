@@ -19,7 +19,8 @@ permissions:
     permission: "EduRoster.ReadWrite.All"
 httpRequest:
   heading: "HTTP request"
-  sampleCode: |
+  samples:
+  - sampleCode: |
     ```http
     PATCH /education/classes/{id}
     ```

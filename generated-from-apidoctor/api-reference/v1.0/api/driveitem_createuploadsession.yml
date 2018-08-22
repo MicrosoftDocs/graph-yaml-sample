@@ -34,7 +34,8 @@ permissions:
     Once the last byte of the file has been uploaded the upload session is completed and the final file is shown in the destination folder.
 httpRequest:
   heading: "HTTP request"
-  sampleCode: |
+  samples:
+  - sampleCode: |
     ```http
     POST /drives/{driveId}/items/{itemId}/createUploadSession
     POST /groups/{groupId}/drive/items/{itemId}/createUploadSession

@@ -21,7 +21,8 @@ permissions:
     When updating the passwordProfile property, the following permission is required: Directory.AccessAsUser.All.
 httpRequest:
   heading: "HTTP request"
-  sampleCode: |
+  samples:
+  - sampleCode: |
     ```http
     PATCH /users/{id | userPrincipalName}
     ```

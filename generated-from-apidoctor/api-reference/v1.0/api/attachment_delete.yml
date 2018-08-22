@@ -17,9 +17,10 @@ permissions:
     
 httpRequest:
   heading: "HTTP request"
+  samples:
   intro: |
     Attachments for an [event](xref:graph.event) in the user's or group's default [calendar](xref:graph.calendar).
-  sampleCode: |
+  - sampleCode: |
     ```http
     DELETE /me/events/{id}/attachments/{id}
     DELETE /users/{id | userPrincipalName}/events/{id}/attachments/{id}

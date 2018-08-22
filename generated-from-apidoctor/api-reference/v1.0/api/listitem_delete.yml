@@ -24,7 +24,8 @@ permissions:
     permission: "Sites.ReadWrite.All"
 httpRequest:
   heading: "HTTP request"
-  sampleCode: |
+  samples:
+  - sampleCode: |
     ```http
     DELETE https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}
     ```

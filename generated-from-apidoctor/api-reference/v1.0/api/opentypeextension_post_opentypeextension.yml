@@ -24,6 +24,7 @@ permissions:
     permission: ""
 httpRequest:
   heading: "HTTP request"
+  samples:
   outro: |
     ### Create an extension in a new resource instance
     Use the same REST request that you use to create the instance.

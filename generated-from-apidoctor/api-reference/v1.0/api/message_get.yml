@@ -49,7 +49,8 @@ permissions:
     permission: "Mail.Read"
 httpRequest:
   heading: "HTTP request"
-  sampleCode: |
+  samples:
+  - sampleCode: |
     ```http
     GET /me/messages/{id}
     GET /users/{id | userPrincipalName}/messages/{id}

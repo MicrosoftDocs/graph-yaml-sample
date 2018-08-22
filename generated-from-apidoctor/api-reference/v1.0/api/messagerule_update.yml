@@ -19,7 +19,8 @@ permissions:
     permission: "MailboxSettings.ReadWrite"
 httpRequest:
   heading: "HTTP request"
-  sampleCode: |
+  samples:
+  - sampleCode: |
     ```http
     PATCH /me/mailFolders/inbox/messageRules/{id}
     PATCH /users/{id | userPrincipalName}/mailFolders/inbox/messageRules/{id}

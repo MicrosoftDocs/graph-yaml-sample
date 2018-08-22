@@ -26,7 +26,8 @@ permissions:
     permission: "Mail.ReadWrite"
 httpRequest:
   heading: "HTTP request"
-  sampleCode: |
+  samples:
+  - sampleCode: |
     ```http
     POST /me/inferenceClassification/overrides
     POST /users/{id}/inferenceClassification/overrides

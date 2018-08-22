@@ -26,9 +26,10 @@ permissions:
     
 httpRequest:
   heading: "HTTP request"
+  samples:
   intro: |
     Attachments for an [event](xref:graph.event) in the user's default [calendar](xref:graph.calendar).
-  sampleCode: |
+  - sampleCode: |
     ```http
     GET /me/events/{id}/attachments/{id}
     GET /users/{id | userPrincipalName}/events/{id}/attachments/{id}

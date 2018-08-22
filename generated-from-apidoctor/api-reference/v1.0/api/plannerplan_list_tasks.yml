@@ -19,7 +19,8 @@ permissions:
     permission: "Not supported."
 httpRequest:
   heading: "HTTP request"
-  sampleCode: |
+  samples:
+  - sampleCode: |
     ```http
     GET /planner/plans/{id}/tasks
     ```

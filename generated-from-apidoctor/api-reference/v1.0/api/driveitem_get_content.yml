@@ -23,7 +23,8 @@ permissions:
     permission: "Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All"
 httpRequest:
   heading: "HTTP request"
-  sampleCode: |
+  samples:
+  - sampleCode: |
     ```http
     GET /drives/{drive-id}/items/{item-id}/content
     GET /groups/{group-id}/drive/items/{item-id}/content

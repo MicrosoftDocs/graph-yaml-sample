@@ -20,7 +20,8 @@ permissions:
     permission: "Calendars.Read"
 httpRequest:
   heading: "HTTP request"
-  sampleCode: |
+  samples:
+  - sampleCode: |
     ```http
     GET /me/events/{id}/instances?startDateTime={start_datetime}&endDateTime={end_datetime}
     GET /users/{id | userPrincipalName}/events/{id}/instances?startDateTime={start_datetime}&endDateTime={end_datetime}

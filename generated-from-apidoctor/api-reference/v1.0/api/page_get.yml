@@ -29,7 +29,8 @@ permissions:
     permission: "Notes.Read.All, Notes.ReadWrite.All"
 httpRequest:
   heading: "HTTP request"
-  sampleCode: |
+  samples:
+  - sampleCode: |
     ```http
     GET /me/onenote/pages/{id}
     GET /users/{id | userPrincipalName}/onenote/pages/{id}

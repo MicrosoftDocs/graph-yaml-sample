@@ -26,7 +26,8 @@ permissions:
     permission: "Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All"
 httpRequest:
   heading: "HTTP Request"
-  sampleCode: |
+  samples:
+  - sampleCode: |
     ```http
     GET /me/drive/special/{name}
     ```

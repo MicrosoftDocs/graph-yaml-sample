@@ -19,6 +19,7 @@ permissions:
     permission: "Mail.Read"
 httpRequest:
   heading: "HTTP request"
+  samples:
   intro: |
     Attachments for a [message](xref:graph.message) in a user's mailbox.
     GET /me/messages/{id}/attachments

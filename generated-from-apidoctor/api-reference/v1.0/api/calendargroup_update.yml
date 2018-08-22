@@ -19,6 +19,7 @@ permissions:
     permission: "Calendars.ReadWrite"
 httpRequest:
   heading: "HTTP request"
+  samples:
   intro: |
     Any [calendarGroup](xref:graph.calendargroup) of a user.
     PATCH /me/calendarGroups/{id}

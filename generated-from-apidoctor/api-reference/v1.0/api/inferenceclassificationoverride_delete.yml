@@ -19,7 +19,8 @@ permissions:
     permission: "Mail.ReadWrite"
 httpRequest:
   heading: "HTTP request"
-  sampleCode: |
+  samples:
+  - sampleCode: |
     ```http
     DELETE /me/inferenceClassification/overrides/{id}
     DELETE /users/{id}/inferenceClassification/overrides/{id}

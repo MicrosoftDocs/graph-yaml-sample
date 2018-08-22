@@ -21,6 +21,7 @@ permissions:
     permission: "Calendars.Read"
 httpRequest:
   heading: "HTTP request"
+  samples:
   intro: |
     A user's or group's default [calendar](xref:graph.calendar).
     GET /me/calendar/events

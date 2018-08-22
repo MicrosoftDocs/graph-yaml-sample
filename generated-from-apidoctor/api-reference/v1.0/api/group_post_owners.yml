@@ -19,7 +19,8 @@ permissions:
     permission: "Group.ReadWrite.All and User.ReadWrite.All"
 httpRequest:
   heading: "HTTP request"
-  sampleCode: |
+  samples:
+  - sampleCode: |
     ```http
     POST /groups/{id}/owners/$ref
     ```

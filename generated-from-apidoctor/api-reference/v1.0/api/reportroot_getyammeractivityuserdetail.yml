@@ -20,7 +20,8 @@ permissions:
     permission: "Reports.Read.All"
 httpRequest:
   heading: "HTTP request"
-  sampleCode: |
+  samples:
+  - sampleCode: |
     ```http
     GET /reports/getYammerActivityUserDetail(period='{period_value}')
     GET /reports/getYammerActivityUserDetail(date={date_value})

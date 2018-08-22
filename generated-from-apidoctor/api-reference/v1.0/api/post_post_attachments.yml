@@ -29,6 +29,7 @@ permissions:
     permission: "Group.ReadWrite.All"
 httpRequest:
   heading: "HTTP request"
+  samples:
   intro: |
     Attachments for a [post](xref:graph.post) in a [thread](xref:graph.conversationthread) belonging to a [conversation](xref:graph.conversation) of a group.
     POST /groups/{id}/threads/{id}/posts/{id}/attachments

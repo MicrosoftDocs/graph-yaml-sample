@@ -19,6 +19,7 @@ permissions:
     permission: "Contacts.ReadWrite"
 httpRequest:
   heading: "HTTP request"
+  samples:
   intro: |
     A [contact](xref:graph.contact) from a user's default [contactFolder](xref:graph.contactfolder).
     PATCH /me/contacts/{id}

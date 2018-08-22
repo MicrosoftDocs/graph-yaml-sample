@@ -19,7 +19,8 @@ permissions:
     permission: "MailboxSettings.ReadWrite"
 httpRequest:
   heading: "HTTP request"
-  sampleCode: |
+  samples:
+  - sampleCode: |
     ```http
     POST /me/outlook/masterCategories
     POST /users/{id|userPrincipalName}/outlook/masterCategories

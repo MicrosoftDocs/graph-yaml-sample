@@ -53,7 +53,8 @@ permissions:
     permission: "Group.Read.All, Group.ReadWrite.All"
 httpRequest:
   heading: "HTTP request"
-  sampleCode: |
+  samples:
+  - sampleCode: |
     ```http
     GET /groups/{id}
     ```

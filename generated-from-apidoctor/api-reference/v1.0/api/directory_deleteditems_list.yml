@@ -20,7 +20,8 @@ permissions:
     |Application|User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All
 httpRequest:
   heading: "HTTP request"
-  sampleCode: |
+  samples:
+  - sampleCode: |
     ```http
     GET /directory/deletedItems/microsoft.graph.group
     GET /directory/deletedItems/microsoft.graph.user

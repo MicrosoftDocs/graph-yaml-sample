@@ -29,7 +29,8 @@ permissions:
     permission: ""
 httpRequest:
   heading: "HTTP request"
-  sampleCode: |
+  samples:
+  - sampleCode: |
     ```http
     GET /subscriptions/{id}
     ```

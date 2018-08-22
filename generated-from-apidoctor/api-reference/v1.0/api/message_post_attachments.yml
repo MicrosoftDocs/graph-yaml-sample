@@ -31,6 +31,7 @@ permissions:
     permission: "Mail.ReadWrite"
 httpRequest:
   heading: "HTTP request"
+  samples:
   intro: |
     Attachments for a [message](xref:graph.message) in a user's mailbox.
     POST /me/messages/{id}/attachments

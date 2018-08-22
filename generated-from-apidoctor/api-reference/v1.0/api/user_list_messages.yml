@@ -48,9 +48,10 @@ permissions:
     permission: "Mail.Read, Mail.ReadWrite"
 httpRequest:
   heading: "HTTP request"
+  samples:
   intro: |
     To get all the messages in a user's mailbox:
-  sampleCode: |
+  - sampleCode: |
     ```http
     GET /me/messages
     GET /users/{id | userPrincipalName}/messages

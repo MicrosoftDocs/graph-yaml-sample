@@ -23,7 +23,8 @@ permissions:
     permission: "Contacts.Read, Contacts.ReadWrite"
 httpRequest:
   heading: "HTTP request"
-  sampleCode: |
+  samples:
+  - sampleCode: |
     ```http
     GET /me/contactFolders/delta
     GET /users/{id}/contactFolders/delta

@@ -19,7 +19,8 @@ permissions:
     permission: "Not supported."
 httpRequest:
   heading: "HTTP request"
-  sampleCode: |
+  samples:
+  - sampleCode: |
     ```http
     PATCH /workbook/names/{name}/range/format/fill
     PATCH /workbook/worksheets/{id|name}/range(address='<address>')/format/fill

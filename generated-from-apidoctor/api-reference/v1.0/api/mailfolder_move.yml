@@ -19,7 +19,8 @@ permissions:
     permission: "Mail.ReadWrite"
 httpRequest:
   heading: "HTTP request"
-  sampleCode: |
+  samples:
+  - sampleCode: |
     ```http
     POST /me/mailFolders/{id}/move
     POST /users/{id | userPrincipalName}/mailFolders/{id}/move

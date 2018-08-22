@@ -36,6 +36,7 @@ permissions:
     
 httpRequest:
   heading: "HTTP request"
+  samples:
   intro: |
     You can create extended properties in a new or existing resource instance.
     To create one or more extended properties in a _new_ resource instance, use the same REST request as creating the
@@ -46,7 +47,7 @@ httpRequest:
     [contact](xref:graph.user_post_contacts), [contactFolder](xref:graph.user_post_contactfolders),
     [group event](xref:graph.group_post_events), and [group post](xref:graph.post). 
     The following is the syntax of the requests. 
-  sampleCode: |
+  - sampleCode: |
     ```http
     POST /me/messages
     POST /users/{id|userPrincipalName}/messages

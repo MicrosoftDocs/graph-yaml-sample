@@ -39,12 +39,13 @@ permissions:
     
 httpRequest:
   heading: "HTTP request"
+  samples:
   intro: |
     Get a resource instance expanded with the extended property which matches a filter on the 
     **id** property. Make sure you apply 
     [URL encoding](http://www.w3schools.com/tags/ref_urlencode.asp) to the space characters in the filter string.
     Get a **message** instance:
-  sampleCode: |
+  - sampleCode: |
     ```http
     GET /me/messages/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
     GET /users/{id|userPrincipalName}/messages/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')

@@ -49,7 +49,8 @@ permissions:
     permission: "Calendars.Read"
 httpRequest:
   heading: "HTTP request"
-  sampleCode: |
+  samples:
+  - sampleCode: |
     ```http
     GET /me/events/{id}
     GET /users/{id | userPrincipalName}/events/{id}

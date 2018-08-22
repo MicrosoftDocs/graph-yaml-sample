@@ -20,7 +20,8 @@ permissions:
     permission: "People.Read.All"
 httpRequest:
   heading: "HTTP request"
-  sampleCode: |
+  samples:
+  - sampleCode: |
     ```http
     GET /me/people
     GET /users/{id | userPrincipalName}/people

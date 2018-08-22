@@ -23,7 +23,8 @@ permissions:
     permission: "Mail.ReadWrite"
 httpRequest:
   heading: "HTTP request"
-  sampleCode: |
+  samples:
+  - sampleCode: |
     ```http
     PATCH /me/inferenceClassification/overrides/{id}
     PATCH /users/{id}/inferenceClassification/overrides/{id}

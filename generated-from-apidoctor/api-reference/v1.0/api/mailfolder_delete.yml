@@ -21,7 +21,8 @@ permissions:
     permission: "Mail.ReadWrite"
 httpRequest:
   heading: "HTTP request"
-  sampleCode: |
+  samples:
+  - sampleCode: |
     ```http
     DELETE /me/mailFolders/{id}
     DELETE /users/{id | userPrincipalName}/mailFolders/{id}

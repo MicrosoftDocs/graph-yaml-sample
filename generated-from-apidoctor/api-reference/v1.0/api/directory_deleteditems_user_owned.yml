@@ -23,6 +23,7 @@ permissions:
     permission: "Group.Read.All, Group.ReadWrite.All"
 httpRequest:
   heading: "HTTP request"
+  samples:
   intro: |
     POST /directory/deletedItems/getUserOwnedObjects
 

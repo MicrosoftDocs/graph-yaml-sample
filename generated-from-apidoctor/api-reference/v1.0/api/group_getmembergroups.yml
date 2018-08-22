@@ -22,7 +22,8 @@ permissions:
     permission: "~~Group.Read.All~~, Directory.Read.All, Directory.ReadWrite.All"
 httpRequest:
   heading: "HTTP request"
-  sampleCode: |
+  samples:
+  - sampleCode: |
     ```http
     POST /groups/{id}/getMemberGroups
     ```

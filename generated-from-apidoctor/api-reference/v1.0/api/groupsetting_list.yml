@@ -19,6 +19,7 @@ permissions:
     permission: "Directory.Read.All, Directory.ReadWrite.All"
 httpRequest:
   heading: "HTTP request"
+  samples:
   intro: |
     List tenant-wide or group settings.
     GET /groupSettings

@@ -20,7 +20,8 @@ permissions:
     permission: "MailboxSettings.ReadWrite"
 httpRequest:
   heading: "HTTP request"
-  sampleCode: |
+  samples:
+  - sampleCode: |
     ```http
     PATCH /me/outlook/masterCategories/{id}
     PATCH /users/{id|userPrincipalName}/outlook/masterCategories/{id}

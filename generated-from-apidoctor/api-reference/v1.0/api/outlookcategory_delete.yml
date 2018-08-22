@@ -19,7 +19,8 @@ permissions:
     permission: "MailboxSettings.ReadWrite"
 httpRequest:
   heading: "HTTP request"
-  sampleCode: |
+  samples:
+  - sampleCode: |
     ```http
     DELETE /me/outlook/masterCategories/{id}
     DELETE /users/{id|userPrincipalName}/outlook/masterCategories/{id}

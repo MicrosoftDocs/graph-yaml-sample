@@ -19,7 +19,8 @@ permissions:
     permission: "Sites.Read.All, Sites.ReadWrite.All"
 httpRequest:
   heading: "HTTP request"
-  sampleCode: |
+  samples:
+  - sampleCode: |
     ```http
     GET /sites/{site-id}/items/{item-id}/versions/{version-id}
     GET /sites/{site-id}/lists/{list-id}/items/{item-id}/versions/{version-id}

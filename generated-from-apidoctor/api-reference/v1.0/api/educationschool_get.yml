@@ -19,7 +19,8 @@ permissions:
     permission: "EduRoster.Read.All, EduRoster.ReadWrite.All"
 httpRequest:
   heading: "HTTP request"
-  sampleCode: |
+  samples:
+  - sampleCode: |
     ```http
     GET /education/schools
     GET /education/me/schools

@@ -26,7 +26,8 @@ permissions:
     permission: "Files.ReadWrite.All, Sites.ReadWrite.All"
 httpRequest:
   heading: "HTTP request"
-  sampleCode: |
+  samples:
+  - sampleCode: |
     ```http
     PATCH /drives/{drive-id}/items/{item-id}
     PATCH /groups/{group-id}/drive/{item-id}

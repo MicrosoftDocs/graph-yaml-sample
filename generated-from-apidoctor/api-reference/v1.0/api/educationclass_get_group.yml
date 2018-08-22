@@ -20,7 +20,8 @@ permissions:
     permission: "EduRoster.Read.All, EduRoster.ReadWrite.All plus Directory.Read.All"
 httpRequest:
   heading: "HTTP request"
-  sampleCode: |
+  samples:
+  - sampleCode: |
     ```http
     GET /education/classes/{id}/group
     ```

@@ -18,7 +18,8 @@ permissions:
     To call this API, the user must have granted the application read access to the file the app wishes to convert.
 httpRequest:
   heading: "HTTP request"
-  sampleCode: |
+  samples:
+  - sampleCode: |
     ```http
     GET /drive/items/{item-id}/content?format={format}
     GET /drive/root:/{path and filename}:/content?format={format}

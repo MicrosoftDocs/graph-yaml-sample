@@ -23,7 +23,8 @@ permissions:
     permission: "Sites.ReadWrite.All"
 httpRequest:
   heading: "HTTP request"
-  sampleCode: |
+  samples:
+  - sampleCode: |
     ```http
     POST https://graph.microsoft.com/v1.0/sites/{site-id}/lists
     ```

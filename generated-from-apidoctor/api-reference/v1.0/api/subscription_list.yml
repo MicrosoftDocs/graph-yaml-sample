@@ -27,7 +27,8 @@ permissions:
     |App is calling on behalf of itself (application permission).<br/>-and-<br/>App has the original permission required to [create the subscription](xref:graph.subscription_post_subscriptions).<br/><br/>Note: This applies to work/school accounts only.|Subscriptions created by **this app** for itself or for any user in the directory.
 httpRequest:
   heading: "HTTP request"
-  sampleCode: |
+  samples:
+  - sampleCode: |
     ```http
     GET /subscriptions
     ```

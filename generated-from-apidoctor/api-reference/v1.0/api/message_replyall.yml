@@ -19,7 +19,8 @@ permissions:
     permission: "Mail.Send"
 httpRequest:
   heading: "HTTP request"
-  sampleCode: |
+  samples:
+  - sampleCode: |
     ```http
     POST /users/me/messages/{id}/replyAll
     POST /users/{id | userPrincipalName}/messages/{id}/replyAll

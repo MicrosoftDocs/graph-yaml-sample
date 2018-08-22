@@ -19,6 +19,7 @@ permissions:
     permission: "Calendars.Read"
 httpRequest:
   heading: "HTTP request"
+  samples:
   intro: |
     Any [calendarGroup](xref:graph.calendargroup) of a user.
     GET /me/calendarGroups/{id}

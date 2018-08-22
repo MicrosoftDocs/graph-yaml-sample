@@ -24,7 +24,8 @@ permissions:
     permission: "Files.ReadWrite.All, Sites.ReadWrite.All"
 httpRequest:
   heading: "HTTP request"
-  sampleCode: |
+  samples:
+  - sampleCode: |
     ```http
     POST /drives/{drive-id}/items/{item-id}/invite
     POST /groups/{group-id}/drive/items/{item-id}/invite

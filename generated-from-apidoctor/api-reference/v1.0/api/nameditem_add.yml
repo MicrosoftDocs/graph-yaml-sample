@@ -19,7 +19,8 @@ permissions:
     permission: "Sites.Read.All"
 httpRequest:
   heading: "HTTP request"
-  sampleCode: |
+  samples:
+  - sampleCode: |
     ```http
     POST /workbook/names/add
     POST /workbook/worksheets({id|name})/names/add

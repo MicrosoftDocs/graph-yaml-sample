@@ -21,7 +21,8 @@ permissions:
     permission: "User.Read.All"
 httpRequest:
   heading: "HTTP request"
-  sampleCode: |
+  samples:
+  - sampleCode: |
     ```http
     GET /me/outlook/supportedLanguages
     GET /users/{id|userPrincipalName}/outlook/supportedLanguages

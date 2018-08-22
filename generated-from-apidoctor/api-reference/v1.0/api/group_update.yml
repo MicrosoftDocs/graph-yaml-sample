@@ -19,7 +19,8 @@ permissions:
     permission: "Group.ReadWrite.All"
 httpRequest:
   heading: "HTTP request"
-  sampleCode: |
+  samples:
+  - sampleCode: |
     ```http
     PATCH /groups/{id}
     ```

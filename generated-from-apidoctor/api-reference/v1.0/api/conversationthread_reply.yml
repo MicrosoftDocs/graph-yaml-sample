@@ -20,7 +20,8 @@ permissions:
     permission: "Group.ReadWrite.All"
 httpRequest:
   heading: "HTTP request"
-  sampleCode: |
+  samples:
+  - sampleCode: |
     ```http
     POST /groups/{id}/threads/{id}/reply
     POST /groups/{id}/conversations/{id}/threads/{id}/reply

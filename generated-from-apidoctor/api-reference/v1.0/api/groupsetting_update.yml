@@ -19,6 +19,7 @@ permissions:
     permission: "Directory.ReadWrite.All"
 httpRequest:
   heading: "HTTP request"
+  samples:
   intro: |
     Update a tenant-wide or group specific setting.
     PATCH /groupSettings/{id}

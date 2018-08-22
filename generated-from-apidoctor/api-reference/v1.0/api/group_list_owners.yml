@@ -19,7 +19,8 @@ permissions:
     permission: "Group.Read.All and User.Read.All, Group.Read.All and User.ReadWrite.All"
 httpRequest:
   heading: "HTTP request"
-  sampleCode: |
+  samples:
+  - sampleCode: |
     ```http
     GET /groups/{id}/owners
     ```

@@ -23,10 +23,11 @@ permissions:
     permission: ""
 httpRequest:
   heading: "HTTP request"
+  samples:
   intro: |
     In the request, identify the resource instance, use the **extensions** 
     navigation property of that instance to identify the extension, and do a `DELETE` on that extension instance.
-  sampleCode: |
+  - sampleCode: |
     ```http
     DELETE /devices/{Id}/extensions/{extensionId}
     DELETE /users/{id|userPrincipalName}/events/{id}/extensions/{extensionId}

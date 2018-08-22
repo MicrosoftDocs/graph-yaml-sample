@@ -19,7 +19,8 @@ permissions:
     permission: "User.Read.All and Group.Read.All, Directory.Read.All"
 httpRequest:
   heading: "HTTP request"
-  sampleCode: |
+  samples:
+  - sampleCode: |
     ```http
     POST /me/getMemberGroups
     POST /users/{id | userPrincipalName}/getMemberGroups

@@ -26,7 +26,8 @@ permissions:
     permission: "Calendars.Read"
 httpRequest:
   heading: "HTTP request"
-  sampleCode: |
+  samples:
+  - sampleCode: |
     ```http
     GET /me/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datetime}
     GET /users/{id}/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datetime}
