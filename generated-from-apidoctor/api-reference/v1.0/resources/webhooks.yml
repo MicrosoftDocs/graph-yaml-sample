@@ -17,23 +17,11 @@ summary:
     * Content shared on OneDrive, including drives associated with SharePoint sites
     * Users' personal OneDrive folders
     
-permissions:
-  heading: "Permissions"
-  intro: |
-    In general, subscription operations require read permission to the resource. For example, to get notifications for messages, your app needs the `Mail.Read` permission. The [create subscription](xref:graph.subscription_post_subscriptions) article lists permissions needed for each resource type. The following table lists the types of permissions your app can request to use webhooks for specific resource types.
-  list:
-  - resource: "Delegated - work or school account"
-    permission: ""
-  - resource: "Delegated - personal Microsoft account"
-    permission: ""
-  - resource: "Application"
-    permission: ""
   outro: |
-    ## See also
-    
-    * [Subscription resource type](xref:graph.subscription)
-    * [Get subscription](xref:graph.subscription_get)
-    * [Create subscription](xref:graph.subscription_post_subscriptions)
-    * [Update subscription](xref:graph.subscription_update)
-    * [Delete subscription](xref:graph.subscription_delete)
-    
+    ## Blah Blah
+    In general, subscription operations require read permission to the resource. For example, to get notifications for messages, your app needs the `Mail.Read` permission. The [create subscription](xref:graph.subscription_post_subscriptions) article lists permissions needed for each resource type. The following table lists the types of permissions your app can request to use webhooks for specific resource types.
+    |Permission type|Supported resource types in v1.0
+    | :------------------------------------- -| :--------------------------------------------------------------- -|
+    |Delegated - work or school account|[contact][], [conversation][], [drive][], [event][], [message][]
+    |Delegated - personal Microsoft account|None
+    |Application|[contact][], [conversation][], [event][], [message][]
