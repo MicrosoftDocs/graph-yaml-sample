@@ -24,14 +24,14 @@ permissions:
   outro: |
     ## List a group's drives
     To list the document libraries for a group, your app requests the **drives** relationship on the Group.
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    GET /groups/{groupId}/drives
-    ```
-    
+      ```http
+      GET /groups/{groupId}/drives
+      ```
+      
   outro: |
     ## List a site's drives
     To list the document libraries for a site, your app requests the **drives** relationship on the Site.

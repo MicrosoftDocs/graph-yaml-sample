@@ -18,15 +18,15 @@ permissions:
     |Delegated (work or school account)|User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All
     |Delegated (personal Microsoft account)|Not supported.
     |Application|User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    GET /directory/deletedItems/microsoft.graph.group
-    GET /directory/deletedItems/microsoft.graph.user
-    ```
-    
+      ```http
+      GET /directory/deletedItems/microsoft.graph.group
+      GET /directory/deletedItems/microsoft.graph.user
+      ```
+      
   outro: |
     This API currently supports retrieving object types of groups (microsoft.graph.group) or users (microsoft.graph.user) from deleted items. The type is specified as a required part of the URI. Calling GET /directory/deletedItems without a type is not supported.
 queryParameters:

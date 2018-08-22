@@ -17,14 +17,14 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "Not supported."
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    GET /workbook/worksheets/{id|name}/cell(row=<row>,column=<column>)
-    ```
-    
+      ```http
+      GET /workbook/worksheets/{id|name}/cell(row=<row>,column=<column>)
+      ```
+      
 parameters:
   heading: "Parameters"
   intro: |

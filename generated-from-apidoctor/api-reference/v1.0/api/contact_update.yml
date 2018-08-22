@@ -17,7 +17,7 @@ permissions:
     permission: "Contacts.ReadWrite"
   - resource: "Application"
     permission: "Contacts.ReadWrite"
-httpRequest:
+section:
   heading: "HTTP request"
   intro: |
     A [contact](xref:graph.contact) from a user's default [contactFolder](xref:graph.contactfolder).

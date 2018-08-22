@@ -19,15 +19,15 @@ permissions:
     permission: "User.Read"
   - resource: "Application"
     permission: "User.Read.All"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    GET /me/outlook/supportedLanguages
-    GET /users/{id|userPrincipalName}/outlook/supportedLanguages
-    ```
-    
+      ```http
+      GET /me/outlook/supportedLanguages
+      GET /users/{id|userPrincipalName}/outlook/supportedLanguages
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

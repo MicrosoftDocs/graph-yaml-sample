@@ -32,18 +32,18 @@ permissions:
     To begin a large file upload, your app must first request a new upload session.
     This creates a temporary storage location where the bytes of the file will be saved until the complete file is uploaded.
     Once the last byte of the file has been uploaded the upload session is completed and the final file is shown in the destination folder.
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    POST /drives/{driveId}/items/{itemId}/createUploadSession
-    POST /groups/{groupId}/drive/items/{itemId}/createUploadSession
-    POST /me/drive/items/{itemId}/createUploadSession
-    POST /sites/{siteId}/drive/items/{itemId}/createUploadSession
-    POST /users/{userId}/drive/items/{itemId}/createUploadSession
-    ```
-    
+      ```http
+      POST /drives/{driveId}/items/{itemId}/createUploadSession
+      POST /groups/{groupId}/drive/items/{itemId}/createUploadSession
+      POST /me/drive/items/{itemId}/createUploadSession
+      POST /sites/{siteId}/drive/items/{itemId}/createUploadSession
+      POST /users/{userId}/drive/items/{itemId}/createUploadSession
+      ```
+      
 requestHeaders:
   heading: "Optional request headers"
   list:

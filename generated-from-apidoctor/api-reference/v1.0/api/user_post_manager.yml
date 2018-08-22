@@ -18,14 +18,14 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "Directory.ReadWrite.All"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    PUT /users/{id}/manager/$ref
-    ```
-    
+      ```http
+      PUT /users/{id}/manager/$ref
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

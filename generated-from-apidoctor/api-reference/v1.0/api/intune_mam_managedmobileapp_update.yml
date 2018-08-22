@@ -10,17 +10,17 @@ permissions:
   heading: "Prerequisites"
   intro: |
     One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
-httpRequest:
+section:
   heading: "HTTP Request"
   samples:
   - sampleCode: |
-    ```http
-    PATCH /deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/apps/{managedMobileAppId}
-    PATCH /deviceAppManagement/androidManagedAppProtections/{androidManagedAppProtectionId}/apps/{managedMobileAppId}
-    PATCH /deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtectionId}/apps/{managedMobileAppId}
-    PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppConfigurationId}/apps/{managedMobileAppId}
-    ```
-    
+      ```http
+      PATCH /deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/apps/{managedMobileAppId}
+      PATCH /deviceAppManagement/androidManagedAppProtections/{androidManagedAppProtectionId}/apps/{managedMobileAppId}
+      PATCH /deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtectionId}/apps/{managedMobileAppId}
+      PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppConfigurationId}/apps/{managedMobileAppId}
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

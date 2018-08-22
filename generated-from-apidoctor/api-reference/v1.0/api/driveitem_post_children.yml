@@ -21,18 +21,18 @@ permissions:
     permission: "Files.ReadWrite, Files.ReadWrite.All"
   - resource: "Application"
     permission: "Files.ReadWrite.All, Sites.ReadWrite.All"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    POST /drives/{drive-id}/items/{parent-item-id}/children
-    POST /groups/{group-id}/drive/items/{parent-item-id}/children
-    POST /me/drive/items/{parent-item-id}/children
-    POST /sites/{site-id}/drive/items/{parent-item-id}/children
-    POST /users/{user-id}/drive/items/{parent-item-id}/children
-    ```
-    
+      ```http
+      POST /drives/{drive-id}/items/{parent-item-id}/children
+      POST /groups/{group-id}/drive/items/{parent-item-id}/children
+      POST /me/drive/items/{parent-item-id}/children
+      POST /sites/{site-id}/drive/items/{parent-item-id}/children
+      POST /users/{user-id}/drive/items/{parent-item-id}/children
+      ```
+      
 requestBody:
   heading: "Request body"
   intro: |

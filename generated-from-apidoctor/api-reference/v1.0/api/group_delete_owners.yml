@@ -17,14 +17,14 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "Group.ReadWrite.All, Directory.ReadWrite.All"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    DELETE /groups/{id}/owners/{id}/$ref
-    ```
-    
+      ```http
+      DELETE /groups/{id}/owners/{id}/$ref
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

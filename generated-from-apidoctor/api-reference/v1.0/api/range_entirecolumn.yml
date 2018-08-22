@@ -17,16 +17,16 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "Not supported."
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    GET /workbook/names/{name}/range/entireColumn
-    GET /workbook/worksheets/{id|name}/range(address='<address>')/entireColumn
-    GET /workbook/tables/{id|name}/columns/{id|name}/range/entireColumn
-    ```
-    
+      ```http
+      GET /workbook/names/{name}/range/entireColumn
+      GET /workbook/worksheets/{id|name}/range(address='<address>')/entireColumn
+      GET /workbook/tables/{id|name}/columns/{id|name}/range/entireColumn
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

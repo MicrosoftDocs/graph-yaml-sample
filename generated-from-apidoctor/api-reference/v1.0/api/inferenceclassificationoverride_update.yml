@@ -21,15 +21,15 @@ permissions:
     permission: "Mail.ReadWrite"
   - resource: "Application"
     permission: "Mail.ReadWrite"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    PATCH /me/inferenceClassification/overrides/{id}
-    PATCH /users/{id}/inferenceClassification/overrides/{id}
-    ```
-    
+      ```http
+      PATCH /me/inferenceClassification/overrides/{id}
+      PATCH /users/{id}/inferenceClassification/overrides/{id}
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

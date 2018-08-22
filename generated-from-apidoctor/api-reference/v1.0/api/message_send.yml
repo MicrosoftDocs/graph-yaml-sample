@@ -18,15 +18,15 @@ permissions:
     permission: "Mail.Send"
   - resource: "Application"
     permission: "Mail.Send"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    POST /me/messages/{id}/send
-    POST /users/{id | userPrincipalName}/messages/{id}/send
-    ```
-    
+      ```http
+      POST /me/messages/{id}/send
+      POST /users/{id | userPrincipalName}/messages/{id}/send
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

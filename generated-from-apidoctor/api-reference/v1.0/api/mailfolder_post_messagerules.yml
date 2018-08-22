@@ -18,15 +18,15 @@ permissions:
     permission: "MailboxSettings.ReadWrite"
   - resource: "Application"
     permission: "MailboxSettings.ReadWrite"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    POST /me/mailFolders/inbox/messageRules
-    POST /users/{id | userPrincipalName}/mailFolders/inbox/messageRules
-    ```
-    
+      ```http
+      POST /me/mailFolders/inbox/messageRules
+      POST /users/{id | userPrincipalName}/mailFolders/inbox/messageRules
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

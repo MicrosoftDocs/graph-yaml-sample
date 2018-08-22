@@ -17,14 +17,14 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "Device.ReadWrite.All"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    POST /devices
-    ```
-    
+      ```http
+      POST /devices
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

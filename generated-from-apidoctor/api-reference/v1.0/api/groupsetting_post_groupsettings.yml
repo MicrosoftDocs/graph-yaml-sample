@@ -18,15 +18,15 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "Directory.ReadWrite.All"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    POST /groupSettings
-    POST /groups/{id}/settings
-    ```
-    
+      ```http
+      POST /groupSettings
+      POST /groups/{id}/settings
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

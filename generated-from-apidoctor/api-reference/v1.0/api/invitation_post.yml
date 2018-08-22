@@ -22,14 +22,14 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "User.Invite.All, User.ReadWrite.All, Directory.ReadWrite.All"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    POST /invitations
-    ```
-    
+      ```http
+      POST /invitations
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

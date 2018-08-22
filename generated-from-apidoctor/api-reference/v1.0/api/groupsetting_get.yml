@@ -17,7 +17,7 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "Directory.Read.All, Directory.ReadWrite.All"
-httpRequest:
+section:
   heading: "HTTP request"
   intro: |
     Get a specific tenant-wide or group setting.

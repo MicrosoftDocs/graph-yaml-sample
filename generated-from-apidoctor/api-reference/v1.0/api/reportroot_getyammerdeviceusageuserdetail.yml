@@ -18,15 +18,15 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "Reports.Read.All"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    GET /reports/getYammerDeviceUsageUserDetail(period='{period_value}')
-    GET /reports/getYammerDeviceUsageUserDetail(date={date_value})
-    ```
-    
+      ```http
+      GET /reports/getYammerDeviceUsageUserDetail(period='{period_value}')
+      GET /reports/getYammerDeviceUsageUserDetail(date={date_value})
+      ```
+      
   outro: |
     ## Request parameters
     In the request URL, provide the query parameter with a valid value.

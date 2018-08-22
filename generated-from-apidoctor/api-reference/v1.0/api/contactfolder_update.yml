@@ -17,15 +17,15 @@ permissions:
     permission: "Contacts.ReadWrite"
   - resource: "Application"
     permission: "Contacts.ReadWrite"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    PATCH /me/contactFolders/{id}
-    PATCH /users/{id | userPrincipalName}/contactFolders/{id}
-    ```
-    
+      ```http
+      PATCH /me/contactFolders/{id}
+      PATCH /users/{id | userPrincipalName}/contactFolders/{id}
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

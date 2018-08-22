@@ -17,14 +17,14 @@ permissions:
     permission: "Calendars.ReadWrite"
   - resource: "Application"
     permission: "Calendars.ReadWrite"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    POST /users/{id | userPrincipalName}/calendars
-    ```
-    
+      ```http
+      POST /users/{id | userPrincipalName}/calendars
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

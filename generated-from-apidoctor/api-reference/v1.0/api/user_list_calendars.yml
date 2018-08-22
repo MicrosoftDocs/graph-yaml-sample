@@ -17,7 +17,7 @@ permissions:
     permission: "Calendars.Read, Calendars.ReadWrite"
   - resource: "Application"
     permission: "Calendars.Read, Calendars.ReadWrite"
-httpRequest:
+section:
   heading: "HTTP request"
   intro: |
     All the user's calendars.

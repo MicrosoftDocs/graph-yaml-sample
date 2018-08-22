@@ -18,14 +18,14 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "Reports.Read.All"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    GET /reports/getSkypeForBusinessDeviceUsageUserCounts(period='{period_value}')
-    ```
-    
+      ```http
+      GET /reports/getSkypeForBusinessDeviceUsageUserCounts(period='{period_value}')
+      ```
+      
   outro: |
     ## Request parameters
     In the request URL, provide the following parameter with a valid value.

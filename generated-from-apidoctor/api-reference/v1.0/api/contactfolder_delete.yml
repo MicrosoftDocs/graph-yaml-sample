@@ -17,15 +17,15 @@ permissions:
     permission: "Contacts.ReadWrite"
   - resource: "Application"
     permission: "Contacts.ReadWrite"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    DELETE /me/contactFolders/{id}
-    DELETE /users/{id | userPrincipalName}/contactFolders/{id}
-    ```
-    
+      ```http
+      DELETE /me/contactFolders/{id}
+      DELETE /users/{id | userPrincipalName}/contactFolders/{id}
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

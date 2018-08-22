@@ -24,15 +24,15 @@ permissions:
     permission: "Calendars.Read"
   - resource: "Application"
     permission: "Calendars.Read"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    GET /me/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datetime}
-    GET /users/{id}/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datetime}
-    ```
-    
+      ```http
+      GET /me/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datetime}
+      GET /users/{id}/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datetime}
+      ```
+      
 queryParameters:
   heading: "Query parameters"
   intro: |

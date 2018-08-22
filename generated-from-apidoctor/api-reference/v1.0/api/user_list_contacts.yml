@@ -45,17 +45,17 @@ permissions:
     permission: "Contacts.Read, Contacts.ReadWrite"
   - resource: "Application"
     permission: "Contacts.Read, Contacts.ReadWrite"
-httpRequest:
+section:
   heading: "HTTP request"
   intro: |
     To get all the contacts in a user's mailbox:
   samples:
   - sampleCode: |
-    ```http
-    GET /me/contacts
-    GET /users/{id | userPrincipalName}/contacts
-    ```
-    
+      ```http
+      GET /me/contacts
+      GET /users/{id | userPrincipalName}/contacts
+      ```
+      
   outro: |
     To get contacts in a specific folder in the user's mailbox:
     

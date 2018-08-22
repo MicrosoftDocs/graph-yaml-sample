@@ -18,14 +18,14 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "EduRoster.ReadWrite.All"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    DELETE /education/classes/{id}/members/{userId}/$ref
-    ```
-    
+      ```http
+      DELETE /education/classes/{id}/members/{userId}/$ref
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

@@ -17,15 +17,15 @@ permissions:
     permission: "User.Read"
   - resource: "Application"
     permission: "User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    GET /me/licenseDetails
-    GET /users/{id}/licenseDetails
-    ```
-    
+      ```http
+      GET /me/licenseDetails
+      GET /users/{id}/licenseDetails
+      ```
+      
 queryParameters:
   heading: "Optional query parameters"
   intro: |

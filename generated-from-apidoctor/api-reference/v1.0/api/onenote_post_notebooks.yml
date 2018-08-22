@@ -17,17 +17,17 @@ permissions:
     permission: "Notes.Create, Notes.ReadWrite"
   - resource: "Application"
     permission: "Notes.ReadWrite.All"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    POST /me/onenote/notebooks
-    POST /users/{id | userPrincipalName}/onenote/notebooks
-    POST /groups/{id}/onenote/notebooks
-    POST /sites/{id}/onenote/notebooks
-    ```
-    
+      ```http
+      POST /me/onenote/notebooks
+      POST /users/{id | userPrincipalName}/onenote/notebooks
+      POST /groups/{id}/onenote/notebooks
+      POST /sites/{id}/onenote/notebooks
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

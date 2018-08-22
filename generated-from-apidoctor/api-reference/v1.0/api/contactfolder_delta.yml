@@ -21,15 +21,15 @@ permissions:
     permission: "Contacts.Read, Contacts.ReadWrite"
   - resource: "Application"
     permission: "Contacts.Read, Contacts.ReadWrite"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    GET /me/contactFolders/delta
-    GET /users/{id}/contactFolders/delta
-    ```
-    
+      ```http
+      GET /me/contactFolders/delta
+      GET /users/{id}/contactFolders/delta
+      ```
+      
 queryParameters:
   heading: "Query parameters"
   intro: |

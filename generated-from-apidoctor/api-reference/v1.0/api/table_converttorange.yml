@@ -17,15 +17,15 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "Not supported."
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    POST /workbook/tables/{id|name}/convertToRange
-    POST /workbook/worksheets/{id|name}/tables/{id|name}/convertToRange
-    ```
-    
+      ```http
+      POST /workbook/tables/{id|name}/convertToRange
+      POST /workbook/worksheets/{id|name}/tables/{id|name}/convertToRange
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

@@ -21,23 +21,23 @@ permissions:
     permission: "Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All"
   - resource: "Application"
     permission: "Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    GET /drives/{drive-id}/items/{item-id}
-    GET /drives/{drive-id}/root:/{item-path}
-    GET /groups/{group-id}/drive/items/{item-id}
-    GET /groups/{group-id}/drive/root:/{item-path}
-    GET /me/drive/items/{item-id}
-    GET /me/drive/root:/{item-path}
-    GET /sites/{siteId}/drive/items/{itemId}
-    GET /sites/{siteId}/drive/root:/{item-path}
-    GET /users/{userId}/drive/items/{itemId}
-    GET /users/{userId}/drive/root:/{item-path}
-    ```
-    
+      ```http
+      GET /drives/{drive-id}/items/{item-id}
+      GET /drives/{drive-id}/root:/{item-path}
+      GET /groups/{group-id}/drive/items/{item-id}
+      GET /groups/{group-id}/drive/root:/{item-path}
+      GET /me/drive/items/{item-id}
+      GET /me/drive/root:/{item-path}
+      GET /sites/{siteId}/drive/items/{itemId}
+      GET /sites/{siteId}/drive/root:/{item-path}
+      GET /users/{userId}/drive/items/{itemId}
+      GET /users/{userId}/drive/root:/{item-path}
+      ```
+      
 queryParameters:
   heading: "Optional query parameters"
   intro: |

@@ -17,15 +17,15 @@ permissions:
     permission: "MailboxSettings.ReadWrite"
   - resource: "Application"
     permission: "MailboxSettings.ReadWrite"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    POST /me/outlook/masterCategories
-    POST /users/{id|userPrincipalName}/outlook/masterCategories
-    ```
-    
+      ```http
+      POST /me/outlook/masterCategories
+      POST /users/{id|userPrincipalName}/outlook/masterCategories
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

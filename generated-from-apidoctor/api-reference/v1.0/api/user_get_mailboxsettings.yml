@@ -21,17 +21,17 @@ permissions:
     permission: "MailboxSettings.Read, MailboxSettings.ReadWrite"
   - resource: "Application"
     permission: "MailboxSettings.Read, MailboxSettings.ReadWrite"
-httpRequest:
+section:
   heading: "HTTP request"
   intro: |
     To get all mailbox settings for a user:
   samples:
   - sampleCode: |
-    ```http
-    GET /me/mailboxSettings
-    GET /users/{id|userPrincipalName}/mailboxSettings
-    ```
-    
+      ```http
+      GET /me/mailboxSettings
+      GET /users/{id|userPrincipalName}/mailboxSettings
+      ```
+      
   outro: |
     To get specific settings - for example, only the automatic replies settings, locale, time zone, or working hours:
     

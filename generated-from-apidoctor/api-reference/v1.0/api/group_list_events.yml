@@ -17,15 +17,15 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "Not supported."
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    GET /groups/{id}/events
-    GET /groups/{id}/calendar/events
-    ```
-    
+      ```http
+      GET /groups/{id}/events
+      GET /groups/{id}/calendar/events
+      ```
+      
 queryParameters:
   heading: "Optional query parameters"
   intro: |

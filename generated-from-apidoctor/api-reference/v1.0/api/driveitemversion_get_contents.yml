@@ -17,18 +17,18 @@ permissions:
     permission: "Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All"
   - resource: "Application"
     permission: "Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    GET /drives/{drive-id}/items/{item-id}/versions/{version-id}/content
-    GET /groups/{group-id}/drive/{item-id}/versions/{version-id}/content
-    GET /me/drive/items/{item-id}/versions/{version-id}/content
-    GET /sites/{site-id}/drive/items/{item-id}/versions/{version-id}/content
-    GET /users/{user-id}/drive/items/{item-id}/versions/{version-id}/content
-    ```
-    
+      ```http
+      GET /drives/{drive-id}/items/{item-id}/versions/{version-id}/content
+      GET /groups/{group-id}/drive/{item-id}/versions/{version-id}/content
+      GET /me/drive/items/{item-id}/versions/{version-id}/content
+      GET /sites/{site-id}/drive/items/{item-id}/versions/{version-id}/content
+      GET /users/{user-id}/drive/items/{item-id}/versions/{version-id}/content
+      ```
+      
 response:
   heading: "Response"
   intro: |

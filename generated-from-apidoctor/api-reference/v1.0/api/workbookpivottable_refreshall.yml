@@ -17,14 +17,14 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "Not supported."
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    POST /me/drive/root/workbook/worksheets/{id}/pivotTables/refreshAll
-    ```
-    
+      ```http
+      POST /me/drive/root/workbook/worksheets/{id}/pivotTables/refreshAll
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

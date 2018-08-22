@@ -17,16 +17,16 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "Not supported."
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    POST /workbook/worksheets/{id|name}/charts/{name}/format/fill/setSolidColor
-    POST /workbook/worksheets/{id|name}/charts/{name}/title/format/fill/setSolidColor
-    POST /workbook/worksheets/{id|name}/charts/{name}/legend/format/fill/setSolidColor
-    ```
-    
+      ```http
+      POST /workbook/worksheets/{id|name}/charts/{name}/format/fill/setSolidColor
+      POST /workbook/worksheets/{id|name}/charts/{name}/title/format/fill/setSolidColor
+      POST /workbook/worksheets/{id|name}/charts/{name}/legend/format/fill/setSolidColor
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

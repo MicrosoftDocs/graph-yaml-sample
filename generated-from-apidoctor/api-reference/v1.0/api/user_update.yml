@@ -19,14 +19,14 @@ permissions:
     permission: "User.ReadWrite.All, Directory.ReadWrite.All"
   outro: |
     When updating the passwordProfile property, the following permission is required: Directory.AccessAsUser.All.
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    PATCH /users/{id | userPrincipalName}
-    ```
-    
+      ```http
+      PATCH /users/{id | userPrincipalName}
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

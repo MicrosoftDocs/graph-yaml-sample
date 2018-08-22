@@ -43,7 +43,7 @@ permissions:
     * Contacts.Read
     * Group.Read.All 
     
-httpRequest:
+section:
   heading: "HTTP request"
   outro: |
     #### GET a resource instance expanded with an extended property that matches a filter

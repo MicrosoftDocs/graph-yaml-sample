@@ -22,14 +22,14 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "Sites.ReadWrite.All"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    DELETE https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}
-    ```
-    
+      ```http
+      DELETE https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}
+      ```
+      
 requestHeaders:
   heading: "Optional request headers"
   list:

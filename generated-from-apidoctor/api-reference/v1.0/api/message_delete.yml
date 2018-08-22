@@ -18,17 +18,17 @@ permissions:
     permission: "Mail.ReadWrite"
   - resource: "Application"
     permission: "Mail.ReadWrite"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    DELETE /me/messages/{id}
-    DELETE /users/{id | userPrincipalName}/messages/{id}
-    DELETE /me/mailFolders/{id}/messages/{id}
-    DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
-    ```
-    
+      ```http
+      DELETE /me/messages/{id}
+      DELETE /users/{id | userPrincipalName}/messages/{id}
+      DELETE /me/mailFolders/{id}/messages/{id}
+      DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

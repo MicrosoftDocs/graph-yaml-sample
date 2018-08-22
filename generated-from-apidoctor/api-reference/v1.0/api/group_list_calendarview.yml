@@ -18,14 +18,14 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "Not supported."
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    GET /groups/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
-    ```
-    
+      ```http
+      GET /groups/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
+      ```
+      
 queryParameters:
   heading: "Query parameters"
   intro: |

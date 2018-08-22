@@ -17,15 +17,15 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "Reports.Read.All"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    GET /reports/getTeamsUserActivityUserDetail(period='{period_value}')
-    GET /reports/getTeamsUserActivityUserDetail(date={date_value})
-    ```
-    
+      ```http
+      GET /reports/getTeamsUserActivityUserDetail(period='{period_value}')
+      GET /reports/getTeamsUserActivityUserDetail(date={date_value})
+      ```
+      
   outro: |
     ## Request parameters
     In the request URL, provide one of the following parameters with a valid value.

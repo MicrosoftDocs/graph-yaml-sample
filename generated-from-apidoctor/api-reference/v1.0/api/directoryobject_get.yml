@@ -17,14 +17,14 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "Directory.Read.All"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    GET /directoryObjects/{id}
-    ```
-    
+      ```http
+      GET /directoryObjects/{id}
+      ```
+      
 queryParameters:
   heading: "Optional query parameters"
   intro: |

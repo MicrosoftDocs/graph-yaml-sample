@@ -18,14 +18,14 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "Directory.Read.All, Domain.ReadWrite.All"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    GET /domains/contoso.com/serviceConfigurationRecords
-    ```
-    
+      ```http
+      GET /domains/contoso.com/serviceConfigurationRecords
+      ```
+      
 queryParameters:
   heading: "Optional query parameters"
   intro: |

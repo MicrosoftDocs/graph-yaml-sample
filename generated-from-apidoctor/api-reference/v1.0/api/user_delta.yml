@@ -17,16 +17,16 @@ permissions:
     permission: "User.Read, User.ReadWrite"
   - resource: "Application"
     permission: "User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All"
-httpRequest:
+section:
   heading: "HTTP request"
   intro: |
     To begin tracking changes, you make a request including the delta function on the users resource. 
   samples:
   - sampleCode: |
-    ```http
-    GET /users/delta
-    ```
-    
+      ```http
+      GET /users/delta
+      ```
+      
 queryParameters:
   heading: "Query parameters"
   intro: |

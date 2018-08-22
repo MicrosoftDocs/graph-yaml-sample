@@ -22,14 +22,14 @@ permissions:
     permission: "Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All"
   - resource: "Application"
     permission: "Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    GET /me/drive/recent
-    ```
-    
+      ```http
+      GET /me/drive/recent
+      ```
+      
 response:
   heading: "Response"
   intro: |

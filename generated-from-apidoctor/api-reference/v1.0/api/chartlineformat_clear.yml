@@ -17,16 +17,16 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "Not supported."
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    POST /workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/format/line/clear
-    POST /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis/format/line/clear
-    POST /workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/majorgridlines/format/line/clear
-    ```
-    
+      ```http
+      POST /workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/format/line/clear
+      POST /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis/format/line/clear
+      POST /workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/majorgridlines/format/line/clear
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

@@ -47,29 +47,29 @@ permissions:
     permission: "Calendars.Read"
   - resource: "Application"
     permission: "Calendars.Read"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    GET /me/events/{id}
-    GET /users/{id | userPrincipalName}/events/{id}
-    GET /groups/{id}/events/{id}
-    
-    GET /me/calendar/events/{id}
-    GET /users/{id | userPrincipalName}/calendar/events/{id}
-    GET /groups/{id}/calendar/events/{id}
-    
-    GET /me/calendars/{id}/events/{id}
-    GET /users/{id | userPrincipalName}/calendars/{id}/events/{id}
-    
-    GET /me/calendargroup/calendars/{id}/events/{id}
-    GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}
-    
-    GET /me/calendargroups/{id}/calendars/{id}/events/{id}
-    GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}
-    ```
-    
+      ```http
+      GET /me/events/{id}
+      GET /users/{id | userPrincipalName}/events/{id}
+      GET /groups/{id}/events/{id}
+      
+      GET /me/calendar/events/{id}
+      GET /users/{id | userPrincipalName}/calendar/events/{id}
+      GET /groups/{id}/calendar/events/{id}
+      
+      GET /me/calendars/{id}/events/{id}
+      GET /users/{id | userPrincipalName}/calendars/{id}/events/{id}
+      
+      GET /me/calendargroup/calendars/{id}/events/{id}
+      GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}
+      
+      GET /me/calendargroups/{id}/calendars/{id}/events/{id}
+      GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}
+      ```
+      
 queryParameters:
   heading: "Optional query parameters"
   intro: |

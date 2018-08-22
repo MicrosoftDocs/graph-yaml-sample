@@ -18,14 +18,14 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "Domain.ReadWrite.All"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    DELETE /domains/{id}
-    ```
-    
+      ```http
+      DELETE /domains/{id}
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

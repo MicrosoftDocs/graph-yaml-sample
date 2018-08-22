@@ -17,17 +17,17 @@ permissions:
     permission: "Notes.ReadWrite"
   - resource: "Application"
     permission: "Notes.ReadWrite.All"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    PATCH /me/onenote/pages/{id}/content
-    PATCH /users/{id | userPrincipalName}/onenote/pages/{id}/content
-    PATCH /groups/{id}/onenote/pages/{id}/content
-    PATCH /sites/{id}/onenote/pages/{id}/content
-    ```
-    
+      ```http
+      PATCH /me/onenote/pages/{id}/content
+      PATCH /users/{id | userPrincipalName}/onenote/pages/{id}/content
+      PATCH /groups/{id}/onenote/pages/{id}/content
+      PATCH /sites/{id}/onenote/pages/{id}/content
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

@@ -34,7 +34,7 @@ permissions:
     * Contacts.ReadWrite
     * Group.ReadWrite.All
     
-httpRequest:
+section:
   heading: "HTTP request"
   intro: |
     You can create extended properties in a new or existing resource instance.
@@ -48,36 +48,36 @@ httpRequest:
     The following is the syntax of the requests. 
   samples:
   - sampleCode: |
-    ```http
-    POST /me/messages
-    POST /users/{id|userPrincipalName}/messages
-    POST /me/mailFolders/{id}/messages
-    
-    POST /me/mailFolders
-    POST /users/{id|userPrincipalName}/mailFolders
-    
-    POST /me/events
-    POST /users/{id|userPrincipalName}/events
-    
-    POST /me/calendars
-    POST /users/{id|userPrincipalName}/calendars
-    
-    POST /me/contacts
-    POST /users/{id|userPrincipalName}/contacts
-    
-    POST /me/contactFolders
-    POST /users/{id|userPrincipalName}/contactFolders
-    
-    POST /groups/{id}/events
-    
-    POST /groups/{id}/threads/{id}/posts/{id}/reply
-    POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/reply
-    POST /groups/{id}/threads/{id}/reply
-    POST /groups/{id}/conversations/{id}/threads/{id}/reply
-    POST /groups/{id}/threads
-    POST /groups/{id}/conversations
-    ```
-    
+      ```http
+      POST /me/messages
+      POST /users/{id|userPrincipalName}/messages
+      POST /me/mailFolders/{id}/messages
+      
+      POST /me/mailFolders
+      POST /users/{id|userPrincipalName}/mailFolders
+      
+      POST /me/events
+      POST /users/{id|userPrincipalName}/events
+      
+      POST /me/calendars
+      POST /users/{id|userPrincipalName}/calendars
+      
+      POST /me/contacts
+      POST /users/{id|userPrincipalName}/contacts
+      
+      POST /me/contactFolders
+      POST /users/{id|userPrincipalName}/contactFolders
+      
+      POST /groups/{id}/events
+      
+      POST /groups/{id}/threads/{id}/posts/{id}/reply
+      POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/reply
+      POST /groups/{id}/threads/{id}/reply
+      POST /groups/{id}/conversations/{id}/threads/{id}/reply
+      POST /groups/{id}/threads
+      POST /groups/{id}/conversations
+      ```
+      
   outro: |
     To create one or more extended properties in an existing resource instance, specify the instance in the
     request, and include the extended property in the request body.

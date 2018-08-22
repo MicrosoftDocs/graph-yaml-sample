@@ -21,7 +21,7 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "Group.Read.All, Group.ReadWrite.All"
-httpRequest:
+section:
   heading: "HTTP request"
   intro: |
     POST /directory/deletedItems/getUserOwnedObjects

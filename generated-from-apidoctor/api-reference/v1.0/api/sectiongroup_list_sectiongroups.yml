@@ -17,17 +17,17 @@ permissions:
     permission: "Notes.Create, Notes.Read, Notes.ReadWrite"
   - resource: "Application"
     permission: "Notes.Read.All, Notes.ReadWrite.All"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    GET /me/onenote/sectionGroups/{id}/sectionGroups
-    GET /users/{id | userPrincipalName}/onenote/sectionGroups/{id}/sectionGroups
-    GET /groups/{id}/onenote/sectionGroups/{id}/sectionGroups
-    GET /sites/{id}/onenote/sectionGroups/{id}/sectionGroups
-    ```
-    
+      ```http
+      GET /me/onenote/sectionGroups/{id}/sectionGroups
+      GET /users/{id | userPrincipalName}/onenote/sectionGroups/{id}/sectionGroups
+      GET /groups/{id}/onenote/sectionGroups/{id}/sectionGroups
+      GET /sites/{id}/onenote/sectionGroups/{id}/sectionGroups
+      ```
+      
 queryParameters:
   heading: "Optional query parameters"
   intro: |

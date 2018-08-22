@@ -29,18 +29,18 @@ permissions:
     permission: "Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All"
   - resource: "Application"
     permission: "Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    GET /drives/{drive-id}/root/delta
-    GET /groups/{groupId}/drive/root/delta
-    GET /me/drive/root/delta
-    GET /sites/{siteId}/drive/root/delta
-    GET /users/{userId}/drive/root/delta
-    ```
-    
+      ```http
+      GET /drives/{drive-id}/root/delta
+      GET /groups/{groupId}/drive/root/delta
+      GET /me/drive/root/delta
+      GET /sites/{siteId}/drive/root/delta
+      GET /users/{userId}/drive/root/delta
+      ```
+      
 queryParameters:
   heading: "Optional query parameters"
   intro: |

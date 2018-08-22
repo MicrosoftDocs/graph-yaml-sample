@@ -17,14 +17,14 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "Directory.Read.All, Directory.ReadWrite.All"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    POST /groups/{id}/getMemberObjects
-    ```
-    
+      ```http
+      POST /groups/{id}/getMemberObjects
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

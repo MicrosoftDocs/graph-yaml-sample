@@ -18,15 +18,15 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "Group.ReadWrite.All"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    POST /groups/{id}/threads/{id}/posts/{id}/forward
-    POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/forward
-    ```
-    
+      ```http
+      POST /groups/{id}/threads/{id}/posts/{id}/forward
+      POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/forward
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

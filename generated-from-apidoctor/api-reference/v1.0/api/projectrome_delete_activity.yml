@@ -17,14 +17,14 @@ permissions:
     permission: "UserActivity.ReadWrite.CreatedByApp"
   - resource: "Application"
     permission: "Not supported."
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    DELETE /me/activities/{id}
-    ```
-    
+      ```http
+      DELETE /me/activities/{id}
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

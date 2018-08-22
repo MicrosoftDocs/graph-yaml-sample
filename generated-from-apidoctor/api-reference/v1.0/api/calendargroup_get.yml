@@ -17,7 +17,7 @@ permissions:
     permission: "Calendars.Read"
   - resource: "Application"
     permission: "Calendars.Read"
-httpRequest:
+section:
   heading: "HTTP request"
   intro: |
     Any [calendarGroup](xref:graph.calendargroup) of a user.

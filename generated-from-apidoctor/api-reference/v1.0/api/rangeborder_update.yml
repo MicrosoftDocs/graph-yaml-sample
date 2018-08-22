@@ -17,16 +17,16 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "Not supported."
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    PATCH /workbook/names/{name}/range/format/borders/{sideIndex}
-    PATCH /workbook/worksheets/{id|name}/range(address='<address>')/format/borders/{sideIndex}
-    PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/borders/{sideIndex}
-    ```
-    
+      ```http
+      PATCH /workbook/names/{name}/range/format/borders/{sideIndex}
+      PATCH /workbook/worksheets/{id|name}/range(address='<address>')/format/borders/{sideIndex}
+      PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/borders/{sideIndex}
+      ```
+      
 requestHeaders:
   heading: "Optional request headers"
   list:

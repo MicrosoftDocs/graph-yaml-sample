@@ -17,14 +17,14 @@ permissions:
     permission: "UserActivity.ReadWrite.CreatedByApp"
   - resource: "Application"
     permission: "Not supported."
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    GET /me/activities
-    ```
-    
+      ```http
+      GET /me/activities
+      ```
+      
 queryParameters:
   heading: "Optional query parameters"
   intro: |

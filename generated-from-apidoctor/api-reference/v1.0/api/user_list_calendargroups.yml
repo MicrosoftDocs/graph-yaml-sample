@@ -17,14 +17,14 @@ permissions:
     permission: "Calendars.Read, Calendars.ReadWrite"
   - resource: "Application"
     permission: "Calendars.Read, Calendars.ReadWrite"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    GET /users/{id | userPrincipalName}/calendarGroups
-    ```
-    
+      ```http
+      GET /users/{id | userPrincipalName}/calendarGroups
+      ```
+      
 queryParameters:
   heading: "Optional query parameters"
   intro: |

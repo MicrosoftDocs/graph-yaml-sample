@@ -17,15 +17,15 @@ permissions:
     permission: "Notes.Create, Notes.Read, Notes.ReadWrite"
   - resource: "Application"
     permission: "Notes.Read.All, Notes.ReadWrite.All"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    GET /me/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks=includePersonalNotebooks-value)
-    GET /users/{id | userPrincipalName}/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks=includePersonalNotebooks-value)
-    ```
-    
+      ```http
+      GET /me/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks=includePersonalNotebooks-value)
+      GET /users/{id | userPrincipalName}/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks=includePersonalNotebooks-value)
+      ```
+      
   outro: |
     The `<id | userPrincipalName>` for the user must match the user encoded in the authorization token used to make the request.
 requestHeaders:

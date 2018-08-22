@@ -19,20 +19,20 @@ permissions:
     permission: "Calendars.ReadWrite"
   - resource: "Application"
     permission: "Calendars.ReadWrite"
-httpRequest:
+section:
   heading: "HTTP request"
   intro: |
     Attachments for an [event](xref:graph.event) in the user's default [calendar](xref:graph.calendar).
   samples:
   - sampleCode: |
-    ```http
-    POST /me/events/{id}/attachments
-    POST /users/{id | userPrincipalName}/events/{id}/attachments
-    
-    POST /me/calendar/events/{id}/attachments
-    POST /users/{id | userPrincipalName}/calendar/events/{id}/attachments
-    ```
-    
+      ```http
+      POST /me/events/{id}/attachments
+      POST /users/{id | userPrincipalName}/events/{id}/attachments
+      
+      POST /me/calendar/events/{id}/attachments
+      POST /users/{id | userPrincipalName}/calendar/events/{id}/attachments
+      ```
+      
   outro: |
     Attachments for an [event](xref:graph.event) in a [calendar](xref:graph.calendar) belonging to the user's default [calendarGroup](xref:graph.calendargroup).
     

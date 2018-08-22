@@ -17,15 +17,15 @@ permissions:
     permission: "MailboxSettings.Read"
   - resource: "Application"
     permission: "MailboxSettings.Read"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    GET /me/outlook/masterCategories
-    GET /users/{id|userPrincipalName}/outlook/masterCategories
-    ```
-    
+      ```http
+      GET /me/outlook/masterCategories
+      GET /users/{id|userPrincipalName}/outlook/masterCategories
+      ```
+      
 queryParameters:
   heading: "Optional query parameters"
   intro: |

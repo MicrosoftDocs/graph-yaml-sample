@@ -18,14 +18,14 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "EduRoster.Read.All, EduRoster.ReadWrite.All plus Directory.Read.All"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    GET /education/classes/{id}/group
-    ```
-    
+      ```http
+      GET /education/classes/{id}/group
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

@@ -17,15 +17,15 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "Not supported."
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    POST /workbook/tables/{id|name}/rows/{index}/delete
-    POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}/delete
-    ```
-    
+      ```http
+      POST /workbook/tables/{id|name}/rows/{index}/delete
+      POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}/delete
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

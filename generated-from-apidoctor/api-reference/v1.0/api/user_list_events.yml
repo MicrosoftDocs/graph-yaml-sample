@@ -49,27 +49,27 @@ permissions:
     permission: "Calendars.Read, Calendars.ReadWrite"
   - resource: "Application"
     permission: "Calendars.Read, Calendars.ReadWrite"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    GET /me/events
-    GET /users/{id | userPrincipalName}/events
-    
-    GET /me/calendar/events
-    GET /users/{id | userPrincipalName}/calendar/events
-    
-    GET /me/calendars/{id}/events
-    GET /users/{id | userPrincipalName}/calendars/{id}/events
-    
-    GET /me/calendargroup/calendars/{id}/events
-    GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events
-    
-    GET /me/calendargroups/{id}/calendars/{id}/events
-    GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events
-    ```
-    
+      ```http
+      GET /me/events
+      GET /users/{id | userPrincipalName}/events
+      
+      GET /me/calendar/events
+      GET /users/{id | userPrincipalName}/calendar/events
+      
+      GET /me/calendars/{id}/events
+      GET /users/{id | userPrincipalName}/calendars/{id}/events
+      
+      GET /me/calendargroup/calendars/{id}/events
+      GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events
+      
+      GET /me/calendargroups/{id}/calendars/{id}/events
+      GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events
+      ```
+      
 queryParameters:
   heading: "Optional query parameters"
   intro: |

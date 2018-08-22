@@ -27,14 +27,14 @@ permissions:
     permission: ""
   - resource: ""
     permission: ""
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    POST /subscriptions
-    ```
-    
+      ```http
+      POST /subscriptions
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

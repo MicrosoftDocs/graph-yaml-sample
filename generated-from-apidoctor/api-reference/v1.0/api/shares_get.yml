@@ -22,14 +22,14 @@ permissions:
     permission: "Files.ReadWrite, Files.ReadWrite.All"
   - resource: "Application"
     permission: "Files.ReadWrite.All, Sites.ReadWrite.All"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    GET /shares/{shareIdOrEncodedSharingUrl}
-    ```
-    
+      ```http
+      GET /shares/{shareIdOrEncodedSharingUrl}
+      ```
+      
 parameters:
   heading: "Path Parameters"
   list:

@@ -17,15 +17,15 @@ permissions:
     permission: "Mail.ReadWrite"
   - resource: "Application"
     permission: "Mail.ReadWrite"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    POST /me/mailFolders/{id}/move
-    POST /users/{id | userPrincipalName}/mailFolders/{id}/move
-    ```
-    
+      ```http
+      POST /me/mailFolders/{id}/move
+      POST /users/{id | userPrincipalName}/mailFolders/{id}/move
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

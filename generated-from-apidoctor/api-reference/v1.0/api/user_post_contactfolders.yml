@@ -18,14 +18,14 @@ permissions:
     permission: "Contacts.ReadWrite"
   - resource: "Application"
     permission: "Contacts.ReadWrite"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    POST /users/{id | userPrincipalName}/contactFolders
-    ```
-    
+      ```http
+      POST /users/{id | userPrincipalName}/contactFolders
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

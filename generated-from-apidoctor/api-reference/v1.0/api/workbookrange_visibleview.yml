@@ -15,14 +15,14 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "Not supported."
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    GET /me/drive/root/workbook/worksheets/{id}/range(address={address})/visibleView
-    ```
-    
+      ```http
+      GET /me/drive/root/workbook/worksheets/{id}/range(address={address})/visibleView
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

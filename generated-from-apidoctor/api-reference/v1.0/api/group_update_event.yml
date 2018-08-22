@@ -17,15 +17,15 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "Not supported."
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    PATCH /groups/{id}/events/{id}
-    PATCH /groups/{id}/calendar/events/{id}
-    ```
-    
+      ```http
+      PATCH /groups/{id}/events/{id}
+      PATCH /groups/{id}/calendar/events/{id}
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

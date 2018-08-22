@@ -17,15 +17,15 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "Group.ReadWrite.All"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    PATCH /groups/{id}/threads/{id}
-    PATCH /groups/{id}/conversations/{id}/threads/{id}
-    ```
-    
+      ```http
+      PATCH /groups/{id}/threads/{id}
+      PATCH /groups/{id}/conversations/{id}/threads/{id}
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

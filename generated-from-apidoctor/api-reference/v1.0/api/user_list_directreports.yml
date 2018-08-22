@@ -17,14 +17,14 @@ permissions:
     permission: "User.Read, User.ReadWrite"
   - resource: "Application"
     permission: "User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    GET /users/{id | userPrincipalName}/directReports
-    ```
-    
+      ```http
+      GET /users/{id | userPrincipalName}/directReports
+      ```
+      
 queryParameters:
   heading: "Optional query parameters"
   intro: |

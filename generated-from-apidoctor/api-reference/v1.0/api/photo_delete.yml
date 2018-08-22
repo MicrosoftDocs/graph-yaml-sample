@@ -17,16 +17,16 @@ permissions:
     permission: "Files.ReadWrite"
   - resource: "Application"
     permission: "Not supported."
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    DELETE /users/{id | userPrincipalName}/photo
-    DELETE /groups/{id}/photo
-    DELETE /drive/root/createdByUser/photo
-    ```
-    
+      ```http
+      DELETE /users/{id | userPrincipalName}/photo
+      DELETE /groups/{id}/photo
+      DELETE /drive/root/createdByUser/photo
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

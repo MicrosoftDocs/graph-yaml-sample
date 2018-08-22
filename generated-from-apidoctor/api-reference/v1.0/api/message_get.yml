@@ -47,17 +47,17 @@ permissions:
     permission: "Mail.Read"
   - resource: "Application"
     permission: "Mail.Read"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    GET /me/messages/{id}
-    GET /users/{id | userPrincipalName}/messages/{id}
-    GET /me/mailFolders/{id}/messages/{id}
-    GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
-    ```
-    
+      ```http
+      GET /me/messages/{id}
+      GET /users/{id | userPrincipalName}/messages/{id}
+      GET /me/mailFolders/{id}/messages/{id}
+      GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
+      ```
+      
 queryParameters:
   heading: "Optional query parameters"
   intro: |

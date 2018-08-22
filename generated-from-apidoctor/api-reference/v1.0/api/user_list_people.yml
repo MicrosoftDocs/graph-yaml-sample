@@ -18,15 +18,15 @@ permissions:
     permission: "People.Read"
   - resource: "Application"
     permission: "People.Read.All"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    GET /me/people
-    GET /users/{id | userPrincipalName}/people
-    ```
-    
+      ```http
+      GET /me/people
+      GET /users/{id | userPrincipalName}/people
+      ```
+      
 queryParameters:
   heading: "Optional query parameters"
   intro: |

@@ -17,14 +17,14 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "Not supported."
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    GET /planner/tasks/{id}/bucketTaskBoardFormat
-    ```
-    
+      ```http
+      GET /planner/tasks/{id}/bucketTaskBoardFormat
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

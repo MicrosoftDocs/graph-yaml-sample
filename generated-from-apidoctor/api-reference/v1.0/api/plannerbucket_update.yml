@@ -17,14 +17,14 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "Not supported."
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    PATCH /planner/buckets/{id}
-    ```
-    
+      ```http
+      PATCH /planner/buckets/{id}
+      ```
+      
 requestHeaders:
   heading: "Optional request headers"
   list:

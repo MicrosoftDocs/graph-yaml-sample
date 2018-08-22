@@ -21,14 +21,14 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "Not supported."
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    PATCH /schemaExtensions/{id}
-    ```
-    
+      ```http
+      PATCH /schemaExtensions/{id}
+      ```
+      
 requestHeaders:
   heading: "Optional request headers"
   list:

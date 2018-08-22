@@ -24,14 +24,14 @@ permissions:
     permission: "Files.ReadWrite.AppFolder, Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All"
   - resource: "Application"
     permission: "Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All"
-httpRequest:
+section:
   heading: "HTTP Request"
   samples:
   - sampleCode: |
-    ```http
-    GET /me/drive/special/{name}
-    ```
-    
+      ```http
+      GET /me/drive/special/{name}
+      ```
+      
   outro: |
     ### Special folder names
     The follow special folder names are available in OneDrive and OneDrive for Business.

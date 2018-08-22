@@ -21,14 +21,14 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "~~User.Read.All~~, ~~User.ReadWrite.All~~, Directory.Read.All, Directory.ReadWrite.All"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    POST /users/{id | userPrincipalName}/checkMemberGroups
-    ```
-    
+      ```http
+      POST /users/{id | userPrincipalName}/checkMemberGroups
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

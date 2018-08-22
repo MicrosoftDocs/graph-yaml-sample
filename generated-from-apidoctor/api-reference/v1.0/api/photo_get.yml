@@ -17,16 +17,16 @@ permissions:
     permission: "Files.Read"
   - resource: "Application"
     permission: "Not supported."
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    GET /users/{id | userPrincipalName}/photo
-    GET /groups/{id}/photo
-    GET /drive/root/createdByUser/photo
-    ```
-    
+      ```http
+      GET /users/{id | userPrincipalName}/photo
+      GET /groups/{id}/photo
+      GET /drive/root/createdByUser/photo
+      ```
+      
 queryParameters:
   heading: "Optional query parameters"
   intro: |

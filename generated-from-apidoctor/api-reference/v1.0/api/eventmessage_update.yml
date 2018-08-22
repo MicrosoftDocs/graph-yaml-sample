@@ -17,18 +17,18 @@ permissions:
     permission: "Mail.ReadWrite"
   - resource: "Application"
     permission: "Mail.ReadWrite"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    PATCH /me/messages/{id}
-    PATCH /users/{id | userPrincipalName}/messages/{id}
-    
-    PATCH /me/mailFolders/{id}/messages/{id}
-    PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
-    ```
-    
+      ```http
+      PATCH /me/messages/{id}
+      PATCH /users/{id | userPrincipalName}/messages/{id}
+      
+      PATCH /me/mailFolders/{id}/messages/{id}
+      PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

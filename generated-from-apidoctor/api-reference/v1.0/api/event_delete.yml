@@ -17,29 +17,29 @@ permissions:
     permission: "Calendars.ReadWrite"
   - resource: "Application"
     permission: "Calendars.ReadWrite"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    DELETE /me/events/{id}
-    DELETE /users/{id | userPrincipalName}/events/{id}
-    DELETE /groups/{id}/events/{id}
-    
-    DELETE /me/calendar/events/{id}
-    DELETE /users/{id | userPrincipalName}/calendar/events/{id}
-    DELETE /groups/{id}/calendar/events/{id}/
-    
-    DELETE /me/calendars/{id}/events/{id}
-    DELETE /users/{id | userPrincipalName}/calendars/{id}/events/{id}
-    
-    DELETE /me/calendargroup/calendars/{id}/events/{id}
-    DELETE /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}
-    
-    DELETE /me/calendargroups/{id}/calendars/{id}/events/{id}
-    DELETE /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}
-    ```
-    
+      ```http
+      DELETE /me/events/{id}
+      DELETE /users/{id | userPrincipalName}/events/{id}
+      DELETE /groups/{id}/events/{id}
+      
+      DELETE /me/calendar/events/{id}
+      DELETE /users/{id | userPrincipalName}/calendar/events/{id}
+      DELETE /groups/{id}/calendar/events/{id}/
+      
+      DELETE /me/calendars/{id}/events/{id}
+      DELETE /users/{id | userPrincipalName}/calendars/{id}/events/{id}
+      
+      DELETE /me/calendargroup/calendars/{id}/events/{id}
+      DELETE /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}
+      
+      DELETE /me/calendargroups/{id}/calendars/{id}/events/{id}
+      DELETE /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

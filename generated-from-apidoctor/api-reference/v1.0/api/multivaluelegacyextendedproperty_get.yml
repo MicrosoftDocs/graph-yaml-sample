@@ -37,7 +37,7 @@ permissions:
     * Contacts.Read
     * Group.Read.All 
     
-httpRequest:
+section:
   heading: "HTTP request"
   intro: |
     Get a resource instance expanded with the extended property which matches a filter on the 
@@ -46,12 +46,12 @@ httpRequest:
     Get a **message** instance:
   samples:
   - sampleCode: |
-    ```http
-    GET /me/messages/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
-    GET /users/{id|userPrincipalName}/messages/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
-    GET /me/mailFolders/{id}/messages/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
-    ```
-    
+      ```http
+      GET /me/messages/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+      GET /users/{id|userPrincipalName}/messages/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+      GET /me/mailFolders/{id}/messages/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+      ```
+      
   outro: |
     Get a **mailFolder** instance:
     

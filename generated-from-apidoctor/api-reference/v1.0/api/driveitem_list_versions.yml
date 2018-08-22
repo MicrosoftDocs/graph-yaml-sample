@@ -19,18 +19,18 @@ permissions:
     permission: "Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All"
   - resource: "Application"
     permission: "Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    GET /drives/{drive-id}/items/{item-id}/versions
-    GET /groups/{group-id}/drive/{item-id}/versions
-    GET /me/drive/items/{item-id}/versions
-    GET /sites/{site-id}/drive/items/{item-id}/versions
-    GET /users/{user-id}/drive/items/{item-id}/versions
-    ```
-    
+      ```http
+      GET /drives/{drive-id}/items/{item-id}/versions
+      GET /groups/{group-id}/drive/{item-id}/versions
+      GET /me/drive/items/{item-id}/versions
+      GET /sites/{site-id}/drive/items/{item-id}/versions
+      GET /users/{user-id}/drive/items/{item-id}/versions
+      ```
+      
 response:
   heading: "Response"
   intro: |

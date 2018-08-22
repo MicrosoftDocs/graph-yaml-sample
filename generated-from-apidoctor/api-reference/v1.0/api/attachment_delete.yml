@@ -15,20 +15,20 @@ permissions:
     * If accessing attachments in events: Calendars.ReadWrite.
     * If accessing attachments in group posts: Group.ReadWrite.All.
     
-httpRequest:
+section:
   heading: "HTTP request"
   intro: |
     Attachments for an [event](xref:graph.event) in the user's or group's default [calendar](xref:graph.calendar).
   samples:
   - sampleCode: |
-    ```http
-    DELETE /me/events/{id}/attachments/{id}
-    DELETE /users/{id | userPrincipalName}/events/{id}/attachments/{id}
-    
-    DELETE /me/calendar/{id}/events/{id}/attachments/{id}
-    DELETE /users/{id | userPrincipalName}/calendar/events/{id}/attachments/{id}
-    ```
-    
+      ```http
+      DELETE /me/events/{id}/attachments/{id}
+      DELETE /users/{id | userPrincipalName}/events/{id}/attachments/{id}
+      
+      DELETE /me/calendar/{id}/events/{id}/attachments/{id}
+      DELETE /users/{id | userPrincipalName}/calendar/events/{id}/attachments/{id}
+      ```
+      
   outro: |
     Attachments for an [event](xref:graph.event) in a [calendar](xref:graph.calendar) belonging to the user's default [calendarGroup](xref:graph.calendargroup).
     

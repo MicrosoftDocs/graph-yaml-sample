@@ -17,15 +17,15 @@ permissions:
     permission: "n/a"
   - resource: "Application"
     permission: "Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    POST /sites/{site-id}/items/{item-id}/versions/{version-id}/restoreVersion
-    POST /sites/{site-id}/lists/{list-id}/items/{item-id}/versions/{version-id}/restoreVersion
-    ```
-    
+      ```http
+      POST /sites/{site-id}/items/{item-id}/versions/{version-id}/restoreVersion
+      POST /sites/{site-id}/lists/{list-id}/items/{item-id}/versions/{version-id}/restoreVersion
+      ```
+      
 requestBody:
   heading: "Request body"
   intro: |

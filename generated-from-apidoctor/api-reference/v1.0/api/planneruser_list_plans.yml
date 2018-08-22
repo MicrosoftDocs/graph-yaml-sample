@@ -17,16 +17,16 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "Not supported."
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    GET /me/planner/plans
-    GET /users/{id}/planner/plans
-    GET /drive/root/createdByUser/planner/plans
-    ```
-    
+      ```http
+      GET /me/planner/plans
+      GET /users/{id}/planner/plans
+      GET /drive/root/createdByUser/planner/plans
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

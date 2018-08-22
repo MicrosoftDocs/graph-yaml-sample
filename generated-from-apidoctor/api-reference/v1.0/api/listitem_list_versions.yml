@@ -18,15 +18,15 @@ permissions:
     permission: "n/a"
   - resource: "Application"
     permission: "Sites.Read.All, Sites.ReadWrite.All"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    GET /sites/{site-id}/items/{item-id}/versions
-    GET /sites/{site-id}/lists/{list-id}/items/{item-id}/versions
-    ```
-    
+      ```http
+      GET /sites/{site-id}/items/{item-id}/versions
+      GET /sites/{site-id}/lists/{list-id}/items/{item-id}/versions
+      ```
+      
 response:
   heading: "Response"
   intro: |

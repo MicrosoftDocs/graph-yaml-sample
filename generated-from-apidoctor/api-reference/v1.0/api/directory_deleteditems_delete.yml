@@ -18,14 +18,14 @@ permissions:
     |Delegated (work or school account)|User.ReadWrite.All, Directory.AccessAsUser.All
     |Delegated (personal Microsoft account)|Not supported.
     |Application|User.ReadWrite.All
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    DELETE /directory/deletedItems/{id}
-    ```
-    
+      ```http
+      DELETE /directory/deletedItems/{id}
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

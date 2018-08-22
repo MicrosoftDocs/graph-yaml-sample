@@ -17,15 +17,15 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "Directory.ReadWrite.All"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    DELETE /groupSettings/{id}
-    DELETE /groups/{id}/settings/{id}
-    ```
-    
+      ```http
+      DELETE /groupSettings/{id}
+      DELETE /groups/{id}/settings/{id}
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

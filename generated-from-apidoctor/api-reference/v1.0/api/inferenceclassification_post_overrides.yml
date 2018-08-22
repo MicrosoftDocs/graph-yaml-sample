@@ -24,15 +24,15 @@ permissions:
     permission: "Mail.ReadWrite"
   - resource: "Application"
     permission: "Mail.ReadWrite"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    POST /me/inferenceClassification/overrides
-    POST /users/{id}/inferenceClassification/overrides
-    ```
-    
+      ```http
+      POST /me/inferenceClassification/overrides
+      POST /users/{id}/inferenceClassification/overrides
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

@@ -18,15 +18,15 @@ permissions:
     permission: "Mail.Read"
   - resource: "Application"
     permission: "Mail.Read"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    GET /me/inferenceClassification/overrides
-    GET /users/{id}/inferenceClassification/overrides
-    ```
-    
+      ```http
+      GET /me/inferenceClassification/overrides
+      GET /users/{id}/inferenceClassification/overrides
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

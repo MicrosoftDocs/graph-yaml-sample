@@ -19,15 +19,15 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "Group.Read.All, Group.ReadWrite.All"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    GET /groups/{id}/threads/{id}/posts/{id}
-    GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}
-    ```
-    
+      ```http
+      GET /groups/{id}/threads/{id}/posts/{id}
+      GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}
+      ```
+      
 queryParameters:
   heading: "Optional query parameters"
   intro: |

@@ -29,19 +29,19 @@ permissions:
     permission: "Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All"
   - resource: "Application"
     permission: "Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    GET /drives/{drive-id}/items/{item-id}/permissions
-    GET /groups/{group-id}/drive/items/{item-id}/permissions
-    GET /me/drive/items/{item-id}/permissions
-    GET /me/drive/root:/{path}:/permissions
-    GET /sites/{siteId}/drive/items/{itemId}/permissions
-    GET /users/{userId}/drive/items/{itemId}/permissions
-    ```
-    
+      ```http
+      GET /drives/{drive-id}/items/{item-id}/permissions
+      GET /groups/{group-id}/drive/items/{item-id}/permissions
+      GET /me/drive/items/{item-id}/permissions
+      GET /me/drive/root:/{path}:/permissions
+      GET /sites/{siteId}/drive/items/{itemId}/permissions
+      GET /users/{userId}/drive/items/{itemId}/permissions
+      ```
+      
 queryParameters:
   heading: "Optional query parameters"
   intro: |

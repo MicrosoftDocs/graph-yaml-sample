@@ -18,15 +18,15 @@ permissions:
     permission: "MailboxSettings.ReadWrite"
   - resource: "Application"
     permission: "MailboxSettings.ReadWrite"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    PATCH /me/outlook/masterCategories/{id}
-    PATCH /users/{id|userPrincipalName}/outlook/masterCategories/{id}
-    ```
-    
+      ```http
+      PATCH /me/outlook/masterCategories/{id}
+      PATCH /users/{id|userPrincipalName}/outlook/masterCategories/{id}
+      ```
+      
 queryParameters:
   heading: "Optional query parameters"
   intro: |

@@ -25,15 +25,15 @@ permissions:
     permission: "Mail.ReadWrite"
   - resource: "Application"
     permission: "Mail.ReadWrite"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    POST /me/messages/{id}/attachments
-    POST /users/{id | userPrincipalName}/messages/{id}/attachments
-    ```
-    
+      ```http
+      POST /me/messages/{id}/attachments
+      POST /users/{id | userPrincipalName}/messages/{id}/attachments
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

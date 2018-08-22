@@ -17,18 +17,18 @@ permissions:
     permission: "Files.ReadWrite, Files.ReadWrite.All"
   - resource: "Application"
     permission: "Files.ReadWrite.All, Sites.ReadWrite.All"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    POST /drives/{driveId}/items/{itemId}/versions/{version-id}/restoreVersion
-    POST /groups/{groupId}/drive/items/{itemId}/versions/{version-id}/restoreVersion
-    POST /me/drive/items/{item-id}/versions/{version-id}/restoreVersion
-    POST /sites/{siteId}/drive/items/{itemId}/versions/{version-id}/restoreVersion
-    POST /users/{userId}/drive/items/{itemId}/versions/{version-id}/restoreVersion
-    ```
-    
+      ```http
+      POST /drives/{driveId}/items/{itemId}/versions/{version-id}/restoreVersion
+      POST /groups/{groupId}/drive/items/{itemId}/versions/{version-id}/restoreVersion
+      POST /me/drive/items/{item-id}/versions/{version-id}/restoreVersion
+      POST /sites/{siteId}/drive/items/{itemId}/versions/{version-id}/restoreVersion
+      POST /users/{userId}/drive/items/{itemId}/versions/{version-id}/restoreVersion
+      ```
+      
 requestBody:
   heading: "Request body"
   intro: |

@@ -25,18 +25,18 @@ permissions:
     permission: "Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All"
   - resource: "Application"
     permission: "Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    GET /drives/{drive-id}/items/{item-id}/permissions/{perm-id}
-    GET /groups/{group-id}/drive/items/{item-id}/permissions/{perm-id}
-    GET /me/drive/items/{item-id}/permissions/{perm-id}
-    GET /sites/{site-id}/drive/items/{item-id}/permissions/{perm-id}
-    GET /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
-    ```
-    
+      ```http
+      GET /drives/{drive-id}/items/{item-id}/permissions/{perm-id}
+      GET /groups/{group-id}/drive/items/{item-id}/permissions/{perm-id}
+      GET /me/drive/items/{item-id}/permissions/{perm-id}
+      GET /sites/{site-id}/drive/items/{item-id}/permissions/{perm-id}
+      GET /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
+      ```
+      
 queryParameters:
   heading: "Optional query parameters"
   intro: |

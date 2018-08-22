@@ -29,7 +29,7 @@ permissions:
     permission: "Mail.ReadWrite"
   - resource: "Application"
     permission: "Mail.ReadWrite"
-httpRequest:
+section:
   heading: "HTTP request"
   intro: |
     Attachments for a [message](xref:graph.message) in a user's mailbox.

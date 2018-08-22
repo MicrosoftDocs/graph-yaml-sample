@@ -17,15 +17,15 @@ permissions:
     permission: "MailboxSettings.ReadWrite"
   - resource: "Application"
     permission: "MailboxSettings.ReadWrite"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    PATCH /me/mailFolders/inbox/messageRules/{id}
-    PATCH /users/{id | userPrincipalName}/mailFolders/inbox/messageRules/{id}
-    ```
-    
+      ```http
+      PATCH /me/mailFolders/inbox/messageRules/{id}
+      PATCH /users/{id | userPrincipalName}/mailFolders/inbox/messageRules/{id}
+      ```
+      
 requestHeaders:
   heading: "Optional request headers"
   list:

@@ -18,16 +18,16 @@ permissions:
     permission: "Notes.Create, Notes.ReadWrite"
   - resource: "Application"
     permission: "Notes.ReadWrite.All"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    POST /me/onenote/sections/{id}/copyToSectionGroup
-    POST /users/{id | userPrincipalName}/onenote/sections/{id}/copyToSectionGroup
-    POST /groups/{id}/onenote/sections/{id}/copyToSectionGroup
-    ```
-    
+      ```http
+      POST /me/onenote/sections/{id}/copyToSectionGroup
+      POST /users/{id | userPrincipalName}/onenote/sections/{id}/copyToSectionGroup
+      POST /groups/{id}/onenote/sections/{id}/copyToSectionGroup
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

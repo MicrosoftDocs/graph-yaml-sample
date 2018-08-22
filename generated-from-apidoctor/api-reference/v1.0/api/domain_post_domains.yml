@@ -18,14 +18,14 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "Domain.ReadWrite.All"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    POST /domains
-    ```
-    
+      ```http
+      POST /domains
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

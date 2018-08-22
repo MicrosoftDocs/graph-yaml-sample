@@ -21,14 +21,14 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "Sites.ReadWrite.All"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    POST https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items
-    ```
-    
+      ```http
+      POST https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items
+      ```
+      
 requestBody:
   heading: "Request body"
   intro: |

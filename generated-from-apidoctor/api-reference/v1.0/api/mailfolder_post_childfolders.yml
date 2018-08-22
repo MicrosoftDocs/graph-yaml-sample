@@ -17,15 +17,15 @@ permissions:
     permission: "Mail.ReadWrite"
   - resource: "Application"
     permission: "Mail.ReadWrite"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    POST /me/mailFolders/{id}/childFolders
-    POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
-    ```
-    
+      ```http
+      POST /me/mailFolders/{id}/childFolders
+      POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
+      ```
+      
   outro: |
     Specify the parent folder in the query URL as a folder ID, or a well-known folder name. For a list of supported well-known folder names, see [mailFolder resource type](xref:graph.mailfolder).
 requestHeaders:

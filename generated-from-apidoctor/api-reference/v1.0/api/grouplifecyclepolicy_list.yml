@@ -17,14 +17,14 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "Directory.Read.All or Directory.ReadWrite.All"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    GET /groupLifecyclePolicies
-    ```
-    
+      ```http
+      GET /groupLifecyclePolicies
+      ```
+      
 queryParameters:
   heading: "Optional query parameters"
   intro: |

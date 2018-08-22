@@ -17,14 +17,14 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "Directory.Read.All, Directory.ReadWrite.All"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    GET /groupSettingTemplates
-    ```
-    
+      ```http
+      GET /groupSettingTemplates
+      ```
+      
 queryParameters:
   heading: "Optional query parameters"
   intro: |

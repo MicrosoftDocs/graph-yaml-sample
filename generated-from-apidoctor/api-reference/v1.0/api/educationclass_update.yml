@@ -17,14 +17,14 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "EduRoster.ReadWrite.All"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    PATCH /education/classes/{id}
-    ```
-    
+      ```http
+      PATCH /education/classes/{id}
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

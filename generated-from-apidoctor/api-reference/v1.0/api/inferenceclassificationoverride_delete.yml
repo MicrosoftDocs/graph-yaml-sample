@@ -17,15 +17,15 @@ permissions:
     permission: "Mail.ReadWrite"
   - resource: "Application"
     permission: "Mail.ReadWrite"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    DELETE /me/inferenceClassification/overrides/{id}
-    DELETE /users/{id}/inferenceClassification/overrides/{id}
-    ```
-    
+      ```http
+      DELETE /me/inferenceClassification/overrides/{id}
+      DELETE /users/{id}/inferenceClassification/overrides/{id}
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

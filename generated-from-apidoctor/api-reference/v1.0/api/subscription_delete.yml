@@ -27,14 +27,14 @@ permissions:
     permission: ""
   - resource: ""
     permission: ""
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    DELETE /subscriptions/{id}
-    ```
-    
+      ```http
+      DELETE /subscriptions/{id}
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

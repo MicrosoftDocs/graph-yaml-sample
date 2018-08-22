@@ -18,14 +18,14 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "User.Read.All, Directory.Read.All"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    GET /groups/{id}/members
-    ```
-    
+      ```http
+      GET /groups/{id}/members
+      ```
+      
 queryParameters:
   heading: "Optional query parameters"
   intro: |

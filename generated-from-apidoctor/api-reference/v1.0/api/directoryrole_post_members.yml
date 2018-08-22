@@ -17,14 +17,14 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "Not supported."
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    POST /directoryRoles/{id}/members/$ref
-    ```
-    
+      ```http
+      POST /directoryRoles/{id}/members/$ref
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

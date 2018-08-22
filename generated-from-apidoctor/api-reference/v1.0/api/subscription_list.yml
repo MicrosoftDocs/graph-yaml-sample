@@ -25,14 +25,14 @@ permissions:
     |:-|:---------------- -|
     |App is calling on behalf of the signed-in user (delegated permission). <br/>-and-<br/>App has the original permission required to [create the subscription](xref:graph.subscription_post_subscriptions).<br/><br/>Note: This applies to both personal Microsoft accounts and work/school accounts.|Subscriptions created by **this app** for the signed-in user only.
     |App is calling on behalf of itself (application permission).<br/>-and-<br/>App has the original permission required to [create the subscription](xref:graph.subscription_post_subscriptions).<br/><br/>Note: This applies to work/school accounts only.|Subscriptions created by **this app** for itself or for any user in the directory.
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    GET /subscriptions
-    ```
-    
+      ```http
+      GET /subscriptions
+      ```
+      
 queryParameters:
   heading: "Optional query parameters"
   intro: |

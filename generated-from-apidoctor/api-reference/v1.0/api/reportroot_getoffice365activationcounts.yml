@@ -18,14 +18,14 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "Reports.Read.All"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    GET /reports/getOffice365ActivationCounts
-    ```
-    
+      ```http
+      GET /reports/getOffice365ActivationCounts
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

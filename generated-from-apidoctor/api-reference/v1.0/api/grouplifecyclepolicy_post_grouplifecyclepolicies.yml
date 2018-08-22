@@ -17,14 +17,14 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "Directory.ReadWrite.All"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    POST /groupLifecyclePolicies
-    ```
-    
+      ```http
+      POST /groupLifecyclePolicies
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

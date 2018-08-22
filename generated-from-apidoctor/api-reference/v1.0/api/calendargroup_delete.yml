@@ -17,15 +17,15 @@ permissions:
     permission: "Calendars.ReadWrite"
   - resource: "Application"
     permission: "Calendars.ReadWrite"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    DELETE /me/calendarGroups/{id}
-    DELETE /users/{id | userPrincipalName}/calendarGroups/{id}
-    ```
-    
+      ```http
+      DELETE /me/calendarGroups/{id}
+      DELETE /users/{id | userPrincipalName}/calendarGroups/{id}
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

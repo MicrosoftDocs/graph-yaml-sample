@@ -24,20 +24,20 @@ permissions:
     * If accessing attachments in events: Calendars.Read.
     * If accessing attachments in group posts: Group.Read.All.
     
-httpRequest:
+section:
   heading: "HTTP request"
   intro: |
     Attachments for an [event](xref:graph.event) in the user's default [calendar](xref:graph.calendar).
   samples:
   - sampleCode: |
-    ```http
-    GET /me/events/{id}/attachments/{id}
-    GET /users/{id | userPrincipalName}/events/{id}/attachments/{id}
-    
-    GET /me/calendar/{id}/events/{id}/attachments/{id}
-    GET /users/{id | userPrincipalName}/calendar/events/{id}/attachments/{id}
-    ```
-    
+      ```http
+      GET /me/events/{id}/attachments/{id}
+      GET /users/{id | userPrincipalName}/events/{id}/attachments/{id}
+      
+      GET /me/calendar/{id}/events/{id}/attachments/{id}
+      GET /users/{id | userPrincipalName}/calendar/events/{id}/attachments/{id}
+      ```
+      
   outro: |
     Attachments for an [event](xref:graph.event) in a [calendar](xref:graph.calendar) belonging to the user's default [calendarGroup](xref:graph.calendargroup).
     

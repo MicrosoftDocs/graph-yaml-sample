@@ -17,14 +17,14 @@ permissions:
     permission: "UserActivity.ReadWrite.CreatedByApp"
   - resource: "Application"
     permission: "Not supported."
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    PUT /me/activities/{appActivityId}
-    ```
-    
+      ```http
+      PUT /me/activities/{appActivityId}
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

@@ -21,15 +21,15 @@ permissions:
     permission: "Mail.Read, Mail.ReadWrite"
   - resource: "Application"
     permission: "Mail.Read, Mail.ReadWrite"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    GET /me/mailFolders/delta
-    GET /users/{id}/mailFolders/delta
-    ```
-    
+      ```http
+      GET /me/mailFolders/delta
+      GET /users/{id}/mailFolders/delta
+      ```
+      
 queryParameters:
   heading: "Optional query parameters"
   intro: |

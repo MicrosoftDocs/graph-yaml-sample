@@ -27,25 +27,25 @@ permissions:
     permission: ""
   - resource: ""
     permission: ""
-httpRequest:
+section:
   heading: "HTTP request"
   intro: |
     In the request, identify the resource instance, use the **extensions** 
     navigation property of that instance to identify the extension, and do a `PATCH` on that extension instance.
   samples:
   - sampleCode: |
-    ```http
-    PATCH /devices/{Id}/extensions/{extensionId}
-    PATCH /users/{id|userPrincipalName}/events/{id}/extensions/{extensionId}
-    PATCH /groups/{id}/extensions/{extensionId}
-    PATCH /groups/{id}/events/{id}/extensions/{extensionId}
-    PATCH /groups/{id}/threads/{id}/posts/{id}/extensions/{extensionId}
-    PATCH /users/{id|userPrincipalName}/messages/{id}/extensions/{extensionId}
-    PATCH /organization/{Id}/extensions/{extensionId}
-    PATCH /users/{id|userPrincipalName}/contacts/{id}/extensions/{extensionId}
-    PATCH /users/{id|userPrincipalName}/extensions/{extensionId}
-    ```
-    
+      ```http
+      PATCH /devices/{Id}/extensions/{extensionId}
+      PATCH /users/{id|userPrincipalName}/events/{id}/extensions/{extensionId}
+      PATCH /groups/{id}/extensions/{extensionId}
+      PATCH /groups/{id}/events/{id}/extensions/{extensionId}
+      PATCH /groups/{id}/threads/{id}/posts/{id}/extensions/{extensionId}
+      PATCH /users/{id|userPrincipalName}/messages/{id}/extensions/{extensionId}
+      PATCH /organization/{Id}/extensions/{extensionId}
+      PATCH /users/{id|userPrincipalName}/contacts/{id}/extensions/{extensionId}
+      PATCH /users/{id|userPrincipalName}/extensions/{extensionId}
+      ```
+      
   outro: |
     See the [Request body](#request-body) section about including in the request body any custom data to change or add to that extension.
 parameters:

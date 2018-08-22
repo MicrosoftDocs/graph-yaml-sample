@@ -17,17 +17,17 @@ permissions:
     permission: "Mail.ReadWrite"
   - resource: "Application"
     permission: "Mail.ReadWrite"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    POST /me/messages/{id}/copy
-    POST /users/{id | userPrincipalName}/messages/{id}/copy
-    POST /me/mailFolders/{id}/messages/{id}/copy
-    POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/copy
-    ```
-    
+      ```http
+      POST /me/messages/{id}/copy
+      POST /users/{id | userPrincipalName}/messages/{id}/copy
+      POST /me/mailFolders/{id}/messages/{id}/copy
+      POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/copy
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

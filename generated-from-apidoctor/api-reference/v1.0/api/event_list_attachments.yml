@@ -17,20 +17,20 @@ permissions:
     permission: "Calendars.Read"
   - resource: "Application"
     permission: "Calendars.Read"
-httpRequest:
+section:
   heading: "HTTP request"
   intro: |
     Attachments for an [event](xref:graph.event) in the user's default [calendar](xref:graph.calendar).
   samples:
   - sampleCode: |
-    ```http
-    GET /me/events/{id}/attachments
-    GET /users/{id | userPrincipalName}/events/{id}/attachments
-    
-    GET /me/calendar/events/{id}/attachments
-    GET /users/{id | userPrincipalName}/calendar/events/{id}/attachments
-    ```
-    
+      ```http
+      GET /me/events/{id}/attachments
+      GET /users/{id | userPrincipalName}/events/{id}/attachments
+      
+      GET /me/calendar/events/{id}/attachments
+      GET /users/{id | userPrincipalName}/calendar/events/{id}/attachments
+      ```
+      
   outro: |
     Attachments for an [event](xref:graph.event) in a [calendar](xref:graph.calendar) belonging to the user's default [calendarGroup](xref:graph.calendargroup).
     

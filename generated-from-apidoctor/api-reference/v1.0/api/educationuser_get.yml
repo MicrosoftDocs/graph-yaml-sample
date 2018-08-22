@@ -17,15 +17,15 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "EduRoster.Read.All, EduRoster.ReadWrite.All"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    GET /education/me
-    GET /education/users/{id}
-    ```
-    
+      ```http
+      GET /education/me
+      GET /education/users/{id}
+      ```
+      
 queryParameters:
   heading: "Optional query parameters"
   intro: |

@@ -19,15 +19,15 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "Not supported."
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    POST /me/findMeetingTimes
-    POST /users/{id|userPrincipalName}/findMeetingTimes
-    ```
-    
+      ```http
+      POST /me/findMeetingTimes
+      POST /users/{id|userPrincipalName}/findMeetingTimes
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

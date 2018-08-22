@@ -22,18 +22,18 @@ permissions:
     permission: "Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All"
   - resource: "Application"
     permission: "Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    GET /drives/{drive-id}/root/search(q='{search-text}')
-    GET /groups/{group-id}/drive/root/search(q='{search-text}')
-    GET /me/drive/root/search(q='{search-text}')
-    GET /sites/{site-id}/drive/root/search(q='{search-text}')
-    GET /users/{user-id}/drive/root/search(q='{search-text}')
-    ```
-    
+      ```http
+      GET /drives/{drive-id}/root/search(q='{search-text}')
+      GET /groups/{group-id}/drive/root/search(q='{search-text}')
+      GET /me/drive/root/search(q='{search-text}')
+      GET /sites/{site-id}/drive/root/search(q='{search-text}')
+      GET /users/{user-id}/drive/root/search(q='{search-text}')
+      ```
+      
 queryParameters:
   heading: "Optional query parameters"
   intro: |

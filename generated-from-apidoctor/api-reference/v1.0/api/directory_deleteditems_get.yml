@@ -18,14 +18,14 @@ permissions:
     |Delegated (work or school account)|User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory AccessAsUser.All
     |Delegated (personal Microsoft account)|Not supported.
     |Application|User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    GET /directory/deletedItems/{id}
-    ```
-    
+      ```http
+      GET /directory/deletedItems/{id}
+      ```
+      
 queryParameters:
   heading: "Optional query parameters"
   intro: |

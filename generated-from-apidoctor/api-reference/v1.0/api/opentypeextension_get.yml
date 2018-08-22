@@ -27,7 +27,7 @@ permissions:
     permission: ""
   - resource: ""
     permission: ""
-httpRequest:
+section:
   heading: "HTTP request"
   intro: |
     This section lists the syntax for each of the three `GET` scenarios described above.

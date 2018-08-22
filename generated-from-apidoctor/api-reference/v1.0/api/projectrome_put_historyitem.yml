@@ -17,14 +17,14 @@ permissions:
     permission: "UserActivity.ReadWrite.CreatedByApp"
   - resource: "Application"
     permission: "Not supported."
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    PUT /me/activities/{id}/historyItems/{id}
-    ```
-    
+      ```http
+      PUT /me/activities/{id}/historyItems/{id}
+      ```
+      
   outro: |
     Id needs to be a GUID.
 requestHeaders:

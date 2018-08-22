@@ -22,14 +22,14 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "Directory.Read.All"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    POST /directoryObjects/getByIds
-    ```
-    
+      ```http
+      POST /directoryObjects/getByIds
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

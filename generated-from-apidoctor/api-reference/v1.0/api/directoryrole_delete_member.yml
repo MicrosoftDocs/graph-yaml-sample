@@ -17,14 +17,14 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "Not supported."
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    DELETE /directoryRoles/{id}/members/{id}/$ref
-    ```
-    
+      ```http
+      DELETE /directoryRoles/{id}/members/{id}/$ref
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

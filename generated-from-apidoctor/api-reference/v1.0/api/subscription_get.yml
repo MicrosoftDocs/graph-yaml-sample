@@ -27,14 +27,14 @@ permissions:
     permission: ""
   - resource: ""
     permission: ""
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    GET /subscriptions/{id}
-    ```
-    
+      ```http
+      GET /subscriptions/{id}
+      ```
+      
 queryParameters:
   heading: "Optional query parameters"
   intro: |

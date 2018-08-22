@@ -17,14 +17,14 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "Sites.Read.All"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    GET /workbook/worksheets({id|name})/names
-    ```
-    
+      ```http
+      GET /workbook/worksheets({id|name})/names
+      ```
+      
 queryParameters:
   heading: "Optional query parameters"
   intro: |

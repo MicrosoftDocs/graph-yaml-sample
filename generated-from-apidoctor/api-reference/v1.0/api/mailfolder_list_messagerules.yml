@@ -17,15 +17,15 @@ permissions:
     permission: "MailboxSettings.Read"
   - resource: "Application"
     permission: "MailboxSettings.Read"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    GET /me/mailFolders/inbox/messageRules
-    GET /users/{id | userPrincipalName}/mailFolders/inbox/messageRules
-    ```
-    
+      ```http
+      GET /me/mailFolders/inbox/messageRules
+      GET /users/{id | userPrincipalName}/mailFolders/inbox/messageRules
+      ```
+      
 queryParameters:
   heading: "Optional query parameters"
   intro: |

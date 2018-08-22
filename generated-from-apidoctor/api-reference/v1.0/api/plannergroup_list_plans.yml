@@ -17,14 +17,14 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "Not supported."
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    GET /groups/{id}/planner/plans
-    ```
-    
+      ```http
+      GET /groups/{id}/planner/plans
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

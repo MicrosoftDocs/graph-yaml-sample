@@ -17,14 +17,14 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "Directory.Read.All, Domain.ReadWrite.All"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    GET /domains/{id}/domainNameReferences
-    ```
-    
+      ```http
+      GET /domains/{id}/domainNameReferences
+      ```
+      
 queryParameters:
   heading: "Optional query parameters"
   intro: |

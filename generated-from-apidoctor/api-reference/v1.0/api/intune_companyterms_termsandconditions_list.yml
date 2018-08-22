@@ -10,14 +10,14 @@ permissions:
   heading: "Prerequisites"
   intro: |
     One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
-httpRequest:
+section:
   heading: "HTTP Request"
   samples:
   - sampleCode: |
-    ```http
-    GET /deviceManagement/termsAndConditions
-    ```
-    
+      ```http
+      GET /deviceManagement/termsAndConditions
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

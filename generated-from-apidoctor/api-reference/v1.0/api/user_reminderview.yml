@@ -17,14 +17,14 @@ permissions:
     permission: "Calendars.Read, Calendars.ReadWrite"
   - resource: "Application"
     permission: "Calendars.Read, Calendars.ReadWrite"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    GET /users/{id | userPrincipalName}/reminderView(startDateTime=startDateTime-value,endDateTime=endDateTime-value)
-    ```
-    
+      ```http
+      GET /users/{id | userPrincipalName}/reminderView(startDateTime=startDateTime-value,endDateTime=endDateTime-value)
+      ```
+      
 parameters:
   heading: "Function Parameters"
   intro: |

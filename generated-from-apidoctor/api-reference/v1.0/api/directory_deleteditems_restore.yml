@@ -19,14 +19,14 @@ permissions:
     |Delegated (work or school account)|User.ReadWrite.All, Directory.AccessAsUser.All
     |Delegated (personal Microsoft account)|Not supported.
     |Application|User.ReadWrite.All
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    POST /directory/deletedItems/{id}/restore
-    ```
-    
+      ```http
+      POST /directory/deletedItems/{id}/restore
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

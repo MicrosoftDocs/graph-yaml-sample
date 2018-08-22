@@ -17,15 +17,15 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "Not supported."
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    PATCH /workbook/tables/{id|name}/rows/{index}
-    PATCH /workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}
-    ```
-    
+      ```http
+      PATCH /workbook/tables/{id|name}/rows/{index}
+      PATCH /workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}
+      ```
+      
 requestHeaders:
   heading: "Optional request headers"
   list:

@@ -20,15 +20,15 @@ permissions:
     permission: "MailboxSettings.ReadWrite"
   - resource: "Application"
     permission: "MailboxSettings.ReadWrite"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    PATCH /me/mailboxSettings
-    PATCH /users/{id|userPrincipalName}/mailboxSettings
-    ```
-    
+      ```http
+      PATCH /me/mailboxSettings
+      PATCH /users/{id|userPrincipalName}/mailboxSettings
+      ```
+      
 queryParameters:
   heading: "Optional query parameters"
   intro: |

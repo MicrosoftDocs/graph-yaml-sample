@@ -16,15 +16,15 @@ permissions:
   heading: "Prerequisites"
   intro: |
     To call this API, the user must have granted the application read access to the file the app wishes to convert.
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    GET /drive/items/{item-id}/content?format={format}
-    GET /drive/root:/{path and filename}:/content?format={format}
-    ```
-    
+      ```http
+      GET /drive/items/{item-id}/content?format={format}
+      GET /drive/root:/{path and filename}:/content?format={format}
+      ```
+      
 requestHeaders:
   heading: "Optional request headers"
   list:

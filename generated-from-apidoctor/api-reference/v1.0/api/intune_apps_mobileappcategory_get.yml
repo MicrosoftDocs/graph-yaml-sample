@@ -10,15 +10,15 @@ permissions:
   heading: "Prerequisites"
   intro: |
     One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](xref:graph.permissions_reference).
-httpRequest:
+section:
   heading: "HTTP Request"
   samples:
   - sampleCode: |
-    ```http
-    GET /deviceAppManagement/mobileAppCategories/{mobileAppCategoryId}
-    GET /deviceAppManagement/mobileApps/{mobileAppId}/categories/{mobileAppCategoryId}
-    ```
-    
+      ```http
+      GET /deviceAppManagement/mobileAppCategories/{mobileAppCategoryId}
+      GET /deviceAppManagement/mobileApps/{mobileAppId}/categories/{mobileAppCategoryId}
+      ```
+      
 queryParameters:
   heading: "Optional query parameters"
   intro: |

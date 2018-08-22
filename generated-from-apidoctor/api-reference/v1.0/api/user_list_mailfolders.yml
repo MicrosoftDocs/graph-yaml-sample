@@ -17,14 +17,14 @@ permissions:
     permission: "Mail.Read, Mail.ReadWrite"
   - resource: "Application"
     permission: "Mail.Read, Mail.ReadWrite"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    GET /users/{id | userPrincipalName}/mailFolders
-    ```
-    
+      ```http
+      GET /users/{id | userPrincipalName}/mailFolders
+      ```
+      
 queryParameters:
   heading: "Optional query parameters"
   intro: |

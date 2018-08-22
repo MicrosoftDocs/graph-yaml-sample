@@ -17,17 +17,17 @@ permissions:
     permission: "Mail.Send"
   - resource: "Application"
     permission: "Mail.Send"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    POST /users/me/messages/{id}/replyAll
-    POST /users/{id | userPrincipalName}/messages/{id}/replyAll
-    POST /me/mailFolders/{id}/messages/{id}/replyAll
-    POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/replyAll
-    ```
-    
+      ```http
+      POST /users/me/messages/{id}/replyAll
+      POST /users/{id | userPrincipalName}/messages/{id}/replyAll
+      POST /me/mailFolders/{id}/messages/{id}/replyAll
+      POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/replyAll
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

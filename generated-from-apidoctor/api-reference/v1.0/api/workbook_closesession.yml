@@ -17,15 +17,15 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "Not supported."
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    POST /workbook/closeSession
-    workbook-session-id: {session-id}
-    ```
-    
+      ```http
+      POST /workbook/closeSession
+      workbook-session-id: {session-id}
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

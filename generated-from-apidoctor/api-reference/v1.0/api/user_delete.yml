@@ -17,14 +17,14 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "User.ReadWrite.All"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    DELETE /users/{id | userPrincipalName}
-    ```
-    
+      ```http
+      DELETE /users/{id | userPrincipalName}
+      ```
+      
 requestHeaders:
   heading: "Request headers"
   list:

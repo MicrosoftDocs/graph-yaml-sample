@@ -19,14 +19,14 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "Directory.Read.All, Domain.ReadWrite.All"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    GET /domains/{id}/verificationDnsRecords
-    ```
-    
+      ```http
+      GET /domains/{id}/verificationDnsRecords
+      ```
+      
 queryParameters:
   heading: "Optional query parameters"
   intro: |

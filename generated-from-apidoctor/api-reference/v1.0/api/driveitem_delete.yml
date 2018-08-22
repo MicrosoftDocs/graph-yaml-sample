@@ -22,18 +22,18 @@ permissions:
     permission: "Files.ReadWrite, Files.ReadWrite.All"
   - resource: "Application"
     permission: "Files.ReadWrite.All, Sites.ReadWrite.All"
-httpRequest:
+section:
   heading: "HTTP request"
   samples:
   - sampleCode: |
-    ```http
-    DELETE /drives/{drive-id}/items/{item-id}
-    DELETE /groups/{group-id}/drive/items/{item-id}
-    DELETE /me/drive/items/{item-id}
-    DELETE /sites/{siteId}/drive/items/{itemId}
-    DELETE /users/{userId}/drive/items/{itemId}
-    ```
-    
+      ```http
+      DELETE /drives/{drive-id}/items/{item-id}
+      DELETE /groups/{group-id}/drive/items/{item-id}
+      DELETE /me/drive/items/{item-id}
+      DELETE /sites/{siteId}/drive/items/{itemId}
+      DELETE /users/{userId}/drive/items/{itemId}
+      ```
+      
 requestHeaders:
   heading: "Optional request headers"
   list:
