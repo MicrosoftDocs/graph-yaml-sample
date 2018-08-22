@@ -39,7 +39,7 @@ permissions:
     permission: "Calendars.ReadWrite"
   - resource: "Application"
     permission: "Calendars.ReadWrite"
-section:
+httpRequest:
   heading: "HTTP request"
   samples:
   - sampleCode: |

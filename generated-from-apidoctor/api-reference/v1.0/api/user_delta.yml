@@ -17,7 +17,7 @@ permissions:
     permission: "User.Read, User.ReadWrite"
   - resource: "Application"
     permission: "User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All"
-section:
+httpRequest:
   heading: "HTTP request"
   intro: |
     To begin tracking changes, you make a request including the delta function on the users resource. 

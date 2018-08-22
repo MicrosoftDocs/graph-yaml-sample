@@ -17,7 +17,7 @@ permissions:
     permission: "MailboxSettings.ReadWrite"
   - resource: "Application"
     permission: "MailboxSettings.ReadWrite"
-section:
+httpRequest:
   heading: "HTTP request"
   samples:
   - sampleCode: |

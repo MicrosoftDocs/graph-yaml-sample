@@ -17,7 +17,7 @@ permissions:
     permission: "Contacts.Read, Contacts.ReadWrite"
   - resource: "Application"
     permission: "Contacts.Read, Contacts.ReadWrite"
-section:
+httpRequest:
   heading: "HTTP request"
   samples:
   - sampleCode: |

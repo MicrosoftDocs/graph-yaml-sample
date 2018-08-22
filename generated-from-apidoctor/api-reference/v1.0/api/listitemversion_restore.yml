@@ -17,7 +17,7 @@ permissions:
     permission: "n/a"
   - resource: "Application"
     permission: "Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All"
-section:
+httpRequest:
   heading: "HTTP request"
   samples:
   - sampleCode: |

@@ -15,7 +15,7 @@ permissions:
     * If accessing attachments in events: Calendars.ReadWrite.
     * If accessing attachments in group posts: Group.ReadWrite.All.
     
-section:
+httpRequest:
   heading: "HTTP request"
   intro: |
     Attachments for an [event](xref:graph.event) in the user's or group's default [calendar](xref:graph.calendar).

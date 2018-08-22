@@ -28,7 +28,7 @@ permissions:
     permission: ""
   - resource: ""
     permission: ""
-section:
+httpRequest:
   heading: "HTTP request"
   samples:
   - sampleCode: |

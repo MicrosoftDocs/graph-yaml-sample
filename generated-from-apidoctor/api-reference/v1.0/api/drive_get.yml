@@ -26,7 +26,7 @@ permissions:
     ## Get current user's OneDrive
     The signed in user's drive (when using delegated authentication) can be accessed from the `me` singleton.
     If a user's OneDrive is not provisioned but the user has a license to use OneDrive, this request will automatically provision the user's drive, when using delegated authentication.
-section:
+httpRequest:
   heading: "HTTP request"
   samples:
   - sampleCode: |

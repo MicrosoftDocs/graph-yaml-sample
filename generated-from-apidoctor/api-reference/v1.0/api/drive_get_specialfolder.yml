@@ -24,7 +24,7 @@ permissions:
     permission: "Files.ReadWrite.AppFolder, Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All"
   - resource: "Application"
     permission: "Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All"
-section:
+httpRequest:
   heading: "HTTP Request"
   samples:
   - sampleCode: |

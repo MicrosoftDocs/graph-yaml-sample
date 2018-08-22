@@ -27,7 +27,7 @@ permissions:
     permission: ""
   - resource: ""
     permission: ""
-section:
+httpRequest:
   heading: "HTTP request"
   intro: |
     In the request, identify the resource instance, use the **extensions** 

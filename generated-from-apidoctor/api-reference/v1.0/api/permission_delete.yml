@@ -23,7 +23,7 @@ permissions:
     permission: "Files.ReadWrite, Files.ReadWrite.All"
   - resource: "Application"
     permission: "Files.ReadWrite.All, Sites.ReadWrite.All"
-section:
+httpRequest:
   heading: "HTTP request"
   samples:
   - sampleCode: |

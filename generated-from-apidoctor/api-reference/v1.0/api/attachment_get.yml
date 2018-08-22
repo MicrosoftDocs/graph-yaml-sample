@@ -24,7 +24,7 @@ permissions:
     * If accessing attachments in events: Calendars.Read.
     * If accessing attachments in group posts: Group.Read.All.
     
-section:
+httpRequest:
   heading: "HTTP request"
   intro: |
     Attachments for an [event](xref:graph.event) in the user's default [calendar](xref:graph.calendar).

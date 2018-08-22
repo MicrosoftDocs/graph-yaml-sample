@@ -17,7 +17,7 @@ permissions:
     permission: "Calendars.Read"
   - resource: "Application"
     permission: "Calendars.Read"
-section:
+httpRequest:
   heading: "HTTP request"
   intro: |
     Attachments for an [event](xref:graph.event) in the user's default [calendar](xref:graph.calendar).

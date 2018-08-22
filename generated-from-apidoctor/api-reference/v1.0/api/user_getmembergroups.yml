@@ -21,7 +21,7 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "Group.Read.All, Directory.Read.All, Directory.ReadWrite.All"
-section:
+httpRequest:
   heading: "HTTP request"
   samples:
   - sampleCode: |

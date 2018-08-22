@@ -17,7 +17,7 @@ permissions:
     permission: "UserActivity.ReadWrite.CreatedByApp"
   - resource: "Application"
     permission: "Not supported."
-section:
+httpRequest:
   heading: "HTTP request"
   samples:
   - sampleCode: |

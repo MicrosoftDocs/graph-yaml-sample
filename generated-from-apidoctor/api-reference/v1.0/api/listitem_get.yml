@@ -21,7 +21,7 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "Sites.Read.All, Sites.ReadWrite.All"
-section:
+httpRequest:
   heading: "HTTP request"
   intro: |
     GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}

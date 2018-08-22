@@ -21,7 +21,7 @@ permissions:
     permission: "MailboxSettings.Read, MailboxSettings.ReadWrite"
   - resource: "Application"
     permission: "MailboxSettings.Read, MailboxSettings.ReadWrite"
-section:
+httpRequest:
   heading: "HTTP request"
   intro: |
     To get all mailbox settings for a user:

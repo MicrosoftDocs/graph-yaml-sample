@@ -17,7 +17,7 @@ permissions:
     permission: "User.Read"
   - resource: "Application"
     permission: "User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All"
-section:
+httpRequest:
   heading: "HTTP request"
   samples:
   - sampleCode: |

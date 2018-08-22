@@ -15,7 +15,7 @@ permissions:
     * Events in a user's calendar: Calendars.Read or Calendars.ReadWrite
     * Events in a group calendar: Group.Read.All or Group.ReadWrite.All
     
-section:
+httpRequest:
   heading: "HTTP request"
   intro: |
     A user's or group's default [calendar](xref:graph.calendar).

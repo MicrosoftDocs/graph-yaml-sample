@@ -27,7 +27,7 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "Group.ReadWrite.All"
-section:
+httpRequest:
   heading: "HTTP request"
   intro: |
     Attachments for a [post](xref:graph.post) in a [thread](xref:graph.conversationthread) belonging to a [conversation](xref:graph.conversation) of a group.

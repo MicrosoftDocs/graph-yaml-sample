@@ -19,7 +19,7 @@ permissions:
     permission: "Notes.Create, Notes.ReadWrite"
   - resource: "Application"
     permission: "Notes.ReadWrite.All"
-section:
+httpRequest:
   heading: "HTTP request"
   samples:
   - sampleCode: |

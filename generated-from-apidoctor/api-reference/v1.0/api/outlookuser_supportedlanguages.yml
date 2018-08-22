@@ -19,7 +19,7 @@ permissions:
     permission: "User.Read"
   - resource: "Application"
     permission: "User.Read.All"
-section:
+httpRequest:
   heading: "HTTP request"
   samples:
   - sampleCode: |

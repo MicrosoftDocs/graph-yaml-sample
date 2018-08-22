@@ -21,7 +21,7 @@ permissions:
     permission: "Mail.ReadWrite"
   - resource: "Application"
     permission: "Mail.ReadWrite"
-section:
+httpRequest:
   heading: "HTTP request"
   samples:
   - sampleCode: |

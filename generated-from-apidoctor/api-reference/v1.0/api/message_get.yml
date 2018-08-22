@@ -47,7 +47,7 @@ permissions:
     permission: "Mail.Read"
   - resource: "Application"
     permission: "Mail.Read"
-section:
+httpRequest:
   heading: "HTTP request"
   samples:
   - sampleCode: |

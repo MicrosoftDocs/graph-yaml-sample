@@ -34,7 +34,7 @@ permissions:
     * Contacts.ReadWrite
     * Group.ReadWrite.All
     
-section:
+httpRequest:
   heading: "HTTP request"
   intro: |
     You can create extended properties in a new or existing resource instance.

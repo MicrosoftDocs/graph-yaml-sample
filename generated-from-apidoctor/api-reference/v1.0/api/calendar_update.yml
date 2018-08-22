@@ -18,7 +18,7 @@ permissions:
     permission: "Calendars.ReadWrite"
   - resource: "Application"
     permission: "Calendars.ReadWrite"
-section:
+httpRequest:
   heading: "HTTP request"
   intro: |
     A user's or group's default [calendar](xref:graph.calendar).

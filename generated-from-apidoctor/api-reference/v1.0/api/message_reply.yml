@@ -17,7 +17,7 @@ permissions:
     permission: "Mail.Send"
   - resource: "Application"
     permission: "Mail.Send"
-section:
+httpRequest:
   heading: "HTTP request"
   samples:
   - sampleCode: |

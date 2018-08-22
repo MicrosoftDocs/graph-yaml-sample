@@ -16,7 +16,7 @@ permissions:
   heading: "Prerequisites"
   intro: |
     To call this API, the user must have granted the application read access to the file the app wishes to convert.
-section:
+httpRequest:
   heading: "HTTP request"
   samples:
   - sampleCode: |

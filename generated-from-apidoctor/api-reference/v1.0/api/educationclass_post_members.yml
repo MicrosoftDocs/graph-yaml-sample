@@ -17,7 +17,7 @@ permissions:
     permission: "Not supported."
   - resource: "Application"
     permission: "EduRoster.ReadWrite.All plus Member.Read.Hidden"
-section:
+httpRequest:
   heading: "HTTP request"
   samples:
   - sampleCode: |

@@ -22,7 +22,7 @@ permissions:
     permission: ""
   - resource: ""
     permission: ""
-section:
+httpRequest:
   heading: "HTTP request"
   outro: |
     ### Create an extension in a new resource instance
