@@ -43,7 +43,9 @@ requestHeaders:
 examples:
 - items:
   - request:
-      heading: "request"
+      heading: "Example"
+      intro: |
+        Here is an example to download a complete file.
       sampleCode: |
         ```http
         GET /me/drive/items/{item-id}/content

@@ -121,7 +121,10 @@ examples:
         ```
         
   - request:
-      heading: "request"
+      heading: "Request 2"
+      intro: |
+        The second example customizes the time zone for the working hours of the signed-in user, by setting the **timeZone** property 
+        to a [custom time zone](xref:graph.customtimezone).
       sampleCode: |
         ```http
         PATCH https://graph.microsoft.com/v1.0/me/mailboxSettings
@@ -162,8 +165,10 @@ examples:
         }
         ```
         
-  - request:
-      heading: "request"
+    response:
+      heading: "Response 2"
+      intro: |
+        Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
       sampleCode: |
         ```http
         HTTP/1.1 200 OK

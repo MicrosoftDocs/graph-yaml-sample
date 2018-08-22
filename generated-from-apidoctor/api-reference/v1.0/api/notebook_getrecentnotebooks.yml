@@ -28,18 +28,20 @@ httpRequest:
       
   outro: |
     The `<id | userPrincipalName>` for the user must match the user encoded in the authorization token used to make the request.
+parameters:
+  heading: "Request parameters"
+  intro: |
+    In the request URL, provide following query parameters with values.
+  list:
+  - name: "includePersonalNotebooks"
+    value: "Boolean"
+    description: "Include notebooks owned by the user. Set to true to include notebooks owned by the user; otherwise, set to false. If you don't include the includePersonalNotebooks parameter, your request will return a 400 error response."
 requestHeaders:
   heading: "Request headers"
   list:
   - name: "Authorization"
     value: ""
     description: "Bearer {code}"
-  outro: |
-    ## Request parameters
-    In the request URL, provide following query parameters with values.
-    |Parameter|Type|Description
-    |:-|:-|:-|
-    |includePersonalNotebooks|Boolean|Include notebooks owned by the user. Set to `true` to include notebooks owned by the user; otherwise, set to `false`. If you don't include the `includePersonalNotebooks` parameter, your request will return a `400` error response.
 requestBody:
   heading: "Request body"
   intro: |
@@ -50,6 +52,10 @@ response:
     A successful response returns a `200 OK` that contains a JSON collection of **recentNotebooks**.
 examples:
 - items:
+  - request:
+      heading: "Example"
+      intro: |
+        The following example shows how to call this API.
   - request:
       heading: "Request"
       intro: |

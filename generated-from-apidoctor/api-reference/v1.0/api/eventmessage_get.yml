@@ -51,14 +51,20 @@ response:
 examples:
 - items:
   - request:
-      heading: "request"
+      heading: "Request 1"
+      intro: |
+        The first example shows how to get the properties of an event message based on the event message ID.
       sampleCode: |
         ```http
         GET https://graph.microsoft.com/v1.0/me/messages/AAMkADYAAAImV_lAAA=
         ```
         
   - request:
-      heading: "request"
+      heading: "Response 1"
+      intro: |
+        Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+    response:
+      heading: "Response 1"
       sampleCode: |
         ```http
         HTTP/1.1 200 OK
@@ -128,14 +134,23 @@ examples:
         ```
         
   - request:
-      heading: "request"
+      heading: "Request 2"
+      intro: |
+        The second example shows how to get the event associated with an event message. It uses 
+        the event message ID to get the event message, explicitly provides a cast on the event message to access its **event** navigation property, 
+        and apply an $expand parameter to get the properties of the event.
       sampleCode: |
         ```http
         GET https://graph.microsoft.com/v1.0/me/messages/AAMkADYAAAImV_jAAA=?$expand=microsoft.graph.eventMessage/event
         ```
         
   - request:
-      heading: "request"
+      heading: "Response 2"
+      intro: |
+        Here is an example of the response. The properties of the associated event are returned in the response. 
+        Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+    response:
+      heading: "Response 2"
       sampleCode: |
         ```http
         HTTP/1.1 200 OK

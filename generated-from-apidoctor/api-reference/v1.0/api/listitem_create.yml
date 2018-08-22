@@ -36,7 +36,9 @@ requestBody:
 examples:
 - items:
   - request:
-      heading: "request"
+      heading: "Example"
+      intro: |
+        Here is an example of how to create a new generic list item.
       sampleCode: |
         ```json
         POST https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items

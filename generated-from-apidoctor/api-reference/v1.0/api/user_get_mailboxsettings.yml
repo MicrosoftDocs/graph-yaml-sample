@@ -77,14 +77,22 @@ response:
 examples:
 - items:
   - request:
-      heading: "request"
+      heading: "Request 1"
+      intro: |
+        The first example gets all the mailbox settings of the signed-in user's mailbox, which include settings for time zone, automatic replies, 
+        locale (language and country/region), and working hours.
       sampleCode: |
         ```http
         GET https://graph.microsoft.com/v1.0/me/mailboxSettings
         ```
         
   - request:
-      heading: "request"
+      heading: "Response 1"
+      intro: |
+        The response includes all the mailbox settings. 
+        Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+    response:
+      heading: "Response 1"
       sampleCode: |
         ```http
         HTTP/1.1 200 OK
@@ -129,14 +137,21 @@ examples:
         ```
         
   - request:
-      heading: "request"
+      heading: "Request 2"
+      intro: |
+        The second example gets specifically the automatic replies settings of the signed-in user's mailbox.
       sampleCode: |
         ```http
         GET https://graph.microsoft.com/v1.0/me/mailboxSettings/automaticRepliesSetting
         ```
         
   - request:
-      heading: "request"
+      heading: "Response 2"
+      intro: |
+        The response includes only the automatic replies settings. 
+        Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+    response:
+      heading: "Response 2"
       sampleCode: |
         ```http
         HTTP/1.1 200 OK
@@ -160,14 +175,19 @@ examples:
         ```
         
   - request:
-      heading: "request"
+      heading: "Request 3"
+      intro: |
+        The third example gets specifically the working hour settings of the signed-in user's mailbox.
       sampleCode: |
         ```http
         GET https://graph.microsoft.com/v1.0/me/mailboxSettings/workingHours
         ```
         
   - request:
-      heading: "request"
+      heading: "Response 3"
+      intro: |
+        The response includes only the working hours settings. Notice that the user's work hours are in a [custom time zone](xref:graph.customtimezone). 
+        Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
       sampleCode: |
         ```http
         HTTP/1.1 200 OK

@@ -38,6 +38,21 @@ requestBody:
   heading: "Request body"
   intro: |
     In the request body, provide a JSON object with the following parameters.
+  requestBody: |
+    ```json
+    {
+      "requireSignIn": false,
+      "sendInvitation": false,
+      "roles": [ "read | write"],
+      "recipients": [
+        { "@odata.type": "microsoft.graph.driveRecipient" },
+        { "@odata.type": "microsoft.graph.driveRecipient" }
+      ],
+      "message": "string"
+    }
+    ```
+    
+  outro: |
     |Parameter|Type|Description
     |:-|:-|:-
     |recipients|Collection([DriveRecipient][])|A collection of recipients who will receive access and the sharing invitation.
@@ -45,26 +60,14 @@ requestBody:
     |requireSignIn|Boolean|Specifies whether the recipient of the invitation is required to sign-in to view the shared item.
     |sendInvitation|Boolean|If true, a [sharing link][] is sent to the recipient. Otherwise, a permission is granted directly without sending a notification.
     |roles|Collection(String)|Specify the roles that are to be granted to the recipients of the sharing invitation.
-  request:
-      heading: "request"
-      sampleCode: |
-        ```json
-        {
-          "requireSignIn": false,
-          "sendInvitation": false,
-          "roles": [ "read | write"],
-          "recipients": [
-            { "@odata.type": "microsoft.graph.driveRecipient" },
-            { "@odata.type": "microsoft.graph.driveRecipient" }
-          ],
-          "message": "string"
-        }
-        ```
-        
 examples:
 - items:
   - request:
-      heading: "request"
+      heading: "Example"
+      intro: |
+        This example sends a sharing invitation to a user with email address "ryan@contoso.com" with a message about a file being collaborated on.
+        The invitation grants Ryan read-write access to the file.
+        If successful, this method returns `200 OK` response code and [permission](xref:graph.permission) collection object in the response body.
       sampleCode: |
         ```json
         POST /me/drive/items/{item-id}/invite

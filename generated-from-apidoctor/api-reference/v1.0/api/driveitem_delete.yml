@@ -43,7 +43,9 @@ requestHeaders:
 examples:
 - items:
   - request:
-      heading: "request"
+      heading: "Example"
+      intro: |
+        Here is an example of how to call this API.
       sampleCode: |
         ```http
         DELETE /me/drive/items/{item-id}

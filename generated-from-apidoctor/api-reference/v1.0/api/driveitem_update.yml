@@ -53,7 +53,9 @@ response:
 examples:
 - items:
   - request:
-      heading: "request"
+      heading: "Example"
+      intro: |
+        This example renames the DriveItem resource to "new-file-name.docx".
       sampleCode: |
         ```http
         PATCH /me/drive/items/{item-id}

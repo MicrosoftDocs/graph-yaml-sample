@@ -126,9 +126,9 @@ examples:
         }
         ```
         
-      outro: |
-        ### See also
-        
+  - request:
+      heading: "See also"
+      intro: |
         * [Use delta query to track changes in Microsoft Graph data](../../../concepts/delta_query_overview.md)
         * [Get incremental changes to events in a calendar](../../../concepts/delta_query_events.md)
         

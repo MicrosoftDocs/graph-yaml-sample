@@ -43,7 +43,7 @@ requestBody:
 examples:
 - items:
   - request:
-      heading: "request"
+      heading: "Example"
       sampleCode: |
         ```http
         DELETE https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}

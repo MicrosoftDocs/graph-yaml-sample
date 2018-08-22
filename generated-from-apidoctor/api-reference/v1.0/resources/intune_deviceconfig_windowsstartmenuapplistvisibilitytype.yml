@@ -10,14 +10,14 @@ members:
   heading: "windowsStartMenuAppListVisibilityType flags"
   list:
   - member: "userDefined"
-    value: "0"
+    value: 0
     description: "User defined. Default value."
   - member: "collapse"
-    value: "1"
+    value: 1
     description: "Collapse the app list on the start menu."
   - member: "remove"
-    value: "2"
+    value: 2
     description: "Removes the app list entirely from the start menu."
   - member: "disableSettingsApp"
-    value: "4"
+    value: 4
     description: "Disables the corresponding toggle (Collapse or Remove) in the Settings app."

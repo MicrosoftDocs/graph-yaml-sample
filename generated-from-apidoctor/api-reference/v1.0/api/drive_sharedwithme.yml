@@ -37,42 +37,40 @@ response:
   intro: |
     This returns a collection of [DriveItem](xref:graph.driveitem) resources which contain the DriveItem resources shared with the owner of the drive.
     In this example, since the drive is the user's default drive, this returns items shared with the signed in user.
-  request:
-      heading: "request"
-      sampleCode: |
-        ```http
-        HTTP/1.1 200 OK
-        Content-Type: application/json
-        
+  response: |
+    ```http
+    HTTP/1.1 200 OK
+    Content-Type: application/json
+    
+    {
+      "value": [
         {
-          "value": [
-            {
-              "id": "1312abc",
-              "remoteItem": {
-                "id": "1991210caf!192",
-                "name": "March Proposal.docx",
-                "file": { },
-                "size": 19121,
-                "parentReference": {
-                  "driveId": "1991210caf",
-                  "id": "1991210caf!104"
-                }
-              }
-            },
-            {
-              "id": "1312def",
-              "remoteItem": {
-                "id": "1991210caf!1991",
-                "name": "Team Roster.xlsx",
-                "file": { },
-                "size": 37619,
-                "parentReference": {
-                  "driveId": "1991210caf",
-                  "id": "1991210caf!104"
-                }
-              }
+          "id": "1312abc",
+          "remoteItem": {
+            "id": "1991210caf!192",
+            "name": "March Proposal.docx",
+            "file": { },
+            "size": 19121,
+            "parentReference": {
+              "driveId": "1991210caf",
+              "id": "1991210caf!104"
             }
-          ]
+          }
+        },
+        {
+          "id": "1312def",
+          "remoteItem": {
+            "id": "1991210caf!1991",
+            "name": "Team Roster.xlsx",
+            "file": { },
+            "size": 37619,
+            "parentReference": {
+              "driveId": "1991210caf",
+              "id": "1991210caf!104"
+            }
+          }
         }
-        ```
-        
+      ]
+    }
+    ```
+    

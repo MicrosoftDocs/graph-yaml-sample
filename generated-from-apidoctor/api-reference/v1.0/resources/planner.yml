@@ -43,9 +43,22 @@ relationships:
 examples:
 - items:
   - request:
-      heading: "request"
+      heading: "Example"
+      intro: |
+        The **planner** resource is available at the root of the graph.
       sampleCode: |
         ```http
         GET https://graph.microsoft.com/v1.0/planner
+        ```
+        
+    response:
+      heading: "Example"
+      sampleCode: |
+        ```json
+        HTTP/1.1 200 OK
+        Content-type: application/json
+        
+        {
+        }
         ```
         

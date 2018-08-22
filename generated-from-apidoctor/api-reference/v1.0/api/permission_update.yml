@@ -56,7 +56,9 @@ response:
 examples:
 - items:
   - request:
-      heading: "request"
+      heading: "Example"
+      intro: |
+        Here is an example of the request that changes the role on the sharing permission to read-only.
       sampleCode: |
         ```http
         PATCH /me/drive/items/{item-id}/permissions/{perm-id}

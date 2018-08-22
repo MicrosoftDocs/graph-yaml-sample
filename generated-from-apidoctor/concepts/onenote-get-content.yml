@@ -26,3 +26,233 @@ summary:
     
     <a name="resource-paths"></a>
 examples:
+- items:
+  - request:
+      heading: "Example"
+      intro: |
+        `GET ../sections/{section-id}/pages?pagelevel=true`
+        <a name="get-page"></a> 
+  - request:
+      heading: "Example"
+      intro: |
+        `GET ../pages/{page-id}?pagelevel=true`
+        <a name="get-page-preview"></a> 
+  - request:
+      heading: "Example"
+      intro: |
+        `<img src="https://www.onenote.com/api/v1.0/resources/{id}/content?publicAuth=true&mimeType=image/png" />`
+        <a name="get-page-content"></a> 
+  - request:
+      heading: "Example"
+      intro: |
+        <img 
+            src="https://www.onenote.com/api/v1.0/me/notes/resources/{image-id}/$value"  
+            data-src-type="image/png"
+            data-fullres-src="https://www.onenote.com/api/v1.0/resources/{image-id}/$value"  
+            data-fullres-src-type="image/png" ... />
+
+        And an **object** tag includes the endpoint for the file resource in the **data** attribute. 
+  - request:
+      heading: "Example"
+      intro: |
+        <object
+            data="http://www.onenote.com/api/v1.0/me/notes/resources/{file-id}/$value"
+            data-attachment="fileName.pdf" 
+            type="application/pdf" ... />
+
+        To get public, pre-authenticated URLs to the image resources on a page, include `preAuthenticated=true` in the query string when you [retrieve the page content](#page-html-content) (**example:**  `GET ../pages/{page-id}/content?preAuthenticated=true`). The public URLs that are returned in the [output HTML](xref:graph.onenote_input_output_html#output-html-examples-for-images) are valid for one hour. Without this flag, retrieved images won't render directly in a browser because they are private and require authorization to retrieve them, like the rest of the page contents. 
+        
+        When you get a file resource, you don't need to include an **Accept** content type in the request.
+        For more information about GET requests, see the following resources in the Microsoft Graph API REST reference:
+        
+        * [GET Pages](xref:graph.page_get)
+        * [GET Sections](xref:graph.section_get)
+        * [GET SectionGroups](xref:graph.sectiongroup_get)
+        * [GET Notebooks](xref:graph.notebook_get) 
+        
+        <a name="example"></a>
+  - request:
+      heading: "Example GET requests"
+      intro: |
+        You can query for OneNote entities and search page content to get just the information you need. The following examples show some ways you can use [supported query string options](#supported-odata-query-string-options) in GET requests to Microsoft Graph. 
+        **Remember:**
+        
+        * All GET requests start with the [service root URL](../api-reference/v1.0/resources/onenote-api-overview.md#root-url). <br/><br/>**Examples**: `https://www.onenote.com/api/v1.0/me/notes` and `https://www.onenote.com/api/v1.0/myOrganization/siteCollections/{id}/sites/{id}/notes/`
+        * Spaces in the URL query string must use %20 encoding.<br/><br/>**Example**: `filter=title%20eq%20'biology'`
+        * Property names and OData string comparisons are case-sensitive. We recommend using the OData **tolower** function for string comparisons.<br/><br/>**Example**: `filter=tolower(name) eq 'spring'`
+        
+  - request:
+      heading: "search & filter"
+      intro: |
+        Get all pages that contain the term *recipe* that were created by a specific app (`search` is available for consumer notebooks only).
+        [GET] ../pages?search=recipe&filter=createdByAppId eq 'WLID-000000004C12821A'
+
+  - request:
+      heading: "search & select"
+      intro: |
+        Get the title, OneNote client links, and **contentUrl** link for all pages that contain the term *golgi app* (`search` is available for consumer notebooks only).
+        [GET] ../pages?search=golgi app&select=title,links,contentUrl
+
+  - request:
+      heading: "expand"
+      intro: |
+        Get all notebooks and expand their sections and section groups.  
+        [GET] ../notebooks?expand=sections,sectionGroups
+
+        <br/>
+        Get a specific section group and expand its sections and section groups.  
+        [GET] ../sectionGroups/{sectiongroup-id}?expand=sections,sectionGroups
+
+        <br/>
+        Get a page and expand its parent section and parent notebook.
+        [GET] ../pages/{page-id}?expand=parentSection,parentNotebook
+
+  - request:
+      heading: "expand (multiple levels)"
+      intro: |
+        Get all notebooks and expand their sections and section groups, and expand all sections in each section group.  
+        [GET] ../notebooks?expand=sections,sectionGroups(expand=sections)
+
+        
+  - request:
+      heading: "expand & select (multiple levels)"
+      intro: |
+        Get the name and **self** link for a specific section group, and get the name and **self** links for all its sections.  
+        [GET] ../sectionGroups/{sectiongroup-id}?expand=sections(select=name,self)&select=name,self
+
+        <br/>
+        Get the name and **self** link for all sections, and get the name and created time of each section's parent notebook.  
+        [GET] ../sections?expand=parentNotebook(select=name,createdTime)&select=name,self
+
+        <br/>
+        Get the title and ID for all pages, and get the name of the parent section and parent notebook.
+        [GET] ../pages?select=id,title&expand=parentSection(select=name),parentNotebook(select=name)
+
+  - request:
+      heading: "expand & levels (multiple levels)"
+      intro: |
+        Get all notebooks, sections, and section groups.  
+        [GET] ../notebooks?expand=sections,sectionGroups(expand=sections,sectionGroups(levels=max;expand=sections))
+
+  - request:
+      heading: "filter"
+      intro: |
+        Get all sections that were created in October 2014.
+        [GET] ../sections?filter=createdTime ge 2014-10-01 and createdTime le 2014-10-31
+
+        <br/>
+        Get the pages that were created by a specific app since January 1, 2015.
+        [GET] ../pages?filter=createdByAppId eq 'WLID-0000000048118631' and createdTime ge 2015-01-01
+
+  - request:
+      heading: "filter & expand"
+      intro: |
+        Get all pages in a specific notebook. The API returns 20 entries by default.
+        [GET] ../pages?filter=parentNotebook/id eq '{notebook-id}'&expand=parentNotebook
+
+        <br/>
+        Get the name and **pagesUrl** link for all sections from the *School* notebook. OData string comparisons are case-sensitive, so use the **tolower** function as a best practice.
+        [GET] ../notebooks?filter=tolower(name) eq 'school'&expand=sections(select=name,pagesUrl)
+
+  - request:
+      heading: "filter & select & orderby"
+      intro: |
+        Get the name and **pagesUrl** link for all sections that contain the term *spring* in the section name. Order sections by last modified date.
+        [GET] ../sections?filter=contains(tolower(name),'spring')&select=name,pagesUrl&orderby=lastModifiedTime desc
+
+  - request:
+      heading: "orderby"
+      intro: |
+        Get the first 20 pages ordered by **createdByAppId** property and then by most recent created time. The API returns 20 entries by default.
+        [GET] ../pages?orderby=createdByAppId,createdTime desc
+
+  - request:
+      heading: "search & filter & top"
+      intro: |
+        Get the five newest pages created since January 1, 2015 that contain the phrase *cell division*. The API returns 20 entries by default with a maximum of 100. The default sort order for pages is `lastModifiedTime desc` (`search` is available for consumer notebooks only).
+        [GET] ../pages?search="cell division"&filter=createdTime ge 2015-01-01&top=5
+
+  - request:
+      heading: "search & filter & top & skip"
+      intro: |
+        Get the next five pages in the result set (`search` is available for consumer notebooks only).
+        [GET] ../pages?search=biology&filter=createdTime ge 2015-01-01&top=5&skip=5
+
+        <br/>
+        And the next five (`search` is available for consumer notebooks only).
+        [GET] ../pages?search=biology&filter=createdTime ge 2015-01-01&top=5&skip=10
+
+        
+  - request:
+      heading: "select"
+      intro: |
+        Get the name, created time, and **self** link for all sections in the user's notebooks.
+        [GET] ../sections?select=name,createdTime,self
+
+        <br/>
+        Get the title, created time, and OneNote client links for a specific page.
+        [GET] ../pages/{page-id}?select=title,createdTime,links
+
+  - request:
+      heading: "select & expand & filter (multiple levels)"
+      intro: |
+        Get the name and **pagesUrl** link for all sections in the user's default notebook.
+        [GET] ../notebooks?select=name&expand=sections(select=name,pagesUrl)&filter=isDefault eq true
+
+  - request:
+      heading: "top & select & orderby"
+      intro: |
+        Get the title and **self** link for the first 50 pages, ordered alphabetically by title. The API returns 20 entries by default with a maximum of 100. The default sort order for pages is `lastModifiedTime desc`.
+        [GET] ../pages?top=50&select=title,self&orderby=title
+
+  - request:
+      heading: "skip & top & select & orderby"
+      intro: |
+        Get pages 51 to 100. The API returns 20 entries by default with a maximum of 100.
+        [GET] ../pages?skip=50&top=50&select=title,self&orderby=title
+
+        
+        <a name="supported-odata-query-string-options"></a>
+  - request:
+      heading: "Example"
+      intro: |
+        `../sections?filter=createdTime ge 2015-01-01&select=name,pagesUrl&orderby=lastModifiedTime desc` 
+        Property names are case-sensitive in query expressions.
+        For the list of properties and property types, see the following resources in the Microsoft Graph API REST reference:
+        
+        * [GET Pages](xref:graph.page_get)
+        * [GET Sections](xref:graph.section_get)
+        * [GET SectionGroups](xref:graph.sectiongroup_get)
+        * [GET Notebooks](xref:graph.notebook_get) 
+        
+        The **expand** query string option can be used with the following navigation properties:
+        
+        * Pages: **parentNotebook**, **parentSection**
+        * Sections: **parentNotebook**, **parentSectionGroup**
+        * Section groups: **sections**, **sectionGroups**, **parentNotebook**, **parentSectionGroup**
+        * Notebooks: **sections**, **sectionGroups**
+        
+        <a name="request-response-info"></a>
+  - request:
+      heading: "Request and response information for *GET* requests"
+      intro: |
+        |Request data|Description|
+        |-|-|  -
+        |Protocol|All requests use the SSL/TLS HTTPS protocol.|
+        |Authorization header|<p>`Bearer {token}`, where `{token}` is a valid OAuth 2.0 access token for your registered app.</p><p>If missing or invalid, the request fails with a 401 status code. See [Authentication and permissions](xref:graph.permissions_reference).</p>|
+        |Accept header|<p> `application/json` for OneNote entities and entity sets</p><p> `text/html` for page content</p>|
+        <br/>
+        |Response data|Description|
+        |-|-|  -
+        |Success code|A 200 HTTP status code.|
+        |Response body|An OData representation of the entity or entity set in JSON format, the page HTML, or file resource binary data.|
+        |Errors|If the request fails, the API returns [errors](xref:graph.onenote_error_codes) in the **@api.diagnostics** object in the response body.|
+        |X-CorrelationId header|A GUID that uniquely identifies the request. You can use this value along with the value of the Date header when working with Microsoft support to troubleshoot issues.|
+        <a name="root-url"></a>
+      outro: |
+        ### Constructing the Microsoft Graph notes service root URL
+        The Microsoft Graph notes root URL uses the following format for all calls to Microsoft Graph notes:
+        `https://graph.microsoft.com/{version}/me/onenote/`  
+        The `version` segment in the URL represents the version of Microsoft Graph that you want to use. Use `v1.0` for stable production code. Use `beta` to try out a feature that's in development. Features and functionality in beta may change, so you shouldn't use it in your production code. 
+        Use `me` for OneNote content that the current user can access (owned and shared). Use `users/{id}` for OneNote content that the specified user (in the URL) has shared with the current user. Use [Microsoft Graph](https://graph.microsoft.com/v1.0/users) to get user IDs. 
+        <a name="permissions"></a>

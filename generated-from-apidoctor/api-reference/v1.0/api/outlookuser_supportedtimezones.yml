@@ -55,14 +55,20 @@ response:
 examples:
 - items:
   - request:
-      heading: "request"
+      heading: "Request 1"
+      intro: |
+        The following example does not specify the `timeZoneStandard` parameter, and gets the list of supported time zones represented in the Windows time zone format. 
       sampleCode: |
         ```http
         GET https://graph.microsoft.com/v1.0/me/outlook/supportedTimeZones
         ```
         
   - request:
-      heading: "request"
+      heading: "Response 1"
+      intro: |
+        Here is an example of the response. 
+    response:
+      heading: "Response 1"
       sampleCode: |
         ```http
         HTTP/1.1 200 OK
@@ -92,14 +98,20 @@ examples:
         ```
         
   - request:
-      heading: "request"
+      heading: "Request 2"
+      intro: |
+        The following example specifies `Iana` for the `TimeZoneStandard` parameter, and gets the list of supported time zones represented in IANA format. 
       sampleCode: |
         ```http
         GET https://graph.microsoft.com/v1.0/me/outlook/supportedTimeZones(TimeZoneStandard=microsoft.graph.timeZoneStandard'Iana')
         ```
         
   - request:
-      heading: "request"
+      heading: "Response 2"
+      intro: |
+        Here is an example of the response. 
+    response:
+      heading: "Response 2"
       sampleCode: |
         ```http
         HTTP/1.1 200 OK

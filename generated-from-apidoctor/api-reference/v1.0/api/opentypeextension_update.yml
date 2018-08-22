@@ -84,7 +84,9 @@ response:
 examples:
 - items:
   - request:
-      heading: "request"
+      heading: "Request 1"
+      intro: |
+        The first example shows how to update an extension in a message. The extension is initially represented by the following JSON payload:
       sampleCode: |
         ```http
         {
@@ -100,8 +102,39 @@ examples:
         }
         ```
         
+      outro: |
+        You can reference the extension by its name:
+        
+        ```http
+        PATCH https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===/extensions/Com.Contoso.Referral
+        ```
+        
+        Or you can reference the extension by its fully qualified name:
+        
+        ```http
+        PATCH https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===/extensions/Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral
+        ```
+        
+        You can use either example request and the following request body to update the above extension by:
+        - Changing `companyName` from `Wingtip Toys` to `Wingtip Toys (USA)`
+        - Changing `dealValue` from `500050` to `500100`
+        - Adding new data as the custom property `updated`
+        
+        ```http
+        {
+            "@odata.type": "microsoft.graph.openTypeExtension",
+            "extensionName": "Com.Contoso.Referral",
+            "companyName": "Wingtip Toys (USA)",
+            "dealValue": "500100",
+            "expirationDate": "2015-12-03T10:00:00.000Z",
+            "updated": "2015-10-29T11:00:00.000Z"
+        }
+        ```
+        
   - request:
-      heading: "request"
+      heading: "Response 1"
+      intro: |
+        Here is the response which is the same regardless of the way used to reference the extension.
       sampleCode: |
         ```http
         HTTP/1.1 200 OK
@@ -121,8 +154,13 @@ examples:
         }
         ```
         
+      outro: |
+        ****
   - request:
-      heading: "request"
+      heading: "Request 2"
+      intro: |
+        The second example shows how to update an extension in a group post. The extension is initially represented by the following JSON payload, 
+        with an `expirationDate` value of `2015-07-03T13:04:00Z`:
       sampleCode: |
         ```http
         {
@@ -142,8 +180,31 @@ examples:
         }
         ```
         
+      outro: |
+        The following is the request and request body to change the `expirationDate` to `2016-07-30T11:00:00Z`:
+        
+        ```http
+        PATCH https://graph.microsoft.com/v1.0/groups/37df2ff0-0de0-4c33-8aee-75289364aef6/threads/AAQkADJizZJpEWwqDHsEpV_KA==/posts/AAMkADJiUg96QZUkA-ICwMubAADDEd7UAAA=/extensions/Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Estimate
+        Content-type: application/json
+        
+        {
+           "@odata.type": "Microsoft.OutlookServices.OpenTypeExtension",
+           "extensionName": "Com.Contoso.Estimate",
+           "companyName": "Contoso",
+           "expirationDate": "2016-07-30T11:00:00.000Z",
+           "DealValue": 1010100,
+           "topPicks": [
+               "Employees only",
+               "Add spouse or guest",
+               "Add family"
+            ]
+        }
+        ```
+        
   - request:
-      heading: "request"
+      heading: "Response 2"
+      intro: |
+        Here is the response of the second example which shows the updated `expirationDate` in the extension.
       sampleCode: |
         ```http
         HTTP/1.1 200 OK

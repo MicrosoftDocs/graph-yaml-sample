@@ -42,7 +42,10 @@ requestBody:
 examples:
 - items:
   - request:
-      heading: "request"
+      heading: "Example"
+      intro: |
+        Here is an example that updates the Color and Quantity fields of the list item with new values.
+        All other values on the listItem are left alone. 
       sampleCode: |
         ```json
         PATCH https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}/fields

@@ -36,7 +36,9 @@ requestBody:
 examples:
 - items:
   - request:
-      heading: "request"
+      heading: "Example"
+      intro: |
+        This example restores a version of a file identified by `{item-id}` and `{version-id}`.
       sampleCode: |
         ```http
         POST /drives/{drive-id}/items/{item-id}/versions/{version-id}/restoreVersion

@@ -62,20 +62,18 @@ requestBody:
 
 response:
   heading: "Response"
-  request:
-      heading: "request"
-      sampleCode: |
-        ```http
-        HTTP code: 201 Created
-        content-type: application/json;odata.metadata 
-        
-        {
-        	"@odata.context": "https://graph.microsoft.com/{version}/$metadata#microsoft.graph.sessionInfo",
-        	"id": "{session-id}",
-        	"persistChanges": true
-        }
-        ```
-        
+  response: |
+    ```http
+    HTTP code: 201 Created
+    content-type: application/json;odata.metadata 
+    
+    {
+    	"@odata.context": "https://graph.microsoft.com/{version}/$metadata#microsoft.graph.sessionInfo",
+    	"id": "{session-id}",
+    	"persistChanges": true
+    }
+    ```
+    
   outro: |
     #### Usage
     The session ID returned from the previous call is passed as a header on subsequent API requests in the

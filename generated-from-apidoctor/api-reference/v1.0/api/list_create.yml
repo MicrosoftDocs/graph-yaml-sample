@@ -36,7 +36,9 @@ requestBody:
 examples:
 - items:
   - request:
-      heading: "request"
+      heading: "Example"
+      intro: |
+        Here is an example of how to create a new generic list.
       sampleCode: |
         ```http
         POST /sites/{site-id}/lists
@@ -60,6 +62,10 @@ examples:
         }
         ```
         
+      outro: |
+        **Note:** Custom columns are optional.
+        In addition to any columns specified here, new lists are created with columns defined in the referenced **template**.
+        If the **list** facet or **template** is unspecified, the list defaults to the `genericList` template, which includes a _Title_ column.
     response:
       heading: "Response"
       intro: |

@@ -53,6 +53,10 @@ examples:
   heading: "Examples"
 - items:
   - request:
+      heading: "Example 1: Standard users request"
+      intro: |
+        By default, only a limited set of properties are returned (_businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_). This example illustrates the default request and response. 
+  - request:
       heading: "Request"
       sampleCode: |
         ```http
@@ -88,6 +92,10 @@ examples:
         }
         ```
         
+  - request:
+      heading: "Example 2: Users request using $select"
+      intro: |
+        If you need a different property set, you can use the OData `$select` query parameter. For example, to return _displayName_, _givenName_, and _postalCode_, you would use the add the following to your query `$select=displayName,givenName,postalCode`
   - request:
       heading: "Request"
       sampleCode: |

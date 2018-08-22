@@ -34,25 +34,21 @@ requestBody:
   heading: "Request"
   intro: |
     Here is an example of the request.
-  request:
-      heading: "request"
-      sampleCode: |
-        ```http
-        GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/sort
-        ```
-        
+  requestBody: |
+    ```http
+    GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/sort
+    ```
+    
 response:
   heading: "Response"
   intro: |
     Here is an example of the response. 
-  request:
-      heading: "request"
-      sampleCode: |
-        ```http
-        HTTP/1.1 200 OK
-        Content-Type: application/json
-        
-        {
-        }
-        ```
-        
+  response: |
+    ```http
+    HTTP/1.1 200 OK
+    Content-Type: application/json
+    
+    {
+    }
+    ```
+    

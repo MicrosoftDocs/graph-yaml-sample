@@ -25,34 +25,31 @@ requestBody:
   heading: "Request"
   intro: |
     Pass a JSON object by setting the `persistchanges` value to `true` or `false`. 
+  requestBody: |
+    ```http
+    POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/createSession
+    content-type: Application/Json 
+    authorization: Bearer {access-token}
+    
+    { "persistChanges": true }
+    ```
+    
+  outro: |
     When the value of `persistChanges` is set to `false`, a non-persistent session id is returned.  
-  request:
-      heading: "request"
-      sampleCode: |
-        ```http
-        POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/createSession
-        content-type: Application/Json 
-        authorization: Bearer {access-token}
-        
-        { "persistChanges": true }
-        ```
-        
 response:
   heading: "Response"
-  request:
-      heading: "request"
-      sampleCode: |
-        ```http
-        HTTP code: 201 Created
-        content-type: application/json;odata.metadata 
-        
-        {
-          "@odata.context": "https://graph.microsoft.com/{version}/$metadata#microsoft.graph.sessionInfo",
-          "id": "{session-id}",
-          "persistChanges": true
-        }
-        ```
-        
+  response: |
+    ```http
+    HTTP code: 201 Created
+    content-type: application/json;odata.metadata 
+    
+    {
+      "@odata.context": "https://graph.microsoft.com/{version}/$metadata#microsoft.graph.sessionInfo",
+      "id": "{session-id}",
+      "persistChanges": true
+    }
+    ```
+    
   outro: |
     #### Usage
     The session ID returned from the previous call is passed as a header on subsequent API requests in  

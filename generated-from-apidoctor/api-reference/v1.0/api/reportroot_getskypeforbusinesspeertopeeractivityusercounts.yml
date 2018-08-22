@@ -26,12 +26,14 @@ httpRequest:
       GET /reports/getSkypeForBusinessPeerToPeerActivityUserCounts(period='{period_value}')
       ```
       
-  outro: |
-    ## Request parameters
+parameters:
+  heading: "Request parameters"
+  intro: |
     In the request URL, provide the following parameter with a valid value.
-    |Parameter|Type|Description
-    | :-------- -| :----- -| :--------------------------------------- -|
-    |period|string|Specifies the length of time over which the report is aggregated. The supported values for {period_value} are: D7, D30, D90, and D180. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. Required.
+  list:
+  - name: "period"
+    value: "String"
+    description: "Specifies the length of time over which the report is aggregated. The supported values for {period_value} are: D7, D30, D90, and D180. These values follow the format Dn where n represents the number of days over which the report is aggregated. Required."
 requestHeaders:
   heading: "Request headers"
   list:

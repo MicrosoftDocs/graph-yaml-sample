@@ -44,9 +44,20 @@ relationships:
 examples:
 - items:
   - request:
-      heading: "request"
+      heading: "Example"
       sampleCode: |
         ```http
         GET https://graph.microsoft.com/v1.0/directory
+        ```
+        
+    response:
+      heading: "Example"
+      sampleCode: |
+        ```json
+        HTTP/1.1 200 OK
+        Content-Type: application/json
+        
+        {
+        }
         ```
         

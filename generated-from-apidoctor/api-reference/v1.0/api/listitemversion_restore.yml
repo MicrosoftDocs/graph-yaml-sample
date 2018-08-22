@@ -33,7 +33,9 @@ requestBody:
 examples:
 - items:
   - request:
-      heading: "request"
+      heading: "Example"
+      intro: |
+        This example restores a version of a listItem identified by `{item-id}` and `{version-id}`.
       sampleCode: |
         ```http
         POST /sites/{site-id}/lists/{list-id}/items/{item-id}/versions/{version-id}/restoreVersion

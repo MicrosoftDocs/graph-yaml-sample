@@ -38,7 +38,9 @@ response:
 examples:
 - items:
   - request:
-      heading: "request"
+      heading: "Example"
+      intro: |
+        This example retrieves the versions of a file in the current user's drive.
       sampleCode: |
         ```http
         GET /me/drive/items/{item-id}/versions

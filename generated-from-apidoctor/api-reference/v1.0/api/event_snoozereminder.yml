@@ -61,6 +61,10 @@ response:
 examples:
 - items:
   - request:
+      heading: "Example"
+      intro: |
+        Here is an example of how to call this API.
+  - request:
       heading: "Request"
       intro: |
         Here is an example of the request.

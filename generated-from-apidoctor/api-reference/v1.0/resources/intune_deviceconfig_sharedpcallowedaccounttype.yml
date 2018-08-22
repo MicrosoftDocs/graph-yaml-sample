@@ -10,8 +10,8 @@ members:
   heading: "sharedPCAllowedAccountType flags"
   list:
   - member: "guest"
-    value: "1"
+    value: 1
     description: "Only guest accounts. Default value."
   - member: "domain"
-    value: "2"
+    value: 2
     description: "Only domain-joined accounts."

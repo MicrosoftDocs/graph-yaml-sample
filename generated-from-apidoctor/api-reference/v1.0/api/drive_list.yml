@@ -48,7 +48,40 @@ response:
   heading: "Response"
   intro: |
     If successful, this method returns a `200 OK` response code and collection of [Drive](xref:graph.drive) objects in the response body.
+  response: |
+    ```http
+    HTTP/1.1 200 OK
+    Content-Type: application/json
     
+    {
+      "value": [
+        {
+          "id": "942CAEB0-13AE-491B-85E4-7557CDC0F25F",
+          "driveType": "documentLibrary",
+          "name": "Shared Documents",
+          "owner": {
+            "user": {
+              "id": "AE2A1EE9-81A7-423C-ABE4-B945F47509BB",
+              "displayName": "Ryan Gregg"
+            }
+          }
+        },
+        {
+          "id": "C1CD3ED9-0E98-4B0B-82D3-C8FB784B9DCC",
+          "driveType": "documentLibrary",
+          "name": "Contoso Project Files",
+          "owner": {
+            "user": {
+              "id": "406B2281-18E8-4416-9857-38C531B904F1",
+              "displayName": "Daron Spektor"
+            }
+          }
+        }
+      ]
+    }
+    ```
+    
+  outro: |
     ```http
     HTTP/1.1 200 OK
     Content-Type: application/json
@@ -147,38 +180,3 @@ response:
     }
     ```
     
-  request:
-      heading: "request"
-      sampleCode: |
-        ```http
-        HTTP/1.1 200 OK
-        Content-Type: application/json
-        
-        {
-          "value": [
-            {
-              "id": "942CAEB0-13AE-491B-85E4-7557CDC0F25F",
-              "driveType": "documentLibrary",
-              "name": "Shared Documents",
-              "owner": {
-                "user": {
-                  "id": "AE2A1EE9-81A7-423C-ABE4-B945F47509BB",
-                  "displayName": "Ryan Gregg"
-                }
-              }
-            },
-            {
-              "id": "C1CD3ED9-0E98-4B0B-82D3-C8FB784B9DCC",
-              "driveType": "documentLibrary",
-              "name": "Contoso Project Files",
-              "owner": {
-                "user": {
-                  "id": "406B2281-18E8-4416-9857-38C531B904F1",
-                  "displayName": "Daron Spektor"
-                }
-              }
-            }
-          ]
-        }
-        ```
-        

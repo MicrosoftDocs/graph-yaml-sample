@@ -39,7 +39,7 @@ requestHeaders:
 examples:
 - items:
   - request:
-      heading: "request"
+      heading: "Example"
       sampleCode: |
         ```http
         GET /me/drive/items/{item-id}/content?format={format}

@@ -27,6 +27,27 @@ httpRequest:
       POST /users/{id | userPrincipalName}/mailFolders/inbox/messageRules
       ```
       
+parameters:
+  heading: "Request parameters"
+  list:
+  - name: "actions"
+    value: "microsoft.graph.messageRuleActions"
+    description: "Actions to be taken on a message when the corresponding conditions, if any, are fulfilled. Required."
+  - name: "conditions"
+    value: "microsoft.graph.messageRulePredicates"
+    description: "Conditions that when fulfilled, will trigger the corresponding actions for that rule. Optional."
+  - name: "displayName"
+    value: "String"
+    description: "The display name of the rule. Required."
+  - name: "exceptions"
+    value: "microsoft.graph.messageRulePredicates"
+    description: "Represents exception conditions for the rule. Optional."
+  - name: "isEnabled"
+    value: "Boolean"
+    description: "Indicates whether the rule is enabled to be applied to messages. Optional."
+  - name: "sequence"
+    value: "Int32"
+    description: "Indicates the order in which the rule is executed, among other rules. Required."
 requestHeaders:
   heading: "Request headers"
   list:
@@ -38,16 +59,6 @@ requestBody:
   intro: |
     In the request body, supply the parameters that are applicable to your rule. The following are body parameters that are typically used 
     when creating rules. You can specify any other writable **messageRule** properties as appropriate in the request body.
-  outro: |
-    ### Request parameters
-    |Name|Type|Description
-    |:-|:-|:-|
-    |actions|[messageRuleActions](xref:graph.messageruleactions)|Actions to be taken on a message when the corresponding conditions, if any, are fulfilled. Required.
-    |conditions|[messageRulePredicates](xref:graph.messagerulepredicates)|Conditions that when fulfilled, will trigger the corresponding actions for that rule. Optional.
-    |displayName|String|The display name of the rule. Required.
-    |exceptions|[messageRulePredicates](xref:graph.messagerulepredicates)|Represents exception conditions for the rule. Optional.
-    |isEnabled|Boolean|Indicates whether the rule is enabled to be applied to messages. Optional.
-    |sequence|Int32|Indicates the order in which the rule is executed, among other rules. Required.
 response:
   heading: "Response"
   intro: |

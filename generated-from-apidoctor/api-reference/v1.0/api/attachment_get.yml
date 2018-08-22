@@ -141,14 +141,26 @@ examples:
         ```
         
   - request:
-      heading: "request"
+      heading: "Request 1"
+      intro: |
+        The first example shows how to get an item attachment on a message. The properties of the **itemAttachment** are returned.
       sampleCode: |
         ```http
         GET https://graph.microsoft.com/v1.0/me/messages/AAMkADA1M-zAAA=/attachments/AAMkADA1M-CJKtzmnlcqVgqI=
         ```
         
   - request:
-      heading: "request"
+      heading: "Request 2"
+      intro: |
+        The next example shows how to use `$expand` to get the properties of the item that is attached to the message. In this example, that item is 
+        a message; the properties of that attached message are also returned.
+      sampleCode: |
+        ```http
+        GET https://graph.microsoft.com/v1.0/me/messages/AAMkADA1M-zAAA=/attachments/AAMkADA1M-CJKtzmnlcqVgqI=/?$expand=microsoft.graph.itemattachment/item
+        ```
+        
+    response:
+      heading: "Response 1"
       sampleCode: |
         ```http
         HTTP/1.1 200 OK
@@ -166,15 +178,8 @@ examples:
         }
         ```
         
-  - request:
-      heading: "request"
-      sampleCode: |
-        ```http
-        GET https://graph.microsoft.com/v1.0/me/messages/AAMkADA1M-zAAA=/attachments/AAMkADA1M-CJKtzmnlcqVgqI=/?$expand=microsoft.graph.itemattachment/item
-        ```
-        
-  - request:
-      heading: "request"
+    response:
+      heading: "Response 2"
       sampleCode: |
         ```http
         HTTP/1.1 200 OK

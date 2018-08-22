@@ -67,7 +67,9 @@ response:
 examples:
 - items:
   - request:
-      heading: "request"
+      heading: "Example"
+      intro: |
+        This example retrieves the collection of permissions on an item in the signed in user's drive.
       sampleCode: |
         ```http
         GET /me/drive/items/{item-id}/permissions

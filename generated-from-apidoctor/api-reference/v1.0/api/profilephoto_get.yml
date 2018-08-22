@@ -64,14 +64,22 @@ requestBody:
 examples:
 - items:
   - request:
-      heading: "request"
+      heading: "Request 1"
+      intro: |
+        This request gets the photo for the signed-in user, in the largest available size.
       sampleCode: |
         ```http
         GET https://graph.microsoft.com/v1.0/me/photo/$value
         ```
         
   - request:
-      heading: "request"
+      heading: "Response 1"
+      intro: |
+        Contains the binary data of the requested photo. The HTTP response code is 200.
+  - request:
+      heading: "Request 2"
+      intro: |
+        This request gets the 48x48 photo for the signed-in user.
       sampleCode: |
         ```http
         GET https://graph.microsoft.com/v1.0/me/photos/48x48/$value
@@ -79,14 +87,22 @@ examples:
         ```
         
   - request:
-      heading: "request"
+      heading: "Response 2"
+      intro: |
+        Contains the binary data of the requested 48x48 photo. The HTTP response code is 200.
+  - request:
+      heading: "Request 3"
+      intro: |
+        This request gets the metadata of the user photo of the signed-in user.
       sampleCode: |
         ```http
         GET https://graph.microsoft.com/v1.0/me/photo
         ```
         
   - request:
-      heading: "request"
+      heading: "Response 3"
+      intro: |
+        The following response data shows the photo metadata. Note: The response object shown here may be truncated for brevity.
       sampleCode: |
         ```http
         HTTP/1.1 200 OK
@@ -100,6 +116,24 @@ examples:
             "id": "240X240",
             "width": 240,
             "height": 240
+        }
+        ```
+        
+      outro: |
+        The following response data shows the contents of a response when a photo hasn't already been uploaded for the user. Note: The response object shown here may be truncated for brevity.
+        
+        ```http
+        HTTP/1.1 200 OK
+        Content-type: application/json
+        
+        {
+            "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Me/photo/$entity",
+            "@odata.id": "https://graph.microsoft.com/v1.0/users('ddfcd489-628b-7d04-b48b-20075df800e5@1717622f-1d94-c0d4-9d74-f907ad6677b4')/photo",
+            "@odata.mediaContentType": "image/gif",
+            "@odata.mediaEtag": "",
+            "id": "1X1",
+            "width": 1,
+            "height": 1
         }
         ```
         

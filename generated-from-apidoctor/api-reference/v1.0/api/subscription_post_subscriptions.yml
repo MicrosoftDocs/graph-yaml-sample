@@ -68,7 +68,9 @@ examples:
       outro: |
         In the request body, supply a JSON representation of the [subscription](xref:graph.subscription) object.
         The `clientState` field is optional.
-        ##### Resources examples
+  - request:
+      heading: "Resources examples"
+      intro: |
         The following are valid values for the resource property of the subscription:
         |Resource type|Examples
         |:------ -|:----- -|
@@ -79,8 +81,10 @@ examples:
         |Groups|groups
         |Conversations|groups('*{id}*')/conversations
         |Drives|me/drive/root
-  - request:
-      heading: "request"
+    response:
+      heading: "Response"
+      intro: |
+        Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
       sampleCode: |
         ```http
         HTTP/1.1 201 Created
@@ -100,3 +104,6 @@ examples:
         }
         ```
         
+      outro: |
+        ## Notification endpoint validation
+        The subscription notification endpoint (specified in the `notificationUrl` property) must be capable of responding to a validation request as described in [Set up notifications for changes in user data](../../../concepts/webhooks.md#notification-endpoint-validation). If validation fails, the request to create the subscription returns a 400 Bad Request error.

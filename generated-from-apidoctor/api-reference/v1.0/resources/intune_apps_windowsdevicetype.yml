@@ -10,17 +10,17 @@ members:
   heading: "windowsDeviceType flags"
   list:
   - member: "none"
-    value: "0"
+    value: 0
     description: "No flags set."
   - member: "desktop"
-    value: "1"
+    value: 1
     description: "Whether or not the Desktop Windows device type is supported."
   - member: "mobile"
-    value: "2"
+    value: 2
     description: "Whether or not the Mobile Windows device type is supported."
   - member: "holographic"
-    value: "4"
+    value: 4
     description: "Whether or not the Holographic Windows device type is supported."
   - member: "team"
-    value: "8"
+    value: 8
     description: "Whether or not the Team Windows device type is supported."

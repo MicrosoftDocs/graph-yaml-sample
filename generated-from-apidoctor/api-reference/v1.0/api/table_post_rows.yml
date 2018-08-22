@@ -53,6 +53,10 @@ response:
 examples:
 - items:
   - request:
+      heading: "Example"
+      intro: |
+        In this example two rows of data are inserted at the end of the table. 
+  - request:
       heading: "Request"
       intro: |
         Here is an example of the request.

@@ -12,25 +12,38 @@ requestBody:
   heading: "Request"
   intro: |
     This request updates the vertical alignment, row height, and column height of the first cell.
-  request:
-      heading: "request"
-      sampleCode: |
-        ```http
-        PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$A$1')/format
-        Content-type: application/json
-        
-        {
-          "columnWidth": 135,
-          "verticalAlignment": "Top",
-          "rowHeight": 49,
-          "wrapText": false
-        }
-        ```
-        
+  requestBody: |
+    ```http
+    PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$A$1')/format
+    Content-type: application/json
+    
+    {
+      "columnWidth": 135,
+      "verticalAlignment": "Top",
+      "rowHeight": 49,
+      "wrapText": false
+    }
+    ```
+    
 response:
   heading: "Response"
   intro: |
     Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+  response: |
+    ```http
+    HTTP/1.1 200 OK
+    Content-type: application/json
+    
+    {
+        "columnWidth": 135,
+        "horizontalAlignment": "General",
+        "rowHeight": 49,
+        "verticalAlignment": "Top",
+        "wrapText": false
+    }
+    ```
+    
+  outro: |
     This request updates the font style, size, and color of the first cell.
     
     ```http
@@ -243,23 +256,6 @@ response:
     }
     ```
     
-  request:
-      heading: "request"
-      sampleCode: |
-        ```http
-        HTTP/1.1 200 OK
-        Content-type: application/json
-        
-        {
-            "columnWidth": 135,
-            "horizontalAlignment": "General",
-            "rowHeight": 49,
-            "verticalAlignment": "Top",
-            "wrapText": false
-        }
-        ```
-        
-  outro: |
     ## See also
     
     * [Manage sessions in Excel with Microsoft Graph](xref:graph.excel-manage-sessions)

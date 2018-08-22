@@ -51,6 +51,10 @@ response:
 examples:
 - items:
   - request:
+      heading: "Example"
+      intro: |
+        Here is an example of how to call this API.
+  - request:
       heading: "Request"
       intro: |
         The following request moves the specified message to the Deleted Items folder, identified by its well-known folder name `deleteditems`.

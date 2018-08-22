@@ -54,7 +54,15 @@ response:
 examples:
 - items:
   - request:
-      heading: "request"
+      heading: "Update the format, fill, and font properties in three table cells"
+      intro: |
+        The following examples demonstrate how to update properties of the [WorkbookRangeFormat](xref:graph.rangeformat), [WorkbookRangeFill](xref:graph.rangefill), and [WorkbookRangeFont](xref:graph.rangefont) properties of a specified range.
+        The result of this set of requests is a table with three cells formatted like the top three cells in the image below.
+        ![Excel chart table with three cells whose format, fill, and font properties have been updated.](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/ExcelRangeFormatting.png)
+  - request:
+      heading: "Request"
+      intro: |
+        This request updates the vertical alignment, row height, and column height of the first cell. 
       sampleCode: |
         ```http
         PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{sheet-id}/range(address='$A$1')/format
@@ -87,7 +95,9 @@ examples:
         ```
         
   - request:
-      heading: "request"
+      heading: "Request"
+      intro: |
+        This request updates the font style, size, and color of the first cell. 
       sampleCode: |
         ```http
         PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{sheet-id}/range(address='$A$1')/format/font
@@ -120,7 +130,9 @@ examples:
         ```
         
   - request:
-      heading: "request"
+      heading: "Request"
+      intro: |
+        This request updates the background color of the first cell. 
       sampleCode: |
         ```http
         PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{sheet-id}/range(address='$A$1')/format/fill
@@ -146,7 +158,9 @@ examples:
         ```
         
   - request:
-      heading: "request"
+      heading: "Request"
+      intro: |
+        This request updates the vertical alignment, horizontal alignment, row height, and column height of the second cell. 
       sampleCode: |
         ```http
         PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{sheet-id}/range(address='$B$1')/format
@@ -180,7 +194,9 @@ examples:
         ```
         
   - request:
-      heading: "request"
+      heading: "Request"
+      intro: |
+        This request updates the font style and size of the second cell. 
       sampleCode: |
         ```http
         PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{sheet-id}/range(address='$B$1')/format/font
@@ -212,7 +228,9 @@ examples:
         ```
         
   - request:
-      heading: "request"
+      heading: "Request"
+      intro: |
+        This request updates the background color of the second cell. 
       sampleCode: |
         ```http
         PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{sheet-id}/range(address='$B$1')/format/fill
@@ -238,7 +256,9 @@ examples:
         ```
         
   - request:
-      heading: "request"
+      heading: "Request"
+      intro: |
+        This request updates the horizontal alignment, vertical alignment, row height, and column height of the third cell. 
       sampleCode: |
         ```http
         PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{sheet-id}/range(address='$C$1')/format
@@ -272,7 +292,9 @@ examples:
         ```
         
   - request:
-      heading: "request"
+      heading: "Request"
+      intro: |
+        This request updates the font style, size, and color of the third cell. Note that the underline property takes **Single** or **Double** as values.
       sampleCode: |
         ```http
         PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{sheet-id}/range(address='$C$1')/format/font
@@ -305,7 +327,9 @@ examples:
         ```
         
   - request:
-      heading: "request"
+      heading: "Request"
+      intro: |
+        This request updates the background color of the third cell. 
       sampleCode: |
         ```http
         PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{sheet-id}/range(address='$C$1')/format/fill

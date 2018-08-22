@@ -71,7 +71,9 @@ examples:
   heading: "Examples"
 - items:
   - request:
-      heading: "request"
+      heading: "Request"
+      intro: |
+        The following is an example of the request.
       sampleCode: |
         ```http
         GET https://graph.microsoft.com/v1.0/me/people

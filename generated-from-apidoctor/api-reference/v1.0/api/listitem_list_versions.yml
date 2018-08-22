@@ -34,7 +34,9 @@ response:
 examples:
 - items:
   - request:
-      heading: "request"
+      heading: "Example"
+      intro: |
+        This example retrieves the versions of a listItem in a SharePoint list:
       sampleCode: |
         ```http
         GET /sites/{site-id}/lists/{list-id}/items/{item-id}/versions

@@ -91,7 +91,7 @@ examples:
         In addition to searching for items within a drive, your app can search more broadly to include items shared with the current user.
         To broaden the search scope, use the **search** method on the [Drive](xref:graph.drive) resource.
   - request:
-      heading: "request"
+      heading: "Example"
       sampleCode: |
         ```http
         GET /me/drive/search(q='{search-query}')

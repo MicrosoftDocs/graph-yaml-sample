@@ -32,6 +32,19 @@ examples:
           "interval": 3
         }
 
+- items:
+  - request:
+      heading: "Example"
+      intro: |
+        * Repeat this event on April 15 every year
+        
+            "pattern": {
+              "type": "absoluteYearly",
+              "interval": 1,
+              "dayOfMonth": 15,
+              "month": 4
+            }
+
   outro: |
     ### Weekly
     The weekly recurrence pattern causes an event to repeat on the same day or days of the week, based on the number of weeks between each set of occurrences.

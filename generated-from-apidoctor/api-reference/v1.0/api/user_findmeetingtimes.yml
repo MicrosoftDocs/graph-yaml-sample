@@ -95,6 +95,21 @@ response:
 examples:
 - items:
   - request:
+      heading: "Example"
+      intro: |
+        The following example shows how to find time to meet at a pre-determined location, and request a reason for each suggestion, by specifying the following parameters in the request body:
+        
+        * **attendees**
+        * **locationConstraint**
+        * **timeConstraint**
+        * **meetingDuration**
+        * **returnSuggestionReasons**
+        * **minimumAttendeePercentage**
+        
+        By setting the **returnSuggestionReasons** parameter, you also get an explanation in the **suggestionReason** property for each suggestion, if **findMeetingTimes** returns any suggestion.
+        Notice that the request specifies time in the PST time zone, and the response returns meeting time suggestions in UTC, by default. You can use the `Prefer: outlook.timezone` request 
+        header to specify PST as well for the time values in the response.
+  - request:
       heading: "Request"
       intro: |
         Here is the example request.

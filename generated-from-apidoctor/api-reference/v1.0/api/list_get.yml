@@ -62,7 +62,7 @@ examples:
       outro: |
         With `select` and `expand` statements, you can retrieve list metadata, column definitions, and list items in a single request.
   - request:
-      heading: "request"
+      heading: "Request"
       sampleCode: |
         ```http
         GET /sites/{site-id}/lists/{list-id}?select=id,name,lastModifiedDateTime&expand=columns(select=name,description),items(expand=fields(select=Name,Color,Quantity))

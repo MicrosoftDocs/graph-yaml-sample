@@ -15,3 +15,14 @@ summary:
     * A [state token](xref:graph.delta_query_overview) (_deltaToken_ or _skipToken_) from the previous GET **delta** function call.
     
 examples:
+- items:
+  - request:
+      heading: "Example"
+      intro: |
+        The following example shows a series  requests to track changes to users:
+        
+        1. [Initial request](#initial-request) and [response](#initial-response)
+        1. [nextLink request](#nextlink-request) and [response](#nextlink-response)
+        1. [Final nextLink request](#final-nextlink-request) and [response](#final-nextlink-response)
+        1. [deltaLink request](#deltalink-request) and [deltaLink response](#deltalink-response)
+        
