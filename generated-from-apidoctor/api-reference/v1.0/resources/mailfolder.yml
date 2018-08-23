@@ -17,7 +17,6 @@ summary:
     ```
 
     Well-known names work regardless of the locale of the user's mailbox, so the above query will always return the user's Drafts folder regardless of how it is named.
-
     |Well-known folder name|Description
     |:-|:-|
     |archive|The archive folder messages are sent to when using the One_Click Archive feature in Outlook clients that support it. **Note:** this is not the same as the Archive Mailbox feature of Exchange online.
