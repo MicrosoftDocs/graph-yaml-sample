@@ -41,8 +41,8 @@ permissions:
     * Notes.ReadWrite.All 
     
 examples:
-  - items:
-    - request:
+ - items:
+   - request:
       heading: "Example"
       intro: |
         In the input HTML of your request, include `<iframe data-original-src="http://..." />` and specify the URL of the video for the **data-original-src** attribute.

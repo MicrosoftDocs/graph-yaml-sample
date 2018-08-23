@@ -51,12 +51,12 @@ response:
   intro: |
     If successful, this method returns `200 OK` response code and [TableRow](xref:graph.tablerow) object in the response body.
 examples:
-  - items:
-    - request:
+ - items:
+   - request:
       heading: "Example"
       intro: |
         In this example two rows of data are inserted at the end of the table. 
-    - request:
+   - request:
       heading: "Request"
       intro: |
         Here is an example of the request.
@@ -74,7 +74,7 @@ examples:
         }
         ```
         
-      response:
+     response:
       heading: "Response"
       intro: |
         Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

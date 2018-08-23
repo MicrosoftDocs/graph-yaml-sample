@@ -91,8 +91,8 @@ response:
   intro: |
     If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 examples:
-  - items:
-    - request:
+ - items:
+   - request:
       heading: "Request"
       intro: |
         Here is an example of the request to delete an attachment on an event.
@@ -101,7 +101,7 @@ examples:
         DELETE https://graph.microsoft.com/v1.0/me/events/{id}/attachments/{id}
         ```
         
-      response:
+     response:
       heading: "Response"
       intro: |
         Here is an example of the response.

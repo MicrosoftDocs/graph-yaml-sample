@@ -45,12 +45,12 @@ response:
   intro: |
     If successful, this method returns `200 OK` response code and [Range](xref:graph.range) object in the response body.
 examples:
-  - items:
-    - request:
+ - items:
+   - request:
       heading: "Example"
       intro: |
         Here is an example of how to call this API.
-    - request:
+   - request:
       heading: "Request"
       intro: |
         Here is an example of the request.
@@ -59,7 +59,7 @@ examples:
         GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='A1:B2')
         ```
         
-      response:
+     response:
       heading: "Response"
       intro: |
         Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -81,14 +81,14 @@ examples:
         
       outro: |
         If the optional `address` parameter is not specified, this function returns the entire worksheet range.
-    - request:
+   - request:
       heading: "Request"
       sampleCode: |
         ```http
         GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/range
         ```
         
-      response:
+     response:
       heading: "Response"
       sampleCode: |
         ```http

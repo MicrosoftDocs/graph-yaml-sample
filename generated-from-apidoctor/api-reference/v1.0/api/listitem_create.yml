@@ -34,8 +34,8 @@ requestBody:
   intro: |
     In the request body, supply a JSON representation of the [listItem][] resource to create.
 examples:
-  - items:
-    - request:
+ - items:
+   - request:
       heading: "Example"
       intro: |
         Here is an example of how to create a new generic list item.
@@ -53,7 +53,7 @@ examples:
         }
         ```
         
-      response:
+     response:
       heading: "Response"
       intro: |
         If successful, this method returns a [listItem][] in the response body for the created list item.

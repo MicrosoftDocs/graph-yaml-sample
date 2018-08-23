@@ -50,12 +50,12 @@ response:
   intro: |
     If successful, this method returns a `202 Accepted` response code and an `Operation-Location` header. Poll the Operation-Location endpoint to [get the status of the copy operation](xref:graph.onenoteOperation_get).
 examples:
-  - items:
-    - request:
+ - items:
+   - request:
       heading: "Example"
       intro: |
         Here is an example of how to call this API.
-    - request:
+   - request:
       heading: "Request"
       intro: |
         Here is an example of the request.
@@ -71,7 +71,7 @@ examples:
         }
         ```
         
-      response:
+     response:
       heading: "Response"
       intro: |
         Here is an example of the response.

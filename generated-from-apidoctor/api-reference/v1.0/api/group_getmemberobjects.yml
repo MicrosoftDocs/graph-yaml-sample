@@ -43,8 +43,8 @@ response:
   intro: |
     If successful, this method returns `200 OK` response code and String collection in the response body that contains the IDs of the groups that the group is a member of.
 examples:
-  - items:
-    - request:
+ - items:
+   - request:
       heading: "Request"
       intro: |
         The following is an example of the request.
@@ -59,7 +59,7 @@ examples:
         }
         ```
         
-      response:
+     response:
       heading: "Response"
       intro: |
         The following is an example of the response.

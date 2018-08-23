@@ -49,8 +49,8 @@ response:
   intro: |
     If successful, this method returns a `201 Created` response code and a [iosUpdateConfiguration](xref:graph.intune_deviceconfig_iosupdateconfiguration) object in the response body.
 examples:
-  - items:
-    - request:
+ - items:
+   - request:
       heading: "Request"
       intro: |
         Here is an example of the request.
@@ -72,7 +72,7 @@ examples:
           "utcTimeOffsetInMinutes": 6
         }
 
-      response:
+     response:
       heading: "Response"
       intro: |
         Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

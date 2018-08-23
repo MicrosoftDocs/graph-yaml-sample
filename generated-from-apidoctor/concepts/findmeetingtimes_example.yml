@@ -22,18 +22,18 @@ summary:
     Based on this value, you can better adjust the parameters and call **findMeetingTimes** again.
     
 examples:
-  - items:
-    - request:
+ - items:
+   - request:
       heading: "Example"
       intro: |
         The following example shows how to use **findMeetingTimes** to return possible times for 2 users to meet for a couple of hours, taking into 
         account the users' free/busy and work schedules, and the attendee being away for part of the time. Because there are only 2 users for this meeting, suggestions 
         require 100% attendance. The following shows the users' free/busy schedule.
-    - request:
+   - request:
       heading: "Organizer's calendar"
       intro: |
         ![The organizer's work calendar for April 17-21 showing free-busy times](./images/findmeetingtimes_organizer_free_busy.jpg "The organizer's work calendar for April 17-21 showing free-busy times")
-    - request:
+   - request:
       heading: "Attendee's calendar"
       intro: |
         ![The attendee's work calendar for April 17-21 showing free-busy times](./images/findmeetingtimes_attendee_free_busy.jpg "The attendee's work calendar for April 17-21 showing free-busy times")
@@ -53,7 +53,7 @@ examples:
         * **returnSuggestionReasons**: this example requires a reason for each suggestion
         * **minimumAttendeePercentage**: 100%, as the attendee must be able to attend for any suggested time
         
-    - request:
+   - request:
       heading: "First request"
       intro: |
         Look for a 2-hour free time slot for both users over April 18-20.
@@ -104,7 +104,7 @@ examples:
         }
         ```
         
-    - request:
+   - request:
       heading: "First response"
       intro: |
         There is no 2-hour time slot during the work hours of April 18-20 when both users are available.
@@ -124,7 +124,7 @@ examples:
         }
         ```
         
-    - request:
+   - request:
       heading: "Second request"
       intro: |
         Look for a 2-hour time slot on April 21.
@@ -175,7 +175,7 @@ examples:
         }
         ```
         
-    - request:
+   - request:
       heading: "Second response"
       intro: |
         The second **findMeetingTimes** request suggests April 21, 2-4pm for both users to meet.

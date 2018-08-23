@@ -41,8 +41,8 @@ requestHeaders:
     value: "String"
     description: "If this request header is included and the eTag (or cTag) provided does not match the current tag on the item, a 412 Precondition Failed response is returned and the item will not be deleted."
 examples:
-  - items:
-    - request:
+ - items:
+   - request:
       heading: "Example"
       intro: |
         Here is an example of how to call this API.
@@ -51,7 +51,7 @@ examples:
         DELETE /me/drive/items/{item-id}
         ```
         
-      response:
+     response:
       heading: "Response"
       intro: |
         If successful, this call returns a `204 No Content` response to indicate that resource was deleted and there was nothing to return.

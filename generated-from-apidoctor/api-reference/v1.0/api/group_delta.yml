@@ -76,8 +76,8 @@ response:
     - [Using Delta Query](../../../concepts/delta_query_overview.md) for more details.</br>
     - [Get incremental changes for groups](../../../concepts/delta_query_groups.md) for a more detailed walkthrough.</br>
 examples:
-  - items:
-    - request:
+ - items:
+   - request:
       heading: "Request"
       intro: |
         The following is an example of the request.
@@ -86,7 +86,7 @@ examples:
         GET https://graph.microsoft.com/v1.0/groups/delta
         ```
         
-      response:
+     response:
       heading: "Response"
       intro: |
         The following is an example of the response.

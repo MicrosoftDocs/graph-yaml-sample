@@ -95,8 +95,8 @@ response:
   intro: |
     If successful, this method returns a `200 OK` response code and [event](xref:graph.event) object in the response body.
 examples:
-  - items:
-    - request:
+ - items:
+   - request:
       heading: "Request 1"
       intro: |
         The first example gets the specified event. It specifies the following:
@@ -110,11 +110,11 @@ examples:
         Prefer: outlook.timezone="Pacific Standard Time"
         ```
         
-    - request:
+   - request:
       heading: "Response 1"
       intro: |
         Here is an example of the response. The **body** property is returned in the default format of HTML.
-      response:
+     response:
       heading: "Response 1"
       sampleCode: |
         ```http
@@ -187,7 +187,7 @@ examples:
         }
         ```
         
-    - request:
+   - request:
       heading: "Request 2"
       intro: |
         The second example shows getting an event that specifies more than one location. The request specifies a `$select` query parameter 
@@ -197,14 +197,14 @@ examples:
         GET https://graph.microsoft.com/v1.0/me/events/AAMkADAGAADDdm4NAAA=?$select=subject,body,bodyPreview,organizer,attendees,start,end,location,locations
         ```
         
-    - request:
+   - request:
       heading: "Response 2"
       intro: |
         Here is an example of the response. The **locations** property includes details for the 3 locations that the event is organized for. 
         Because the request does not specify any `Prefer: outlook.timezone` header, 
         the **start** and **end** properties are displayed in the default UTC time zone. 
         The event body is in the default HTML format.  
-      response:
+     response:
       heading: "Response 2"
       sampleCode: |
         ```http

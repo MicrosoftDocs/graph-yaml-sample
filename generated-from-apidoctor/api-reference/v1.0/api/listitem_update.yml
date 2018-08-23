@@ -40,8 +40,8 @@ requestBody:
   intro: |
     In the request body, supply a JSON representation of a [fieldValueSet][] specifying the fields to update.
 examples:
-  - items:
-    - request:
+ - items:
+   - request:
       heading: "Example"
       intro: |
         Here is an example that updates the Color and Quantity fields of the list item with new values.
@@ -57,7 +57,7 @@ examples:
         }
         ```
         
-      response:
+     response:
       heading: "Response"
       intro: |
         If successful, this method returns a [fieldValueSet][] in the response body for the updated list item.

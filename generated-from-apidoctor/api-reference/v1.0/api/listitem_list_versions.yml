@@ -32,8 +32,8 @@ response:
   intro: |
     If successful, this method returns a `200 OK` response code and collection of [ListItemVersion](xref:graph.listitemversion) objects in the response body.
 examples:
-  - items:
-    - request:
+ - items:
+   - request:
       heading: "Example"
       intro: |
         This example retrieves the versions of a listItem in a SharePoint list:
@@ -42,7 +42,7 @@ examples:
         GET /sites/{site-id}/lists/{list-id}/items/{item-id}/versions
         ```
         
-      response:
+     response:
       heading: "Response"
       intro: |
         This returns a collection of versions:

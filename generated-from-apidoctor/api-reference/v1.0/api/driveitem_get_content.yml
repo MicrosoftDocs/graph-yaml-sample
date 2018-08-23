@@ -41,8 +41,8 @@ requestHeaders:
     value: "String"
     description: "If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an HTTP 304 Not Modified response is returned."
 examples:
-  - items:
-    - request:
+ - items:
+   - request:
       heading: "Example"
       intro: |
         Here is an example to download a complete file.
@@ -51,7 +51,7 @@ examples:
         GET /me/drive/items/{item-id}/content
         ```
         
-      response:
+     response:
       heading: "Response"
       intro: |
         Returns a `302 Found` response redirecting to a pre-authenticated download URL for the file.

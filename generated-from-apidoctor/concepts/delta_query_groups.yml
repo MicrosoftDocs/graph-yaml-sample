@@ -17,8 +17,8 @@ summary:
     * A [state token](xref:graph.delta_query_overview) (*deltaToken* or *skipToken*) from the previous GET **delta** function call.
     
 examples:
-  - items:
-    - request:
+ - items:
+   - request:
       heading: "Example"
       intro: |
         The following example shows a series  requests to track changes to groups:

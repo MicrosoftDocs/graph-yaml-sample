@@ -37,15 +37,15 @@ requestHeaders:
     |:-|:-|:-|
     |_format_|string|Specify the format the item's content should be downloaded as.
 examples:
-  - items:
-    - request:
+ - items:
+   - request:
       heading: "Example"
       sampleCode: |
         ```http
         GET /me/drive/items/{item-id}/content?format={format}
         ```
         
-      response:
+     response:
       heading: "Response"
       intro: |
         Returns a `302 Found` response redirecting to a pre-authenticated download URL for the converted file.

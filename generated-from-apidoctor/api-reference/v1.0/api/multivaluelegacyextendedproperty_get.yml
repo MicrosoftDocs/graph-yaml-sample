@@ -126,8 +126,8 @@ response:
     The response body includes an object representing the requested resource instance, expanded with the matching 
     [multiValueLegacyExtendedProperty](xref:graph.multivaluelegacyextendedproperty) object.
 examples:
-  - items:
-    - request:
+ - items:
+   - request:
       heading: "Request"
       intro: |
         This example gets and expands the specified event by including a multi-value extended property. The filter returns the 
@@ -138,7 +138,7 @@ examples:
         GET https://graph.microsoft.com/v1.0/me/events('AAMkAGE1M2_bs88AACbuFiiAAA=')?$expand=multiValueExtendedProperties($filter=id%20eq%20'StringArray%20{66f5a359-4659-4830-9070-00050ec6ac6e}%20Name%20Recreation')
         ```
         
-      response:
+     response:
       heading: "Response"
       intro: |
         The response body includes all the properties of the specified event and extended property returned from the filter.

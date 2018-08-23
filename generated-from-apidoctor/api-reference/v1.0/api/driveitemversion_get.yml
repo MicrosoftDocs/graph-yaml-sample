@@ -34,8 +34,8 @@ response:
   intro: |
     If successful, this method returns a `200 OK` response code and a [DriveItemVersion](xref:graph.driveitemversion) object in the response body.
 examples:
-  - items:
-    - request:
+ - items:
+   - request:
       heading: "Example"
       intro: |
         This example retrieves a version of a file in the current user's drive.
@@ -44,7 +44,7 @@ examples:
         GET /me/drive/items/{item-id}/versions/{version-id}
         ```
         
-      response:
+     response:
       heading: "Response"
       intro: |
         This returns a collection of versions:

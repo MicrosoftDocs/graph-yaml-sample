@@ -52,14 +52,14 @@ response:
   intro: |
     If successful, this method returns a `200 OK` response code and updated [WorkbookRangeFormat](xref:graph.rangeformat) object in the response body.
 examples:
-  - items:
-    - request:
+ - items:
+   - request:
       heading: "Update the format, fill, and font properties in three table cells"
       intro: |
         The following examples demonstrate how to update properties of the [WorkbookRangeFormat](xref:graph.rangeformat), [WorkbookRangeFill](xref:graph.rangefill), and [WorkbookRangeFont](xref:graph.rangefont) properties of a specified range.
         The result of this set of requests is a table with three cells formatted like the top three cells in the image below.
         ![Excel chart table with three cells whose format, fill, and font properties have been updated.](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/ExcelRangeFormatting.png)
-    - request:
+   - request:
       heading: "Request"
       intro: |
         This request updates the vertical alignment, row height, and column height of the first cell. 
@@ -76,7 +76,7 @@ examples:
         }
         ```
         
-      response:
+     response:
       heading: "Response"
       intro: |
         Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -94,7 +94,7 @@ examples:
         }
         ```
         
-    - request:
+   - request:
       heading: "Request"
       intro: |
         This request updates the font style, size, and color of the first cell. 
@@ -110,7 +110,7 @@ examples:
         }
         ```
         
-      response:
+     response:
       heading: "Response"
       intro: |
         Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -129,7 +129,7 @@ examples:
         }
         ```
         
-    - request:
+   - request:
       heading: "Request"
       intro: |
         This request updates the background color of the first cell. 
@@ -143,7 +143,7 @@ examples:
         }
         ```
         
-      response:
+     response:
       heading: "Response"
       intro: |
         Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -157,7 +157,7 @@ examples:
         }
         ```
         
-    - request:
+   - request:
       heading: "Request"
       intro: |
         This request updates the vertical alignment, horizontal alignment, row height, and column height of the second cell. 
@@ -175,7 +175,7 @@ examples:
         }
         ```
         
-      response:
+     response:
       heading: "Response"
       intro: |
         Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -193,7 +193,7 @@ examples:
         }
         ```
         
-    - request:
+   - request:
       heading: "Request"
       intro: |
         This request updates the font style and size of the second cell. 
@@ -208,7 +208,7 @@ examples:
         }
         ```
         
-      response:
+     response:
       heading: "Response"
       intro: |
         Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -227,7 +227,7 @@ examples:
         }
         ```
         
-    - request:
+   - request:
       heading: "Request"
       intro: |
         This request updates the background color of the second cell. 
@@ -241,7 +241,7 @@ examples:
         }
         ```
         
-      response:
+     response:
       heading: "Response"
       intro: |
         Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -255,7 +255,7 @@ examples:
         }
         ```
         
-    - request:
+   - request:
       heading: "Request"
       intro: |
         This request updates the horizontal alignment, vertical alignment, row height, and column height of the third cell. 
@@ -273,7 +273,7 @@ examples:
         }
         ```
         
-      response:
+     response:
       heading: "Response"
       intro: |
         Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -291,7 +291,7 @@ examples:
         }
         ```
         
-    - request:
+   - request:
       heading: "Request"
       intro: |
         This request updates the font style, size, and color of the third cell. Note that the underline property takes **Single** or **Double** as values.
@@ -307,7 +307,7 @@ examples:
         }
         ```
         
-      response:
+     response:
       heading: "Response"
       intro: |
         Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -326,7 +326,7 @@ examples:
         }
         ```
         
-    - request:
+   - request:
       heading: "Request"
       intro: |
         This request updates the background color of the third cell. 
@@ -340,7 +340,7 @@ examples:
         }
         ```
         
-      response:
+     response:
       heading: "Response"
       intro: |
         Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

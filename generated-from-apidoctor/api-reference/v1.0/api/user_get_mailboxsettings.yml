@@ -75,8 +75,8 @@ response:
     * [workingHours](xref:graph.workinghours)
     
 examples:
-  - items:
-    - request:
+ - items:
+   - request:
       heading: "Request 1"
       intro: |
         The first example gets all the mailbox settings of the signed-in user's mailbox, which include settings for time zone, automatic replies, 
@@ -86,12 +86,12 @@ examples:
         GET https://graph.microsoft.com/v1.0/me/mailboxSettings
         ```
         
-    - request:
+   - request:
       heading: "Response 1"
       intro: |
         The response includes all the mailbox settings. 
         Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-      response:
+     response:
       heading: "Response 1"
       sampleCode: |
         ```http
@@ -136,7 +136,7 @@ examples:
         }
         ```
         
-    - request:
+   - request:
       heading: "Request 2"
       intro: |
         The second example gets specifically the automatic replies settings of the signed-in user's mailbox.
@@ -145,12 +145,12 @@ examples:
         GET https://graph.microsoft.com/v1.0/me/mailboxSettings/automaticRepliesSetting
         ```
         
-    - request:
+   - request:
       heading: "Response 2"
       intro: |
         The response includes only the automatic replies settings. 
         Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-      response:
+     response:
       heading: "Response 2"
       sampleCode: |
         ```http
@@ -174,7 +174,7 @@ examples:
         }
         ```
         
-    - request:
+   - request:
       heading: "Request 3"
       intro: |
         The third example gets specifically the working hour settings of the signed-in user's mailbox.
@@ -183,7 +183,7 @@ examples:
         GET https://graph.microsoft.com/v1.0/me/mailboxSettings/workingHours
         ```
         
-    - request:
+   - request:
       heading: "Response 3"
       intro: |
         The response includes only the working hours settings. Notice that the user's work hours are in a [custom time zone](xref:graph.customtimezone). 

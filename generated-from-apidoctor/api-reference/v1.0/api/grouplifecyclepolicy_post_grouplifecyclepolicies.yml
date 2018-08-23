@@ -43,8 +43,8 @@ response:
   intro: |
     If successful, this method returns `201 Created` response code and [groupLifecyclePolicy](xref:graph.grouplifecyclepolicy) object in the response body.
 examples:
-  - items:
-    - request:
+ - items:
+   - request:
       heading: "Request"
       sampleCode: |
         ```http
@@ -61,7 +61,7 @@ examples:
         
       outro: |
         In the request body, supply a JSON representation of [groupLifecyclePolicy](xref:graph.grouplifecyclepolicy) object.
-      response:
+     response:
       heading: "Response"
       intro: |
         Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

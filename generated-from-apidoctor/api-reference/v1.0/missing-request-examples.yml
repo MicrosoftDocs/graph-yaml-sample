@@ -8,15 +8,15 @@ summary:
     These are things I had to add in the docs to make sure the Markdown-Scanner
     tool was able to properly handle the Graph docs.
 examples:
-  - items:
-    - request:
+ - items:
+   - request:
       heading: "Define the /me as singleton"
       sampleCode: |
         ```http
         GET https://graph.microsoft.com/v1.0/me
         ```
         
-      response:
+     response:
       heading: "Define the /me as singleton"
       sampleCode: |
         ```http
@@ -27,14 +27,14 @@ examples:
         }
         ```
         
-    - request:
+   - request:
       heading: "Define drives as an queryable entityset"
       sampleCode: |
         ```http
         GET https://graph.microsoft.com/v1.0/drives/{drive-id}
         ```
         
-      response:
+     response:
       heading: "Define drives as an queryable entityset"
       sampleCode: |
         ```http
@@ -45,14 +45,14 @@ examples:
         }
         ```
         
-    - request:
+   - request:
       heading: "define users as an queryable entityset"
       sampleCode: |
         ```http
         GET https://graph.microsoft.com/v1.0/users/{user-id}
         ```
         
-      response:
+     response:
       heading: "define users as an queryable entityset"
       sampleCode: |
         ```http

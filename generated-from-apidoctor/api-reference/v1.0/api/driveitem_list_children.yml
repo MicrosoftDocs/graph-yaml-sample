@@ -46,8 +46,8 @@ requestHeaders:
     description: "If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an HTTP 304 Not Modified response is returned."
 examples:
   heading: "Examples"
-  - items:
-    - request:
+ - items:
+   - request:
       heading: "List children in the root of the current user's drive"
       intro: |
         To retrieve files in the root of the drive, use the `root` relationship on the drive, then access the children relationship.
@@ -56,7 +56,7 @@ examples:
         GET /me/drive/root/children
         ```
         
-    - request:
+   - request:
       heading: "List children of a DriveItem with a known ID"
       intro: |
         To retrieve files in the root of the drive, use the `root` relationship on the drive, then access the children relationship.
@@ -65,14 +65,14 @@ examples:
         GET /drives/{drive-id}/items/{item-id}/children
         ```
         
-    - request:
+   - request:
       heading: "List children of a DriveItem with a known path"
       sampleCode: |
         ```http
         GET /drives/{drive-id}/root:/{path-relative-to-root}:/children
         ```
         
-      response:
+     response:
       heading: "Response"
       intro: |
         If successful, this method returns the list of items in the children collection of the target item.

@@ -65,8 +65,8 @@ response:
     |Invalid day in **daysOfWeek**|400|InvalidArguments|Requested value 'RandomDay' was not found.
     |Invalid **timeZone**|400|InvalidTimeZone|Time Zone settings provided are invalid.
 examples:
-  - items:
-    - request:
+ - items:
+   - request:
       heading: "Request"
       intro: |
         The first example enables automatic replies for a date range, by setting the following properties of the **automaticRepliesSetting** property:
@@ -92,7 +92,7 @@ examples:
         }
         ```
         
-      response:
+     response:
       heading: "Response"
       intro: |
         The response includes the updated settings for automatic replies. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -120,7 +120,7 @@ examples:
         }
         ```
         
-    - request:
+   - request:
       heading: "Request 2"
       intro: |
         The second example customizes the time zone for the working hours of the signed-in user, by setting the **timeZone** property 
@@ -165,7 +165,7 @@ examples:
         }
         ```
         
-      response:
+     response:
       heading: "Response 2"
       intro: |
         Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

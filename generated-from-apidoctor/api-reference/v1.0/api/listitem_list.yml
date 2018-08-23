@@ -29,15 +29,15 @@ httpRequest:
     GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items?expand=fields(select=Column1,Column2)
 
 examples:
-  - items:
-    - request:
+ - items:
+   - request:
       heading: "Request"
       sampleCode: |
         ```http
         GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items?expand=fields(select=Name,Color,Quantity)
         ```
         
-      response:
+     response:
       heading: "Response"
       sampleCode: |
         ```json

@@ -44,15 +44,15 @@ response:
   intro: |
     If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 examples:
-  - items:
-    - request:
+ - items:
+   - request:
       heading: "Request"
       sampleCode: |
         ```http
         DELETE https://graph.microsoft.com/v1.0/groupSettings/{id}
         ```
         
-      response:
+     response:
       heading: "Response"
       sampleCode: |
         ```http

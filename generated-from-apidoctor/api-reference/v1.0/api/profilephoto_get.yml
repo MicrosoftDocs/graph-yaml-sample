@@ -62,8 +62,8 @@ requestBody:
     ## Response for getting the photo
     If successful, this method returns a `200 OK` response code and binary data of the requested photo.  If no photo exists, the operation returns `404 Not Found`.
 examples:
-  - items:
-    - request:
+ - items:
+   - request:
       heading: "Request 1"
       intro: |
         This request gets the photo for the signed-in user, in the largest available size.
@@ -72,11 +72,11 @@ examples:
         GET https://graph.microsoft.com/v1.0/me/photo/$value
         ```
         
-    - request:
+   - request:
       heading: "Response 1"
       intro: |
         Contains the binary data of the requested photo. The HTTP response code is 200.
-    - request:
+   - request:
       heading: "Request 2"
       intro: |
         This request gets the 48x48 photo for the signed-in user.
@@ -86,11 +86,11 @@ examples:
         Content-Type: image/jpg
         ```
         
-    - request:
+   - request:
       heading: "Response 2"
       intro: |
         Contains the binary data of the requested 48x48 photo. The HTTP response code is 200.
-    - request:
+   - request:
       heading: "Request 3"
       intro: |
         This request gets the metadata of the user photo of the signed-in user.
@@ -99,7 +99,7 @@ examples:
         GET https://graph.microsoft.com/v1.0/me/photo
         ```
         
-    - request:
+   - request:
       heading: "Response 3"
       intro: |
         The following response data shows the photo metadata. Note: The response object shown here may be truncated for brevity.

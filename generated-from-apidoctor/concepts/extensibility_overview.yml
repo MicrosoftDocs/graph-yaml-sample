@@ -37,8 +37,8 @@ permissions:
   outro: |
     ## Data limits
 examples:
-  - items:
-    - request:
+ - items:
+   - request:
       heading: "Extension examples"
       intro: |
         * [Add custom data to users using open extensions](xref:graph.extensibility_open_users)

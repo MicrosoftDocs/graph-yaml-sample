@@ -140,8 +140,8 @@ response:
     When creating an extended property in a _new_ [group post](xref:graph.post) by replying to a thread or post, the response includes only 
     a response code but not the new post nor the extended property.
 examples:
-  - items:
-    - request:
+ - items:
+   - request:
       heading: "Request 1"
       intro: |
         The first example creates a new event and a single-value extended property in the same POST operation. Apart from the properties you'd normally 
@@ -186,7 +186,7 @@ examples:
         }
         ```
         
-    - request:
+   - request:
       heading: "Response 1"
       intro: |
         A successful response is indicated by an `HTTP 201 Created` response code, and includes the new event 
@@ -194,7 +194,7 @@ examples:
         The response does not include any newly created extended properties.
         To see the newly created extended property, [get the event expanded with the extended property](xref:graph.singlevaluelegacyextendedproperty_get).
         ****
-    - request:
+   - request:
       heading: "Request 2"
       intro: |
         The second example creates one single-value extended property for the specified existing message. That extended property is the only
@@ -218,7 +218,7 @@ examples:
         }
         ```
         
-    - request:
+   - request:
       heading: "Response 2"
       intro: |
         A successful response is indicated by an `HTTP 200 OK` response code, and includes the specified message in the response body, 

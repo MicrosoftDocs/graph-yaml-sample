@@ -31,8 +31,8 @@ requestBody:
   intro: |
     No request body is required.
 examples:
-  - items:
-    - request:
+ - items:
+   - request:
       heading: "Example"
       intro: |
         This example restores a version of a listItem identified by `{item-id}` and `{version-id}`.
@@ -41,7 +41,7 @@ examples:
         POST /sites/{site-id}/lists/{list-id}/items/{item-id}/versions/{version-id}/restoreVersion
         ```
         
-      response:
+     response:
       heading: "Response"
       intro: |
         If successful, the API call returns a `204 No Content`.

@@ -19,12 +19,12 @@ summary:
     * For application permissions, the _effective permissions_ of your app will be the full level of privileges implied by the permission. For example, an app that has the _User.ReadWrite.All_ application permission can update the profile of every user in the organization. 
     
 examples:
-  - items:
-    - request:
+ - items:
+   - request:
       heading: "Delegated"
       intro: |
         None.
-    - request:
+   - request:
       heading: "Application"
       intro: |
         * _Application.ReadWrite.All_: List all applications (`GET /beta/applications`)
@@ -34,7 +34,7 @@ examples:
         * _Application.ReadWrite.OwnedBy_: Add another owner to an owned application (`POST /applications/{id}/owners/$ref`).  NOTE: This may require additional permissions.
         
         ---
-    - request:
+   - request:
       heading: "Delegated"
       intro: |
         * _Bookings.Read.All_: Get the ID and names of the collection of Bookings businesses that has been created for a tenant (`GET /bookingBusinesses`).
@@ -42,14 +42,14 @@ examples:
         * _Bookings.ReadWrite.All_: Create a new service for the specified Bookings business (`POST /bookingBusinesses/{id}/services`).
         * _Bookings.Manage_: Make the scheduling page of this business available to external customers (`POST /bookingBusinesses/{id}/publish`).
         
-    - request:
+   - request:
       heading: "Delegated"
       intro: |
         * _Calendars.Read_: Get events on the user's calendar between April 23, 2017 and April 29, 2017 (`GET /me/calendarView?startDateTime=2017-04-23T00:00:00&endDateTime=2017-04-29T00:00:00`).
         * _Calendars.Read.Shared_: Find meeting times where all attendees are available (`POST /users/{id|userPrincipalName}/findMeetingTimes`).
         * _Calendars.ReadWrite_: Add an event to the user's calendar (`POST /me/events`).
         
-    - request:
+   - request:
       heading: "Application"
       intro: |
         * _Calendars.Read_: Find events in a conference room's calendar organized by bob@contoso.com (`GET /users/{id | userPrincipalName}/events?$filter=organizer/emailAddress/address eq 'bob@contoso.com'`).
@@ -58,14 +58,14 @@ examples:
         * _Calendars.Send_: Send a message (`POST /users/{id | userPrincipalName}/sendCalendars`).
         
         For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
-    - request:
+   - request:
       heading: "Delegated"
       intro: |
         * _Contacts.Read_: Read a contact from one of the top-level contact folders of the signed-in user (`GET /me/contactfolders/{Id}/contacts/{id}`).
         * _Contacts.ReadWrite_: Update the contact photo of one of the signed-in user's contacts (`PUT /me/contactfolders/{contactFolderId}/contacts/{id}/photo/$value`). 
         * _Contacts.ReadWrite_: Add contacts to the root folder of the signed-in user (`POST /me/contacts`).
         
-    - request:
+   - request:
       heading: "Application"
       intro: |
         * _Contacts.Read_: Read contacts from one of the top-level contact folders of any user in the organization (`GET /users/{id | userPrincipalName}/contactfolders/{Id}/contacts/{id}`). 
@@ -73,20 +73,20 @@ examples:
         * _Contacts.ReadWrite_: Add contacts to the root folder of any user in the organization (`POST /users/{id | userPrincipalName}/contacts`).
         
         For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
-    - request:
+   - request:
       heading: "Application"
       intro: |
         * _Device.ReadWrite.All_: Read all registered devices in the organization (`GET /devices`).
         
         For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
         ---
-    - request:
+   - request:
       heading: "Delegated"
       intro: |
         * _Directory.Read.All_: List all administrative units in an organization (`GET /beta/administrativeUnits`)
         * _Directory.ReadWrite.All_: Add members to a directory role (`POST /directoryRoles/{id}/members/$ref`)
         
-    - request:
+   - request:
       heading: "Application"
       intro: |
         * _Directory.Read.All_: List all memberships of a user, including directory roles and administrative units (`GET /beta/users/{id}/memberOf`)
@@ -95,7 +95,7 @@ examples:
         
         For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
         ---
-    - request:
+   - request:
       heading: "Delegated"
       intro: |
         * _EduAssignments.Read_: Get the signed-in student's assignment information (`GET /education/classes/{id}/assignments/{id}`)
@@ -104,7 +104,7 @@ examples:
         
         For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
         ---
-    - request:
+   - request:
       heading: "Delegated"
       intro: |
         * _Files.Read_: Read files stored in the signed-in user's OneDrive (`GET /me/drive/root/children`)
@@ -115,7 +115,7 @@ examples:
         
         For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
         ---
-    - request:
+   - request:
       heading: "Delegated"
       intro: |
         * _Group.Read.All_: Read all Office 365 groups that the signed-in user is a member of (`GET /me/memberOf/$/microsoft.graph.group?$filter=groupTypes/any(a:a%20eq%20'unified')`).
@@ -123,7 +123,7 @@ examples:
         * _Group.ReadWrite.All_: Update group properties, like photo (`PUT /groups/{id}/photo/$value`).
         * _Group.ReadWrite.All_: Update group members (`POST /groups/{id}/members/$ref`). NOTE: This also requires _User.ReadBasic.All_ to read the user to add as a member.
         
-    - request:
+   - request:
       heading: "Application"
       intro: |
         * _Group.Read.All_: Find all groups with name that starts with 'Sales' (`GET /groups?$filter=startswith(displayName,'Sales')`).
@@ -131,7 +131,7 @@ examples:
         
         For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
         ---
-    - request:
+   - request:
       heading: "Delegated and Application"
       intro: |
         The following usages are valid for both delegated and application permissions:
@@ -142,7 +142,7 @@ examples:
         
         For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
         ---
-    - request:
+   - request:
       heading: "Delegated"
       intro: |
         The following usages are valid for both delegated permissions:
@@ -155,7 +155,7 @@ examples:
         
         For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
         ---
-    - request:
+   - request:
       heading: "Delegated"
       intro: |
         * _DeviceManagementServiceConfiguration.Read.All_: Check the current state of the Intune subscription (`GET /deviceManagement/subscriptionState`).
@@ -172,7 +172,7 @@ examples:
         
         For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
         ---
-    - request:
+   - request:
       heading: "Delegated"
       intro: |
         * _Mail.Read_: List messages in the user's inbox, sorted by `receivedDateTime` (`GET /me/mailfolders/inbox/messages?$orderby=receivedDateTime DESC`).
@@ -181,7 +181,7 @@ examples:
         * _Mail.Send_: Send a message (`POST /me/sendmail`).
         * _MailboxSettings.ReadWrite_: Update the user's automatic reply (`PATCH /me/mailboxSettings`).
         
-    - request:
+   - request:
       heading: "Application"
       intro: |
         * _Mail.Read_: Find messages from bob@contoso.com (`GET /users/{id | userPrincipalName}/messages?$filter=from/emailAddress/address eq 'bob@contoso.com'`).
@@ -191,20 +191,20 @@ examples:
         
         For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
         ---
-    - request:
+   - request:
       heading: "Delegated"
       intro: |
         * _Member.Read.Hidden_: Read the members of an administrative unit with hidden membership on behalf of the signed-in user (`GET /administrativeUnits/{id}/members`).
         * _Member.Read.Hidden_: Read the members of a group with hidden membership on behalf of the signed-in user (`GET /groups/{id}/members`).
         
-    - request:
+   - request:
       heading: "Application"
       intro: |
         * _Member.Read.Hidden_: Read the members of an administrative unit with hidden membership (`GET /administrativeUnits/{id}/members`).
         * _Member.Read.Hidden_: Read the members of a group with hidden membership (`GET /groups/{id}/members`).
         
         For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
-    - request:
+   - request:
       heading: "Delegated"
       intro: |
         * _Notes.Create_: Create a new notebooks for the signed-in user (`POST /me/onenote/notebooks`).
@@ -213,14 +213,14 @@ examples:
         * _Notes.ReadWrite_: Update the page of the signed-in user (`PATCH /me/onenote/pages/{id}/$value`).
         * _Notes.ReadWrite.All_: Create a page in another user's notebook that the signed-in user has access to within the organization (`POST /users/{id}/onenote/pages`).
         
-    - request:
+   - request:
       heading: "Application"
       intro: |
         * _Notes.Read.All_: Read all users notebooks in a group (`GET /groups/{id}/onenote/notebooks`).
         * _Notes.ReadWrite.All_: Update the page in a notebook for any user in the organization (`PATCH /users/{id}/onenote/pages/{id}/$value`).
         
         For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
-    - request:
+   - request:
       heading: "Delegated"
       intro: |
         * _People.Read_: Read a list of relevant people (`GET /me/people`)
@@ -228,7 +228,7 @@ examples:
         
         For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
         ---
-    - request:
+   - request:
       heading: "Application"
       intro: |
         * _Reports.Read.All_: Read usage detail report of email apps with period of 7 days (`GET /reports/EmailAppUsage(view='Detail',period='D7')/content`).
@@ -237,14 +237,14 @@ examples:
         
         For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
         ---
-    - request:
+   - request:
       heading: "Delegated and Application"
       intro: |
         * _SecurityEvents.Read.All_: Read the list of all security alerts from all licensed security providers avalible to your tenant (`GET /beta/security/alerts`)
         * _SecurityEvents.ReadWrite.All_: Update or read security alerts from all licensed security providers avalible to your tenant  (`PATCH /beta/security/alerts/{id}`)
         
         ---
-    - request:
+   - request:
       heading: "Delegated"
       intro: |
         * _Sites.Read.All_: Read the lists on the SharePoint root site (`GET /v1.0/sites/root/lists`)
@@ -253,7 +253,7 @@ examples:
         * _Sites.FullControl.All_: Complete access to SharePoint sites and lists.
         
         ---
-    - request:
+   - request:
       heading: "Delegated"
       intro: |
         * _Tasks.Read_: Get all tasks in a user's mailbox (`GET /me/outlook/tasks`).
@@ -265,7 +265,7 @@ examples:
         
         For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
         ---
-    - request:
+   - request:
       heading: "Delegated"
       intro: |
         The following usages are valid for both delegated permissions:
@@ -276,7 +276,7 @@ examples:
         
         For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
         ---
-    - request:
+   - request:
       heading: "Delegated"
       intro: |
         * _User.Read_: Read the full profile for the signed-in user (`GET /me`).
@@ -284,7 +284,7 @@ examples:
         * _User.ReadBasic.All_: Find all users whose name starts with "David" (`GET /users?$filter=startswith(displayName,'David')`).
         * _User.Read.All_: Read a user's manager (`GET /user/{id | userPrincipalName}/manager`).
         
-    - request:
+   - request:
       heading: "Application"
       intro: |
         * _User.Read.All_: Read all users and relationships through delta query (`GET /beta/users/delta?$select=displayName,givenName,surname`).
@@ -292,7 +292,7 @@ examples:
         
         For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
         ---
-    - request:
+   - request:
       heading: "Delegated"
       intro: |
         * _UserActivity.ReadWrite.CreatedByApp_: Get a list of recent unique user activities based on associated history items published in the last day. (GET /me/activities/recent).

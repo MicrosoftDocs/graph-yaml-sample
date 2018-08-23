@@ -69,8 +69,8 @@ response:
     If successful, this method returns a `200 OK` response code and a collection of [person](xref:graph.person) objects in the response body. The response can contain one person object or a collection of person objects.
 examples:
   heading: "Examples"
-  - items:
-    - request:
+ - items:
+   - request:
       heading: "Request"
       intro: |
         The following is an example of the request.
@@ -79,7 +79,7 @@ examples:
         GET https://graph.microsoft.com/v1.0/me/people
         ```
         
-      response:
+     response:
       heading: "Response"
       intro: |
         The following is an example of the response.

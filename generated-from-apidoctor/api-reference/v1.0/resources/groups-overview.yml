@@ -26,8 +26,8 @@ summary:
     * Intune device management
     
 examples:
-  - items:
-    - request:
+ - items:
+   - request:
       heading: "Group in Outlook example"
       intro: |
         The following is a JSON representation of groups in Outlook. 
@@ -57,7 +57,7 @@ examples:
         }
 
         To learn more about Office 365 groups and the administrator experiences, see [Learn about Office 365 Groups](https://support.office.com/en-us/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2).
-    - request:
+   - request:
       heading: "Security group example"
       intro: |
         The following is a JSON representation of a security group. 

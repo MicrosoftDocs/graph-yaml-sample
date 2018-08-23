@@ -55,8 +55,8 @@ response:
   intro: |
     If successful, this method returns a `200 OK` response code and a [sharedDriveItem](xref:graph.shareddriveitem) resource in the response body.
 examples:
-  - items:
-    - request:
+ - items:
+   - request:
       heading: "Request"
       intro: |
         Here is an example of the request to retrieve a shared item:
@@ -65,7 +65,7 @@ examples:
         GET /shares/{shareIdOrEncodedSharingUrl}
         ```
         
-      response:
+     response:
       heading: "Response"
       intro: |
         Here is an example of the response.
@@ -90,7 +90,7 @@ examples:
         ## Access the shared item directly
         While the [**SharedDriveItem**](xref:graph.shareddriveitem) contains some useful information, most apps will want to directly access the shared [DriveItem](xref:graph.driveitem).
         The **SharedDriveItem** resource includes a **root** and **items** relationships which can access content within the scope of the shared item.
-    - request:
+   - request:
       heading: "Request"
       intro: |
         By requesting the **driveItem** relationship, the **DriveItem** that was shared will be returned.
@@ -99,7 +99,7 @@ examples:
         GET /shares/{shareIdOrUrl}/driveItem
         ```
         
-      response:
+     response:
       heading: "Response"
       sampleCode: |
         ```http
@@ -115,7 +115,7 @@ examples:
         }
         ```
         
-    - request:
+   - request:
       heading: "Request"
       intro: |
         By requesting the **driveItem** relationship and expanding the **children** collection, the **DriveItem** that was shared will be returned along with the files within the shared folder.
@@ -124,7 +124,7 @@ examples:
         GET /shares/{shareIdOrUrl}/driveItem?$expand=children
         ```
         
-      response:
+     response:
       heading: "Response"
       sampleCode: |
         ```http

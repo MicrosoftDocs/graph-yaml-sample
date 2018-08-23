@@ -135,8 +135,8 @@ response:
     #### GET resource instance expanded with a matching extended property
     The response body includes an object representing the requested resource instance, expanded with the matching [singleValueLegacyExtendedProperty](xref:graph.singlevaluelegacyextendedproperty) object.
 examples:
-  - items:
-    - request:
+ - items:
+   - request:
       heading: "Request 1"
       intro: |
         The first example gets and expands the specified message by including a single-value extended property. The filter returns the 
@@ -147,12 +147,12 @@ examples:
         GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2_bs88AACHsLqWAAA=?$expand=singleValueExtendedProperties($filter=id%20eq%20'String%20{66f5a359-4659-4830-9070-00047ec6ac6e}%20Name%20Color')
         ```
         
-    - request:
+   - request:
       heading: "Response 1"
       intro: |
         The response body includes all the properties of the specified message and extended property returned from the filter.
         Note: The **message** object shown here is truncated for brevity. All of the properties will be returned from an actual call.
-      response:
+     response:
       heading: "Response 1"
       sampleCode: |
         ```http
@@ -190,7 +190,7 @@ examples:
         }
         ```
         
-    - request:
+   - request:
       heading: "Request 2"
       intro: |
         The second example gets messages that have the string-typed single-value extended property specified in the filter. The filter 
@@ -205,14 +205,14 @@ examples:
         GET https://graph.microsoft.com/v1.0/me/messages?$filter=singleValueExtendedProperties%2FAny(ep%3A%20ep%2Fid%20eq%20'String%20{66f5a359-4659-4830-9070-00047ec6ac6e}%20Name%20Color'%20and%20ep%2Fvalue%20eq%20'Green')
         ```
         
-    - request:
+   - request:
       heading: "Response 2"
       intro: |
         A successful response is indicated by an `HTTP 200 OK` response code, and the response body includes all 
         the properties of the messages that have the extended property matching the filter. The response body is
         similar to the response from [getting a message collection](xref:graph.user_list_messages). The response does not 
         include the matching extended property.
-    - request:
+   - request:
       heading: "Request 3"
       intro: |
         The third example gets messages that have the string-typed single-value extended property specified in the filter. The filter 
@@ -227,7 +227,7 @@ examples:
         GET https://graph.microsoft.com/v1.0/Me/messages?$filter=singleValueExtendedProperties/any(ep:ep/Id eq 'String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color' and contains(ep/Value, 'green'))
         ```
         
-    - request:
+   - request:
       heading: "Response 3"
       intro: |
         A successful response is indicated by an `HTTP 200 OK` response code, and the response body includes all 
@@ -236,7 +236,7 @@ examples:
         the **value** `Light green`, would match the filter and be included in the response.
         The response body is similar to the response from [getting a message collection](xref:graph.user_list_messages). The response does not 
         include the matching extended property.
-    - request:
+   - request:
       heading: "Request 4"
       intro: |
         The next 2 examples show how to get messages that have non-string typed single-value extended properties. For ease of reading, they do not 
@@ -262,7 +262,7 @@ examples:
         GET https://graph.microsoft.com/v1.0/me/messages?$filter=singleValueExtendedProperties/any(ep:ep/id eq 'Integer {66f5a359-4659-4830-9070-00047ec6ac6e} Name Pallete' and cast(ep/value, Edm.Int32) eq 12)
         ```
         
-    - request:
+   - request:
       heading: "Response 4"
       intro: |
         For each of the preceding 2 examples, a successful response is indicated by an `HTTP 200 OK` response code, and the response body includes all 

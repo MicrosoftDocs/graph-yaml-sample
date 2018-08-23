@@ -34,8 +34,8 @@ summary:
     See the [example](#example-to-synchronize-messages-in-a-folder) below to learn how to use the `nextLink` and
     `deltaLink` URLs.
 examples:
-  - items:
-    - request:
+ - items:
+   - request:
       heading: "Example to synchronize messages in a folder"
       intro: |
         The following example shows 2 rounds of synchronization of a specific folder which initially contains 5 messages.
@@ -46,7 +46,7 @@ examples:
         * [Sample third request](#sample-third-request) and [final response](#sample-third-and-final-response)
         
         After the first round, one of the messages is deleted, and another is marked as read. The [second round](#synchronize-messages-in-the-same-folder-in-the-next-round) of synchronization returns only the delta (the deletion and update), without returning the other messages that have remained the same.
-    - request:
+   - request:
       heading: "Sample initial request"
       intro: |
         In this example, the specified folder is being synchronized for the first time, so the initial sync request does not include any state token.
@@ -62,7 +62,7 @@ examples:
         Prefer: odata.maxpagesize=2
         ```
         
-    - request:
+   - request:
       heading: "Sample initial response"
       intro: |
         The response includes two messages and an `@odata.nextLink` response header.
@@ -103,7 +103,7 @@ examples:
         }
         ```
         
-    - request:
+   - request:
       heading: "Sample second request"
       intro: |
         The second request specifies the `nextLink` URL returned from the previous response. Notice that it no longer has to specify
@@ -114,7 +114,7 @@ examples:
         Prefer: odata.maxpagesize=2
         ```
         
-    - request:
+   - request:
       heading: "Sample second response"
       intro: |
         The second response returns the next 2 messages in the folder and another `nextLink`, indicating there are
@@ -155,7 +155,7 @@ examples:
         }
         ```
         
-    - request:
+   - request:
       heading: "Sample third request"
       intro: |
         The third request continues to use the latest `nextLink` URL returned from the last sync request.
@@ -165,7 +165,7 @@ examples:
         Prefer: odata.maxpagesize=2
         ```
         
-    - request:
+   - request:
       heading: "Sample third and final response"
       intro: |
         The third response returns the only remaining message in the folder, and a `deltaLink` URL which indicates
@@ -194,7 +194,7 @@ examples:
         }
         ```
         
-    - request:
+   - request:
       heading: "Synchronize messages in the same folder in the next round"
       intro: |
         Using the `deltaLink` from the [last request](#sample-third-request) in the last round,

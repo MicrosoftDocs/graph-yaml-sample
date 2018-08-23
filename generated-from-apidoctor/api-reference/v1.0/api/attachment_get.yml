@@ -106,8 +106,8 @@ response:
     The properties of that type of attachment are returned: [fileAttachment](xref:graph.fileattachment), [itemAttachment](xref:graph.itemattachment), 
     or [referenceAttachment](xref:graph.referenceAttachment).
 examples:
-  - items:
-    - request:
+ - items:
+   - request:
       heading: "Request"
       intro: |
         Here is an example of the request to get a file attachment on an event.
@@ -116,7 +116,7 @@ examples:
         GET https://graph.microsoft.com/v1.0/me/events/{id}/attachments/{id}
         ```
         
-      response:
+     response:
       heading: "Response"
       intro: |
         Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -140,7 +140,7 @@ examples:
         }
         ```
         
-    - request:
+   - request:
       heading: "Request 1"
       intro: |
         The first example shows how to get an item attachment on a message. The properties of the **itemAttachment** are returned.
@@ -149,7 +149,7 @@ examples:
         GET https://graph.microsoft.com/v1.0/me/messages/AAMkADA1M-zAAA=/attachments/AAMkADA1M-CJKtzmnlcqVgqI=
         ```
         
-    - request:
+   - request:
       heading: "Request 2"
       intro: |
         The next example shows how to use `$expand` to get the properties of the item that is attached to the message. In this example, that item is 
@@ -159,7 +159,7 @@ examples:
         GET https://graph.microsoft.com/v1.0/me/messages/AAMkADA1M-zAAA=/attachments/AAMkADA1M-CJKtzmnlcqVgqI=/?$expand=microsoft.graph.itemattachment/item
         ```
         
-      response:
+     response:
       heading: "Response 1"
       sampleCode: |
         ```http
@@ -178,7 +178,7 @@ examples:
         }
         ```
         
-      response:
+     response:
       heading: "Response 2"
       sampleCode: |
         ```http
@@ -248,7 +248,7 @@ examples:
         }
         ```
         
-    - request:
+   - request:
       heading: "Request"
       intro: |
         Here is an example of the request to get a reference attachment on an event.
@@ -257,7 +257,7 @@ examples:
         GET https://graph.microsoft.com/v1.0/me/events/{id}/attachments/{id}
         ```
         
-      response:
+     response:
       heading: "Response"
       intro: |
         Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

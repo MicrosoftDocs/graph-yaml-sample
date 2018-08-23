@@ -43,8 +43,8 @@ response:
   intro: |
     If successful, this method returns a `201 Created` response code and a [mobileAppCategory](xref:graph.intune_apps_mobileappcategory) object in the response body.
 examples:
-  - items:
-    - request:
+ - items:
+   - request:
       heading: "Request"
       intro: |
         Here is an example of the request.
@@ -58,7 +58,7 @@ examples:
           "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
         }
 
-      response:
+     response:
       heading: "Response"
       intro: |
         Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

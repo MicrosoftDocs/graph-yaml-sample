@@ -41,8 +41,8 @@ relationships:
     type: "Collection(microsoft.graph.plannerTask)"
     description: "Read-only. Nullable. Returns a collection of the specified tasks"
 examples:
-  - items:
-    - request:
+ - items:
+   - request:
       heading: "Example"
       intro: |
         The **planner** resource is available at the root of the graph.
@@ -51,7 +51,7 @@ examples:
         GET https://graph.microsoft.com/v1.0/planner
         ```
         
-      response:
+     response:
       heading: "Example"
       sampleCode: |
         ```json

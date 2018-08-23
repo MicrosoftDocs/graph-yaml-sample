@@ -47,8 +47,8 @@ response:
   intro: |
     If successful, this method returns a `200 OK` response code and an updated [deviceManagement](xref:graph.intune_shared_devicemanagement) object in the response body.
 examples:
-  - items:
-    - request:
+ - items:
+   - request:
       heading: "Request"
       intro: |
         Here is an example of the request.
@@ -79,7 +79,7 @@ examples:
           "accountMoveCompletionDateTime": "2017-01-01T00:01:17.9006709-08:00"
         }
 
-      response:
+     response:
       heading: "Response"
       intro: |
         Here is an example of the response. Note: The response object shown here may be truncated for brevity. Returned properties vary according to workflow and context.

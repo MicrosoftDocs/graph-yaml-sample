@@ -31,8 +31,8 @@ response:
   intro: |
     If successful, this method returns a `200 OK` response code and a [ListItemVersion](xref:graph.listitemversion) object in the response body.
 examples:
-  - items:
-    - request:
+ - items:
+   - request:
       heading: "Example"
       intro: |
         This example retrieves a version of a listItem and expands the fields collection to request the values of fields in the listItem.
@@ -41,7 +41,7 @@ examples:
         GET /sites/{site-id}/lists/{list-id}/items/{item-id}/versions/{version-id}?expand=fields
         ```
         
-      response:
+     response:
       heading: "Response"
       intro: |
         This returns a collection of versions:
