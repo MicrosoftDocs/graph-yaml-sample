@@ -30,7 +30,7 @@
         {
             "path_to_root": "_themes",
             "url": "https://github.com/Microsoft/templates.docs.msft",
-            "branch": "graph-happy-path-demo",
+            "branch": "graph",
             "branch_mapping": {}
         }
     ],
