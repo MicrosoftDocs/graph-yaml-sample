@@ -82,5 +82,8 @@ examples:                   # Example. Array because multiple example bolcks wil
         ```
       outro:
   outro:
-
-# TBD with partner: only support simple table. Our proposal is do not use categries.
+seeAlso:
+  items:
+  - href:
+    text:
+  outro:
