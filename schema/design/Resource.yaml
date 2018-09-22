@@ -45,6 +45,13 @@ resource:           # JSON Representation
 remarks:            # Remarks
   intro:
   outro:
+reports:            # Reports
+  intro:
+  list:
+  - function:
+    type:
+    description:
+  outro:
 seeAlso:            # See Also
   items:
   - text:
