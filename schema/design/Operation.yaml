@@ -58,6 +58,9 @@ requestBody:                # Request body
     type:
     description:
   outro:
+remarks:            # Remarks
+  intro:
+  outro:
 response:                   # Response
   intro:
   responseCode:             # Few cases but I think should be supported on our side.
