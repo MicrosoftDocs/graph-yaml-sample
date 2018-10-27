@@ -8,7 +8,7 @@ top:
     A **delta** function call for events is similar to a `GET /calendarview` request for 
     a range of dates in the user's primary calendar, except that by appropriately 
     applying [state tokens](../../../concepts/delta_query_overview.md) in one or more of these calls, 
-    you can query for incremental changes in that calender view. This allows you to maintain and synchronize 
+    you can query for incremental changes in that calendar view. This allows you to maintain and synchronize 
     a local store of a user's events in the primary calendar, without having to fetch all the events of that calendar 
     from the server every time.
 permissions:
