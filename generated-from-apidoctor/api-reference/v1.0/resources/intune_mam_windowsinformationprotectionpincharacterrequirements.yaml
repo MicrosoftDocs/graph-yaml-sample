@@ -10,6 +10,6 @@ enum:
   - member: notAllow
     description: Not allow
   - member: requireAtLeastOne
-    description: Require atleast one
+    description: Require at least one
   - member: allow
     description: Allow any number
